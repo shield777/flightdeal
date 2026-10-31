@@ -33,7 +33,7 @@ jobs:
         # 앱 주소는 셸에서 만듦 (예약 실행 때는 github.event.repository 값이 비어 있을 수 있음)
         run: |
           export APP_URL="https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}/"
-          if [ "${{ inputs.mode }}" = "probe" ]; then node scripts/probe-airlines.js; exit 0; fi
+          if [ "${{ inputs.mode }}" = "probe" ]; then npm i --no-save --silent playwright-core@1.48.2 >/dev/null 2>&1; node scripts/probe-airlines.js; exit 0; fi
           node scripts/flight-check.js ${{ inputs.mode == 'test-notify' && '--test-notify' || '' }}
         env:
           TP_TOKEN: ${{ secrets.TP_TOKEN }}

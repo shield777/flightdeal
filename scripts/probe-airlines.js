@@ -1,37 +1,45 @@
 #!/usr/bin/env node
-/* 시험용: 항공사 홈페이지·이벤트 페이지를 GitHub 서버에서 열 수 있는지 확인 (각 주소 1번씩만 요청)
-   결과: 응답 코드, 크기, 제목, 특가 관련 단어 수, 이벤트로 보이는 링크 몇 개 */
+/* 시험용 2차: 제주항공·트리니티항공 이벤트 목록 구조, 비엣젯은 크롬으로 열어 보기 (각 주소 1번씩) */
 'use strict';
 const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36';
-const SITES = [
-  ['제주항공', ['https://www.jejuair.net/ko/main/base/index.do', 'https://www.jejuair.net/ko/event/eventList.do', 'https://www.jejuair.net/ko/event/eventDetail.do?eventNo=0000004425']],
-  ['진에어', ['https://www.jinair.com/', 'https://www.jinair.com/promotion/index']],
-  ['티웨이', ['https://www.twayair.com/app/main', 'https://www.twayair.com/app/promotion/event/list']],
-  ['이스타', ['https://www.eastarjet.com/']],
-  ['에어부산', ['https://www.airbusan.com/']],
-  ['비엣젯', ['https://www.vietjetair.com/ko', 'https://www.vietjetair.com/ko/pages/promotions']],
-  ['대한항공', ['https://www.koreanair.com/kr/ko', 'https://www.koreanair.com/kr/ko/promotion']],
-  ['베트남항공', ['https://www.vietnamairlines.com/kr/ko/home']],
-];
+const H = { 'User-Agent': UA, 'Accept-Language': 'ko-KR,ko;q=0.9' };
 const strip = s => s.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/gi, ' ').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ');
+async function get(url, opt = {}) {
+  const res = await fetch(url, { headers: { ...H, ...(opt.headers || {}) }, method: opt.method || 'GET', body: opt.body, redirect: 'follow', signal: AbortSignal.timeout(20000) });
+  return { status: res.status, url: res.url, text: await res.text() };
+}
+function show(r, label) {
+  console.log(`\n== ${label}: ${r.status} ${r.url} ${r.text.length}B`);
+  const urls = [...new Set([...r.text.matchAll(/["'](\/[a-zA-Z0-9_\/.-]*(?:event|Event|promo|Promo)[a-zA-Z0-9_\/.-]*)["']/g)].map(m => m[1]))].slice(0, 30);
+  console.log('  경로들:', urls.join('  '));
+  const det = [...r.text.matchAll(/eventNo=(\d+)/g)].map(m => m[1]);
+  console.log('  eventNo:', [...new Set(det)].slice(0, 20).join(','));
+  const t = strip(r.text);
+  const i = t.search(/진행중|진행 중|이벤트/);
+  console.log('  본문 일부:', t.slice(Math.max(0, i - 100), i + 1500));
+}
 (async () => {
-  for (const [name, urls] of SITES) {
-    console.log(`\n■ ${name}`);
-    for (const url of urls) {
-      try {
-        const res = await fetch(url, { headers: { 'User-Agent': UA, 'Accept-Language': 'ko-KR,ko;q=0.9' }, redirect: 'follow', signal: AbortSignal.timeout(20000) });
-        const html = await res.text();
-        const text = strip(html);
-        const title = (html.match(/<title[^>]*>([\s\S]*?)<\/title>/i) || [])[1] || '';
-        const words = (text.match(/특가|할인|프로모션|이벤트|세일|SALE/gi) || []).length;
-        const links = [...new Set([...html.matchAll(/href=["']([^"']*(?:event|promo|sale|special)[^"']*)["']/gi)].map(m => m[1]))].slice(0, 6);
-        const blocked = /captcha|access denied|cf-chl|akamai|are you a robot|request unsuccessful|incapsula/i.test(html);
-        console.log(`  ${res.status} ${url} → ${res.url !== url ? '(이동: ' + res.url + ') ' : ''}${html.length}B, 글자 ${text.length}, 특가단어 ${words}${blocked ? ', 차단 의심' : ''}`);
-        console.log(`     제목: ${title.trim().slice(0, 60)}`);
-        if (links.length) console.log(`     링크: ${links.join(' | ')}`);
-        if (text.length < 400) console.log(`     본문: ${text.trim().slice(0, 200)}`);
-      } catch (e) { console.log(`  ✗ ${url} → ${e.message}`); }
-      await new Promise(r => setTimeout(r, 800));
+  try { show(await get('https://www.jejuair.net/ko/event/event.do'), '제주 event.do'); } catch (e) { console.log('제주 실패', e.message); }
+  await new Promise(r => setTimeout(r, 1000));
+  try { show(await get('https://www.trinityairways.com/app/promotion/event/being'), '트리니티 being'); } catch (e) { console.log('트리니티 실패', e.message); }
+  await new Promise(r => setTimeout(r, 1000));
+  // 비엣젯: 실제 크롬으로 열기 (러너에 설치된 크롬 사용)
+  try {
+    const { chromium } = require('playwright-core');
+    const b = await chromium.launch({ executablePath: '/usr/bin/google-chrome', headless: true });
+    const p = await b.newPage({ userAgent: UA, locale: 'ko-KR' });
+    const api = [];
+    p.on('response', r => { const u = r.url(); if (/promo|news|article|campaign|banner|sale/i.test(u) && !/\.(png|jpe?g|webp|svg|css|woff2?)(\?|$)/i.test(u)) api.push(`${r.status()} ${u}`); });
+    for (const u of ['https://www.vietjetair.com/ko', 'https://www.vietjetair.com/ko/pages/promotions']) {
+      await p.goto(u, { waitUntil: 'networkidle', timeout: 45000 }).catch(e => console.log('  goto', e.message));
+      const txt = (await p.evaluate(() => document.body.innerText)).replace(/\s+/g, ' ');
+      const links = await p.evaluate(() => [...document.querySelectorAll('a')].map(a => a.href).filter(h => /promo|sale|news|uu-dai|khuyen/i.test(h)).slice(0, 20));
+      console.log(`\n== 비엣젯(크롬) ${u} → ${p.url()} 글자 ${txt.length}`);
+      console.log('  링크:', [...new Set(links)].join('  '));
+      const i = txt.search(/특가|프로모션|할인|SALE/i);
+      console.log('  본문 일부:', txt.slice(Math.max(0, i - 200), i + 1200));
     }
-  }
+    console.log('\n  비엣젯 데이터 요청:', api.slice(0, 25).join('\n   '));
+    await b.close();
+  } catch (e) { console.log('비엣젯 크롬 실패', e.message); }
 })();
