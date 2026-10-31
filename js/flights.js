@@ -118,7 +118,7 @@
           <div class="grow brand">최저가 항공권</div>
           <button class="btn icon sm" data-act="settings" aria-label="설정">${ICON.gear}</button>
         </header>
-        ${ui.tab === 'price' ? '<div class="fl-season" id="info"></div>' : ''}
+        ${ui.tab === 'price' ? '<div class="fl-season" id="info"></div><div class="fl-refresh" id="refresh"></div>' : ''}
         <nav class="fl-tabs" role="tablist">
           <button role="tab" aria-selected="${ui.tab === 'price'}" data-act="tab" data-v="price">항공권 검색</button>
           <button role="tab" aria-selected="${ui.tab === 'promo'}" data-act="tab" data-v="promo">프로모션</button>
@@ -144,7 +144,7 @@
         </form>
 `}
       </div>`;
-    if (ui.tab === 'promo') renderPromo(); else if (ui.tab === 'card') renderCards(); else renderInfo();
+    if (ui.tab === 'promo') renderPromo(); else if (ui.tab === 'card') renderCards(); else { renderInfo(); renderRefresh(); }
   }
 
   // ───── 바로 검색: 고른 목적지·날짜·인원을 네이버·구글·스카이스캐너 검색에 그대로 넣음 ─────
@@ -189,23 +189,42 @@
   }
 
   // 고른 날짜의 여행 시기 정보 한 줄 (확인된 자료만: 목적지 기후표, Open-Meteo 관측 비 오는 날, 겹치는 공휴일·방학)
+  const CLIM_ICON = { good: '☀️', mid: '🌦', bad: '🌧' };
   function renderInfo() {
     const box = $('#info'); if (!box) return;
     const dest = currentDest();
-    if (!/^[A-Z]{3}$/.test(dest.code || '')) { box.textContent = ''; return; }
+    if (!/^[A-Z]{3}$/.test(dest.code || '')) { box.innerHTML = ''; return; }
     const { dep, ret } = quickDates();
     const C = clim[dest.code];
-    const parts = [`${dest.city.replace(/\(.*\)/, '')} ${mmdd(dep)}~${mmdd(ret)}`];
+    const parts = [esc(`${dest.city.replace(/\(.*\)/, '')} ${mmdd(dep)}~${mmdd(ret)}`)];
+    const plain = [parts[0]];
     for (const ym of [...new Set([dep.slice(0, 7), ret.slice(0, 7)])]) {
       const m = Number(ym.slice(5)), cl = F.climateOf(dest, m), c = C?.months?.[m - 1];
-      parts.push(`${m}월 ${cl ? cl.label : ''}${c ? `${cl ? ', ' : ''}비 ${c.wet}일` : ''}`.trim());
-      for (const h of F.holidaysIn(ym).filter(h => h.to >= dep && h.from <= ret)) parts.push(`${h.name} ${mmdd(h.from)}${h.to !== h.from ? `~${mmdd(h.to)}` : ''}`);
-      if (F.PEAK[m]) parts.push(F.PEAK[m]);
+      const rain = c ? ` 비 ${c.wet}일` : '';
+      parts.push(cl ? `${m}월 <span class="clim-chip tone-${cl.tone}">${CLIM_ICON[cl.tone] || ''} ${esc(cl.label)}</span>${rain}` : `${m}월${rain}`);
+      plain.push(`${m}월 ${cl ? cl.label : ''}${rain}`);
+      for (const h of F.holidaysIn(ym).filter(h => h.to >= dep && h.from <= ret)) { const t = `${h.name} ${mmdd(h.from)}${h.to !== h.from ? `~${mmdd(h.to)}` : ''}`; parts.push(esc(t)); plain.push(t); }
+      if (F.PEAK[m]) { parts.push(esc(F.PEAK[m])); plain.push(F.PEAK[m]); }
     }
-    const line = [...new Set(parts)].join(' · ');
-    box.textContent = line; box.title = `${line}${C?.months ? ' (비 오는 날: Open-Meteo 최근 10년 평균)' : ''}`;
+    box.innerHTML = [...new Set(parts)].join(' · ');
+    box.title = `${[...new Set(plain)].join(' · ')}${C?.months ? ' (비 오는 날: Open-Meteo 최근 10년 평균)' : ''}`;
     if (!dest.clim && dest.lat == null && cfg.q.custom?.en) geocodeCustom();
     else if (dest.lat != null) loadClimate(dest);
+  }
+
+  // ───── [지금 확인] 한 번으로 프로모션·카드 모두 (항공권 검색 탭) ─────
+  function renderRefresh() {
+    const box = $('#refresh'); if (!box) return;
+    const C = currentDest().country;
+    const checked = data.promos.checked && data.promos.checked[C];
+    const n = data.loaded ? countsFor(C) : null;
+    box.innerHTML = `<button type="button" class="btn primary fl-refresh-btn" data-act="promo-refresh" ${ui.promoBusy ? 'disabled' : ''}>${ICON.refresh}${ui.promoBusy ? `${esc(C)} 확인 중… ${ui.promoBusy.sec}초 (보통 1~2분)` : `${esc(C)} 특가·카드 지금 확인`}</button>
+      <p class="hint">${checked ? `${esc(C)} 마지막 확인 ${esc(fmtUpdated(checked))}${n ? ` · 프로모션 ${n.promo}건 · ${esc(C)}에 쓸 수 있는 카드 할인 ${n.cardOk}건` : ''}` : `<b>${esc(C)}는 아직 확인 전이에요.</b> 한 번 누르면 프로모션·카드 탭이 모두 바뀌어요.`}</p>`;
+  }
+  // 다른 탭: 마지막 확인 시각 + 항공권 검색 탭으로
+  function checkedLine(C) {
+    const checked = data.promos.checked && data.promos.checked[C];
+    return `<p class="hint">${checked ? `${esc(C)} 마지막 확인 ${esc(fmtUpdated(checked))}` : `<b>${esc(C)}는 아직 확인 전이에요.</b>`} · 새로 확인은 <button type="button" class="link-btn" data-act="tab" data-v="price">항공권 검색 탭의 [지금 확인]</button>${ui.promoBusy ? ` · 지금 확인 중… ${ui.promoBusy.sec}초` : ''}</p>`;
   }
 
   function readForm() {
@@ -276,18 +295,24 @@
         ${fit === 'in' ? '<span class="fit in">내 여행 날짜 탑승 가능</span>' : fit === 'out' ? '<span class="fit out">내 여행 날짜는 탑승 기간 밖</span>' : ''}</div>
     </li>`;
   }
+  function promosFor(C) {
+    const rec = (data.recent && data.recent.cities) || {};
+    const order = [...new Set(F.DESTS.filter(d => d.country === C).flatMap(d => (rec[d.code] || []).map(r => r.code)))];
+    const all = (data.promos.items || []).filter(p => p.kind === 'airline' && F.isWantedPromo(p, {}) && isLive(p));
+    const rel = all.filter(p => !F.isPayBenefit(p) && ((p.countries || []).includes(C) || (p.allRoutes && !(p.countries || []).length && (p.airlines || []).some(a => order.includes(a)))));
+    return { order, rel, useful: rel.filter(p => p.official || hasFacts(groupFacts(p))) };
+  }
+  function countsFor(C) {
+    const c = cardsFor(C);
+    return { promo: promosFor(C).useful.length, cardOk: c.useful.filter(x => x.u.use === 'ok' || x.u.use === 'all').length };
+  }
   function renderPromo() {
     const box = $('#promo'); if (!box) return;
     if (!data.loaded) { box.innerHTML = '<div class="empty">자료를 불러오는 중…</div>'; return; }
     const dest = currentDest(), C = dest.country, trip = quickDates();
-    const rec = (data.recent && data.recent.cities) || {};
-    const serving = F.DESTS.filter(d => d.country === C).flatMap(d => (rec[d.code] || []).map(r => r.code));
-    const order = [...new Set(serving)];
-    const all = (data.promos.items || []).filter(p => p.kind === 'airline' && F.isWantedPromo(p, {}) && isLive(p));
-    // 이 나라 관련: 기사에 나라·도시가 나오거나, 이 나라를 운항하는 항공사의 '전 노선·국제선' 특가·공식 이벤트
-    const rel = all.filter(p => !F.isPayBenefit(p) && ((p.countries || []).includes(C) || (p.allRoutes && !(p.countries || []).length && (p.airlines || []).some(a => order.includes(a)))));
+    // 이 나라 관련: 기사에 나라·도시가 나오거나, 이 나라를 운항하는 항공사의 '전 노선·국제선' 특가
     // 불필요한 기사 숨김: 공식이 아니고 가격·할인율·코드·기간 중 하나도 없는 기사
-    const useful = rel.filter(p => p.official || hasFacts(groupFacts(p)));
+    const { order, rel, useful } = promosFor(C);
     const hidden = rel.length - useful.length;
     const fitRank = p => ({ in: 0, null: 1, out: 2 })[String(F.fitsTrip(groupFacts(p), trip.dep, trip.ret))];
     const sortList = l => l.sort((x, y) => fitRank(x) - fitRank(y) || (y.official ? 1 : 0) - (x.official ? 1 : 0) || (y.lastDate || y.date || '').localeCompare(x.lastDate || x.date || ''));
@@ -297,8 +322,8 @@
     box.innerHTML = `
       <section class="pr-head">
         <h2>${esc(C)} 항공권 프로모션 <small>${esc(C)} 운항 항공사 ${order.length}곳 기준 · 진행 중이거나 최근 3주</small></h2>
-        <div class="fl-actions"><button type="button" class="btn sm primary" data-act="promo-refresh" ${ui.promoBusy ? 'disabled' : ''}>${ICON.refresh}${ui.promoBusy ? `확인 중… ${ui.promoBusy.sec}초 (보통 1~2분)` : `${esc(C)} 지금 확인`}</button></div>
-        <p class="hint">${checked ? `${esc(C)} 마지막 확인 ${esc(fmtUpdated(checked))}` : `<b>${esc(C)}는 아직 확인 전이에요.</b> [지금 확인]을 눌러 주세요.`} · 나라는 항공권 검색 탭에서 고른 나라예요 · 내 여행 ${mmdd(trip.dep)}~${mmdd(trip.ret)}</p>
+        ${checkedLine(C)}
+        <p class="hint">나라·날짜는 항공권 검색 탭에서 고른 것 · 내 여행 ${mmdd(trip.dep)}~${mmdd(trip.ret)}</p>
       </section>
       ${groups.map(g => { const a = F.airline(g.code); return `<article class="pr-air">
           <header><b>${esc(a.name)}</b><span class="pr-how">${OFFICIAL_AIR.includes(g.code) ? '공식 홈페이지 + 뉴스' : '뉴스'}</span>${a.url ? `<a href="${a.url}" target="_blank" rel="noopener">홈페이지${ICON.ext}</a>` : ''}</header>
@@ -309,10 +334,7 @@
   }
 
   // ───── 카드 탭: 우리·현대·신한 할인 소식 + 항공사 공식 결제 혜택 ─────
-  function renderCards() {
-    const box = $('#cards'); if (!box) return;
-    if (!data.loaded) { box.innerHTML = '<div class="empty">자료를 불러오는 중…</div>'; return; }
-    const dest = currentDest(), C = dest.country;
+  function cardsFor(C) {
     const rec = (data.recent && data.recent.cities) || {};
     const serving = [...new Set(F.DESTS.filter(d => d.country === C).flatMap(d => (rec[d.code] || []).map(r => r.code)))];
     // 카드사 할인 + 항공사 공식 결제 혜택(간편결제 등)
@@ -326,6 +348,13 @@
     const items = raw.map(p => ({ p, f: facts(p), u: F.cardUse(p, C, serving) }))
       .filter(x => !(x.f.period && x.f.period.to < today)); // 결제 기간이 끝난 것
     const useful = items.filter(x => x.p.official || x.f.amount || x.f.pct || x.f.period);
+    return { items, useful };
+  }
+  function renderCards() {
+    const box = $('#cards'); if (!box) return;
+    if (!data.loaded) { box.innerHTML = '<div class="empty">자료를 불러오는 중…</div>'; return; }
+    const dest = currentDest(), C = dest.country;
+    const { items, useful } = cardsFor(C);
     const hidden = items.length - useful.length;
     const per = x => x ? `${x.from ? `${mmdd(x.from)}~` : '~'}${mmdd(x.to)}` : '';
     const who = p => p.kind === 'card' ? (p.cards || []).join('·') || '카드' : '간편결제';
@@ -348,8 +377,8 @@
     box.innerHTML = `
       <section class="pr-head">
         <h2>${esc(C)} 여행에 쓸 수 있는 카드 할인</h2>
-        <div class="fl-actions"><button type="button" class="btn sm primary" data-act="promo-refresh" ${ui.promoBusy ? 'disabled' : ''}>${ICON.refresh}${ui.promoBusy ? `확인 중… ${ui.promoBusy.sec}초 (보통 1~2분)` : `${esc(C)} 지금 확인`}</button></div>
-        <p class="hint">나라는 항공권 검색 탭에서 고른 나라 · 판단 기준은 기사·공지에 적힌 사용처(항공사·나라·여행 플랫폼) · 마지막 확인 ${esc(fmtUpdated(data.promos.updated))}</p>
+        ${checkedLine(C)}
+        <p class="hint">판단 기준은 기사·공지에 적힌 사용처(항공사·나라·여행 플랫폼)</p>
       </section>
       ${sec('✅ 이 여행에 사용 가능', `${esc(C)} 운항 항공사 결제 또는 ${esc(C)} 언급`, by('ok'))}
       ${sec('🌏 해외 항공권 전체', '국제선·해외 결제·여행 플랫폼', by('all'))}
@@ -398,15 +427,16 @@
   async function refreshPromos() {
     if (ui.promoBusy || needToken()) return;
     const before = data.promos.updated || '';
-    ui.promoBusy = { sec: 0 }; renderPromo(); renderCards();
+    ui.promoBusy = { sec: 0 }; renderRefresh(); renderPromo(); renderCards();
     try {
       const country = currentDest().country;
       const p = await runOnServer({ mode: 'promos', country }, 'data/promos.json', j => (j.updated || '') > before,
-        sec => { if (ui.promoBusy) { ui.promoBusy.sec = sec; const b = $('[data-act="promo-refresh"]'); if (b) b.textContent = `확인 중… ${sec}초 (보통 1~2분)`; } }, 360);
+        sec => { if (ui.promoBusy) { ui.promoBusy.sec = sec; const b = $('[data-act="promo-refresh"]'); if (b) b.textContent = `${country} 확인 중… ${sec}초 (보통 1~2분)`; } }, 360);
       data.promos = Object.assign({ items: [] }, p);
-      toast('프로모션을 새로 확인했어요');
+      const n = countsFor(country);
+      toast(`${country}: 프로모션 ${n.promo}건 · 쓸 수 있는 카드 할인 ${n.cardOk}건`);
     } catch (e) { toast(`확인 실패: ${e.message}`); }
-    ui.promoBusy = null; renderPromo(); renderCards();
+    ui.promoBusy = null; renderRefresh(); renderPromo(); renderCards();
   }
   async function geocodeCustom() {
     const c = cfg.q.custom; if (!c || !c.en || c.geoTried === c.en) return;
