@@ -8,9 +8,9 @@ on:
   workflow_dispatch:         # 앱의 "지금 갱신" 버튼이나 Actions 화면의 Run workflow로 바로 실행
     inputs:
       mode:
-        description: 'check = 평소 점검, test-notify = 휴대폰 알림 테스트만'
+        description: 'check = 평소 점검, test-notify = 휴대폰 알림 테스트만, probe = 항공사 사이트 접속 시험'
         type: choice
-        options: [check, test-notify]
+        options: [check, test-notify, probe]
         default: check
 
 permissions:
@@ -33,6 +33,7 @@ jobs:
         # 앱 주소는 셸에서 만듦 (예약 실행 때는 github.event.repository 값이 비어 있을 수 있음)
         run: |
           export APP_URL="https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}/"
+          if [ "${{ inputs.mode }}" = "probe" ]; then node scripts/probe-airlines.js; exit 0; fi
           node scripts/flight-check.js ${{ inputs.mode == 'test-notify' && '--test-notify' || '' }}
         env:
           TP_TOKEN: ${{ secrets.TP_TOKEN }}
