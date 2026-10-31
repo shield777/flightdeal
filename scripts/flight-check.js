@@ -1,17 +1,14 @@
 #!/usr/bin/env node
-/* 매일 항공권 점검 (GitHub Actions가 매일 아침 실행해요. 파이썬·설치 없이 Node만 씀)
-   1) data/watchlist.json 의 추적 노선을 월별로 가격 조회 → data/flight-results.json (가격 기록 누적)
-   2) 항공사 특가·카드 할인 뉴스 확인 → data/promos.json
-   3) 새 특가·카드 할인·가격 하락이 있으면 휴대폰으로 알림(ntfy)
+/* 항공권 검색·프로모션 확인 (GitHub Actions가 실행. 파이썬·설치 없이 Node만 씀)
+   매일 자동 실행은 없어요. 앱의 버튼을 누를 때만 돌아요.
+   --search  앱의 [검색]: 서울 출발 직항, 목적지·기간·박수로 달마다 기록된 최저가 → data/search.json
+   --promos  앱 프로모션 탭의 [지금 확인]: 항공사 공식 이벤트·특가 뉴스·카드 할인 → data/promos.json
 
    필요한 값(저장소 Settings → Secrets and variables → Actions):
-   TP_TOKEN      Travelpayouts API 토큰 (가격)            ← 없으면 가격 조회는 건너뜀
-   NTFY_TOPIC    ntfy 알림 주제 이름                       ← 없으면 알림 없이 기록만
+   TP_TOKEN  Travelpayouts API 토큰 (가격)
    NAVER_CLIENT_ID / NAVER_CLIENT_SECRET  (선택) 네이버 뉴스 검색. 없으면 구글 뉴스만 씀
 
-   직접 실행:  node scripts/flight-check.js            (실제 조회)
-              node scripts/flight-check.js --test-notify   (알림 테스트 1건만)
-              FLIGHT_MOCK=scripts/fixtures node scripts/flight-check.js   (인터넷 없이 시험) */
+   인터넷 없이 시험: FLIGHT_MOCK=폴더 node scripts/flight-check.js --promos */
 'use strict';
 const fs = require('fs');
 const path = require('path');
@@ -22,12 +19,11 @@ const ROOT = path.join(__dirname, '..');
 const DATA = path.join(ROOT, 'data');
 const P = {
   watch: path.join(DATA, 'watchlist.json'),
-  results: path.join(DATA, 'flight-results.json'),
   promos: path.join(DATA, 'promos.json'),
+  search: path.join(DATA, 'search.json'),
 };
 const ENV = process.env;
 const MOCK = ENV.FLIGHT_MOCK ? path.resolve(ENV.FLIGHT_MOCK) : '';
-const APP_URL = ENV.APP_URL || '';
 const NOW = new Date();
 const TODAY = new Date(NOW.getTime() + 9 * 3600e3).toISOString().slice(0, 10); // 한국 날짜
 const log = (...a) => console.log(...a);
@@ -55,7 +51,7 @@ async function get(url, opt = {}, kind = 'json') {
   return kind === 'json' ? null : '';
 }
 
-// ───── 1) 가격 ─────
+// ───── 가격 조회 (Travelpayouts) ─────
 async function fetchMonth(w, ym, settings) {
   const token = ENV.TP_TOKEN;
   if (!token && !MOCK) return { error: 'TP_TOKEN 없음' };
@@ -72,65 +68,7 @@ async function fetchMonth(w, ym, settings) {
   return { offers: F.normalizeOffers(j, 'tp') };
 }
 
-function pushHistory(hist, entry) {
-  const i = hist.findIndex(h => h.d === entry.d);
-  if (i >= 0) hist[i] = entry; else hist.push(entry);
-  while (hist.length > 400) hist.shift();
-}
-function avgOf(hist, days, field = 'min') {
-  const cut = F.addDays(TODAY, -days);
-  const v = hist.filter(h => h.d >= cut && h.d < TODAY && h[field] > 0).map(h => h[field]);
-  return v.length ? { avg: Math.round(v.reduce((a, b) => a + b, 0) / v.length), n: v.length } : { avg: 0, n: 0 };
-}
-
-async function checkPrices(watch, results, alerts) {
-  const settings = watch.settings || {};
-  const thisMonth = TODAY.slice(0, 7);
-  for (const w of watch.watches || []) {
-    if (w.paused) continue;
-    const key = F.routeKey(w);
-    const dest = F.findDest(w.dest) || { city: w.destName || w.dest, region: w.region || 'sea' };
-    const R = results.routes[key] = results.routes[key] || { origin: w.origin, dest: w.dest, minNights: w.minNights, maxNights: w.maxNights, direct: !!w.direct, months: {} };
-    log(`■ ${w.origin}→${w.dest} ${w.from}~${w.to} (${w.minNights}~${w.maxNights}박)`);
-    for (const ym of F.monthsBetween(w.from, w.to)) {
-      if (ym < thisMonth) continue; // 지난 달은 건너뜀
-      const r = await fetchMonth(w, ym, settings);
-      await sleep(MOCK ? 0 : 700);
-      const M = R.months[ym] = R.months[ym] || { history: [] };
-      M.checked = TODAY;
-      if (r.error) { M.error = r.error; log(`  ${ym}: ${r.error}`); continue; }
-      delete M.error;
-      const s = F.summarizeMonth(r.offers, { month: ym, minNights: w.minNights, maxNights: w.maxNights, direct: w.direct });
-      M.count = s.count; M.best = s.best; M.median = s.median; M.top = s.top;
-      if (!s.best) { log(`  ${ym}: 조건에 맞는 가격 없음 (전체 ${r.offers.length}건)`); continue; }
-      const before = avgOf(M.history, 30);
-      const allLow = M.history.length ? Math.min(...M.history.map(h => h.min).filter(Boolean)) : 0;
-      pushHistory(M.history, { d: TODAY, min: s.best.price, med: s.median });
-      M.avg30 = avgOf(M.history, 30).avg;
-      log(`  ${ym}: 최저 ${F.won(s.best.price)} (${s.best.dep.slice(5, 10)}~${s.best.ret.slice(5, 10)} ${s.best.airline}) · 보통 ${F.won(s.median)} · ${s.count}건`);
-
-      // 가격 알림: 목표가 이하 / 30일 평균보다 N% 이상 쌈 / 역대 최저 갱신
-      const drop = Number(settings.notifyDropPct) || 15;
-      const reasons = [];
-      if (w.targetPrice && s.best.price <= w.targetPrice) reasons.push(`목표가 ${F.won(w.targetPrice)} 이하`);
-      if (before.n >= 5 && s.best.price <= before.avg * (1 - drop / 100)) reasons.push(`30일 평균 ${F.won(before.avg)}보다 ${Math.round((1 - s.best.price / before.avg) * 100)}% 쌈`);
-      if (M.history.length >= 8 && allLow && s.best.price < allLow) reasons.push(`기록 최저(이전 ${F.won(allLow)})`);
-      const sig = `${ym}:${s.best.price}`;
-      if (reasons.length && M.alerted !== sig) {
-        M.alerted = sig;
-        const a = F.airline(s.best.airline).name;
-        alerts.push({
-          title: `${dest.city} ${Number(ym.slice(5))}월 ${F.won(s.best.price)}`,
-          body: `${reasons.join(' · ')}\n${s.best.dep.slice(5, 10)} → ${s.best.ret.slice(5, 10)} (${s.best.nights}박) ${a} 직항\n1인 왕복 기록 가격 · 수하물 포함 여부는 예약 화면에서 확인`,
-          tags: 'airplane,chart_with_downwards_trend',
-          click: APP_URL ? `${APP_URL}#r=${encodeURIComponent(key)}&m=${ym}` : s.best.link,
-        });
-      }
-    }
-  }
-}
-
-// ───── 2) 프로모션·카드 뉴스 ─────
+// ───── 프로모션·카드 뉴스 ─────
 function parseRSS(xml) {
   const items = [];
   const re = /<item>([\s\S]*?)<\/item>/g;
@@ -249,7 +187,7 @@ function groupNews(list) {
 
 function newsId(it) { return (it.link || it.title).replace(/[?#].*$/, '').slice(-120) + '|' + it.title.slice(0, 40); }
 
-async function checkPromos(watch, results, promos, alerts) {
+async function checkPromos(watch, promos) {
   const routes = (watch.watches || []).map(w => ({ key: F.routeKey(w), dest: w.dest }));
   const qs = buildQueries(watch);
   const before = (promos.items || []).flatMap(p => [p, ...(p.more || [])]).map(({ more, lastDate, lastFound, ...one }) => one);
@@ -280,14 +218,7 @@ async function checkPromos(watch, results, promos, alerts) {
       const c = F.classifyNews(it.title, it.desc, routes);
       if (!c) continue;
       seenTitles.add(tkey);
-      // 보통 가격과 비교: 연결된 노선의 월별 보통 가격 평균
-      let vs = null;
-      const r0 = c.routes.find(r => r.level !== 'weak');
-      if (c.price && r0 && results.routes[r0.key]) {
-        const meds = Object.values(results.routes[r0.key].months).map(m => m.median).filter(Boolean);
-        if (meds.length) vs = F.promoVsTypical(c.price, Math.round(meds.reduce((a, b) => a + b, 0) / meds.length));
-      }
-      const p = { id, kind: c.kind, title: it.title, desc: (it.desc || '').slice(0, 200), link: it.link, source: it.source, date: it.date, found: TODAY, cards: c.cards, airlines: c.airlines, countries: c.countries, allRoutes: c.allRoutes, routes: c.routes, price: c.price, vs, query: q };
+      const p = { id, kind: c.kind, title: it.title, desc: (it.desc || '').slice(0, 200), link: it.link, source: it.source, date: it.date, found: TODAY, cards: c.cards, airlines: c.airlines, countries: c.countries, allRoutes: c.allRoutes, routes: c.routes, price: c.price, query: q };
       known.set(id, p); fresh.push(p);
     }
   }
@@ -324,71 +255,49 @@ async function checkPromos(watch, results, promos, alerts) {
   const groups = groupNews([...known.values()].filter(p => p.found >= keep));
   promos.items = groups.sort((a, b) => b.lastDate.localeCompare(a.lastDate)).slice(0, 250);
   promos.updated = NOW.toISOString();
-  // 알림은 대표 기사가 새 기사인 묶음만 (이미 나온 소식의 다른 언론사 기사는 알리지 않음)
   const freshGroups = promos.items.filter(g => freshIds.has(g.id));
-  log(`■ 뉴스 ${qs.length}개 검색 → 새 기사 ${fresh.length}건 (새 소식 ${freshGroups.length}건, 전체 ${promos.items.length}묶음)`);
-
-  const firstRun = !(promos.runs > 0);
   promos.runs = (promos.runs || 0) + 1;
-  if (firstRun) { log('  (첫 실행이라 지금까지 쌓인 뉴스는 알림 없이 저장만 해요)'); return; }
-  // 알림 대상: 고른 나라(베트남·일본 등)·고른 LCC의 특가, 카드 할인. 같은 소식으로 이미 알린 묶음은 제외
-  const wanted = freshGroups.filter(g => F.isWantedPromo(g, watch.settings) && ![g, ...(g.more || [])].some(m => m.alerted));
-  for (const g of wanted) { g.alerted = true; for (const m of g.more || []) m.alerted = true; }
-  for (const p of wanted.slice(0, 6)) {
-    const air = (p.airlines.map(c => F.airline(c).name)[0]) || '항공 특가';
-    const where = (p.countries || []).filter(c => F.promoSettings(watch.settings).countries.includes(c)).join('·') || (p.allRoutes ? '국제선 전체' : '');
-    const tag = p.kind === 'card' ? `💳 ${p.cards.join('·')}` : `🏷️ ${air}${p.official ? ' 공식' : ''}${where ? ` · ${where}` : ''}`;
-    // 원문 제목·기간·출처만 (가격 계산·추정 없음)
-    const period = p.until ? `\n기간 ~${p.until.slice(5).replace('-', '/')}` : '';
-    const src = p.official ? '' : `\n${p.source || '뉴스'} 보도`;
-    alerts.push({ title: tag, body: `${p.title}${p.official && p.desc ? ` — ${p.desc.slice(0, 60)}` : ''}${period}${src}`, tags: p.kind === 'card' ? 'credit_card' : 'label', click: p.link });
-  }
-  if (wanted.length > 6) alerts.push({ title: `특가·할인 소식 ${wanted.length - 6}건 더`, body: '앱의 프로모션 목록에서 확인하세요', tags: 'label', click: APP_URL });
+  log(`■ 뉴스 ${qs.length}개 검색 → 새 기사 ${fresh.length}건 (새 소식 ${freshGroups.length}건, 전체 ${promos.items.length}묶음)`);
 }
 
-// ───── 3) 알림 (ntfy) ─────
-async function notify(alerts) {
-  const topic = ENV.NTFY_TOPIC;
-  if (!alerts.length) { log('■ 알림 없음'); return; }
-  if (!topic || MOCK) { log(`■ 알림 ${alerts.length}건 (NTFY_TOPIC 없음/시험 모드라 보내지 않음)`); alerts.forEach(a => log(`  · ${a.title} — ${a.body.split('\n')[0]}`)); return; }
-  const server = (ENV.NTFY_SERVER || 'https://ntfy.sh').replace(/\/$/, '');
-  for (const a of alerts.slice(0, 10)) {
-    try {
-      const res = await fetch(server, {
-        method: 'POST', headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ topic, title: a.title, message: a.body, tags: a.tags ? a.tags.split(',') : [], click: a.click || undefined, priority: 4 }),
-      });
-      log(`  알림 ${res.ok ? '보냄' : '실패 ' + res.status}: ${a.title}`);
-    } catch (e) { log(`  알림 실패: ${e.message}`); }
-    await sleep(300);
+// ───── 검색 (앱의 [검색] 버튼 → GitHub Actions → 이 함수) ─────
+// 입력: SEARCH_DEST(공항·도시 코드 3글자), SEARCH_FROM/TO(YYYY-MM), SEARCH_NIGHTS("3-5" 또는 "4-4"), SEARCH_ID(앱이 만든 번호)
+// 결과: data/search.json (마지막 검색 1건만 보관). 직항·서울 출발 고정, 기록된 가격 그대로 (추정 없음)
+async function search(watch) {
+  const dest = String(ENV.SEARCH_DEST || '').toUpperCase();
+  const from = String(ENV.SEARCH_FROM || ''), to = String(ENV.SEARCH_TO || '');
+  const [n1, n2] = String(ENV.SEARCH_NIGHTS || '').split('-').map(Number);
+  const id = String(ENV.SEARCH_ID || '').slice(0, 40);
+  const bad = !/^[A-Z]{3}$/.test(dest) ? '목적지 코드' : !/^\d{4}-\d{2}$/.test(from) || !/^\d{4}-\d{2}$/.test(to) ? '기간' : !(n1 >= 1 && n2 >= n1 && n2 <= 30) ? '박수' : '';
+  const out = { id, requested: NOW.toISOString(), origin: 'SEL', dest, from, to, minNights: n1, maxNights: n2, direct: true, months: {}, source: 'Travelpayouts(Aviasales)에 기록된 검색 가격' };
+  if (bad) { out.error = `입력값 오류: ${bad}`; writeJSON(P.search, out); log(out.error); return; }
+  if (!ENV.TP_TOKEN && !MOCK) { out.error = 'TP_TOKEN 없음 (SETUP.md 참고)'; writeJSON(P.search, out); log(out.error); return; }
+  const thisMonth = TODAY.slice(0, 7);
+  const months = F.monthsBetween(from, to).filter(m => m >= thisMonth).slice(0, 12);
+  const w = { origin: 'SEL', dest, direct: true };
+  log(`■ 검색 SEL→${dest} ${from}~${to} ${n1}~${n2}박 (${months.length}개월)`);
+  for (const ym of months) {
+    const r = await fetchMonth(w, ym, watch.settings || {});
+    await sleep(MOCK ? 0 : 500);
+    if (r.error) { out.months[ym] = { error: r.error }; log(`  ${ym}: ${r.error}`); continue; }
+    const sm = F.summarizeMonth(r.offers, { month: ym, minNights: n1, maxNights: n2, direct: true });
+    out.months[ym] = { count: sm.count, best: sm.best, top: sm.top };
+    log(`  ${ym}: ${sm.best ? `${F.won(sm.best.price)} ${sm.best.dep.slice(5, 10)}~${sm.best.ret.slice(5, 10)} ${sm.best.airline}` : '기록 없음'} (${sm.count}건)`);
   }
+  out.done = new Date().toISOString();
+  writeJSON(P.search, out);
 }
 
 (async function main() {
-  if (process.argv.includes('--test-notify')) {
-    await notify([{ title: '✈️ 알림 테스트', body: '항공권 최저가 알림이 잘 연결됐어요.', tags: 'airplane', click: APP_URL }]);
+  const watch = readJSON(P.watch, { settings: {}, watches: [] });
+  if (process.argv.includes('--search')) { await search(watch); return; }
+  if (process.argv.includes('--promos')) {
+    // 프로모션 확인 (앱의 [지금 확인] 버튼). 매일 자동 실행·알림은 껐어요
+    const promos = readJSON(P.promos, { items: [] });
+    promos.runs = Math.max(promos.runs || 0, 1); // 예전 '첫 실행' 처리 건너뜀
+    await checkPromos(watch, promos);
+    writeJSON(P.promos, promos);
     return;
   }
-  const watch = readJSON(P.watch, { settings: {}, watches: [] });
-  const results = readJSON(P.results, {});
-  results.routes = results.routes || {};
-  const promos = readJSON(P.promos, { items: [] });
-  const alerts = [];
-
-  // 추적에서 빠진 노선은 결과에서도 정리 (기록은 30일 보관 후 삭제)
-  const live = new Set((watch.watches || []).map(F.routeKey));
-  for (const k of Object.keys(results.routes)) {
-    if (live.has(k)) delete results.routes[k].removed;
-    else { results.routes[k].removed = results.routes[k].removed || TODAY; if (F.addDays(results.routes[k].removed, 30) < TODAY) delete results.routes[k]; }
-  }
-
-  if (ENV.TP_TOKEN || MOCK) await checkPrices(watch, results, alerts);
-  else log('■ TP_TOKEN이 없어 가격 조회는 건너뛰어요 (SETUP.md 참고)');
-  results.updated = NOW.toISOString();
-  results.source = 'Travelpayouts(Aviasales) 캐시 데이터';
-
-  await checkPromos(watch, results, promos, alerts);
-  writeJSON(P.results, results);
-  writeJSON(P.promos, promos);
-  await notify(alerts);
+  log('사용법: node scripts/flight-check.js --search | --promos');
 })().catch(e => { console.error(e); process.exit(1); });
