@@ -137,10 +137,14 @@ function parseRSS(xml) {
   const tag = (s, t) => { const x = s.match(new RegExp(`<${t}[^>]*>([\\s\\S]*?)</${t}>`)); return x ? x[1].replace(/^<!\[CDATA\[|\]\]>$/g, '') : ''; };
   while ((m = re.exec(xml))) {
     const s = m[1];
-    let title = F.stripTags(tag(s, 'title'));
-    const source = F.stripTags(tag(s, 'source'));
+    // 구글 뉴스는 본문 HTML을 &lt;a ...&gt; 처럼 한 번 더 감싸서 줌 → 두 번 벗겨야 글자만 남음
+    const clean = t => F.stripTags(F.stripTags(tag(s, t)));
+    let title = clean('title');
+    const source = clean('source');
     if (source && title.endsWith(` - ${source}`)) title = title.slice(0, -(source.length + 3));
-    items.push({ title, link: F.stripTags(tag(s, 'link')), date: new Date(tag(s, 'pubDate')).toISOString(), desc: F.stripTags(tag(s, 'description')), source });
+    const d = new Date(tag(s, 'pubDate'));
+    if (isNaN(d)) continue; // 날짜가 깨진 기사 1건 때문에 검색 전체를 버리지 않도록 건너뜀
+    items.push({ title, link: clean('link'), date: d.toISOString(), desc: clean('description'), source });
   }
   return items;
 }
@@ -154,7 +158,7 @@ async function newsNaver(q) {
   const j = await get(`https://openapi.naver.com/v1/search/news.json?query=${encodeURIComponent(q)}&display=30&sort=date`, {
     headers: { 'X-Naver-Client-Id': ENV.NAVER_CLIENT_ID, 'X-Naver-Client-Secret': ENV.NAVER_CLIENT_SECRET },
   });
-  return ((j && j.items) || []).map(it => ({ title: F.stripTags(it.title), link: it.originallink || it.link, date: new Date(it.pubDate).toISOString(), desc: F.stripTags(it.description), source: '네이버 뉴스' }));
+  return ((j && j.items) || []).filter(it => !isNaN(new Date(it.pubDate))).map(it => ({ title: F.stripTags(it.title), link: it.originallink || it.link, date: new Date(it.pubDate).toISOString(), desc: F.stripTags(it.description), source: '네이버 뉴스' }));
 }
 
 function buildQueries(watch) {
