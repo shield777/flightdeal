@@ -117,6 +117,7 @@
           <div class="grow brand">최저가 항공권</div>
           <button class="btn icon sm" data-act="settings" aria-label="설정">${ICON.gear}</button>
         </header>
+        ${ui.tab === 'price' ? '<div class="fl-season" id="info"></div>' : ''}
         <nav class="fl-tabs" role="tablist">
           <button role="tab" aria-selected="${ui.tab === 'price'}" data-act="tab" data-v="price">항공권 검색</button>
           <button role="tab" aria-selected="${ui.tab === 'promo'}" data-act="tab" data-v="promo">프로모션</button>
@@ -140,8 +141,7 @@
           <p class="hint fl-fixed">출발 서울(인천·김포) · 직항</p>
           <div id="quick">${quickButtons()}</div>
         </form>
-
-        <div id="info"></div>`}
+`}
       </div>`;
     if (ui.tab === 'promo') renderPromo(); else if (ui.tab === 'card') renderCards(); else renderInfo();
   }
@@ -176,24 +176,22 @@
       <p class="hint">국적 항공사${F.airlinesFor(dest.country) !== F.KOREAN_AIRLINES ? `와 ${esc(dest.country)} 항공사` : ''}를 모아 둔 버튼이에요. 이 노선을 운항하는지는 각 사이트에서 확인하세요. 앱이 안 열리면 버튼을 길게 눌러 '앱에서 열기'가 보이는지 확인해 보세요.</p>`;
   }
 
-  // 고른 날짜의 여행 시기 정보 (확인된 자료만: 목적지 기후표, Open-Meteo 관측 강수량, 공휴일·방학)
+  // 고른 날짜의 여행 시기 정보 한 줄 (확인된 자료만: 목적지 기후표, Open-Meteo 관측 비 오는 날, 겹치는 공휴일·방학)
   function renderInfo() {
     const box = $('#info'); if (!box) return;
     const dest = currentDest();
-    if (!/^[A-Z]{3}$/.test(dest.code || '')) { box.innerHTML = ''; return; }
+    if (!/^[A-Z]{3}$/.test(dest.code || '')) { box.textContent = ''; return; }
     const { dep, ret } = quickDates();
-    const months = [...new Set([dep.slice(0, 7), ret.slice(0, 7)])];
     const C = clim[dest.code];
-    const rows = months.map(ym => {
-      const m = Number(ym.slice(5));
-      const cl = F.climateOf(dest, m), c = C?.months?.[m - 1], peak = F.PEAK[m];
-      const hol = F.holidaysIn(ym).filter(h => h.to >= dep && h.from <= ret);
-      return `<li><b>${m}월</b>${cl ? ` <span class="clim ${cl.tone}">${esc(cl.label)}</span>` : ''}
-        ${cl?.note ? `<div>${esc(cl.note)}</div>` : ''}
-        ${c ? `<div class="muted">강수 ${c.rain}mm · 비 ${c.wet}일 · 최고 ${c.tmax}℃ (최근 10년 평균)</div>` : C?.loading ? '<div class="muted">강수량 불러오는 중…</div>' : ''}
-        ${hol.length || peak ? `<div class="fl-notes">${hol.map(h => `<span>${esc(h.name)} ${fmtDay(h.from)}${h.to !== h.from ? `~${fmtDay(h.to)}` : ''}</span>`).join('')}${peak ? `<span>${esc(peak)}</span>` : ''}</div>` : ''}</li>`;
-    }).join('');
-    box.innerHTML = `<section class="fl-info"><h2>${esc(dest.city)} 여행 시기 정보 <small>${fmtDay(dep)} ~ ${fmtDay(ret)}</small></h2><ul>${rows}</ul></section>`;
+    const parts = [`${dest.city.replace(/\(.*\)/, '')} ${mmdd(dep)}~${mmdd(ret)}`];
+    for (const ym of [...new Set([dep.slice(0, 7), ret.slice(0, 7)])]) {
+      const m = Number(ym.slice(5)), cl = F.climateOf(dest, m), c = C?.months?.[m - 1];
+      parts.push(`${m}월 ${cl ? cl.label : ''}${c ? `${cl ? ', ' : ''}비 ${c.wet}일` : ''}`.trim());
+      for (const h of F.holidaysIn(ym).filter(h => h.to >= dep && h.from <= ret)) parts.push(`${h.name} ${mmdd(h.from)}${h.to !== h.from ? `~${mmdd(h.to)}` : ''}`);
+      if (F.PEAK[m]) parts.push(F.PEAK[m]);
+    }
+    const line = [...new Set(parts)].join(' · ');
+    box.textContent = line; box.title = `${line}${C?.months ? ' (비 오는 날: Open-Meteo 최근 10년 평균)' : ''}`;
     if (!dest.clim && dest.lat == null && cfg.q.custom?.en) geocodeCustom();
     else if (dest.lat != null) loadClimate(dest);
   }
