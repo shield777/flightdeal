@@ -72,6 +72,33 @@ async function newsGoogle(q) {
   const xml = await get(url, { mockName: `news-${q.replace(/\s+/g, '_')}.xml` }, 'text');
   try { return xml ? parseRSS(xml) : []; } catch { return []; }
 }
+// Bing 뉴스 RSS: 기사 첫 문단(2~3문장)을 함께 줌 → 핵심 문장 요약에 씀. 링크는 원문 주소로 바꿈
+async function newsBing(q) {
+  if (MOCK) return [];
+  const xml = await get(`https://www.bing.com/news/search?q=${encodeURIComponent(q)}&format=rss&setlang=ko-KR&cc=KR`, {}, 'text');
+  if (!xml) return [];
+  const out = [];
+  try {
+    for (const m of xml.matchAll(/<item>([\s\S]*?)<\/item>/g)) {
+      const x = m[1], tag = t => { const r = x.match(new RegExp(`<${t}[^>]*>([\\s\\S]*?)</${t}>`)); return r ? r[1].replace(/^<!\[CDATA\[|\]\]>$/g, '') : ''; };
+      const d = new Date(tag('pubDate')); if (isNaN(d)) continue;
+      let link = F.stripTags(tag('link')).replace(/&amp;/g, '&');
+      const real = (link.match(/[?&]url=([^&]+)/) || [])[1];
+      if (real) { try { link = decodeURIComponent(real); } catch { /* 그대로 */ } }
+      out.push({ title: F.stripTags(F.stripTags(tag('title'))), link, date: d.toISOString(), desc: F.stripTags(F.stripTags(tag('description'))), source: F.stripTags(tag('News:Source')) || 'Bing 뉴스' });
+    }
+  } catch { /* 형식이 바뀌면 건너뜀 */ }
+  return out;
+}
+// 기사 첫 문단 → 핵심 문장 최대 3개 (원문 문장 그대로, 기자 이름·언론사 머리말만 뺌). 숫자·기간·예약·탑승이 들어간 문장을 먼저
+function leadSummary(desc) {
+  const t = String(desc || '').replace(/^\s*[\[(][^\])]{2,30}(?:기자|=)[^\])]*[\])]\s*/, '').replace(/\s*\.\.\.$|…$/, '').trim();
+  if (t.length < 20) return [];
+  const sents = t.split(/(?<=다\.|요\.|\.)\s+|(?<=다\.)(?=\S)/).map(x => x.trim()).filter(x => x.length >= 12).map(x => x.length > 130 ? `${x.slice(0, 128)}…` : /[.다요]$/.test(x) ? x : `${x}…`); // 잘린 문장은 … 표시
+  const score = x => (/\d/.test(x) ? 2 : 0) + (/원|%|할인|특가|예약|탑승|기간|노선|취항|코드/.test(x) ? 1 : 0);
+  const keep = sents.map((x, i) => ({ x, i, s: score(x) })).sort((a, b) => b.s - a.s || a.i - b.i).slice(0, 3).sort((a, b) => a.i - b.i).map(o => o.x);
+  return keep;
+}
 async function newsNaver(q) {
   if (!ENV.NAVER_CLIENT_ID || !ENV.NAVER_CLIENT_SECRET || MOCK) return [];
   const j = await get(`https://openapi.naver.com/v1/search/news.json?query=${encodeURIComponent(q)}&display=30&sort=date`, {
@@ -194,7 +221,7 @@ async function checkPromos(watch, promos, country) {
   const cutoff = new Date(NOW.getTime() - 10 * 864e5).toISOString();
   const fresh = [];
   for (const q of qs) {
-    const items = [...await newsGoogle(q), ...await newsNaver(q)];
+    const items = [...await newsBing(q), ...await newsGoogle(q), ...await newsNaver(q)];
     await sleep(MOCK ? 0 : 400);
     for (const it of items) {
       if (!it.title || it.date < cutoff) continue;
@@ -204,7 +231,8 @@ async function checkPromos(watch, promos, country) {
       const c = F.classifyNews(it.title, it.desc, routes);
       if (!c) continue;
       seenTitles.add(tkey);
-      const p = { id, kind: c.kind, title: it.title, desc: (it.desc || '').slice(0, 200), link: it.link, source: it.source, date: it.date, found: TODAY, cards: c.cards, airlines: c.airlines, countries: c.countries, allRoutes: c.allRoutes, routes: c.routes, price: c.price, query: q };
+      const sum = leadSummary(it.desc);
+      const p = { id, kind: c.kind, title: it.title, desc: (it.desc || '').slice(0, 400), ...(sum.length ? { summary: sum } : {}), link: it.link, source: it.source, date: it.date, found: TODAY, cards: c.cards, airlines: c.airlines, countries: c.countries, allRoutes: c.allRoutes, routes: c.routes, price: c.price, query: q };
       known.set(id, p); fresh.push(p);
     }
   }
