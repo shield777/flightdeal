@@ -179,3 +179,8 @@ button.fl-go { width: 100%; }
 .fl-quick-go.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .fl-air-go { display: flex; flex-wrap: wrap; gap: 6px; }
 .fl-cards ul.news { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+
+/* 여행 시기 한 줄 (타이틀 아래) */
+.fl-season { font-size: 13px; color: var(--muted); margin: -4px 2px 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.fl-more-air summary { font-size: 13px; color: var(--muted); cursor: pointer; margin: 2px 0 6px; }

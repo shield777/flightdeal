@@ -43,7 +43,7 @@
   const save = () => { try { localStorage.setItem(KEY, JSON.stringify(cfg)); } catch { /* 저장 불가(사생활 보호 모드) */ } };
 
   // ───── 자료 불러오기 ─────
-  const data = { promos: { items: [] }, watch: { settings: {}, watches: [] }, loaded: false, error: '' };
+  const data = { routes: null, promos: { items: [] }, watch: { settings: {}, watches: [] }, loaded: false, error: '' };
   const clim = {}; // 목적지별 강수량 통계
 
   function b64utf8(b64) { const bin = atob(b64.replace(/\n/g, '')); return new TextDecoder().decode(Uint8Array.from(bin, c => c.charCodeAt(0))); }
@@ -69,7 +69,8 @@
     return null;
   }
   async function loadAll() {
-    const [p, w] = await Promise.all([fetchData('data/promos.json'), fetchData('data/watchlist.json')]);
+    const [p, w, rt] = await Promise.all([fetchData('data/promos.json'), fetchData('data/watchlist.json'), fetchData('data/airlines-by-city.json')]);
+    data.routes = rt || null;
     if (p) data.promos = Object.assign({ items: [] }, p);
     if (w) data.watch = Object.assign({ settings: {}, watches: [] }, w);
     data.loaded = true;
@@ -117,6 +118,7 @@
           <div class="grow brand">최저가 항공권</div>
           <button class="btn icon sm" data-act="settings" aria-label="설정">${ICON.gear}</button>
         </header>
+        ${ui.tab === 'price' ? '<div class="fl-season" id="info"></div>' : ''}
         <nav class="fl-tabs" role="tablist">
           <button role="tab" aria-selected="${ui.tab === 'price'}" data-act="tab" data-v="price">항공권 검색</button>
           <button role="tab" aria-selected="${ui.tab === 'promo'}" data-act="tab" data-v="promo">프로모션</button>
@@ -140,8 +142,7 @@
           <p class="hint fl-fixed">출발 서울(인천·김포) · 직항</p>
           <div id="quick">${quickButtons()}</div>
         </form>
-
-        <div id="info"></div>`}
+`}
       </div>`;
     if (ui.tab === 'promo') renderPromo(); else if (ui.tab === 'card') renderCards(); else renderInfo();
   }
@@ -171,29 +172,46 @@
         <a class="btn" href="${F.ttang(dest, q.adults).city}" target="_blank" rel="noopener">${esc(dest.city.replace(/\(.*\)/, ''))} 땡처리</a>
         <a class="btn" href="${F.ttang(dest, q.adults).today}" target="_blank" rel="noopener">오늘 오픈 땡처리</a>
       </div>
-      <div class="fl-sub"><b>항공사</b> <small>앱이 깔려 있고 항공사가 지원하면 앱으로, 아니면 홈페이지로 열려요 · 날짜는 다시 골라 주세요</small></div>
-      <div class="fl-air-go">${F.airlinesFor(dest.country).map(c => { const a = F.airline(c); return a.url ? `<a class="btn sm" href="${a.url}" target="_blank" rel="noopener">${esc(a.name)}</a>` : ''; }).join('')}</div>
-      <p class="hint">국적 항공사${F.airlinesFor(dest.country) !== F.KOREAN_AIRLINES ? `와 ${esc(dest.country)} 항공사` : ''}를 모아 둔 버튼이에요. 이 노선을 운항하는지는 각 사이트에서 확인하세요. 앱이 안 열리면 버튼을 길게 눌러 '앱에서 열기'가 보이는지 확인해 보세요.</p>`;
+      ${airlineBox(dest)}`;
   }
 
-  // 고른 날짜의 여행 시기 정보 (확인된 자료만: 목적지 기후표, Open-Meteo 관측 강수량, 공휴일·방학)
+  // 항공사 바로가기: 최근 가격 기록으로 확인된 '서울 출발 직항' 항공사 (data/airlines-by-city.json) + 그 외 국적 항공사(미확인, 접어 둠)
+  function airlineBtn(code, name) {
+    const known = F.AIRLINES[code], a = F.airline(code), label = known ? a.name : (name || code);
+    const href = a.url || `https://www.google.com/search?q=${encodeURIComponent(`${label} 항공 홈페이지`)}`; // 홈페이지 주소를 모르는 항공사는 검색으로
+    return `<a class="btn sm" href="${href}" target="_blank" rel="noopener">${esc(label)}</a>`;
+  }
+  function airlineBox(dest) {
+    const R = data.routes, list = R && R.cities ? R.cities[dest.code] : null;
+    const head = `<div class="fl-sub"><b>항공사</b> <small>앱이 깔려 있고 항공사가 지원하면 앱으로, 아니면 홈페이지로 열려요 · 날짜는 다시 골라 주세요</small></div>`;
+    if (!list) {
+      return `${head}<p class="hint">${R ? '이 도시는 직항 항공사 자료가 없어요.' : '도시별 직항 항공사 목록이 아직 없어요. ⚙ 설정 → [항공사 목록 새로 만들기]를 눌러 주세요.'}</p>
+        <details class="fl-more-air"><summary>국적 항공사 전체 (운항 여부 미확인)</summary><div class="fl-air-go">${F.KOREAN_AIRLINES.map(c => airlineBtn(c)).join('')}</div></details>`;
+    }
+    const ok = list.map(x => x.code);
+    const rest = F.KOREAN_AIRLINES.filter(c => !ok.includes(c));
+    return `${head}
+      ${list.length ? `<div class="fl-air-go">${list.map(x => airlineBtn(x.code, x.name)).join('')}</div>` : '<p class="muted">최근 기록에서 확인된 직항 항공사가 없어요.</p>'}
+      <p class="hint">서울 → ${esc(dest.city.replace(/\(.*\)/, ''))} 직항 가격이 최근 기록된 항공사예요 (${esc(fmtUpdated(R.updated))} 기준, 앞으로 6개월). 가격 기록이 없으면 빠질 수 있어요.</p>
+      ${rest.length ? `<details class="fl-more-air"><summary>그 외 국적 항공사 ${rest.length}곳 (이 노선 운항 여부 미확인)</summary><div class="fl-air-go">${rest.map(c => airlineBtn(c)).join('')}</div></details>` : ''}`;
+  }
+
+  // 고른 날짜의 여행 시기 정보 한 줄 (확인된 자료만: 목적지 기후표, Open-Meteo 관측 비 오는 날, 겹치는 공휴일·방학)
   function renderInfo() {
     const box = $('#info'); if (!box) return;
     const dest = currentDest();
-    if (!/^[A-Z]{3}$/.test(dest.code || '')) { box.innerHTML = ''; return; }
+    if (!/^[A-Z]{3}$/.test(dest.code || '')) { box.textContent = ''; return; }
     const { dep, ret } = quickDates();
-    const months = [...new Set([dep.slice(0, 7), ret.slice(0, 7)])];
     const C = clim[dest.code];
-    const rows = months.map(ym => {
-      const m = Number(ym.slice(5));
-      const cl = F.climateOf(dest, m), c = C?.months?.[m - 1], peak = F.PEAK[m];
-      const hol = F.holidaysIn(ym).filter(h => h.to >= dep && h.from <= ret);
-      return `<li><b>${m}월</b>${cl ? ` <span class="clim ${cl.tone}">${esc(cl.label)}</span>` : ''}
-        ${cl?.note ? `<div>${esc(cl.note)}</div>` : ''}
-        ${c ? `<div class="muted">강수 ${c.rain}mm · 비 ${c.wet}일 · 최고 ${c.tmax}℃ (최근 10년 평균)</div>` : C?.loading ? '<div class="muted">강수량 불러오는 중…</div>' : ''}
-        ${hol.length || peak ? `<div class="fl-notes">${hol.map(h => `<span>${esc(h.name)} ${fmtDay(h.from)}${h.to !== h.from ? `~${fmtDay(h.to)}` : ''}</span>`).join('')}${peak ? `<span>${esc(peak)}</span>` : ''}</div>` : ''}</li>`;
-    }).join('');
-    box.innerHTML = `<section class="fl-info"><h2>${esc(dest.city)} 여행 시기 정보 <small>${fmtDay(dep)} ~ ${fmtDay(ret)}</small></h2><ul>${rows}</ul></section>`;
+    const parts = [`${dest.city.replace(/\(.*\)/, '')} ${mmdd(dep)}~${mmdd(ret)}`];
+    for (const ym of [...new Set([dep.slice(0, 7), ret.slice(0, 7)])]) {
+      const m = Number(ym.slice(5)), cl = F.climateOf(dest, m), c = C?.months?.[m - 1];
+      parts.push(`${m}월 ${cl ? cl.label : ''}${c ? `${cl ? ', ' : ''}비 ${c.wet}일` : ''}`.trim());
+      for (const h of F.holidaysIn(ym).filter(h => h.to >= dep && h.from <= ret)) parts.push(`${h.name} ${mmdd(h.from)}${h.to !== h.from ? `~${mmdd(h.to)}` : ''}`);
+      if (F.PEAK[m]) parts.push(F.PEAK[m]);
+    }
+    const line = [...new Set(parts)].join(' · ');
+    box.textContent = line; box.title = `${line}${C?.months ? ' (비 오는 날: Open-Meteo 최근 10년 평균)' : ''}`;
     if (!dest.clim && dest.lat == null && cfg.q.custom?.en) geocodeCustom();
     else if (dest.lat != null) loadClimate(dest);
   }
@@ -381,6 +399,10 @@
         </div>
       </details>
 
+      <h3 class="fl-h3">도시별 직항 항공사 목록</h3>
+      <p class="hint">마지막으로 만든 날: ${esc(data.routes ? fmtUpdated(data.routes.updated) : '없음')} · 노선이 바뀌었을 때 가끔 눌러 주세요 (2~3분)</p>
+      <button type="button" class="btn sm" data-routes-refresh="1">${ICON.refresh}항공사 목록 새로 만들기</button>
+
       <h3 class="fl-h3">프로모션 범위 <small>(프로모션 탭에 적용)</small></h3>
       ${(() => {
         const ps = F.promoSettings(data.watch.settings);
@@ -394,6 +416,17 @@
       `<button type="button" class="btn" data-close="1">닫기</button><button type="submit" class="btn primary">저장</button>`,
       (root, close) => {
         root.addEventListener('click', async e => {
+          const rb = e.target.closest('[data-routes-refresh]');
+          if (rb) {
+            if (needToken()) return;
+            const before = data.routes?.updated || '';
+            rb.disabled = true;
+            try {
+              const r = await runOnServer({ mode: 'routes' }, 'data/airlines-by-city.json', j => (j.updated || '') > before, sec => { rb.textContent = `만드는 중… ${sec}초 (2~3분)`; }, 420);
+              data.routes = r; toast('항공사 목록을 새로 만들었어요'); close(); render();
+            } catch (err) { toast(`실패: ${err.message}`); rb.disabled = false; rb.textContent = '항공사 목록 새로 만들기'; }
+            return;
+          }
           if (e.target.closest('[data-save-scope]')) {
             const countries = [...root.querySelectorAll('input[name=p-country]:checked')].map(i => i.value);
             const airlines = [...root.querySelectorAll('input[name=p-air]:checked')].map(i => F.airline(i.value).name);
