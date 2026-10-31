@@ -141,8 +141,7 @@
           <div id="quick">${quickButtons()}</div>
         </form>
 
-        <div id="info"></div>
-        ${tipsSection()}`}
+        <div id="info"></div>`}
       </div>`;
     if (ui.tab === 'promo') renderPromo(); else if (ui.tab === 'card') renderCards(); else renderInfo();
   }
@@ -305,20 +304,6 @@
       }).join('')}</div>
     </section>`;
   }
-  function tipsSection() {
-    return `<section class="fl-tips">
-      <h2>결제 전 체크</h2>
-      <ol>
-        <li><b>최종 총액으로 비교</b> — 사이트마다 수하물·좌석 지정·결제 수수료 포함 여부가 달라요. 결제 직전 총액으로 비교하세요.</li>
-        <li><b>항공사 직판도 확인</b> — 여행사·해외 판매처는 변경·환불·결항 때 판매처를 거쳐야 해요. 직판과 가격 차이를 보고 고르세요.</li>
-        <li><b>해외 사이트는 현지 통화·USD로 결제</b> — 원화 결제(DCC)는 수수료가 이중으로 붙어요.</li>
-        <li><b>인원</b> — ${cfg.q.adults}명을 한 번에 검색하면 싼 좌석이 모자라 더 비싸게 나올 수 있어요. 1명씩 나눠 예약할 수 있지만 좌석이 떨어질 수 있어요. 국제선은 만 12세부터 성인 운임.</li>
-        <li><b>성수기·연휴 매진</b> — 여행사 블록좌석을 확인: ${F.AGENCIES.slice(0, 4).map(a => `<a href="${a.url}" target="_blank" rel="noopener">${esc(a.name)}</a>`).join(' · ')}. 환불·변경 조건은 결제 전에 꼭 확인.</li>
-        <li><b>특가 운임</b> — 환불·변경·수하물 조건을 예약 화면에서 꼭 확인하세요.</li>
-      </ol>
-    </section>`;
-  }
-
   // ───── 동작 ─────
   async function updateWatchFile(mutator) {
     const g = cfg.gh;
