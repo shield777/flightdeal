@@ -31,6 +31,8 @@ jobs:
       - name: 시험
         if: ${{ inputs.mode == 'probe' }}
         run: node scripts/probe-routes.js
+        env:
+          TP_TOKEN: ${{ secrets.TP_TOKEN }}
       - name: 프로모션 확인
         if: ${{ inputs.mode == 'promos' }}
         run: |
