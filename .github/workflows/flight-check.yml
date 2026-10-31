@@ -25,18 +25,20 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
-          node-version: 20
+          node-version: 22
       - name: 가격·프로모션 확인
-        run: node scripts/flight-check.js ${{ inputs.mode == 'test-notify' && '--test-notify' || '' }}
+        # 앱 주소는 셸에서 만듦 (예약 실행 때는 github.event.repository 값이 비어 있을 수 있음)
+        run: |
+          export APP_URL="https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}/"
+          node scripts/flight-check.js ${{ inputs.mode == 'test-notify' && '--test-notify' || '' }}
         env:
           TP_TOKEN: ${{ secrets.TP_TOKEN }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
           NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
-          APP_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
       - name: 결과 저장
         run: |
           git config user.name "github-actions[bot]"
