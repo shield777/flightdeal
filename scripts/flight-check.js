@@ -174,13 +174,85 @@ function buildQueries(watch) {
   qs.add('항공권 카드 할인 트립닷컴');
   return [...qs];
 }
+// ───── 같은 소식 묶기 ─────
+// 언론사만 다른 같은 기사를 1건으로 합쳐요. 묶인 기사는 대표 기사의 more 에 들어가요.
+//  · 같은 항공사(또는 같은 카드사)의 소식이 7일 안에 나오면 같은 소식 (같은 특가 기사가 며칠에 걸쳐 나옴)
+//    단, 둘 다 가격이 있는데 가격이 다르거나, 새 기사에만 내 노선이 나오면 다른 특가로 봄
+//  · 항공사·카드사 이름이 없는 기사는 제목 단어가 절반 이상 겹치면 같은 소식
+const STOP = new Set(['특가', '할인', '항공권', '프로모션', '진행', '이벤트', '판매', '최대', '항공', '여행']);
+const words = t => new Set(t.replace(/[^\p{L}\p{N}%]+/gu, ' ').split(' ').filter(w => w.length >= 2 && !STOP.has(w)));
+const entityOf = p => p.kind === 'card' ? `card:${[...(p.cards || [])].sort().join('/')}` : (p.airlines || []).length ? `air:${p.airlines[0]}` : '';
+const LEVEL = { strong: 3, medium: 2, weak: 1 };
+function sameNews(g, p) {
+  if (g.kind !== p.kind) return false;
+  const near = g.members.some(m => Math.abs(new Date(m.date) - new Date(p.date)) <= 7 * 864e5);
+  if (!near) return false;
+  const e = entityOf(p);
+  if (e) {
+    if (e !== g.entity) return false;
+    const gp = g.members.find(m => m.price);
+    if (p.price && gp && p.price.amount !== gp.price.amount) return false;
+    // 내 노선(나트랑 등)이 잡힌 새 기사가, 노선 언급 없는 기존 소식 밑에 묻혀 알림이 빠지지 않도록
+    const gr = new Set(g.members.flatMap(m => (m.routes || []).filter(r => r.level !== 'weak').map(r => r.key)));
+    return (p.routes || []).filter(r => r.level !== 'weak').every(r => gr.has(r.key));
+  }
+  if (g.entity) return false;
+  const a = words(p.title), b = g.words;
+  const common = [...a].filter(w => b.has(w)).length;
+  return common / Math.max(1, Math.min(a.size, b.size)) >= 0.5;
+}
+function groupNews(list) {
+  // 묶음을 풀어서 기사 1건씩으로 (같은 기사가 두 번 들어가지 않게 id로 정리)
+  const byId = new Map();
+  for (const p of list) for (const m of [p, ...(p.more || [])]) { const { more, lastDate, lastFound, ...one } = m; byId.set(one.id, one); }
+  const flat = [...byId.values()];
+  // 내 노선이 나오는 기사를 먼저 묶음 기준으로 삼고, 노선 언급 없는 기사는 거기에 붙임
+  const routed = m => (m.routes || []).some(r => r.level !== 'weak') ? 0 : 1;
+  flat.sort((a, b) => routed(a) - routed(b) || a.date.localeCompare(b.date));
+  const groups = [];
+  for (const p of flat) {
+    const g = groups.find(x => sameNews(x, p));
+    if (g) { g.members.push(p); for (const w of words(p.title)) g.words.add(w); }
+    else groups.push({ kind: p.kind, entity: entityOf(p), words: words(p.title), members: [p] });
+  }
+  return groups.map(g => {
+    // 대표 기사: 노선이 잡힌 것 > 가격이 있는 것 > 먼저 나온 것
+    const score = m => ((m.routes || []).some(r => r.level !== 'weak') ? 2 : 0) + (m.price ? 1 : 0);
+    const lead = g.members.reduce((best, m) => score(m) > score(best) ? m : best);
+    const routes = new Map();
+    for (const m of g.members) for (const r of m.routes || []) if (!routes.has(r.key) || LEVEL[r.level] > LEVEL[routes.get(r.key).level]) routes.set(r.key, r);
+    const out = {
+      ...lead,
+      cards: [...new Set(g.members.flatMap(m => m.cards || []))],
+      airlines: [...new Set(g.members.flatMap(m => m.airlines || []))],
+      routes: [...routes.values()],
+      price: lead.price || (g.members.find(m => m.price) || {}).price || null,
+      lastDate: g.members.reduce((a, m) => m.date > a ? m.date : a, ''),
+      lastFound: g.members.reduce((a, m) => m.found > a ? m.found : a, ''),
+    };
+    const more = g.members.filter(m => m !== lead);
+    if (more.length) out.more = more;
+    return out;
+  });
+}
+
 function newsId(it) { return (it.link || it.title).replace(/[?#].*$/, '').slice(-120) + '|' + it.title.slice(0, 40); }
 
 async function checkPromos(watch, results, promos, alerts) {
   const routes = (watch.watches || []).map(w => ({ key: F.routeKey(w), dest: w.dest }));
   const qs = buildQueries(watch);
-  const known = new Map((promos.items || []).map(p => [p.id, p]));
-  const seenTitles = new Set((promos.items || []).map(p => p.title.replace(/\s+/g, '').slice(0, 30)));
+  const before = (promos.items || []).flatMap(p => [p, ...(p.more || [])]).map(({ more, lastDate, lastFound, ...one }) => one);
+  // 추적 조건(직항·박수)이 바뀌면 노선 이름표가 바뀜 → 같은 출발·도착 노선이면 새 이름표로 옮김
+  const liveKeys = new Set(routes.map(r => r.key));
+  const od = k => k.split('-').slice(0, 2).join('-');
+  for (const p of before) for (const r of p.routes || []) {
+    if (liveKeys.has(r.key)) continue;
+    const to = routes.find(x => od(x.key) === od(r.key));
+    if (to) r.key = to.key;
+  }
+  for (const p of before) if (p.routes) p.routes = [...new Map(p.routes.map(r => [r.key, r])).values()];
+  const known = new Map(before.map(p => [p.id, p]));
+  const seenTitles = new Set(before.map(p => p.title.replace(/\s+/g, '').slice(0, 30)));
   const cutoff = new Date(NOW.getTime() - 10 * 864e5).toISOString();
   const fresh = [];
   for (const q of qs) {
@@ -205,16 +277,20 @@ async function checkPromos(watch, results, promos, alerts) {
       known.set(id, p); fresh.push(p);
     }
   }
-  // 최근 60일, 최대 250건만 보관
+  // 같은 소식 묶기 → 최근 60일, 최대 250묶음만 보관
   const keep = F.addDays(TODAY, -60);
-  promos.items = [...known.values()].filter(p => p.found >= keep).sort((a, b) => b.date.localeCompare(a.date)).slice(0, 250);
+  const freshIds = new Set(fresh.map(p => p.id));
+  const groups = groupNews([...known.values()].filter(p => p.found >= keep));
+  promos.items = groups.sort((a, b) => b.lastDate.localeCompare(a.lastDate)).slice(0, 250);
   promos.updated = NOW.toISOString();
-  log(`■ 뉴스 ${qs.length}개 검색 → 새 항목 ${fresh.length}건`);
+  // 알림은 대표 기사가 새 기사인 묶음만 (이미 나온 소식의 다른 언론사 기사는 알리지 않음)
+  const freshGroups = promos.items.filter(g => freshIds.has(g.id));
+  log(`■ 뉴스 ${qs.length}개 검색 → 새 기사 ${fresh.length}건 (새 소식 ${freshGroups.length}건, 전체 ${promos.items.length}묶음)`);
 
   const firstRun = !(promos.runs > 0);
   promos.runs = (promos.runs || 0) + 1;
   if (firstRun) { log('  (첫 실행이라 지금까지 쌓인 뉴스는 알림 없이 저장만 해요)'); return; }
-  const wanted = fresh.filter(p => p.kind === 'card' || p.routes.some(r => r.level !== 'weak') || (p.kind === 'airline' && p.routes.length));
+  const wanted = freshGroups.filter(p => p.kind === 'card' || p.routes.some(r => r.level !== 'weak') || (p.kind === 'airline' && p.routes.length));
   for (const p of wanted.slice(0, 6)) {
     const tag = p.kind === 'card' ? `💳 ${p.cards.join('·')}` : `🏷️ ${(p.airlines.map(c => F.airline(c).name)[0]) || '항공 특가'}`;
     const vs = p.vs ? `\n보통 가격 대비 약 ${p.vs.pct > 0 ? '-' : '+'}${Math.abs(p.vs.pct)}%${p.vs.approx ? ' (편도×2 추정)' : ''}` : '';
