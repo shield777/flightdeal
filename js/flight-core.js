@@ -1,5 +1,5 @@
 /* 항공권 최저가: 브라우저(index.html)와 서버 검색 스크립트(scripts/flight-check.js)가 함께 쓰는 데이터·계산
-   - 여기 숫자(수하물 요금, 기후, 공휴일)는 "참고값"이에요. 바뀌면 이 파일만 고치면 돼요. */
+   - 목적지·기후표·공휴일·항공사 목록이 여기 있어요. 바뀌면 이 파일만 고치면 돼요. */
 (function (root) {
   'use strict';
 
@@ -25,7 +25,7 @@
   };
 
   // ───── 목적지 ─────
-  // code: 가격 검색용(도시 코드), link: 구글·네이버·스카이스캐너 링크용 공항, region: 수하물 요금 구역
+  // code: 도시 코드, link: 구글·네이버·스카이스캐너 링크용 공항, region: 지역 구분
   // clim: 1~12월 기후 코드, notes: 달별 메모 (1월 = 1)
   const DESTS = [
     { country: '베트남', city: '나트랑', alias: ['냐짱', '깜라인', '나짱'], code: 'CXR', link: 'CXR', lat: 12.24, lon: 109.19, region: 'sea',
@@ -91,7 +91,7 @@
   ];
 
   // ───── 항공사 ─────
-  // bag: inc = 기본 운임에 위탁수하물 포함 / maybe = 운임 종류에 따라 다름 / exc = 최저 운임엔 보통 미포함
+  // bag·kg·bagNote: 예전 수하물 추정용 (지금 화면에는 표시하지 않음)
   const AIRLINES = {
     KE: { name: '대한항공', type: 'FSC', bag: 'inc', kg: 23, url: 'https://www.koreanair.com' },
     OZ: { name: '아시아나항공', type: 'FSC', bag: 'inc', kg: 23, url: 'https://flyasiana.com' },
@@ -138,7 +138,6 @@
 
   // 수하물 15kg 사전구매 추정 요금 (1인 · 편도 · 원). 2026년 국내 LCC 공지(동남아 6~7만 원대)를 바탕으로 한 대략값.
   // 화면의 설정에서 바꿀 수 있어요.
-  const BAG_FEE_DEFAULT = { jp: 50000, cn: 50000, tw: 55000, sea: 65000, pac: 70000, far: 90000 };
   const REGION_NAME = { jp: '일본', cn: '중국', tw: '대만·홍콩', sea: '동남아', pac: '괌·사이판', far: '장거리' };
 
   // ───── 한국 공휴일 (2026.11 ~ 2027.12, 대체공휴일 포함 · 참고용) ─────
@@ -197,74 +196,28 @@
   function findDest(code) { return DESTS.find(d => d.code === code) || null; }
   function airline(code) { return AIRLINES[code] || { name: code || '항공사 미상', type: '?', bag: 'maybe', url: '' }; }
 
-  // ───── 가격 데이터 정리 ─────
-  // Travelpayouts(Aviasales) v3 prices_for_dates 응답 → 공통 모양
-  function normalizeOffers(raw, src) {
-    const list = Array.isArray(raw) ? raw : (raw && Array.isArray(raw.data) ? raw.data : []);
-    return list.map(o => {
-      const dep = o.departure_at || o.depart_date || '';
-      const ret = o.return_at || o.return_date || '';
-      const price = Number(o.price != null ? o.price : o.value);
-      if (!dep || !ret || !(price > 0)) return null;
-      return {
-        price: Math.round(price),
-        dep: dep.slice(0, 16), ret: ret.slice(0, 16),
-        nights: nightsBetween(dep, ret),
-        airline: o.airline || '',
-        flight: o.flight_number ? `${o.airline || ''}${o.flight_number}` : '',
-        transfers: Number(o.transfers != null ? o.transfers : o.number_of_changes) || 0,
-        backTransfers: Number(o.return_transfers != null ? o.return_transfers : o.transfers) || 0,
-        link: o.link ? `https://www.aviasales.com${o.link}` : '',
-        gate: o.gate || '',
-        src: src || 'tp',
-      };
-    }).filter(Boolean);
-  }
-  function median(nums) {
-    if (!nums.length) return 0;
-    const s = [...nums].sort((a, b) => a - b), h = Math.floor(s.length / 2);
-    return s.length % 2 ? s[h] : Math.round((s[h - 1] + s[h]) / 2);
-  }
-  // 한 달치 후보에서: 조건에 맞는 것만 → 최저가, 보통 가격(중앙값), 상위 5개
-  function summarizeMonth(offers, opt) {
-    const minN = opt.minNights || 1, maxN = opt.maxNights || 30;
-    const ym = opt.month;
-    const ok = offers.filter(o => o.nights >= minN && o.nights <= maxN && (!ym || o.dep.slice(0, 7) === ym) && (!opt.direct || (o.transfers === 0 && o.backTransfers === 0)));
-    ok.sort((a, b) => a.price - b.price);
-    // 같은 날짜·항공사 중복 정리
-    const seen = new Set(), uniq = [];
-    for (const o of ok) { const k = `${o.dep.slice(0, 10)}|${o.ret.slice(0, 10)}|${o.airline}`; if (seen.has(k)) continue; seen.add(k); uniq.push(o); }
-    return {
-      count: uniq.length,
-      best: uniq[0] || null,
-      median: median(uniq.map(o => o.price)),
-      top: uniq.slice(0, 5),
-    };
-  }
-
-  // ───── 수하물 ─────
-  // 왕복 1인 기준으로 "포함/미포함, 더하면 얼마" 계산
-  function baggage(airlineCode, region, fees) {
-    const a = airline(airlineCode);
-    const fee = ((fees && fees[region]) || BAG_FEE_DEFAULT[region] || 65000) * 2; // 왕복
-    if (a.bag === 'inc') return { status: 'inc', label: `수하물 포함(${a.kg || 20}kg)`, add: 0, note: '' };
-    if (a.bag === 'maybe') return { status: 'maybe', label: '수하물 확인 필요', add: fee, note: a.bagNote || '운임 종류에 따라 달라요' };
-    return { status: 'exc', label: '수하물 미포함', add: fee, note: `15kg 사전구매 왕복 약 ${won(fee)} (추정)` };
-  }
-
-  // ───── 링크 (바로 그 날짜로) ─────
-  function links(originCode, dest, dep, ret, adults) {
+  // 다른 사이트 검색 주소. 서울 출발은 도시 코드(서울 전체: 인천+김포)로 넣음
+  function links(originCode, dest, dep, ret, adults, opt = {}) {
+    const seoul = originCode === 'SEL';
     const o = (ORIGINS.find(x => x.code === originCode) || { link: originCode }).link;
     const d = dest.link || dest.code;
     const n = Math.max(1, adults || 1);
     const ymd = s => s.slice(0, 10).replace(/-/g, '');
     const yymmdd = s => s.slice(2, 10).replace(/-/g, '');
-    const q = `Flights from ${o} to ${d} on ${dep.slice(0, 10)} through ${ret.slice(0, 10)}${n > 1 ? ` for ${n} adults` : ''}`;
+    const nonstop = opt.direct ? 'Nonstop flights' : 'Flights';
+    const q = `${nonstop} from ${seoul ? 'Seoul' : o} to ${d} on ${dep.slice(0, 10)} through ${ret.slice(0, 10)}${n > 1 ? ` for ${n} adults` : ''}`;
+    const nv = seoul ? 'SEL' : o, sk = seoul ? 'sela' : o.toLowerCase();
     return {
       google: `https://www.google.com/travel/flights?hl=ko&gl=KR&curr=KRW&q=${encodeURIComponent(q)}`,
-      naver: `https://flight.naver.com/flights/international/${o}-${d}-${ymd(dep)}/${d}-${o}-${ymd(ret)}?adult=${n}&fareType=Y`,
-      sky: `https://www.skyscanner.co.kr/transport/flights/${o.toLowerCase()}/${d.toLowerCase()}/${yymmdd(dep)}/${yymmdd(ret)}/?adultsv2=${n}&cabinclass=economy&rtn=1`,
+      naver: `https://flight.naver.com/flights/international/${nv}-${d}-${ymd(dep)}/${d}-${nv}-${ymd(ret)}?adult=${n}&fareType=Y${opt.direct ? '&isDirect=true' : ''}`,
+      sky: `https://www.skyscanner.co.kr/transport/flights/${sk}/${d.toLowerCase()}/${yymmdd(dep)}/${yymmdd(ret)}/?adultsv2=${n}&cabinclass=economy&rtn=1${opt.direct ? '&preferdirects=true' : ''}`,
     };
+  }
+  // 스카이스캐너 '한 달 전체' 보기 (가는 달·오는 달만 넣으면 그 달 날짜별 가격을 보여 줌)
+  function skyMonth(originCode, dest, ymOut, ymBack, adults, direct) {
+    const sk = originCode === 'SEL' ? 'sela' : ((ORIGINS.find(x => x.code === originCode) || { link: originCode }).link).toLowerCase();
+    const yymm = ym => ym.slice(2, 4) + ym.slice(5, 7);
+    return `https://www.skyscanner.co.kr/transport/flights/${sk}/${(dest.link || dest.code).toLowerCase()}/${yymm(ymOut)}/${yymm(ymBack)}/?adultsv2=${Math.max(1, adults || 1)}&cabinclass=economy&rtn=1${direct ? '&preferdirects=true' : ''}`;
   }
 
   // ───── 기후·시기 ─────
@@ -275,11 +228,7 @@
     return c ? { code, label: c.label, tone: c.tone, note: (dest.notes && dest.notes[month]) || '' } : null;
   }
   function holidaysIn(ym) { return HOLIDAYS.filter(h => h.from.slice(0, 7) === ym || h.to.slice(0, 7) === ym); }
-  // 문서 기준: 단거리 국제선 2~4개월 전, 장거리 3~6개월 전
-  function buyWindow(ym, region) {
-    const far = region === 'far';
-    return { from: addMonths(ym, far ? -6 : -4), to: addMonths(ym, far ? -3 : -2) };
-  }
+
 
   // ───── 뉴스(프로모션·카드) 해석 ─────
   const PROMO_WORDS = ['특가', '프로모션', '할인', '세일', '얼리버드', '타임세일', '찜특가', '진마켓', '땡처리', '이벤트', '최저가', '반값', '쿠폰'];
@@ -385,37 +334,16 @@
     if (!kind) return null;
     return { kind, cards, airlines: air, routes: matched, price: promoPrice(text), ...newsScope(text) };
   }
-  // 프로모션가 vs 보통 가격(왕복 1인) → 할인율(%)
-  function promoVsTypical(price, typicalRound) {
-    if (!price || !typicalRound) return null;
-    const round = price.trip === 'round' ? price.amount : price.amount * 2;
-    const pct = Math.round((1 - round / typicalRound) * 100);
-    return { round, pct, approx: price.trip !== 'round' };
-  }
 
-  // ───── 카드 할인 규칙 적용 ─────
-  // rule: { card, merchant: 'any'|항공사코드|'OTA', kind: 'pct'|'won', value, cap, min, until, memo }
-  function applyCard(price, airlineCode, rules, today) {
-    let best = null;
-    for (const r of rules || []) {
-      if (r.until && today && r.until < today) continue;
-      if (r.merchant && r.merchant !== 'any' && r.merchant !== airlineCode) continue;
-      if (r.min && price < r.min) continue;
-      let off = r.kind === 'won' ? Number(r.value) || 0 : Math.round(price * (Number(r.value) || 0) / 100);
-      if (r.cap) off = Math.min(off, Number(r.cap));
-      if (off > 0 && (!best || off > best.off)) best = { off, price: price - off, rule: r };
-    }
-    return best;
-  }
 
   function won(n) { return n ? `${Math.round(n).toLocaleString('ko-KR')}원` : '-'; }
   function routeKey(w) { return `${w.origin}-${w.dest}-${w.minNights}-${w.maxNights}-${w.direct ? 'D' : 'A'}`; }
 
   const api = {
-    ORIGINS, DESTS, AIRLINES, CLIMATE, BAG_FEE_DEFAULT, REGION_NAME, HOLIDAYS, PEAK, CARDS, AGENCIES, CARD_NAMES,
+    ORIGINS, DESTS, AIRLINES, CLIMATE, REGION_NAME, HOLIDAYS, PEAK, CARDS, AGENCIES, CARD_NAMES,
     monthsBetween, nightsBetween, addDays, addMonths, weekday, findDest, airline,
-    normalizeOffers, summarizeMonth, median, baggage, links, climateOf, holidaysIn, buyWindow,
-    stripTags, parseWon, promoPrice, classifyNews, promoVsTypical, applyCard, won, routeKey,
+    links, skyMonth, climateOf, holidaysIn,
+    stripTags, parseWon, promoPrice, classifyNews, won, routeKey,
     PROMO_DEFAULT, COUNTRIES, COUNTRY_PLACES, airlineInText, airlineCode, newsScope, promoSettings, isWantedPromo,
   };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;

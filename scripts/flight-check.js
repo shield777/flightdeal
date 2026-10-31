@@ -1,12 +1,10 @@
 #!/usr/bin/env node
-/* 항공권 검색·프로모션 확인 (GitHub Actions가 실행. 파이썬·설치 없이 Node만 씀)
-   매일 자동 실행은 없어요. 앱의 버튼을 누를 때만 돌아요.
-   --search  앱의 [검색]: 서울 출발 직항, 목적지·기간·박수로 달마다 기록된 최저가 → data/search.json
-   --promos  앱 프로모션 탭의 [지금 확인]: 항공사 공식 이벤트·특가 뉴스·카드 할인 → data/promos.json
+/* 프로모션 확인 (GitHub Actions가 실행. 파이썬·설치 없이 Node만 씀)
+   매일 자동 실행은 없어요. 앱 프로모션 탭의 [지금 확인]을 누를 때만 돌아요.
+   --promos  항공사 공식 이벤트(제주항공·트리니티항공·비엣젯)·특가 뉴스·카드 할인 → data/promos.json
 
-   필요한 값(저장소 Settings → Secrets and variables → Actions):
-   TP_TOKEN  Travelpayouts API 토큰 (가격)
-   NAVER_CLIENT_ID / NAVER_CLIENT_SECRET  (선택) 네이버 뉴스 검색. 없으면 구글 뉴스만 씀
+   선택 값(저장소 Settings → Secrets and variables → Actions):
+   NAVER_CLIENT_ID / NAVER_CLIENT_SECRET  네이버 뉴스 검색. 없으면 구글 뉴스만 씀
 
    인터넷 없이 시험: FLIGHT_MOCK=폴더 node scripts/flight-check.js --promos */
 'use strict';
@@ -20,7 +18,6 @@ const DATA = path.join(ROOT, 'data');
 const P = {
   watch: path.join(DATA, 'watchlist.json'),
   promos: path.join(DATA, 'promos.json'),
-  search: path.join(DATA, 'search.json'),
 };
 const ENV = process.env;
 const MOCK = ENV.FLIGHT_MOCK ? path.resolve(ENV.FLIGHT_MOCK) : '';
@@ -49,23 +46,6 @@ async function get(url, opt = {}, kind = 'json') {
     } catch (e) { log(`  ! ${e.message}`); await sleep(1500 * (i + 1)); }
   }
   return kind === 'json' ? null : '';
-}
-
-// ───── 가격 조회 (Travelpayouts) ─────
-async function fetchMonth(w, ym, settings) {
-  const token = ENV.TP_TOKEN;
-  if (!token && !MOCK) return { error: 'TP_TOKEN 없음' };
-  const q = new URLSearchParams({
-    origin: w.origin, destination: w.dest, departure_at: ym, one_way: 'false', direct: w.direct ? 'true' : 'false',
-    sorting: 'price', limit: '1000', currency: 'krw', unique: 'false', token: token || 'mock',
-  });
-  if (settings.market) q.set('market', settings.market);
-  const url = `https://api.travelpayouts.com/aviasales/v3/prices_for_dates?${q}`;
-  const j = await get(url, { mockName: `tp-${w.origin}-${w.dest}-${ym}.json` });
-  if (!j) return { error: '응답 없음' };
-  if (j.success === false) return { error: j.error || '조회 실패' };
-  if (j.currency && String(j.currency).toLowerCase() !== 'krw') return { error: `통화가 ${j.currency}로 와서 건너뜀` };
-  return { offers: F.normalizeOffers(j, 'tp') };
 }
 
 // ───── 프로모션·카드 뉴스 ─────
@@ -260,37 +240,8 @@ async function checkPromos(watch, promos) {
   log(`■ 뉴스 ${qs.length}개 검색 → 새 기사 ${fresh.length}건 (새 소식 ${freshGroups.length}건, 전체 ${promos.items.length}묶음)`);
 }
 
-// ───── 검색 (앱의 [검색] 버튼 → GitHub Actions → 이 함수) ─────
-// 입력: SEARCH_DEST(공항·도시 코드 3글자), SEARCH_FROM/TO(YYYY-MM), SEARCH_NIGHTS("3-5" 또는 "4-4"), SEARCH_ID(앱이 만든 번호)
-// 결과: data/search.json (마지막 검색 1건만 보관). 직항·서울 출발 고정, 기록된 가격 그대로 (추정 없음)
-async function search(watch) {
-  const dest = String(ENV.SEARCH_DEST || '').toUpperCase();
-  const from = String(ENV.SEARCH_FROM || ''), to = String(ENV.SEARCH_TO || '');
-  const [n1, n2] = String(ENV.SEARCH_NIGHTS || '').split('-').map(Number);
-  const id = String(ENV.SEARCH_ID || '').slice(0, 40);
-  const bad = !/^[A-Z]{3}$/.test(dest) ? '목적지 코드' : !/^\d{4}-\d{2}$/.test(from) || !/^\d{4}-\d{2}$/.test(to) ? '기간' : !(n1 >= 1 && n2 >= n1 && n2 <= 30) ? '박수' : '';
-  const out = { id, requested: NOW.toISOString(), origin: 'SEL', dest, from, to, minNights: n1, maxNights: n2, direct: true, months: {}, source: 'Travelpayouts(Aviasales)에 기록된 검색 가격' };
-  if (bad) { out.error = `입력값 오류: ${bad}`; writeJSON(P.search, out); log(out.error); return; }
-  if (!ENV.TP_TOKEN && !MOCK) { out.error = 'TP_TOKEN 없음 (SETUP.md 참고)'; writeJSON(P.search, out); log(out.error); return; }
-  const thisMonth = TODAY.slice(0, 7);
-  const months = F.monthsBetween(from, to).filter(m => m >= thisMonth).slice(0, 12);
-  const w = { origin: 'SEL', dest, direct: true };
-  log(`■ 검색 SEL→${dest} ${from}~${to} ${n1}~${n2}박 (${months.length}개월)`);
-  for (const ym of months) {
-    const r = await fetchMonth(w, ym, watch.settings || {});
-    await sleep(MOCK ? 0 : 500);
-    if (r.error) { out.months[ym] = { error: r.error }; log(`  ${ym}: ${r.error}`); continue; }
-    const sm = F.summarizeMonth(r.offers, { month: ym, minNights: n1, maxNights: n2, direct: true });
-    out.months[ym] = { count: sm.count, best: sm.best, top: sm.top };
-    log(`  ${ym}: ${sm.best ? `${F.won(sm.best.price)} ${sm.best.dep.slice(5, 10)}~${sm.best.ret.slice(5, 10)} ${sm.best.airline}` : '기록 없음'} (${sm.count}건)`);
-  }
-  out.done = new Date().toISOString();
-  writeJSON(P.search, out);
-}
-
 (async function main() {
   const watch = readJSON(P.watch, { settings: {}, watches: [] });
-  if (process.argv.includes('--search')) { await search(watch); return; }
   if (process.argv.includes('--promos')) {
     // 프로모션 확인 (앱의 [지금 확인] 버튼). 매일 자동 실행·알림은 껐어요
     const promos = readJSON(P.promos, { items: [] });
@@ -299,5 +250,5 @@ async function search(watch) {
     writeJSON(P.promos, promos);
     return;
   }
-  log('사용법: node scripts/flight-check.js --search | --promos');
+  log('사용법: node scripts/flight-check.js --promos');
 })().catch(e => { console.error(e); process.exit(1); });
