@@ -10,7 +10,7 @@ on:
       mode:
         description: 'check = 평소 점검, test-notify = 휴대폰 알림 테스트만'
         type: choice
-        options: [check, test-notify]
+        options: [check, test-notify, probe]
         default: check
 
 permissions:
@@ -35,6 +35,13 @@ jobs:
           export APP_URL="https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}/"
           # 비엣젯 공식 특가 게시판은 화면을 자바스크립트로 그려서, 서버에 설치된 크롬으로 열어 읽음 (연결 도구만 설치)
           npm i --no-save --no-audit --no-fund --silent playwright-core@1.48.2 || echo "크롬 연결 도구 설치 실패 → 비엣젯 공식 확인만 건너뜀"
+          if [ "${{ inputs.mode }}" = "probe" ]; then
+            # 시험: 브라우저(다른 사이트 주소)에서 Travelpayouts에 바로 요청할 수 있는지 = 응답에 CORS 허용 헤더가 있는지
+            U="https://api.travelpayouts.com/aviasales/v3/prices_for_dates?origin=SEL&destination=CXR&departure_at=2027-01&one_way=false&direct=true&sorting=price&limit=5&currency=krw&token=${TP_TOKEN}"
+            echo "== GET (Origin: shield777.github.io)"; curl -s -D - -o /tmp/b.json -H "Origin: https://shield777.github.io" "$U" | grep -i -E "^HTTP|access-control|content-type"; head -c 300 /tmp/b.json; echo
+            echo "== OPTIONS 사전 확인"; curl -s -D - -o /dev/null -X OPTIONS -H "Origin: https://shield777.github.io" -H "Access-Control-Request-Method: GET" "$U" | grep -i -E "^HTTP|access-control"
+            exit 0
+          fi
           node scripts/flight-check.js ${{ inputs.mode == 'test-notify' && '--test-notify' || '' }}
         env:
           TP_TOKEN: ${{ secrets.TP_TOKEN }}
