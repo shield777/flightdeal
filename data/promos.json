@@ -27,58 +27,75 @@
    "lastFound": "2026-10-31"
   },
   {
-   "id": "official:VJ:베트남여행은비엣젯과함께Grab으로공항이동도편리하게!공항행또는공항발Grab",
+   "id": "official:7C:0000004434",
    "kind": "airline",
    "official": true,
-   "title": "베트남 여행은 비엣젯과 함께 Grab으로 공항 이동도 편리하게! 공항행 또는 공항발 GrabBike/GrabCar 이용 시 할인코드",
-   "desc": "VIETJET을 입력하시면 20% 할인(최대 300,000VND) 혜택을 드립니다....",
-   "link": "https://www.vietjetair.com/ko/news/%ED%95%A0%EC%9D%B8-1697696896010",
-   "source": "비엣젯 공식",
-   "date": "2026-10-31T00:00:00.000Z",
-   "until": null,
-   "found": "2026-10-31",
+   "title": "11월의 혜택! 카카오페이 최대 10만원 즉시할인",
+   "desc": "",
+   "link": "https://www.jejuair.net/ko/event/eventDetail.do?eventNo=0000004434",
+   "source": "제주항공 공식",
+   "date": "2026-11-01T00:00:00.000Z",
+   "from": "2026-11-01",
+   "until": "2026-11-30",
+   "found": "2026-11-01",
    "cards": [],
    "airlines": [
-    "VJ"
+    "7C"
    ],
-   "countries": [
-    "베트남"
-   ],
+   "countries": [],
    "allRoutes": false,
-   "routes": [
-    {
-     "key": "SEL-CXR-3-5-D",
-     "level": "medium"
-    }
-   ],
-   "price": null,
-   "alerted": true,
-   "from": null,
-   "lastDate": "2026-10-31T00:00:00.000Z",
-   "lastFound": "2026-10-31"
+   "routes": [],
+   "price": {
+    "amount": 100000,
+    "trip": "oneway?"
+   },
+   "lastDate": "2026-11-01T00:00:00.000Z",
+   "lastFound": "2026-11-01"
   },
   {
-   "id": "official:VJ:123...18",
+   "id": "official:7C:0000004170",
    "kind": "airline",
    "official": true,
-   "title": "1 2 3 ... 18",
-   "desc": "19",
-   "link": "https://www.vietjetair.com/ko/news/%ED%95%A0%EC%9D%B8-1697696896010",
-   "source": "비엣젯 공식",
-   "date": "2026-10-31T00:00:00.000Z",
-   "until": null,
-   "found": "2026-10-31",
+   "title": "11월의 결제혜택 토스페이 결제 시 최대 15,000원 혜택!",
+   "desc": "",
+   "link": "https://www.jejuair.net/ko/event/eventDetail.do?eventNo=0000004170",
+   "source": "제주항공 공식",
+   "date": "2026-11-01T00:00:00.000Z",
+   "from": "2026-11-01",
+   "until": "2026-11-30",
+   "found": "2026-11-01",
    "cards": [],
    "airlines": [
-    "VJ"
+    "7C"
    ],
    "countries": [],
    "allRoutes": false,
    "routes": [],
    "price": null,
-   "alerted": true,
-   "lastDate": "2026-10-31T00:00:00.000Z",
-   "lastFound": "2026-10-31"
+   "lastDate": "2026-11-01T00:00:00.000Z",
+   "lastFound": "2026-11-01"
+  },
+  {
+   "id": "96MjYwdXh0ODFRSE43eFI2V1E5QWxCNkhMYnE3VTlmOWE4dF9OY0JuSFJMZEhLYmY5MzFLR21wLXJTQjNhR2w5b3NZN2xsTGszVHlpZnFOTzl6RVlRWkJOTQ|연말 해외여행 준비한다면 주목… 스카이스캐너, 항공권 최대 15% 할인",
+   "kind": "airline",
+   "title": "연말 해외여행 준비한다면 주목… 스카이스캐너, 항공권 최대 15% 할인",
+   "desc": "연말 해외여행 준비한다면 주목… 스카이스캐너, 항공권 최대 15% 할인 뉴스탭",
+   "summary": [
+    "연말 해외여행 준비한다면 주목… 스카이스캐너, 항공권 최대 15% 할인 뉴스탭…"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9xQ3dic1Y3Q2dMb096MjYwdXh0ODFRSE43eFI2V1E5QWxCNkhMYnE3VTlmOWE4dF9OY0JuSFJMZEhLYmY5MzFLR21wLXJTQjNhR2w5b3NZN2xsTGszVHlpZnFOTzl6RVlRWkJOTQ?oc=5",
+   "source": "뉴스탭",
+   "date": "2026-10-31T23:30:50.000Z",
+   "found": "2026-11-01",
+   "cards": [],
+   "airlines": [],
+   "countries": [],
+   "allRoutes": false,
+   "routes": [],
+   "price": null,
+   "query": "베트남 항공권 특가",
+   "lastDate": "2026-10-31T23:30:50.000Z",
+   "lastFound": "2026-11-01"
   },
   {
    "id": "https://www.paxetv.com/news/articleView.html|에어프레미아, 내달 2일부터 항공권 특가&#183;&#183;&#183;",
@@ -113,8 +130,8 @@
    ],
    "price": null,
    "query": "에어프레미아 특가",
-   "lastDate": "2026-10-30T10:00:00.000Z",
-   "lastFound": "2026-10-31",
+   "lastDate": "2026-10-31T22:00:00.000Z",
+   "lastFound": "2026-11-01",
    "more": [
     {
      "id": "5%A0%EC%9D%B8-%EB%AF%B8%EC%A3%BC-%EC%95%84%EC%8B%9C%EC%95%84-%EC%A0%84-%EB%85%B8%EC%84%A0-%ED%8A%B9%EA%B0%80/ar-AA2gnWwe|에어프레미아, 블프데이 최대 72% 할인…미주&#183;아시아 전 노선 ",
@@ -355,6 +372,409 @@
      "query": "에어프레미아 특가",
      "countries": [],
      "allRoutes": true
+    },
+    {
+     "id": "sbmhPUFlKZmVkZTNwamMzRW1adFI2MEV0N0hsMmR5TWp3cnI5eG14NEk2S1ZLS19JZnR3SUs1QjNCVjJrUDd0U1gxN2RfWkVydExpZV9Fc21jSGtUR0hPcWM|[하늘길] 11월 1주, 블랙프라이데이 항공권 특가…에어프레미아 외 2가",
+     "kind": "airline",
+     "title": "[하늘길] 11월 1주, 블랙프라이데이 항공권 특가…에어프레미아 외 2가지 항공",
+     "desc": "[하늘길] 11월 1주, 블랙프라이데이 항공권 특가…에어프레미아 외 2가지 항공 신아일보",
+     "summary": [
+      "[하늘길] 11월 1주, 블랙프라이데이 항공권 특가…에어프레미아 외 2가지 항공 신아일보…"
+     ],
+     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE16eGVlZGhfdjFrS2hEa3NsbmhPUFlKZmVkZTNwamMzRW1adFI2MEV0N0hsMmR5TWp3cnI5eG14NEk2S1ZLS19JZnR3SUs1QjNCVjJrUDd0U1gxN2RfWkVydExpZV9Fc21jSGtUR0hPcWM?oc=5",
+     "source": "신아일보",
+     "date": "2026-10-31T22:00:00.000Z",
+     "found": "2026-11-01",
+     "cards": [],
+     "airlines": [
+      "YP"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "이스타항공 특가"
+    }
+   ]
+  },
+  {
+   "id": "official:VJ:베트남여행은비엣젯과함께Grab으로공항이동도편리하게!공항행또는공항발Grab",
+   "kind": "airline",
+   "official": true,
+   "title": "베트남 여행은 비엣젯과 함께 Grab으로 공항 이동도 편리하게! 공항행 또는 공항발 GrabBike/GrabCar 이용 시 할인코드",
+   "desc": "VIETJET을 입력하시면 20% 할인(최대 300,000VND) 혜택을 드립니다....",
+   "link": "https://www.vietjetair.com/ko/news/%ED%95%A0%EC%9D%B8-1697696896010",
+   "source": "비엣젯 공식",
+   "date": "2026-10-31T00:00:00.000Z",
+   "until": null,
+   "found": "2026-10-31",
+   "cards": [],
+   "airlines": [
+    "VJ"
+   ],
+   "countries": [
+    "베트남"
+   ],
+   "allRoutes": false,
+   "routes": [
+    {
+     "key": "SEL-CXR-3-5-D",
+     "level": "medium"
+    }
+   ],
+   "price": null,
+   "alerted": true,
+   "from": null,
+   "lastDate": "2026-10-31T00:00:00.000Z",
+   "lastFound": "2026-10-31"
+  },
+  {
+   "id": "official:VJ:123...18",
+   "kind": "airline",
+   "official": true,
+   "title": "1 2 3 ... 18",
+   "desc": "19",
+   "link": "https://www.vietjetair.com/ko/news/%ED%95%A0%EC%9D%B8-1697696896010",
+   "source": "비엣젯 공식",
+   "date": "2026-10-31T00:00:00.000Z",
+   "until": null,
+   "found": "2026-10-31",
+   "cards": [],
+   "airlines": [
+    "VJ"
+   ],
+   "countries": [],
+   "allRoutes": false,
+   "routes": [],
+   "price": null,
+   "alerted": true,
+   "lastDate": "2026-10-31T00:00:00.000Z",
+   "lastFound": "2026-10-31"
+  },
+  {
+   "id": "B3%84-%ED%94%84%EB%A1%9C%EB%AA%A8%EC%85%98-%EB%B0%A9%ED%95%9C-%E6%97%A5%EA%B3%A0%EA%B0%9D-%EA%B3%B5%EB%9E%B5/ar-AA2gdOSL|신세계免, 제주항공 인천-센다이 취항 연계 프로모션 방한 日고객 공략",
+   "kind": "airline",
+   "title": "신세계免, 제주항공 인천-센다이 취항 연계 프로모션 방한 日고객 공략",
+   "desc": "기존보다 혜택 5만 원 확대 (서울=뉴스1) 최소망 기자 = 신세계면세점이 제주항공의 인천-센다이 신규 취항과 연계한 프로모션을 통해 한일 여행객 공략을 강화한다. 해당 노선 이용객에게 최대 42만 원 상당의 면세 쇼핑 혜택을 제공하고 일본 현지 제휴 확대를 통해 방한 일본인 고객 유치에도 나선다. 신세계면세점은 내년 ...",
+   "summary": [
+    "기존보다 혜택 5만 원 확대 (서울=뉴스1) 최소망 기자 = 신세계면세점이 제주항공의 인천-센다이 신규 취항과 연계한 프로모션을 통해 한일 여행객 공략을 강화한다.",
+    "해당 노선 이용객에게 최대 42만 원 상당의 면세 쇼핑 혜택을 제공하고 일본 현지 제휴 확대를 통해 방한 일본인 고객 유치에도 나선다."
+   ],
+   "link": "https://www.msn.com/ko-kr/news/other/%EC%8B%A0%EC%84%B8%EA%B3%84%E5%85%8D-%EC%A0%9C%EC%A3%BC%ED%95%AD%EA%B3%B5-%EC%9D%B8%EC%B2%9C-%EC%84%BC%EB%8B%A4%EC%9D%B4-%EC%B7%A8%ED%95%AD-%EC%97%B0%EA%B3%84-%ED%94%84%EB%A1%9C%EB%AA%A8%EC%85%98-%EB%B0%A9%ED%95%9C-%E6%97%A5%EA%B3%A0%EA%B0%9D-%EA%B3%B5%EB%9E%B5/ar-AA2gdOSL",
+   "source": "뉴스1 on MSN",
+   "date": "2026-10-27T22:53:49.000Z",
+   "found": "2026-11-01",
+   "cards": [],
+   "airlines": [
+    "7C",
+    "LJ",
+    "CX",
+    "TW"
+   ],
+   "countries": [
+    "일본",
+    "홍콩",
+    "중국",
+    "미국령",
+    "베트남",
+    "대만"
+   ],
+   "allRoutes": true,
+   "routes": [
+    {
+     "key": "SEL-CXR-3-5-D",
+     "level": "weak"
+    }
+   ],
+   "price": {
+    "amount": 50000,
+    "trip": "oneway?"
+   },
+   "query": "일본 항공 프로모션",
+   "lastDate": "2026-10-30T08:29:09.000Z",
+   "lastFound": "2026-11-01",
+   "more": [
+    {
+     "id": "RfN0VxYTEzTXdCZ1hDcXJ3djlSRk9kb1otWGdyZk1kdXpiVUMyel9CNFpCd0dIVVBDQzRMbEw5UFdTRkFmXzdqZ1BNOEg5Q1lVa2p4WlJtaUpIREg3bDVaQQ|신세계免, 제주항공 인천~센다이 취항 프로모션...최대 42만원 혜택",
+     "kind": "airline",
+     "title": "신세계免, 제주항공 인천~센다이 취항 프로모션...최대 42만원 혜택",
+     "desc": "신세계免, 제주항공 인천~센다이 취항 프로모션...최대 42만원 혜택 싱글리스트",
+     "summary": [
+      "신세계免, 제주항공 인천~센다이 취항 프로모션...최대 42만원 혜택 싱글리스트…"
+     ],
+     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE53SG9tMURfN0VxYTEzTXdCZ1hDcXJ3djlSRk9kb1otWGdyZk1kdXpiVUMyel9CNFpCd0dIVVBDQzRMbEw5UFdTRkFmXzdqZ1BNOEg5Q1lVa2p4WlJtaUpIREg3bDVaQQ?oc=5",
+     "source": "싱글리스트",
+     "date": "2026-10-28T05:52:34.000Z",
+     "found": "2026-11-01",
+     "cards": [],
+     "airlines": [
+      "7C"
+     ],
+     "countries": [
+      "일본"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "일본 항공 프로모션"
+    },
+    {
+     "id": "TE51T2RvT2R2aWNNUFZBZ29nTVBQZHJlMFRYZVBaVWZvNXhiUV84MkFIeTI0X2NPZzVaSkU0a3FXY2RhYkNReUVHQUFKV2VIaHB5V0pDS3J2LUdld21LLUxn|신세계免, 제주항공 인천-센다이 취항 연계 프로모션…방한 日고객 공략",
+     "kind": "airline",
+     "title": "신세계免, 제주항공 인천-센다이 취항 연계 프로모션…방한 日고객 공략",
+     "desc": "신세계免, 제주항공 인천-센다이 취항 연계 프로모션…방한 日고객 공략 뉴스1",
+     "summary": [
+      "신세계免, 제주항공 인천-센다이 취항 연계 프로모션…방한 日고객 공략 뉴스1…"
+     ],
+     "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE51T2RvT2R2aWNNUFZBZ29nTVBQZHJlMFRYZVBaVWZvNXhiUV84MkFIeTI0X2NPZzVaSkU0a3FXY2RhYkNReUVHQUFKV2VIaHB5V0pDS3J2LUdld21LLUxn?oc=5",
+     "source": "뉴스1",
+     "date": "2026-10-28T05:53:49.000Z",
+     "found": "2026-11-01",
+     "cards": [],
+     "airlines": [
+      "7C"
+     ],
+     "countries": [
+      "일본"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "일본 항공 프로모션"
+    },
+    {
+     "id": "55NFVvcTBhYjVwcVZ1eHZLTEIyZzA2ZWdWQlBUemdORUFUSHlXRGFVRWdyNTlDd3hKUnFXc2k2VExSRllqVE1qSWFCZGpPU3JIVGE0bnhHQTNnVjZDeFF3QQ|제주항공, 항공의 날 맞아 국내·국제선 48시간 특가",
+     "kind": "airline",
+     "title": "제주항공, 항공의 날 맞아 국내·국제선 48시간 특가",
+     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE8wWHJfWk55NFVvcTBhYjVwcVZ1eHZLTEIyZzA2ZWdWQlBUemdORUFUSHlXRGFVRWdyNTlDd3hKUnFXc2k2VExSRllqVE1qSWFCZGpPU3JIVGE0bnhHQTNnVjZDeFF3QQ?oc=5",
+     "source": "비건뉴스",
+     "date": "2026-10-28T07:00:01.000Z",
+     "found": "2026-10-31",
+     "cards": [],
+     "airlines": [
+      "7C",
+      "LJ",
+      "CX"
+     ],
+     "routes": [
+      {
+       "key": "SEL-CXR-3-5-D",
+       "level": "weak"
+      }
+     ],
+     "price": null,
+     "vs": null,
+     "query": "제주항공 특가",
+     "countries": [
+      "일본",
+      "홍콩",
+      "중국",
+      "미국령",
+      "베트남",
+      "대만"
+     ],
+     "allRoutes": true
+    },
+    {
+     "id": "https://www.vegannews.co.kr/news/article.html|제주항공, 항공의 날 맞아 국내&#183;국제선 48시간 특가",
+     "kind": "airline",
+     "title": "제주항공, 항공의 날 맞아 국내&#183;국제선 48시간 특가",
+     "desc": "제주항공이 항공의 날을 기념해 국내선과 국제선 항공권을 대상으로 48시간 할인 행사를 진행한다. 예약은 28일 오전 10시부터 30일 오전 10시까지 가능하며, 탑승 기간은 11월 30일까지다. 제주항공 프로모션 정보를 게시한 고고씽에 따르면 할인 대상은 국내선 6개와 일본&#183;중국&#183;동남아시아&#183;홍콩&#183;사이판 국제선 31개 노선이다. 편도 총액 기준 최저 운임은 ...",
+     "summary": [
+      "제주항공이 항공의 날을 기념해 국내선과 국제선 항공권을 대상으로 48시간 할인 행사를 진행한다.",
+      "예약은 28일 오전 10시부터 30일 오전 10시까지 가능하며, 탑승 기간은 11월 30일까지다.",
+      "제주항공 프로모션 정보를 게시한 고고씽에 따르면 할인 대상은 국내선 6개와 일본&#183;중국&#183;동남아시아&#183;홍콩&#183;사이판 국제선 31개 노선이다."
+     ],
+     "link": "https://www.vegannews.co.kr/news/article.html?no=397823",
+     "source": "vegannews",
+     "date": "2026-10-28T09:00:00.000Z",
+     "found": "2026-10-31",
+     "cards": [],
+     "airlines": [
+      "7C"
+     ],
+     "countries": [
+      "일본",
+      "홍콩",
+      "중국",
+      "미국령"
+     ],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "제주항공 특가"
+    },
+    {
+     "id": "https://www.dailysmart.co.kr/news/articleView.html|신세계면세점, 한일 여행객 공략 강화…제주항공 연계 프로모션 진행",
+     "kind": "airline",
+     "title": "신세계면세점, 한일 여행객 공략 강화…제주항공 연계 프로모션 진행",
+     "desc": "[스마트경제 정희채 기자] 신세계면세점이 제주항공의 인천~센다이 신규 취항에 맞춰 면세 쇼핑 혜택을 확대하고 일본 현지 관광객 유치를 위한 마케팅을 강화한다. 신세계면세점은 제주항공의 2027년 1월 8일 인천~센다이 노선 신규 취항을 기념해 다음 달 8일까지 특별 프로모션을 진행한다고 28일 밝혔다. 이번 프로모션은 지난 23일부터 시작됐으며, 해당 노선 ...",
+     "summary": [
+      "신세계면세점이 제주항공의 인천~센다이 신규 취항에 맞춰 면세 쇼핑 혜택을 확대하고 일본 현지 관광객 유치를 위한 마케팅을 강화한다.",
+      "신세계면세점은 제주항공의 2027년 1월 8일 인천~센다이 노선 신규 취항을 기념해 다음 달 8일까지 특별 프로모션을 진행한다고 28일 밝혔다.",
+      "이번 프로모션은 지난 23일부터 시작됐으며, 해당 노선…"
+     ],
+     "link": "https://www.dailysmart.co.kr/news/articleView.html?idxno=131665",
+     "source": "스마트경제",
+     "date": "2026-10-28T09:22:00.000Z",
+     "found": "2026-11-01",
+     "cards": [],
+     "airlines": [
+      "7C"
+     ],
+     "countries": [
+      "일본"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "일본 항공 프로모션"
+    },
+    {
+     "id": "%95%91%EB%8D%B0%EC%9D%B4-%ED%95%AD%EA%B3%B5%EA%B6%8C-%ED%95%A0%EC%9D%B8-%ED%94%84%EB%A1%9C%EB%AA%A8%EC%85%98/ar-AA2ghnvX|스카이스캐너, 11.11 쇼핑데이 항공권 할인 프로모션",
+     "kind": "airline",
+     "title": "스카이스캐너, 11.11 쇼핑데이 항공권 할인 프로모션",
+     "desc": "글로벌 여행 앱 스카이스캐너가 다가오는 연말을 맞아 11월 1~11일 ‘11.11 쇼핑 데이’ 항공권 할인 프로모션을 진행한다.이번 프로모션은 한국인 여행객들이 보다 합리적인 가격으로 연말 여행을 떠날 수 있도록 마련됐다. 국내외 주요 항공사 9곳이 참여한다. 이 가운데 진에어, 제주항공, 트리니티항공, 캐세이퍼시픽 4곳은 스카이스캐너 단독 혜택을 선보여 ...",
+     "summary": [
+      "글로벌 여행 앱 스카이스캐너가 다가오는 연말을 맞아 11월 1~11일 ‘11.11 쇼핑 데이’ 항공권 할인 프로모션을 진행한다.",
+      "국내외 주요 항공사 9곳이 참여한다.",
+      "이 가운데 진에어, 제주항공, 트리니티항공, 캐세이퍼시픽 4곳은 스카이스캐너 단독 혜택을 선보여…"
+     ],
+     "link": "https://www.msn.com/ko-kr/news/other/%EC%8A%A4%EC%B9%B4%EC%9D%B4%EC%8A%A4%EC%BA%90%EB%84%88-1111-%EC%87%BC%ED%95%91%EB%8D%B0%EC%9D%B4-%ED%95%AD%EA%B3%B5%EA%B6%8C-%ED%95%A0%EC%9D%B8-%ED%94%84%EB%A1%9C%EB%AA%A8%EC%85%98/ar-AA2ghnvX",
+     "source": "싱글리스트 on MSN",
+     "date": "2026-10-28T17:05:28.000Z",
+     "found": "2026-11-01",
+     "cards": [],
+     "airlines": [
+      "7C",
+      "LJ",
+      "TW",
+      "CX"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "태국 항공 프로모션"
+    },
+    {
+     "id": "%ED%95%A0%EC%9D%B8-%EA%B8%B0%ED%9A%8C-11%EC%9B%94-%EC%B5%9C%EB%8C%80-15-%EB%82%B4%EB%A0%A4%EA%B0%84%EB%8B%A4/ar-AA2ghsJp|일본&#183;대만&#183;베트남 항공권 할인 기회…11월 최대 15%",
+     "kind": "airline",
+     "title": "일본&#183;대만&#183;베트남 항공권 할인 기회…11월 최대 15% 내려간다",
+     "desc": "스카이스캐너, 11일간 항공권 할인 프로모션진에어&#183;제주항공&#183;캐세이퍼시픽 등 단독 혜택 제공 (서울=뉴스1) 윤슬빈 관광전문기자 = 스카이스캐너가 연말 여행 수요를 겨냥해 다음 달 1일부터 11일까지 항공권 할인 프로모션을 진행한다. 29일 스카이스캐너에 따르면 이번 '11.11 쇼핑 데이' 프로모션에는 국내외 항공사 ...",
+     "summary": [
+      "스카이스캐너, 11일간 항공권 할인 프로모션진에어&#183;제주항공&#183;캐세이퍼시픽 등 단독 혜택 제공 (서울=뉴스1) 윤슬빈 관광전문기자 = 스카이스캐너가 연말 여행 수요를 겨냥해 다음 달 1일부터 11일까지 항공권 할인 …",
+      "29일 스카이스캐너에 따르면 이번 '11.11 쇼핑 데이' 프로모션에는 국내외 항공사…"
+     ],
+     "link": "https://www.msn.com/ko-kr/entertainment/games/%EC%9D%BC%EB%B3%B8-%EB%8C%80%EB%A7%8C-%EB%B2%A0%ED%8A%B8%EB%82%A8-%ED%95%AD%EA%B3%B5%EA%B6%8C-%ED%95%A0%EC%9D%B8-%EA%B8%B0%ED%9A%8C-11%EC%9B%94-%EC%B5%9C%EB%8C%80-15-%EB%82%B4%EB%A0%A4%EA%B0%84%EB%8B%A4/ar-AA2ghsJp",
+     "source": "뉴스1 on MSN",
+     "date": "2026-10-28T17:44:28.000Z",
+     "found": "2026-10-31",
+     "cards": [],
+     "airlines": [
+      "7C",
+      "LJ",
+      "CX"
+     ],
+     "countries": [
+      "베트남",
+      "일본",
+      "대만"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "베트남 항공 프로모션"
+    },
+    {
+     "id": "NdGg2VVdLRWJsQ2hxbGppZ1YyWUw5TWVMR3FrQzR1T0x6dk4wZ21FSHRsc25hQlUzM0pwZElzckcyUGd2X2xWWXNNSnlnWlVnZk5iWU5tWkZaNWt2cUVuZDc|“日 여행 수요 증가…여행길 따라 쇼핑 혜택도 넓힌다” 신세계면세점, 제",
+     "kind": "airline",
+     "title": "“日 여행 수요 증가…여행길 따라 쇼핑 혜택도 넓힌다” 신세계면세점, 제주항공 신규 취항 연계 프로모션",
+     "desc": "“日 여행 수요 증가…여행길 따라 쇼핑 혜택도 넓힌다” 신세계면세점, 제주항공 신규 취항 연계 프로모션 신세계그룹 뉴스룸",
+     "summary": [
+      "“日 여행 수요 증가…여행길 따라 쇼핑 혜택도 넓힌다” 신세계면세점, 제주항공 신규 취항 연계 프로모션 신세계그룹 뉴스룸…"
+     ],
+     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQMEF4OEZPX0p1bk5pYmJQMjYxcFZJNnVXNlpfRXhydXo3a0lhU1dmU3M1ZFRqSkIxYmhKQndOZHB1WE5NdGg2VVdLRWJsQ2hxbGppZ1YyWUw5TWVMR3FrQzR1T0x6dk4wZ21FSHRsc25hQlUzM0pwZElzckcyUGd2X2xWWXNNSnlnWlVnZk5iWU5tWkZaNWt2cUVuZDc?oc=5",
+     "source": "신세계그룹 뉴스룸",
+     "date": "2026-10-29T01:01:07.000Z",
+     "found": "2026-11-01",
+     "cards": [],
+     "airlines": [
+      "7C"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "일본 항공 프로모션"
+    },
+    {
+     "id": "05LXIxcWdSOXlDQXFuVmx2YWxxRDV0VnJNcW52bEczcGJ5bXdoVjZ5ZTExVlphR2UxVEdNTWpKQjlPRUJHc2JqaDBTdEVYdUdPUXRmald5VzAtUGtfUXFHdw|신세계그룹, 정용진 회장 복귀로 AI 통한 ‘미래 유통’ 구축·제주항공 ",
+     "kind": "airline",
+     "title": "신세계그룹, 정용진 회장 복귀로 AI 통한 ‘미래 유통’ 구축·제주항공 신규 취항 연계 프로모션 진행",
+     "desc": "신세계그룹, 정용진 회장 복귀로 AI 통한 ‘미래 유통’ 구축·제주항공 신규 취항 연계 프로모션 진행 여성소비자신문",
+     "summary": [
+      "신세계그룹, 정용진 회장 복귀로 AI 통한 ‘미래 유통’ 구축·제주항공 신규 취항 연계 프로모션 진행 여성소비자신문…"
+     ],
+     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE50RFVwUm05LXIxcWdSOXlDQXFuVmx2YWxxRDV0VnJNcW52bEczcGJ5bXdoVjZ5ZTExVlphR2UxVEdNTWpKQjlPRUJHc2JqaDBTdEVYdUdPUXRmald5VzAtUGtfUXFHdw?oc=5",
+     "source": "여성소비자신문",
+     "date": "2026-10-29T03:11:12.000Z",
+     "found": "2026-11-01",
+     "cards": [],
+     "airlines": [
+      "7C"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "일본 항공 프로모션"
+    },
+    {
+     "id": "C%9D%EC%97%85%EC%8A%A4%ED%86%A0%EC%96%B4-%EC%9A%B4%EC%98%81-%EB%82%B4%EB%8B%AC-28%EC%9D%BC%EA%B9%8C%EC%A7%80/ar-AA2gmSsA|제주항공, 노브랜드 버거와 성수동 팝업스토어 운영… 내달 28일까지",
+     "kind": "airline",
+     "title": "제주항공, 노브랜드 버거와 성수동 팝업스토어 운영… 내달 28일까지",
+     "desc": "제주항공이 신세계푸드의 노브랜드 버거와 손잡고 내외국인 고객과의 일상 속 접점을 넓히기 위한 온&#183;오프라인 공동 마케팅에 나선다. 제주항공은 30일부터 다음 달 28일까지 서울 성동구 성수동에 위치한 노브랜드 버거 성수랩점에서 팝업스토어를 운영한다고 밝혔다. 이번 팝업스토어에서는 ▲보딩패스 스탬프 이벤트 ▲노브랜드 버거&#183;제코 키캡 키링 만들기 ▲인증샷 이벤트 ...",
+     "summary": [
+      "제주항공이 신세계푸드의 노브랜드 버거와 손잡고 내외국인 고객과의 일상 속 접점을 넓히기 위한 온&#183;오프라인 공동 마케팅에 나선다.",
+      "제주항공은 30일부터 다음 달 28일까지 서울 성동구 성수동에 위치한 노브랜드 버거 성수랩점에서 팝업스토어를 운영한다고 밝혔다.",
+      "이번 팝업스토어에서는 ▲보딩패스 스탬프 이벤트 ▲노브랜드 버거&#183;제코 키캡 키링 만들기 ▲인증샷 이벤트…"
+     ],
+     "link": "https://www.msn.com/ko-kr/lifestyle/other/%EC%A0%9C%EC%A3%BC%ED%95%AD%EA%B3%B5-%EB%85%B8%EB%B8%8C%EB%9E%9C%EB%93%9C-%EB%B2%84%EA%B1%B0%EC%99%80-%EC%84%B1%EC%88%98%EB%8F%99-%ED%8C%9D%EC%97%85%EC%8A%A4%ED%86%A0%EC%96%B4-%EC%9A%B4%EC%98%81-%EB%82%B4%EB%8B%AC-28%EC%9D%BC%EA%B9%8C%EC%A7%80/ar-AA2gmSsA",
+     "source": "아시아경제 on MSN",
+     "date": "2026-10-29T18:29:59.000Z",
+     "found": "2026-10-31",
+     "cards": [],
+     "airlines": [
+      "7C"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "제주항공 특가"
+    },
+    {
+     "id": "OWRxR09QVXJUNVAzMkxaSEVfN2pVQjNuRlpfS3NLUHZkOWlMcmYteWVaS0NJTm5UamtxbTE3bV8yOG9rc2tiaENnVWJ6cmRLVTRYQnRuRnZ6alp0Q3prQTA0|제주항공, 노브랜드 버거와 프로모션…체험 이벤트·팝업스토어 마련",
+     "kind": "airline",
+     "title": "제주항공, 노브랜드 버거와 프로모션…체험 이벤트·팝업스토어 마련",
+     "desc": "제주항공, 노브랜드 버거와 프로모션…체험 이벤트·팝업스토어 마련 팍스경제TV",
+     "summary": [
+      "제주항공, 노브랜드 버거와 프로모션…체험 이벤트·팝업스토어 마련 팍스경제TV…"
+     ],
+     "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1mYlV0OWtPOWRxR09QVXJUNVAzMkxaSEVfN2pVQjNuRlpfS3NLUHZkOWlMcmYteWVaS0NJTm5UamtxbTE3bV8yOG9rc2tiaENnVWJ6cmRLVTRYQnRuRnZ6alp0Q3prQTA0?oc=5",
+     "source": "팍스경제TV",
+     "date": "2026-10-30T08:29:09.000Z",
+     "found": "2026-11-01",
+     "cards": [],
+     "airlines": [
+      "7C"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "일본 항공 프로모션"
     }
    ]
   },
@@ -389,8 +809,74 @@
    "price": null,
    "query": "트리니티항공 특가",
    "lastDate": "2026-10-30T06:02:00.000Z",
-   "lastFound": "2026-10-31",
+   "lastFound": "2026-11-01",
    "more": [
+    {
+     "id": "2cTdieGk4eEsxdFBHQU42dXc2ZUlFaEl6VVp0MG5BSWo2eFZ5RVRNcTVPYmdrcXdYTmI4V1NpX3BwS2pVWE9DZXhLbGFWelVBRXdlUlZjd21ZWXBKMVVrZTQ|트리니티항공, 제주도·관광공사와 제주행 항공권 프로모션",
+     "kind": "airline",
+     "title": "트리니티항공, 제주도·관광공사와 제주행 항공권 프로모션",
+     "desc": "트리니티항공, 제주도·관광공사와 제주행 항공권 프로모션 팍스경제TV",
+     "summary": [
+      "트리니티항공, 제주도·관광공사와 제주행 항공권 프로모션 팍스경제TV…"
+     ],
+     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9KMjZMNmV2cTdieGk4eEsxdFBHQU42dXc2ZUlFaEl6VVp0MG5BSWo2eFZ5RVRNcTVPYmdrcXdYTmI4V1NpX3BwS2pVWE9DZXhLbGFWelVBRXdlUlZjd21ZWXBKMVVrZTQ?oc=5",
+     "source": "팍스경제TV",
+     "date": "2026-10-29T23:59:42.000Z",
+     "found": "2026-11-01",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "일본 항공 프로모션"
+    },
+    {
+     "id": "Yd2tvZDJHbjdJRmNmQTgyNGRCWE1HbzBYblVrOHRFYVdVcnczdzM0XzB5X1c3YkdJWDFTTzlZcXhvcDc2V0gtTGowWlp0ZkNjTWtNZE50TEJZaEJTOTRBdXc|트리니티항공, '지금, 제주를 만나다' 프로모션 진행...최대 2만원 할",
+     "kind": "airline",
+     "title": "트리니티항공, '지금, 제주를 만나다' 프로모션 진행...최대 2만원 할인",
+     "desc": "트리니티항공, '지금, 제주를 만나다' 프로모션 진행...최대 2만원 할인 월요신문",
+     "summary": [
+      "트리니티항공, '지금, 제주를 만나다' 프로모션 진행...최대 2만원 할인 월요신문…"
+     ],
+     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9iRWk2Q0o4a05Yd2tvZDJHbjdJRmNmQTgyNGRCWE1HbzBYblVrOHRFYVdVcnczdzM0XzB5X1c3YkdJWDFTTzlZcXhvcDc2V0gtTGowWlp0ZkNjTWtNZE50TEJZaEJTOTRBdXc?oc=5",
+     "source": "월요신문",
+     "date": "2026-10-30T00:18:39.000Z",
+     "found": "2026-11-01",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "대만 항공 프로모션"
+    },
+    {
+     "id": "1NM2JyZGJkTU9aSHYzYi1rOUZnYmdaM0h5U2RUdngxZXBWQkoyYUh1V1JnWjN1ajlmcThGb24xamhHSUhLVFlDQnVLOEhaa2VMTk5WS0ticEo1REZHd25nZg|항공권 부담 덜고 제주 매력 더하고…트리니티항공 제주 여행 프로모션",
+     "kind": "airline",
+     "title": "항공권 부담 덜고 제주 매력 더하고…트리니티항공 제주 여행 프로모션",
+     "desc": "항공권 부담 덜고 제주 매력 더하고…트리니티항공 제주 여행 프로모션 ER 이코노믹리뷰",
+     "summary": [
+      "항공권 부담 덜고 제주 매력 더하고…트리니티항공 제주 여행 프로모션 ER 이코노믹리뷰…"
+     ],
+     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE13Q1VIMU5oU3haUS1NM2JyZGJkTU9aSHYzYi1rOUZnYmdaM0h5U2RUdngxZXBWQkoyYUh1V1JnWjN1ajlmcThGb24xamhHSUhLVFlDQnVLOEhaa2VMTk5WS0ticEo1REZHd25nZg?oc=5",
+     "source": "ER 이코노믹리뷰",
+     "date": "2026-10-30T01:07:41.000Z",
+     "found": "2026-11-01",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "중국 항공 프로모션"
+    },
     {
      "id": "https://www.newsis.com/view/NISX20261030_0003847635|트리니티항공 '지금, 제주를 만나다' 선착순 프로모션",
      "kind": "airline",
@@ -440,6 +926,52 @@
      "query": "트리니티항공 특가"
     },
     {
+     "id": "https://www.spochoo.com/news/articleView.html|“제주 왕복 항공권 최대 2만원 할인”…트리니티항공, 제주도·관광공사와 ",
+     "kind": "airline",
+     "title": "“제주 왕복 항공권 최대 2만원 할인”…트리니티항공, 제주도·관광공사와 여행 프로모션",
+     "desc": "[더게이트]트리니티항공이 제주특별자치도, 제주관광공사와 손잡고 가을·겨울 제주 여행객을 위한 항공권 할인 프로모션을 선보인다. 김포와 대구, 청주, 광주에서 출발하는 제주행 왕복 항공권을 대상으로 할인 혜택을 제공한다.트리니티항공은 제주특별자치도, 제주관광공사와 함께 제주 여행 활성화를 위한 ‘지금, 제주를 만나다’ 프로모션을 진행한다고 30일 밝혔다.이번 ...",
+     "summary": [
+      "[더게이트]트리니티항공이 제주특별자치도, 제주관광공사와 손잡고 가을·겨울 제주 여행객을 위한 항공권 할인 프로모션을 선보인다.",
+      "김포와 대구, 청주, 광주에서 출발하는 제주행 왕복 항공권을 대상으로 할인 혜택을 제공한다.",
+      "트리니티항공은 제주특별자치도, 제주관광공사와 함께 제주 여행 활성화를 위한 ‘지금, 제주를 만나다’ 프로모션을 진행한다고 30일 밝혔다."
+     ],
+     "link": "https://www.spochoo.com/news/articleView.html?idxno=131599",
+     "source": "스포츠춘추",
+     "date": "2026-10-30T02:35:00.000Z",
+     "found": "2026-11-01",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "트리니티항공 특가"
+    },
+    {
+     "id": "o5UHJRN3NkVjNfdGx3V1hGeXFkY2V3M0pIQ0dmWUVPb1ZEbG5qVWRNN0xodGxCQS1IWHdJNDQ0enBKbzZ0c2pDYWtEUDdmT1RBN21GWGpPcGZLYnpxcUplSg|트리니티항공, 제주행 왕복 항공권 최대 2만 원 할인 프로모션 진행",
+     "kind": "airline",
+     "title": "트리니티항공, 제주행 왕복 항공권 최대 2만 원 할인 프로모션 진행",
+     "desc": "트리니티항공, 제주행 왕복 항공권 최대 2만 원 할인 프로모션 진행 뷰티트래블뉴스",
+     "summary": [
+      "트리니티항공, 제주행 왕복 항공권 최대 2만 원 할인 프로모션 진행 뷰티트래블뉴스…"
+     ],
+     "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOYjJmcjZrRFlJRHdoTTVzQ0UtLVItQnlwdkx6ZUFSWHdoOFAxdTRTSkR0eXo5UHJRN3NkVjNfdGx3V1hGeXFkY2V3M0pIQ0dmWUVPb1ZEbG5qVWRNN0xodGxCQS1IWHdJNDQ0enBKbzZ0c2pDYWtEUDdmT1RBN21GWGpPcGZLYnpxcUplSg?oc=5",
+     "source": "뷰티트래블뉴스",
+     "date": "2026-10-30T02:58:24.000Z",
+     "found": "2026-11-01",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "싱가포르 항공 프로모션"
+    },
+    {
      "id": "http://www.newslock.co.kr/news/articleView.html|트리니티항공, 제주도&#183;제주관광공사와 프로모션... 국내선 이용객",
      "kind": "airline",
      "title": "트리니티항공, 제주도&#183;제주관광공사와 프로모션... 국내선 이용객 혜택 확대",
@@ -453,6 +985,30 @@
      "source": "뉴스락",
      "date": "2026-10-30T03:19:00.000Z",
      "found": "2026-10-31",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "트리니티항공 특가"
+    },
+    {
+     "id": "http://www.newslock.co.kr/news/articleView.html|트리니티항공, 제주도·제주관광공사와 프로모션... 국내선 이용객 혜택 확",
+     "kind": "airline",
+     "title": "트리니티항공, 제주도·제주관광공사와 프로모션... 국내선 이용객 혜택 확대",
+     "desc": "[뉴스락] 트리니티항공이 제주특별자치도, 제주관광공사와 내륙-제주 노선 이용객을 위한 '지금, 제주를 만나다' 프로모션을 진행한다고 30일 밝혔다.이번 프로모션은 김포·대구·청주·광주에서 출발하는 제주행 국내선 왕복 항공권 구매 고객을 대상으로 최대 2만원 할인 쿠폰을 제공한다.할인 쿠폰은 이날 오전 10시부터 트리니티항공 홈페이지를 통해 선착순으로 발급되 ...",
+     "summary": [
+      "[뉴스락] 트리니티항공이 제주특별자치도, 제주관광공사와 내륙-제주 노선 이용객을 위한 '지금, 제주를 만나다' 프로모션을 진행한다고 30일 밝혔다.",
+      "이번 프로모션은 김포·대구·청주·광주에서 출발하는 제주행 국내선 왕복 항공권 구매 고객을 대상으로 최대 2만원 할인 쿠폰을 제공한다.",
+      "할인 쿠폰은 이날 오전 10시부터 트리니티항공 홈페이지를 통해 선착순으로 발급되…"
+     ],
+     "link": "http://www.newslock.co.kr/news/articleView.html?idxno=138927",
+     "source": "뉴스락",
+     "date": "2026-10-30T03:19:00.000Z",
+     "found": "2026-11-01",
      "cards": [],
      "airlines": [
       "TW"
@@ -486,6 +1042,29 @@
      "routes": [],
      "price": null,
      "query": "트리니티항공 특가"
+    },
+    {
+     "id": "vWlhYblh5Mnh3SC1pN29TMnhHLTZ4M25qZjlUYUlULTJ2bFdOT3dXdEFhSWNkMEdNd3M0M0FhSzRXRF9ZMDhaamgyX2FvR253QVdnamc2S2J1T1hIZU5OUVE|영풍 석포제련소 앞 낙동강서 수달 포착... 트리니티항공, 제주 노선 할",
+     "kind": "airline",
+     "title": "영풍 석포제련소 앞 낙동강서 수달 포착... 트리니티항공, 제주 노선 할인 외 [시경Today-소재·정유·항공]",
+     "desc": "영풍 석포제련소 앞 낙동강서 수달 포착... 트리니티항공, 제주 노선 할인 외 [시경Today-소재·정유·항공] 시장경제신문",
+     "summary": [
+      "영풍 석포제련소 앞 낙동강서 수달 포착...",
+      "트리니티항공, 제주 노선 할인 외 [시경Today-소재·정유·항공] 시장경제신문…"
+     ],
+     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9YOW1sN19ZdUNCeHh4dERvWlhYblh5Mnh3SC1pN29TMnhHLTZ4M25qZjlUYUlULTJ2bFdOT3dXdEFhSWNkMEdNd3M0M0FhSzRXRF9ZMDhaamgyX2FvR253QVdnamc2S2J1T1hIZU5OUVE?oc=5",
+     "source": "시장경제신문",
+     "date": "2026-10-30T04:27:47.000Z",
+     "found": "2026-11-01",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "중국 항공 프로모션"
     },
     {
      "id": "https://www.economytribune.co.kr/news/articleView.html|트리니티항공, 제주 내국인 관광객 감소 속 항공권 프로모션…제주도도 겨울",
@@ -604,125 +1183,6 @@
    "lastFound": "2026-10-31"
   },
   {
-   "id": "55NFVvcTBhYjVwcVZ1eHZLTEIyZzA2ZWdWQlBUemdORUFUSHlXRGFVRWdyNTlDd3hKUnFXc2k2VExSRllqVE1qSWFCZGpPU3JIVGE0bnhHQTNnVjZDeFF3QQ|제주항공, 항공의 날 맞아 국내·국제선 48시간 특가",
-   "kind": "airline",
-   "title": "제주항공, 항공의 날 맞아 국내·국제선 48시간 특가",
-   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE8wWHJfWk55NFVvcTBhYjVwcVZ1eHZLTEIyZzA2ZWdWQlBUemdORUFUSHlXRGFVRWdyNTlDd3hKUnFXc2k2VExSRllqVE1qSWFCZGpPU3JIVGE0bnhHQTNnVjZDeFF3QQ?oc=5",
-   "source": "비건뉴스",
-   "date": "2026-10-28T07:00:01.000Z",
-   "found": "2026-10-31",
-   "cards": [],
-   "airlines": [
-    "7C",
-    "LJ",
-    "CX"
-   ],
-   "routes": [
-    {
-     "key": "SEL-CXR-3-5-D",
-     "level": "weak"
-    }
-   ],
-   "price": null,
-   "vs": null,
-   "query": "제주항공 특가",
-   "countries": [
-    "일본",
-    "홍콩",
-    "중국",
-    "미국령",
-    "베트남",
-    "대만"
-   ],
-   "allRoutes": true,
-   "lastDate": "2026-10-29T18:29:59.000Z",
-   "lastFound": "2026-10-31",
-   "more": [
-    {
-     "id": "https://www.vegannews.co.kr/news/article.html|제주항공, 항공의 날 맞아 국내&#183;국제선 48시간 특가",
-     "kind": "airline",
-     "title": "제주항공, 항공의 날 맞아 국내&#183;국제선 48시간 특가",
-     "desc": "제주항공이 항공의 날을 기념해 국내선과 국제선 항공권을 대상으로 48시간 할인 행사를 진행한다. 예약은 28일 오전 10시부터 30일 오전 10시까지 가능하며, 탑승 기간은 11월 30일까지다. 제주항공 프로모션 정보를 게시한 고고씽에 따르면 할인 대상은 국내선 6개와 일본&#183;중국&#183;동남아시아&#183;홍콩&#183;사이판 국제선 31개 노선이다. 편도 총액 기준 최저 운임은 ...",
-     "summary": [
-      "제주항공이 항공의 날을 기념해 국내선과 국제선 항공권을 대상으로 48시간 할인 행사를 진행한다.",
-      "예약은 28일 오전 10시부터 30일 오전 10시까지 가능하며, 탑승 기간은 11월 30일까지다.",
-      "제주항공 프로모션 정보를 게시한 고고씽에 따르면 할인 대상은 국내선 6개와 일본&#183;중국&#183;동남아시아&#183;홍콩&#183;사이판 국제선 31개 노선이다."
-     ],
-     "link": "https://www.vegannews.co.kr/news/article.html?no=397823",
-     "source": "vegannews",
-     "date": "2026-10-28T09:00:00.000Z",
-     "found": "2026-10-31",
-     "cards": [],
-     "airlines": [
-      "7C"
-     ],
-     "countries": [
-      "일본",
-      "홍콩",
-      "중국",
-      "미국령"
-     ],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "제주항공 특가"
-    },
-    {
-     "id": "%ED%95%A0%EC%9D%B8-%EA%B8%B0%ED%9A%8C-11%EC%9B%94-%EC%B5%9C%EB%8C%80-15-%EB%82%B4%EB%A0%A4%EA%B0%84%EB%8B%A4/ar-AA2ghsJp|일본&#183;대만&#183;베트남 항공권 할인 기회…11월 최대 15%",
-     "kind": "airline",
-     "title": "일본&#183;대만&#183;베트남 항공권 할인 기회…11월 최대 15% 내려간다",
-     "desc": "스카이스캐너, 11일간 항공권 할인 프로모션진에어&#183;제주항공&#183;캐세이퍼시픽 등 단독 혜택 제공 (서울=뉴스1) 윤슬빈 관광전문기자 = 스카이스캐너가 연말 여행 수요를 겨냥해 다음 달 1일부터 11일까지 항공권 할인 프로모션을 진행한다. 29일 스카이스캐너에 따르면 이번 '11.11 쇼핑 데이' 프로모션에는 국내외 항공사 ...",
-     "summary": [
-      "스카이스캐너, 11일간 항공권 할인 프로모션진에어&#183;제주항공&#183;캐세이퍼시픽 등 단독 혜택 제공 (서울=뉴스1) 윤슬빈 관광전문기자 = 스카이스캐너가 연말 여행 수요를 겨냥해 다음 달 1일부터 11일까지 항공권 할인 …",
-      "29일 스카이스캐너에 따르면 이번 '11.11 쇼핑 데이' 프로모션에는 국내외 항공사…"
-     ],
-     "link": "https://www.msn.com/ko-kr/entertainment/games/%EC%9D%BC%EB%B3%B8-%EB%8C%80%EB%A7%8C-%EB%B2%A0%ED%8A%B8%EB%82%A8-%ED%95%AD%EA%B3%B5%EA%B6%8C-%ED%95%A0%EC%9D%B8-%EA%B8%B0%ED%9A%8C-11%EC%9B%94-%EC%B5%9C%EB%8C%80-15-%EB%82%B4%EB%A0%A4%EA%B0%84%EB%8B%A4/ar-AA2ghsJp",
-     "source": "뉴스1 on MSN",
-     "date": "2026-10-28T17:44:28.000Z",
-     "found": "2026-10-31",
-     "cards": [],
-     "airlines": [
-      "7C",
-      "LJ",
-      "CX"
-     ],
-     "countries": [
-      "베트남",
-      "일본",
-      "대만"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "베트남 항공 프로모션"
-    },
-    {
-     "id": "C%9D%EC%97%85%EC%8A%A4%ED%86%A0%EC%96%B4-%EC%9A%B4%EC%98%81-%EB%82%B4%EB%8B%AC-28%EC%9D%BC%EA%B9%8C%EC%A7%80/ar-AA2gmSsA|제주항공, 노브랜드 버거와 성수동 팝업스토어 운영… 내달 28일까지",
-     "kind": "airline",
-     "title": "제주항공, 노브랜드 버거와 성수동 팝업스토어 운영… 내달 28일까지",
-     "desc": "제주항공이 신세계푸드의 노브랜드 버거와 손잡고 내외국인 고객과의 일상 속 접점을 넓히기 위한 온&#183;오프라인 공동 마케팅에 나선다. 제주항공은 30일부터 다음 달 28일까지 서울 성동구 성수동에 위치한 노브랜드 버거 성수랩점에서 팝업스토어를 운영한다고 밝혔다. 이번 팝업스토어에서는 ▲보딩패스 스탬프 이벤트 ▲노브랜드 버거&#183;제코 키캡 키링 만들기 ▲인증샷 이벤트 ...",
-     "summary": [
-      "제주항공이 신세계푸드의 노브랜드 버거와 손잡고 내외국인 고객과의 일상 속 접점을 넓히기 위한 온&#183;오프라인 공동 마케팅에 나선다.",
-      "제주항공은 30일부터 다음 달 28일까지 서울 성동구 성수동에 위치한 노브랜드 버거 성수랩점에서 팝업스토어를 운영한다고 밝혔다.",
-      "이번 팝업스토어에서는 ▲보딩패스 스탬프 이벤트 ▲노브랜드 버거&#183;제코 키캡 키링 만들기 ▲인증샷 이벤트…"
-     ],
-     "link": "https://www.msn.com/ko-kr/lifestyle/other/%EC%A0%9C%EC%A3%BC%ED%95%AD%EA%B3%B5-%EB%85%B8%EB%B8%8C%EB%9E%9C%EB%93%9C-%EB%B2%84%EA%B1%B0%EC%99%80-%EC%84%B1%EC%88%98%EB%8F%99-%ED%8C%9D%EC%97%85%EC%8A%A4%ED%86%A0%EC%96%B4-%EC%9A%B4%EC%98%81-%EB%82%B4%EB%8B%AC-28%EC%9D%BC%EA%B9%8C%EC%A7%80/ar-AA2gmSsA",
-     "source": "아시아경제 on MSN",
-     "date": "2026-10-29T18:29:59.000Z",
-     "found": "2026-10-31",
-     "cards": [],
-     "airlines": [
-      "7C"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "제주항공 특가"
-    }
-   ]
-  },
-  {
    "id": "U5cmhVV2V2eFJwaUFBdEMtUngxb1c3ZEdJWklCdkw5dWp4S2VRNmFtQkFySFFPMmdGUktVZXN1NmdWUmoyZ3NrVy1CT2kxeXBGdVVHTWw0WDlRcF9YVWNLQQ|스카이스캐너, ‘11.11 쇼핑데이’ 항공권 할인 프로모션",
    "kind": "airline",
    "title": "스카이스캐너, ‘11.11 쇼핑데이’ 항공권 할인 프로모션",
@@ -786,8 +1246,33 @@
    "price": null,
    "query": "신한카드 해외여행 할인",
    "lastDate": "2026-10-29T07:30:00.000Z",
-   "lastFound": "2026-10-31",
+   "lastFound": "2026-11-01",
    "more": [
+    {
+     "id": "https://www.newstap.co.kr/news/articleView.html|신한카드 들고 후쿠오카 가면 혜택…11월부터 교통·쇼핑·맛집 할인",
+     "kind": "card",
+     "title": "신한카드 들고 후쿠오카 가면 혜택…11월부터 교통·쇼핑·맛집 할인",
+     "desc": "프로모션 대상은 신한카드가 발행하는 일본 여행 특화 카드인 ‘신한카드 Haru’와 ‘신한카드 SOL Trip & J’ 회원이다. 해당 카드를 소지한 한국인 여행객은 후쿠오카 현지에서 교통수단의 컨택리스 결제 승차 혜택을 비롯해 주요 상업시설과 호텔 레스토랑의 할인 혜택을 이용할 수 있다.",
+     "summary": [
+      "프로모션 대상은 신한카드가 발행하는 일본 여행 특화 카드인 ‘신한카드 Haru’와 ‘신한카드 SOL Trip & J’ 회원이다.",
+      "해당 카드를 소지한 한국인 여행객은 후쿠오카 현지에서 교통수단의 컨택리스 결제 승차 혜택을 비롯해 주요 상업시설과 호텔 레스토랑의 할인 혜택을 이용할 수 있다."
+     ],
+     "link": "https://www.newstap.co.kr/news/articleView.html?idxno=336644",
+     "source": "뉴스탭",
+     "date": "2026-10-28T23:33:00.000Z",
+     "found": "2026-11-01",
+     "cards": [
+      "신한카드"
+     ],
+     "airlines": [],
+     "countries": [
+      "일본"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "신한카드 해외여행 할인"
+    },
     {
      "id": "9F%93-%EA%B4%80%EA%B4%91%EA%B0%9D-%EB%8C%80%EC%83%81-%EA%B3%B5%EB%8F%99-%ED%94%84%EB%A1%9C%EB%AA%A8%EC%85%98/ar-AA2gjHgz|내 신용카드로 후쿠오카 버스 탄다…JCB&#183;신한카드&#183;니시",
      "kind": "card",
@@ -800,6 +1285,30 @@
      "source": "헤럴드경제 on MSN",
      "date": "2026-10-29T07:30:00.000Z",
      "found": "2026-10-31",
+     "cards": [
+      "신한카드"
+     ],
+     "airlines": [],
+     "countries": [
+      "일본"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "신한카드 해외여행 할인"
+    },
+    {
+     "id": "9F%93-%EA%B4%80%EA%B4%91%EA%B0%9D-%EB%8C%80%EC%83%81-%EA%B3%B5%EB%8F%99-%ED%94%84%EB%A1%9C%EB%AA%A8%EC%85%98/ar-AA2gjHgz|내 신용카드로 후쿠오카 버스 탄다…JCB·신한카드·니시테츠, 韓 관광객 ",
+     "kind": "card",
+     "title": "내 신용카드로 후쿠오카 버스 탄다…JCB·신한카드·니시테츠, 韓 관광객 대상 공동 프로모션",
+     "desc": "일본 국제 카드 브랜드 JCB가 신한카드, 일본 니시테츠 그룹과 협력해 오는 11월 1일부터 한국인 관광객을 대상으로 후쿠오카를 방문하는 한국인 여행객에게 교통·쇼핑·호텔 이용 혜택을 제공하는 공동 프로모션을 실시한다고 밝혔다.",
+     "summary": [
+      "일본 국제 카드 브랜드 JCB가 신한카드, 일본 니시테츠 그룹과 협력해 오는 11월 1일부터 한국인 관광객을 대상으로 후쿠오카를 방문하는 한국인 여행객에게 교통·쇼핑·호텔 이용 혜택을 제공하는 공동 프로모션을 실시한다고 밝혔다."
+     ],
+     "link": "https://www.msn.com/ko-kr/travel/%EC%B9%B4%EC%A7%80%EB%85%B8-%EB%B0%8F-%EB%8F%84%EB%B0%95/%EB%82%B4-%EC%8B%A0%EC%9A%A9%EC%B9%B4%EB%93%9C%EB%A1%9C-%ED%9B%84%EC%BF%A0%EC%98%A4%EC%B9%B4-%EB%B2%84%EC%8A%A4-%ED%83%84%EB%8B%A4-jcb-%EC%8B%A0%ED%95%9C%EC%B9%B4%EB%93%9C-%EB%8B%88%EC%8B%9C%ED%85%8C%EC%B8%A0-%E9%9F%93-%EA%B4%80%EA%B4%91%EA%B0%9D-%EB%8C%80%EC%83%81-%EA%B3%B5%EB%8F%99-%ED%94%84%EB%A1%9C%EB%AA%A8%EC%85%98/ar-AA2gjHgz",
+     "source": "헤럴드경제 on MSN",
+     "date": "2026-10-29T07:30:00.000Z",
+     "found": "2026-11-01",
      "cards": [
       "신한카드"
      ],
@@ -866,6 +1375,28 @@
      "allRoutes": false
     }
    ]
+  },
+  {
+   "id": "MiV0FVX3lxTE5abDhVX2FHbG9fdzlHckpuLW5pRUx0LU95UERxUkZHb2wwaEg1eEhDMGYzdGZOdHc4YzJOX0xrOHpnemFvV2tFdzJrbjA2bGlISFNFNEZCMA|[허프 US] 틱톡커가 공개한 '항공권 반값 예매' 꿀팁 : 여행 전문가",
+   "kind": "airline",
+   "title": "[허프 US] 틱톡커가 공개한 '항공권 반값 예매' 꿀팁 : 여행 전문가들은 '효과 없다'고 잘라 말했다",
+   "desc": "[허프 US] 틱톡커가 공개한 '항공권 반값 예매' 꿀팁 : 여행 전문가들은 '효과 없다'고 잘라 말했다 허프포스트코리아",
+   "summary": [
+    "[허프 US] 틱톡커가 공개한 '항공권 반값 예매' 꿀팁 : 여행 전문가들은 '효과 없다'고 잘라 말했다 허프포스트코리아…"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5abDhVX2FHbG9fdzlHckpuLW5pRUx0LU95UERxUkZHb2wwaEg1eEhDMGYzdGZOdHc4YzJOX0xrOHpnemFvV2tFdzJrbjA2bGlISFNFNEZCMA?oc=5",
+   "source": "허프포스트코리아",
+   "date": "2026-10-29T02:59:14.000Z",
+   "found": "2026-11-01",
+   "cards": [],
+   "airlines": [],
+   "countries": [],
+   "allRoutes": false,
+   "routes": [],
+   "price": null,
+   "query": "미국 항공권 특가",
+   "lastDate": "2026-10-29T02:59:14.000Z",
+   "lastFound": "2026-11-01"
   },
   {
    "id": "BUUlBuMFhFbFFMVlhBdkU3VDRjTlFsSG1VeWxxRW5DWUl5a2R3cVdNemQ4ZnlEZUxfczBUdHd5UmJhdHItQmZGcmZldUZfUzEzRkJGSTFwWjRXanNTRkFmNw|일본·대만·베트남 항공권 할인 기회…11월 최대 15% 내려간다",
@@ -1130,6 +1661,122 @@
    ]
   },
   {
+   "id": "https://www.traveldaily.co.kr/news/articleView.html|홍콩익스프레스, 초특가 프로모션 실시",
+   "kind": "airline",
+   "title": "홍콩익스프레스, 초특가 프로모션 실시",
+   "desc": "홍콩익스프레스는 창립 13주년을 기념하고 그동안 성원을 보내준 고객들에게 감사의 마음을 전하기 위해 ‘13주년 초특가 프로모션’을 진행한다. 한국 노선의 경우 서울 (인천), 부산, 제주, 대구 노선 모두 편도 총액 기준 ‘라이트 (Lite)’ 운임은 11만 3000원부터, 소형 개인 소지품 1개와 20kg 위탁수하물 1개가 포함된 ‘에센셜 ...",
+   "summary": [
+    "홍콩익스프레스는 창립 13주년을 기념하고 그동안 성원을 보내준 고객들에게 감사의 마음을 전하기 위해 ‘13주년 초특가 프로모션’을 진행한다.",
+    "한국 노선의 경우 서울 (인천), 부산, 제주, 대구 노선 모두 편도 총액 기준 ‘라이트 (Lite)’ 운임은 11만 3000원부터, 소형 개인 소지품 1개와 20kg 위탁수하물 1개가 포함된 ‘에센셜…"
+   ],
+   "link": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72463",
+   "source": "traveldaily",
+   "date": "2026-10-27T13:59:00.000Z",
+   "found": "2026-11-01",
+   "cards": [],
+   "airlines": [
+    "UO"
+   ],
+   "countries": [
+    "홍콩"
+   ],
+   "allRoutes": false,
+   "routes": [],
+   "price": {
+    "amount": 113000,
+    "trip": "oneway"
+   },
+   "query": "홍콩 항공 프로모션",
+   "lastDate": "2026-10-28T04:32:00.000Z",
+   "lastFound": "2026-11-01",
+   "more": [
+    {
+     "id": "https://www.gukjenews.com/news/articleView.html|홍콩익스프레스, 창립 13주년 맞아 특별 프로모션",
+     "kind": "airline",
+     "title": "홍콩익스프레스, 창립 13주년 맞아 특별 프로모션",
+     "desc": "(서울=국제뉴스) 유지현 기자 = 홍콩 여행을 계획하고 있다면, 눈여겨볼 프로모션이 있다. 홍콩익스프레스항공이 창립 13주년을 맞아 고객 감사의 의미로 '13주년 초특가 프로모션'을 실시한다.홍콩익스프레스항공은 2026년 AirlineRatings로부터 '세계 최고의 저비용 항공사'로, 2025년과 2026년 2년 연속 '세계에서 가장 안전한 저비용 항공사 ...",
+     "summary": [
+      "유지현 기자 = 홍콩 여행을 계획하고 있다면, 눈여겨볼 프로모션이 있다.",
+      "홍콩익스프레스항공이 창립 13주년을 맞아 고객 감사의 의미로 '13주년 초특가 프로모션'을 실시한다.",
+      "홍콩익스프레스항공은 2026년 AirlineRatings로부터 '세계 최고의 저비용 항공사'로, 2025년과 2026년 2년 연속 '세계에서 가장 안전한 저비용 항공사…"
+     ],
+     "link": "https://www.gukjenews.com/news/articleView.html?idxno=3732672",
+     "source": "국제뉴스",
+     "date": "2026-10-26T08:47:00.000Z",
+     "found": "2026-11-01",
+     "cards": [],
+     "airlines": [
+      "UO"
+     ],
+     "countries": [
+      "홍콩"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "홍콩 항공권 특가"
+    },
+    {
+     "id": "%84%EB%A0%88%EC%8A%A4-%EC%B0%BD%EB%A6%BD-13%EC%A3%BC%EB%85%84-%EC%B4%88%ED%8A%B9%EA%B0%80-%EC%8F%9C%EB%8B%A4/ar-AA2gcH4i|홍콩 항공권 11만3000원부터… 홍콩익스프레스, 창립 13주년 초특가 ",
+     "kind": "airline",
+     "title": "홍콩 항공권 11만3000원부터… 홍콩익스프레스, 창립 13주년 초특가 쏜다",
+     "desc": "[투어코리아=조성란 기자] 홍콩 여행을 계획하고 있다면 이번 주 항공권 특가를 눈여겨볼 만하다. 홍콩익스프레스항공이 창립 13주년을 맞아 한국 출발 홍콩 노선 항공권을 편도 총액 11만3000원부터 판매하는 특별 프로모션을 진행한다.홍콩익스프레스항공은 오는 31일 오전 0시 45분까지 5일간 ‘13주년 초특가 프로모션’을 실시한다. 이번 행사에는 인천·부산 ...",
+     "summary": [
+      "홍콩 여행을 계획하고 있다면 이번 주 항공권 특가를 눈여겨볼 만하다.",
+      "홍콩익스프레스항공이 창립 13주년을 맞아 한국 출발 홍콩 노선 항공권을 편도 총액 11만3000원부터 판매하는 특별 프로모션을 진행한다.",
+      "홍콩익스프레스항공은 오는 31일 오전 0시 45분까지 5일간 ‘13주년 초특가 프로모션’을 실시한다."
+     ],
+     "link": "https://www.msn.com/ko-kr/news/other/%ED%99%8D%EC%BD%A9-%ED%95%AD%EA%B3%B5%EA%B6%8C-11%EB%A7%8C3000%EC%9B%90%EB%B6%80%ED%84%B0-%ED%99%8D%EC%BD%A9%EC%9D%B5%EC%8A%A4%ED%94%84%EB%A0%88%EC%8A%A4-%EC%B0%BD%EB%A6%BD-13%EC%A3%BC%EB%85%84-%EC%B4%88%ED%8A%B9%EA%B0%80-%EC%8F%9C%EB%8B%A4/ar-AA2gcH4i",
+     "source": "투어코리아 on MSN",
+     "date": "2026-10-27T16:37:03.000Z",
+     "found": "2026-11-01",
+     "cards": [],
+     "airlines": [
+      "UO"
+     ],
+     "countries": [
+      "홍콩"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": {
+      "amount": 113000,
+      "trip": "oneway"
+     },
+     "query": "홍콩 항공권 특가"
+    },
+    {
+     "id": "%84%EB%A0%88%EC%8A%A4-%EC%B0%BD%EB%A6%BD-13%EC%A3%BC%EB%85%84-%EC%B4%88%ED%8A%B9%EA%B0%80-%EC%8F%9C%EB%8B%A4/ar-AA2gcH4i|“홍콩 항공권 11만3000원부터”…홍콩익스프레스, 창립 13주년 초특가",
+     "kind": "airline",
+     "title": "“홍콩 항공권 11만3000원부터”…홍콩익스프레스, 창립 13주년 초특가 쏜다",
+     "desc": "[투어코리아=조성란 기자] 홍콩 여행을 계획하고 있다면 이번 주 항공권 특가를 눈여겨볼 만하다. 홍콩익스프레스항공이 창립 13주년을 맞아 한국 출발 홍콩 노선 항공권을 편도 총액 11만3000원부터 판매하는 특별 프로모션을 진행한다.홍콩익스프레스항공은 오는 31일 오전 0시 45분까지 5일간 ‘13주년 초특가 프로모션’을 실시한다. 이번 행사에는 인천·부산 ...",
+     "summary": [
+      "홍콩 여행을 계획하고 있다면 이번 주 항공권 특가를 눈여겨볼 만하다.",
+      "홍콩익스프레스항공이 창립 13주년을 맞아 한국 출발 홍콩 노선 항공권을 편도 총액 11만3000원부터 판매하는 특별 프로모션을 진행한다.",
+      "홍콩익스프레스항공은 오는 31일 오전 0시 45분까지 5일간 ‘13주년 초특가 프로모션’을 실시한다."
+     ],
+     "link": "https://www.msn.com/ko-kr/news/other/%ED%99%8D%EC%BD%A9-%ED%95%AD%EA%B3%B5%EA%B6%8C-11%EB%A7%8C3000%EC%9B%90%EB%B6%80%ED%84%B0-%ED%99%8D%EC%BD%A9%EC%9D%B5%EC%8A%A4%ED%94%84%EB%A0%88%EC%8A%A4-%EC%B0%BD%EB%A6%BD-13%EC%A3%BC%EB%85%84-%EC%B4%88%ED%8A%B9%EA%B0%80-%EC%8F%9C%EB%8B%A4/ar-AA2gcH4i",
+     "source": "투어코리아 on MSN",
+     "date": "2026-10-28T04:32:00.000Z",
+     "found": "2026-11-01",
+     "cards": [],
+     "airlines": [
+      "UO"
+     ],
+     "countries": [
+      "홍콩"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": {
+      "amount": 113000,
+      "trip": "oneway"
+     },
+     "query": "홍콩 항공 프로모션"
+    }
+   ]
+  },
+  {
    "id": "hvTmpCUHJjSHZJcFhYc2dtOVF1dFZwOEJRWUZSS3lxcVpyUnlXcjZMQXNnX3dLSS10MjZPUlhtM3BQUmRjY0F6RXBSeS1lenBnNmFkZHV4NU9WdUxTcTJSQg|항공의 날 기념식 30일 개최…항공권 할인 행사 11월까지 이어져",
    "kind": "airline",
    "title": "항공의 날 기념식 30일 개최…항공권 할인 행사 11월까지 이어져",
@@ -1147,6 +1794,37 @@
    "allRoutes": false,
    "lastDate": "2026-10-28T02:50:34.000Z",
    "lastFound": "2026-10-31"
+  },
+  {
+   "id": "https://www.bizwnews.com/news/articleView.html|홍콩익스프레스, 창립 13주년 맞이 ‘11만원대’ 홍콩행 특가 진행",
+   "kind": "airline",
+   "title": "홍콩익스프레스, 창립 13주년 맞이 ‘11만원대’ 홍콩행 특가 진행",
+   "desc": "[비즈월드] 홍콩 유일의 저비용항공사(LCC)인 홍콩익스프레스항공이 창립 13주년을 맞아 한국과 홍콩을 잇는 전 노선을 대상으로 초특가 프로모션을 진행한다고 27일 밝혔다.이번 ‘13주년 초특가 프로모션’은 인천(서울)을 비롯해 부산, 제주, 대구에서 출발하는 홍콩행 왕복 노선을 대상으로 한다. 편도 총액 기준으로 위탁수하물 없이 기내 수하물만 반입하는 ‘ ...",
+   "summary": [
+    "[비즈월드] 홍콩 유일의 저비용항공사(LCC)인 홍콩익스프레스항공이 창립 13주년을 맞아 한국과 홍콩을 잇는 전 노선을 대상으로 초특가 프로모션을 진행한다고 27일 밝혔다.",
+    "이번 ‘13주년 초특가 프로모션’은 인천(서울)을 비롯해 부산, 제주, 대구에서 출발하는 홍콩행 왕복 노선을 대상으로 한다.",
+    "편도 총액 기준으로 위탁수하물 없이 기내 수하물만 반입하는 ‘…"
+   ],
+   "link": "https://www.bizwnews.com/news/articleView.html?idxno=150120",
+   "source": "비즈월드",
+   "date": "2026-10-27T15:45:00.000Z",
+   "found": "2026-11-01",
+   "cards": [],
+   "airlines": [
+    "UO"
+   ],
+   "countries": [
+    "홍콩"
+   ],
+   "allRoutes": true,
+   "routes": [],
+   "price": {
+    "amount": 110000,
+    "trip": "oneway?"
+   },
+   "query": "홍콩 항공권 특가",
+   "lastDate": "2026-10-27T15:45:00.000Z",
+   "lastFound": "2026-11-01"
   },
   {
    "id": "YYjlZNEdHcnlSd1VMS21GVjJOd0lUSElpdUdfSC1XVTNKdkJ3MWMyVlQ1OVRsRUp5dUIwbUtxWm1MaW5TYWp3RTJJNXU1aThuWjhxQWNHcHVvWVlnRDg1QlE|선푸꾸옥항공은 창립 1주년을 기념하여 선월드 고객에게 항공권 할인 코드와",
@@ -1168,6 +1846,32 @@
    "query": "베트남 항공 프로모션",
    "lastDate": "2026-10-27T04:48:35.000Z",
    "lastFound": "2026-10-31"
+  },
+  {
+   "id": "https://inni-today.com/business-economy/2026-money-0226/|인니, 연말 국내선 항공권 부가세 지원…철도·여객선 30% 할인",
+   "kind": "airline",
+   "title": "인니, 연말 국내선 항공권 부가세 지원…철도·여객선 30% 할인",
+   "desc": "인도네시아 정부가 연말연시 국내선 항공권의 부가가치세를 전액 지원한다. 철도와 여객선 운임도 30% 할인된다. 24일 자카르타글로브에 따르면 지원 대상은 국내선 이코노미석의 기본운임과 유류할증료에 부과되는 부가세다. 예산은 7220억 루피아(약 527억 원)로 약 370만 명이 혜택을 받을 전망이다. 올해 12월 22일부터 내년 1월 10일까지 운항하는 항 ...",
+   "summary": [
+    "철도와 여객선 운임도 30% 할인된다.",
+    "24일 자카르타글로브에 따르면 지원 대상은 국내선 이코노미석의 기본운임과 유류할증료에 부과되는 부가세다.",
+    "예산은 7220억 루피아(약 527억 원)로 약 370만 명이 혜택을 받을 전망이다."
+   ],
+   "link": "https://inni-today.com/business-economy/2026-money-0226/",
+   "source": "inni-today",
+   "date": "2026-10-26T17:00:00.000Z",
+   "found": "2026-11-01",
+   "cards": [],
+   "airlines": [],
+   "countries": [
+    "인도네시아"
+   ],
+   "allRoutes": false,
+   "routes": [],
+   "price": null,
+   "query": "인도네시아 항공권 특가",
+   "lastDate": "2026-10-26T17:00:00.000Z",
+   "lastFound": "2026-11-01"
   },
   {
    "id": "official:7C:0000004389",
@@ -1616,16 +2320,100 @@
    "from": "2026-08-01",
    "lastDate": "2026-08-01T00:00:00.000Z",
    "lastFound": "2026-10-31"
+  },
+  {
+   "id": "official:TW:2569",
+   "kind": "airline",
+   "official": true,
+   "title": "인천공항 프리미엄 체크인 혜택",
+   "desc": "전용 카운터에서 더 빠르고 여유로운 출발!",
+   "link": "https://www.trinityairways.com/app/promotion/event/being",
+   "source": "트리니티항공 공식",
+   "date": "2026-08-01T00:00:00.000Z",
+   "from": "2026-08-01",
+   "until": "2026-12-31",
+   "found": "2026-11-01",
+   "cards": [],
+   "airlines": [
+    "TW"
+   ],
+   "countries": [],
+   "allRoutes": false,
+   "routes": [],
+   "price": null,
+   "lastDate": "2026-08-01T00:00:00.000Z",
+   "lastFound": "2026-11-01"
+  },
+  {
+   "id": "official:TW:2576",
+   "kind": "airline",
+   "official": true,
+   "title": "국립항공박물관 우대 요금 혜택",
+   "desc": "비행기도 타고, 박물관도 가자!",
+   "link": "https://www.trinityairways.com/app/promotion/event/being",
+   "source": "트리니티항공 공식",
+   "date": "2026-07-28T00:00:00.000Z",
+   "from": "2026-07-28",
+   "until": "2026-12-31",
+   "found": "2026-11-01",
+   "cards": [],
+   "airlines": [
+    "TW"
+   ],
+   "countries": [],
+   "allRoutes": false,
+   "routes": [],
+   "price": null,
+   "lastDate": "2026-07-28T00:00:00.000Z",
+   "lastFound": "2026-11-01"
+  },
+  {
+   "id": "official:TW:2571",
+   "kind": "airline",
+   "official": true,
+   "title": "싱가포르 액티비티 센토사 제휴",
+   "desc": "싱가포르 가면 액티비티 무료 제공!",
+   "link": "https://www.trinityairways.com/app/promotion/event/being",
+   "source": "트리니티항공 공식",
+   "date": "2026-01-02T00:00:00.000Z",
+   "from": "2026-01-02",
+   "until": "2026-12-31",
+   "found": "2026-11-01",
+   "cards": [],
+   "airlines": [
+    "TW"
+   ],
+   "countries": [
+    "싱가포르"
+   ],
+   "allRoutes": false,
+   "routes": [],
+   "price": null,
+   "lastDate": "2026-01-02T00:00:00.000Z",
+   "lastFound": "2026-11-01"
   }
  ],
- "updated": "2026-10-31T10:44:26.505Z",
- "runs": 8,
+ "updated": "2026-10-31T23:56:23.522Z",
+ "runs": 9,
  "sources": {
   "7C": "2026-10-31",
   "TW": "2026-10-31",
   "VJ": "2026-10-31"
  },
  "checked": {
-  "베트남": "2026-10-31T10:44:26.505Z"
- }
+  "베트남": "2026-10-31T23:56:23.522Z",
+  "태국": "2026-10-31T23:56:23.522Z",
+  "필리핀": "2026-10-31T23:56:23.522Z",
+  "인도네시아": "2026-10-31T23:56:23.522Z",
+  "말레이시아": "2026-10-31T23:56:23.522Z",
+  "싱가포르": "2026-10-31T23:56:23.522Z",
+  "일본": "2026-10-31T23:56:23.522Z",
+  "대만": "2026-10-31T23:56:23.522Z",
+  "홍콩": "2026-10-31T23:56:23.522Z",
+  "마카오": "2026-10-31T23:56:23.522Z",
+  "중국": "2026-10-31T23:56:23.522Z",
+  "미국령": "2026-10-31T23:56:23.522Z",
+  "미국": "2026-10-31T23:56:23.522Z"
+ },
+ "auto": "2026-10-31T23:56:23.522Z"
 }
