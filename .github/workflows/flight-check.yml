@@ -10,7 +10,7 @@ on:
       mode:
         description: 'check = 평소 점검, test-notify = 휴대폰 알림 테스트만'
         type: choice
-        options: [check, test-notify, probe]
+        options: [check, test-notify]
         default: check
 
 permissions:
@@ -35,7 +35,6 @@ jobs:
           export APP_URL="https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}/"
           # 비엣젯 공식 특가 게시판은 화면을 자바스크립트로 그려서, 서버에 설치된 크롬으로 열어 읽음 (연결 도구만 설치)
           npm i --no-save --no-audit --no-fund --silent playwright-core@1.48.2 || echo "크롬 연결 도구 설치 실패 → 비엣젯 공식 확인만 건너뜀"
-          if [ "${{ inputs.mode }}" = "probe" ]; then node scripts/probe-ttang.js; exit 0; fi
           node scripts/flight-check.js ${{ inputs.mode == 'test-notify' && '--test-notify' || '' }}
         env:
           TP_TOKEN: ${{ secrets.TP_TOKEN }}
