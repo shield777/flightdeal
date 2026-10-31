@@ -412,7 +412,7 @@
   }
   function cardSection() {
     const recent = F.addDays(today, -21);
-    const items = (data.promos.items || []).filter(p => p.kind === 'card' && (p.lastFound || p.found) >= recent);
+    const items = (data.promos.items || []).filter(p => p.kind === 'card' && (p.until ? p.until >= today : (p.lastFound || p.found) >= recent));
     return `<section class="fl-cards">
       <h2>💳 내 카드 할인 <small>우리·현대·신한</small></h2>
       <div class="fl-cardgrid">${F.CARDS.map(c => {

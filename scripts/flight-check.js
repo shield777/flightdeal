@@ -303,12 +303,15 @@ async function checkPromos(watch, results, promos, alerts) {
   for (const ev of official.items) {
     if (ev.end && ev.end < TODAY) continue; // 끝난 이벤트
     const id = `official:${ev.code}:${ev.key}`;
-    if (known.has(id)) { Object.assign(known.get(id), { title: ev.title, until: ev.end || null }); continue; }
     const body = `${ev.title} ${ev.sub || ''}`;
+    // 우리·현대·신한카드 제휴 할인은 '카드 할인'으로 분류 → 앱의 내 카드 할인 칸에 표시
+    const cardHit = F.CARD_NAMES.filter(c => body.includes(c));
+    const kind = cardHit.length ? 'card' : 'airline';
+    if (known.has(id)) { Object.assign(known.get(id), { title: ev.title, until: ev.end || null, kind, cards: cardHit }); continue; }
     const c = F.classifyNews(body, '', routes) || { routes: [], price: F.promoPrice(body), ...F.newsScope(body) };
-    const p = { id, kind: 'airline', official: true, title: ev.title, desc: (ev.sub || '').slice(0, 200), link: ev.link, source: `${F.airline(ev.code).name} 공식`,
+    const p = { id, kind, official: true, title: ev.title, desc: (ev.sub || '').slice(0, 200), link: ev.link, source: `${F.airline(ev.code).name} 공식`,
       date: new Date(`${ev.start || TODAY}T09:00:00+09:00`).toISOString(), until: ev.end || null, found: TODAY,
-      cards: [], airlines: [ev.code], countries: c.countries, allRoutes: c.allRoutes, routes: c.routes || [], price: c.price || null };
+      cards: cardHit, airlines: [ev.code], countries: c.countries, allRoutes: c.allRoutes, routes: c.routes || [], price: c.price || null };
     // 처음 확인하는 항공사는 이미 올라와 있던 이벤트를 알림 없이 저장만 (알림 폭탄 방지)
     if (!promos.sources[ev.code]) p.alerted = true;
     known.set(id, p); fresh.push(p); offNew++;
