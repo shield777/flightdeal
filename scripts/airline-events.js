@@ -41,10 +41,13 @@ async function jeju() {
   for (let i = 0; i < hits.length; i++) {
     const no = hits[i][1];
     if (seen.has(no)) continue;
-    const chunk = text(html.slice(hits[i].index, i + 1 < hits.length ? hits[i + 1].index : hits[i].index + 3000).slice(0, 3000));
+    // 이벤트 번호가 들어 있는 태그가 끝나는 '>' 다음부터 읽어야 제목 앞에 코드 조각이 안 붙음
+    const from = html.indexOf('>', hits[i].index) + 1;
+    const to = i + 1 < hits.length ? hits[i + 1].index : from + 3000;
+    const chunk = text(html.slice(from, Math.max(from, to)).slice(0, 3000));
     const d = chunk.match(/(\d{4})\.(\d{2})\.(\d{2})\s*~\s*(\d{4})\.(\d{2})\.(\d{2})/);
     if (!d) continue;
-    const before = chunk.slice(0, d.index).replace(/^[^가-힣A-Za-z0-9⭐]*\d{6,}\W*/, '').trim();
+    const before = chunk.slice(0, d.index).replace(/^[^가-힣A-Za-z0-9⭐]+/, '').trim();
     if (before.length < 3 || before.length > 150) continue;
     seen.add(no);
     out.push({ code: '7C', key: no, title: before, sub: '', start: ymd(d[1], d[2], d[3]), end: ymd(d[4], d[5], d[6]), link: `https://www.jejuair.net/ko/event/eventDetail.do?eventNo=${no}` });
@@ -68,8 +71,8 @@ async function vietjet() {
     const main = body.slice(start >= 0 ? start + 6 : 0).split(/핫 뉴스/)[0];
     const out = [];
     for (let part of main.split('더 알아보기')) {
-      part = part.replace(/^\s*할인\s+/, '').trim();
-      if (part.length < 8) continue;
+      part = part.replace(/^\s*할인\s+/, '').replace(/^[\d\s.]+(?=[가-힣])/, '').trim();
+      if (part.length < 8 || (part.match(/[가-힣]/g) || []).length < 5) continue; // 쪽 번호(1 2 3 … 18) 등
       // 제목 = 첫 문장 덩어리(괄호 기간까지), 나머지는 설명
       const dates = [...part.matchAll(/(\d{4})년\s*(\d{1,2})월\s*(\d{1,2})일/g)].map(m => ymd(m[1], m[2], m[3])).sort();
       // 제목: 첫 괄호 기간 "(2026년 …)"까지 또는 앞 70자. 나머지는 설명

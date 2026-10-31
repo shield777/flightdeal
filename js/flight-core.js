@@ -351,8 +351,11 @@
     return { countries: s.promoCountries && s.promoCountries.length ? s.promoCountries : PROMO_DEFAULT.countries, airlines: air.length ? [...new Set(air)] : PROMO_DEFAULT.airlines };
   }
   // 이 특가를 보여 주고 알릴지: 고른 LCC(또는 항공사 이름 없는 기사)이면서, 고른 나라가 나오거나 LCC의 전 노선·국제선 특가
+  // 항공권 운임 특가인지 (공식 이벤트 중 공항 이동 할인·면세·제휴 쿠폰·운항 확대 안내 등은 뺌)
+  const FARE_RE = /항공권|운임|편도|왕복|총액|특가|세일|SALE|얼리버드|타임\s?세일|반값/i;
   function isWantedPromo(p, settings) {
     if (p.kind === 'card') return true;
+    if (p.official && !FARE_RE.test(`${p.title} ${p.desc || ''}`)) return false;
     const ps = promoSettings(settings);
     const air = p.airlines || [];
     const myAir = air.some(a => ps.airlines.includes(a));
