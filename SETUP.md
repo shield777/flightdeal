@@ -67,7 +67,7 @@
 
 ```json
 { "origin": "SEL", "dest": "CXR", "from": "2027-01", "to": "2027-10",
-  "minNights": 3, "maxNights": 5, "direct": false, "adults": 3, "targetPrice": 300000 }
+  "minNights": 3, "maxNights": 5, "direct": true, "adults": 3, "targetPrice": 300000 }
 ```
 
 - `origin`: SEL(서울) PUS(부산) CJU(제주) TAE(대구) CJJ(청주)

@@ -32,7 +32,7 @@
     return { owner: 'shield777', repo: 'flightdeal' };
   };
   const DEFAULT = {
-    q: { origin: 'SEL', dest: 'CXR', from: '2027-01', to: '2027-10', minN: 3, maxN: 5, adults: 3, direct: false, wantBag: true, custom: null },
+    q: { origin: 'SEL', dest: 'CXR', from: '2027-01', to: '2027-10', minN: 3, maxN: 5, adults: 3, direct: true, wantBag: true, custom: null },
     sort: 'month',
     bagFees: {},
     cardRules: [],
@@ -41,7 +41,7 @@
   };
   let cfg;
   try { cfg = Object.assign({}, DEFAULT, JSON.parse(localStorage.getItem(KEY) || '{}')); } catch { cfg = { ...DEFAULT }; }
-  cfg.q = Object.assign({}, DEFAULT.q, cfg.q); cfg.gh = Object.assign({}, DEFAULT.gh, cfg.gh);
+  cfg.q = Object.assign({}, DEFAULT.q, cfg.q); cfg.q.direct = true; /* 경유편은 아예 보지 않음 */ cfg.gh = Object.assign({}, DEFAULT.gh, cfg.gh);
   const save = () => { try { localStorage.setItem(KEY, JSON.stringify(cfg)); } catch { /* 저장 불가(사생활 보호 모드) */ } };
 
   // ───── 자료 불러오기 ─────
@@ -154,7 +154,7 @@
           </div>
           <div class="fl-checks">
             <label class="check-inline"><input type="checkbox" id="q-bag" ${q.wantBag ? 'checked' : ''}>수하물 1개 넣은 가격으로 비교</label>
-            <label class="check-inline"><input type="checkbox" id="q-direct" ${q.direct ? 'checked' : ''}>직항만</label>
+            <span class="check-inline">✈️ 직항만 보여요</span>
           </div>
           <button class="btn primary fl-go" type="submit">월별 최저가 보기</button>
         </form>
@@ -180,7 +180,7 @@
     q.minN = Number(v('q-minN')); q.maxN = Number(v('q-maxN'));
     if (q.maxN < q.minN) [q.minN, q.maxN] = [q.maxN, q.minN];
     q.adults = Number(v('q-adults'));
-    q.wantBag = $('#q-bag').checked; q.direct = $('#q-direct').checked;
+    q.wantBag = $('#q-bag').checked; q.direct = true;
     save();
   }
 
@@ -350,7 +350,7 @@
   // ───── 프로모션 ─────
   function matchedPromos(key) {
     const recent = F.addDays(today, -14);
-    return (data.promos.items || []).filter(p => p.kind === 'airline' && p.found >= recent && (p.routes || []).some(r => r.key === key && r.level !== 'weak'));
+    return (data.promos.items || []).filter(p => p.kind === 'airline' && (p.lastFound || p.found) >= recent && (p.routes || []).some(r => r.key === key && r.level !== 'weak'));
   }
   function promoStrip(list, key) {
     const route = data.results.routes[key];
@@ -369,7 +369,7 @@
           const pct = typical ? Math.round((1 - tot / (typical + (cfg.q.wantBag ? bag.add : 0))) * 100) : null;
           est = `<div class="fl-est">${p.price.trip === 'round' ? '왕복' : '편도'} ${won(p.price.amount)}부터 → 왕복${cfg.q.wantBag && bag.add ? '+수하물' : ''} 약 <b>${won(tot)}</b>${pct != null ? ` · 보통가 대비 <b class="${pct > 0 ? 'good' : ''}">${pct > 0 ? '-' : '+'}${Math.abs(pct)}%</b>` : ''}${p.price.trip !== 'round' ? ' <small>(편도×2 추정)</small>' : ''}</div>`;
         }
-        return `<li><a href="${esc(p.link)}" target="_blank" rel="noopener">${esc(p.title)}</a><div class="src">${esc(p.source || '')} · ${esc(p.date.slice(5, 10).replace('-', '/'))}${air ? ` · <a href="${esc(F.airline(air).url)}" target="_blank" rel="noopener">${esc(F.airline(air).name)} 사이트</a>` : ''}</div>${est}</li>`;
+        return `<li><a href="${esc(p.link)}" target="_blank" rel="noopener">${esc(p.title)}</a><div class="src">${esc(p.source || '')} · ${esc(p.date.slice(5, 10).replace('-', '/'))}${p.more && p.more.length ? ` · 같은 소식 ${p.more.length}건 더` : ''}${air ? ` · <a href="${esc(F.airline(air).url)}" target="_blank" rel="noopener">${esc(F.airline(air).name)} 사이트</a>` : ''}</div>${est}</li>`;
       }).join('')}</ul>
       <p class="hint">특가는 좌석이 적고 <b>탑승 기간·환불 불가·수하물 미포함</b> 조건이 붙는 경우가 많아요. 탑승 기간은 기사에서 확인하세요.</p>
     </section>`;
@@ -381,7 +381,7 @@
   }
   function cardSection() {
     const recent = F.addDays(today, -21);
-    const items = (data.promos.items || []).filter(p => p.kind === 'card' && p.found >= recent);
+    const items = (data.promos.items || []).filter(p => p.kind === 'card' && (p.lastFound || p.found) >= recent);
     return `<section class="fl-cards">
       <h2>💳 내 카드 할인 <small>우리·현대·신한</small></h2>
       <div class="fl-cardgrid">${F.CARDS.map(c => {
@@ -390,7 +390,7 @@
         return `<div class="fl-card">
           <div class="top"><b>${esc(c.name)}</b><a href="${c.url}" target="_blank" rel="noopener">이벤트 보기${ICON.ext}</a></div>
           ${rules.length ? `<ul class="rules">${rules.map(r => `<li>${esc(ruleText(r))}${r.until ? ` · ~${esc(r.until.slice(5).replace('-', '/'))}` : ''}</li>`).join('')}</ul>` : '<p class="muted">등록한 할인 없음</p>'}
-          ${news.length ? `<ul class="news">${news.map(p => `<li><a href="${esc(p.link)}" target="_blank" rel="noopener">${esc(p.title)}</a> <small>${esc(p.date.slice(5, 10).replace('-', '/'))}</small></li>`).join('')}</ul>` : '<p class="muted">최근 3주 할인 소식 없음</p>'}
+          ${news.length ? `<ul class="news">${news.map(p => `<li><a href="${esc(p.link)}" target="_blank" rel="noopener">${esc(p.title)}</a> <small>${esc(p.date.slice(5, 10).replace('-', '/'))}${p.more && p.more.length ? ` · 같은 소식 ${p.more.length}건 더` : ''}</small></li>`).join('')}</ul>` : '<p class="muted">최근 3주 할인 소식 없음</p>'}
         </div>`;
       }).join('')}</div>
       <div class="fl-actions"><button class="btn sm" data-act="card-add">${ICON.plus}카드 할인 등록</button><span class="hint">등록하면 위 가격에 바로 반영돼요. 카드사 앱에서 본 즉시·청구할인을 넣으세요.</span></div>
@@ -657,7 +657,7 @@
     const r = h.get('r'); if (!r) return null;
     const [origin, dest, minN, maxN, dir] = r.split('-');
     if (!F.findDest(dest)) return null;
-    Object.assign(cfg.q, { origin, dest, minN: Number(minN), maxN: Number(maxN), direct: dir === 'D' });
+    Object.assign(cfg.q, { origin, dest, minN: Number(minN), maxN: Number(maxN), direct: true });
     const w = (data.watch.watches || []).find(x => F.routeKey(x) === r);
     if (w) { cfg.q.from = w.from; cfg.q.to = w.to; }
     return h.get('m');
