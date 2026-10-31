@@ -382,6 +382,7 @@
     if (pct.length) f.pct = Math.max(...pct);
     const code = t.match(/(?:프로모션\s*코드|할인\s*코드|코드)\s*[:：]?\s*[‘'"“(\[]?\s*([A-Z][A-Z0-9]{3,11})/) || t.match(/[‘'"“(\[]?([A-Z][A-Z0-9]{3,11})[’'"”)\]]?\s*(?:코드|프로모션\s*코드)/);
     if (code) f.code = code[1];
+    else if (/(?:프로모션|할인)\s*코드/.test(t)) f.codeHint = true; // 코드 값은 없지만 할인 코드를 준다고 적힌 경우
     const board = periodAfter(t, /탑승\s*(?:기간|일)?|여행\s*기간|출발\s*기간/, base);
     if (board) f.board = board;
     const book = periodAfter(t, /예약\s*(?:및\s*결제)?\s*(?:기간)?|판매\s*기간|구매\s*기간|발권\s*기간/, base);
