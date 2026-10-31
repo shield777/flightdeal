@@ -10,7 +10,7 @@ on:
       mode:
         description: 'search = 가격 검색, promos = 프로모션 확인'
         type: choice
-        options: [search, promos, probe]
+        options: [search, promos]
         default: search
       dest:
         description: '목적지 공항·도시 코드 (예: CXR)'
@@ -63,11 +63,6 @@ jobs:
         env:
           NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
           NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
-      - name: 시험
-        if: ${{ inputs.mode == 'probe' }}
-        run: node scripts/probe-tp.js
-        env:
-          TP_TOKEN: ${{ secrets.TP_TOKEN }}
       - name: 결과 저장
         run: |
           git config user.name "github-actions[bot]"
