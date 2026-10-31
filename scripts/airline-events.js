@@ -75,10 +75,13 @@ async function vietjet() {
       if (part.length < 8 || (part.match(/[가-힣]/g) || []).length < 5) continue; // 쪽 번호(1 2 3 … 18) 등
       // 제목 = 첫 문장 덩어리(괄호 기간까지), 나머지는 설명
       const dates = [...part.matchAll(/(\d{4})년\s*(\d{1,2})월\s*(\d{1,2})일/g)].map(m => ymd(m[1], m[2], m[3])).sort();
-      // 제목: 첫 괄호 기간 "(2026년 …)"까지 또는 앞 70자. 나머지는 설명
-      const cut = part.search(/\)\s/);
-      const title = (cut > 10 && cut < 110 ? part.slice(0, cut + 1) : part.slice(0, 70).replace(/\s+\S*$/, '')).trim();
-      out.push({ code: 'VJ', key: title.replace(/\s+/g, '').slice(0, 40), title, sub: part.slice(title.length).trim().slice(0, 200), start: dates[0] || '', end: dates[dates.length - 1] || '', link: url });
+      // 제목: "(2026년 …)" 기간 괄호까지, 없으면 "현재부터·예약 및 결제…" 같은 안내 문구 앞까지 (최대 80자). 나머지는 설명
+      const paren = part.match(/^[^()]{8,100}\([^()]*\d{4}년[^()]*\)/);
+      const stop = part.search(/\s(?:현재부터|지금부터|예약 및 결제|예약 기간|탑승 기간|판매 기간|기본 운임)/);
+      const title = (paren ? paren[0] : stop > 8 && stop < 100 ? part.slice(0, stop) : part.slice(0, 80).replace(/\s+\S*$/, '')).trim();
+      // 기간: 날짜가 2개 이상이면 처음~끝, 1개뿐이면 끝나는 날만 (시작일은 모름)
+      // 번호(key)는 글 앞부분 40글자로 고정 → 제목 자르는 방식이 바뀌어도 같은 글은 같은 번호 (중복 알림 방지)
+      out.push({ code: 'VJ', key: part.replace(/\s+/g, '').slice(0, 40), title, sub: part.slice(title.length).trim().slice(0, 200), start: dates.length > 1 ? dates[0] : '', end: dates[dates.length - 1] || '', link: url });
       if (out.length >= 12) break;
     }
     return out;

@@ -121,7 +121,7 @@ async function checkPrices(watch, results, alerts) {
         const a = F.airline(s.best.airline).name;
         alerts.push({
           title: `${dest.city} ${Number(ym.slice(5))}월 ${F.won(s.best.price)}`,
-          body: `${reasons.join(' · ')}\n${s.best.dep.slice(5, 10)} → ${s.best.ret.slice(5, 10)} (${s.best.nights}박) ${a}\n1인 왕복, 수하물·결제수수료 확인 필요`,
+          body: `${reasons.join(' · ')}\n${s.best.dep.slice(5, 10)} → ${s.best.ret.slice(5, 10)} (${s.best.nights}박) ${a} 직항\n1인 왕복 기록 가격 · 수하물 포함 여부는 예약 화면에서 확인`,
           tags: 'airplane,chart_with_downwards_trend',
           click: APP_URL ? `${APP_URL}#r=${encodeURIComponent(key)}&m=${ym}` : s.best.link,
         });
@@ -307,10 +307,10 @@ async function checkPromos(watch, results, promos, alerts) {
     // 우리·현대·신한카드 제휴 할인은 '카드 할인'으로 분류 → 앱의 내 카드 할인 칸에 표시
     const cardHit = F.CARD_NAMES.filter(c => body.includes(c));
     const kind = cardHit.length ? 'card' : 'airline';
-    if (known.has(id)) { Object.assign(known.get(id), { title: ev.title, until: ev.end || null, kind, cards: cardHit }); continue; }
+    if (known.has(id)) { Object.assign(known.get(id), { title: ev.title, desc: (ev.sub || '').slice(0, 200), from: ev.start || null, until: ev.end || null, kind, cards: cardHit }); continue; }
     const c = F.classifyNews(body, '', routes) || { routes: [], price: F.promoPrice(body), ...F.newsScope(body) };
     const p = { id, kind, official: true, title: ev.title, desc: (ev.sub || '').slice(0, 200), link: ev.link, source: `${F.airline(ev.code).name} 공식`,
-      date: new Date(`${ev.start || TODAY}T09:00:00+09:00`).toISOString(), until: ev.end || null, found: TODAY,
+      date: new Date(`${ev.start || TODAY}T09:00:00+09:00`).toISOString(), from: ev.start || null, until: ev.end || null, found: TODAY,
       cards: cardHit, airlines: [ev.code], countries: c.countries, allRoutes: c.allRoutes, routes: c.routes || [], price: c.price || null };
     // 처음 확인하는 항공사는 이미 올라와 있던 이벤트를 알림 없이 저장만 (알림 폭탄 방지)
     if (!promos.sources[ev.code]) p.alerted = true;
@@ -338,9 +338,10 @@ async function checkPromos(watch, results, promos, alerts) {
     const air = (p.airlines.map(c => F.airline(c).name)[0]) || '항공 특가';
     const where = (p.countries || []).filter(c => F.promoSettings(watch.settings).countries.includes(c)).join('·') || (p.allRoutes ? '국제선 전체' : '');
     const tag = p.kind === 'card' ? `💳 ${p.cards.join('·')}` : `🏷️ ${air}${p.official ? ' 공식' : ''}${where ? ` · ${where}` : ''}`;
-    const vs = p.vs ? `\n보통 가격 대비 약 ${p.vs.pct > 0 ? '-' : '+'}${Math.abs(p.vs.pct)}%${p.vs.approx ? ' (편도×2 추정)' : ''}` : '';
-    const period = p.until ? `\n~${p.until.slice(5).replace('-', '/')}까지` : '';
-    alerts.push({ title: tag, body: `${p.title}${p.official && p.desc ? ` — ${p.desc.slice(0, 60)}` : ''}${p.price ? `\n${F.won(p.price.amount)}${p.price.trip === 'round' ? ' 왕복' : ' 편도'}부터` : ''}${vs}${period}`, tags: p.kind === 'card' ? 'credit_card' : 'label', click: p.link });
+    // 원문 제목·기간·출처만 (가격 계산·추정 없음)
+    const period = p.until ? `\n기간 ~${p.until.slice(5).replace('-', '/')}` : '';
+    const src = p.official ? '' : `\n${p.source || '뉴스'} 보도`;
+    alerts.push({ title: tag, body: `${p.title}${p.official && p.desc ? ` — ${p.desc.slice(0, 60)}` : ''}${period}${src}`, tags: p.kind === 'card' ? 'credit_card' : 'label', click: p.link });
   }
   if (wanted.length > 6) alerts.push({ title: `특가·할인 소식 ${wanted.length - 6}건 더`, body: '앱의 프로모션 목록에서 확인하세요', tags: 'label', click: APP_URL });
 }
