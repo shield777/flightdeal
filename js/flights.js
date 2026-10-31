@@ -270,7 +270,7 @@
     const src = p.official ? `${esc(F.airline((p.airlines || [])[0]).name)} 홈페이지` : `${esc(p.source || '뉴스')} · ${mmdd((p.date || '').slice(0, 10))}`;
     return `<li class="pr-item">
       ${hasFacts(f) ? `<div class="pr-key">${factLine(f)}</div>` : ''}
-      <a href="${esc(p.link)}" target="_blank" rel="noopener">${esc(p.title)}</a>
+      <a href="${esc(p.link)}" target="_blank" rel="noopener">${esc(F.stripTags(p.title))}</a>
       ${summaryList(p)}
       <div class="src"><span class="${p.official ? 'badge-off' : 'badge-news'}">${p.official ? '공식' : '뉴스'}</span> ${src}${p.more && p.more.length ? ` · 같은 소식 ${p.more.length + 1}건 묶음` : ''}
         ${fit === 'in' ? '<span class="fit in">내 여행 날짜 탑승 가능</span>' : fit === 'out' ? '<span class="fit out">내 여행 날짜는 탑승 기간 밖</span>' : ''}</div>
@@ -337,7 +337,7 @@
       return `<li class="pr-item">
         <div class="src"><span class="badge-card">${esc(who(p))}</span> <span class="use use-${u.use}">${esc(why)}</span></div>
         ${line ? `<div class="pr-key">${line}</div>` : ''}
-        <a href="${esc(p.link)}" target="_blank" rel="noopener">${esc(p.title)}</a>
+        <a href="${esc(p.link)}" target="_blank" rel="noopener">${esc(F.stripTags(p.title))}</a>
         ${summaryList(p)}
         <div class="src"><span class="${p.official ? 'badge-off' : 'badge-news'}">${p.official ? '공식' : '뉴스'}</span> ${src}${p.more && p.more.length ? ` · 같은 소식 ${p.more.length + 1}건 묶음` : ''}</div>
       </li>`;
@@ -362,7 +362,7 @@
   // 기사 본문에서 뽑은 핵심 문장 (서버가 저장한 p.summary, 원문 문장 그대로)
   function summaryList(p) {
     const s = p.summary || ((p.more || []).find(m => m.summary) || {}).summary || [];
-    return s.length ? `<ul class="pr-sum">${s.slice(0, 3).map(t => `<li>${esc(t)}</li>`).join('')}</ul>` : '';
+    return s.length ? `<ul class="pr-sum">${s.slice(0, 3).map(t => `<li>${esc(F.stripTags(t))}</li>`).join('')}</ul>` : '';
   }
 
   // ───── 동작 ─────
