@@ -396,6 +396,35 @@
     return dep >= from && (ret || dep) <= to ? 'in' : 'out';
   }
 
+  // ───── 카드 할인: 핵심 사실 + 고른 나라에서 쓸 수 있는지 (원문에 적힌 사용처 기준) ─────
+  const OTA_RE = /트립닷컴|인터파크|하나투어|모두투어|노랑풍선|참좋은여행|마이리얼트립|익스피디아|아고다|스카이스캐너|네이버\s?항공|여행\s?플랫폼|온라인\s?여행사/;
+  const OVERSEAS_RE = /해외\s?(?:항공권|여행|결제|이용)|국제선|전\s?노선|모든\s?노선/;
+  function cardFacts(text, base) {
+    const t = stripTags(text);
+    const f = {};
+    const amt = t.match(/(최대\s*)?(\d{1,3}(?:,\d{3})*|\d+(?:\.\d)?)\s*(만|천)?\s*원\s*(?:상당\s*)?(청구\s*할인|즉시\s*할인|할인|캐시백|적립|페이백|혜택)/);
+    if (amt) f.amount = `${amt[1] ? '최대 ' : ''}${amt[2]}${amt[3] || ''}원 ${amt[4].replace(/\s/g, '')}`;
+    const pct = [...t.matchAll(/(\d{1,2})\s*%\s*(?:청구\s*할인|즉시\s*할인|할인|캐시백|적립)/g)].map(m => Number(m[1])).filter(n => n >= 2 && n <= 70);
+    if (pct.length) f.pct = Math.max(...pct);
+    const min = t.match(/(\d{1,3}(?:,\d{3})*|\d+)\s*(만\s*)?원\s*이상\s*(?:결제|이용|구매)/);
+    if (min) f.min = `${min[1]}${min[2] ? '만' : ''}원 이상 결제`;
+    const per = periodAfter(t, /(?:이벤트|행사|결제|프로모션|할인)\s*기간|기간\s*[:：]/, base) || (() => { const ds = parseDates(t, base).sort(); return ds.length ? { from: ds.length > 1 ? ds[0] : null, to: ds[ds.length - 1] } : null; })();
+    if (per) f.period = per;
+    return f;
+  }
+  // use: 'ok'(그 나라 운항 항공사·그 나라 언급) | 'all'(해외 항공권 전체·여행 플랫폼) | 'no'(다른 나라만 적힘) | 'unknown'
+  //  운항 항공사 목록(최근 가격 기록)은 빠진 항공사가 있을 수 있어서, 항공사만으로 '해당 없음'이라고 하지 않음
+  function cardUse(p, country, servingCodes) {
+    const text = `${p.title} ${p.desc || ''}`;
+    const air = (p.airlines || []).filter(Boolean), cs = p.countries || [];
+    const servingHit = air.filter(a => servingCodes.includes(a));
+    if (servingHit.length || cs.includes(country)) return { use: 'ok', why: servingHit };
+    if (cs.length) return { use: 'no', why: cs };
+    if (air.length) return { use: 'unknown', why: air, air: true };
+    if (OVERSEAS_RE.test(text) || OTA_RE.test(text)) return { use: 'all', why: [] };
+    return { use: 'unknown', why: [] };
+  }
+
   // 결제 혜택(간편결제·카드 제휴): 항공사 공식 이벤트 중 운임 특가가 아닌 결제 할인 → 카드 탭
   const PAY_RE = /결제|페이|카드|청구할인|즉시할인|캐시백/;
   const isPayBenefit = p => p.official && p.kind !== 'card' && PAY_RE.test(`${p.title} ${p.desc || ''}`) && !FARE_RE.test(`${p.title} ${p.desc || ''}`);
@@ -430,7 +459,7 @@
   const api = {
     ORIGINS, DESTS, AIRLINES, CLIMATE, REGION_NAME, HOLIDAYS, PEAK, CARDS, AGENCIES, CARD_NAMES,
     monthsBetween, nightsBetween, addDays, addMonths, weekday, findDest, airline,
-    promoFacts, fitsTrip, links, skyMonth, ttang, climateOf, holidaysIn, KOREAN_AIRLINES, airlinesFor, isPayBenefit,
+    promoFacts, fitsTrip, cardFacts, cardUse, links, skyMonth, ttang, climateOf, holidaysIn, KOREAN_AIRLINES, airlinesFor, isPayBenefit,
     stripTags, parseWon, promoPrice, classifyNews, won, routeKey,
     PROMO_DEFAULT, COUNTRIES, COUNTRY_PLACES, airlineInText, airlineCode, newsScope, promoSettings, isWantedPromo,
   };

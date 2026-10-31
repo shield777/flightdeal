@@ -155,45 +155,37 @@
     let ret = q.ret && q.ret > dep ? q.ret : F.addDays(dep, q.minN || 3);
     return { dep, ret };
   }
+  // ───── 바로 검색 버튼: 세 묶음(가격 비교 · 땡처리 · 항공사)을 같은 모양으로 ─────
+  const goBtn = (href, label) => `<a class="go-btn" href="${href}" target="_blank" rel="noopener">${esc(label)}</a>`;
+  const goGroup = (no, title, sub, inner) => `<section class="go-group"><h3><span class="go-no">${no}</span>${title} <small>${sub}</small></h3>${inner}</section>`;
   function quickButtons() {
     const q = cfg.q, dest = currentDest();
     if (!/^[A-Z]{3}$/.test(dest.code || '')) return '<p class="muted">공항·도시 코드(영문 3글자)를 넣어 주세요.</p>';
     const { dep, ret } = quickDates();
     const L = F.links('SEL', dest, dep, ret, q.adults, { direct: true });
-    return `<div class="fl-quick-go">
-        <a class="btn primary" href="${L.naver}" target="_blank" rel="noopener">네이버</a>
-        <a class="btn primary" href="${L.google}" target="_blank" rel="noopener">구글</a>
-        <a class="btn primary" href="${L.sky}" target="_blank" rel="noopener">스카이스캐너</a>
-      </div>
-      <a class="fl-quick-month" href="${F.skyMonth('SEL', dest, dep.slice(0, 7), ret.slice(0, 7), q.adults, true)}" target="_blank" rel="noopener">날짜를 아직 못 정했으면: 스카이스캐너 ${Number(dep.slice(5, 7))}월 전체 날짜별 가격 보기${ICON.ext}</a>
-      <p class="hint">고른 도시·날짜·인원이 그대로 들어가요. 직항 조건은 네이버·스카이스캐너는 주소로 넣고 구글은 검색어로 넣어서, 사이트에서 한 번 더 확인해 주세요.</p>
-      <div class="fl-sub"><b>땡처리닷컴</b> <small>인천 출발 · 날짜와 상관없이 그 도시 땡처리 좌석 전체</small></div>
-      <div class="fl-quick-go two">
-        <a class="btn" href="${F.ttang(dest, q.adults).city}" target="_blank" rel="noopener">${esc(dest.city.replace(/\(.*\)/, ''))} 땡처리</a>
-        <a class="btn" href="${F.ttang(dest, q.adults).today}" target="_blank" rel="noopener">오늘 오픈 땡처리</a>
-      </div>
-      ${airlineBox(dest)}`;
+    const T = F.ttang(dest, q.adults), city = dest.city.replace(/\(.*\)/, '');
+    return `
+      ${goGroup(1, '가격 비교', '고른 날짜·인원·직항 그대로', `<div class="go-grid">${goBtn(L.naver, '네이버')}${goBtn(L.google, '구글')}${goBtn(L.sky, '스카이스캐너')}</div>
+        <a class="go-more" href="${F.skyMonth('SEL', dest, dep.slice(0, 7), ret.slice(0, 7), q.adults, true)}" target="_blank" rel="noopener">날짜 미정이면 · 스카이스캐너 ${Number(dep.slice(5, 7))}월 전체 날짜별 가격${ICON.ext}</a>`)}
+      ${goGroup(2, '땡처리', '땡처리닷컴 · 인천 출발 · 날짜와 상관없이 전체', `<div class="go-grid">${goBtn(T.city, `${city} 땡처리`)}${goBtn(T.today, '오늘 오픈 땡처리')}</div>`)}
+      ${goGroup(3, '항공사', `서울 → ${esc(city)} 직항 · 앱이 있으면 앱으로`, airlineBox(dest))}
+      <p class="hint">직항 조건은 네이버·스카이스캐너는 주소로, 구글은 검색어로 넣어요. 항공사 홈페이지는 날짜를 다시 골라야 해요. 앱이 안 열리면 버튼을 길게 눌러 '앱에서 열기'를 확인하세요.</p>`;
   }
 
-  // 항공사 바로가기: 최근 가격 기록으로 확인된 '서울 출발 직항' 항공사 (data/airlines-by-city.json) + 그 외 국적 항공사(미확인, 접어 둠)
+  // 항공사: 최근 가격 기록으로 확인된 '서울 출발 직항' 항공사 (data/airlines-by-city.json) + 그 외 국적 항공사(미확인, 접어 둠)
   function airlineBtn(code, name) {
     const known = F.AIRLINES[code], a = F.airline(code), label = known ? a.name : (name || code);
     const href = a.url || `https://www.google.com/search?q=${encodeURIComponent(`${label} 항공 홈페이지`)}`; // 홈페이지 주소를 모르는 항공사는 검색으로
-    return `<a class="btn sm" href="${href}" target="_blank" rel="noopener">${esc(label)}</a>`;
+    return goBtn(href, label);
   }
   function airlineBox(dest) {
     const R = data.recent, list = R && R.cities ? R.cities[dest.code] : null;
-    const head = `<div class="fl-sub"><b>항공사</b> <small>앱이 깔려 있고 항공사가 지원하면 앱으로, 아니면 홈페이지로 열려요 · 날짜는 다시 골라 주세요</small></div>`;
-    if (!list) {
-      return `${head}<p class="hint">${R ? '이 도시는 직항 항공사 자료가 없어요.' : '도시별 직항 항공사 목록이 아직 없어요. ⚙ 설정 → [항공사 목록 새로 만들기]를 눌러 주세요.'}</p>
-        <details class="fl-more-air"><summary>국적 항공사 전체 (운항 여부 미확인)</summary><div class="fl-air-go">${F.KOREAN_AIRLINES.map(c => airlineBtn(c)).join('')}</div></details>`;
-    }
-    const ok = list.map(x => x.code);
-    const rest = F.KOREAN_AIRLINES.filter(c => !ok.includes(c));
-    return `${head}
-      ${list.length ? `<div class="fl-air-go">${list.map(x => airlineBtn(x.code, x.name)).join('')}</div>` : '<p class="muted">최근 기록에서 확인된 직항 항공사가 없어요.</p>'}
-      <p class="hint">서울 → ${esc(dest.city.replace(/\(.*\)/, ''))} 직항 가격이 최근 기록된 항공사예요 (${esc(fmtUpdated(R.updated))} 기준, 앞으로 6개월). 가격 기록이 없으면 빠질 수 있어요.</p>
-      ${rest.length ? `<details class="fl-more-air"><summary>그 외 국적 항공사 ${rest.length}곳 (이 노선 운항 여부 미확인)</summary><div class="fl-air-go">${rest.map(c => airlineBtn(c)).join('')}</div></details>` : ''}`;
+    const others = codes => `<details class="go-others"><summary>그 외 국적 항공사 ${codes.length}곳 · 이 노선 운항 여부 미확인</summary><div class="go-grid">${codes.map(c => airlineBtn(c)).join('')}</div></details>`;
+    if (!list) return `<p class="hint">${R ? '이 도시는 직항 항공사 자료가 없어요.' : '항공사 목록이 아직 없어요. ⚙ 설정 → [항공사 목록 새로 만들기]'}</p>${others(F.KOREAN_AIRLINES)}`;
+    const ok = list.map(x => x.code), rest = F.KOREAN_AIRLINES.filter(c => !ok.includes(c));
+    return `${list.length ? `<div class="go-grid">${list.map(x => airlineBtn(x.code, x.name)).join('')}</div>` : '<p class="muted">최근 기록에서 확인된 직항 항공사가 없어요.</p>'}
+      <p class="go-note">최근 6개월 직항 가격 기록 기준 (${esc(fmtUpdated(R.updated))}) · 기록이 없는 항공사는 빠질 수 있어요</p>
+      ${rest.length ? others(rest) : ''}`;
   }
 
   // 고른 날짜의 여행 시기 정보 한 줄 (확인된 자료만: 목적지 기후표, Open-Meteo 관측 비 오는 날, 겹치는 공휴일·방학)
@@ -279,6 +271,7 @@
     return `<li class="pr-item">
       ${hasFacts(f) ? `<div class="pr-key">${factLine(f)}</div>` : ''}
       <a href="${esc(p.link)}" target="_blank" rel="noopener">${esc(p.title)}</a>
+      ${summaryList(p)}
       <div class="src"><span class="${p.official ? 'badge-off' : 'badge-news'}">${p.official ? '공식' : '뉴스'}</span> ${src}${p.more && p.more.length ? ` · 같은 소식 ${p.more.length + 1}건 묶음` : ''}
         ${fit === 'in' ? '<span class="fit in">내 여행 날짜 탑승 가능</span>' : fit === 'out' ? '<span class="fit out">내 여행 날짜는 탑승 기간 밖</span>' : ''}</div>
     </li>`;
@@ -312,40 +305,66 @@
           <ul>${sortList(g.list).map(p => promoItem(p, trip)).join('')}</ul></article>`; }).join('')}
       ${etc.length ? `<article class="pr-air"><header><b>여행사·종합</b><span class="pr-how">항공사 이름 없는 ${esc(C)} 특가 기사</span></header><ul>${sortList(etc).map(p => promoItem(p, trip)).join('')}</ul></article>` : ''}
       ${!groups.length && !etc.length ? `<p class="muted pr-none">${esc(C)} 관련 특가 소식이 없어요.</p>` : ''}
-      <p class="fl-foot">굵은 글씨는 기사·공지에 적힌 숫자·날짜를 그대로 뽑은 거예요(계산·추정 없음). 같은 소식은 하나로 묶었고, 가격·할인율·코드·기간이 하나도 없는 기사${hidden ? ` ${hidden}건` : ''}는 숨겼어요. 조건은 원문에서 꼭 확인하세요.</p>`;
+      <p class="fl-foot">굵은 글씨는 기사·공지에 적힌 숫자·날짜를, 점(•) 문장은 기사 첫 문단의 문장을 그대로 옮긴 거예요(계산·추정·재작성 없음). 같은 소식은 하나로 묶었고, 가격·할인율·코드·기간이 하나도 없는 기사${hidden ? ` ${hidden}건` : ''}는 숨겼어요. 조건은 원문에서 꼭 확인하세요.</p>`;
   }
 
   // ───── 카드 탭: 우리·현대·신한 할인 소식 + 항공사 공식 결제 혜택 ─────
   function renderCards() {
     const box = $('#cards'); if (!box) return;
     if (!data.loaded) { box.innerHTML = '<div class="empty">자료를 불러오는 중…</div>'; return; }
-    const pay = (data.promos.items || []).filter(p => F.isPayBenefit(p) && isLive(p)).sort((a, b) => (a.until || '9').localeCompare(b.until || '9'));
+    const dest = currentDest(), C = dest.country;
+    const rec = (data.recent && data.recent.cities) || {};
+    const serving = [...new Set(F.DESTS.filter(d => d.country === C).flatMap(d => (rec[d.code] || []).map(r => r.code)))];
+    // 카드사 할인 + 항공사 공식 결제 혜택(간편결제 등)
+    const raw = (data.promos.items || []).filter(p => (p.kind === 'card' || F.isPayBenefit(p)) && isLive(p));
+    const facts = p => {
+      const all = [p, ...(p.more || [])].map(m => F.cardFacts(`${m.title} ${m.desc || ''}`, (m.date || p.found || today).slice(0, 10)));
+      const f = Object.assign({}, ...all.reverse());
+      if (p.official && p.until) f.period = { from: p.from || null, to: p.until };
+      return f;
+    };
+    const items = raw.map(p => ({ p, f: facts(p), u: F.cardUse(p, C, serving) }))
+      .filter(x => !(x.f.period && x.f.period.to < today)); // 결제 기간이 끝난 것
+    const useful = items.filter(x => x.p.official || x.f.amount || x.f.pct || x.f.period);
+    const hidden = items.length - useful.length;
+    const per = x => x ? `${x.from ? `${mmdd(x.from)}~` : '~'}${mmdd(x.to)}` : '';
+    const who = p => p.kind === 'card' ? (p.cards || []).join('·') || '카드' : '간편결제';
+    const row = ({ p, f, u }) => {
+      const line = [f.amount ? `<b>${esc(f.amount)}</b>` : '', f.pct ? `<b>${f.pct}% 할인</b>` : '', f.min ? esc(f.min) : '', f.period ? `결제 ${per(f.period)}` : ''].filter(Boolean).join(' · ');
+      const air = (u.why || []).map(c => F.AIRLINES[c] ? F.airline(c).name : c).join('·');
+      const why = u.use === 'ok' ? (air ? `${air} 결제 · ${C} 운항` : `${C} 언급`) : u.use === 'all' ? '해외 항공권·여행 플랫폼 결제' : u.use === 'no' ? `${air} 대상 · ${C} 해당 없음` : u.air ? `${air} 결제 · ${C} 운항 여부 미확인` : '사용처가 기사에 없음';
+      const src = p.official ? `${esc(F.airline((p.airlines || [])[0]).name)} 홈페이지` : `${esc(p.source || '뉴스')} · ${mmdd((p.date || '').slice(0, 10))}`;
+      return `<li class="pr-item">
+        <div class="src"><span class="badge-card">${esc(who(p))}</span> <span class="use use-${u.use}">${esc(why)}</span></div>
+        ${line ? `<div class="pr-key">${line}</div>` : ''}
+        <a href="${esc(p.link)}" target="_blank" rel="noopener">${esc(p.title)}</a>
+        ${summaryList(p)}
+        <div class="src"><span class="${p.official ? 'badge-off' : 'badge-news'}">${p.official ? '공식' : '뉴스'}</span> ${src}${p.more && p.more.length ? ` · 같은 소식 ${p.more.length + 1}건 묶음` : ''}</div>
+      </li>`;
+    };
+    const sec = (title, sub, list) => list.length ? `<section class="fl-cards"><h2>${title} <small>${sub}</small></h2><ul class="news">${list.map(row).join('')}</ul></section>` : '';
+    const by = k => useful.filter(x => x.u.use === k);
+    const no = by('no');
     box.innerHTML = `
       <section class="pr-head">
-        <h2>카드·결제 할인</h2>
-        <div class="fl-actions"><button type="button" class="btn sm primary" data-act="promo-refresh" ${ui.promoBusy ? 'disabled' : ''}>${ICON.refresh}${ui.promoBusy ? `확인 중… ${ui.promoBusy.sec}초 (보통 1~2분)` : '지금 확인'}</button></div>
-        <p class="hint">마지막 확인 ${esc(fmtUpdated(data.promos.updated))} · 프로모션 탭과 같이 확인돼요</p>
+        <h2>${esc(C)} 여행에 쓸 수 있는 카드 할인</h2>
+        <div class="fl-actions"><button type="button" class="btn sm primary" data-act="promo-refresh" ${ui.promoBusy ? 'disabled' : ''}>${ICON.refresh}${ui.promoBusy ? `확인 중… ${ui.promoBusy.sec}초 (보통 1~2분)` : `${esc(C)} 지금 확인`}</button></div>
+        <p class="hint">나라는 항공권 검색 탭에서 고른 나라 · 판단 기준은 기사·공지에 적힌 사용처(항공사·나라·여행 플랫폼) · 마지막 확인 ${esc(fmtUpdated(data.promos.updated))}</p>
       </section>
-      ${cardSection()}
-      <section class="fl-cards">
-        <h2>✈️ 항공사 결제 혜택 <small>항공사 홈페이지 공지 그대로</small></h2>
-        ${pay.length ? `<ul class="news">${pay.map(p => `<li><span class="badge-off">${esc(F.airline((p.airlines || [])[0]).name)}</span> <a href="${esc(p.link)}" target="_blank" rel="noopener">${esc(p.title)}</a> <small>${p.until ? `~${esc(mmdd(p.until))}` : ''}</small></li>`).join('')}</ul>` : '<p class="muted">지금 확인된 결제 혜택이 없어요.</p>'}
-      </section>`;
+      ${sec('✅ 이 여행에 사용 가능', `${esc(C)} 운항 항공사 결제 또는 ${esc(C)} 언급`, by('ok'))}
+      ${sec('🌏 해외 항공권 전체', '국제선·해외 결제·여행 플랫폼', by('all'))}
+      ${sec('❓ 확인 필요', '사용처가 안 나오거나, 그 항공사의 운항 여부를 모름', by('unknown'))}
+      ${no.length ? `<details class="fl-cards pr-no"><summary>❌ ${esc(C)}에는 해당 없음 ${no.length}건</summary><ul class="news">${no.map(row).join('')}</ul></details>` : ''}
+      ${!useful.length ? `<p class="muted pr-none">지금 확인된 카드 할인이 없어요.</p>` : ''}
+      <section class="fl-cards"><h2>카드사 이벤트 페이지</h2><div class="go-grid">${F.CARDS.map(c => goBtn(c.url, c.name)).join('')}</div></section>
+      <p class="fl-foot">굵은 글씨는 기사·공지에 적힌 금액·할인율·기간을 그대로 뽑은 거예요. 결제 기간이 끝난 것${hidden ? `과 금액·할인율·기간이 하나도 없는 기사 ${hidden}건` : ''}은 숨겼어요. 대상 카드 종류·최소 결제 금액 등 세부 조건은 카드사 이벤트 페이지에서 꼭 확인하세요.</p>`;
+  }
+  // 기사 본문에서 뽑은 핵심 문장 (서버가 저장한 p.summary, 원문 문장 그대로)
+  function summaryList(p) {
+    const s = p.summary || ((p.more || []).find(m => m.summary) || {}).summary || [];
+    return s.length ? `<ul class="pr-sum">${s.slice(0, 3).map(t => `<li>${esc(t)}</li>`).join('')}</ul>` : '';
   }
 
-  function cardSection() {
-    const items = (data.promos.items || []).filter(p => p.kind === 'card' && isLive(p));
-    return `<section class="fl-cards">
-      <h2>💳 카드 할인 <small>우리·현대·신한</small></h2>
-      <div class="fl-cardgrid">${F.CARDS.map(c => {
-        const news = items.filter(p => (p.cards || []).includes(c.name)).sort((x, y) => (y.official ? 1 : 0) - (x.official ? 1 : 0)).slice(0, 4);
-        return `<div class="fl-card">
-          <div class="top"><b>${esc(c.name)}</b><a href="${c.url}" target="_blank" rel="noopener">이벤트 보기${ICON.ext}</a></div>
-          ${news.length ? `<ul class="news">${news.map(p => `<li><span class="${p.official ? 'badge-off' : 'badge-news'}">${p.official ? esc(F.airline((p.airlines || [])[0]).name) : '뉴스'}</span> <a href="${esc(p.link)}" target="_blank" rel="noopener">${esc(p.title)}</a> <small>${p.until ? `~${esc(mmdd(p.until))}` : esc(mmdd((p.date || '').slice(0, 10)))}</small></li>`).join('')}</ul>` : '<p class="muted">최근 3주 확인된 할인 소식 없음</p>'}
-        </div>`;
-      }).join('')}</div>
-    </section>`;
-  }
   // ───── 동작 ─────
   async function updateWatchFile(mutator) {
     const g = cfg.gh;
