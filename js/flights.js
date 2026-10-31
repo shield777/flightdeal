@@ -253,20 +253,21 @@
       if (x.price && (!f.price || x.price.amount < f.price.amount)) f.price = x.price;
       if (x.pct && (!f.pct || x.pct > f.pct)) f.pct = x.pct;
       if (x.code && !f.code) f.code = x.code;
+      if (x.codeHint) f.codeHint = true;
       if (x.board && !f.board) f.board = x.board;
       if (x.book && !f.book) f.book = x.book;
     }
     if (p.official && p.until && !f.book) f.book = { from: p.from || null, to: p.until };
     return f;
   }
-  const hasFacts = f => !!(f.price || f.pct || f.code || f.board || f.book);
+  const hasFacts = f => !!(f.price || f.pct || f.code || f.codeHint || f.board || f.book);
   function factLine(f) {
     const won0 = n => `${Math.round(n).toLocaleString('ko-KR')}원`;
     const per = x => x ? `${x.from ? `${mmdd(x.from)}~` : '~'}${x.to.slice(0, 4) !== today.slice(0, 4) ? `${x.to.slice(2, 4)}.` : ''}${mmdd(x.to)}` : '';
     return [
       f.price ? `<b>${f.price.trip === 'round' ? '왕복' : f.price.trip === 'oneway' ? '편도' : ''} ${won0(f.price.amount)}~</b>` : '',
       f.pct ? `<b>최대 ${f.pct}%</b>` : '',
-      f.code ? `코드 <b>${esc(f.code)}</b>` : '',
+      f.code ? `코드 <b>${esc(f.code)}</b>` : f.codeHint ? '<b>할인 코드 제공</b>' : '',
       f.book ? `예약 ${per(f.book)}` : '',
       f.board ? `탑승 ${per(f.board)}` : '',
     ].filter(Boolean).join(' · ');
