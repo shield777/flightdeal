@@ -97,13 +97,13 @@
     OZ: { name: '아시아나항공', type: 'FSC', bag: 'inc', kg: 23, url: 'https://flyasiana.com' },
     '7C': { name: '제주항공', type: 'LCC', bag: 'exc', url: 'https://www.jejuair.net' },
     LJ: { name: '진에어', type: 'LCC', bag: 'maybe', kg: 15, url: 'https://www.jinair.com', bagNote: '일반 운임은 15kg 포함, 특가 운임은 미포함일 수 있어요' },
-    TW: { name: '티웨이항공', type: 'LCC', bag: 'exc', url: 'https://www.twayair.com' },
+    TW: { name: '트리니티항공', alias: ['티웨이항공', '티웨이'], type: 'LCC', bag: 'exc', url: 'https://www.trinityairways.com' }, // 2026년 티웨이항공 → 트리니티항공 사명 변경
     BX: { name: '에어부산', type: 'LCC', bag: 'exc', url: 'https://www.airbusan.com' },
     RS: { name: '에어서울', type: 'LCC', bag: 'exc', url: 'https://flyairseoul.com' },
     ZE: { name: '이스타항공', type: 'LCC', bag: 'exc', url: 'https://www.eastarjet.com' },
     RF: { name: '에어로케이', type: 'LCC', bag: 'exc', url: 'https://www.aerok.com' },
     YP: { name: '에어프레미아', type: 'HSC', bag: 'maybe', kg: 23, url: 'https://www.airpremia.com', bagNote: '이코노미 운임 종류에 따라 달라요' },
-    VJ: { name: '비엣젯', type: 'LCC', bag: 'exc', url: 'https://www.vietjetair.com' },
+    VJ: { name: '비엣젯', alias: ['비엣젯항공'], type: 'LCC', bag: 'exc', url: 'https://www.vietjetair.com' },
     VN: { name: '베트남항공', type: 'FSC', bag: 'maybe', kg: 23, url: 'https://www.vietnamairlines.com', bagNote: '가장 싼 이코노미 운임은 위탁수하물이 없을 수 있어요' },
     QH: { name: '뱀부항공', type: 'FSC', bag: 'maybe', kg: 20, url: 'https://www.bambooairways.com' },
     VU: { name: '비엣트래블', type: 'LCC', bag: 'exc', url: 'https://www.vietravelairlines.com' },
@@ -126,8 +126,9 @@
     IT: { name: '타이거에어 타이완', type: 'LCC', bag: 'exc', url: 'https://www.tigerairtw.com' },
     JL: { name: '일본항공', type: 'FSC', bag: 'inc', kg: 23, url: 'https://www.jal.co.jp' },
     NH: { name: 'ANA', type: 'FSC', bag: 'inc', kg: 23, url: 'https://www.ana.co.jp' },
-    MM: { name: '피치항공', type: 'LCC', bag: 'exc', url: 'https://www.flypeach.com' },
-    GK: { name: '젯스타 재팬', type: 'LCC', bag: 'exc', url: 'https://www.jetstar.com' },
+    MM: { name: '피치항공', alias: ['피치 항공', '피치애비에이션'], type: 'LCC', bag: 'exc', url: 'https://www.flypeach.com' },
+    GK: { name: '젯스타 재팬', alias: ['젯스타재팬', '젯스타'], type: 'LCC', bag: 'exc', url: 'https://www.jetstar.com' },
+    ZG: { name: '집에어', alias: ['ZIPAIR', '집에어 도쿄'], type: 'LCC', bag: 'exc', url: 'https://www.zipair.net' },
     UA: { name: '유나이티드항공', type: 'FSC', bag: 'inc', kg: 23, url: 'https://www.united.com' },
     HA: { name: '하와이안항공', type: 'FSC', bag: 'inc', kg: 23, url: 'https://www.hawaiianairlines.com' },
     MU: { name: '중국동방항공', type: 'FSC', bag: 'inc', kg: 23, url: 'https://www.ceair.com' },
@@ -296,7 +297,9 @@
     return out.filter(v => v >= 10000 && v <= 5000000);
   }
   function promoPrice(text) {
-    const vals = parseWon(text);
+    // "3만원 쿠폰", "최대 2만원 할인", "5천원 적립"처럼 운임이 아닌 금액은 뺌
+    const clean = String(text || '').replace(/(?:최대\s*)?\d[\d,]*\s*(?:만\s*(?:\d{1,4}\s*천?)?)?\s*원\s*(?:상당\s*)?(?:의\s*)?(?:할인\s*)?(?:쿠폰|할인|적립|캐시백|포인트|증정|혜택|페이백|청구)/g, ' ');
+    const vals = parseWon(clean);
     if (!vals.length) return null;
     const one = /편도/.test(text), rt = /왕복/.test(text);
     return { amount: Math.min(...vals), trip: one && !rt ? 'oneway' : rt && !one ? 'round' : 'oneway?' };
@@ -307,8 +310,55 @@
   }
   function airlineInText(text) {
     const hit = [];
-    for (const [code, a] of Object.entries(AIRLINES)) if (text.includes(a.name)) hit.push(code);
+    for (const [code, a] of Object.entries(AIRLINES)) if ([a.name, ...(a.alias || [])].some(n => text.includes(n))) hit.push(code);
     return hit;
+  }
+
+  // ───── 특가 알림 범위 (나라·항공사) ─────
+  // 기본값: 베트남·일본, 국적 LCC + 베트남·일본 LCC. data/watchlist.json 의 settings.promoCountries / promoAirlines 로 바꿀 수 있어요.
+  const PROMO_DEFAULT = { countries: ['베트남', '일본'], airlines: ['7C', 'LJ', 'TW', 'BX', 'RS', 'ZE', 'RF', 'VJ', 'VU', 'MM', 'GK', 'ZG'] };
+  // 목적지 목록에 없는 도시도 특가 기사에 자주 나와서 추가 (짧고 다른 낱말에 섞이는 이름은 뺌: 사가·후에·사파 등)
+  const EXTRA_PLACES = {
+    베트남: ['퀴논', '꾸이년', '하이퐁', '껀터', '붕따우', '무이네', '캄란'],
+    일본: ['센다이', '마쓰야마', '마츠야마', '다카마쓰', '다카마츠', '시즈오카', '구마모토', '가고시마', '기타큐슈', '오이타', '미야자키', '히로시마', '오카야마', '요나고', '고마쓰', '니가타', '아오모리', '아사히카와', '도야마', '나가사키', '미야코지마', '이시가키', '하코다테', '구시로', '오비히로', '대마도', '쓰시마', '나리타', '간사이'],
+  };
+  const AMBIGUOUS = new Set(['나하', '사가', '후에', '사파']);
+  const COUNTRY_PLACES = (() => {
+    const m = {};
+    for (const d of DESTS) {
+      const list = m[d.country] = m[d.country] || [d.country];
+      for (const w of [d.city.replace(/\(.*\)/, ''), ...(d.alias || [])]) if (w && !AMBIGUOUS.has(w) && !list.includes(w)) list.push(w);
+    }
+    for (const [c, ws] of Object.entries(EXTRA_PLACES)) { m[c] = m[c] || [c]; for (const w of ws) if (!m[c].includes(w)) m[c].push(w); }
+    return m;
+  })();
+  const COUNTRIES = Object.keys(COUNTRY_PLACES);
+  const ALL_ROUTES_RE = /전\s?노선|모든\s?노선|국제선/;
+  // 글에 나온 나라들, "전 노선·국제선" 특가인지
+  function newsScope(text) {
+    return { countries: COUNTRIES.filter(c => COUNTRY_PLACES[c].some(w => text.includes(w))), allRoutes: ALL_ROUTES_RE.test(text) };
+  }
+  // 항공사는 이름("제주항공", "티웨이")이나 코드("7C") 둘 다 받음
+  function airlineCode(x) {
+    const v = String(x || '').trim();
+    if (AIRLINES[v.toUpperCase()]) return v.toUpperCase();
+    const hit = Object.entries(AIRLINES).find(([, a]) => a.name === v || (a.alias || []).includes(v));
+    return hit ? hit[0] : '';
+  }
+  function promoSettings(settings) {
+    const s = settings || {};
+    const air = (s.promoAirlines || []).map(airlineCode).filter(Boolean);
+    return { countries: s.promoCountries && s.promoCountries.length ? s.promoCountries : PROMO_DEFAULT.countries, airlines: air.length ? [...new Set(air)] : PROMO_DEFAULT.airlines };
+  }
+  // 이 특가를 보여 주고 알릴지: 고른 LCC(또는 항공사 이름 없는 기사)이면서, 고른 나라가 나오거나 LCC의 전 노선·국제선 특가
+  function isWantedPromo(p, settings) {
+    if (p.kind === 'card') return true;
+    const ps = promoSettings(settings);
+    const air = p.airlines || [];
+    const myAir = air.some(a => ps.airlines.includes(a));
+    if (air.length && !myAir) return false; // 대한항공 등 고르지 않은 항공사만 나오는 기사는 뺌
+    if ((p.countries || []).some(c => ps.countries.includes(c))) return true;
+    return !!(p.allRoutes && myAir);
   }
   // 뉴스 한 건 → { kind: 'airline'|'card'|null, routes: [{key, level}], airlines, price }
   function classifyNews(title, desc, routes) {
@@ -330,7 +380,7 @@
     }
     const kind = cards.length ? 'card' : (air.length || /항공권/.test(text)) ? 'airline' : null;
     if (!kind) return null;
-    return { kind, cards, airlines: air, routes: matched, price: promoPrice(text) };
+    return { kind, cards, airlines: air, routes: matched, price: promoPrice(text), ...newsScope(text) };
   }
   // 프로모션가 vs 보통 가격(왕복 1인) → 할인율(%)
   function promoVsTypical(price, typicalRound) {
@@ -363,6 +413,7 @@
     monthsBetween, nightsBetween, addDays, addMonths, weekday, findDest, airline,
     normalizeOffers, summarizeMonth, median, baggage, links, climateOf, holidaysIn, buyWindow,
     stripTags, parseWon, promoPrice, classifyNews, promoVsTypical, applyCard, won, routeKey,
+    PROMO_DEFAULT, COUNTRIES, COUNTRY_PLACES, airlineInText, airlineCode, newsScope, promoSettings, isWantedPromo,
   };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   else root.FlightCore = api;

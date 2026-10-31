@@ -255,6 +255,7 @@
 
       <div class="fl-months">${rows.map(r => monthCard(r, dest, key, C, climFor(r.ym), r === cheapest)).join('')}</div>
 
+      ${lccSection()}
       ${cardSection()}
       ${tipsSection(dest)}
       <p class="fl-foot">가격은 Travelpayouts(Aviasales)가 모은 <b>최근 검색 기록(캐시)</b>이라 실제 결제가와 다를 수 있어요. 결제 직전에 링크한 사이트에서 최종 총액을 꼭 확인하세요. 수하물 요금·기후·공휴일은 참고값이에요.</p>`;
@@ -372,6 +373,36 @@
         return `<li><a href="${esc(p.link)}" target="_blank" rel="noopener">${esc(p.title)}</a><div class="src">${esc(p.source || '')} · ${esc(p.date.slice(5, 10).replace('-', '/'))}${p.more && p.more.length ? ` · 같은 소식 ${p.more.length}건 더` : ''}${air ? ` · <a href="${esc(F.airline(air).url)}" target="_blank" rel="noopener">${esc(F.airline(air).name)} 사이트</a>` : ''}</div>${est}</li>`;
       }).join('')}</ul>
       <p class="hint">특가는 좌석이 적고 <b>탑승 기간·환불 불가·수하물 미포함</b> 조건이 붙는 경우가 많아요. 탑승 기간은 기사에서 확인하세요.</p>
+    </section>`;
+  }
+
+  // ───── LCC 특가 (고른 나라·항공사) ─────
+  // 항공사 공식 홈페이지(제주항공·트리니티항공·비엣젯) + 뉴스. 범위는 ⚙ 설정 또는 data/watchlist.json 에서 바꿔요.
+  function lccSection() {
+    const st = data.watch.settings;
+    const ps = F.promoSettings(st);
+    const recent = F.addDays(today, -21);
+    const all = (data.promos.items || []).filter(p => p.kind === 'airline' && F.isWantedPromo(p, st) && (p.until ? p.until >= today : (p.lastFound || p.found) >= recent));
+    const mine = p => (p.countries || []).filter(c => ps.countries.includes(c));
+    const sel = ui.lcc || 'all';
+    const list = all.filter(p => sel === 'all' || (sel === '_all' ? !mine(p).length : mine(p).includes(sel)))
+      .sort((a, b) => (b.official ? 1 : 0) - (a.official ? 1 : 0) || (b.lastDate || b.date).localeCompare(a.lastDate || a.date));
+    const count = c => all.filter(p => c === '_all' ? !mine(p).length : mine(p).includes(c)).length;
+    const chips = [['all', `전체 ${all.length}`], ...ps.countries.map(c => [c, `${c} ${count(c)}`]), ['_all', `국제선 전체 ${count('_all')}`]];
+    const offNames = ['7C', 'TW', 'VJ'].filter(c => ps.airlines.includes(c)).map(c => F.airline(c).name);
+    return `<section class="fl-promos fl-lcc">
+      <h2>🏷️ LCC 특가 <small>${esc(ps.countries.join('·'))} · 진행 중·최근 3주</small></h2>
+      <div class="fl-chips">${chips.map(([v, t]) => `<button type="button" class="chip ${sel === v ? 'on' : ''}" data-act="lcc" data-v="${esc(v)}">${esc(t)}</button>`).join('')}</div>
+      ${list.length ? `<ul>${list.slice(0, 12).map(p => {
+        const air = (p.airlines || []).map(c => F.airline(c).name)[0];
+        const where = mine(p).join('·') || (p.allRoutes ? '국제선 전체' : '');
+        return `<li><a href="${esc(p.link)}" target="_blank" rel="noopener">${p.official ? '<span class="badge-off">공식</span> ' : ''}${esc(p.title)}</a>
+          ${p.official && p.desc ? `<div class="desc">${esc(p.desc.slice(0, 80))}</div>` : ''}
+          <div class="src">${esc([air, where, p.until ? `~${p.until.slice(5).replace('-', '/')}까지` : (p.date || '').slice(5, 10).replace('-', '/'), p.official ? '' : p.source].filter(Boolean).join(' · '))}${p.more && p.more.length ? ` · 같은 소식 ${p.more.length}건 더` : ''}</div>
+          ${p.price ? `<div class="fl-est">${p.price.trip === 'round' ? '왕복' : '편도'} ${won(p.price.amount)}부터</div>` : ''}</li>`;
+      }).join('')}</ul>` : '<p class="muted">지금 조건에 맞는 특가 소식이 없어요.</p>'}
+      <p class="hint">공식 홈페이지 직접 확인: ${esc(offNames.join('·') || '없음')}. 진에어·에어부산·이스타 등은 사이트가 자동 확인을 막아서 <b>뉴스로만</b> 확인해요(각 항공사 앱의 알림을 켜 두면 가장 빨라요).
+        <button type="button" class="btn sm ghost" data-act="settings">나라·항공사 바꾸기</button></p>
     </section>`;
   }
 
@@ -499,6 +530,16 @@
       <h3 class="fl-h3">매일 추적 목록</h3>
       ${watches.length ? `<ul class="fl-wlist">${watches.map((w, i) => { const d = F.findDest(w.dest); return `<li><span>${esc(w.origin)}→${esc(d ? d.city : (w.destName || w.dest))} · ${esc(w.from)}~${esc(w.to)} · ${w.minNights}~${w.maxNights}박${w.targetPrice ? ` · 목표 ${man(w.targetPrice)}` : ''}</span><button type="button" class="btn sm ghost danger" data-del-watch="${i}" aria-label="추적 삭제">${ICON.trash}</button></li>`; }).join('')}</ul>` : '<p class="muted">없음</p>'}
 
+      <h3 class="fl-h3">특가 알림 범위 <small>(매일 점검·알림에 적용)</small></h3>
+      ${(() => {
+        const ps = F.promoSettings(data.watch.settings);
+        const lcc = Object.entries(F.AIRLINES).filter(([, a]) => a.type === 'LCC').sort((a, b) => a[1].name.localeCompare(b[1].name, 'ko'));
+        return `<p class="hint">나라</p><div class="fl-picks">${F.COUNTRIES.map(c => `<label class="check-inline"><input type="checkbox" name="p-country" value="${esc(c)}" ${ps.countries.includes(c) ? 'checked' : ''}>${esc(c)}</label>`).join('')}</div>
+          <p class="hint">항공사 (LCC)</p><div class="fl-picks">${lcc.map(([k, a]) => `<label class="check-inline"><input type="checkbox" name="p-air" value="${k}" ${ps.airlines.includes(k) ? 'checked' : ''}>${esc(a.name)}</label>`).join('')}</div>
+          <button type="button" class="btn sm" data-save-scope="1">범위 저장</button>
+          <p class="hint">${g.token ? '저장하면 내일 아침 점검부터 반영돼요(앱 목록은 바로 바뀜).' : 'GitHub 토큰이 있어야 여기서 저장돼요. 없으면 github.com에서 <b>data/watchlist.json</b>의 promoCountries·promoAirlines를 직접 고치면 돼요(SETUP.md 참고).'}</p>`;
+      })()}
+
       <h3 class="fl-h3">GitHub 연결 <small>(추적 추가·지금 갱신용)</small></h3>
       <div class="grid3">
         <label class="field"><span>계정</span><input type="text" id="s-owner" value="${esc(g.owner)}"></label>
@@ -523,6 +564,16 @@
         root.addEventListener('click', async e => {
           const dw = e.target.closest('[data-del-watch]'), dr = e.target.closest('[data-del-rule]');
           if (e.target.closest('[data-card-add]')) { close(); cardRuleSheet(); }
+          if (e.target.closest('[data-save-scope]')) {
+            const countries = [...root.querySelectorAll('input[name=p-country]:checked')].map(i => i.value);
+            const airlines = [...root.querySelectorAll('input[name=p-air]:checked')].map(i => F.airline(i.value).name);
+            if (!countries.length || !airlines.length) { toast('나라와 항공사를 하나 이상 골라 주세요'); return; }
+            if (!cfg.gh.token) { toast('GitHub 토큰이 필요해요 (아래 GitHub 연결)'); return; }
+            try {
+              await updateWatchFile(list => { list.settings = Object.assign(list.settings || {}, { promoCountries: countries, promoAirlines: airlines }); delete list.settings.followAirlines; return `특가 범위 변경: ${countries.join('·')}`; });
+              toast('특가 범위를 저장했어요'); close(); renderResults();
+            } catch (err) { toast(`저장 실패: ${err.message}`); }
+          }
           if (dr) { cfg.cardRules.splice(Number(dr.dataset.delRule), 1); save(); close(); settingsSheet(); renderResults(); }
           if (dw) {
             if (!cfg.gh.token) { toast('GitHub 토큰이 있어야 지울 수 있어요'); return; }
@@ -649,6 +700,7 @@
     else if (act === 'live') liveSearch();
     else if (act === 'card-add') cardRuleSheet();
     else if (act === 'sort') { cfg.sort = b.dataset.v; save(); renderResults(); }
+    else if (act === 'lcc') { ui.lcc = b.dataset.v; renderResults(); }
   });
 
   // 알림에서 눌러 들어온 경우: #r=SEL-CXR-3-5-A&m=2027-01

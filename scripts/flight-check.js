@@ -16,6 +16,7 @@
 const fs = require('fs');
 const path = require('path');
 const F = require('../js/flight-core.js');
+const OFFICIAL = require('./airline-events.js');
 
 const ROOT = path.join(__dirname, '..');
 const DATA = path.join(ROOT, 'data');
@@ -161,15 +162,16 @@ async function newsNaver(q) {
   return ((j && j.items) || []).filter(it => !isNaN(new Date(it.pubDate))).map(it => ({ title: F.stripTags(it.title), link: it.originallink || it.link, date: new Date(it.pubDate).toISOString(), desc: F.stripTags(it.description), source: '네이버 뉴스' }));
 }
 
+// 검색어: 고른 나라·도시 + 고른 LCC + 카드사 (data/watchlist.json 의 settings 에서 바꿀 수 있어요)
 function buildQueries(watch) {
   const s = watch.settings || {};
-  const air = (s.followAirlines || ['7C', 'LJ', 'TW', 'BX', 'RS', 'ZE', 'KE', 'OZ', 'VJ', 'YP']).map(c => F.airline(c).name);
+  const ps = F.promoSettings(s);
   const qs = new Set();
-  for (const a of air) qs.add(`${a} 특가`);
-  for (const w of watch.watches || []) {
-    const d = F.findDest(w.dest);
-    if (d) { qs.add(`${d.city.replace(/\(.*\)/, '')} 항공권 특가`); qs.add(`${d.country} 노선 특가`); }
+  for (const c of ps.countries) {
+    qs.add(`${c} 항공권 특가`); qs.add(`${c} 노선 특가`); qs.add(`${c} 땡처리 항공권`);
+    for (const d of F.DESTS.filter(x => x.country === c)) qs.add(`${d.city.replace(/\(.*\)/, '')} 특가 항공`);
   }
+  for (const code of ps.airlines) qs.add(`${F.airline(code).name} 특가`);
   for (const c of s.cards || F.CARD_NAMES) { qs.add(`${c} 항공권 할인`); qs.add(`${c} 해외여행 할인`); }
   qs.add('항공권 카드 할인 트립닷컴');
   return [...qs];
@@ -179,6 +181,7 @@ function buildQueries(watch) {
 //  · 같은 항공사(또는 같은 카드사)의 소식이 7일 안에 나오면 같은 소식 (같은 특가 기사가 며칠에 걸쳐 나옴)
 //    단, 둘 다 가격이 있는데 가격이 다르거나, 새 기사에만 내 노선이 나오면 다른 특가로 봄
 //  · 항공사·카드사 이름이 없는 기사는 제목 단어가 절반 이상 겹치면 같은 소식
+//  · 항공사 공식 이벤트끼리는 묶지 않고, 뉴스는 제목이 비슷할 때만 공식 이벤트에 붙음
 const STOP = new Set(['특가', '할인', '항공권', '프로모션', '진행', '이벤트', '판매', '최대', '항공', '여행']);
 const words = t => new Set(t.replace(/[^\p{L}\p{N}%]+/gu, ' ').split(' ').filter(w => w.length >= 2 && !STOP.has(w)));
 const entityOf = p => p.kind === 'card' ? `card:${[...(p.cards || [])].sort().join('/')}` : (p.airlines || []).length ? `air:${p.airlines[0]}` : '';
@@ -188,6 +191,11 @@ function sameNews(g, p) {
   const near = g.members.some(m => Math.abs(new Date(m.date) - new Date(p.date)) <= 7 * 864e5);
   if (!near) return false;
   const e = entityOf(p);
+  const overlap = () => { const a = words(p.title), b = g.words; return [...a].filter(w => b.has(w)).length / Math.max(1, Math.min(a.size, b.size)); };
+  const gOfficial = g.members.some(m => m.official);
+  // 공식 이벤트는 번호가 다르면 다른 행사 → 공식끼리는 절대 묶지 않음. 뉴스가 공식 이벤트에 붙으려면 제목이 비슷해야 함
+  if (p.official && gOfficial) return false;
+  if ((p.official || gOfficial) && overlap() < 0.3) return false;
   if (e) {
     if (e !== g.entity) return false;
     const gp = g.members.find(m => m.price);
@@ -216,8 +224,8 @@ function groupNews(list) {
     else groups.push({ kind: p.kind, entity: entityOf(p), words: words(p.title), members: [p] });
   }
   return groups.map(g => {
-    // 대표 기사: 노선이 잡힌 것 > 가격이 있는 것 > 먼저 나온 것
-    const score = m => ((m.routes || []).some(r => r.level !== 'weak') ? 2 : 0) + (m.price ? 1 : 0);
+    // 대표 기사: 항공사 공식 > 노선이 잡힌 것 > 가격이 있는 것 > 먼저 나온 것
+    const score = m => (m.official ? 4 : 0) + ((m.routes || []).some(r => r.level !== 'weak') ? 2 : 0) + (m.price ? 1 : 0);
     const lead = g.members.reduce((best, m) => score(m) > score(best) ? m : best);
     const routes = new Map();
     for (const m of g.members) for (const r of m.routes || []) if (!routes.has(r.key) || LEVEL[r.level] > LEVEL[routes.get(r.key).level]) routes.set(r.key, r);
@@ -227,6 +235,9 @@ function groupNews(list) {
       airlines: [...new Set(g.members.flatMap(m => m.airlines || []))],
       routes: [...routes.values()],
       price: lead.price || (g.members.find(m => m.price) || {}).price || null,
+      countries: [...new Set(g.members.flatMap(m => m.countries || []))],
+      allRoutes: g.members.some(m => m.allRoutes),
+      alerted: g.members.some(m => m.alerted) || undefined,
       lastDate: g.members.reduce((a, m) => m.date > a ? m.date : a, ''),
       lastFound: g.members.reduce((a, m) => m.found > a ? m.found : a, ''),
     };
@@ -251,6 +262,9 @@ async function checkPromos(watch, results, promos, alerts) {
     if (to) r.key = to.key;
   }
   for (const p of before) if (p.routes) p.routes = [...new Map(p.routes.map(r => [r.key, r])).values()];
+  for (const p of before) if (!p.countries) Object.assign(p, F.newsScope(`${p.title} ${p.desc || ''}`));
+  // 티웨이 → 트리니티 등 항공사 이름(별칭)이 바뀐 경우를 위해 다시 확인
+  for (const p of before) if (p.kind === 'airline' && !p.official) p.airlines = [...new Set([...(p.airlines || []), ...F.airlineInText(`${p.title} ${p.desc || ''}`)])];
   const known = new Map(before.map(p => [p.id, p]));
   const seenTitles = new Set(before.map(p => p.title.replace(/\s+/g, '').slice(0, 30)));
   const cutoff = new Date(NOW.getTime() - 10 * 864e5).toISOString();
@@ -273,10 +287,34 @@ async function checkPromos(watch, results, promos, alerts) {
         const meds = Object.values(results.routes[r0.key].months).map(m => m.median).filter(Boolean);
         if (meds.length) vs = F.promoVsTypical(c.price, Math.round(meds.reduce((a, b) => a + b, 0) / meds.length));
       }
-      const p = { id, kind: c.kind, title: it.title, link: it.link, source: it.source, date: it.date, found: TODAY, cards: c.cards, airlines: c.airlines, routes: c.routes, price: c.price, vs, query: q };
+      const p = { id, kind: c.kind, title: it.title, desc: (it.desc || '').slice(0, 200), link: it.link, source: it.source, date: it.date, found: TODAY, cards: c.cards, airlines: c.airlines, countries: c.countries, allRoutes: c.allRoutes, routes: c.routes, price: c.price, vs, query: q };
       known.set(id, p); fresh.push(p);
     }
   }
+
+  // 항공사 공식 홈페이지 이벤트 (제주항공·트리니티항공·비엣젯)
+  const ps = F.promoSettings(watch.settings);
+  const codes = OFFICIAL.SUPPORTED.filter(c => ps.airlines.includes(c));
+  let official = { items: [], report: {} };
+  if (MOCK) { const f = path.join(MOCK, 'official.json'); if (fs.existsSync(f)) official.items = JSON.parse(fs.readFileSync(f, 'utf8')); }
+  else if (codes.length) official = await OFFICIAL.fetchAirlineEvents(codes, log);
+  promos.sources = promos.sources || {};
+  let offNew = 0;
+  for (const ev of official.items) {
+    if (ev.end && ev.end < TODAY) continue; // 끝난 이벤트
+    const id = `official:${ev.code}:${ev.key}`;
+    if (known.has(id)) { Object.assign(known.get(id), { title: ev.title, until: ev.end || null }); continue; }
+    const body = `${ev.title} ${ev.sub || ''}`;
+    const c = F.classifyNews(body, '', routes) || { routes: [], price: F.promoPrice(body), ...F.newsScope(body) };
+    const p = { id, kind: 'airline', official: true, title: ev.title, desc: (ev.sub || '').slice(0, 200), link: ev.link, source: `${F.airline(ev.code).name} 공식`,
+      date: new Date(`${ev.start || TODAY}T09:00:00+09:00`).toISOString(), until: ev.end || null, found: TODAY,
+      cards: [], airlines: [ev.code], countries: c.countries, allRoutes: c.allRoutes, routes: c.routes || [], price: c.price || null };
+    // 처음 확인하는 항공사는 이미 올라와 있던 이벤트를 알림 없이 저장만 (알림 폭탄 방지)
+    if (!promos.sources[ev.code]) p.alerted = true;
+    known.set(id, p); fresh.push(p); offNew++;
+  }
+  for (const code of codes) if ((official.report[code] || 0) > 0 || MOCK) promos.sources[code] = promos.sources[code] || TODAY;
+  if (official.items.length) log(`■ 항공사 공식 이벤트 ${official.items.length}건 확인 → 새로 ${offNew}건`);
   // 같은 소식 묶기 → 최근 60일, 최대 250묶음만 보관
   const keep = F.addDays(TODAY, -60);
   const freshIds = new Set(fresh.map(p => p.id));
@@ -290,11 +328,16 @@ async function checkPromos(watch, results, promos, alerts) {
   const firstRun = !(promos.runs > 0);
   promos.runs = (promos.runs || 0) + 1;
   if (firstRun) { log('  (첫 실행이라 지금까지 쌓인 뉴스는 알림 없이 저장만 해요)'); return; }
-  const wanted = freshGroups.filter(p => p.kind === 'card' || p.routes.some(r => r.level !== 'weak') || (p.kind === 'airline' && p.routes.length));
+  // 알림 대상: 고른 나라(베트남·일본 등)·고른 LCC의 특가, 카드 할인. 같은 소식으로 이미 알린 묶음은 제외
+  const wanted = freshGroups.filter(g => F.isWantedPromo(g, watch.settings) && ![g, ...(g.more || [])].some(m => m.alerted));
+  for (const g of wanted) { g.alerted = true; for (const m of g.more || []) m.alerted = true; }
   for (const p of wanted.slice(0, 6)) {
-    const tag = p.kind === 'card' ? `💳 ${p.cards.join('·')}` : `🏷️ ${(p.airlines.map(c => F.airline(c).name)[0]) || '항공 특가'}`;
+    const air = (p.airlines.map(c => F.airline(c).name)[0]) || '항공 특가';
+    const where = (p.countries || []).filter(c => F.promoSettings(watch.settings).countries.includes(c)).join('·') || (p.allRoutes ? '국제선 전체' : '');
+    const tag = p.kind === 'card' ? `💳 ${p.cards.join('·')}` : `🏷️ ${air}${p.official ? ' 공식' : ''}${where ? ` · ${where}` : ''}`;
     const vs = p.vs ? `\n보통 가격 대비 약 ${p.vs.pct > 0 ? '-' : '+'}${Math.abs(p.vs.pct)}%${p.vs.approx ? ' (편도×2 추정)' : ''}` : '';
-    alerts.push({ title: tag, body: `${p.title}${p.price ? `\n${F.won(p.price.amount)}${p.price.trip === 'round' ? ' 왕복' : ' 편도'}부터` : ''}${vs}`, tags: p.kind === 'card' ? 'credit_card' : 'label', click: p.link });
+    const period = p.until ? `\n~${p.until.slice(5).replace('-', '/')}까지` : '';
+    alerts.push({ title: tag, body: `${p.title}${p.official && p.desc ? ` — ${p.desc.slice(0, 60)}` : ''}${p.price ? `\n${F.won(p.price.amount)}${p.price.trip === 'round' ? ' 왕복' : ' 편도'}부터` : ''}${vs}${period}`, tags: p.kind === 'card' ? 'credit_card' : 'label', click: p.link });
   }
   if (wanted.length > 6) alerts.push({ title: `특가·할인 소식 ${wanted.length - 6}건 더`, body: '앱의 프로모션 목록에서 확인하세요', tags: 'label', click: APP_URL });
 }

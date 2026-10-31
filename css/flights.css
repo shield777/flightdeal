@@ -39,7 +39,7 @@ input[type=password] { width: 100%; min-height: 42px; padding: 8px 10px; border-
 .fl-month .ym b { font-family: var(--font-display); font-size: 28px; line-height: 1; }
 .fl-month .ym small { color: var(--muted); font-size: 12px; }
 .clim { font-size: 12px; font-weight: 700; padding: 2px 8px; border-radius: 999px; }
-.clim.good { background: var(--good-soft); color: var(--good); }
+.clim.good { background: var(--good-soft); color: var(--ok); }
 .clim.bad { background: var(--bad-soft); color: var(--bad); }
 .clim.mid { background: var(--mid-soft); color: var(--mid); }
 .clim.best { background: var(--accent); color: var(--accent-ink); }
@@ -51,12 +51,12 @@ input[type=password] { width: 100%; min-height: 42px; padding: 8px 10px; border-
 .fl-price b { font-variant-numeric: tabular-nums; font-size: 24px; font-weight: 700; letter-spacing: -.01em; }
 .fl-price small { font-size: 12px; color: var(--muted); }
 .fl-vs { font-size: 12px; font-weight: 700; padding: 2px 8px; border-radius: 999px; }
-.fl-vs.good { background: var(--good-soft); color: var(--good); }
+.fl-vs.good { background: var(--good-soft); color: var(--ok); }
 .fl-trip { font-size: 14px; }
 .fl-lines { list-style: none; margin: 0; padding: 0; display: grid; gap: 3px; font-size: 13px; color: var(--muted); }
 .fl-lines li::before { content: "·"; margin-right: 6px; }
 .fl-lines b { color: var(--ink); }
-.fl-lines .bag-inc { color: var(--good); }
+.fl-lines .bag-inc { color: var(--ok); }
 .fl-lines .bag-exc, .fl-lines .bag-maybe { color: var(--ink); }
 .fl-lines .card { color: var(--accent); font-weight: 600; }
 .fl-links { display: flex; flex-wrap: wrap; gap: 6px; }
@@ -66,7 +66,7 @@ input[type=password] { width: 100%; min-height: 42px; padding: 8px 10px; border-
 .fl-more a { color: var(--ink); text-decoration: none; }
 .fl-none { margin: 0; font-size: 13px; color: var(--muted); }
 .fl-buy { font-size: 12px; color: var(--muted); border-top: 1px dashed var(--line); padding-top: 6px; }
-.fl-buy.now { color: var(--good); font-weight: 700; }
+.fl-buy.now { color: var(--ok); font-weight: 700; }
 .fl-buy.late { color: var(--bad); }
 .fl-spark { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--muted); }
 .fl-spark svg { width: 120px; height: 28px; flex: none; }
@@ -80,7 +80,7 @@ input[type=password] { width: 100%; min-height: 42px; padding: 8px 10px; border-
 .fl-promos li > a { font-weight: 600; color: var(--ink); text-decoration: none; }
 .fl-promos .src { font-size: 12px; color: var(--muted); }
 .fl-promos .fl-est { font-size: 13px; margin-top: 2px; }
-.fl-promos .fl-est .good { color: var(--good); }
+.fl-promos .fl-est .good { color: var(--ok); }
 .hint { font-size: 12px; color: var(--muted); }
 .fl-promos .hint { margin: 10px 0 0; }
 .fl-cardgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 8px; }
@@ -113,3 +113,12 @@ code { font-family: var(--font-mono); font-size: .9em; background: var(--surface
   .fl-search .g-where > :first-child { grid-column: 1 / -1; }
   .fl-meta { margin-left: 0; width: 100%; }
 }
+
+/* LCC 특가 */
+.fl-chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 10px; }
+.chip { font: inherit; font-size: 13px; padding: 4px 10px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface-2); color: var(--ink); cursor: pointer; }
+.chip.on { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.fl-lcc .desc { font-size: 13px; color: var(--ink); margin-top: 2px; }
+.badge-off { display: inline-block; font-size: 11px; font-weight: 700; padding: 1px 6px; border-radius: 6px; background: var(--ok-soft); color: var(--ok); vertical-align: 1px; }
+.fl-picks { display: flex; flex-wrap: wrap; gap: 4px 12px; margin-bottom: 6px; }
+.fl-lcc .hint .btn { margin-left: 4px; }
