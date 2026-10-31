@@ -12,6 +12,9 @@ on:
         type: choice
         options: [promos, routes]
         default: promos
+      country:
+        description: '프로모션을 찾을 나라 (예: 베트남, 필리핀). 비우면 기본 나라'
+        default: ''
 
 permissions:
   contents: write
@@ -41,6 +44,7 @@ jobs:
           npm i --no-save --no-audit --no-fund --silent playwright-core@1.48.2 || echo "크롬 연결 도구 설치 실패 → 비엣젯 공식 확인만 건너뜀"
           node scripts/flight-check.js --promos
         env:
+          PROMO_COUNTRY: ${{ inputs.country }}
           NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
           NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
       - name: 결과 저장
