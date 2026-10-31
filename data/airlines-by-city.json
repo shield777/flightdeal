@@ -1,0 +1,1175 @@
+{
+ "updated": "2026-10-31T10:19:16.284Z",
+ "months": [
+  "2026-10",
+  "2026-11",
+  "2026-12",
+  "2027-01",
+  "2027-02",
+  "2027-03"
+ ],
+ "source": "Travelpayouts(Aviasales)에 기록된 서울 출발 직항 가격",
+ "cities": {
+  "CXR": [
+   {
+    "code": "VJ",
+    "n": 121,
+    "from": [
+     "ICN"
+    ],
+    "name": "Vietjet"
+   },
+   {
+    "code": "TW",
+    "n": 90,
+    "from": [
+     "ICN"
+    ],
+    "name": "Trinity Airways"
+   },
+   {
+    "code": "ZE",
+    "n": 42,
+    "from": [
+     "ICN"
+    ],
+    "name": "Eastar Jet"
+   },
+   {
+    "code": "RS",
+    "n": 39,
+    "from": [
+     "ICN"
+    ],
+    "name": "Air Seoul"
+   },
+   {
+    "code": "7C",
+    "n": 34,
+    "from": [
+     "ICN"
+    ],
+    "name": "Jeju Air"
+   },
+   {
+    "code": "WE",
+    "n": 27,
+    "from": [
+     "ICN"
+    ],
+    "name": "Parata Air"
+   },
+   {
+    "code": "BX",
+    "n": 27,
+    "from": [
+     "ICN"
+    ],
+    "name": "Air Busan"
+   },
+   {
+    "code": "LJ",
+    "n": 8,
+    "from": [
+     "ICN"
+    ],
+    "name": "Jin Air"
+   },
+   {
+    "code": "VN",
+    "n": 1,
+    "from": [
+     "ICN"
+    ],
+    "name": "Vietnam Airlines"
+   }
+  ],
+  "DAD": [
+   {
+    "code": "VJ",
+    "n": 131,
+    "from": [
+     "ICN"
+    ],
+    "name": "Vietjet"
+   },
+   {
+    "code": "TW",
+    "n": 55,
+    "from": [
+     "ICN"
+    ],
+    "name": "Trinity Airways"
+   },
+   {
+    "code": "WE",
+    "n": 34,
+    "from": [
+     "ICN"
+    ],
+    "name": "Parata Air"
+   },
+   {
+    "code": "ZE",
+    "n": 30,
+    "from": [
+     "ICN"
+    ],
+    "name": "Eastar Jet"
+   },
+   {
+    "code": "VN",
+    "n": 28,
+    "from": [
+     "ICN"
+    ],
+    "name": "Vietnam Airlines"
+   },
+   {
+    "code": "7C",
+    "n": 25,
+    "from": [
+     "ICN"
+    ],
+    "name": "Jeju Air"
+   },
+   {
+    "code": "RS",
+    "n": 22,
+    "from": [
+     "ICN"
+    ],
+    "name": "Air Seoul"
+   }
+  ],
+  "PQC": [
+   {
+    "code": "VJ",
+    "n": 226,
+    "from": [
+     "ICN"
+    ],
+    "name": "Vietjet"
+   },
+   {
+    "code": "7C",
+    "n": 77,
+    "from": [
+     "ICN"
+    ],
+    "name": "Jeju Air"
+   },
+   {
+    "code": "TW",
+    "n": 76,
+    "from": [
+     "ICN"
+    ],
+    "name": "Trinity Airways"
+   },
+   {
+    "code": "ZE",
+    "n": 19,
+    "from": [
+     "ICN"
+    ],
+    "name": "Eastar Jet"
+   },
+   {
+    "code": "LJ",
+    "n": 6,
+    "from": [
+     "ICN"
+    ],
+    "name": "Jin Air"
+   },
+   {
+    "code": "9G",
+    "n": 4,
+    "from": [
+     "ICN"
+    ],
+    "name": "Sun PhuQuoc Airways"
+   }
+  ],
+  "SGN": [
+   {
+    "code": "VJ",
+    "n": 53,
+    "from": [
+     "ICN"
+    ],
+    "name": "Vietjet"
+   },
+   {
+    "code": "LJ",
+    "n": 13,
+    "from": [
+     "ICN"
+    ],
+    "name": "Jin Air"
+   },
+   {
+    "code": "9G",
+    "n": 11,
+    "from": [
+     "ICN"
+    ],
+    "name": "Sun PhuQuoc Airways"
+   },
+   {
+    "code": "YP",
+    "n": 10,
+    "from": [
+     "ICN"
+    ],
+    "name": "Air Premia"
+   }
+  ],
+  "HAN": [
+   {
+    "code": "7C",
+    "n": 30,
+    "from": [
+     "ICN"
+    ],
+    "name": "Jeju Air"
+   },
+   {
+    "code": "WE",
+    "n": 15,
+    "from": [
+     "ICN"
+    ],
+    "name": "Parata Air"
+   },
+   {
+    "code": "VJ",
+    "n": 15,
+    "from": [
+     "ICN"
+    ],
+    "name": "Vietjet"
+   },
+   {
+    "code": "9G",
+    "n": 12,
+    "from": [
+     "ICN"
+    ],
+    "name": "Sun PhuQuoc Airways"
+   },
+   {
+    "code": "VN",
+    "n": 4,
+    "from": [
+     "ICN"
+    ],
+    "name": "Vietnam Airlines"
+   }
+  ],
+  "DLI": [],
+  "BKK": [
+   {
+    "code": "TW",
+    "n": 89,
+    "from": [
+     "ICN"
+    ],
+    "name": "Trinity Airways"
+   },
+   {
+    "code": "VZ",
+    "n": 73,
+    "from": [
+     "ICN"
+    ],
+    "name": "Thai Vietjet Air"
+   },
+   {
+    "code": "7C",
+    "n": 27,
+    "from": [
+     "ICN"
+    ],
+    "name": "Jeju Air"
+   },
+   {
+    "code": "TG",
+    "n": 14,
+    "from": [
+     "ICN"
+    ],
+    "name": "THAI Airways"
+   },
+   {
+    "code": "ZE",
+    "n": 7,
+    "from": [
+     "ICN"
+    ],
+    "name": "Eastar Jet"
+   },
+   {
+    "code": "LJ",
+    "n": 5,
+    "from": [
+     "ICN"
+    ],
+    "name": "Jin Air"
+   },
+   {
+    "code": "KE",
+    "n": 2,
+    "from": [
+     "ICN"
+    ],
+    "name": "Korean Air"
+   },
+   {
+    "code": "YP",
+    "n": 1,
+    "from": [
+     "ICN"
+    ],
+    "name": "Air Premia"
+   }
+  ],
+  "HKT": [
+   {
+    "code": "OZ",
+    "n": 146,
+    "from": [
+     "ICN"
+    ],
+    "name": "Asiana Airlines"
+   },
+   {
+    "code": "KE",
+    "n": 84,
+    "from": [
+     "ICN"
+    ],
+    "name": "Korean Air"
+   }
+  ],
+  "CNX": [
+   {
+    "code": "7C",
+    "n": 13,
+    "from": [
+     "ICN"
+    ],
+    "name": "Jeju Air"
+   },
+   {
+    "code": "BX",
+    "n": 6,
+    "from": [
+     "ICN"
+    ],
+    "name": "Air Busan"
+   },
+   {
+    "code": "LJ",
+    "n": 4,
+    "from": [
+     "ICN"
+    ],
+    "name": "Jin Air"
+   },
+   {
+    "code": "ZE",
+    "n": 3,
+    "from": [
+     "ICN"
+    ],
+    "name": "Eastar Jet"
+   }
+  ],
+  "CEB": [
+   {
+    "code": "7C",
+    "n": 47,
+    "from": [
+     "ICN"
+    ],
+    "name": "Jeju Air"
+   },
+   {
+    "code": "5J",
+    "n": 45,
+    "from": [
+     "ICN"
+    ],
+    "name": "Cebu Pacific"
+   },
+   {
+    "code": "LJ",
+    "n": 1,
+    "from": [
+     "ICN"
+    ],
+    "name": "Jin Air"
+   }
+  ],
+  "TAG": [
+   {
+    "code": "7C",
+    "n": 14,
+    "from": [
+     "ICN"
+    ],
+    "name": "Jeju Air"
+   },
+   {
+    "code": "LJ",
+    "n": 2,
+    "from": [
+     "ICN"
+    ],
+    "name": "Jin Air"
+   }
+  ],
+  "KLO": [
+   {
+    "code": "TW",
+    "n": 55,
+    "from": [
+     "ICN"
+    ],
+    "name": "Trinity Airways"
+   }
+  ],
+  "MNL": [
+   {
+    "code": "5J",
+    "n": 93,
+    "from": [
+     "ICN"
+    ],
+    "name": "Cebu Pacific"
+   },
+   {
+    "code": "PR",
+    "n": 38,
+    "from": [
+     "ICN"
+    ],
+    "name": "Philippine Airlines"
+   },
+   {
+    "code": "7C",
+    "n": 5,
+    "from": [
+     "ICN"
+    ],
+    "name": "Jeju Air"
+   },
+   {
+    "code": "OZ",
+    "n": 5,
+    "from": [
+     "ICN"
+    ],
+    "name": "Asiana Airlines"
+   }
+  ],
+  "DPS": [
+   {
+    "code": "7C",
+    "n": 186,
+    "from": [
+     "ICN"
+    ],
+    "name": "Jeju Air"
+   },
+   {
+    "code": "KE",
+    "n": 7,
+    "from": [
+     "ICN"
+    ],
+    "name": "Korean Air"
+   }
+  ],
+  "BKI": [
+   {
+    "code": "AK",
+    "n": 15,
+    "from": [
+     "ICN"
+    ],
+    "name": "AirAsia"
+   },
+   {
+    "code": "7C",
+    "n": 2,
+    "from": [
+     "ICN"
+    ],
+    "name": "Jeju Air"
+   },
+   {
+    "code": "LJ",
+    "n": 2,
+    "from": [
+     "ICN"
+    ],
+    "name": "Jin Air"
+   }
+  ],
+  "KUL": [
+   {
+    "code": "AK",
+    "n": 80,
+    "from": [
+     "ICN"
+    ],
+    "name": "AirAsia"
+   },
+   {
+    "code": "OD",
+    "n": 67,
+    "from": [
+     "ICN"
+    ],
+    "name": "Batik Air Malaysia"
+   }
+  ],
+  "SIN": [
+   {
+    "code": "7C",
+    "n": 37,
+    "from": [
+     "ICN"
+    ],
+    "name": "Jeju Air"
+   },
+   {
+    "code": "TR",
+    "n": 37,
+    "from": [
+     "ICN"
+    ],
+    "name": "Scoot"
+   },
+   {
+    "code": "TW",
+    "n": 19,
+    "from": [
+     "ICN"
+    ],
+    "name": "Trinity Airways"
+   },
+   {
+    "code": "KE",
+    "n": 1,
+    "from": [
+     "ICN"
+    ],
+    "name": "Korean Air"
+   }
+  ],
+  "TYO": [
+   {
+    "code": "MM",
+    "n": 85,
+    "from": [
+     "ICN"
+    ],
+    "name": "Peach"
+   },
+   {
+    "code": "ZE",
+    "n": 59,
+    "from": [
+     "ICN"
+    ],
+    "name": "Eastar Jet"
+   },
+   {
+    "code": "TW",
+    "n": 39,
+    "from": [
+     "ICN"
+    ],
+    "name": "Trinity Airways"
+   },
+   {
+    "code": "BX",
+    "n": 38,
+    "from": [
+     "ICN"
+    ],
+    "name": "Air Busan"
+   },
+   {
+    "code": "7C",
+    "n": 38,
+    "from": [
+     "ICN"
+    ],
+    "name": "Jeju Air"
+   },
+   {
+    "code": "ZG",
+    "n": 32,
+    "from": [
+     "ICN"
+    ],
+    "name": "ZIPAIR"
+   },
+   {
+    "code": "ET",
+    "n": 22,
+    "from": [
+     "ICN"
+    ],
+    "name": "Ethiopian Airlines"
+   },
+   {
+    "code": "WE",
+    "n": 17,
+    "from": [
+     "ICN"
+    ],
+    "name": "Parata Air"
+   },
+   {
+    "code": "YP",
+    "n": 14,
+    "from": [
+     "ICN"
+    ],
+    "name": "Air Premia"
+   },
+   {
+    "code": "RS",
+    "n": 12,
+    "from": [
+     "ICN"
+    ],
+    "name": "Air Seoul"
+   },
+   {
+    "code": "LJ",
+    "n": 8,
+    "from": [
+     "ICN"
+    ],
+    "name": "Jin Air"
+   },
+   {
+    "code": "OZ",
+    "n": 1,
+    "from": [
+     "ICN"
+    ],
+    "name": "Asiana Airlines"
+   }
+  ],
+  "OSA": [
+   {
+    "code": "TW",
+    "n": 102,
+    "from": [
+     "ICN"
+    ],
+    "name": "Trinity Airways"
+   },
+   {
+    "code": "7C",
+    "n": 92,
+    "from": [
+     "ICN",
+     "GMP"
+    ],
+    "name": "Jeju Air"
+   },
+   {
+    "code": "LJ",
+    "n": 79,
+    "from": [
+     "ICN"
+    ],
+    "name": "Jin Air"
+   },
+   {
+    "code": "ZE",
+    "n": 78,
+    "from": [
+     "ICN"
+    ],
+    "name": "Eastar Jet"
+   },
+   {
+    "code": "WE",
+    "n": 73,
+    "from": [
+     "ICN"
+    ],
+    "name": "Parata Air"
+   },
+   {
+    "code": "MM",
+    "n": 45,
+    "from": [
+     "GMP",
+     "ICN"
+    ],
+    "name": "Peach"
+   },
+   {
+    "code": "BX",
+    "n": 39,
+    "from": [
+     "ICN"
+    ],
+    "name": "Air Busan"
+   },
+   {
+    "code": "OZ",
+    "n": 35,
+    "from": [
+     "ICN",
+     "GMP"
+    ],
+    "name": "Asiana Airlines"
+   },
+   {
+    "code": "KE",
+    "n": 30,
+    "from": [
+     "ICN"
+    ],
+    "name": "Korean Air"
+   },
+   {
+    "code": "RS",
+    "n": 25,
+    "from": [
+     "ICN"
+    ],
+    "name": "Air Seoul"
+   }
+  ],
+  "FUK": [
+   {
+    "code": "7C",
+    "n": 30,
+    "from": [
+     "ICN"
+    ],
+    "name": "Jeju Air"
+   },
+   {
+    "code": "ZE",
+    "n": 21,
+    "from": [
+     "ICN"
+    ],
+    "name": "Eastar Jet"
+   },
+   {
+    "code": "LJ",
+    "n": 19,
+    "from": [
+     "ICN"
+    ],
+    "name": "Jin Air"
+   },
+   {
+    "code": "TW",
+    "n": 11,
+    "from": [
+     "ICN"
+    ],
+    "name": "Trinity Airways"
+   },
+   {
+    "code": "BX",
+    "n": 6,
+    "from": [
+     "ICN"
+    ],
+    "name": "Air Busan"
+   },
+   {
+    "code": "OZ",
+    "n": 4,
+    "from": [
+     "ICN"
+    ],
+    "name": "Asiana Airlines"
+   },
+   {
+    "code": "RS",
+    "n": 3,
+    "from": [
+     "ICN"
+    ],
+    "name": "Air Seoul"
+   }
+  ],
+  "NGO": [
+   {
+    "code": "LJ",
+    "n": 10,
+    "from": [
+     "ICN"
+    ],
+    "name": "Jin Air"
+   },
+   {
+    "code": "MM",
+    "n": 8,
+    "from": [
+     "GMP"
+    ],
+    "name": "Peach"
+   },
+   {
+    "code": "7C",
+    "n": 7,
+    "from": [
+     "ICN"
+    ],
+    "name": "Jeju Air"
+   },
+   {
+    "code": "OZ",
+    "n": 6,
+    "from": [
+     "ICN"
+    ],
+    "name": "Asiana Airlines"
+   },
+   {
+    "code": "TW",
+    "n": 2,
+    "from": [
+     "ICN"
+    ],
+    "name": "Trinity Airways"
+   }
+  ],
+  "OKA": [
+   {
+    "code": "ZE",
+    "n": 15,
+    "from": [
+     "ICN"
+    ],
+    "name": "Eastar Jet"
+   },
+   {
+    "code": "7C",
+    "n": 9,
+    "from": [
+     "ICN"
+    ],
+    "name": "Jeju Air"
+   },
+   {
+    "code": "TW",
+    "n": 7,
+    "from": [
+     "ICN"
+    ],
+    "name": "Trinity Airways"
+   },
+   {
+    "code": "OZ",
+    "n": 3,
+    "from": [
+     "ICN"
+    ],
+    "name": "Asiana Airlines"
+   },
+   {
+    "code": "LJ",
+    "n": 2,
+    "from": [
+     "ICN"
+    ],
+    "name": "Jin Air"
+   }
+  ],
+  "SPK": [
+   {
+    "code": "ZE",
+    "n": 33,
+    "from": [
+     "ICN"
+    ],
+    "name": "Eastar Jet"
+   },
+   {
+    "code": "LJ",
+    "n": 5,
+    "from": [
+     "ICN"
+    ],
+    "name": "Jin Air"
+   },
+   {
+    "code": "7C",
+    "n": 3,
+    "from": [
+     "ICN"
+    ],
+    "name": "Jeju Air"
+   },
+   {
+    "code": "WE",
+    "n": 3,
+    "from": [
+     "ICN"
+    ],
+    "name": "Parata Air"
+   },
+   {
+    "code": "YP",
+    "n": 3,
+    "from": [
+     "ICN"
+    ],
+    "name": "Air Premia"
+   },
+   {
+    "code": "TW",
+    "n": 1,
+    "from": [
+     "ICN"
+    ],
+    "name": "Trinity Airways"
+   }
+  ],
+  "TPE": [
+   {
+    "code": "IT",
+    "n": 30,
+    "from": [
+     "ICN"
+    ],
+    "name": "Tigerair Taiwan"
+   },
+   {
+    "code": "TR",
+    "n": 14,
+    "from": [
+     "ICN"
+    ],
+    "name": "Scoot"
+   },
+   {
+    "code": "ZE",
+    "n": 4,
+    "from": [
+     "ICN"
+    ],
+    "name": "Eastar Jet"
+   },
+   {
+    "code": "LJ",
+    "n": 1,
+    "from": [
+     "ICN"
+    ],
+    "name": "Jin Air"
+   }
+  ],
+  "HKG": [
+   {
+    "code": "UO",
+    "n": 89,
+    "from": [
+     "ICN"
+    ],
+    "name": "HK Express"
+   },
+   {
+    "code": "ZE",
+    "n": 24,
+    "from": [
+     "ICN"
+    ],
+    "name": "Eastar Jet"
+   },
+   {
+    "code": "7C",
+    "n": 5,
+    "from": [
+     "ICN"
+    ],
+    "name": "Jeju Air"
+   },
+   {
+    "code": "HX",
+    "n": 3,
+    "from": [
+     "ICN"
+    ],
+    "name": "Hong Kong Airlines"
+   },
+   {
+    "code": "TW",
+    "n": 1,
+    "from": [
+     "ICN"
+    ],
+    "name": "Trinity Airways"
+   },
+   {
+    "code": "YP",
+    "n": 1,
+    "from": [
+     "ICN"
+    ],
+    "name": "Air Premia"
+   },
+   {
+    "code": "BX",
+    "n": 1,
+    "from": [
+     "ICN"
+    ],
+    "name": "Air Busan"
+   }
+  ],
+  "MFM": [
+   {
+    "code": "7C",
+    "n": 8,
+    "from": [
+     "ICN"
+    ],
+    "name": "Jeju Air"
+   },
+   {
+    "code": "NX",
+    "n": 3,
+    "from": [
+     "ICN"
+    ],
+    "name": "Air Macau"
+   }
+  ],
+  "SHA": [
+   {
+    "code": "9C",
+    "n": 72,
+    "from": [
+     "ICN"
+    ],
+    "name": "Spring Airlines"
+   },
+   {
+    "code": "FM",
+    "n": 45,
+    "from": [
+     "ICN",
+     "GMP"
+    ],
+    "name": "Shanghai Airlines"
+   },
+   {
+    "code": "CZ",
+    "n": 36,
+    "from": [
+     "ICN"
+    ],
+    "name": "China Southern Airlines"
+   },
+   {
+    "code": "ZE",
+    "n": 35,
+    "from": [
+     "ICN"
+    ],
+    "name": "Eastar Jet"
+   },
+   {
+    "code": "MU",
+    "n": 30,
+    "from": [
+     "ICN",
+     "GMP"
+    ],
+    "name": "China Eastern"
+   },
+   {
+    "code": "KE",
+    "n": 21,
+    "from": [
+     "ICN",
+     "GMP"
+    ],
+    "name": "Korean Air"
+   },
+   {
+    "code": "OZ",
+    "n": 5,
+    "from": [
+     "ICN"
+    ],
+    "name": "Asiana Airlines"
+   }
+  ],
+  "GUM": [
+   {
+    "code": "LJ",
+    "n": 5,
+    "from": [
+     "ICN"
+    ],
+    "name": "Jin Air"
+   },
+   {
+    "code": "RS",
+    "n": 5,
+    "from": [
+     "ICN"
+    ],
+    "name": "Air Seoul"
+   },
+   {
+    "code": "KE",
+    "n": 1,
+    "from": [
+     "ICN"
+    ],
+    "name": "Korean Air"
+   }
+  ],
+  "SPN": [
+   {
+    "code": "7C",
+    "n": 3,
+    "from": [
+     "ICN"
+    ],
+    "name": "Jeju Air"
+   }
+  ],
+  "HNL": [
+   {
+    "code": "KE",
+    "n": 31,
+    "from": [
+     "ICN"
+    ],
+    "name": "Korean Air"
+   },
+   {
+    "code": "YP",
+    "n": 21,
+    "from": [
+     "ICN"
+    ],
+    "name": "Air Premia"
+   }
+  ]
+ }
+}
