@@ -120,8 +120,9 @@
         <nav class="fl-tabs" role="tablist">
           <button role="tab" aria-selected="${ui.tab === 'price'}" data-act="tab" data-v="price">항공권 검색</button>
           <button role="tab" aria-selected="${ui.tab === 'promo'}" data-act="tab" data-v="promo">프로모션</button>
+          <button role="tab" aria-selected="${ui.tab === 'card'}" data-act="tab" data-v="card">카드</button>
         </nav>
-        ${ui.tab === 'promo' ? '<div id="promo"></div>' : `
+        ${ui.tab === 'promo' ? '<div id="promo"></div>' : ui.tab === 'card' ? '<div id="cards"></div>' : `
         <form class="fl-search" id="search" novalidate>
           <div class="grid2 g-where">
             <label class="field"><span>나라</span><select id="q-country">${countries.map(c => `<option ${c === country ? 'selected' : ''}>${esc(c)}</option>`).join('')}<option value="_custom" ${country === '_custom' ? 'selected' : ''}>직접 입력</option></select></label>
@@ -143,7 +144,7 @@
         <div id="info"></div>
         ${tipsSection()}`}
       </div>`;
-    if (ui.tab === 'promo') renderPromo(); else renderInfo();
+    if (ui.tab === 'promo') renderPromo(); else if (ui.tab === 'card') renderCards(); else renderInfo();
   }
 
   // ───── 바로 검색: 고른 목적지·날짜·인원을 네이버·구글·스카이스캐너 검색에 그대로 넣음 ─────
@@ -165,7 +166,15 @@
         <a class="btn primary" href="${L.sky}" target="_blank" rel="noopener">스카이스캐너</a>
       </div>
       <a class="fl-quick-month" href="${F.skyMonth('SEL', dest, dep.slice(0, 7), ret.slice(0, 7), q.adults, true)}" target="_blank" rel="noopener">날짜를 아직 못 정했으면: 스카이스캐너 ${Number(dep.slice(5, 7))}월 전체 날짜별 가격 보기${ICON.ext}</a>
-      <p class="hint">고른 도시·날짜·인원이 그대로 들어가요. 직항 조건은 네이버·스카이스캐너는 주소로 넣고 구글은 검색어로 넣어서, 사이트에서 한 번 더 확인해 주세요.</p>`;
+      <p class="hint">고른 도시·날짜·인원이 그대로 들어가요. 직항 조건은 네이버·스카이스캐너는 주소로 넣고 구글은 검색어로 넣어서, 사이트에서 한 번 더 확인해 주세요.</p>
+      <div class="fl-sub"><b>땡처리닷컴</b> <small>인천 출발 · 날짜와 상관없이 그 도시 땡처리 좌석 전체</small></div>
+      <div class="fl-quick-go two">
+        <a class="btn" href="${F.ttang(dest, q.adults).city}" target="_blank" rel="noopener">${esc(dest.city.replace(/\(.*\)/, ''))} 땡처리</a>
+        <a class="btn" href="${F.ttang(dest, q.adults).today}" target="_blank" rel="noopener">오늘 오픈 땡처리</a>
+      </div>
+      <div class="fl-sub"><b>항공사</b> <small>앱이 깔려 있고 항공사가 지원하면 앱으로, 아니면 홈페이지로 열려요 · 날짜는 다시 골라 주세요</small></div>
+      <div class="fl-air-go">${F.airlinesFor(dest.country).map(c => { const a = F.airline(c); return a.url ? `<a class="btn sm" href="${a.url}" target="_blank" rel="noopener">${esc(a.name)}</a>` : ''; }).join('')}</div>
+      <p class="hint">국적 항공사${F.airlinesFor(dest.country) !== F.KOREAN_AIRLINES ? `와 ${esc(dest.country)} 항공사` : ''}를 모아 둔 버튼이에요. 이 노선을 운항하는지는 각 사이트에서 확인하세요. 앱이 안 열리면 버튼을 길게 눌러 '앱에서 열기'가 보이는지 확인해 보세요.</p>`;
   }
 
   // 고른 날짜의 여행 시기 정보 (확인된 자료만: 목적지 기후표, Open-Meteo 관측 강수량, 공휴일·방학)
@@ -239,7 +248,7 @@
     const sel = ui.lcc || 'all';
     const shown = all.filter(p => sel === 'all' || (sel === '_all' ? !mine(p).length : mine(p).includes(sel)));
     const count = c => all.filter(p => c === '_all' ? !mine(p).length : mine(p).includes(c)).length;
-    const chips = [['all', `전체 ${all.length}`], ...ps.countries.map(c => [c, `${c} ${count(c)}`]), ['_all', `국제선 전체 ${count('_all')}`]];
+    const chips = [['all', `전체 ${all.length}`], ...ps.countries.map(c => [c, `${c} ${count(c)}`]), ['_all', `그 외·전 노선 ${count('_all')}`]];
     const byAir = ps.airlines.map(code => ({ code, list: shown.filter(p => (p.airlines || []).find(a => ps.airlines.includes(a)) === code) }));
     const etc = shown.filter(p => !(p.airlines || []).some(a => ps.airlines.includes(a)));
     const sortList = l => l.sort((x, y) => (y.official ? 1 : 0) - (x.official ? 1 : 0) || (y.lastDate || y.date || '').localeCompare(x.lastDate || x.date || ''));
@@ -247,7 +256,7 @@
     const empty = byAir.filter(g => !g.list.length);
     box.innerHTML = `
       <section class="pr-head">
-        <h2>항공권 프로모션 <small>${esc(ps.countries.join('·'))} · LCC · 진행 중이거나 최근 3주</small></h2>
+        <h2>항공권 프로모션 <small>전체 항공사 · 진행 중이거나 최근 3주</small></h2>
         <div class="fl-chips">${chips.map(([v, t]) => `<button type="button" class="chip ${sel === v ? 'on' : ''}" data-act="lcc" data-v="${esc(v)}">${esc(t)}</button>`).join('')}</div>
         <div class="fl-actions"><button type="button" class="btn sm primary" data-act="promo-refresh" ${ui.promoBusy ? 'disabled' : ''}>${ICON.refresh}${ui.promoBusy ? `확인 중… ${ui.promoBusy.sec}초 (보통 1~2분)` : '지금 확인'}</button></div>
         <p class="hint">마지막 확인 ${esc(fmtUpdated(data.promos.updated))} · <span class="badge-off">공식</span> 항공사 홈페이지에서 직접 확인 · <span class="badge-news">뉴스</span> 기사 제목 그대로 (조건·가격은 원문에서 확인)</p>
@@ -262,8 +271,25 @@
       ${etc.length ? `<article class="pr-air"><header><b>항공사 이름 없는 기사</b><span class="pr-how">여행사·카드사·종합 기사</span></header><ul>${sortList(etc).map(p => promoItem(p, ps)).join('')}</ul></article>` : ''}
       ${!withItems.length && !etc.length ? '<p class="muted pr-none">지금 조건에 맞는 특가 소식이 없어요.</p>' : ''}
       ${empty.length ? `<p class="pr-empty"><b>최근 확인된 소식 없음</b> · ${empty.map(g => { const a = F.airline(g.code); return a.url ? `<a href="${a.url}" target="_blank" rel="noopener">${esc(a.name)}</a>` : esc(a.name); }).join(' · ')}</p>` : ''}
-      ${cardSection()}
       <p class="fl-foot">[지금 확인]을 누르면 제주항공·트리니티항공·비엣젯 홈페이지 이벤트 목록과 특가 뉴스를 확인해요(매일 자동 확인은 하지 않아요). 진에어·에어부산·이스타 등은 사이트가 자동 확인을 막아서 뉴스로만 확인돼요(각 항공사 앱 알림을 켜 두면 가장 빨라요). 범위는 ⚙ 설정에서 바꿔요.</p>`;
+  }
+
+  // ───── 카드 탭: 우리·현대·신한 할인 소식 + 항공사 공식 결제 혜택 ─────
+  function renderCards() {
+    const box = $('#cards'); if (!box) return;
+    if (!data.loaded) { box.innerHTML = '<div class="empty">자료를 불러오는 중…</div>'; return; }
+    const pay = (data.promos.items || []).filter(p => F.isPayBenefit(p) && isLive(p)).sort((a, b) => (a.until || '9').localeCompare(b.until || '9'));
+    box.innerHTML = `
+      <section class="pr-head">
+        <h2>카드·결제 할인</h2>
+        <div class="fl-actions"><button type="button" class="btn sm primary" data-act="promo-refresh" ${ui.promoBusy ? 'disabled' : ''}>${ICON.refresh}${ui.promoBusy ? `확인 중… ${ui.promoBusy.sec}초 (보통 1~2분)` : '지금 확인'}</button></div>
+        <p class="hint">마지막 확인 ${esc(fmtUpdated(data.promos.updated))} · 프로모션 탭과 같이 확인돼요</p>
+      </section>
+      ${cardSection()}
+      <section class="fl-cards">
+        <h2>✈️ 항공사 결제 혜택 <small>항공사 홈페이지 공지 그대로</small></h2>
+        ${pay.length ? `<ul class="news">${pay.map(p => `<li><span class="badge-off">${esc(F.airline((p.airlines || [])[0]).name)}</span> <a href="${esc(p.link)}" target="_blank" rel="noopener">${esc(p.title)}</a> <small>${p.until ? `~${esc(mmdd(p.until))}` : ''}</small></li>`).join('')}</ul>` : '<p class="muted">지금 확인된 결제 혜택이 없어요.</p>'}
+      </section>`;
   }
 
   function cardSection() {
@@ -326,14 +352,14 @@
   async function refreshPromos() {
     if (ui.promoBusy || needToken()) return;
     const before = data.promos.updated || '';
-    ui.promoBusy = { sec: 0 }; renderPromo();
+    ui.promoBusy = { sec: 0 }; renderPromo(); renderCards();
     try {
       const p = await runOnServer({ mode: 'promos' }, 'data/promos.json', j => (j.updated || '') > before,
         sec => { if (ui.promoBusy) { ui.promoBusy.sec = sec; const b = $('[data-act="promo-refresh"]'); if (b) b.textContent = `확인 중… ${sec}초 (보통 1~2분)`; } }, 300);
       data.promos = Object.assign({ items: [] }, p);
       toast('프로모션을 새로 확인했어요');
     } catch (e) { toast(`확인 실패: ${e.message}`); }
-    ui.promoBusy = null; renderPromo();
+    ui.promoBusy = null; renderPromo(); renderCards();
   }
   async function geocodeCustom() {
     const c = cfg.q.custom; if (!c || !c.en || c.geoTried === c.en) return;
@@ -373,9 +399,10 @@
       <h3 class="fl-h3">프로모션 범위 <small>(프로모션 탭에 적용)</small></h3>
       ${(() => {
         const ps = F.promoSettings(data.watch.settings);
-        const lcc = Object.entries(F.AIRLINES).filter(([, a]) => a.type === 'LCC').sort((a, b) => a[1].name.localeCompare(b[1].name, 'ko'));
+        const order = [...F.PROMO_DEFAULT.airlines, ...Object.keys(F.AIRLINES).filter(k => !F.PROMO_DEFAULT.airlines.includes(k))];
+        const lcc = order.map(k => [k, F.airline(k)]);
         return `<p class="hint">나라</p><div class="fl-picks">${F.COUNTRIES.map(c => `<label class="check-inline"><input type="checkbox" name="p-country" value="${esc(c)}" ${ps.countries.includes(c) ? 'checked' : ''}>${esc(c)}</label>`).join('')}</div>
-          <p class="hint">항공사 (LCC)</p><div class="fl-picks">${lcc.map(([k, a]) => `<label class="check-inline"><input type="checkbox" name="p-air" value="${k}" ${ps.airlines.includes(k) ? 'checked' : ''}>${esc(a.name)}</label>`).join('')}</div>
+          <p class="hint">항공사 (기본: 국적 항공사 + 베트남·일본 항공사)</p><div class="fl-picks">${lcc.map(([k, a]) => `<label class="check-inline"><input type="checkbox" name="p-air" value="${k}" ${ps.airlines.includes(k) ? 'checked' : ''}>${esc(a.name)}</label>`).join('')}</div>
           <button type="button" class="btn sm" data-save-scope="1">범위 저장</button>
           <p class="hint">${g.token ? '저장하면 목록은 바로 바뀌고, 검색어는 다음 [지금 확인]부터 반영돼요.' : 'GitHub 토큰이 있어야 여기서 저장돼요. 없으면 github.com에서 <b>data/watchlist.json</b>의 promoCountries·promoAirlines를 직접 고치면 돼요(SETUP.md 참고).'}</p>`;
       })()}`,

@@ -173,3 +173,10 @@ button.fl-go { width: 100%; }
 .fl-info li > div { margin-top: 3px; }
 .fl-info .muted { font-size: 13px; }
 .fl-search #quick { display: grid; gap: 10px; }
+
+.fl-tabs { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.fl-sub { font-size: 14px; margin-top: 4px; }
+.fl-sub small { color: var(--muted); font-size: 12px; margin-left: 4px; }
+.fl-quick-go.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.fl-air-go { display: flex; flex-wrap: wrap; gap: 6px; }
+.fl-cards ul.news { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }

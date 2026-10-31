@@ -94,7 +94,7 @@
   // bag·kg·bagNote: 예전 수하물 추정용 (지금 화면에는 표시하지 않음)
   const AIRLINES = {
     KE: { name: '대한항공', type: 'FSC', bag: 'inc', kg: 23, url: 'https://www.koreanair.com' },
-    OZ: { name: '아시아나항공', type: 'FSC', bag: 'inc', kg: 23, url: 'https://flyasiana.com' },
+    OZ: { name: '아시아나항공', alias: ['아시아나'], type: 'FSC', bag: 'inc', kg: 23, url: 'https://flyasiana.com' },
     '7C': { name: '제주항공', type: 'LCC', bag: 'exc', url: 'https://www.jejuair.net' },
     LJ: { name: '진에어', type: 'LCC', bag: 'maybe', kg: 15, url: 'https://www.jinair.com', bagNote: '일반 운임은 15kg 포함, 특가 운임은 미포함일 수 있어요' },
     TW: { name: '트리니티항공', alias: ['티웨이항공', '티웨이'], type: 'LCC', bag: 'exc', url: 'https://www.trinityairways.com' }, // 2026년 티웨이항공 → 트리니티항공 사명 변경
@@ -124,8 +124,8 @@
     CI: { name: '중화항공', type: 'FSC', bag: 'inc', kg: 23, url: 'https://www.china-airlines.com' },
     BR: { name: '에바항공', type: 'FSC', bag: 'inc', kg: 23, url: 'https://www.evaair.com' },
     IT: { name: '타이거에어 타이완', type: 'LCC', bag: 'exc', url: 'https://www.tigerairtw.com' },
-    JL: { name: '일본항공', type: 'FSC', bag: 'inc', kg: 23, url: 'https://www.jal.co.jp' },
-    NH: { name: 'ANA', type: 'FSC', bag: 'inc', kg: 23, url: 'https://www.ana.co.jp' },
+    JL: { name: '일본항공', alias: ['JAL', '재팬에어라인'], type: 'FSC', bag: 'inc', kg: 23, url: 'https://www.jal.co.jp' },
+    NH: { name: 'ANA', alias: ['전일본공수'], type: 'FSC', bag: 'inc', kg: 23, url: 'https://www.ana.co.jp' },
     MM: { name: '피치항공', alias: ['피치 항공', '피치애비에이션'], type: 'LCC', bag: 'exc', url: 'https://www.flypeach.com' },
     GK: { name: '젯스타 재팬', alias: ['젯스타재팬', '젯스타'], type: 'LCC', bag: 'exc', url: 'https://www.jetstar.com' },
     ZG: { name: '집에어', alias: ['ZIPAIR', '집에어 도쿄'], type: 'LCC', bag: 'exc', url: 'https://www.zipair.net' },
@@ -213,6 +213,13 @@
       sky: `https://www.skyscanner.co.kr/transport/flights/${sk}/${d.toLowerCase()}/${yymmdd(dep)}/${yymmdd(ret)}/?adultsv2=${n}&cabinclass=economy&rtn=1${opt.direct ? '&preferdirects=true' : ''}`,
     };
   }
+  // 땡처리닷컴 도시별 땡처리 목록 (사이트에서 도시를 눌렀을 때 만들어지는 주소 형식, 2026-10-31 확인. 인천 출발, 날짜 없이 그 도시 땡처리 전체)
+  function ttang(dest, adults) {
+    const d = dest.link || dest.code, name = dest.city.replace(/\(.*\)/, '');
+    const q = new URLSearchParams({ trip: 'TT', dep0: 'ICN', arr0: d, dep1: '', arr1: '', dep2: '', arr2: '', dep0Name: '인천', arr0Name: name, dep1Name: '', arr1Name: '', dep2Name: '', arr2Name: '',
+      depdate0: '', depdate1: '', depdate2: '', adt: String(Math.max(1, adults || 1)), chd: '0', inf: '0', comp: 'Y', viaType: '2', fareType: 'A', gubun: '', popCityGbn: 'Y', depNation0: 'KR', arrNation0: '' });
+    return { city: `https://mm.ttang.com/ttangair/search/city/list.do?${q}`, today: 'https://mm.ttang.com/ttangair/search/discount/today.do?trip=RT&gubun=T' };
+  }
   // 스카이스캐너 '한 달 전체' 보기 (가는 달·오는 달만 넣으면 그 달 날짜별 가격을 보여 줌)
   function skyMonth(originCode, dest, ymOut, ymBack, adults, direct) {
     const sk = originCode === 'SEL' ? 'sela' : ((ORIGINS.find(x => x.code === originCode) || { link: originCode }).link).toLowerCase();
@@ -265,7 +272,15 @@
 
   // ───── 특가 알림 범위 (나라·항공사) ─────
   // 기본값: 베트남·일본, 국적 LCC + 베트남·일본 LCC. data/watchlist.json 의 settings.promoCountries / promoAirlines 로 바꿀 수 있어요.
-  const PROMO_DEFAULT = { countries: ['베트남', '일본'], airlines: ['7C', 'LJ', 'TW', 'BX', 'RS', 'ZE', 'RF', 'VJ', 'VU', 'MM', 'GK', 'ZG'] };
+  // 프로모션: 전체 항공사(국적 대형·저가 + 베트남·일본 항공사). 나라는 뉴스 검색어와 필터 순서에 써요
+  const PROMO_DEFAULT = { countries: ['베트남', '일본'], airlines: ['KE', 'OZ', '7C', 'LJ', 'TW', 'BX', 'RS', 'ZE', 'RF', 'YP', 'VJ', 'VN', 'QH', 'VU', 'JL', 'NH', 'MM', 'GK', 'ZG'] };
+  // 항공권 검색 탭의 항공사 바로가기: 나라별로 보여 줄 항공사 (노선 운항 여부는 각 사이트에서 확인)
+  const KOREAN_AIRLINES = ['KE', 'OZ', '7C', 'LJ', 'TW', 'BX', 'RS', 'ZE', 'RF', 'YP'];
+  const AIRLINES_BY_COUNTRY = {
+    베트남: ['KE', 'OZ', '7C', 'LJ', 'TW', 'BX', 'ZE', 'RS', 'VJ', 'VN', 'QH', 'VU'],
+    일본: ['KE', 'OZ', '7C', 'LJ', 'TW', 'BX', 'RS', 'ZE', 'RF', 'YP', 'JL', 'NH', 'MM', 'ZG', 'GK'],
+  };
+  const airlinesFor = country => AIRLINES_BY_COUNTRY[country] || KOREAN_AIRLINES;
   // 목적지 목록에 없는 도시도 특가 기사에 자주 나와서 추가 (짧고 다른 낱말에 섞이는 이름은 뺌: 사가·후에·사파 등)
   const EXTRA_PLACES = {
     베트남: ['퀴논', '꾸이년', '하이퐁', '껀터', '붕따우', '무이네', '캄란'],
@@ -302,16 +317,25 @@
   // 이 특가를 보여 주고 알릴지: 고른 LCC(또는 항공사 이름 없는 기사)이면서, 고른 나라가 나오거나 LCC의 전 노선·국제선 특가
   // 항공권 운임 특가인지 (공식 이벤트 중 공항 이동 할인·면세·제휴 쿠폰·운항 확대 안내 등은 뺌)
   const FARE_RE = /항공권|운임|편도|왕복|총액|특가|세일|SALE|얼리버드|타임\s?세일|반값/i;
+  // 프로모션 탭에 보여 줄지: 항공사 특가(전체 항공사) · 카드 할인
+  //  - 공식 이벤트는 운임 특가만 (면세·쿠폰·제휴 혜택 등은 카드 탭이나 제외)
+  //  - 국내선만 해당하는 소식, 항공사도 나라도 없는 기사는 뺌
+  //  - 설정에서 항공사를 골랐으면 그 항공사만
+  const DOMESTIC_RE = /국내선|김포\s?[-~·]\s?제주|제주행|김포\s?[-~·]\s?부산/;
   function isWantedPromo(p, settings) {
     if (p.kind === 'card') return true;
-    if (p.official && !FARE_RE.test(`${p.title} ${p.desc || ''}`)) return false;
-    const ps = promoSettings(settings);
+    const text = `${p.title} ${p.desc || ''}`;
+    if (p.official && !FARE_RE.test(text)) return false;
+    if (DOMESTIC_RE.test(text) && !(p.countries || []).length && !/국제선/.test(text)) return false;
     const air = p.airlines || [];
-    const myAir = air.some(a => ps.airlines.includes(a));
-    if (air.length && !myAir) return false; // 대한항공 등 고르지 않은 항공사만 나오는 기사는 뺌
-    if ((p.countries || []).some(c => ps.countries.includes(c))) return true;
-    return !!(p.allRoutes && myAir);
+    if (!air.length && !(p.countries || []).length) return false;
+    const ps = promoSettings(settings);
+    return !air.length || air.some(a => ps.airlines.includes(a));
   }
+  // 결제 혜택(간편결제·카드 제휴): 항공사 공식 이벤트 중 운임 특가가 아닌 결제 할인 → 카드 탭
+  const PAY_RE = /결제|페이|카드|청구할인|즉시할인|캐시백/;
+  const isPayBenefit = p => p.official && p.kind !== 'card' && PAY_RE.test(`${p.title} ${p.desc || ''}`) && !FARE_RE.test(`${p.title} ${p.desc || ''}`);
+
   // 뉴스 한 건 → { kind: 'airline'|'card'|null, routes: [{key, level}], airlines, price }
   function classifyNews(title, desc, routes) {
     const text = `${stripTags(title)} ${stripTags(desc)}`;
@@ -342,7 +366,7 @@
   const api = {
     ORIGINS, DESTS, AIRLINES, CLIMATE, REGION_NAME, HOLIDAYS, PEAK, CARDS, AGENCIES, CARD_NAMES,
     monthsBetween, nightsBetween, addDays, addMonths, weekday, findDest, airline,
-    links, skyMonth, climateOf, holidaysIn,
+    links, skyMonth, ttang, climateOf, holidaysIn, KOREAN_AIRLINES, airlinesFor, isPayBenefit,
     stripTags, parseWon, promoPrice, classifyNews, won, routeKey,
     PROMO_DEFAULT, COUNTRIES, COUNTRY_PLACES, airlineInText, airlineCode, newsScope, promoSettings, isWantedPromo,
   };
