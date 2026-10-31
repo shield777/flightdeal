@@ -287,17 +287,22 @@
     베트남: ['퀴논', '꾸이년', '하이퐁', '껀터', '붕따우', '무이네', '캄란'],
     일본: ['센다이', '마쓰야마', '마츠야마', '다카마쓰', '다카마츠', '시즈오카', '구마모토', '가고시마', '기타큐슈', '오이타', '미야자키', '히로시마', '오카야마', '요나고', '고마쓰', '니가타', '아오모리', '아사히카와', '도야마', '나가사키', '미야코지마', '이시가키', '하코다테', '구시로', '오비히로', '대마도', '쓰시마', '나리타', '간사이'],
   };
-  const AMBIGUOUS = new Set(['나하', '사가', '후에', '사파']);
-  const COUNTRY_PLACES = (() => {
-    const m = {};
+  // 다른 낱말에 섞여 잘못 잡히는 지명은 기사 찾기에서 뺌 (지난해·선전하다·회사가 등)
+  const AMBIGUOUS = new Set(['나하', '사가', '후에', '사파', '지난', '선전', '샤먼']);
+  // 나라 → 기사에서 찾을 지명들 (목적지 목록이 바뀌면 다시 만듦)
+  const COUNTRY_PLACES = {};
+  const COUNTRIES = [];
+  function buildPlaces() {
+    for (const k of Object.keys(COUNTRY_PLACES)) delete COUNTRY_PLACES[k];
     for (const d of DESTS) {
-      const list = m[d.country] = m[d.country] || [d.country];
-      for (const w of [d.city.replace(/\(.*\)/, ''), ...(d.alias || [])]) if (w && !AMBIGUOUS.has(w) && !list.includes(w)) list.push(w);
+      const list = COUNTRY_PLACES[d.country] = COUNTRY_PLACES[d.country] || [d.country];
+      for (const w of [d.city.replace(/\(.*\)/, ''), ...(d.alias || [])]) if (w && w.length >= 2 && !AMBIGUOUS.has(w) && !list.includes(w)) list.push(w);
     }
-    for (const [c, ws] of Object.entries(EXTRA_PLACES)) { m[c] = m[c] || [c]; for (const w of ws) if (!m[c].includes(w)) m[c].push(w); }
-    return m;
-  })();
-  const COUNTRIES = Object.keys(COUNTRY_PLACES);
+    for (const [c, ws] of Object.entries(EXTRA_PLACES)) { COUNTRY_PLACES[c] = COUNTRY_PLACES[c] || [c]; for (const w of ws) if (!COUNTRY_PLACES[c].includes(w)) COUNTRY_PLACES[c].push(w); }
+    COUNTRIES.length = 0; COUNTRIES.push(...Object.keys(COUNTRY_PLACES));
+  }
+  buildPlaces();
+
   const ALL_ROUTES_RE = /전\s?노선|모든\s?노선|국제선/;
   // 글에 나온 나라들, "전 노선·국제선" 특가인지
   function newsScope(text) {
@@ -330,9 +335,66 @@
     if (DOMESTIC_RE.test(text) && !(p.countries || []).length && !/국제선/.test(text)) return false;
     const air = p.airlines || [];
     if (!air.length && !(p.countries || []).length) return false;
-    const ps = promoSettings(settings);
+    const s = settings || {};
+    if (!(s.promoAirlines && s.promoAirlines.length)) return true;
+    const ps = promoSettings(s);
     return !air.length || air.some(a => ps.airlines.includes(a));
   }
+  // ───── 특가 기사·공지에서 핵심 사실만 뽑기 (추정 없음: 글에 적힌 숫자·날짜만) ─────
+  function ymdFrom(y, m, d) { return `${y}-${String(m).padStart(2, '0')}-${String(d).padStart(2, '0')}`; }
+  // "2026년 11월 1일", "11월 30일", "11.30", "2027.10.25" 같은 날짜 → YYYY-MM-DD (연도 없으면 기준일 이후로)
+  function parseDates(str, base) {
+    const out = [];
+    const by = Number(base.slice(0, 4)), bm = Number(base.slice(5, 7));
+    const re = /(?:(\d{4})\s*[년.\-/]\s*)?(\d{1,2})\s*[월.\-/]\s*(\d{1,2})\s*일?/g;
+    let m;
+    while ((m = re.exec(str))) {
+      const mo = Number(m[2]), da = Number(m[3]);
+      if (mo < 1 || mo > 12 || da < 1 || da > 31) continue;
+      let y = m[1] ? Number(m[1]) : by;
+      if (!m[1] && mo < bm - 1) y++; // 연도 없이 지난 달보다 이전 달이면 내년
+      out.push(ymdFrom(y, mo, da));
+    }
+    // "내년 10월까지", "11월까지"
+    const re2 = /(내년|\d{4}년)?\s*(\d{1,2})월\s*(?:말)?\s*까지/g;
+    while ((m = re2.exec(str))) {
+      const mo = Number(m[2]); if (mo < 1 || mo > 12) continue;
+      let y = m[1] === '내년' ? by + 1 : m[1] ? Number(m[1]) : (mo < bm ? by + 1 : by);
+      out.push(ymdFrom(y, mo, new Date(Date.UTC(y, mo, 0)).getUTCDate()));
+    }
+    return out;
+  }
+  // 키워드(탑승·예약 등) 뒤 40글자 안의 날짜 범위
+  function periodAfter(text, keyRe, base) {
+    const m = text.match(keyRe); if (!m) return null;
+    let ds = parseDates(text.slice(m.index, m.index + 60), base).sort();
+    // "내년 10월까지 탑승 가능"처럼 날짜가 키워드 앞에 오는 경우
+    if (!ds.length) ds = parseDates(text.slice(Math.max(0, m.index - 25), m.index), base).sort();
+    if (!ds.length) return null;
+    return { from: ds.length > 1 ? ds[0] : null, to: ds[ds.length - 1] };
+  }
+  function promoFacts(text, base) {
+    const t = stripTags(text);
+    const f = {};
+    const pr = promoPrice(t);
+    if (pr) f.price = pr;
+    const pct = [...t.matchAll(/(최대\s*)?(\d{1,2})\s*%\s*(?:할인|특가|세일|↓)?/g)].map(m => Number(m[2])).filter(n => n >= 3 && n <= 95);
+    if (pct.length) f.pct = Math.max(...pct);
+    const code = t.match(/(?:프로모션\s*코드|할인\s*코드|코드)\s*[:：]?\s*[‘'"“(\[]?\s*([A-Z][A-Z0-9]{3,11})/) || t.match(/[‘'"“(\[]?([A-Z][A-Z0-9]{3,11})[’'"”)\]]?\s*(?:코드|프로모션\s*코드)/);
+    if (code) f.code = code[1];
+    const board = periodAfter(t, /탑승\s*(?:기간|일)?|여행\s*기간|출발\s*기간/, base);
+    if (board) f.board = board;
+    const book = periodAfter(t, /예약\s*(?:및\s*결제)?\s*(?:기간)?|판매\s*기간|구매\s*기간|발권\s*기간/, base);
+    if (book) f.book = book;
+    return f;
+  }
+  // 여행 날짜가 탑승 기간 안인지: 'in' | 'out' | null(기간 정보 없음)
+  function fitsTrip(f, dep, ret) {
+    if (!f || !f.board || !dep) return null;
+    const from = f.board.from || '0000-00-00', to = f.board.to;
+    return dep >= from && (ret || dep) <= to ? 'in' : 'out';
+  }
+
   // 결제 혜택(간편결제·카드 제휴): 항공사 공식 이벤트 중 운임 특가가 아닌 결제 할인 → 카드 탭
   const PAY_RE = /결제|페이|카드|청구할인|즉시할인|캐시백/;
   const isPayBenefit = p => p.official && p.kind !== 'card' && PAY_RE.test(`${p.title} ${p.desc || ''}`) && !FARE_RE.test(`${p.title} ${p.desc || ''}`);
@@ -367,7 +429,7 @@
   const api = {
     ORIGINS, DESTS, AIRLINES, CLIMATE, REGION_NAME, HOLIDAYS, PEAK, CARDS, AGENCIES, CARD_NAMES,
     monthsBetween, nightsBetween, addDays, addMonths, weekday, findDest, airline,
-    links, skyMonth, ttang, climateOf, holidaysIn, KOREAN_AIRLINES, airlinesFor, isPayBenefit,
+    promoFacts, fitsTrip, links, skyMonth, ttang, climateOf, holidaysIn, KOREAN_AIRLINES, airlinesFor, isPayBenefit,
     stripTags, parseWon, promoPrice, classifyNews, won, routeKey,
     PROMO_DEFAULT, COUNTRIES, COUNTRY_PLACES, airlineInText, airlineCode, newsScope, promoSettings, isWantedPromo,
   };

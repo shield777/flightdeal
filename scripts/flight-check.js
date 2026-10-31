@@ -81,15 +81,20 @@ async function newsNaver(q) {
 }
 
 // 검색어: 고른 나라·도시 + 고른 LCC + 카드사 (data/watchlist.json 의 settings 에서 바꿀 수 있어요)
-function buildQueries(watch) {
+// 검색어: 고른 나라 + 그 나라 도시 + 그 나라를 운항하는 항공사(최근 직항 가격 기록 기준) + 카드사
+const cleanAir = n => String(n || '').replace(/\(.*\)/, '').trim();
+function buildQueries(watch, country) {
   const s = watch.settings || {};
-  const ps = F.promoSettings(s);
   const qs = new Set();
-  for (const c of ps.countries) {
-    qs.add(`${c} 항공권 특가`); qs.add(`${c} 노선 특가`); qs.add(`${c} 땡처리 항공권`);
-    for (const d of F.DESTS.filter(x => x.country === c)) qs.add(`${d.city.replace(/\(.*\)/, '')} 특가 항공`);
+  const countries = country ? [country] : F.promoSettings(s).countries;
+  for (const c of countries) {
+    qs.add(`${c} 항공권 특가`); qs.add(`${c} 항공 프로모션`); qs.add(`${c} 땡처리 항공권`);
+    const dests = F.DESTS.filter(x => x.country === c);
+    for (const city of [...new Set(dests.map(d => d.city.replace(/\(.*\)/, '')))].slice(0, 8)) qs.add(`${city} 항공권 특가`);
+    const rec = readJSON(path.join(DATA, 'airlines-by-city.json'), { cities: {} }).cities || {};
+    const airs = [...new Set(dests.flatMap(d => (rec[d.code] || []).map(r => F.AIRLINES[r.code] ? F.airline(r.code).name : cleanAir(r.name))).filter(Boolean))].slice(0, 14);
+    for (const a of airs) { qs.add(`${a} 특가`); qs.add(`${a} ${c} 특가`); }
   }
-  for (const code of ps.airlines) qs.add(`${F.airline(code).name} 특가`);
   for (const c of s.cards || F.CARD_NAMES) { qs.add(`${c} 항공권 할인`); qs.add(`${c} 해외여행 할인`); }
   qs.add('항공권 카드 할인 트립닷컴');
   return [...qs];
@@ -167,9 +172,10 @@ function groupNews(list) {
 
 function newsId(it) { return (it.link || it.title).replace(/[?#].*$/, '').slice(-120) + '|' + it.title.slice(0, 40); }
 
-async function checkPromos(watch, promos) {
+async function checkPromos(watch, promos, country) {
   const routes = (watch.watches || []).map(w => ({ key: F.routeKey(w), dest: w.dest }));
-  const qs = buildQueries(watch);
+  const qs = buildQueries(watch, country);
+  log(`■ ${country || '기본 나라'} 기준 검색어 ${qs.length}개`);
   const before = (promos.items || []).flatMap(p => [p, ...(p.more || [])]).map(({ more, lastDate, lastFound, ...one }) => one);
   // 추적 조건(직항·박수)이 바뀌면 노선 이름표가 바뀜 → 같은 출발·도착 노선이면 새 이름표로 옮김
   const liveKeys = new Set(routes.map(r => r.key));
@@ -235,6 +241,7 @@ async function checkPromos(watch, promos) {
   const groups = groupNews([...known.values()].filter(p => p.found >= keep));
   promos.items = groups.sort((a, b) => b.lastDate.localeCompare(a.lastDate)).slice(0, 250);
   promos.updated = NOW.toISOString();
+  if (country) { promos.checked = promos.checked || {}; promos.checked[country] = NOW.toISOString(); }
   const freshGroups = promos.items.filter(g => freshIds.has(g.id));
   promos.runs = (promos.runs || 0) + 1;
   log(`■ 뉴스 ${qs.length}개 검색 → 새 기사 ${fresh.length}건 (새 소식 ${freshGroups.length}건, 전체 ${promos.items.length}묶음)`);
@@ -246,7 +253,8 @@ async function checkPromos(watch, promos) {
     // 프로모션 확인 (앱의 [지금 확인] 버튼). 매일 자동 실행·알림은 껐어요
     const promos = readJSON(P.promos, { items: [] });
     promos.runs = Math.max(promos.runs || 0, 1); // 예전 '첫 실행' 처리 건너뜀
-    await checkPromos(watch, promos);
+    const country = String(ENV.PROMO_COUNTRY || '').trim().slice(0, 20);
+    await checkPromos(watch, promos, F.COUNTRIES.includes(country) ? country : '');
     writeJSON(P.promos, promos);
     return;
   }

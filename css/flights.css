@@ -181,6 +181,15 @@ button.fl-go { width: 100%; }
 .fl-cards ul.news { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
 
 /* 여행 시기 한 줄 (타이틀 아래) */
-.fl-season { font-size: 13px; color: var(--muted); margin: -4px 2px 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.fl-season { font-size: 15px; font-weight: 700; color: var(--ink); background: var(--accent-soft); border: 1px solid var(--accent); border-radius: var(--r-sm); padding: 8px 12px; margin: 0 0 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.fl-season:empty { display: none; }
 
 .fl-more-air summary { font-size: 13px; color: var(--muted); cursor: pointer; margin: 2px 0 6px; }
+
+/* 프로모션 핵심 요약 */
+.pr-item { display: grid; gap: 2px; }
+.pr-key { font-size: 15px; color: var(--ink); background: var(--accent-soft); border-radius: var(--r-sm); padding: 4px 8px; justify-self: start; }
+.pr-key b { color: var(--accent); }
+.fit { display: inline-block; margin-left: 4px; font-size: 11px; font-weight: 700; padding: 1px 6px; border-radius: 6px; }
+.fit.in { background: var(--ok-soft); color: var(--ok); }
+.fit.out { background: var(--warn-soft); color: var(--warn); }
