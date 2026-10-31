@@ -116,7 +116,12 @@
     const countries = [...new Set(F.DESTS.map(d => d.country))];
     const dest = currentDest();
     const country = q.dest === '_custom' ? '_custom' : dest.country;
-    const nOpts = (sel) => Array.from({ length: 14 }, (_, i) => i + 1).map(n => `<option value="${n}" ${n === sel ? 'selected' : ''}>${n}박</option>`).join('');
+    // 박수 한 칸: 딱 정한 박수(1~14박) 또는 자주 쓰는 범위. 추적 중인 노선의 박수 범위도 항상 들어 있게 함
+    const exact = Array.from({ length: 14 }, (_, i) => [i + 1, i + 1]);
+    const ranges = [[2, 3], [3, 4], [3, 5], [4, 5], [4, 6], [5, 7], [7, 10], ...(data.watch.watches || []).map(w => [w.minNights, w.maxNights]), [q.minN, q.maxN]]
+      .filter(([a, b]) => a < b).filter((r, i, arr) => arr.findIndex(x => x[0] === r[0] && x[1] === r[1]) === i).sort((x, y) => x[0] - y[0] || x[1] - y[1]);
+    const nOpt = ([a, b]) => `<option value="${a}-${b}" ${a === q.minN && b === q.maxN ? 'selected' : ''}>${nightsText(a, b)}</option>`;
+    const nightsSel = `<optgroup label="범위">${ranges.map(nOpt).join('')}</optgroup><optgroup label="딱 정해서">${exact.map(nOpt).join('')}</optgroup>`;
     app.innerHTML = `
       <div class="wrap">
         <header class="topbar">
@@ -141,9 +146,8 @@
             <label class="field"><span>언제부터</span><input type="month" id="q-from" value="${esc(q.from)}" min="${thisYM}"></label>
             <label class="field"><span>언제까지</span><input type="month" id="q-to" value="${esc(q.to)}" min="${thisYM}"></label>
           </div>
-          <div class="grid3">
-            <label class="field"><span>짧게</span><select id="q-minN">${nOpts(q.minN)}</select></label>
-            <label class="field"><span>길게</span><select id="q-maxN">${nOpts(q.maxN)}</select></label>
+          <div class="grid2">
+            <label class="field"><span>박수</span><select id="q-nights">${nightsSel}</select></label>
             <label class="field"><span>인원</span><select id="q-adults">${Array.from({ length: 9 }, (_, i) => i + 1).map(n => `<option value="${n}" ${n === q.adults ? 'selected' : ''}>${n}명</option>`).join('')}</select></label>
           </div>
           <p class="hint fl-fixed">출발 서울(인천·김포) · 직항만</p>
@@ -168,8 +172,8 @@
     } else q.dest = v('q-dest');
     q.from = v('q-from') || q.from; q.to = v('q-to') || q.to;
     if (q.to < q.from) [q.from, q.to] = [q.to, q.from];
-    q.minN = Number(v('q-minN')); q.maxN = Number(v('q-maxN'));
-    if (q.maxN < q.minN) [q.minN, q.maxN] = [q.maxN, q.minN];
+    const [nA, nB] = String(v('q-nights') || `${q.minN}-${q.maxN}`).split('-').map(Number);
+    q.minN = Math.min(nA, nB); q.maxN = Math.max(nA, nB);
     q.adults = Number(v('q-adults'));
     q.wantBag = false; q.direct = true;
     save();
@@ -216,7 +220,7 @@
     box.innerHTML = `
       <section class="fl-head">
         <div class="crumb">${esc(origin?.name || q.origin)} → ${esc(dest.country)} · <b>${esc(dest.city)}</b> <span class="route-chip">${esc(dest.code)}</span></div>
-        <div class="sub">${q.from.replace('-', '.')} ~ ${q.to.replace('-', '.')} · ${q.minN}~${q.maxN}박 · ${q.adults}명 · 직항</div>
+        <div class="sub">${q.from.replace('-', '.')} ~ ${q.to.replace('-', '.')} · ${nightsText(q.minN, q.maxN)} · ${q.adults}명 · 직항</div>
         <div class="fl-status ${w ? 'on' : ''}">${esc(status)}</div>
         <div class="fl-actions">
           ${w ? `<button class="btn sm" data-act="refresh" ${ui.busy ? 'disabled' : ''}>${ICON.refresh}${ui.busy === 'refresh' ? '확인 중… (1~3분)' : '지금 갱신'}</button>`
@@ -256,6 +260,7 @@
     const d = new Date(iso);
     return `${d.getMonth() + 1}/${d.getDate()} ${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}`;
   }
+  const nightsText = (a, b) => a === b ? `${a}박` : `${a}~${b}박`;
   const fmtDay = s => `${Number(s.slice(5, 7))}/${Number(s.slice(8, 10))}(${F.weekday(s)})`;
 
   function monthCard(r, dest, key, C, cl, isCheapest) {
@@ -500,7 +505,7 @@
     const watches = data.watch.watches || [];
     openSheet('설정', `
       <h3 class="fl-h3">매일 추적 목록</h3>
-      ${watches.length ? `<ul class="fl-wlist">${watches.map((w, i) => { const d = F.findDest(w.dest); return `<li><span>${esc(w.origin)}→${esc(d ? d.city : (w.destName || w.dest))} · ${esc(w.from)}~${esc(w.to)} · ${w.minNights}~${w.maxNights}박${w.targetPrice ? ` · 목표 ${man(w.targetPrice)}` : ''}</span><button type="button" class="btn sm ghost danger" data-del-watch="${i}" aria-label="추적 삭제">${ICON.trash}</button></li>`; }).join('')}</ul>` : '<p class="muted">없음</p>'}
+      ${watches.length ? `<ul class="fl-wlist">${watches.map((w, i) => { const d = F.findDest(w.dest); return `<li><span>${esc(w.origin)}→${esc(d ? d.city : (w.destName || w.dest))} · ${esc(w.from)}~${esc(w.to)} · ${nightsText(w.minNights, w.maxNights)}${w.targetPrice ? ` · 목표 ${man(w.targetPrice)}` : ''}</span><button type="button" class="btn sm ghost danger" data-del-watch="${i}" aria-label="추적 삭제">${ICON.trash}</button></li>`; }).join('')}</ul>` : '<p class="muted">없음</p>'}
 
       <h3 class="fl-h3">특가 알림 범위 <small>(매일 점검·알림에 적용)</small></h3>
       ${(() => {
