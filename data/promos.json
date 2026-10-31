@@ -4,8 +4,8 @@
    "id": "official:VJ:디럭스클래스올인원패키지총액편도₩99,000부터현재부터2026년11월30일",
    "kind": "airline",
    "official": true,
-   "title": "디럭스 클래스올인원 패키지 총액 편도 ₩99,000부터 현재부터 2026년 11월 30일 23시 00분까지 (베트남 시간",
-   "desc": "기준, GMT+7)...",
+   "title": "디럭스 클래스올인원 패키지 총액 편도 ₩99,000부터",
+   "desc": "현재부터 2026년 11월 30일 23시 00분까지 (베트남 시간 기준, GMT+7)...",
    "link": "https://www.vietjetair.com/ko/news/%ED%95%A0%EC%9D%B8-1697696896010",
    "source": "비엣젯 공식",
    "date": "2026-11-30T00:00:00.000Z",
@@ -22,6 +22,7 @@
    "routes": [],
    "price": null,
    "alerted": true,
+   "from": null,
    "lastDate": "2026-11-30T00:00:00.000Z",
    "lastFound": "2026-10-31"
   },
@@ -29,8 +30,8 @@
    "id": "official:VJ:베트남여행은비엣젯과함께Grab으로공항이동도편리하게!공항행또는공항발Grab",
    "kind": "airline",
    "official": true,
-   "title": "베트남 여행은 비엣젯과 함께 Grab으로 공항 이동도 편리하게! 공항행 또는 공항발 GrabBike/GrabCar 이용 시 할인코드 VIETJET을 입력하시면 20% 할인(최대 300,000VND)",
-   "desc": "혜택을 드립니다....",
+   "title": "베트남 여행은 비엣젯과 함께 Grab으로 공항 이동도 편리하게! 공항행 또는 공항발 GrabBike/GrabCar 이용 시 할인코드",
+   "desc": "VIETJET을 입력하시면 20% 할인(최대 300,000VND) 혜택을 드립니다....",
    "link": "https://www.vietjetair.com/ko/news/%ED%95%A0%EC%9D%B8-1697696896010",
    "source": "비엣젯 공식",
    "date": "2026-10-31T00:00:00.000Z",
@@ -52,6 +53,7 @@
    ],
    "price": null,
    "alerted": true,
+   "from": null,
    "lastDate": "2026-10-31T00:00:00.000Z",
    "lastFound": "2026-10-31"
   },
@@ -289,6 +291,7 @@
    "routes": [],
    "price": null,
    "alerted": true,
+   "from": "2026-10-30",
    "lastDate": "2026-10-30T00:00:00.000Z",
    "lastFound": "2026-10-31"
   },
@@ -312,6 +315,7 @@
    "routes": [],
    "price": null,
    "alerted": true,
+   "from": "2026-10-30",
    "lastDate": "2026-10-30T00:00:00.000Z",
    "lastFound": "2026-10-31"
   },
@@ -655,6 +659,7 @@
    "routes": [],
    "price": null,
    "alerted": true,
+   "from": "2026-10-26",
    "lastDate": "2026-10-26T00:00:00.000Z",
    "lastFound": "2026-10-31"
   },
@@ -680,6 +685,7 @@
    "routes": [],
    "price": null,
    "alerted": true,
+   "from": "2026-10-26",
    "lastDate": "2026-10-26T00:00:00.000Z",
    "lastFound": "2026-10-31"
   },
@@ -708,6 +714,7 @@
     "trip": "oneway"
    },
    "alerted": true,
+   "from": "2026-10-26",
    "lastDate": "2026-10-26T00:00:00.000Z",
    "lastFound": "2026-10-31"
   },
@@ -733,6 +740,7 @@
    "routes": [],
    "price": null,
    "alerted": true,
+   "from": "2026-10-23",
    "lastDate": "2026-10-23T00:00:00.000Z",
    "lastFound": "2026-10-31"
   },
@@ -756,6 +764,7 @@
    "routes": [],
    "price": null,
    "alerted": true,
+   "from": "2026-10-20",
    "lastDate": "2026-10-20T00:00:00.000Z",
    "lastFound": "2026-10-31"
   },
@@ -779,6 +788,7 @@
    "routes": [],
    "price": null,
    "alerted": true,
+   "from": "2026-10-19",
    "lastDate": "2026-10-19T00:00:00.000Z",
    "lastFound": "2026-10-31"
   },
@@ -802,6 +812,7 @@
    "routes": [],
    "price": null,
    "alerted": true,
+   "from": "2026-10-19",
    "lastDate": "2026-10-19T00:00:00.000Z",
    "lastFound": "2026-10-31"
   },
@@ -825,6 +836,7 @@
    "routes": [],
    "price": null,
    "alerted": true,
+   "from": "2026-10-19",
    "lastDate": "2026-10-19T00:00:00.000Z",
    "lastFound": "2026-10-31"
   },
@@ -848,6 +860,7 @@
    "routes": [],
    "price": null,
    "alerted": true,
+   "from": "2026-10-13",
    "lastDate": "2026-10-13T00:00:00.000Z",
    "lastFound": "2026-10-31"
   },
@@ -874,6 +887,7 @@
     "trip": "oneway?"
    },
    "alerted": true,
+   "from": "2026-10-01",
    "lastDate": "2026-10-01T00:00:00.000Z",
    "lastFound": "2026-10-31"
   },
@@ -897,6 +911,7 @@
    "routes": [],
    "price": null,
    "alerted": true,
+   "from": "2026-10-01",
    "lastDate": "2026-10-01T00:00:00.000Z",
    "lastFound": "2026-10-31"
   },
@@ -920,6 +935,7 @@
    "routes": [],
    "price": null,
    "alerted": true,
+   "from": "2026-10-01",
    "lastDate": "2026-10-01T00:00:00.000Z",
    "lastFound": "2026-10-31"
   },
@@ -943,6 +959,7 @@
    "routes": [],
    "price": null,
    "alerted": true,
+   "from": "2026-10-01",
    "lastDate": "2026-10-01T00:00:00.000Z",
    "lastFound": "2026-10-31"
   },
@@ -968,6 +985,7 @@
    "routes": [],
    "price": null,
    "alerted": true,
+   "from": "2026-09-23",
    "lastDate": "2026-09-23T00:00:00.000Z",
    "lastFound": "2026-10-31"
   },
@@ -991,6 +1009,7 @@
    "routes": [],
    "price": null,
    "alerted": true,
+   "from": "2026-09-15",
    "lastDate": "2026-09-15T00:00:00.000Z",
    "lastFound": "2026-10-31"
   },
@@ -1016,6 +1035,7 @@
    "routes": [],
    "price": null,
    "alerted": true,
+   "from": "2026-09-01",
    "lastDate": "2026-09-01T00:00:00.000Z",
    "lastFound": "2026-10-31"
   },
@@ -1039,6 +1059,7 @@
    "routes": [],
    "price": null,
    "alerted": true,
+   "from": "2026-09-01",
    "lastDate": "2026-09-01T00:00:00.000Z",
    "lastFound": "2026-10-31"
   },
@@ -1062,12 +1083,13 @@
    "routes": [],
    "price": null,
    "alerted": true,
+   "from": "2026-08-01",
    "lastDate": "2026-08-01T00:00:00.000Z",
    "lastFound": "2026-10-31"
   }
  ],
- "updated": "2026-10-31T08:48:00.368Z",
- "runs": 5,
+ "updated": "2026-10-31T09:27:41.275Z",
+ "runs": 6,
  "sources": {
   "7C": "2026-10-31",
   "TW": "2026-10-31",
