@@ -1,16 +1,16 @@
 {
- "id": "claude-test-1",
- "requested": "2026-10-31T09:42:12.406Z",
+ "id": "mvw7xsftv5za",
+ "requested": "2026-10-31T09:48:41.357Z",
  "origin": "SEL",
  "dest": "CXR",
  "from": "2027-01",
  "to": "2027-10",
- "minNights": 3,
+ "minNights": 5,
  "maxNights": 5,
  "direct": true,
  "months": {
   "2027-01": {
-   "count": 20,
+   "count": 12,
    "best": {
     "price": 454854,
     "dep": "2027-01-02T19:55",
@@ -52,32 +52,6 @@
      "src": "tp"
     },
     {
-     "price": 477699,
-     "dep": "2027-01-31T06:45",
-     "ret": "2027-02-04T02:10",
-     "nights": 4,
-     "airline": "VJ",
-     "flight": "VJ835",
-     "transfers": 0,
-     "backTransfers": 0,
-     "link": "https://www.aviasales.com/search/SEL3101CXR04021?t=VJ18013779001801389300000310ICNCXR18017070001801732200000300CXRICN_ba45af324c1ab3204ff924379d16ba43_28658&search_date=28102026&expected_price_uuid=01a18003-4602-8040-ada3-7028de71d360&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=A6Of5uwViXnj00-6hbuWCQ&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=krw&expected_price=477699",
-     "gate": "Mytrip.com",
-     "src": "tp"
-    },
-    {
-     "price": 486870,
-     "dep": "2027-01-24T21:55",
-     "ret": "2027-01-28T02:10",
-     "nights": 4,
-     "airline": "ZE",
-     "flight": "ZE563",
-     "transfers": 0,
-     "backTransfers": 0,
-     "link": "https://www.aviasales.com/search/SEL2401CXR28011?t=ZE18008277001800839400000315ICNCXR18011022001801127400000300CXRICN_17a9cb4d8c7ccc0a391ddd96d7d5ba0a_29310&search_date=31102026&expected_price_uuid=01a190fc-03bf-8030-6a69-fdb5a150148d&static_fare_key=TY%7CP1%7CH0%7CL1_1_15%7CCH0%7CR0%7CTBC1&itinerary_key=SY_qX4ni62RG7LIsulYtFg&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=krw&expected_price=486870",
-     "gate": "Farera",
-     "src": "tp"
-    },
-    {
      "price": 492219,
      "dep": "2027-01-24T21:55",
      "ret": "2027-01-29T21:45",
@@ -89,11 +63,37 @@
      "link": "https://www.aviasales.com/search/SEL2401CXR29011?t=ZE18008277001800839400000315ICNCXR18012591001801283100000280CXRICN_6e44c0b739452a9d51aa3afcee737013_29632&search_date=31102026&expected_price_uuid=01a190fb-983b-8031-63f1-dcec8d8c4b51&static_fare_key=TY%7CP1%7CH0%7CL1_1_15%7CCH0%7CR0%7CTBC1&itinerary_key=pCDFN2aR_p-_7EGgjep2fQ&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=krw&expected_price=492219",
      "gate": "Farera",
      "src": "tp"
+    },
+    {
+     "price": 500209,
+     "dep": "2027-01-23T20:00",
+     "ret": "2027-01-28T02:10",
+     "nights": 5,
+     "airline": "RS",
+     "flight": "RS115",
+     "transfers": 0,
+     "backTransfers": 0,
+     "link": "https://www.aviasales.com/search/SEL2301CXR28011?t=RS18007344001800747000000330ICNCXR18011022001801127400000300CXRICN_068566417988cc6d3d8cc1591b371b64_30113&search_date=31102026&expected_price_uuid=01a190fb-7d58-8031-6730-96db328feced&static_fare_key=TY%7CP1%7CH0%7CL1_1_15%7CCH0%7CR0%7CTBC1&itinerary_key=IMgIlCxiMgjTI1Es_Hzvyw&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=krw&expected_price=500209",
+     "gate": "Farera",
+     "src": "tp"
+    },
+    {
+     "price": 520131,
+     "dep": "2027-01-17T06:45",
+     "ret": "2027-01-22T22:30",
+     "nights": 5,
+     "airline": "VJ",
+     "flight": "VJ835",
+     "transfers": 0,
+     "backTransfers": 0,
+     "link": "https://www.aviasales.com/search/SEL1701CXR22011?t=VJ18001683001800179700000310ICNCXR18006570001800681900000295CXRICN_b1ec6e4e6f5b1951e8d1105952845765_31416&search_date=30102026&expected_price_uuid=01a18df4-f408-8030-2da0-0ae2d66a96bd&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=vTgI6U9egpPe0zdkdw_82w&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=krw&expected_price=520131",
+     "gate": "Farera",
+     "src": "tp"
     }
    ]
   },
   "2027-02": {
-   "count": 29,
+   "count": 16,
    "best": {
     "price": 366862,
     "dep": "2027-02-28T21:55",
@@ -148,19 +148,6 @@
      "src": "tp"
     },
     {
-     "price": 411719,
-     "dep": "2027-02-28T16:50",
-     "ret": "2027-03-03T21:40",
-     "nights": 3,
-     "airline": "BX",
-     "flight": "BX103",
-     "transfers": 0,
-     "backTransfers": 0,
-     "link": "https://www.aviasales.com/search/SEL2802CXR03031?t=BX18038334001803846000000330ICNCXR18041100001804136700000325CXRICN_799b55d221602298e3818115da3a2f09_25082&search_date=30102026&expected_price_uuid=01a18ad1-894a-8030-6c8a-48735d9e3d8c&static_fare_key=TY%7CP1%7CH1%7CL1_1_15%7CCH0%7CR0%7CTBC1&itinerary_key=iFHLsBeb0IL_fA50ALHCVg&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=krw&expected_price=411719",
-     "gate": "Trip.com",
-     "src": "tp"
-    },
-    {
      "price": 444116,
      "dep": "2027-02-02T21:50",
      "ret": "2027-02-07T22:45",
@@ -172,38 +159,38 @@
      "link": "https://www.aviasales.com/search/SEL0202CXR07021?t=7C18016050001801617000000320ICNCXR18020403001802064900000290CXRICN_426280dd04a84ff6edc05d4286fb410f_27042&search_date=27102026&expected_price_uuid=01a17afe-9372-8030-6b87-f6e48d87f40a&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=ZRroZPP3BknhhEJCeJSiOw&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=krw&expected_price=444116",
      "gate": "Wingie",
      "src": "tp"
-    }
-   ]
-  },
-  "2027-03": {
-   "count": 2,
-   "best": {
-    "price": 307388,
-    "dep": "2027-03-01T07:00",
-    "ret": "2027-03-04T00:20",
-    "nights": 3,
-    "airline": "VJ",
-    "flight": "VJ837",
-    "transfers": 0,
-    "backTransfers": 0,
-    "link": "https://www.aviasales.com/search/SEL0103CXR04031?t=VJ18038844001803895800000310ICNCXR18041196001804144200000290CXRICN_f6c2b42c8cad6f8f52740b16f0b80e1f_18505&search_date=31102026&expected_price_uuid=01a18ff0-f1f6-8030-212d-117423d2ee64&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=BEZGaiw-5UCk2UnjiuRtdw&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=krw&expected_price=307388",
-    "gate": "Trip.com",
-    "src": "tp"
-   },
-   "top": [
+    },
     {
-     "price": 307388,
-     "dep": "2027-03-01T07:00",
-     "ret": "2027-03-04T00:20",
-     "nights": 3,
+     "price": 489359,
+     "dep": "2027-02-26T07:00",
+     "ret": "2027-03-03T21:40",
+     "nights": 5,
      "airline": "VJ",
      "flight": "VJ837",
      "transfers": 0,
      "backTransfers": 0,
-     "link": "https://www.aviasales.com/search/SEL0103CXR04031?t=VJ18038844001803895800000310ICNCXR18041196001804144200000290CXRICN_f6c2b42c8cad6f8f52740b16f0b80e1f_18505&search_date=31102026&expected_price_uuid=01a18ff0-f1f6-8030-212d-117423d2ee64&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=BEZGaiw-5UCk2UnjiuRtdw&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=krw&expected_price=307388",
+     "link": "https://www.aviasales.com/search/SEL2602CXR03031?t=BX18036252001803636600000310ICNCXR18041100001804136700000325CXRICN_44992475ad22d299648a744c09c49a5f_29339&search_date=28102026&expected_price_uuid=01a1816b-d5d2-8030-aada-b0c00144a35d&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=ebjC0LUctG0llCenDyTNKQ&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=krw&expected_price=489359",
      "gate": "Trip.com",
      "src": "tp"
-    },
+    }
+   ]
+  },
+  "2027-03": {
+   "count": 1,
+   "best": {
+    "price": 320012,
+    "dep": "2027-03-01T07:00",
+    "ret": "2027-03-06T22:30",
+    "nights": 5,
+    "airline": "VJ",
+    "flight": "VJ837",
+    "transfers": 0,
+    "backTransfers": 0,
+    "link": "https://www.aviasales.com/search/SEL0103CXR06031?t=VJ18038844001803895800000310ICNCXR18043722001804397100000295CXRICN_f28508bc484bfc14f8bba69f3506bab1_19265&search_date=31102026&expected_price_uuid=01a190c5-bd2c-8031-22af-2fe402ca933b&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=i4W8TwGnMrlPjpNm7vkuiQ&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=krw&expected_price=320012",
+    "gate": "Trip.com",
+    "src": "tp"
+   },
+   "top": [
     {
      "price": 320012,
      "dep": "2027-03-01T07:00",
@@ -220,35 +207,9 @@
    ]
   },
   "2027-04": {
-   "count": 1,
-   "best": {
-    "price": 344078,
-    "dep": "2027-04-07T06:45",
-    "ret": "2027-04-10T22:55",
-    "nights": 3,
-    "airline": "VJ",
-    "flight": "VJ835",
-    "transfers": 0,
-    "backTransfers": 0,
-    "link": "https://www.aviasales.com/search/SEL0704CXR10041?t=VJ18070803001807090500000290ICNCXR18073977001807421700000280CXRICN_045ec6fd4d51b84bd874198e324f4d19_20884&search_date=24102026&expected_price_uuid=01a16d9b-ded6-8031-6329-254860002e49&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=ushA5USy4VqrE2wwozdLGA&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=krw&expected_price=344078",
-    "gate": "Trip.com",
-    "src": "tp"
-   },
-   "top": [
-    {
-     "price": 344078,
-     "dep": "2027-04-07T06:45",
-     "ret": "2027-04-10T22:55",
-     "nights": 3,
-     "airline": "VJ",
-     "flight": "VJ835",
-     "transfers": 0,
-     "backTransfers": 0,
-     "link": "https://www.aviasales.com/search/SEL0704CXR10041?t=VJ18070803001807090500000290ICNCXR18073977001807421700000280CXRICN_045ec6fd4d51b84bd874198e324f4d19_20884&search_date=24102026&expected_price_uuid=01a16d9b-ded6-8031-6329-254860002e49&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=ushA5USy4VqrE2wwozdLGA&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=krw&expected_price=344078",
-     "gate": "Trip.com",
-     "src": "tp"
-    }
-   ]
+   "count": 0,
+   "best": null,
+   "top": []
   },
   "2027-05": {
    "count": 2,
@@ -295,38 +256,12 @@
    ]
   },
   "2027-06": {
-   "count": 1,
-   "best": {
-    "price": 295280,
-    "dep": "2027-06-04T06:45",
-    "ret": "2027-06-07T22:55",
-    "nights": 3,
-    "airline": "VJ",
-    "flight": "VJ835",
-    "transfers": 0,
-    "backTransfers": 0,
-    "link": "https://www.aviasales.com/search/SEL0406CXR07061?t=VJ18120915001812101700000290ICNCXR18124089001812432900000280CXRICN_47a495e0e182b45ef82f6f6683f339f9_17920&search_date=25102026&expected_price_uuid=01a170c5-3157-8030-a6c3-07d70580d7f9&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=ushA5USy4VqrE2wwozdLGA&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=krw&expected_price=295280",
-    "gate": "Авиасейлс",
-    "src": "tp"
-   },
-   "top": [
-    {
-     "price": 295280,
-     "dep": "2027-06-04T06:45",
-     "ret": "2027-06-07T22:55",
-     "nights": 3,
-     "airline": "VJ",
-     "flight": "VJ835",
-     "transfers": 0,
-     "backTransfers": 0,
-     "link": "https://www.aviasales.com/search/SEL0406CXR07061?t=VJ18120915001812101700000290ICNCXR18124089001812432900000280CXRICN_47a495e0e182b45ef82f6f6683f339f9_17920&search_date=25102026&expected_price_uuid=01a170c5-3157-8030-a6c3-07d70580d7f9&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=ushA5USy4VqrE2wwozdLGA&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=krw&expected_price=295280",
-     "gate": "Авиасейлс",
-     "src": "tp"
-    }
-   ]
+   "count": 0,
+   "best": null,
+   "top": []
   },
   "2027-07": {
-   "count": 5,
+   "count": 3,
    "best": {
     "price": 296595,
     "dep": "2027-07-01T06:45",
@@ -355,19 +290,6 @@
      "src": "tp"
     },
     {
-     "price": 319566,
-     "dep": "2027-07-17T06:45",
-     "ret": "2027-07-21T22:55",
-     "nights": 4,
-     "airline": "VJ",
-     "flight": "VJ835",
-     "transfers": 0,
-     "backTransfers": 0,
-     "link": "https://www.aviasales.com/search/SEL1707CXR21071?t=VJ18158067001815816900000290ICNCXR18162105001816234500000280CXRICN_3a5a8d1c08523a90dc9f59fd0bd3194f_19172&search_date=28102026&expected_price_uuid=01a1822e-366a-8030-adf4-8df846254984&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=NHEzEMwaeQKKtvqQcgT1Bw&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=krw&expected_price=319566",
-     "gate": "Farera",
-     "src": "tp"
-    },
-    {
      "price": 490592,
      "dep": "2027-07-31T06:45",
      "ret": "2027-08-05T22:55",
@@ -392,19 +314,6 @@
      "link": "https://www.aviasales.com/search/SEL2507CXR30071?t=VJ18164979001816508100000290ICNCXR18169881001817012100000280CXRICN_639608863dde4280ae64a4d392943cc0_30089&search_date=26102026&expected_price_uuid=01a17603-ee16-8030-2ce1-b5728ef98fa7&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=rgXpiwYYPA-KmQi1IkjNog&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=krw&expected_price=497218",
      "gate": "Farera",
      "src": "tp"
-    },
-    {
-     "price": 498540,
-     "dep": "2027-07-31T06:45",
-     "ret": "2027-08-04T22:55",
-     "nights": 4,
-     "airline": "VJ",
-     "flight": "VJ835",
-     "transfers": 0,
-     "backTransfers": 0,
-     "link": "https://www.aviasales.com/search/SEL3107CXR04081?t=VJ18170163001817026500000290ICNCXR18174201001817444100000280CXRICN_c6a031709105fbbb4e9bff4766225169_30169&search_date=26102026&expected_price_uuid=01a17604-715b-8030-a905-11a317f09c7c&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=NHEzEMwaeQKKtvqQcgT1Bw&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=krw&expected_price=498540",
-     "gate": "Farera",
-     "src": "tp"
     }
    ]
   },
@@ -425,5 +334,5 @@
   }
  },
  "source": "Travelpayouts(Aviasales)에 기록된 검색 가격",
- "done": "2026-10-31T09:42:18.524Z"
+ "done": "2026-10-31T09:48:46.933Z"
 }
