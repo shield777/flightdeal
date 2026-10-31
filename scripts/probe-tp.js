@@ -21,5 +21,14 @@ const sum = (label, [st, j]) => {
   sum('grouped_prices 출발일별', await get('/aviasales/v3/grouped_prices', { origin: 'SEL', destination: 'CXR', departure_at: '2027-04', group_by: 'departure_at', currency: 'krw', direct: 'true' }));
   sum('v2 month-matrix (편도)', await get('/v2/prices/month-matrix', { origin: 'SEL', destination: 'CXR', month: '2027-04-01', currency: 'krw', show_to_affiliates: 'false' }));
   sum('v1 calendar (왕복)', await get('/v1/prices/calendar', { origin: 'SEL', destination: 'CXR', depart_date: '2027-04', calendar_type: 'departure_date', currency: 'krw' }));
+  const [, cal] = await get('/v1/prices/calendar', { origin: 'SEL', destination: 'CXR', depart_date: '2027-04', calendar_type: 'departure_date', currency: 'krw' });
+  const cv = Object.entries(cal.data || {});
+  console.log('v1 calendar 키 예시:', cv.slice(0, 3).map(([k, v]) => k + ' => ' + JSON.stringify(v)).join('\n   '));
+  console.log('v1 calendar 직항(transfers=0) 수:', cv.filter(([, v]) => v.transfers === 0).length, '/ 4월 출발:', cv.filter(([k]) => k.startsWith('2027-04')).length);
+  const [, cal2] = await get('/v1/prices/calendar', { origin: 'SEL', destination: 'CXR', depart_date: '2027-04', return_date: '2027-04', calendar_type: 'departure_date', currency: 'krw' });
+  const cv2 = Object.entries(cal2.data || {});
+  console.log('v1 calendar(귀국도 4월) 수:', cv2.length, '예:', cv2.slice(0, 2).map(([k, v]) => k + ' => ' + JSON.stringify(v)).join(' | '));
+  const [, mm] = await get('/v2/prices/month-matrix', { origin: 'SEL', destination: 'CXR', month: '2027-04-01', currency: 'krw', show_to_affiliates: 'false' });
+  console.log('month-matrix 예:', JSON.stringify((mm.data || []).slice(0, 2)));
   console.log('편도 가는 편 예시:', out.slice(0, 5).map(o => `${o.departure_at?.slice(5, 16)} ${o.airline} ${o.price}`).join(' | '));
 })();
