@@ -1,1 +1,404 @@
-{ "items": [] }
+{
+ "items": [
+  {
+   "id": "xTE1wZWlsakd0X1o2SFVmU2xudjFDOFRJal9ydHI5NHo4NFpxMHdiUUI3aXFRR0JPanlKSEhrNURfbEpxM204dXZCTWJmMlhOWlFXOWNjXzQxTjRnUWVUT0E|에어프레미아, 전 노선 항공권 최대 72% 할인",
+   "kind": "airline",
+   "title": "에어프레미아, 전 노선 항공권 최대 72% 할인",
+   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1wZWlsakd0X1o2SFVmU2xudjFDOFRJal9ydHI5NHo4NFpxMHdiUUI3aXFRR0JPanlKSEhrNURfbEpxM204dXZCTWJmMlhOWlFXOWNjXzQxTjRnUWVUT0E?oc=5",
+   "source": "뉴스투데이",
+   "date": "2026-10-30T10:00:00.000Z",
+   "found": "2026-10-31",
+   "cards": [],
+   "airlines": [
+    "YP"
+   ],
+   "routes": [
+    {
+     "key": "SEL-CXR-3-5-A",
+     "level": "weak"
+    }
+   ],
+   "price": null,
+   "vs": null,
+   "query": "에어프레미아 특가"
+  },
+  {
+   "id": "SGVVWDYyZk9QRkZHNHNOYlJ4c21GeXRCZldFWXc3Sk42QnJRbnFMS2FqejdhOE5MN2IzU1VBLTBQVEticE5HMWVMZUU0ZWtfVmFMek1CUC1US1hlYjNTRHJv|에어프레미아, 전 노선 블랙프라이데이 특가…최대 72% 할인",
+   "kind": "airline",
+   "title": "에어프레미아, 전 노선 블랙프라이데이 특가…최대 72% 할인",
+   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5hYnl6TmlqWmQ0SGVVWDYyZk9QRkZHNHNOYlJ4c21GeXRCZldFWXc3Sk42QnJRbnFMS2FqejdhOE5MN2IzU1VBLTBQVEticE5HMWVMZUU0ZWtfVmFMek1CUC1US1hlYjNTRHJv?oc=5",
+   "source": "서울경제TV",
+   "date": "2026-10-30T05:03:21.000Z",
+   "found": "2026-10-31",
+   "cards": [],
+   "airlines": [
+    "YP"
+   ],
+   "routes": [
+    {
+     "key": "SEL-CXR-3-5-A",
+     "level": "weak"
+    }
+   ],
+   "price": null,
+   "vs": null,
+   "query": "에어서울 특가"
+  },
+  {
+   "id": "UGcyOFJkQ1oxZUk1bGwzQkVQUjM5S1F6UGYxaGZ4RjVINzk0VzI3N1hHdXZnVVN5ZGM3dTVKOVZoTGN1M0FPM2J3R3g1WDFlY3otaDFBYmFTcHVFdGtpUVI3|에어프레미아, 전 노선 ‘블랙프라이데이’ 프로모션 진행",
+   "kind": "airline",
+   "title": "에어프레미아, 전 노선 ‘블랙프라이데이’ 프로모션 진행",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE10NnNFdE1YWVVxcE5XamVkQ05DMnZNdEpHc0p5cVlZRXljRmxvZkJXblo4NUplMlEwRUVPS1ZzcFYxUXJTeGRBWWtXamkweUJYX2FISS1WR3hoWGV3bXNjeHEzN0V1NUpZOHRVLXdnb2l3Z9IBdEFVX3lxTFB5TjQ5ZUFjUmhBcHozUFBIX25DUGcyOFJkQ1oxZUk1bGwzQkVQUjM5S1F6UGYxaGZ4RjVINzk0VzI3N1hHdXZnVVN5ZGM3dTVKOVZoTGN1M0FPM2J3R3g1WDFlY3otaDFBYmFTcHVFdGtpUVI3?oc=5",
+   "source": "이뉴스투데이",
+   "date": "2026-10-30T02:45:16.000Z",
+   "found": "2026-10-31",
+   "cards": [],
+   "airlines": [
+    "YP"
+   ],
+   "routes": [
+    {
+     "key": "SEL-CXR-3-5-A",
+     "level": "weak"
+    }
+   ],
+   "price": null,
+   "vs": null,
+   "query": "에어프레미아 특가"
+  },
+  {
+   "id": "EYlZCZTA4LWRMMmJLb2Y5d0x0bTJrWFVHMFo2X0x6Tzk1WUl3c25Temd6Ni1sV2FfdVlPaFlJVXI1Uk5qMDhRTGtYX2VBZW1RYVpLaXdZYktoV1NxWXFGNEE|에어프레미아, 블프데이 최대 72% 할인…미주·아시아 전 노선 특가",
+   "kind": "airline",
+   "title": "에어프레미아, 블프데이 최대 72% 할인…미주·아시아 전 노선 특가",
+   "link": "https://news.google.com/rss/articles/CBMijgJBVV95cUxNRnlTNTNIYmJoZEVJNDkzNTFqYzcyR3VEYUMyZWNuR1JFb2tMTEtGazdORjFHNW5Xdmk4RDBiRGxNNDJQZWNnUlJqa3IwWFQ5aW5uYVlsSXQ4T1JydVFiQ3ZNc1F4SkxOT1hjWTMxcGpwdnJiVVpBZHUwTEtiUlV2QWVFelkwZ040N2pFZGwzSU4wNmMyYktIMTlNa2pvSXhDczhmWU9Bc1F5bzlwQ0YyejY0dUdEYlZCZTA4LWRMMmJLb2Y5d0x0bTJrWFVHMFo2X0x6Tzk1WUl3c25Temd6Ni1sV2FfdVlPaFlJVXI1Uk5qMDhRTGtYX2VBZW1RYVpLaXdZYktoV1NxWXFGNEE?oc=5",
+   "source": "데일리안",
+   "date": "2026-10-30T02:11:00.000Z",
+   "found": "2026-10-31",
+   "cards": [],
+   "airlines": [
+    "YP"
+   ],
+   "routes": [
+    {
+     "key": "SEL-CXR-3-5-A",
+     "level": "weak"
+    }
+   ],
+   "price": null,
+   "vs": null,
+   "query": "제주항공 특가"
+  },
+  {
+   "id": "BCeGhZSnFkSEJCR0lnMEpacFIwc25qN2ZtN252RVhlMlJOMkxObHFHYTRPcmNxUjZ4QlliTGp4bnZpY211SnM4b2NDOG9PanNmM2VyLUdTMUpfMkZfcy1zUQ|에어프레미아, 인천 출발 전 노선 대상 ‘블랙프라이데이’ 프로모션 진행",
+   "kind": "airline",
+   "title": "에어프레미아, 인천 출발 전 노선 대상 ‘블랙프라이데이’ 프로모션 진행",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBQeV9xbTU5eC1vdzRKdENJcTBCeGhZSnFkSEJCR0lnMEpacFIwc25qN2ZtN252RVhlMlJOMkxObHFHYTRPcmNxUjZ4QlliTGp4bnZpY211SnM4b2NDOG9PanNmM2VyLUdTMUpfMkZfcy1zUQ?oc=5",
+   "source": "디스커버리뉴스(DISCOVERYNEWS)",
+   "date": "2026-10-30T01:15:01.000Z",
+   "found": "2026-10-31",
+   "cards": [],
+   "airlines": [
+    "YP"
+   ],
+   "routes": [
+    {
+     "key": "SEL-CXR-3-5-A",
+     "level": "weak"
+    }
+   ],
+   "price": null,
+   "vs": null,
+   "query": "에어프레미아 특가"
+  },
+  {
+   "id": "V2FPSDF6SVlna1J0dHBaanRBX3prbHozb0dITmVZSS1KZlpkZWU4bExxTEtJSmZ5eTdZdENNb25QV1VwbWQ5WGNlT01oWmZwMmN6a2swODExR0ZGQkVuR2Rr|에어프레미아, 전 노선 블랙프라이데이 할인…최대 72% 할인",
+   "kind": "airline",
+   "title": "에어프레미아, 전 노선 블랙프라이데이 할인…최대 72% 할인",
+   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9sOEFSNEd4Q1R1V2FPSDF6SVlna1J0dHBaanRBX3prbHozb0dITmVZSS1KZlpkZWU4bExxTEtJSmZ5eTdZdENNb25QV1VwbWQ5WGNlT01oWmZwMmN6a2swODExR0ZGQkVuR2Rr?oc=5",
+   "source": "BBS불교방송",
+   "date": "2026-10-30T00:47:27.000Z",
+   "found": "2026-10-31",
+   "cards": [],
+   "airlines": [
+    "YP"
+   ],
+   "routes": [
+    {
+     "key": "SEL-CXR-3-5-A",
+     "level": "weak"
+    }
+   ],
+   "price": null,
+   "vs": null,
+   "query": "에어프레미아 특가"
+  },
+  {
+   "id": "3MXlSUGJXNC0zb2NNWF9GdDl0dERCRzg1TWdrLUdrUFZRMFlscmhqcFQ4cGRvSUZUVEtjekhKeWx6STZNRjZYRWtKUVA2RzRNMGRQandtNFdhNjZzZExXYVU|에어프레미아, 내달 2일부터 항공권 특가···미주·아시아 10개 노선",
+   "kind": "airline",
+   "title": "에어프레미아, 내달 2일부터 항공권 특가···미주·아시아 10개 노선",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB6UnY4Yi03MXlSUGJXNC0zb2NNWF9GdDl0dERCRzg1TWdrLUdrUFZRMFlscmhqcFQ4cGRvSUZUVEtjekhKeWx6STZNRjZYRWtKUVA2RzRNMGRQandtNFdhNjZzZExXYVU?oc=5",
+   "source": "팍스경제TV",
+   "date": "2026-10-30T00:39:52.000Z",
+   "found": "2026-10-31",
+   "cards": [],
+   "airlines": [
+    "YP"
+   ],
+   "routes": [],
+   "price": null,
+   "vs": null,
+   "query": "에어프레미아 특가"
+  },
+  {
+   "id": "6OTRXdGFQX05fZzhYdDUwaW5CTTBvdDgzc3pxc1VReFFDRXBYVXFLNU51MWdnZTdSRHpxaHRpNG8yVDdRLWlZZE1WRXpFcE1Cc1NLRVJEWnVZNHFxRkszVGs|중화권 항공권 할인 협의…대구시, 직항 관광객 유치 모색",
+   "kind": "airline",
+   "title": "중화권 항공권 할인 협의…대구시, 직항 관광객 유치 모색",
+   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE53NUxTX01jNVBWTGwxSDUzNEx6OTRXdGFQX05fZzhYdDUwaW5CTTBvdDgzc3pxc1VReFFDRXBYVXFLNU51MWdnZTdSRHpxaHRpNG8yVDdRLWlZZE1WRXpFcE1Cc1NLRVJEWnVZNHFxRkszVGs?oc=5",
+   "source": "오늘경제",
+   "date": "2026-10-30T00:19:01.000Z",
+   "found": "2026-10-31",
+   "cards": [],
+   "airlines": [],
+   "routes": [],
+   "price": null,
+   "vs": null,
+   "query": "항공권 카드 할인 트립닷컴"
+  },
+  {
+   "id": "akFiclZvOWNPUm5ZejNfNkE5ZnVJOW90TFhPQ2hKVC0tVzZHMWhBNWpIQVpKX1E5THdNLWt1dWpmVjNiZC1xNHVPcFIxdzZXU042X19NUkpZRnRzMVhfY0JB|연말 해외여행 , 11월 특가 챙겨 떠나요!...“항공권 9만9000원부",
+   "kind": "airline",
+   "title": "연말 해외여행 , 11월 특가 챙겨 떠나요!...“항공권 9만9000원부터\"",
+   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFB4YlNiU2JPRFNLYktvakFiclZvOWNPUm5ZejNfNkE5ZnVJOW90TFhPQ2hKVC0tVzZHMWhBNWpIQVpKX1E5THdNLWt1dWpmVjNiZC1xNHVPcFIxdzZXU042X19NUkpZRnRzMVhfY0JB?oc=5",
+   "source": "투어코리아",
+   "date": "2026-10-29T03:29:52.000Z",
+   "found": "2026-10-31",
+   "cards": [],
+   "airlines": [],
+   "routes": [],
+   "price": {
+    "amount": 99000,
+    "trip": "oneway?"
+   },
+   "vs": null,
+   "query": "제주항공 특가"
+  },
+  {
+   "id": "BUUlBuMFhFbFFMVlhBdkU3VDRjTlFsSG1VeWxxRW5DWUl5a2R3cVdNemQ4ZnlEZUxfczBUdHd5UmJhdHItQmZGcmZldUZfUzEzRkJGSTFwWjRXanNTRkFmNw|일본·대만·베트남 항공권 할인 기회…11월 최대 15% 내려간다",
+   "kind": "airline",
+   "title": "일본·대만·베트남 항공권 할인 기회…11월 최대 15% 내려간다",
+   "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBUUlBuMFhFbFFMVlhBdkU3VDRjTlFsSG1VeWxxRW5DWUl5a2R3cVdNemQ4ZnlEZUxfczBUdHd5UmJhdHItQmZGcmZldUZfUzEzRkJGSTFwWjRXanNTRkFmNw?oc=5",
+   "source": "뉴스1",
+   "date": "2026-10-29T00:44:28.000Z",
+   "found": "2026-10-31",
+   "cards": [],
+   "airlines": [],
+   "routes": [
+    {
+     "key": "SEL-CXR-3-5-A",
+     "level": "medium"
+    }
+   ],
+   "price": null,
+   "vs": null,
+   "query": "제주항공 특가"
+  },
+  {
+   "id": "HMndzYkhfVjNydWxIdFQ2UkxWQTZ0dTlmZFFoTy1PQnVSNnRRSWV0WndkOGNxd29mM2ZtT2IzZGdYZ0xqbUpWaDhOdHRDZ0NOZ05NWXF4dEpBOXFtbF8xLTQ|비엣젯항공, 노선망 확대 및 에코 특가 항공권 판매 돌입",
+   "kind": "airline",
+   "title": "비엣젯항공, 노선망 확대 및 에코 특가 항공권 판매 돌입",
+   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE04SmtFREJMSVl2VzhSTUZFeGxHMndzYkhfVjNydWxIdFQ2UkxWQTZ0dTlmZFFoTy1PQnVSNnRRSWV0WndkOGNxd29mM2ZtT2IzZGdYZ0xqbUpWaDhOdHRDZ0NOZ05NWXF4dEpBOXFtbF8xLTQ?oc=5",
+   "source": "스페셜타임스",
+   "date": "2026-10-28T11:29:56.000Z",
+   "found": "2026-10-31",
+   "cards": [],
+   "airlines": [
+    "VJ"
+   ],
+   "routes": [],
+   "price": null,
+   "vs": null,
+   "query": "비엣젯 특가"
+  },
+  {
+   "id": "ZIbHJwUkt3ZWh4WS1jcV9fakYyb0E5c2hVZDBRNGJsU0tKMWtjeU52MjB0S250SGR2SWpBZGlueDVUUHdUT3N5bkZXUWs5Nl9LUk9DdE02QWNXV0I3NDBIUA|[항공권 가격 추이] 10월 4주차 제주 감편·동남아 특가, 유류할증료 ",
+   "kind": "airline",
+   "title": "[항공권 가격 추이] 10월 4주차 제주 감편·동남아 특가, 유류할증료 8만~16만원",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9OU0NySUZKdTlTOXZIbHJwUkt3ZWh4WS1jcV9fakYyb0E5c2hVZDBRNGJsU0tKMWtjeU52MjB0S250SGR2SWpBZGlueDVUUHdUT3N5bkZXUWs5Nl9LUk9DdE02QWNXV0I3NDBIUA?oc=5",
+   "source": "센머니",
+   "date": "2026-10-28T07:24:27.000Z",
+   "found": "2026-10-31",
+   "cards": [],
+   "airlines": [],
+   "routes": [
+    {
+     "key": "SEL-CXR-3-5-A",
+     "level": "medium"
+    }
+   ],
+   "price": {
+    "amount": 160000,
+    "trip": "oneway?"
+   },
+   "vs": {
+    "round": 320000,
+    "pct": 22,
+    "approx": true
+   },
+   "query": "제주항공 특가"
+  },
+  {
+   "id": "55NFVvcTBhYjVwcVZ1eHZLTEIyZzA2ZWdWQlBUemdORUFUSHlXRGFVRWdyNTlDd3hKUnFXc2k2VExSRllqVE1qSWFCZGpPU3JIVGE0bnhHQTNnVjZDeFF3QQ|제주항공, 항공의 날 맞아 국내·국제선 48시간 특가",
+   "kind": "airline",
+   "title": "제주항공, 항공의 날 맞아 국내·국제선 48시간 특가",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE8wWHJfWk55NFVvcTBhYjVwcVZ1eHZLTEIyZzA2ZWdWQlBUemdORUFUSHlXRGFVRWdyNTlDd3hKUnFXc2k2VExSRllqVE1qSWFCZGpPU3JIVGE0bnhHQTNnVjZDeFF3QQ?oc=5",
+   "source": "비건뉴스",
+   "date": "2026-10-28T07:00:01.000Z",
+   "found": "2026-10-31",
+   "cards": [],
+   "airlines": [
+    "7C"
+   ],
+   "routes": [
+    {
+     "key": "SEL-CXR-3-5-A",
+     "level": "weak"
+    }
+   ],
+   "price": null,
+   "vs": null,
+   "query": "제주항공 특가"
+  },
+  {
+   "id": "0Sld2TkZhN1hvV3JzZGl5NmY3OEJ3bnhxaVo2WllBODlLeW5vXzlJOFI4Q052dTRGVkJ4SzhXRlVzeGk1amh0ZjZZUWJlQVR6blhvdldiWkpCNTNnSjVjMFc|비엣젯항공, 항공권 특가 판매 프로모션 진행",
+   "kind": "airline",
+   "title": "비엣젯항공, 항공권 특가 판매 프로모션 진행",
+   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE12Z2d0Sld2TkZhN1hvV3JzZGl5NmY3OEJ3bnhxaVo2WllBODlLeW5vXzlJOFI4Q052dTRGVkJ4SzhXRlVzeGk1amh0ZjZZUWJlQVR6blhvdldiWkpCNTNnSjVjMFc?oc=5",
+   "source": "livesnews.com",
+   "date": "2026-10-28T02:58:36.000Z",
+   "found": "2026-10-31",
+   "cards": [],
+   "airlines": [
+    "VJ"
+   ],
+   "routes": [],
+   "price": null,
+   "vs": null,
+   "query": "비엣젯 특가"
+  },
+  {
+   "id": "hvTmpCUHJjSHZJcFhYc2dtOVF1dFZwOEJRWUZSS3lxcVpyUnlXcjZMQXNnX3dLSS10MjZPUlhtM3BQUmRjY0F6RXBSeS1lenBnNmFkZHV4NU9WdUxTcTJSQg|항공의 날 기념식 30일 개최…항공권 할인 행사 11월까지 이어져",
+   "kind": "airline",
+   "title": "항공의 날 기념식 30일 개최…항공권 할인 행사 11월까지 이어져",
+   "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5yNjAxSG1sbU52YWlTQ2VsLWh2elA5aFVPZmo2RkpvQ0IyX2JrNDM0ZThzb3hSc2xpS1BOekdMRGJNdHNVdmdiRUIzOVI2cHZ3eWt4ZUlZYnjSAWhBVV95cUxOUW9DVVNveUhvTmpCUHJjSHZJcFhYc2dtOVF1dFZwOEJRWUZSS3lxcVpyUnlXcjZMQXNnX3dLSS10MjZPUlhtM3BQUmRjY0F6RXBSeS1lenBnNmFkZHV4NU9WdUxTcTJSQg?oc=5",
+   "source": "매일안전신문",
+   "date": "2026-10-28T02:50:34.000Z",
+   "found": "2026-10-31",
+   "cards": [],
+   "airlines": [],
+   "routes": [],
+   "price": null,
+   "vs": null,
+   "query": "제주항공 특가"
+  },
+  {
+   "id": "Rm1xcHlmN2wxaFE1V0Rrd0lJcDZXZ2x3eW9XXy1rZV9qVEVZX2pxMTlicW5zejJBbFdIT2d1RVBKX0tNVmFKMjV1cnNockJWXzZsRndSa3l4QUF0a2xIR2hR|비엣젯항공, 한국∼베트남 편도 9만9천 원 특가…내년 10월까지 탑승 가",
+   "kind": "airline",
+   "title": "비엣젯항공, 한국∼베트남 편도 9만9천 원 특가…내년 10월까지 탑승 가능",
+   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBKUjZONUR0SkJ4N1NMRm1xcHlmN2wxaFE1V0Rrd0lJcDZXZ2x3eW9XXy1rZV9qVEVZX2pxMTlicW5zejJBbFdIT2d1RVBKX0tNVmFKMjV1cnNockJWXzZsRndSa3l4QUF0a2xIR2hR?oc=5",
+   "source": "미디어인뉴스",
+   "date": "2026-10-28T02:43:32.000Z",
+   "found": "2026-10-31",
+   "cards": [],
+   "airlines": [
+    "VJ"
+   ],
+   "routes": [
+    {
+     "key": "SEL-CXR-3-5-A",
+     "level": "medium"
+    }
+   ],
+   "price": {
+    "amount": 99000,
+    "trip": "oneway"
+   },
+   "vs": {
+    "round": 198000,
+    "pct": 51,
+    "approx": true
+   },
+   "query": "비엣젯 특가"
+  },
+  {
+   "id": "hLbUx1TEJmbzJ2dFR0ZmJUTTFXTm1LVTV2VVlqZXpDSFo3TFRSNXZMSFlLQk9tMkw5cUZvUS1rVGFFV1FyRXRrcXRrQXdnWjdhWGxLM3BkYUR4dVV5ZWc2dw|비엣젯항공, 신규 노선 확대...한정 기간 특가 판매",
+   "kind": "airline",
+   "title": "비엣젯항공, 신규 노선 확대...한정 기간 특가 판매",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5KaUpSX3VVZzk0Szg5TDE3UExyYlBoQk9qeEtfaF9ybFRfM2syODZka04xMXBHUVlSZy1EVUYzakNlaWlrUW1PaW1Bdms5QnNvb0dYVWNLQzl2amN3SzZlQnFrR2lPN2dLbmZxSENMQdIBckFVX3lxTE54bVR0NGl0ZGVuandSYjFrRDhLbUx1TEJmbzJ2dFR0ZmJUTTFXTm1LVTV2VVlqZXpDSFo3TFRSNXZMSFlLQk9tMkw5cUZvUS1rVGFFV1FyRXRrcXRrQXdnWjdhWGxLM3BkYUR4dVV5ZWc2dw?oc=5",
+   "source": "시선뉴스",
+   "date": "2026-10-28T02:14:19.000Z",
+   "found": "2026-10-31",
+   "cards": [],
+   "airlines": [
+    "VJ"
+   ],
+   "routes": [],
+   "price": null,
+   "vs": null,
+   "query": "베트남 노선 특가"
+  },
+  {
+   "id": "8tUjBwekJrNVJvWENOUHkwZ1pQTGhYM2ZQd1oyeWh3S3J0OUxWSFkxaXE3cFBKaGFIUTNiOVBfWnhTbEFFS1BLQ2JBTlhSUEJ6TTZfNDQ0MzNNNDYzODNrdw|비엣젯항공, 신규노선 확대…9만9천원부터 특가판매",
+   "kind": "airline",
+   "title": "비엣젯항공, 신규노선 확대…9만9천원부터 특가판매",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9jczd4LU8tUjBwekJrNVJvWENOUHkwZ1pQTGhYM2ZQd1oyeWh3S3J0OUxWSFkxaXE3cFBKaGFIUTNiOVBfWnhTbEFFS1BLQ2JBTlhSUEJ6TTZfNDQ0MzNNNDYzODNrdw?oc=5",
+   "source": "싱글리스트",
+   "date": "2026-10-28T01:17:09.000Z",
+   "found": "2026-10-31",
+   "cards": [],
+   "airlines": [
+    "VJ"
+   ],
+   "routes": [],
+   "price": {
+    "amount": 99000,
+    "trip": "oneway?"
+   },
+   "vs": null,
+   "query": "비엣젯 특가"
+  },
+  {
+   "id": "U5cmhVV2V2eFJwaUFBdEMtUngxb1c3ZEdJWklCdkw5dWp4S2VRNmFtQkFySFFPMmdGUktVZXN1NmdWUmoyZ3NrVy1CT2kxeXBGdVVHTWw0WDlRcF9YVWNLQQ|스카이스캐너, ‘11.11 쇼핑데이’ 항공권 할인 프로모션",
+   "kind": "airline",
+   "title": "스카이스캐너, ‘11.11 쇼핑데이’ 항공권 할인 프로모션",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE8wcG1weVU5cmhVV2V2eFJwaUFBdEMtUngxb1c3ZEdJWklCdkw5dWp4S2VRNmFtQkFySFFPMmdGUktVZXN1NmdWUmoyZ3NrVy1CT2kxeXBGdVVHTWw0WDlRcF9YVWNLQQ?oc=5",
+   "source": "싱글리스트",
+   "date": "2026-10-27T07:00:00.000Z",
+   "found": "2026-10-31",
+   "cards": [],
+   "airlines": [],
+   "routes": [],
+   "price": null,
+   "vs": null,
+   "query": "제주항공 특가"
+  },
+  {
+   "id": "hjeHBEWi1UOTFKMktyc0pWem1FZ19jTzh0clpTLU5aOTk5amc2VHBZVWpvMEs5cTJfaDBiQ1pid09vMGkxZDRNdUF5cFJ6ZmJXTjJqWVpxa21vbnI4SmZrWQ|비엣젯항공, 내달 1일까지 국내외 ‘에코’ 특가항공권 프로모션…최대 무료",
+   "kind": "airline",
+   "title": "비엣젯항공, 내달 1일까지 국내외 ‘에코’ 특가항공권 프로모션…최대 무료",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1aSkRhaW5pVVlXRGhjeHBEWi1UOTFKMktyc0pWem1FZ19jTzh0clpTLU5aOTk5amc2VHBZVWpvMEs5cTJfaDBiQ1pid09vMGkxZDRNdUF5cFJ6ZmJXTjJqWVpxa21vbnI4SmZrWQ?oc=5",
+   "source": "인사이드비나",
+   "date": "2026-10-27T03:12:32.000Z",
+   "found": "2026-10-31",
+   "cards": [],
+   "airlines": [
+    "VJ"
+   ],
+   "routes": [],
+   "price": null,
+   "vs": null,
+   "query": "비엣젯 특가"
+  }
+ ],
+ "updated": "2026-10-31T08:11:08.003Z",
+ "runs": 1
+}
