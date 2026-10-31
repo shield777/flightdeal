@@ -1,22 +1,23 @@
-# 프로모션 확인 (앱 프로모션 탭의 [지금 확인]을 누를 때만 실행. 매일 자동 실행은 없음)
-# → data/promos.json
+# 앱 버튼을 누를 때만 실행 (매일 자동 실행은 없음)
+# - promos: 프로모션·카드 탭의 [지금 확인] → data/promos.json
+# - routes: ⚙ 설정의 [항공사 목록 새로 만들기] → data/airlines-by-city.json (도시별 서울 출발 직항 항공사)
 # 설정 방법: SETUP.md
-name: 프로모션 확인
+name: 프로모션 확인·항공사 목록
 
 on:
   workflow_dispatch:
     inputs:
       mode:
-        description: 'promos = 프로모션 확인'
+        description: 'promos = 프로모션 확인, routes = 도시별 직항 항공사 목록'
         type: choice
-        options: [promos, probe]
+        options: [promos, routes]
         default: promos
 
 permissions:
   contents: write
 
 concurrency:
-  group: flight-promos
+  group: flight-${{ inputs.mode }}
   cancel-in-progress: false
 
 jobs:
@@ -28,9 +29,9 @@ jobs:
       - uses: actions/setup-node@v5
         with:
           node-version: 22
-      - name: 시험
-        if: ${{ inputs.mode == 'probe' }}
-        run: node scripts/probe-routes.js
+      - name: 도시별 직항 항공사 목록
+        if: ${{ inputs.mode == 'routes' }}
+        run: node scripts/airline-routes.js
         env:
           TP_TOKEN: ${{ secrets.TP_TOKEN }}
       - name: 프로모션 확인
@@ -46,8 +47,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898333+github-actions[bot]@users.noreply.github.com"
-          git add data/promos.json
+          git add -A data/
           if git diff --cached --quiet; then echo "바뀐 내용 없음"; exit 0; fi
-          git commit -m "프로모션 확인 $(TZ=Asia/Seoul date '+%F %H:%M')"
+          git commit -m "${{ inputs.mode == 'routes' && '항공사 목록' || '프로모션 확인' }} $(TZ=Asia/Seoul date '+%F %H:%M')"
           for i in 1 2 3 4; do git pull --rebase origin "${GITHUB_REF_NAME}" && git push && exit 0; sleep 4; done
           exit 1

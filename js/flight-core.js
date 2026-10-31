@@ -101,6 +101,7 @@
     BX: { name: '에어부산', type: 'LCC', bag: 'exc', url: 'https://www.airbusan.com' },
     RS: { name: '에어서울', type: 'LCC', bag: 'exc', url: 'https://flyairseoul.com' },
     ZE: { name: '이스타항공', type: 'LCC', bag: 'exc', url: 'https://www.eastarjet.com' },
+    WE: { name: '파라타항공', type: 'LCC', bag: 'exc', url: '' }, // 홈페이지 주소 미확인 → 앱에서 검색 링크
     RF: { name: '에어로케이', type: 'LCC', bag: 'exc', url: 'https://www.aerok.com' },
     YP: { name: '에어프레미아', type: 'HSC', bag: 'maybe', kg: 23, url: 'https://www.airpremia.com', bagNote: '이코노미 운임 종류에 따라 달라요' },
     VJ: { name: '비엣젯', alias: ['비엣젯항공'], type: 'LCC', bag: 'exc', url: 'https://www.vietjetair.com' },
