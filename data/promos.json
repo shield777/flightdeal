@@ -1,6 +1,84 @@
 {
  "items": [
   {
+   "id": "official:VJ:디럭스클래스올인원패키지총액편도₩99,000부터현재부터2026년11월30일",
+   "kind": "airline",
+   "official": true,
+   "title": "디럭스 클래스올인원 패키지 총액 편도 ₩99,000부터 현재부터 2026년 11월 30일 23시 00분까지 (베트남 시간",
+   "desc": "기준, GMT+7)...",
+   "link": "https://www.vietjetair.com/ko/news/%ED%95%A0%EC%9D%B8-1697696896010",
+   "source": "비엣젯 공식",
+   "date": "2026-11-30T00:00:00.000Z",
+   "until": "2026-11-30",
+   "found": "2026-10-31",
+   "cards": [],
+   "airlines": [
+    "VJ"
+   ],
+   "countries": [
+    "베트남"
+   ],
+   "allRoutes": false,
+   "routes": [],
+   "price": null,
+   "alerted": true,
+   "lastDate": "2026-11-30T00:00:00.000Z",
+   "lastFound": "2026-10-31"
+  },
+  {
+   "id": "official:VJ:베트남여행은비엣젯과함께Grab으로공항이동도편리하게!공항행또는공항발Grab",
+   "kind": "airline",
+   "official": true,
+   "title": "베트남 여행은 비엣젯과 함께 Grab으로 공항 이동도 편리하게! 공항행 또는 공항발 GrabBike/GrabCar 이용 시 할인코드 VIETJET을 입력하시면 20% 할인(최대 300,000VND)",
+   "desc": "혜택을 드립니다....",
+   "link": "https://www.vietjetair.com/ko/news/%ED%95%A0%EC%9D%B8-1697696896010",
+   "source": "비엣젯 공식",
+   "date": "2026-10-31T00:00:00.000Z",
+   "until": null,
+   "found": "2026-10-31",
+   "cards": [],
+   "airlines": [
+    "VJ"
+   ],
+   "countries": [
+    "베트남"
+   ],
+   "allRoutes": false,
+   "routes": [
+    {
+     "key": "SEL-CXR-3-5-D",
+     "level": "medium"
+    }
+   ],
+   "price": null,
+   "alerted": true,
+   "lastDate": "2026-10-31T00:00:00.000Z",
+   "lastFound": "2026-10-31"
+  },
+  {
+   "id": "official:VJ:123...18",
+   "kind": "airline",
+   "official": true,
+   "title": "1 2 3 ... 18",
+   "desc": "19",
+   "link": "https://www.vietjetair.com/ko/news/%ED%95%A0%EC%9D%B8-1697696896010",
+   "source": "비엣젯 공식",
+   "date": "2026-10-31T00:00:00.000Z",
+   "until": null,
+   "found": "2026-10-31",
+   "cards": [],
+   "airlines": [
+    "VJ"
+   ],
+   "countries": [],
+   "allRoutes": false,
+   "routes": [],
+   "price": null,
+   "alerted": true,
+   "lastDate": "2026-10-31T00:00:00.000Z",
+   "lastFound": "2026-10-31"
+  },
+  {
    "id": "3MXlSUGJXNC0zb2NNWF9GdDl0dERCRzg1TWdrLUdrUFZRMFlscmhqcFQ4cGRvSUZUVEtjekhKeWx6STZNRjZYRWtKUVA2RzRNMGRQandtNFdhNjZzZExXYVU|에어프레미아, 내달 2일부터 항공권 특가···미주·아시아 10개 노선",
    "kind": "airline",
    "title": "에어프레미아, 내달 2일부터 항공권 특가···미주·아시아 10개 노선",
@@ -21,6 +99,8 @@
    "price": null,
    "vs": null,
    "query": "에어프레미아 특가",
+   "countries": [],
+   "allRoutes": true,
    "lastDate": "2026-10-30T10:00:00.000Z",
    "lastFound": "2026-10-31",
    "more": [
@@ -44,7 +124,9 @@
      ],
      "price": null,
      "vs": null,
-     "query": "에어프레미아 특가"
+     "query": "에어프레미아 특가",
+     "countries": [],
+     "allRoutes": true
     },
     {
      "id": "BCeGhZSnFkSEJCR0lnMEpacFIwc25qN2ZtN252RVhlMlJOMkxObHFHYTRPcmNxUjZ4QlliTGp4bnZpY211SnM4b2NDOG9PanNmM2VyLUdTMUpfMkZfcy1zUQ|에어프레미아, 인천 출발 전 노선 대상 ‘블랙프라이데이’ 프로모션 진행",
@@ -66,7 +148,9 @@
      ],
      "price": null,
      "vs": null,
-     "query": "에어프레미아 특가"
+     "query": "에어프레미아 특가",
+     "countries": [],
+     "allRoutes": true
     },
     {
      "id": "EYlZCZTA4LWRMMmJLb2Y5d0x0bTJrWFVHMFo2X0x6Tzk1WUl3c25Temd6Ni1sV2FfdVlPaFlJVXI1Uk5qMDhRTGtYX2VBZW1RYVpLaXdZYktoV1NxWXFGNEE|에어프레미아, 블프데이 최대 72% 할인…미주·아시아 전 노선 특가",
@@ -88,7 +172,9 @@
      ],
      "price": null,
      "vs": null,
-     "query": "제주항공 특가"
+     "query": "제주항공 특가",
+     "countries": [],
+     "allRoutes": true
     },
     {
      "id": "UGcyOFJkQ1oxZUk1bGwzQkVQUjM5S1F6UGYxaGZ4RjVINzk0VzI3N1hHdXZnVVN5ZGM3dTVKOVZoTGN1M0FPM2J3R3g1WDFlY3otaDFBYmFTcHVFdGtpUVI3|에어프레미아, 전 노선 ‘블랙프라이데이’ 프로모션 진행",
@@ -110,7 +196,9 @@
      ],
      "price": null,
      "vs": null,
-     "query": "에어프레미아 특가"
+     "query": "에어프레미아 특가",
+     "countries": [],
+     "allRoutes": true
     },
     {
      "id": "SGVVWDYyZk9QRkZHNHNOYlJ4c21GeXRCZldFWXc3Sk42QnJRbnFMS2FqejdhOE5MN2IzU1VBLTBQVEticE5HMWVMZUU0ZWtfVmFMek1CUC1US1hlYjNTRHJv|에어프레미아, 전 노선 블랙프라이데이 특가…최대 72% 할인",
@@ -132,7 +220,9 @@
      ],
      "price": null,
      "vs": null,
-     "query": "에어서울 특가"
+     "query": "에어서울 특가",
+     "countries": [],
+     "allRoutes": true
     },
     {
      "id": "xTE1wZWlsakd0X1o2SFVmU2xudjFDOFRJal9ydHI5NHo4NFpxMHdiUUI3aXFRR0JPanlKSEhrNURfbEpxM204dXZCTWJmMlhOWlFXOWNjXzQxTjRnUWVUT0E|에어프레미아, 전 노선 항공권 최대 72% 할인",
@@ -154,7 +244,9 @@
      ],
      "price": null,
      "vs": null,
-     "query": "에어프레미아 특가"
+     "query": "에어프레미아 특가",
+     "countries": [],
+     "allRoutes": true
     }
    ]
   },
@@ -172,7 +264,55 @@
    "price": null,
    "vs": null,
    "query": "항공권 카드 할인 트립닷컴",
+   "countries": [],
+   "allRoutes": false,
    "lastDate": "2026-10-30T00:19:01.000Z",
+   "lastFound": "2026-10-31"
+  },
+  {
+   "id": "official:7C:0000004364",
+   "kind": "airline",
+   "official": true,
+   "title": "eventNo=0000004364\"> J 멤버스 전용 쿠폰 증정 노브랜드 버거로 체크인 ! 추천",
+   "desc": "",
+   "link": "https://www.jejuair.net/ko/event/eventDetail.do?eventNo=0000004364",
+   "source": "제주항공 공식",
+   "date": "2026-10-30T00:00:00.000Z",
+   "until": "2026-11-15",
+   "found": "2026-10-31",
+   "cards": [],
+   "airlines": [
+    "7C"
+   ],
+   "countries": [],
+   "allRoutes": false,
+   "routes": [],
+   "price": null,
+   "alerted": true,
+   "lastDate": "2026-10-30T00:00:00.000Z",
+   "lastFound": "2026-10-31"
+  },
+  {
+   "id": "official:TW:2626",
+   "kind": "airline",
+   "official": true,
+   "title": "지금, 제주를 만나다",
+   "desc": "제주행 국내선 최대 2만원 할인",
+   "link": "https://www.trinityairways.com/app/promotion/event/being",
+   "source": "트리니티항공 공식",
+   "date": "2026-10-30T00:00:00.000Z",
+   "until": "2026-11-30",
+   "found": "2026-10-31",
+   "cards": [],
+   "airlines": [
+    "TW"
+   ],
+   "countries": [],
+   "allRoutes": false,
+   "routes": [],
+   "price": null,
+   "alerted": true,
+   "lastDate": "2026-10-30T00:00:00.000Z",
    "lastFound": "2026-10-31"
   },
   {
@@ -192,6 +332,8 @@
    },
    "vs": null,
    "query": "제주항공 특가",
+   "countries": [],
+   "allRoutes": false,
    "lastDate": "2026-10-29T03:29:52.000Z",
    "lastFound": "2026-10-31"
   },
@@ -214,6 +356,12 @@
    "price": null,
    "vs": null,
    "query": "제주항공 특가",
+   "countries": [
+    "베트남",
+    "일본",
+    "대만"
+   ],
+   "allRoutes": false,
    "lastDate": "2026-10-29T00:44:28.000Z",
    "lastFound": "2026-10-31"
   },
@@ -245,6 +393,10 @@
     "approx": true
    },
    "query": "비엣젯 특가",
+   "countries": [
+    "베트남"
+   ],
+   "allRoutes": false,
    "lastDate": "2026-10-28T11:29:56.000Z",
    "lastFound": "2026-10-31",
    "more": [
@@ -263,7 +415,9 @@
      "routes": [],
      "price": null,
      "vs": null,
-     "query": "비엣젯 특가"
+     "query": "비엣젯 특가",
+     "countries": [],
+     "allRoutes": false
     },
     {
      "id": "8tUjBwekJrNVJvWENOUHkwZ1pQTGhYM2ZQd1oyeWh3S3J0OUxWSFkxaXE3cFBKaGFIUTNiOVBfWnhTbEFFS1BLQ2JBTlhSUEJ6TTZfNDQ0MzNNNDYzODNrdw|비엣젯항공, 신규노선 확대…9만9천원부터 특가판매",
@@ -283,7 +437,9 @@
       "trip": "oneway?"
      },
      "vs": null,
-     "query": "비엣젯 특가"
+     "query": "비엣젯 특가",
+     "countries": [],
+     "allRoutes": false
     },
     {
      "id": "hLbUx1TEJmbzJ2dFR0ZmJUTTFXTm1LVTV2VVlqZXpDSFo3TFRSNXZMSFlLQk9tMkw5cUZvUS1rVGFFV1FyRXRrcXRrQXdnWjdhWGxLM3BkYUR4dVV5ZWc2dw|비엣젯항공, 신규 노선 확대...한정 기간 특가 판매",
@@ -300,7 +456,29 @@
      "routes": [],
      "price": null,
      "vs": null,
-     "query": "베트남 노선 특가"
+     "query": "베트남 노선 특가",
+     "countries": [],
+     "allRoutes": false
+    },
+    {
+     "id": "N0bklTb0tMbkxoS0ZxTDd3eGs5SVJsREx5YTJENkFIMGNKTnVfTnpCNmZZelNEYTJLWVFMeS1MN1YwSjFORnNXQlVsWVg3a1dSazlZSi16MlZJWmZHN1cwcA|비엣젯항공, 에코 특가 항공권 한정 기간 판매",
+     "kind": "airline",
+     "title": "비엣젯항공, 에코 특가 항공권 한정 기간 판매",
+     "desc": "비엣젯항공, 에코 특가 항공권 한정 기간 판매 경상일보",
+     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5RVDl1N2lkQjJXVUN0bklTb0tMbkxoS0ZxTDd3eGs5SVJsREx5YTJENkFIMGNKTnVfTnpCNmZZelNEYTJLWVFMeS1MN1YwSjFORnNXQlVsWVg3a1dSazlZSi16MlZJWmZHN1cwcA?oc=5",
+     "source": "경상일보",
+     "date": "2026-10-28T02:21:07.000Z",
+     "found": "2026-10-31",
+     "cards": [],
+     "airlines": [
+      "VJ"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "vs": null,
+     "query": "나트랑 특가 항공"
     },
     {
      "id": "0Sld2TkZhN1hvV3JzZGl5NmY3OEJ3bnhxaVo2WllBODlLeW5vXzlJOFI4Q052dTRGVkJ4SzhXRlVzeGk1amh0ZjZZUWJlQVR6blhvdldiWkpCNTNnSjVjMFc|비엣젯항공, 항공권 특가 판매 프로모션 진행",
@@ -317,7 +495,9 @@
      "routes": [],
      "price": null,
      "vs": null,
-     "query": "비엣젯 특가"
+     "query": "비엣젯 특가",
+     "countries": [],
+     "allRoutes": false
     },
     {
      "id": "HMndzYkhfVjNydWxIdFQ2UkxWQTZ0dTlmZFFoTy1PQnVSNnRRSWV0WndkOGNxd29mM2ZtT2IzZGdYZ0xqbUpWaDhOdHRDZ0NOZ05NWXF4dEpBOXFtbF8xLTQ|비엣젯항공, 노선망 확대 및 에코 특가 항공권 판매 돌입",
@@ -334,7 +514,9 @@
      "routes": [],
      "price": null,
      "vs": null,
-     "query": "비엣젯 특가"
+     "query": "비엣젯 특가",
+     "countries": [],
+     "allRoutes": false
     }
    ]
   },
@@ -364,6 +546,8 @@
     "approx": true
    },
    "query": "제주항공 특가",
+   "countries": [],
+   "allRoutes": false,
    "lastDate": "2026-10-28T07:24:27.000Z",
    "lastFound": "2026-10-31"
   },
@@ -388,6 +572,8 @@
    "price": null,
    "vs": null,
    "query": "제주항공 특가",
+   "countries": [],
+   "allRoutes": true,
    "lastDate": "2026-10-28T07:00:01.000Z",
    "lastFound": "2026-10-31"
   },
@@ -405,6 +591,8 @@
    "price": null,
    "vs": null,
    "query": "제주항공 특가",
+   "countries": [],
+   "allRoutes": false,
    "lastDate": "2026-10-28T02:50:34.000Z",
    "lastFound": "2026-10-31"
   },
@@ -422,10 +610,443 @@
    "price": null,
    "vs": null,
    "query": "제주항공 특가",
+   "countries": [],
+   "allRoutes": false,
    "lastDate": "2026-10-27T07:00:00.000Z",
+   "lastFound": "2026-10-31"
+  },
+  {
+   "id": "official:7C:0000004389",
+   "kind": "airline",
+   "official": true,
+   "title": "eventNo=0000004389\" class=\"event-banner-item\"> 할인에 포인트 3배 적립! J 멤버스 더- 드림",
+   "desc": "",
+   "link": "https://www.jejuair.net/ko/event/eventDetail.do?eventNo=0000004389",
+   "source": "제주항공 공식",
+   "date": "2026-10-26T00:00:00.000Z",
+   "until": "2026-11-08",
+   "found": "2026-10-31",
+   "cards": [],
+   "airlines": [
+    "7C"
+   ],
+   "countries": [],
+   "allRoutes": false,
+   "routes": [],
+   "price": null,
+   "alerted": true,
+   "lastDate": "2026-10-26T00:00:00.000Z",
+   "lastFound": "2026-10-31"
+  },
+  {
+   "id": "official:7C:0000004425",
+   "kind": "airline",
+   "official": true,
+   "title": "eventNo=0000004425\"> 마닐라&비엔티안 운항 부산 출발 국제선 운항 확대!",
+   "desc": "",
+   "link": "https://www.jejuair.net/ko/event/eventDetail.do?eventNo=0000004425",
+   "source": "제주항공 공식",
+   "date": "2026-10-26T00:00:00.000Z",
+   "until": "2026-11-26",
+   "found": "2026-10-31",
+   "cards": [],
+   "airlines": [
+    "7C"
+   ],
+   "countries": [
+    "필리핀"
+   ],
+   "allRoutes": true,
+   "routes": [],
+   "price": null,
+   "alerted": true,
+   "lastDate": "2026-10-26T00:00:00.000Z",
+   "lastFound": "2026-10-31"
+  },
+  {
+   "id": "official:VJ:베트남이당신을부릅니다,비엣젯과함께!편도총액99,000원부터(2026년10",
+   "kind": "airline",
+   "official": true,
+   "title": "베트남이 당신을 부릅니다, 비엣젯과 함께! 편도 총액 99,000원 부터 (2026년 10월 26일~2026년 11월 01일)",
+   "desc": "예약 및 결제 완료: 2026년 10월 26일 00시~2026년 11월 01일 23시(베트남 시간 기준, GMT+7)...",
+   "link": "https://www.vietjetair.com/ko/news/%ED%95%A0%EC%9D%B8-1697696896010",
+   "source": "비엣젯 공식",
+   "date": "2026-10-26T00:00:00.000Z",
+   "until": "2026-11-01",
+   "found": "2026-10-31",
+   "cards": [],
+   "airlines": [
+    "VJ"
+   ],
+   "countries": [
+    "베트남"
+   ],
+   "allRoutes": false,
+   "routes": [],
+   "price": {
+    "amount": 99000,
+    "trip": "oneway"
+   },
+   "alerted": true,
+   "lastDate": "2026-10-26T00:00:00.000Z",
+   "lastFound": "2026-10-31"
+  },
+  {
+   "id": "official:7C:0000004363",
+   "kind": "airline",
+   "official": true,
+   "title": "eventNo=0000004363\" class=\"event-banner-item\"> 최대 20% 할인코드⭐ 일본 센다이 신규취항 특가",
+   "desc": "",
+   "link": "https://www.jejuair.net/ko/event/eventDetail.do?eventNo=0000004363",
+   "source": "제주항공 공식",
+   "date": "2026-10-23T00:00:00.000Z",
+   "until": "2026-11-08",
+   "found": "2026-10-31",
+   "cards": [],
+   "airlines": [
+    "7C"
+   ],
+   "countries": [
+    "일본"
+   ],
+   "allRoutes": false,
+   "routes": [],
+   "price": null,
+   "alerted": true,
+   "lastDate": "2026-10-23T00:00:00.000Z",
+   "lastFound": "2026-10-31"
+  },
+  {
+   "id": "official:TW:2611",
+   "kind": "airline",
+   "official": true,
+   "title": "제46회 항공의 날 기념 특가",
+   "desc": "국제선 최대 22% 할인 + 3만원 쿠폰",
+   "link": "https://www.trinityairways.com/app/promotion/event/being",
+   "source": "트리니티항공 공식",
+   "date": "2026-10-20T00:00:00.000Z",
+   "until": "2026-10-31",
+   "found": "2026-10-31",
+   "cards": [],
+   "airlines": [
+    "TW"
+   ],
+   "countries": [],
+   "allRoutes": true,
+   "routes": [],
+   "price": null,
+   "alerted": true,
+   "lastDate": "2026-10-20T00:00:00.000Z",
+   "lastFound": "2026-10-31"
+  },
+  {
+   "id": "official:7C:0000004365",
+   "kind": "airline",
+   "official": true,
+   "title": "eventNo=0000004365\"> 제주항공 x 제주관광공사 💞 대국민 특별 지원! 왕복 최대 1만원 할인 추천",
+   "desc": "",
+   "link": "https://www.jejuair.net/ko/event/eventDetail.do?eventNo=0000004365",
+   "source": "제주항공 공식",
+   "date": "2026-10-19T00:00:00.000Z",
+   "until": "2026-11-08",
+   "found": "2026-10-31",
+   "cards": [],
+   "airlines": [
+    "7C"
+   ],
+   "countries": [],
+   "allRoutes": false,
+   "routes": [],
+   "price": null,
+   "alerted": true,
+   "lastDate": "2026-10-19T00:00:00.000Z",
+   "lastFound": "2026-10-31"
+  },
+  {
+   "id": "official:7C:0000004375",
+   "kind": "airline",
+   "official": true,
+   "title": "eventNo=0000004375\"> 신메뉴 출시 기념 2,000원 할인! 새로운 맛과 함께 떠나는 미식여행",
+   "desc": "",
+   "link": "https://www.jejuair.net/ko/event/eventDetail.do?eventNo=0000004375",
+   "source": "제주항공 공식",
+   "date": "2026-10-19T00:00:00.000Z",
+   "until": "2026-11-18",
+   "found": "2026-10-31",
+   "cards": [],
+   "airlines": [
+    "7C"
+   ],
+   "countries": [],
+   "allRoutes": false,
+   "routes": [],
+   "price": null,
+   "alerted": true,
+   "lastDate": "2026-10-19T00:00:00.000Z",
+   "lastFound": "2026-10-31"
+  },
+  {
+   "id": "official:TW:2340",
+   "kind": "airline",
+   "official": true,
+   "title": "10월의 결제 혜택",
+   "desc": "항공권 예매 전 미리 확인하세요!",
+   "link": "https://www.trinityairways.com/app/promotion/event/being",
+   "source": "트리니티항공 공식",
+   "date": "2026-10-19T00:00:00.000Z",
+   "until": "2026-10-31",
+   "found": "2026-10-31",
+   "cards": [],
+   "airlines": [
+    "TW"
+   ],
+   "countries": [],
+   "allRoutes": false,
+   "routes": [],
+   "price": null,
+   "alerted": true,
+   "lastDate": "2026-10-19T00:00:00.000Z",
+   "lastFound": "2026-10-31"
+  },
+  {
+   "id": "official:7C:0000004254",
+   "kind": "airline",
+   "official": true,
+   "title": "eventNo=0000004254\"> 10월의 결제혜택 토스페이 결제 시 최대 5천원 혜택!",
+   "desc": "",
+   "link": "https://www.jejuair.net/ko/event/eventDetail.do?eventNo=0000004254",
+   "source": "제주항공 공식",
+   "date": "2026-10-13T00:00:00.000Z",
+   "until": "2026-10-31",
+   "found": "2026-10-31",
+   "cards": [],
+   "airlines": [
+    "7C"
+   ],
+   "countries": [],
+   "allRoutes": false,
+   "routes": [],
+   "price": null,
+   "alerted": true,
+   "lastDate": "2026-10-13T00:00:00.000Z",
+   "lastFound": "2026-10-31"
+  },
+  {
+   "id": "official:7C:0000004353",
+   "kind": "airline",
+   "official": true,
+   "title": "eventNo=0000004353\"> 10월의 혜택! 카카오페이 최대 10만원 즉시할인",
+   "desc": "",
+   "link": "https://www.jejuair.net/ko/event/eventDetail.do?eventNo=0000004353",
+   "source": "제주항공 공식",
+   "date": "2026-10-01T00:00:00.000Z",
+   "until": "2026-10-31",
+   "found": "2026-10-31",
+   "cards": [],
+   "airlines": [
+    "7C"
+   ],
+   "countries": [],
+   "allRoutes": false,
+   "routes": [],
+   "price": {
+    "amount": 100000,
+    "trip": "oneway?"
+   },
+   "alerted": true,
+   "lastDate": "2026-10-01T00:00:00.000Z",
+   "lastFound": "2026-10-31"
+  },
+  {
+   "id": "official:TW:2600",
+   "kind": "airline",
+   "official": true,
+   "title": "밀리의서재 with TRINITY",
+   "desc": "탑승객 대상 밀리의서재 1개월 구독권 증정",
+   "link": "https://www.trinityairways.com/app/promotion/event/being",
+   "source": "트리니티항공 공식",
+   "date": "2026-10-01T00:00:00.000Z",
+   "until": "2027-04-01",
+   "found": "2026-10-31",
+   "cards": [],
+   "airlines": [
+    "TW"
+   ],
+   "countries": [],
+   "allRoutes": false,
+   "routes": [],
+   "price": null,
+   "alerted": true,
+   "lastDate": "2026-10-01T00:00:00.000Z",
+   "lastFound": "2026-10-31"
+  },
+  {
+   "id": "official:TW:2599",
+   "kind": "airline",
+   "official": true,
+   "title": "Wavve with TRINITY",
+   "desc": "탑승객 대상 웨이브 1개월 이용권 증정",
+   "link": "https://www.trinityairways.com/app/promotion/event/being",
+   "source": "트리니티항공 공식",
+   "date": "2026-10-01T00:00:00.000Z",
+   "until": "2027-04-01",
+   "found": "2026-10-31",
+   "cards": [],
+   "airlines": [
+    "TW"
+   ],
+   "countries": [],
+   "allRoutes": false,
+   "routes": [],
+   "price": null,
+   "alerted": true,
+   "lastDate": "2026-10-01T00:00:00.000Z",
+   "lastFound": "2026-10-31"
+  },
+  {
+   "id": "official:TW:2085",
+   "kind": "airline",
+   "official": true,
+   "title": "유럽 기차 즉시 할인",
+   "desc": "트리니티항공 탑승객 최대 8% 할인",
+   "link": "https://www.trinityairways.com/app/promotion/event/being",
+   "source": "트리니티항공 공식",
+   "date": "2026-10-01T00:00:00.000Z",
+   "until": "2026-12-31",
+   "found": "2026-10-31",
+   "cards": [],
+   "airlines": [
+    "TW"
+   ],
+   "countries": [],
+   "allRoutes": false,
+   "routes": [],
+   "price": null,
+   "alerted": true,
+   "lastDate": "2026-10-01T00:00:00.000Z",
+   "lastFound": "2026-10-31"
+  },
+  {
+   "id": "official:7C:0000003747",
+   "kind": "airline",
+   "official": true,
+   "title": "eventNo=0000003747\" class=\"event-banner-item\"> 우리카드 X 유니온페이(UnionPay) 최대 10만원 청구할인 혜택!",
+   "desc": "",
+   "link": "https://www.jejuair.net/ko/event/eventDetail.do?eventNo=0000003747",
+   "source": "제주항공 공식",
+   "date": "2026-09-23T00:00:00.000Z",
+   "until": "2026-12-31",
+   "found": "2026-10-31",
+   "cards": [],
+   "airlines": [
+    "7C"
+   ],
+   "countries": [],
+   "allRoutes": false,
+   "routes": [],
+   "price": null,
+   "alerted": true,
+   "lastDate": "2026-09-23T00:00:00.000Z",
+   "lastFound": "2026-10-31"
+  },
+  {
+   "id": "official:7C:0000004277",
+   "kind": "airline",
+   "official": true,
+   "title": "eventNo=0000004277\" class=\"event-banner-item\"> 친구 초대 이벤트 나도 친구도 포인트 적립",
+   "desc": "",
+   "link": "https://www.jejuair.net/ko/event/eventDetail.do?eventNo=0000004277",
+   "source": "제주항공 공식",
+   "date": "2026-09-15T00:00:00.000Z",
+   "until": "2027-12-31",
+   "found": "2026-10-31",
+   "cards": [],
+   "airlines": [
+    "7C"
+   ],
+   "countries": [],
+   "allRoutes": false,
+   "routes": [],
+   "price": null,
+   "alerted": true,
+   "lastDate": "2026-09-15T00:00:00.000Z",
+   "lastFound": "2026-10-31"
+  },
+  {
+   "id": "official:TW:2460",
+   "kind": "airline",
+   "official": true,
+   "title": "신한카드 제휴 혜택",
+   "desc": "16만원 혜택 + SOLpay 쿠폰 할인",
+   "link": "https://www.trinityairways.com/app/promotion/event/being",
+   "source": "트리니티항공 공식",
+   "date": "2026-09-01T00:00:00.000Z",
+   "until": "2026-10-31",
+   "found": "2026-10-31",
+   "cards": [],
+   "airlines": [
+    "TW"
+   ],
+   "countries": [],
+   "allRoutes": false,
+   "routes": [],
+   "price": null,
+   "alerted": true,
+   "lastDate": "2026-09-01T00:00:00.000Z",
+   "lastFound": "2026-10-31"
+  },
+  {
+   "id": "official:TW:1465",
+   "kind": "airline",
+   "official": true,
+   "title": "국제선 면세 혜택 모음",
+   "desc": "트리니티항공 고객 전용 혜택",
+   "link": "https://www.trinityairways.com/app/promotion/event/being",
+   "source": "트리니티항공 공식",
+   "date": "2026-09-01T00:00:00.000Z",
+   "until": "2026-12-31",
+   "found": "2026-10-31",
+   "cards": [],
+   "airlines": [
+    "TW"
+   ],
+   "countries": [],
+   "allRoutes": true,
+   "routes": [],
+   "price": null,
+   "alerted": true,
+   "lastDate": "2026-09-01T00:00:00.000Z",
+   "lastFound": "2026-10-31"
+  },
+  {
+   "id": "official:TW:2533",
+   "kind": "airline",
+   "official": true,
+   "title": "빅 버스 투어 20% 즉시 할인",
+   "desc": "트리니티항공 회원 전용",
+   "link": "https://www.trinityairways.com/app/promotion/event/being",
+   "source": "트리니티항공 공식",
+   "date": "2026-08-01T00:00:00.000Z",
+   "until": "2026-12-31",
+   "found": "2026-10-31",
+   "cards": [],
+   "airlines": [
+    "TW"
+   ],
+   "countries": [],
+   "allRoutes": false,
+   "routes": [],
+   "price": null,
+   "alerted": true,
+   "lastDate": "2026-08-01T00:00:00.000Z",
    "lastFound": "2026-10-31"
   }
  ],
- "updated": "2026-10-31T08:21:00.207Z",
- "runs": 2
+ "updated": "2026-10-31T08:43:46.969Z",
+ "runs": 3,
+ "sources": {
+  "7C": "2026-10-31",
+  "TW": "2026-10-31",
+  "VJ": "2026-10-31"
+ }
 }
