@@ -948,7 +948,7 @@
   },
   {
    "id": "official:7C:0000003747",
-   "kind": "airline",
+   "kind": "card",
    "official": true,
    "title": "우리카드 X 유니온페이(UnionPay) 최대 10만원 청구할인 혜택!",
    "desc": "",
@@ -957,7 +957,9 @@
    "date": "2026-09-23T00:00:00.000Z",
    "until": "2026-12-31",
    "found": "2026-10-31",
-   "cards": [],
+   "cards": [
+    "우리카드"
+   ],
    "airlines": [
     "7C"
    ],
@@ -994,7 +996,7 @@
   },
   {
    "id": "official:TW:2460",
-   "kind": "airline",
+   "kind": "card",
    "official": true,
    "title": "신한카드 제휴 혜택",
    "desc": "16만원 혜택 + SOLpay 쿠폰 할인",
@@ -1003,7 +1005,9 @@
    "date": "2026-09-01T00:00:00.000Z",
    "until": "2026-10-31",
    "found": "2026-10-31",
-   "cards": [],
+   "cards": [
+    "신한카드"
+   ],
    "airlines": [
     "TW"
    ],
@@ -1062,8 +1066,8 @@
    "lastFound": "2026-10-31"
   }
  ],
- "updated": "2026-10-31T08:46:12.274Z",
- "runs": 4,
+ "updated": "2026-10-31T08:48:00.368Z",
+ "runs": 5,
  "sources": {
   "7C": "2026-10-31",
   "TW": "2026-10-31",
