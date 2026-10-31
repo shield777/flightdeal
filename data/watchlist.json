@@ -1,0 +1,11 @@
+{
+ "settings": {
+  "notifyDropPct": 15,
+  "market": "",
+  "followAirlines": ["7C", "LJ", "TW", "BX", "RS", "ZE", "KE", "OZ", "VJ", "VN", "YP"],
+  "cards": ["우리카드", "현대카드", "신한카드"]
+ },
+ "watches": [
+  { "origin": "SEL", "dest": "CXR", "from": "2027-01", "to": "2027-10", "minNights": 3, "maxNights": 5, "direct": false, "adults": 3, "targetPrice": 0, "added": "2026-10-31" }
+ ]
+}
