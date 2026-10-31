@@ -1,4 +1,4 @@
-/* 항공권 최저가: 브라우저(index.html)와 매일 점검 스크립트(scripts/flight-check.js)가 함께 쓰는 데이터·계산
+/* 항공권 최저가: 브라우저(index.html)와 서버 검색 스크립트(scripts/flight-check.js)가 함께 쓰는 데이터·계산
    - 여기 숫자(수하물 요금, 기후, 공휴일)는 "참고값"이에요. 바뀌면 이 파일만 고치면 돼요. */
 (function (root) {
   'use strict';

@@ -1,0 +1,65 @@
+{
+ "id": "abc",
+ "requested": "2026-10-31T09:40:20.695Z",
+ "origin": "SEL",
+ "dest": "CXR",
+ "from": "2027-01",
+ "to": "2027-03",
+ "minNights": 3,
+ "maxNights": 5,
+ "direct": true,
+ "months": {
+  "2027-01": {
+   "count": 2,
+   "best": {
+    "price": 454854,
+    "dep": "2027-01-02T19:55",
+    "ret": "2027-01-07T02:10",
+    "nights": 5,
+    "airline": "LJ",
+    "flight": "LJ127",
+    "transfers": 0,
+    "backTransfers": 0,
+    "link": "https://www.aviasales.com/search/x",
+    "gate": "",
+    "src": "tp"
+   },
+   "top": [
+    {
+     "price": 454854,
+     "dep": "2027-01-02T19:55",
+     "ret": "2027-01-07T02:10",
+     "nights": 5,
+     "airline": "LJ",
+     "flight": "LJ127",
+     "transfers": 0,
+     "backTransfers": 0,
+     "link": "https://www.aviasales.com/search/x",
+     "gate": "",
+     "src": "tp"
+    },
+    {
+     "price": 470000,
+     "dep": "2027-01-20T21:00",
+     "ret": "2027-01-24T23:00",
+     "nights": 4,
+     "airline": "BX",
+     "flight": "BX781",
+     "transfers": 0,
+     "backTransfers": 0,
+     "link": "https://www.aviasales.com/search/z",
+     "gate": "",
+     "src": "tp"
+    }
+   ]
+  },
+  "2027-02": {
+   "error": "응답 없음"
+  },
+  "2027-03": {
+   "error": "응답 없음"
+  }
+ },
+ "source": "Travelpayouts(Aviasales)에 기록된 검색 가격",
+ "done": "2026-10-31T09:40:20.715Z"
+}

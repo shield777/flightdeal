@@ -1,53 +1,74 @@
-# 매일 아침 항공권 가격·특가·카드 할인 확인 → data/ 에 저장 → 휴대폰 알림(ntfy)
+# 항공권 검색 · 프로모션 확인 (앱의 버튼을 누를 때만 실행. 매일 자동 실행은 없음)
+# - search: 앱 가격 탭의 [검색] → data/search.json
+# - promos: 앱 프로모션 탭의 [지금 확인] → data/promos.json
 # 설정 방법: SETUP.md
-name: 항공권 매일 확인
+name: 항공권 검색·프로모션 확인
 
 on:
-  schedule:
-    - cron: '23 22 * * *'   # 매일 한국시간 07:23 (UTC 22:23)
-  workflow_dispatch:         # 앱의 "지금 갱신" 버튼이나 Actions 화면의 Run workflow로 바로 실행
+  workflow_dispatch:
     inputs:
       mode:
-        description: 'check = 평소 점검, test-notify = 휴대폰 알림 테스트만'
+        description: 'search = 가격 검색, promos = 프로모션 확인'
         type: choice
-        options: [check, test-notify]
-        default: check
+        options: [search, promos]
+        default: search
+      dest:
+        description: '목적지 공항·도시 코드 (예: CXR)'
+        default: 'CXR'
+      from:
+        description: '언제부터 (YYYY-MM)'
+        default: ''
+      to:
+        description: '언제까지 (YYYY-MM)'
+        default: ''
+      nights:
+        description: '박수 (예: 3-5, 한 가지면 4-4)'
+        default: '3-5'
+      id:
+        description: '앱이 결과를 알아보는 번호'
+        default: ''
 
 permissions:
   contents: write
 
 concurrency:
-  group: flight-check
+  group: flight-${{ inputs.mode }}
   cancel-in-progress: false
 
 jobs:
-  check:
+  run:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v5
         with:
           node-version: 22
-      - name: 가격·프로모션 확인
-        # 앱 주소는 셸에서 만듦 (예약 실행 때는 github.event.repository 값이 비어 있을 수 있음)
-        run: |
-          export APP_URL="https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}/"
-          # 비엣젯 공식 특가 게시판은 화면을 자바스크립트로 그려서, 서버에 설치된 크롬으로 열어 읽음 (연결 도구만 설치)
-          npm i --no-save --no-audit --no-fund --silent playwright-core@1.48.2 || echo "크롬 연결 도구 설치 실패 → 비엣젯 공식 확인만 건너뜀"
-          node scripts/flight-check.js ${{ inputs.mode == 'test-notify' && '--test-notify' || '' }}
+      - name: 가격 검색
+        if: ${{ inputs.mode == 'search' }}
+        run: node scripts/flight-check.js --search
         env:
           TP_TOKEN: ${{ secrets.TP_TOKEN }}
-          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          SEARCH_DEST: ${{ inputs.dest }}
+          SEARCH_FROM: ${{ inputs.from }}
+          SEARCH_TO: ${{ inputs.to }}
+          SEARCH_NIGHTS: ${{ inputs.nights }}
+          SEARCH_ID: ${{ inputs.id }}
+      - name: 프로모션 확인
+        if: ${{ inputs.mode == 'promos' }}
+        run: |
+          # 비엣젯 공식 특가 게시판은 화면을 자바스크립트로 그려서, 서버에 설치된 크롬으로 열어 읽음 (연결 도구만 설치)
+          npm i --no-save --no-audit --no-fund --silent playwright-core@1.48.2 || echo "크롬 연결 도구 설치 실패 → 비엣젯 공식 확인만 건너뜀"
+          node scripts/flight-check.js --promos
+        env:
           NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
           NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
       - name: 결과 저장
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898333+github-actions[bot]@users.noreply.github.com"
-          git add data/flight-results.json data/promos.json
+          git add data/search.json data/promos.json 2>/dev/null || true
           if git diff --cached --quiet; then echo "바뀐 내용 없음"; exit 0; fi
-          git commit -m "항공권 가격·프로모션 갱신 $(TZ=Asia/Seoul date +%F)"
-          for i in 1 2 3; do git pull --rebase origin "${GITHUB_REF_NAME}" && git push && exit 0; sleep 5; done
+          git commit -m "${{ inputs.mode == 'search' && '항공권 검색 결과' || '프로모션 확인' }} $(TZ=Asia/Seoul date '+%F %H:%M')"
+          for i in 1 2 3 4; do git pull --rebase origin "${GITHUB_REF_NAME}" && git push && exit 0; sleep 4; done
           exit 1
-

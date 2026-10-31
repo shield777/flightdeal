@@ -1,5 +1,5 @@
 /* 최저가 항공권 화면
-   - 가격·특가 자료는 매일 아침 GitHub Actions(scripts/flight-check.js)가 data/ 폴더에 쌓아요. 이 화면은 그걸 읽어 보여 줘요.
+   - [검색]·[지금 확인]을 누르면 GitHub Actions(scripts/flight-check.js)가 서버에서 조회해 data/ 폴더에 저장하고, 이 화면이 그걸 읽어 보여 줘요. 매일 자동 실행은 없어요.
    - 이 기기 설정(카드 할인 규칙, 수하물 요금, GitHub 연결)은 이 기기에만 저장돼요. */
 (function () {
   'use strict';
@@ -37,7 +37,6 @@
     bagFees: {},
     cardRules: [],
     gh: { ...guessRepo(), branch: 'main', token: '' },
-    tpToken: '',
   };
   let cfg;
   try { cfg = Object.assign({}, DEFAULT, JSON.parse(localStorage.getItem(KEY) || '{}')); } catch { cfg = { ...DEFAULT }; }
@@ -45,8 +44,7 @@
   const save = () => { try { localStorage.setItem(KEY, JSON.stringify(cfg)); } catch { /* 저장 불가(사생활 보호 모드) */ } };
 
   // ───── 자료 불러오기 ─────
-  const data = { results: { routes: {} }, promos: { items: [] }, watch: { settings: {}, watches: [] }, loaded: false, error: '' };
-  const live = {}; // 이 기기에서 바로 검색한 결과 (저장 안 함)
+  const data = { search: null, promos: { items: [] }, watch: { settings: {}, watches: [] }, loaded: false, error: '' };
   const clim = {}; // 목적지별 강수량 통계
 
   function b64utf8(b64) { const bin = atob(b64.replace(/\n/g, '')); return new TextDecoder().decode(Uint8Array.from(bin, c => c.charCodeAt(0))); }
@@ -72,11 +70,11 @@
     return null;
   }
   async function loadAll() {
-    const [r, p, w] = await Promise.all([fetchData('data/flight-results.json'), fetchData('data/promos.json'), fetchData('data/watchlist.json')]);
-    if (r) data.results = Object.assign({ routes: {} }, r);
+    const [r, p, w] = await Promise.all([fetchData('data/search.json'), fetchData('data/promos.json'), fetchData('data/watchlist.json')]);
+    data.search = r || null;
     if (p) data.promos = Object.assign({ items: [] }, p);
     if (w) data.watch = Object.assign({ settings: {}, watches: [] }, w);
-    data.loaded = true; data.error = r ? '' : '가격 자료를 불러오지 못했어요';
+    data.loaded = true;
   }
 
   // ───── 기후(강수량): Open-Meteo 과거 10년 평균, 이 기기에 보관 ─────
@@ -107,7 +105,8 @@
     return F.findDest(q.dest) || F.DESTS[0];
   }
   const curKey = () => F.routeKey({ origin: cfg.q.origin, dest: currentDest().code, minNights: cfg.q.minN, maxNights: cfg.q.maxN, direct: cfg.q.direct });
-  const watchOf = key => (data.watch.watches || []).find(w => F.routeKey(w) === key);
+  // 마지막 검색 결과가 지금 고른 목적지·박수와 같은지
+  const searchFits = () => { const r = data.search, q = cfg.q; return !!(r && !r.error && r.dest === currentDest().code && r.minNights === q.minN && r.maxNights === q.maxN); };
 
   // ───── 화면 ─────
   let ui = { busy: '', open: {}, tab: (() => { try { return localStorage.getItem('flightdeal-tab') || 'price'; } catch { return 'price'; } })() };
@@ -116,9 +115,9 @@
     const countries = [...new Set(F.DESTS.map(d => d.country))];
     const dest = currentDest();
     const country = q.dest === '_custom' ? '_custom' : dest.country;
-    // 박수 한 칸: 딱 정한 박수(1~14박) 또는 자주 쓰는 범위. 추적 중인 노선의 박수 범위도 항상 들어 있게 함
+    // 박수 한 칸: 딱 정한 박수(1~14박) 또는 자주 쓰는 범위
     const exact = Array.from({ length: 14 }, (_, i) => [i + 1, i + 1]);
-    const ranges = [[2, 3], [3, 4], [3, 5], [4, 5], [4, 6], [5, 7], [7, 10], ...(data.watch.watches || []).map(w => [w.minNights, w.maxNights]), [q.minN, q.maxN]]
+    const ranges = [[2, 3], [3, 4], [3, 5], [4, 5], [4, 6], [5, 7], [7, 10], [q.minN, q.maxN]]
       .filter(([a, b]) => a < b).filter((r, i, arr) => arr.findIndex(x => x[0] === r[0] && x[1] === r[1]) === i).sort((x, y) => x[0] - y[0] || x[1] - y[1]);
     const nOpt = ([a, b]) => `<option value="${a}-${b}" ${a === q.minN && b === q.maxN ? 'selected' : ''}>${nightsText(a, b)}</option>`;
     const nightsSel = `<optgroup label="범위">${ranges.map(nOpt).join('')}</optgroup><optgroup label="딱 정해서">${exact.map(nOpt).join('')}</optgroup>`;
@@ -151,7 +150,7 @@
             <label class="field"><span>인원</span><select id="q-adults">${Array.from({ length: 9 }, (_, i) => i + 1).map(n => `<option value="${n}" ${n === q.adults ? 'selected' : ''}>${n}명</option>`).join('')}</select></label>
           </div>
           <p class="hint fl-fixed">출발 서울(인천·김포) · 직항만</p>
-          <button class="btn primary fl-go" type="submit">월별 최저가 보기</button>
+          <button class="btn primary fl-go" type="submit" ${ui.searching ? 'disabled' : ''}>${ui.searching ? '검색 중…' : '월별 최저가 검색'}</button>
         </form>
 
         <div id="results"></div>`}
@@ -184,8 +183,8 @@
     const card = F.applyCard(o.price, o.airline, cfg.cardRules, today);
     return { o, card, final: card ? card.price : o.price };
   }
-  function monthInfo(key, ym, dest) {
-    const M = (live[key] && live[key][ym]) || data.results.routes[key]?.months?.[ym] || null;
+  function monthInfo(key, ym) {
+    const M = searchFits() ? data.search.months?.[ym] || null : null;
     if (!M || !M.best) return { M, best: null };
     const cands = (M.top && M.top.length ? M.top : [M.best]).map(o => priceView(o));
     cands.sort((a, b) => a.final - b.final);
@@ -198,13 +197,10 @@
     if (!dest.code || dest.code.length !== 3) { box.innerHTML = `<div class="empty">공항·도시 코드(영문 3글자)를 넣어 주세요.</div>`; return; }
     const key = curKey();
     const months = F.monthsBetween(q.from, q.to).filter(m => m >= thisYM);
-    const w = watchOf(key);
-    const route = data.results.routes[key];
-    const covered = w ? months.filter(m => m >= w.from && m <= w.to).length : 0;
     const origin = F.ORIGINS.find(o => o.code === q.origin);
     const C = clim[dest.code];
 
-    const rows = months.map(ym => ({ ym, ...monthInfo(key, ym, dest) }));
+    const rows = months.map(ym => ({ ym, ...monthInfo(key, ym) }));
     const priced = rows.filter(r => r.best);
     const cheapest = priced.length ? priced.reduce((a, b) => a.best.final <= b.best.final ? a : b) : null;
     const climFor = ym => F.climateOf(dest, Number(ym.slice(5))); // 목적지 기후표에 있는 것만 (강수량으로 추정하지 않음)
@@ -213,21 +209,19 @@
     if (cfg.sort === 'price') rows.sort((a, b) => (a.best ? a.best.final : 9e12) - (b.best ? b.best.final : 9e12));
 
     const promoN = (data.promos.items || []).filter(p => p.kind === 'airline' && F.isWantedPromo(p, data.watch.settings) && (p.countries || []).includes(dest.country) && (p.until ? p.until >= today : (p.lastFound || p.found) >= F.addDays(today, -21))).length;
-    const status = !data.loaded ? '자료를 불러오는 중…'
-      : w ? `매일 아침 자동 확인 중${route?.months ? ` · 마지막 ${fmtUpdated(data.results.updated)}` : ' · 첫 확인을 기다리는 중'}${covered < months.length ? ` · 추적 기간 ${w.from}~${w.to}` : ''}`
-      : '아직 매일 확인하지 않는 노선이에요. 아래 버튼으로 추적을 시작하면 다음 날부터 가격이 쌓여요.';
+    const S = data.search, fits = searchFits();
+    const outside = fits ? months.filter(m => !(m in (S.months || {}))).length : 0;
+    const status = ui.searching ? `서버에서 검색 중… ${ui.searching.sec}초 (보통 30초~1분)`
+      : !data.loaded ? '자료를 불러오는 중…'
+      : data.search && data.search.error && data.search.dest === dest.code ? `검색 실패: ${data.search.error}`
+      : fits ? `${fmtUpdated(S.done || S.requested)} 검색 결과${outside ? ` · ${outside}개월은 검색 기간 밖 → 다시 검색하세요` : ''}`
+      : '[월별 최저가 검색]을 누르면 지금 기록된 가격을 가져와요 (30초~1분)';
 
     box.innerHTML = `
       <section class="fl-head">
         <div class="crumb">${esc(origin?.name || q.origin)} → ${esc(dest.country)} · <b>${esc(dest.city)}</b> <span class="route-chip">${esc(dest.code)}</span></div>
         <div class="sub">${q.from.replace('-', '.')} ~ ${q.to.replace('-', '.')} · ${nightsText(q.minN, q.maxN)} · ${q.adults}명 · 직항</div>
-        <div class="fl-status ${w ? 'on' : ''}">${esc(status)}</div>
-        <div class="fl-actions">
-          ${w ? `<button class="btn sm" data-act="refresh" ${ui.busy ? 'disabled' : ''}>${ICON.refresh}${ui.busy === 'refresh' ? '확인 중… (1~3분)' : '지금 갱신'}</button>`
-              : `<button class="btn sm primary" data-act="watch" ${ui.busy ? 'disabled' : ''}>${ICON.bell}${ui.busy === 'watch' ? '등록 중…' : '매일 추적 + 알림 시작'}</button>`}
-          ${w ? `<button class="btn sm" data-act="watch-edit">목표가·기간</button>` : ''}
-          ${cfg.tpToken ? `<button class="btn sm" data-act="live" ${ui.busy ? 'disabled' : ''}>${ui.busy === 'live' ? '검색 중…' : '이 기기에서 바로 검색'}</button>` : ''}
-        </div>
+        <div class="fl-status ${fits || ui.searching ? 'on' : ''}">${esc(status)}</div>
       </section>
 
       ${priced.length ? `<section class="fl-sum">
@@ -279,8 +273,6 @@
     let body;
     if (best) {
       const o = best.o, a = F.airline(o.airline);
-      const hist = (M.history || []).filter(h => h.min);
-      const avg30 = M.avg30 && M.avg30 !== o.price ? M.avg30 : 0;
       const L = F.links(cfg.q.origin, dest, o.dep, o.ret, cfg.q.adults);
       const stops = o.transfers || o.backTransfers ? `경유 ${Math.max(o.transfers, o.backTransfers)}회` : '직항';
       body = `
@@ -290,9 +282,8 @@
         <div class="fl-trip">${fmtDay(o.dep)} → ${fmtDay(o.ret)} · <b>${o.nights}박</b> · ${esc(a.name)} · ${stops}${o.dep.length > 10 ? ` · ${o.dep.slice(11, 16)} 출발` : ''}</div>
         <ul class="fl-lines">
           ${best.card ? `<li class="card">💳 ${esc(best.card.rule.card)} ${esc(ruleText(best.card.rule))} → -${won(best.card.off)} (기록 운임 ${won(o.price)})</li>` : ''}
-          ${M.checked ? `<li>확인한 날 ${esc(M.checked.slice(5).replace('-', '/'))}${M.count ? ` · 조건에 맞는 기록 ${M.count}건` : ''}${avg30 ? ` · 지난 30일 기록 최저가 평균 ${won(avg30)}` : ''}${hist.length > 1 ? ` · 기록 ${hist.length}일` : ''}</li>` : ''}
+          ${M.count ? `<li>조건에 맞는 기록 ${M.count}건 중 최저</li>` : ''}
         </ul>
-        ${hist.length > 2 ? sparkline(hist) : ''}
         <div class="fl-links">
           <a class="btn sm primary" href="${L.google}" target="_blank" rel="noopener">구글 항공권</a>
           <a class="btn sm" href="${L.naver}" target="_blank" rel="noopener">네이버</a>
@@ -303,7 +294,7 @@
         ${others && others.length ? `<details class="fl-more" ${ui.open[ym] ? 'open' : ''} data-ym="${ym}"><summary>다른 날짜 ${others.length}개</summary>
           <ul>${others.map(x => { const l = F.links(cfg.q.origin, dest, x.o.dep, x.o.ret, cfg.q.adults); return `<li><a href="${l.google}" target="_blank" rel="noopener"><b>${won(x.final)}</b> ${fmtDay(x.o.dep)}→${fmtDay(x.o.ret)} ${x.o.nights}박 · ${esc(F.airline(x.o.airline).name)}</a></li>`; }).join('')}</ul></details>` : ''}`;
     } else {
-      const why = M?.error ? `가격 확인 실패(${M.error}).` : M ? '조건에 맞는 가격 기록이 아직 없어요. 먼 달은 검색한 사람이 적어 비어 있을 수 있어요.' : '아직 가격 기록이 없어요.';
+      const why = M?.error ? `가격 확인 실패(${M.error}).` : M ? '조건에 맞는 직항 가격 기록이 없어요. 먼 달은 검색한 사람이 적어 비어 있을 수 있어요.' : searchFits() ? '검색 기간 밖이에요.' : '아직 검색하지 않았어요.';
       body = `<p class="fl-none">${esc(why)} 아래 버튼으로 ${Number(ym.slice(5))}월 ${10}일 출발 기준 바로 확인할 수 있어요.</p>
         <div class="fl-links">
           <a class="btn sm primary" href="${L0.google}" target="_blank" rel="noopener">구글 항공권</a>
@@ -322,14 +313,6 @@
         ${notes.length ? `<div class="fl-notes">${notes.map(n => `<span>${esc(n)}</span>`).join('')}</div>` : ''}
         ${body}
       </article>`;
-  }
-
-  function sparkline(hist) {
-    const h = hist.slice(-60), vals = h.map(x => x.min);
-    const lo = Math.min(...vals), hi = Math.max(...vals), W = 240, H = 36;
-    const x = i => (i / Math.max(1, h.length - 1)) * W, y = v => hi === lo ? H / 2 : H - 3 - ((v - lo) / (hi - lo)) * (H - 6);
-    const d = h.map((p, i) => `${i ? 'L' : 'M'}${x(i).toFixed(1)},${y(p.min).toFixed(1)}`).join('');
-    return `<div class="fl-spark"><svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" aria-hidden="true"><path d="${d}"/></svg><span>최근 ${h.length}일 최저가 ${man(lo)} ~ ${man(hi)}</span></div>`;
   }
 
   // ───── 프로모션 탭 ─────
@@ -368,12 +351,13 @@
       <section class="pr-head">
         <h2>항공권 프로모션 <small>${esc(ps.countries.join('·'))} · LCC · 진행 중이거나 최근 3주</small></h2>
         <div class="fl-chips">${chips.map(([v, t]) => `<button type="button" class="chip ${sel === v ? 'on' : ''}" data-act="lcc" data-v="${esc(v)}">${esc(t)}</button>`).join('')}</div>
+        <div class="fl-actions"><button type="button" class="btn sm primary" data-act="promo-refresh" ${ui.promoBusy ? 'disabled' : ''}>${ICON.refresh}${ui.promoBusy ? `확인 중… ${ui.promoBusy.sec}초 (보통 1~2분)` : '지금 확인'}</button></div>
         <p class="hint">마지막 확인 ${esc(fmtUpdated(data.promos.updated))} · <span class="badge-off">공식</span> 항공사 홈페이지에서 직접 확인 · <span class="badge-news">뉴스</span> 기사 제목 그대로 (조건·가격은 원문에서 확인)</p>
       </section>
       ${withItems.map(g => {
         const a = F.airline(g.code);
         return `<article class="pr-air">
-          <header><b>${esc(a.name)}</b><span class="pr-how">${OFFICIAL_AIR.includes(g.code) ? '공식 홈페이지 매일 확인' : '뉴스로만 확인'}</span>${a.url ? `<a href="${a.url}" target="_blank" rel="noopener">홈페이지${ICON.ext}</a>` : ''}</header>
+          <header><b>${esc(a.name)}</b><span class="pr-how">${OFFICIAL_AIR.includes(g.code) ? '공식 홈페이지 확인' : '뉴스로만 확인'}</span>${a.url ? `<a href="${a.url}" target="_blank" rel="noopener">홈페이지${ICON.ext}</a>` : ''}</header>
           <ul>${sortList(g.list).map(p => promoItem(p, ps)).join('')}</ul>
         </article>`;
       }).join('')}
@@ -381,7 +365,7 @@
       ${!withItems.length && !etc.length ? '<p class="muted pr-none">지금 조건에 맞는 특가 소식이 없어요.</p>' : ''}
       ${empty.length ? `<p class="pr-empty"><b>최근 확인된 소식 없음</b> · ${empty.map(g => { const a = F.airline(g.code); return a.url ? `<a href="${a.url}" target="_blank" rel="noopener">${esc(a.name)}</a>` : esc(a.name); }).join(' · ')}</p>` : ''}
       ${cardSection()}
-      <p class="fl-foot">공식: 제주항공·트리니티항공·비엣젯 홈페이지 이벤트 목록을 매일 아침 확인해요. 진에어·에어부산·이스타 등은 사이트가 자동 확인을 막아서 뉴스로만 확인돼요(각 항공사 앱 알림을 켜 두면 가장 빨라요). 범위는 ⚙ 설정에서 바꿔요.</p>`;
+      <p class="fl-foot">[지금 확인]을 누르면 제주항공·트리니티항공·비엣젯 홈페이지 이벤트 목록과 특가 뉴스를 확인해요(매일 자동 확인은 하지 않아요). 진에어·에어부산·이스타 등은 사이트가 자동 확인을 막아서 뉴스로만 확인돼요(각 항공사 앱 알림을 켜 두면 가장 빨라요). 범위는 ⚙ 설정에서 바꿔요.</p>`;
   }
 
   function ruleText(r) {
@@ -419,19 +403,6 @@
   }
 
   // ───── 동작 ─────
-  async function startWatch() {
-    const dest = currentDest(), q = cfg.q;
-    const w = { origin: q.origin, dest: dest.code, from: q.from < thisYM ? thisYM : q.from, to: q.to, minNights: q.minN, maxNights: q.maxN, direct: q.direct, adults: q.adults, targetPrice: 0, added: today };
-    if (q.dest === '_custom') { w.destName = dest.city; w.region = dest.region; }
-    if (!cfg.gh.token) { manualWatchSheet(w); return; }
-    ui.busy = 'watch'; renderResults();
-    try {
-      await updateWatchFile(list => { list.watches = (list.watches || []).filter(x => F.routeKey(x) !== F.routeKey(w)); list.watches.push(w); return `추적 추가: ${dest.city} ${w.from}~${w.to}`; });
-      toast('추적을 시작했어요. 지금 첫 확인을 돌려요');
-      await dispatchAndWait();
-    } catch (e) { toast(`등록 실패: ${e.message}`); }
-    ui.busy = ''; renderResults();
-  }
   async function updateWatchFile(mutator) {
     const g = cfg.gh;
     const f = await gh('GET', `/contents/data/watchlist.json?ref=${encodeURIComponent(g.branch)}`);
@@ -440,43 +411,53 @@
     await gh('PUT', '/contents/data/watchlist.json', { message: msg, content: utf8b64(JSON.stringify(list, null, 1) + '\n'), sha: f.sha, branch: g.branch });
     data.watch = list;
   }
-  async function dispatchAndWait() {
-    const before = data.results.updated;
-    await gh('POST', '/actions/workflows/flight-check.yml/dispatches', { ref: cfg.gh.branch, inputs: { mode: 'check' } });
-    ui.busy = 'refresh'; renderResults();
-    for (let i = 0; i < 16; i++) {
-      await new Promise(r => setTimeout(r, 20000));
-      const r = await fetchData('data/flight-results.json');
-      if (r && r.updated !== before) { data.results = r; const p = await fetchData('data/promos.json'); if (p) data.promos = p; toast('새 가격을 받았어요'); break; }
-    }
-    ui.busy = '';
+  // 서버(GitHub Actions)에서 실행하고 결과 파일이 바뀔 때까지 기다림
+  async function runOnServer(inputs, file, isDone, onTick, maxSec = 240) {
+    await gh('POST', '/actions/workflows/flight-check.yml/dispatches', { ref: cfg.gh.branch, inputs });
+    const t0 = Date.now();
+    const tick = setInterval(() => onTick(Math.round((Date.now() - t0) / 1000)), 1000);
+    try {
+      while ((Date.now() - t0) / 1000 < maxSec) {
+        await new Promise(r => setTimeout(r, 5000));
+        let j = null;
+        try { const f = await gh('GET', `/contents/${file}?ref=${encodeURIComponent(cfg.gh.branch)}&t=${Date.now()}`); j = JSON.parse(b64utf8(f.content)); } catch { /* 아직 없음 */ }
+        if (j && isDone(j)) return j;
+      }
+      throw new Error('시간 초과 (GitHub Actions 기록을 확인하세요)');
+    } finally { clearInterval(tick); }
   }
-  async function refresh() {
-    if (!cfg.gh.token) { toast('설정에서 GitHub 연결을 먼저 해 주세요'); settingsSheet(); return; }
-    ui.busy = 'refresh'; renderResults();
-    try { await dispatchAndWait(); } catch (e) { toast(`갱신 실패: ${e.message}`); }
-    ui.busy = ''; renderResults();
+  function needToken() {
+    if (cfg.gh.token) return false;
+    toast('검색하려면 설정에서 GitHub 토큰을 먼저 넣어 주세요');
+    settingsSheet();
+    return true;
   }
-  // 이 기기에서 바로 검색 (Travelpayouts가 브라우저 요청을 막으면 실패할 수 있어요)
-  async function liveSearch() {
-    const dest = currentDest(), q = cfg.q, key = curKey();
-    ui.busy = 'live'; renderResults();
-    live[key] = live[key] || {};
-    let ok = 0, fail = '';
-    for (const ym of F.monthsBetween(q.from, q.to).filter(m => m >= thisYM)) {
-      const u = new URLSearchParams({ origin: q.origin, destination: dest.code, departure_at: ym, one_way: 'false', direct: String(q.direct), sorting: 'price', limit: '1000', currency: 'krw', token: cfg.tpToken });
-      try {
-        const j = await (await fetch(`https://api.travelpayouts.com/aviasales/v3/prices_for_dates?${u}`)).json();
-        if (j.success === false) { fail = j.error || '조회 실패'; continue; }
-        const s = F.summarizeMonth(F.normalizeOffers(j), { month: ym, minNights: q.minN, maxNights: q.maxN, direct: q.direct });
-        const prev = data.results.routes[key]?.months?.[ym] || {};
-        live[key][ym] = { ...prev, ...s, checked: today };
-        ok++;
-      } catch { fail = '브라우저에서 직접 조회가 막혀 있어요. "매일 추적"을 써 주세요'; break; }
-    }
-    ui.busy = '';
-    toast(ok ? `${ok}개월 가격을 받았어요` : fail || '받은 가격이 없어요');
-    renderResults();
+  async function startSearch() {
+    if (ui.searching || needToken()) return;
+    const q = cfg.q, dest = currentDest();
+    if (!/^[A-Z]{3}$/.test(dest.code || '')) { toast('목적지 코드(영문 3글자)를 확인해 주세요'); return; }
+    const id = `${Date.now().toString(36)}${Math.random().toString(36).slice(2, 6)}`;
+    const from = q.from < thisYM ? thisYM : q.from;
+    ui.searching = { id, sec: 0 }; renderResults();
+    try {
+      const r = await runOnServer({ mode: 'search', dest: dest.code, from, to: q.to, nights: `${q.minN}-${q.maxN}`, id }, 'data/search.json', j => j.id === id,
+        sec => { if (ui.searching) { ui.searching.sec = sec; const st = $('.fl-status'); if (st) st.textContent = `서버에서 검색 중… ${sec}초 (보통 30초~1분)`; } });
+      data.search = r;
+      toast(r.error ? `검색 실패: ${r.error}` : '검색 결과를 받았어요');
+    } catch (e) { toast(`검색 실패: ${e.message}`); }
+    ui.searching = null; renderResults();
+  }
+  async function refreshPromos() {
+    if (ui.promoBusy || needToken()) return;
+    const before = data.promos.updated || '';
+    ui.promoBusy = { sec: 0 }; renderPromo();
+    try {
+      const p = await runOnServer({ mode: 'promos' }, 'data/promos.json', j => (j.updated || '') > before,
+        sec => { if (ui.promoBusy) { ui.promoBusy.sec = sec; const b = $('[data-act="promo-refresh"]'); if (b) b.textContent = `확인 중… ${sec}초 (보통 1~2분)`; } }, 300);
+      data.promos = Object.assign({ items: [] }, p);
+      toast('프로모션을 새로 확인했어요');
+    } catch (e) { toast(`확인 실패: ${e.message}`); }
+    ui.promoBusy = null; renderPromo();
   }
   async function geocodeCustom() {
     const c = cfg.q.custom; if (!c || !c.en || c.geoTried === c.en) return;
@@ -502,40 +483,34 @@
 
   function settingsSheet() {
     const g = cfg.gh;
-    const watches = data.watch.watches || [];
     openSheet('설정', `
-      <h3 class="fl-h3">매일 추적 목록</h3>
-      ${watches.length ? `<ul class="fl-wlist">${watches.map((w, i) => { const d = F.findDest(w.dest); return `<li><span>${esc(w.origin)}→${esc(d ? d.city : (w.destName || w.dest))} · ${esc(w.from)}~${esc(w.to)} · ${nightsText(w.minNights, w.maxNights)}${w.targetPrice ? ` · 목표 ${man(w.targetPrice)}` : ''}</span><button type="button" class="btn sm ghost danger" data-del-watch="${i}" aria-label="추적 삭제">${ICON.trash}</button></li>`; }).join('')}</ul>` : '<p class="muted">없음</p>'}
+      <h3 class="fl-h3">GitHub 연결 <small>(검색·프로모션 확인 버튼에 필요)</small></h3>
+      <label class="field"><span>토큰 <span class="hint">이 기기에만 저장돼요. 만드는 법은 SETUP.md</span></span><input type="password" id="s-token" value="${esc(g.token)}" placeholder="github_pat_…" autocomplete="off"></label>
+      <details class="fl-adv"><summary>저장소 정보 (보통 그대로 두세요)</summary>
+        <div class="grid3">
+          <label class="field"><span>계정</span><input type="text" id="s-owner" value="${esc(g.owner)}"></label>
+          <label class="field"><span>저장소</span><input type="text" id="s-repo" value="${esc(g.repo)}"></label>
+          <label class="field"><span>브랜치</span><input type="text" id="s-branch" value="${esc(g.branch)}"></label>
+        </div>
+      </details>
 
-      <h3 class="fl-h3">특가 알림 범위 <small>(매일 점검·알림에 적용)</small></h3>
+      <h3 class="fl-h3">프로모션 범위 <small>(프로모션 탭에 적용)</small></h3>
       ${(() => {
         const ps = F.promoSettings(data.watch.settings);
         const lcc = Object.entries(F.AIRLINES).filter(([, a]) => a.type === 'LCC').sort((a, b) => a[1].name.localeCompare(b[1].name, 'ko'));
         return `<p class="hint">나라</p><div class="fl-picks">${F.COUNTRIES.map(c => `<label class="check-inline"><input type="checkbox" name="p-country" value="${esc(c)}" ${ps.countries.includes(c) ? 'checked' : ''}>${esc(c)}</label>`).join('')}</div>
           <p class="hint">항공사 (LCC)</p><div class="fl-picks">${lcc.map(([k, a]) => `<label class="check-inline"><input type="checkbox" name="p-air" value="${k}" ${ps.airlines.includes(k) ? 'checked' : ''}>${esc(a.name)}</label>`).join('')}</div>
           <button type="button" class="btn sm" data-save-scope="1">범위 저장</button>
-          <p class="hint">${g.token ? '저장하면 내일 아침 점검부터 반영돼요(앱 목록은 바로 바뀜).' : 'GitHub 토큰이 있어야 여기서 저장돼요. 없으면 github.com에서 <b>data/watchlist.json</b>의 promoCountries·promoAirlines를 직접 고치면 돼요(SETUP.md 참고).'}</p>`;
+          <p class="hint">${g.token ? '저장하면 목록은 바로 바뀌고, 검색어는 다음 [지금 확인]부터 반영돼요.' : 'GitHub 토큰이 있어야 여기서 저장돼요. 없으면 github.com에서 <b>data/watchlist.json</b>의 promoCountries·promoAirlines를 직접 고치면 돼요(SETUP.md 참고).'}</p>`;
       })()}
-
-      <h3 class="fl-h3">GitHub 연결 <small>(추적 추가·지금 갱신용)</small></h3>
-      <div class="grid3">
-        <label class="field"><span>계정</span><input type="text" id="s-owner" value="${esc(g.owner)}"></label>
-        <label class="field"><span>저장소</span><input type="text" id="s-repo" value="${esc(g.repo)}"></label>
-        <label class="field"><span>브랜치</span><input type="text" id="s-branch" value="${esc(g.branch)}"></label>
-      </div>
-      <label class="field"><span>토큰 <span class="hint">이 기기에만 저장. 만드는 법은 SETUP.md</span></span><input type="password" id="s-token" value="${esc(g.token)}" placeholder="github_pat_…" autocomplete="off"></label>
 
       <h3 class="fl-h3">카드 할인 규칙</h3>
       ${cfg.cardRules.length ? `<ul class="fl-wlist">${cfg.cardRules.map((r, i) => `<li><span>${esc(r.card)} · ${esc(ruleText(r))}${r.until ? ` · ~${esc(r.until)}` : ''}${r.memo ? ` · ${esc(r.memo)}` : ''}</span><button type="button" class="btn sm ghost danger" data-del-rule="${i}" aria-label="규칙 삭제">${ICON.trash}</button></li>`).join('')}</ul>` : '<p class="muted">없음</p>'}
-      <button type="button" class="btn sm" data-card-add="1">${ICON.plus}카드 할인 등록</button>
-
-      <h3 class="fl-h3">이 기기에서 바로 검색 <small>(선택)</small></h3>
-      <label class="field"><span>Travelpayouts 토큰</span><input type="password" id="s-tp" value="${esc(cfg.tpToken)}" autocomplete="off"></label>
-      <p class="hint">브라우저 직접 조회는 막혀 있을 수 있어요. 안 되면 비워 두고 "매일 추적"만 쓰면 돼요.</p>`,
+      <button type="button" class="btn sm" data-card-add="1">${ICON.plus}카드 할인 등록</button>`,
       `<button type="button" class="btn" data-close="1">닫기</button><button type="submit" class="btn primary">저장</button>`,
       (root, close) => {
         root.addEventListener('click', async e => {
-          const dw = e.target.closest('[data-del-watch]'), dr = e.target.closest('[data-del-rule]');
+          const dr = e.target.closest('[data-del-rule]');
           if (e.target.closest('[data-card-add]')) { close(); cardRuleSheet(); }
           if (e.target.closest('[data-save-scope]')) {
             const countries = [...root.querySelectorAll('input[name=p-country]:checked')].map(i => i.value);
@@ -548,18 +523,11 @@
             } catch (err) { toast(`저장 실패: ${err.message}`); }
           }
           if (dr) { cfg.cardRules.splice(Number(dr.dataset.delRule), 1); save(); close(); settingsSheet(); render(); }
-          if (dw) {
-            if (!cfg.gh.token) { toast('GitHub 토큰이 있어야 지울 수 있어요'); return; }
-            const w = watches[Number(dw.dataset.delWatch)];
-            try { await updateWatchFile(list => { list.watches = list.watches.filter(x => F.routeKey(x) !== F.routeKey(w)); return `추적 삭제: ${w.dest} ${w.from}~${w.to}`; }); toast('추적을 멈췄어요'); close(); settingsSheet(); renderResults(); }
-            catch (err) { toast(`삭제 실패: ${err.message}`); }
-          }
         });
         $('#sheet-form', root).addEventListener('submit', e => {
           e.preventDefault();
           const v = id => ($('#' + id, root).value || '').trim();
           cfg.gh = { owner: v('s-owner'), repo: v('s-repo'), branch: v('s-branch') || 'main', token: v('s-token') };
-          cfg.tpToken = v('s-tp');
           save(); close(); toast('저장했어요');
           loadAll().then(render);
         });
@@ -598,52 +566,13 @@
       });
   }
 
-  function watchEditSheet() {
-    const key = curKey(), w = watchOf(key); if (!w) return;
-    openSheet('추적 설정', `
-      <div class="grid2">
-        <label class="field"><span>언제부터</span><input type="month" id="w-from" value="${esc(w.from)}"></label>
-        <label class="field"><span>언제까지</span><input type="month" id="w-to" value="${esc(w.to)}"></label>
-      </div>
-      <label class="field"><span>목표가(1인 왕복, 원) <span class="hint">이 값 이하로 나오면 알림</span></span><input type="number" inputmode="numeric" step="10000" id="w-target" value="${w.targetPrice || ''}" placeholder="예: 300000"></label>
-      <p class="hint">목표가가 없어도 지난 30일 평균보다 ${data.watch.settings?.notifyDropPct || 15}% 이상 싸지거나 기록 최저가가 나오면 알려 줘요.</p>`,
-      `<button type="button" class="btn" data-close="1">취소</button><button type="submit" class="btn primary">저장</button>`,
-      (root, close) => {
-        $('#sheet-form', root).addEventListener('submit', async e => {
-          e.preventDefault();
-          if (!cfg.gh.token) { toast('GitHub 토큰이 있어야 바꿀 수 있어요'); return; }
-          const from = $('#w-from', root).value, to = $('#w-to', root).value, target = Number($('#w-target', root).value) || 0;
-          try { await updateWatchFile(list => { const x = list.watches.find(y => F.routeKey(y) === key); if (x) { x.from = from; x.to = to; x.targetPrice = target; } return `추적 설정 변경: ${w.dest}`; }); close(); toast('저장했어요'); renderResults(); }
-          catch (err) { toast(`저장 실패: ${err.message}`); }
-        });
-      });
-  }
-
-  function manualWatchSheet(w) {
-    const line = JSON.stringify(w);
-    openSheet('매일 추적 시작', `
-      <p style="margin:0">추적 목록은 GitHub 저장소의 <code>data/watchlist.json</code>에 있어요. 두 가지 방법 중 하나를 고르세요.</p>
-      <ol class="fl-steps">
-        <li><b>편한 방법</b>: 설정(⚙)에 GitHub 토큰을 한 번 넣으면, 이 버튼 하나로 추가·갱신돼요. (토큰 만드는 법: 저장소의 SETUP.md)</li>
-        <li><b>직접 넣기</b>: github.com에서 <code>data/watchlist.json</code>을 열고 연필(✏️)을 눌러 <code>"watches": [</code> 안에 아래 한 줄을 추가 → Commit.</li>
-      </ol>
-      <textarea readonly id="w-line" rows="4">${esc(line)}</textarea>`,
-      `<button type="button" class="btn" data-copy="1">복사</button><a class="btn" href="https://github.com/${esc(cfg.gh.owner)}/${esc(cfg.gh.repo)}/edit/${esc(cfg.gh.branch)}/data/watchlist.json" target="_blank" rel="noopener">GitHub에서 열기</a><button type="button" class="btn primary" data-open-settings="1">토큰 넣기</button>`,
-      (root, close) => {
-        root.addEventListener('click', e => {
-          if (e.target.closest('[data-copy]')) { navigator.clipboard?.writeText(line).then(() => toast('복사했어요'), () => { $('#w-line', root).select(); }); }
-          if (e.target.closest('[data-open-settings]')) { close(); settingsSheet(); }
-        });
-      });
-  }
-
   let toastTimer;
   function toast(msg) { const el = $('#toast'); el.textContent = msg; el.hidden = false; clearTimeout(toastTimer); toastTimer = setTimeout(() => { el.hidden = true; }, 3000); }
 
   // ───── 이벤트 ─────
   app.addEventListener('submit', e => {
     if (e.target.id !== 'search') return;
-    e.preventDefault(); readForm(); render();
+    e.preventDefault(); readForm(); render(); startSearch();
     setTimeout(() => $('#results')?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
   });
   app.addEventListener('change', e => {
@@ -665,32 +594,13 @@
     const b = e.target.closest('[data-act]'); if (!b) return;
     const act = b.dataset.act;
     if (act === 'settings') settingsSheet();
-    else if (act === 'watch') startWatch();
-    else if (act === 'watch-edit') watchEditSheet();
-    else if (act === 'refresh') refresh();
-    else if (act === 'live') liveSearch();
+    else if (act === 'promo-refresh') refreshPromos();
     else if (act === 'card-add') cardRuleSheet();
     else if (act === 'sort') { cfg.sort = b.dataset.v; save(); renderResults(); }
     else if (act === 'lcc') { ui.lcc = b.dataset.v; renderPromo(); }
     else if (act === 'tab') { ui.tab = b.dataset.v; try { localStorage.setItem('flightdeal-tab', ui.tab); } catch { /* 저장 불가 */ } render(); window.scrollTo(0, 0); }
   });
 
-  // 알림에서 눌러 들어온 경우: #r=SEL-CXR-3-5-A&m=2027-01
-  function fromHash() {
-    const h = new URLSearchParams(location.hash.slice(1));
-    const r = h.get('r'); if (!r) return null;
-    const [origin, dest, minN, maxN, dir] = r.split('-');
-    if (!F.findDest(dest)) return null;
-    Object.assign(cfg.q, { origin: 'SEL', dest, minN: Number(minN), maxN: Number(maxN), direct: true });
-    const w = (data.watch.watches || []).find(x => F.routeKey(x) === r);
-    if (w) { cfg.q.from = w.from; cfg.q.to = w.to; }
-    return h.get('m');
-  }
-
   render();
-  loadAll().then(() => {
-    const m = fromHash();
-    render();
-    if (m) setTimeout(() => $(`#m-${m}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
-  });
+  loadAll().then(render);
 })();
