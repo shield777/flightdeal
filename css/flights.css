@@ -109,8 +109,6 @@ code { font-family: var(--font-mono); font-size: .9em; background: var(--surface
 .fl-search .grid2 { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
 .fl-search input, .fl-search select { min-width: 0; max-width: 100%; }
 @media (max-width: 480px) {
-  .fl-search .g-where { grid-template-columns: 1fr 1fr; }
-  .fl-search .g-where > :first-child { grid-column: 1 / -1; }
   .fl-meta { margin-left: 0; width: 100%; }
 }
 
