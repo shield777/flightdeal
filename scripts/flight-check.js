@@ -338,7 +338,7 @@ async function checkPromos(watch, promos, country) {
 }
 
 // ───── 큰 특가 알림 (ntfy, 나라 무관) ─────
-// 기사에 적힌 할인율이 70% 이상이거나, 가격이 왕복 10만원·편도 5만원 이하이고, 예약 기간이 안 끝난 특가 소식을 한 번씩만 알림
+// 서울(인천·김포) 출발 특가 중, 기사에 적힌 할인율이 70% 이상이거나 가격이 왕복 10만원·편도 5만원 이하이고, 예약 기간이 안 끝난 소식을 한 번씩만 알림
 //  가격: 노선마다 가격이 달라 섞인 기사는 안 봄. 편도·왕복이 안 적혀 있으면 5만원 이하일 때만(어느 쪽이든 조건에 맞음)
 // (같은 소식에 나중에 붙는 기사는 다시 알리지 않음: 묶음 안 기사 중 하나라도 notified 표시가 있으면 건너뜀)
 const ALERT_PCT = 70, ALERT_ROUND = 100000, ALERT_ONEWAY = 50000;
@@ -352,10 +352,12 @@ async function alertBigDeals(promos) {
     const members = [g, ...(g.more || [])];
     if (g.kind !== 'airline' || g.official || members.some(m => m.notified)) continue;
     if (!F.isWantedPromo(g, {}) || F.isDomestic(g)) continue;
+    // 서울(인천·김포) 출발만: 묶인 기사들이 모두 서울 아닌 곳 출발 특가만 다루면 제외
+    if (members.every(m => F.nonSeoulOnly(`${m.title} ${F.stripTags(m.desc || '')} ${(m.body || []).join(' ')}`))) continue;
     const fs = members.map(factsOf);
     const pct = Math.max(0, ...fs.map(f => f.pct || 0));
     // 가격: 묶인 기사 중 '노선마다 가격 다름'이 하나라도 있으면 안 봄. 국내선 가격은 제외(placeScope)
-    const prices = fs.some(f => f.priceMixed) ? [] : fs.map(f => f.price).filter(Boolean);
+    const prices = fs.some(f => f.priceMixed) ? [] : fs.flatMap(f => f.prices || (f.price ? [f.price] : []));
     const cheap = prices.filter(p => p.trip === 'round' ? p.amount <= ALERT_ROUND : p.amount <= ALERT_ONEWAY).sort((a, b) => a.amount - b.amount)[0];
     if (pct < ALERT_PCT && !cheap) continue;
     // 묶인 기사들 중 가장 많은 기사에 적힌 예약기간·탑승기간·코드
