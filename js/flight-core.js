@@ -286,6 +286,10 @@
   // 기본값: 베트남·일본, 국적 LCC + 베트남·일본 LCC. data/watchlist.json 의 settings.promoCountries / promoAirlines 로 바꿀 수 있어요.
   // 프로모션: 전체 항공사(국적 대형·저가 + 베트남·일본 항공사). 나라는 뉴스 검색어와 필터 순서에 써요
   const PROMO_DEFAULT = { countries: ['베트남', '일본'], airlines: ['KE', 'OZ', '7C', 'LJ', 'TW', 'BX', 'RS', 'ZE', 'RF', 'YP', 'VJ', 'VN', 'QH', 'VU', 'JL', 'NH', 'MM', 'GK', 'ZG'] };
+  // 가격 기록(Travelpayouts)에 안 잡히는 직항: 항공사 발표·기사로 확인된 것만, 출처와 함께
+  const KNOWN_DIRECT = {
+    SHI: { codes: ['LJ'], src: '진에어 인천~미야코지마 취항 2주년 발표(2026.6)' },
+  };
   // 항공권 검색 탭의 항공사 바로가기: 나라별로 보여 줄 항공사 (노선 운항 여부는 각 사이트에서 확인)
   const KOREAN_AIRLINES = ['KE', 'OZ', '7C', 'LJ', 'TW', 'BX', 'RS', 'ZE', 'RF', 'YP'];
   const AIRLINES_BY_COUNTRY = {
@@ -764,7 +768,7 @@
   const api = {
     ORIGINS, DESTS, AIRLINES, CLIMATE, REGION_NAME, HOLIDAYS, PEAK, CARDS, AGENCIES, CARD_NAMES,
     monthsBetween, nightsBetween, addDays, addMonths, weekday, findDest, airline,
-    promoFacts, nonSeoulOnly, dropHead, sameFacts, mergeFacts, absDates, isDomestic, parseDates, splitSentences, subjectAirline, airlineText, fitsTrip, cardFacts, cardUse, links, skyMonth, ttang, climateOf, holidaysIn, KOREAN_AIRLINES, airlinesFor, isPayBenefit,
+    promoFacts, KNOWN_DIRECT, nonSeoulOnly, dropHead, sameFacts, mergeFacts, absDates, isDomestic, parseDates, splitSentences, subjectAirline, airlineText, fitsTrip, cardFacts, cardUse, links, skyMonth, ttang, climateOf, holidaysIn, KOREAN_AIRLINES, airlinesFor, isPayBenefit,
     stripTags, parseWon, promoPrice, classifyNews, won, routeKey,
     PROMO_DEFAULT, COUNTRIES, COUNTRY_PLACES, airlineInText, airlineCode, newsScope, promoSettings, isWantedPromo,
   };
