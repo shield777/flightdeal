@@ -242,13 +242,13 @@
     const status = checked ? `${esc(C)} 마지막 확인 ${esc(fmtUpdated(checked))}${n ? ` · 프로모션 ${n.promo}건 · ${esc(C)}에 쓸 수 있는 카드 할인 ${n.cardOk}건` : ''}` : `<b>${esc(C)}는 아직 확인 전이에요.</b>`;
     box.innerHTML = cfg.gh.token
       ? `<button type="button" class="btn primary fl-refresh-btn" data-act="promo-refresh" ${ui.promoBusy ? 'disabled' : ''}>${ICON.refresh}${ui.promoBusy ? `${esc(C)} 확인 중… ${ui.promoBusy.sec}초 (보통 1~2분)` : `${esc(C)} 특가·카드 지금 확인`}</button>
-        <p class="hint">${status} · 자동 확인 하루 3번(오전 8시·낮 12시·오후 4시)</p>`
-      : `<p class="fl-auto">🔄 프로모션·카드는 하루 3번(오전 8시·낮 12시·오후 4시) 자동으로 새로 확인돼요</p><p class="hint">${status}</p>`;
+        <p class="hint">${status} · 자동 확인 오전 6시~밤 10시 2시간마다</p>`
+      : `<p class="fl-auto">🔄 프로모션·카드는 오전 6시~밤 10시 2시간마다 자동으로 새로 확인돼요</p><p class="hint">${status}</p>`;
   }
   // 다른 탭: 마지막 확인 시각 + 항공권 검색 탭으로
   function checkedLine(C) {
     const checked = data.promos.checked && data.promos.checked[C];
-    return `<p class="hint">${checked ? `${esc(C)} 마지막 확인 ${esc(fmtUpdated(checked))}` : `<b>${esc(C)}는 아직 확인 전이에요.</b>`} · 자동 확인 하루 3번(오전 8시·낮 12시·오후 4시)${cfg.gh.token ? ` · 바로 확인은 <button type="button" class="link-btn" data-act="tab" data-v="price">항공권 검색 탭의 [지금 확인]</button>` : ''}${ui.promoBusy ? ` · 지금 확인 중… ${ui.promoBusy.sec}초` : ''}</p>`;
+    return `<p class="hint">${checked ? `${esc(C)} 마지막 확인 ${esc(fmtUpdated(checked))}` : `<b>${esc(C)}는 아직 확인 전이에요.</b>`} · 자동 확인 오전 6시~밤 10시 2시간마다${cfg.gh.token ? ` · 바로 확인은 <button type="button" class="link-btn" data-act="tab" data-v="price">항공권 검색 탭의 [지금 확인]</button>` : ''}${ui.promoBusy ? ` · 지금 확인 중… ${ui.promoBusy.sec}초` : ''}</p>`;
   }
 
   function readForm() {
