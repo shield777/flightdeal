@@ -241,7 +241,8 @@
   // ───── 뉴스(프로모션·카드) 해석 ─────
   const PROMO_WORDS = ['특가', '프로모션', '할인', '세일', '얼리버드', '타임세일', '찜특가', '진마켓', '땡처리', '이벤트', '최저가', '반값', '쿠폰'];
   const CARD_NAMES = ['우리카드', '현대카드', '신한카드'];
-  function stripTags(s) { return String(s || '').replace(/<[^>]*>/g, ' ').replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(Number(n))).replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCodePoint(parseInt(h, 16))).replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/\s+/g, ' ').trim(); }
+  function stripTags(s) { return String(s || '').replace(/<[^>]*>/g, ' ').replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(Number(n))).replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCodePoint(parseInt(h, 16))).replace(/&(nbsp|amp|quot|apos|lt|gt|lsquo|rsquo|ldquo|rdquo|middot|hellip|ndash|mdash|bull|sim|times|rarr|lsaquo|rsaquo|laquo|raquo);/g, (_, n) => NAMED[n]).replace(/\s+/g, ' ').trim(); }
+  const NAMED = { nbsp: ' ', amp: '&', quot: '"', apos: "'", lt: '<', gt: '>', lsquo: '‘', rsquo: '’', ldquo: '“', rdquo: '”', middot: '·', hellip: '…', ndash: '–', mdash: '—', bull: '•', sim: '~', times: '×', rarr: '→', lsaquo: '‹', rsaquo: '›', laquo: '«', raquo: '»' };
   // "7만9000원", "7만 9천원", "79,000원", "9만원" → 숫자들
   function parseWon(text) {
     const s = String(text || '');
@@ -257,7 +258,7 @@
   }
   function promoPrice(text) {
     // "3만원 쿠폰", "최대 2만원 할인", "5천원 적립"처럼 운임이 아닌 금액은 뺌
-    const clean = String(text || '').replace(/(?:최대\s*)?\d[\d,]*\s*(?:만\s*(?:\d{1,4}\s*천?)?)?\s*원\s*(?:상당\s*)?(?:의\s*)?(?:할인\s*)?(?:쿠폰|할인|적립|캐시백|포인트|증정|혜택|페이백|청구)/g, ' ');
+    const clean = String(text || '').replace(/(?:최대\s*)?\d[\d,]*\s*(?:만\s*(?:\d{1,4}\s*천?)?)?\s*원\s*(?:상당\s*)?(?:까지\s*)?(?:[의을를이가]\s*)?(?:추가\s*)?(?:할인\s*)?(?:쿠폰|할인|적립|캐시백|포인트|증정|혜택|페이백|청구|확대|지원)/g, ' ');
     const vals = parseWon(clean);
     if (!vals.length) return null;
     const one = /편도/.test(text), rt = /왕복/.test(text);
@@ -330,11 +331,13 @@
   //  - 국내선만 해당하는 소식, 항공사도 나라도 없는 기사는 뺌
   //  - 설정에서 항공사를 골랐으면 그 항공사만
   const DOMESTIC_RE = /국내선|김포\s?[-~·]\s?제주|제주행|김포\s?[-~·]\s?부산/;
+  // 국내선(제주행 등)만 다루는 소식: 해외 나라 이름이 없고 '국제선'도 없음
+  const isDomestic = p => { const t = `${p.title} ${p.desc || ''}`; return DOMESTIC_RE.test(t) && !(p.countries || []).length && !/국제선/.test(t); };
   function isWantedPromo(p, settings) {
     if (p.kind === 'card') return true;
     const text = `${p.title} ${p.desc || ''}`;
     if (p.official && !FARE_RE.test(text)) return false;
-    if (DOMESTIC_RE.test(text) && !(p.countries || []).length && !/국제선/.test(text)) return false;
+    if (isDomestic(p)) return false;
     const air = p.airlines || [];
     if (!air.length && !(p.countries || []).length) return false;
     const s = settings || {};
@@ -465,7 +468,7 @@
   // ───── 여러 항공사 소식을 모은 기사([하늘길] 등): 항공사별 문장 나누기 ─────
   // 문장 맨 앞(주어 자리)에 나오는 항공사를 '지금 말하는 항공사'로 보고, 다음 항공사가 나올 때까지 이어짐
   function splitSentences(text) {
-    return String(text || '').split(/(?<=다\.|요\.|[!?])\s*|\s*[▲■▶◆●□※]\s*/).map(s => s.trim()).filter(s => s.length >= 4);
+    return String(text || '').split(/(?<=다\.|요\.|[!?])\s*|\s*[▲■▶◆●□※◇◆○]\s*/).map(s => s.trim()).filter(s => s.length >= 4);
   }
   function subjectAirline(s) {
     // 문장 앞 머리말(언론사·기자 이름, '한편' 같은 연결어)은 빼고 봄
@@ -557,7 +560,7 @@
   const api = {
     ORIGINS, DESTS, AIRLINES, CLIMATE, REGION_NAME, HOLIDAYS, PEAK, CARDS, AGENCIES, CARD_NAMES,
     monthsBetween, nightsBetween, addDays, addMonths, weekday, findDest, airline,
-    promoFacts, parseDates, splitSentences, subjectAirline, airlineText, fitsTrip, cardFacts, cardUse, links, skyMonth, ttang, climateOf, holidaysIn, KOREAN_AIRLINES, airlinesFor, isPayBenefit,
+    promoFacts, isDomestic, parseDates, splitSentences, subjectAirline, airlineText, fitsTrip, cardFacts, cardUse, links, skyMonth, ttang, climateOf, holidaysIn, KOREAN_AIRLINES, airlinesFor, isPayBenefit,
     stripTags, parseWon, promoPrice, classifyNews, won, routeKey,
     PROMO_DEFAULT, COUNTRIES, COUNTRY_PLACES, airlineInText, airlineCode, newsScope, promoSettings, isWantedPromo,
   };

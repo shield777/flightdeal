@@ -149,6 +149,11 @@ function sameNews(g, p) {
   // 공식 이벤트는 번호가 다르면 다른 행사 → 공식끼리는 절대 묶지 않음. 뉴스가 공식 이벤트에 붙으려면 제목이 비슷해야 함
   if (p.official && gOfficial) return false;
   if ((p.official || gOfficial) && overlap() < 0.3) return false;
+  // 국내선 소식과 해외 소식은 같은 항공사라도 다른 소식
+  if (F.isDomestic(p) !== F.isDomestic(g.members[0])) return false;
+  // 여러 항공사 소식을 모은 기사([하늘길] 등)는 항공사 이름만으로 묶지 않음 (제목이 비슷할 때만)
+  const roundup = m => (m.airlines || []).length >= 3;
+  if (roundup(p) || g.members.some(roundup)) return overlap() >= 0.5;
   if (e) {
     if (e !== g.entity) return false;
     const gp = g.members.find(m => m.price);

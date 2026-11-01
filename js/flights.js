@@ -339,7 +339,9 @@
     const order = [...new Set(F.DESTS.filter(d => d.country === C).flatMap(d => (rec[d.code] || []).map(r => r.code)))];
     const all = (data.promos.items || []).filter(p => p.kind === 'airline' && F.isWantedPromo(p, {}) && isLive(p));
     const rel = all.filter(p => !F.isPayBenefit(p) && ((p.countries || []).includes(C) || (p.allRoutes && !(p.countries || []).length && (p.airlines || []).some(a => order.includes(a)))));
-    return { order, rel, useful: rel.filter(p => p.official || hasFacts(groupFacts(p, shownCode(p, order)))) };
+    // 예약 기간이 이미 끝난 소식은 숨김 (글에 적힌 마감일 기준)
+    const ended = p => { const f = groupFacts(p, shownCode(p, order)); return !!(f.book && f.book.to < today); };
+    return { order, rel, useful: rel.filter(p => !ended(p) && (p.official || hasFacts(groupFacts(p, shownCode(p, order))))) };
   }
   function countsFor(C) {
     const c = cardsFor(C);
@@ -369,7 +371,7 @@
           <ul>${sortList(g.list, g.code).map(p => promoItem(p, trip, g.code)).join('')}</ul></article>`; }).join('')}
       ${etc.length ? `<article class="pr-air"><header><b>여행사·종합</b><span class="pr-how">항공사 이름 없는 ${esc(C)} 특가 기사</span></header><ul>${sortList(etc, null).map(p => promoItem(p, trip, null)).join('')}</ul></article>` : ''}
       ${!groups.length && !etc.length ? `<p class="muted pr-none">${esc(C)} 관련 특가 소식이 없어요.</p>` : ''}
-      <p class="fl-foot">굵은 글씨는 기사·공지에 적힌 숫자·날짜를, 점(•) 문장은 기사 문장을 그대로 옮긴 거예요(계산·재작성 없음). 기사를 열어 본문의 예약·탑승 기간과 할인 코드까지 찾고, 글에 연·월이 빠진 날짜("28일부터 30일까지")는 기사 등록일 기준으로 채워요. 여러 항공사 소식을 모은 기사는 그 항공사 문장만 봐요. 같은 소식은 하나로 묶었고, 가격·할인율·코드·기간이 하나도 없는 기사${hidden ? ` ${hidden}건` : ''}는 숨겼어요. 조건은 원문에서 꼭 확인하세요.</p>`;
+      <p class="fl-foot">굵은 글씨는 기사·공지에 적힌 숫자·날짜를, 점(•) 문장은 기사 문장을 그대로 옮긴 거예요(계산·재작성 없음). 기사를 열어 본문의 예약·탑승 기간과 할인 코드까지 찾고, 글에 연·월이 빠진 날짜("28일부터 30일까지")는 기사 등록일 기준으로 채워요. 여러 항공사 소식을 모은 기사는 그 항공사 문장만 봐요. 같은 소식은 하나로 묶었고, 가격·할인율·코드·기간이 하나도 없는 기사와 예약 기간이 끝난 소식${hidden ? ` ${hidden}건` : ''}은 숨겼어요. 조건은 원문에서 꼭 확인하세요.</p>`;
   }
 
   // ───── 카드 탭: 우리·현대·신한 할인 소식 + 항공사 공식 결제 혜택 ─────
