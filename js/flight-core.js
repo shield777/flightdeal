@@ -631,13 +631,16 @@
     // 예약 마감일이 하루 차이("11월 2일 오전 1시(한국시간)"와 "11월 1일 23시"처럼 시간대 표기 차이)면, 탑승기간이나 코드가 같을 때 같은 특가로 봄
     const day1 = (x, y) => x && y && Math.abs(new Date(x) - new Date(y)) === 864e5;
     const bookNear = day1(bt(a), bt(b)) && (eq(gt(a), gt(b)) || eq(a.code, b.code));
-    const dateConflict = (ne(bt(a), bt(b)) && !bookNear) || ne(bf(a), bf(b)) || ne(gt(a), gt(b)) || ne(a.code, b.code);
-    if (!dateConflict && (eq(a.code, b.code) || ((eq(bt(a), bt(b)) || bookNear) && eq(gt(a), gt(b))))) return 1;
+    const bookConflict = (ne(bt(a), bt(b)) && !bookNear) || ne(bf(a), bf(b));
+    // 할인 코드가 같으면 같은 특가 (탑승기간은 기사마다 다른 노선을 예로 들 수 있어서 비교 안 함)
+    if (eq(a.code, b.code) && !bookConflict) return 1;
+    const dateConflict = bookConflict || ne(gt(a), gt(b)) || ne(a.code, b.code);
+    if (!dateConflict && (eq(bt(a), bt(b)) || bookNear) && eq(gt(a), gt(b))) return 1;
     let same = 0, date = false;
     for (const [k, get] of FACT_KEYS) {
       const x = get(a || {}), y = get(b || {});
       if (x == null || y == null) continue;
-      if (x !== y) { if (k === 'price' || k === 'pct') continue; return -1; } // 가격·할인율은 기사마다 예로 드는 노선이 달라 다를 수 있음
+      if (x !== y) { if (k === 'price' || k === 'pct') continue; if ((k === 'board' || k === 'boardFrom') && eq(a.code, b.code)) continue; return -1; } // 가격·할인율은 기사마다 예로 드는 노선이 달라 다를 수 있음
       same++; if (k === 'book' || k === 'board') date = true;
     }
     return same >= 2 && date ? 1 : 0;

@@ -5,6 +5,7 @@
              프로모션 탭은 뉴스만, 카드 탭은 카드 뉴스 + 항공사 홈페이지의 카드·결제 혜택(제주항공·트리니티항공·비엣젯)
 
    선택 값(저장소 Settings → Secrets and variables → Actions):
+   NTFY_TOPIC  ntfy 알림 주제 이름. 할인율 70% 이상 특가가 새로 나오면 휴대폰 알림 (없으면 알림 없이 기록만)
    NAVER_CLIENT_ID / NAVER_CLIENT_SECRET  네이버 뉴스 검색. 없으면 구글 뉴스만 씀
 
    인터넷 없이 시험: FLIGHT_MOCK=폴더 node scripts/flight-check.js --promos */
@@ -333,6 +334,53 @@ async function checkPromos(watch, promos, country) {
   const freshGroups = promos.items.filter(g => freshIds.has(g.id));
   promos.runs = (promos.runs || 0) + 1;
   log(`■ 뉴스 ${qs.length}개 검색 → 새 기사 ${fresh.length}건 (새 소식 ${freshGroups.length}건, 전체 ${promos.items.length}묶음)`);
+  await alertBigDeals(promos);
+}
+
+// ───── 할인율 70% 이상 특가 알림 (ntfy, 나라 무관) ─────
+// 기사에 '최대 ○○%'로 적힌 할인율이 70% 이상이고, 예약 기간이 안 끝난 특가 소식을 한 번씩만 알림
+// (같은 소식에 나중에 붙는 기사는 다시 알리지 않음: 묶음 안 기사 중 하나라도 notified 표시가 있으면 건너뜀)
+const ALERT_PCT = 70;
+const APP_URL = ENV.GITHUB_REPOSITORY ? `https://${ENV.GITHUB_REPOSITORY.split('/')[0]}.github.io/${ENV.GITHUB_REPOSITORY.split('/')[1]}/` : '';
+const md = d => `${Number(d.slice(5, 7))}/${Number(d.slice(8, 10))}`;
+const day = d => d.slice(0, 4) !== TODAY.slice(0, 4) ? `${d.slice(0, 4)}.${Number(d.slice(5, 7))}.${Number(d.slice(8, 10))}` : md(d);
+const per = x => x ? `${x.from ? day(x.from) : ''}~${day(x.to)}` : '';
+async function alertBigDeals(promos) {
+  const alerts = [];
+  for (const g of promos.items) {
+    const members = [g, ...(g.more || [])];
+    if (g.kind !== 'airline' || g.official || members.some(m => m.notified)) continue;
+    if (!F.isWantedPromo(g, {}) || F.isDomestic(g)) continue;
+    const fs = members.map(factsOf);
+    const pct = Math.max(0, ...fs.map(f => f.pct || 0));
+    if (pct < ALERT_PCT) continue;
+    // 묶인 기사들 중 가장 많은 기사에 적힌 예약기간·탑승기간·코드
+    const vote = l => { const n = new Map(); for (const v of l) if (v) { const k = JSON.stringify(v); n.set(k, (n.get(k) || 0) + 1); } let b = null, c = 0; for (const [k, v] of n) if (v > c) { b = k; c = v; } return b ? JSON.parse(b) : null; };
+    const book = vote(fs.map(f => f.book)), code = vote(fs.map(f => f.code));
+    // 탑승기간: 기사마다 다르거나 노선마다 다르다고 나오면 '노선마다 다름'
+    const boardMixed = fs.some(f => f.boardMixed) || new Set(fs.filter(f => f.board).map(f => f.board.to)).size > 1;
+    const board = boardMixed ? null : vote(fs.map(f => f.board));
+    if (book && book.to < TODAY) continue; // 예약이 이미 끝남
+    const air = (g.airlines || [])[0] ? F.airline(g.airlines[0]).name : '여행사·종합';
+    const lines = [F.stripTags(g.title), [book ? `예약 ${per(book)}` : '', board ? `탑승 ${per(board)}` : (boardMixed ? '탑승 노선마다 다름' : ''), code ? `코드 ${code}` : ''].filter(Boolean).join(' · ')].filter(Boolean);
+    alerts.push({ g, members, title: `🔥 최대 ${pct}% 할인 · ${air}`, body: lines.join('\n'), click: g.link });
+  }
+  if (!alerts.length) { log(`■ 할인율 ${ALERT_PCT}% 이상 새 특가 없음`); return; }
+  const topic = ENV.NTFY_TOPIC;
+  if (!topic || MOCK) { log(`■ 알림 ${alerts.length}건 (NTFY_TOPIC 없음/시험 모드라 보내지 않음)`); alerts.forEach(a => log(`  · ${a.title} — ${a.body.replace(/\n/g, ' / ')}`)); return; }
+  const server = (ENV.NTFY_SERVER || 'https://ntfy.sh').replace(/\/$/, '');
+  for (const a of alerts.slice(0, 5)) {
+    try {
+      const res = await fetch(server, {
+        method: 'POST', headers: { 'Content-Type': 'application/json' }, signal: AbortSignal.timeout(15000),
+        body: JSON.stringify({ topic, title: a.title, message: a.body, tags: ['airplane'], priority: 4, click: a.click || undefined,
+          actions: APP_URL ? [{ action: 'view', label: '앱에서 보기', url: APP_URL }] : undefined }),
+      });
+      log(`  알림 ${res.ok ? '보냄' : '실패 ' + res.status}: ${a.title}`);
+      if (res.ok) for (const m of a.members) m.notified = TODAY; // 보낸 것만 표시 (실패하면 다음 확인 때 다시)
+    } catch (e) { log(`  알림 실패: ${e.message}`); }
+    await sleep(300);
+  }
 }
 
 (async function main() {
