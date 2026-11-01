@@ -241,14 +241,15 @@
   // ───── 뉴스(프로모션·카드) 해석 ─────
   const PROMO_WORDS = ['특가', '프로모션', '할인', '세일', '얼리버드', '타임세일', '찜특가', '진마켓', '땡처리', '이벤트', '최저가', '반값', '쿠폰'];
   const CARD_NAMES = ['우리카드', '현대카드', '신한카드'];
-  function stripTags(s) { return String(s || '').replace(/<[^>]*>/g, ' ').replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(Number(n))).replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCodePoint(parseInt(h, 16))).replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/\s+/g, ' ').trim(); }
+  function stripTags(s) { return String(s || '').replace(/<[^>]*>/g, ' ').replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(Number(n))).replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCodePoint(parseInt(h, 16))).replace(/&(nbsp|amp|quot|apos|lt|gt|lsquo|rsquo|ldquo|rdquo|middot|hellip|ndash|mdash|bull|sim|times|rarr|lsaquo|rsaquo|laquo|raquo);/g, (_, n) => NAMED[n]).replace(/\s+/g, ' ').trim(); }
+  const NAMED = { nbsp: ' ', amp: '&', quot: '"', apos: "'", lt: '<', gt: '>', lsquo: '‘', rsquo: '’', ldquo: '“', rdquo: '”', middot: '·', hellip: '…', ndash: '–', mdash: '—', bull: '•', sim: '~', times: '×', rarr: '→', lsaquo: '‹', rsaquo: '›', laquo: '«', raquo: '»' };
   // "7만9000원", "7만 9천원", "79,000원", "9만원" → 숫자들
   function parseWon(text) {
     const s = String(text || '');
     const out = [];
-    const re1 = /(\d{1,3})\s*만\s*(?:(\d{1,4})\s*(천)?)?\s*원/g;
+    const re1 = /(\d{1,3}(?:\.\d{1,2})?)\s*만\s*(?:(\d{1,4})\s*(천)?)?\s*원/g; // 9만9천원, 9.9만원
     let m;
-    while ((m = re1.exec(s))) out.push(Number(m[1]) * 10000 + (m[2] ? (m[3] ? Number(m[2]) * 1000 : Number(m[2])) : 0));
+    while ((m = re1.exec(s))) out.push(Math.round(Number(m[1]) * 10000) + (m[2] && !m[1].includes('.') ? (m[3] ? Number(m[2]) * 1000 : Number(m[2])) : 0));
     const re2 = /(\d{1,3}(?:,\d{3})+|\d{4,7})\s*원/g;
     while ((m = re2.exec(s))) out.push(Number(m[1].replace(/,/g, '')));
     const re3 = /₩\s*(\d{1,3}(?:,\d{3})+|\d{4,7})/g; // ₩99,000
@@ -257,7 +258,7 @@
   }
   function promoPrice(text) {
     // "3만원 쿠폰", "최대 2만원 할인", "5천원 적립"처럼 운임이 아닌 금액은 뺌
-    const clean = String(text || '').replace(/(?:최대\s*)?\d[\d,]*\s*(?:만\s*(?:\d{1,4}\s*천?)?)?\s*원\s*(?:상당\s*)?(?:의\s*)?(?:할인\s*)?(?:쿠폰|할인|적립|캐시백|포인트|증정|혜택|페이백|청구)/g, ' ');
+    const clean = String(text || '').replace(/(?:최대\s*)?\d[\d,]*\s*(?:만\s*(?:\d{1,4}\s*천?)?)?\s*원\s*(?:상당\s*)?(?:까지\s*)?(?:[의을를이가]\s*)?(?:추가\s*)?(?:할인\s*)?(?:쿠폰|할인|적립|캐시백|포인트|증정|혜택|페이백|청구|확대|지원)/g, ' ');
     const vals = parseWon(clean);
     if (!vals.length) return null;
     const one = /편도/.test(text), rt = /왕복/.test(text);
@@ -330,11 +331,13 @@
   //  - 국내선만 해당하는 소식, 항공사도 나라도 없는 기사는 뺌
   //  - 설정에서 항공사를 골랐으면 그 항공사만
   const DOMESTIC_RE = /국내선|김포\s?[-~·]\s?제주|제주행|김포\s?[-~·]\s?부산/;
+  // 국내선(제주행 등)만 다루는 소식: 해외 나라 이름이 없고 '국제선'도 없음
+  const isDomestic = p => { const t = `${p.title} ${p.desc || ''}`; return DOMESTIC_RE.test(t) && !(p.countries || []).length && !/국제선/.test(t); };
   function isWantedPromo(p, settings) {
     if (p.kind === 'card') return true;
     const text = `${p.title} ${p.desc || ''}`;
     if (p.official && !FARE_RE.test(text)) return false;
-    if (DOMESTIC_RE.test(text) && !(p.countries || []).length && !/국제선/.test(text)) return false;
+    if (isDomestic(p)) return false;
     const air = p.airlines || [];
     if (!air.length && !(p.countries || []).length) return false;
     const s = settings || {};
@@ -344,36 +347,101 @@
   }
   // ───── 특가 기사·공지에서 핵심 사실만 뽑기 (추정 없음: 글에 적힌 숫자·날짜만) ─────
   function ymdFrom(y, m, d) { return `${y}-${String(m).padStart(2, '0')}-${String(d).padStart(2, '0')}`; }
-  // "2026년 11월 1일", "11월 30일", "11.30", "2027.10.25" 같은 날짜 → YYYY-MM-DD (연도 없으면 기준일 이후로)
-  function parseDates(str, base) {
+  // 날짜 → YYYY-MM-DD. base = 기사 등록일(YYYY-MM-DD). 글에 없는 연·월은 기사 등록일로 채움 (신문 기사 표기 관례)
+  //  "2026년 11월 1일", "2026.11.01", "11월 1일", "11/1", "11.1"
+  //  "11월 2~15일", "11월 3일부터 9일까지" → 뒤 날짜는 앞 날짜의 월을 이어받음
+  //  "다음 달(내달) 2일", "이달 30일", "오는 28일부터 30일까지"(월이 없으면 등록일 기준: 등록일보다 앞선 날이면 다음 달)
+  //  "내년 10월까지", "11월 말까지" → 그 달 마지막 날, "12월부터" → 그 달 1일
+  // bounded: '까지·부터·~'가 붙은 날짜(기간을 나타내는 날짜)만. "2027년 1월 8일 신규 취항" 같은 날짜는 뺌
+  function parseDates(str, base, bounded) {
     const out = [];
-    const by = Number(base.slice(0, 4)), bm = Number(base.slice(5, 7));
-    const re = /(?:(\d{4})\s*[년.\-/]\s*)?(\d{1,2})\s*[월.\-/]\s*(\d{1,2})\s*일?/g;
-    let m;
+    const by = Number(base.slice(0, 4)), bm = Number(base.slice(5, 7)), bd = Number(base.slice(8, 10)) || 1;
+    const norm = (y, m) => m > 12 ? [y + 1, m - 12] : m < 1 ? [y - 1, m + 12] : [y, m];
+    const re = new RegExp([
+      '(\\d{4})\\s*[.\\-/]\\s*(\\d{1,2})\\s*[.\\-/]\\s*(\\d{1,2})', // 1-3  2026.11.01
+      '(?:(\\d{4})\\s*년\\s*)?(\\d{1,2})\\s*월\\s*(\\d{1,2})(?!\\d)(?!\\s*(?:만|천|%|원|시|박|개|명|회|편|석|좌석|주|째|차|kg|㎏))\\s*일?', // 4-6  (2026년) 11월 1일
+      '(?<![\\d.,])(\\d{1,2})\\s*[./]\\s*(\\d{1,2})(?!\\d|[.,]\\d|\\s*(?:만|천|%|원|배|시간|kg|㎏))', // 7-8  11/1, 11.1
+      '(?:(다음\\s*달|내달|이달|이번\\s*달)\\s*)?(?<![\\d.,박])(\\d{1,2})\\s*일', // 9-10  (내달) 2일
+    ].join('|'), 'g');
+    const EXTRA = '(?:\\s|\\([^)]{0,10}\\)|오전|오후|\\d{1,2}\\s*[시:]\\s*(?:\\d{1,2}\\s*분?)?)*'; // 날짜 뒤 "(월)", "오전 10시", "23:59", "(한국시간)"
+    const GAP = new RegExp(`^${EXTRA}(?:[~∼〜\\-–]|부터|에서)\\s*(?:오는\\s*)?$`), TAIL = new RegExp(`^${EXTRA}(?:까지|부터|[~∼〜\\-–]|에서)`);
+    let prev = null, m;
     while ((m = re.exec(str))) {
-      const mo = Number(m[2]), da = Number(m[3]);
-      if (mo < 1 || mo > 12 || da < 1 || da > 31) continue;
-      let y = m[1] ? Number(m[1]) : by;
-      if (!m[1] && mo < bm - 1) y++; // 연도 없이 지난 달보다 이전 달이면 내년
-      out.push(ymdFrom(y, mo, da));
+      let y, mo, d;
+      const gap = prev ? str.slice(prev.end, m.index) : '';
+      const ranged = prev && GAP.test(gap);
+      if (m[1]) { y = Number(m[1]); mo = Number(m[2]); d = Number(m[3]); }
+      else if (m[5] || m[7]) {
+        mo = Number(m[5] || m[7]); d = Number(m[6] || m[8]); y = m[4] ? Number(m[4]) : by;
+        if (!m[4]) {
+          if (ranged) { y = prev.y; if (mo < prev.mo) y++; }
+          else if (mo < bm - 1) y++; // 연도 없이 지난달보다 앞선 달이면 내년
+        }
+      } else {
+        d = Number(m[10]);
+        const after = str.slice(m.index + m[0].length, m.index + m[0].length + 24);
+        const rel = (m[9] || '').replace(/\s/g, '');
+        if (ranged) { [y, mo] = d < prev.d ? norm(prev.y, prev.mo + 1) : [prev.y, prev.mo]; }
+        else if (rel) { [y, mo] = rel === '다음달' || rel === '내달' ? norm(by, bm + 1) : [by, bm]; }
+        else if (TAIL.test(after)) {
+          // 월이 없는 날(오는 28일부터): 기사 등록일 이후로. "지난 25일부터"는 등록일 이전
+          const past = /지난\s*$/.test(str.slice(Math.max(0, m.index - 4), m.index));
+          [y, mo] = past ? (d <= bd ? [by, bm] : norm(by, bm - 1)) : (d >= bd ? [by, bm] : norm(by, bm + 1));
+        } else { continue; } // "3일간", "1일 2회" 같은 건 날짜가 아님
+      }
+      if (mo < 1 || mo > 12 || d < 1 || d > 31) continue;
+      const end = m.index + m[0].length;
+      const tail = TAIL.test(str.slice(end, end + 30));
+      if (!bounded || tail || ranged) out.push(ymdFrom(y, mo, d));
+      prev = { y, mo, d, end };
     }
-    // "내년 10월까지", "11월까지"
-    const re2 = /(내년|\d{4}년)?\s*(\d{1,2})월\s*(?:말)?\s*까지/g;
+    // "내년 10월까지", "11월 말까지" → 그 달 마지막 날
+    const re2 = /(내년|\d{4}\s*년)?\s*(\d{1,2})\s*월\s*(?:말)?\s*까지/g;
     while ((m = re2.exec(str))) {
       const mo = Number(m[2]); if (mo < 1 || mo > 12) continue;
-      let y = m[1] === '내년' ? by + 1 : m[1] ? Number(m[1]) : (mo < bm ? by + 1 : by);
+      const y = m[1] === '내년' ? by + 1 : m[1] ? Number(m[1].slice(0, 4)) : (mo < bm - 1 ? by + 1 : by);
       out.push(ymdFrom(y, mo, new Date(Date.UTC(y, mo, 0)).getUTCDate()));
+    }
+    // "12월부터" → 그 달 1일
+    const re3 = /(내년|\d{4}\s*년)?\s*(\d{1,2})\s*월\s*(?:초\s*)?부터/g;
+    while ((m = re3.exec(str))) {
+      const mo = Number(m[2]); if (mo < 1 || mo > 12) continue;
+      const y = m[1] === '내년' ? by + 1 : m[1] ? Number(m[1].slice(0, 4)) : (mo < bm - 1 ? by + 1 : by);
+      out.push(ymdFrom(y, mo, 1));
     }
     return out;
   }
-  // 키워드(탑승·예약 등) 뒤 40글자 안의 날짜 범위
-  function periodAfter(text, keyRe, base) {
-    const m = text.match(keyRe); if (!m) return null;
-    let ds = parseDates(text.slice(m.index, m.index + 60), base).sort();
-    // "내년 10월까지 탑승 가능"처럼 날짜가 키워드 앞에 오는 경우
-    if (!ds.length) ds = parseDates(text.slice(Math.max(0, m.index - 25), m.index), base).sort();
-    if (!ds.length) return null;
-    return { from: ds.length > 1 ? ds[0] : null, to: ds[ds.length - 1] };
+  // 기간 키워드 3단계: 강한 것("예약 기간", "탑승 기간") → 약한 것("예약할 수 있다", "탑승 가능") → 행사("프로모션을 진행")
+  //  강한 키워드: 뒤 70글자(다른 기간 키워드나 문장 끝에서 멈춤) → 없으면 같은 문장의 앞
+  //  약한 키워드·행사: 같은 문장의 앞("11월 2일까지 … 예약할 수 있다") → 없으면 바로 뒤 20글자
+  const BOOK_KEYS = [
+    { re: /(?:예약|판매|구매|발권)\s*(?:및\s*결제\s*|·\s*발권\s*)?(?:가능\s*)?기간/, after: 70 },
+    { re: /예약|판매|발권/, after: 45, back: true },
+    { re: /프로모션|행사|이벤트|세일|특가/, after: 20, back: true },
+  ];
+  const BOARD_KEYS = [
+    { re: /(?:탑승|여행|출발)\s*(?:가능\s*)?(?:기간|일정|날짜)|탑승일/, after: 70 },
+    { re: /탑승/, after: 20, back: true },
+  ];
+  const BOOK_STOP = /탑승|여행\s*기간|출발\s*(?:기간|일)|다\.|니다/, BOARD_STOP = /예약|판매|구매|발권|다\.|니다/;
+  function periodAfter(text, keys, stopRe, base) {
+    const span = ds => { ds = [...new Set(ds)].sort(); return ds.length ? { from: ds.length > 1 ? ds[0] : null, to: ds[ds.length - 1] } : null; };
+    const after = (m, n, bounded) => { let w = text.slice(m.index + m[0].length, m.index + m[0].length + n); const s = w.search(stopRe); if (s >= 0) w = w.slice(0, s); return span(parseDates(w, base, bounded)); };
+    const before = m => {
+      let w = text.slice(Math.max(0, m.index - 60), m.index);
+      const cut = Math.max(w.lastIndexOf('다.'), w.lastIndexOf('니다'));
+      if (cut >= 0) w = w.slice(cut + 2);
+      // 앞쪽에 다른 기간 키워드가 있으면 그 뒤만 (예: "… 탑승 가능하며 11월 2일까지 예약")
+      let k, last = -1; const g = new RegExp(stopRe.source, 'g'); while ((k = g.exec(w))) last = k.index + k[0].length;
+      if (last >= 0) w = w.slice(last);
+      return span(parseDates(w, base, true));
+    };
+    for (const k of keys) {
+      const ms = [...text.matchAll(new RegExp(k.re.source, 'g'))];
+      for (const m of ms) { const r = k.back ? before(m) || after(m, k.after, true) : after(m, k.after); if (r) return r; }
+      if (!k.back) for (const m of ms) { const r = before(m); if (r) return r; }
+    }
+    return null;
   }
   function promoFacts(text, base) {
     const t = stripTags(text);
@@ -382,21 +450,45 @@
     if (pr) f.price = pr;
     const pct = [...t.matchAll(/(최대\s*)?(\d{1,2})\s*%\s*(?:할인|특가|세일|↓)?/g)].map(m => Number(m[2])).filter(n => n >= 3 && n <= 95);
     if (pct.length) f.pct = Math.max(...pct);
-    const code = t.match(/(?:프로모션\s*코드|할인\s*코드|코드)\s*[:：]?\s*[‘'"“(\[]?\s*([A-Z][A-Z0-9]{3,11})/) || t.match(/[‘'"“(\[]?([A-Z][A-Z0-9]{3,11})[’'"”)\]]?\s*(?:코드|프로모션\s*코드)/);
+    const code = t.match(/(?:프로모션\s*코드|할인\s*코드|쿠폰\s*코드|코드)\s*(?:는|은|인|명)?\s*[:：]?\s*[‘'"“(\[「<]?\s*([A-Z][A-Z0-9]{3,14})/) || t.match(/[‘'"“(\[「<]([A-Z][A-Z0-9]{3,14})[’'"”)\]」>]\s*(?:을|를|이라는|라는)?\s*(?:할인\s*|프로모션\s*|쿠폰\s*)?코드/) || t.match(/\b([A-Z][A-Z0-9]{3,14})\s*(?:할인\s*|프로모션\s*)?코드/);
     if (code) f.code = code[1];
-    else if (/(?:프로모션|할인)\s*코드/.test(t)) f.codeHint = true; // 코드 값은 없지만 할인 코드를 준다고 적힌 경우
-    const board = periodAfter(t, /탑승\s*(?:기간|일)?|여행\s*기간|출발\s*기간/, base);
+    else if (/(?:프로모션|할인|쿠폰)\s*코드/.test(t)) f.codeHint = true; // 코드 값은 없지만 할인 코드를 준다고 적힌 경우
+    const board = periodAfter(t, BOARD_KEYS, BOARD_STOP, base);
     if (board) f.board = board;
-    const BOOK_RE = /예약\s*(?:및\s*결제)?\s*(?:기간)?|판매\s*기간|구매\s*기간|발권\s*기간/, BOARD_RE = /탑승\s*(?:기간|일)?|여행\s*기간|출발\s*기간/;
-    const book = periodAfter(t, BOOK_RE, base);
+    const book = periodAfter(t, BOOK_KEYS, BOOK_STOP, base);
     if (book) f.book = book;
     // 날짜가 하나뿐이라 예약·탑승에 똑같이 붙었으면, 그 날짜 바로 앞에 더 가까이 있는 쪽만 남김
     if (f.book && f.board && f.book.to === f.board.to && f.book.from === f.board.from) {
       const firstDate = t.search(/\d{1,2}\s*월\s*\d{1,2}\s*일|\d{4}\s*[년.]|\d{1,2}월\s*(?:말)?\s*까지/);
       const lastBefore = re => { let i = -1, m; const g = new RegExp(re.source, 'g'); while ((m = g.exec(t)) && m.index < firstDate) i = m.index; return i; };
-      if (lastBefore(BOOK_RE) > lastBefore(BOARD_RE)) delete f.board; else delete f.book;
+      if (lastBefore(BOOK_KEYS[1].re) > lastBefore(BOARD_KEYS[1].re)) delete f.board; else delete f.book;
     }
     return f;
+  }
+  // ───── 여러 항공사 소식을 모은 기사([하늘길] 등): 항공사별 문장 나누기 ─────
+  // 문장 맨 앞(주어 자리)에 나오는 항공사를 '지금 말하는 항공사'로 보고, 다음 항공사가 나올 때까지 이어짐
+  function splitSentences(text) {
+    return String(text || '').split(/(?<=다\.|요\.|[!?])\s*|\s*[▲■▶◆●□※◇◆○]\s*/).map(s => s.trim()).filter(s => s.length >= 4);
+  }
+  function subjectAirline(s) {
+    // 문장 앞 머리말(언론사·기자 이름, '한편' 같은 연결어)은 빼고 봄
+    const t = String(s).replace(/^\s*[\[(【][^\])】]{1,30}[\])】]\s*/, '').replace(/^[^=]{1,30}=\s*/, '').replace(/^[가-힣]{2,4}\s*기자\s*/, '')
+      .replace(/^[\s\[\]【】()<>"'“”‘’\-–·•]+/, '').replace(/^(?:한편|또한|또|아울러|이와\s*함께|이\s*밖에|이밖에|이어|이어서)\s*,?\s*/, '');
+    let best = null, at = 99;
+    for (const [code, a] of Object.entries(AIRLINES)) for (const n of [a.name, ...(a.alias || [])]) {
+      const i = t.indexOf(n);
+      if (i >= 0 && i <= 2 && i < at) { best = code; at = i; }
+    }
+    return best;
+  }
+  // parts: 순서대로 된 문장들, code: 보여 줄 항공사 (없으면 어느 항공사 소식도 아닌 문장만)
+  function airlineText(parts, code) {
+    const subj = parts.map(subjectAirline);
+    const many = new Set(subj.filter(Boolean)).size >= 2;
+    if (!many) return parts.join(' ');
+    let owner = null; const keep = [];
+    parts.forEach((s, i) => { if (subj[i]) owner = subj[i]; if (owner === (code || null)) keep.push(s); });
+    return keep.join(' ');
   }
   // 여행 날짜가 탑승 기간 안인지: 'in' | 'out' | null(기간 정보 없음)
   function fitsTrip(f, dep, ret) {
@@ -417,7 +509,7 @@
     if (pct.length) f.pct = Math.max(...pct);
     const min = t.match(/(\d{1,3}(?:,\d{3})*|\d+)\s*(만\s*)?원\s*이상\s*(?:결제|이용|구매)/);
     if (min) f.min = `${min[1]}${min[2] ? '만' : ''}원 이상 결제`;
-    const per = periodAfter(t, /(?:이벤트|행사|결제|프로모션|할인)\s*기간|기간\s*[:：]/, base) || (() => { const ds = parseDates(t, base).sort(); return ds.length ? { from: ds.length > 1 ? ds[0] : null, to: ds[ds.length - 1] } : null; })();
+    const per = periodAfter(t, [{ re: /(?:이벤트|행사|결제|프로모션|할인|응모|적용)\s*기간|기간\s*[:：]/, after: 70 }], /다\.|니다/, base) || (() => { const ds = parseDates(t, base).sort(); return ds.length ? { from: ds.length > 1 ? ds[0] : null, to: ds[ds.length - 1] } : null; })();
     if (per) f.period = per;
     return f;
   }
@@ -468,7 +560,7 @@
   const api = {
     ORIGINS, DESTS, AIRLINES, CLIMATE, REGION_NAME, HOLIDAYS, PEAK, CARDS, AGENCIES, CARD_NAMES,
     monthsBetween, nightsBetween, addDays, addMonths, weekday, findDest, airline,
-    promoFacts, fitsTrip, cardFacts, cardUse, links, skyMonth, ttang, climateOf, holidaysIn, KOREAN_AIRLINES, airlinesFor, isPayBenefit,
+    promoFacts, isDomestic, parseDates, splitSentences, subjectAirline, airlineText, fitsTrip, cardFacts, cardUse, links, skyMonth, ttang, climateOf, holidaysIn, KOREAN_AIRLINES, airlinesFor, isPayBenefit,
     stripTags, parseWon, promoPrice, classifyNews, won, routeKey,
     PROMO_DEFAULT, COUNTRIES, COUNTRY_PLACES, airlineInText, airlineCode, newsScope, promoSettings, isWantedPromo,
   };
