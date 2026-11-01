@@ -164,6 +164,7 @@
             <label class="field"><span>어른</span><select id="q-adults">${Array.from({ length: 9 }, (_, i) => i + 1).map(n => `<option value="${n}" ${n === q.adults ? 'selected' : ''}>${n}명</option>`).join('')}</select></label>
             <label class="field"><span>아이 <small class="muted">만 12세 미만</small></span><select id="q-children">${Array.from({ length: 9 }, (_, i) => i).map(n => `<option value="${n}" ${n === (q.children || 0) ? 'selected' : ''}>${n}명</option>`).join('')}</select></label>
           </div>
+          ${(q.children || 0) ? `<div class="g-ages">${Array.from({ length: q.children }, (_, i) => `<label class="field"><span>아이${q.children > 1 ? i + 1 : ''} 나이</span><select id="q-age-${i}">${Array.from({ length: 10 }, (_, k) => k + 2).map(a => `<option value="${a}" ${a === ((q.ages || [])[i] || 7) ? 'selected' : ''}>만 ${a}세</option>`).join('')}</select></label>`).join('')}</div>` : ''}
           <div class="fl-season" id="info"></div>
           <p class="hint fl-fixed">출발 서울(인천·김포) · 직항</p>
           <div id="quick">${quickButtons()}</div>
@@ -189,7 +190,7 @@
     const q = cfg.q, dest = currentDest();
     if (!/^[A-Z]{3}$/.test(dest.code || '')) return '<p class="muted">공항·도시 코드(영문 3글자)를 넣어 주세요.</p>';
     const { dep, ret } = quickDates();
-    const pax = { adults: q.adults, children: q.children || 0 };
+    const pax = { adults: q.adults, children: q.children || 0, ages: q.ages || [] };
     const L = F.links('SEL', dest, dep, ret, pax, { direct: true });
     const T = F.ttang(dest, pax), city = dest.city.replace(/\(.*\)/, '');
     return `
@@ -197,7 +198,7 @@
         <a class="go-more" href="${F.skyMonth('SEL', dest, dep.slice(0, 7), ret.slice(0, 7), pax, true)}" target="_blank" rel="noopener">날짜 미정이면 · 스카이스캐너 ${Number(dep.slice(5, 7))}월 전체 날짜별 가격${ICON.ext}</a>`)}
       ${goGroup(2, '땡처리', '땡처리닷컴 · 인천 출발 · 날짜와 상관없이 전체', `<div class="go-grid">${goBtn(T.city, `${city} 땡처리`)}${goBtn(T.today, '오늘 오픈 땡처리')}</div>`)}
       ${goGroup(3, '항공사', `서울 → ${esc(city)} 직항 · 홈페이지`, airlineBox(dest))}
-      <p class="hint">직항 조건은 네이버·스카이스캐너는 주소로, 구글은 검색어로 넣어요. 항공사 홈페이지는 날짜·인원을 다시 골라야 해요.${cfg.q.children ? ' 스카이스캐너는 아이 나이를 물어봐서 7세로 넣어요(만 2~11세는 요금이 같아요).' : ''}</p>`;
+      <p class="hint">직항 조건은 네이버·스카이스캐너는 주소로, 구글은 검색어로 넣어요. 항공사 홈페이지는 날짜·인원을 다시 골라야 해요.${cfg.q.children ? ' 아이 나이는 스카이스캐너에만 넣어요(다른 사이트는 아이 수만 받아요).' : ''}</p>`;
   }
 
   // 항공사: 최근 가격 기록으로 확인된 '서울 출발 직항' 항공사 (data/airlines-by-city.json) + 그 외 국적 항공사(미확인, 접어 둠)
@@ -272,6 +273,7 @@
     } else q.dest = v('q-dest');
     q.adults = Number(v('q-adults')) || q.adults;
     q.children = Number(v('q-children')) || 0;
+    q.ages = Array.from({ length: q.children }, (_, i) => Number(v(`q-age-${i}`)) || (q.ages || [])[i] || 7);
     q.wantBag = false; q.direct = true;
     save();
   }

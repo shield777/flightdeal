@@ -318,3 +318,6 @@ button.fl-go { width: 100%; }
 /* 어두운 화면 */
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .fl-tabs { background: #24282E; } :root:not([data-theme="light"]) .pr-sum { color: #B0B8C1; } :root:not([data-theme="light"]) .fl-tabs button[aria-selected="true"] { background: #3A3F47; } }
 :root[data-theme="dark"] .fl-tabs { background: #24282E; } :root[data-theme="dark"] .pr-sum { color: #B0B8C1; } :root[data-theme="dark"] .fl-tabs button[aria-selected="true"] { background: #3A3F47; }
+
+/* 아이 나이 (아이 수만큼) */
+.g-ages { display: grid; grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); gap: 10px; }
