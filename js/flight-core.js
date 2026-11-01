@@ -72,6 +72,9 @@
       clim: 'CCCCCRRTTCCC', notes: { 7: '장마 7월 중순까지', 8: '무더움·태풍 가능' } },
     { country: '일본', city: '오키나와', alias: ['나하'], code: 'OKA', link: 'OKA', lat: 26.21, lon: 127.68, region: 'jp',
       clim: 'CCCCRRTTTCCC', notes: { 5: '장마 시작(중순)', 6: '장마 6월 하순까지', 7: '맑지만 태풍 가능', 8: '태풍', 9: '태풍', 10: '태풍 가능' } },
+    // 미야코지마: 인천 직항(진에어)은 시모지시마 공항(SHI)에 내림. 기후는 오키나와와 같은 아열대(장마 5~6월, 태풍 7~10월)
+    { country: '일본', city: '미야코지마', alias: ['미야코', '시모지시마'], code: 'SHI', link: 'SHI', lat: 24.8, lon: 125.28, region: 'jp',
+      clim: 'CCCCRRTTTCCC', notes: { 5: '장마 시작(중순)', 6: '장마 6월 하순까지', 7: '맑지만 태풍 가능', 8: '태풍', 9: '태풍', 10: '태풍 가능' } },
     { country: '일본', city: '삿포로', alias: ['홋카이도', '오타루'], code: 'SPK', link: 'CTS', lat: 43.06, lon: 141.35, region: 'jp',
       clim: 'SSSCCCCCCCCS', notes: { 2: '눈축제(초순)', 7: '라벤더·장마 없음', 12: '눈' } },
     { country: '대만', city: '타이베이', alias: ['타이페이', '대만'], code: 'TPE', link: 'TPE', lat: 25.03, lon: 121.56, region: 'tw',
