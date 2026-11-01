@@ -1,5 +1,5 @@
 /* 오프라인 지원: 항상 네트워크를 먼저 쓰고, 연결이 없을 때만 저장해 둔 사본을 보여 줘요. */
-const CACHE = 'flightdeal-v1';
+const CACHE = 'flightdeal-v2';
 const SHELL = ['./', 'index.html', 'css/base.css', 'css/flights.css', 'js/flight-core.js', 'js/flights.js', 'manifest.webmanifest', 'icons/icon-192.png'];
 
 self.addEventListener('install', e => {
