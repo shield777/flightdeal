@@ -288,18 +288,37 @@
   // 이 나라 화면에서 이 소식을 어느 항공사 칸에 보여 주는지
   const shownCode = (p, order) => (p.airlines || []).find(a => order.includes(a)) || null;
   // 기사·공지 묶음에서 핵심 사실 모으기 (대표 + 같은 소식 기사들)
-  function groupFacts(p, code) {
+  // C: 고른 나라 (노선마다 가격·탑승기간이 다른 기사에서 이 나라 노선 것만 고름)
+  const factCache = new Map();
+  function groupFacts(p, code, C = currentDest().country) {
+    const ck = `${p.id}|${(p.more || []).length}|${code}|${C}`;
+    if (factCache.has(ck)) return factCache.get(ck);
     const base = (p.found || today).slice(0, 10);
-    const all = [p, ...(p.more || [])].map(m => F.promoFacts(articleText(m, code), kstDay(m.date) || base));
+    const all = [p, ...(p.more || [])].map(m => F.promoFacts(articleText(m, code), kstDay(m.date) || base, C));
     const f = {};
+    // 가격: 이 나라 노선 가격이 적힌 기사가 있으면 그것만, 아니면 공통 가격
+    const mineP = all.filter(x => x.priceFor === C && x.price);
+    if (mineP.length) { f.price = mineP.reduce((a, x) => x.price.amount < a.amount ? x.price : a, mineP[0].price); f.priceFor = C; }
     for (const x of all) {
-      if (x.price && (!f.price || x.price.amount < f.price.amount)) f.price = x.price;
+      if (!mineP.length && x.price && (!f.price || x.price.amount < f.price.amount)) f.price = x.price;
       if (x.pct && (!f.pct || x.pct > f.pct)) f.pct = x.pct;
       if (x.codeHint) f.codeHint = true;
     }
-    // 예약·탑승 기간·코드: 묶인 기사들 중 가장 많은 기사에 적힌 값 (한 기사의 오타에 끌려가지 않도록)
-    const vote = get => { const n = new Map(); for (const x of all) { const v = get(x); if (v) { const k = JSON.stringify(v); n.set(k, (n.get(k) || 0) + 1); } } let best = null, c = 0; for (const [k, v] of n) if (v > c) { best = k; c = v; } return best ? JSON.parse(best) : undefined; };
-    for (const k of ['book', 'board', 'code']) { const v = vote(x => x[k]); if (v) f[k] = v; }
+    // 노선마다 가격이 다르다고 나온 기사가 하나라도 있으면 가격은 안 씀 (할인율만)
+    if (!mineP.length && all.some(x => x.priceMixed)) { delete f.price; f.priceMixed = true; }
+    // 예약기간·코드: 묶인 기사들 중 가장 많은 기사에 적힌 값 (한 기사의 오타에 끌려가지 않도록)
+    const vote = l => { const n = new Map(); for (const v of l) if (v) { const k = JSON.stringify(v); n.set(k, (n.get(k) || 0) + 1); } let best = null, c = 0; for (const [k, v] of n) if (v > c) { best = k; c = v; } return best ? JSON.parse(best) : undefined; };
+    for (const k of ['book', 'code']) { const v = vote(all.map(x => x[k])); if (v) f[k] = v; }
+    // 탑승기간: 이 나라 노선이라고 적힌 기간 → 없으면 공통 기간. 노선마다 다르다고 나온 기사가 있으면 공통 기간은 믿지 않음
+    // 이 나라 안에서도 노선마다 기간이 다르면(예: 나리타·삿포로) '노선마다 다름'
+    const mineList = all.filter(x => x.boardFor === C).map(x => x.board);
+    // 끝나는 날이 같으면 시작일이 적힌 기사 것을 씀 ("호치민 노선은 12월 3일 취항일부터")
+    const mine = all.some(x => x.boardMineMixed) || new Set(mineList.map(b => b.to)).size > 1 ? null : (mineList.find(b => b.from) || vote(mineList));
+    if (mine) { f.board = mine; f.boardFor = C; }
+    else if (mineList.length || all.some(x => x.boardMineMixed)) f.boardMixed = true;
+    else if (all.some(x => x.boardMixed)) f.boardMixed = true;
+    else { const v = vote(all.map(x => x.board)); if (v) f.board = v; }
+    factCache.set(ck, f);
     return f;
   }
   const hasFacts = f => !!(f.price || f.pct || f.code || f.codeHint || f.board || f.book);
@@ -310,7 +329,7 @@
   function mainLine(p, f, code) {
     const won0 = n => `${Math.round(n).toLocaleString('ko-KR')}원`;
     const parts = [
-      f.price ? `<b>${f.price.trip === 'round' ? '왕복 ' : f.price.trip === 'oneway' ? '편도 ' : ''}${won0(f.price.amount)}~</b>` : '',
+      f.price ? `<b>${f.price.trip === 'round' ? '왕복 ' : f.price.trip === 'oneway' ? '편도 ' : ''}${won0(f.price.amount)}~</b>${f.priceFor ? ` <small class="muted">${esc(f.priceFor)} 노선</small>` : ''}` : '',
       f.pct ? `<b>최대 ${f.pct}% 할인</b>` : '',
       f.code ? `코드 <b>${esc(f.code)}</b>` : f.codeHint ? '<b>할인 코드 제공</b>' : '',
     ].filter(Boolean);
@@ -328,7 +347,7 @@
       <dl class="pr-facts">
         <dt>주요내용</dt><dd>${mainLine(p, f, code)}</dd>
         <dt>예약기간</dt><dd>${f.book ? `<b>${periodStr(f.book)}</b>` : none}</dd>
-        <dt>탑승기간</dt><dd>${f.board ? `<b>${periodStr(f.board)}</b>` : none}${fit === 'in' ? ' <span class="fit in">내 여행 날짜 탑승 가능</span>' : fit === 'out' ? ' <span class="fit out">내 여행 날짜는 기간 밖</span>' : ''}</dd>
+        <dt>탑승기간</dt><dd>${f.board ? `<b>${periodStr(f.board)}</b>${f.boardFor ? ` <small class="muted">${esc(f.boardFor)} 노선</small>` : ''}` : f.boardMixed ? '<span class="muted">노선마다 다름 · 원문 확인</span>' : none}${fit === 'in' ? ' <span class="fit in">내 여행 날짜 탑승 가능</span>' : fit === 'out' ? ' <span class="fit out">내 여행 날짜는 기간 밖</span>' : ''}</dd>
       </dl>
       <a class="pr-title" href="${esc(p.link)}" target="_blank" rel="noopener">${esc(F.stripTags(p.title))}</a>
       ${summaryList(p, code)}
@@ -341,15 +360,17 @@
     for (const p of list) {
       const f = groupFacts(p, code);
       const hit = out.find(o => F.sameFacts(o.f, f) > 0);
-      if (hit) { hit.p = { ...hit.p, more: [...(hit.p.more || []), p, ...(p.more || [])] }; hit.f = groupFacts(hit.p, code); }
+      if (hit) { hit.p = { ...hit.p, id: `${hit.p.id}+${p.id}`, more: [...(hit.p.more || []), p, ...(p.more || [])] }; hit.f = groupFacts(hit.p, code); }
       else out.push({ p, f });
     }
     return out.map(o => o.p);
   }
   function promosFor(C) {
+    factCache.clear(); // 자료가 새로 오면 다시 계산
     const rec = (data.recent && data.recent.cities) || {};
     const order = [...new Set(F.DESTS.filter(d => d.country === C).flatMap(d => (rec[d.code] || []).map(r => r.code)))];
-    const all = (data.promos.items || []).filter(p => p.kind === 'airline' && F.isWantedPromo(p, {}) && isLive(p));
+    // 프로모션 탭은 뉴스만 (항공사 홈페이지 이벤트는 카드 탭의 결제 혜택으로만)
+    const all = (data.promos.items || []).filter(p => p.kind === 'airline' && !p.official && F.isWantedPromo(p, {}) && isLive(p));
     const rel = all.filter(p => !F.isPayBenefit(p) && ((p.countries || []).includes(C) || (p.allRoutes && !(p.countries || []).length && (p.airlines || []).some(a => order.includes(a)))));
     // 예약 기간이 이미 끝난 소식은 숨김 (글에 적힌 마감일 기준)
     const ended = p => { const f = groupFacts(p, shownCode(p, order)); return !!(f.book && f.book.to < today); };
