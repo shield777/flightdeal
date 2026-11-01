@@ -279,10 +279,16 @@
   const OFFICIAL_AIR = ['7C', 'TW', 'VJ'];
   const isLive = p => p.until ? p.until >= today : (p.lastFound || p.found) >= F.addDays(today, -21);
   const mmdd = s => s ? `${Number(s.slice(5, 7))}/${Number(s.slice(8, 10))}` : '';
+  // 기사 등록일(한국 날짜): 글에 연·월이 빠진 날짜("28일부터 30일까지")는 이 날을 기준으로 채움
+  const kstDay = d => { const t = new Date(d); return isNaN(t) ? '' : new Date(t.getTime() + 9 * 3600e3).toISOString().slice(0, 10); };
+  // 기사 글: 제목 + 첫 문단 + 서버가 원문에서 저장한 문장(body). 여러 항공사 소식을 모은 기사는 code 항공사 문장만
+  const articleText = (m, code) => F.airlineText([m.title, ...F.splitSentences(F.stripTags(m.desc || '')), ...(m.body || [])], code);
+  // 이 나라 화면에서 이 소식을 어느 항공사 칸에 보여 주는지
+  const shownCode = (p, order) => (p.airlines || []).find(a => order.includes(a)) || null;
   // 기사·공지 묶음에서 핵심 사실 모으기 (대표 + 같은 소식 기사들)
-  function groupFacts(p) {
+  function groupFacts(p, code) {
     const base = (p.found || today).slice(0, 10);
-    const all = [p, ...(p.more || [])].map(m => F.promoFacts(`${m.title} ${m.desc || ''}`, (m.date || base).slice(0, 10)));
+    const all = [p, ...(p.more || [])].map(m => F.promoFacts(articleText(m, code), kstDay(m.date) || base));
     const f = {};
     for (const x of all) {
       if (x.price && (!f.price || x.price.amount < f.price.amount)) f.price = x.price;
@@ -300,7 +306,7 @@
   const dayStr = d => d.slice(0, 4) !== today.slice(0, 4) ? `${d.slice(0, 4)}.${Number(d.slice(5, 7))}.${Number(d.slice(8, 10))}` : mmdd(d);
   const periodStr = x => x ? `${x.from ? `${dayStr(x.from)} ~ ` : '~ '}${dayStr(x.to)}${x.from ? '' : '까지'}` : '';
   // 주요내용: 가격·할인율·코드 (글에 적힌 그대로). 없으면 기사 첫 핵심 문장, 그것도 없으면 제목
-  function mainLine(p, f) {
+  function mainLine(p, f, code) {
     const won0 = n => `${Math.round(n).toLocaleString('ko-KR')}원`;
     const parts = [
       f.price ? `<b>${f.price.trip === 'round' ? '왕복 ' : f.price.trip === 'oneway' ? '편도 ' : ''}${won0(f.price.amount)}~</b>` : '',
@@ -308,23 +314,23 @@
       f.code ? `코드 <b>${esc(f.code)}</b>` : f.codeHint ? '<b>할인 코드 제공</b>' : '',
     ].filter(Boolean);
     if (parts.length) return parts.join(' · ');
-    const sum = p.summary || ((p.more || []).find(m => m.summary) || {}).summary || [];
+    const sum = summaryOf(p, code);
     const t = F.stripTags(sum[0] || p.title);
     return esc(t.length > 70 ? `${t.slice(0, 68)}…` : t);
   }
-  function promoItem(p, trip) {
-    const f = groupFacts(p);
+  function promoItem(p, trip, code) {
+    const f = groupFacts(p, code);
     const fit = F.fitsTrip(f, trip.dep, trip.ret);
     const src = p.official ? `${esc(F.airline((p.airlines || [])[0]).name)} 홈페이지` : `${esc(p.source || '뉴스')} · ${mmdd((p.date || '').slice(0, 10))}`;
     const none = '<span class="muted">글에 없음</span>';
     return `<li class="pr-item">
       <dl class="pr-facts">
-        <dt>주요내용</dt><dd>${mainLine(p, f)}</dd>
+        <dt>주요내용</dt><dd>${mainLine(p, f, code)}</dd>
         <dt>예약기간</dt><dd>${f.book ? `<b>${periodStr(f.book)}</b>` : none}</dd>
         <dt>탑승기간</dt><dd>${f.board ? `<b>${periodStr(f.board)}</b>` : none}${fit === 'in' ? ' <span class="fit in">내 여행 날짜 탑승 가능</span>' : fit === 'out' ? ' <span class="fit out">내 여행 날짜는 기간 밖</span>' : ''}</dd>
       </dl>
       <a class="pr-title" href="${esc(p.link)}" target="_blank" rel="noopener">${esc(F.stripTags(p.title))}</a>
-      ${summaryList(p)}
+      ${summaryList(p, code)}
       <div class="src"><span class="${p.official ? 'badge-off' : 'badge-news'}">${p.official ? '공식' : '뉴스'}</span> ${src}${p.more && p.more.length ? ` · 같은 소식 ${p.more.length + 1}건 묶음` : ''}</div>
     </li>`;
   }
@@ -333,7 +339,7 @@
     const order = [...new Set(F.DESTS.filter(d => d.country === C).flatMap(d => (rec[d.code] || []).map(r => r.code)))];
     const all = (data.promos.items || []).filter(p => p.kind === 'airline' && F.isWantedPromo(p, {}) && isLive(p));
     const rel = all.filter(p => !F.isPayBenefit(p) && ((p.countries || []).includes(C) || (p.allRoutes && !(p.countries || []).length && (p.airlines || []).some(a => order.includes(a)))));
-    return { order, rel, useful: rel.filter(p => p.official || hasFacts(groupFacts(p))) };
+    return { order, rel, useful: rel.filter(p => p.official || hasFacts(groupFacts(p, shownCode(p, order)))) };
   }
   function countsFor(C) {
     const c = cardsFor(C);
@@ -347,8 +353,8 @@
     // 불필요한 기사 숨김: 공식이 아니고 가격·할인율·코드·기간 중 하나도 없는 기사
     const { order, rel, useful } = promosFor(C);
     const hidden = rel.length - useful.length;
-    const fitRank = p => ({ in: 0, null: 1, out: 2 })[String(F.fitsTrip(groupFacts(p), trip.dep, trip.ret))];
-    const sortList = l => l.sort((x, y) => fitRank(x) - fitRank(y) || (y.official ? 1 : 0) - (x.official ? 1 : 0) || (y.lastDate || y.date || '').localeCompare(x.lastDate || x.date || ''));
+    const fitRank = (p, code) => ({ in: 0, null: 1, out: 2 })[String(F.fitsTrip(groupFacts(p, code), trip.dep, trip.ret))];
+    const sortList = (l, code) => l.sort((x, y) => fitRank(x, code) - fitRank(y, code) || (y.official ? 1 : 0) - (x.official ? 1 : 0) || (y.lastDate || y.date || '').localeCompare(x.lastDate || x.date || ''));
     const groups = order.map(code => ({ code, list: useful.filter(p => (p.airlines || []).find(a => order.includes(a)) === code) })).filter(g => g.list.length);
     const etc = useful.filter(p => !(p.airlines || []).some(a => order.includes(a)));
     const checked = data.promos.checked && data.promos.checked[C];
@@ -360,10 +366,10 @@
       </section>
       ${groups.map(g => { const a = F.airline(g.code); return `<article class="pr-air">
           <header><b>${esc(a.name)}</b><span class="pr-how">${OFFICIAL_AIR.includes(g.code) ? '공식 홈페이지 + 뉴스' : '뉴스'}</span>${a.url ? `<a href="${a.url}" target="_blank" rel="noopener">홈페이지${ICON.ext}</a>` : ''}</header>
-          <ul>${sortList(g.list).map(p => promoItem(p, trip)).join('')}</ul></article>`; }).join('')}
-      ${etc.length ? `<article class="pr-air"><header><b>여행사·종합</b><span class="pr-how">항공사 이름 없는 ${esc(C)} 특가 기사</span></header><ul>${sortList(etc).map(p => promoItem(p, trip)).join('')}</ul></article>` : ''}
+          <ul>${sortList(g.list, g.code).map(p => promoItem(p, trip, g.code)).join('')}</ul></article>`; }).join('')}
+      ${etc.length ? `<article class="pr-air"><header><b>여행사·종합</b><span class="pr-how">항공사 이름 없는 ${esc(C)} 특가 기사</span></header><ul>${sortList(etc, null).map(p => promoItem(p, trip, null)).join('')}</ul></article>` : ''}
       ${!groups.length && !etc.length ? `<p class="muted pr-none">${esc(C)} 관련 특가 소식이 없어요.</p>` : ''}
-      <p class="fl-foot">굵은 글씨는 기사·공지에 적힌 숫자·날짜를, 점(•) 문장은 기사 첫 문단의 문장을 그대로 옮긴 거예요(계산·추정·재작성 없음). 같은 소식은 하나로 묶었고, 가격·할인율·코드·기간이 하나도 없는 기사${hidden ? ` ${hidden}건` : ''}는 숨겼어요. 조건은 원문에서 꼭 확인하세요.</p>`;
+      <p class="fl-foot">굵은 글씨는 기사·공지에 적힌 숫자·날짜를, 점(•) 문장은 기사 문장을 그대로 옮긴 거예요(계산·재작성 없음). 기사를 열어 본문의 예약·탑승 기간과 할인 코드까지 찾고, 글에 연·월이 빠진 날짜("28일부터 30일까지")는 기사 등록일 기준으로 채워요. 여러 항공사 소식을 모은 기사는 그 항공사 문장만 봐요. 같은 소식은 하나로 묶었고, 가격·할인율·코드·기간이 하나도 없는 기사${hidden ? ` ${hidden}건` : ''}는 숨겼어요. 조건은 원문에서 꼭 확인하세요.</p>`;
   }
 
   // ───── 카드 탭: 우리·현대·신한 할인 소식 + 항공사 공식 결제 혜택 ─────
@@ -373,7 +379,9 @@
     // 카드사 할인 + 항공사 공식 결제 혜택(간편결제 등)
     const raw = (data.promos.items || []).filter(p => (p.kind === 'card' || F.isPayBenefit(p)) && isLive(p));
     const facts = p => {
-      const all = [p, ...(p.more || [])].map(m => F.cardFacts(`${m.title} ${m.desc || ''}`, (m.date || p.found || today).slice(0, 10)));
+      // 본문 문장 중 다른 카드사 이야기는 빼고 씀
+      const other = s => F.CARD_NAMES.some(c => s.includes(c) && !(p.cards || []).includes(c));
+      const all = [p, ...(p.more || [])].map(m => F.cardFacts(`${m.title} ${m.desc || ''} ${(m.body || []).filter(s => !other(s)).join(' ')}`, kstDay(m.date) || (p.found || today).slice(0, 10)));
       const f = Object.assign({}, ...all.reverse());
       if (p.official && p.until) f.period = { from: p.from || null, to: p.until };
       return f;
@@ -421,9 +429,12 @@
       <section class="fl-cards"><h2>카드사 이벤트 페이지</h2><div class="go-grid">${F.CARDS.map(c => goBtn(c.url, c.name)).join('')}</div></section>
       <p class="fl-foot">굵은 글씨는 기사·공지에 적힌 금액·할인율·기간을 그대로 뽑은 거예요. 결제 기간이 끝난 것${hidden ? `과 금액·할인율·기간이 하나도 없는 기사 ${hidden}건` : ''}은 숨겼어요. 대상 카드 종류·최소 결제 금액 등 세부 조건은 카드사 이벤트 페이지에서 꼭 확인하세요.</p>`;
   }
-  // 기사 본문에서 뽑은 핵심 문장 (서버가 저장한 p.summary, 원문 문장 그대로)
-  function summaryList(p) {
-    const s = p.summary || ((p.more || []).find(m => m.summary) || {}).summary || [];
+  // 기사 본문에서 뽑은 핵심 문장 (서버가 저장한 p.summary, 원문 문장 그대로). code가 있으면 다른 항공사가 주어인 문장은 뺌
+  function summaryOf(p, code) {
+    return (p.summary || ((p.more || []).find(m => m.summary) || {}).summary || []).filter(t => !code || !F.subjectAirline(t) || F.subjectAirline(t) === code);
+  }
+  function summaryList(p, code) {
+    const s = summaryOf(p, code);
     return s.length ? `<ul class="pr-sum">${s.slice(0, 3).map(t => `<li>${esc(F.stripTags(t))}</li>`).join('')}</ul>` : '';
   }
 

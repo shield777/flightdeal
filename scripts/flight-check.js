@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /* 프로모션 확인 (GitHub Actions가 실행. 파이썬·설치 없이 Node만 씀)
-   매일 자동 실행은 없어요. 앱 프로모션 탭의 [지금 확인]을 누를 때만 돌아요.
-   --promos  항공사 공식 이벤트(제주항공·트리니티항공·비엣젯)·특가 뉴스·카드 할인 → data/promos.json
+   한국시간 오전 6시~밤 10시 2시간마다 자동 + 앱 항공권 검색 탭의 [지금 확인](토큰 있는 기기).
+   --promos  항공사 공식 이벤트(제주항공·트리니티항공·비엣젯)·특가 뉴스(원문 본문까지)·카드 할인 → data/promos.json
 
    선택 값(저장소 Settings → Secrets and variables → Actions):
    NAVER_CLIENT_ID / NAVER_CLIENT_SECRET  네이버 뉴스 검색. 없으면 구글 뉴스만 씀
@@ -12,6 +12,7 @@ const fs = require('fs');
 const path = require('path');
 const F = require('../js/flight-core.js');
 const OFFICIAL = require('./airline-events.js');
+const ARTICLE = require('./article-text.js');
 
 const ROOT = path.join(__dirname, '..');
 const DATA = path.join(ROOT, 'data');
@@ -201,6 +202,36 @@ function groupNews(list) {
 
 function newsId(it) { return (it.link || it.title).replace(/[?#].*$/, '').slice(-120) + '|' + it.title.slice(0, 40); }
 
+// 기사 원문을 열어 예약기간·탑승기간·할인코드가 들어 있는 문장을 저장 (body). 기사마다 한 번만 열어 봄 (bodyAt)
+//  새 기사를 먼저, 그다음 최근 3주 안의 아직 안 열어 본 기사. 한 번에 최대 70건, 4건씩 동시에
+async function readBodies(items, fresh) {
+  if (MOCK) return;
+  const since = new Date(NOW.getTime() - 21 * 864e5).toISOString();
+  const freshSet = new Set(fresh);
+  const todo = items.filter(p => !p.official && !p.bodyAt && p.link && p.date >= since)
+    .sort((a, b) => (freshSet.has(b) ? 1 : 0) - (freshSet.has(a) ? 1 : 0) || b.date.localeCompare(a.date)).slice(0, 70);
+  if (!todo.length) return;
+  let ok = 0, sents = 0, google = 0;
+  const fails = {};
+  const work = async () => {
+    for (let p; (p = todo.shift());) {
+      p.bodyAt = TODAY;
+      try {
+        const wasGoogle = /news\.google\.com/.test(p.link);
+        const r = await ARTICLE.readArticle(p);
+        if (wasGoogle && r.url) { p.link = r.url; google++; }
+        if (r.body.length) {
+          p.body = r.body; ok++; sents += r.body.length;
+          if (!p.summary) { const sum = leadSummary(r.body.join(' ')); if (sum.length) p.summary = sum; }
+        }
+      } catch (e) { const k = String(e.message).slice(0, 40); fails[k] = (fails[k] || 0) + 1; }
+    }
+  };
+  const n = todo.length;
+  await Promise.all([1, 2, 3, 4].map(work));
+  log(`■ 기사 원문 ${n}건 열어 봄 → 본문 문장 저장 ${ok}건(${sents}문장), 구글 뉴스 원래 주소 ${google}건${Object.keys(fails).length ? ` · 실패: ${Object.entries(fails).map(([k, v]) => `${k} ${v}건`).join(', ')}` : ''}`);
+}
+
 async function checkPromos(watch, promos, country) {
   const routes = (watch.watches || []).map(w => ({ key: F.routeKey(w), dest: w.dest }));
   const qs = buildQueries(watch, country);
@@ -238,6 +269,8 @@ async function checkPromos(watch, promos, country) {
       known.set(id, p); fresh.push(p);
     }
   }
+
+  await readBodies([...known.values()], fresh);
 
   // 항공사 공식 홈페이지 이벤트 (제주항공·트리니티항공·비엣젯)
   const ps = F.promoSettings(watch.settings);
