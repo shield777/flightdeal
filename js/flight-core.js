@@ -338,9 +338,12 @@
   const DOMESTIC_RE = /국내선|김포\s?[-~·]\s?제주|제주행|김포\s?[-~·]\s?부산/;
   // 국내선(제주행 등)만 다루는 소식: 해외 나라 이름이 없고 '국제선'도 없음
   const isDomestic = p => { const t = `${p.title} ${p.desc || ''}`; return DOMESTIC_RE.test(t) && !(p.countries || []).length && !/국제선/.test(t); };
+  const NONFARE_TITLE = /면세|免|호텔|숙박|리조트|렌터카|렌트카|투어|쇼핑|eSIM|이심|유심|보험|라운지|기내식|굿즈|채용|실적|배당|주가|마일리지\s*적립/;
   function isWantedPromo(p, settings) {
     if (p.kind === 'card') return true;
     const text = `${p.title} ${p.desc || ''}`;
+    // 제목이 면세점·호텔·투어 같은 다른 상품 이야기이고 항공권·운임 말이 없으면 빼기
+    if (NONFARE_TITLE.test(p.title) && !/항공권|운임|특가\s*항공|항공\s*특가/.test(p.title)) return false;
     if (p.official && !FARE_RE.test(text)) return false;
     if (isDomestic(p)) return false;
     const air = p.airlines || [];
@@ -397,7 +400,12 @@
       if (mo < 1 || mo > 12 || d < 1 || d > 31) continue;
       const end = m.index + m[0].length;
       const tail = TAIL.test(str.slice(end, end + 30));
-      if (!bounded || tail || ranged) out.push(ymdFrom(y, mo, d));
+      if (!bounded || tail || ranged) {
+        out.push(ymdFrom(y, mo, d));
+        // 시작만 있는 날짜("2일부터 …" 뒤에 끝 날짜가 없음) 표시: 뒤에서 끝 날짜가 이어지면 지움
+        if (ranged && out.starts) out.starts.delete(ymdFrom(prev.y, prev.mo, prev.d));
+        if (/^[^가-힣]*?(?:\([^)]{0,10}\)|오전|오후|\d{1,2}\s*[시:]\s*(?:\d{1,2}\s*분?)?|\s)*(?:부터|[~∼〜\-–]|에서)/.test(str.slice(end, end + 30))) (out.starts = out.starts || new Set()).add(ymdFrom(y, mo, d));
+      }
       prev = { y, mo, d, end };
     }
     // "내년 10월까지", "11월 말까지" → 그 달 마지막 날
@@ -407,8 +415,8 @@
       const y = m[1] === '내년' ? by + 1 : m[1] ? Number(m[1].slice(0, 4)) : (mo < bm - 1 ? by + 1 : by);
       out.push(ymdFrom(y, mo, new Date(Date.UTC(y, mo, 0)).getUTCDate()));
     }
-    // "12월부터" → 그 달 1일
-    const re3 = /(내년|\d{4}\s*년)?\s*(\d{1,2})\s*월\s*(?:초\s*)?부터/g;
+    // "12월부터" → 그 달 1일 ("11월 초부터"처럼 정확한 날이 아니면 쓰지 않음)
+    const re3 = /(내년|\d{4}\s*년)?\s*(\d{1,2})\s*월\s*부터/g;
     while ((m = re3.exec(str))) {
       const mo = Number(m[2]); if (mo < 1 || mo > 12) continue;
       const y = m[1] === '내년' ? by + 1 : m[1] ? Number(m[1].slice(0, 4)) : (mo < bm - 1 ? by + 1 : by);
@@ -422,7 +430,7 @@
   const BOOK_KEYS = [
     { re: /(?:예약|판매|구매|발권)\s*(?:및\s*결제\s*|·\s*발권\s*)?(?:가능\s*)?기간/, after: 70 },
     { re: /예약|판매|발권/, after: 45, back: true },
-    { re: /프로모션|행사|이벤트|세일|특가/, after: 20, back: true },
+    { re: /프로모션|행사|이벤트|세일|특가/, after: 40, back: true },
   ];
   const BOARD_KEYS = [
     { re: /(?:탑승|여행|출발)\s*(?:가능\s*)?(?:기간|일정|날짜)|탑승일/, after: 70 },
@@ -430,8 +438,10 @@
   ];
   const BOOK_STOP = /탑승|여행\s*기간|출발\s*(?:기간|일)|다\.|니다/, BOARD_STOP = /예약|판매|구매|발권|다\.|니다/;
   function periodAfter(text, keys, stopRe, base) {
-    const span = ds => { ds = [...new Set(ds)].sort(); return ds.length ? { from: ds.length > 1 ? ds[0] : null, to: ds[ds.length - 1] } : null; };
-    const after = (m, n, bounded) => { let w = text.slice(m.index + m[0].length, m.index + m[0].length + n); const s = w.search(stopRe); if (s >= 0) w = w.slice(0, s); return span(parseDates(w, base, bounded)); };
+    // 날짜 1개가 '부터'뿐이면(끝나는 날 없음) 기간으로 쓰지 않음
+    const span = ds => { const st = ds.starts; ds = [...new Set(ds)].sort(); if (ds.length === 1 && st && st.has(ds[0])) return null; return ds.length ? { from: ds.length > 1 ? ds[0] : null, to: ds[ds.length - 1] } : null; };
+    // 기간은 첫 '까지'에서 끝남 ("… 8월 31일까지며, 호놀룰루 노선은 2월 28일까지" → 뒤 노선 날짜는 안 섞음)
+    const after = (m, n, bounded) => { let w = text.slice(m.index + m[0].length, m.index + m[0].length + n); const s = w.search(stopRe); if (s >= 0) w = w.slice(0, s); const k = w.indexOf('까지'); if (k >= 0) w = w.slice(0, k + 2); return span(parseDates(w, base, bounded)); };
     const before = m => {
       let w = text.slice(Math.max(0, m.index - 60), m.index);
       const cut = Math.max(w.lastIndexOf('다.'), w.lastIndexOf('니다'));
@@ -486,6 +496,16 @@
     }
     return best;
   }
+  // 기자 이름 줄("[○○뉴스=홍길동 기자]", "(서울=뉴스1) 홍길동 기자 =") 앞의 제목·부제 되풀이는 뺌 (부제는 줄여 쓰다 틀리는 경우가 있음)
+  const BYLINE_RE = /\[[^\]]{2,40}?(?:기자|특파원)\s*\]|\([^)]{2,20}=[^)]{0,20}\)\s*[가-힣]{2,4}\s*(?:기자|특파원)\s*=|\[[^\]]{2,20}=[^\]]{0,20}\]\s*[가-힣]{2,4}\s*(?:기자|특파원)\s*=|[가-힣]{2,4}\s*(?:기자|특파원)\s*=/;
+  function dropHead(parts, title) {
+    const key = String(title || '').replace(/[^가-힣A-Za-z0-9]/g, '').slice(0, 14);
+    if (key.length >= 8) parts = parts.filter(x => !x.replace(/[^가-힣A-Za-z0-9]/g, '').startsWith(key));
+    const i = parts.slice(0, 6).findIndex(x => BYLINE_RE.test(x));
+    if (i < 0) return parts;
+    const m = parts[i].match(BYLINE_RE);
+    return [parts[i].slice(m.index), ...parts.slice(i + 1)];
+  }
   // parts: 순서대로 된 문장들, code: 보여 줄 항공사 (없으면 어느 항공사 소식도 아닌 문장만)
   function airlineText(parts, code) {
     const subj = parts.map(subjectAirline);
@@ -494,6 +514,47 @@
     let owner = null; const keep = [];
     parts.forEach((s, i) => { if (subj[i]) owner = subj[i]; if (owner === (code || null)) keep.push(s); });
     return keep.join(' ');
+  }
+  // 같은 특가인지 핵심 사실로 비교 (기사 표현은 달라도 금액·할인율·코드·예약기간·탑승기간은 같음)
+  //  -1: 둘 다 적힌 값 중 하나라도 다름(다른 특가) · 1: 같은 값 2개 이상, 그중 기간 1개 이상(같은 특가) · 0: 판단할 정보 부족
+  const FACT_KEYS = [['price', f => f.price && f.price.amount], ['pct', f => f.pct], ['code', f => f.code],
+    ['book', f => f.book && f.book.to], ['bookFrom', f => f.book && f.book.from], ['board', f => f.board && f.board.to], ['boardFrom', f => f.board && f.board.from]];
+  //  기사마다 예로 드는 노선 가격·할인율이 달라서, 할인 코드가 같거나 예약기간·탑승기간이 둘 다 같으면 가격·할인율이 달라도 같은 특가
+  function sameFacts(a, b) {
+    a = a || {}; b = b || {};
+    const eq = (x, y) => x != null && y != null && x === y, ne = (x, y) => x != null && y != null && x !== y;
+    const bt = f => f.book && f.book.to, bf = f => f.book && f.book.from, gt = f => f.board && f.board.to, gf = f => f.board && f.board.from;
+    const dateConflict = ne(bt(a), bt(b)) || ne(bf(a), bf(b)) || ne(gt(a), gt(b)) || ne(gf(a), gf(b)) || ne(a.code, b.code);
+    if (!dateConflict && (eq(a.code, b.code) || (eq(bt(a), bt(b)) && eq(gt(a), gt(b))))) return 1;
+    let same = 0, date = false;
+    for (const [k, get] of FACT_KEYS) {
+      const x = get(a || {}), y = get(b || {});
+      if (x == null || y == null) continue;
+      if (x !== y) return -1;
+      same++; if (k === 'book' || k === 'board') date = true;
+    }
+    return same >= 2 && date ? 1 : 0;
+  }
+  // 사실 합치기: 먼저 나온 값 우선, 빈 칸만 채움
+  function mergeFacts(a, b) {
+    const o = { ...(a || {}) };
+    for (const [k, v] of Object.entries(b || {})) if (o[k] == null) o[k] = v;
+    return o;
+  }
+  // 요약 문장 속 '다음 달·내달·이달·오는 N일·내년'을 기사 등록일 기준 날짜로 바꿔 적기 (base = YYYY-MM-DD)
+  function absDates(text, base) {
+    if (!base) return text;
+    const by = Number(base.slice(0, 4)), bm = Number(base.slice(5, 7)), bd = Number(base.slice(8, 10));
+    const next = bm === 12 ? [by + 1, 1] : [by, bm + 1], prev = bm === 1 ? [by - 1, 12] : [by, bm - 1];
+    const ym = ([y, m]) => y !== by ? `${y}년 ${m}월` : `${m}월`;
+    return String(text)
+      .replace(/(다음\s*달|내달|이달|이번\s*달)\s*(\d{1,2})\s*일/g, (_, w, d) => `${ym(/이/.test(w) ? [by, bm] : next)} ${d}일`)
+      .replace(/(다음\s*달|내달)(?!\s*\d)/g, () => ym(next))
+      .replace(/(이달|이번\s*달)(?!\s*\d)/g, () => ym([by, bm]))
+      .replace(/(오는|지난)\s*(\d{1,2})\s*일/g, (_, w, d) => { const n = Number(d); return `${ym(w === '지난' ? (n <= bd ? [by, bm] : prev) : (n >= bd ? [by, bm] : next))} ${n}일`; })
+      .replace(/내년\s*(\d{1,2})\s*월/g, (_, m) => `${by + 1}년 ${m}월`)
+      .replace(/내년(?!\s*\d)/g, `${by + 1}년`)
+      .replace(/올해\s*(\d{1,2})\s*월/g, (_, m) => `${by}년 ${m}월`);
   }
   // 여행 날짜가 탑승 기간 안인지: 'in' | 'out' | null(기간 정보 없음)
   function fitsTrip(f, dep, ret) {
@@ -565,7 +626,7 @@
   const api = {
     ORIGINS, DESTS, AIRLINES, CLIMATE, REGION_NAME, HOLIDAYS, PEAK, CARDS, AGENCIES, CARD_NAMES,
     monthsBetween, nightsBetween, addDays, addMonths, weekday, findDest, airline,
-    promoFacts, isDomestic, parseDates, splitSentences, subjectAirline, airlineText, fitsTrip, cardFacts, cardUse, links, skyMonth, ttang, climateOf, holidaysIn, KOREAN_AIRLINES, airlinesFor, isPayBenefit,
+    promoFacts, dropHead, sameFacts, mergeFacts, absDates, isDomestic, parseDates, splitSentences, subjectAirline, airlineText, fitsTrip, cardFacts, cardUse, links, skyMonth, ttang, climateOf, holidaysIn, KOREAN_AIRLINES, airlinesFor, isPayBenefit,
     stripTags, parseWon, promoPrice, classifyNews, won, routeKey,
     PROMO_DEFAULT, COUNTRIES, COUNTRY_PLACES, airlineInText, airlineCode, newsScope, promoSettings, isWantedPromo,
   };

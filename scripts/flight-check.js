@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /* 프로모션 확인 (GitHub Actions가 실행. 파이썬·설치 없이 Node만 씀)
    한국시간 오전 6시~밤 10시 2시간마다 자동 + 앱 항공권 검색 탭의 [지금 확인](토큰 있는 기기).
-   --promos  항공사 공식 이벤트(제주항공·트리니티항공·비엣젯)·특가 뉴스(원문 본문까지)·카드 할인 → data/promos.json
+   --promos  특가 뉴스(원문 본문까지 읽음)·카드 할인 → data/promos.json  (항공사 홈페이지는 보지 않음: 뉴스만)
 
    선택 값(저장소 Settings → Secrets and variables → Actions):
    NAVER_CLIENT_ID / NAVER_CLIENT_SECRET  네이버 뉴스 검색. 없으면 구글 뉴스만 씀
@@ -11,7 +11,6 @@
 const fs = require('fs');
 const path = require('path');
 const F = require('../js/flight-core.js');
-const OFFICIAL = require('./airline-events.js');
 const ARTICLE = require('./article-text.js');
 
 const ROOT = path.join(__dirname, '..');
@@ -131,59 +130,64 @@ function buildQueries(watch, country) {
 }
 // ───── 같은 소식 묶기 ─────
 // 언론사만 다른 같은 기사를 1건으로 합쳐요. 묶인 기사는 대표 기사의 more 에 들어가요.
-//  · 같은 항공사(또는 같은 카드사)의 소식이 7일 안에 나오면 같은 소식 (같은 특가 기사가 며칠에 걸쳐 나옴)
-//    단, 둘 다 가격이 있는데 가격이 다르거나, 새 기사에만 내 노선이 나오면 다른 특가로 봄
-//  · 항공사·카드사 이름이 없는 기사는 제목 단어가 절반 이상 겹치면 같은 소식
-//  · 항공사 공식 이벤트끼리는 묶지 않고, 뉴스는 제목이 비슷할 때만 공식 이벤트에 붙음
+//  1) 기사 본문까지 읽어서 뽑은 금액·할인율·코드·예약기간·탑승기간을 비교
+//     · 둘 다 적힌 값이 하나라도 다르면 → 다른 특가 (같은 항공사라도 따로)
+//     · 같은 값이 2개 이상(그중 기간 1개 이상)이면 → 표현이 달라도 같은 특가 (30일 안, 같은 항공사)
+//  2) 사실이 부족하면: 같은 항공사(카드사) 소식이 7일 안에 나오면 같은 소식, 이름이 없으면 제목 단어가 절반 이상 겹칠 때
+//  · 국내선 소식과 해외 소식은 따로, 여러 항공사를 모은 기사는 사실이 같거나 제목이 비슷할 때만
 const STOP = new Set(['특가', '할인', '항공권', '프로모션', '진행', '이벤트', '판매', '최대', '항공', '여행']);
 const words = t => new Set(t.replace(/[^\p{L}\p{N}%]+/gu, ' ').split(' ').filter(w => w.length >= 2 && !STOP.has(w)));
 const entityOf = p => p.kind === 'card' ? `card:${[...(p.cards || [])].sort().join('/')}` : (p.airlines || []).length ? `air:${p.airlines[0]}` : '';
 const LEVEL = { strong: 3, medium: 2, weak: 1 };
+const kstDay = d => new Date(new Date(d).getTime() + 9 * 3600e3).toISOString().slice(0, 10);
+// 기사 1건의 핵심 사실 (앱과 같은 방식: 제목 + 첫 문단 + 본문 문장, 모음 기사는 그 항공사 문장만, 날짜는 기사 등록일 기준)
+const factsCache = new WeakMap();
+function factsOf(m) {
+  if (!factsCache.has(m)) {
+    const parts = [...F.dropHead(F.splitSentences(F.stripTags(m.desc || '')), m.title), ...F.dropHead((m.body || []).map(F.stripTags), m.title), m.title];
+    factsCache.set(m, F.promoFacts(F.airlineText(parts, (m.airlines || [])[0] || null), kstDay(m.date)));
+  }
+  return factsCache.get(m);
+}
 function sameNews(g, p) {
   if (g.kind !== p.kind) return false;
-  const near = g.members.some(m => Math.abs(new Date(m.date) - new Date(p.date)) <= 7 * 864e5);
-  if (!near) return false;
-  const e = entityOf(p);
-  const overlap = () => { const a = words(p.title), b = g.words; return [...a].filter(w => b.has(w)).length / Math.max(1, Math.min(a.size, b.size)); };
-  const gOfficial = g.members.some(m => m.official);
-  // 공식 이벤트는 번호가 다르면 다른 행사 → 공식끼리는 절대 묶지 않음. 뉴스가 공식 이벤트에 붙으려면 제목이 비슷해야 함
-  if (p.official && gOfficial) return false;
-  if ((p.official || gOfficial) && overlap() < 0.3) return false;
-  // 국내선 소식과 해외 소식은 같은 항공사라도 다른 소식
   if (F.isDomestic(p) !== F.isDomestic(g.members[0])) return false;
-  // 여러 항공사 소식을 모은 기사([하늘길] 등)는 항공사 이름만으로 묶지 않음 (제목이 비슷할 때만)
+  const fm = F.sameFacts(g.facts, factsOf(p));
+  if (fm < 0) return false; // 금액·기간이 다르면 다른 특가
+  const e = entityOf(p);
+  const days = Math.min(...g.members.map(m => Math.abs(new Date(m.date) - new Date(p.date)))) / 864e5;
+  if (fm > 0 && e === g.entity && days <= 30) return true; // 표현이 달라도 금액·기간이 같으면 같은 특가
+  if (days > 7) return false;
+  const overlap = () => { const a = words(p.title), b = g.words; return [...a].filter(w => b.has(w)).length / Math.max(1, Math.min(a.size, b.size)); };
   const roundup = m => (m.airlines || []).length >= 3;
   if (roundup(p) || g.members.some(roundup)) return overlap() >= 0.5;
   if (e) {
     if (e !== g.entity) return false;
-    const gp = g.members.find(m => m.price);
-    if (p.price && gp && p.price.amount !== gp.price.amount) return false;
-    // 내 노선(나트랑 등)이 잡힌 새 기사가, 노선 언급 없는 기존 소식 밑에 묻혀 알림이 빠지지 않도록
+    // 내 노선(나트랑 등)이 잡힌 새 기사가, 노선 언급 없는 기존 소식 밑에 묻히지 않도록
     const gr = new Set(g.members.flatMap(m => (m.routes || []).filter(r => r.level !== 'weak').map(r => r.key)));
     return (p.routes || []).filter(r => r.level !== 'weak').every(r => gr.has(r.key));
   }
   if (g.entity) return false;
-  const a = words(p.title), b = g.words;
-  const common = [...a].filter(w => b.has(w)).length;
-  return common / Math.max(1, Math.min(a.size, b.size)) >= 0.5;
+  return overlap() >= 0.5;
 }
 function groupNews(list) {
   // 묶음을 풀어서 기사 1건씩으로 (같은 기사가 두 번 들어가지 않게 id로 정리)
   const byId = new Map();
   for (const p of list) for (const m of [p, ...(p.more || [])]) { const { more, lastDate, lastFound, ...one } = m; byId.set(one.id, one); }
   const flat = [...byId.values()];
-  // 내 노선이 나오는 기사를 먼저 묶음 기준으로 삼고, 노선 언급 없는 기사는 거기에 붙임
+  // 사실(금액·기간)이 많은 기사를 먼저 묶음 기준으로 삼고, 내 노선이 나오는 기사 → 나머지는 거기에 붙임
   const routed = m => (m.routes || []).some(r => r.level !== 'weak') ? 0 : 1;
-  flat.sort((a, b) => routed(a) - routed(b) || a.date.localeCompare(b.date));
+  const nFacts = m => Object.keys(factsOf(m)).length;
+  flat.sort((a, b) => nFacts(b) - nFacts(a) || routed(a) - routed(b) || a.date.localeCompare(b.date));
   const groups = [];
   for (const p of flat) {
     const g = groups.find(x => sameNews(x, p));
-    if (g) { g.members.push(p); for (const w of words(p.title)) g.words.add(w); }
-    else groups.push({ kind: p.kind, entity: entityOf(p), words: words(p.title), members: [p] });
+    if (g) { g.members.push(p); for (const w of words(p.title)) g.words.add(w); g.facts = F.mergeFacts(g.facts, factsOf(p)); }
+    else groups.push({ kind: p.kind, entity: entityOf(p), words: words(p.title), members: [p], facts: { ...factsOf(p) } });
   }
   return groups.map(g => {
-    // 대표 기사: 항공사 공식 > 노선이 잡힌 것 > 가격이 있는 것 > 먼저 나온 것
-    const score = m => (m.official ? 4 : 0) + ((m.routes || []).some(r => r.level !== 'weak') ? 2 : 0) + (m.price ? 1 : 0);
+    // 대표 기사: 사실(금액·기간·코드)이 가장 많은 것 > 노선이 잡힌 것 > 먼저 나온 것
+    const score = m => Object.keys(factsOf(m)).length * 4 + ((m.routes || []).some(r => r.level !== 'weak') ? 2 : 0);
     const lead = g.members.reduce((best, m) => score(m) > score(best) ? m : best);
     const routes = new Map();
     for (const m of g.members) for (const r of m.routes || []) if (!routes.has(r.key) || LEVEL[r.level] > LEVEL[routes.get(r.key).level]) routes.set(r.key, r);
@@ -213,7 +217,7 @@ async function readBodies(items, fresh) {
   if (MOCK) return;
   const since = new Date(NOW.getTime() - 21 * 864e5).toISOString();
   const freshSet = new Set(fresh);
-  const todo = items.filter(p => !p.official && !p.bodyAt && p.link && p.date >= since)
+  const todo = items.filter(p => !p.bodyAt && p.link && p.date >= since)
     .sort((a, b) => (freshSet.has(b) ? 1 : 0) - (freshSet.has(a) ? 1 : 0) || b.date.localeCompare(a.date)).slice(0, 70);
   if (!todo.length) return;
   let ok = 0, sents = 0, google = 0;
@@ -241,7 +245,9 @@ async function checkPromos(watch, promos, country) {
   const routes = (watch.watches || []).map(w => ({ key: F.routeKey(w), dest: w.dest }));
   const qs = buildQueries(watch, country);
   log(`■ ${country || '기본 나라'} 기준 검색어 ${qs.length}개`);
-  const before = (promos.items || []).flatMap(p => [p, ...(p.more || [])]).map(({ more, lastDate, lastFound, ...one }) => one);
+  // 뉴스만 씀: 예전에 저장된 항공사 홈페이지 이벤트(official)는 버림
+  const before = (promos.items || []).flatMap(p => [p, ...(p.more || [])]).map(({ more, lastDate, lastFound, ...one }) => one).filter(p => !p.official);
+  delete promos.sources;
   // 추적 조건(직항·박수)이 바뀌면 노선 이름표가 바뀜 → 같은 출발·도착 노선이면 새 이름표로 옮김
   const liveKeys = new Set(routes.map(r => r.key));
   const od = k => k.split('-').slice(0, 2).join('-');
@@ -276,33 +282,13 @@ async function checkPromos(watch, promos, country) {
   }
 
   await readBodies([...known.values()], fresh);
-
-  // 항공사 공식 홈페이지 이벤트 (제주항공·트리니티항공·비엣젯)
-  const ps = F.promoSettings(watch.settings);
-  const codes = OFFICIAL.SUPPORTED.filter(c => ps.airlines.includes(c));
-  let official = { items: [], report: {} };
-  if (MOCK) { const f = path.join(MOCK, 'official.json'); if (fs.existsSync(f)) official.items = JSON.parse(fs.readFileSync(f, 'utf8')); }
-  else if (codes.length) official = await OFFICIAL.fetchAirlineEvents(codes, log);
-  promos.sources = promos.sources || {};
-  let offNew = 0;
-  for (const ev of official.items) {
-    if (ev.end && ev.end < TODAY) continue; // 끝난 이벤트
-    const id = `official:${ev.code}:${ev.key}`;
-    const body = `${ev.title} ${ev.sub || ''}`;
-    // 우리·현대·신한카드 제휴 할인은 '카드 할인'으로 분류 → 앱의 내 카드 할인 칸에 표시
-    const cardHit = F.CARD_NAMES.filter(c => body.includes(c));
-    const kind = cardHit.length ? 'card' : 'airline';
-    if (known.has(id)) { Object.assign(known.get(id), { title: ev.title, desc: (ev.sub || '').slice(0, 200), from: ev.start || null, until: ev.end || null, kind, cards: cardHit }); continue; }
-    const c = F.classifyNews(body, '', routes) || { routes: [], price: F.promoPrice(body), ...F.newsScope(body) };
-    const p = { id, kind, official: true, title: ev.title, desc: (ev.sub || '').slice(0, 200), link: ev.link, source: `${F.airline(ev.code).name} 공식`,
-      date: new Date(`${ev.start || TODAY}T09:00:00+09:00`).toISOString(), from: ev.start || null, until: ev.end || null, found: TODAY,
-      cards: cardHit, airlines: [ev.code], countries: c.countries, allRoutes: c.allRoutes, routes: c.routes || [], price: c.price || null };
-    // 처음 확인하는 항공사는 이미 올라와 있던 이벤트를 알림 없이 저장만 (알림 폭탄 방지)
-    if (!promos.sources[ev.code]) p.alerted = true;
-    known.set(id, p); fresh.push(p); offNew++;
+  // 본문에 나온 나라·도시도 이 소식의 나라로 (예: 제목엔 없고 본문에 '호찌민 40만원부터') — 여러 항공사 모음 기사는 다른 항공사 노선이 섞여서 제외
+  for (const p of known.values()) if ((p.body || []).length && (p.airlines || []).length < 3) {
+    const sc = F.newsScope(p.body.map(F.stripTags).join(' '));
+    p.countries = [...new Set([...(p.countries || []), ...sc.countries])];
+    if (sc.allRoutes) p.allRoutes = true;
   }
-  for (const code of codes) if ((official.report[code] || 0) > 0 || MOCK) promos.sources[code] = promos.sources[code] || TODAY;
-  if (official.items.length) log(`■ 항공사 공식 이벤트 ${official.items.length}건 확인 → 새로 ${offNew}건`);
+
   // 같은 소식 묶기 → 최근 60일, 최대 250묶음만 보관
   const keep = F.addDays(TODAY, -60);
   const freshIds = new Set(fresh.map(p => p.id));
