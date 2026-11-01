@@ -200,16 +200,19 @@
   function findDest(code) { return DESTS.find(d => d.code === code) || null; }
   function airline(code) { return AIRLINES[code] || { name: code || '항공사 미상', type: '?', bag: 'maybe', url: '' }; }
 
-  // 인원: 숫자(어른 수)나 { adults, children, infants } 둘 다 받음
+  const SKY_CHILD_AGE = 7, SKY_INFANT_AGE = 1;
+  // 인원: 숫자(어른 수)나 { adults, children, ages, infants } 둘 다 받음
   //  아이 = 만 2~11세(좌석 있음), 유아 = 만 2세 미만(어른 무릎, 어른 1명당 1명까지)
   function paxOf(p) {
     const o = typeof p === 'object' && p ? p : { adults: p };
     const adults = Math.max(1, Number(o.adults) || 1);
-    return { adults, children: Math.max(0, Number(o.children) || 0), infants: Math.min(adults, Math.max(0, Number(o.infants) || 0)) };
+    const children = Math.max(0, Number(o.children) || 0);
+    // 아이 나이(만 2~11세): 고른 나이, 안 고른 아이는 7세
+    const ages = Array.from({ length: children }, (_, i) => { const a = Number((o.ages || [])[i]); return a >= 2 && a <= 11 ? a : SKY_CHILD_AGE; });
+    return { adults, children, ages, infants: Math.min(adults, Math.max(0, Number(o.infants) || 0)) };
   }
-  // 스카이스캐너는 아이 나이를 받음 → 요금 구분(아이 2~11세, 유아 2세 미만)에 맞는 대표 나이로 넣음
-  const SKY_CHILD_AGE = 7, SKY_INFANT_AGE = 1;
-  const skyPax = x => `adultsv2=${x.adults}${x.children + x.infants ? `&childrenv2=${[...Array(x.children).fill(SKY_CHILD_AGE), ...Array(x.infants).fill(SKY_INFANT_AGE)].join('%7C')}` : ''}`;
+  // 스카이스캐너는 아이 나이를 받음 (고른 나이 그대로, 안 고르면 7세)
+  const skyPax = x => `adultsv2=${x.adults}${x.children + x.infants ? `&childrenv2=${[...x.ages, ...Array(x.infants).fill(SKY_INFANT_AGE)].join('%7C')}` : ''}`;
   // 다른 사이트 검색 주소. 서울 출발은 도시 코드(서울 전체: 인천+김포)로 넣음
   function links(originCode, dest, dep, ret, adults, opt = {}) {
     const px = paxOf(adults);
