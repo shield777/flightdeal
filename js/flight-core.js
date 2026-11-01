@@ -487,6 +487,8 @@
   function placeScope(clause, country, one) {
     const cs = COUNTRIES.filter(c => COUNTRY_PLACES[c].some(w => clause.includes(w)));
     if (/미주|하와이/.test(clause)) cs.push('미국');
+    // 국내선(제주 노선 등) 가격·기간은 어느 나라 노선도 아님
+    if (!cs.length && /국내선|(?<![가-힣])제주(?!항공|관광|에어)/.test(clause)) return 'other';
     if (!country) return 'none'; // 나라를 안 고르면 장소 구분 없이 (서로 다른 가격·기간이 여러 개면 '노선마다 다름')
     if (one && new Set(cs).size > 1) return 'other';
     if (cs.includes(country)) return 'mine';
