@@ -360,6 +360,19 @@
   //  "11월 2~15일", "11월 3일부터 9일까지" → 뒤 날짜는 앞 날짜의 월을 이어받음
   //  "다음 달(내달) 2일", "이달 30일", "오는 28일부터 30일까지"(월이 없으면 등록일 기준: 등록일보다 앞선 날이면 다음 달)
   //  "내년 10월까지", "11월 말까지" → 그 달 마지막 날, "12월부터" → 그 달 1일
+  // 날짜 바로 뒤 "23시(베트남 시간)", "오후 11시 59분(GMT+7)" → 한국 시각으로 바꿀 때 날짜가 며칠 바뀌는지 (-1·0·1). 시간대가 안 적혀 있으면 0
+  const TZ_OFF = { 한국: 9, 일본: 9, 베트남: 7, 태국: 7, 인도네시아: 7, 캄보디아: 7, 라오스: 7, 필리핀: 8, 싱가포르: 8, 말레이시아: 8, 대만: 8, 홍콩: 8, 마카오: 8, 중국: 8, 몽골: 8 };
+  function tzShift(after) {
+    const m = after.match(/^\s*(?:\([^)]{0,6}\)\s*)?(오전|오후)?\s*(\d{1,2})\s*(?:시|:\s*(\d{2}))/);
+    if (!m) return 0;
+    let h = Number(m[2]); if (m[1] === '오후' && h < 12) h += 12; if (m[1] === '오전' && h === 12) h = 0;
+    const rest = after.slice(m[0].length, m[0].length + 35);
+    const g = rest.match(/GMT\s*([+-])\s*(\d{1,2})|UTC\s*([+-])\s*(\d{1,2})/), n = rest.match(/(한국|일본|베트남|태국|인도네시아|캄보디아|라오스|필리핀|싱가포르|말레이시아|대만|홍콩|마카오|중국|몽골)\s*(?:현지\s*)?시간/);
+    const off = g ? Number((g[1] || g[3]) + (g[2] || g[4])) : n ? TZ_OFF[n[1]] : null;
+    if (off == null || !/^\s*(?:\(|,)?/.test(rest)) return 0;
+    const kh = h + (9 - off);
+    return kh >= 24 ? 1 : kh < 0 ? -1 : 0;
+  }
   // bounded: '까지·부터·~'가 붙은 날짜(기간을 나타내는 날짜)만. "2027년 1월 8일 신규 취항" 같은 날짜는 뺌
   function parseDates(str, base, bounded) {
     const out = [];
@@ -371,7 +384,7 @@
       '(?<![\\d.,])(\\d{1,2})\\s*[./]\\s*(\\d{1,2})(?!\\d|[.,]\\d|\\s*(?:만|천|%|원|배|시간|kg|㎏))', // 7-8  11/1, 11.1
       '(?:(다음\\s*달|내달|이달|이번\\s*달)\\s*)?(?<![\\d.,박])(\\d{1,2})\\s*일', // 9-10  (내달) 2일
     ].join('|'), 'g');
-    const EXTRA = '(?:\\s|\\([^)]{0,10}\\)|오전|오후|\\d{1,2}\\s*[시:]\\s*(?:\\d{1,2}\\s*분?)?)*'; // 날짜 뒤 "(월)", "오전 10시", "23:59", "(한국시간)"
+    const EXTRA = '(?:\\s|\\([^)]{0,30}\\)|오전|오후|\\d{1,2}\\s*[시:]\\s*(?:\\d{1,2}\\s*분?)?)*'; // 날짜 뒤 "(월)", "오전 10시", "23:59", "(한국시간)"
     const GAP = new RegExp(`^${EXTRA}(?:[~∼〜\\-–]|부터|에서)\\s*(?:오는\\s*)?$`), TAIL = new RegExp(`^${EXTRA}(?:까지|부터|[~∼〜\\-–]|에서)`);
     let prev = null, m;
     while ((m = re.exec(str))) {
@@ -382,7 +395,12 @@
       else if (m[5] || m[7]) {
         mo = Number(m[5] || m[7]); d = Number(m[6] || m[8]); y = m[4] ? Number(m[4]) : by;
         if (!m[4]) {
-          if (ranged) { y = prev.y; if (mo < prev.mo) y++; }
+          if (/(?:내년|이듬해)\s*$/.test(str.slice(Math.max(0, m.index - 5), m.index))) y = by + 1; // "내년 10월 30일"
+          else if (/올해\s*$/.test(str.slice(Math.max(0, m.index - 4), m.index))) y = by;
+          else if (ranged) { y = prev.y; if (mo < prev.mo) y++; }
+          // 같은 문장에 나열된 날짜: 바로 앞 날짜가 내년이면 이어받음 ("삿포로는 내년 2월 28일, 나머지 노선은 10월 30일까지")
+          // (끝나는 날 '…까지'에만. "…내년 10월 30일까지, 호치민 노선은 12월 3일부터"의 시작일은 이어받지 않음)
+          else if (prev && prev.y > by && !/다\.|니다/.test(str.slice(prev.end, m.index)) && new RegExp(`^${EXTRA}까지`).test(str.slice(m.index + m[0].length, m.index + m[0].length + 30))) { y = prev.y; if (mo < prev.mo) y++; }
           else if (mo < bm - 1) y++; // 연도 없이 지난달보다 앞선 달이면 내년
         }
       } else {
@@ -399,6 +417,9 @@
       }
       if (mo < 1 || mo > 12 || d < 1 || d > 31) continue;
       const end = m.index + m[0].length;
+      // 시각과 시간대가 함께 적혀 있으면 한국 날짜로 바꿈 ("11월 1일 23시(베트남 시간 기준)" → 한국 11월 2일 오전 1시)
+      const tz = tzShift(str.slice(end, end + 45));
+      if (tz) { const t = new Date(Date.UTC(y, mo - 1, d) + tz * 864e5); y = t.getUTCFullYear(); mo = t.getUTCMonth() + 1; d = t.getUTCDate(); }
       const tail = TAIL.test(str.slice(end, end + 30));
       if (!bounded || tail || ranged) {
         out.push(ymdFrom(y, mo, d));
@@ -458,26 +479,109 @@
     }
     return null;
   }
-  function promoFacts(text, base) {
+  // ───── 노선마다 다른 가격·탑승기간 ─────
+  // 문장을 쉼표·△·'…까지,' 단위 조각으로 나눠서, 조각에 나온 장소가 고른 나라인지 본다
+  //  'mine' = 고른 나라 도시가 나옴 · 'other' = 다른 나라·지역(미주 등)만 나옴 · 'none' = 장소 없음(모든 노선 공통)
+  const REGION_RE = /미주|유럽|대양주|동남아|동북아|중동|아시아\s*노선|국내선|LA|뉴욕|샌프란시스코|워싱턴|호놀룰루/;
+  // one: 가격처럼 한 노선에만 해당하는 값 → 여러 나라가 함께 나열된 조각("일본·대만·베트남 … 9만9000원")은 어느 나라 것인지 모름
+  function placeScope(clause, country, one) {
+    const cs = COUNTRIES.filter(c => COUNTRY_PLACES[c].some(w => clause.includes(w)));
+    if (/미주|하와이/.test(clause)) cs.push('미국');
+    if (!country) return 'none'; // 나라를 안 고르면 장소 구분 없이 (서로 다른 가격·기간이 여러 개면 '노선마다 다름')
+    if (one && new Set(cs).size > 1) return 'other';
+    if (cs.includes(country)) return 'mine';
+    return cs.length || REGION_RE.test(clause) ? 'other' : 'none';
+  }
+  // 기간 조각: '…까지(며/고),' 와 △·/ 에서만 나눔 ("방콕과 나리타, 홍콩, 호치민 노선은 …까지"는 한 조각)
+  const clausesOf = sent => sent.split(/(?<=까지(?:이며|며|고|이고|로|입니다|이다)?,?)\s+|\s*[△▲]\s*|\s*\/\s*/).filter(Boolean);
+  // 금액마다 위치까지 ("방콕 52만8500원 나리타 27만7500원" → 금액 바로 앞에 적힌 장소로 노선 판단)
+  function wonAt(str) {
+    const out = [];
+    for (const m of str.matchAll(/(\d{1,3}(?:\.\d{1,2})?)\s*만\s*(?:(\d{1,4})\s*(천)?)?\s*원/g)) out.push({ v: Math.round(Number(m[1]) * 10000) + (m[2] && !m[1].includes('.') ? (m[3] ? Number(m[2]) * 1000 : Number(m[2])) : 0), i: m.index, end: m.index + m[0].length });
+    for (const m of str.matchAll(/(\d{1,3}(?:,\d{3})+|\d{4,7})\s*원|₩\s*(\d{1,3}(?:,\d{3})+|\d{4,7})/g)) out.push({ v: Number((m[1] || m[2]).replace(/,/g, '')), i: m.index, end: m.index + m[0].length });
+    return out.filter(x => x.v >= 10000 && x.v <= 5000000 && !out.some(y => y !== x && y.i <= x.i && y.end >= x.end && y.end - y.i > x.end - x.i)).sort((a, b) => a.i - b.i);
+  }
+  const FARE_CTX = /운임|항공권|편도|왕복|총액|부터|특가|~|판매/;
+  const COUPON_RE = /(?:최대\s*)?\d[\d,]*\s*(?:만\s*(?:\d{1,4}\s*천?)?)?\s*원\s*(?:상당\s*)?(?:까지\s*)?(?:[의을를이가]\s*)?(?:추가\s*)?(?:할인\s*)?(?:쿠폰|할인|적립|캐시백|포인트|증정|혜택|페이백|청구|확대|지원)/g;
+  // 가격: 장소가 다른 가격이 여러 개면(노선마다 다름) 가격을 쓰지 않음 → 할인율만
+  function fareFacts(t, country) {
+    const byScope = { mine: new Set(), none: new Set(), other: new Set() };
+    for (const sent of t.split(/(?<=다\.|요\.)\s*/)) {
+      const clean = sent.replace(COUPON_RE, ' ');
+      if (!FARE_CTX.test(clean)) continue;
+      let prev = 0;
+      for (const a of wonAt(clean)) { byScope[placeScope(clean.slice(prev, a.i), country, true)].add(a.v); prev = a.end; }
+    }
+    const one = /편도/.test(t), rt = /왕복/.test(t), trip = one && !rt ? 'oneway' : rt && !one ? 'round' : 'oneway?';
+    // 고른 나라 노선 가격이 적혀 있으면 그중 가장 낮은 값 (좌석 등급별로 여러 개일 수 있음, '~부터')
+    if (byScope.mine.size) return { price: { amount: Math.min(...byScope.mine), trip }, priceFor: country };
+    const use = byScope.none;
+    if (use.size > 1 || byScope.other.size > 0) return { mixed: true };
+    if (use.size !== 1) return {};
+    return { price: { amount: [...use][0], trip } };
+  }
+  // 탑승기간: '탑승·이용' 문장의 조각마다 기간을 모아서, 노선마다 다르면 고른 나라 노선 것만 (없으면 '노선마다 다름')
+  const BOARD_CTX = /탑승|이용할\s*수|이용\s*가능|이용\s*기간|여행\s*기간|출발\s*기간/, NOT_BOARD = /예약|판매|구매|발권|결제|프로모션|행사|이벤트|진행|취항한다|운항한다/;
+  function boardFacts(t, base, country) {
+    let cands = [];
+    for (const sent of t.split(/(?<=다\.|요\.)\s*/)) {
+      if (!BOARD_CTX.test(sent)) continue;
+      let cur = 0;
+      for (const c of clausesOf(sent)) {
+        const at = sent.indexOf(c, cur); cur = at + c.length;
+        if (NOT_BOARD.test(c) && !BOARD_CTX.test(c)) continue;
+        const k = c.indexOf('까지'); const cc = k >= 0 ? c.slice(0, k + 2) : c;
+        // 문장 앞부분까지 함께 읽어야 '내년'이 이어짐 → 이 조각에서 새로 나온 날짜만
+        const before = parseDates(sent.slice(0, at), base, true).length;
+        const got = parseDates(sent.slice(0, at) + cc, base, true);
+        const ds = [...new Set(got.slice(before))].sort();
+        if (!ds.length) continue;
+        // "호치민 노선은 취항일인 12월 3일부터 이용 가능" → 끝나는 날이 아니라 시작일
+        if (ds.length === 1 && got.starts && got.starts.has(ds[0]) && !/까지/.test(cc)) { cands.push({ scope: placeScope(c, country), start: ds[0] }); continue; }
+        cands.push({ scope: placeScope(c, country), p: { from: ds.length > 1 ? ds[0] : null, to: ds[ds.length - 1] } });
+      }
+    }
+    const starts = cands.filter(x => x.start); 
+    const startFor = sc => (starts.find(x => x.scope === sc) || {}).start;
+    cands = cands.filter(x => !x.start);
+    if (!cands.length) return null;
+    const key = x => x.p.to;
+    const mine = cands.filter(x => x.scope === 'mine'), none = cands.filter(x => x.scope === 'none'), other = cands.filter(x => x.scope === 'other');
+    const pick = l => { if (new Set(l.map(key)).size !== 1) return null; const x = l.find(y => y.p.from) || l[0]; const st = startFor(x.scope); return st && !x.p.from && st <= x.p.to ? { ...x, p: { from: st, to: x.p.to } } : x; };
+    if (mine.length) { const x = pick(mine); return x ? { board: x.p, boardFor: country } : { mixed: true, mineMixed: true }; } // 같은 나라 안에서도 노선마다 다름
+    if (other.length) return { mixed: true }; // 다른 노선 기간만 있거나, 공통 기간과 노선별 기간이 섞임
+    const x = pick(none);
+    return x ? { board: x.p } : { mixed: true };
+  }
+  function promoFacts(text, base, country) {
     const t = stripTags(text);
     const f = {};
-    const pr = promoPrice(t);
-    if (pr) f.price = pr;
+    const fare = fareFacts(t, country);
+    if (fare.price) f.price = fare.price;
+    if (fare.priceFor) f.priceFor = fare.priceFor;
+    if (fare.mixed) f.priceMixed = true;
     const pct = [...t.matchAll(/(최대\s*)?(\d{1,2})\s*%\s*(?:할인|특가|세일|↓)?/g)].map(m => Number(m[2])).filter(n => n >= 3 && n <= 95);
     if (pct.length) f.pct = Math.max(...pct);
     const code = t.match(/(?:프로모션\s*코드|할인\s*코드|쿠폰\s*코드|코드)\s*(?:는|은|인|명)?\s*[:：]?\s*[‘'"“(\[「<]?\s*([A-Z][A-Z0-9]{3,14})/) || t.match(/[‘'"“(\[「<]([A-Z][A-Z0-9]{3,14})[’'"”)\]」>]\s*(?:을|를|이라는|라는)?\s*(?:할인\s*|프로모션\s*|쿠폰\s*)?코드/) || t.match(/\b([A-Z][A-Z0-9]{3,14})\s*(?:할인\s*|프로모션\s*)?코드/);
     if (code) f.code = code[1];
     else if (/(?:프로모션|할인|쿠폰)\s*코드/.test(t)) f.codeHint = true; // 코드 값은 없지만 할인 코드를 준다고 적힌 경우
-    const board = periodAfter(t, BOARD_KEYS, BOARD_STOP, base);
-    if (board) f.board = board;
-    const book = periodAfter(t, BOOK_KEYS, BOOK_STOP, base);
-    if (book) f.book = book;
+    // 탑승기간: 노선별로 나눠 볼 수 있으면 그 결과, 아니면 키워드 근처 날짜
+    let raw = periodAfter(t, BOARD_KEYS, BOARD_STOP, base);
+    let book = periodAfter(t, BOOK_KEYS, BOOK_STOP, base);
     // 날짜가 하나뿐이라 예약·탑승에 똑같이 붙었으면, 그 날짜 바로 앞에 더 가까이 있는 쪽만 남김
-    if (f.book && f.board && f.book.to === f.board.to && f.book.from === f.board.from) {
+    if (book && raw && book.to === raw.to && book.from === raw.from) {
       const firstDate = t.search(/\d{1,2}\s*월\s*\d{1,2}\s*일|\d{4}\s*[년.]|\d{1,2}월\s*(?:말)?\s*까지/);
       const lastBefore = re => { let i = -1, m; const g = new RegExp(re.source, 'g'); while ((m = g.exec(t)) && m.index < firstDate) i = m.index; return i; };
-      if (lastBefore(BOOK_KEYS[1].re) > lastBefore(BOARD_KEYS[1].re)) delete f.board; else delete f.book;
+      if (lastBefore(BOOK_KEYS[1].re) > lastBefore(BOARD_KEYS[1].re)) raw = null; else book = null;
     }
+    if (book) f.book = book;
+    // 탑승기간: 노선별로 나눠 볼 수 있으면 그 결과(고른 나라 노선 / 노선마다 다름), 아니면 키워드 근처 날짜
+    const bf = boardFacts(t, base, country);
+    const board = bf ? bf.board : raw;
+    if (board && !(f.book && f.book.to === board.to && f.book.from === board.from)) f.board = board;
+    if (bf && bf.boardFor) f.boardFor = bf.boardFor;
+    if (bf && bf.mixed) f.boardMixed = true;
+    if (bf && bf.mineMixed) f.boardMineMixed = true;
     return f;
   }
   // ───── 여러 항공사 소식을 모은 기사([하늘길] 등): 항공사별 문장 나누기 ─────
@@ -524,13 +628,16 @@
     a = a || {}; b = b || {};
     const eq = (x, y) => x != null && y != null && x === y, ne = (x, y) => x != null && y != null && x !== y;
     const bt = f => f.book && f.book.to, bf = f => f.book && f.book.from, gt = f => f.board && f.board.to, gf = f => f.board && f.board.from;
-    const dateConflict = ne(bt(a), bt(b)) || ne(bf(a), bf(b)) || ne(gt(a), gt(b)) || ne(gf(a), gf(b)) || ne(a.code, b.code);
-    if (!dateConflict && (eq(a.code, b.code) || (eq(bt(a), bt(b)) && eq(gt(a), gt(b))))) return 1;
+    // 예약 마감일이 하루 차이("11월 2일 오전 1시(한국시간)"와 "11월 1일 23시"처럼 시간대 표기 차이)면, 탑승기간이나 코드가 같을 때 같은 특가로 봄
+    const day1 = (x, y) => x && y && Math.abs(new Date(x) - new Date(y)) === 864e5;
+    const bookNear = day1(bt(a), bt(b)) && (eq(gt(a), gt(b)) || eq(a.code, b.code));
+    const dateConflict = (ne(bt(a), bt(b)) && !bookNear) || ne(bf(a), bf(b)) || ne(gt(a), gt(b)) || ne(a.code, b.code);
+    if (!dateConflict && (eq(a.code, b.code) || ((eq(bt(a), bt(b)) || bookNear) && eq(gt(a), gt(b))))) return 1;
     let same = 0, date = false;
     for (const [k, get] of FACT_KEYS) {
       const x = get(a || {}), y = get(b || {});
       if (x == null || y == null) continue;
-      if (x !== y) return -1;
+      if (x !== y) { if (k === 'price' || k === 'pct') continue; return -1; } // 가격·할인율은 기사마다 예로 드는 노선이 달라 다를 수 있음
       same++; if (k === 'book' || k === 'board') date = true;
     }
     return same >= 2 && date ? 1 : 0;

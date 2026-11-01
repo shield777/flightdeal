@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 /* 프로모션 확인 (GitHub Actions가 실행. 파이썬·설치 없이 Node만 씀)
    한국시간 오전 6시~밤 10시 2시간마다 자동 + 앱 항공권 검색 탭의 [지금 확인](토큰 있는 기기).
-   --promos  특가 뉴스(원문 본문까지 읽음)·카드 할인 → data/promos.json  (항공사 홈페이지는 보지 않음: 뉴스만)
+   --promos  특가 뉴스(원문 본문까지 읽음)·카드 할인 → data/promos.json
+             프로모션 탭은 뉴스만, 카드 탭은 카드 뉴스 + 항공사 홈페이지의 카드·결제 혜택(제주항공·트리니티항공·비엣젯)
 
    선택 값(저장소 Settings → Secrets and variables → Actions):
    NAVER_CLIENT_ID / NAVER_CLIENT_SECRET  네이버 뉴스 검색. 없으면 구글 뉴스만 씀
@@ -12,6 +13,7 @@ const fs = require('fs');
 const path = require('path');
 const F = require('../js/flight-core.js');
 const ARTICLE = require('./article-text.js');
+const OFFICIAL = require('./airline-events.js'); // 카드 탭용 (항공사 홈페이지의 카드·결제 혜택)
 
 const ROOT = path.join(__dirname, '..');
 const DATA = path.join(ROOT, 'data');
@@ -151,6 +153,7 @@ function factsOf(m) {
 }
 function sameNews(g, p) {
   if (g.kind !== p.kind) return false;
+  if (p.official || g.members.some(m => m.official)) return false; // 홈페이지 이벤트는 따로
   if (F.isDomestic(p) !== F.isDomestic(g.members[0])) return false;
   const fm = F.sameFacts(g.facts, factsOf(p));
   if (fm < 0) return false; // 금액·기간이 다르면 다른 특가
@@ -217,7 +220,7 @@ async function readBodies(items, fresh) {
   if (MOCK) return;
   const since = new Date(NOW.getTime() - 21 * 864e5).toISOString();
   const freshSet = new Set(fresh);
-  const todo = items.filter(p => !p.bodyAt && p.link && p.date >= since)
+  const todo = items.filter(p => !p.official && !p.bodyAt && p.link && p.date >= since)
     .sort((a, b) => (freshSet.has(b) ? 1 : 0) - (freshSet.has(a) ? 1 : 0) || b.date.localeCompare(a.date)).slice(0, 70);
   if (!todo.length) return;
   let ok = 0, sents = 0, google = 0;
@@ -245,9 +248,8 @@ async function checkPromos(watch, promos, country) {
   const routes = (watch.watches || []).map(w => ({ key: F.routeKey(w), dest: w.dest }));
   const qs = buildQueries(watch, country);
   log(`■ ${country || '기본 나라'} 기준 검색어 ${qs.length}개`);
-  // 뉴스만 씀: 예전에 저장된 항공사 홈페이지 이벤트(official)는 버림
-  const before = (promos.items || []).flatMap(p => [p, ...(p.more || [])]).map(({ more, lastDate, lastFound, ...one }) => one).filter(p => !p.official);
-  delete promos.sources;
+  // 프로모션은 뉴스만: 항공사 홈페이지 이벤트(official)는 카드·결제 혜택만 남김 (카드 탭용)
+  const before = (promos.items || []).flatMap(p => [p, ...(p.more || [])]).map(({ more, lastDate, lastFound, ...one }) => one).filter(p => !p.official || p.kind === 'card' || F.isPayBenefit(p));
   // 추적 조건(직항·박수)이 바뀌면 노선 이름표가 바뀜 → 같은 출발·도착 노선이면 새 이름표로 옮김
   const liveKeys = new Set(routes.map(r => r.key));
   const od = k => k.split('-').slice(0, 2).join('-');
@@ -289,6 +291,34 @@ async function checkPromos(watch, promos, country) {
     if (sc.allRoutes) p.allRoutes = true;
   }
 
+  // 카드 탭용: 항공사 홈페이지의 카드 제휴 할인·결제 혜택만 (제주항공·트리니티항공·비엣젯). 운임 특가는 뉴스로만
+  const ps = F.promoSettings(watch.settings);
+  const codes = OFFICIAL.SUPPORTED.filter(c => ps.airlines.includes(c));
+  let official = { items: [], report: {} };
+  if (MOCK) { const f = path.join(MOCK, 'official.json'); if (fs.existsSync(f)) official.items = JSON.parse(fs.readFileSync(f, 'utf8')); }
+  else if (codes.length) official = await OFFICIAL.fetchAirlineEvents(codes, log);
+  promos.sources = promos.sources || {};
+  let offNew = 0;
+  for (const ev of official.items) {
+    if (ev.end && ev.end < TODAY) continue; // 끝난 이벤트
+    const id = `official:${ev.code}:${ev.key}`;
+    const body = `${ev.title} ${ev.sub || ''}`;
+    // 우리·현대·신한카드 제휴 할인은 '카드 할인'으로 분류 → 앱의 내 카드 할인 칸에 표시
+    const cardHit = F.CARD_NAMES.filter(c => body.includes(c));
+    const kind = cardHit.length ? 'card' : 'airline';
+    const payOnly = q => q.kind === 'card' || F.isPayBenefit(q); // 카드 할인·결제 혜택만 저장
+    if (known.has(id)) { Object.assign(known.get(id), { title: ev.title, desc: (ev.sub || '').slice(0, 200), from: ev.start || null, until: ev.end || null, kind, cards: cardHit }); continue; }
+    const c = F.classifyNews(body, '', routes) || { routes: [], price: F.promoPrice(body), ...F.newsScope(body) };
+    const p = { id, kind, official: true, title: ev.title, desc: (ev.sub || '').slice(0, 200), link: ev.link, source: `${F.airline(ev.code).name} 공식`,
+      date: new Date(`${ev.start || TODAY}T09:00:00+09:00`).toISOString(), from: ev.start || null, until: ev.end || null, found: TODAY,
+      cards: cardHit, airlines: [ev.code], countries: c.countries, allRoutes: c.allRoutes, routes: c.routes || [], price: c.price || null };
+    // 처음 확인하는 항공사는 이미 올라와 있던 이벤트를 알림 없이 저장만 (알림 폭탄 방지)
+    if (!payOnly(p)) continue;
+    if (!promos.sources[ev.code]) p.alerted = true;
+    known.set(id, p); fresh.push(p); offNew++;
+  }
+  for (const code of codes) if ((official.report[code] || 0) > 0 || MOCK) promos.sources[code] = promos.sources[code] || TODAY;
+  if (official.items.length) log(`■ 항공사 홈페이지 이벤트 ${official.items.length}건 확인 → 카드·결제 혜택 새로 ${offNew}건 (운임 특가는 뉴스로만)`);
   // 같은 소식 묶기 → 최근 60일, 최대 250묶음만 보관
   const keep = F.addDays(TODAY, -60);
   const freshIds = new Set(fresh.map(p => p.id));
