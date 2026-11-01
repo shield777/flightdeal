@@ -178,7 +178,7 @@
   }
   // ───── 바로 검색 버튼: 세 묶음(가격 비교 · 땡처리 · 항공사)을 같은 모양으로 ─────
   // app: 'link' = 이 주소 그대로 누르면 앱이 열림(사이트가 앱 연결 등록), 그 외 문자열 = 앱 전용 주소(먼저 열어 보고 앱이 없으면 사이트로)
-  const goBtn = (href, label, app) => `<a class="go-btn" href="${href}" target="_blank" rel="noopener"${app && app !== 'link' ? ` data-app="${esc(app)}"` : ''}>${esc(label)}${app ? '<span class="go-app">앱</span>' : ''}</a>`;
+  const goBtn = (href, label, app) => `<a class="go-btn" href="${href}" target="_blank" rel="noopener"${app && app !== 'link' ? ` data-app="${esc(app)}"` : ''}>${esc(label)}</a>`;
   const goGroup = (no, title, sub, inner) => `<section class="go-group"><h3><span class="go-no">${no}</span>${title} <small>${sub}</small></h3>${inner}</section>`;
   function quickButtons() {
     const q = cfg.q, dest = currentDest();
@@ -191,7 +191,7 @@
         <a class="go-more" href="${F.skyMonth('SEL', dest, dep.slice(0, 7), ret.slice(0, 7), q.adults, true)}" target="_blank" rel="noopener">날짜 미정이면 · 스카이스캐너 ${Number(dep.slice(5, 7))}월 전체 날짜별 가격${ICON.ext}</a>`)}
       ${goGroup(2, '땡처리', '땡처리닷컴 · 인천 출발 · 날짜와 상관없이 전체', `<div class="go-grid">${goBtn(T.city, `${city} 땡처리`)}${goBtn(T.today, '오늘 오픈 땡처리')}</div>`)}
       ${goGroup(3, '항공사', `서울 → ${esc(city)} 직항 · 홈페이지`, airlineBox(dest))}
-      <p class="hint">직항 조건은 네이버·스카이스캐너는 주소로, 구글은 검색어로 넣어요. 항공사 홈페이지는 날짜를 다시 골라야 해요.<br><span class="go-app">앱</span> 표시는 앱이 있으면 앱으로, 없으면 사이트로 열려요. 나머지는 그 회사가 '사이트 주소로 앱 열기'를 지원하지 않아서 사이트로 열려요(2026-11-01 확인).</p>`;
+      <p class="hint">직항 조건은 네이버·스카이스캐너는 주소로, 구글은 검색어로 넣어요. 항공사 홈페이지는 날짜를 다시 골라야 해요.</p>`;
   }
 
   // 항공사: 최근 가격 기록으로 확인된 '서울 출발 직항' 항공사 (data/airlines-by-city.json) + 그 외 국적 항공사(미확인, 접어 둠)
