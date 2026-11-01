@@ -90,7 +90,9 @@
   }
   async function loadAll() {
     const [p, w, rt] = await Promise.all([fetchData('data/promos.json'), fetchData('data/watchlist.json'), fetchData('data/airlines-by-city.json')]);
-    data.recent = rt || null;
+    // 가격 기록에 없는 직항(기사로 확인된 것)을 목록에 더함 → 항공사 버튼·프로모션·카드 판단에 같이 씀
+    const addKnown = r => { if (!r || !r.cities) return r; for (const [c, k] of Object.entries(F.KNOWN_DIRECT)) { const l = r.cities[c] = r.cities[c] || []; for (const a of k.codes) if (!l.some(x => x.code === a)) l.push({ code: a, n: 0, known: k.src }); } return r; };
+    data.recent = addKnown(rt) || null;
     if (p) data.promos = Object.assign({ items: [] }, p);
     if (w) data.watch = Object.assign({ settings: {}, watches: [] }, w);
     data.loaded = true;
@@ -206,7 +208,7 @@
     if (!list) return `<p class="hint">${R ? '이 도시는 직항 항공사 자료가 없어요.' : '항공사 목록이 아직 없어요. ⚙ 설정 → [항공사 목록 새로 만들기]'}</p>${others(F.KOREAN_AIRLINES)}`;
     const ok = list.map(x => x.code), rest = F.KOREAN_AIRLINES.filter(c => !ok.includes(c));
     return `${list.length ? `<div class="go-grid">${list.map(x => airlineBtn(x.code, x.name)).join('')}</div>` : '<p class="muted">최근 기록에서 확인된 직항 항공사가 없어요.</p>'}
-      <p class="go-note">최근 6개월 직항 가격 기록 기준 (${esc(fmtUpdated(R.updated))}) · 기록이 없는 항공사는 빠질 수 있어요</p>
+      <p class="go-note">최근 6개월 직항 가격 기록 기준 (${esc(fmtUpdated(R.updated))}) · 기록이 없는 항공사는 빠질 수 있어요${list.filter(x => x.known).map(x => ` · ${esc(F.airline(x.code).name)}: ${esc(x.known)}`).join('')}</p>
       ${rest.length ? others(rest) : ''}`;
   }
 
@@ -587,7 +589,7 @@
             rb.disabled = true;
             try {
               const r = await runOnServer({ mode: 'routes' }, 'data/airlines-by-city.json', j => (j.updated || '') > before, sec => { rb.textContent = `만드는 중… ${sec}초 (2~3분)`; }, 420);
-              data.recent = r; toast('항공사 목록을 새로 만들었어요'); close(); render();
+              data.recent = r; if (r && r.cities) for (const [c, k] of Object.entries(F.KNOWN_DIRECT)) { const l = r.cities[c] = r.cities[c] || []; for (const a of k.codes) if (!l.some(x => x.code === a)) l.push({ code: a, n: 0, known: k.src }); } toast('항공사 목록을 새로 만들었어요'); close(); render();
             } catch (err) { toast(`실패: ${err.message}`); rb.disabled = false; rb.textContent = '항공사 목록 새로 만들기'; }
             return;
           }
