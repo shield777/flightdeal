@@ -54,8 +54,28 @@
       method, headers: { Accept: 'application/vnd.github+json', Authorization: `Bearer ${g.token}`, 'X-GitHub-Api-Version': '2022-11-28', ...(body ? { 'Content-Type': 'application/json' } : {}) },
       body: body ? JSON.stringify(body) : undefined,
     });
-    if (!res.ok) { const t = await res.text().catch(() => ''); throw new Error(`GitHub ${res.status} ${t.slice(0, 120)}`); }
+    if (!res.ok) { const t = await res.text().catch(() => ''); const e = new Error(ghReason(res.status, t, method, p)); e.status = res.status; throw e; }
     return res.status === 204 ? null : res.json();
+  }
+  // GitHub 오류를 알아듣기 쉬운 말로 (토큰 권한 문제가 대부분)
+  function ghReason(status, text, method, path) {
+    const dispatch = /dispatches/.test(path);
+    if (status === 401) return '토큰이 틀렸거나 만료됐어요. ⚙ 설정에 토큰을 다시 붙여넣거나 새로 만들어 주세요.';
+    if (status === 403) return dispatch ? '토큰에 Actions 쓰기 권한이 없어요. GitHub 토큰 설정에서 Actions를 Read and write로 바꿔 주세요.' : '토큰 권한이 부족해요. Actions·Contents를 Read and write로 해 주세요.';
+    if (status === 404) return '토큰이 flightdeal 저장소에 접근하지 못해요. 토큰의 Repository access에서 flightdeal을 골라 주세요.';
+    if (status === 422) return `실행 요청 형식 오류예요(앱 문제). 알려 주세요: ${String(text).slice(0, 80)}`;
+    return `GitHub 오류 ${status}: ${String(text).slice(0, 80)}`;
+  }
+  // ⚙ 설정의 [토큰 점검]: 저장소 접근 → 결과 파일 읽기(Contents) → 실행 목록 읽기(Actions) 순서로 확인
+  async function checkToken() {
+    const out = [];
+    const step = async (label, fn) => { try { await fn(); out.push(`✅ ${label}`); return true; } catch (e) { out.push(`❌ ${label}: ${e.message}`); return false; } };
+    if (!cfg.gh.token) return ['❌ 토큰이 비어 있어요'];
+    if (!(await step('저장소 접근', () => gh('GET', '')))) return out;
+    await step('Contents 읽기', () => gh('GET', `/contents/data/promos.json?ref=${encodeURIComponent(cfg.gh.branch)}`));
+    await step('Actions 읽기', () => gh('GET', '/actions/workflows'));
+    out.push('ℹ️ 쓰기 권한(Actions·Contents Read and write)은 실제로 [지금 확인]을 눌러야 확인돼요');
+    return out;
   }
   async function fetchData(file) {
     const g = cfg.gh;
@@ -439,7 +459,7 @@
       data.promos = Object.assign({ items: [] }, p);
       const n = countsFor(country);
       toast(`${country}: 프로모션 ${n.promo}건 · 쓸 수 있는 카드 할인 ${n.cardOk}건`);
-    } catch (e) { toast(`확인 실패: ${e.message}`); }
+    } catch (e) { toast(`확인 실패: ${e.message}`, 9000); }
     ui.promoBusy = null; renderRefresh(); renderPromo(); renderCards();
   }
   async function geocodeCustom() {
@@ -468,6 +488,8 @@
     const g = cfg.gh;
     openSheet('설정', `
       <h3 class="fl-h3">GitHub 연결 <small>(프로모션 [지금 확인] 버튼에 필요)</small></h3>
+      <div class="fl-tokencheck"><button type="button" class="btn sm" data-token-check="1">토큰 점검</button><span class="hint">입력한 토큰으로 저장소·권한을 확인해요 (저장 후 누르세요)</span></div>
+      <div id="token-result" class="hint"></div>
       <label class="field"><span>토큰 <span class="hint">이 기기에만 저장돼요. 만드는 법은 SETUP.md</span></span><input type="password" id="s-token" value="${esc(g.token)}" placeholder="github_pat_…" autocomplete="off"></label>
       <details class="fl-adv"><summary>저장소 정보 (보통 그대로 두세요)</summary>
         <div class="grid3">
@@ -483,6 +505,16 @@
       `<button type="button" class="btn" data-close="1">닫기</button><button type="submit" class="btn primary">저장</button>`,
       (root, close) => {
         root.addEventListener('click', async e => {
+          const tc = e.target.closest('[data-token-check]');
+          if (tc) {
+            const typed = ($('#s-token', root).value || '').trim();
+            if (typed && typed !== cfg.gh.token) { cfg.gh.token = typed; save(); }
+            tc.disabled = true; $('#token-result', root).textContent = '확인 중…';
+            const r = await checkToken();
+            $('#token-result', root).innerHTML = r.map(x => esc(x)).join('<br>'); tc.disabled = false;
+            render(); // 토큰이 생기면 [지금 확인] 버튼이 보이게
+            return;
+          }
           const rb = e.target.closest('[data-routes-refresh]');
           if (rb) {
             if (needToken()) return;
@@ -506,7 +538,7 @@
   }
 
   let toastTimer;
-  function toast(msg) { const el = $('#toast'); el.textContent = msg; el.hidden = false; clearTimeout(toastTimer); toastTimer = setTimeout(() => { el.hidden = true; }, 3000); }
+  function toast(msg, ms = 3000) { const el = $('#toast'); el.textContent = msg; el.hidden = false; clearTimeout(toastTimer); toastTimer = setTimeout(() => { el.hidden = true; }, ms); }
 
   // ───── 이벤트 ─────
   app.addEventListener('submit', e => {

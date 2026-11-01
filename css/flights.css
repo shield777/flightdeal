@@ -228,3 +228,6 @@ button.fl-go { width: 100%; }
 .clim-chip.tone-bad { background: #FF8787; }
 
 .fl-auto { margin: 0; font-size: 14px; font-weight: 600; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-sm); padding: 8px 12px; }
+
+.fl-tokencheck { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+#token-result { line-height: 1.6; }
