@@ -358,13 +358,17 @@
     const { order, rel, useful } = promosFor(C);
     const hidden = rel.length - useful.length;
     const fitRank = (p, code) => ({ in: 0, null: 1, out: 2 })[String(F.fitsTrip(groupFacts(p, code), trip.dep, trip.ret))];
-    const sortList = (l, code) => l.sort((x, y) => fitRank(x, code) - fitRank(y, code) || (y.official ? 1 : 0) - (x.official ? 1 : 0) || (y.lastDate || y.date || '').localeCompare(x.lastDate || x.date || ''));
-    const groups = order.map(code => ({ code, list: useful.filter(p => (p.airlines || []).find(a => order.includes(a)) === code) })).filter(g => g.list.length);
+    // 할인율 높은 순 (할인율이 글에 없는 소식은 뒤로) → 같으면 내 여행 날짜 탑승 가능 → 공식 → 최신
+    const pctOf = (p, code) => groupFacts(p, code).pct || 0;
+    const sortList = (l, code) => l.sort((x, y) => pctOf(y, code) - pctOf(x, code) || fitRank(x, code) - fitRank(y, code) || (y.official ? 1 : 0) - (x.official ? 1 : 0) || (y.lastDate || y.date || '').localeCompare(x.lastDate || x.date || ''));
+    // 항공사 칸도 그 항공사의 가장 높은 할인율 순서로
+    const groups = order.map(code => ({ code, list: useful.filter(p => (p.airlines || []).find(a => order.includes(a)) === code) })).filter(g => g.list.length)
+      .map(g => ({ ...g, top: Math.max(0, ...g.list.map(p => pctOf(p, g.code))) })).sort((x, y) => y.top - x.top);
     const etc = useful.filter(p => !(p.airlines || []).some(a => order.includes(a)));
     const checked = data.promos.checked && data.promos.checked[C];
     box.innerHTML = `
       <section class="pr-head">
-        <h2>${esc(C)} 항공권 프로모션 <small>${esc(C)} 운항 항공사 ${order.length}곳 기준 · 진행 중이거나 최근 3주</small></h2>
+        <h2>${esc(C)} 항공권 프로모션 <small>${esc(C)} 운항 항공사 ${order.length}곳 기준 · 진행 중이거나 최근 3주 · 할인율 높은 순</small></h2>
         ${checkedLine(C)}
         <p class="hint">나라·날짜는 항공권 검색 탭에서 고른 것 · 내 여행 ${mmdd(trip.dep)}~${mmdd(trip.ret)}</p>
       </section>
