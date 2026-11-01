@@ -200,38 +200,50 @@
   function findDest(code) { return DESTS.find(d => d.code === code) || null; }
   function airline(code) { return AIRLINES[code] || { name: code || '항공사 미상', type: '?', bag: 'maybe', url: '' }; }
 
+  // 인원: 숫자(어른 수)나 { adults, children, infants } 둘 다 받음
+  //  아이 = 만 2~11세(좌석 있음), 유아 = 만 2세 미만(어른 무릎, 어른 1명당 1명까지)
+  function paxOf(p) {
+    const o = typeof p === 'object' && p ? p : { adults: p };
+    const adults = Math.max(1, Number(o.adults) || 1);
+    return { adults, children: Math.max(0, Number(o.children) || 0), infants: Math.min(adults, Math.max(0, Number(o.infants) || 0)) };
+  }
+  // 스카이스캐너는 아이 나이를 받음 → 요금 구분(아이 2~11세, 유아 2세 미만)에 맞는 대표 나이로 넣음
+  const SKY_CHILD_AGE = 7, SKY_INFANT_AGE = 1;
+  const skyPax = x => `adultsv2=${x.adults}${x.children + x.infants ? `&childrenv2=${[...Array(x.children).fill(SKY_CHILD_AGE), ...Array(x.infants).fill(SKY_INFANT_AGE)].join('%7C')}` : ''}`;
   // 다른 사이트 검색 주소. 서울 출발은 도시 코드(서울 전체: 인천+김포)로 넣음
   function links(originCode, dest, dep, ret, adults, opt = {}) {
+    const px = paxOf(adults);
     const seoul = originCode === 'SEL';
     const o = (ORIGINS.find(x => x.code === originCode) || { link: originCode }).link;
     const d = dest.link || dest.code;
-    const n = Math.max(1, adults || 1);
+    const n = px.adults;
     const ymd = s => s.slice(0, 10).replace(/-/g, '');
     const yymmdd = s => s.slice(2, 10).replace(/-/g, '');
     const nonstop = opt.direct ? 'Nonstop flights' : 'Flights';
-    const q = `${nonstop} from ${seoul ? 'Seoul' : o} to ${d} on ${dep.slice(0, 10)} through ${ret.slice(0, 10)}${n > 1 ? ` for ${n} adults` : ''}`;
+    const q = `${nonstop} from ${seoul ? 'Seoul' : o} to ${d} on ${dep.slice(0, 10)} through ${ret.slice(0, 10)}${(n > 1 || px.children || px.infants) ? ` for ${[`${n} adult${n > 1 ? 's' : ''}`, px.children ? `${px.children} child${px.children > 1 ? 'ren' : ''}` : '', px.infants ? `${px.infants} infant${px.infants > 1 ? 's' : ''} on lap` : ''].filter(Boolean).join(', ')}` : ''}`;
     const nv = seoul ? 'SEL' : o, sk = seoul ? 'sela' : o.toLowerCase();
-    const naverWeb = `https://flight.naver.com/flights/international/${nv}-${d}-${ymd(dep)}/${d}-${nv}-${ymd(ret)}?adult=${n}&fareType=Y${opt.direct ? '&isDirect=true' : ''}`;
+    const naverWeb = `https://flight.naver.com/flights/international/${nv}-${d}-${ymd(dep)}/${d}-${nv}-${ymd(ret)}?adult=${n}${px.children ? `&child=${px.children}` : ''}${px.infants ? `&infant=${px.infants}` : ''}&fareType=Y${opt.direct ? '&isDirect=true' : ''}`;
     return {
       // 네이버 앱 안의 브라우저로 같은 주소 열기 (네이버 앱 주소 형식). 앱이 없으면 앱 화면에서 사이트(naver)로 넘어감
       naverApp: `naversearchapp://inappbrowser?url=${encodeURIComponent(naverWeb)}&target=new&version=6`,
       google: `https://www.google.com/travel/flights?hl=ko&gl=KR&curr=KRW&q=${encodeURIComponent(q)}`,
       naver: naverWeb,
-      sky: `https://www.skyscanner.co.kr/transport/flights/${sk}/${d.toLowerCase()}/${yymmdd(dep)}/${yymmdd(ret)}/?adultsv2=${n}&cabinclass=economy&rtn=1${opt.direct ? '&preferdirects=true' : ''}`,
+      sky: `https://www.skyscanner.co.kr/transport/flights/${sk}/${d.toLowerCase()}/${yymmdd(dep)}/${yymmdd(ret)}/?${skyPax(px)}&cabinclass=economy&rtn=1${opt.direct ? '&preferdirects=true' : ''}`,
     };
   }
   // 땡처리닷컴 도시별 땡처리 목록 (사이트에서 도시를 눌렀을 때 만들어지는 주소 형식, 2026-10-31 확인. 인천 출발, 날짜 없이 그 도시 땡처리 전체)
   function ttang(dest, adults) {
+    const px = paxOf(adults);
     const d = dest.link || dest.code, name = dest.city.replace(/\(.*\)/, '');
     const q = new URLSearchParams({ trip: 'TT', dep0: 'ICN', arr0: d, dep1: '', arr1: '', dep2: '', arr2: '', dep0Name: '인천', arr0Name: name, dep1Name: '', arr1Name: '', dep2Name: '', arr2Name: '',
-      depdate0: '', depdate1: '', depdate2: '', adt: String(Math.max(1, adults || 1)), chd: '0', inf: '0', comp: 'Y', viaType: '2', fareType: 'A', gubun: '', popCityGbn: 'Y', depNation0: 'KR', arrNation0: '' });
+      depdate0: '', depdate1: '', depdate2: '', adt: String(px.adults), chd: String(px.children), inf: String(px.infants), comp: 'Y', viaType: '2', fareType: 'A', gubun: '', popCityGbn: 'Y', depNation0: 'KR', arrNation0: '' });
     return { city: `https://mm.ttang.com/ttangair/search/city/list.do?${q}`, today: 'https://mm.ttang.com/ttangair/search/discount/today.do?trip=RT&gubun=T' };
   }
   // 스카이스캐너 '한 달 전체' 보기 (가는 달·오는 달만 넣으면 그 달 날짜별 가격을 보여 줌)
   function skyMonth(originCode, dest, ymOut, ymBack, adults, direct) {
     const sk = originCode === 'SEL' ? 'sela' : ((ORIGINS.find(x => x.code === originCode) || { link: originCode }).link).toLowerCase();
     const yymm = ym => ym.slice(2, 4) + ym.slice(5, 7);
-    return `https://www.skyscanner.co.kr/transport/flights/${sk}/${(dest.link || dest.code).toLowerCase()}/${yymm(ymOut)}/${yymm(ymBack)}/?adultsv2=${Math.max(1, adults || 1)}&cabinclass=economy&rtn=1${direct ? '&preferdirects=true' : ''}`;
+    return `https://www.skyscanner.co.kr/transport/flights/${sk}/${(dest.link || dest.code).toLowerCase()}/${yymm(ymOut)}/${yymm(ymBack)}/?${skyPax(paxOf(adults))}&cabinclass=economy&rtn=1${direct ? '&preferdirects=true' : ''}`;
   }
 
   // ───── 기후·시기 ─────
@@ -768,7 +780,7 @@
   const api = {
     ORIGINS, DESTS, AIRLINES, CLIMATE, REGION_NAME, HOLIDAYS, PEAK, CARDS, AGENCIES, CARD_NAMES,
     monthsBetween, nightsBetween, addDays, addMonths, weekday, findDest, airline,
-    promoFacts, KNOWN_DIRECT, nonSeoulOnly, dropHead, sameFacts, mergeFacts, absDates, isDomestic, parseDates, splitSentences, subjectAirline, airlineText, fitsTrip, cardFacts, cardUse, links, skyMonth, ttang, climateOf, holidaysIn, KOREAN_AIRLINES, airlinesFor, isPayBenefit,
+    promoFacts, paxOf, KNOWN_DIRECT, nonSeoulOnly, dropHead, sameFacts, mergeFacts, absDates, isDomestic, parseDates, splitSentences, subjectAirline, airlineText, fitsTrip, cardFacts, cardUse, links, skyMonth, ttang, climateOf, holidaysIn, KOREAN_AIRLINES, airlinesFor, isPayBenefit,
     stripTags, parseWon, promoPrice, classifyNews, won, routeKey,
     PROMO_DEFAULT, COUNTRIES, COUNTRY_PLACES, airlineInText, airlineCode, newsScope, promoSettings, isWantedPromo,
   };

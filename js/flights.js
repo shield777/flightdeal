@@ -160,7 +160,10 @@
             <label class="field"><span>가는 날</span><input type="date" id="qk-dep" value="${dep}" min="${today}"></label>
             <label class="field"><span>오는 날 <small class="muted" id="qk-nights">${F.nightsBetween(dep, ret)}박</small></span><input type="date" id="qk-ret" value="${ret}" min="${dep}"></label>
           </div>
-          <label class="field"><span>인원</span><select id="q-adults">${Array.from({ length: 9 }, (_, i) => i + 1).map(n => `<option value="${n}" ${n === q.adults ? 'selected' : ''}>${n}명</option>`).join('')}</select></label>
+          <div class="grid2 g-pax">
+            <label class="field"><span>어른</span><select id="q-adults">${Array.from({ length: 9 }, (_, i) => i + 1).map(n => `<option value="${n}" ${n === q.adults ? 'selected' : ''}>${n}명</option>`).join('')}</select></label>
+            <label class="field"><span>아이 <small class="muted">만 12세 미만</small></span><select id="q-children">${Array.from({ length: 9 }, (_, i) => i).map(n => `<option value="${n}" ${n === (q.children || 0) ? 'selected' : ''}>${n}명</option>`).join('')}</select></label>
+          </div>
           <div class="fl-season" id="info"></div>
           <p class="hint fl-fixed">출발 서울(인천·김포) · 직항</p>
           <div id="quick">${quickButtons()}</div>
@@ -186,14 +189,15 @@
     const q = cfg.q, dest = currentDest();
     if (!/^[A-Z]{3}$/.test(dest.code || '')) return '<p class="muted">공항·도시 코드(영문 3글자)를 넣어 주세요.</p>';
     const { dep, ret } = quickDates();
-    const L = F.links('SEL', dest, dep, ret, q.adults, { direct: true });
-    const T = F.ttang(dest, q.adults), city = dest.city.replace(/\(.*\)/, '');
+    const pax = { adults: q.adults, children: q.children || 0 };
+    const L = F.links('SEL', dest, dep, ret, pax, { direct: true });
+    const T = F.ttang(dest, pax), city = dest.city.replace(/\(.*\)/, '');
     return `
       ${goGroup(1, '가격 비교', '고른 날짜·인원·직항 그대로', `<div class="go-grid">${goBtn(L.naver, '네이버', L.naverApp)}${goBtn(L.google, '구글')}${goBtn(L.sky, '스카이스캐너')}</div>
-        <a class="go-more" href="${F.skyMonth('SEL', dest, dep.slice(0, 7), ret.slice(0, 7), q.adults, true)}" target="_blank" rel="noopener">날짜 미정이면 · 스카이스캐너 ${Number(dep.slice(5, 7))}월 전체 날짜별 가격${ICON.ext}</a>`)}
+        <a class="go-more" href="${F.skyMonth('SEL', dest, dep.slice(0, 7), ret.slice(0, 7), pax, true)}" target="_blank" rel="noopener">날짜 미정이면 · 스카이스캐너 ${Number(dep.slice(5, 7))}월 전체 날짜별 가격${ICON.ext}</a>`)}
       ${goGroup(2, '땡처리', '땡처리닷컴 · 인천 출발 · 날짜와 상관없이 전체', `<div class="go-grid">${goBtn(T.city, `${city} 땡처리`)}${goBtn(T.today, '오늘 오픈 땡처리')}</div>`)}
       ${goGroup(3, '항공사', `서울 → ${esc(city)} 직항 · 홈페이지`, airlineBox(dest))}
-      <p class="hint">직항 조건은 네이버·스카이스캐너는 주소로, 구글은 검색어로 넣어요. 항공사 홈페이지는 날짜를 다시 골라야 해요.</p>`;
+      <p class="hint">직항 조건은 네이버·스카이스캐너는 주소로, 구글은 검색어로 넣어요. 항공사 홈페이지는 날짜·인원을 다시 골라야 해요.${cfg.q.children ? ' 스카이스캐너는 아이 나이를 물어봐서 7세로 넣어요(만 2~11세는 요금이 같아요).' : ''}</p>`;
   }
 
   // 항공사: 최근 가격 기록으로 확인된 '서울 출발 직항' 항공사 (data/airlines-by-city.json) + 그 외 국적 항공사(미확인, 접어 둠)
@@ -267,6 +271,7 @@
       q.custom = { code, en, city: en || code, country: '기타', region: prev.region || 'sea', lat: prev.en === en ? prev.lat : null, lon: prev.en === en ? prev.lon : null };
     } else q.dest = v('q-dest');
     q.adults = Number(v('q-adults')) || q.adults;
+    q.children = Number(v('q-children')) || 0;
     q.wantBag = false; q.direct = true;
     save();
   }
