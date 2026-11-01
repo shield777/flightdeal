@@ -259,7 +259,9 @@
   function promoPrice(text) {
     // "3만원 쿠폰", "최대 2만원 할인", "5천원 적립"처럼 운임이 아닌 금액은 뺌
     const clean = String(text || '').replace(/(?:최대\s*)?\d[\d,]*\s*(?:만\s*(?:\d{1,4}\s*천?)?)?\s*원\s*(?:상당\s*)?(?:까지\s*)?(?:[의을를이가]\s*)?(?:추가\s*)?(?:할인\s*)?(?:쿠폰|할인|적립|캐시백|포인트|증정|혜택|페이백|청구|확대|지원)/g, ' ');
-    const vals = parseWon(clean);
+    // 운임 이야기가 있는 문장의 금액만 ("면세 쇼핑 혜택 17만원" 같은 금액은 뺌)
+    const fare = clean.split(/(?<=다\.|요\.)\s*/).filter(x => /운임|항공권|편도|왕복|총액|부터|특가|~/.test(x)).join(' ');
+    const vals = parseWon(fare);
     if (!vals.length) return null;
     const one = /편도/.test(text), rt = /왕복/.test(text);
     return { amount: Math.min(...vals), trip: one && !rt ? 'oneway' : rt && !one ? 'round' : 'oneway?' };
