@@ -483,12 +483,18 @@
   // 문장을 쉼표·△·'…까지,' 단위 조각으로 나눠서, 조각에 나온 장소가 고른 나라인지 본다
   //  'mine' = 고른 나라 도시가 나옴 · 'other' = 다른 나라·지역(미주 등)만 나옴 · 'none' = 장소 없음(모든 노선 공통)
   const REGION_RE = /미주|유럽|대양주|동남아|동북아|중동|아시아\s*노선|국내선|LA|뉴욕|샌프란시스코|워싱턴|호놀룰루/;
+  // 출발지: 서울(인천·김포)이 아닌 곳에서 출발하는 노선 ("부산~후쿠오카", "청주 출발", "대구발")
+  const NON_SEOUL_RE = /(?<![가-힣])(?:부산|김해|대구|청주|광주|무안|양양|여수|울산|포항|사천|원주|군산|제주)\s*(?:국제공항|공항)?\s*(?:출발|발(?![가-힣])|발편|[~\-–→∼])/;
+  const SEOUL_RE = /(?<![가-힣])(?:인천|김포|서울)\s*(?:국제공항|공항)?\s*(?:출발|발(?![가-힣])|발편|[~\-–→∼])/;
+  // 기사 전체가 서울 아닌 곳 출발 특가만 다루는지 (서울 출발 이야기가 하나도 없음)
+  const nonSeoulOnly = text => NON_SEOUL_RE.test(text) && !SEOUL_RE.test(text);
   // one: 가격처럼 한 노선에만 해당하는 값 → 여러 나라가 함께 나열된 조각("일본·대만·베트남 … 9만9000원")은 어느 나라 것인지 모름
   function placeScope(clause, country, one) {
     const cs = COUNTRIES.filter(c => COUNTRY_PLACES[c].some(w => clause.includes(w)));
     if (/미주|하와이/.test(clause)) cs.push('미국');
-    // 국내선(제주 노선 등) 가격·기간은 어느 나라 노선도 아님
-    if (!cs.length && /국내선|(?<![가-힣])제주(?!항공|관광|에어)/.test(clause)) return 'other';
+    // 국내선(제주 노선 등)이나 서울이 아닌 곳 출발(부산~후쿠오카 등)의 가격·기간은 아예 안 봄 (이 앱은 서울 출발)
+    if (!cs.length && /국내선|(?<![가-힣])제주(?!항공|관광|에어)/.test(clause)) return 'skip';
+    if (NON_SEOUL_RE.test(clause) && !SEOUL_RE.test(clause)) return 'skip';
     if (!country) return 'none'; // 나라를 안 고르면 장소 구분 없이 (서로 다른 가격·기간이 여러 개면 '노선마다 다름')
     if (one && new Set(cs).size > 1) return 'other';
     if (cs.includes(country)) return 'mine';
@@ -507,20 +513,35 @@
   const COUPON_RE = /(?:최대\s*)?\d[\d,]*\s*(?:만\s*(?:\d{1,4}\s*천?)?)?\s*원\s*(?:상당\s*)?(?:까지\s*)?(?:[의을를이가]\s*)?(?:추가\s*)?(?:할인\s*)?(?:쿠폰|할인|적립|캐시백|포인트|증정|혜택|페이백|청구|확대|지원)/g;
   // 가격: 장소가 다른 가격이 여러 개면(노선마다 다름) 가격을 쓰지 않음 → 할인율만
   function fareFacts(t, country) {
-    const byScope = { mine: new Set(), none: new Set(), other: new Set() };
+    const items = []; // { v, trip, scope }
+    const tOne = /편도/.test(t), tRt = /왕복/.test(t);
     for (const sent of t.split(/(?<=다\.|요\.)\s*/)) {
       const clean = sent.replace(COUPON_RE, ' ');
       if (!FARE_CTX.test(clean)) continue;
+      const sOne = /편도/.test(clean), sRt = /왕복/.test(clean);
       let prev = 0;
-      for (const a of wonAt(clean)) { byScope[placeScope(clean.slice(prev, a.i), country, true)].add(a.v); prev = a.end; }
+      for (const a of wonAt(clean)) {
+        const seg = clean.slice(prev, a.i); prev = a.end;
+        // 편도·왕복: 금액 바로 앞 → 같은 문장 → 기사 전체에 한 가지만 적혀 있으면 그것
+        const one = /편도/.test(seg) || (!/왕복/.test(seg) && (sOne && !sRt || (!sOne && !sRt && tOne && !tRt)));
+        const rt = /왕복/.test(seg) || (!/편도/.test(seg) && (sRt && !sOne || (!sOne && !sRt && tRt && !tOne)));
+        items.push({ v: a.v, trip: one && !rt ? 'oneway' : rt && !one ? 'round' : 'oneway?', scope: placeScope(seg, country, true) });
+      }
     }
-    const one = /편도/.test(t), rt = /왕복/.test(t), trip = one && !rt ? 'oneway' : rt && !one ? 'round' : 'oneway?';
+    const use = items.filter(x => x.scope !== 'skip'); // 국내선·서울 아닌 출발 가격은 버림
+    const best = l => l.reduce((a, x) => x.v < a.v ? x : a);
+    const asPrice = x => ({ amount: x.v, trip: x.trip });
     // 고른 나라 노선 가격이 적혀 있으면 그중 가장 낮은 값 (좌석 등급별로 여러 개일 수 있음, '~부터')
-    if (byScope.mine.size) return { price: { amount: Math.min(...byScope.mine), trip }, priceFor: country };
-    const use = byScope.none;
-    if (use.size > 1 || byScope.other.size > 0) return { mixed: true };
-    if (use.size !== 1) return {};
-    return { price: { amount: [...use][0], trip } };
+    const mine = use.filter(x => x.scope === 'mine');
+    if (mine.length) return { price: asPrice(best(mine)), priceFor: country };
+    const none = use.filter(x => x.scope === 'none');
+    // 같은 편도/왕복 안에서 금액이 여러 개거나 다른 노선 가격이 섞이면 '노선마다 다름'
+    const byTrip = new Map(); for (const x of none) byTrip.set(x.trip, new Set([...(byTrip.get(x.trip) || []), x.v]));
+    if ([...byTrip.values()].some(v => v.size > 1) || use.some(x => x.scope === 'other')) return { mixed: true };
+    if (!none.length) return {};
+    // "편도 5만9000원, 왕복 11만원"처럼 편도·왕복이 함께면 둘 다 (알림은 둘 중 하나라도 조건에 맞으면)
+    const prices = [...new Map(none.map(x => [x.trip, asPrice(x)])).values()];
+    return { price: prices.find(p => p.trip === 'oneway') || prices[0], prices };
   }
   // 탑승기간: '탑승·이용' 문장의 조각마다 기간을 모아서, 노선마다 다르면 고른 나라 노선 것만 (없으면 '노선마다 다름')
   const BOARD_CTX = /탑승|이용할\s*수|이용\s*가능|이용\s*기간|여행\s*기간|출발\s*기간/, NOT_BOARD = /예약|판매|구매|발권|결제|프로모션|행사|이벤트|진행|취항한다|운항한다/;
@@ -543,7 +564,8 @@
         cands.push({ scope: placeScope(c, country), p: { from: ds.length > 1 ? ds[0] : null, to: ds[ds.length - 1] } });
       }
     }
-    const starts = cands.filter(x => x.start); 
+    cands = cands.filter(x => x.scope !== 'skip'); // 국내선·서울 아닌 출발 노선 기간은 버림
+    const starts = cands.filter(x => x.start);
     const startFor = sc => (starts.find(x => x.scope === sc) || {}).start;
     cands = cands.filter(x => !x.start);
     if (!cands.length) return null;
@@ -560,6 +582,7 @@
     const f = {};
     const fare = fareFacts(t, country);
     if (fare.price) f.price = fare.price;
+    if (fare.prices && fare.prices.length > 1) f.prices = fare.prices;
     if (fare.priceFor) f.priceFor = fare.priceFor;
     if (fare.mixed) f.priceMixed = true;
     const pct = [...t.matchAll(/(최대\s*)?(\d{1,2})\s*%\s*(?:할인|특가|세일|↓)?/g)].map(m => Number(m[2])).filter(n => n >= 3 && n <= 95);
@@ -738,7 +761,7 @@
   const api = {
     ORIGINS, DESTS, AIRLINES, CLIMATE, REGION_NAME, HOLIDAYS, PEAK, CARDS, AGENCIES, CARD_NAMES,
     monthsBetween, nightsBetween, addDays, addMonths, weekday, findDest, airline,
-    promoFacts, dropHead, sameFacts, mergeFacts, absDates, isDomestic, parseDates, splitSentences, subjectAirline, airlineText, fitsTrip, cardFacts, cardUse, links, skyMonth, ttang, climateOf, holidaysIn, KOREAN_AIRLINES, airlinesFor, isPayBenefit,
+    promoFacts, nonSeoulOnly, dropHead, sameFacts, mergeFacts, absDates, isDomestic, parseDates, splitSentences, subjectAirline, airlineText, fitsTrip, cardFacts, cardUse, links, skyMonth, ttang, climateOf, holidaysIn, KOREAN_AIRLINES, airlinesFor, isPayBenefit,
     stripTags, parseWon, promoPrice, classifyNews, won, routeKey,
     PROMO_DEFAULT, COUNTRIES, COUNTRY_PLACES, airlineInText, airlineCode, newsScope, promoSettings, isWantedPromo,
   };
