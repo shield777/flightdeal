@@ -1,75 +1,76 @@
 /* 공통 바탕: 색·글꼴·버튼·입력칸·창(시트)·알림 */
+/* 색: 차분한 회색 바탕 + 흰 카드 + 파란색 하나만 강조 (토스·애플 앱 같은 느낌) */
 :root {
-  --bg: #EEF1F5;
+  --bg: #F2F4F6;
   --surface: #FFFFFF;
-  --surface-2: #F6F8FB;
-  --ink: #131A24;
-  --muted: #5A6577;
-  --line: #D6DCE5;
-  --accent: #0B6E78;
+  --surface-2: #F2F4F6;
+  --ink: #191F28;
+  --muted: #6B7684;
+  --line: #E5E8EB;
+  --accent: #3182F6;
   --accent-ink: #FFFFFF;
-  --accent-soft: #DCEFF0;
+  --accent-soft: #E8F3FF;
   --sign-bg: #16191E;
   --sign-fg: #FFC629;
   --sign-text: #F2F3F5;
   --sign-muted: #A6ADB8;
-  --ok: #1D7F48;
-  --ok-soft: #DDF1E4;
-  --warn: #B8460E;
-  --warn-soft: #FBE6DA;
-  --shadow: 0 1px 2px rgba(19, 26, 36, .06), 0 4px 14px rgba(19, 26, 36, .06);
+  --ok: #0E9F6E;
+  --ok-soft: #E3F7EE;
+  --warn: #E5484D;
+  --warn-soft: #FDECEC;
+  --shadow: 0 1px 2px rgba(25, 31, 40, .04), 0 6px 20px rgba(25, 31, 40, .06);
   --scrim: rgba(12, 16, 22, .45);
 
-  --font-body: "IBM Plex Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
-  --font-display: "Barlow Condensed", "IBM Plex Sans KR", "Apple SD Gothic Neo", sans-serif;
-  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --font-body: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+  --font-display: var(--font-body);
+  --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
 
-  --r: 12px;
-  --r-sm: 8px;
+  --r: 18px;
+  --r-sm: 12px;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #0E131A;
-    --surface: #161D27;
-    --surface-2: #1C2430;
-    --ink: #E8ECF2;
-    --muted: #98A3B4;
-    --line: #2A3442;
-    --accent: #43B9C3;
-    --accent-ink: #062A2E;
-    --accent-soft: #123A3F;
+    --bg: #101215;
+    --surface: #1B1E23;
+    --surface-2: #24282E;
+    --ink: #ECEEF1;
+    --muted: #9AA3AE;
+    --line: #2C3138;
+    --accent: #4C9AFF;
+    --accent-ink: #FFFFFF;
+    --accent-soft: #1A2A42;
     --sign-bg: #07090C;
     --sign-fg: #FFC629;
     --sign-text: #EEF0F3;
     --sign-muted: #9AA2AE;
-    --ok: #4CC27E;
-    --ok-soft: #133524;
-    --warn: #F08A53;
-    --warn-soft: #3D2216;
-    --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 4px 14px rgba(0, 0, 0, .25);
+    --ok: #3DD68C;
+    --ok-soft: #12321F;
+    --warn: #FF6B6B;
+    --warn-soft: #3A1C1E;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .35), 0 8px 24px rgba(0, 0, 0, .25);
     --scrim: rgba(0, 0, 0, .6);
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --bg: #0E131A;
-  --surface: #161D27;
-  --surface-2: #1C2430;
-  --ink: #E8ECF2;
-  --muted: #98A3B4;
-  --line: #2A3442;
-  --accent: #43B9C3;
-  --accent-ink: #062A2E;
-  --accent-soft: #123A3F;
+  --bg: #101215;
+  --surface: #1B1E23;
+  --surface-2: #24282E;
+  --ink: #ECEEF1;
+  --muted: #9AA3AE;
+  --line: #2C3138;
+  --accent: #4C9AFF;
+  --accent-ink: #FFFFFF;
+  --accent-soft: #1A2A42;
   --sign-bg: #07090C;
   --sign-fg: #FFC629;
   --sign-text: #EEF0F3;
   --sign-muted: #9AA2AE;
-  --ok: #4CC27E;
-  --ok-soft: #133524;
-  --warn: #F08A53;
-  --warn-soft: #3D2216;
-  --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 4px 14px rgba(0, 0, 0, .25);
+  --ok: #3DD68C;
+  --ok-soft: #12321F;
+  --warn: #FF6B6B;
+  --warn-soft: #3A1C1E;
+  --shadow: 0 1px 2px rgba(0, 0, 0, .35), 0 8px 24px rgba(0, 0, 0, .25);
   --scrim: rgba(0, 0, 0, .6);
   color-scheme: dark;
 }
@@ -81,6 +82,7 @@ body {
   background: var(--bg);
   color: var(--ink);
   font: 15px/1.55 var(--font-body);
+  letter-spacing: -.01em;
   -webkit-font-smoothing: antialiased;
 }
 :root { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
@@ -109,7 +111,7 @@ body::before {
   padding-block: 12px;
 }
 .topbar .grow { flex: 1; min-width: 0; }
-.brand { font-family: var(--font-display); font-weight: 700; font-size: 22px; letter-spacing: .02em; text-transform: uppercase; }
+.brand { font-family: var(--font-display); font-weight: 800; font-size: 24px; letter-spacing: -.03em; }
 .brand small { font-family: var(--font-body); font-weight: 500; font-size: 13px; color: var(--muted); text-transform: none; letter-spacing: 0; margin-left: 6px; }
 
 .btn {

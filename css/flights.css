@@ -240,3 +240,81 @@ button.fl-go { width: 100%; }
 .pr-facts b { color: var(--accent); }
 .pr-facts .muted { font-size: 12px; }
 .pr-item .pr-title { font-size: 13px; font-weight: 600; color: var(--ink); }
+
+/* ───── 세련된 디자인 (2026-11) ─────
+   테두리 대신 그림자, 둥근 모서리, 버튼은 옅은 회색 바탕, 강조는 파란색 하나 */
+.topbar { padding-block: 14px 10px; }
+.fl-search, .pr-air, .fl-cards, .fl-promos, .fl-info, .fl-quick { border: 0; box-shadow: var(--shadow); border-radius: var(--r); }
+.fl-search { padding: 18px 16px; gap: 12px; }
+.pr-air, .fl-cards { padding: 16px; margin-top: 12px; }
+
+/* 입력칸: 옅은 회색 바탕, 테두리 없음 */
+.fl-search input[type=text], .fl-search input[type=date], .fl-search select, .sheet input[type=text], .sheet input[type=password], .sheet select {
+  background: var(--surface-2); border: 1px solid transparent; border-radius: var(--r-sm); min-height: 46px; padding: 10px 12px; font-weight: 600;
+}
+.fl-search input:focus, .fl-search select:focus { outline: 2px solid var(--accent); outline-offset: -2px; background: var(--surface); }
+.field > span { font-size: 13px; font-weight: 600; color: var(--muted); letter-spacing: 0; }
+
+/* 탭: 아이폰 '세그먼트' 모양 (선택된 칸만 흰색으로 떠 있음) */
+.fl-tabs { background: #E5E8EB; border: 0; border-radius: 14px; padding: 4px; gap: 2px; margin: 4px 0 14px; }
+.fl-tabs button { border-radius: 11px; padding: 9px 0; font-size: 15px; font-weight: 600; color: var(--muted); transition: background .15s, color .15s; }
+.fl-tabs button[aria-selected="true"] { background: var(--surface); color: var(--ink); box-shadow: 0 1px 3px rgba(0, 0, 0, .08), 0 1px 1px rgba(0, 0, 0, .04); }
+
+/* 바로 검색 버튼: 옅은 회색 바탕 + 진한 글자, 누르면 살짝 작아짐 */
+.go-group { gap: 10px; padding-top: 16px; }
+.go-group h3 { font-size: 16px; font-weight: 700; letter-spacing: -.02em; }
+.go-no { width: 22px; height: 22px; background: var(--ink); color: var(--surface); font-size: 12px; }
+.go-grid { gap: 8px; }
+.go-btn { border: 0; background: var(--surface-2); color: var(--ink); font-weight: 600; font-size: 15px; min-height: 48px; border-radius: var(--r-sm); transition: transform .08s, background .15s; }
+.go-btn:active { transform: scale(.97); background: var(--line); }
+.go-more { color: var(--accent); font-weight: 600; text-decoration: none; }
+.go-others summary, .fl-more-air summary { color: var(--muted); font-weight: 600; }
+
+/* 여행 시기 한 줄 */
+.fl-season, .fl-search .fl-season { background: var(--accent-soft); border: 0; border-radius: var(--r-sm); padding: 11px 14px; font-size: 15px; font-weight: 700; letter-spacing: -.02em; }
+.clim-chip { padding: 2px 9px; font-weight: 700; }
+.fl-fixed { font-size: 13px; }
+
+/* 자동 확인 안내·지금 확인 */
+.fl-auto { background: transparent; border: 0; padding: 0 2px; font-size: 13px; font-weight: 500; color: var(--muted); }
+.fl-refresh { margin: 0 0 10px; }
+.fl-refresh .hint { padding: 0 2px; }
+
+/* 프로모션 */
+.pr-head h2 { font-size: 21px; font-weight: 800; letter-spacing: -.03em; margin: 6px 0 6px; }
+.pr-head h2 small { display: block; margin: 2px 0 0; font-size: 13px; }
+.pr-air header { margin-bottom: 12px; }
+.pr-air header b { font-size: 18px; font-weight: 800; letter-spacing: -.03em; }
+.pr-air header .pr-how { font-size: 12px; font-weight: 600; color: var(--muted); background: var(--surface-2); padding: 2px 8px; border-radius: 999px; }
+.pr-air header a { color: var(--muted); font-weight: 600; text-decoration: none; }
+.pr-air ul { gap: 18px; }
+.pr-air > ul > li + li { border-top: 1px solid var(--line); padding-top: 18px; }
+.pr-facts { background: var(--surface-2); border-radius: 14px; padding: 12px 14px; gap: 6px 14px; font-size: 15px; margin-bottom: 8px; }
+.pr-facts dt { font-size: 13px; font-weight: 600; color: var(--muted); padding-top: 1px; }
+.pr-facts dd { font-weight: 600; }
+.pr-facts b { color: var(--ink); font-weight: 800; }
+.pr-facts dd:first-of-type b { color: var(--accent); }
+.pr-facts small.muted { font-size: 12px; font-weight: 500; }
+.fit { font-size: 12px; font-weight: 700; padding: 2px 8px; border-radius: 999px; margin-left: 2px; }
+.pr-item .pr-title { font-size: 15px; font-weight: 700; color: var(--ink); text-decoration: none; letter-spacing: -.02em; line-height: 1.45; }
+.pr-sum { color: #4E5968; font-size: 14px; line-height: 1.6; padding-left: 16px; margin: 6px 0 4px; gap: 4px; }
+.pr-sum li::marker { color: var(--line); }
+.pr-air .src, .fl-cards .src { font-size: 12px; color: var(--muted); }
+.badge-news, .badge-off { border: 0; border-radius: 6px; padding: 2px 6px; font-weight: 700; }
+.badge-news { background: var(--surface-2); color: var(--muted); }
+
+/* 카드 탭 */
+.fl-cards h2 { font-size: 17px; font-weight: 800; letter-spacing: -.02em; margin-bottom: 12px; }
+.fl-cards h2 small { display: block; margin: 2px 0 0; }
+.fl-cards ul.news { gap: 16px; }
+.fl-cards ul.news > li + li { border-top: 1px solid var(--line); padding-top: 16px; }
+.fl-cards .pr-item > a { font-size: 15px; font-weight: 700; color: var(--ink); text-decoration: none; letter-spacing: -.02em; }
+.badge-card { background: var(--accent-soft); color: var(--accent); border-radius: 6px; padding: 2px 7px; }
+.pr-key { background: transparent; padding: 0; font-size: 17px; font-weight: 600; }
+.pr-key b { color: var(--accent); font-weight: 800; }
+.pr-no { box-shadow: var(--shadow); border: 0; }
+.fl-foot { line-height: 1.6; padding: 0 2px; }
+
+/* 어두운 화면 */
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .fl-tabs { background: #24282E; } :root:not([data-theme="light"]) .pr-sum { color: #B0B8C1; } :root:not([data-theme="light"]) .fl-tabs button[aria-selected="true"] { background: #3A3F47; } }
+:root[data-theme="dark"] .fl-tabs { background: #24282E; } :root[data-theme="dark"] .pr-sum { color: #B0B8C1; } :root[data-theme="dark"] .fl-tabs button[aria-selected="true"] { background: #3A3F47; }
