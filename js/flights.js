@@ -177,7 +177,8 @@
     return { dep, ret };
   }
   // ───── 바로 검색 버튼: 세 묶음(가격 비교 · 땡처리 · 항공사)을 같은 모양으로 ─────
-  const goBtn = (href, label) => `<a class="go-btn" href="${href}" target="_blank" rel="noopener">${esc(label)}</a>`;
+  // app: 'link' = 이 주소 그대로 누르면 앱이 열림(사이트가 앱 연결 등록), 그 외 문자열 = 앱 전용 주소(먼저 열어 보고 앱이 없으면 사이트로)
+  const goBtn = (href, label, app) => `<a class="go-btn" href="${href}" target="_blank" rel="noopener"${app && app !== 'link' ? ` data-app="${esc(app)}"` : ''}>${esc(label)}${app ? '<span class="go-app">앱</span>' : ''}</a>`;
   const goGroup = (no, title, sub, inner) => `<section class="go-group"><h3><span class="go-no">${no}</span>${title} <small>${sub}</small></h3>${inner}</section>`;
   function quickButtons() {
     const q = cfg.q, dest = currentDest();
@@ -186,18 +187,18 @@
     const L = F.links('SEL', dest, dep, ret, q.adults, { direct: true });
     const T = F.ttang(dest, q.adults), city = dest.city.replace(/\(.*\)/, '');
     return `
-      ${goGroup(1, '가격 비교', '고른 날짜·인원·직항 그대로', `<div class="go-grid">${goBtn(L.naver, '네이버')}${goBtn(L.google, '구글')}${goBtn(L.sky, '스카이스캐너')}</div>
+      ${goGroup(1, '가격 비교', '고른 날짜·인원·직항 그대로', `<div class="go-grid">${goBtn(L.naver, '네이버', L.naverApp)}${goBtn(L.google, '구글')}${goBtn(L.sky, '스카이스캐너')}</div>
         <a class="go-more" href="${F.skyMonth('SEL', dest, dep.slice(0, 7), ret.slice(0, 7), q.adults, true)}" target="_blank" rel="noopener">날짜 미정이면 · 스카이스캐너 ${Number(dep.slice(5, 7))}월 전체 날짜별 가격${ICON.ext}</a>`)}
       ${goGroup(2, '땡처리', '땡처리닷컴 · 인천 출발 · 날짜와 상관없이 전체', `<div class="go-grid">${goBtn(T.city, `${city} 땡처리`)}${goBtn(T.today, '오늘 오픈 땡처리')}</div>`)}
-      ${goGroup(3, '항공사', `서울 → ${esc(city)} 직항 · 앱이 있으면 앱으로`, airlineBox(dest))}
-      <p class="hint">직항 조건은 네이버·스카이스캐너는 주소로, 구글은 검색어로 넣어요. 항공사 홈페이지는 날짜를 다시 골라야 해요. 앱이 안 열리면 버튼을 길게 눌러 '앱에서 열기'를 확인하세요.</p>`;
+      ${goGroup(3, '항공사', `서울 → ${esc(city)} 직항 · 홈페이지`, airlineBox(dest))}
+      <p class="hint">직항 조건은 네이버·스카이스캐너는 주소로, 구글은 검색어로 넣어요. 항공사 홈페이지는 날짜를 다시 골라야 해요.<br><span class="go-app">앱</span> 표시는 앱이 있으면 앱으로, 없으면 사이트로 열려요. 나머지는 그 회사가 '사이트 주소로 앱 열기'를 지원하지 않아서 사이트로 열려요(2026-11-01 확인).</p>`;
   }
 
   // 항공사: 최근 가격 기록으로 확인된 '서울 출발 직항' 항공사 (data/airlines-by-city.json) + 그 외 국적 항공사(미확인, 접어 둠)
   function airlineBtn(code, name) {
     const known = F.AIRLINES[code], a = F.airline(code), label = known ? a.name : (name || code);
     const href = a.url || `https://www.google.com/search?q=${encodeURIComponent(`${label} 항공 홈페이지`)}`; // 홈페이지 주소를 모르는 항공사는 검색으로
-    return goBtn(href, label);
+    return goBtn(href, label, known && a.app ? 'link' : '');
   }
   function airlineBox(dest) {
     const R = data.recent, list = R && R.cities ? R.cities[dest.code] : null;
@@ -588,6 +589,18 @@
   });
   // 직접 입력한 코드·도시 이름은 입력이 끝나면 반영
   app.addEventListener('change', e => { if (e.target.id === 'q-ccode' || e.target.id === 'q-cname') { readForm(); render(); } });
+  // 앱 전용 주소가 있는 버튼(네이버): 휴대폰이면 앱을 먼저 열어 보고, 1.5초 안에 앱으로 넘어가지 않으면(앱 없음) 사이트로
+  const isPhone = () => /iPhone|iPad|iPod|Android/.test(navigator.userAgent) || (/Macintosh/.test(navigator.userAgent) && navigator.maxTouchPoints > 1);
+  app.addEventListener('click', e => {
+    const a = e.target.closest('a[data-app]'); if (!a || !isPhone()) return;
+    e.preventDefault();
+    let left = false;
+    const away = () => { left = true; };
+    document.addEventListener('visibilitychange', away, { once: true });
+    window.addEventListener('pagehide', away, { once: true });
+    location.href = a.dataset.app;
+    setTimeout(() => { if (!left && !document.hidden) location.href = a.href; }, 1500);
+  });
   app.addEventListener('click', e => {
     const b = e.target.closest('[data-act]'); if (!b) return;
     const act = b.dataset.act;

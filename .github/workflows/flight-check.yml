@@ -16,7 +16,7 @@ on:
       mode:
         description: 'promos = 프로모션 확인, routes = 도시별 직항 항공사 목록'
         type: choice
-        options: [promos, routes, probe]
+        options: [promos, routes]
         default: promos
       country:
         description: '프로모션을 찾을 나라 (예: 베트남, 필리핀). 비우면 모든 나라'
@@ -38,9 +38,6 @@ jobs:
       - uses: actions/setup-node@v5
         with:
           node-version: 22
-      - name: 시험
-        if: ${{ inputs.mode == 'probe' }}
-        run: node scripts/probe-applinks.js
       - name: 도시별 직항 항공사 목록
         if: ${{ inputs.mode == 'routes' }}
         run: node scripts/airline-routes.js

@@ -95,7 +95,7 @@
   const AIRLINES = {
     KE: { name: '대한항공', type: 'FSC', bag: 'inc', kg: 23, url: 'https://www.koreanair.com' },
     OZ: { name: '아시아나항공', alias: ['아시아나'], type: 'FSC', bag: 'inc', kg: 23, url: 'https://flyasiana.com' },
-    '7C': { name: '제주항공', type: 'LCC', bag: 'exc', url: 'https://www.jejuair.net' },
+    '7C': { name: '제주항공', type: 'LCC', bag: 'exc', url: 'https://www.jejuair.net', app: true }, // app: 앱 연결 등록 확인(2026-11-01)
     LJ: { name: '진에어', type: 'LCC', bag: 'maybe', kg: 15, url: 'https://www.jinair.com', bagNote: '일반 운임은 15kg 포함, 특가 운임은 미포함일 수 있어요' },
     TW: { name: '트리니티항공', alias: ['티웨이항공', '티웨이'], type: 'LCC', bag: 'exc', url: 'https://www.trinityairways.com' }, // 2026년 티웨이항공 → 트리니티항공 사명 변경
     BX: { name: '에어부산', type: 'LCC', bag: 'exc', url: 'https://www.airbusan.com' },
@@ -116,7 +116,7 @@
     XJ: { name: '타이 에어아시아X', type: 'LCC', bag: 'exc', url: 'https://www.airasia.com' },
     FD: { name: '타이 에어아시아', type: 'LCC', bag: 'exc', url: 'https://www.airasia.com' },
     TG: { name: '타이항공', type: 'FSC', bag: 'inc', kg: 23, url: 'https://www.thaiairways.com' },
-    TR: { name: '스쿠트', type: 'LCC', bag: 'exc', url: 'https://www.flyscoot.com' },
+    TR: { name: '스쿠트', type: 'LCC', bag: 'exc', url: 'https://www.flyscoot.com', app: true },
     SQ: { name: '싱가포르항공', type: 'FSC', bag: 'inc', kg: 25, url: 'https://www.singaporeair.com' },
     MH: { name: '말레이시아항공', type: 'FSC', bag: 'maybe', kg: 25, url: 'https://www.malaysiaairlines.com' },
     GA: { name: '가루다항공', type: 'FSC', bag: 'inc', kg: 23, url: 'https://www.garuda-indonesia.com' },
@@ -208,9 +208,12 @@
     const nonstop = opt.direct ? 'Nonstop flights' : 'Flights';
     const q = `${nonstop} from ${seoul ? 'Seoul' : o} to ${d} on ${dep.slice(0, 10)} through ${ret.slice(0, 10)}${n > 1 ? ` for ${n} adults` : ''}`;
     const nv = seoul ? 'SEL' : o, sk = seoul ? 'sela' : o.toLowerCase();
+    const naverWeb = `https://flight.naver.com/flights/international/${nv}-${d}-${ymd(dep)}/${d}-${nv}-${ymd(ret)}?adult=${n}&fareType=Y${opt.direct ? '&isDirect=true' : ''}`;
     return {
+      // 네이버 앱 안의 브라우저로 같은 주소 열기 (네이버 앱 주소 형식). 앱이 없으면 앱 화면에서 사이트(naver)로 넘어감
+      naverApp: `naversearchapp://inappbrowser?url=${encodeURIComponent(naverWeb)}&target=new&version=6`,
       google: `https://www.google.com/travel/flights?hl=ko&gl=KR&curr=KRW&q=${encodeURIComponent(q)}`,
-      naver: `https://flight.naver.com/flights/international/${nv}-${d}-${ymd(dep)}/${d}-${nv}-${ymd(ret)}?adult=${n}&fareType=Y${opt.direct ? '&isDirect=true' : ''}`,
+      naver: naverWeb,
       sky: `https://www.skyscanner.co.kr/transport/flights/${sk}/${d.toLowerCase()}/${yymmdd(dep)}/${yymmdd(ret)}/?adultsv2=${n}&cabinclass=economy&rtn=1${opt.direct ? '&preferdirects=true' : ''}`,
     };
   }
