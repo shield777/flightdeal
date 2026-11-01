@@ -231,3 +231,11 @@ button.fl-go { width: 100%; }
 
 .fl-tokencheck { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
 #token-result { line-height: 1.6; }
+
+/* 프로모션: 주요내용·예약기간·탑승기간을 맨 위에 */
+.pr-facts { display: grid; grid-template-columns: auto 1fr; gap: 4px 10px; margin: 0 0 6px; padding: 8px 10px; background: var(--accent-soft); border-radius: var(--r-sm); font-size: 14px; }
+.pr-facts dt { font-weight: 700; color: var(--muted); font-size: 12px; padding-top: 2px; white-space: nowrap; }
+.pr-facts dd { margin: 0; color: var(--ink); }
+.pr-facts b { color: var(--accent); }
+.pr-facts .muted { font-size: 12px; }
+.pr-item .pr-title { font-size: 13px; font-weight: 600; color: var(--ink); }

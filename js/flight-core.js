@@ -251,6 +251,8 @@
     while ((m = re1.exec(s))) out.push(Number(m[1]) * 10000 + (m[2] ? (m[3] ? Number(m[2]) * 1000 : Number(m[2])) : 0));
     const re2 = /(\d{1,3}(?:,\d{3})+|\d{4,7})\s*원/g;
     while ((m = re2.exec(s))) out.push(Number(m[1].replace(/,/g, '')));
+    const re3 = /₩\s*(\d{1,3}(?:,\d{3})+|\d{4,7})/g; // ₩99,000
+    while ((m = re3.exec(s))) out.push(Number(m[1].replace(/,/g, '')));
     return out.filter(v => v >= 10000 && v <= 5000000);
   }
   function promoPrice(text) {
@@ -385,8 +387,15 @@
     else if (/(?:프로모션|할인)\s*코드/.test(t)) f.codeHint = true; // 코드 값은 없지만 할인 코드를 준다고 적힌 경우
     const board = periodAfter(t, /탑승\s*(?:기간|일)?|여행\s*기간|출발\s*기간/, base);
     if (board) f.board = board;
-    const book = periodAfter(t, /예약\s*(?:및\s*결제)?\s*(?:기간)?|판매\s*기간|구매\s*기간|발권\s*기간/, base);
+    const BOOK_RE = /예약\s*(?:및\s*결제)?\s*(?:기간)?|판매\s*기간|구매\s*기간|발권\s*기간/, BOARD_RE = /탑승\s*(?:기간|일)?|여행\s*기간|출발\s*기간/;
+    const book = periodAfter(t, BOOK_RE, base);
     if (book) f.book = book;
+    // 날짜가 하나뿐이라 예약·탑승에 똑같이 붙었으면, 그 날짜 바로 앞에 더 가까이 있는 쪽만 남김
+    if (f.book && f.board && f.book.to === f.board.to && f.book.from === f.board.from) {
+      const firstDate = t.search(/\d{1,2}\s*월\s*\d{1,2}\s*일|\d{4}\s*[년.]|\d{1,2}월\s*(?:말)?\s*까지/);
+      const lastBefore = re => { let i = -1, m; const g = new RegExp(re.source, 'g'); while ((m = g.exec(t)) && m.index < firstDate) i = m.index; return i; };
+      if (lastBefore(BOOK_RE) > lastBefore(BOARD_RE)) delete f.board; else delete f.book;
+    }
     return f;
   }
   // 여행 날짜가 탑승 기간 안인지: 'in' | 'out' | null(기간 정보 없음)
