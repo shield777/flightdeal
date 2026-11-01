@@ -183,6 +183,7 @@ button.fl-go { width: 100%; }
 /* 여행 시기 한 줄 (타이틀 아래) */
 .fl-season { font-size: 15px; font-weight: 700; color: var(--ink); background: var(--accent-soft); border: 1px solid var(--accent); border-radius: var(--r-sm); padding: 8px 12px; margin: 0 0 12px; line-height: 1.45; }
 .fl-season:empty { display: none; }
+.fl-search .fl-season { margin: 0; } /* 검색 칸 안(인원 밑)에서는 칸 사이 간격만 */
 
 .fl-more-air summary { font-size: 13px; color: var(--muted); cursor: pointer; margin: 2px 0 6px; }
 

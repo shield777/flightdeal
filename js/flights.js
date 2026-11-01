@@ -138,7 +138,7 @@
           <div class="grow brand">최저가 항공권</div>
           <button class="btn icon sm" data-act="settings" aria-label="설정">${ICON.gear}</button>
         </header>
-        ${ui.tab === 'price' ? '<div class="fl-season" id="info"></div><div class="fl-refresh" id="refresh"></div>' : ''}
+        ${ui.tab === 'price' ? '<div class="fl-refresh" id="refresh"></div>' : ''}
         <nav class="fl-tabs" role="tablist">
           <button role="tab" aria-selected="${ui.tab === 'price'}" data-act="tab" data-v="price">항공권 검색</button>
           <button role="tab" aria-selected="${ui.tab === 'promo'}" data-act="tab" data-v="promo">프로모션</button>
@@ -159,6 +159,7 @@
             <label class="field"><span>오는 날 <small class="muted" id="qk-nights">${F.nightsBetween(dep, ret)}박</small></span><input type="date" id="qk-ret" value="${ret}" min="${dep}"></label>
           </div>
           <label class="field"><span>인원</span><select id="q-adults">${Array.from({ length: 9 }, (_, i) => i + 1).map(n => `<option value="${n}" ${n === q.adults ? 'selected' : ''}>${n}명</option>`).join('')}</select></label>
+          <div class="fl-season" id="info"></div>
           <p class="hint fl-fixed">출발 서울(인천·김포) · 직항</p>
           <div id="quick">${quickButtons()}</div>
         </form>
