@@ -277,14 +277,14 @@
   const fmtDay = s => `${Number(s.slice(5, 7))}/${Number(s.slice(8, 10))}(${F.weekday(s)})`;
 
   // ───── 프로모션 탭 ─────
-  // 항공사별 요약. 공식 홈페이지(제주항공·트리니티항공·비엣젯)와 뉴스 기사를 구분하고, 원문에 적힌 내용만 보여 줌 (가격 계산·추정 없음)
-  const OFFICIAL_AIR = ['7C', 'TW', 'VJ'];
+  // 항공사별 요약. 뉴스 기사만 씀(항공사 홈페이지는 보지 않음). 기사 본문까지 읽어서 원문에 적힌 내용만 보여 줌 (가격 계산·추정 없음)
   const isLive = p => p.until ? p.until >= today : (p.lastFound || p.found) >= F.addDays(today, -21);
   const mmdd = s => s ? `${Number(s.slice(5, 7))}/${Number(s.slice(8, 10))}` : '';
   // 기사 등록일(한국 날짜): 글에 연·월이 빠진 날짜("28일부터 30일까지")는 이 날을 기준으로 채움
   const kstDay = d => { const t = new Date(d); return isNaN(t) ? '' : new Date(t.getTime() + 9 * 3600e3).toISOString().slice(0, 10); };
   // 기사 글: 제목 + 첫 문단 + 서버가 원문에서 저장한 문장(body). 여러 항공사 소식을 모은 기사는 code 항공사 문장만
-  const articleText = (m, code) => F.airlineText([m.title, ...F.splitSentences(F.stripTags(m.desc || '')), ...(m.body || [])], code);
+  // 제목은 맨 뒤 (본문·첫 문단의 날짜를 먼저 씀: 제목은 줄여 쓰다 틀리는 경우가 있음)
+  const articleText = (m, code) => F.airlineText([...F.dropHead(F.splitSentences(F.stripTags(m.desc || '')), m.title), ...F.dropHead((m.body || []).map(F.stripTags), m.title), m.title], code);
   // 이 나라 화면에서 이 소식을 어느 항공사 칸에 보여 주는지
   const shownCode = (p, order) => (p.airlines || []).find(a => order.includes(a)) || null;
   // 기사·공지 묶음에서 핵심 사실 모으기 (대표 + 같은 소식 기사들)
@@ -295,12 +295,11 @@
     for (const x of all) {
       if (x.price && (!f.price || x.price.amount < f.price.amount)) f.price = x.price;
       if (x.pct && (!f.pct || x.pct > f.pct)) f.pct = x.pct;
-      if (x.code && !f.code) f.code = x.code;
       if (x.codeHint) f.codeHint = true;
-      if (x.board && !f.board) f.board = x.board;
-      if (x.book && !f.book) f.book = x.book;
     }
-    if (p.official && p.until && !f.book) f.book = { from: p.from || null, to: p.until };
+    // 예약·탑승 기간·코드: 묶인 기사들 중 가장 많은 기사에 적힌 값 (한 기사의 오타에 끌려가지 않도록)
+    const vote = get => { const n = new Map(); for (const x of all) { const v = get(x); if (v) { const k = JSON.stringify(v); n.set(k, (n.get(k) || 0) + 1); } } let best = null, c = 0; for (const [k, v] of n) if (v > c) { best = k; c = v; } return best ? JSON.parse(best) : undefined; };
+    for (const k of ['book', 'board', 'code']) { const v = vote(x => x[k]); if (v) f[k] = v; }
     return f;
   }
   const hasFacts = f => !!(f.price || f.pct || f.code || f.codeHint || f.board || f.book);
@@ -336,6 +335,17 @@
       <div class="src"><span class="${p.official ? 'badge-off' : 'badge-news'}">${p.official ? '공식' : '뉴스'}</span> ${src}${p.more && p.more.length ? ` · 같은 소식 ${p.more.length + 1}건 묶음` : ''}</div>
     </li>`;
   }
+  // 같은 칸 안에서 핵심 사실(금액·할인율·코드·예약기간·탑승기간)이 같은 소식은 한 줄로 합침 (모음 기사도 그 항공사 내용 기준)
+  function mergeSame(list, code) {
+    const out = [];
+    for (const p of list) {
+      const f = groupFacts(p, code);
+      const hit = out.find(o => F.sameFacts(o.f, f) > 0);
+      if (hit) { hit.p = { ...hit.p, more: [...(hit.p.more || []), p, ...(p.more || [])] }; hit.f = groupFacts(hit.p, code); }
+      else out.push({ p, f });
+    }
+    return out.map(o => o.p);
+  }
   function promosFor(C) {
     const rec = (data.recent && data.recent.cities) || {};
     const order = [...new Set(F.DESTS.filter(d => d.country === C).flatMap(d => (rec[d.code] || []).map(r => r.code)))];
@@ -343,7 +353,10 @@
     const rel = all.filter(p => !F.isPayBenefit(p) && ((p.countries || []).includes(C) || (p.allRoutes && !(p.countries || []).length && (p.airlines || []).some(a => order.includes(a)))));
     // 예약 기간이 이미 끝난 소식은 숨김 (글에 적힌 마감일 기준)
     const ended = p => { const f = groupFacts(p, shownCode(p, order)); return !!(f.book && f.book.to < today); };
-    return { order, rel, useful: rel.filter(p => !ended(p) && (p.official || hasFacts(groupFacts(p, shownCode(p, order))))) };
+        const keep = rel.filter(p => !ended(p) && hasFacts(groupFacts(p, shownCode(p, order))));
+    // 같은 항공사 칸끼리 사실이 같은 소식 합치기
+    const useful = [...new Set(keep.map(p => shownCode(p, order)))].flatMap(code => mergeSame(keep.filter(p => shownCode(p, order) === code), code));
+    return { order, rel, useful };
   }
   function countsFor(C) {
     const c = cardsFor(C);
@@ -354,13 +367,13 @@
     if (!data.loaded) { box.innerHTML = '<div class="empty">자료를 불러오는 중…</div>'; return; }
     const dest = currentDest(), C = dest.country, trip = quickDates();
     // 이 나라 관련: 기사에 나라·도시가 나오거나, 이 나라를 운항하는 항공사의 '전 노선·국제선' 특가
-    // 불필요한 기사 숨김: 공식이 아니고 가격·할인율·코드·기간 중 하나도 없는 기사
+    // 불필요한 기사 숨김: 가격·할인율·코드·기간 중 하나도 없는 기사, 예약이 끝난 소식. 금액·기간이 같은 기사는 한 줄로
     const { order, rel, useful } = promosFor(C);
     const hidden = rel.length - useful.length;
     const fitRank = (p, code) => ({ in: 0, null: 1, out: 2 })[String(F.fitsTrip(groupFacts(p, code), trip.dep, trip.ret))];
-    // 할인율 높은 순 (할인율이 글에 없는 소식은 뒤로) → 같으면 내 여행 날짜 탑승 가능 → 공식 → 최신
+    // 할인율 높은 순 (할인율이 글에 없는 소식은 뒤로) → 같으면 내 여행 날짜 탑승 가능 → 최신
     const pctOf = (p, code) => groupFacts(p, code).pct || 0;
-    const sortList = (l, code) => l.sort((x, y) => pctOf(y, code) - pctOf(x, code) || fitRank(x, code) - fitRank(y, code) || (y.official ? 1 : 0) - (x.official ? 1 : 0) || (y.lastDate || y.date || '').localeCompare(x.lastDate || x.date || ''));
+    const sortList = (l, code) => l.sort((x, y) => pctOf(y, code) - pctOf(x, code) || fitRank(x, code) - fitRank(y, code) || (y.lastDate || y.date || '').localeCompare(x.lastDate || x.date || ''));
     // 항공사 칸도 그 항공사의 가장 높은 할인율 순서로
     const groups = order.map(code => ({ code, list: useful.filter(p => (p.airlines || []).find(a => order.includes(a)) === code) })).filter(g => g.list.length)
       .map(g => ({ ...g, top: Math.max(0, ...g.list.map(p => pctOf(p, g.code))) })).sort((x, y) => y.top - x.top);
@@ -373,11 +386,11 @@
         <p class="hint">나라·날짜는 항공권 검색 탭에서 고른 것 · 내 여행 ${mmdd(trip.dep)}~${mmdd(trip.ret)}</p>
       </section>
       ${groups.map(g => { const a = F.airline(g.code); return `<article class="pr-air">
-          <header><b>${esc(a.name)}</b><span class="pr-how">${OFFICIAL_AIR.includes(g.code) ? '공식 홈페이지 + 뉴스' : '뉴스'}</span>${a.url ? `<a href="${a.url}" target="_blank" rel="noopener">홈페이지${ICON.ext}</a>` : ''}</header>
+          <header><b>${esc(a.name)}</b><span class="pr-how">뉴스</span>${a.url ? `<a href="${a.url}" target="_blank" rel="noopener">홈페이지${ICON.ext}</a>` : ''}</header>
           <ul>${sortList(g.list, g.code).map(p => promoItem(p, trip, g.code)).join('')}</ul></article>`; }).join('')}
       ${etc.length ? `<article class="pr-air"><header><b>여행사·종합</b><span class="pr-how">항공사 이름 없는 ${esc(C)} 특가 기사</span></header><ul>${sortList(etc, null).map(p => promoItem(p, trip, null)).join('')}</ul></article>` : ''}
       ${!groups.length && !etc.length ? `<p class="muted pr-none">${esc(C)} 관련 특가 소식이 없어요.</p>` : ''}
-      <p class="fl-foot">굵은 글씨는 기사·공지에 적힌 숫자·날짜를, 점(•) 문장은 기사 문장을 그대로 옮긴 거예요(계산·재작성 없음). 기사를 열어 본문의 예약·탑승 기간과 할인 코드까지 찾고, 글에 연·월이 빠진 날짜("28일부터 30일까지")는 기사 등록일 기준으로 채워요. 여러 항공사 소식을 모은 기사는 그 항공사 문장만 봐요. 같은 소식은 하나로 묶었고, 가격·할인율·코드·기간이 하나도 없는 기사와 예약 기간이 끝난 소식${hidden ? ` ${hidden}건` : ''}은 숨겼어요. 조건은 원문에서 꼭 확인하세요.</p>`;
+      <p class="fl-foot">뉴스 기사만 써요(항공사 홈페이지는 보지 않음). 기사 본문까지 열어 금액·할인율·코드·예약기간·탑승기간을 찾고, 표현이 달라도 이 값들이 같은 기사는 한 줄로 묶었어요. 굵은 글씨는 기사에 적힌 숫자·날짜, 점(•) 문장은 기사 문장이에요. '다음 달·내달·오는 N일'처럼 적힌 날짜는 기사 등록일 기준 날짜로 바꿔 적었어요. 여러 항공사 소식을 모은 기사는 그 항공사 문장만 봐요. 금액·할인율·코드·기간이 하나도 없는 기사와 예약 기간이 끝난 소식은 숨기고, 묶인 기사까지 합쳐 ${hidden ? `${hidden}건이 따로 안 보여요` : '숨긴 기사는 없어요'}. 조건은 원문에서 꼭 확인하세요.</p>`;
   }
 
   // ───── 카드 탭: 우리·현대·신한 할인 소식 + 항공사 공식 결제 혜택 ─────
@@ -438,8 +451,11 @@
       <p class="fl-foot">굵은 글씨는 기사·공지에 적힌 금액·할인율·기간을 그대로 뽑은 거예요. 결제 기간이 끝난 것${hidden ? `과 금액·할인율·기간이 하나도 없는 기사 ${hidden}건` : ''}은 숨겼어요. 대상 카드 종류·최소 결제 금액 등 세부 조건은 카드사 이벤트 페이지에서 꼭 확인하세요.</p>`;
   }
   // 기사 본문에서 뽑은 핵심 문장 (서버가 저장한 p.summary, 원문 문장 그대로). code가 있으면 다른 항공사가 주어인 문장은 뺌
+  // 요약 문장: 저장된 요약이 있는 첫 기사(대표 → 같은 소식)의 문장. '다음 달·내달·오는 N일'은 그 기사 등록일 기준 날짜로 바꿔 적음
   function summaryOf(p, code) {
-    return (p.summary || ((p.more || []).find(m => m.summary) || {}).summary || []).filter(t => !code || !F.subjectAirline(t) || F.subjectAirline(t) === code);
+    const m = [p, ...(p.more || [])].find(x => (x.summary || []).length) || {};
+    const base = m.date ? kstDay(m.date) : '';
+    return (m.summary || []).filter(t => !code || !F.subjectAirline(t) || F.subjectAirline(t) === code).map(t => F.absDates(F.stripTags(t), base));
   }
   function summaryList(p, code) {
     const s = summaryOf(p, code);

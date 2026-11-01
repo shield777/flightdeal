@@ -45,10 +45,8 @@ jobs:
           TP_TOKEN: ${{ secrets.TP_TOKEN }}
       - name: 프로모션·카드 확인
         if: ${{ github.event_name == 'schedule' || inputs.mode == 'promos' }}
-        run: |
-          # 비엣젯 공식 특가 게시판은 화면을 자바스크립트로 그려서, 서버에 설치된 크롬으로 열어 읽음 (연결 도구만 설치)
-          npm i --no-save --no-audit --no-fund --silent playwright-core@1.48.2 || echo "크롬 연결 도구 설치 실패 → 비엣젯 공식 확인만 건너뜀"
-          node scripts/flight-check.js --promos
+        # 특가 뉴스(기사 본문까지)·카드 할인만 확인. 항공사 홈페이지는 보지 않음
+        run: node scripts/flight-check.js --promos
         env:
           # 자동 실행이거나 나라를 비우면 모든 나라
           PROMO_COUNTRY: ${{ inputs.country || 'ALL' }}
