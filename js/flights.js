@@ -296,27 +296,36 @@
     return f;
   }
   const hasFacts = f => !!(f.price || f.pct || f.code || f.codeHint || f.board || f.book);
-  function factLine(f) {
+  // 날짜: 올해면 11/30, 다른 해면 2027.10.31
+  const dayStr = d => d.slice(0, 4) !== today.slice(0, 4) ? `${d.slice(0, 4)}.${Number(d.slice(5, 7))}.${Number(d.slice(8, 10))}` : mmdd(d);
+  const periodStr = x => x ? `${x.from ? `${dayStr(x.from)} ~ ` : '~ '}${dayStr(x.to)}${x.from ? '' : '까지'}` : '';
+  // 주요내용: 가격·할인율·코드 (글에 적힌 그대로). 없으면 기사 첫 핵심 문장, 그것도 없으면 제목
+  function mainLine(p, f) {
     const won0 = n => `${Math.round(n).toLocaleString('ko-KR')}원`;
-    const per = x => x ? `${x.from ? `${mmdd(x.from)}~` : '~'}${x.to.slice(0, 4) !== today.slice(0, 4) ? `${x.to.slice(2, 4)}.` : ''}${mmdd(x.to)}` : '';
-    return [
-      f.price ? `<b>${f.price.trip === 'round' ? '왕복' : f.price.trip === 'oneway' ? '편도' : ''} ${won0(f.price.amount)}~</b>` : '',
-      f.pct ? `<b>최대 ${f.pct}%</b>` : '',
+    const parts = [
+      f.price ? `<b>${f.price.trip === 'round' ? '왕복 ' : f.price.trip === 'oneway' ? '편도 ' : ''}${won0(f.price.amount)}~</b>` : '',
+      f.pct ? `<b>최대 ${f.pct}% 할인</b>` : '',
       f.code ? `코드 <b>${esc(f.code)}</b>` : f.codeHint ? '<b>할인 코드 제공</b>' : '',
-      f.book ? `예약 ${per(f.book)}` : '',
-      f.board ? `탑승 ${per(f.board)}` : '',
-    ].filter(Boolean).join(' · ');
+    ].filter(Boolean);
+    if (parts.length) return parts.join(' · ');
+    const sum = p.summary || ((p.more || []).find(m => m.summary) || {}).summary || [];
+    const t = F.stripTags(sum[0] || p.title);
+    return esc(t.length > 70 ? `${t.slice(0, 68)}…` : t);
   }
   function promoItem(p, trip) {
     const f = groupFacts(p);
     const fit = F.fitsTrip(f, trip.dep, trip.ret);
     const src = p.official ? `${esc(F.airline((p.airlines || [])[0]).name)} 홈페이지` : `${esc(p.source || '뉴스')} · ${mmdd((p.date || '').slice(0, 10))}`;
+    const none = '<span class="muted">글에 없음</span>';
     return `<li class="pr-item">
-      ${hasFacts(f) ? `<div class="pr-key">${factLine(f)}</div>` : ''}
-      <a href="${esc(p.link)}" target="_blank" rel="noopener">${esc(F.stripTags(p.title))}</a>
+      <dl class="pr-facts">
+        <dt>주요내용</dt><dd>${mainLine(p, f)}</dd>
+        <dt>예약기간</dt><dd>${f.book ? `<b>${periodStr(f.book)}</b>` : none}</dd>
+        <dt>탑승기간</dt><dd>${f.board ? `<b>${periodStr(f.board)}</b>` : none}${fit === 'in' ? ' <span class="fit in">내 여행 날짜 탑승 가능</span>' : fit === 'out' ? ' <span class="fit out">내 여행 날짜는 기간 밖</span>' : ''}</dd>
+      </dl>
+      <a class="pr-title" href="${esc(p.link)}" target="_blank" rel="noopener">${esc(F.stripTags(p.title))}</a>
       ${summaryList(p)}
-      <div class="src"><span class="${p.official ? 'badge-off' : 'badge-news'}">${p.official ? '공식' : '뉴스'}</span> ${src}${p.more && p.more.length ? ` · 같은 소식 ${p.more.length + 1}건 묶음` : ''}
-        ${fit === 'in' ? '<span class="fit in">내 여행 날짜 탑승 가능</span>' : fit === 'out' ? '<span class="fit out">내 여행 날짜는 탑승 기간 밖</span>' : ''}</div>
+      <div class="src"><span class="${p.official ? 'badge-off' : 'badge-news'}">${p.official ? '공식' : '뉴스'}</span> ${src}${p.more && p.more.length ? ` · 같은 소식 ${p.more.length + 1}건 묶음` : ''}</div>
     </li>`;
   }
   function promosFor(C) {
