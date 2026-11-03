@@ -184,14 +184,24 @@ async function fetchCommunity({ countries, airlinesOf, env, now, log, mock }) {
   if (mock) for (const it of mock) if (it.query) { report.cafeQueries.push(it.query); report.cafeLinks.push(cafeKey(it.link)); } // 시험용
   const hasNaver = !mock && !!(env.NAVER_CLIENT_ID && env.NAVER_CLIENT_SECRET);
   if (hasNaver) {
-    for (const q of communityQueries(countries, airlinesOf)) {
-      try {
-        const l = await naverCafe(q, env, now); report.naver += l.length; report.cafeQueries.push(q);
-        report.cafeLinks.push(...l.map(it => cafeKey(it.link)));
-        raw.push(...l.map(it => ({ ...it, query: q })));
-      } catch (e) { report.fail++; report.err = e.message; }
-      await new Promise(r => setTimeout(r, 150));
-    }
+    // 4개씩 동시에 검색 (하나씩이면 112번에 4분쯤 걸림). 결과는 검색어 순서대로 모음
+    const qs = communityQueries(countries, airlinesOf);
+    const res = new Array(qs.length);
+    let next = 0;
+    const worker = async () => {
+      for (let i; (i = next++) < qs.length;) {
+        try { res[i] = await naverCafe(qs[i], env, now); } catch (e) { report.fail++; report.err = e.message; res[i] = null; }
+        await new Promise(r => setTimeout(r, 150));
+      }
+    };
+    await Promise.all([1, 2, 3, 4].map(worker));
+    qs.forEach((q, i) => {
+      const l = res[i];
+      if (!l) return;
+      report.naver += l.length; report.cafeQueries.push(q);
+      report.cafeLinks.push(...l.map(it => cafeKey(it.link)));
+      raw.push(...l.map(it => ({ ...it, query: q })));
+    });
   }
   if (!mock) for (const id of Object.keys(PPOMPPU)) {
     try { const l = await ppomppu(id); report.ppomppu += l.length; raw.push(...l); } catch (e) { report.fail++; }
