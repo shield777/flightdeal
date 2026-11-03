@@ -266,6 +266,17 @@ async function checkPromos(watch, promos, country) {
   for (const p of before) if (!p.countries) Object.assign(p, F.newsScope(`${p.title} ${p.desc || ''}`));
   // 티웨이 → 트리니티 등 항공사 이름(별칭)이 바뀐 경우를 위해 다시 확인
   for (const p of before) if (p.kind === 'airline' && !p.official) p.airlines = [...new Set([...(p.airlines || []), ...F.airlineInText(`${p.title} ${p.desc || ''}`)])];
+  // 커뮤니티 글 다시 거르기 (거르는 기준이 바뀌어도 이미 저장된 글에 적용): 광고·감상·옛 글은 빼고, 잘린 요약 정리, 제목의 날짜로 날짜 고침
+  const cutoff0 = new Date(NOW.getTime() - 10 * 864e5).toISOString();
+  for (let i = before.length - 1; i >= 0; i--) {
+    const p = before[i];
+    if (!p.community) continue;
+    const td = p.dateFound ? COMMUNITY.titleDate(p.title, NOW) : null;
+    if (td) { p.date = td.toISOString(); delete p.dateFound; }
+    if (!COMMUNITY.keepPost(p) || (td && p.date < cutoff0)) { before.splice(i, 1); continue; }
+    p.desc = COMMUNITY.cleanDesc(p.desc);
+    if (p.summary) { const sum = leadSummary(p.desc); if (sum.length) p.summary = sum; else delete p.summary; }
+  }
   const known = new Map(before.map(p => [p.id, p]));
   const seenTitles = new Set(before.map(p => p.title.replace(/\s+/g, '').slice(0, 30)));
   const cutoff = new Date(NOW.getTime() - 10 * 864e5).toISOString();
@@ -375,16 +386,19 @@ async function alertBigDeals(promos) {
   const alerts = [];
   // 이미 알린 소식 (기사·커뮤니티 글이 같은 특가를 다룰 때 두 번 알리지 않도록: 같은 항공사 + 금액·기간이 같으면 같은 특가)
   const factsOfGroup = g => [g, ...(g.more || [])].map(factsOf).reduce((a, f) => F.mergeFacts(a, f), {});
-  const done = promos.items.filter(g => [g, ...(g.more || [])].some(m => m.notified)).map(g => ({ e: entityOf(g), f: factsOfGroup(g) }));
+  const done = promos.items.filter(g => [g, ...(g.more || [])].some(m => m.notified)).map(g => ({ e: entityOf(g), f: factsOfGroup(g), at: [g, ...(g.more || [])].reduce((a, m) => (m.notified || '') > a ? m.notified : a, '') }));
   for (const g of promos.items) {
     const members = [g, ...(g.more || [])];
     if (g.kind !== 'airline' || g.official || members.some(m => m.notified)) continue;
     const e = entityOf(g);
     if (e && done.some(d => d.e === e && F.sameFacts(d.f, factsOfGroup(g)) > 0)) continue;
+    // 커뮤니티 글: 이미 알린 같은 항공사 소식(21일 안)과 다르다는 증거(금액·기간이 다름)가 없으면 같은 특가로 보고 안 알림
+    if (g.community && e && done.some(d => d.e === e && d.at >= F.addDays(TODAY, -21) && F.sameFacts(d.f, factsOfGroup(g)) >= 0)) continue;
     if (!F.isWantedPromo(g, {}) || F.isDomestic(g)) continue;
     // 서울(인천·김포) 출발만: 묶인 기사들이 모두 서울 아닌 곳 출발 특가만 다루면 제외
     if (members.every(m => F.nonSeoulOnly(`${m.title} ${F.stripTags(m.desc || '')} ${(m.body || []).join(' ')}`))) continue;
-    const fs = members.map(factsOf);
+    // 커뮤니티 글은 검색 요약이 잘려 있어 금액을 잘못 읽을 수 있음 → 알림 판단은 제목에 적힌 것만
+    const fs = g.community ? members.map(m => F.promoFacts(F.stripTags(m.title), kstDay(m.date))) : members.map(factsOf);
     const pct = Math.max(0, ...fs.map(f => f.pct || 0));
     // 가격: 묶인 기사 중 '노선마다 가격 다름'이 하나라도 있으면 안 봄. 국내선 가격은 제외(placeScope)
     const prices = fs.some(f => f.priceMixed) ? [] : fs.flatMap(f => f.prices || (f.price ? [f.price] : []));
@@ -402,7 +416,7 @@ async function alertBigDeals(promos) {
     const won = p => `${p.trip === 'round' ? '왕복 ' : p.trip === 'oneway' ? '편도 ' : ''}${p.amount.toLocaleString('ko-KR')}원~`;
     const head = [pct >= ALERT_PCT ? `최대 ${pct}% 할인` : '', cheap ? won(cheap) : ''].filter(Boolean).join(' · ');
     alerts.push({ g, members, title: `🔥 ${head} · ${air}${g.community ? ' · 커뮤니티' : ''}`, body: lines.join('\n'), click: g.link });
-    done.push({ e, f: factsOfGroup(g) });
+    done.push({ e, f: factsOfGroup(g), at: TODAY });
   }
   if (!alerts.length) { log(`■ 알림 조건(할인율 ${ALERT_PCT}% 이상·왕복 10만원·편도 5만원 이하) 새 특가 없음`); return; }
   const topic = ENV.NTFY_TOPIC;
