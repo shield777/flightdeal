@@ -15,6 +15,10 @@ const AGENCY_RE = /트립닷컴|아고다|익스피디아|클룩|마이리얼트
 const DEAL_RE = /특가|할인|초특가|세일|sale|할인\s?코드|프로모\s?코드|프로모션\s?코드|코드\s?공유|쿠폰|땡처리|반값|타임\s?딜|타임\s?세일|얼리버드|선착순|\d[\d,.]*\s?(?:만\s?)?원|\d+\s?%/i;
 // 광고·후기·질문·여행기: 제목에 있으면 뺌
 const SKIP_RE = /후기|리뷰|협찬|원고료|체험단|광고|제공\s?받|질문|문의|궁금|어떤가요|어떨까요|있나요|되나요|할까요|맞나요|추천\s?(?:부탁|해\s?주)|여행기|일정\s?공유|맛집|숙소|호텔|리조트|환전|유심|이심|esim|보험|면세|렌트|렌터카|투어\s?예약|판매합니다|양도|삽니다|팝니다|구해요|구합니다|대리\s?구매|클릭\s?적립|적립금|포인트\s?적립|\d+\s?원\s?적립|\?\s*$/i;
+// 감상·불만 글('특가 실화인가요', '가격 올리네요', '…잡았어요ㅋㅋ')과 제휴 링크 홍보 글('… 할인코드 바로 예약하기!', '… 총정리')
+const CHAT_RE = /[ㅋㅎㅠㅜ]{2,}|실화|올리네|올렸네|별로|아쉽|비싸|잡았어요|했어요|했네요|(?:가요|나요|까요|네요|죠)\s*[.!~]*$|바로\s?예약하기|총정리|사용법|정리\s*!?$/;
+// 광고성 카페 (체험단·기자단 등)
+const AD_SOURCE_RE = /체험단|기자단|서포터즈|홍보|원고/;
 // 뽐뿌 게시판 (RSS 주소의 id)
 const PPOMPPU = { ppomppu: '뽐뿌게시판', ppomppu4: '해외뽐뿌', tour: '여행포럼', event: '이벤트게시판', coupon: '쿠폰게시판' };
 
@@ -24,12 +28,42 @@ const RULIWEB_KEYS = ['항공', '진에어', '티웨이', '에어서울', '에�
 // 제목만 보고 항공권 특가 글인지
 function isDealTitle(title) {
   const t = F.stripTags(title);
-  if (t.length < 6 || SKIP_RE.test(t) || !DEAL_RE.test(t)) return false;
+  if (t.length < 6 || SKIP_RE.test(t) || CHAT_RE.test(t) || !DEAL_RE.test(t)) return false;
+  // 제목에 지난해 이전 연도가 적힌 옛 글 ('[2014/1116] …') — 카페 검색은 날짜가 없어서 옛 글이 섞여 들어옴
+  const thisYear = new Date().getFullYear();
+  if ([...t.matchAll(/(?:^|\D)(20\d{2})(?=[\/.년\s-]|\d{4}\])/g)].some(m => Number(m[1]) < thisYear)) return false;
   // 적혀 있는 금액이 모두 1,000원 미만이면 항공권 특가가 아님 (예: '[네이버페이] 제주항공 12원' 클릭 적립)
   const won = [...t.matchAll(/(\d[\d,]*)\s?(만\s?)?원/g)].map(m => Number(m[1].replace(/,/g, '')) * (m[2] ? 10000 : 1));
   if (won.length && won.every(n => n < 1000)) return false;
   return F.airlineInText(t).length > 0 || AGENCY_RE.test(t) || /항공권|항공\s?특가|비행기\s?표|왕복|편도|국제선/.test(t);
 }
+
+// 제목 앞 날짜 ('[11/3 19시] …', '[G클럽] [26.10.29 08시] …') → 그 날 (한국 시각 정오). 없으면 null
+//  네이버 카페 글은 날짜가 없어서, 제목에 날짜가 있으면 그걸 씀 (10일 지난 글은 앱에 안 들어감)
+function titleDate(title, now) {
+  const m = String(title).match(/^\s*(?:\[[^\]\d]{1,10}\]\s*)?\[\s*(?:(\d{2}|\d{4})\.)?(\d{1,2})[\/.](\d{1,2})\b/);
+  if (!m) return null;
+  const mo = Number(m[2]), d = Number(m[3]);
+  if (mo < 1 || mo > 12 || d < 1 || d > 31) return null;
+  const kst = new Date(now.getTime() + 9 * 3600e3);
+  let y = m[1] ? Number(m[1].length === 2 ? `20${m[1]}` : m[1]) : kst.getUTCFullYear();
+  if (!m[1] && mo > kst.getUTCMonth() + 2) y -= 1; // 1월에 '[12/30 …]' → 작년
+  const t = new Date(`${y}-${String(mo).padStart(2, '0')}-${String(d).padStart(2, '0')}T12:00:00+09:00`);
+  return isNaN(t) ? null : t;
+}
+// 검색 결과 요약은 끝이 잘려 있어요('최대 14,000원...'). 잘린 마지막 문장은 버림 (잘린 금액을 가격으로 읽지 않게)
+function cleanDesc(desc) {
+  let d = String(desc || '').trim();
+  if (/(?:\.\.\.|…)$/.test(d)) {
+    d = d.replace(/\s*(?:\.\.\.|…)$/, '');
+    const ends = [...d.matchAll(/(?:다\.|요\.|(?<!\.)[.!?](?!\.))(?=\s|$)/g)]; // '중...' 같은 말줄임은 문장 끝이 아님
+    d = ends.length ? d.slice(0, ends[ends.length - 1].index + ends[ends.length - 1][0].length) : '';
+  }
+  // 마침표 없이 끝나면 붙임 (제목과 한 문장으로 이어져 '탑승기간'이 예약기간으로 잘못 읽히지 않게)
+  return d && !/[.!?。…]$/.test(d) ? `${d}.` : d;
+}
+// 글 하나를 쓸지 (제목 + 출처 카페 이름)
+const keepPost = it => isDealTitle(it.title) && !AD_SOURCE_RE.test(it.source || '');
 
 // 커뮤니티 검색어: 나라마다 1개 + 그 나라 항공사 몇 곳 + 공통 (뉴스보다 적게)
 function communityQueries(countries, airlinesOf) {
@@ -134,16 +168,15 @@ async function fetchCommunity({ countries, airlinesOf, env, now, log, mock }) {
   const seen = new Set();
   const items = raw.filter(it => {
     const k = it.link.replace(/[?#].*$/, '');
-    if (seen.has(k) || !isDealTitle(it.title)) return false;
+    if (seen.has(k) || !keepPost(it)) return false;
     seen.add(k); return true;
   }).map(it => {
-    // 커뮤니티 요약은 마침표 없이 끝나는 경우가 많아요. 그대로 두면 제목과 한 문장으로 이어져 '탑승기간'이 예약기간으로 잘못 읽힘
-    const d = String(it.desc || '').trim();
-    return { ...it, desc: d && !/[.!?。…]$/.test(d) ? `${d}.` : d };
+    const td = it.dateFound ? titleDate(it.title, now) : null;
+    return { ...it, desc: cleanDesc(it.desc), ...(td ? { date: td.toISOString(), dateFound: false } : {}) };
   });
   report.kept = items.length;
   log(`■ 커뮤니티: 네이버 카페 ${hasNaver ? `${report.naver}건${naverMode ? ` (${naverMode === 'hub' ? 'API HUB' : '예전 개발자센터'} 방식)` : ''}${report.err ? ` · 오류: ${report.err}` : ''}` : '건너뜀(네이버 키 없음)'} · 뽐뿌 ${report.ppomppu}건 · 루리웹 ${report.ruliweb}건 → 항공권 특가 글 ${items.length}건${report.fail ? ` · 실패 ${report.fail}번` : ''}`);
   return { items, report };
 }
 
-module.exports = { fetchCommunity, isDealTitle, communityQueries, ruliweb, naverSearch };
+module.exports = { fetchCommunity, isDealTitle, keepPost, cleanDesc, titleDate, communityQueries, ruliweb, naverSearch };
