@@ -278,14 +278,21 @@ async function checkPromos(watch, promos, country) {
   for (const p of before) if (p.kind === 'airline' && !p.official) p.airlines = [...new Set([...(p.airlines || []), ...F.airlineInText(`${p.title} ${p.desc || ''}`)])];
   // 커뮤니티 글 다시 거르기 (거르는 기준이 바뀌어도 이미 저장된 글에 적용): 광고·감상·옛 글은 빼고, 잘린 요약 정리, 제목의 날짜로 날짜 고침
   const cutoff0 = new Date(NOW.getTime() - 10 * 864e5).toISOString();
+  // 네이버 카페: '지난번 확인 때 없던 글'만 새 글로 받음 (카페 검색 결과에는 글 쓴 날짜가 없어서)
+  //  promos.cafe.base[검색어] = 처음 검색한 날 (그날은 기록만), promos.cafe.seen = 이미 본 글 주소
+  //  처음 바꿀 때: 날짜를 모르고 저장돼 있던 카페 글은 지우고 '이미 본 글'로만 기록 (몇 달 전 글이 섞여 있었음)
+  promos.cafe = promos.cafe || { base: {}, seen: [] };
+  const cafeSeen = new Set(promos.cafe.seen);
+  const cafeMigrate = !promos.cafe.since;
   for (let i = before.length - 1; i >= 0; i--) {
     const p = before[i];
+    if (cafeMigrate && p.community && p.dateFound) { cafeSeen.add(COMMUNITY.cafeKey(p.link)); before.splice(i, 1); continue; }
     // 뉴스 특가 기사도 제목 기준으로 다시 거름 (기준이 바뀌어도 이미 저장된 기사에 적용)
     if (!p.community && !p.official && p.kind === 'airline' && !F.promoTitleCheck(p.title).ok) { before.splice(i, 1); continue; }
     if (!p.community) continue;
     const td = p.dateFound ? COMMUNITY.titleDate(p.title, NOW) : null;
     if (td) { p.date = td.toISOString(); delete p.dateFound; }
-    if (!COMMUNITY.keepPost(p) || (td && p.date < cutoff0)) { before.splice(i, 1); continue; }
+    if (!COMMUNITY.keepPost(p, NOW) || (td && p.date < cutoff0)) { before.splice(i, 1); continue; }
     p.desc = COMMUNITY.cleanDesc(p.desc);
     if (p.kind === 'airline') p.airlines = F.airlineInText(p.title);
     if (p.summary) { const sum = leadSummary(p.desc); if (sum.length) p.summary = sum; else delete p.summary; }
@@ -318,8 +325,20 @@ async function checkPromos(watch, promos, country) {
   const airlinesOf = c => [...new Set(F.DESTS.filter(d => d.country === c).flatMap(d => (rec[d.code] || []).map(r => F.AIRLINES[r.code] ? F.airline(r.code).name : cleanAir(r.name))).filter(Boolean))];
   const mockComm = MOCK ? readJSON(path.join(MOCK, 'community.json'), []) : null;
   const comm = await COMMUNITY.fetchCommunity({ countries: commCountries, airlinesOf, env: ENV, now: NOW, log, mock: mockComm });
+  // 카페 글: 이미 본 글이거나, 이 검색어를 처음 쓰는 날이면(기록만) 새 글이 아님
+  const cafeBaseBefore = { ...promos.cafe.base };
+  const cafeIsNew = it => {
+    if (!it.query) return true; // 뽐뿌·루리웹은 글 날짜가 있음
+    return !cafeSeen.has(COMMUNITY.cafeKey(it.link)) && !!cafeBaseBefore[it.query];
+  };
+  const commItems = comm.items.filter(cafeIsNew).map(it => it.query ? { ...it, dateFound: false, cafeNew: true } : it);
+  for (const k of comm.report.cafeLinks || []) cafeSeen.add(k);
+  for (const q of comm.report.cafeQueries || []) if (!promos.cafe.base[q]) promos.cafe.base[q] = TODAY;
+  promos.cafe.seen = [...cafeSeen].slice(-6000);
+  if (cafeMigrate) promos.cafe.since = TODAY;
+  if ((comm.report.cafeQueries || []).length) log(`  카페: 지난번에 없던 새 글 ${commItems.filter(it => it.cafeNew).length}건 (처음 쓰는 검색어 ${comm.report.cafeQueries.filter(q => !cafeBaseBefore[q]).length}개는 기록만)`);
   let commNew = 0;
-  for (const it of comm.items) {
+  for (const it of commItems) {
     if (!it.title || it.date < cutoff) continue;
     const id = `c:${newsId(it)}`;
     const tkey = it.title.replace(/\s+/g, '').slice(0, 30);
@@ -405,6 +424,8 @@ async function alertBigDeals(promos) {
   for (const g of promos.items) {
     const members = [g, ...(g.more || [])];
     if (g.kind !== 'airline' || g.official || members.some(m => m.notified)) continue;
+    // 날짜를 모르는 커뮤니티 글(네이버 카페)만 있는 소식은 알리지 않음 — 지난 특가일 수 있음 (앱 화면에는 보여 줌)
+    if (g.community && members.every(m => m.dateFound)) continue;
     const e = entityOf(g);
     if (e && done.some(d => d.e === e && F.sameFacts(d.f, factsOfGroup(g)) > 0)) continue;
     // 커뮤니티 글: 이미 알린 같은 항공사 소식(21일 안)과 다르다는 증거(금액·기간이 다름)가 없으면 같은 특가로 보고 안 알림
