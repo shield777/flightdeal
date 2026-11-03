@@ -65,16 +65,40 @@ function cleanDesc(desc) {
   // 마침표 없이 끝나면 붙임 (제목과 한 문장으로 이어져 '탑승기간'이 예약기간으로 잘못 읽히지 않게)
   return d && !/[.!?。…]$/.test(d) ? `${d}.` : d;
 }
-// 글 하나를 쓸지 (제목 + 출처 카페 이름)
-const keepPost = it => isDealTitle(it.title) && !AD_SOURCE_RE.test(it.source || '');
+// 날짜를 모르는 글(네이버 카페)이 지난 글인지: 제목의 연도 없는 날짜('~6/21', '10/20까지')가 올해로 보면 이미 지났거나,
+//  지난 계절 이름(11월에 '썸머 블프')이 있으면 지난 글로 봄. 카페 검색 결과에는 글 쓴 날짜가 없어서
+//  드문 검색어는 최신순 앞쪽도 몇 달 전 글일 수 있음 (2026-11-03 실행에서 6월 '썸머 블프' 89% 글이 알림으로 나감)
+function looksOld(title, now, season = true) {
+  const t = F.stripTags(title);
+  const kst = new Date(now.getTime() + 9 * 3600e3), y = kst.getUTCFullYear(), today = kst.toISOString().slice(0, 10);
+  const half = new Date(kst.getTime() - 200 * 864e5).toISOString().slice(0, 10);
+  for (const m of t.matchAll(/(?<![\d.\/])(\d{1,2})\s*[\/.]\s*(\d{1,2})(?![\d\/])/g)) {
+    const mo = Number(m[1]), d = Number(m[2]);
+    if (mo < 1 || mo > 12 || d < 1 || d > 31) continue;
+    const ds = `${y}-${String(mo).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
+    if (ds < today && ds >= half) return true; // 올해 이미 지난 날짜 (최근 200일 안)
+  }
+  if (!season) return false;
+  const month = kst.getUTCMonth() + 1;
+  if (/썸머|여름|summer/i.test(t) && (month >= 9 || month <= 3)) return true;
+  if (/윈터|겨울|winter/i.test(t) && month >= 4 && month <= 8) return true;
+  return false;
+}
+// 카페 글 주소 → 짧은 이름 ('cafe.naver.com/loyaltylife/366787' → 'loyaltylife/366787')
+const cafeKey = link => String(link || '').replace(/^https?:\/\/(?:m\.)?cafe\.naver\.com\//, '').replace(/[?#].*$/, '');
+// 글 하나를 쓸지 (제목 + 출처 카페 이름 + 날짜를 모르는 글은 지난 글인지)
+const keepPost = (it, now = new Date()) => isDealTitle(it.title) && !AD_SOURCE_RE.test(it.source || '') && !(it.dateFound && (looksOld(it.title, now) || looksOld(it.desc || '', now, false)));
+//  요약(검색 결과 본문 일부)의 지난 날짜도 봄: '발권기간 10/12~19' → 지난 특가
 
+const CAFE_WORDS = ['특가', '할인', '프로모션', '세일', '이벤트'];
 // 커뮤니티 검색어: 나라마다 1개 + 그 나라 항공사 몇 곳 + 공통 (뉴스보다 적게)
 function communityQueries(countries, airlinesOf) {
   const qs = new Set(['항공권 할인코드', '항공권 프로모션 코드', '항공 타임세일', '항공권 특가 오픈']);
   for (const c of countries) {
     qs.add(`${c} 항공권 특가`);
-    // 항공사마다 특가 말을 하나씩 따로 검색 (네이버 카페 검색은 여러 단어를 묶으면 엉뚱한 글이 섞여서 — 2026-11 확인)
-    for (const a of airlinesOf(c).slice(0, countries.length > 1 ? 3 : 6)) for (const w of F.DEAL_SEARCH_WORDS) qs.add(`${a} ${w}`);
+    // 항공사마다 자주 쓰는 특가 말 5개를 하나씩 따로 검색 (네이버 카페 검색은 여러 단어를 묶으면 엉뚱한 글이 섞임).
+    //  11개 모두 쓰면 한 번 확인이 13분 걸리고, 드문 말('얼리버드'·'감사제')은 최신순 앞쪽도 몇 달 전 글이라 5개만
+    for (const a of airlinesOf(c).slice(0, countries.length > 1 ? 3 : 6)) for (const w of CAFE_WORDS) qs.add(`${a} ${w}`);
   }
   return [...qs];
 }
@@ -152,13 +176,20 @@ async function ruliweb(key, now) {
 }
 
 // 모든 커뮤니티 글 → 항공권 특가 글만. report: 출처별 건수 (기록용)
+//  report.cafeQueries: 이번에 검색한 카페 검색어, report.cafeLinks: 카페 검색 결과 전체(거르기 전) 글 주소
+//  → flight-check.js가 '지난번 확인 때 없던 글'만 새 글로 받는 데 씀
 async function fetchCommunity({ countries, airlinesOf, env, now, log, mock }) {
-  const report = { naver: 0, ppomppu: 0, ruliweb: 0, kept: 0, fail: 0 };
+  const report = { naver: 0, ppomppu: 0, ruliweb: 0, kept: 0, fail: 0, cafeQueries: [], cafeLinks: [] };
   const raw = mock ? [...mock] : [];
+  if (mock) for (const it of mock) if (it.query) { report.cafeQueries.push(it.query); report.cafeLinks.push(cafeKey(it.link)); } // 시험용
   const hasNaver = !mock && !!(env.NAVER_CLIENT_ID && env.NAVER_CLIENT_SECRET);
   if (hasNaver) {
     for (const q of communityQueries(countries, airlinesOf)) {
-      try { const l = await naverCafe(q, env, now); report.naver += l.length; raw.push(...l.map(it => ({ ...it, query: q }))); } catch (e) { report.fail++; report.err = e.message; }
+      try {
+        const l = await naverCafe(q, env, now); report.naver += l.length; report.cafeQueries.push(q);
+        report.cafeLinks.push(...l.map(it => cafeKey(it.link)));
+        raw.push(...l.map(it => ({ ...it, query: q })));
+      } catch (e) { report.fail++; report.err = e.message; }
       await new Promise(r => setTimeout(r, 150));
     }
   }
@@ -172,7 +203,7 @@ async function fetchCommunity({ countries, airlinesOf, env, now, log, mock }) {
   const seen = new Set();
   const items = raw.filter(it => {
     const k = it.link.replace(/[?#].*$/, '');
-    if (seen.has(k) || !keepPost(it)) return false;
+    if (seen.has(k) || !keepPost(it, now)) return false;
     seen.add(k); return true;
   }).map(it => {
     const td = it.dateFound ? titleDate(it.title, now) : null;
@@ -183,4 +214,4 @@ async function fetchCommunity({ countries, airlinesOf, env, now, log, mock }) {
   return { items, report };
 }
 
-module.exports = { fetchCommunity, isDealTitle, keepPost, cleanDesc, titleDate, communityQueries, ruliweb, naverSearch };
+module.exports = { fetchCommunity, isDealTitle, keepPost, looksOld, cafeKey, cleanDesc, titleDate, communityQueries, ruliweb, naverSearch };
