@@ -1,19 +1,26 @@
-// [시험] 특가 말 11개 묶음 검색이 검색창마다 되는지 확인 (병합하지 않음)
-const C = require('./community.js'); const F = require('../js/flight-core.js');
-const W = F.DEAL_SEARCH_WORDS || ['특가', '프로모션', '할인', '세일', '이벤트', '땡처리', '얼리버드', '쿠폰', '블프', '기획전', '감사제'];
-const UA = { 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36' };
-const titles = x => [...x.matchAll(/<item>[\s\S]*?<title>(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?<\/title>/g)].map(m => m[1]);
+// [시험] 네이버 항공권 '추천일정' 팝업을 바로 여는 주소(쿼리)가 있는지 공개 페이지·스크립트에서 찾기 (병합하지 않음)
+const UA = { 'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Mobile/15E148 Safari/604.1', 'Accept-Language': 'ko-KR' };
+const get = async u => { try { const r = await fetch(u, { headers: UA }); return { s: r.status, t: await r.text(), u: r.url }; } catch (e) { return { s: 'ERR ' + e.message, t: '' }; } };
 (async () => {
-  for (const base of ['비엣젯', '에어프레미아', '일본 항공권']) {
-    const orq = `${base} (${W.join(' OR ')})`, single = `${base} 특가`;
-    for (const q of [single, orq]) {
-      const g = await (await fetch(`https://news.google.com/rss/search?q=${encodeURIComponent(q + ' when:7d')}&hl=ko&gl=KR&ceid=KR:ko`, { headers: UA })).text();
-      const b = await (await fetch(`https://www.bing.com/news/search?q=${encodeURIComponent(q)}&format=rss&setlang=ko-KR&cc=KR`, { headers: UA })).text();
-      const gt = titles(g), bt = titles(b);
-      console.log(`google | ${q.slice(0, 40)} | n=${gt.length} | ${gt.slice(0, 2).join(' / ').slice(0, 120)}`);
-      console.log(`bing   | ${q.slice(0, 40)} | n=${bt.length} | ${bt.slice(1, 3).join(' / ').slice(0, 120)}`);
+  const page = 'https://m-flight.naver.com/flights/international/ICN-KIX-20270309/KIX-ICN-20270310?adult=1&isDirect=true&fareType=Y';
+  for (const u of [page, page.replace('m-flight', 'flight'), 'https://flight.naver.com/']) {
+    const r = await get(u);
+    const scripts = [...new Set([...r.t.matchAll(/<script[^>]+src="([^"]+)"/g)].map(m => new URL(m[1], r.u || u).href))];
+    console.log(`\n== ${r.s} ${u} -> ${r.u} len=${r.t.length} scripts=${scripts.length}`);
+    const kw = /추천일정|가격그래프|캘린더|recommend|priceGraph|fareCalendar|calendar|tab=|isRecommend|lowestFare|schedule/gi;
+    const hits = new Map();
+    for (const s of scripts.slice(0, 40)) {
+      const j = await get(s);
+      for (const m of j.t.matchAll(kw)) {
+        const ctx = j.t.slice(Math.max(0, m.index - 70), m.index + 90).replace(/\s+/g, ' ');
+        const key = m[0].toLowerCase();
+        if (!hits.has(key)) hits.set(key, []);
+        if (hits.get(key).length < 4) hits.get(key).push(`${s.split('/').pop().slice(0, 30)}: ${ctx}`);
+      }
     }
-    const nq = `${base} ${W.join(' | ')}`;
-    for (const q of [single, nq]) { const j = await C.naverSearch('news', { query: q, display: 30, sort: 'date' }, process.env); const t = ((j && j.items) || []).map(i => i.title.replace(/<[^>]+>/g, '')); console.log(`naver  | ${q.slice(0, 40)} | total=${j && j.total} n=${t.length} withBase=${t.filter(x => x.includes(base.split(' ')[0])).length} | ${t.slice(0, 2).join(' / ').slice(0, 120)}`); }
+    for (const [k, v] of hits) { console.log(`-- ${k}`); v.forEach(x => console.log('   ' + x)); }
+    // 페이지 안 URL 쿼리 이름 후보
+    const qs = [...new Set([...r.t.matchAll(/[?&]([a-zA-Z]{3,20})=/g)].map(m => m[1]))].slice(0, 40);
+    console.log('query names in html:', qs.join(','));
   }
 })();
