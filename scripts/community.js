@@ -81,6 +81,8 @@ function looksOld(title, now, season = true) {
   if (!season) return false;
   const month = kst.getUTCMonth() + 1;
   if (/썸머|여름|summer/i.test(t) && (month >= 9 || month <= 3)) return true;
+  // 바뀌기 전 항공사 이름만 쓴 글 (티웨이항공 → 2026년 트리니티항공)
+  if (/티웨이|t'?way/i.test(t) && !/트리니티/.test(t)) return true;
   if (/윈터|겨울|winter/i.test(t) && month >= 4 && month <= 8) return true;
   return false;
 }
@@ -136,7 +138,8 @@ async function naverCafe(q, env, now) {
   const j = await naverSearch('cafearticle', { query: q, display: 20, sort: 'date' }, env);
   const items = ((j && j.items) || []);
   // 날짜가 없어서 최신순 앞쪽 10개만 (오래된 글이 '오늘 찾은 글'로 들어오지 않게)
-  return items.slice(0, 10).map(it => ({ title: F.stripTags(it.title), link: it.link, desc: F.stripTags(it.description), source: `네이버 카페 · ${F.stripTags(it.cafename || '카페')}`, date: now.toISOString(), dateFound: true }));
+  // rank: 최신순 몇 번째 글인지 (처음 받을 때 앞쪽 몇 개만 쓰려고)
+  return items.slice(0, 10).map((it, rank) => ({ title: F.stripTags(it.title), link: it.link, desc: F.stripTags(it.description), source: `네이버 카페 · ${F.stripTags(it.cafename || '카페')}`, date: now.toISOString(), dateFound: true, rank }));
 }
 
 // 뽐뿌 게시판 RSS

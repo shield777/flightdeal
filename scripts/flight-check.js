@@ -340,16 +340,19 @@ async function checkPromos(watch, promos, country) {
   const comm = await COMMUNITY.fetchCommunity({ countries: commCountries, airlinesOf, env: ENV, now: NOW, log, mock: mockComm });
   // 카페 글: 이미 본 글이거나, 이 검색어를 처음 쓰는 날이면(기록만) 새 글이 아님
   const cafeBaseBefore = { ...promos.cafe.base };
-  const cafeIsNew = it => {
-    if (!it.query) return true; // 뽐뿌·루리웹은 글 날짜가 있음
-    return !cafeSeen.has(COMMUNITY.cafeKey(it.link)) && !!cafeBaseBefore[it.query];
-  };
-  const commItems = comm.items.filter(cafeIsNew).map(it => it.query ? { ...it, dateFound: false, cafeNew: true } : it);
+  //  단, 이미 올라와 있는 진행 중 특가도 받아야 해서: 처음 한 번(promos.cafe.imported 없음)과 처음 쓰는 검색어는
+  //  최신순 앞쪽 5개를 '날짜 모름' 글로 받음 (지난 날짜·지난 계절·옛 이름 글은 keepPost에서 이미 빠짐, 알림은 안 보냄, 3주 지나면 사라짐)
+  const cafeImport = !promos.cafe.imported;
+  const cafeIsNew = it => !it.query || (!cafeImport && !cafeSeen.has(COMMUNITY.cafeKey(it.link)) && !!cafeBaseBefore[it.query]);
+  const cafeIsBaseline = it => !!it.query && (cafeImport || !cafeBaseBefore[it.query]) && (it.rank ?? 99) < 5;
+  const commItems = comm.items.filter(it => cafeIsNew(it) || cafeIsBaseline(it))
+    .map(it => !it.query ? it : cafeIsNew(it) ? { ...it, dateFound: false, cafeNew: true } : { ...it, dateFound: true, baseline: true });
+  if (cafeImport) promos.cafe.imported = TODAY;
   for (const k of comm.report.cafeLinks || []) cafeSeen.add(k);
   for (const q of comm.report.cafeQueries || []) if (!promos.cafe.base[q]) promos.cafe.base[q] = TODAY;
   promos.cafe.seen = [...cafeSeen].slice(-6000);
   if (cafeMigrate) promos.cafe.since = TODAY;
-  if ((comm.report.cafeQueries || []).length) log(`  카페: 지난번에 없던 새 글 ${commItems.filter(it => it.cafeNew).length}건 (처음 쓰는 검색어 ${comm.report.cafeQueries.filter(q => !cafeBaseBefore[q]).length}개는 기록만)`);
+  if ((comm.report.cafeQueries || []).length) log(`  카페: 새로 올라온 글 ${commItems.filter(it => it.cafeNew).length}건 · 이미 올라와 있던 글(날짜 모름) ${commItems.filter(it => it.baseline).length}건${cafeImport ? ' (처음 한 번 받기)' : ''}`);
   let commNew = 0;
   for (const it of commItems) {
     if (!it.title || it.date < cutoff) continue;
