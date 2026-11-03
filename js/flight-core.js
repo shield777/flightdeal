@@ -678,6 +678,19 @@
       const lastBefore = re => { let i = -1, m; const g = new RegExp(re.source, 'g'); while ((m = g.exec(t)) && m.index < firstDate) i = m.index; return i; };
       if (lastBefore(BOOK_KEYS[1].re) > lastBefore(BOARD_KEYS[1].re)) raw = null; else book = null;
     }
+    // 커뮤니티·짧은 글에 흔한 '(~11/08)', '~12/31까지' 표기 → 예약 마감 (다른 예약기간을 못 찾았을 때만, 탑승기간이 아닐 때)
+    if (!book) {
+      const m = t.match(/\(\s*~\s*(\d{1,2})\s*\/\s*(\d{1,2})\s*\)|~\s*(\d{1,2})\s*\/\s*(\d{1,2})\s*까지/);
+      if (m && !/탑승|출발|여행\s*기간/.test(t.slice(Math.max(0, m.index - 12), m.index))) {
+        const mo = Number(m[1] || m[3]), d = Number(m[2] || m[4]);
+        if (mo >= 1 && mo <= 12 && d >= 1 && d <= 31 && base) {
+          let y = Number(base.slice(0, 4));
+          const ds = yy => `${yy}-${String(mo).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
+          if (ds(y) < base && Number(base.slice(5, 7)) - mo >= 6) y += 1; // 연말 글의 '~1/15' → 다음 해
+          book = { from: null, to: ds(y) };
+        }
+      }
+    }
     if (book) f.book = book;
     // 탑승기간: 노선별로 나눠 볼 수 있으면 그 결과(고른 나라 노선 / 노선마다 다름), 아니면 키워드 근처 날짜
     const bf = boardFacts(t, base, country);
