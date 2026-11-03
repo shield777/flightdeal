@@ -386,16 +386,13 @@
     // 예약 기간이 이미 끝난 소식은 숨김 (글에 적힌 마감일 기준)
     const ended = p => { const f = groupFacts(p, shownCode(p, order)); return !!(f.book && f.book.to < today); };
         const keep = rel.filter(p => !ended(p) && hasFacts(groupFacts(p, shownCode(p, order))));
-    // 같은 항공사 칸끼리 사실이 같은 소식 합치기 (기사끼리만. 커뮤니티 글은 따로 '커뮤니티' 칸에)
-    const news = keep.filter(p => !p.community);
-    const useful = [...new Set(news.map(p => shownCode(p, order)))].flatMap(code => mergeSame(news.filter(p => shownCode(p, order) === code), code));
-    const comm = keep.filter(p => p.community);
-    return { order, rel, useful, comm };
+    // 같은 항공사 칸끼리 사실이 같은 소식 합치기 (기사·커뮤니티 글 함께. 금액·기간이 같으면 한 줄로)
+    const useful = [...new Set(keep.map(p => shownCode(p, order)))].flatMap(code => mergeSame(keep.filter(p => shownCode(p, order) === code), code));
+    return { order, rel, useful };
   }
   function countsFor(C) {
     const c = cardsFor(C);
-    const pr = promosFor(C);
-    return { promo: pr.useful.length + pr.comm.length, cardOk: c.useful.filter(x => x.u.use === 'ok' || x.u.use === 'all').length };
+    return { promo: promosFor(C).useful.length, cardOk: c.useful.filter(x => x.u.use === 'ok' || x.u.use === 'all').length };
   }
   function renderPromo() {
     const box = $('#promo'); if (!box) return;
@@ -403,8 +400,8 @@
     const dest = currentDest(), C = dest.country, trip = quickDates();
     // 이 나라 관련: 기사에 나라·도시가 나오거나, 이 나라를 운항하는 항공사의 '전 노선·국제선' 특가
     // 불필요한 기사 숨김: 가격·할인율·코드·기간 중 하나도 없는 기사, 예약이 끝난 소식. 금액·기간이 같은 기사는 한 줄로
-    const { order, rel, useful, comm } = promosFor(C);
-    const hidden = rel.length - useful.length - comm.length;
+    const { order, rel, useful } = promosFor(C);
+    const hidden = rel.length - useful.length;
     const fitRank = (p, code) => ({ in: 0, null: 1, out: 2 })[String(F.fitsTrip(groupFacts(p, code), trip.dep, trip.ret))];
     // 할인율 높은 순 (할인율이 글에 없는 소식은 뒤로) → 같으면 내 여행 날짜 탑승 가능 → 최신
     const pctOf = (p, code) => groupFacts(p, code).pct || 0;
@@ -412,21 +409,22 @@
     // 항공사 칸도 그 항공사의 가장 높은 할인율 순서로
     const groups = order.map(code => ({ code, list: useful.filter(p => (p.airlines || []).find(a => order.includes(a)) === code) })).filter(g => g.list.length)
       .map(g => ({ ...g, top: Math.max(0, ...g.list.map(p => pctOf(p, g.code))) })).sort((x, y) => y.top - x.top);
+    // 칸 머리 표시: 그 칸에 들어 있는 출처 (뉴스 / 커뮤니티 / 뉴스·커뮤니티)
+    const howOf = l => { const all = l.flatMap(p => [p, ...(p.more || [])]); return [all.some(m => !m.community) ? '뉴스' : '', all.some(m => m.community) ? '커뮤니티' : ''].filter(Boolean).join('·'); };
     const etc = useful.filter(p => !(p.airlines || []).some(a => order.includes(a)));
     const checked = data.promos.checked && data.promos.checked[C];
     box.innerHTML = `
       <section class="pr-head">
-        <h2>${esc(C)} 항공권 프로모션 <small>${esc(C)} 운항 항공사 ${order.length}곳 기준 · 진행 중이거나 최근 3주 · 할인율 높은 순</small></h2>
+        <h2>${esc(C)} 항공권 프로모션 <small>${esc(C)} 운항 항공사 ${order.length}곳 기준 · 뉴스·커뮤니티 · 진행 중이거나 최근 3주 · 할인율 높은 순</small></h2>
         ${checkedLine(C)}
         <p class="hint">나라·날짜는 항공권 검색 탭에서 고른 것 · 내 여행 ${mmdd(trip.dep)}~${mmdd(trip.ret)}</p>
       </section>
       ${groups.map(g => { const a = F.airline(g.code); return `<article class="pr-air">
-          <header><b>${esc(a.name)}</b><span class="pr-how">뉴스</span>${a.url ? `<a href="${a.url}" target="_blank" rel="noopener">홈페이지${ICON.ext}</a>` : ''}</header>
+          <header><b>${esc(a.name)}</b><span class="pr-how">${howOf(g.list)}</span>${a.url ? `<a href="${a.url}" target="_blank" rel="noopener">홈페이지${ICON.ext}</a>` : ''}</header>
           <ul>${sortList(g.list, g.code).map(p => promoItem(p, trip, g.code)).join('')}</ul></article>`; }).join('')}
-      ${etc.length ? `<article class="pr-air"><header><b>여행사·종합</b><span class="pr-how">항공사 이름 없는 ${esc(C)} 특가 기사</span></header><ul>${sortList(etc, null).map(p => promoItem(p, trip, null)).join('')}</ul></article>` : ''}
-      ${comm.length ? `<article class="pr-air pr-comm"><header><b>커뮤니티</b><span class="pr-how">네이버 카페·뽐뿌 · 기사보다 빠르지만 확인 안 된 글 · 최신 순</span></header><ul>${comm.slice().sort((x, y) => (y.date || '').localeCompare(x.date || '')).map(p => promoItem(p, trip, shownCode(p, order))).join('')}</ul></article>` : ''}
-      ${!groups.length && !etc.length && !comm.length ? `<p class="muted pr-none">${esc(C)} 관련 특가 소식이 없어요.</p>` : ''}
-      <p class="fl-foot">뉴스 기사와 커뮤니티 글(네이버 카페·뽐뿌)을 써요(항공사 홈페이지는 보지 않음). 커뮤니티 글은 기사가 안 나는 반짝 특가·할인 코드를 잡으려고 따로 모았어요. 누구나 쓰는 글이라 틀리거나 이미 끝난 특가일 수 있고, 본문은 열지 않아 제목·요약에 적힌 내용만 보여요. 네이버 카페 글은 글 쓴 날짜를 알 수 없어서 처음 찾은 날로 적었어요. 기사 본문까지 열어 금액·할인율·코드·예약기간·탑승기간을 찾고, 표현이 달라도 이 값들이 같은 기사는 한 줄로 묶었어요. 굵은 글씨는 기사에 적힌 숫자·날짜, 점(•) 문장은 기사 문장이에요. '다음 달·내달·오는 N일'처럼 적힌 날짜는 기사 등록일 기준 날짜로 바꿔 적었어요. 여러 항공사 소식을 모은 기사는 그 항공사 문장만 봐요. 금액·할인율·코드·기간이 하나도 없는 기사와 예약 기간이 끝난 소식은 숨기고, 묶인 기사까지 합쳐 ${hidden ? `${hidden}건이 따로 안 보여요` : '숨긴 기사는 없어요'}. 조건은 원문에서 꼭 확인하세요.</p>`;
+      ${etc.length ? `<article class="pr-air"><header><b>여행사·종합</b><span class="pr-how">항공사 이름 없는 ${esc(C)} 특가 · ${howOf(etc)}</span></header><ul>${sortList(etc, null).map(p => promoItem(p, trip, null)).join('')}</ul></article>` : ''}
+      ${!groups.length && !etc.length ? `<p class="muted pr-none">${esc(C)} 관련 특가 소식이 없어요.</p>` : ''}
+      <p class="fl-foot">뉴스 기사와 커뮤니티 글(네이버 카페·뽐뿌)을 써요(항공사 홈페이지는 보지 않음). 커뮤니티 글은 기사가 안 나는 반짝 특가·할인 코드를 잡으려고 함께 모았고, 파란 '커뮤니티' 표시를 붙였어요. 누구나 쓰는 글이라 틀리거나 이미 끝난 특가일 수 있고, 본문은 열지 않아 제목·요약에 적힌 내용만 보여요. 네이버 카페 글은 글 쓴 날짜를 알 수 없어서 처음 찾은 날로 적었어요. 기사 본문까지 열어 금액·할인율·코드·예약기간·탑승기간을 찾고, 표현이 달라도 이 값들이 같은 기사는 한 줄로 묶었어요. 굵은 글씨는 기사에 적힌 숫자·날짜, 점(•) 문장은 기사 문장이에요. '다음 달·내달·오는 N일'처럼 적힌 날짜는 기사 등록일 기준 날짜로 바꿔 적었어요. 여러 항공사 소식을 모은 기사는 그 항공사 문장만 봐요. 금액·할인율·코드·기간이 하나도 없는 기사와 예약 기간이 끝난 소식은 숨기고, 묶인 기사까지 합쳐 ${hidden ? `${hidden}건이 따로 안 보여요` : '숨긴 기사는 없어요'}. 조건은 원문에서 꼭 확인하세요.</p>`;
   }
 
   // ───── 카드 탭: 우리·현대·신한 할인 소식 + 항공사 공식 결제 혜택 ─────
