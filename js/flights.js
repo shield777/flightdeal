@@ -197,7 +197,7 @@
     const T = F.ttang(dest, pax), city = dest.city.replace(/\(.*\)/, '');
     return `
       ${goGroup(1, '가격 비교', '고른 날짜·인원·직항 그대로', `<div class="go-grid">${goBtn(L.naver, '네이버', L.naverApp)}${goBtn(L.google, '구글')}${goBtn(L.sky, '스카이스캐너')}</div>
-        <a class="go-more" href="${F.skyMonth('SEL', dest, dep.slice(0, 7), ret.slice(0, 7), pax, true)}" target="_blank" rel="noopener">날짜 미정이면 · 스카이스캐너 ${Number(dep.slice(5, 7))}월 전체 날짜별 가격${ICON.ext}</a>`)}
+        <a class="go-btn go-wide" href="${F.skyMonth('SEL', dest, dep.slice(0, 7), ret.slice(0, 7), pax, true)}" target="_blank" rel="noopener">📅 ${Number(dep.slice(5, 7))}월 날짜별 최저가 한눈에 보기 <small>스카이스캐너</small></a>`)}
       ${goGroup(2, '땡처리', '땡처리닷컴 · 인천 출발 · 날짜와 상관없이 전체', `<div class="go-grid">${goBtn(T.city, `${city} 땡처리`)}${goBtn(T.today, '오늘 오픈 땡처리')}</div>`)}
       ${goGroup(3, '항공사', `서울 → ${esc(city)} 직항 · 홈페이지`, airlineBox(dest))}
       <p class="hint">직항 조건은 네이버·스카이스캐너는 주소로, 구글은 검색어로 넣어요. 항공사 홈페이지는 날짜·인원을 다시 골라야 해요.${cfg.q.children ? ' 아이 나이는 스카이스캐너에만 넣어요(다른 사이트는 아이 수만 받아요).' : ''}</p>`;
