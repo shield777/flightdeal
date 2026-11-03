@@ -322,3 +322,7 @@ button.fl-go { width: 100%; }
 
 /* 아이 나이 (아이 수만큼) */
 .g-ages { display: grid; grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); gap: 10px; }
+
+/* 프로모션 탭: 뉴스 / 커뮤니티 구역 */
+.pr-sec { font-size: 16px; font-weight: 800; margin: 18px 2px 8px; letter-spacing: -.02em; }
+.pr-sec small { font-size: 12px; font-weight: 500; color: var(--muted); margin-left: 4px; }
