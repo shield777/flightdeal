@@ -246,7 +246,8 @@
   function skyMonth(originCode, dest, ymOut, ymBack, adults, direct) {
     const sk = originCode === 'SEL' ? 'sela' : ((ORIGINS.find(x => x.code === originCode) || { link: originCode }).link).toLowerCase();
     const yymm = ym => ym.slice(2, 4) + ym.slice(5, 7);
-    return `https://www.skyscanner.co.kr/transport/flights/${sk}/${(dest.link || dest.code).toLowerCase()}/${yymm(ymOut)}/${yymm(ymBack)}/?${skyPax(paxOf(adults))}&cabinclass=economy&rtn=1${direct ? '&preferdirects=true' : ''}`;
+    // 월 전체 보기는 주소 경로가 아니라 oym(가는 달)·iym(오는 달) 값으로 넘김 (경로에 '2704'처럼 넣으면 무시되고 다음 달이 열림)
+    return `https://www.skyscanner.co.kr/transport/flights/${sk}/${(dest.link || dest.code).toLowerCase()}/?${skyPax(paxOf(adults))}&cabinclass=economy&rtn=1&oym=${yymm(ymOut)}&iym=${yymm(ymBack)}${direct ? '&preferdirects=true' : ''}`;
   }
 
   // ───── 기후·시기 ─────
