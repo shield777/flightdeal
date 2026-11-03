@@ -291,9 +291,24 @@
     const regionWords = dest.region === 'sea' ? ['동남아'] : dest.region === 'jp' ? ['일본'] : dest.region === 'pac' ? ['괌', '사이판', '대양주'] : [];
     return { strong: [dest.city.replace(/\(.*\)/, ''), ...(dest.alias || [])].filter(Boolean), medium: [dest.country, ...regionWords] };
   }
+  // 영어 이름 (해외 항공사는 커뮤니티·기사에 영어로 적는 경우가 많음). 대소문자 구분 없이, 단어 단위로 찾음
+  //  'Peach'처럼 흔한 단어는 그대로 쓰지 않고 'Peach Aviation'처럼 확실한 이름만
+  const AIRLINE_EN = {
+    KE: ['Korean Air'], OZ: ['Asiana'], '7C': ['Jeju Air'], LJ: ['Jin Air'], TW: ["T'way", 'Tway', 'Trinity Airways'],
+    BX: ['Air Busan'], RS: ['Air Seoul'], ZE: ['Eastar Jet', 'Eastar'], WE: ['Parata Air'], RF: ['Aero K'],
+    YP: ['Air Premia'], VJ: ['VietJet', 'Vietjet Air'], VN: ['Vietnam Airlines'], QH: ['Bamboo Airways'], VU: ['Vietravel Airlines'],
+    '5J': ['Cebu Pacific'], PR: ['Philippine Airlines'], Z2: ['AirAsia Philippines'], AK: ['AirAsia', 'Air Asia'], D7: ['AirAsia X'],
+    XJ: ['Thai AirAsia X'], FD: ['Thai AirAsia'], TG: ['Thai Airways'], TR: ['Scoot', 'FlyScoot'], SQ: ['Singapore Airlines'],
+    MH: ['Malaysia Airlines'], GA: ['Garuda Indonesia', 'Garuda'], CX: ['Cathay Pacific', 'Cathay'], UO: ['HK Express', 'Hong Kong Express'],
+    CI: ['China Airlines'], BR: ['EVA Air', 'EVA Airways'], IT: ['Tigerair Taiwan', 'Tigerair'], JL: ['Japan Airlines'], NH: ['All Nippon Airways'],
+    MM: ['Peach Aviation', 'Flypeach', 'Peach Air'], GK: ['Jetstar Japan', 'Jetstar'], ZG: ['Zipair'], UA: ['United Airlines'], HA: ['Hawaiian Airlines'],
+    MU: ['China Eastern'], CA: ['Air China'], CZ: ['China Southern'],
+  };
+  const enRe = n => new RegExp(`\\b${n.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/'/g, "['’]?").replace(/\s+/g, '\\s*')}\\b`, 'i');
+  const AIRLINE_EN_RE = Object.fromEntries(Object.entries(AIRLINE_EN).map(([c, l]) => [c, l.map(enRe)]));
   function airlineInText(text) {
     const hit = [];
-    for (const [code, a] of Object.entries(AIRLINES)) if ([a.name, ...(a.alias || [])].some(n => text.includes(n))) hit.push(code);
+    for (const [code, a] of Object.entries(AIRLINES)) if ([a.name, ...(a.alias || [])].some(n => text.includes(n)) || (AIRLINE_EN_RE[code] || []).some(r => r.test(text))) hit.push(code);
     return hit;
   }
 
@@ -371,9 +386,9 @@
   const TITLE_OTHER = /면세|免|호텔|숙박|리조트|쇼핑|쓱데이|계열사|유통|홈쇼핑|백화점|(?<!스)마트|렌터카|렌트카|보험|마일리지|팝업|eSIM|이심|유심|라운지|굿즈/;
   const TITLE_AGENCY = /트립닷컴|아고다|익스피디아|클룩|마이리얼트립|인터파크|하나투어|모두투어|노랑풍선|교원투어|여행이지|온라인투어|땡처리닷컴|스카이스캐너|네이버\s?항공|야놀자|여기어때|트립비토즈/;
   const TITLE_SUBJECT = /항공권|항공\s*운임|운임|비행기\s*표|국제선|노선|왕복|편도|항공\s*특가|특가\s*항공/;
-  const TITLE_DEAL = /특가|프로모션|프로모|할인|세일|sale|이벤트|땡처리|얼리버드|반값|쿠폰|최저가|블프|블랙\s*프라이데이|감사제|기획전|\d[\d,.]*\s*(?:만\s*)?원\s*(?:부터|대|~)|%\s*(?:할인|↓)/i;
+  const TITLE_DEAL = /특가|프로모션|프로모|할인|세일|sale|promo(?:tion)?|discount|deal|\d+\s*%\s*off|이벤트|땡처리|얼리버드|반값|쿠폰|최저가|블프|블랙\s*프라이데이|감사제|기획전|\d[\d,.]*\s*(?:만\s*)?원\s*(?:부터|대|~)|%\s*(?:할인|↓)/i;
   // 항공사 목록(AIRLINES)에 아직 없는 항공사 이름 (커뮤니티 글에서 항공사 특가를 알아보는 데만 씀)
-  const EXTRA_AIRLINE_RE = /에어\s*마카오|바틱\s*에어|홍콩\s*항공(?!권)|에어\s*재팬|스타\s*플라이어|타이\s*라이온|라이온\s*에어|에어\s*뉴질랜드|콴타스|젯스타(?!\s*재팬)/;
+  const EXTRA_AIRLINE_RE = /에어\s*마카오|바틱\s*에어|홍콩\s*항공(?!권)|에어\s*재팬|스타\s*플라이어|타이\s*라이온|라이온\s*에어|에어\s*뉴질랜드|콴타스|젯스타(?!\s*재팬)|\b(?:Air\s*Macau|Batik\s*Air|Hong\s*Kong\s*Airlines|Air\s*Japan|StarFlyer|Thai\s*Lion\s*Air|Lion\s*Air|Air\s*New\s*Zealand|Qantas)\b/i;
   const hasAirline = t => airlineInText(t).length > 0 || airlineInText(t.replace(/\s+/g, '')).length > 0 || EXTRA_AIRLINE_RE.test(t);
   // opt.airlineOnly: 커뮤니티 글 — ③ 주제어는 항공사 이름만 (항공사 특가 이벤트를 잡는 게 목적)
   function promoTitleCheck(title, opt = {}) {
