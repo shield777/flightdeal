@@ -33,6 +33,14 @@ const log = (...a) => console.log(...a);
 function readJSON(p, fallback) { try { return JSON.parse(fs.readFileSync(p, 'utf8')); } catch { return fallback; } }
 function writeJSON(p, v) { fs.mkdirSync(path.dirname(p), { recursive: true }); fs.writeFileSync(p, JSON.stringify(v, null, 1) + '\n'); }
 const sleep = ms => new Promise(r => setTimeout(r, ms));
+// list의 일을 n개씩 동시에 처리하고, 결과는 list 순서대로 돌려줌 (한 일이 실패해도 나머지는 계속)
+async function pool(list, n, fn) {
+  const out = new Array(list.length);
+  let next = 0;
+  const worker = async () => { for (let i; (i = next++) < list.length;) { try { out[i] = await fn(list[i], i); } catch (e) { log(`  ! ${e.message}`); out[i] = null; } } };
+  await Promise.all(Array.from({ length: Math.min(n, list.length) }, worker));
+  return out;
+}
 
 async function get(url, opt = {}, kind = 'json') {
   if (MOCK) {
@@ -301,9 +309,14 @@ async function checkPromos(watch, promos, country) {
   const seenTitles = new Set(before.map(p => p.title.replace(/\s+/g, '').slice(0, 30)));
   const cutoff = new Date(NOW.getTime() - 10 * 864e5).toISOString();
   const fresh = [];
-  for (const q of qs) {
-    const items = [...await newsBing(forEngine(q, 'bing')), ...await newsGoogle(forEngine(q, 'google')), ...await newsNaver(forEngine(q, 'naver'))];
-    await sleep(MOCK ? 0 : 400);
+  // 검색은 동시에 (검색어 2개씩 × 검색창 3곳 = 한 번에 최대 6건, 검색창마다 2건). 결과 처리는 검색어 순서대로
+  const found = await pool(qs, 2, async q => {
+    const r = await Promise.all([newsBing(forEngine(q, 'bing')), newsGoogle(forEngine(q, 'google')), newsNaver(forEngine(q, 'naver'))]);
+    await sleep(MOCK ? 0 : 300);
+    return r.flat();
+  });
+  for (const [qi, q] of qs.entries()) {
+    const items = found[qi] || [];
     for (const it of items) {
       if (!it.title || it.date < cutoff) continue;
       const id = newsId(it);
