@@ -127,7 +127,9 @@
   }
 
   // ───── 화면 ─────
-  let ui = { busy: '', open: {}, tab: (() => { try { return localStorage.getItem('flightdeal-tab') || 'price'; } catch { return 'price'; } })() };
+  let ui = { busy: '', open: {}, tab: (() => { try { return localStorage.getItem('flightdeal-tab') || 'price'; } catch { return 'price'; } })(),
+    // 프로모션 탭 안의 뉴스 / 커뮤니티 (마지막으로 본 것 기억)
+    promoSrc: (() => { try { return localStorage.getItem('flightdeal-promo-src') || 'news'; } catch { return 'news'; } })() };
   function render() {
     const q = cfg.q;
     const countries = [...new Set(F.DESTS.map(d => d.country))];
@@ -289,7 +291,7 @@
   // 항공사별 요약. 뉴스 기사만 씀(항공사 홈페이지는 보지 않음). 기사 본문까지 읽어서 원문에 적힌 내용만 보여 줌 (가격 계산·추정 없음)
   // 출처 표시: 공식(항공사 홈페이지) · 뉴스 · 커뮤니티(네이버 카페·뽐뿌·루리웹). 카페 글은 날짜가 없어서 처음 찾은 날
   const srcBadge = p => `<span class="${p.official ? 'badge-off' : p.community ? 'badge-comm' : 'badge-news'}">${p.official ? '공식' : p.community ? '커뮤니티' : '뉴스'}</span>`;
-  const srcText = p => p.official ? `${esc(F.airline((p.airlines || [])[0]).name)} 홈페이지` : `${esc(p.source || '뉴스')} · ${mmdd(kstDay(p.date || ''))}${p.dateFound ? ' 찾음' : ''}`;
+  const srcText = p => p.official ? `${esc(F.airline((p.airlines || [])[0]).name)} 홈페이지` : `${esc(p.source || '뉴스')} · ${p.dateFound ? `올린 날 모름 · ${mmdd(kstDay(p.date || ''))} 찾음` : mmdd(kstDay(p.date || ''))}`;
   const isLive = p => p.until ? p.until >= today : (p.lastFound || p.found) >= F.addDays(today, -21);
   const mmdd = s => s ? `${Number(s.slice(5, 7))}/${Number(s.slice(8, 10))}` : '';
   // 기사 등록일(한국 날짜): 글에 연·월이 빠진 날짜("28일부터 30일까지")는 이 날을 기준으로 채움
@@ -430,11 +432,14 @@
         ${checkedLine(C)}
         <p class="hint">나라·날짜는 항공권 검색 탭에서 고른 것 · 내 여행 ${mmdd(trip.dep)}~${mmdd(trip.ret)}</p>
       </section>
-      <h3 class="pr-sec">📰 뉴스 <small>${useful.length}건 · 할인율 높은 순</small></h3>
-      ${useful.length ? airCards(useful, false) : `<p class="muted pr-none">${esc(C)} 관련 특가 기사가 없어요.</p>`}
-      <h3 class="pr-sec">💬 커뮤니티 <small>${comm.length}건 · 네이버 카페·뽐뿌·루리웹 · 최신 순 · 확인 안 된 글</small></h3>
-      ${comm.length ? airCards(comm, true) : `<p class="muted pr-none">${esc(C)} 관련 새 커뮤니티 글이 없어요. 네이버 카페는 지난번 확인 뒤 새로 올라온 글만 받아요.</p>`}
-      <p class="fl-foot">뉴스 기사와 커뮤니티 글(네이버 카페·뽐뿌·루리웹)을 써요(항공사 홈페이지는 보지 않음). 커뮤니티 글은 기사가 안 나는 반짝 특가를 잡으려고 따로 모았어요(제목에 항공사 이름이 있는 글만). 누구나 쓰는 글이라 틀리거나 이미 끝난 특가일 수 있고, 본문은 열지 않아 제목·요약에 적힌 내용만 보여요. 네이버 카페 글은 지난번 확인 뒤 새로 나타난 글만 받고, 날짜는 찾은 시각이에요. 기사 본문까지 열어 금액·할인율·코드·예약기간·탑승기간을 찾고, 표현이 달라도 이 값들이 같은 기사는 한 줄로 묶었어요. 굵은 글씨는 기사에 적힌 숫자·날짜, 점(•) 문장은 기사 문장이에요. '다음 달·내달·오는 N일'처럼 적힌 날짜는 기사 등록일 기준 날짜로 바꿔 적었어요. 여러 항공사 소식을 모은 기사는 그 항공사 문장만 봐요. 금액·할인율·코드·기간이 하나도 없는 기사와 예약 기간이 끝난 소식은 숨기고, 묶인 기사까지 합쳐 ${hidden ? `${hidden}건이 따로 안 보여요` : '숨긴 기사는 없어요'}. 조건은 원문에서 꼭 확인하세요.</p>`;
+      <div class="seg pr-src" role="tablist">
+        <button role="tab" aria-selected="${ui.promoSrc !== 'comm'}" data-act="psrc" data-v="news">📰 뉴스 ${useful.length}</button>
+        <button role="tab" aria-selected="${ui.promoSrc === 'comm'}" data-act="psrc" data-v="comm">💬 커뮤니티 ${comm.length}</button>
+      </div>
+      ${ui.promoSrc === 'comm'
+        ? `<p class="hint pr-src-hint">네이버 카페·뽐뿌·루리웹 · 최신 순 · 누구나 쓰는 글이라 확인 안 된 내용이에요</p>${comm.length ? airCards(comm, true) : `<p class="muted pr-none">${esc(C)} 관련 새 커뮤니티 글이 없어요. 네이버 카페는 지난번 확인 뒤 새로 올라온 글만 받아요.</p>`}`
+        : `<p class="hint pr-src-hint">뉴스 기사 · 할인율 높은 순</p>${useful.length ? airCards(useful, false) : `<p class="muted pr-none">${esc(C)} 관련 특가 기사가 없어요.</p>`}`}
+      <p class="fl-foot">뉴스 기사와 커뮤니티 글(네이버 카페·뽐뿌·루리웹)을 써요(항공사 홈페이지는 보지 않음). 커뮤니티 글은 기사가 안 나는 반짝 특가를 잡으려고 따로 모았어요(제목에 항공사 이름이 있는 글만). 누구나 쓰는 글이라 틀리거나 이미 끝난 특가일 수 있고, 본문은 열지 않아 제목·요약에 적힌 내용만 보여요. 네이버 카페 글은 처음 한 번 이미 올라와 있던 글(검색어마다 최신 5개, '올린 날 모름')을 받고, 그 뒤로는 새로 나타난 글만 받아요(날짜는 찾은 시각). '올린 날 모름' 글은 알림을 보내지 않고 3주 뒤 사라져요. 기사 본문까지 열어 금액·할인율·코드·예약기간·탑승기간을 찾고, 표현이 달라도 이 값들이 같은 기사는 한 줄로 묶었어요. 굵은 글씨는 기사에 적힌 숫자·날짜, 점(•) 문장은 기사 문장이에요. '다음 달·내달·오는 N일'처럼 적힌 날짜는 기사 등록일 기준 날짜로 바꿔 적었어요. 여러 항공사 소식을 모은 기사는 그 항공사 문장만 봐요. 금액·할인율·코드·기간이 하나도 없는 기사와 예약 기간이 끝난 소식은 숨기고, 묶인 기사까지 합쳐 ${hidden ? `${hidden}건이 따로 안 보여요` : '숨긴 기사는 없어요'}. 조건은 원문에서 꼭 확인하세요.</p>`;
   }
 
   // ───── 카드 탭: 우리·현대·신한 할인 소식 + 항공사 공식 결제 혜택 ─────
@@ -669,6 +674,7 @@
     const act = b.dataset.act;
     if (act === 'settings') settingsSheet();
     else if (act === 'promo-refresh') refreshPromos();
+    else if (act === 'psrc') { ui.promoSrc = b.dataset.v; try { localStorage.setItem('flightdeal-promo-src', ui.promoSrc); } catch { /* 저장 불가 */ } renderPromo(); }
     else if (act === 'tab') { ui.tab = b.dataset.v; try { localStorage.setItem('flightdeal-tab', ui.tab); } catch { /* 저장 불가 */ } render(); window.scrollTo(0, 0); }
   });
 
