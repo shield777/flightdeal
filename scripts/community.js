@@ -74,8 +74,8 @@ function communityQueries(countries, airlinesOf) {
   const qs = new Set(['항공권 할인코드', '항공권 프로모션 코드', '항공 타임세일', '항공권 특가 오픈']);
   for (const c of countries) {
     qs.add(`${c} 항공권 특가`);
-    // 항공사마다 '특가'와 '할인' 두 가지로 검색 ('특가' 없이 '할인·프로모션'만 쓴 글도 잡히게)
-    for (const a of airlinesOf(c).slice(0, countries.length > 1 ? 3 : 6)) { qs.add(`${a} 특가`); qs.add(`${a} 할인`); }
+    // 항공사마다 특가 말을 하나씩 따로 검색 (네이버 카페 검색은 여러 단어를 묶으면 엉뚱한 글이 섞여서 — 2026-11 확인)
+    for (const a of airlinesOf(c).slice(0, countries.length > 1 ? 3 : 6)) for (const w of F.DEAL_SEARCH_WORDS) qs.add(`${a} ${w}`);
   }
   return [...qs];
 }
