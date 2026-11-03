@@ -360,7 +360,7 @@
   const DOMESTIC_RE = /국내선|김포\s?[-~·]\s?제주|제주행|김포\s?[-~·]\s?부산/;
   // 국내선(제주행 등)만 다루는 소식: 해외 나라 이름이 없고 '국제선'도 없음
   const isDomestic = p => { const t = `${p.title} ${p.desc || ''}`; return DOMESTIC_RE.test(t) && !(p.countries || []).length && !/국제선/.test(t); };
-  const NONFARE_TITLE = /면세|免|호텔|숙박|리조트|렌터카|렌트카|투어|쇼핑|eSIM|이심|유심|보험|라운지|기내식|굿즈|채용|실적|배당|주가|마일리지\s*적립/;
+  const NONFARE_TITLE = /쓱데이|계열사|유통|홈쇼핑|백화점|(?<!스)마트|면세|免|호텔|숙박|리조트|렌터카|렌트카|투어|쇼핑|eSIM|이심|유심|보험|라운지|기내식|굿즈|채용|실적|배당|주가|마일리지\s*적립/;
   function isWantedPromo(p, settings) {
     if (p.kind === 'card') return true;
     const text = `${p.title} ${p.desc || ''}`;
@@ -611,7 +611,16 @@
     if (fare.prices && fare.prices.length > 1) f.prices = fare.prices;
     if (fare.priceFor) f.priceFor = fare.priceFor;
     if (fare.mixed) f.priceMixed = true;
-    const pct = [...t.matchAll(/(최대\s*)?(\d{1,2})\s*%\s*(?:할인|특가|세일|↓)?/g)].map(m => Number(m[2])).filter(n => n >= 3 && n <= 95);
+    // 할인율: 같은 구절(쉼표·'및' 사이)에 항공권이 아닌 상품·숫자 이야기가 있으면 뺌
+    //  (쇼핑 행사 기사의 '김치 최대 20%', '수하물 최대 50%', 'TV 7% 쿠폰', '탑승률 96%', '이용자 20% 증가' 같은 것)
+    const NOT_FARE = /김치|디퓨저|슈톨렌|위스키|가전|TV|유모차|후디|팬츠|의류|화장품|상품|쿠폰\s*팩|적립|페이백|캐시백|면세|기내\s*면세|호텔|숙박|객실|리조트|패키지|투어|입장권|렌터카|수하물|마일리지|탑승률|점유율|이용자|증가|성장|감소|관심도|수수료|부가세|철도|여객선|국내선/;
+    const pct = [...t.matchAll(/(최대\s*)?(\d{1,2})\s*%\s*(?:할인|특가|세일|↓)?/g)].filter(m => {
+      let w = t.slice(Math.max(0, m.index - 30), m.index + m[0].length + 6);
+      const pre = w.slice(0, Math.min(30, m.index));
+      const cut = Math.max(pre.lastIndexOf(','), pre.lastIndexOf('·'), pre.lastIndexOf('및'), pre.lastIndexOf('다.'), pre.lastIndexOf('요.'), pre.lastIndexOf('…'));
+      if (cut >= 0) w = w.slice(cut + 1);
+      return !NOT_FARE.test(w);
+    }).map(m => Number(m[2])).filter(n => n >= 3 && n <= 95);
     if (pct.length) f.pct = Math.max(...pct);
     const code = t.match(/(?:프로모션\s*코드|할인\s*코드|쿠폰\s*코드|코드)\s*(?:는|은|인|명)?\s*[:：]?\s*[‘'"“(\[「<]?\s*([A-Z][A-Z0-9]{3,14})/) || t.match(/[‘'"“(\[「<]([A-Z][A-Z0-9]{3,14})[’'"”)\]」>]\s*(?:을|를|이라는|라는)?\s*(?:할인\s*|프로모션\s*|쿠폰\s*)?코드/) || t.match(/\b([A-Z][A-Z0-9]{3,14})\s*(?:할인\s*|프로모션\s*)?코드/);
     if (code) f.code = code[1];
