@@ -489,6 +489,9 @@
       let w = text.slice(Math.max(0, m.index - 60), m.index);
       const cut = Math.max(w.lastIndexOf('다.'), w.lastIndexOf('니다'));
       if (cut >= 0) w = w.slice(cut + 2);
+      // 앞 문장 끝('31일. [피치]…'처럼 '다.' 없이 끝난 문장)도 끊음. '2027. 1. 5.' 같은 날짜 속 점은 뒤에 숫자가 와서 안 끊김
+      const ends = [...w.matchAll(/[.!?]\s+(?=[^\d\s])/g)];
+      if (ends.length) w = w.slice(ends[ends.length - 1].index + 1);
       // 앞쪽에 다른 기간 키워드가 있으면 그 뒤만 (예: "… 탑승 가능하며 11월 2일까지 예약")
       let k, last = -1; const g = new RegExp(stopRe.source, 'g'); while ((k = g.exec(w))) last = k.index + k[0].length;
       if (last >= 0) w = w.slice(last);
@@ -569,7 +572,8 @@
   const BOARD_CTX = /탑승|이용할\s*수|이용\s*가능|이용\s*기간|여행\s*기간|출발\s*기간/, NOT_BOARD = /예약|판매|구매|발권|결제|프로모션|행사|이벤트|진행|취항한다|운항한다/;
   function boardFacts(t, base, country) {
     let cands = [];
-    for (const sent of t.split(/(?<=다\.|요\.)\s*/)) {
+    // 문장 나누기: '다.'·'요.' 뒤, 그리고 '31일. [피치]…'처럼 점 뒤에 글자가 오는 곳 ('2027. 1. 5.' 날짜 속 점은 뒤가 숫자라 안 나눔)
+    for (const sent of t.split(/(?<=다\.|요\.)\s*|(?<=[.!?])\s+(?=[^\d\s])/)) {
       if (!BOARD_CTX.test(sent)) continue;
       let cur = 0;
       for (const c of clausesOf(sent)) {
