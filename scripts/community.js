@@ -17,6 +17,12 @@ const DEAL_RE = /특가|할인|초특가|세일|sale|할인\s?코드|프로모\s
 const SKIP_RE = /후기|리뷰|협찬|원고료|체험단|광고|제공\s?받|질문|문의|궁금|어떤가요|어떨까요|있나요|되나요|할까요|맞나요|추천\s?(?:부탁|해\s?주)|여행기|일정\s?공유|맛집|숙소|호텔|리조트|환전|유심|이심|esim|보험|면세|렌트|렌터카|투어\s?예약|판매합니다|양도|삽니다|팝니다|구해요|구합니다|대리\s?구매|클릭\s?적립|적립금|포인트\s?적립|\d+\s?원\s?적립|\?\s*$/i;
 // 감상·불만 글('특가 실화인가요', '가격 올리네요', '…잡았어요ㅋㅋ')과 제휴 링크 홍보 글('… 할인코드 바로 예약하기!', '… 총정리')
 const CHAT_RE = /[ㅋㅎㅠㅜ]{2,}|실화|올리네|올렸네|별로|아쉽|비싸|잡았어요|했어요|했네요|(?:가요|나요|까요|네요|죠)\s*[.!~]*$|바로\s?예약하기|총정리|사용법|정리\s*!?$/;
+// 개인이 항공권 검색 사이트에서 찾은 특정 날짜 가격 글 (항공사 프로모션이 아님 → 내 여행 날짜와 상관없음)
+//  '11/29(일)~12/3(목) 4박5일', '평소 대비 -27%', '땡처리 항공권 현황', '에러페어'
+const PRICE_FIND_RE = /\d{1,2}\/\d{1,2}\s*\([월화수목금토일]\)\s*[~\-–]|\d\s?박\s?\d\s?일|평소\s*(?:대비|가)|평균가|항공권\s*현황|에러\s*페어|매물/;
+// 서울(인천·김포)이 아닌 곳에서 출발하는 글 ('청주→오사카', '시애틀 - 도쿄', '미국 출발')
+const ROUTE_RE = /([가-힣A-Za-z]{2,10})\s*(?:→|->|\s-\s)\s*[가-힣A-Za-z]{2,}/;
+const notFromSeoul = t => F.nonSeoulOnly(t) || /(?:미국|유럽|해외|현지|일본)\s*출발/.test(t) || (() => { const m = t.match(ROUTE_RE); return !!m && !/인천|서울|김포|ICN|GMP|SEL/i.test(m[1]); })();
 // 광고성 카페 (체험단·기자단 등)
 const AD_SOURCE_RE = /체험단|기자단|서포터즈|홍보|원고/;
 // 뽐뿌 게시판 (RSS 주소의 id)
@@ -28,7 +34,7 @@ const RULIWEB_KEYS = ['항공', '진에어', '티웨이', '에어서울', '에�
 // 제목만 보고 항공권 특가 글인지
 function isDealTitle(title) {
   const t = F.stripTags(title);
-  if (t.length < 6 || SKIP_RE.test(t) || CHAT_RE.test(t) || !DEAL_RE.test(t)) return false;
+  if (t.length < 6 || SKIP_RE.test(t) || CHAT_RE.test(t) || PRICE_FIND_RE.test(t) || notFromSeoul(t) || !DEAL_RE.test(t)) return false;
   // 제목에 지난해 이전 연도가 적힌 옛 글 ('[2014/1116] …') — 카페 검색은 날짜가 없어서 옛 글이 섞여 들어옴
   const thisYear = new Date().getFullYear();
   if ([...t.matchAll(/(?:^|\D)(20\d{2})(?=[\/.년\s-]|\d{4}\])/g)].some(m => Number(m[1]) < thisYear)) return false;
