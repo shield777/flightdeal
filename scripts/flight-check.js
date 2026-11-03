@@ -270,11 +270,14 @@ async function checkPromos(watch, promos, country) {
   const cutoff0 = new Date(NOW.getTime() - 10 * 864e5).toISOString();
   for (let i = before.length - 1; i >= 0; i--) {
     const p = before[i];
+    // 뉴스 특가 기사도 제목 기준으로 다시 거름 (기준이 바뀌어도 이미 저장된 기사에 적용)
+    if (!p.community && !p.official && p.kind === 'airline' && !F.promoTitleCheck(p.title).ok) { before.splice(i, 1); continue; }
     if (!p.community) continue;
     const td = p.dateFound ? COMMUNITY.titleDate(p.title, NOW) : null;
     if (td) { p.date = td.toISOString(); delete p.dateFound; }
     if (!COMMUNITY.keepPost(p) || (td && p.date < cutoff0)) { before.splice(i, 1); continue; }
     p.desc = COMMUNITY.cleanDesc(p.desc);
+    if (p.kind === 'airline') p.airlines = F.airlineInText(p.title);
     if (p.summary) { const sum = leadSummary(p.desc); if (sum.length) p.summary = sum; else delete p.summary; }
   }
   const known = new Map(before.map(p => [p.id, p]));
@@ -291,6 +294,7 @@ async function checkPromos(watch, promos, country) {
       if (known.has(id) || seenTitles.has(tkey)) continue;
       const c = F.classifyNews(it.title, it.desc, routes);
       if (!c) continue;
+      if (c.kind === 'airline' && !F.promoTitleCheck(it.title).ok) continue; // 제목 기준 (커뮤니티와 같은 기준)
       seenTitles.add(tkey);
       const sum = leadSummary(it.desc);
       const p = { id, kind: c.kind, title: it.title, desc: (it.desc || '').slice(0, 400), ...(sum.length ? { summary: sum } : {}), link: it.link, source: it.source, date: it.date, found: TODAY, cards: c.cards, airlines: c.airlines, countries: c.countries, allRoutes: c.allRoutes, routes: c.routes, price: c.price, query: q };
@@ -315,7 +319,8 @@ async function checkPromos(watch, promos, country) {
     if (!c) continue;
     seenTitles.add(tkey);
     const sum = leadSummary(it.desc);
-    const p = { id, kind: c.kind, community: true, title: it.title, desc: (it.desc || '').slice(0, 400), ...(sum.length ? { summary: sum } : {}), link: it.link, source: it.source, date: it.date, ...(it.dateFound ? { dateFound: true } : {}), found: TODAY, cards: c.cards, airlines: c.airlines, countries: c.countries, allRoutes: c.allRoutes, routes: c.routes, price: c.price, ...(it.query ? { query: it.query } : {}) };
+    // 항공사는 제목에 적힌 것만 (요약에 여러 항공사가 나열된 쿠폰·정리 글이 엉뚱한 항공사 칸에 들어가지 않게)
+    const p = { id, kind: c.kind, community: true, title: it.title, desc: (it.desc || '').slice(0, 400), ...(sum.length ? { summary: sum } : {}), link: it.link, source: it.source, date: it.date, ...(it.dateFound ? { dateFound: true } : {}), found: TODAY, cards: c.cards, airlines: F.airlineInText(it.title), countries: c.countries, allRoutes: c.allRoutes, routes: c.routes, price: c.price, ...(it.query ? { query: it.query } : {}) };
     known.set(id, p); fresh.push(p); commNew++;
   }
   if (comm.items.length) log(`  커뮤니티 새 글 ${commNew}건`);
