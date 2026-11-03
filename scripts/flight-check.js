@@ -294,7 +294,7 @@ async function checkPromos(watch, promos, country) {
       if (known.has(id) || seenTitles.has(tkey)) continue;
       const c = F.classifyNews(it.title, it.desc, routes);
       if (!c) continue;
-      if (c.kind === 'airline' && !F.promoTitleCheck(it.title).ok) continue; // 제목 기준 (커뮤니티와 같은 기준)
+      if (c.kind === 'airline' && !F.promoTitleCheck(it.title).ok) continue; // 제목 기준 (커뮤니티는 여기에 더해 항공사 이름 필수)
       seenTitles.add(tkey);
       const sum = leadSummary(it.desc);
       const p = { id, kind: c.kind, title: it.title, desc: (it.desc || '').slice(0, 400), ...(sum.length ? { summary: sum } : {}), link: it.link, source: it.source, date: it.date, found: TODAY, cards: c.cards, airlines: c.airlines, countries: c.countries, allRoutes: c.allRoutes, routes: c.routes, price: c.price, query: q };

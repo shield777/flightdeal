@@ -364,6 +364,7 @@
   // ───── 특가 기사·글인지: 제목 기준 판단 (뉴스·커뮤니티 같은 기준) ─────
   //  ① 문제·경영·정책 기사 → 제외   ② 다른 상품 기사 → 제외 (제목에 '항공권'이 같이 있으면 통과)
   //  ③ 주제어(항공권·운임·국제선·노선·왕복·편도·항공사 이름·여행사 이름)와 ④ 특가 말이 제목에 둘 다 있어야 함
+  //     커뮤니티 글은 ③에 항공사 이름만 인정 (여행사 쿠폰·호텔·개인 가격 글이 아니라 항공사 특가 이벤트만)
   //  ⑤ 날짜(10일 안의 글만 새로 넣음, 예약 마감이 지나면 숨김)는 서버·앱에서 따로 봄
   //  새 유형이 나오면 아래 단어 목록에 더하면 돼요
   const TITLE_PROBLEM = /환불|피해|분쟁|민원|소비자\s*(?:보호|불만|원성)|사각지대|도마|질타|논란|비판|국정감사|국감|문체위|국토위|과징금|제재|소송|적발|사고|결항|지연|실적|영업이익|매출|주가|배당|채용|인사|임원|덤핑|꿀팁|기자수첩|칼럼|사설|탑승률|누적\s*탑승|수송|관광권|협의체|협의|모색|기념식|가격\s*추이|동향|전망|부가세|지원금/;
@@ -371,17 +372,21 @@
   const TITLE_AGENCY = /트립닷컴|아고다|익스피디아|클룩|마이리얼트립|인터파크|하나투어|모두투어|노랑풍선|교원투어|여행이지|온라인투어|땡처리닷컴|스카이스캐너|네이버\s?항공|야놀자|여기어때|트립비토즈/;
   const TITLE_SUBJECT = /항공권|항공\s*운임|운임|비행기\s*표|국제선|노선|왕복|편도|항공\s*특가|특가\s*항공/;
   const TITLE_DEAL = /특가|프로모션|프로모|할인|세일|sale|이벤트|땡처리|얼리버드|반값|쿠폰|최저가|블프|블랙\s*프라이데이|감사제|기획전|\d[\d,.]*\s*(?:만\s*)?원\s*(?:부터|대|~)|%\s*(?:할인|↓)/i;
-  function promoTitleCheck(title) {
+  // 항공사 목록(AIRLINES)에 아직 없는 항공사 이름 (커뮤니티 글에서 항공사 특가를 알아보는 데만 씀)
+  const EXTRA_AIRLINE_RE = /에어\s*마카오|바틱\s*에어|홍콩\s*항공(?!권)|에어\s*재팬|스타\s*플라이어|타이\s*라이온|라이온\s*에어|에어\s*뉴질랜드|콴타스|젯스타(?!\s*재팬)/;
+  const hasAirline = t => airlineInText(t).length > 0 || airlineInText(t.replace(/\s+/g, '')).length > 0 || EXTRA_AIRLINE_RE.test(t);
+  // opt.airlineOnly: 커뮤니티 글 — ③ 주제어는 항공사 이름만 (항공사 특가 이벤트를 잡는 게 목적)
+  function promoTitleCheck(title, opt = {}) {
     const t = stripTags(title);
     if (TITLE_PROBLEM.test(t)) return { ok: false, why: 'problem' };
     if (TITLE_OTHER.test(t) && !/항공권/.test(t)) return { ok: false, why: 'other' };
-    if (!(TITLE_SUBJECT.test(t) || TITLE_AGENCY.test(t) || airlineInText(t).length || airlineInText(t.replace(/\s+/g, '')).length)) return { ok: false, why: 'subject' };
+    if (opt.airlineOnly ? !hasAirline(t) : !(TITLE_SUBJECT.test(t) || TITLE_AGENCY.test(t) || hasAirline(t))) return { ok: false, why: 'subject' };
     if (!TITLE_DEAL.test(t)) return { ok: false, why: 'deal' };
     return { ok: true };
   }
   function isWantedPromo(p, settings) {
     if (p.kind === 'card') return true;
-    if (!p.official && !promoTitleCheck(p.title).ok) return false; // 뉴스·커뮤니티: 제목 기준
+    if (!p.official && !promoTitleCheck(p.title, { airlineOnly: !!p.community }).ok) return false; // 뉴스·커뮤니티: 제목 기준 (커뮤니티는 항공사 이름 필수)
     const text = `${p.title} ${p.desc || ''}`;
     // 제목이 면세점·호텔·투어 같은 다른 상품 이야기이고 항공권·운임 말이 없으면 빼기
     if (NONFARE_TITLE.test(p.title) && !/항공권|운임|특가\s*항공|항공\s*특가/.test(p.title)) return false;
