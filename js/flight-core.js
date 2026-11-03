@@ -486,7 +486,10 @@
     // 기간은 첫 '까지'에서 끝남 ("… 8월 31일까지며, 호놀룰루 노선은 2월 28일까지" → 뒤 노선 날짜는 안 섞음)
     const after = (m, n, bounded) => { let w = text.slice(m.index + m[0].length, m.index + m[0].length + n); const s = w.search(stopRe); if (s >= 0) w = w.slice(0, s); const k = w.indexOf('까지'); if (k >= 0) w = w.slice(0, k + 2); return span(parseDates(w, base, bounded)); };
     const before = m => {
-      let w = text.slice(Math.max(0, m.index - 60), m.index);
+      // 60자 앞에서 자르되, 숫자 중간에서 잘리지 않게 (예: '29일까지'가 '9일까지'로 잘려 11/9로 읽히던 문제)
+      let st = Math.max(0, m.index - 60);
+      while (st > 0 && /\d/.test(text[st - 1])) st--;
+      let w = text.slice(st, m.index);
       const cut = Math.max(w.lastIndexOf('다.'), w.lastIndexOf('니다'));
       if (cut >= 0) w = w.slice(cut + 2);
       // 앞 문장 끝('31일. [피치]…'처럼 '다.' 없이 끝난 문장)도 끊음. '2027. 1. 5.' 같은 날짜 속 점은 뒤에 숫자가 와서 안 끊김
