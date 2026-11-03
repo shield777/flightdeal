@@ -38,7 +38,7 @@ function isDealTitle(title) {
   const won = [...t.matchAll(/(\d[\d,]*)\s?(만\s?)?원/g)].map(m => Number(m[1].replace(/,/g, '')) * (m[2] ? 10000 : 1));
   if (won.length && won.every(n => n < 1000)) return false;
   // 뉴스와 같은 제목 기준 (js/flight-core.js promoTitleCheck): 문제·경영 / 다른 상품 제외, 주제어 + 특가 말이 제목에
-  return F.promoTitleCheck(t).ok;
+  return F.promoTitleCheck(t, { airlineOnly: true }).ok; // ③은 항공사 이름만
 }
 
 // 제목 앞 날짜 ('[11/3 19시] …', '[G클럽] [26.10.29 08시] …') → 그 날 (한국 시각 정오). 없으면 null
