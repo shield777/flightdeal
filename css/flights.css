@@ -302,6 +302,7 @@ button.fl-go { width: 100%; }
 .pr-air .src, .fl-cards .src { font-size: 12px; color: var(--muted); }
 .badge-news, .badge-off { border: 0; border-radius: 6px; padding: 2px 6px; font-weight: 700; }
 .badge-news { background: var(--surface-2); color: var(--muted); }
+.badge-comm { display: inline-block; font-size: 11px; vertical-align: 1px; border-radius: 6px; padding: 2px 6px; font-weight: 700; background: var(--accent-soft); color: var(--accent); }
 
 /* 카드 탭 */
 .fl-cards h2 { font-size: 17px; font-weight: 800; letter-spacing: -.02em; margin-bottom: 12px; }
