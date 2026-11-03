@@ -127,7 +127,8 @@ function buildQueries(watch, country) {
     const dests = F.DESTS.filter(x => x.country === c);
     for (const city of [...new Set(dests.map(d => d.city.replace(/\(.*\)/, '')))].slice(0, all ? 5 : 8)) qs.add(`${city} 항공권 특가`);
     const airs = [...new Set(dests.flatMap(d => (rec[d.code] || []).map(r => F.AIRLINES[r.code] ? F.airline(r.code).name : cleanAir(r.name))).filter(Boolean))].slice(0, all ? 10 : 14);
-    airs.forEach((a, i) => { qs.add(`${a} 특가`); if (!all || i < 3) qs.add(`${a} ${c} 특가`); });
+    // 항공사 이름 + '특가'·'할인' (제목에 '할인'·'프로모션'만 쓴 기사도 잡히게)
+    airs.forEach((a, i) => { qs.add(`${a} 특가`); qs.add(`${a} 할인`); if (!all || i < 3) qs.add(`${a} ${c} 특가`); });
   }
   for (const c of s.cards || F.CARD_NAMES) { qs.add(`${c} 항공권 할인`); qs.add(`${c} 해외여행 할인`); }
   qs.add('항공권 카드 할인 트립닷컴');
