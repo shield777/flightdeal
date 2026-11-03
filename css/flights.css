@@ -327,3 +327,7 @@ button.fl-go { width: 100%; }
 .pr-src { display: flex; width: 100%; margin: 4px 0 6px; }
 .pr-src button { flex: 1; padding: 9px 12px; font-size: 14px; }
 .pr-src-hint { margin: 2px 4px 8px; }
+
+/* 가격 비교: 월별 날짜별 최저가 (넓은 버튼) */
+.go-btn.go-wide { width: 100%; margin-top: 8px; gap: 6px; background: var(--accent-soft); color: var(--accent); }
+.go-btn.go-wide small { font-size: 12px; font-weight: 500; opacity: .8; }
