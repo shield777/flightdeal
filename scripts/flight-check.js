@@ -106,9 +106,9 @@ function leadSummary(desc) {
 }
 async function newsNaver(q) {
   if (!ENV.NAVER_CLIENT_ID || !ENV.NAVER_CLIENT_SECRET || MOCK) return [];
-  const j = await get(`https://openapi.naver.com/v1/search/news.json?query=${encodeURIComponent(q)}&display=30&sort=date`, {
-    headers: { 'X-Naver-Client-Id': ENV.NAVER_CLIENT_ID, 'X-Naver-Client-Secret': ENV.NAVER_CLIENT_SECRET },
-  });
+  // 네이버 API HUB(새 키) → 안 되면 예전 개발자센터(예전 키). scripts/community.js 참고
+  let j = null;
+  try { j = await COMMUNITY.naverSearch('news', { query: q, display: 30, sort: 'date' }, ENV); } catch (e) { if (!newsNaver.warned) { log(`  ! 네이버 뉴스 검색 실패: ${e.message}`); newsNaver.warned = true; } }
   return ((j && j.items) || []).filter(it => !isNaN(new Date(it.pubDate))).map(it => ({ title: F.stripTags(it.title), link: it.originallink || it.link, date: new Date(it.pubDate).toISOString(), desc: F.stripTags(it.description), source: '네이버 뉴스' }));
 }
 

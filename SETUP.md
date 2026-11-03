@@ -32,17 +32,24 @@
 ## 3. (추천) 네이버 검색 키 — 네이버 카페 특가 글·네이버 뉴스
 
 기사가 안 나는 반짝 특가·할인 코드는 스사사·네일동 같은 여행 카페에 먼저 올라와요. 이 키가 있어야 네이버 카페를 찾아요.
-없으면 커뮤니티는 뽐뿌·루리웹만, 뉴스는 구글·Bing만 써요. 무료이고 5분 정도 걸려요.
+없으면 커뮤니티는 뽐뿌·루리웹만, 뉴스는 구글·Bing만 써요.
 
-1. <https://developers.naver.com/apps/#/register> (네이버 로그인)
-2. **애플리케이션 이름**: `flightdeal` (아무거나)
-3. **사용 API**: **검색** 선택
-4. **비로그인 오픈 API 서비스 환경** → **WEB 설정** → 웹 서비스 URL `https://shield777.github.io`
-5. **등록하기** → 화면에 나온 **Client ID**, **Client Secret** 복사
+⚠️ 2026년 7월 31일부터 네이버 개발자센터(developers.naver.com)에서는 검색 API를 새로 받을 수 없어요(사용 API 목록에 '검색'이 없음).
+이제 **네이버 클라우드 플랫폼의 NAVER API HUB**에서 받아요. 검색 API는 하루 25,000번까지 무료예요(지금은 '한시적 무료'로 안내돼 있어서 나중에 유료가 될 수 있음). 이 앱은 하루 500번 정도 써요.
+
+1. <https://www.ncloud.com> → 회원가입(네이버 아이디로 가입 가능) → 로그인 → **콘솔**
+   - 가입 때 결제 수단(카드) 등록을 요구할 수 있어요. 무료 한도 안에서는 요금이 나오지 않아요.
+2. 콘솔 메뉴 → **Services** → **Application Services** → **NAVER API HUB**
+3. **Subscription**(또는 신청하기) → **서비스 이용 신청** → 약관 동의
+4. **Application 등록** → 이름 `flightdeal` → API 목록에서 **카페글**(Search Cafe Article)과 **뉴스**(Search News) 선택 → 등록
+5. 만든 Application의 **인증 정보**에서 **Client ID**, **Client Secret** 복사
+   - 네이버 클라우드 계정의 'API 인증키(Access Key)'가 아니라, 이 Application의 Client ID/Secret이에요.
 6. 저장소 → **Settings** → **Secrets and variables** → **Actions** → **New repository secret** 두 번
    - 이름 `NAVER_CLIENT_ID`, 값은 Client ID
    - 이름 `NAVER_CLIENT_SECRET`, 값은 Client Secret
-7. 다음 자동 확인부터 적용돼요. Actions 실행 기록에 `커뮤니티: 네이버 카페 ○○건`이 보이면 성공이에요.
+7. 다음 자동 확인부터 적용돼요. Actions 실행 기록에 `커뮤니티: 네이버 카페 ○○건 (API HUB 방식)`이 보이면 성공이에요.
+
+예전에 개발자센터에서 받은 키가 있으면 그대로 넣어도 돼요(앱이 새 방식이 안 되면 예전 방식으로 다시 시도해요).
 
 ## 4. (선택) 70% 이상 특가 알림 (ntfy 앱)
 

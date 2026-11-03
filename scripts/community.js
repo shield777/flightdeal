@@ -50,13 +50,29 @@ async function fetchText(url, headers = {}) {
   return new TextDecoder(euc ? 'euc-kr' : 'utf-8').decode(buf);
 }
 
+// 네이버 검색 API. 2026.7.31부터 새 키는 NAVER API HUB(네이버 클라우드)에서만 발급 → 주소·헤더 이름이 바뀜
+//  새 주소(API HUB)를 먼저 쓰고, 안 되면 예전 개발자센터 주소(예전에 받은 키). 처음 성공한 방식을 기억
+//  kind: 'cafearticle' | 'news' … / 결과 형식(items: title·link·description …)은 둘이 같음
+let naverMode = null;
+async function naverSearch(kind, params, env) {
+  const id = env.NAVER_CLIENT_ID, secret = env.NAVER_CLIENT_SECRET;
+  if (!id || !secret) return null;
+  const qs = new URLSearchParams(params).toString();
+  const tries = [
+    ['hub', `https://naverapihub.apigw.ntruss.com/search/v1/${kind}?${qs}&format=json`, { 'X-NCP-APIGW-API-KEY-ID': id, 'X-NCP-APIGW-API-KEY': secret }],
+    ['old', `https://openapi.naver.com/v1/search/${kind}.json?${qs}`, { 'X-Naver-Client-Id': id, 'X-Naver-Client-Secret': secret }],
+  ].filter(t => !naverMode || t[0] === naverMode);
+  let err;
+  for (const [mode, url, headers] of tries) {
+    try { const j = JSON.parse(await fetchText(url, headers)); naverMode = mode; return j; } catch (e) { err = new Error(`${mode} ${e.message}`); }
+  }
+  throw err;
+}
+
 // 네이버 카페 검색 (키가 있을 때만). 결과: [{ title, link, desc, source, date }]
 async function naverCafe(q, env, now) {
-  if (!env.NAVER_CLIENT_ID || !env.NAVER_CLIENT_SECRET) return [];
-  const t = await fetchText(`https://openapi.naver.com/v1/search/cafearticle.json?query=${encodeURIComponent(q)}&display=20&sort=date`, {
-    'X-Naver-Client-Id': env.NAVER_CLIENT_ID, 'X-Naver-Client-Secret': env.NAVER_CLIENT_SECRET,
-  });
-  const items = (JSON.parse(t).items || []);
+  const j = await naverSearch('cafearticle', { query: q, display: 20, sort: 'date' }, env);
+  const items = ((j && j.items) || []);
   // 날짜가 없어서 최신순 앞쪽 10개만 (오래된 글이 '오늘 찾은 글'로 들어오지 않게)
   return items.slice(0, 10).map(it => ({ title: F.stripTags(it.title), link: it.link, desc: F.stripTags(it.description), source: `네이버 카페 · ${F.stripTags(it.cafename || '카페')}`, date: now.toISOString(), dateFound: true }));
 }
@@ -104,7 +120,7 @@ async function fetchCommunity({ countries, airlinesOf, env, now, log, mock }) {
   const hasNaver = !mock && !!(env.NAVER_CLIENT_ID && env.NAVER_CLIENT_SECRET);
   if (hasNaver) {
     for (const q of communityQueries(countries, airlinesOf)) {
-      try { const l = await naverCafe(q, env, now); report.naver += l.length; raw.push(...l.map(it => ({ ...it, query: q }))); } catch (e) { report.fail++; }
+      try { const l = await naverCafe(q, env, now); report.naver += l.length; raw.push(...l.map(it => ({ ...it, query: q }))); } catch (e) { report.fail++; report.err = e.message; }
       await new Promise(r => setTimeout(r, 150));
     }
   }
@@ -126,8 +142,8 @@ async function fetchCommunity({ countries, airlinesOf, env, now, log, mock }) {
     return { ...it, desc: d && !/[.!?。…]$/.test(d) ? `${d}.` : d };
   });
   report.kept = items.length;
-  log(`■ 커뮤니티: 네이버 카페 ${hasNaver ? `${report.naver}건` : '건너뜀(네이버 키 없음)'} · 뽐뿌 ${report.ppomppu}건 · 루리웹 ${report.ruliweb}건 → 항공권 특가 글 ${items.length}건${report.fail ? ` · 실패 ${report.fail}번` : ''}`);
+  log(`■ 커뮤니티: 네이버 카페 ${hasNaver ? `${report.naver}건${naverMode ? ` (${naverMode === 'hub' ? 'API HUB' : '예전 개발자센터'} 방식)` : ''}${report.err ? ` · 오류: ${report.err}` : ''}` : '건너뜀(네이버 키 없음)'} · 뽐뿌 ${report.ppomppu}건 · 루리웹 ${report.ruliweb}건 → 항공권 특가 글 ${items.length}건${report.fail ? ` · 실패 ${report.fail}번` : ''}`);
   return { items, report };
 }
 
-module.exports = { fetchCommunity, isDealTitle, communityQueries, ruliweb };
+module.exports = { fetchCommunity, isDealTitle, communityQueries, ruliweb, naverSearch };
