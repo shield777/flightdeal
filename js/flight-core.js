@@ -386,6 +386,8 @@
   const TITLE_OTHER = /면세|免|호텔|숙박|리조트|쇼핑|쓱데이|계열사|유통|홈쇼핑|백화점|(?<!스)마트|렌터카|렌트카|보험|마일리지|팝업|eSIM|이심|유심|라운지|굿즈/;
   const TITLE_AGENCY = /트립닷컴|아고다|익스피디아|클룩|마이리얼트립|인터파크|하나투어|모두투어|노랑풍선|교원투어|여행이지|온라인투어|땡처리닷컴|스카이스캐너|네이버\s?항공|야놀자|여기어때|트립비토즈/;
   const TITLE_SUBJECT = /항공권|항공\s*운임|운임|비행기\s*표|국제선|노선|왕복|편도|항공\s*특가|특가\s*항공/;
+  // 검색할 때 쓰는 특가 말 (scripts/flight-check.js·community.js) — 아래 TITLE_DEAL과 같은 말
+  const DEAL_SEARCH_WORDS = ['특가', '프로모션', '할인', '세일', '이벤트', '땡처리', '얼리버드', '쿠폰', '블프', '기획전', '감사제'];
   const TITLE_DEAL = /특가|프로모션|프로모|할인|세일|sale|promo(?:tion)?|discount|deal|\d+\s*%\s*off|이벤트|땡처리|얼리버드|반값|쿠폰|최저가|블프|블랙\s*프라이데이|감사제|기획전|\d[\d,.]*\s*(?:만\s*)?원\s*(?:부터|대|~)|%\s*(?:할인|↓)/i;
   // 항공사 목록(AIRLINES)에 아직 없는 항공사 이름 (커뮤니티 글에서 항공사 특가를 알아보는 데만 씀)
   const EXTRA_AIRLINE_RE = /에어\s*마카오|바틱\s*에어|홍콩\s*항공(?!권)|에어\s*재팬|스타\s*플라이어|타이\s*라이온|라이온\s*에어|에어\s*뉴질랜드|콴타스|젯스타(?!\s*재팬)|\b(?:Air\s*Macau|Batik\s*Air|Hong\s*Kong\s*Airlines|Air\s*Japan|StarFlyer|Thai\s*Lion\s*Air|Lion\s*Air|Air\s*New\s*Zealand|Qantas)\b/i;
@@ -840,7 +842,7 @@
     monthsBetween, nightsBetween, addDays, addMonths, weekday, findDest, airline,
     promoFacts, paxOf, KNOWN_DIRECT, nonSeoulOnly, dropHead, sameFacts, mergeFacts, absDates, isDomestic, parseDates, splitSentences, subjectAirline, airlineText, fitsTrip, cardFacts, cardUse, links, skyMonth, ttang, climateOf, holidaysIn, KOREAN_AIRLINES, airlinesFor, isPayBenefit,
     stripTags, parseWon, promoPrice, classifyNews, won, routeKey,
-    PROMO_DEFAULT, COUNTRIES, COUNTRY_PLACES, airlineInText, airlineCode, newsScope, promoSettings, isWantedPromo, promoTitleCheck,
+    PROMO_DEFAULT, COUNTRIES, COUNTRY_PLACES, airlineInText, airlineCode, newsScope, promoSettings, isWantedPromo, promoTitleCheck, DEAL_SEARCH_WORDS,
   };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   else root.FlightCore = api;

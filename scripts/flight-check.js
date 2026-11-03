@@ -114,6 +114,15 @@ async function newsNaver(q) {
 
 // 검색어: 고른 나라·도시 + 고른 LCC + 카드사 (data/watchlist.json 의 settings 에서 바꿀 수 있어요)
 // 검색어: 고른 나라 + 그 나라 도시 + 그 나라를 운항하는 항공사(최근 직항 가격 기록 기준) + 카드사
+// '{특가말}' 자리는 검색창마다 맞는 방식으로 특가 말을 넣어 검색 (2026-11-03 서버에서 비교 시험)
+//  구글: 11개를 OR로 묶어도 잘 됨 → 비엣젯 (특가 OR 프로모션 OR 할인 …)  (기사 5 → 31건)
+//  네이버 뉴스: '|'로 묶되 3개까지만 (11개를 묶으면 '타이어뱅크 쏨데이'처럼 항공사와 상관없는 기사가 앞에 옴)
+//  Bing: 괄호 OR 검색이 결과 0건이라 '특가' 하나만
+//  '○○원부터'·'○○% 할인' 같은 가격 표현은 검색어로 쓸 수 없어서, 제목 기준(④)에서만 봄
+const DEAL_WORDS = F.DEAL_SEARCH_WORDS;
+const DEAL_SLOT = '{특가말}';
+const forEngine = (q, engine) => !q.includes(DEAL_SLOT) ? q
+  : q.replace(DEAL_SLOT, engine === 'google' ? `(${DEAL_WORDS.join(' OR ')})` : engine === 'naver' ? '특가 | 할인 | 프로모션' : '특가');
 const cleanAir = n => String(n || '').replace(/\(.*\)/, '').trim();
 // country: 한 나라 이름 | 'ALL'(자동 실행: 모든 나라, 나라마다 검색어를 줄여서) | ''(기본 나라)
 function buildQueries(watch, country) {
@@ -123,12 +132,12 @@ function buildQueries(watch, country) {
   const countries = all ? [...new Set(F.DESTS.map(d => d.country))] : country ? [country] : F.promoSettings(s).countries;
   const rec = readJSON(path.join(DATA, 'airlines-by-city.json'), { cities: {} }).cities || {};
   for (const c of countries) {
-    qs.add(`${c} 항공권 특가`); qs.add(`${c} 항공 프로모션`); qs.add(`${c} 땡처리 항공권`);
+    qs.add(`${c} 항공권 ${DEAL_SLOT}`);
     const dests = F.DESTS.filter(x => x.country === c);
-    for (const city of [...new Set(dests.map(d => d.city.replace(/\(.*\)/, '')))].slice(0, all ? 5 : 8)) qs.add(`${city} 항공권 특가`);
+    for (const city of [...new Set(dests.map(d => d.city.replace(/\(.*\)/, '')))].slice(0, all ? 5 : 8)) qs.add(`${city} 항공권 ${DEAL_SLOT}`);
     const airs = [...new Set(dests.flatMap(d => (rec[d.code] || []).map(r => F.AIRLINES[r.code] ? F.airline(r.code).name : cleanAir(r.name))).filter(Boolean))].slice(0, all ? 10 : 14);
-    // 항공사 이름 + '특가'·'할인' (제목에 '할인'·'프로모션'만 쓴 기사도 잡히게)
-    airs.forEach((a, i) => { qs.add(`${a} 특가`); qs.add(`${a} 할인`); if (!all || i < 3) qs.add(`${a} ${c} 특가`); });
+    // 항공사 이름 + 특가 말 묶음 (특가·프로모션·할인·세일·이벤트·땡처리·얼리버드·쿠폰·블프·기획전·감사제)
+    airs.forEach((a, i) => { qs.add(`${a} ${DEAL_SLOT}`); if (!all || i < 3) qs.add(`${a} ${c} ${DEAL_SLOT}`); });
   }
   for (const c of s.cards || F.CARD_NAMES) { qs.add(`${c} 항공권 할인`); qs.add(`${c} 해외여행 할인`); }
   qs.add('항공권 카드 할인 트립닷컴');
@@ -286,7 +295,7 @@ async function checkPromos(watch, promos, country) {
   const cutoff = new Date(NOW.getTime() - 10 * 864e5).toISOString();
   const fresh = [];
   for (const q of qs) {
-    const items = [...await newsBing(q), ...await newsGoogle(q), ...await newsNaver(q)];
+    const items = [...await newsBing(forEngine(q, 'bing')), ...await newsGoogle(forEngine(q, 'google')), ...await newsNaver(forEngine(q, 'naver'))];
     await sleep(MOCK ? 0 : 400);
     for (const it of items) {
       if (!it.title || it.date < cutoff) continue;

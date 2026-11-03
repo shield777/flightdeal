@@ -34,10 +34,9 @@ function isDealTitle(title) {
   // 제목에 지난해 이전 연도가 적힌 옛 글 ('[2014/1116] …') — 카페 검색은 날짜가 없어서 옛 글이 섞여 들어옴
   const thisYear = new Date().getFullYear();
   if ([...t.matchAll(/(?:^|\D)(20\d{2})(?=[\/.년\s-]|\d{4}\])/g)].some(m => Number(m[1]) < thisYear)) return false;
-  // 적혀 있는 금액이 모두 1~999원이면 항공권 특가가 아님 (예: '[네이버페이] 제주항공 12원' 클릭 적립)
-  //  0원은 뺌: 비엣젯 '0원 항공권'처럼 운임 0원 이벤트가 있음
+  // 적혀 있는 금액이 모두 1,000원 미만이면 항공권 특가가 아님 (예: '[네이버페이] 제주항공 12원' 클릭 적립, '0원 항공권' 같은 미끼 이벤트)
   const won = [...t.matchAll(/(\d[\d,]*)\s?(만\s?)?원/g)].map(m => Number(m[1].replace(/,/g, '')) * (m[2] ? 10000 : 1));
-  if (won.length && won.every(n => n >= 1 && n < 1000)) return false;
+  if (won.length && won.every(n => n < 1000)) return false;
   // 뉴스와 같은 제목 기준 (js/flight-core.js promoTitleCheck): 문제·경영 / 다른 상품 제외, 주제어 + 특가 말이 제목에
   return F.promoTitleCheck(t, { airlineOnly: true }).ok; // ③은 항공사 이름만
 }
@@ -74,8 +73,8 @@ function communityQueries(countries, airlinesOf) {
   const qs = new Set(['항공권 할인코드', '항공권 프로모션 코드', '항공 타임세일', '항공권 특가 오픈']);
   for (const c of countries) {
     qs.add(`${c} 항공권 특가`);
-    // 항공사마다 '특가'와 '할인' 두 가지로 검색 ('특가' 없이 '할인·프로모션'만 쓴 글도 잡히게)
-    for (const a of airlinesOf(c).slice(0, countries.length > 1 ? 3 : 6)) { qs.add(`${a} 특가`); qs.add(`${a} 할인`); }
+    // 항공사마다 특가 말을 하나씩 따로 검색 (네이버 카페 검색은 여러 단어를 묶으면 엉뚱한 글이 섞여서 — 2026-11 확인)
+    for (const a of airlinesOf(c).slice(0, countries.length > 1 ? 3 : 6)) for (const w of F.DEAL_SEARCH_WORDS) qs.add(`${a} ${w}`);
   }
   return [...qs];
 }
