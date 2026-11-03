@@ -408,7 +408,6 @@
     // 이 나라 관련: 기사에 나라·도시가 나오거나, 이 나라를 운항하는 항공사의 '전 노선·국제선' 특가
     // 불필요한 기사 숨김: 가격·할인율·코드·기간 중 하나도 없는 기사, 예약이 끝난 소식. 금액·기간이 같은 기사는 한 줄로
     const { order, rel, useful, comm } = promosFor(C);
-    const hidden = rel.length - useful.length - comm.length;
     const fitRank = (p, code) => ({ in: 0, null: 1, out: 2 })[String(F.fitsTrip(groupFacts(p, code), trip.dep, trip.ret))];
     // 할인율 높은 순 (할인율이 글에 없는 소식은 뒤로) → 같으면 내 여행 날짜 탑승 가능 → 최신
     const pctOf = (p, code) => groupFacts(p, code).pct || 0;
@@ -440,8 +439,7 @@
       </div>
       ${ui.promoSrc === 'comm'
         ? `<p class="hint pr-src-hint">네이버 카페·뽐뿌·루리웹 · 최신 순 · 누구나 쓰는 글이라 확인 안 된 내용이에요</p>${comm.length ? airCards(comm, true) : `<p class="muted pr-none">${esc(C)} 관련 새 커뮤니티 글이 없어요. 네이버 카페는 지난번 확인 뒤 새로 올라온 글만 받아요.</p>`}`
-        : `<p class="hint pr-src-hint">뉴스 기사 · 할인율 높은 순</p>${useful.length ? airCards(useful, false) : `<p class="muted pr-none">${esc(C)} 관련 특가 기사가 없어요.</p>`}`}
-      <p class="fl-foot">뉴스 기사와 커뮤니티 글(네이버 카페·뽐뿌·루리웹)을 써요(항공사 홈페이지는 보지 않음). 커뮤니티 글은 기사가 안 나는 반짝 특가를 잡으려고 따로 모았어요(제목에 항공사 이름이 있는 글만). 누구나 쓰는 글이라 틀리거나 이미 끝난 특가일 수 있고, 본문은 열지 않아 제목·요약에 적힌 내용만 보여요. 네이버 카페 글은 처음 한 번 이미 올라와 있던 글(검색어마다 최신 5개, '올린 날 모름')을 받고, 그 뒤로는 새로 나타난 글만 받아요(날짜는 찾은 시각). '올린 날 모름' 글은 알림을 보내지 않아요. 글에 예약 마감일이 있으면 그날까지, 없으면 찾은 뒤 3주 동안 보여요. 기사 본문까지 열어 금액·할인율·코드·예약기간·탑승기간을 찾고, 표현이 달라도 이 값들이 같은 기사는 한 줄로 묶었어요. 굵은 글씨는 기사에 적힌 숫자·날짜, 점(•) 문장은 기사 문장이에요. '다음 달·내달·오는 N일'처럼 적힌 날짜는 기사 등록일 기준 날짜로 바꿔 적었어요. 여러 항공사 소식을 모은 기사는 그 항공사 문장만 봐요. 금액·할인율·코드·기간이 하나도 없는 기사와 예약 기간이 끝난 소식은 숨기고, 묶인 기사까지 합쳐 ${hidden ? `${hidden}건이 따로 안 보여요` : '숨긴 기사는 없어요'}. 조건은 원문에서 꼭 확인하세요.</p>`;
+        : `<p class="hint pr-src-hint">뉴스 기사 · 할인율 높은 순</p>${useful.length ? airCards(useful, false) : `<p class="muted pr-none">${esc(C)} 관련 특가 기사가 없어요.</p>`}`}`;
   }
 
   // ───── 카드 탭: 우리·현대·신한 할인 소식 + 항공사 공식 결제 혜택 ─────
