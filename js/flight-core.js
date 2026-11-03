@@ -291,9 +291,24 @@
     const regionWords = dest.region === 'sea' ? ['동남아'] : dest.region === 'jp' ? ['일본'] : dest.region === 'pac' ? ['괌', '사이판', '대양주'] : [];
     return { strong: [dest.city.replace(/\(.*\)/, ''), ...(dest.alias || [])].filter(Boolean), medium: [dest.country, ...regionWords] };
   }
+  // 영어 이름 (해외 항공사는 커뮤니티·기사에 영어로 적는 경우가 많음). 대소문자 구분 없이, 단어 단위로 찾음
+  //  'Peach'처럼 흔한 단어는 그대로 쓰지 않고 'Peach Aviation'처럼 확실한 이름만
+  const AIRLINE_EN = {
+    KE: ['Korean Air'], OZ: ['Asiana'], '7C': ['Jeju Air'], LJ: ['Jin Air'], TW: ["T'way", 'Tway', 'Trinity Airways'],
+    BX: ['Air Busan'], RS: ['Air Seoul'], ZE: ['Eastar Jet', 'Eastar'], WE: ['Parata Air'], RF: ['Aero K'],
+    YP: ['Air Premia'], VJ: ['VietJet', 'Vietjet Air'], VN: ['Vietnam Airlines'], QH: ['Bamboo Airways'], VU: ['Vietravel Airlines'],
+    '5J': ['Cebu Pacific'], PR: ['Philippine Airlines'], Z2: ['AirAsia Philippines'], AK: ['AirAsia', 'Air Asia'], D7: ['AirAsia X'],
+    XJ: ['Thai AirAsia X'], FD: ['Thai AirAsia'], TG: ['Thai Airways'], TR: ['Scoot', 'FlyScoot'], SQ: ['Singapore Airlines'],
+    MH: ['Malaysia Airlines'], GA: ['Garuda Indonesia', 'Garuda'], CX: ['Cathay Pacific', 'Cathay'], UO: ['HK Express', 'Hong Kong Express'],
+    CI: ['China Airlines'], BR: ['EVA Air', 'EVA Airways'], IT: ['Tigerair Taiwan', 'Tigerair'], JL: ['Japan Airlines'], NH: ['All Nippon Airways'],
+    MM: ['Peach Aviation', 'Flypeach', 'Peach Air'], GK: ['Jetstar Japan', 'Jetstar'], ZG: ['Zipair'], UA: ['United Airlines'], HA: ['Hawaiian Airlines'],
+    MU: ['China Eastern'], CA: ['Air China'], CZ: ['China Southern'],
+  };
+  const enRe = n => new RegExp(`\\b${n.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/'/g, "['’]?").replace(/\s+/g, '\\s*')}\\b`, 'i');
+  const AIRLINE_EN_RE = Object.fromEntries(Object.entries(AIRLINE_EN).map(([c, l]) => [c, l.map(enRe)]));
   function airlineInText(text) {
     const hit = [];
-    for (const [code, a] of Object.entries(AIRLINES)) if ([a.name, ...(a.alias || [])].some(n => text.includes(n))) hit.push(code);
+    for (const [code, a] of Object.entries(AIRLINES)) if ([a.name, ...(a.alias || [])].some(n => text.includes(n)) || (AIRLINE_EN_RE[code] || []).some(r => r.test(text))) hit.push(code);
     return hit;
   }
 
@@ -360,9 +375,33 @@
   const DOMESTIC_RE = /국내선|김포\s?[-~·]\s?제주|제주행|김포\s?[-~·]\s?부산/;
   // 국내선(제주행 등)만 다루는 소식: 해외 나라 이름이 없고 '국제선'도 없음
   const isDomestic = p => { const t = `${p.title} ${p.desc || ''}`; return DOMESTIC_RE.test(t) && !(p.countries || []).length && !/국제선/.test(t); };
-  const NONFARE_TITLE = /면세|免|호텔|숙박|리조트|렌터카|렌트카|투어|쇼핑|eSIM|이심|유심|보험|라운지|기내식|굿즈|채용|실적|배당|주가|마일리지\s*적립/;
+  const NONFARE_TITLE = /쓱데이|계열사|유통|홈쇼핑|백화점|(?<!스)마트|면세|免|호텔|숙박|리조트|렌터카|렌트카|투어|쇼핑|eSIM|이심|유심|보험|라운지|기내식|굿즈|채용|실적|배당|주가|마일리지\s*적립/;
+  // ───── 특가 기사·글인지: 제목 기준 판단 (뉴스·커뮤니티 같은 기준) ─────
+  //  ① 문제·경영·정책 기사 → 제외   ② 다른 상품 기사 → 제외 (제목에 '항공권'이 같이 있으면 통과)
+  //  ③ 주제어(항공권·운임·국제선·노선·왕복·편도·항공사 이름·여행사 이름)와 ④ 특가 말이 제목에 둘 다 있어야 함
+  //     커뮤니티 글은 ③에 항공사 이름만 인정 (여행사 쿠폰·호텔·개인 가격 글이 아니라 항공사 특가 이벤트만)
+  //  ⑤ 날짜(10일 안의 글만 새로 넣음, 예약 마감이 지나면 숨김)는 서버·앱에서 따로 봄
+  //  새 유형이 나오면 아래 단어 목록에 더하면 돼요
+  const TITLE_PROBLEM = /환불|피해|분쟁|민원|소비자\s*(?:보호|불만|원성)|사각지대|도마|질타|논란|비판|국정감사|국감|문체위|국토위|과징금|제재|소송|적발|사고|결항|지연|실적|영업이익|매출|주가|배당|채용|인사|임원|덤핑|꿀팁|기자수첩|칼럼|사설|탑승률|누적\s*탑승|수송|관광권|협의체|협의|모색|기념식|가격\s*추이|동향|전망|부가세|지원금/;
+  const TITLE_OTHER = /면세|免|호텔|숙박|리조트|쇼핑|쓱데이|계열사|유통|홈쇼핑|백화점|(?<!스)마트|렌터카|렌트카|보험|마일리지|팝업|eSIM|이심|유심|라운지|굿즈/;
+  const TITLE_AGENCY = /트립닷컴|아고다|익스피디아|클룩|마이리얼트립|인터파크|하나투어|모두투어|노랑풍선|교원투어|여행이지|온라인투어|땡처리닷컴|스카이스캐너|네이버\s?항공|야놀자|여기어때|트립비토즈/;
+  const TITLE_SUBJECT = /항공권|항공\s*운임|운임|비행기\s*표|국제선|노선|왕복|편도|항공\s*특가|특가\s*항공/;
+  const TITLE_DEAL = /특가|프로모션|프로모|할인|세일|sale|promo(?:tion)?|discount|deal|\d+\s*%\s*off|이벤트|땡처리|얼리버드|반값|쿠폰|최저가|블프|블랙\s*프라이데이|감사제|기획전|\d[\d,.]*\s*(?:만\s*)?원\s*(?:부터|대|~)|%\s*(?:할인|↓)/i;
+  // 항공사 목록(AIRLINES)에 아직 없는 항공사 이름 (커뮤니티 글에서 항공사 특가를 알아보는 데만 씀)
+  const EXTRA_AIRLINE_RE = /에어\s*마카오|바틱\s*에어|홍콩\s*항공(?!권)|에어\s*재팬|스타\s*플라이어|타이\s*라이온|라이온\s*에어|에어\s*뉴질랜드|콴타스|젯스타(?!\s*재팬)|\b(?:Air\s*Macau|Batik\s*Air|Hong\s*Kong\s*Airlines|Air\s*Japan|StarFlyer|Thai\s*Lion\s*Air|Lion\s*Air|Air\s*New\s*Zealand|Qantas)\b/i;
+  const hasAirline = t => airlineInText(t).length > 0 || airlineInText(t.replace(/\s+/g, '')).length > 0 || EXTRA_AIRLINE_RE.test(t);
+  // opt.airlineOnly: 커뮤니티 글 — ③ 주제어는 항공사 이름만 (항공사 특가 이벤트를 잡는 게 목적)
+  function promoTitleCheck(title, opt = {}) {
+    const t = stripTags(title);
+    if (TITLE_PROBLEM.test(t)) return { ok: false, why: 'problem' };
+    if (TITLE_OTHER.test(t) && !/항공권/.test(t)) return { ok: false, why: 'other' };
+    if (opt.airlineOnly ? !hasAirline(t) : !(TITLE_SUBJECT.test(t) || TITLE_AGENCY.test(t) || hasAirline(t))) return { ok: false, why: 'subject' };
+    if (!TITLE_DEAL.test(t)) return { ok: false, why: 'deal' };
+    return { ok: true };
+  }
   function isWantedPromo(p, settings) {
     if (p.kind === 'card') return true;
+    if (!p.official && !promoTitleCheck(p.title, { airlineOnly: !!p.community }).ok) return false; // 뉴스·커뮤니티: 제목 기준 (커뮤니티는 항공사 이름 필수)
     const text = `${p.title} ${p.desc || ''}`;
     // 제목이 면세점·호텔·투어 같은 다른 상품 이야기이고 항공권·운임 말이 없으면 빼기
     if (NONFARE_TITLE.test(p.title) && !/항공권|운임|특가\s*항공|항공\s*특가/.test(p.title)) return false;
@@ -486,9 +525,15 @@
     // 기간은 첫 '까지'에서 끝남 ("… 8월 31일까지며, 호놀룰루 노선은 2월 28일까지" → 뒤 노선 날짜는 안 섞음)
     const after = (m, n, bounded) => { let w = text.slice(m.index + m[0].length, m.index + m[0].length + n); const s = w.search(stopRe); if (s >= 0) w = w.slice(0, s); const k = w.indexOf('까지'); if (k >= 0) w = w.slice(0, k + 2); return span(parseDates(w, base, bounded)); };
     const before = m => {
-      let w = text.slice(Math.max(0, m.index - 60), m.index);
+      // 60자 앞에서 자르되, 숫자 중간에서 잘리지 않게 (예: '29일까지'가 '9일까지'로 잘려 11/9로 읽히던 문제)
+      let st = Math.max(0, m.index - 60);
+      while (st > 0 && /\d/.test(text[st - 1])) st--;
+      let w = text.slice(st, m.index);
       const cut = Math.max(w.lastIndexOf('다.'), w.lastIndexOf('니다'));
       if (cut >= 0) w = w.slice(cut + 2);
+      // 앞 문장 끝('31일. [피치]…'처럼 '다.' 없이 끝난 문장)도 끊음. '2027. 1. 5.' 같은 날짜 속 점은 뒤에 숫자가 와서 안 끊김
+      const ends = [...w.matchAll(/[.!?]\s+(?=[^\d\s])/g)];
+      if (ends.length) w = w.slice(ends[ends.length - 1].index + 1);
       // 앞쪽에 다른 기간 키워드가 있으면 그 뒤만 (예: "… 탑승 가능하며 11월 2일까지 예약")
       let k, last = -1; const g = new RegExp(stopRe.source, 'g'); while ((k = g.exec(w))) last = k.index + k[0].length;
       if (last >= 0) w = w.slice(last);
@@ -569,7 +614,8 @@
   const BOARD_CTX = /탑승|이용할\s*수|이용\s*가능|이용\s*기간|여행\s*기간|출발\s*기간/, NOT_BOARD = /예약|판매|구매|발권|결제|프로모션|행사|이벤트|진행|취항한다|운항한다/;
   function boardFacts(t, base, country) {
     let cands = [];
-    for (const sent of t.split(/(?<=다\.|요\.)\s*/)) {
+    // 문장 나누기: '다.'·'요.' 뒤, 그리고 '31일. [피치]…'처럼 점 뒤에 글자가 오는 곳 ('2027. 1. 5.' 날짜 속 점은 뒤가 숫자라 안 나눔)
+    for (const sent of t.split(/(?<=다\.|요\.)\s*|(?<=[.!?])\s+(?=[^\d\s])/)) {
       if (!BOARD_CTX.test(sent)) continue;
       let cur = 0;
       for (const c of clausesOf(sent)) {
@@ -607,7 +653,16 @@
     if (fare.prices && fare.prices.length > 1) f.prices = fare.prices;
     if (fare.priceFor) f.priceFor = fare.priceFor;
     if (fare.mixed) f.priceMixed = true;
-    const pct = [...t.matchAll(/(최대\s*)?(\d{1,2})\s*%\s*(?:할인|특가|세일|↓)?/g)].map(m => Number(m[2])).filter(n => n >= 3 && n <= 95);
+    // 할인율: 같은 구절(쉼표·'및' 사이)에 항공권이 아닌 상품·숫자 이야기가 있으면 뺌
+    //  (쇼핑 행사 기사의 '김치 최대 20%', '수하물 최대 50%', 'TV 7% 쿠폰', '탑승률 96%', '이용자 20% 증가' 같은 것)
+    const NOT_FARE = /김치|디퓨저|슈톨렌|위스키|가전|TV|유모차|후디|팬츠|의류|화장품|상품|쿠폰\s*팩|적립|페이백|캐시백|면세|기내\s*면세|호텔|숙박|객실|리조트|패키지|투어|입장권|렌터카|수하물|마일리지|탑승률|점유율|이용자|증가|성장|감소|관심도|수수료|부가세|철도|여객선|국내선/;
+    const pct = [...t.matchAll(/(최대\s*)?(\d{1,2})\s*%\s*(?:할인|특가|세일|↓)?/g)].filter(m => {
+      let w = t.slice(Math.max(0, m.index - 30), m.index + m[0].length + 6);
+      const pre = w.slice(0, Math.min(30, m.index));
+      const cut = Math.max(pre.lastIndexOf(','), pre.lastIndexOf('·'), pre.lastIndexOf('및'), pre.lastIndexOf('다.'), pre.lastIndexOf('요.'), pre.lastIndexOf('…'));
+      if (cut >= 0) w = w.slice(cut + 1);
+      return !NOT_FARE.test(w);
+    }).map(m => Number(m[2])).filter(n => n >= 3 && n <= 95);
     if (pct.length) f.pct = Math.max(...pct);
     const code = t.match(/(?:프로모션\s*코드|할인\s*코드|쿠폰\s*코드|코드)\s*(?:는|은|인|명)?\s*[:：]?\s*[‘'"“(\[「<]?\s*([A-Z][A-Z0-9]{3,14})/) || t.match(/[‘'"“(\[「<]([A-Z][A-Z0-9]{3,14})[’'"”)\]」>]\s*(?:을|를|이라는|라는)?\s*(?:할인\s*|프로모션\s*|쿠폰\s*)?코드/) || t.match(/\b([A-Z][A-Z0-9]{3,14})\s*(?:할인\s*|프로모션\s*)?코드/);
     if (code) f.code = code[1];
@@ -785,7 +840,7 @@
     monthsBetween, nightsBetween, addDays, addMonths, weekday, findDest, airline,
     promoFacts, paxOf, KNOWN_DIRECT, nonSeoulOnly, dropHead, sameFacts, mergeFacts, absDates, isDomestic, parseDates, splitSentences, subjectAirline, airlineText, fitsTrip, cardFacts, cardUse, links, skyMonth, ttang, climateOf, holidaysIn, KOREAN_AIRLINES, airlinesFor, isPayBenefit,
     stripTags, parseWon, promoPrice, classifyNews, won, routeKey,
-    PROMO_DEFAULT, COUNTRIES, COUNTRY_PLACES, airlineInText, airlineCode, newsScope, promoSettings, isWantedPromo,
+    PROMO_DEFAULT, COUNTRIES, COUNTRY_PLACES, airlineInText, airlineCode, newsScope, promoSettings, isWantedPromo, promoTitleCheck,
   };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   else root.FlightCore = api;
