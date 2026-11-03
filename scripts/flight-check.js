@@ -2,7 +2,7 @@
 /* 프로모션 확인 (GitHub Actions가 실행. 파이썬·설치 없이 Node만 씀)
    한국시간 오전 6시~밤 10시 2시간마다 자동 + 앱 항공권 검색 탭의 [지금 확인](토큰 있는 기기).
    --promos  특가 뉴스(원문 본문까지 읽음)·카드 할인 → data/promos.json
-             + 커뮤니티 글(네이버 카페·뽐뿌, 기사가 안 나는 반짝 특가·할인 코드) → 프로모션 탭의 '커뮤니티' 칸에 따로
+             + 커뮤니티 글(네이버 카페·뽐뿌, 기사가 안 나는 반짝 특가·할인 코드) → 프로모션 탭에 기사와 함께('커뮤니티' 표시)
              프로모션 탭은 뉴스·커뮤니티, 카드 탭은 카드 뉴스 + 항공사 홈페이지의 카드·결제 혜택(제주항공·트리니티항공·비엣젯)
 
    선택 값(저장소 Settings → Secrets and variables → Actions):
@@ -156,7 +156,7 @@ function factsOf(m) {
 }
 function sameNews(g, p) {
   if (g.kind !== p.kind) return false;
-  if (!!p.community !== !!g.members[0].community) return false; // 커뮤니티 글은 기사와 따로
+  if (!!p.community !== !!g.members[0].community) return false; // 커뮤니티 글은 기사와 따로 묶음 (앱에서는 같은 항공사 칸에 함께 보임)
   if (p.official || g.members.some(m => m.official)) return false; // 홈페이지 이벤트는 따로
   if (F.isDomestic(p) !== F.isDomestic(g.members[0])) return false;
   const fm = F.sameFacts(g.facts, factsOf(p));
@@ -287,7 +287,7 @@ async function checkPromos(watch, promos, country) {
     }
   }
 
-  // 커뮤니티 글 (네이버 카페·뽐뿌): 기사와 따로 '커뮤니티' 칸에. 본문은 열지 않음(로그인·차단) → 제목·요약만
+  // 커뮤니티 글 (네이버 카페·뽐뿌): 앱에서 기사와 함께('커뮤니티' 표시). 본문은 열지 않음(로그인·차단) → 제목·요약만
   const commCountries = country === 'ALL' ? [...new Set(F.DESTS.map(d => d.country))] : country ? [country] : F.promoSettings(watch.settings).countries;
   const rec = readJSON(path.join(DATA, 'airlines-by-city.json'), { cities: {} }).cities || {};
   const airlinesOf = c => [...new Set(F.DESTS.filter(d => d.country === c).flatMap(d => (rec[d.code] || []).map(r => F.AIRLINES[r.code] ? F.airline(r.code).name : cleanAir(r.name))).filter(Boolean))];
