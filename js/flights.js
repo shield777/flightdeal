@@ -325,7 +325,7 @@
     for (const k of ['book', 'code']) { const v = vote(all.map(x => x[k])); if (v) f[k] = v; }
     // 탑승기간: 이 나라 노선이라고 적힌 기간 → 없으면 공통 기간. 노선마다 다르다고 나온 기사가 있으면 공통 기간은 믿지 않음
     // 이 나라 안에서도 노선마다 기간이 다르면(예: 나리타·삿포로) '노선마다 다름'
-    const mineList = all.filter(x => x.boardFor === C).map(x => x.board);
+    const mineList = all.filter(x => x.boardFor === C && x.board).map(x => x.board);
     // 끝나는 날이 같으면 시작일이 적힌 기사 것을 씀 ("호치민 노선은 12월 3일 취항일부터")
     const mine = all.some(x => x.boardMineMixed) || new Set(mineList.map(b => b.to)).size > 1 ? null : (mineList.find(b => b.from) || vote(mineList));
     if (mine) { f.board = mine; f.boardFor = C; }

@@ -697,7 +697,8 @@
     const bf = boardFacts(t, base, country);
     const board = bf ? bf.board : raw;
     if (board && !(f.book && f.book.to === board.to && f.book.from === board.from)) f.board = board;
-    if (bf && bf.boardFor) f.boardFor = bf.boardFor;
+    // 탑승기간이 예약기간과 같아서 뺐으면 '어느 나라 노선 기간'인지도 쓰지 않음 (boardFor만 있고 board가 없으면 앱 화면이 멈춤)
+    if (bf && bf.boardFor && f.board) f.boardFor = bf.boardFor;
     if (bf && bf.mixed) f.boardMixed = true;
     if (bf && bf.mineMixed) f.boardMineMixed = true;
     return f;
