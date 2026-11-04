@@ -1,0 +1,872 @@
+[
+ {
+  "name": "7C 제주항공",
+  "url": "https://www.jejuair.net/ko/main/base/index.do",
+  "robots": "Disallow(*): /*/ibe/mypage/viewReservationDetail.do /*/additionalService/service/carringBagGuide.do",
+  "plain": {
+   "status": 200,
+   "len": 691990,
+   "title": "제주항공",
+   "block": false,
+   "links": [
+    "/ko/event/event.do"
+   ]
+  },
+  "chrome": {
+   "status": 200,
+   "title": "제주항공",
+   "len": 6604,
+   "block": false,
+   "text": "미국행(사이판) 항공편 탑승객 서약서 필수 작성 안내 로그인 회원가입 고객센터 공지사항 한국어 예약 프로모션 부가서비스 J 멤버스 공항 및 기내",
+   "ev": [
+    [
+     "진행중인 이벤트 확인하고 운임 할인 코드 받으러가기",
+     "https://www.jejuair.net/ko/main/base/index.do#none"
+    ],
+    [
+     "진행중인 이벤트 확인하고 운임할인 코드 받으러 가기",
+     "https://www.jejuair.net/ko/event/event.do"
+    ]
+   ]
+  },
+  "evPages": [
+   {
+    "link": "https://www.jejuair.net/ko/main/base/index.do#none",
+    "label": "진행중인 이벤트 확인하고 운임 할인 코드 받으러가기",
+    "status": null,
+    "len": 6604,
+    "block": false,
+    "dates": 88,
+    "sample": "미국행(사이판) 항공편 탑승객 서약서 필수 작성 안내 로그인 회원가입 고객센터 공지사항 한국어 예약 프로모션 부가서비스 J 멤버스 공항 및 기내"
+   },
+   {
+    "link": "https://www.jejuair.net/ko/event/event.do",
+    "label": "진행중인 이벤트 확인하고 운임할인 코드 받으러 가기",
+    "status": 200,
+    "len": 1652,
+    "block": false,
+    "dates": 30,
+    "sample": "로그인 회원가입 고객센터 공지사항 한국어 예약 프로모션 부가서비스 J 멤버스 공항 및 기내 마이페이지 홈 프로모션 프로모션 진행중인 프로모션 프"
+   }
+  ]
+ },
+ {
+  "name": "TW 트리니티",
+  "url": "https://www.trinityairways.com/",
+  "robots": "Disallow(*): /app/customerCenter/delayDamage /app/customerCenter/delayDamage/ /booking/ /app/booking/ /app/auth/ /app/reservation/ /app/reservation/searchCheckinItinerary? /app/mypage/ /app/mailForm/ /app/layerComponents/reservation/ /app/payment/ /app/login/",
+  "plain": {
+   "status": 200,
+   "len": 2980,
+   "title": "트리니티항공 | Trinity Airways",
+   "block": false,
+   "links": []
+  },
+  "chrome": {
+   "status": 200,
+   "title": "Access Denied",
+   "len": 212,
+   "block": true,
+   "text": "Access Denied You don't have permission to access \"http://www.trinityairways.com",
+   "ev": []
+  },
+  "evPages": []
+ },
+ {
+  "name": "RS 에어서울",
+  "url": "https://flyairseoul.com/",
+  "robots": "Disallow(*): /",
+  "plain": {
+   "status": 403,
+   "len": 5714,
+   "title": "Just a moment...",
+   "block": true,
+   "links": []
+  },
+  "chrome": {
+   "status": 403,
+   "title": "잠시만 기다리십시오…",
+   "len": 163,
+   "block": false,
+   "text": "flyairseoul.com 보안 확인 수행 중 이 웹 사이트는 보안 서비스를 사용하여 악의적인 봇으로부터 보호합니다. 이 페이지는 웹 사이트에",
+   "ev": []
+  },
+  "evPages": []
+ },
+ {
+  "name": "YP 에어프레미아",
+  "url": "https://www.airpremia.com/",
+  "robots": "Disallow(*): /login /domesticJoin /foreignJoin /childJoin /snsUpdate /memberDelete /user/ /nice/ /mypage/ /checkin/ /a/checkin/ /ticket/fare",
+  "plain": {
+   "status": 200,
+   "len": 391280,
+   "title": "에어프레미아",
+   "block": false,
+   "links": [
+    "https://www.airpremia.com/event/promotionList",
+    "/a/inflight/meal/special"
+   ]
+  },
+  "chrome": {
+   "status": 200,
+   "title": "에어프레미아",
+   "len": 1824,
+   "block": false,
+   "text": "예매 조회/체크인 프레미아 멤버스 기내 서비스 안내 고객지원 로그인 회원가입 긴급공지 시스템 업그레이드에 따른 서비스 일시 중단 안내(2026.",
+   "ev": [
+    [
+     "다양한 혜택",
+     "https://www.airpremia.com/event/promotionList"
+    ],
+    [
+     "에어프레미아 블프특가 전 노선 최대 72% 할인 202",
+     "https://www.airpremia.com/event/promotionDetail?detailId=406"
+    ],
+    [
+     "에어프레미아 온라인 면세점 특별혜택 모바일 상품권 + ",
+     "https://www.airpremia.com/event/promotionDetail?detailId=393"
+    ],
+    [
+     "대학생만 누리는 혜택 톡학생증 인증하고 15% 할인받기",
+     "https://www.airpremia.com/event/promotionDetail?detailId=384"
+    ],
+    [
+     "에어프레미아가 처음이라면 누구나 전 노선 5% 할인 혜",
+     "https://www.airpremia.com/event/promotionDetail?detailId=370"
+    ],
+    [
+     "에어프레미아✕신한카드 최대 17만원 혜택부터 할인쿠폰까",
+     "https://www.airpremia.com/event/promotionDetail?detailId=359"
+    ],
+    [
+     "eSIM 최대 50% 할인, 에어프레미아 앱 단독 혜택",
+     "https://www.airpremia.com/event/promotionDetail?detailId=350"
+    ]
+   ]
+  },
+  "evPages": [
+   {
+    "link": "https://www.airpremia.com/event/promotionList",
+    "label": "다양한 혜택",
+    "status": 200,
+    "len": 997,
+    "block": false,
+    "dates": 14,
+    "sample": "예매 조회/체크인 프레미아 멤버스 기내 서비스 안내 고객지원 로그인 회원가입 긴급공지 시스템 업그레이드에 따른 서비스 일시 중단 안내(2026."
+   },
+   {
+    "link": "https://www.airpremia.com/event/promotionDetail?detailId=406",
+    "label": "에어프레미아 블프특가 전 노선 최대 72% 할인 202",
+    "status": 200,
+    "len": 3228,
+    "block": false,
+    "dates": 10,
+    "sample": "예매 조회/체크인 프레미아 멤버스 기내 서비스 안내 고객지원 로그인 회원가입 긴급공지 시스템 업그레이드에 따른 서비스 일시 중단 안내(2026."
+   }
+  ]
+ },
+ {
+  "name": "WA 파라타항공",
+  "url": "https://www.parataair.com/",
+  "robots": "Disallow(*): /*/member/ /*/checkIn/ /*/booking/ /*/mypage/ /*/login/",
+  "plain": {
+   "status": 200,
+   "len": 13389,
+   "title": "파라타항공",
+   "block": false,
+   "links": []
+  },
+  "chrome": {
+   "status": 200,
+   "title": "파라타항공",
+   "len": 1979,
+   "block": false,
+   "text": "Cargo 회원가입 이벤트 & 스토리 자주하는 질문 한국어 PARATA AIR 예약 여행준비 기내서비스 기내면세 온라인몰 로그인 스카이 허브 라",
+   "ev": [
+    [
+     "더보기",
+     "https://www.parataair.com/ko/contents/event/viewEventList.do"
+    ],
+    [
+     "지난 이벤트",
+     "https://www.parataair.com/ko/contents/event/viewEventList.do?eventType=close"
+    ],
+    [
+     "나의 쿠폰",
+     "https://www.parataair.com/ko/mypage/eventCoupon/viewEventCoupon.do"
+    ],
+    [
+     "",
+     "https://www.parataair.com/ko/contents/event/loadEventDetail.do?no=2181&status=on"
+    ],
+    [
+     "",
+     "https://www.parataair.com/ko/contents/event/loadEventDetail.do?no=2197&status=on"
+    ],
+    [
+     "",
+     "https://www.parataair.com/ko/contents/event/loadEventDetail.do?no=2168&status=on"
+    ],
+    [
+     "",
+     "https://www.parataair.com/ko/contents/event/loadEventDetail.do?no=2184&status=on"
+    ]
+   ]
+  },
+  "evPages": [
+   {
+    "link": "https://www.parataair.com/ko/contents/event/viewEventList.do",
+    "label": "더보기",
+    "status": 200,
+    "len": 911,
+    "block": false,
+    "dates": 16,
+    "sample": "메뉴바로가기 본문바로가기 Cargo 회원가입 이벤트 & 스토리 자주하는 질문 한국어 PARATA AIR 예약 여행준비 기내서비스 기내면세 온라인"
+   },
+   {
+    "link": "https://www.parataair.com/ko/contents/event/viewEventList.do?eventType=close",
+    "label": "지난 이벤트",
+    "status": 200,
+    "len": 942,
+    "block": false,
+    "dates": 16,
+    "sample": "메뉴바로가기 본문바로가기 Cargo 회원가입 이벤트 & 스토리 자주하는 질문 한국어 PARATA AIR 예약 여행준비 기내서비스 기내면세 온라인"
+   }
+  ]
+ },
+ {
+  "name": "OZ 아시아나",
+  "url": "https://flyasiana.com/",
+  "robots": "Disallow(*): /I/ /C/ /C/*/*/event/end/ /C/*/*/event/winner/",
+  "plain": {
+   "status": 200,
+   "len": 7709,
+   "title": "ASIANA AIRLINES",
+   "block": false,
+   "links": []
+  },
+  "chrome": {
+   "status": 200,
+   "title": "flyasiana.com",
+   "len": 181,
+   "block": false,
+   "text": "This site can’t be reached The webpage at https://flyasiana.com/index.jsp might ",
+   "ev": []
+  },
+  "evPages": []
+ },
+ {
+  "name": "LJ 진에어",
+  "url": "https://www.jinair.com/",
+  "robots": "Disallow(*): 없음",
+  "plain": {
+   "status": 403,
+   "len": 5665,
+   "title": "Attention Required! | Cloudflare",
+   "block": true,
+   "links": []
+  },
+  "chrome": {
+   "status": 403,
+   "title": "Attention Required! | Cloudflare",
+   "len": 691,
+   "block": true,
+   "text": "Sorry, you have been blocked You are unable to access www.jinair.com Why have I ",
+   "ev": []
+  },
+  "evPages": []
+ },
+ {
+  "name": "BX 에어부산",
+  "url": "https://www.airbusan.com/",
+  "robots": "Disallow(*): /web/*/reserve /mw/*/reserve /web/*/flynstamp /mw/*/flynstamp /web/*/information /mw/checkin /web/common/mypage /mw/common/mypage /",
+  "plain": {
+   "status": 403,
+   "len": 5694,
+   "title": "Just a moment...",
+   "block": true,
+   "links": []
+  },
+  "chrome": {
+   "status": 200,
+   "title": "에어부산",
+   "len": 861,
+   "block": false,
+   "text": "본문 바로가기 주메뉴 바로가기 개인 한국어 로그인 회원가입 고객센터 사이트맵 항공권 예약 마이페이지 서비스 안내 제휴상품 기내면세점 에어부산, ",
+   "ev": [
+    [
+     "진행중인 이벤트",
+     "https://www.airbusan.com/content/common/flynjoy/flyNEvent/"
+    ],
+    [
+     "이벤트",
+     "https://www.airbusan.com/content/individual/?#"
+    ],
+    [
+     "당첨자 발표",
+     "https://www.airbusan.com/content/common/flynjoy/flyNEventEnd/"
+    ],
+    [
+     "항공권 쿠폰",
+     "https://www.airbusan.com/web/individual/reserve/promotionCouponETicket"
+    ],
+    [
+     "부가서비스 쿠폰",
+     "https://www.airbusan.com/web/individual/reserve/promotionCoupon"
+    ],
+    [
+     "포켓와이파이",
+     "https://ap.wifidosirak.com/ReservEvent_ReservList.aspx?airbusan&intro=N"
+    ],
+    [
+     "와이파이",
+     "https://ap.wifidosirak.com/?airbusan-promo"
+    ]
+   ]
+  },
+  "evPages": [
+   {
+    "link": "https://www.airbusan.com/content/common/flynjoy/flyNEvent/",
+    "label": "진행중인 이벤트",
+    "status": 403,
+    "len": 164,
+    "block": false,
+    "dates": 0,
+    "sample": "www.airbusan.com 보안 확인 수행 중 이 웹 사이트는 보안 서비스를 사용하여 악의적인 봇으로부터 보호합니다. 이 페이지는 웹 사이트"
+   },
+   {
+    "link": "https://www.airbusan.com/content/individual/?#",
+    "label": "이벤트",
+    "status": 403,
+    "len": 164,
+    "block": false,
+    "dates": 0,
+    "sample": "www.airbusan.com 보안 확인 수행 중 이 웹 사이트는 보안 서비스를 사용하여 악의적인 봇으로부터 보호합니다. 이 페이지는 웹 사이트"
+   }
+  ]
+ },
+ {
+  "name": "ZE 이스타",
+  "url": "https://www.eastarjet.com/",
+  "robots": "Disallow(*): 없음",
+  "plain": {
+   "status": 403,
+   "len": 31185,
+   "title": "익사이팅 티켓| 이스타항공",
+   "block": false,
+   "links": []
+  },
+  "chrome": {
+   "status": 403,
+   "title": "잠시만 기다리십시오…",
+   "len": 59,
+   "block": false,
+   "text": "현재 접속자의 상태 확인 중입니다. 아래 내용에 따라 주시기 바랍니다. 감사합니다.",
+   "ev": []
+  },
+  "evPages": []
+ },
+ {
+  "name": "KE 대한항공",
+  "url": "https://www.koreanair.com/",
+  "robots": "Disallow(*): /*.pdf /api /booking/calendar-fare /booking/award-wait-request /booking/seat-assign /booking/baggage /booking/meals /login* /booking/select-flight/ /booking/select-award-flight/ /auto-check-in/ /check-in/",
+  "plain": {
+   "status": 403,
+   "len": 369,
+   "title": "Access Denied",
+   "block": true,
+   "links": []
+  },
+  "chrome": {
+   "status": 200,
+   "title": "항공권 예약 및 여행 정보 | 대한항공",
+   "len": 638,
+   "block": false,
+   "text": "홈 빠른 예매 항공권 예매 나의 여행 체크인 출도착/스케줄 예매 마일리지 예매 왕복 편도 다구간 가는 날 ~ 오는 날 오는 날 탑승객 좌석 등급",
+   "ev": [
+    [
+     "올겨울, 최대 60,000 보너스 마일로 마일리지 여행",
+     "https://www.koreanair.com/contents/promotion/list/2026/202611-SKYPASS-Visa"
+    ],
+    [
+     "이벤트",
+     "https://www.koreanair.com/contents/promotion/list"
+    ],
+    [
+     "쇼핑",
+     "https://www.koreanair.com/skypass/mileage-mall/skypass-deal"
+    ]
+   ]
+  },
+  "evPages": [
+   {
+    "link": "https://www.koreanair.com/contents/promotion/list/2026/202611-SKYPASS-Visa",
+    "label": "올겨울, 최대 60,000 보너스 마일로 마일리지 여행",
+    "status": 200,
+    "len": 4227,
+    "block": false,
+    "dates": 0,
+    "sample": "이벤트 올겨울, 최대 60,000 보너스 마일을 적립하세요 공유 한국 및 동남아시아로 보너스 여행을 떠나세요 귀하에게 알맞은 카드를 선택하세요!"
+   },
+   {
+    "link": "https://www.koreanair.com/contents/promotion/list",
+    "label": "이벤트",
+    "status": 200,
+    "len": 600,
+    "block": false,
+    "dates": 0,
+    "sample": "이벤트 카테고리별 선택 진행중인 이벤트 올겨울, 최대 60,000 보너스 마일을 적립하세요 이벤트 기간 2026년 11월 03일 ~ 2027년 "
+   }
+  ]
+ },
+ {
+  "name": "MM 피치",
+  "url": "https://www.flypeach.com/ko",
+  "robots": "Disallow(*): /application/attributes /application/authentication /application/bootstrap /application/config /application/controllers /application/elements /application/helpers /application/jobs /application/languages /application/mail /application/models /application/page_types",
+  "plain": {
+   "err": "The operation was aborted due to timeout"
+  },
+  "chrome": {
+   "status": 200,
+   "title": "【公式】Peach ピーチ | 航空券予約・運航状況",
+   "len": 1616,
+   "block": false,
+   "text": "予約・旅の準備 空港・チェックイン 機内・サービス おすすめ情報 ツアー 日本語 日本語 한국어 简体中文 繁體中文（台北/高雄） 繁體中文（香港） ภาษาไ",
+   "ev": [
+    [
+     "アクティビティ",
+     "https://www.klook.com/ja/tetris/promo/peach-activity-klook/?aid=34842&utm_medium=affiliate-alwayson&utm_source=non-network&utm_campaign=34842&utm_term="
+    ],
+    [
+     "クーポンコードとは",
+     "https://www.flypeach.com/others/promocode"
+    ]
+   ]
+  },
+  "evPages": [
+   {
+    "link": "https://www.klook.com/ja/tetris/promo/peach-activity-klook/?aid=34842&utm_medium=affiliate-alwayson&utm_source=non-network&utm_campaign=34842&utm_term=",
+    "label": "アクティビティ",
+    "status": 403,
+    "len": 0,
+    "block": false,
+    "dates": 0,
+    "sample": ""
+   },
+   {
+    "link": "https://www.flypeach.com/others/promocode",
+    "label": "クーポンコードとは",
+    "status": 403,
+    "len": 214,
+    "block": true,
+    "dates": 0,
+    "sample": "Access Denied You don't have permission to access \"http://www.flypeach.com/other"
+   }
+  ]
+ },
+ {
+  "name": "ZG 집에어",
+  "url": "https://www.zipair.net/ko",
+  "robots": "robots 403",
+  "plain": {
+   "status": 403,
+   "len": 5661,
+   "title": "Attention Required! | Cloudflare",
+   "block": true,
+   "links": []
+  },
+  "chrome": {
+   "status": 403,
+   "title": "Attention Required! | Cloudflare",
+   "len": 687,
+   "block": true,
+   "text": "Sorry, you have been blocked You are unable to access zipair.net Why have I been",
+   "ev": []
+  },
+  "evPages": []
+ },
+ {
+  "name": "5J 세부퍼시픽",
+  "url": "https://www.cebupacificair.com/ko-KR",
+  "robots": "Disallow(*): 없음",
+  "plain": {
+   "err": "The operation was aborted due to timeout"
+  },
+  "chrome": {
+   "status": 200,
+   "title": "Cebu Pacific Air",
+   "len": 0,
+   "block": false,
+   "text": "",
+   "ev": []
+  },
+  "evPages": []
+ },
+ {
+  "name": "AK 에어아시아",
+  "url": "https://www.airasia.com/ko/kr",
+  "robots": "Disallow(*): /*/*/testdfp/ /*/*/test/ /_GARBAGE/ /travel3sixty/ /skylights/ /site/ /sto/ /nl/ /api/ /geoip/ /test/ /site/",
+  "plain": {
+   "status": 200,
+   "len": 242211,
+   "title": "AirAsia MOVE | 항공권, 호텔, 라이드 등 최고의 혜택 발견",
+   "block": false,
+   "links": [
+    "https://static.airasia.com/design/icons/product-tile/app/v6/deals.png",
+    "https://www.airasia.com/cdn-cgi/image/format=webp/https://static.airasia.com/cosmos/images/herobanner/hotel-promocode-evergreen-desktop_v1.png",
+    "https://www.airasia.com/promotions/kr/ko/",
+    "https://support.airasia.com/s/article/Sales-Office?language=ko"
+   ]
+  },
+  "chrome": {
+   "status": 200,
+   "title": "AirAsia MOVE | 항공권, 호텔, 라이드 등 최고의 혜택 발견",
+   "len": 1318,
+   "block": false,
+   "text": "AirAsia.com에서 더 나은 사용자 환경을 제공하기 위해 쿠키를 사용합니다. 당사 웹사이트를 계속 사용함으로써 고객은 당사 개인정보보호정책",
+   "ev": [
+    [
+     "이벤트 & 활동",
+     "https://movetix.airasia.com/gb/en/thb"
+    ],
+    [
+     "Promotions",
+     "https://www.airasia.com/promotions/kr/ko/"
+    ],
+    [
+     "영업점",
+     "https://support.airasia.com/s/article/Sales-Office?language=ko"
+    ]
+   ]
+  },
+  "evPages": [
+   {
+    "link": "https://movetix.airasia.com/gb/en/thb",
+    "label": "이벤트 & 활동",
+    "status": 200,
+    "len": 7574,
+    "block": false,
+    "dates": 0,
+    "sample": "We use cookies to give you a better experience on AirAsia.com. By continuing to "
+   },
+   {
+    "link": "https://www.airasia.com/promotions/kr/ko/",
+    "label": "Promotions",
+    "status": 200,
+    "len": 2390,
+    "block": false,
+    "dates": 0,
+    "sample": "Skip to content Skip to footer Explore My Bookings Check-in Flight Status Suppor"
+   }
+  ]
+ },
+ {
+  "name": "TR 스쿠트",
+  "url": "https://www.flyscoot.com/ko",
+  "robots": "Disallow(*): /assets/ /ajax/ /sitefinity /partners/ /en/header-partner /zh/header-partner /zhtw/header-partner /id/header-partner /th/header-partner /jp/header-partner /ko/header-partner /vi/header-partner",
+  "plain": {
+   "status": 403,
+   "len": 372,
+   "title": "Access Denied",
+   "block": true,
+   "links": []
+  },
+  "chrome": {
+   "status": 403,
+   "title": "",
+   "len": 479,
+   "block": false,
+   "text": "! Unable to proceed for security To protect your booking and payment details, Sc",
+   "ev": []
+  },
+  "evPages": []
+ },
+ {
+  "name": "UO 홍콩익스프레스",
+  "url": "https://www.hkexpress.com/ko-kr/",
+  "robots": "Disallow(*): 없음",
+  "plain": {
+   "status": 404,
+   "len": 8636,
+   "title": "404: NotFound",
+   "block": false,
+   "links": []
+  },
+  "chrome": {
+   "status": 404,
+   "title": "404: NotFound",
+   "len": 72,
+   "block": false,
+   "text": "web.page.not.found.title web.page.not.found.text web.page.not.found.desc",
+   "ev": []
+  },
+  "evPages": []
+ },
+ {
+  "name": "IT 타이거에어",
+  "url": "https://www.tigerairtw.com/ko-kr",
+  "robots": "Disallow(*): 없음",
+  "plain": {
+   "status": 200,
+   "len": 6368,
+   "title": "타이거에어 타이완 | LCC 저가항공으로 도쿄·오사카·홋카이도·오키나와·부산 등 인기 도시 항공권 할인!",
+   "block": false,
+   "links": []
+  },
+  "chrome": {
+   "status": 200,
+   "title": "타이거에어 타이완 | LCC 저가항공으로 도쿄·오사카·홋카이도·오키나와·부산 등 인기 도시 항공권 할인!",
+   "len": 1098,
+   "block": false,
+   "text": "출발 준비 탑승을 환영합니다 타이거 팬 타이거 팬 주의사항 항공편 검색 로그인/가입 한국어 KRW 항공편 항공권 + 호텔 TIGERHOP swa",
+   "ev": []
+  },
+  "evPages": []
+ },
+ {
+  "name": "VN 베트남항공",
+  "url": "https://www.vietnamairlines.com/kr/ko/home",
+  "robots": "Disallow(*): 없음",
+  "plain": {
+   "status": 200,
+   "len": 709437,
+   "title": "Vietnam Airlines | Reach Further | Official website",
+   "block": false,
+   "links": [
+    "https://www.vietnamairlines.com/us/en/monthly-offers",
+    "/us/en/plan-book/flight-package/special-deals/special-offers-for-senior",
+    "/us/en/travel-information/baggage/special-baggage",
+    "/us/en/travel-information/special-services",
+    "/us/en/travel-information/special-services/traveling-with-pet",
+    "/us/en/travel-information/special-services/special-meals"
+   ]
+  },
+  "chrome": {
+   "status": 200,
+   "title": "Vietnam Airlines | Reach Further | Official website",
+   "len": 3174,
+   "block": false,
+   "text": "Skip to main content Plan your trip Book flights Additional services Travel info",
+   "ev": [
+    [
+     "Book now",
+     "https://www.vietnamairlines.com/us/en/monthly-offers"
+    ],
+    [
+     "Special offers for seniors",
+     "https://www.vietnamairlines.com/us/en/plan-book/flight-package/special-deals/special-offers-for-senior"
+    ],
+    [
+     "Lotusmiles Products",
+     "https://www.vietnamairlines.com/us/en/lotusmiles/news-and-promotion"
+    ],
+    [
+     "Lotusociety offers",
+     "https://www.vietnamairlines.com/us/en/plan-book/lotusociety"
+    ],
+    [
+     "News and Promotions",
+     "https://enews.vietnamairlines.com/site-en/"
+    ],
+    [
+     "Discover now",
+     "https://www.vietnamairlines.com/us/en/plan-book/LotuSociety/lotustudents-offers"
+    ]
+   ]
+  },
+  "evPages": [
+   {
+    "link": "https://www.vietnamairlines.com/us/en/monthly-offers",
+    "label": "Book now",
+    "status": 200,
+    "len": 3757,
+    "block": false,
+    "dates": 0,
+    "sample": "Skip to main content Plan your trip Book flights Additional services Travel info"
+   },
+   {
+    "link": "https://www.vietnamairlines.com/us/en/plan-book/flight-package/special-deals/special-offers-for-senior",
+    "label": "Special offers for seniors",
+    "status": 200,
+    "len": 4946,
+    "block": false,
+    "dates": 0,
+    "sample": "Skip to main content Plan your trip Book flights Additional services Travel info"
+   }
+  ]
+ },
+ {
+  "name": "PR 필리핀항공",
+  "url": "https://www.philippineairlines.com/",
+  "robots": "robots 404",
+  "plain": {
+   "status": 200,
+   "len": 5227,
+   "title": "Home",
+   "block": false,
+   "links": []
+  },
+  "chrome": {
+   "status": 200,
+   "title": "Home",
+   "len": 2726,
+   "block": false,
+   "text": "Skip to book flight Skip to main navigation Skip to footer links Skip to main co",
+   "ev": [
+    [
+     "Flight Adjustments During the ",
+     "https://www.philippineairlines.com/us/en/newsevent-listingpage/travel-advisory/flight-adjustments-during-asean-summit.html"
+    ],
+    [
+     "Mandatory CDC Attestation for ",
+     "https://www.philippineairlines.com/us/en/newsevent-listingpage/travel-advisory/mandatory-cdc-attestation-for-passengers-traveling-or-connecting-through-us.html"
+    ],
+    [
+     "Increased Passenger Traffic to",
+     "https://www.philippineairlines.com/us/en/newsevent-listingpage/travel-advisory/increased-passenger-traffic-to-and-from-siargao.html"
+    ],
+    [
+     "News and Events",
+     "https://www.philippineairlines.com/us/en/newsevent-listingpage.html"
+    ],
+    [
+     "Promos",
+     "https://www.philippineairlines.com/us/en/promo-offers.html"
+    ]
+   ]
+  },
+  "evPages": [
+   {
+    "link": "https://www.philippineairlines.com/us/en/newsevent-listingpage/travel-advisory/flight-adjustments-during-asean-summit.html",
+    "label": "Flight Adjustments During the ",
+    "status": 200,
+    "len": 6930,
+    "block": false,
+    "dates": 0,
+    "sample": "Skip to main navigation Skip to footer links Skip to main content Navigate to ho"
+   },
+   {
+    "link": "https://www.philippineairlines.com/us/en/newsevent-listingpage/travel-advisory/mandatory-cdc-attestation-for-passengers-traveling-or-connecting-through-us.html",
+    "label": "Mandatory CDC Attestation for ",
+    "status": 200,
+    "len": 3874,
+    "block": false,
+    "dates": 0,
+    "sample": "Skip to main navigation Skip to footer links Skip to main content Navigate to ho"
+   }
+  ]
+ },
+ {
+  "name": "TG 타이항공",
+  "url": "https://www.thaiairways.com/ko-kr/",
+  "robots": "Disallow(*): /*_wcag/ /*_*_wcag/ /iw-cc/ /app/rop/api/ /app/corporate/ /thai_shop/ /about-thai/public-information/ /*/content/json/* /*/checkin/* /*/content/dapicheckin/* /content/dam/dapicheckin/* /booking/*",
+  "plain": {
+   "status": 403,
+   "len": 102137,
+   "title": "Thai Airways | Service Notice",
+   "block": false,
+   "links": []
+  },
+  "chrome": {
+   "status": 403,
+   "title": "잠시만 기다리십시오…",
+   "len": 153,
+   "block": false,
+   "text": "Under Maintenance We are temporarily unable to process your request. ขออภัย ระบบ",
+   "ev": []
+  },
+  "evPages": []
+ },
+ {
+  "name": "NX 에어마카오",
+  "url": "https://www.airmacau.com.mo/",
+  "robots": "Disallow(*): 없음",
+  "plain": {
+   "status": 200,
+   "len": 8222,
+   "title": "澳門航空",
+   "block": false,
+   "links": []
+  },
+  "chrome": {
+   "status": 200,
+   "title": "澳門航空",
+   "len": 634,
+   "block": false,
+   "text": "+ i + 에어마카오는 사용자의 웹사이트 이용경험을 향상시키기위해 쿠키를 사용합니다. 브라우저로 웹사이트를 이용하는것은 쿠키를사용하는것에 동의하",
+   "ev": [
+    [
+     "모바일 앱",
+     "https://www.airmacau.com.mo/#/promoteApp"
+    ]
+   ]
+  },
+  "evPages": [
+   {
+    "link": "https://www.airmacau.com.mo/#/promoteApp",
+    "label": "모바일 앱",
+    "status": null,
+    "len": 533,
+    "block": false,
+    "dates": 0,
+    "sample": "+ i + 에어마카오는 사용자의 웹사이트 이용경험을 향상시키기위해 쿠키를 사용합니다. 브라우저로 웹사이트를 이용하는것은 쿠키를사용하는것에 동의하"
+   }
+  ]
+ },
+ {
+  "name": "VJ 비엣젯",
+  "url": "https://www.vietjetair.com/ko",
+  "robots": "Disallow(*): 없음",
+  "plain": {
+   "status": 200,
+   "len": 10312,
+   "title": "Vietjet Air | Bay là thích ngay! | Website chính thức",
+   "block": true,
+   "links": []
+  },
+  "chrome": {
+   "status": 200,
+   "title": "VietJet Air",
+   "len": 486,
+   "block": false,
+   "text": "[공지] 외국 여권을 소지하고 SGN, PQC, HAN, CXR을 통해 베트남에 입국하는 승객께서는 항공편 출발 전 입국 정보 신고를 완료해 주",
+   "ev": [
+    [
+     "특가 항공권 찾기",
+     "https://www.vietjetair.com/ko/flight-tickets/"
+    ],
+    [
+     "",
+     "https://www.vietjetair.com/ko/pages/%eb%8b%a8%ec%b2%b4-%ec%98%88%ec%95%bd-1601604685432?utm_source=website-vj-ko&utm_medium=cpm&utm_campaign=vjc_awo2026_pa_banner_0826_awo_promo-allroutes_homepage_topbanner_p7_ko_vedoan"
+    ],
+    [
+     "",
+     "https://www.vietjetair.com/ko/pages/%ec%b6%94%ea%b0%80-%ec%a2%8c%ec%84%9d-%ea%b5%ac%eb%a7%a4-%ec%84%9c%eb%b9%84%ec%8a%a4-1754992029503?utm_source=website-vj-ko&utm_medium=cpm&utm_campaign=vjc_awo2026_pa_banner_0426_awo_promo-allroutes_homepage_topbanner_p8_ko_skyspace"
+    ],
+    [
+     "SkyPoint 사용 및 구매",
+     "https://skyjoy.vietjetair.com/redemption?departAirport=&arrivalAirport=&currency=VND&returnDate=&departDate=&tripType=roundTrip&adultCount=1&childCount=0&infantCount=0&languageCode=ko&promoCode=&token="
+    ]
+   ]
+  },
+  "evPages": [
+   {
+    "link": "https://www.vietjetair.com/ko/flight-tickets/",
+    "label": "특가 항공권 찾기",
+    "status": 200,
+    "len": 486,
+    "block": false,
+    "dates": 0,
+    "sample": "[공지] 외국 여권을 소지하고 SGN, PQC, HAN, CXR을 통해 베트남에 입국하는 승객께서는 항공편 출발 전 입국 정보 신고를 완료해 주"
+   },
+   {
+    "link": "https://www.vietjetair.com/ko/pages/%eb%8b%a8%ec%b2%b4-%ec%98%88%ec%95%bd-1601604685432?utm_source=website-vj-ko&utm_medium=cpm&utm_campaign=vjc_awo2026_pa_banner_0826_awo_promo-allroutes_homepage_topbanner_p7_ko_vedoan",
+    "label": "",
+    "status": 200,
+    "len": 654,
+    "block": false,
+    "dates": 0,
+    "sample": "지원 회원가입 | 로그인 한국어 (o) 나의 예약 체크인 부가서비스 금융 서비스 항공권 예약 Skyshop 호텔 E-Sim E-Visa 전자 바"
+   }
+  ]
+ }
+]
