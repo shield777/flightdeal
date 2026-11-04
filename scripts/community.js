@@ -92,15 +92,15 @@ const cafeKey = link => String(link || '').replace(/^https?:\/\/(?:m\.)?cafe\.na
 const keepPost = (it, now = new Date()) => isDealTitle(it.title) && !AD_SOURCE_RE.test(it.source || '') && !(it.dateFound && (looksOld(it.title, now) || looksOld(it.desc || '', now, false)));
 //  요약(검색 결과 본문 일부)의 지난 날짜도 봄: '발권기간 10/12~19' → 지난 특가
 
-const CAFE_WORDS = ['특가', '할인', '프로모션', '세일', '이벤트'];
+const CAFE_WORDS = ['특가', '할인', '프로모션', '세일', '이벤트', '얼리버드'];
 // 커뮤니티 검색어: 나라마다 1개 + 그 나라 항공사 몇 곳 + 공통 (뉴스보다 적게)
 function communityQueries(countries, airlinesOf) {
   const qs = new Set(['항공권 할인코드', '항공권 프로모션 코드', '항공 타임세일', '항공권 특가 오픈']);
   for (const c of countries) {
     qs.add(`${c} 항공권 특가`);
-    // 항공사마다 자주 쓰는 특가 말 5개를 하나씩 따로 검색 (네이버 카페 검색은 여러 단어를 묶으면 엉뚱한 글이 섞임).
-    //  11개 모두 쓰면 한 번 확인이 13분 걸리고, 드문 말('얼리버드'·'감사제')은 최신순 앞쪽도 몇 달 전 글이라 5개만
-    for (const a of airlinesOf(c).slice(0, countries.length > 1 ? 3 : 6)) for (const w of CAFE_WORDS) qs.add(`${a} ${w}`);
+    // 항공사마다 자주 쓰는 특가 말 6개를 하나씩 따로 검색 (네이버 카페 검색은 여러 단어를 묶으면 엉뚱한 글이 섞임).
+    //  11개 모두 쓰면 너무 오래 걸려서 6개만. 항공사는 나라 제한 없이 전부 (같은 항공사는 한 번만 검색됨)
+    for (const a of airlinesOf(c)) for (const w of CAFE_WORDS) qs.add(`${a} ${w}`);
   }
   return [...qs];
 }
