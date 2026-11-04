@@ -1,6 +1,96 @@
 {
  "items": [
   {
+   "id": "c:https://cafe.naver.com/playtomato/1197102|[ 제주항공 ] 홍콩 특별 프로모션 소문내기 이벤트",
+   "kind": "airline",
+   "community": true,
+   "title": "[ 제주항공 ] 홍콩 특별 프로모션 소문내기 이벤트",
+   "desc": "",
+   "link": "https://cafe.naver.com/playtomato/1197102",
+   "source": "네이버 카페 · ♥행복한여왕♥-인테리어/리폼/DIY/요리/결혼/웨딩/육아/살림",
+   "date": "2026-11-03T14:18:02.174Z",
+   "dateFound": true,
+   "found": "2026-11-03",
+   "cards": [],
+   "airlines": [
+    "7C"
+   ],
+   "countries": [
+    "홍콩"
+   ],
+   "allRoutes": true,
+   "routes": [],
+   "price": null,
+   "query": "Air Macau 특가",
+   "lastDate": "2026-11-04T09:58:31.491Z",
+   "lastFound": "2026-11-04",
+   "more": [
+    {
+     "id": "c:https://cafe.naver.com/jpnstory/4432072|제주항공 -노브랜드 버거 이벤트 있습니다.",
+     "kind": "airline",
+     "community": true,
+     "title": "제주항공 -노브랜드 버거 이벤트 있습니다.",
+     "desc": "노브랜드 버거에서 진짜 비빔밥 버거가 나왔는데 이걸 사 먹으면 이런 제주항공 복권을 주고요 국제선 왕복 항공 권 or 3천~5만P 경품이라고 합니다.",
+     "summary": [
+      "노브랜드 버거에서 진짜 비빔밥 버거가 나왔는데 이걸 사 먹으면 이런 제주항공 복권을 주고요 국제선 왕복 항공 권 or 3천~5만P 경품이라고 합니다."
+     ],
+     "link": "https://cafe.naver.com/jpnstory/4432072",
+     "source": "네이버 카페 · 네일동 : 일본여행카페",
+     "date": "2026-11-04T03:00:45.320Z",
+     "found": "2026-11-04",
+     "cards": [],
+     "airlines": [
+      "7C"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "제주항공 할인"
+    },
+    {
+     "id": "c:https://cafe.naver.com/airplanetiket/1276|제주항공 제주 노선 프로모션",
+     "kind": "airline",
+     "community": true,
+     "title": "제주항공 제주 노선 프로모션",
+     "desc": "",
+     "link": "https://cafe.naver.com/airplanetiket/1276",
+     "source": "네이버 카페 · 항공특가정보",
+     "date": "2026-11-04T07:00:42.909Z",
+     "found": "2026-11-04",
+     "cards": [],
+     "airlines": [
+      "7C"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "제주항공 특가"
+    },
+    {
+     "id": "c:https://cafe.naver.com/loveloveloveovelove/1039611|제주항공 앱에서 할인 받으니까 제일 저렴하네여",
+     "kind": "airline",
+     "community": true,
+     "title": "제주항공 앱에서 할인 받으니까 제일 저렴하네여",
+     "desc": "",
+     "link": "https://cafe.naver.com/loveloveloveovelove/1039611",
+     "source": "네이버 카페 · 보홀트래블-필리핀 보홀 자유여행 보홀 투어 맛집 호텔 리조트",
+     "date": "2026-11-04T09:58:31.491Z",
+     "found": "2026-11-04",
+     "cards": [],
+     "airlines": [
+      "7C"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "제주항공 할인"
+    }
+   ]
+  },
+  {
    "id": "https://www.newsworks.co.kr/news/articleView.html|[IT라운지] KT '보야지 페스티벌' 개최·뷰런 'ITS강릉총회 참가'",
    "kind": "card",
    "title": "[IT라운지] KT '보야지 페스티벌' 개최·뷰런 'ITS강릉총회 참가'·'페르...",
@@ -220,76 +310,6 @@
    ],
    "lastDate": "2026-11-04T08:00:00.000Z",
    "lastFound": "2026-11-04"
-  },
-  {
-   "id": "c:https://cafe.naver.com/playtomato/1197102|[ 제주항공 ] 홍콩 특별 프로모션 소문내기 이벤트",
-   "kind": "airline",
-   "community": true,
-   "title": "[ 제주항공 ] 홍콩 특별 프로모션 소문내기 이벤트",
-   "desc": "",
-   "link": "https://cafe.naver.com/playtomato/1197102",
-   "source": "네이버 카페 · ♥행복한여왕♥-인테리어/리폼/DIY/요리/결혼/웨딩/육아/살림",
-   "date": "2026-11-03T14:18:02.174Z",
-   "dateFound": true,
-   "found": "2026-11-03",
-   "cards": [],
-   "airlines": [
-    "7C"
-   ],
-   "countries": [
-    "홍콩"
-   ],
-   "allRoutes": true,
-   "routes": [],
-   "price": null,
-   "query": "Air Macau 특가",
-   "lastDate": "2026-11-04T07:00:42.909Z",
-   "lastFound": "2026-11-04",
-   "more": [
-    {
-     "id": "c:https://cafe.naver.com/jpnstory/4432072|제주항공 -노브랜드 버거 이벤트 있습니다.",
-     "kind": "airline",
-     "community": true,
-     "title": "제주항공 -노브랜드 버거 이벤트 있습니다.",
-     "desc": "노브랜드 버거에서 진짜 비빔밥 버거가 나왔는데 이걸 사 먹으면 이런 제주항공 복권을 주고요 국제선 왕복 항공 권 or 3천~5만P 경품이라고 합니다.",
-     "summary": [
-      "노브랜드 버거에서 진짜 비빔밥 버거가 나왔는데 이걸 사 먹으면 이런 제주항공 복권을 주고요 국제선 왕복 항공 권 or 3천~5만P 경품이라고 합니다."
-     ],
-     "link": "https://cafe.naver.com/jpnstory/4432072",
-     "source": "네이버 카페 · 네일동 : 일본여행카페",
-     "date": "2026-11-04T03:00:45.320Z",
-     "found": "2026-11-04",
-     "cards": [],
-     "airlines": [
-      "7C"
-     ],
-     "countries": [],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "제주항공 할인"
-    },
-    {
-     "id": "c:https://cafe.naver.com/airplanetiket/1276|제주항공 제주 노선 프로모션",
-     "kind": "airline",
-     "community": true,
-     "title": "제주항공 제주 노선 프로모션",
-     "desc": "",
-     "link": "https://cafe.naver.com/airplanetiket/1276",
-     "source": "네이버 카페 · 항공특가정보",
-     "date": "2026-11-04T07:00:42.909Z",
-     "found": "2026-11-04",
-     "cards": [],
-     "airlines": [
-      "7C"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "제주항공 특가"
-    }
-   ]
   },
   {
    "id": "c:https://cafe.naver.com/forcebu/123044|세부 퍼시픽 항공 프로모션",
@@ -7670,24 +7690,24 @@
    "lastFound": "2026-11-01"
   }
  ],
- "updated": "2026-11-04T09:00:41.674Z",
- "runs": 49,
+ "updated": "2026-11-04T09:58:31.491Z",
+ "runs": 50,
  "checked": {
-  "베트남": "2026-11-04T09:00:41.674Z",
-  "태국": "2026-11-04T09:00:41.674Z",
-  "필리핀": "2026-11-04T09:00:41.674Z",
-  "인도네시아": "2026-11-04T09:00:41.674Z",
-  "말레이시아": "2026-11-04T09:00:41.674Z",
-  "싱가포르": "2026-11-04T09:00:41.674Z",
-  "일본": "2026-11-04T09:00:41.674Z",
-  "대만": "2026-11-04T09:00:41.674Z",
-  "홍콩": "2026-11-04T09:00:41.674Z",
-  "마카오": "2026-11-04T09:00:41.674Z",
-  "중국": "2026-11-04T09:00:41.674Z",
-  "미국령": "2026-11-04T09:00:41.674Z",
-  "미국": "2026-11-04T09:00:41.674Z"
+  "베트남": "2026-11-04T09:58:31.491Z",
+  "태국": "2026-11-04T09:58:31.491Z",
+  "필리핀": "2026-11-04T09:58:31.491Z",
+  "인도네시아": "2026-11-04T09:58:31.491Z",
+  "말레이시아": "2026-11-04T09:58:31.491Z",
+  "싱가포르": "2026-11-04T09:58:31.491Z",
+  "일본": "2026-11-04T09:58:31.491Z",
+  "대만": "2026-11-04T09:58:31.491Z",
+  "홍콩": "2026-11-04T09:58:31.491Z",
+  "마카오": "2026-11-04T09:58:31.491Z",
+  "중국": "2026-11-04T09:58:31.491Z",
+  "미국령": "2026-11-04T09:58:31.491Z",
+  "미국": "2026-11-04T09:58:31.491Z"
  },
- "auto": "2026-11-04T09:00:41.674Z",
+ "auto": "2026-11-04T09:58:31.491Z",
  "sources": {
   "7C": "2026-11-01",
   "TW": "2026-11-01",
@@ -9349,7 +9369,59 @@
    "010freebaram/256062",
    "dgmom365/7433358",
    "guestgroup/458",
-   "010freebaram/256077"
+   "010freebaram/256077",
+   "2266734/126860",
+   "2266734/126859",
+   "2266734/126858",
+   "2266734/126857",
+   "2266734/126856",
+   "2266734/126855",
+   "2266734/126854",
+   "2266734/126853",
+   "2266734/126852",
+   "2266734/126851",
+   "2266734/126849",
+   "2266734/126848",
+   "warcraftgamemap/3528483",
+   "starzia/448",
+   "loveloveloveovelove/1039611",
+   "loveloveloveovelove/1039609",
+   "loyaltylife/367250",
+   "ungsangjang/884590",
+   "2266734/126843",
+   "2266734/126840",
+   "2266734/126832",
+   "2266734/126830",
+   "posudotcom/120287",
+   "2266734/126805",
+   "2266734/126844",
+   "nyctourdesign/1205306",
+   "hawaiiphoto/1614802",
+   "2266734/126833",
+   "2266734/126831",
+   "2266734/126814",
+   "2266734/126802",
+   "happyibook/6344508",
+   "2266734/126826",
+   "ist777/21147",
+   "golfkwang/1147260",
+   "guestgroup/493",
+   "guestgroup/492",
+   "richman1001/444887",
+   "dgmom365/7433478",
+   "guestgroup/485",
+   "guestgroup/482",
+   "miznett/5148429",
+   "guestgroup/495",
+   "guestgroup/494",
+   "guestgroup/491",
+   "cksdn8443/833118",
+   "guestgroup/483",
+   "cantsb/3692567",
+   "mjann/3799390",
+   "joonggonara/1137649747",
+   "joonggonara/1137649545",
+   "010freebaram/256086"
   ],
   "since": "2026-11-03",
   "imported": "2026-11-03"
