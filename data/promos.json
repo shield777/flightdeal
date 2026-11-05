@@ -1,6 +1,111 @@
 {
  "items": [
   {
+   "id": "c:https://cafe.naver.com/bluefild/35857|제주도 싱가포르항공 및 스쿠트 125개 노선 특가 진행, 일정 맞춰 사전",
+   "kind": "airline",
+   "community": true,
+   "title": "제주도 싱가포르항공 및 스쿠트 125개 노선 특가 진행, 일정 맞춰 사전 예약 ....",
+   "desc": "■ 무슨 일인가 싱가포르항공과 스쿠트 항공이 한국 및 제주 노선을 포함해 총 125개 목적지를 대상으로 특가 프로모션 을 진행합니다.",
+   "summary": [
+    "■ 무슨 일인가 싱가포르항공과 스쿠트 항공이 한국 및 제주 노선을 포함해 총 125개 목적지를 대상으로 특가 프로모션 을 진행합니다."
+   ],
+   "link": "https://cafe.naver.com/bluefild/35857",
+   "source": "네이버 카페 · 괌플레이(Guamplay) - 괌 자유여행의 모든 것",
+   "date": "2026-11-03T14:18:02.174Z",
+   "dateFound": true,
+   "found": "2026-11-03",
+   "cards": [],
+   "airlines": [
+    "TR",
+    "SQ",
+    "7C",
+    "MM"
+   ],
+   "countries": [
+    "싱가포르"
+   ],
+   "allRoutes": false,
+   "routes": [],
+   "price": null,
+   "query": "스쿠트 프로모션",
+   "lastDate": "2026-11-05T13:00:46.755Z",
+   "lastFound": "2026-11-05",
+   "more": [
+    {
+     "id": "c:https://cafe.naver.com/disneyadventure/1056|싱가포르항공, 스쿠트 항공, 제주항공 할인!",
+     "kind": "airline",
+     "community": true,
+     "title": "싱가포르항공, 스쿠트 항공, 제주항공 할인!",
+     "desc": "스쿠트 항공 할인 행사기간 : 2026.10.23.~30 할인대상 : 아래 캡처 참조 원문 : 인스타 @gyominnews 제주항공 2월 출발 특가 ❄️ 특가 항공권 ✔ 프로모션 기간 : 2026.",
+     "summary": [
+      "스쿠트 항공 할인 행사기간 : 2026.10.23.~30 할인대상 : 아래 캡처 참조 원문 : 인스타 @gyominnews 제주항공 2월 출발 특가 ❄️ 특가 항공권 ✔ 프로모션 기간 : 2026."
+     ],
+     "link": "https://cafe.naver.com/disneyadventure/1056",
+     "source": "네이버 카페 · [디즈니 어드벤처] 디즈니 크루즈, 디즈니랜드",
+     "date": "2026-11-03T14:18:02.174Z",
+     "dateFound": true,
+     "found": "2026-11-03",
+     "cards": [],
+     "airlines": [
+      "7C",
+      "TR",
+      "SQ"
+     ],
+     "countries": [
+      "싱가포르"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "스쿠트 프로모션"
+    },
+    {
+     "id": "c:https://cafe.naver.com/airplanetiket/294|스쿠트 항공 세일",
+     "kind": "airline",
+     "community": true,
+     "title": "스쿠트 항공 세일",
+     "desc": "",
+     "link": "https://cafe.naver.com/airplanetiket/294",
+     "source": "네이버 카페 · 항공특가정보",
+     "date": "2026-11-03T14:18:02.174Z",
+     "dateFound": true,
+     "found": "2026-11-03",
+     "cards": [],
+     "airlines": [
+      "TR"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "스쿠트 세일"
+    },
+    {
+     "id": "c:https://cafe.naver.com/airplanetiket/1287|피치항공 세일",
+     "kind": "airline",
+     "community": true,
+     "title": "피치항공 세일",
+     "desc": "유할 없는 피치 세일 입니다 https://www.instagram.com/p/DfWqO7TDyvT/?exln=MTEwM29mYzR5eHdicA== \" \" \" 이 사탕 맛난데 어떻게 바뀌었을지 궁금하네요.",
+     "summary": [
+      "유할 없는 피치 세일 입니다 https://www.instagram.com/p/DfWqO7TDyvT/?exln=MTEwM29mYzR5eHdicA== \" \" \" 이 사탕 맛난데 어떻게 바뀌었을지 궁금하네요."
+     ],
+     "link": "https://cafe.naver.com/airplanetiket/1287",
+     "source": "네이버 카페 · 항공특가정보",
+     "date": "2026-11-05T13:00:46.755Z",
+     "found": "2026-11-05",
+     "cards": [],
+     "airlines": [
+      "MM"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "피치항공 특가"
+    }
+   ]
+  },
+  {
    "id": "c:https://cafe.naver.com/warcraftgamemap/3527931|✈️(정보) 진에어 11월 매진 특가 ✨",
    "kind": "airline",
    "community": true,
@@ -3800,87 +3905,6 @@
    "query": "태국 항공권 특가",
    "lastDate": "2026-11-03T14:18:02.174Z",
    "lastFound": "2026-11-03"
-  },
-  {
-   "id": "c:https://cafe.naver.com/bluefild/35857|제주도 싱가포르항공 및 스쿠트 125개 노선 특가 진행, 일정 맞춰 사전",
-   "kind": "airline",
-   "community": true,
-   "title": "제주도 싱가포르항공 및 스쿠트 125개 노선 특가 진행, 일정 맞춰 사전 예약 ....",
-   "desc": "■ 무슨 일인가 싱가포르항공과 스쿠트 항공이 한국 및 제주 노선을 포함해 총 125개 목적지를 대상으로 특가 프로모션 을 진행합니다.",
-   "summary": [
-    "■ 무슨 일인가 싱가포르항공과 스쿠트 항공이 한국 및 제주 노선을 포함해 총 125개 목적지를 대상으로 특가 프로모션 을 진행합니다."
-   ],
-   "link": "https://cafe.naver.com/bluefild/35857",
-   "source": "네이버 카페 · 괌플레이(Guamplay) - 괌 자유여행의 모든 것",
-   "date": "2026-11-03T14:18:02.174Z",
-   "dateFound": true,
-   "found": "2026-11-03",
-   "cards": [],
-   "airlines": [
-    "TR",
-    "SQ",
-    "7C"
-   ],
-   "countries": [
-    "싱가포르"
-   ],
-   "allRoutes": false,
-   "routes": [],
-   "price": null,
-   "query": "스쿠트 프로모션",
-   "lastDate": "2026-11-03T14:18:02.174Z",
-   "lastFound": "2026-11-03",
-   "more": [
-    {
-     "id": "c:https://cafe.naver.com/disneyadventure/1056|싱가포르항공, 스쿠트 항공, 제주항공 할인!",
-     "kind": "airline",
-     "community": true,
-     "title": "싱가포르항공, 스쿠트 항공, 제주항공 할인!",
-     "desc": "스쿠트 항공 할인 행사기간 : 2026.10.23.~30 할인대상 : 아래 캡처 참조 원문 : 인스타 @gyominnews 제주항공 2월 출발 특가 ❄️ 특가 항공권 ✔ 프로모션 기간 : 2026.",
-     "summary": [
-      "스쿠트 항공 할인 행사기간 : 2026.10.23.~30 할인대상 : 아래 캡처 참조 원문 : 인스타 @gyominnews 제주항공 2월 출발 특가 ❄️ 특가 항공권 ✔ 프로모션 기간 : 2026."
-     ],
-     "link": "https://cafe.naver.com/disneyadventure/1056",
-     "source": "네이버 카페 · [디즈니 어드벤처] 디즈니 크루즈, 디즈니랜드",
-     "date": "2026-11-03T14:18:02.174Z",
-     "dateFound": true,
-     "found": "2026-11-03",
-     "cards": [],
-     "airlines": [
-      "7C",
-      "TR",
-      "SQ"
-     ],
-     "countries": [
-      "싱가포르"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "스쿠트 프로모션"
-    },
-    {
-     "id": "c:https://cafe.naver.com/airplanetiket/294|스쿠트 항공 세일",
-     "kind": "airline",
-     "community": true,
-     "title": "스쿠트 항공 세일",
-     "desc": "",
-     "link": "https://cafe.naver.com/airplanetiket/294",
-     "source": "네이버 카페 · 항공특가정보",
-     "date": "2026-11-03T14:18:02.174Z",
-     "dateFound": true,
-     "found": "2026-11-03",
-     "cards": [],
-     "airlines": [
-      "TR"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "스쿠트 세일"
-    }
-   ]
   },
   {
    "id": "c:https://cafe.naver.com/philhelp/2507|세부퍼시픽 프로모..",
@@ -9113,24 +9137,24 @@
    "lastFound": "2026-11-01"
   }
  ],
- "updated": "2026-11-05T11:00:47.251Z",
- "runs": 64,
+ "updated": "2026-11-05T13:00:46.755Z",
+ "runs": 65,
  "checked": {
-  "베트남": "2026-11-05T11:00:47.251Z",
-  "태국": "2026-11-05T11:00:47.251Z",
-  "필리핀": "2026-11-05T11:00:47.251Z",
-  "인도네시아": "2026-11-05T11:00:47.251Z",
-  "말레이시아": "2026-11-05T11:00:47.251Z",
-  "싱가포르": "2026-11-05T11:00:47.251Z",
-  "일본": "2026-11-05T11:00:47.251Z",
-  "대만": "2026-11-05T11:00:47.251Z",
-  "홍콩": "2026-11-05T11:00:47.251Z",
-  "마카오": "2026-11-05T11:00:47.251Z",
-  "중국": "2026-11-05T11:00:47.251Z",
-  "미국령": "2026-11-05T11:00:47.251Z",
-  "미국": "2026-11-05T11:00:47.251Z"
+  "베트남": "2026-11-05T13:00:46.755Z",
+  "태국": "2026-11-05T13:00:46.755Z",
+  "필리핀": "2026-11-05T13:00:46.755Z",
+  "인도네시아": "2026-11-05T13:00:46.755Z",
+  "말레이시아": "2026-11-05T13:00:46.755Z",
+  "싱가포르": "2026-11-05T13:00:46.755Z",
+  "일본": "2026-11-05T13:00:46.755Z",
+  "대만": "2026-11-05T13:00:46.755Z",
+  "홍콩": "2026-11-05T13:00:46.755Z",
+  "마카오": "2026-11-05T13:00:46.755Z",
+  "중국": "2026-11-05T13:00:46.755Z",
+  "미국령": "2026-11-05T13:00:46.755Z",
+  "미국": "2026-11-05T13:00:46.755Z"
  },
- "auto": "2026-11-05T11:00:47.251Z",
+ "auto": "2026-11-05T13:00:46.755Z",
  "sources": {
   "7C": "2026-11-01",
   "TW": "2026-11-01",
@@ -12408,7 +12432,82 @@
    "noonebungee/136745",
    "noonebungee/136742",
    "noonebungee/136739",
-   "milideokhu/176"
+   "milideokhu/176",
+   "worldtravelcafe/1164346",
+   "worldtravelcafe/1164345",
+   "worldtravelcafe/1164342",
+   "worldtravelcafe/1164336",
+   "worldtravelcafe/1164335",
+   "worldtravelcafe/1164334",
+   "worldtravelcafe/1164330",
+   "worldtravelcafe/1164322",
+   "worldtravelcafe/1164317",
+   "wooyeon1/33092",
+   "zzop/4327588",
+   "warcraftgamemap/3529330",
+   "zzop/4327481",
+   "joonggonara/1137711355",
+   "kalse1005/26297",
+   "minecraftpe/4010962",
+   "010freebaram/256680",
+   "airplanetiket/1286",
+   "010freebaram/256636",
+   "musicdomain/898900",
+   "joonggonara/1137708926",
+   "joonggonara/1137708855",
+   "010freebaram/256668",
+   "sassinail/2934496",
+   "jejutip/2681056",
+   "joonggonara/1137710766",
+   "joonggonara/1137708326",
+   "jpnstory/4434217",
+   "sheiszzz/1234574",
+   "ysm5828/9645186",
+   "ysm5828/9645179",
+   "happyibook/6345983",
+   "vinpearl/565158",
+   "warcraftgamemap/3529334",
+   "warcraftgamemap/3529323",
+   "minecraftpe/4010930",
+   "happyibook/6345963",
+   "warcraftgamemap/3529318",
+   "warcraftgamemap/3529309",
+   "hexenyang/75656",
+   "hexenyang/75651",
+   "uouv96/112138",
+   "kk2186/19333",
+   "redgx7zk/86",
+   "skyblueobyay/2",
+   "coinschool2/15148",
+   "hahahaup/13002",
+   "bluesmwjy/2",
+   "hawaiiphoto/1615086",
+   "loyaltylife/367523",
+   "loyaltylife/367505",
+   "nextwave0/1338",
+   "whiskycognac/961011",
+   "natsuco/799",
+   "mafia42/3365951",
+   "whiskycognac/960974",
+   "010freebaram/256678",
+   "hotdeal1top/8212",
+   "reduhovq/173",
+   "browngxjir/78",
+   "gongyoucode/128",
+   "gigimoayo/76",
+   "sdjhcbkkskcb/30185",
+   "mp3down99/532825",
+   "costco12/795751",
+   "doorkong/3607585",
+   "playherzen/1113906",
+   "sweetminton/1329392",
+   "nyctourdesign/1205459",
+   "airplanetiket/1287",
+   "12129999/19",
+   "zhcafe/851107",
+   "squaresever/36994",
+   "bukdc/94146",
+   "hexenyang/75654"
   ],
   "since": "2026-11-03",
   "imported": "2026-11-03"
