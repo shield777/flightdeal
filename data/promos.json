@@ -1,6 +1,92 @@
 {
  "items": [
   {
+   "id": "c:https://cafe.naver.com/flytogether/24449|[2월신규,이벤트]아시아나,대한항공,항공기,여객기,비행기,다이캐스트,공항",
+   "kind": "airline",
+   "community": true,
+   "title": "[2월신규,이벤트]아시아나,대한항공,항공기,여객기,비행기,다이캐스트,공항....",
+   "desc": "[신년 세일 ] 최대10%할인 * 1월 28일 ~ 2월 11일1. 10만원이상구매시 10%할인 2. 20만원이상구매시 아래항목中 택1증정.",
+   "summary": [
+    "[신년 세일 ] 최대10%할인 * 1월 28일 ~ 2월 11일1.",
+    "10만원이상구매시 10%할인 2.",
+    "20만원이상구매시 아래항목中 택1증정."
+   ],
+   "link": "https://cafe.naver.com/flytogether/24449",
+   "source": "네이버 카페 · :::에비에이션 넷//비행기에 관한 그 모든 것:::",
+   "date": "2026-11-04T10:41:50.033Z",
+   "dateFound": true,
+   "found": "2026-11-04",
+   "cards": [],
+   "airlines": [
+    "KE",
+    "OZ"
+   ],
+   "countries": [
+    "마카오"
+   ],
+   "allRoutes": false,
+   "routes": [],
+   "price": {
+    "amount": 100000,
+    "trip": "oneway?"
+   },
+   "query": "Ethiopian Airlines 세일",
+   "lastDate": "2026-11-06T01:10:30.439Z",
+   "lastFound": "2026-11-06",
+   "more": [
+    {
+     "id": "c:https://cafe.naver.com/flytogether/24341|[12월신규, 연말 세일 ]아시아나,대한항공,항공기,여객기,비행기,다이캐",
+     "kind": "airline",
+     "community": true,
+     "title": "[12월신규, 연말 세일 ]아시아나,대한항공,항공기,여객기,비행기,다이캐스트,....",
+     "desc": "",
+     "link": "https://cafe.naver.com/flytogether/24341",
+     "source": "네이버 카페 · :::에비에이션 넷//비행기에 관한 그 모든 것:::",
+     "date": "2026-11-04T10:41:50.033Z",
+     "dateFound": true,
+     "found": "2026-11-04",
+     "cards": [],
+     "airlines": [
+      "KE",
+      "OZ"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "Ethiopian Airlines 세일"
+    },
+    {
+     "id": "c:https://cafe.naver.com/postmore/105983|대한항공 마카오 경품 이벤트 (기프트카드 5만원권 50명)",
+     "kind": "airline",
+     "community": true,
+     "title": "대한항공 마카오 경품 이벤트 (기프트카드 5만원권 50명)",
+     "desc": "https://www.koreanair.com/contents/promotion/list/2026/mfm2611?pageNum=1 이벤트 3번 응모하세요!",
+     "summary": [
+      "https://www.koreanair.com/contents/promotion/list/2026/mfm2611?pageNum=1 이벤트 3번 응모하세요!…"
+     ],
+     "link": "https://cafe.naver.com/postmore/105983",
+     "source": "네이버 카페 · 꿀 통",
+     "date": "2026-11-06T01:10:30.439Z",
+     "found": "2026-11-06",
+     "cards": [],
+     "airlines": [
+      "KE"
+     ],
+     "countries": [
+      "마카오"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": {
+      "amount": 50000,
+      "trip": "oneway?"
+     },
+     "query": "대한항공 이벤트"
+    }
+   ]
+  },
+  {
    "id": "c:https://cafe.naver.com/golftour111/30987|대한 항공 타고 떠나자!⛳ 일본 나가사키 노모자키CC 특가 !",
    "kind": "airline",
    "community": true,
@@ -1958,62 +2044,6 @@
       "마이리얼트립에서는 다음달 31일까지 BC카드로 20만원 이상 여행 상품 결제 시 최대 6만원 즉시 할인 혜택을 제공한다.",
       "결제금액에 따라 20만원 이상 7000원부터 할인이 제공되며 200만원 이상 최대 6만원까지 할인 받을 수 있다."
      ]
-    }
-   ]
-  },
-  {
-   "id": "c:https://cafe.naver.com/flytogether/24449|[2월신규,이벤트]아시아나,대한항공,항공기,여객기,비행기,다이캐스트,공항",
-   "kind": "airline",
-   "community": true,
-   "title": "[2월신규,이벤트]아시아나,대한항공,항공기,여객기,비행기,다이캐스트,공항....",
-   "desc": "[신년 세일 ] 최대10%할인 * 1월 28일 ~ 2월 11일1. 10만원이상구매시 10%할인 2. 20만원이상구매시 아래항목中 택1증정.",
-   "summary": [
-    "[신년 세일 ] 최대10%할인 * 1월 28일 ~ 2월 11일1.",
-    "10만원이상구매시 10%할인 2.",
-    "20만원이상구매시 아래항목中 택1증정."
-   ],
-   "link": "https://cafe.naver.com/flytogether/24449",
-   "source": "네이버 카페 · :::에비에이션 넷//비행기에 관한 그 모든 것:::",
-   "date": "2026-11-04T10:41:50.033Z",
-   "dateFound": true,
-   "found": "2026-11-04",
-   "cards": [],
-   "airlines": [
-    "KE",
-    "OZ"
-   ],
-   "countries": [],
-   "allRoutes": false,
-   "routes": [],
-   "price": {
-    "amount": 100000,
-    "trip": "oneway?"
-   },
-   "query": "Ethiopian Airlines 세일",
-   "lastDate": "2026-11-04T10:41:50.033Z",
-   "lastFound": "2026-11-04",
-   "more": [
-    {
-     "id": "c:https://cafe.naver.com/flytogether/24341|[12월신규, 연말 세일 ]아시아나,대한항공,항공기,여객기,비행기,다이캐",
-     "kind": "airline",
-     "community": true,
-     "title": "[12월신규, 연말 세일 ]아시아나,대한항공,항공기,여객기,비행기,다이캐스트,....",
-     "desc": "",
-     "link": "https://cafe.naver.com/flytogether/24341",
-     "source": "네이버 카페 · :::에비에이션 넷//비행기에 관한 그 모든 것:::",
-     "date": "2026-11-04T10:41:50.033Z",
-     "dateFound": true,
-     "found": "2026-11-04",
-     "cards": [],
-     "airlines": [
-      "KE",
-      "OZ"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "Ethiopian Airlines 세일"
     }
    ]
   },
@@ -9296,24 +9326,24 @@
    "lastFound": "2026-11-01"
   }
  ],
- "updated": "2026-11-06T01:00:46.339Z",
- "runs": 69,
+ "updated": "2026-11-06T01:10:30.439Z",
+ "runs": 70,
  "checked": {
-  "베트남": "2026-11-06T01:00:46.339Z",
-  "태국": "2026-11-06T01:00:46.339Z",
-  "필리핀": "2026-11-06T01:00:46.339Z",
-  "인도네시아": "2026-11-06T01:00:46.339Z",
-  "말레이시아": "2026-11-06T01:00:46.339Z",
-  "싱가포르": "2026-11-06T01:00:46.339Z",
-  "일본": "2026-11-06T01:00:46.339Z",
-  "대만": "2026-11-06T01:00:46.339Z",
-  "홍콩": "2026-11-06T01:00:46.339Z",
-  "마카오": "2026-11-06T01:00:46.339Z",
-  "중국": "2026-11-06T01:00:46.339Z",
-  "미국령": "2026-11-06T01:00:46.339Z",
-  "미국": "2026-11-06T01:00:46.339Z"
+  "베트남": "2026-11-06T01:10:30.439Z",
+  "태국": "2026-11-06T01:10:30.439Z",
+  "필리핀": "2026-11-06T01:10:30.439Z",
+  "인도네시아": "2026-11-06T01:10:30.439Z",
+  "말레이시아": "2026-11-06T01:10:30.439Z",
+  "싱가포르": "2026-11-06T01:10:30.439Z",
+  "일본": "2026-11-06T01:10:30.439Z",
+  "대만": "2026-11-06T01:10:30.439Z",
+  "홍콩": "2026-11-06T01:10:30.439Z",
+  "마카오": "2026-11-06T01:10:30.439Z",
+  "중국": "2026-11-06T01:10:30.439Z",
+  "미국령": "2026-11-06T01:10:30.439Z",
+  "미국": "2026-11-06T01:10:30.439Z"
  },
- "auto": "2026-11-06T01:00:46.339Z",
+ "auto": "2026-11-06T01:10:30.439Z",
  "sources": {
   "7C": "2026-11-01",
   "TW": "2026-11-01",
@@ -12979,7 +13009,14 @@
    "mildeokjil/186",
    "zhcafe/851116",
    "joonggonara/1137724498",
-   "ondalahistory/164"
+   "ondalahistory/164",
+   "rkskekfk121/31009",
+   "worldtravelcafe/1164450",
+   "happyibook/6346272",
+   "postmore/105983",
+   "010freebaram/256837",
+   "ailovely/162556",
+   "dailytour1/4560"
   ],
   "since": "2026-11-03",
   "imported": "2026-11-03"
