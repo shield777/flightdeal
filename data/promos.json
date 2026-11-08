@@ -1,6 +1,139 @@
 {
  "items": [
   {
+   "id": "c:https://cafe.naver.com/vinpearl/561674|[선착순] 비엣젯 동계 항공권 34만원 최저가 특가 + 패스트트랙 무료!",
+   "kind": "airline",
+   "community": true,
+   "title": "[선착순] 비엣젯 동계 항공권 34만원 최저가 특가 + 패스트트랙 무료!",
+   "desc": "비엣젯 항공 동계 시즌 오픈을 기념해 놓치면 아쉬운 최저가 특가 프로모션 을 준비했습니다!",
+   "summary": [
+    "비엣젯 항공 동계 시즌 오픈을 기념해 놓치면 아쉬운 최저가 특가 프로모션 을 준비했습니다!…"
+   ],
+   "link": "https://cafe.naver.com/vinpearl/561674",
+   "source": "네이버 카페 · 베트남 피크타임 푸꾸옥 나트랑 다낭 호치민 무이네 하노이 여행",
+   "date": "2026-11-04T03:00:45.320Z",
+   "found": "2026-11-04",
+   "cards": [],
+   "airlines": [
+    "VJ"
+   ],
+   "countries": [
+    "베트남"
+   ],
+   "allRoutes": false,
+   "routes": [],
+   "price": {
+    "amount": 340000,
+    "trip": "oneway?"
+   },
+   "query": "비엣젯 프로모션",
+   "lastDate": "2026-11-08T11:00:46.243Z",
+   "lastFound": "2026-11-08",
+   "more": [
+    {
+     "id": "c:https://cafe.naver.com/vinpearl/556473|[항공권] 비엣젯 항공권 특가, 유류할증료 인상 전 예약 찬스! | 32",
+     "kind": "airline",
+     "community": true,
+     "title": "[항공권] 비엣젯 항공권 특가, 유류할증료 인상 전 예약 찬스! | 32만원~",
+     "desc": "",
+     "link": "https://cafe.naver.com/vinpearl/556473",
+     "source": "네이버 카페 · 베트남 피크타임 푸꾸옥 나트랑 다낭 호치민 무이네 하노이 여행",
+     "date": "2026-11-04T10:41:50.033Z",
+     "dateFound": true,
+     "found": "2026-11-04",
+     "cards": [],
+     "airlines": [
+      "VJ"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": {
+      "amount": 320000,
+      "trip": "oneway?"
+     },
+     "query": "비엣젯 얼리버드"
+    },
+    {
+     "id": "c:https://cafe.naver.com/tybwondergirl5/115773|✈️ [ 비엣젯 항공 특가 ] 부산·인천 출발 베트남 편도 99,000원",
+     "kind": "airline",
+     "community": true,
+     "title": "✈️ [ 비엣젯 항공 특가 ] 부산·인천 출발 베트남 편도 99,000원부터!",
+     "desc": "디고님들~~ 비엣젯 항공에서 반가운 특가 소식이 있네요! ✈️ 이번에는 수하물 등이 포함된 Deluxe 운임 특가 예요. 부산 출발 다낭·나트랑도 대상 노선에 들어 있답니다!",
+     "summary": [
+      "디고님들~~ 비엣젯 항공에서 반가운 특가 소식이 있네요! ✈️ 이번에는 수하물 등이 포함된 Deluxe 운임 특가 예요.",
+      "부산 출발 다낭·나트랑도 대상 노선에 들어 있답니다!…"
+     ],
+     "link": "https://cafe.naver.com/tybwondergirl5/115773",
+     "source": "네이버 카페 · 베트남 디고-다낭나트랑자유여행,맛집,호텔,리조트,마사지,골프",
+     "date": "2026-11-05T03:00:44.836Z",
+     "found": "2026-11-05",
+     "cards": [],
+     "airlines": [
+      "VJ"
+     ],
+     "countries": [
+      "베트남"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": {
+      "amount": 99000,
+      "trip": "oneway"
+     },
+     "query": "비엣젯 특가"
+    },
+    {
+     "id": "c:https://cafe.naver.com/tybwondergirl5/116269|✈️ 비엣젯 항공 11월 더블데이 특가 ! 부산·인천 출발 129,000",
+     "kind": "airline",
+     "community": true,
+     "title": "✈️ 비엣젯 항공 11월 더블데이 특가 ! 부산·인천 출발 129,000원부터",
+     "desc": "출처 비엣젯 홈페이지 디고님들~~ 반가운 비엣젯 항공 특가 소식이에요! 이번엔 부산 출발 다낭·나트랑도 포함됐답니다.",
+     "summary": [
+      "출처 비엣젯 홈페이지 디고님들~~ 반가운 비엣젯 항공 특가 소식이에요! 이번엔 부산 출발 다낭·나트랑도 포함됐답니다."
+     ],
+     "link": "https://cafe.naver.com/tybwondergirl5/116269",
+     "source": "네이버 카페 · 베트남 디고-다낭나트랑자유여행,맛집,호텔,리조트,마사지,골프",
+     "date": "2026-11-08T05:00:41.347Z",
+     "found": "2026-11-08",
+     "cards": [],
+     "airlines": [
+      "VJ"
+     ],
+     "countries": [
+      "베트남"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": {
+      "amount": 129000,
+      "trip": "oneway?"
+     },
+     "query": "비엣젯 특가"
+    },
+    {
+     "id": "c:https://cafe.naver.com/tybwondergirl5/116307|비엣젯 할인 하네요~^^",
+     "kind": "airline",
+     "community": true,
+     "title": "비엣젯 할인 하네요~^^",
+     "desc": "",
+     "link": "https://cafe.naver.com/tybwondergirl5/116307",
+     "source": "네이버 카페 · 베트남 디고-다낭나트랑자유여행,맛집,호텔,리조트,마사지,골프",
+     "date": "2026-11-08T11:00:46.243Z",
+     "found": "2026-11-08",
+     "cards": [],
+     "airlines": [
+      "VJ"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "비엣젯 할인"
+    }
+   ]
+  },
+  {
    "id": "5YVhlQVNGZlZVNmNRc0NBTWlWOHJBOEo3amw3cXQxWl84WkpGRXYxMERBMTUtTHNpYW5xekd6NS1mVUMwajVva0hwVTc3UFpuTnJqOHBBdFNYRGFMYnB6YTQ|트리니티항공, 국제선 항공권 최대 25% 할인···추가 쿠폰 3만원 제공",
    "kind": "airline",
    "title": "트리니티항공, 국제선 항공권 최대 25% 할인···추가 쿠폰 3만원 제공",
@@ -1573,119 +1706,6 @@
      "body": [
       "세부퍼시픽항공은 이번 프로모션을 글로벌 캠페인인 ‘Fly to My Happy Philippines’과 연계해 진행한다."
      ]
-    }
-   ]
-  },
-  {
-   "id": "c:https://cafe.naver.com/vinpearl/561674|[선착순] 비엣젯 동계 항공권 34만원 최저가 특가 + 패스트트랙 무료!",
-   "kind": "airline",
-   "community": true,
-   "title": "[선착순] 비엣젯 동계 항공권 34만원 최저가 특가 + 패스트트랙 무료!",
-   "desc": "비엣젯 항공 동계 시즌 오픈을 기념해 놓치면 아쉬운 최저가 특가 프로모션 을 준비했습니다!",
-   "summary": [
-    "비엣젯 항공 동계 시즌 오픈을 기념해 놓치면 아쉬운 최저가 특가 프로모션 을 준비했습니다!…"
-   ],
-   "link": "https://cafe.naver.com/vinpearl/561674",
-   "source": "네이버 카페 · 베트남 피크타임 푸꾸옥 나트랑 다낭 호치민 무이네 하노이 여행",
-   "date": "2026-11-04T03:00:45.320Z",
-   "found": "2026-11-04",
-   "cards": [],
-   "airlines": [
-    "VJ"
-   ],
-   "countries": [
-    "베트남"
-   ],
-   "allRoutes": false,
-   "routes": [],
-   "price": {
-    "amount": 340000,
-    "trip": "oneway?"
-   },
-   "query": "비엣젯 프로모션",
-   "lastDate": "2026-11-08T05:00:41.347Z",
-   "lastFound": "2026-11-08",
-   "more": [
-    {
-     "id": "c:https://cafe.naver.com/vinpearl/556473|[항공권] 비엣젯 항공권 특가, 유류할증료 인상 전 예약 찬스! | 32",
-     "kind": "airline",
-     "community": true,
-     "title": "[항공권] 비엣젯 항공권 특가, 유류할증료 인상 전 예약 찬스! | 32만원~",
-     "desc": "",
-     "link": "https://cafe.naver.com/vinpearl/556473",
-     "source": "네이버 카페 · 베트남 피크타임 푸꾸옥 나트랑 다낭 호치민 무이네 하노이 여행",
-     "date": "2026-11-04T10:41:50.033Z",
-     "dateFound": true,
-     "found": "2026-11-04",
-     "cards": [],
-     "airlines": [
-      "VJ"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": {
-      "amount": 320000,
-      "trip": "oneway?"
-     },
-     "query": "비엣젯 얼리버드"
-    },
-    {
-     "id": "c:https://cafe.naver.com/tybwondergirl5/115773|✈️ [ 비엣젯 항공 특가 ] 부산·인천 출발 베트남 편도 99,000원",
-     "kind": "airline",
-     "community": true,
-     "title": "✈️ [ 비엣젯 항공 특가 ] 부산·인천 출발 베트남 편도 99,000원부터!",
-     "desc": "디고님들~~ 비엣젯 항공에서 반가운 특가 소식이 있네요! ✈️ 이번에는 수하물 등이 포함된 Deluxe 운임 특가 예요. 부산 출발 다낭·나트랑도 대상 노선에 들어 있답니다!",
-     "summary": [
-      "디고님들~~ 비엣젯 항공에서 반가운 특가 소식이 있네요! ✈️ 이번에는 수하물 등이 포함된 Deluxe 운임 특가 예요.",
-      "부산 출발 다낭·나트랑도 대상 노선에 들어 있답니다!…"
-     ],
-     "link": "https://cafe.naver.com/tybwondergirl5/115773",
-     "source": "네이버 카페 · 베트남 디고-다낭나트랑자유여행,맛집,호텔,리조트,마사지,골프",
-     "date": "2026-11-05T03:00:44.836Z",
-     "found": "2026-11-05",
-     "cards": [],
-     "airlines": [
-      "VJ"
-     ],
-     "countries": [
-      "베트남"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": {
-      "amount": 99000,
-      "trip": "oneway"
-     },
-     "query": "비엣젯 특가"
-    },
-    {
-     "id": "c:https://cafe.naver.com/tybwondergirl5/116269|✈️ 비엣젯 항공 11월 더블데이 특가 ! 부산·인천 출발 129,000",
-     "kind": "airline",
-     "community": true,
-     "title": "✈️ 비엣젯 항공 11월 더블데이 특가 ! 부산·인천 출발 129,000원부터",
-     "desc": "출처 비엣젯 홈페이지 디고님들~~ 반가운 비엣젯 항공 특가 소식이에요! 이번엔 부산 출발 다낭·나트랑도 포함됐답니다.",
-     "summary": [
-      "출처 비엣젯 홈페이지 디고님들~~ 반가운 비엣젯 항공 특가 소식이에요! 이번엔 부산 출발 다낭·나트랑도 포함됐답니다."
-     ],
-     "link": "https://cafe.naver.com/tybwondergirl5/116269",
-     "source": "네이버 카페 · 베트남 디고-다낭나트랑자유여행,맛집,호텔,리조트,마사지,골프",
-     "date": "2026-11-08T05:00:41.347Z",
-     "found": "2026-11-08",
-     "cards": [],
-     "airlines": [
-      "VJ"
-     ],
-     "countries": [
-      "베트남"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": {
-      "amount": 129000,
-      "trip": "oneway?"
-     },
-     "query": "비엣젯 특가"
     }
    ]
   },
@@ -10379,24 +10399,24 @@
    "lastFound": "2026-11-01"
   }
  ],
- "updated": "2026-11-08T09:00:40.892Z",
- "runs": 99,
+ "updated": "2026-11-08T11:00:46.243Z",
+ "runs": 100,
  "checked": {
-  "베트남": "2026-11-08T09:00:40.892Z",
-  "태국": "2026-11-08T09:00:40.892Z",
-  "필리핀": "2026-11-08T09:00:40.892Z",
-  "인도네시아": "2026-11-08T09:00:40.892Z",
-  "말레이시아": "2026-11-08T09:00:40.892Z",
-  "싱가포르": "2026-11-08T09:00:40.892Z",
-  "일본": "2026-11-08T09:00:40.892Z",
-  "대만": "2026-11-08T09:00:40.892Z",
-  "홍콩": "2026-11-08T09:00:40.892Z",
-  "마카오": "2026-11-08T09:00:40.892Z",
-  "중국": "2026-11-08T09:00:40.892Z",
-  "미국령": "2026-11-08T09:00:40.892Z",
-  "미국": "2026-11-08T09:00:40.892Z"
+  "베트남": "2026-11-08T11:00:46.243Z",
+  "태국": "2026-11-08T11:00:46.243Z",
+  "필리핀": "2026-11-08T11:00:46.243Z",
+  "인도네시아": "2026-11-08T11:00:46.243Z",
+  "말레이시아": "2026-11-08T11:00:46.243Z",
+  "싱가포르": "2026-11-08T11:00:46.243Z",
+  "일본": "2026-11-08T11:00:46.243Z",
+  "대만": "2026-11-08T11:00:46.243Z",
+  "홍콩": "2026-11-08T11:00:46.243Z",
+  "마카오": "2026-11-08T11:00:46.243Z",
+  "중국": "2026-11-08T11:00:46.243Z",
+  "미국령": "2026-11-08T11:00:46.243Z",
+  "미국": "2026-11-08T11:00:46.243Z"
  },
- "auto": "2026-11-08T09:00:40.892Z",
+ "auto": "2026-11-08T11:00:46.243Z",
  "sources": {
   "7C": "2026-11-01",
   "TW": "2026-11-01",
@@ -15861,7 +15881,86 @@
    "bubi2/46167",
    "gowinmul/51132",
    "clubpickup/341672",
-   "hexenyang/75784"
+   "hexenyang/75784",
+   "worldtravelcafe/1165064",
+   "worldtravelcafe/1165063",
+   "worldtravelcafe/1165059",
+   "worldtravelcafe/1165057",
+   "worldtravelcafe/1165051",
+   "worldtravelcafe/1165050",
+   "worldtravelcafe/1165048",
+   "vinpearl/566448",
+   "povo/52606",
+   "loyaltylife/368066",
+   "grownman/1182770",
+   "tybwondergirl5/116307",
+   "loyaltylife/368059",
+   "010freebaram/258182",
+   "misseses/183846",
+   "010freebaram/258198",
+   "getamped2/852809",
+   "010freebaram/258139",
+   "jejudoonemonth/18788",
+   "windstopper/385305",
+   "loveloveloveovelove/1040561",
+   "buncafea/39432",
+   "kmhking/2127049",
+   "ok4567890123/2837",
+   "hufscmrc/2247",
+   "minecraftpe/4012445",
+   "happyibook/6348640",
+   "vinpearl/566488",
+   "ysm5828/9646285",
+   "warcraftgamemap/3531047",
+   "vinpearl/566475",
+   "warcraftgamemap/3531038",
+   "happyibook/6348584",
+   "ysm5828/9646268",
+   "vietnam55/62",
+   "happyibook/6348626",
+   "minecraftpe/4012415",
+   "fobn/165283",
+   "happyibook/6348611",
+   "happyibook/6348588",
+   "warcraftgamemap/3531025",
+   "mindy7857/5523348",
+   "nctownnet11/216496",
+   "uouv96/113216",
+   "buncafea/39445",
+   "wubongov/22989",
+   "bebettergirls/2103422",
+   "posudotcom/120359",
+   "redgx7zk/104",
+   "uouv96/113211",
+   "bluesmwjy/20",
+   "yamipapa/8061",
+   "hawaiiphoto/1615671",
+   "aurumfamily/80835",
+   "withstock/1378068",
+   "loyaltylife/368056",
+   "nyctourdesign/1205779",
+   "macaunoblesse/246123",
+   "airplanetiket/1301",
+   "010freebaram/258153",
+   "sfpark/2118",
+   "joonggonara/1137855390",
+   "jihosoccer123/3792191",
+   "joonggonara/1137854458",
+   "imsanbu/80482470",
+   "joonggonara/1137854265",
+   "hahahaup/13400",
+   "limiting/2014",
+   "directwedding/9552434",
+   "mammie/3307875",
+   "mjann/3800457",
+   "pcstudying/16854",
+   "caconten/61355",
+   "amateurmagician/117110",
+   "golf2025/554",
+   "postmore/106477",
+   "jimncarry/95234",
+   "loyaltylife/368073",
+   "sjdia76/332474"
   ],
   "since": "2026-11-03",
   "imported": "2026-11-03"
