@@ -308,7 +308,7 @@
     const ck = `${p.id}|${(p.more || []).length}|${code}|${C}`;
     if (factCache.has(ck)) return factCache.get(ck);
     const base = (p.found || today).slice(0, 10);
-    const all = [p, ...(p.more || [])].map(m => F.promoFacts(articleText(m, code), kstDay(m.date) || base, C));
+    const all = [p, ...(p.more || [])].map(m => F.withAi(F.promoFacts(articleText(m, code), kstDay(m.date) || base, C), m)); // AI 판독 값이 있으면 우선
     const f = {};
     // 가격: 이 나라 노선 가격이 적힌 기사가 있으면 그것만, 아니면 공통 가격
     const mineP = all.filter(x => x.priceFor === C && x.price);

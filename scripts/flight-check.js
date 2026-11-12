@@ -17,7 +17,7 @@ const F = require('../js/flight-core.js');
 const ARTICLE = require('./article-text.js');
 const OFFICIAL = require('./airline-events.js'); // 카드 탭용 (항공사 홈페이지의 카드·결제 혜택)
 const COMMUNITY = require('./community.js'); // 커뮤니티 글 (네이버 카페·뽐뿌·루리웹)
-const AI = require('./ai-judge.js'); // DeepSeek AI 판독 (키 없으면 건너뜀, 지금은 기록만)
+const AI = require('./ai-judge.js'); // DeepSeek AI 판독 (키 없으면 건너뜀 → 규칙대로)
 
 const ROOT = path.join(__dirname, '..');
 const DATA = path.join(ROOT, 'data');
@@ -171,7 +171,7 @@ const factsCache = new WeakMap();
 function factsOf(m) {
   if (!factsCache.has(m)) {
     const parts = [...F.dropHead(F.splitSentences(F.stripTags(m.desc || '')), m.title), ...F.dropHead((m.body || []).map(F.stripTags), m.title), m.title];
-    factsCache.set(m, F.promoFacts(F.airlineText(parts, (m.airlines || [])[0] || null), kstDay(m.date)));
+    factsCache.set(m, F.withAi(F.promoFacts(F.airlineText(parts, (m.airlines || [])[0] || null), kstDay(m.date)), m)); // AI 판독 값 우선
   }
   return factsCache.get(m);
 }
@@ -381,7 +381,7 @@ async function checkPromos(watch, promos, country) {
     if (sc.allRoutes) p.allRoutes = true;
   }
 
-  // AI 판독 (DeepSeek, 기록만 단계): 새 글을 AI가 읽고 특가 여부·기간·가격을 p.ai 에 저장, 규칙 판단과 다른 점은 data/ai-check.json 에
+  // AI 판독 (DeepSeek): 새 글을 AI가 읽고 특가 여부·기간·가격을 p.ai 에 저장 → 묶기·알림·앱 화면에서 우선 사용. 규칙과 다른 점은 data/ai-check.json 에
   const aiRes = await AI.judge([...known.values()], fresh, { env: ENV, today: TODAY, log, rulesFacts: p => p.community ? F.promoFacts(F.stripTags(p.title), kstDay(p.date)) : factsOf(p) });
   if (aiRes && aiRes.compare && aiRes.compare.length) {
     const f = path.join(DATA, 'ai-check.json');
@@ -450,6 +450,8 @@ async function alertBigDeals(promos) {
   for (const g of promos.items) {
     const members = [g, ...(g.more || [])];
     if (g.kind !== 'airline' || g.official || members.some(m => m.notified)) continue;
+    // 새로 들어온 소식만 (최근 3일 안에 찾은 글이 있는 묶음). AI가 예전 글을 다시 읽어 조건에 맞게 되어도 지난 소식은 알리지 않음
+    if (!members.some(m => (m.found || '') >= F.addDays(TODAY, -3))) continue;
     // 날짜를 모르는 커뮤니티 글(네이버 카페)만 있는 소식은 알리지 않음 — 지난 특가일 수 있음 (앱 화면에는 보여 줌)
     if (g.community && members.every(m => m.dateFound)) continue;
     const e = entityOf(g);
@@ -459,8 +461,8 @@ async function alertBigDeals(promos) {
     if (!F.isWantedPromo(g, {}) || F.isDomestic(g)) continue;
     // 서울(인천·김포) 출발만: 묶인 기사들이 모두 서울 아닌 곳 출발 특가만 다루면 제외
     if (members.every(m => F.nonSeoulOnly(`${m.title} ${F.stripTags(m.desc || '')} ${(m.body || []).join(' ')}`))) continue;
-    // 커뮤니티 글은 검색 요약이 잘려 있어 금액을 잘못 읽을 수 있음 → 알림 판단은 제목에 적힌 것만
-    const fs = g.community ? members.map(m => F.promoFacts(F.stripTags(m.title), kstDay(m.date))) : members.map(factsOf);
+    // 커뮤니티 글은 검색 요약이 잘려 있어 규칙으로는 제목에 적힌 것만 봄. AI가 판독한 값이 있으면 그것을 우선
+    const fs = g.community ? members.map(m => F.withAi(F.promoFacts(F.stripTags(m.title), kstDay(m.date)), m)) : members.map(factsOf);
     const pct = Math.max(0, ...fs.map(f => f.pct || 0));
     // 가격: 묶인 기사 중 '노선마다 가격 다름'이 하나라도 있으면 안 봄. 국내선 가격은 제외(placeScope)
     const prices = fs.some(f => f.priceMixed) ? [] : fs.flatMap(f => f.prices || (f.price ? [f.price] : []));
