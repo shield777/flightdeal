@@ -1,6 +1,500 @@
 {
  "items": [
   {
+   "id": "c:https://cafe.naver.com/flytogether/24449|[2월신규,이벤트]아시아나,대한항공,항공기,여객기,비행기,다이캐스트,공항",
+   "kind": "airline",
+   "community": true,
+   "title": "[2월신규,이벤트]아시아나,대한항공,항공기,여객기,비행기,다이캐스트,공항....",
+   "desc": "[신년 세일 ] 최대10%할인 * 1월 28일 ~ 2월 11일1. 10만원이상구매시 10%할인 2. 20만원이상구매시 아래항목中 택1증정.",
+   "summary": [
+    "[신년 세일 ] 최대10%할인 * 1월 28일 ~ 2월 11일1.",
+    "10만원이상구매시 10%할인 2.",
+    "20만원이상구매시 아래항목中 택1증정."
+   ],
+   "link": "https://cafe.naver.com/flytogether/24449",
+   "source": "네이버 카페 · :::에비에이션 넷//비행기에 관한 그 모든 것:::",
+   "date": "2026-11-04T10:41:50.033Z",
+   "dateFound": true,
+   "found": "2026-11-04",
+   "cards": [],
+   "airlines": [
+    "KE",
+    "OZ"
+   ],
+   "countries": [
+    "마카오",
+    "일본"
+   ],
+   "allRoutes": false,
+   "routes": [],
+   "price": {
+    "amount": 100000,
+    "trip": "oneway?"
+   },
+   "query": "Ethiopian Airlines 세일",
+   "ai": {
+    "v": 2,
+    "promo": false,
+    "why": "항공기 다이캐스트 판매 행사",
+    "airlines": [],
+    "name": null,
+    "book": null,
+    "board": null,
+    "price": null,
+    "trip": null,
+    "pct": null,
+    "seoul": null,
+    "at": "2026-11-12",
+    "model": "deepseek-v4-flash"
+   },
+   "lastDate": "2026-11-12T21:51:43.835Z",
+   "lastFound": "2026-11-13",
+   "more": [
+    {
+     "id": "c:https://cafe.naver.com/tourngoodmans/198389|[261110 긴급모객/땡처리 여행정보] 고베직항 '프리미엄 국적기 대한",
+     "kind": "airline",
+     "community": true,
+     "title": "[261110 긴급모객/땡처리 여행정보] 고베직항 '프리미엄 국적기 대한항공 '타....",
+     "desc": "회원 할인 적용★★ -정회원 상품은 원가 이므로 50만원 미만은 2만원, 50만원 이상 5% 추가 -직원용은 예약 마감으로 표기/여유 좌석이 있다면 여행예약에 요청해 주세요.",
+     "summary": [
+      "회원 할인 적용★★ -정회원 상품은 원가 이므로 50만원 미만은 2만원, 50만원 이상 5% 추가 -직원용은 예약 마감으로 표기/여유 좌석이 있다면 여행예약에 요청해 주세요."
+     ],
+     "link": "https://cafe.naver.com/tourngoodmans/198389",
+     "source": "네이버 카페 · [여행과좋은사람들 ] 여행N무역 회원할인(여행정보/수익공유)",
+     "date": "2026-11-11T00:56:38.123Z",
+     "found": "2026-11-11",
+     "cards": [],
+     "airlines": [
+      "KE"
+     ],
+     "countries": [
+      "일본"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "대한항공 할인",
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "패키지 여행 모객 글",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/imsanbu/80504651|휴대용 윰차 대한항공 콜라보 라방 ~체감 20만원대",
+     "kind": "airline",
+     "community": true,
+     "title": "휴대용 윰차 대한항공 콜라보 라방 ~체감 20만원대",
+     "desc": "abc디자인 루프트 라방 12시까지 체감가 슈퍼적립 + 할인 + 100%증정 사은품하면 20만원대 까지 떨어져요 관심있으신분들 함 봐보세용 라이브도 재밌네요 ㅋㅋ https://view.shoppinglive.",
+     "summary": [
+      "abc디자인 루프트 라방 12시까지 체감가 슈퍼적립 + 할인 + 100%증정 사은품하면 20만원대 까지 떨어져요 관심있으신분들 함 봐보세용 라이브도 재밌네요 ㅋㅋ https://view.shoppinglive."
+     ],
+     "link": "https://cafe.naver.com/imsanbu/80504651",
+     "source": "네이버 카페 · 맘스홀릭 베이비 (370만 엄마들의 임신, 육아 지식in 카페)",
+     "date": "2026-11-11T03:00:47.805Z",
+     "found": "2026-11-11",
+     "cards": [],
+     "airlines": [
+      "KE"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": {
+      "amount": 200000,
+      "trip": "oneway?"
+     },
+     "query": "대한항공 할인",
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "유모차 판매 글",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/joonggonara/412793840|[10월신규,이벤트] 재천마켓,아시아나,대한항공,항공기,여객기,비행기,다",
+     "kind": "airline",
+     "community": true,
+     "title": "[10월신규,이벤트] 재천마켓,아시아나,대한항공,항공기,여객기,비행기,다이....",
+     "desc": "10만원 이상 구매시 10% 할인 2.",
+     "summary": [
+      "10만원 이상 구매시 10% 할인 2."
+     ],
+     "link": "https://cafe.naver.com/joonggonara/412793840",
+     "source": "네이버 카페 · 중고나라",
+     "date": "2026-11-11T03:00:47.805Z",
+     "found": "2026-11-11",
+     "cards": [],
+     "airlines": [
+      "KE",
+      "OZ"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": {
+      "amount": 100000,
+      "trip": "oneway?"
+     },
+     "query": "Ethiopian Airlines 할인",
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "항공기 모형 판매 글",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/flytogether/24341|[12월신규, 연말 세일 ]아시아나,대한항공,항공기,여객기,비행기,다이캐",
+     "kind": "airline",
+     "community": true,
+     "title": "[12월신규, 연말 세일 ]아시아나,대한항공,항공기,여객기,비행기,다이캐스트,....",
+     "desc": "",
+     "link": "https://cafe.naver.com/flytogether/24341",
+     "source": "네이버 카페 · :::에비에이션 넷//비행기에 관한 그 모든 것:::",
+     "date": "2026-11-04T10:41:50.033Z",
+     "dateFound": true,
+     "found": "2026-11-04",
+     "cards": [],
+     "airlines": [
+      "KE",
+      "OZ"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "Ethiopian Airlines 세일",
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "항공기 모형 판매 글",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/postmore/105983|대한항공 마카오 경품 이벤트 (기프트카드 5만원권 50명)",
+     "kind": "airline",
+     "community": true,
+     "title": "대한항공 마카오 경품 이벤트 (기프트카드 5만원권 50명)",
+     "desc": "https://www.koreanair.com/contents/promotion/list/2026/mfm2611?pageNum=1 이벤트 3번 응모하세요!",
+     "summary": [
+      "https://www.koreanair.com/contents/promotion/list/2026/mfm2611?pageNum=1 이벤트 3번 응모하세요!…"
+     ],
+     "link": "https://cafe.naver.com/postmore/105983",
+     "source": "네이버 카페 · 꿀 통",
+     "date": "2026-11-06T01:10:30.439Z",
+     "found": "2026-11-06",
+     "cards": [],
+     "airlines": [
+      "KE"
+     ],
+     "countries": [
+      "마카오"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": {
+      "amount": 50000,
+      "trip": "oneway?"
+     },
+     "query": "대한항공 이벤트",
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "항공권은 경품, 기프트카드 이벤트",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/hotdealcatch/1129|[이벤트] 대한항공 마카오 여행 이벤트, 응모하면 기프트카드 5만원권 5",
+     "kind": "airline",
+     "community": true,
+     "title": "[이벤트] 대한항공 마카오 여행 이벤트, 응모하면 기프트카드 5만원권 50명 ....",
+     "desc": "이벤트 3은 대한항공 홈페이지 회원이면 항공 권을 사지 않아도 응모할 수 있어요.",
+     "summary": [
+      "이벤트 3은 대한항공 홈페이지 회원이면 항공 권을 사지 않아도 응모할 수 있어요."
+     ],
+     "link": "https://cafe.naver.com/hotdealcatch/1129",
+     "source": "네이버 카페 · 핫딜캐치 · 매일 특가와 짠테크",
+     "date": "2026-11-06T03:00:44.942Z",
+     "found": "2026-11-06",
+     "cards": [],
+     "airlines": [
+      "KE"
+     ],
+     "countries": [
+      "마카오"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "대한항공 특가",
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "항공권은 경품, 이벤트 중심",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/tourngoodmans/198383|[261106 긴급모객/땡처리 여행정보] 대한항공 직항으로 떠나는 튀르키",
+     "kind": "airline",
+     "community": true,
+     "title": "[261106 긴급모객/땡처리 여행정보] 대한항공 직항으로 떠나는 튀르키예 일주....",
+     "desc": "동계 시즌 한정 특가 상품이지만, 여행의 만족도는 결코 놓치지 않았습니다.... 경쟁력 항공 부터 숙박, 관광 일정까지! 튀르키예 여행의 핵심을 알차게 담아낸 상품입니다.",
+     "summary": [
+      "동계 시즌 한정 특가 상품이지만, 여행의 만족도는 결코 놓치지 않았습니다.",
+      "경쟁력 항공 부터 숙박, 관광 일정까지! 튀르키예 여행의 핵심을 알차게 담아낸 상품입니다."
+     ],
+     "link": "https://cafe.naver.com/tourngoodmans/198383",
+     "source": "네이버 카페 · [여행과좋은사람들 ] 여행N무역 회원할인(여행정보/수익공유)",
+     "date": "2026-11-06T07:00:45.480Z",
+     "found": "2026-11-06",
+     "cards": [],
+     "airlines": [
+      "KE"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "대한항공 특가",
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "패키지 여행 상품 홍보",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/imsanbu/80489235|대한항공 콜라보 휴대용 유모차 라이브 체감 20만원대 핫딜",
+     "kind": "airline",
+     "community": true,
+     "title": "대한항공 콜라보 휴대용 유모차 라이브 체감 20만원대 핫딜",
+     "desc": "",
+     "link": "https://cafe.naver.com/imsanbu/80489235",
+     "source": "네이버 카페 · 맘스홀릭 베이비 (370만 엄마들의 임신, 육아 지식in 카페)",
+     "date": "2026-11-09T07:00:43.574Z",
+     "found": "2026-11-09",
+     "cards": [],
+     "airlines": [
+      "KE"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": {
+      "amount": 200000,
+      "trip": "oneway?"
+     },
+     "query": "대한항공 할인",
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "유모차 판매 글",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/imsanbu/80500841|대한항공 콜라보 휴대용유모차 체감 20만원대 쇼라 공유요! +쿠폰 +유모",
+     "kind": "airline",
+     "community": true,
+     "title": "대한항공 콜라보 휴대용유모차 체감 20만원대 쇼라 공유요! +쿠폰 +유모차모....",
+     "desc": "이번에 대한항공 이랑 콜라보 이벤트 했다는 휴대용유모차인데 좀 보니까 괜찮긴 하더라구여! 기내반입으로... 사전 신청 같은거 하면 1만원 할인 쿠폰 준다고 해서 저는 신청하고 대기타고 있는데 일단 신청해보셔용.",
+     "summary": [
+      "이번에 대한항공 이랑 콜라보 이벤트 했다는 휴대용유모차인데 좀 보니까 괜찮긴 하더라구여! 기내반입으로...",
+      "사전 신청 같은거 하면 1만원 할인 쿠폰 준다고 해서 저는 신청하고 대기타고 있는데 일단 신청해보셔용."
+     ],
+     "link": "https://cafe.naver.com/imsanbu/80500841",
+     "source": "네이버 카페 · 맘스홀릭 베이비 (370만 엄마들의 임신, 육아 지식in 카페)",
+     "date": "2026-11-10T13:00:48.754Z",
+     "found": "2026-11-10",
+     "cards": [],
+     "airlines": [
+      "KE"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": {
+      "amount": 200000,
+      "trip": "oneway?"
+     },
+     "query": "대한항공 할인",
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "유모차 판매 글",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/imsanbu/80504335|❣️ 대한항공 pick 휴대용 유모차 쇼라! 30만원대 핫딜",
+     "kind": "airline",
+     "community": true,
+     "title": "❣️ 대한항공 pick 휴대용 유모차 쇼라! 30만원대 핫딜",
+     "desc": "",
+     "link": "https://cafe.naver.com/imsanbu/80504335",
+     "source": "네이버 카페 · 맘스홀릭 베이비 (370만 엄마들의 임신, 육아 지식in 카페)",
+     "date": "2026-11-11T03:00:47.805Z",
+     "found": "2026-11-11",
+     "cards": [],
+     "airlines": [
+      "KE"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": {
+      "amount": 300000,
+      "trip": "oneway?"
+     },
+     "query": "대한항공 할인",
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "유모차 판매 글",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/yamipapa/8589|역 항공 대한항공 특가 , 마일런 달립시다",
+     "kind": "airline",
+     "community": true,
+     "title": "역 항공 대한항공 특가 , 마일런 달립시다",
+     "desc": "전체 펌이요 스카이팀 회원사인 대한항공 이 밀라노발 일본행 항공 편을 최저 656유로부터 제공하며, 위탁 수하물 23kg이 포함되어 있습니다.",
+     "summary": [
+      "전체 펌이요 스카이팀 회원사인 대한항공 이 밀라노발 일본행 항공 편을 최저 656유로부터 제공하며, 위탁 수하물 23kg이 포함되어 있습니다."
+     ],
+     "link": "https://cafe.naver.com/yamipapa/8589",
+     "source": "네이버 카페 · 야미파파놀이터",
+     "date": "2026-11-12T21:51:43.835Z",
+     "found": "2026-11-13",
+     "cards": [],
+     "airlines": [
+      "KE"
+     ],
+     "countries": [
+      "일본"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "대한항공 특가",
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "밀라노발 일본행, 마일리지 적립 중심",
+      "airlines": [
+       "대한항공"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": false,
+      "at": "2026-11-13",
+      "model": "deepseek-v4-flash"
+     }
+    }
+   ]
+  },
+  {
    "id": "c:https://cafe.naver.com/sineraria/72372|제주 항공 앵콜 특가 오픈 ! 오늘부터 단3일간 12월,1월 연말연시 항",
    "kind": "airline",
    "community": true,
@@ -203,13 +697,14 @@
    ],
    "ai": {
     "v": 2,
-    "cv": 2,
+    "cv": 3,
     "card": {
      "ok": false,
      "why": "면세점 쇼핑 할인 행사",
      "cards": [],
      "use": null,
      "airlines": [],
+     "countries": [],
      "amount": null,
      "pct": null,
      "min": null,
@@ -273,13 +768,14 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
        "why": "편의점 eSIM·라면 등 유통 소식 모음",
        "cards": [],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -322,19 +818,22 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
-       "ok": false,
-       "why": "추첨 경품·적립 소개 중심",
+       "ok": true,
+       "why": "하노이 현지 결제 할인·그랩 쿠폰",
        "cards": [
-        "우리카드",
-        "하나카드"
+        "하나카드",
+        "우리카드"
        ],
-       "use": null,
+       "use": "해외결제",
        "airlines": [],
-       "amount": null,
+       "countries": [
+        "베트남"
+       ],
+       "amount": 5000,
        "pct": null,
-       "min": null,
+       "min": 10000,
        "period": null
       },
       "at": "2026-11-13",
@@ -367,10 +866,10 @@
      "bodyAt": "2026-11-04",
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": true,
-       "why": "해외여행 할인 이벤트 포함",
+       "why": "BC카드 해외여행 할인 이벤트",
        "cards": [
         "BC카드",
         "우리카드",
@@ -379,6 +878,7 @@
        ],
        "use": "여행예약",
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -414,10 +914,10 @@
      "bodyAt": "2026-11-04",
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": true,
-       "why": "해외여행 할인 이벤트 포함",
+       "why": "BC카드 해외여행 할인 이벤트",
        "cards": [
         "BC카드",
         "우리카드",
@@ -426,13 +926,11 @@
        ],
        "use": "여행예약",
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
-       "period": {
-        "from": "2026-11-04",
-        "to": "2026-11-30"
-       }
+       "period": null
       },
       "at": "2026-11-13",
       "model": "deepseek-v4-flash"
@@ -471,13 +969,16 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
-       "why": "카드 신상품 출시 소개",
-       "cards": [],
+       "why": "카드 신상품 출시 소식",
+       "cards": [
+        "우리카드"
+       ],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -521,15 +1022,14 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
        "why": "카드 신상품 출시·쇼핑 적립",
-       "cards": [
-        "우리카드"
-       ],
+       "cards": [],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -566,13 +1066,14 @@
      "bodyAt": "2026-11-04",
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
        "why": "배구 경기 이벤트·경품 소식",
        "cards": [],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -610,13 +1111,14 @@
      "bodyAt": "2026-11-10",
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
-       "why": "와인장터·면세점 쇼핑 소식",
+       "why": "유통 소식 모음, 항공권은 경품",
        "cards": [],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -654,15 +1156,16 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
-       "why": "카드 신상품 출시 소개",
+       "why": "카드 신상품 출시·쇼핑 적립 소개",
        "cards": [
         "우리카드"
        ],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -702,13 +1205,16 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
        "why": "카드 신상품 출시·적립 소개",
-       "cards": [],
+       "cards": [
+        "우리카드"
+       ],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -748,7 +1254,7 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
        "why": "카드 신상품 출시·적립 소개",
@@ -757,6 +1263,7 @@
        ],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -801,13 +1308,14 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
        "why": "배구 입장권 할인, 여행과 무관",
        "cards": [],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -3015,13 +3523,14 @@
    ],
    "ai": {
     "v": 2,
-    "cv": 2,
+    "cv": 3,
     "card": {
      "ok": false,
-     "why": "유통 소식 모음, eSIM 판매",
+     "why": "유통 소식 모음, 여행 결제 할인 아님",
      "cards": [],
      "use": null,
      "airlines": [],
+     "countries": [],
      "amount": null,
      "pct": null,
      "min": null,
@@ -3093,13 +3602,14 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
        "why": "편의점 eSIM·유통 소식 모음",
        "cards": [],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -4058,15 +4568,20 @@
    ],
    "ai": {
     "v": 2,
-    "cv": 2,
+    "cv": 3,
     "card": {
      "ok": true,
-     "why": "농협카드 해외결제 할인",
+     "why": "중국·대만 여행 결제 할인·수수료 면제",
      "cards": [
-      "NH농협카드"
+      "NH농협카드",
+      "유니온페이"
      ],
      "use": "해외결제",
      "airlines": [],
+     "countries": [
+      "중국",
+      "대만"
+     ],
      "amount": null,
      "pct": 50,
      "min": null,
@@ -4118,21 +4633,25 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": true,
-       "why": "해외결제 수수료 면제·대만 할인",
+       "why": "중국·대만 여행 결제 할인·수수료 면제",
        "cards": [
         "NH농협카드"
        ],
        "use": "해외결제",
        "airlines": [],
+       "countries": [
+        "중국",
+        "대만"
+       ],
        "amount": null,
-       "pct": 3,
+       "pct": 50,
        "min": null,
        "period": {
-        "from": "2026-11-12",
-        "to": "2026-12-31"
+        "from": null,
+        "to": "2027-03-31"
        }
       },
       "at": "2026-11-13",
@@ -4834,15 +5353,16 @@
    ],
    "ai": {
     "v": 2,
-    "cv": 2,
+    "cv": 3,
     "card": {
      "ok": false,
-     "why": "경품 추첨·적립 소개",
+     "why": "경품 추첨·적립 소개, 결제 할인 아님",
      "cards": [
       "우리카드"
      ],
      "use": null,
      "airlines": [],
+     "countries": [],
      "amount": null,
      "pct": null,
      "min": null,
@@ -4889,13 +5409,14 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
-       "why": "카드 신상품 출시 소개",
+       "why": "카드 신상품 출시·쇼핑 혜택",
        "cards": [],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -4931,13 +5452,14 @@
      "bodyAt": "2026-11-03",
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
        "why": "카드사 프리미엄 고객 마케팅 소식",
        "cards": [],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -4977,15 +5499,16 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
-       "why": "카드 신상품 출시 소개",
+       "why": "카드 신상품 출시·쇼핑 특화",
        "cards": [
         "우리카드"
        ],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -5025,15 +5548,16 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
-       "why": "카드 신상품 출시 소개",
+       "why": "카드 신상품 출시·쇼핑 혜택 소개",
        "cards": [
         "우리카드"
        ],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -5073,13 +5597,16 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
        "why": "카드 신상품 출시·적립 소개",
-       "cards": [],
+       "cards": [
+        "우리카드"
+       ],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -6171,15 +6698,16 @@
    ],
    "ai": {
     "v": 2,
-    "cv": 2,
+    "cv": 3,
     "card": {
      "ok": true,
-     "why": "현대카드 호텔·항공권 할인 혜택",
+     "why": "현대카드 호텔 할인·항공권 특가 포함",
      "cards": [
       "현대카드"
      ],
      "use": "여행예약",
      "airlines": [],
+     "countries": [],
      "amount": null,
      "pct": 40,
      "min": null,
@@ -6237,7 +6765,7 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": true,
        "why": "NH농협카드 해외결제·중국여행 할인",
@@ -6246,12 +6774,15 @@
        ],
        "use": "해외결제",
        "airlines": [],
-       "amount": 16,
-       "pct": null,
-       "min": 100,
+       "countries": [
+        "중국"
+       ],
+       "amount": null,
+       "pct": 10,
+       "min": null,
        "period": {
         "from": "2026-11-01",
-        "to": "2026-12-03"
+        "to": "2027-02-28"
        }
       },
       "at": "2026-11-13",
@@ -6292,13 +6823,14 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
-       "why": "쇼핑·구독 이벤트, 항공권 할인 아님",
+       "why": "쇼핑·구독·경품 소식",
        "cards": [],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -6352,13 +6884,14 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
-       "why": "카드사 실적·상품 소식",
+       "why": "카드사 실적·사업 소식",
        "cards": [],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -6402,13 +6935,14 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
-       "why": "카드 출시·AI 솔루션 소식",
+       "why": "카드사 AI 솔루션 제공 소식",
        "cards": [],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -6449,13 +6983,14 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
-       "why": "구독 서비스·경품 추첨",
+       "why": "구독 서비스·경품 이벤트",
        "cards": [],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -6497,15 +7032,14 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
-       "why": "멤버십·쇼핑 할인 중심",
-       "cards": [
-        "현대카드"
-       ],
+       "why": "구독 멤버십·카드 발급 혜택",
+       "cards": [],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -6545,15 +7079,14 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
        "why": "구독 멤버십 프로모션·경품 추첨",
-       "cards": [
-        "현대카드"
-       ],
+       "cards": [],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -6593,13 +7126,14 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
-       "why": "멤버십 출시·경품 추첨",
+       "why": "멤버십 출시·경품 추첨 소식",
        "cards": [],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -6642,13 +7176,14 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
-       "why": "구독 멤버십·경품 추첨 소식",
+       "why": "구독 멤버십·경품 추첨 이벤트",
        "cards": [],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -6691,15 +7226,14 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
        "why": "멤버십·구독 할인 및 경품 이벤트",
-       "cards": [
-        "현대카드"
-       ],
+       "cards": [],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -6743,15 +7277,14 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
-       "why": "멤버십·구독 할인 및 경품 이벤트",
-       "cards": [
-        "현대카드"
-       ],
+       "why": "멤버십·구독·경품 이벤트",
+       "cards": [],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -6786,13 +7319,14 @@
      "bodyAt": "2026-11-12",
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
-       "why": "유통 소식 모음, 카드할인은 신상품",
+       "why": "유통 소식 모음, 카드 할인은 신상품",
        "cards": [],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -6867,13 +7401,14 @@
    ],
    "ai": {
     "v": 2,
-    "cv": 2,
+    "cv": 3,
     "card": {
      "ok": false,
-     "why": "유통 소식 모음, eSIM 할인",
+     "why": "유통 소식 모음, eSIM·식품 할인",
      "cards": [],
      "use": null,
      "airlines": [],
+     "countries": [],
      "amount": null,
      "pct": null,
      "min": null,
@@ -7009,13 +7544,14 @@
    ],
    "ai": {
     "v": 2,
-    "cv": 2,
+    "cv": 3,
     "card": {
      "ok": false,
      "why": "유통·쇼핑 할인 소식 모음",
      "cards": [],
      "use": null,
      "airlines": [],
+     "countries": [],
      "amount": null,
      "pct": null,
      "min": null,
@@ -7077,13 +7613,14 @@
    ],
    "ai": {
     "v": 2,
-    "cv": 2,
+    "cv": 3,
     "card": {
      "ok": false,
-     "why": "면세점·백화점 할인 중심",
+     "why": "면세점·백화점 연말 할인 소식",
      "cards": [],
      "use": null,
      "airlines": [],
+     "countries": [],
      "amount": null,
      "pct": null,
      "min": null,
@@ -8997,458 +9534,6 @@
    ]
   },
   {
-   "id": "c:https://cafe.naver.com/flytogether/24449|[2월신규,이벤트]아시아나,대한항공,항공기,여객기,비행기,다이캐스트,공항",
-   "kind": "airline",
-   "community": true,
-   "title": "[2월신규,이벤트]아시아나,대한항공,항공기,여객기,비행기,다이캐스트,공항....",
-   "desc": "[신년 세일 ] 최대10%할인 * 1월 28일 ~ 2월 11일1. 10만원이상구매시 10%할인 2. 20만원이상구매시 아래항목中 택1증정.",
-   "summary": [
-    "[신년 세일 ] 최대10%할인 * 1월 28일 ~ 2월 11일1.",
-    "10만원이상구매시 10%할인 2.",
-    "20만원이상구매시 아래항목中 택1증정."
-   ],
-   "link": "https://cafe.naver.com/flytogether/24449",
-   "source": "네이버 카페 · :::에비에이션 넷//비행기에 관한 그 모든 것:::",
-   "date": "2026-11-04T10:41:50.033Z",
-   "dateFound": true,
-   "found": "2026-11-04",
-   "cards": [],
-   "airlines": [
-    "KE",
-    "OZ"
-   ],
-   "countries": [
-    "마카오",
-    "일본"
-   ],
-   "allRoutes": false,
-   "routes": [],
-   "price": {
-    "amount": 100000,
-    "trip": "oneway?"
-   },
-   "query": "Ethiopian Airlines 세일",
-   "ai": {
-    "v": 2,
-    "promo": false,
-    "why": "항공기 다이캐스트 판매 행사",
-    "airlines": [],
-    "name": null,
-    "book": null,
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": null,
-    "seoul": null,
-    "at": "2026-11-12",
-    "model": "deepseek-v4-flash"
-   },
-   "lastDate": "2026-11-11T03:00:47.805Z",
-   "lastFound": "2026-11-11",
-   "more": [
-    {
-     "id": "c:https://cafe.naver.com/tourngoodmans/198389|[261110 긴급모객/땡처리 여행정보] 고베직항 '프리미엄 국적기 대한",
-     "kind": "airline",
-     "community": true,
-     "title": "[261110 긴급모객/땡처리 여행정보] 고베직항 '프리미엄 국적기 대한항공 '타....",
-     "desc": "회원 할인 적용★★ -정회원 상품은 원가 이므로 50만원 미만은 2만원, 50만원 이상 5% 추가 -직원용은 예약 마감으로 표기/여유 좌석이 있다면 여행예약에 요청해 주세요.",
-     "summary": [
-      "회원 할인 적용★★ -정회원 상품은 원가 이므로 50만원 미만은 2만원, 50만원 이상 5% 추가 -직원용은 예약 마감으로 표기/여유 좌석이 있다면 여행예약에 요청해 주세요."
-     ],
-     "link": "https://cafe.naver.com/tourngoodmans/198389",
-     "source": "네이버 카페 · [여행과좋은사람들 ] 여행N무역 회원할인(여행정보/수익공유)",
-     "date": "2026-11-11T00:56:38.123Z",
-     "found": "2026-11-11",
-     "cards": [],
-     "airlines": [
-      "KE"
-     ],
-     "countries": [
-      "일본"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "대한항공 할인",
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "패키지 여행 모객 글",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/imsanbu/80504651|휴대용 윰차 대한항공 콜라보 라방 ~체감 20만원대",
-     "kind": "airline",
-     "community": true,
-     "title": "휴대용 윰차 대한항공 콜라보 라방 ~체감 20만원대",
-     "desc": "abc디자인 루프트 라방 12시까지 체감가 슈퍼적립 + 할인 + 100%증정 사은품하면 20만원대 까지 떨어져요 관심있으신분들 함 봐보세용 라이브도 재밌네요 ㅋㅋ https://view.shoppinglive.",
-     "summary": [
-      "abc디자인 루프트 라방 12시까지 체감가 슈퍼적립 + 할인 + 100%증정 사은품하면 20만원대 까지 떨어져요 관심있으신분들 함 봐보세용 라이브도 재밌네요 ㅋㅋ https://view.shoppinglive."
-     ],
-     "link": "https://cafe.naver.com/imsanbu/80504651",
-     "source": "네이버 카페 · 맘스홀릭 베이비 (370만 엄마들의 임신, 육아 지식in 카페)",
-     "date": "2026-11-11T03:00:47.805Z",
-     "found": "2026-11-11",
-     "cards": [],
-     "airlines": [
-      "KE"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": {
-      "amount": 200000,
-      "trip": "oneway?"
-     },
-     "query": "대한항공 할인",
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "유모차 판매 글",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/joonggonara/412793840|[10월신규,이벤트] 재천마켓,아시아나,대한항공,항공기,여객기,비행기,다",
-     "kind": "airline",
-     "community": true,
-     "title": "[10월신규,이벤트] 재천마켓,아시아나,대한항공,항공기,여객기,비행기,다이....",
-     "desc": "10만원 이상 구매시 10% 할인 2.",
-     "summary": [
-      "10만원 이상 구매시 10% 할인 2."
-     ],
-     "link": "https://cafe.naver.com/joonggonara/412793840",
-     "source": "네이버 카페 · 중고나라",
-     "date": "2026-11-11T03:00:47.805Z",
-     "found": "2026-11-11",
-     "cards": [],
-     "airlines": [
-      "KE",
-      "OZ"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": {
-      "amount": 100000,
-      "trip": "oneway?"
-     },
-     "query": "Ethiopian Airlines 할인",
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "항공기 모형 판매 글",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/flytogether/24341|[12월신규, 연말 세일 ]아시아나,대한항공,항공기,여객기,비행기,다이캐",
-     "kind": "airline",
-     "community": true,
-     "title": "[12월신규, 연말 세일 ]아시아나,대한항공,항공기,여객기,비행기,다이캐스트,....",
-     "desc": "",
-     "link": "https://cafe.naver.com/flytogether/24341",
-     "source": "네이버 카페 · :::에비에이션 넷//비행기에 관한 그 모든 것:::",
-     "date": "2026-11-04T10:41:50.033Z",
-     "dateFound": true,
-     "found": "2026-11-04",
-     "cards": [],
-     "airlines": [
-      "KE",
-      "OZ"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "Ethiopian Airlines 세일",
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "항공기 모형 판매 글",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/postmore/105983|대한항공 마카오 경품 이벤트 (기프트카드 5만원권 50명)",
-     "kind": "airline",
-     "community": true,
-     "title": "대한항공 마카오 경품 이벤트 (기프트카드 5만원권 50명)",
-     "desc": "https://www.koreanair.com/contents/promotion/list/2026/mfm2611?pageNum=1 이벤트 3번 응모하세요!",
-     "summary": [
-      "https://www.koreanair.com/contents/promotion/list/2026/mfm2611?pageNum=1 이벤트 3번 응모하세요!…"
-     ],
-     "link": "https://cafe.naver.com/postmore/105983",
-     "source": "네이버 카페 · 꿀 통",
-     "date": "2026-11-06T01:10:30.439Z",
-     "found": "2026-11-06",
-     "cards": [],
-     "airlines": [
-      "KE"
-     ],
-     "countries": [
-      "마카오"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": {
-      "amount": 50000,
-      "trip": "oneway?"
-     },
-     "query": "대한항공 이벤트",
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "항공권은 경품, 기프트카드 이벤트",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/hotdealcatch/1129|[이벤트] 대한항공 마카오 여행 이벤트, 응모하면 기프트카드 5만원권 5",
-     "kind": "airline",
-     "community": true,
-     "title": "[이벤트] 대한항공 마카오 여행 이벤트, 응모하면 기프트카드 5만원권 50명 ....",
-     "desc": "이벤트 3은 대한항공 홈페이지 회원이면 항공 권을 사지 않아도 응모할 수 있어요.",
-     "summary": [
-      "이벤트 3은 대한항공 홈페이지 회원이면 항공 권을 사지 않아도 응모할 수 있어요."
-     ],
-     "link": "https://cafe.naver.com/hotdealcatch/1129",
-     "source": "네이버 카페 · 핫딜캐치 · 매일 특가와 짠테크",
-     "date": "2026-11-06T03:00:44.942Z",
-     "found": "2026-11-06",
-     "cards": [],
-     "airlines": [
-      "KE"
-     ],
-     "countries": [
-      "마카오"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "대한항공 특가",
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "항공권은 경품, 이벤트 중심",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/tourngoodmans/198383|[261106 긴급모객/땡처리 여행정보] 대한항공 직항으로 떠나는 튀르키",
-     "kind": "airline",
-     "community": true,
-     "title": "[261106 긴급모객/땡처리 여행정보] 대한항공 직항으로 떠나는 튀르키예 일주....",
-     "desc": "동계 시즌 한정 특가 상품이지만, 여행의 만족도는 결코 놓치지 않았습니다.... 경쟁력 항공 부터 숙박, 관광 일정까지! 튀르키예 여행의 핵심을 알차게 담아낸 상품입니다.",
-     "summary": [
-      "동계 시즌 한정 특가 상품이지만, 여행의 만족도는 결코 놓치지 않았습니다.",
-      "경쟁력 항공 부터 숙박, 관광 일정까지! 튀르키예 여행의 핵심을 알차게 담아낸 상품입니다."
-     ],
-     "link": "https://cafe.naver.com/tourngoodmans/198383",
-     "source": "네이버 카페 · [여행과좋은사람들 ] 여행N무역 회원할인(여행정보/수익공유)",
-     "date": "2026-11-06T07:00:45.480Z",
-     "found": "2026-11-06",
-     "cards": [],
-     "airlines": [
-      "KE"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "대한항공 특가",
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "패키지 여행 상품 홍보",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/imsanbu/80489235|대한항공 콜라보 휴대용 유모차 라이브 체감 20만원대 핫딜",
-     "kind": "airline",
-     "community": true,
-     "title": "대한항공 콜라보 휴대용 유모차 라이브 체감 20만원대 핫딜",
-     "desc": "",
-     "link": "https://cafe.naver.com/imsanbu/80489235",
-     "source": "네이버 카페 · 맘스홀릭 베이비 (370만 엄마들의 임신, 육아 지식in 카페)",
-     "date": "2026-11-09T07:00:43.574Z",
-     "found": "2026-11-09",
-     "cards": [],
-     "airlines": [
-      "KE"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": {
-      "amount": 200000,
-      "trip": "oneway?"
-     },
-     "query": "대한항공 할인",
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "유모차 판매 글",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/imsanbu/80500841|대한항공 콜라보 휴대용유모차 체감 20만원대 쇼라 공유요! +쿠폰 +유모",
-     "kind": "airline",
-     "community": true,
-     "title": "대한항공 콜라보 휴대용유모차 체감 20만원대 쇼라 공유요! +쿠폰 +유모차모....",
-     "desc": "이번에 대한항공 이랑 콜라보 이벤트 했다는 휴대용유모차인데 좀 보니까 괜찮긴 하더라구여! 기내반입으로... 사전 신청 같은거 하면 1만원 할인 쿠폰 준다고 해서 저는 신청하고 대기타고 있는데 일단 신청해보셔용.",
-     "summary": [
-      "이번에 대한항공 이랑 콜라보 이벤트 했다는 휴대용유모차인데 좀 보니까 괜찮긴 하더라구여! 기내반입으로...",
-      "사전 신청 같은거 하면 1만원 할인 쿠폰 준다고 해서 저는 신청하고 대기타고 있는데 일단 신청해보셔용."
-     ],
-     "link": "https://cafe.naver.com/imsanbu/80500841",
-     "source": "네이버 카페 · 맘스홀릭 베이비 (370만 엄마들의 임신, 육아 지식in 카페)",
-     "date": "2026-11-10T13:00:48.754Z",
-     "found": "2026-11-10",
-     "cards": [],
-     "airlines": [
-      "KE"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": {
-      "amount": 200000,
-      "trip": "oneway?"
-     },
-     "query": "대한항공 할인",
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "유모차 판매 글",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/imsanbu/80504335|❣️ 대한항공 pick 휴대용 유모차 쇼라! 30만원대 핫딜",
-     "kind": "airline",
-     "community": true,
-     "title": "❣️ 대한항공 pick 휴대용 유모차 쇼라! 30만원대 핫딜",
-     "desc": "",
-     "link": "https://cafe.naver.com/imsanbu/80504335",
-     "source": "네이버 카페 · 맘스홀릭 베이비 (370만 엄마들의 임신, 육아 지식in 카페)",
-     "date": "2026-11-11T03:00:47.805Z",
-     "found": "2026-11-11",
-     "cards": [],
-     "airlines": [
-      "KE"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": {
-      "amount": 300000,
-      "trip": "oneway?"
-     },
-     "query": "대한항공 할인",
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "유모차 판매 글",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    }
-   ]
-  },
-  {
    "id": "c:https://cafe.naver.com/loyaltylife/368602|캐세이퍼시픽 블랙프라이데이 2026! 최대 12만원 할인 + 3,000마",
    "kind": "airline",
    "community": true,
@@ -10799,13 +10884,14 @@
    ],
    "ai": {
     "v": 2,
-    "cv": 2,
+    "cv": 3,
     "card": {
      "ok": false,
      "why": "쇼핑·구독 프로모션 모음",
      "cards": [],
      "use": null,
      "airlines": [],
+     "countries": [],
      "amount": null,
      "pct": null,
      "min": null,
@@ -10850,13 +10936,14 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
-       "why": "구독·쇼핑 혜택, 항공권 무관",
+       "why": "구독·쇼핑 혜택, 항공권 할인 아님",
        "cards": [],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -10900,13 +10987,16 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
-       "why": "구독 서비스·경품 추첨 중심",
-       "cards": [],
+       "why": "구독 서비스 출시·추첨 이벤트",
+       "cards": [
+        "현대카드"
+       ],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -10956,22 +11046,24 @@
    ],
    "ai": {
     "v": 2,
-    "cv": 2,
+    "cv": 3,
     "card": {
      "ok": true,
      "why": "베트남 현지 결제 할인 혜택",
      "cards": [
       "하나카드",
-      "KB국민카드",
-      "신한카드"
+      "KB국민카드"
      ],
      "use": "해외결제",
      "airlines": [],
-     "amount": 3000,
+     "countries": [
+      "베트남"
+     ],
+     "amount": null,
      "pct": 10,
      "min": 10000,
      "period": {
-      "from": "2026-11-03",
+      "from": null,
       "to": "2027-01-31"
      }
     },
@@ -11007,13 +11099,14 @@
      "bodyAt": "2026-11-05",
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
-       "why": "여행 소식 모음, 카드 할인 중심 아님",
+       "why": "여행업계 소식 모음, 카드할인 중심 아님",
        "cards": [],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -11055,16 +11148,14 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
-       "why": "해외직구 카드 활용법 소개",
-       "cards": [
-        "신한카드",
-        "하나카드"
-       ],
+       "why": "해외직구 카드 활용법, 기간한정 혜택 아님",
+       "cards": [],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -11116,15 +11207,16 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
-       "why": "호텔 제휴 마케팅 소식",
+       "why": "호텔-카드 제휴 마케팅 소식",
        "cards": [
         "신한카드"
        ],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -11172,13 +11264,14 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
-       "why": "카드 상품 소개·적립 위주",
+       "why": "카드 상품 소개·생활비 할인",
        "cards": [],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -11225,17 +11318,25 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
-       "ok": false,
-       "why": "여행·골프·쇼핑 혜택 모음, 항공권 할인 없음",
-       "cards": [],
-       "use": null,
+       "ok": true,
+       "why": "베트남 현지 결제 할인 혜택",
+       "cards": [
+        "하나카드"
+       ],
+       "use": "해외결제",
        "airlines": [],
+       "countries": [
+        "베트남"
+       ],
        "amount": null,
-       "pct": null,
+       "pct": 10,
        "min": null,
-       "period": null
+       "period": {
+        "from": null,
+        "to": "2027-01-31"
+       }
       },
       "at": "2026-11-13",
       "model": "deepseek-v4-flash"
@@ -11268,19 +11369,25 @@
      "bodyAt": "2026-11-01",
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
-       "ok": false,
-       "why": "현지 교통·쇼핑 할인, 항공권 아님",
+       "ok": true,
+       "why": "후쿠오카 현지 결제 할인 혜택",
        "cards": [
         "신한카드"
        ],
-       "use": "기타",
+       "use": "해외결제",
        "airlines": [],
+       "countries": [
+        "일본"
+       ],
        "amount": null,
        "pct": null,
        "min": null,
-       "period": null
+       "period": {
+        "from": "2026-11-01",
+        "to": null
+       }
       },
       "at": "2026-11-13",
       "model": "deepseek-v4-flash"
@@ -11313,15 +11420,18 @@
      "bodyAt": "2026-11-01",
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
-       "ok": false,
-       "why": "현지 교통·쇼핑 할인, 항공권 아님",
+       "ok": true,
+       "why": "후쿠오카 현지 결제 할인 혜택",
        "cards": [
         "신한카드"
        ],
-       "use": "기타",
+       "use": "해외결제",
        "airlines": [],
+       "countries": [
+        "일본"
+       ],
        "amount": null,
        "pct": null,
        "min": null,
@@ -11360,16 +11470,19 @@
      "bodyAt": "2026-11-01",
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
-       "ok": false,
-       "why": "교통·쇼핑·호텔 혜택, 항공권 아님",
+       "ok": true,
+       "why": "후쿠오카 현지 교통·쇼핑 할인",
        "cards": [
         "신한카드",
         "JCB"
        ],
-       "use": "기타",
+       "use": "해외결제",
        "airlines": [],
+       "countries": [
+        "일본"
+       ],
        "amount": null,
        "pct": null,
        "min": null,
@@ -11408,20 +11521,26 @@
      "bodyAt": "2026-11-01",
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
-       "ok": false,
-       "why": "교통·쇼핑·호텔 혜택, 항공권·여행결제 아님",
+       "ok": true,
+       "why": "후쿠오카 현지 교통·쇼핑 결제 할인",
        "cards": [
         "신한카드",
         "JCB"
        ],
-       "use": null,
+       "use": "해외결제",
        "airlines": [],
+       "countries": [
+        "일본"
+       ],
        "amount": null,
        "pct": null,
        "min": null,
-       "period": null
+       "period": {
+        "from": "2026-11-01",
+        "to": null
+       }
       },
       "at": "2026-11-13",
       "model": "deepseek-v4-flash"
@@ -11455,15 +11574,14 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
-       "why": "고향사랑기부·여행상품권 추첨 이벤트",
-       "cards": [
-        "신한카드"
-       ],
+       "why": "고향사랑기부·경품 추첨 소식",
+       "cards": [],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -11518,7 +11636,7 @@
    ],
    "ai": {
     "v": 2,
-    "cv": 2,
+    "cv": 3,
     "card": {
      "ok": true,
      "why": "항공권·여행상품 결제 할인 포함",
@@ -11531,6 +11649,7 @@
      ],
      "use": "여행예약",
      "airlines": [],
+     "countries": [],
      "amount": 120000,
      "pct": 15,
      "min": 200000,
@@ -11585,7 +11704,7 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
        "why": "고향사랑기부 포인트 이벤트",
@@ -11594,6 +11713,7 @@
        ],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -11643,15 +11763,16 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
-       "why": "고향사랑기부 포인트·경품 이벤트",
+       "why": "고향사랑기부 이벤트·경품 추첨",
        "cards": [
         "신한카드"
        ],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -13486,13 +13607,14 @@
    ],
    "ai": {
     "v": 2,
-    "cv": 2,
+    "cv": 3,
     "card": {
      "ok": false,
-     "why": "면세점 할인 행사 중심",
+     "why": "면세점 쇼핑 할인 행사",
      "cards": [],
      "use": null,
      "airlines": [],
+     "countries": [],
      "amount": null,
      "pct": null,
      "min": null,
@@ -13541,13 +13663,14 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
-       "why": "면세점 할인 행사",
+       "why": "면세점 쇼핑 할인 행사",
        "cards": [],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -13594,21 +13717,16 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
        "why": "면세점 쇼핑 할인 행사",
-       "cards": [
-        "카카오페이",
-        "네이버페이",
-        "페이코",
-        "롯데카드",
-        "우리카드"
-       ],
-       "use": "기타",
+       "cards": [],
+       "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
-       "pct": 6,
+       "pct": null,
        "min": null,
        "period": null
       },
@@ -13648,13 +13766,14 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
        "why": "면세점 쇼핑 할인 행사",
        "cards": [],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -13703,19 +13822,14 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
        "why": "면세점 쇼핑 할인·경품 행사",
-       "cards": [
-        "카카오페이",
-        "네이버페이",
-        "페이코",
-        "롯데카드",
-        "우리카드"
-       ],
+       "cards": [],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -13764,13 +13878,14 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
        "why": "면세점 쇼핑 할인 행사",
        "cards": [],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -13817,19 +13932,14 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
        "why": "면세점 쇼핑 할인 행사",
-       "cards": [
-        "카카오페이",
-        "네이버페이",
-        "페이코",
-        "롯데카드",
-        "우리카드"
-       ],
+       "cards": [],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -13866,13 +13976,14 @@
      "bodyAt": "2026-11-10",
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
        "why": "면세점 쇼핑 할인 행사",
        "cards": [],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -13922,13 +14033,14 @@
    ],
    "ai": {
     "v": 2,
-    "cv": 2,
+    "cv": 3,
     "card": {
      "ok": false,
      "why": "면세점 쇼핑 할인 행사",
      "cards": [],
      "use": null,
      "airlines": [],
+     "countries": [],
      "amount": null,
      "pct": null,
      "min": null,
@@ -14401,13 +14513,14 @@
    ],
    "ai": {
     "v": 2,
-    "cv": 2,
+    "cv": 3,
     "card": {
      "ok": false,
      "why": "경품 추첨·차량 행사 소식",
      "cards": [],
      "use": null,
      "airlines": [],
+     "countries": [],
      "amount": null,
      "pct": null,
      "min": null,
@@ -15916,13 +16029,14 @@
    ],
    "ai": {
     "v": 2,
-    "cv": 2,
+    "cv": 3,
     "card": {
      "ok": false,
      "why": "백화점·면세점 할인 행사",
      "cards": [],
      "use": null,
      "airlines": [],
+     "countries": [],
      "amount": null,
      "pct": null,
      "min": null,
@@ -16532,10 +16646,10 @@
    "query": "Air Macau 프로모션",
    "ai": {
     "v": 2,
-    "cv": 2,
+    "cv": 3,
     "card": {
      "ok": true,
-     "why": "항공권 카드 결제 즉시할인",
+     "why": "에어마카오 항공권 카드 결제 할인",
      "cards": [
       "우리카드"
      ],
@@ -16543,6 +16657,7 @@
      "airlines": [
       "에어마카오"
      ],
+     "countries": [],
      "amount": 32000,
      "pct": null,
      "min": null,
@@ -20309,13 +20424,14 @@
    ],
    "ai": {
     "v": 2,
-    "cv": 2,
+    "cv": 3,
     "card": {
      "ok": false,
      "why": "카드 상품 소개·적립 위주",
      "cards": [],
      "use": null,
      "airlines": [],
+     "countries": [],
      "amount": null,
      "pct": null,
      "min": null,
@@ -20668,15 +20784,18 @@
    ],
    "ai": {
     "v": 2,
-    "cv": 2,
+    "cv": 3,
     "card": {
      "ok": true,
-     "why": "여기어때 대만 항공권 2만원 할인",
+     "why": "여기어때 대만 숙소·항공권 할인",
      "cards": [],
-     "use": "항공권",
+     "use": "여행예약",
      "airlines": [],
+     "countries": [
+      "대만"
+     ],
      "amount": 20000,
-     "pct": null,
+     "pct": 10,
      "min": null,
      "period": {
       "from": null,
@@ -20829,15 +20948,16 @@
    ],
    "ai": {
     "v": 2,
-    "cv": 2,
+    "cv": 3,
     "card": {
      "ok": false,
-     "why": "경품 추첨 이벤트, 할인 아님",
+     "why": "경품 추첨 이벤트, 결제 할인 아님",
      "cards": [
       "우리카드"
      ],
      "use": null,
      "airlines": [],
+     "countries": [],
      "amount": null,
      "pct": null,
      "min": null,
@@ -20883,15 +21003,16 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
-       "why": "추첨 경품·적립 소개",
+       "why": "경품 추첨 이벤트·적립 소개",
        "cards": [
         "우리카드"
        ],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -20936,15 +21057,16 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
-       "why": "추첨 경품·적립 소개",
+       "why": "경품 추첨 이벤트·적립 소개",
        "cards": [
         "우리카드"
        ],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -20986,15 +21108,16 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
-       "why": "경품 추첨·적립 소개",
+       "why": "경품 추첨·적립 소개, 결제 할인 아님",
        "cards": [
         "우리카드"
        ],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -21041,7 +21164,7 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
        "why": "경품 추첨 이벤트·적립 소개",
@@ -21050,6 +21173,7 @@
        ],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -21089,15 +21213,16 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
-       "why": "경품 추첨 이벤트·적립 소개",
+       "why": "경품 추첨·적립률 소개",
        "cards": [
         "우리카드"
        ],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -21142,15 +21267,16 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
-       "why": "경품 추첨 이벤트, 할인 아님",
+       "why": "경품 추첨 이벤트, 결제 할인 아님",
        "cards": [
         "우리카드"
        ],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -21194,15 +21320,16 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
-       "why": "추첨 경품·적립률 소개",
+       "why": "경품 추첨 이벤트·적립 소개",
        "cards": [
         "우리카드"
        ],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -21248,20 +21375,25 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
-       "ok": false,
-       "why": "해외 마트 결제·경품 추첨 중심",
+       "ok": true,
+       "why": "베트남 현지 결제 할인 혜택",
        "cards": [
-        "하나카드",
-        "우리카드"
+        "하나카드"
        ],
-       "use": null,
+       "use": "해외결제",
        "airlines": [],
-       "amount": null,
+       "countries": [
+        "베트남"
+       ],
+       "amount": 5000,
        "pct": null,
-       "min": null,
-       "period": null
+       "min": 10000,
+       "period": {
+        "from": "2026-11-03",
+        "to": "2027-01-31"
+       }
       },
       "at": "2026-11-13",
       "model": "deepseek-v4-flash"
@@ -21297,16 +21429,14 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
-       "why": "경품 추첨·호텔 패키지 행사",
-       "cards": [
-        "우리카드",
-        "현대카드"
-       ],
+       "why": "경품 추첨·호텔 패키지 행사 중심",
+       "cards": [],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -21350,15 +21480,16 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
-       "why": "경품 추첨 이벤트",
+       "why": "경품 추첨 이벤트, 결제 할인 아님",
        "cards": [
         "우리카드"
        ],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -21402,15 +21533,16 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
-       "why": "경품 추첨 이벤트·적립 소개",
+       "why": "경품 추첨·적립 소개",
        "cards": [
         "우리카드"
        ],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -21444,7 +21576,7 @@
      "bodyAt": "2026-11-03",
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": true,
        "why": "항공·호텔 바우처 제공 이벤트",
@@ -21453,6 +21585,7 @@
        ],
        "use": "여행예약",
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -21594,13 +21727,14 @@
    ],
    "ai": {
     "v": 2,
-    "cv": 2,
+    "cv": 3,
     "card": {
      "ok": false,
-     "why": "여러 유통 소식 모음, 여행결제 할인 중심 아님",
+     "why": "유통 소식 모음, 여행 결제 혜택 아님",
      "cards": [],
      "use": null,
      "airlines": [],
+     "countries": [],
      "amount": null,
      "pct": null,
      "min": null,
@@ -21665,7 +21799,7 @@
    ],
    "ai": {
     "v": 2,
-    "cv": 2,
+    "cv": 3,
     "card": {
      "ok": true,
      "why": "항공권·여행상품 할인 포함",
@@ -21676,6 +21810,7 @@
      ],
      "use": "항공권",
      "airlines": [],
+     "countries": [],
      "amount": 120000,
      "pct": 15,
      "min": null,
@@ -21750,10 +21885,10 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": true,
-       "why": "노랑풍선 항공권 15% 할인 포함",
+       "why": "항공권·여행상품 결제 할인 포함",
        "cards": [
         "BC카드",
         "우리카드",
@@ -21763,11 +21898,12 @@
        ],
        "use": "항공권",
        "airlines": [],
+       "countries": [],
        "amount": 120000,
        "pct": 15,
        "min": 200000,
        "period": {
-        "from": "2026-11-05",
+        "from": null,
         "to": "2026-12-31"
        }
       },
@@ -21818,21 +21954,22 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": true,
-       "why": "항공권·여행상품 할인 포함",
+       "why": "항공권·여행상품 결제 할인 포함",
        "cards": [
         "BC카드"
        ],
        "use": "여행예약",
        "airlines": [],
+       "countries": [],
        "amount": 120000,
        "pct": 15,
        "min": 200000,
        "period": {
         "from": "2026-11-05",
-        "to": "2026-11-30"
+        "to": "2026-12-31"
        }
       },
       "at": "2026-11-13",
@@ -21896,20 +22033,21 @@
    ],
    "ai": {
     "v": 2,
-    "cv": 2,
+    "cv": 3,
     "card": {
      "ok": true,
-     "why": "항공권·여행상품 할인 포함",
+     "why": "BC카드 항공권·여행상품 할인",
      "cards": [
       "BC카드"
      ],
      "use": "여행예약",
      "airlines": [],
+     "countries": [],
      "amount": 120000,
      "pct": 15,
      "min": 200000,
      "period": {
-      "from": "2026-11-04",
+      "from": null,
       "to": "2026-12-31"
      }
     },
@@ -21970,20 +22108,21 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": true,
-       "why": "항공권·여행상품 카드 할인 포함",
+       "why": "항공권·여행상품 결제 할인 포함",
        "cards": [
         "BC카드"
        ],
        "use": "여행예약",
        "airlines": [],
+       "countries": [],
        "amount": 120000,
        "pct": 15,
        "min": 200000,
        "period": {
-        "from": "2026-11-04",
+        "from": null,
         "to": "2026-12-31"
        }
       },
@@ -22045,15 +22184,16 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": true,
-       "why": "항공권·여행상품 카드 할인",
+       "why": "항공권·여행상품 결제 할인",
        "cards": [
         "BC카드"
        ],
        "use": "여행예약",
        "airlines": [],
+       "countries": [],
        "amount": 120000,
        "pct": 15,
        "min": 200000,
@@ -22092,7 +22232,7 @@
      "bodyAt": "2026-11-04",
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": true,
        "why": "항공권·여행상품 할인 이벤트 포함",
@@ -22105,6 +22245,7 @@
        ],
        "use": "여행예약",
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -22163,10 +22304,10 @@
    ],
    "ai": {
     "v": 2,
-    "cv": 2,
+    "cv": 3,
     "card": {
      "ok": true,
-     "why": "항공권·여행상품 카드 할인 포함",
+     "why": "항공권·여행상품 결제 할인 포함",
      "cards": [
       "BC카드",
       "우리카드",
@@ -22176,11 +22317,12 @@
      ],
      "use": "여행예약",
      "airlines": [],
+     "countries": [],
      "amount": 120000,
      "pct": 15,
      "min": 200000,
      "period": {
-      "from": "2026-11-03",
+      "from": null,
       "to": "2026-12-31"
      }
     },
@@ -22233,7 +22375,7 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": true,
        "why": "항공권·여행상품 결제 할인 포함",
@@ -22246,6 +22388,7 @@
        ],
        "use": "여행예약",
        "airlines": [],
+       "countries": [],
        "amount": 120000,
        "pct": 15,
        "min": 200000,
@@ -22300,19 +22443,16 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": true,
-       "why": "항공권·여행상품 결제 할인 포함",
+       "why": "BC카드 항공권·여행상품 할인",
        "cards": [
-        "BC카드",
-        "우리카드",
-        "하나카드",
-        "NH농협카드",
-        "IBK기업은행"
+        "BC카드"
        ],
        "use": "여행예약",
        "airlines": [],
+       "countries": [],
        "amount": 120000,
        "pct": 15,
        "min": 200000,
@@ -23790,17 +23930,25 @@
    ],
    "ai": {
     "v": 2,
-    "cv": 2,
+    "cv": 3,
     "card": {
-     "ok": false,
-     "why": "여러 카드사 소식 모음, 여행결제 혜택 아님",
-     "cards": [],
-     "use": null,
+     "ok": true,
+     "why": "중국 현지 결제 할인 여행 혜택",
+     "cards": [
+      "NH농협카드"
+     ],
+     "use": "해외결제",
      "airlines": [],
+     "countries": [
+      "중국"
+     ],
      "amount": null,
-     "pct": null,
+     "pct": 10,
      "min": null,
-     "period": null
+     "period": {
+      "from": "2026-11-01",
+      "to": "2027-02-28"
+     }
     },
     "at": "2026-11-13",
     "model": "deepseek-v4-flash"
@@ -23893,20 +24041,23 @@
    ],
    "ai": {
     "v": 2,
-    "cv": 2,
+    "cv": 3,
     "card": {
      "ok": true,
-     "why": "해외결제·중국여행 할인 혜택",
+     "why": "중국 여행 현지 결제 할인",
      "cards": [
       "NH농협카드"
      ],
      "use": "해외결제",
      "airlines": [],
+     "countries": [
+      "중국"
+     ],
      "amount": null,
      "pct": 10,
      "min": null,
      "period": {
-      "from": "2026-11-01",
+      "from": "2026-11-04",
       "to": "2027-02-28"
      }
     },
@@ -23958,15 +24109,18 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
-       "ok": false,
-       "why": "중국 여행 현지 가맹점 할인, 항공권 아님",
+       "ok": true,
+       "why": "중국 칭다오 현지 가맹점 결제 할인",
        "cards": [
         "NH농협카드"
        ],
-       "use": "기타",
+       "use": "해외결제",
        "airlines": [],
+       "countries": [
+        "중국"
+       ],
        "amount": null,
        "pct": 10,
        "min": null,
@@ -24035,13 +24189,14 @@
    ],
    "ai": {
     "v": 2,
-    "cv": 2,
+    "cv": 3,
     "card": {
      "ok": false,
-     "why": "여러 회사 소식 모음, 여행결제 혜택 아님",
+     "why": "여러 금융사 소식 모음, 여행결제 혜택 중심 아님",
      "cards": [],
      "use": null,
      "airlines": [],
+     "countries": [],
      "amount": null,
      "pct": null,
      "min": null,
@@ -24437,13 +24592,14 @@
    ],
    "ai": {
     "v": 2,
-    "cv": 2,
+    "cv": 3,
     "card": {
      "ok": false,
-     "why": "추첨 경품 이벤트, 결제 할인 아님",
+     "why": "추첨 경품·카드 소개·AI 공모전",
      "cards": [],
      "use": null,
      "airlines": [],
+     "countries": [],
      "amount": null,
      "pct": null,
      "min": null,
@@ -25355,17 +25511,25 @@
    ],
    "ai": {
     "v": 2,
-    "cv": 2,
+    "cv": 3,
     "card": {
-     "ok": false,
-     "why": "금융 소식 모음, 여행결제 혜택 아님",
-     "cards": [],
-     "use": null,
+     "ok": true,
+     "why": "하나카드 베트남 현지 결제 할인",
+     "cards": [
+      "하나카드"
+     ],
+     "use": "해외결제",
      "airlines": [],
-     "amount": null,
+     "countries": [
+      "베트남"
+     ],
+     "amount": 5000,
      "pct": null,
-     "min": null,
-     "period": null
+     "min": 10000,
+     "period": {
+      "from": null,
+      "to": "2027-01-31"
+     }
     },
     "at": "2026-11-13",
     "model": "deepseek-v4-flash"
@@ -25429,13 +25593,14 @@
    ],
    "ai": {
     "v": 2,
-    "cv": 2,
+    "cv": 3,
     "card": {
      "ok": false,
-     "why": "카드 출시·금융상품 소식 모음",
+     "why": "금융권 소식 모음, 여행결제 혜택 중심 아님",
      "cards": [],
      "use": null,
      "airlines": [],
+     "countries": [],
      "amount": null,
      "pct": null,
      "min": null,
@@ -25493,15 +25658,16 @@
    ],
    "ai": {
     "v": 2,
-    "cv": 2,
+    "cv": 3,
     "card": {
      "ok": false,
-     "why": "경품 추첨·적립률 소개",
+     "why": "경품 추첨·적립 소개",
      "cards": [
       "우리카드"
      ],
      "use": null,
      "airlines": [],
+     "countries": [],
      "amount": null,
      "pct": null,
      "min": null,
@@ -28653,13 +28819,14 @@
    ],
    "ai": {
     "v": 2,
-    "cv": 2,
+    "cv": 3,
     "card": {
      "ok": true,
-     "why": "해외숙소 20% 할인 쿠폰",
+     "why": "해외숙소 20% 할인 쿠폰 이벤트",
      "cards": [],
      "use": "여행예약",
      "airlines": [],
+     "countries": [],
      "amount": null,
      "pct": 20,
      "min": null,
@@ -28709,13 +28876,14 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
        "why": "카드 소비자 관심도 순위 기사",
        "cards": [],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -28754,13 +28922,14 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
-       "why": "통신사 AI 서비스 소식",
+       "why": "통신앱 소식, 카드할인 무관",
        "cards": [],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -28802,13 +28971,14 @@
      ],
      "ai": {
       "v": 2,
-      "cv": 2,
+      "cv": 3,
       "card": {
        "ok": false,
        "why": "통신앱 AI 서비스 소식",
        "cards": [],
        "use": null,
        "airlines": [],
+       "countries": [],
        "amount": null,
        "pct": null,
        "min": null,
@@ -30036,13 +30206,14 @@
    ],
    "ai": {
     "v": 2,
-    "cv": 2,
+    "cv": 3,
     "card": {
      "ok": false,
      "why": "카드 상품 소개·적립률 비교",
      "cards": [],
      "use": null,
      "airlines": [],
+     "countries": [],
      "amount": null,
      "pct": null,
      "min": null,
@@ -30149,13 +30320,14 @@
    ],
    "ai": {
     "v": 2,
-    "cv": 2,
+    "cv": 3,
     "card": {
      "ok": false,
-     "why": "카드 상품 소개·비교 기사",
+     "why": "카드 상품·시장 동향 소식",
      "cards": [],
      "use": null,
      "airlines": [],
+     "countries": [],
      "amount": null,
      "pct": null,
      "min": null,
@@ -31321,24 +31493,24 @@
    "lastFound": "2026-11-01"
   }
  ],
- "updated": "2026-11-12T21:42:22.811Z",
- "runs": 153,
+ "updated": "2026-11-12T21:51:43.835Z",
+ "runs": 154,
  "checked": {
-  "베트남": "2026-11-12T21:42:22.811Z",
-  "태국": "2026-11-12T21:42:22.811Z",
-  "필리핀": "2026-11-12T21:42:22.811Z",
-  "인도네시아": "2026-11-12T21:42:22.811Z",
-  "말레이시아": "2026-11-12T21:42:22.811Z",
-  "싱가포르": "2026-11-12T21:42:22.811Z",
-  "일본": "2026-11-12T21:42:22.811Z",
-  "대만": "2026-11-12T21:42:22.811Z",
-  "홍콩": "2026-11-12T21:42:22.811Z",
-  "마카오": "2026-11-12T21:42:22.811Z",
-  "중국": "2026-11-12T21:42:22.811Z",
-  "미국령": "2026-11-12T21:42:22.811Z",
-  "미국": "2026-11-12T21:42:22.811Z"
+  "베트남": "2026-11-12T21:51:43.835Z",
+  "태국": "2026-11-12T21:51:43.835Z",
+  "필리핀": "2026-11-12T21:51:43.835Z",
+  "인도네시아": "2026-11-12T21:51:43.835Z",
+  "말레이시아": "2026-11-12T21:51:43.835Z",
+  "싱가포르": "2026-11-12T21:51:43.835Z",
+  "일본": "2026-11-12T21:51:43.835Z",
+  "대만": "2026-11-12T21:51:43.835Z",
+  "홍콩": "2026-11-12T21:51:43.835Z",
+  "마카오": "2026-11-12T21:51:43.835Z",
+  "중국": "2026-11-12T21:51:43.835Z",
+  "미국령": "2026-11-12T21:51:43.835Z",
+  "미국": "2026-11-12T21:51:43.835Z"
  },
- "auto": "2026-11-12T21:42:22.811Z",
+ "auto": "2026-11-12T21:51:43.835Z",
  "sources": {
   "7C": "2026-11-01",
   "TW": "2026-11-01",
@@ -31551,14 +31723,6 @@
    "중국동방항공 얼리버드": "2026-11-04"
   },
   "seen": [
-   "hexenyang/75695",
-   "dgmom365/7435367",
-   "browndlaj9/1273",
-   "carsguidexq/30275",
-   "imsanbu/80470543",
-   "whiskycognac/961455",
-   "tori1107/1559",
-   "carsguidexq/30246",
    "carsguidexq/30236",
    "hawaiiphoto/1615294",
    "carsguidexq/30222",
@@ -37550,7 +37714,15 @@
    "gbcointrader/29756",
    "kenserver/192086",
    "0404gas/61592",
-   "010freebaram/260376"
+   "010freebaram/260376",
+   "worldtravelcafe/1166454",
+   "artstudyabroad/42706",
+   "minecraftpe/4015399",
+   "yamipapa/8589",
+   "yamipapa/8588",
+   "worldtravelcafe/1166453",
+   "usacolleges/30829",
+   "anyousports/97254"
   ],
   "since": "2026-11-03",
   "imported": "2026-11-03"
