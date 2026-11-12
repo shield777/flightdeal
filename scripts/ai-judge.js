@@ -68,7 +68,7 @@ false 로 보는 것
 - "비엣젯 11월 11일 더블데이 특가, 11~13일 판매, 탑승 2027년 12월 31일까지" (글 날짜 2026-11-10) → book_from 2026-11-11, book_to 2026-11-13, board_to 2027-12-31`;
 
 // 카드 탭 소식(카드사·간편결제)용 질문: "이 여행에 쓸 수 있는 결제 할인인가?"
-const CARD_VERSION = 1; // 카드 질문을 크게 바꾸면 올림 → 카드 소식만 다시 판독
+const CARD_VERSION = 2; // 카드 질문을 크게 바꾸면 올림 → 카드 소식만 다시 판독
 const CARD_SYSTEM = `너는 해외여행을 준비하는 한국 사람에게 "항공권·여행 결제에 쓸 수 있는 카드 할인"만 골라 주는 도우미야.
 카드사·간편결제 관련 글 1건을 읽고 JSON 하나로만 답해. 설명이나 다른 글자는 쓰지 마.
 
@@ -179,7 +179,7 @@ function cleanCard(o) {
       amount: num(o.amount_krw),
       pct: num(o.pct) && o.pct <= 99 ? Math.round(o.pct) : null,
       min: num(o.min_krw),
-      period: (isDay(o.from) || isDay(o.to)) ? { from: isDay(o.from), to: isDay(o.to) || isDay(o.from) } : null,
+      period: (isDay(o.from) || isDay(o.to)) ? { from: isDay(o.from), to: isDay(o.to) } : null, // 시작일만 있으면 끝은 모름(null)
     },
   };
 }
