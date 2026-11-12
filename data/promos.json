@@ -203,17 +203,19 @@
    ],
    "ai": {
     "v": 2,
-    "promo": false,
-    "why": "면세점 행사, 항공권은 곁가지",
-    "airlines": [],
-    "name": null,
-    "book": null,
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": null,
-    "seoul": null,
-    "at": "2026-11-12",
+    "cv": 1,
+    "card": {
+     "ok": false,
+     "why": "면세점 쇼핑 할인 행사",
+     "cards": [],
+     "use": null,
+     "airlines": [],
+     "amount": null,
+     "pct": null,
+     "min": null,
+     "period": null
+    },
+    "at": "2026-11-13",
     "model": "deepseek-v4-flash"
    },
    "lastDate": "2026-11-12T18:30:00.000Z",
@@ -271,16 +273,18 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "편의점 eSIM·라면 행사, 항공권 아님",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "편의점 eSIM·라면 등 유통 소식",
+       "cards": [],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
       "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
@@ -318,17 +322,19 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "카드 혜택·항공권 경품 행사",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "항공권은 추첨 경품일 뿐",
+       "cards": [],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -358,17 +364,24 @@
      "bodyAt": "2026-11-04",
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "카드사 여행 할인 이벤트",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": true,
+       "why": "BC카드 해외여행 할인 이벤트",
+       "cards": [
+        "BC카드",
+        "우리카드",
+        "하나카드",
+        "NH농협카드"
+       ],
+       "use": "여행예약",
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -398,17 +411,27 @@
      "bodyAt": "2026-11-04",
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "카드사 여행 할인 이벤트",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": true,
+       "why": "해외여행 할인 이벤트 포함",
+       "cards": [
+        "BC카드",
+        "우리카드",
+        "하나카드",
+        "NH농협카드"
+       ],
+       "use": "여행예약",
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": {
+        "from": null,
+        "to": "2026-11-30"
+       }
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -445,17 +468,19 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "카드 신상품 출시 기사",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "카드 신상품 출시 소식",
+       "cards": [],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -493,17 +518,19 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "카드 신상품 출시 기사",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "카드 신상품 출시·쇼핑 적립",
+       "cards": [],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -534,17 +561,19 @@
      "bodyAt": "2026-11-04",
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "항공권은 경품일 뿐",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "배구 경기 이벤트·경품 소식",
+       "cards": [],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -576,17 +605,19 @@
      "bodyAt": "2026-11-10",
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "와인장터 행사, 항공권은 경품",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "와인장터·면세점 쇼핑 소식",
+       "cards": [],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -618,17 +649,21 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "카드 신상품 출시 기사",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "카드 신상품 출시·쇼핑 특화",
+       "cards": [
+        "우리카드"
+       ],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -662,17 +697,19 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "카드 신상품 출시 기사",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "카드 신상품 출시·적립 소개",
+       "cards": [],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -706,17 +743,19 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "카드 신상품 출시 기사",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "카드 신상품 출시·적립 소개",
+       "cards": [],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -755,17 +794,19 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "배구 경기 관중 기사, 항공권 무관",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "배구 입장권 할인 소식",
+       "cards": [],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     }
@@ -2922,17 +2963,19 @@
    ],
    "ai": {
     "v": 2,
-    "promo": false,
-    "why": "eSIM·식품 등 항공권 무관 소식",
-    "airlines": [],
-    "name": null,
-    "book": null,
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": null,
-    "seoul": null,
-    "at": "2026-11-12",
+    "cv": 1,
+    "card": {
+     "ok": false,
+     "why": "유통 소식 모음, eSIM 판매",
+     "cards": [],
+     "use": null,
+     "airlines": [],
+     "amount": null,
+     "pct": null,
+     "min": null,
+     "period": null
+    },
+    "at": "2026-11-13",
     "model": "deepseek-v4-flash"
    },
    "lastDate": "2026-11-12T06:00:00.000Z",
@@ -2998,17 +3041,19 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "이심·편의점 상품 소식, 항공권 아님",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "편의점 eSIM·유통 소식 모음",
+       "cards": [],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     }
@@ -3961,17 +4006,24 @@
    ],
    "ai": {
     "v": 2,
-    "promo": false,
-    "why": "카드사 결제 할인·이벤트 소식",
-    "airlines": [],
-    "name": null,
-    "book": null,
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": null,
-    "seoul": null,
-    "at": "2026-11-12",
+    "cv": 1,
+    "card": {
+     "ok": true,
+     "why": "농협카드 해외결제 할인",
+     "cards": [
+      "NH농협카드"
+     ],
+     "use": "해외결제",
+     "airlines": [],
+     "amount": null,
+     "pct": 50,
+     "min": null,
+     "period": {
+      "from": "2026-11-12",
+      "to": "2027-03-31"
+     }
+    },
+    "at": "2026-11-13",
     "model": "deepseek-v4-flash"
    },
    "lastDate": "2026-11-12T04:52:00.000Z",
@@ -4014,17 +4066,24 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "카드사 프로모션, 항공권 무관",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": true,
+       "why": "해외결제 수수료 면제·대만 할인",
+       "cards": [
+        "NH농협카드"
+       ],
+       "use": "해외결제",
+       "airlines": [],
+       "amount": null,
+       "pct": 50,
+       "min": null,
+       "period": {
+        "from": "2026-11-12",
+        "to": "2027-03-31"
+       }
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     }
@@ -4723,17 +4782,19 @@
    ],
    "ai": {
     "v": 2,
-    "promo": false,
-    "why": "카드 경품 행사, 항공권은 경품",
-    "airlines": [],
-    "name": null,
-    "book": null,
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": null,
-    "seoul": null,
-    "at": "2026-11-12",
+    "cv": 1,
+    "card": {
+     "ok": false,
+     "why": "경품 추첨·적립 소개",
+     "cards": [],
+     "use": null,
+     "airlines": [],
+     "amount": null,
+     "pct": null,
+     "min": null,
+     "period": null
+    },
+    "at": "2026-11-13",
     "model": "deepseek-v4-flash"
    },
    "lastDate": "2026-11-12T02:52:00.000Z",
@@ -4774,17 +4835,19 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "카드 신상품 출시 기사",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "카드 신상품 출시 소개",
+       "cards": [],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -4814,17 +4877,19 @@
      "bodyAt": "2026-11-03",
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "카드사 프리미엄 고객 혜택 기사",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "카드사 우수고객 마케팅 소식",
+       "cards": [],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -4858,17 +4923,21 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "카드 신상품 출시 기사",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "카드 신상품 출시·쇼핑 특화",
+       "cards": [
+        "우리카드"
+       ],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -4902,17 +4971,21 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "카드 신상품 출시 기사",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "카드 신상품 출시 소개",
+       "cards": [
+        "우리카드"
+       ],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -4946,17 +5019,21 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "카드 신상품 출시 기사",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "카드 신상품 출시·적립 소개",
+       "cards": [
+        "우리카드"
+       ],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     }
@@ -6042,17 +6119,24 @@
    ],
    "ai": {
     "v": 2,
-    "promo": false,
-    "why": "호텔 할인 중심, 항공권은 곁가지",
-    "airlines": [],
-    "name": null,
-    "book": null,
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": null,
-    "seoul": null,
-    "at": "2026-11-12",
+    "cv": 1,
+    "card": {
+     "ok": true,
+     "why": "현대카드 호텔 할인·항공권 특가",
+     "cards": [
+      "현대카드"
+     ],
+     "use": "여행예약",
+     "airlines": [],
+     "amount": null,
+     "pct": 40,
+     "min": null,
+     "period": {
+      "from": "2026-11-01",
+      "to": "2026-11-30"
+     }
+    },
+    "at": "2026-11-13",
     "model": "deepseek-v4-flash"
    },
    "lastDate": "2026-11-12T01:12:00.000Z",
@@ -6101,17 +6185,24 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "카드사 결제 할인 행사, 항공권 아님",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": true,
+       "why": "NH농협카드 해외결제 할인",
+       "cards": [
+        "NH농협카드"
+       ],
+       "use": "해외결제",
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": {
+        "from": "2026-11-01",
+        "to": "2026-12-03"
+       }
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -6149,17 +6240,21 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "쇼핑·카드 이벤트, 항공권은 경품",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "쇼핑·구독·경품 소식",
+       "cards": [
+        "현대카드"
+       ],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -6207,17 +6302,19 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "카드사 실적·신상품 기사",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "카드사 실적·마케팅 소식",
+       "cards": [],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -6255,17 +6352,19 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "카드 신상품·AI 솔루션 기사",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "카드사 AI 솔루션 제공 소식",
+       "cards": [],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -6300,17 +6399,19 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "카드·멤버십 행사, 항공권은 경품",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "구독 서비스·경품 추첨",
+       "cards": [],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -6346,17 +6447,19 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "멤버십·카드 행사, 항공권은 경품",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "멤버십·쇼핑 할인, 항공권 무관",
+       "cards": [],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -6390,17 +6493,19 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "항공권은 경품일 뿐",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "구독 멤버십 프로모션·경품 추첨",
+       "cards": [],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -6434,17 +6539,19 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "멤버십 출시 행사, 항공권은 경품",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "멤버십 출시·경품 추첨",
+       "cards": [],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -6481,17 +6588,19 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "멤버십 행사, 항공권은 경품",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "구독 멤버십·경품 추첨 소식",
+       "cards": [],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -6528,17 +6637,19 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "카드·멤버십 행사, 항공권은 경품",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "멤버십·구독 할인 및 경품 이벤트",
+       "cards": [],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -6576,17 +6687,19 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "멤버십 행사, 항공권은 경품",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "멤버십·구독·경품 이벤트",
+       "cards": [],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -6615,17 +6728,19 @@
      "bodyAt": "2026-11-12",
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "유통·eSIM·결제할인 소식",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "유통 소식 모음, eSIM·상품 할인",
+       "cards": [],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     }
@@ -6694,17 +6809,19 @@
    ],
    "ai": {
     "v": 2,
-    "promo": false,
-    "why": "eSIM·유통 행사, 항공권 아님",
-    "airlines": [],
-    "name": null,
-    "book": null,
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": null,
-    "seoul": null,
-    "at": "2026-11-12",
+    "cv": 1,
+    "card": {
+     "ok": false,
+     "why": "유통 소식 모음, eSIM 할인",
+     "cards": [],
+     "use": null,
+     "airlines": [],
+     "amount": null,
+     "pct": null,
+     "min": null,
+     "period": null
+    },
+    "at": "2026-11-13",
     "model": "deepseek-v4-flash"
    },
    "lastDate": "2026-11-12T00:40:00.000Z",
@@ -6834,17 +6951,19 @@
    ],
    "ai": {
     "v": 2,
-    "promo": false,
-    "why": "유통·쇼핑 행사, 항공권은 곁가지",
-    "airlines": [],
-    "name": null,
-    "book": null,
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": null,
-    "seoul": null,
-    "at": "2026-11-12",
+    "cv": 1,
+    "card": {
+     "ok": false,
+     "why": "유통·쇼핑 할인 소식 모음",
+     "cards": [],
+     "use": null,
+     "airlines": [],
+     "amount": null,
+     "pct": null,
+     "min": null,
+     "period": null
+    },
+    "at": "2026-11-13",
     "model": "deepseek-v4-flash"
    },
    "lastDate": "2026-11-11T21:02:00.000Z",
@@ -6900,34 +7019,36 @@
    ],
    "ai": {
     "v": 2,
-    "promo": false,
-    "why": "면세점 행사, 항공권은 경품",
-    "airlines": [],
-    "name": null,
-    "book": null,
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": null,
-    "seoul": null,
-    "at": "2026-11-12",
+    "cv": 1,
+    "card": {
+     "ok": false,
+     "why": "면세점·백화점 할인 중심",
+     "cards": [],
+     "use": null,
+     "airlines": [],
+     "amount": null,
+     "pct": null,
+     "min": null,
+     "period": null
+    },
+    "at": "2026-11-13",
     "model": "deepseek-v4-flash"
    },
    "lastDate": "2026-11-11T21:00:00.000Z",
    "lastFound": "2026-11-12"
   },
   {
-   "id": "https://www.insidevina.com/news/articleView.html|비엣젯항공, ‘11월 11일’ 국내외 특가항공권 프로모션…최대 무료",
+   "id": "https://www.insidevina.com/news/articleView.html|비엣젯항공, '11월 11일' 국내외 특가 항공권 프로모션 …최대 무료",
    "kind": "airline",
-   "title": "비엣젯항공, ‘11월 11일’ 국내외 특가항공권 프로모션…최대 무료",
-   "desc": "베트남 저비용항공사 (LCC) 비엣젯항공 (Vietjet Air)이 11월 11일을 기념해 국내외 전 (全) 노선을 대상으로 최대 무료로 항공권을 제공하는 특별 프로모션을 진행한다. 10일 비엣젯항공에 따르면, 프로모션 기간은 10일 0시부터 12일 23시까지이며, 비엣젯항공 공식 홈페이지 또는 모바일앱을 통한 예매 단계에서 프로모션 코드 입력하면 모든 ...",
+   "title": "비엣젯항공, '11월 11일' 국내외 특가 항공권 프로모션 …최대 무료",
+   "desc": "베트남 저비용항공사(LCC) 비엣젯항공(Vietjet Air)이 11월 11일을 기념해 국내외 전(全) 노선을 대상으로 최대... 등급 항공권 은 국내선 프로모션 코드 'VJDOM11', 국제선 'VJINT11' 코드를 입력하면 최대 25% 할인 혜택을 받을...",
    "summary": [
-    "베트남 저비용항공사 (LCC) 비엣젯항공 (Vietjet Air)이 11월 11일을 기념해 국내외 전 (全) 노선을 대상으로 최대 무료로 항공권을 제공하는 특별 프로모션을 진행한다.",
-    "10일 비엣젯항공에 따르면, 프로모션 기간은 10일 0시부터 12일 23시까지이며, 비엣젯항공 공식 홈페이지 또는 모바일앱을 통한 예매 단계에서 프로모션 코드 입력하면 모든…"
+    "베트남 저비용항공사(LCC) 비엣젯항공(Vietjet Air)이 11월 11일을 기념해 국내외 전(全) 노선을 대상으로 최대...",
+    "등급 항공권 은 국내선 프로모션 코드 'VJDOM11', 국제선 'VJINT11' 코드를 입력하면 최대 25% 할인 혜택을 받을…"
    ],
    "link": "https://www.insidevina.com/news/articleView.html?idxno=44472",
-   "source": "인사이드비나",
-   "date": "2026-11-09T17:43:00.000Z",
+   "source": "네이버 뉴스",
+   "date": "2026-11-10T07:46:00.000Z",
    "found": "2026-11-10",
    "cards": [],
    "airlines": [
@@ -6960,18 +7081,18 @@
    "ai": {
     "v": 2,
     "promo": true,
-    "why": "비엣젯 항공권 특가 프로모션",
+    "why": "비엣젯 항공권 할인 프로모션",
     "airlines": [
-     "비엣젯항공"
+     "비엣젯"
     ],
-    "name": "11월 11일 특가항공권 프로모션",
+    "name": "11월 11일 특가 프로모션",
     "book": {
      "from": "2026-11-10",
      "to": "2026-11-12"
     },
     "board": {
      "from": "2026-12-01",
-     "to": "2027-12-31"
+     "to": null
     },
     "price": null,
     "trip": null,
@@ -6984,21 +7105,22 @@
    "lastFound": "2026-11-12",
    "more": [
     {
-     "id": "https://www.insidevina.com/news/articleView.html|비엣젯항공, '11월 11일' 국내외 특가 항공권 프로모션 …최대 무료",
+     "id": "https://www.insidevina.com/news/articleView.html|비엣젯항공, ‘11월 11일’ 국내외 특가항공권 프로모션…최대 무료",
      "kind": "airline",
-     "title": "비엣젯항공, '11월 11일' 국내외 특가 항공권 프로모션 …최대 무료",
-     "desc": "베트남 저비용항공사(LCC) 비엣젯항공(Vietjet Air)이 11월 11일을 기념해 국내외 전(全) 노선을 대상으로 최대... 등급 항공권 은 국내선 프로모션 코드 'VJDOM11', 국제선 'VJINT11' 코드를 입력하면 최대 25% 할인 혜택을 받을...",
+     "title": "비엣젯항공, ‘11월 11일’ 국내외 특가항공권 프로모션…최대 무료",
+     "desc": "베트남 저비용항공사 (LCC) 비엣젯항공 (Vietjet Air)이 11월 11일을 기념해 국내외 전 (全) 노선을 대상으로 최대 무료로 항공권을 제공하는 특별 프로모션을 진행한다. 10일 비엣젯항공에 따르면, 프로모션 기간은 10일 0시부터 12일 23시까지이며, 비엣젯항공 공식 홈페이지 또는 모바일앱을 통한 예매 단계에서 프로모션 코드 입력하면 모든 ...",
      "summary": [
-      "베트남 저비용항공사(LCC) 비엣젯항공(Vietjet Air)이 11월 11일을 기념해 국내외 전(全) 노선을 대상으로 최대...",
-      "등급 항공권 은 국내선 프로모션 코드 'VJDOM11', 국제선 'VJINT11' 코드를 입력하면 최대 25% 할인 혜택을 받을…"
+      "베트남 저비용항공사 (LCC) 비엣젯항공 (Vietjet Air)이 11월 11일을 기념해 국내외 전 (全) 노선을 대상으로 최대 무료로 항공권을 제공하는 특별 프로모션을 진행한다.",
+      "10일 비엣젯항공에 따르면, 프로모션 기간은 10일 0시부터 12일 23시까지이며, 비엣젯항공 공식 홈페이지 또는 모바일앱을 통한 예매 단계에서 프로모션 코드 입력하면 모든…"
      ],
      "link": "https://www.insidevina.com/news/articleView.html?idxno=44472",
-     "source": "네이버 뉴스",
-     "date": "2026-11-10T07:46:00.000Z",
+     "source": "인사이드비나",
+     "date": "2026-11-09T17:43:00.000Z",
      "found": "2026-11-10",
      "cards": [],
      "airlines": [
-      "VJ"
+      "VJ",
+      "UO"
      ],
      "countries": [
       "베트남",
@@ -7006,7 +7128,8 @@
       "필리핀",
       "인도네시아",
       "일본",
-      "대만"
+      "대만",
+      "홍콩"
      ],
      "allRoutes": true,
      "routes": [],
@@ -7025,18 +7148,18 @@
      "ai": {
       "v": 2,
       "promo": true,
-      "why": "비엣젯 항공권 할인 프로모션",
+      "why": "비엣젯 항공권 특가 프로모션",
       "airlines": [
-       "비엣젯"
+       "비엣젯항공"
       ],
-      "name": "11월 11일 특가 프로모션",
+      "name": "11월 11일 특가항공권 프로모션",
       "book": {
        "from": "2026-11-10",
        "to": "2026-11-12"
       },
       "board": {
        "from": "2026-12-01",
-       "to": null
+       "to": "2027-12-31"
       },
       "price": null,
       "trip": null,
@@ -10797,17 +10920,19 @@
    ],
    "ai": {
     "v": 2,
-    "promo": false,
-    "why": "항공권은 경품일 뿐",
-    "airlines": [],
-    "name": null,
-    "book": null,
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": null,
-    "seoul": null,
-    "at": "2026-11-12",
+    "cv": 1,
+    "card": {
+     "ok": false,
+     "why": "쇼핑·구독 프로모션 모음",
+     "cards": [],
+     "use": null,
+     "airlines": [],
+     "amount": null,
+     "pct": null,
+     "min": null,
+     "period": null
+    },
+    "at": "2026-11-13",
     "model": "deepseek-v4-flash"
    },
    "lastDate": "2026-11-11T01:10:00.000Z",
@@ -10846,17 +10971,19 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "구독 서비스 출시, 항공권은 경품",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "구독·쇼핑 혜택, 여행결제 아님",
+       "cards": [],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -10894,17 +11021,586 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "구독 서비스 출시, 항공권은 경품",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "구독 서비스·경품 추첨 소식",
+       "cards": [
+        "현대카드"
+       ],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
+      "model": "deepseek-v4-flash"
+     }
+    }
+   ]
+  },
+  {
+   "id": "http://www.srtimes.kr/news/articleView.html|하나 카드 , 베트남 현지 소비 공략…롯데마트·그랩 할인 혜택 확대",
+   "kind": "card",
+   "title": "하나 카드 , 베트남 현지 소비 공략…롯데마트·그랩 할인 혜택 확대",
+   "desc": "해외여행 수요가 회복되면서 카드 업계의 경쟁 범위도 항공권 과 숙박 예약에서 현지 결제·이동·식음료... 있는 할인 쿠폰을 제공한다. 신한카드 도 해외여행 특화 상품인 SOL트래블 체크 카드 에 베트남 롯데마트와...",
+   "summary": [
+    "해외여행 수요가 회복되면서 카드 업계의 경쟁 범위도 항공권 과 숙박 예약에서 현지 결제·이동·식음료...",
+    "있는 할인 쿠폰을 제공한다.",
+    "신한카드 도 해외여행 특화 상품인 SOL트래블 체크 카드 에 베트남 롯데마트와…"
+   ],
+   "link": "http://www.srtimes.kr/news/articleView.html?idxno=216619",
+   "source": "네이버 뉴스",
+   "date": "2026-11-03T06:38:00.000Z",
+   "found": "2026-11-03",
+   "cards": [
+    "신한카드"
+   ],
+   "airlines": [],
+   "countries": [
+    "베트남",
+    "일본"
+   ],
+   "allRoutes": false,
+   "routes": [],
+   "price": null,
+   "query": "신한카드 항공권 할인",
+   "bodyAt": "2026-11-03",
+   "body": [
+    "[SRT(에스알 타임스) 유수환 기자] 해외여행 수요가 회복되면서 카드업계의 경쟁 범위도 항공권과 숙박 예약에서 현지 결제·이동·식음료 소비로 넓어지고 있다.",
+    "하나카드는 비자(Visa), 롯데마트 베트남과 제휴해 내년 1월 31일까지 현지 롯데마트 전 매장에서 최대 10% 즉시 할인 행사를 진행한다고 3일 밝혔다.",
+    "행사에 응모한 고객이 대상 카드로 차량 호출 서비스 그린SM(Green SM)과 카페 브랜드 콩카페(Cộng C&agrave; Ph&ecirc;)에서 각각 원화 환산 기준 1만원 이상 결제하면 가맹점별로 5000 하나머니를 적립해 준다.",
+    "하나카드 비자 브랜드 고객은 12월 31일까지 그랩 트래블패스를 무료로 이용할 수 있다.",
+    "트래블GO 체크카드 고객에게는 11월 30일까지 베트남 그랩에서 사용할 수 있는 4만동 할인 쿠폰을 최대 5장 지급한다.",
+    "KB국민카드는 마스터카드와 협력해 12월 31일까지 그랩 트래블패스를 무료 제공하는 행사를 진행한다.",
+    "베트남 롯데마트와 그랩 앱 이용금액의 5%를 결제일에 할인해 주며, 각각 월 3000원까지 혜택을 제공한다."
+   ],
+   "ai": {
+    "v": 2,
+    "cv": 1,
+    "card": {
+     "ok": false,
+     "why": "현지 마트·그랩 등 해외결제 할인",
+     "cards": [
+      "하나카드",
+      "신한카드",
+      "KB국민카드"
+     ],
+     "use": "해외결제",
+     "airlines": [],
+     "amount": null,
+     "pct": 10,
+     "min": null,
+     "period": {
+      "from": "2026-11-03",
+      "to": "2027-01-31"
+     }
+    },
+    "at": "2026-11-13",
+    "model": "deepseek-v4-flash"
+   },
+   "lastDate": "2026-11-11T00:55:59.000Z",
+   "lastFound": "2026-11-11",
+   "more": [
+    {
+     "id": "https://www.ekn.kr/web/view.php|[똑똑한여행] 웨스틴 서울 파르나스, 트립닷컴, 인스파이어, 부킹닷컴,.",
+     "kind": "card",
+     "title": "[똑똑한여행] 웨스틴 서울 파르나스, 트립닷컴, 인스파이어, 부킹닷컴,...",
+     "desc": "합리적인 항공권 ·교통편(41%)과 공연장 인근 숙소(38%)가 뒤를 이었다. 공연과 여행을 결합한 상품의 수요도... 인스파이어 호텔과 실내 워터파크 '스플래시베이'에서는 신한카드 고객을 위한 할인 과 전용 패키지 등을...",
+     "summary": [
+      "합리적인 항공권 ·교통편(41%)과 공연장 인근 숙소(38%)가 뒤를 이었다.",
+      "공연과 여행을 결합한 상품의 수요도...",
+      "인스파이어 호텔과 실내 워터파크 '스플래시베이'에서는 신한카드 고객을 위한 할인 과 전용 패키지 등을…"
+     ],
+     "link": "https://www.ekn.kr/web/view.php?key=20261105025475852",
+     "source": "네이버 뉴스",
+     "date": "2026-11-05T05:00:00.000Z",
+     "found": "2026-11-05",
+     "cards": [
+      "신한카드"
+     ],
+     "airlines": [],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "신한카드 항공권 할인",
+     "bodyAt": "2026-11-05",
+     "ai": {
+      "v": 2,
+      "cv": 1,
+      "card": {
+       "ok": true,
+       "why": "트립닷컴·신한카드 여행결제 할인",
+       "cards": [
+        "신한카드"
+       ],
+       "use": "여행예약",
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "https://www.dnews.co.kr/uhtml/view.jsp|[머니테크]달러로 결제할까, 원화로 결제할까… 해외 직구 카드 활용법",
+     "kind": "card",
+     "title": "[머니테크]달러로 결제할까, 원화로 결제할까… 해외 직구 카드 활용법",
+     "desc": "면제· 해외 적립형 카드 혜택 따져봐야 블랙프라이데이를 앞두고 해외 직구를 계획하고 있다면 상품 할인 율과... 여행 용으로 알려져 있지만 해외 온라인 가맹점에서도 혜택을 제공하는 상품이 있기 때문이다. 신한카드 ...",
+     "summary": [
+      "면제· 해외 적립형 카드 혜택 따져봐야 블랙프라이데이를 앞두고 해외 직구를 계획하고 있다면 상품 할인 율과...",
+      "여행 용으로 알려져 있지만 해외 온라인 가맹점에서도 혜택을 제공하는 상품이 있기 때문이다."
+     ],
+     "link": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202611051326205240807",
+     "source": "네이버 뉴스",
+     "date": "2026-11-05T21:22:00.000Z",
+     "found": "2026-11-06",
+     "cards": [
+      "신한카드"
+     ],
+     "airlines": [],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "신한카드 해외여행 할인",
+     "bodyAt": "2026-11-06",
+     "body": [
+      "해외 온라인 쇼핑몰에서 원화로 결제할 때 해당 서비스가 적용되면 약 3~8%의 추가 수수료가 발생할 수 있다.",
+      "신한카드 'SOL트래블 체크'는 해외 가맹점 이용 시 국제브랜드와 해외서비스 수수료를 합쳐 1.2%를 면제해준다.",
+      "하나카드 '트래블로그+ 신용카드'는 해외결제를 신용 방식으로 설정하면 해외 가맹점 이용금액의 3%를 하나머니로 적립해준다.",
+      "신용결제에는 국제브랜드 수수료 1%와 해외서비스 수수료 0.2%가 부과된다.",
+      "따라서 3% 적립률만 볼 것이 아니라 수수료와 적립한도를 함께 고려해야 한다."
+     ],
+     "ai": {
+      "v": 2,
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "해외직구 카드 활용법 소개",
+       "cards": [
+        "신한카드",
+        "하나카드"
+       ],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "https://www.newsway.co.kr/news/view|\" 할인 ·플랫폼으로는 한계\"…호텔업계, 카드 사와 손잡고 돌파구 찾는다",
+     "kind": "card",
+     "title": "\" 할인 ·플랫폼으로는 한계\"…호텔업계, 카드 사와 손잡고 돌파구 찾는다",
+     "desc": "호텔은 신한카드 고객을 대상으로 제휴 할인 과 전용 패키지 등을 마련할 계획이다. 인스파이어가 부대시설까지 제휴 범위를 넓힌 배경에는 복합리조트의 매출 구조가 있다. 객실을 찾는 여행 객뿐 아니라 물놀이나 외식을...",
+     "summary": [
+      "호텔은 신한카드 고객을 대상으로 제휴 할인 과 전용 패키지 등을 마련할 계획이다.",
+      "인스파이어가 부대시설까지 제휴 범위를 넓힌 배경에는 복합리조트의 매출 구조가 있다.",
+      "객실을 찾는 여행 객뿐 아니라 물놀이나 외식을…"
+     ],
+     "link": "https://www.newsway.co.kr/news/view?ud=2026110611012644629",
+     "source": "네이버 뉴스",
+     "date": "2026-11-06T23:02:00.000Z",
+     "found": "2026-11-07",
+     "cards": [
+      "신한카드"
+     ],
+     "airlines": [],
+     "countries": [
+      "일본"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "신한카드 해외여행 할인",
+     "bodyAt": "2026-11-07",
+     "body": [
+      "7일 호텔업계에 따르면 인천 영종도 인스파이어 엔터테인먼트 리조트는 최근 신한카드와 업무협약을 맺고 오는 12월부터 약 1년간 공동 마케팅을 진행한다.",
+      "인스파이어가 부대시설까지 제휴 범위를 넓힌 배경에는 복합리조트의 매출 구조가 있다.",
+      "투숙객의 리조트 내 식사나 레저시설 이용이 늘면 객실 판매량이 같아도 한 팀의 투숙에서 거두는 매출이 커진다.",
+      "실제 지난해 전 세계 메리어트 계열 호텔의 객실 숙박일수 가운데 약 68%를 본보이 회원이 예약한 것으로 나타났다.",
+      "메리어트는 사업보고서에서 통상 계약 초기에 고정 대가를 받고 계약 기간에는 주로 카드 사용 실적에 따라 매달 대가를 받는다고 밝혔다.",
+      "고객이 호텔에 묵지 않는 기간의 결제에서도 수입이 발생하며 이 수입은 본보이 멤버십의 주요 재원으로 쓰인다.",
+      "체인 본사가 카드사와 맺은 계약이 개별 호텔의 객실 판매를 뒷받침하는 구조다.",
+      "지난 7월 아메리칸익스프레스와 프랑스·일본 등 12개 시장에서 포인트 전환을 단계적으로 도입한다고 발표했다.",
+      "아코르에서 포인트를 쌓아 온 회원 외에 계열 호텔을 이용해 본 적 없는 고객의 첫 예약까지 겨냥한 것이다.",
+      "· 강원랜드, 3Q 영업익 597억원···전년 대비 17.9%↓",
+      "· 인디 뷰티 홍수에 화장품 뒷면부터 본다···구매 기준 된 '제조사'",
+      "· 한국콜마, 3Q 매출 8282억원 '역대 최대'···영업익 40.5%↑"
+     ],
+     "ai": {
+      "v": 2,
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "호텔 제휴 마케팅 소식",
+       "cards": [
+        "신한카드"
+       ],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "https://www.dt.co.kr/article/12093656|생활비부터 항공 마일까지…혜택 좋은 신용카드 ‘톱5’",
+     "kind": "card",
+     "title": "생활비부터 항공 마일까지…혜택 좋은 신용카드 ‘톱5’",
+     "desc": "고물가 부담에 신용카드 혜택을 따지는 소비자들이 늘면서 생활비와 항공 마일리지 적립 등 소비 영역에 따라 할인 및 적립 혜택을 제공하는 카드가 다양해지고 있다. 5일 신용카드 플랫폼 카드고릴라에 따르면 지난달 가장 인기가 많았던 신용카드는 신한카드의 ‘Mr.Life’ ...",
+     "summary": [
+      "고물가 부담에 신용카드 혜택을 따지는 소비자들이 늘면서 생활비와 항공 마일리지 적립 등 소비 영역에 따라 할인 및 적립 혜택을 제공하는 카드가 다양해지고 있다.",
+      "5일 신용카드 플랫폼 카드고릴라에 따르면 지난달 가장 인기가 많았던 신용카드는 신한카드의 ‘Mr.Life’…"
+     ],
+     "link": "https://www.dt.co.kr/article/12093656",
+     "source": "디지털타임스",
+     "date": "2026-11-07T07:45:00.000Z",
+     "found": "2026-11-08",
+     "cards": [
+      "신한카드"
+     ],
+     "airlines": [],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "신한카드 항공권 할인",
+     "bodyAt": "2026-11-08",
+     "body": [
+      "지난 10월 1일부터 31일까지 카드고릴라가 실시간 집계한 국내 2000여개 카드의 조회수와 신청수를 기반으로 산정한 결과다.",
+      "전기요금과 도시가스요금, 통신요금 등 공과금에 10% 할인을 제공한다.",
+      "편의점과 병원, 약국 등에서도 10% 할인 혜택을 받을 수 있다.",
+      "오후 9시부터 다음 날 오전 9시까지는 온라인쇼핑과 택시, 음식점·커피 이용 시 10% 할인이 적용된다.",
+      "전월 실적 조건 없이 국내외 모든 가맹점에서 1000원당 1마일리지를 적립할 수 있다.",
+      "국내형은 백화점·주유·커피·편의점·택시 이용 1000원당 1마일리지가 추가 적립되며, 해외형은 해외 결제와 해외직구 이용 시 마일리지가 적립된다.",
+      "국내 결제 0.7% 할인, 아파트관리비·통신비 10% 할인, 교육·학원비 10% 할인 중 하나를 고를 수 있다.",
+      "온라인쇼핑·의료·배달앱 또는 음식점·편의점·마트·주유 영역에서도 선택에 따라 7%의 할인 혜택을 받을 수 있다.",
+      "OTT와 멤버십 구독료는 50%까지 할인된다.",
+      "4위인 KB국민카드의 ‘굿데이카드’는 주유소와 충전소에서 리터당 60원을 할인이 적용되며, 통신비와 대중교통, 음식점, 커피, 편의점, 약국 등에서 10% 할인 혜택을 제공한다.",
+      "쇼핑·배달앱 결제 시 2%, 대중교통·택시 이용 시 결제액의 3%가 적립된다."
+     ],
+     "ai": {
+      "v": 2,
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "카드 상품 소개·적립 위주",
+       "cards": [],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "http://www.the-biz.co.kr/news/articleView.html|[위클리 생활금융] 여행 ·골프·스포츠까지… 카드 업계, 맞춤형 혜택 경",
+     "kind": "card",
+     "title": "[위클리 생활금융] 여행 ·골프·스포츠까지… 카드 업계, 맞춤형 혜택 경...",
+     "desc": "카드 사들이 해외여행 과 골프, 스포츠 등 고객의 소비 유형에 맞춘 혜택을 확대하고 있다. 단순 결제 할인 에... 롯데 카드 는 추가 캐시백과 멤버십 구독권 제공 행사도 진행한다. 신한카드 는 아디다스·마스터 카드 와...",
+     "summary": [
+      "카드 사들이 해외여행 과 골프, 스포츠 등 고객의 소비 유형에 맞춘 혜택을 확대하고 있다.",
+      "단순 결제 할인 에...",
+      "롯데 카드 는 추가 캐시백과 멤버십 구독권 제공 행사도 진행한다."
+     ],
+     "link": "http://www.the-biz.co.kr/news/articleView.html?idxno=730855",
+     "source": "네이버 뉴스",
+     "date": "2026-11-08T02:00:00.000Z",
+     "found": "2026-11-08",
+     "cards": [
+      "신한카드"
+     ],
+     "airlines": [],
+     "countries": [
+      "베트남"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "신한카드 해외여행 할인",
+     "bodyAt": "2026-11-08",
+     "body": [
+      "단순 결제 할인에서 벗어나 여행 중 이동과 쇼핑, 취미생활까지 다양한 영역으로 제휴를 넓히는 모습이다.",
+      "내년 1월 31일까지 비자 브랜드 JADE 계열 카드와 트래블GO 체크카드, 하나 나라사랑카드 이용자에게 롯데마트 베트남에서 최대 10% 즉시할인을 제공한다.",
+      "그린SM과 콩카페에서 행사 기간 가맹점별 누적 이용금액이 1만원 이상이면 각각 5000하나머니를 지급한다.",
+      "골프존파크 이용금액의 30%, 다른 골프업종 결제금액의 5%를 캐시백해 주는 상품으로 전월 이용 실적과 골프존 G멤버십 가입 여부에 따라 월 할인 한도가 달라진다.",
+      "G멤버십 회원은 전월 40만원 이상 이용하면 골프존파크에서 월 최대 1만5000원, 80만원 이상이면 최대 2만5000원을 돌려받을 수 있다.",
+      "문서 작성과 프로그램 개발, 데이터 분석은 물론 반복 업무 자동화까지 지원하는 시스템이다.",
+      "현재 약 50개의 업무용 AI 에이전트를 운영하고 있으며 연간 10만2000시간의 업무 시간을 절감하고 관련 운영 비용도 최대 70% 줄였다는 설명이다."
+     ],
+     "ai": {
+      "v": 2,
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "여행·골프·쇼핑 혜택 모음, 항공권 할인 없음",
+       "cards": [],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "https://www.newstap.co.kr/news/articleView.html|신한카드 들고 후쿠오카 가면 혜택…11월부터 교통&#183;쇼핑&#183",
+     "kind": "card",
+     "title": "신한카드 들고 후쿠오카 가면 혜택…11월부터 교통&#183;쇼핑&#183;맛집 할인",
+     "desc": "프로모션 대상은 신한카드가 발행하는 일본 여행 특화 카드인 ‘신한카드 Haru’와 ‘신한카드 SOL Trip & J’ 회원이다. 해당 카드를 소지한 한국인 여행객은 후쿠오카 현지에서 교통수단의 컨택리스 결제 승차 혜택을 비롯해 주요 상업시설과 호텔 레스토랑의 할인 혜택을 이용할 수 있다.",
+     "summary": [
+      "프로모션 대상은 신한카드가 발행하는 일본 여행 특화 카드인 ‘신한카드 Haru’와 ‘신한카드 SOL Trip & J’ 회원이다.",
+      "해당 카드를 소지한 한국인 여행객은 후쿠오카 현지에서 교통수단의 컨택리스 결제 승차 혜택을 비롯해 주요 상업시설과 호텔 레스토랑의 할인 혜택을 이용할 수 있다."
+     ],
+     "link": "https://www.newstap.co.kr/news/articleView.html?idxno=336644",
+     "source": "뉴스탭",
+     "date": "2026-10-28T23:33:00.000Z",
+     "found": "2026-10-31",
+     "cards": [
+      "신한카드"
+     ],
+     "airlines": [],
+     "countries": [
+      "일본"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "신한카드 해외여행 할인",
+     "bodyAt": "2026-11-01",
+     "ai": {
+      "v": 2,
+      "cv": 1,
+      "card": {
+       "ok": true,
+       "why": "해외결제·교통·쇼핑 할인 혜택",
+       "cards": [
+        "신한카드"
+       ],
+       "use": "해외결제",
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": {
+        "from": "2026-11-01",
+        "to": "2026-11-01"
+       }
+      },
+      "at": "2026-11-13",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "https://www.newstap.co.kr/news/articleView.html|신한카드 들고 후쿠오카 가면 혜택…11월부터 교통·쇼핑·맛집 할인",
+     "kind": "card",
+     "title": "신한카드 들고 후쿠오카 가면 혜택…11월부터 교통·쇼핑·맛집 할인",
+     "desc": "프로모션 대상은 신한카드가 발행하는 일본 여행 특화 카드인 ‘신한카드 Haru’와 ‘신한카드 SOL Trip & J’ 회원이다. 해당 카드를 소지한 한국인 여행객은 후쿠오카 현지에서 교통수단의 컨택리스 결제 승차 혜택을 비롯해 주요 상업시설과 호텔 레스토랑의 할인 혜택을 이용할 수 있다.",
+     "summary": [
+      "프로모션 대상은 신한카드가 발행하는 일본 여행 특화 카드인 ‘신한카드 Haru’와 ‘신한카드 SOL Trip & J’ 회원이다.",
+      "해당 카드를 소지한 한국인 여행객은 후쿠오카 현지에서 교통수단의 컨택리스 결제 승차 혜택을 비롯해 주요 상업시설과 호텔 레스토랑의 할인 혜택을 이용할 수 있다."
+     ],
+     "link": "https://www.newstap.co.kr/news/articleView.html?idxno=336644",
+     "source": "뉴스탭",
+     "date": "2026-10-28T23:33:00.000Z",
+     "found": "2026-11-01",
+     "cards": [
+      "신한카드"
+     ],
+     "airlines": [],
+     "countries": [
+      "일본"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "신한카드 해외여행 할인",
+     "bodyAt": "2026-11-01",
+     "ai": {
+      "v": 2,
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "현지 교통·쇼핑 할인, 항공권 아님",
+       "cards": [
+        "신한카드"
+       ],
+       "use": "기타",
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": {
+        "from": "2026-11-01",
+        "to": "2026-11-01"
+       }
+      },
+      "at": "2026-11-13",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "9F%93-%EA%B4%80%EA%B4%91%EA%B0%9D-%EB%8C%80%EC%83%81-%EA%B3%B5%EB%8F%99-%ED%94%84%EB%A1%9C%EB%AA%A8%EC%85%98/ar-AA2gjHgz|내 신용카드로 후쿠오카 버스 탄다…JCB&#183;신한카드&#183;니시",
+     "kind": "card",
+     "title": "내 신용카드로 후쿠오카 버스 탄다…JCB&#183;신한카드&#183;니시테츠, 韓 관광객 대상 공동 프로모션",
+     "desc": "일본 국제 카드 브랜드 JCB가 신한카드, 일본 니시테츠 그룹과 협력해 오는 11월 1일부터 한국인 관광객을 대상으로 후쿠오카를 방문하는 한국인 여행객에게 교통&#183;쇼핑&#183;호텔 이용 혜택을 제공하는 공동 프로모션을 실시한다고 밝혔다.",
+     "summary": [
+      "일본 국제 카드 브랜드 JCB가 신한카드, 일본 니시테츠 그룹과 협력해 오는 11월 1일부터 한국인 관광객을 대상으로 후쿠오카를 방문하는 한국인 여행객에게 교통&#183;쇼핑&#183;호텔 이용 혜택을 제공하는 공동 프로모션을 실…"
+     ],
+     "link": "https://www.msn.com/ko-kr/travel/%EC%B9%B4%EC%A7%80%EB%85%B8-%EB%B0%8F-%EB%8F%84%EB%B0%95/%EB%82%B4-%EC%8B%A0%EC%9A%A9%EC%B9%B4%EB%93%9C%EB%A1%9C-%ED%9B%84%EC%BF%A0%EC%98%A4%EC%B9%B4-%EB%B2%84%EC%8A%A4-%ED%83%84%EB%8B%A4-jcb-%EC%8B%A0%ED%95%9C%EC%B9%B4%EB%93%9C-%EB%8B%88%EC%8B%9C%ED%85%8C%EC%B8%A0-%E9%9F%93-%EA%B4%80%EA%B4%91%EA%B0%9D-%EB%8C%80%EC%83%81-%EA%B3%B5%EB%8F%99-%ED%94%84%EB%A1%9C%EB%AA%A8%EC%85%98/ar-AA2gjHgz",
+     "source": "헤럴드경제 on MSN",
+     "date": "2026-10-29T07:30:00.000Z",
+     "found": "2026-10-31",
+     "cards": [
+      "신한카드"
+     ],
+     "airlines": [],
+     "countries": [
+      "일본"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "신한카드 해외여행 할인",
+     "bodyAt": "2026-11-01",
+     "ai": {
+      "v": 2,
+      "cv": 1,
+      "card": {
+       "ok": true,
+       "why": "해외 교통·호텔 결제 혜택",
+       "cards": [
+        "신한카드",
+        "JCB"
+       ],
+       "use": "해외결제",
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": {
+        "from": "2026-11-01",
+        "to": "2026-11-01"
+       }
+      },
+      "at": "2026-11-13",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "9F%93-%EA%B4%80%EA%B4%91%EA%B0%9D-%EB%8C%80%EC%83%81-%EA%B3%B5%EB%8F%99-%ED%94%84%EB%A1%9C%EB%AA%A8%EC%85%98/ar-AA2gjHgz|내 신용카드로 후쿠오카 버스 탄다…JCB·신한카드·니시테츠, 韓 관광객 ",
+     "kind": "card",
+     "title": "내 신용카드로 후쿠오카 버스 탄다…JCB·신한카드·니시테츠, 韓 관광객 대상 공동 프로모션",
+     "desc": "일본 국제 카드 브랜드 JCB가 신한카드, 일본 니시테츠 그룹과 협력해 오는 11월 1일부터 한국인 관광객을 대상으로 후쿠오카를 방문하는 한국인 여행객에게 교통·쇼핑·호텔 이용 혜택을 제공하는 공동 프로모션을 실시한다고 밝혔다.",
+     "summary": [
+      "일본 국제 카드 브랜드 JCB가 신한카드, 일본 니시테츠 그룹과 협력해 오는 11월 1일부터 한국인 관광객을 대상으로 후쿠오카를 방문하는 한국인 여행객에게 교통·쇼핑·호텔 이용 혜택을 제공하는 공동 프로모션을 실시한다고 밝혔다."
+     ],
+     "link": "https://www.msn.com/ko-kr/travel/%EC%B9%B4%EC%A7%80%EB%85%B8-%EB%B0%8F-%EB%8F%84%EB%B0%95/%EB%82%B4-%EC%8B%A0%EC%9A%A9%EC%B9%B4%EB%93%9C%EB%A1%9C-%ED%9B%84%EC%BF%A0%EC%98%A4%EC%B9%B4-%EB%B2%84%EC%8A%A4-%ED%83%84%EB%8B%A4-jcb-%EC%8B%A0%ED%95%9C%EC%B9%B4%EB%93%9C-%EB%8B%88%EC%8B%9C%ED%85%8C%EC%B8%A0-%E9%9F%93-%EA%B4%80%EA%B4%91%EA%B0%9D-%EB%8C%80%EC%83%81-%EA%B3%B5%EB%8F%99-%ED%94%84%EB%A1%9C%EB%AA%A8%EC%85%98/ar-AA2gjHgz",
+     "source": "헤럴드경제 on MSN",
+     "date": "2026-10-29T07:30:00.000Z",
+     "found": "2026-11-01",
+     "cards": [
+      "신한카드"
+     ],
+     "airlines": [],
+     "countries": [
+      "일본"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "신한카드 해외여행 할인",
+     "bodyAt": "2026-11-01",
+     "ai": {
+      "v": 2,
+      "cv": 1,
+      "card": {
+       "ok": true,
+       "why": "해외 교통·호텔 결제 혜택",
+       "cards": [
+        "신한카드",
+        "JCB"
+       ],
+       "use": "해외결제",
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": {
+        "from": "2026-11-01",
+        "to": "2026-11-01"
+       }
+      },
+      "at": "2026-11-13",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "kxTnQyWWo5NkNYQTV5WGJYY24xZC14dHlrVmNjeEFtLXRfb3Q3c2NFMXhHMWRXdXNnbUo2YUNaSUt5a2g0SXdhRUhoRTZYaGJXa19lUGZxY3pySkF3N1c0UQ|신한카드 고향사랑기부만의 혜택, 마이신한포인트에 여행상품권 100만원 추",
+     "kind": "card",
+     "title": "신한카드 고향사랑기부만의 혜택, 마이신한포인트에 여행상품권 100만원 추첨까지 _ 할인·이벤트 정보",
+     "desc": "신한카드 고향사랑기부만의 혜택, 마이신한포인트에 여행상품권 100만원 추첨까지 _ 할인·이벤트 정보 자투리경제",
+     "summary": [
+      "신한카드 고향사랑기부만의 혜택, 마이신한포인트에 여행상품권 100만원 추첨까지 _ 할인·이벤트 정보 자투리경제…"
+     ],
+     "link": "https://www.jaturi.kr/news/articleView.html?idxno=27793",
+     "source": "자투리경제",
+     "date": "2026-11-11T00:55:59.000Z",
+     "found": "2026-11-11",
+     "cards": [
+      "신한카드"
+     ],
+     "airlines": [],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "신한카드 항공권 할인",
+     "bodyAt": "2026-11-11",
+     "body": [
+      "신한카드 고향사랑기부만의 혜택, 마이신한포인트에 여행상품권 100만원 추첨까지 _ 할인·이벤트 정보",
+      "백화점 3사, 외국인 증가 호실적 연말까지 잇는다…겨울 정기세일 · 문화 콘텐츠 강화 _ 유통 게시판"
+     ],
+     "ai": {
+      "v": 2,
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "고향사랑기부·경품 추첨 이벤트",
+       "cards": [
+        "신한카드"
+       ],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     }
@@ -10953,23 +11649,31 @@
    ],
    "ai": {
     "v": 2,
-    "promo": true,
-    "why": "카드사 항공권 결제 할인",
-    "airlines": [],
-    "name": null,
-    "book": {
-     "from": null,
-     "to": "2026-12-31"
+    "cv": 1,
+    "card": {
+     "ok": true,
+     "why": "항공권·여행상품 결제 할인 포함",
+     "cards": [
+      "비씨카드",
+      "우리카드",
+      "하나카드",
+      "NH농협카드",
+      "KB국민카드"
+     ],
+     "use": "여행예약",
+     "airlines": [],
+     "amount": 120000,
+     "pct": 15,
+     "min": 200000,
+     "period": {
+      "from": "2026-11-05",
+      "to": "2026-12-31"
+     }
     },
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": 15,
-    "seoul": null,
-    "at": "2026-11-12",
+    "at": "2026-11-13",
     "model": "deepseek-v4-flash"
    },
-   "lastDate": "2026-11-11T00:55:59.000Z",
+   "lastDate": "2026-11-10T13:31:00.000Z",
    "lastFound": "2026-11-11",
    "more": [
     {
@@ -11012,17 +11716,21 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "카드사 기부 이벤트, 항공권 무관",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "고향사랑기부 포인트 이벤트",
+       "cards": [
+        "신한카드"
+       ],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -11066,466 +11774,21 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "카드사 기부 이벤트, 항공권 무관",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "https://www.ekn.kr/web/view.php|[똑똑한여행] 웨스틴 서울 파르나스, 트립닷컴, 인스파이어, 부킹닷컴,.",
-     "kind": "card",
-     "title": "[똑똑한여행] 웨스틴 서울 파르나스, 트립닷컴, 인스파이어, 부킹닷컴,...",
-     "desc": "합리적인 항공권 ·교통편(41%)과 공연장 인근 숙소(38%)가 뒤를 이었다. 공연과 여행을 결합한 상품의 수요도... 인스파이어 호텔과 실내 워터파크 '스플래시베이'에서는 신한카드 고객을 위한 할인 과 전용 패키지 등을...",
-     "summary": [
-      "합리적인 항공권 ·교통편(41%)과 공연장 인근 숙소(38%)가 뒤를 이었다.",
-      "공연과 여행을 결합한 상품의 수요도...",
-      "인스파이어 호텔과 실내 워터파크 '스플래시베이'에서는 신한카드 고객을 위한 할인 과 전용 패키지 등을…"
-     ],
-     "link": "https://www.ekn.kr/web/view.php?key=20261105025475852",
-     "source": "네이버 뉴스",
-     "date": "2026-11-05T05:00:00.000Z",
-     "found": "2026-11-05",
-     "cards": [
-      "신한카드"
-     ],
-     "airlines": [],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "신한카드 항공권 할인",
-     "bodyAt": "2026-11-05",
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "호텔·여행상품 중심 소식",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "https://www.dnews.co.kr/uhtml/view.jsp|[머니테크]달러로 결제할까, 원화로 결제할까… 해외 직구 카드 활용법",
-     "kind": "card",
-     "title": "[머니테크]달러로 결제할까, 원화로 결제할까… 해외 직구 카드 활용법",
-     "desc": "면제· 해외 적립형 카드 혜택 따져봐야 블랙프라이데이를 앞두고 해외 직구를 계획하고 있다면 상품 할인 율과... 여행 용으로 알려져 있지만 해외 온라인 가맹점에서도 혜택을 제공하는 상품이 있기 때문이다. 신한카드 ...",
-     "summary": [
-      "면제· 해외 적립형 카드 혜택 따져봐야 블랙프라이데이를 앞두고 해외 직구를 계획하고 있다면 상품 할인 율과...",
-      "여행 용으로 알려져 있지만 해외 온라인 가맹점에서도 혜택을 제공하는 상품이 있기 때문이다."
-     ],
-     "link": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202611051326205240807",
-     "source": "네이버 뉴스",
-     "date": "2026-11-05T21:22:00.000Z",
-     "found": "2026-11-06",
-     "cards": [
-      "신한카드"
-     ],
-     "airlines": [],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "신한카드 해외여행 할인",
-     "bodyAt": "2026-11-06",
-     "body": [
-      "해외 온라인 쇼핑몰에서 원화로 결제할 때 해당 서비스가 적용되면 약 3~8%의 추가 수수료가 발생할 수 있다.",
-      "신한카드 'SOL트래블 체크'는 해외 가맹점 이용 시 국제브랜드와 해외서비스 수수료를 합쳐 1.2%를 면제해준다.",
-      "하나카드 '트래블로그+ 신용카드'는 해외결제를 신용 방식으로 설정하면 해외 가맹점 이용금액의 3%를 하나머니로 적립해준다.",
-      "신용결제에는 국제브랜드 수수료 1%와 해외서비스 수수료 0.2%가 부과된다.",
-      "따라서 3% 적립률만 볼 것이 아니라 수수료와 적립한도를 함께 고려해야 한다."
-     ],
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "카드 해외결제 혜택 기사",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "https://www.newsway.co.kr/news/view|\" 할인 ·플랫폼으로는 한계\"…호텔업계, 카드 사와 손잡고 돌파구 찾는다",
-     "kind": "card",
-     "title": "\" 할인 ·플랫폼으로는 한계\"…호텔업계, 카드 사와 손잡고 돌파구 찾는다",
-     "desc": "호텔은 신한카드 고객을 대상으로 제휴 할인 과 전용 패키지 등을 마련할 계획이다. 인스파이어가 부대시설까지 제휴 범위를 넓힌 배경에는 복합리조트의 매출 구조가 있다. 객실을 찾는 여행 객뿐 아니라 물놀이나 외식을...",
-     "summary": [
-      "호텔은 신한카드 고객을 대상으로 제휴 할인 과 전용 패키지 등을 마련할 계획이다.",
-      "인스파이어가 부대시설까지 제휴 범위를 넓힌 배경에는 복합리조트의 매출 구조가 있다.",
-      "객실을 찾는 여행 객뿐 아니라 물놀이나 외식을…"
-     ],
-     "link": "https://www.newsway.co.kr/news/view?ud=2026110611012644629",
-     "source": "네이버 뉴스",
-     "date": "2026-11-06T23:02:00.000Z",
-     "found": "2026-11-07",
-     "cards": [
-      "신한카드"
-     ],
-     "airlines": [],
-     "countries": [
-      "일본"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "신한카드 해외여행 할인",
-     "bodyAt": "2026-11-07",
-     "body": [
-      "7일 호텔업계에 따르면 인천 영종도 인스파이어 엔터테인먼트 리조트는 최근 신한카드와 업무협약을 맺고 오는 12월부터 약 1년간 공동 마케팅을 진행한다.",
-      "인스파이어가 부대시설까지 제휴 범위를 넓힌 배경에는 복합리조트의 매출 구조가 있다.",
-      "투숙객의 리조트 내 식사나 레저시설 이용이 늘면 객실 판매량이 같아도 한 팀의 투숙에서 거두는 매출이 커진다.",
-      "실제 지난해 전 세계 메리어트 계열 호텔의 객실 숙박일수 가운데 약 68%를 본보이 회원이 예약한 것으로 나타났다.",
-      "메리어트는 사업보고서에서 통상 계약 초기에 고정 대가를 받고 계약 기간에는 주로 카드 사용 실적에 따라 매달 대가를 받는다고 밝혔다.",
-      "고객이 호텔에 묵지 않는 기간의 결제에서도 수입이 발생하며 이 수입은 본보이 멤버십의 주요 재원으로 쓰인다.",
-      "체인 본사가 카드사와 맺은 계약이 개별 호텔의 객실 판매를 뒷받침하는 구조다.",
-      "지난 7월 아메리칸익스프레스와 프랑스·일본 등 12개 시장에서 포인트 전환을 단계적으로 도입한다고 발표했다.",
-      "아코르에서 포인트를 쌓아 온 회원 외에 계열 호텔을 이용해 본 적 없는 고객의 첫 예약까지 겨냥한 것이다.",
-      "· 강원랜드, 3Q 영업익 597억원···전년 대비 17.9%↓",
-      "· 인디 뷰티 홍수에 화장품 뒷면부터 본다···구매 기준 된 '제조사'",
-      "· 한국콜마, 3Q 매출 8282억원 '역대 최대'···영업익 40.5%↑"
-     ],
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "호텔·카드 제휴 마케팅 기사",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "https://www.dt.co.kr/article/12093656|생활비부터 항공 마일까지…혜택 좋은 신용카드 ‘톱5’",
-     "kind": "card",
-     "title": "생활비부터 항공 마일까지…혜택 좋은 신용카드 ‘톱5’",
-     "desc": "고물가 부담에 신용카드 혜택을 따지는 소비자들이 늘면서 생활비와 항공 마일리지 적립 등 소비 영역에 따라 할인 및 적립 혜택을 제공하는 카드가 다양해지고 있다. 5일 신용카드 플랫폼 카드고릴라에 따르면 지난달 가장 인기가 많았던 신용카드는 신한카드의 ‘Mr.Life’ ...",
-     "summary": [
-      "고물가 부담에 신용카드 혜택을 따지는 소비자들이 늘면서 생활비와 항공 마일리지 적립 등 소비 영역에 따라 할인 및 적립 혜택을 제공하는 카드가 다양해지고 있다.",
-      "5일 신용카드 플랫폼 카드고릴라에 따르면 지난달 가장 인기가 많았던 신용카드는 신한카드의 ‘Mr.Life’…"
-     ],
-     "link": "https://www.dt.co.kr/article/12093656",
-     "source": "디지털타임스",
-     "date": "2026-11-07T07:45:00.000Z",
-     "found": "2026-11-08",
-     "cards": [
-      "신한카드"
-     ],
-     "airlines": [],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "신한카드 항공권 할인",
-     "bodyAt": "2026-11-08",
-     "body": [
-      "지난 10월 1일부터 31일까지 카드고릴라가 실시간 집계한 국내 2000여개 카드의 조회수와 신청수를 기반으로 산정한 결과다.",
-      "전기요금과 도시가스요금, 통신요금 등 공과금에 10% 할인을 제공한다.",
-      "편의점과 병원, 약국 등에서도 10% 할인 혜택을 받을 수 있다.",
-      "오후 9시부터 다음 날 오전 9시까지는 온라인쇼핑과 택시, 음식점·커피 이용 시 10% 할인이 적용된다.",
-      "전월 실적 조건 없이 국내외 모든 가맹점에서 1000원당 1마일리지를 적립할 수 있다.",
-      "국내형은 백화점·주유·커피·편의점·택시 이용 1000원당 1마일리지가 추가 적립되며, 해외형은 해외 결제와 해외직구 이용 시 마일리지가 적립된다.",
-      "국내 결제 0.7% 할인, 아파트관리비·통신비 10% 할인, 교육·학원비 10% 할인 중 하나를 고를 수 있다.",
-      "온라인쇼핑·의료·배달앱 또는 음식점·편의점·마트·주유 영역에서도 선택에 따라 7%의 할인 혜택을 받을 수 있다.",
-      "OTT와 멤버십 구독료는 50%까지 할인된다.",
-      "4위인 KB국민카드의 ‘굿데이카드’는 주유소와 충전소에서 리터당 60원을 할인이 적용되며, 통신비와 대중교통, 음식점, 커피, 편의점, 약국 등에서 10% 할인 혜택을 제공한다.",
-      "쇼핑·배달앱 결제 시 2%, 대중교통·택시 이용 시 결제액의 3%가 적립된다."
-     ],
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "카드 신상품 소개, 항공권 할인 아님",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "http://www.the-biz.co.kr/news/articleView.html|[위클리 생활금융] 여행 ·골프·스포츠까지… 카드 업계, 맞춤형 혜택 경",
-     "kind": "card",
-     "title": "[위클리 생활금융] 여행 ·골프·스포츠까지… 카드 업계, 맞춤형 혜택 경...",
-     "desc": "카드 사들이 해외여행 과 골프, 스포츠 등 고객의 소비 유형에 맞춘 혜택을 확대하고 있다. 단순 결제 할인 에... 롯데 카드 는 추가 캐시백과 멤버십 구독권 제공 행사도 진행한다. 신한카드 는 아디다스·마스터 카드 와...",
-     "summary": [
-      "카드 사들이 해외여행 과 골프, 스포츠 등 고객의 소비 유형에 맞춘 혜택을 확대하고 있다.",
-      "단순 결제 할인 에...",
-      "롯데 카드 는 추가 캐시백과 멤버십 구독권 제공 행사도 진행한다."
-     ],
-     "link": "http://www.the-biz.co.kr/news/articleView.html?idxno=730855",
-     "source": "네이버 뉴스",
-     "date": "2026-11-08T02:00:00.000Z",
-     "found": "2026-11-08",
-     "cards": [
-      "신한카드"
-     ],
-     "airlines": [],
-     "countries": [
-      "베트남"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "신한카드 해외여행 할인",
-     "bodyAt": "2026-11-08",
-     "body": [
-      "단순 결제 할인에서 벗어나 여행 중 이동과 쇼핑, 취미생활까지 다양한 영역으로 제휴를 넓히는 모습이다.",
-      "내년 1월 31일까지 비자 브랜드 JADE 계열 카드와 트래블GO 체크카드, 하나 나라사랑카드 이용자에게 롯데마트 베트남에서 최대 10% 즉시할인을 제공한다.",
-      "그린SM과 콩카페에서 행사 기간 가맹점별 누적 이용금액이 1만원 이상이면 각각 5000하나머니를 지급한다.",
-      "골프존파크 이용금액의 30%, 다른 골프업종 결제금액의 5%를 캐시백해 주는 상품으로 전월 이용 실적과 골프존 G멤버십 가입 여부에 따라 월 할인 한도가 달라진다.",
-      "G멤버십 회원은 전월 40만원 이상 이용하면 골프존파크에서 월 최대 1만5000원, 80만원 이상이면 최대 2만5000원을 돌려받을 수 있다.",
-      "문서 작성과 프로그램 개발, 데이터 분석은 물론 반복 업무 자동화까지 지원하는 시스템이다.",
-      "현재 약 50개의 업무용 AI 에이전트를 운영하고 있으며 연간 10만2000시간의 업무 시간을 절감하고 관련 운영 비용도 최대 70% 줄였다는 설명이다."
-     ],
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "카드사 혜택 확대 기사",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "https://www.newstap.co.kr/news/articleView.html|신한카드 들고 후쿠오카 가면 혜택…11월부터 교통&#183;쇼핑&#183",
-     "kind": "card",
-     "title": "신한카드 들고 후쿠오카 가면 혜택…11월부터 교통&#183;쇼핑&#183;맛집 할인",
-     "desc": "프로모션 대상은 신한카드가 발행하는 일본 여행 특화 카드인 ‘신한카드 Haru’와 ‘신한카드 SOL Trip & J’ 회원이다. 해당 카드를 소지한 한국인 여행객은 후쿠오카 현지에서 교통수단의 컨택리스 결제 승차 혜택을 비롯해 주요 상업시설과 호텔 레스토랑의 할인 혜택을 이용할 수 있다.",
-     "summary": [
-      "프로모션 대상은 신한카드가 발행하는 일본 여행 특화 카드인 ‘신한카드 Haru’와 ‘신한카드 SOL Trip & J’ 회원이다.",
-      "해당 카드를 소지한 한국인 여행객은 후쿠오카 현지에서 교통수단의 컨택리스 결제 승차 혜택을 비롯해 주요 상업시설과 호텔 레스토랑의 할인 혜택을 이용할 수 있다."
-     ],
-     "link": "https://www.newstap.co.kr/news/articleView.html?idxno=336644",
-     "source": "뉴스탭",
-     "date": "2026-10-28T23:33:00.000Z",
-     "found": "2026-10-31",
-     "cards": [
-      "신한카드"
-     ],
-     "airlines": [],
-     "countries": [
-      "일본"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "신한카드 해외여행 할인",
-     "bodyAt": "2026-11-01",
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "카드사 현지 할인 혜택",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "https://www.newstap.co.kr/news/articleView.html|신한카드 들고 후쿠오카 가면 혜택…11월부터 교통·쇼핑·맛집 할인",
-     "kind": "card",
-     "title": "신한카드 들고 후쿠오카 가면 혜택…11월부터 교통·쇼핑·맛집 할인",
-     "desc": "프로모션 대상은 신한카드가 발행하는 일본 여행 특화 카드인 ‘신한카드 Haru’와 ‘신한카드 SOL Trip & J’ 회원이다. 해당 카드를 소지한 한국인 여행객은 후쿠오카 현지에서 교통수단의 컨택리스 결제 승차 혜택을 비롯해 주요 상업시설과 호텔 레스토랑의 할인 혜택을 이용할 수 있다.",
-     "summary": [
-      "프로모션 대상은 신한카드가 발행하는 일본 여행 특화 카드인 ‘신한카드 Haru’와 ‘신한카드 SOL Trip & J’ 회원이다.",
-      "해당 카드를 소지한 한국인 여행객은 후쿠오카 현지에서 교통수단의 컨택리스 결제 승차 혜택을 비롯해 주요 상업시설과 호텔 레스토랑의 할인 혜택을 이용할 수 있다."
-     ],
-     "link": "https://www.newstap.co.kr/news/articleView.html?idxno=336644",
-     "source": "뉴스탭",
-     "date": "2026-10-28T23:33:00.000Z",
-     "found": "2026-11-01",
-     "cards": [
-      "신한카드"
-     ],
-     "airlines": [],
-     "countries": [
-      "일본"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "신한카드 해외여행 할인",
-     "bodyAt": "2026-11-01",
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "카드사 현지 할인 혜택",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "9F%93-%EA%B4%80%EA%B4%91%EA%B0%9D-%EB%8C%80%EC%83%81-%EA%B3%B5%EB%8F%99-%ED%94%84%EB%A1%9C%EB%AA%A8%EC%85%98/ar-AA2gjHgz|내 신용카드로 후쿠오카 버스 탄다…JCB&#183;신한카드&#183;니시",
-     "kind": "card",
-     "title": "내 신용카드로 후쿠오카 버스 탄다…JCB&#183;신한카드&#183;니시테츠, 韓 관광객 대상 공동 프로모션",
-     "desc": "일본 국제 카드 브랜드 JCB가 신한카드, 일본 니시테츠 그룹과 협력해 오는 11월 1일부터 한국인 관광객을 대상으로 후쿠오카를 방문하는 한국인 여행객에게 교통&#183;쇼핑&#183;호텔 이용 혜택을 제공하는 공동 프로모션을 실시한다고 밝혔다.",
-     "summary": [
-      "일본 국제 카드 브랜드 JCB가 신한카드, 일본 니시테츠 그룹과 협력해 오는 11월 1일부터 한국인 관광객을 대상으로 후쿠오카를 방문하는 한국인 여행객에게 교통&#183;쇼핑&#183;호텔 이용 혜택을 제공하는 공동 프로모션을 실…"
-     ],
-     "link": "https://www.msn.com/ko-kr/travel/%EC%B9%B4%EC%A7%80%EB%85%B8-%EB%B0%8F-%EB%8F%84%EB%B0%95/%EB%82%B4-%EC%8B%A0%EC%9A%A9%EC%B9%B4%EB%93%9C%EB%A1%9C-%ED%9B%84%EC%BF%A0%EC%98%A4%EC%B9%B4-%EB%B2%84%EC%8A%A4-%ED%83%84%EB%8B%A4-jcb-%EC%8B%A0%ED%95%9C%EC%B9%B4%EB%93%9C-%EB%8B%88%EC%8B%9C%ED%85%8C%EC%B8%A0-%E9%9F%93-%EA%B4%80%EA%B4%91%EA%B0%9D-%EB%8C%80%EC%83%81-%EA%B3%B5%EB%8F%99-%ED%94%84%EB%A1%9C%EB%AA%A8%EC%85%98/ar-AA2gjHgz",
-     "source": "헤럴드경제 on MSN",
-     "date": "2026-10-29T07:30:00.000Z",
-     "found": "2026-10-31",
-     "cards": [
-      "신한카드"
-     ],
-     "airlines": [],
-     "countries": [
-      "일본"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "신한카드 해외여행 할인",
-     "bodyAt": "2026-11-01",
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "항공권 아닌 교통·쇼핑·호텔 혜택",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "9F%93-%EA%B4%80%EA%B4%91%EA%B0%9D-%EB%8C%80%EC%83%81-%EA%B3%B5%EB%8F%99-%ED%94%84%EB%A1%9C%EB%AA%A8%EC%85%98/ar-AA2gjHgz|내 신용카드로 후쿠오카 버스 탄다…JCB·신한카드·니시테츠, 韓 관광객 ",
-     "kind": "card",
-     "title": "내 신용카드로 후쿠오카 버스 탄다…JCB·신한카드·니시테츠, 韓 관광객 대상 공동 프로모션",
-     "desc": "일본 국제 카드 브랜드 JCB가 신한카드, 일본 니시테츠 그룹과 협력해 오는 11월 1일부터 한국인 관광객을 대상으로 후쿠오카를 방문하는 한국인 여행객에게 교통·쇼핑·호텔 이용 혜택을 제공하는 공동 프로모션을 실시한다고 밝혔다.",
-     "summary": [
-      "일본 국제 카드 브랜드 JCB가 신한카드, 일본 니시테츠 그룹과 협력해 오는 11월 1일부터 한국인 관광객을 대상으로 후쿠오카를 방문하는 한국인 여행객에게 교통·쇼핑·호텔 이용 혜택을 제공하는 공동 프로모션을 실시한다고 밝혔다."
-     ],
-     "link": "https://www.msn.com/ko-kr/travel/%EC%B9%B4%EC%A7%80%EB%85%B8-%EB%B0%8F-%EB%8F%84%EB%B0%95/%EB%82%B4-%EC%8B%A0%EC%9A%A9%EC%B9%B4%EB%93%9C%EB%A1%9C-%ED%9B%84%EC%BF%A0%EC%98%A4%EC%B9%B4-%EB%B2%84%EC%8A%A4-%ED%83%84%EB%8B%A4-jcb-%EC%8B%A0%ED%95%9C%EC%B9%B4%EB%93%9C-%EB%8B%88%EC%8B%9C%ED%85%8C%EC%B8%A0-%E9%9F%93-%EA%B4%80%EA%B4%91%EA%B0%9D-%EB%8C%80%EC%83%81-%EA%B3%B5%EB%8F%99-%ED%94%84%EB%A1%9C%EB%AA%A8%EC%85%98/ar-AA2gjHgz",
-     "source": "헤럴드경제 on MSN",
-     "date": "2026-10-29T07:30:00.000Z",
-     "found": "2026-11-01",
-     "cards": [
-      "신한카드"
-     ],
-     "airlines": [],
-     "countries": [
-      "일본"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "신한카드 해외여행 할인",
-     "bodyAt": "2026-11-01",
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "버스·쇼핑·호텔 혜택 프로모션",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "kxTnQyWWo5NkNYQTV5WGJYY24xZC14dHlrVmNjeEFtLXRfb3Q3c2NFMXhHMWRXdXNnbUo2YUNaSUt5a2g0SXdhRUhoRTZYaGJXa19lUGZxY3pySkF3N1c0UQ|신한카드 고향사랑기부만의 혜택, 마이신한포인트에 여행상품권 100만원 추",
-     "kind": "card",
-     "title": "신한카드 고향사랑기부만의 혜택, 마이신한포인트에 여행상품권 100만원 추첨까지 _ 할인·이벤트 정보",
-     "desc": "신한카드 고향사랑기부만의 혜택, 마이신한포인트에 여행상품권 100만원 추첨까지 _ 할인·이벤트 정보 자투리경제",
-     "summary": [
-      "신한카드 고향사랑기부만의 혜택, 마이신한포인트에 여행상품권 100만원 추첨까지 _ 할인·이벤트 정보 자투리경제…"
-     ],
-     "link": "https://www.jaturi.kr/news/articleView.html?idxno=27793",
-     "source": "자투리경제",
-     "date": "2026-11-11T00:55:59.000Z",
-     "found": "2026-11-11",
-     "cards": [
-      "신한카드"
-     ],
-     "airlines": [],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "신한카드 항공권 할인",
-     "bodyAt": "2026-11-11",
-     "body": [
-      "신한카드 고향사랑기부만의 혜택, 마이신한포인트에 여행상품권 100만원 추첨까지 _ 할인·이벤트 정보",
-      "백화점 3사, 외국인 증가 호실적 연말까지 잇는다…겨울 정기세일 · 문화 콘텐츠 강화 _ 유통 게시판"
-     ],
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "카드사 이벤트, 항공권 무관",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "고향사랑기부 포인트·경품 이벤트",
+       "cards": [
+        "신한카드"
+       ],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     }
@@ -13220,17 +13483,19 @@
    ],
    "ai": {
     "v": 2,
-    "promo": false,
-    "why": "면세점 행사, 항공권은 경품",
-    "airlines": [],
-    "name": null,
-    "book": null,
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": null,
-    "seoul": null,
-    "at": "2026-11-12",
+    "cv": 1,
+    "card": {
+     "ok": false,
+     "why": "면세점 쇼핑 할인 행사",
+     "cards": [],
+     "use": null,
+     "airlines": [],
+     "amount": null,
+     "pct": null,
+     "min": null,
+     "period": null
+    },
+    "at": "2026-11-13",
     "model": "deepseek-v4-flash"
    },
    "lastDate": "2026-11-10T06:58:00.000Z",
@@ -13273,17 +13538,19 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "면세점 행사, 항공권은 경품",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "면세점 쇼핑 할인 행사",
+       "cards": [],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -13324,17 +13591,25 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "면세점 행사, 항공권은 경품",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "면세점 쇼핑 할인·경품 행사",
+       "cards": [
+        "카카오페이",
+        "네이버페이",
+        "페이코",
+        "롯데카드",
+        "우리카드"
+       ],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -13370,17 +13645,19 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "면세점 행사, 항공권은 경품",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "면세점 쇼핑 할인 행사",
+       "cards": [],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -13423,17 +13700,19 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "면세점 행사, 항공권은 경품",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "면세점 쇼핑 할인 행사",
+       "cards": [],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -13476,17 +13755,25 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "면세점 행사, 항공권은 경품",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "면세점 쇼핑 할인 행사",
+       "cards": [
+        "카카오페이",
+        "네이버페이",
+        "페이코",
+        "롯데카드",
+        "우리카드"
+       ],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -13527,17 +13814,25 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "면세점 행사, 항공권은 경품",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "면세점 쇼핑 할인 행사",
+       "cards": [
+        "카카오페이",
+        "네이버페이",
+        "페이코",
+        "롯데카드",
+        "우리카드"
+       ],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -13568,17 +13863,19 @@
      "bodyAt": "2026-11-10",
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "면세점 행사, 항공권은 경품",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "면세점 쇼핑 할인 행사",
+       "cards": [],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     }
@@ -13622,17 +13919,19 @@
    ],
    "ai": {
     "v": 2,
-    "promo": false,
-    "why": "면세점 행사, 항공권은 경품",
-    "airlines": [],
-    "name": null,
-    "book": null,
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": null,
-    "seoul": null,
-    "at": "2026-11-12",
+    "cv": 1,
+    "card": {
+     "ok": false,
+     "why": "면세점 쇼핑 할인 행사",
+     "cards": [],
+     "use": null,
+     "airlines": [],
+     "amount": null,
+     "pct": null,
+     "min": null,
+     "period": null
+    },
+    "at": "2026-11-13",
     "model": "deepseek-v4-flash"
    },
    "lastDate": "2026-11-10T06:34:00.000Z",
@@ -14099,17 +14398,19 @@
    ],
    "ai": {
     "v": 2,
-    "promo": false,
-    "why": "항공권은 추첨 경품일 뿐",
-    "airlines": [],
-    "name": null,
-    "book": null,
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": null,
-    "seoul": null,
-    "at": "2026-11-12",
+    "cv": 1,
+    "card": {
+     "ok": false,
+     "why": "경품 추첨·차량 행사 소식",
+     "cards": [],
+     "use": null,
+     "airlines": [],
+     "amount": null,
+     "pct": null,
+     "min": null,
+     "period": null
+    },
+    "at": "2026-11-13",
     "model": "deepseek-v4-flash"
    },
    "lastDate": "2026-11-10T05:36:00.000Z",
@@ -15612,17 +15913,19 @@
    ],
    "ai": {
     "v": 2,
-    "promo": false,
-    "why": "면세점 행사, 항공권은 경품",
-    "airlines": [],
-    "name": null,
-    "book": null,
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": null,
-    "seoul": null,
-    "at": "2026-11-12",
+    "cv": 1,
+    "card": {
+     "ok": false,
+     "why": "백화점·면세점 할인 행사",
+     "cards": [],
+     "use": null,
+     "airlines": [],
+     "amount": null,
+     "pct": null,
+     "min": null,
+     "period": null
+    },
+    "at": "2026-11-13",
     "model": "deepseek-v4-flash"
    },
    "lastDate": "2026-11-09T23:36:00.000Z",
@@ -16226,19 +16529,23 @@
    "query": "Air Macau 프로모션",
    "ai": {
     "v": 2,
-    "promo": true,
-    "why": "에어마카오 1+1 및 카드 즉시할인",
-    "airlines": [
-     "에어마카오"
-    ],
-    "name": "에어마카오 1+1",
-    "book": null,
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": null,
-    "seoul": null,
-    "at": "2026-11-12",
+    "cv": 1,
+    "card": {
+     "ok": true,
+     "why": "항공권 카드 결제 즉시할인",
+     "cards": [
+      "우리카드"
+     ],
+     "use": "항공권",
+     "airlines": [
+      "에어마카오"
+     ],
+     "amount": 32000,
+     "pct": null,
+     "min": null,
+     "period": null
+    },
+    "at": "2026-11-13",
     "model": "deepseek-v4-flash"
    },
    "lastDate": "2026-11-09T09:00:50.367Z",
@@ -18115,18 +18422,16 @@
    "lastFound": "2026-11-09"
   },
   {
-   "id": "%B8-%ED%8A%B8%EB%A6%AC%EB%8B%88%ED%8B%B0%ED%95%AD%EA%B3%B5-11%EC%9B%94-%EC%97%AC%ED%96%89-%ED%8A%B9%EA%B0%80/ar-AA2gyqDF|항공권 최대 25% 할인... 트리니티항공, 11월 여행 특가",
+   "id": "FDSldYWGdERDJzNk1OemFvWjFKbk8xTlpDTWNCSU5UMkVzemtYekVTNTJ6VnkyeTZKd2FvTGF0Y0FkX2tZVzFJdXVTYTFNMXJmWXlmX2dRZWVZbFNwRFktdw|트리니티항공, ‘더블 혜택 프로모션’…국제선 최대 25% 할인",
    "kind": "airline",
-   "title": "항공권 최대 25% 할인... 트리니티항공, 11월 여행 특가",
-   "desc": "[서울경제TV=김지송 인턴기자] 트리니티항공이 국제선 항공권을 최대 25% 할인하고 최대 3만원의 중복 할인 쿠폰을 제공한다. 일본과 동남아, 유럽 등 주요 노선을 대상으로 내년 1월까지 출발하는 항공편에 혜택을 적용한다.소노트리니티그룹 트리니티항공은 오는 13일까지 '11월 맞이 더블 혜택' 프로모션을 진행한다고 2일 밝혔다. 공식 홈페이지와 모바일 앱· ...",
+   "title": "트리니티항공, ‘더블 혜택 프로모션’…국제선 최대 25% 할인",
+   "desc": "트리니티항공, ‘더블 혜택 프로모션’…국제선 최대 25% 할인 싱글리스트",
    "summary": [
-    "트리니티항공이 국제선 항공권을 최대 25% 할인하고 최대 3만원의 중복 할인 쿠폰을 제공한다.",
-    "일본과 동남아, 유럽 등 주요 노선을 대상으로 내년 1월까지 출발하는 항공편에 혜택을 적용한다.",
-    "소노트리니티그룹 트리니티항공은 오는 13일까지 '11월 맞이 더블 혜택' 프로모션을 진행한다고 2일 밝혔다."
+    "트리니티항공, ‘더블 혜택 프로모션’…국제선 최대 25% 할인 싱글리스트…"
    ],
-   "link": "https://www.msn.com/ko-kr/travel/%EC%9D%BC%EB%B0%98/%ED%95%AD%EA%B3%B5%EA%B6%8C-%EC%B5%9C%EB%8C%80-25-%ED%95%A0%EC%9D%B8-%ED%8A%B8%EB%A6%AC%EB%8B%88%ED%8B%B0%ED%95%AD%EA%B3%B5-11%EC%9B%94-%EC%97%AC%ED%96%89-%ED%8A%B9%EA%B0%80/ar-AA2gyqDF",
-   "source": "서울경제TV SEN on MSN",
-   "date": "2026-11-01T17:35:06.000Z",
+   "link": "https://www.slist.kr/news/articleView.html?idxno=778231",
+   "source": "싱글리스트",
+   "date": "2026-11-02T00:12:06.000Z",
    "found": "2026-11-02",
    "cards": [],
    "airlines": [
@@ -18151,16 +18456,28 @@
     "amount": 30000,
     "trip": "oneway?"
    },
-   "query": "일본 항공권 특가",
+   "query": "싱가포르 항공 프로모션",
    "bodyAt": "2026-11-02",
+   "body": [
+    "트리니티항공, ‘더블 혜택 프로모션’…국제선 최대 25% 할인",
+    "소노트리니티그룹 트리니티항공이 주요 국제선 항공권에 최대 25% 할인 코드와 중복 할인 쿠폰을 함께 적용할 수 있는 ‘더블 혜택 프로모션’을 진행한다.",
+    "프로모션은 11월 13일까지 공식 홈페이지와 모바일 앱·웹에서 진행된다.",
+    "탑승 기간은 2027년 1월 31일까지이며 일부 기간은 제외된다.",
+    "홈페이지에서 항공권을 예매할 때 할인 코드 ‘NOV26’을 입력하면 노선에 따라 최대 25% 즉시 할인을 받는다.",
+    "별도로 지급하는 중복 할인 쿠폰도 코드 혜택과 함께 사용할 수 있다.",
+    "11월에는 일본 오사카 ‘빛의 향연’, 홍콩 ‘국제 와인·주류 박람회’, 대만 타이베이 ‘국제 여행박람회’, 마카오 ‘그랑프리’ 등 국제 행사도 예정돼 있다.",
+    "항공권 할인 외에 유럽 기차 8% 할인과 시티투어 ‘빅버스’ 20% 할인, 결제 제휴 할인도 제공한다.",
+    "트리니티항공 관계자는 “고객들의 여행 경비 부담을 덜고자 할인 코드와 중복 할인 쿠폰을 함께 제공하는 프로모션을 마련했다”며 “내년 1월까지 탑승할 수 있는 만큼 다양한 할인 혜택을 활용해 여행을 미리 준비하시길 바란다”고 전했다."
+   ],
+   "notified": "2026-11-02",
    "ai": {
     "v": 2,
     "promo": true,
-    "why": "항공사 국제선 운임 할인 프로모션",
+    "why": "항공사 국제선 할인코드 프로모션",
     "airlines": [
      "트리니티항공"
     ],
-    "name": "11월 맞이 더블 혜택",
+    "name": "더블 혜택 프로모션",
     "book": {
      "from": null,
      "to": "2026-11-13"
@@ -18179,69 +18496,6 @@
    "lastDate": "2026-11-08T05:20:00.000Z",
    "lastFound": "2026-11-08",
    "more": [
-    {
-     "id": "FDSldYWGdERDJzNk1OemFvWjFKbk8xTlpDTWNCSU5UMkVzemtYekVTNTJ6VnkyeTZKd2FvTGF0Y0FkX2tZVzFJdXVTYTFNMXJmWXlmX2dRZWVZbFNwRFktdw|트리니티항공, ‘더블 혜택 프로모션’…국제선 최대 25% 할인",
-     "kind": "airline",
-     "title": "트리니티항공, ‘더블 혜택 프로모션’…국제선 최대 25% 할인",
-     "desc": "트리니티항공, ‘더블 혜택 프로모션’…국제선 최대 25% 할인 싱글리스트",
-     "summary": [
-      "트리니티항공, ‘더블 혜택 프로모션’…국제선 최대 25% 할인 싱글리스트…"
-     ],
-     "link": "https://www.slist.kr/news/articleView.html?idxno=778231",
-     "source": "싱글리스트",
-     "date": "2026-11-02T00:12:06.000Z",
-     "found": "2026-11-02",
-     "cards": [],
-     "airlines": [
-      "TW"
-     ],
-     "countries": [
-      "일본",
-      "대만",
-      "홍콩",
-      "마카오"
-     ],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "싱가포르 항공 프로모션",
-     "bodyAt": "2026-11-02",
-     "body": [
-      "트리니티항공, ‘더블 혜택 프로모션’…국제선 최대 25% 할인",
-      "소노트리니티그룹 트리니티항공이 주요 국제선 항공권에 최대 25% 할인 코드와 중복 할인 쿠폰을 함께 적용할 수 있는 ‘더블 혜택 프로모션’을 진행한다.",
-      "프로모션은 11월 13일까지 공식 홈페이지와 모바일 앱·웹에서 진행된다.",
-      "탑승 기간은 2027년 1월 31일까지이며 일부 기간은 제외된다.",
-      "홈페이지에서 항공권을 예매할 때 할인 코드 ‘NOV26’을 입력하면 노선에 따라 최대 25% 즉시 할인을 받는다.",
-      "별도로 지급하는 중복 할인 쿠폰도 코드 혜택과 함께 사용할 수 있다.",
-      "11월에는 일본 오사카 ‘빛의 향연’, 홍콩 ‘국제 와인·주류 박람회’, 대만 타이베이 ‘국제 여행박람회’, 마카오 ‘그랑프리’ 등 국제 행사도 예정돼 있다.",
-      "항공권 할인 외에 유럽 기차 8% 할인과 시티투어 ‘빅버스’ 20% 할인, 결제 제휴 할인도 제공한다.",
-      "트리니티항공 관계자는 “고객들의 여행 경비 부담을 덜고자 할인 코드와 중복 할인 쿠폰을 함께 제공하는 프로모션을 마련했다”며 “내년 1월까지 탑승할 수 있는 만큼 다양한 할인 혜택을 활용해 여행을 미리 준비하시길 바란다”고 전했다."
-     ],
-     "notified": "2026-11-02",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "항공사 국제선 할인코드 프로모션",
-      "airlines": [
-       "트리니티항공"
-      ],
-      "name": "더블 혜택 프로모션",
-      "book": {
-       "from": null,
-       "to": "2026-11-13"
-      },
-      "board": {
-       "from": null,
-       "to": "2027-01-31"
-      },
-      "price": null,
-      "trip": null,
-      "pct": 25,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
     {
      "id": "5YVhlQVNGZlZVNmNRc0NBTWlWOHJBOEo3amw3cXQxWl84WkpGRXYxMERBMTUtTHNpYW5xekd6NS1mVUMwajVva0hwVTc3UFpuTnJqOHBBdFNYRGFMYnB6YTQ|트리니티항공, 국제선 항공권 최대 25% 할인···추가 쿠폰 3만원 제공",
      "kind": "airline",
@@ -19594,67 +19848,6 @@
      }
     },
     {
-     "id": "http://www.enewstoday.co.kr/news/articleView.html|'가을·겨울' 해외 여행객 잡는다··· 트리니티항공 11월 ' 프로모션 ",
-     "kind": "airline",
-     "title": "'가을·겨울' 해외 여행객 잡는다··· 트리니티항공 11월 ' 프로모션 ' 진...",
-     "desc": "혜택 프로모션 '을 진행한다고 2일 밝혔다. 이번 프로모션 은 트리니티항공 공식 홈페이지와 모바일 앱(웹)... 캐나다· 싱가포르 시티투어 '빅버스' 20% 할인 등 결제 제휴 혜택도 함께 적용된다. 트리니티항공 관계자는...",
-     "summary": [
-      "혜택 프로모션 '을 진행한다고 2일 밝혔다.",
-      "이번 프로모션 은 트리니티항공 공식 홈페이지와 모바일 앱(웹)...",
-      "캐나다· 싱가포르 시티투어 '빅버스' 20% 할인 등 결제 제휴 혜택도 함께 적용된다."
-     ],
-     "link": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2487049",
-     "source": "네이버 뉴스",
-     "date": "2026-11-02T00:39:00.000Z",
-     "found": "2026-11-03",
-     "cards": [],
-     "airlines": [
-      "TW"
-     ],
-     "countries": [
-      "싱가포르",
-      "일본",
-      "대만",
-      "홍콩",
-      "마카오"
-     ],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "트리니티항공 싱가포르 {특가말}",
-     "bodyAt": "2026-11-03",
-     "body": [
-      "[이뉴스투데이 김재한 기자] 트리니티항공이 가을과 겨울 시즌 해외 여행객을 위해 주요 국제선 노선 운임을 인하한다.",
-      "트리니티항공은 이달 13일부터 일본, 동남아, 동북아, 유럽, 호주·캐나다 등 주요 국제선 노선을 대상으로 '더블 혜택 프로모션'을 진행한다고 2일 밝혔다.",
-      "이번 프로모션은 트리니티항공 공식 홈페이지와 모바일 앱(웹)에서 진행되며, 탑승 기간은 일부 기간을 제외하고 내년 1월 31일까지다.",
-      "예매 시 할인 코드 'NOV26'을 입력하면 노선별로 최대 25% 즉시 할인이 적용된다.",
-      "이와 함께 결제 금액에 따라 최대 3만원까지 추가 차감되는 중복 할인 쿠폰이 함께 제공되어 할인 코드와 동시 사용이 가능하다.",
-      "이번 프로모션은 이달 중 열리는 일본 오사카 '빛의 향연', 홍콩 '국제 와인·주류 박람회', 대만 타이베이 '국제 여행박람회', 마카오 '그랑프리' 등 주요 국제 행사 일정과 맞춰 진행된다.",
-      "또한 유럽 기차 8% 할인 및 유럽·홍콩·호주·캐나다·싱가포르 시티투어 '빅버스' 20% 할인 등 결제 제휴 혜택도 함께 적용된다.",
-      "트리니티항공 관계자는 “고객들의 여행 경비 부담을 덜고자 할인 코드와 중복 할인 쿠폰을 함께 제공하는 프로모션을 마련했다”며 “내년 1월까지 탑승할 수 있는 만큼 다양한 할인 혜택을 활용해 여행을 미리 준비하시길 바란다”고 말했다."
-     ],
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "국제선 운임 할인 코드 프로모션",
-      "airlines": [
-       "트리니티항공"
-      ],
-      "name": "더블 혜택 프로모션",
-      "book": null,
-      "board": {
-       "from": null,
-       "to": "2027-01-31"
-      },
-      "price": null,
-      "trip": null,
-      "pct": 25,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
      "id": "VkpWaG0yU0c3RENUUE5QbF9pUjlMZ082bDNGTEtwNkZMOTZsbkFYcXJyR1ZDTHNfcWN1SnZHRm5qb2daeHBNUl95UWxGYUlfY1pqV1pUMXhsaEEtWGVDR01n|트리니티항공, 11월 가을 맞이 더블 혜택 프로모션…최대 25% 할인",
      "kind": "airline",
      "title": "트리니티항공, 11월 가을 맞이 더블 혜택 프로모션…최대 25% 할인",
@@ -19823,6 +20016,69 @@
      }
     },
     {
+     "id": "%B8-%ED%8A%B8%EB%A6%AC%EB%8B%88%ED%8B%B0%ED%95%AD%EA%B3%B5-11%EC%9B%94-%EC%97%AC%ED%96%89-%ED%8A%B9%EA%B0%80/ar-AA2gyqDF|항공권 최대 25% 할인... 트리니티항공, 11월 여행 특가",
+     "kind": "airline",
+     "title": "항공권 최대 25% 할인... 트리니티항공, 11월 여행 특가",
+     "desc": "[서울경제TV=김지송 인턴기자] 트리니티항공이 국제선 항공권을 최대 25% 할인하고 최대 3만원의 중복 할인 쿠폰을 제공한다. 일본과 동남아, 유럽 등 주요 노선을 대상으로 내년 1월까지 출발하는 항공편에 혜택을 적용한다.소노트리니티그룹 트리니티항공은 오는 13일까지 '11월 맞이 더블 혜택' 프로모션을 진행한다고 2일 밝혔다. 공식 홈페이지와 모바일 앱· ...",
+     "summary": [
+      "트리니티항공이 국제선 항공권을 최대 25% 할인하고 최대 3만원의 중복 할인 쿠폰을 제공한다.",
+      "일본과 동남아, 유럽 등 주요 노선을 대상으로 내년 1월까지 출발하는 항공편에 혜택을 적용한다.",
+      "소노트리니티그룹 트리니티항공은 오는 13일까지 '11월 맞이 더블 혜택' 프로모션을 진행한다고 2일 밝혔다."
+     ],
+     "link": "https://www.msn.com/ko-kr/travel/%EC%9D%BC%EB%B0%98/%ED%95%AD%EA%B3%B5%EA%B6%8C-%EC%B5%9C%EB%8C%80-25-%ED%95%A0%EC%9D%B8-%ED%8A%B8%EB%A6%AC%EB%8B%88%ED%8B%B0%ED%95%AD%EA%B3%B5-11%EC%9B%94-%EC%97%AC%ED%96%89-%ED%8A%B9%EA%B0%80/ar-AA2gyqDF",
+     "source": "서울경제TV SEN on MSN",
+     "date": "2026-11-01T17:35:06.000Z",
+     "found": "2026-11-02",
+     "cards": [],
+     "airlines": [
+      "TW",
+      "BX",
+      "ZE",
+      "YP",
+      "PR",
+      "5J"
+     ],
+     "countries": [
+      "일본",
+      "대만",
+      "홍콩",
+      "마카오",
+      "싱가포르",
+      "필리핀"
+     ],
+     "allRoutes": true,
+     "routes": [],
+     "price": {
+      "amount": 30000,
+      "trip": "oneway?"
+     },
+     "query": "일본 항공권 특가",
+     "bodyAt": "2026-11-02",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "항공사 국제선 운임 할인 프로모션",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "11월 맞이 더블 혜택",
+      "book": {
+       "from": null,
+       "to": "2026-11-13"
+      },
+      "board": {
+       "from": null,
+       "to": "2027-01-31"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 25,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
      "id": "https://www.catchnews.kr/news/articleView.html|\" 항공권 값 최대 25%↓+ 3만원 추가 할인 \" 트리니티 '11월 더",
      "kind": "airline",
      "title": "\" 항공권 값 최대 25%↓+ 3만원 추가 할인 \" 트리니티 '11월 더블 프로모션 '",
@@ -19859,127 +20115,6 @@
        "트리니티항공"
       ],
       "name": "11월 더블 프로모션",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": 25,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "iWEFVX3lxTFBQQjRpNUtNT3VPMm5IUGtYXy1xR3pWZHVKV3FDYnZBMW9fVlRva0tMekZvMWtFczhROEZjd1pVclFXYVU3WWZIRVNlSTFZaFRJejlVRFNRNnM|트리니티항공, 11월 국제선 항공권 최대 25% 할인 프로모션",
-     "kind": "airline",
-     "title": "트리니티항공, 11월 국제선 항공권 최대 25% 할인 프로모션",
-     "desc": "트리니티항공, 11월 국제선 항공권 최대 25% 할인 프로모션 경북신문",
-     "summary": [
-      "트리니티항공, 11월 국제선 항공권 최대 25% 할인 프로모션 경북신문…"
-     ],
-     "link": "https://www.kbsm.net/news/view.php?idx=539966",
-     "source": "경북신문",
-     "date": "2026-11-02T01:56:12.000Z",
-     "found": "2026-11-02",
-     "cards": [],
-     "airlines": [
-      "TW"
-     ],
-     "countries": [],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "싱가포르 항공 프로모션",
-     "bodyAt": "2026-11-02",
-     "notified": "2026-11-02",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "항공사 국제선 운임 할인 프로모션",
-      "airlines": [
-       "트리니티항공"
-      ],
-      "name": "11월 국제선 항공권 할인 프로모션",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": 25,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "iWEFVX3lxTFBQQjRpNUtNT3VPMm5IUGtYXy1xR3pWZHVKV3FDYnZBMW9fVlRva0tMekZvMWtFczhROEZjd1pVclFXYVU3WWZIRVNlSTFZaFRJejlVRFNRNnM|트리니티항공, 11월 국제선 항공권 최대 25% 할인",
-     "kind": "airline",
-     "title": "트리니티항공, 11월 국제선 항공권 최대 25% 할인",
-     "desc": "트리니티항공, 11월 국제선 항공권 최대 25% 할인 경북신문",
-     "summary": [
-      "트리니티항공, 11월 국제선 항공권 최대 25% 할인 경북신문…"
-     ],
-     "link": "https://www.kbsm.net/news/view.php?idx=539966",
-     "source": "경북신문",
-     "date": "2026-11-02T01:58:32.000Z",
-     "found": "2026-11-02",
-     "cards": [],
-     "airlines": [
-      "TW"
-     ],
-     "countries": [],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "일본 항공 프로모션",
-     "bodyAt": "2026-11-02",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "국제선 항공권 할인 프로모션",
-      "airlines": [
-       "트리니티항공"
-      ],
-      "name": "11월 국제선 항공권 할인",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": 25,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "TE9iWVB3M0Z6aVgtYm53WU5YUmhETUZHVXZYeWhzeEFzRWJCUmpLeUJzVW14d0huN25xLUJ6R0poNmVqbWFuSG9uTzNGSllUMkw1N0t5TlI1OEhVeXFpMEJv|트리니티항공, 국제선 항공권 최대 25% 할인 행사",
-     "kind": "airline",
-     "title": "트리니티항공, 국제선 항공권 최대 25% 할인 행사",
-     "desc": "트리니티항공, 국제선 항공권 최대 25% 할인 행사 경상매일신문",
-     "summary": [
-      "트리니티항공, 국제선 항공권 최대 25% 할인 행사 경상매일신문…"
-     ],
-     "link": "https://www.ksmnews.co.kr/news/view.php?idx=628111",
-     "source": "경상매일신문",
-     "date": "2026-11-02T08:02:27.000Z",
-     "found": "2026-11-03",
-     "cards": [],
-     "airlines": [
-      "TW"
-     ],
-     "countries": [],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "트리니티항공 {특가말}",
-     "bodyAt": "2026-11-03",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "국제선 항공권 운임 할인 행사",
-      "airlines": [
-       "트리니티항공"
-      ],
-      "name": null,
       "book": null,
       "board": null,
       "price": null,
@@ -20034,163 +20169,6 @@
      }
     },
     {
-     "id": "lzcjZvWmtERTY1NmVoZnE0VTIycG1TMUlTZjBsYTU5Ml9PM253bHEtSkZ3REFiUDZ0eFJZYjVUMGUxZW1Va1k4RFdLRFNKSElvZkVjaElNajI1SEEwb1psQQ|트리니티항공, ‘지금, 제주를 만나다’ 프로모션",
-     "kind": "airline",
-     "title": "트리니티항공, ‘지금, 제주를 만나다’ 프로모션",
-     "desc": "트리니티항공, ‘지금, 제주를 만나다’ 프로모션 싱글리스트",
-     "summary": [
-      "트리니티항공, ‘지금, 제주를 만나다’ 프로모션 싱글리스트…"
-     ],
-     "link": "https://www.slist.kr/news/articleView.html?idxno=777691",
-     "source": "싱글리스트",
-     "date": "2026-10-29T23:57:11.000Z",
-     "found": "2026-11-03",
-     "cards": [],
-     "airlines": [
-      "TW"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "트리니티항공 {특가말}",
-     "bodyAt": "2026-11-03",
-     "body": [
-      "트리니티항공, ‘지금, 제주를 만나다’ 프로모션",
-      "트리니티항공이 제주특별자치도, 제주관광공사와 손잡고 내륙-제주 노선 이용객을 위한 ‘지금, 제주를 만나다’ 프로모션을 펼친다.",
-      "이번 프로모션은 김포·대구·청주·광주에서 출발하는 제주행 국내선 왕복 항공권 구매 고객을 대상으로 진행되며 최대 2만원 할인 쿠폰을 제공한다.",
-      "할인 쿠폰은 30일 오전 10시부터 공식 홈페이지를 통해 선착순 발급된다.",
-      "해당 항공권 탑승 기간은 내년 1월 31일까지다.",
-      "한편 성산일출봉의 장엄한 일출과 협재 해수욕장의 푸른 바다, 제주 올레길 트래킹 등 독특한 자연경관을 자랑하는 제주도는 가을·겨울철 한라산의 오색 단풍과 눈꽃 산행, 따뜻한 온천욕까지 더해져 휴식과 액티비티를 동시에 원하는 여행객들에게 최적의 휴양지로 꼽힌다."
-     ],
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "국내선 제주 노선 할인, 국제선 아님",
-      "airlines": [
-       "트리니티항공"
-      ],
-      "name": "지금, 제주를 만나다",
-      "book": null,
-      "board": {
-       "from": null,
-       "to": "2027-01-31"
-      },
-      "price": null,
-      "trip": "왕복",
-      "pct": null,
-      "seoul": true,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "Yd2tvZDJHbjdJRmNmQTgyNGRCWE1HbzBYblVrOHRFYVdVcnczdzM0XzB5X1c3YkdJWDFTTzlZcXhvcDc2V0gtTGowWlp0ZkNjTWtNZE50TEJZaEJTOTRBdXc|트리니티항공, '지금, 제주를 만나다' 프로모션 진행...최대 2만원 할",
-     "kind": "airline",
-     "title": "트리니티항공, '지금, 제주를 만나다' 프로모션 진행...최대 2만원 할인",
-     "desc": "트리니티항공, '지금, 제주를 만나다' 프로모션 진행...최대 2만원 할인 월요신문",
-     "summary": [
-      "트리니티항공, '지금, 제주를 만나다' 프로모션 진행...최대 2만원 할인 월요신문…"
-     ],
-     "link": "https://www.wolyo.co.kr/news/articleView.html?idxno=319801",
-     "source": "월요신문",
-     "date": "2026-10-30T00:18:39.000Z",
-     "found": "2026-11-01",
-     "cards": [],
-     "airlines": [
-      "TW"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "대만 항공 프로모션",
-     "bodyAt": "2026-11-01",
-     "body": [
-      "트리니티항공, '지금, 제주를 만나다' 프로모션 진행...최대 2만원 할인",
-      "업데이트 2026.10.30 09:25",
-      "입력 2026.10.30 09:18",
-      "트리니티항공은 제주도, 제주관광공사와 손잡고 제주행 왕복 항공권 구매 이용객들을 대상으로 '지금, 제주를 만나다' 프로모션을 진행한다고 30일 밝혔다.",
-      "이번 프로모션은 김포&middot;대구&middot;청주&middot;광주에서 출발하는 제주행 국내선 왕복 항공권 구매 고객을 대상으로 진행되며 최대 2만원 할인 쿠폰을 제공한다.",
-      "할인 쿠폰은 이날 오전 10시부터 트리니티항공 공식 홈페이지를 통해 선착순으로 발급되며, 수량 소진 시 조기 마감된다.",
-      "항공권의 탑승 기간은 내년 1월 31일까지다.",
-      "트리니티항공 관계자는 \"제주도의 푸른 바다와 신비로운 오름을 따라 걸으며 소중한 추억을 만드시길 바란다\"며 \"트리니티항공은 항상 안전 운항을 최우선으로 해 다채로운 혜택을 드리기 위해 최선을 다하겠다\"고 밝혔다."
-     ],
-     "notified": "2026-11-02",
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "국내선 제주 노선 할인, 국제선 아님",
-      "airlines": [
-       "트리니티항공"
-      ],
-      "name": "지금, 제주를 만나다",
-      "book": null,
-      "board": {
-       "from": null,
-       "to": "2027-01-31"
-      },
-      "price": null,
-      "trip": "왕복",
-      "pct": null,
-      "seoul": true,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "QWG9MRk9yVHZVT1FMNkU4YVpERVNqb214cEg2eEpNa2tQSTlFdTZBRFRHTnRMb1JQbEdLUDFtenFic0ZUY29CYjU2cF9kU1RvZWExQ3E4azJXTTd3QzBNWGc|트리니티항공, '지금, 제주를 만나다' 프로모션…최대 2만원 할인",
-     "kind": "airline",
-     "title": "트리니티항공, '지금, 제주를 만나다' 프로모션…최대 2만원 할인",
-     "desc": "트리니티항공, '지금, 제주를 만나다' 프로모션…최대 2만원 할인 컨슈머타임스",
-     "summary": [
-      "트리니티항공, '지금, 제주를 만나다' 프로모션…최대 2만원 할인 컨슈머타임스…"
-     ],
-     "link": "https://www.cstimes.com/news/articleView.html?idxno=726011",
-     "source": "컨슈머타임스",
-     "date": "2026-10-30T03:03:23.000Z",
-     "found": "2026-11-03",
-     "cards": [],
-     "airlines": [
-      "TW"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "트리니티항공 {특가말}",
-     "bodyAt": "2026-11-03",
-     "body": [
-      "트리니티항공, '지금, 제주를 만나다' 프로모션…최대 2만원 할인",
-      "컨슈머타임스=이정화 기자 | 트리니티항공이 제주특별자치도 및 제주관광공사와 협력해 제주 노선 이용객을 대상으로 '지금, 제주를 만나다' 프로모션을 진행한다.",
-      "트리니티항공은 이번 프로모션으로 김포·대구·청주·광주에서 출발하는 제주행 국내선 왕복 항공권을 구매하는 고객에게 최대 2만원 할인 쿠폰을 제공한다고 30일 밝혔다.",
-      "할인 쿠폰은 이날 오전 10시부터 트리니티항공 공식 홈페이지를 통해 선착순으로 발급된다.",
-      "쿠폰을 적용한 항공권의 탑승 기간은 내년 1월 31일까지다.",
-      "현재 트리니티항공은 홈페이지 신규 회원 가입 고객에게 즉시 사용할 수 있는 총 10만원 상당의 쿠폰팩을 지급하고 있으며, 할인 소식 알림 서비스와 회원 전용 추가 할인 등 다채로운 혜택을 제공하고 있다.",
-      "트리니티항공 관계자는 \"안전 운항을 최우선 가치로 두고 고객들에게 실질적인 혜택을 제공할 수 있는 다양한 프로모션을 지속해서 마련할 것\"이라고 말했다."
-     ],
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "국내선 제주 노선 할인, 국제선 아님",
-      "airlines": [
-       "트리니티항공"
-      ],
-      "name": "지금, 제주를 만나다",
-      "book": null,
-      "board": {
-       "from": null,
-       "to": "2027-01-31"
-      },
-      "price": null,
-      "trip": "왕복",
-      "pct": null,
-      "seoul": true,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
      "id": "https://www.discoverynews.kr/news/articleView.html|세부퍼시픽 항공(5J), 한국발 필리핀 노선 대상 프로모션 실시… 내년 ",
      "kind": "airline",
      "title": "세부퍼시픽 항공(5J), 한국발 필리핀 노선 대상 프로모션 실시… 내년 상...",
@@ -20226,46 +20204,6 @@
        "세부퍼시픽"
       ],
       "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "iWEFVX3lxTE9ucU1iNllwbXZVU2xsVTdzaXBJRnBnbFhiZGwzQkRYQm0taTQzNjlKd3BFa19EaEtxV1dqelg1SkdEdUdiTmJZLTJiN3VhaEkyc18yOFJERWM|트리니티항공, 제주 여행 할인 프로모션 진행",
-     "kind": "airline",
-     "title": "트리니티항공, 제주 여행 할인 프로모션 진행",
-     "desc": "트리니티항공, 제주 여행 할인 프로모션 진행 경북신문",
-     "summary": [
-      "트리니티항공, 제주 여행 할인 프로모션 진행 경북신문…"
-     ],
-     "link": "https://www.kbsm.net/news/view.php?idx=539748",
-     "source": "경북신문",
-     "date": "2026-10-30T02:35:00.000Z",
-     "found": "2026-11-04",
-     "cards": [],
-     "airlines": [
-      "TW"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "트리니티항공 {특가말}",
-     "bodyAt": "2026-11-04",
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "제주 여행 상품 중심 프로모션",
-      "airlines": [
-       "트리니티항공"
-      ],
-      "name": "제주 여행 할인 프로모션",
       "book": null,
       "board": null,
       "price": null,
@@ -20368,17 +20306,19 @@
    ],
    "ai": {
     "v": 2,
-    "promo": false,
-    "why": "카드 신상품 출시 기사",
-    "airlines": [],
-    "name": null,
-    "book": null,
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": null,
-    "seoul": null,
-    "at": "2026-11-12",
+    "cv": 1,
+    "card": {
+     "ok": false,
+     "why": "카드 상품 소개·적립 위주",
+     "cards": [],
+     "use": null,
+     "airlines": [],
+     "amount": null,
+     "pct": null,
+     "min": null,
+     "period": null
+    },
+    "at": "2026-11-13",
     "model": "deepseek-v4-flash"
    },
    "lastDate": "2026-11-07T07:20:00.000Z",
@@ -20725,17 +20665,22 @@
    ],
    "ai": {
     "v": 2,
-    "promo": false,
-    "why": "여행 플랫폼 숙소·투어 중심 행사",
-    "airlines": [],
-    "name": null,
-    "book": null,
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": null,
-    "seoul": null,
-    "at": "2026-11-12",
+    "cv": 1,
+    "card": {
+     "ok": true,
+     "why": "여기어때 대만 항공권 2만원 할인",
+     "cards": [],
+     "use": "항공권",
+     "airlines": [],
+     "amount": 20000,
+     "pct": null,
+     "min": null,
+     "period": {
+      "from": null,
+      "to": "2026-12-06"
+     }
+    },
+    "at": "2026-11-13",
     "model": "deepseek-v4-flash"
    },
    "lastDate": "2026-11-06T04:06:00.000Z",
@@ -20881,17 +20826,21 @@
    ],
    "ai": {
     "v": 2,
-    "promo": false,
-    "why": "카드사 이벤트, 항공권은 경품",
-    "airlines": [],
-    "name": null,
-    "book": null,
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": null,
-    "seoul": null,
-    "at": "2026-11-12",
+    "cv": 1,
+    "card": {
+     "ok": false,
+     "why": "경품 추첨 이벤트, 결제 할인 아님",
+     "cards": [
+      "우리카드"
+     ],
+     "use": null,
+     "airlines": [],
+     "amount": null,
+     "pct": null,
+     "min": null,
+     "period": null
+    },
+    "at": "2026-11-13",
     "model": "deepseek-v4-flash"
    },
    "lastDate": "2026-11-06T02:27:00.000Z",
@@ -20931,17 +20880,21 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "카드사 이벤트, 항공권은 경품",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "경품 추첨 이벤트·적립 소개",
+       "cards": [
+        "우리카드"
+       ],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -20980,17 +20933,21 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "카드사 이벤트, 항공권은 경품",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "경품 추첨 이벤트·적립 소개",
+       "cards": [
+        "우리카드"
+       ],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -21026,17 +20983,21 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "카드사 경품 이벤트, 항공권은 경품",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "경품 추첨·적립 소개",
+       "cards": [
+        "우리카드"
+       ],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -21077,17 +21038,21 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "카드사 이벤트, 항공권은 경품",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "경품 추첨 이벤트, 결제 할인 아님",
+       "cards": [
+        "우리카드"
+       ],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -21121,17 +21086,21 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "카드사 이벤트, 항공권은 경품",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "경품 추첨·적립 소개",
+       "cards": [
+        "우리카드"
+       ],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -21170,17 +21139,21 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "카드사 이벤트, 항공권은 경품",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "경품 추첨 이벤트, 결제 할인 아님",
+       "cards": [
+        "우리카드"
+       ],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -21218,17 +21191,21 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "카드사 이벤트, 항공권은 경품",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "경품 추첨 이벤트·적립 소개",
+       "cards": [
+        "우리카드"
+       ],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -21268,17 +21245,22 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "카드사 결제 할인·경품 이벤트",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "베트남 마트 결제·경품 이벤트",
+       "cards": [
+        "하나카드",
+        "우리카드"
+       ],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -21312,17 +21294,22 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "카드사 호텔·경품 행사",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "경품 추첨·호텔 패키지 행사",
+       "cards": [
+        "우리카드",
+        "현대카드"
+       ],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -21360,17 +21347,24 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "카드사 경품 이벤트, 항공권은 추첨 경품",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "경품 추첨 이벤트",
+       "cards": [
+        "우리카드"
+       ],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": 1000000,
+       "period": {
+        "from": null,
+        "to": "2026-11-30"
+       }
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -21408,17 +21402,21 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "카드사 경품 이벤트, 항공권은 추첨 증정",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "경품 추첨·적립 소개",
+       "cards": [
+        "우리카드"
+       ],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -21446,17 +21444,24 @@
      "bodyAt": "2026-11-03",
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "카드사 이벤트, 항공권은 곁가지",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": true,
+       "why": "항공·호텔 바우처 제공 이벤트",
+       "cards": [
+        "우리카드"
+       ],
+       "use": "여행예약",
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": {
+        "from": null,
+        "to": "2026-11-30"
+       }
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     }
@@ -21589,17 +21594,19 @@
    ],
    "ai": {
     "v": 2,
-    "promo": false,
-    "why": "항공권 특가 아닌 유통·리조트 소식",
-    "airlines": [],
-    "name": null,
-    "book": null,
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": null,
-    "seoul": null,
-    "at": "2026-11-12",
+    "cv": 1,
+    "card": {
+     "ok": false,
+     "why": "유통 소식 모음, 여행결제 혜택 아님",
+     "cards": [],
+     "use": null,
+     "airlines": [],
+     "amount": null,
+     "pct": null,
+     "min": null,
+     "period": null
+    },
+    "at": "2026-11-13",
     "model": "deepseek-v4-flash"
    },
    "lastDate": "2026-11-05T06:52:00.000Z",
@@ -21658,20 +21665,26 @@
    ],
    "ai": {
     "v": 2,
-    "promo": true,
-    "why": "카드사 항공권 구매 할인 프로모션",
-    "airlines": [],
-    "name": null,
-    "book": {
-     "from": null,
-     "to": "2026-12-31"
+    "cv": 1,
+    "card": {
+     "ok": true,
+     "why": "항공권·여행상품 할인 포함",
+     "cards": [
+      "BC카드",
+      "우리카드",
+      "하나카드"
+     ],
+     "use": "항공권",
+     "airlines": [],
+     "amount": 120000,
+     "pct": 15,
+     "min": null,
+     "period": {
+      "from": "2026-11-04",
+      "to": "2026-12-31"
+     }
     },
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": 15,
-    "seoul": null,
-    "at": "2026-11-12",
+    "at": "2026-11-13",
     "model": "deepseek-v4-flash"
    },
    "lastDate": "2026-11-05T03:08:00.000Z",
@@ -21737,20 +21750,28 @@
      ],
      "ai": {
       "v": 2,
-      "promo": true,
-      "why": "노랑풍선 국제선 항공권 15% 할인",
-      "airlines": [],
-      "name": null,
-      "book": {
-       "from": null,
-       "to": "2026-12-31"
+      "cv": 1,
+      "card": {
+       "ok": true,
+       "why": "항공권·여행상품 카드 할인 포함",
+       "cards": [
+        "BC카드",
+        "우리카드",
+        "하나카드",
+        "NH농협카드",
+        "IBK기업은행"
+       ],
+       "use": "항공권",
+       "airlines": [],
+       "amount": 120000,
+       "pct": 15,
+       "min": 200000,
+       "period": {
+        "from": "2026-11-05",
+        "to": "2026-12-31"
+       }
       },
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": 15,
-      "seoul": null,
-      "at": "2026-11-12",
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -21797,16 +21818,23 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "카드사 테마파크 행사, 항공권은 곁가지",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
+      "cv": 1,
+      "card": {
+       "ok": true,
+       "why": "항공권·여행상품 할인 포함",
+       "cards": [
+        "BC카드"
+       ],
+       "use": "여행예약",
+       "airlines": [],
+       "amount": 120000,
+       "pct": 15,
+       "min": 200000,
+       "period": {
+        "from": "2026-11-05",
+        "to": "2026-12-31"
+       }
+      },
       "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
@@ -21814,19 +21842,19 @@
    ]
   },
   {
-   "id": "https://www.g-enews.com/view.php|BC 카드 , 가을 나들이· 해외여행 비용 부담 낮춘다",
+   "id": "https://www.sidae.com/article/2026110317105374367|BC 카드 , 가을 테마파크 할인 … 항공권 ·여행상품도 혜택",
    "kind": "card",
-   "title": "BC 카드 , 가을 나들이· 해외여행 비용 부담 낮춘다",
-   "desc": "BC 카드 는 가을 시즌을 맞아 테마파크 및 해외여행 할인 이벤트를 진행한다고 5일 밝혔다. 이번 행사는 BC 카드 회원사를 통해 발급된 개인 신용·체크 카드 고객을 대상으로 한다. 우리카드 와 하나 카드 ...",
+   "title": "BC 카드 , 가을 테마파크 할인 … 항공권 ·여행상품도 혜택",
+   "desc": "테마파크 할인 은 11월 30일까지다. 우리카드 ·하나 카드 ·NH농협 카드 ·IBK기업은행·KB국민 카드 ·iM뱅크... 해외여행객을 위한 항공권 과 여행상품 할인 도 제공한다. 노랑풍선에서는 국제선 항공권 을 15% 할인 하고...",
    "summary": [
-    "BC 카드 는 가을 시즌을 맞아 테마파크 및 해외여행 할인 이벤트를 진행한다고 5일 밝혔다.",
-    "이번 행사는 BC 카드 회원사를 통해 발급된 개인 신용·체크 카드 고객을 대상으로 한다.",
-    "우리카드 와 하나 카드…"
+    "테마파크 할인 은 11월 30일까지다.",
+    "해외여행객을 위한 항공권 과 여행상품 할인 도 제공한다.",
+    "노랑풍선에서는 국제선 항공권 을 15% 할인 하고…"
    ],
-   "link": "https://www.g-enews.com/view.php?ud=202611051132231306cd0bfacc1c_1",
+   "link": "https://www.sidae.com/article/2026110317105374367",
    "source": "네이버 뉴스",
-   "date": "2026-11-05T02:56:00.000Z",
-   "found": "2026-11-05",
+   "date": "2026-11-03T21:00:00.000Z",
+   "found": "2026-11-04",
    "cards": [
     "우리카드"
    ],
@@ -21847,114 +21875,50 @@
     "amount": 120000,
     "trip": "oneway?"
    },
-   "query": "우리카드 해외여행 할인",
-   "bodyAt": "2026-11-05",
+   "query": "우리카드 항공권 할인",
+   "bodyAt": "2026-11-04",
    "body": [
-    "테마파크 할인은 이달 30일까지 진행한다.",
-    "서울랜드에서는 BC카드로 결제하면 정상가 5만2000원인 성인 종일권을 최대 58% 할인된 2만1900원에 구매할 수 있다.",
-    "오후 4시부터 이용 가능한 야간권은 1만9900원이다.",
+    "테마파크 할인은 11월 30일까지다.",
+    "서울랜드에서는 BC카드로 결제하면 정상가 5만2000원인 성인 종일권을 2만1900원에 구매할 수 있다.",
+    "오후 4시부터 이용할 수 있는 야간권은 1만9900원이다.",
     "본인과 동반 1인까지 할인 혜택이 적용된다.",
-    "롯데월드는 페이북 QR 현장 결제 고객에게 최대 50% 할인 혜택을 제공한다.",
-    "종일권은 정상가 6만7000원에서 50% 할인된 3만3500원에 구매할 수 있으며 동반 성인 1인도 같은 혜택을 받을 수 있다.",
+    "서울랜드 할인은 카드 이용 실적과 관계없이 본인 포함 최대 2매까지 받을 수 있다.",
+    "롯데월드에서는 페이북 QR로 현장 결제하면 최대 50% 할인받을 수 있다.",
+    "종일권은 정상가 6만7000원에서 50% 할인된 3만3500원이며, 동반 성인 1인까지 할인 혜택을 받을 수 있다.",
     "롯데월드 아쿠아리움은 45%, 서울스카이는 35% 할인한다.",
-    "에버랜드에서는 오후 3시 이후 입장하는 오후권을 최대 51% 할인한다.",
-    "정상가 6만5000원인 이용권을 3만2000원에 구매할 수 있으며 본인과 동반 3인까지 혜택이 적용된다.",
-    "구매는 현장 매표소와 에버랜드 스마트예약을 통해 가능하다.",
-    "노랑풍선에서는 다음달 31일까지 국제선 항공권을 15% 할인하며, 이달 30일까지 패키지여행 상품을 구매하면 최대 12만원을 즉시 할인한다.",
-    "마이리얼트립에서는 다음달 31일까지 BC카드로 20만원 이상 여행상품을 결제하면 금액에 따라 최대 6만원을 즉시 할인한다.",
-    "20만원 이상 결제 시 7000원부터 할인이 적용되며 200만원 이상 결제하면 최대 6만원을 할인받을 수 있다.",
-    "美 민주당, 상·하원 모두 장악 '압승'... 공화당 텃밭까지 무너졌다"
+    "에버랜드에서는 오후 3시 이후 이용할 수 있는 오후권을 최대 51% 할인한다.",
+    "정상가 6만5000원인 이용권을 3만2000원에 구매할 수 있으며, 본인과 동반 3인까지 혜택이 적용된다.",
+    "현장 매표소와 에버랜드 스마트예약에서 살 수 있다.",
+    "노랑풍선에서는 국제선 항공권을 15% 할인하고 패키지여행 상품은 최대 12만원 즉시 할인한다.",
+    "항공권 할인 이벤트는 12월 31일까지, 패키지여행 할인 이벤트는 11월 30일까지 진행한다.",
+    "마이리얼트립에서는 12월 31일까지 BC카드로 20만원 이상 여행상품을 결제하면 최대 6만원을 즉시 할인받을 수 있다.",
+    "결제액이 20만원 이상이면 7000원부터 할인되며, 200만원 이상 결제하면 최대 6만원을 할인받는다."
    ],
    "ai": {
     "v": 2,
-    "promo": true,
-    "why": "노랑풍선 국제선 항공권 15% 할인",
-    "airlines": [],
-    "name": null,
-    "book": {
-     "from": null,
-     "to": "2026-12-31"
+    "cv": 1,
+    "card": {
+     "ok": true,
+     "why": "항공권·여행상품 할인 포함",
+     "cards": [
+      "BC카드"
+     ],
+     "use": "여행예약",
+     "airlines": [],
+     "amount": 120000,
+     "pct": 15,
+     "min": 200000,
+     "period": {
+      "from": "2026-11-04",
+      "to": "2026-12-31"
+     }
     },
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": 15,
-    "seoul": null,
-    "at": "2026-11-12",
+    "at": "2026-11-13",
     "model": "deepseek-v4-flash"
    },
    "lastDate": "2026-11-05T02:56:00.000Z",
    "lastFound": "2026-11-05",
    "more": [
-    {
-     "id": "https://www.sidae.com/article/2026110317105374367|BC 카드 , 가을 테마파크 할인 … 항공권 ·여행상품도 혜택",
-     "kind": "card",
-     "title": "BC 카드 , 가을 테마파크 할인 … 항공권 ·여행상품도 혜택",
-     "desc": "테마파크 할인 은 11월 30일까지다. 우리카드 ·하나 카드 ·NH농협 카드 ·IBK기업은행·KB국민 카드 ·iM뱅크... 해외여행객을 위한 항공권 과 여행상품 할인 도 제공한다. 노랑풍선에서는 국제선 항공권 을 15% 할인 하고...",
-     "summary": [
-      "테마파크 할인 은 11월 30일까지다.",
-      "해외여행객을 위한 항공권 과 여행상품 할인 도 제공한다.",
-      "노랑풍선에서는 국제선 항공권 을 15% 할인 하고…"
-     ],
-     "link": "https://www.sidae.com/article/2026110317105374367",
-     "source": "네이버 뉴스",
-     "date": "2026-11-03T21:00:00.000Z",
-     "found": "2026-11-04",
-     "cards": [
-      "우리카드"
-     ],
-     "airlines": [
-      "7C",
-      "KE",
-      "WE"
-     ],
-     "countries": [
-      "베트남",
-      "싱가포르",
-      "마카오",
-      "일본"
-     ],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "우리카드 항공권 할인",
-     "bodyAt": "2026-11-04",
-     "body": [
-      "테마파크 할인은 11월 30일까지다.",
-      "서울랜드에서는 BC카드로 결제하면 정상가 5만2000원인 성인 종일권을 2만1900원에 구매할 수 있다.",
-      "오후 4시부터 이용할 수 있는 야간권은 1만9900원이다.",
-      "본인과 동반 1인까지 할인 혜택이 적용된다.",
-      "서울랜드 할인은 카드 이용 실적과 관계없이 본인 포함 최대 2매까지 받을 수 있다.",
-      "롯데월드에서는 페이북 QR로 현장 결제하면 최대 50% 할인받을 수 있다.",
-      "종일권은 정상가 6만7000원에서 50% 할인된 3만3500원이며, 동반 성인 1인까지 할인 혜택을 받을 수 있다.",
-      "롯데월드 아쿠아리움은 45%, 서울스카이는 35% 할인한다.",
-      "에버랜드에서는 오후 3시 이후 이용할 수 있는 오후권을 최대 51% 할인한다.",
-      "정상가 6만5000원인 이용권을 3만2000원에 구매할 수 있으며, 본인과 동반 3인까지 혜택이 적용된다.",
-      "현장 매표소와 에버랜드 스마트예약에서 살 수 있다.",
-      "노랑풍선에서는 국제선 항공권을 15% 할인하고 패키지여행 상품은 최대 12만원 즉시 할인한다.",
-      "항공권 할인 이벤트는 12월 31일까지, 패키지여행 할인 이벤트는 11월 30일까지 진행한다.",
-      "마이리얼트립에서는 12월 31일까지 BC카드로 20만원 이상 여행상품을 결제하면 최대 6만원을 즉시 할인받을 수 있다.",
-      "결제액이 20만원 이상이면 7000원부터 할인되며, 200만원 이상 결제하면 최대 6만원을 할인받는다."
-     ],
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "BC카드 항공권 15% 할인",
-      "airlines": [],
-      "name": null,
-      "book": {
-       "from": null,
-       "to": "2026-12-31"
-      },
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": 15,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
     {
      "id": "https://www.etoday.co.kr/news/view/2643941|BC 카드 , 가을 나들이 할인 쏜다⋯테마파크 최대 58%",
      "kind": "card",
@@ -22006,20 +21970,99 @@
      ],
      "ai": {
       "v": 2,
-      "promo": true,
-      "why": "BC카드 결제시 항공권 15% 할인",
-      "airlines": [],
-      "name": null,
-      "book": {
-       "from": null,
-       "to": "2026-12-31"
+      "cv": 1,
+      "card": {
+       "ok": true,
+       "why": "항공권·여행상품 카드 할인 포함",
+       "cards": [
+        "BC카드"
+       ],
+       "use": "여행예약",
+       "airlines": [],
+       "amount": 120000,
+       "pct": 15,
+       "min": 200000,
+       "period": {
+        "from": "2026-11-04",
+        "to": "2026-12-31"
+       }
       },
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": 15,
-      "seoul": null,
-      "at": "2026-11-12",
+      "at": "2026-11-13",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "https://www.g-enews.com/view.php|BC 카드 , 가을 나들이· 해외여행 비용 부담 낮춘다",
+     "kind": "card",
+     "title": "BC 카드 , 가을 나들이· 해외여행 비용 부담 낮춘다",
+     "desc": "BC 카드 는 가을 시즌을 맞아 테마파크 및 해외여행 할인 이벤트를 진행한다고 5일 밝혔다. 이번 행사는 BC 카드 회원사를 통해 발급된 개인 신용·체크 카드 고객을 대상으로 한다. 우리카드 와 하나 카드 ...",
+     "summary": [
+      "BC 카드 는 가을 시즌을 맞아 테마파크 및 해외여행 할인 이벤트를 진행한다고 5일 밝혔다.",
+      "이번 행사는 BC 카드 회원사를 통해 발급된 개인 신용·체크 카드 고객을 대상으로 한다.",
+      "우리카드 와 하나 카드…"
+     ],
+     "link": "https://www.g-enews.com/view.php?ud=202611051132231306cd0bfacc1c_1",
+     "source": "네이버 뉴스",
+     "date": "2026-11-05T02:56:00.000Z",
+     "found": "2026-11-05",
+     "cards": [
+      "우리카드"
+     ],
+     "airlines": [
+      "7C",
+      "KE",
+      "WE"
+     ],
+     "countries": [
+      "베트남",
+      "싱가포르",
+      "마카오",
+      "일본"
+     ],
+     "allRoutes": true,
+     "routes": [],
+     "price": {
+      "amount": 120000,
+      "trip": "oneway?"
+     },
+     "query": "우리카드 해외여행 할인",
+     "bodyAt": "2026-11-05",
+     "body": [
+      "테마파크 할인은 이달 30일까지 진행한다.",
+      "서울랜드에서는 BC카드로 결제하면 정상가 5만2000원인 성인 종일권을 최대 58% 할인된 2만1900원에 구매할 수 있다.",
+      "오후 4시부터 이용 가능한 야간권은 1만9900원이다.",
+      "본인과 동반 1인까지 할인 혜택이 적용된다.",
+      "롯데월드는 페이북 QR 현장 결제 고객에게 최대 50% 할인 혜택을 제공한다.",
+      "종일권은 정상가 6만7000원에서 50% 할인된 3만3500원에 구매할 수 있으며 동반 성인 1인도 같은 혜택을 받을 수 있다.",
+      "롯데월드 아쿠아리움은 45%, 서울스카이는 35% 할인한다.",
+      "에버랜드에서는 오후 3시 이후 입장하는 오후권을 최대 51% 할인한다.",
+      "정상가 6만5000원인 이용권을 3만2000원에 구매할 수 있으며 본인과 동반 3인까지 혜택이 적용된다.",
+      "구매는 현장 매표소와 에버랜드 스마트예약을 통해 가능하다.",
+      "노랑풍선에서는 다음달 31일까지 국제선 항공권을 15% 할인하며, 이달 30일까지 패키지여행 상품을 구매하면 최대 12만원을 즉시 할인한다.",
+      "마이리얼트립에서는 다음달 31일까지 BC카드로 20만원 이상 여행상품을 결제하면 금액에 따라 최대 6만원을 즉시 할인한다.",
+      "20만원 이상 결제 시 7000원부터 할인이 적용되며 200만원 이상 결제하면 최대 6만원을 할인받을 수 있다.",
+      "美 민주당, 상·하원 모두 장악 '압승'... 공화당 텃밭까지 무너졌다"
+     ],
+     "ai": {
+      "v": 2,
+      "cv": 1,
+      "card": {
+       "ok": true,
+       "why": "항공권·여행상품 카드 할인",
+       "cards": [
+        "BC카드"
+       ],
+       "use": "여행예약",
+       "airlines": [],
+       "amount": 120000,
+       "pct": 15,
+       "min": 200000,
+       "period": {
+        "from": "2026-11-05",
+        "to": "2026-12-31"
+       }
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -22049,17 +22092,28 @@
      "bodyAt": "2026-11-04",
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "카드사 테마파크·여행상품 할인 행사",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": true,
+       "why": "항공권·여행상품 할인 이벤트 포함",
+       "cards": [
+        "BC카드",
+        "우리카드",
+        "하나카드",
+        "NH농협카드",
+        "IBK기업은행"
+       ],
+       "use": "여행예약",
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": {
+        "from": null,
+        "to": "2026-11-30"
+       }
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     }
@@ -22109,84 +22163,33 @@
    ],
    "ai": {
     "v": 2,
-    "promo": true,
-    "why": "노랑풍선 국제선 항공권 15% 할인",
-    "airlines": [],
-    "name": null,
-    "book": {
-     "from": null,
-     "to": "2026-12-31"
+    "cv": 1,
+    "card": {
+     "ok": true,
+     "why": "항공권·여행상품 결제 할인 포함",
+     "cards": [
+      "BC카드",
+      "우리카드",
+      "하나카드",
+      "NH농협카드",
+      "IBK기업은행"
+     ],
+     "use": "여행예약",
+     "airlines": [],
+     "amount": 120000,
+     "pct": 15,
+     "min": 200000,
+     "period": {
+      "from": "2026-11-03",
+      "to": "2026-12-31"
+     }
     },
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": 15,
-    "seoul": null,
-    "at": "2026-11-12",
+    "at": "2026-11-13",
     "model": "deepseek-v4-flash"
    },
    "lastDate": "2026-11-04T12:36:00.000Z",
    "lastFound": "2026-11-05",
    "more": [
-    {
-     "id": "https://www.newsis.com/view/NISX20261104_0003855356|BC카드, 테마파크 최대 58% 할인 이벤트…해외여행도 혜택",
-     "kind": "card",
-     "title": "BC카드, 테마파크 최대 58% 할인 이벤트…해외여행도 혜택",
-     "desc": "[서울=뉴시스]권안나 기자 = BC카드는 가을을 맞아 테마파크 및 해외여행 할인 이벤트를 실시한다고 5일 밝혔다.BC카드 고객은 이달 30일까지 주요 테마마크에서 최대 58%까지의 할인을 받을 수 있다. BC카드 회원사인 우리카드, 하나카드, NH농협카드, IBK기업은행, KB국민카드, iM뱅크, BNK부산은행, BNK경남은행, 신한카드, Sh수협은행, 광 ...",
-     "summary": [
-      "권안나 기자 = BC카드는 가을을 맞아 테마파크 및 해외여행 할인 이벤트를 실시한다고 5일 밝혔다.",
-      "BC카드 고객은 이달 30일까지 주요 테마마크에서 최대 58%까지의 할인을 받을 수 있다.",
-      "BC카드 회원사인 우리카드, 하나카드, NH농협카드, IBK기업은행, KB국민카드, iM뱅크, BNK부산은행, BNK경남은행, 신한카드, Sh수협은행, 광…"
-     ],
-     "link": "https://www.newsis.com/view/NISX20261104_0003855356",
-     "source": "뉴시스",
-     "date": "2026-11-04T12:00:00.000Z",
-     "found": "2026-11-05",
-     "cards": [
-      "우리카드",
-      "신한카드"
-     ],
-     "airlines": [],
-     "countries": [],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "우리카드 항공권 할인",
-     "bodyAt": "2026-11-05",
-     "body": [
-      "BC카드 고객은 이달 30일까지 주요 테마마크에서 최대 58%까지의 할인을 받을 수 있다.",
-      "서울랜드에서는 BC카드로 결제 시 정상가 5만2000원인 성인 종일권을 최대 58% 할인된 2만1900원에 구매할 수 있다.",
-      "오후 4시부터 이용 가능한 야간권은 1만9900원에 구입할 수 있으며 본인과 동반 1인까지 할인 혜택이 적용된다.",
-      "롯데월드는 페이북 QR 현장 결제 시 최대 50%의 할인 혜택을 받을 수 있으며 롯데월드 종일권의 경우 6만7000원에서 50% 할인된 3만3500원에 이용할 수 있다.",
-      "동반 1인(어른)까지 할인해준다.",
-      "이밖에 롯데월드 아쿠아리움 45%, 서울스카이 35% 등의 할인 혜택도 제공된다.",
-      "에버랜드에서는 오후권(오후 3시 이후)에 대해 최대 51% 할인 행사를 진행한다.",
-      "정상가 6만5000원인 이용권을 3만2000원에 구입할 수 있게 된다.",
-      "본인과 동반 3인까지 할인 혜택이 적용된다.",
-      "현장 매표소와 에버랜드 스마트예약을 통해 구매할 수 있다.",
-      "노랑풍선에서 다음달 31일까지 국제선 항공권을 15% 할인해주며 이번달 30일까지 패키지여행에 최대 12만원 즉시 할인 혜택을 받을 수 있다.",
-      "마이리얼트립에서는 다음달 31일까지 BC카드로 20만원 이상 여행 상품 결제 시 최대 6만원 즉시 할인 혜택을 제공한다.",
-      "결제금액에 따라 20만원 이상 7000원부터 할인이 제공되며 200만원 이상 최대 6만원까지 할인 받을 수 있다."
-     ],
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "BC카드 결제시 항공권 15% 할인",
-      "airlines": [],
-      "name": null,
-      "book": {
-       "from": null,
-       "to": "2026-12-31"
-      },
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": 15,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
     {
      "id": "https://www.goodkyung.com/news/articleView.html|BC카드, 테마파크 최대 58% 할인 이벤트…해외여행 혜택도 풍성",
      "kind": "card",
@@ -22230,20 +22233,95 @@
      ],
      "ai": {
       "v": 2,
-      "promo": true,
-      "why": "카드 결제시 항공권 15% 할인",
-      "airlines": [],
-      "name": null,
-      "book": {
-       "from": null,
-       "to": "2026-12-31"
+      "cv": 1,
+      "card": {
+       "ok": true,
+       "why": "항공권·여행상품 결제 할인 포함",
+       "cards": [
+        "BC카드",
+        "우리카드",
+        "하나카드",
+        "NH농협카드",
+        "IBK기업은행"
+       ],
+       "use": "여행예약",
+       "airlines": [],
+       "amount": 120000,
+       "pct": 15,
+       "min": 200000,
+       "period": {
+        "from": "2026-11-04",
+        "to": "2026-12-31"
+       }
       },
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": 15,
-      "seoul": null,
-      "at": "2026-11-12",
+      "at": "2026-11-13",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "https://www.newsis.com/view/NISX20261104_0003855356|BC카드, 테마파크 최대 58% 할인 이벤트…해외여행도 혜택",
+     "kind": "card",
+     "title": "BC카드, 테마파크 최대 58% 할인 이벤트…해외여행도 혜택",
+     "desc": "[서울=뉴시스]권안나 기자 = BC카드는 가을을 맞아 테마파크 및 해외여행 할인 이벤트를 실시한다고 5일 밝혔다.BC카드 고객은 이달 30일까지 주요 테마마크에서 최대 58%까지의 할인을 받을 수 있다. BC카드 회원사인 우리카드, 하나카드, NH농협카드, IBK기업은행, KB국민카드, iM뱅크, BNK부산은행, BNK경남은행, 신한카드, Sh수협은행, 광 ...",
+     "summary": [
+      "권안나 기자 = BC카드는 가을을 맞아 테마파크 및 해외여행 할인 이벤트를 실시한다고 5일 밝혔다.",
+      "BC카드 고객은 이달 30일까지 주요 테마마크에서 최대 58%까지의 할인을 받을 수 있다.",
+      "BC카드 회원사인 우리카드, 하나카드, NH농협카드, IBK기업은행, KB국민카드, iM뱅크, BNK부산은행, BNK경남은행, 신한카드, Sh수협은행, 광…"
+     ],
+     "link": "https://www.newsis.com/view/NISX20261104_0003855356",
+     "source": "뉴시스",
+     "date": "2026-11-04T12:00:00.000Z",
+     "found": "2026-11-05",
+     "cards": [
+      "우리카드",
+      "신한카드"
+     ],
+     "airlines": [],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "우리카드 항공권 할인",
+     "bodyAt": "2026-11-05",
+     "body": [
+      "BC카드 고객은 이달 30일까지 주요 테마마크에서 최대 58%까지의 할인을 받을 수 있다.",
+      "서울랜드에서는 BC카드로 결제 시 정상가 5만2000원인 성인 종일권을 최대 58% 할인된 2만1900원에 구매할 수 있다.",
+      "오후 4시부터 이용 가능한 야간권은 1만9900원에 구입할 수 있으며 본인과 동반 1인까지 할인 혜택이 적용된다.",
+      "롯데월드는 페이북 QR 현장 결제 시 최대 50%의 할인 혜택을 받을 수 있으며 롯데월드 종일권의 경우 6만7000원에서 50% 할인된 3만3500원에 이용할 수 있다.",
+      "동반 1인(어른)까지 할인해준다.",
+      "이밖에 롯데월드 아쿠아리움 45%, 서울스카이 35% 등의 할인 혜택도 제공된다.",
+      "에버랜드에서는 오후권(오후 3시 이후)에 대해 최대 51% 할인 행사를 진행한다.",
+      "정상가 6만5000원인 이용권을 3만2000원에 구입할 수 있게 된다.",
+      "본인과 동반 3인까지 할인 혜택이 적용된다.",
+      "현장 매표소와 에버랜드 스마트예약을 통해 구매할 수 있다.",
+      "노랑풍선에서 다음달 31일까지 국제선 항공권을 15% 할인해주며 이번달 30일까지 패키지여행에 최대 12만원 즉시 할인 혜택을 받을 수 있다.",
+      "마이리얼트립에서는 다음달 31일까지 BC카드로 20만원 이상 여행 상품 결제 시 최대 6만원 즉시 할인 혜택을 제공한다.",
+      "결제금액에 따라 20만원 이상 7000원부터 할인이 제공되며 200만원 이상 최대 6만원까지 할인 받을 수 있다."
+     ],
+     "ai": {
+      "v": 2,
+      "cv": 1,
+      "card": {
+       "ok": true,
+       "why": "항공권·여행상품 결제 할인 포함",
+       "cards": [
+        "BC카드",
+        "우리카드",
+        "하나카드",
+        "NH농협카드",
+        "IBK기업은행"
+       ],
+       "use": "여행예약",
+       "airlines": [],
+       "amount": 120000,
+       "pct": 15,
+       "min": 200000,
+       "period": {
+        "from": "2026-11-04",
+        "to": "2026-12-31"
+       }
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     }
@@ -23712,17 +23790,19 @@
    ],
    "ai": {
     "v": 2,
-    "promo": false,
-    "why": "카드사 결제 할인·이벤트 소식",
-    "airlines": [],
-    "name": null,
-    "book": null,
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": null,
-    "seoul": null,
-    "at": "2026-11-12",
+    "cv": 1,
+    "card": {
+     "ok": false,
+     "why": "여러 카드사 소식 모음, 여행결제 혜택 아님",
+     "cards": [],
+     "use": null,
+     "airlines": [],
+     "amount": null,
+     "pct": null,
+     "min": null,
+     "period": null
+    },
+    "at": "2026-11-13",
     "model": "deepseek-v4-flash"
    },
    "lastDate": "2026-11-04T08:00:00.000Z",
@@ -23813,17 +23893,24 @@
    ],
    "ai": {
     "v": 2,
-    "promo": false,
-    "why": "카드사 할인 행사, 항공권 아님",
-    "airlines": [],
-    "name": null,
-    "book": null,
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": null,
-    "seoul": null,
-    "at": "2026-11-12",
+    "cv": 1,
+    "card": {
+     "ok": false,
+     "why": "해외직구·현지맛집 할인, 항공권 무관",
+     "cards": [
+      "NH농협카드"
+     ],
+     "use": "해외결제",
+     "airlines": [],
+     "amount": null,
+     "pct": 10,
+     "min": null,
+     "period": {
+      "from": null,
+      "to": "2027-02-28"
+     }
+    },
+    "at": "2026-11-13",
     "model": "deepseek-v4-flash"
    },
    "lastDate": "2026-11-04T04:54:00.000Z",
@@ -23871,17 +23958,19 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "카드사 프로모션, 항공권 아님",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "카드사 소식 모음, 여행결제 혜택 아님",
+       "cards": [],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     }
@@ -23941,17 +24030,19 @@
    ],
    "ai": {
     "v": 2,
-    "promo": false,
-    "why": "카드사 여행 결제 혜택·행사 모음",
-    "airlines": [],
-    "name": null,
-    "book": null,
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": null,
-    "seoul": null,
-    "at": "2026-11-12",
+    "cv": 1,
+    "card": {
+     "ok": false,
+     "why": "여러 회사 소식 모음, 여행결제 혜택 아님",
+     "cards": [],
+     "use": null,
+     "airlines": [],
+     "amount": null,
+     "pct": null,
+     "min": null,
+     "period": null
+    },
+    "at": "2026-11-13",
     "model": "deepseek-v4-flash"
    },
    "lastDate": "2026-11-04T02:10:00.000Z",
@@ -24341,17 +24432,19 @@
    ],
    "ai": {
     "v": 2,
-    "promo": false,
-    "why": "카드사 이벤트, 항공권은 경품",
-    "airlines": [],
-    "name": null,
-    "book": null,
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": null,
-    "seoul": null,
-    "at": "2026-11-12",
+    "cv": 1,
+    "card": {
+     "ok": false,
+     "why": "카드사 소식 모음, 항공권 할인 아님",
+     "cards": [],
+     "use": null,
+     "airlines": [],
+     "amount": null,
+     "pct": null,
+     "min": null,
+     "period": null
+    },
+    "at": "2026-11-13",
     "model": "deepseek-v4-flash"
    },
    "lastDate": "2026-11-03T08:28:00.000Z",
@@ -25257,74 +25350,22 @@
    ],
    "ai": {
     "v": 2,
-    "promo": false,
-    "why": "카드사 이벤트, 항공권은 경품",
-    "airlines": [],
-    "name": null,
-    "book": null,
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": null,
-    "seoul": null,
-    "at": "2026-11-12",
+    "cv": 1,
+    "card": {
+     "ok": false,
+     "why": "금융 소식 모음, 항공권 할인 아님",
+     "cards": [],
+     "use": null,
+     "airlines": [],
+     "amount": null,
+     "pct": null,
+     "min": null,
+     "period": null
+    },
+    "at": "2026-11-13",
     "model": "deepseek-v4-flash"
    },
    "lastDate": "2026-11-03T06:42:00.000Z",
-   "lastFound": "2026-11-03"
-  },
-  {
-   "id": "http://www.srtimes.kr/news/articleView.html|하나 카드 , 베트남 현지 소비 공략…롯데마트·그랩 할인 혜택 확대",
-   "kind": "card",
-   "title": "하나 카드 , 베트남 현지 소비 공략…롯데마트·그랩 할인 혜택 확대",
-   "desc": "해외여행 수요가 회복되면서 카드 업계의 경쟁 범위도 항공권 과 숙박 예약에서 현지 결제·이동·식음료... 있는 할인 쿠폰을 제공한다. 신한카드 도 해외여행 특화 상품인 SOL트래블 체크 카드 에 베트남 롯데마트와...",
-   "summary": [
-    "해외여행 수요가 회복되면서 카드 업계의 경쟁 범위도 항공권 과 숙박 예약에서 현지 결제·이동·식음료...",
-    "있는 할인 쿠폰을 제공한다.",
-    "신한카드 도 해외여행 특화 상품인 SOL트래블 체크 카드 에 베트남 롯데마트와…"
-   ],
-   "link": "http://www.srtimes.kr/news/articleView.html?idxno=216619",
-   "source": "네이버 뉴스",
-   "date": "2026-11-03T06:38:00.000Z",
-   "found": "2026-11-03",
-   "cards": [
-    "신한카드"
-   ],
-   "airlines": [],
-   "countries": [
-    "베트남",
-    "일본"
-   ],
-   "allRoutes": false,
-   "routes": [],
-   "price": null,
-   "query": "신한카드 항공권 할인",
-   "bodyAt": "2026-11-03",
-   "body": [
-    "[SRT(에스알 타임스) 유수환 기자] 해외여행 수요가 회복되면서 카드업계의 경쟁 범위도 항공권과 숙박 예약에서 현지 결제·이동·식음료 소비로 넓어지고 있다.",
-    "하나카드는 비자(Visa), 롯데마트 베트남과 제휴해 내년 1월 31일까지 현지 롯데마트 전 매장에서 최대 10% 즉시 할인 행사를 진행한다고 3일 밝혔다.",
-    "행사에 응모한 고객이 대상 카드로 차량 호출 서비스 그린SM(Green SM)과 카페 브랜드 콩카페(Cộng C&agrave; Ph&ecirc;)에서 각각 원화 환산 기준 1만원 이상 결제하면 가맹점별로 5000 하나머니를 적립해 준다.",
-    "하나카드 비자 브랜드 고객은 12월 31일까지 그랩 트래블패스를 무료로 이용할 수 있다.",
-    "트래블GO 체크카드 고객에게는 11월 30일까지 베트남 그랩에서 사용할 수 있는 4만동 할인 쿠폰을 최대 5장 지급한다.",
-    "KB국민카드는 마스터카드와 협력해 12월 31일까지 그랩 트래블패스를 무료 제공하는 행사를 진행한다.",
-    "베트남 롯데마트와 그랩 앱 이용금액의 5%를 결제일에 할인해 주며, 각각 월 3000원까지 혜택을 제공한다."
-   ],
-   "ai": {
-    "v": 2,
-    "promo": false,
-    "why": "카드사 현지 소비 할인 행사",
-    "airlines": [],
-    "name": null,
-    "book": null,
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": null,
-    "seoul": null,
-    "at": "2026-11-12",
-    "model": "deepseek-v4-flash"
-   },
-   "lastDate": "2026-11-03T06:38:00.000Z",
    "lastFound": "2026-11-03"
   },
   {
@@ -25383,17 +25424,19 @@
    ],
    "ai": {
     "v": 2,
-    "promo": false,
-    "why": "카드 이벤트, 항공권은 경품",
-    "airlines": [],
-    "name": null,
-    "book": null,
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": null,
-    "seoul": null,
-    "at": "2026-11-12",
+    "cv": 1,
+    "card": {
+     "ok": false,
+     "why": "여러 금융사 소식 모음, 여행결제 혜택 아님",
+     "cards": [],
+     "use": null,
+     "airlines": [],
+     "amount": null,
+     "pct": null,
+     "min": null,
+     "period": null
+    },
+    "at": "2026-11-13",
     "model": "deepseek-v4-flash"
    },
    "lastDate": "2026-11-03T02:08:00.000Z",
@@ -25445,17 +25488,21 @@
    ],
    "ai": {
     "v": 2,
-    "promo": false,
-    "why": "카드사 이벤트, 항공권은 경품",
-    "airlines": [],
-    "name": null,
-    "book": null,
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": null,
-    "seoul": null,
-    "at": "2026-11-12",
+    "cv": 1,
+    "card": {
+     "ok": false,
+     "why": "경품 추첨·적립률 소개",
+     "cards": [
+      "우리카드"
+     ],
+     "use": null,
+     "airlines": [],
+     "amount": null,
+     "pct": null,
+     "min": null,
+     "period": null
+    },
+    "at": "2026-11-13",
     "model": "deepseek-v4-flash"
    },
    "lastDate": "2026-11-03T01:19:55.000Z",
@@ -26080,6 +26127,632 @@
       "why": "여행사 감사제, 항공권은 경품",
       "airlines": [],
       "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    }
+   ]
+  },
+  {
+   "id": "PUjNGQW5HNHRLd293OUV5a3VsZVAtVmFaWE9fVUk3R25IR1BDWGxsZTR3dWduVWhiOF9pNHBnYm53UTdMbTNpNExWcUwybGtvNEpQXzJhcTJhYl9LNDJudjQ|트리니티항공, 가을 맞이 '더블 혜택' 프로모션…”최대 25% 할인\"",
+   "kind": "airline",
+   "title": "트리니티항공, 가을 맞이 '더블 혜택' 프로모션…”최대 25% 할인\"",
+   "desc": "트리니티항공, 가을 맞이 '더블 혜택' 프로모션…”최대 25% 할인\" 팍스경제TV",
+   "summary": [
+    "트리니티항공, 가을 맞이 '더블 혜택' 프로모션…”최대 25% 할인\" 팍스경제TV…"
+   ],
+   "link": "http://www.paxetv.com/news/articleView.html?idxno=285801",
+   "source": "팍스경제TV",
+   "date": "2026-11-02T00:08:54.000Z",
+   "found": "2026-11-02",
+   "cards": [],
+   "airlines": [
+    "TW"
+   ],
+   "countries": [
+    "일본",
+    "싱가포르",
+    "대만",
+    "홍콩",
+    "마카오"
+   ],
+   "allRoutes": true,
+   "routes": [],
+   "price": null,
+   "query": "일본 항공 프로모션",
+   "bodyAt": "2026-11-02",
+   "body": [
+    "트리니티항공, 가을 맞이 '더블 혜택' 프로모션…”최대 25% 할인\"",
+    "승인 2026.11.02",
+    "트리니티항공이 가을을 맞아 더블 혜택 프로모션을 진행한다고 2일 밝혔습니다.",
+    "기간은 오는 13일부터 내년 1월 31일까지이며, 일본, 동남아, 동북아, 유럽, 호주, 캐나다 등 트리니티항공의 주요 국제선 노선이 대상입니다.",
+    "트리니티항공 홈페이지에서 할인 코드 ‘NOV26’을 입력하면 노선별로 최대 25% 즉시 할인된 가격에 항공권을 예매할 수 있습니다.",
+    "아울러 결제 금액별로 최대 3만원까지 추가 할인받을 수 있는 중복 할인 쿠폰도 지급합니다.",
+    "트리니티항공 관계자는 \"고객들의 여행 경비 부담을 덜고자 할인 코드와 중복 할인 쿠폰을 함께 제공하는 프로모션을 마련했다\"며 \"내년 1월까지 탑승할 수 있는 만큼 다양한 할인 혜택을 활용해 여행을 미리 준비하시길 바란다\"고 말했습니다."
+   ],
+   "notified": "2026-11-02",
+   "ai": {
+    "v": 2,
+    "promo": true,
+    "why": "항공사 할인코드 프로모션",
+    "airlines": [
+     "트리니티항공"
+    ],
+    "name": "더블 혜택 프로모션",
+    "book": {
+     "from": "2026-11-13",
+     "to": "2027-01-31"
+    },
+    "board": {
+     "from": null,
+     "to": "2027-01-31"
+    },
+    "price": null,
+    "trip": null,
+    "pct": 25,
+    "seoul": null,
+    "at": "2026-11-12",
+    "model": "deepseek-v4-flash"
+   },
+   "lastDate": "2026-11-02T08:02:27.000Z",
+   "lastFound": "2026-11-04",
+   "more": [
+    {
+     "id": "http://www.paxetv.com/news/articleView.html|트리니티항공 , 가을 맞이 '더블 혜택' 프로모션 …\"최대 25% 할인 ",
+     "kind": "airline",
+     "title": "트리니티항공 , 가을 맞이 '더블 혜택' 프로모션 …\"최대 25% 할인 \"",
+     "desc": "프로모션 을 진행한다고 2일 밝혔습니다. 기간은 오는 13일부터 내년 1월 31일까지이며, 일본 , 동남아, 동북아, 유럽, 호주, 캐나다 등 트리니티항공 의 주요 국제선 노선이 대상입니다. 트리니티항공 홈페이지에서 할인 ...",
+     "summary": [
+      "프로모션 을 진행한다고 2일 밝혔습니다.",
+      "기간은 오는 13일부터 내년 1월 31일까지이며, 일본 , 동남아, 동북아, 유럽, 호주, 캐나다 등 트리니티항공 의 주요 국제선 노선이 대상입니다.",
+      "트리니티항공 홈페이지에서 할인…"
+     ],
+     "link": "http://www.paxetv.com/news/articleView.html?idxno=285801",
+     "source": "네이버 뉴스",
+     "date": "2026-11-02T00:10:00.000Z",
+     "found": "2026-11-03",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [
+      "일본"
+     ],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "트리니티항공 일본 {특가말}",
+     "bodyAt": "2026-11-03",
+     "body": [
+      "트리니티항공이 가을을 맞아 더블 혜택 프로모션을 진행한다고 2일 밝혔습니다.",
+      "기간은 오는 13일부터 내년 1월 31일까지이며, 일본, 동남아, 동북아, 유럽, 호주, 캐나다 등 트리니티항공의 주요 국제선 노선이 대상입니다.",
+      "트리니티항공 홈페이지에서 할인 코드 ‘NOV26’을 입력하면 노선별로 최대 25% 즉시 할인된 가격에 항공권을 예매할 수 있습니다.",
+      "아울러 결제 금액별로 최대 3만원까지 추가 할인받을 수 있는 중복 할인 쿠폰도 지급합니다.",
+      "트리니티항공 관계자는 \"고객들의 여행 경비 부담을 덜고자 할인 코드와 중복 할인 쿠폰을 함께 제공하는 프로모션을 마련했다\"며 \"내년 1월까지 탑승할 수 있는 만큼 다양한 할인 혜택을 활용해 여행을 미리 준비하시길 바란다\"고 말했습니다."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "항공사 할인코드 프로모션",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "더블 혜택 프로모션",
+      "book": {
+       "from": "2026-11-13",
+       "to": "2027-01-31"
+      },
+      "board": {
+       "from": null,
+       "to": "2027-01-31"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 25,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "http://www.enewstoday.co.kr/news/articleView.html|'가을·겨울' 해외 여행객 잡는다··· 트리니티항공 11월 ' 프로모션 ",
+     "kind": "airline",
+     "title": "'가을·겨울' 해외 여행객 잡는다··· 트리니티항공 11월 ' 프로모션 ' 진...",
+     "desc": "혜택 프로모션 '을 진행한다고 2일 밝혔다. 이번 프로모션 은 트리니티항공 공식 홈페이지와 모바일 앱(웹)... 캐나다· 싱가포르 시티투어 '빅버스' 20% 할인 등 결제 제휴 혜택도 함께 적용된다. 트리니티항공 관계자는...",
+     "summary": [
+      "혜택 프로모션 '을 진행한다고 2일 밝혔다.",
+      "이번 프로모션 은 트리니티항공 공식 홈페이지와 모바일 앱(웹)...",
+      "캐나다· 싱가포르 시티투어 '빅버스' 20% 할인 등 결제 제휴 혜택도 함께 적용된다."
+     ],
+     "link": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2487049",
+     "source": "네이버 뉴스",
+     "date": "2026-11-02T00:39:00.000Z",
+     "found": "2026-11-03",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [
+      "싱가포르",
+      "일본",
+      "대만",
+      "홍콩",
+      "마카오"
+     ],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "트리니티항공 싱가포르 {특가말}",
+     "bodyAt": "2026-11-03",
+     "body": [
+      "[이뉴스투데이 김재한 기자] 트리니티항공이 가을과 겨울 시즌 해외 여행객을 위해 주요 국제선 노선 운임을 인하한다.",
+      "트리니티항공은 이달 13일부터 일본, 동남아, 동북아, 유럽, 호주·캐나다 등 주요 국제선 노선을 대상으로 '더블 혜택 프로모션'을 진행한다고 2일 밝혔다.",
+      "이번 프로모션은 트리니티항공 공식 홈페이지와 모바일 앱(웹)에서 진행되며, 탑승 기간은 일부 기간을 제외하고 내년 1월 31일까지다.",
+      "예매 시 할인 코드 'NOV26'을 입력하면 노선별로 최대 25% 즉시 할인이 적용된다.",
+      "이와 함께 결제 금액에 따라 최대 3만원까지 추가 차감되는 중복 할인 쿠폰이 함께 제공되어 할인 코드와 동시 사용이 가능하다.",
+      "이번 프로모션은 이달 중 열리는 일본 오사카 '빛의 향연', 홍콩 '국제 와인·주류 박람회', 대만 타이베이 '국제 여행박람회', 마카오 '그랑프리' 등 주요 국제 행사 일정과 맞춰 진행된다.",
+      "또한 유럽 기차 8% 할인 및 유럽·홍콩·호주·캐나다·싱가포르 시티투어 '빅버스' 20% 할인 등 결제 제휴 혜택도 함께 적용된다.",
+      "트리니티항공 관계자는 “고객들의 여행 경비 부담을 덜고자 할인 코드와 중복 할인 쿠폰을 함께 제공하는 프로모션을 마련했다”며 “내년 1월까지 탑승할 수 있는 만큼 다양한 할인 혜택을 활용해 여행을 미리 준비하시길 바란다”고 말했다."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "국제선 운임 할인 코드 프로모션",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "더블 혜택 프로모션",
+      "book": null,
+      "board": {
+       "from": null,
+       "to": "2027-01-31"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 25,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "iWEFVX3lxTFBQQjRpNUtNT3VPMm5IUGtYXy1xR3pWZHVKV3FDYnZBMW9fVlRva0tMekZvMWtFczhROEZjd1pVclFXYVU3WWZIRVNlSTFZaFRJejlVRFNRNnM|트리니티항공, 11월 국제선 항공권 최대 25% 할인 프로모션",
+     "kind": "airline",
+     "title": "트리니티항공, 11월 국제선 항공권 최대 25% 할인 프로모션",
+     "desc": "트리니티항공, 11월 국제선 항공권 최대 25% 할인 프로모션 경북신문",
+     "summary": [
+      "트리니티항공, 11월 국제선 항공권 최대 25% 할인 프로모션 경북신문…"
+     ],
+     "link": "https://www.kbsm.net/news/view.php?idx=539966",
+     "source": "경북신문",
+     "date": "2026-11-02T01:56:12.000Z",
+     "found": "2026-11-02",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "싱가포르 항공 프로모션",
+     "bodyAt": "2026-11-02",
+     "notified": "2026-11-02",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "항공사 국제선 운임 할인 프로모션",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "11월 국제선 항공권 할인 프로모션",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": 25,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "iWEFVX3lxTFBQQjRpNUtNT3VPMm5IUGtYXy1xR3pWZHVKV3FDYnZBMW9fVlRva0tMekZvMWtFczhROEZjd1pVclFXYVU3WWZIRVNlSTFZaFRJejlVRFNRNnM|트리니티항공, 11월 국제선 항공권 최대 25% 할인",
+     "kind": "airline",
+     "title": "트리니티항공, 11월 국제선 항공권 최대 25% 할인",
+     "desc": "트리니티항공, 11월 국제선 항공권 최대 25% 할인 경북신문",
+     "summary": [
+      "트리니티항공, 11월 국제선 항공권 최대 25% 할인 경북신문…"
+     ],
+     "link": "https://www.kbsm.net/news/view.php?idx=539966",
+     "source": "경북신문",
+     "date": "2026-11-02T01:58:32.000Z",
+     "found": "2026-11-02",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "일본 항공 프로모션",
+     "bodyAt": "2026-11-02",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "국제선 항공권 할인 프로모션",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "11월 국제선 항공권 할인",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": 25,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "TE9iWVB3M0Z6aVgtYm53WU5YUmhETUZHVXZYeWhzeEFzRWJCUmpLeUJzVW14d0huN25xLUJ6R0poNmVqbWFuSG9uTzNGSllUMkw1N0t5TlI1OEhVeXFpMEJv|트리니티항공, 국제선 항공권 최대 25% 할인 행사",
+     "kind": "airline",
+     "title": "트리니티항공, 국제선 항공권 최대 25% 할인 행사",
+     "desc": "트리니티항공, 국제선 항공권 최대 25% 할인 행사 경상매일신문",
+     "summary": [
+      "트리니티항공, 국제선 항공권 최대 25% 할인 행사 경상매일신문…"
+     ],
+     "link": "https://www.ksmnews.co.kr/news/view.php?idx=628111",
+     "source": "경상매일신문",
+     "date": "2026-11-02T08:02:27.000Z",
+     "found": "2026-11-03",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "트리니티항공 {특가말}",
+     "bodyAt": "2026-11-03",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "국제선 항공권 운임 할인 행사",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": 25,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "lzcjZvWmtERTY1NmVoZnE0VTIycG1TMUlTZjBsYTU5Ml9PM253bHEtSkZ3REFiUDZ0eFJZYjVUMGUxZW1Va1k4RFdLRFNKSElvZkVjaElNajI1SEEwb1psQQ|트리니티항공, ‘지금, 제주를 만나다’ 프로모션",
+     "kind": "airline",
+     "title": "트리니티항공, ‘지금, 제주를 만나다’ 프로모션",
+     "desc": "트리니티항공, ‘지금, 제주를 만나다’ 프로모션 싱글리스트",
+     "summary": [
+      "트리니티항공, ‘지금, 제주를 만나다’ 프로모션 싱글리스트…"
+     ],
+     "link": "https://www.slist.kr/news/articleView.html?idxno=777691",
+     "source": "싱글리스트",
+     "date": "2026-10-29T23:57:11.000Z",
+     "found": "2026-11-03",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "트리니티항공 {특가말}",
+     "bodyAt": "2026-11-03",
+     "body": [
+      "트리니티항공, ‘지금, 제주를 만나다’ 프로모션",
+      "트리니티항공이 제주특별자치도, 제주관광공사와 손잡고 내륙-제주 노선 이용객을 위한 ‘지금, 제주를 만나다’ 프로모션을 펼친다.",
+      "이번 프로모션은 김포·대구·청주·광주에서 출발하는 제주행 국내선 왕복 항공권 구매 고객을 대상으로 진행되며 최대 2만원 할인 쿠폰을 제공한다.",
+      "할인 쿠폰은 30일 오전 10시부터 공식 홈페이지를 통해 선착순 발급된다.",
+      "해당 항공권 탑승 기간은 내년 1월 31일까지다.",
+      "한편 성산일출봉의 장엄한 일출과 협재 해수욕장의 푸른 바다, 제주 올레길 트래킹 등 독특한 자연경관을 자랑하는 제주도는 가을·겨울철 한라산의 오색 단풍과 눈꽃 산행, 따뜻한 온천욕까지 더해져 휴식과 액티비티를 동시에 원하는 여행객들에게 최적의 휴양지로 꼽힌다."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "국내선 제주 노선 할인, 국제선 아님",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "지금, 제주를 만나다",
+      "book": null,
+      "board": {
+       "from": null,
+       "to": "2027-01-31"
+      },
+      "price": null,
+      "trip": "왕복",
+      "pct": null,
+      "seoul": true,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "Yd2tvZDJHbjdJRmNmQTgyNGRCWE1HbzBYblVrOHRFYVdVcnczdzM0XzB5X1c3YkdJWDFTTzlZcXhvcDc2V0gtTGowWlp0ZkNjTWtNZE50TEJZaEJTOTRBdXc|트리니티항공, '지금, 제주를 만나다' 프로모션 진행...최대 2만원 할",
+     "kind": "airline",
+     "title": "트리니티항공, '지금, 제주를 만나다' 프로모션 진행...최대 2만원 할인",
+     "desc": "트리니티항공, '지금, 제주를 만나다' 프로모션 진행...최대 2만원 할인 월요신문",
+     "summary": [
+      "트리니티항공, '지금, 제주를 만나다' 프로모션 진행...최대 2만원 할인 월요신문…"
+     ],
+     "link": "https://www.wolyo.co.kr/news/articleView.html?idxno=319801",
+     "source": "월요신문",
+     "date": "2026-10-30T00:18:39.000Z",
+     "found": "2026-11-01",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "대만 항공 프로모션",
+     "bodyAt": "2026-11-01",
+     "body": [
+      "트리니티항공, '지금, 제주를 만나다' 프로모션 진행...최대 2만원 할인",
+      "업데이트 2026.10.30 09:25",
+      "입력 2026.10.30 09:18",
+      "트리니티항공은 제주도, 제주관광공사와 손잡고 제주행 왕복 항공권 구매 이용객들을 대상으로 '지금, 제주를 만나다' 프로모션을 진행한다고 30일 밝혔다.",
+      "이번 프로모션은 김포&middot;대구&middot;청주&middot;광주에서 출발하는 제주행 국내선 왕복 항공권 구매 고객을 대상으로 진행되며 최대 2만원 할인 쿠폰을 제공한다.",
+      "할인 쿠폰은 이날 오전 10시부터 트리니티항공 공식 홈페이지를 통해 선착순으로 발급되며, 수량 소진 시 조기 마감된다.",
+      "항공권의 탑승 기간은 내년 1월 31일까지다.",
+      "트리니티항공 관계자는 \"제주도의 푸른 바다와 신비로운 오름을 따라 걸으며 소중한 추억을 만드시길 바란다\"며 \"트리니티항공은 항상 안전 운항을 최우선으로 해 다채로운 혜택을 드리기 위해 최선을 다하겠다\"고 밝혔다."
+     ],
+     "notified": "2026-11-02",
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "국내선 제주 노선 할인, 국제선 아님",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "지금, 제주를 만나다",
+      "book": null,
+      "board": {
+       "from": null,
+       "to": "2027-01-31"
+      },
+      "price": null,
+      "trip": "왕복",
+      "pct": null,
+      "seoul": true,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "QWG9MRk9yVHZVT1FMNkU4YVpERVNqb214cEg2eEpNa2tQSTlFdTZBRFRHTnRMb1JQbEdLUDFtenFic0ZUY29CYjU2cF9kU1RvZWExQ3E4azJXTTd3QzBNWGc|트리니티항공, '지금, 제주를 만나다' 프로모션…최대 2만원 할인",
+     "kind": "airline",
+     "title": "트리니티항공, '지금, 제주를 만나다' 프로모션…최대 2만원 할인",
+     "desc": "트리니티항공, '지금, 제주를 만나다' 프로모션…최대 2만원 할인 컨슈머타임스",
+     "summary": [
+      "트리니티항공, '지금, 제주를 만나다' 프로모션…최대 2만원 할인 컨슈머타임스…"
+     ],
+     "link": "https://www.cstimes.com/news/articleView.html?idxno=726011",
+     "source": "컨슈머타임스",
+     "date": "2026-10-30T03:03:23.000Z",
+     "found": "2026-11-03",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "트리니티항공 {특가말}",
+     "bodyAt": "2026-11-03",
+     "body": [
+      "트리니티항공, '지금, 제주를 만나다' 프로모션…최대 2만원 할인",
+      "컨슈머타임스=이정화 기자 | 트리니티항공이 제주특별자치도 및 제주관광공사와 협력해 제주 노선 이용객을 대상으로 '지금, 제주를 만나다' 프로모션을 진행한다.",
+      "트리니티항공은 이번 프로모션으로 김포·대구·청주·광주에서 출발하는 제주행 국내선 왕복 항공권을 구매하는 고객에게 최대 2만원 할인 쿠폰을 제공한다고 30일 밝혔다.",
+      "할인 쿠폰은 이날 오전 10시부터 트리니티항공 공식 홈페이지를 통해 선착순으로 발급된다.",
+      "쿠폰을 적용한 항공권의 탑승 기간은 내년 1월 31일까지다.",
+      "현재 트리니티항공은 홈페이지 신규 회원 가입 고객에게 즉시 사용할 수 있는 총 10만원 상당의 쿠폰팩을 지급하고 있으며, 할인 소식 알림 서비스와 회원 전용 추가 할인 등 다채로운 혜택을 제공하고 있다.",
+      "트리니티항공 관계자는 \"안전 운항을 최우선 가치로 두고 고객들에게 실질적인 혜택을 제공할 수 있는 다양한 프로모션을 지속해서 마련할 것\"이라고 말했다."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "국내선 제주 노선 할인, 국제선 아님",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "지금, 제주를 만나다",
+      "book": null,
+      "board": {
+       "from": null,
+       "to": "2027-01-31"
+      },
+      "price": null,
+      "trip": "왕복",
+      "pct": null,
+      "seoul": true,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "vWlhYblh5Mnh3SC1pN29TMnhHLTZ4M25qZjlUYUlULTJ2bFdOT3dXdEFhSWNkMEdNd3M0M0FhSzRXRF9ZMDhaamgyX2FvR253QVdnamc2S2J1T1hIZU5OUVE|영풍 석포제련소 앞 낙동강서 수달 포착... 트리니티항공, 제주 노선 할",
+     "kind": "airline",
+     "title": "영풍 석포제련소 앞 낙동강서 수달 포착... 트리니티항공, 제주 노선 할인 외 [시경Today-소재·정유·항공]",
+     "desc": "영풍 석포제련소 앞 낙동강서 수달 포착... 트리니티항공, 제주 노선 할인 외 [시경Today-소재·정유·항공] 시장경제신문",
+     "summary": [
+      "영풍 석포제련소 앞 낙동강서 수달 포착...",
+      "트리니티항공, 제주 노선 할인 외 [시경Today-소재·정유·항공] 시장경제신문…"
+     ],
+     "link": "https://www.meconomynews.com/news/articleView.html?idxno=203101",
+     "source": "시장경제신문",
+     "date": "2026-10-30T04:27:47.000Z",
+     "found": "2026-11-01",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "중국 항공 프로모션",
+     "bodyAt": "2026-11-01",
+     "body": [
+      "입력 2026.10.30 13:27",
+      "1월 먹이 활동부터 10월 한 쌍까지 관찰",
+      "2022년 첫 촬영 이후 해마다 모습 드러내",
+      "영풍은 석포제련소 앞 낙동강에서 수달이 올해 1월부터 10월까지 계절마다 모습을 드러냈다고 30일 밝혔다.",
+      "7월 말 낙동강과 석포리천 합류 지점에서는 한 마리가 얕은 물에 몸을 담근 채 더위를 식혔으며, 5월과 6월에도 제련소 1공장 정문 인근 다리 아래에서 수달이 강물을 오갔다.",
+      "계절을 거슬러 올라가면 한겨울인 1월에도 활동은 활발했다.",
+      "2022년 1월 첫 공식 촬영 이후 해마다 제련소 주변에서 수달이 목격되고 있다.",
+      "트리니티항공, 제주행 왕복 항공권 할인 프로모션",
+      "내년 1월 31일까지 탑승 항공권 적용",
+      "트리니티항공은 제주특별자치도, 제주관광공사와 함께 내륙발 제주 노선 이용객을 대상으로 '지금, 제주를 만나다' 프로모션을 진행한다고 30일 밝혔다.",
+      "김포&middot;대구&middot;청주&middot;광주에서 출발하는 제주행 국내선 왕복 항공권 구매 고객에게 최대 2만원 할인 쿠폰을 제공한다.",
+      "쿠폰은 이날 오전 10시부터 공식 홈페이지에서 선착순으로 발급하며 수량이 소진되면 조기 마감한다.",
+      "탑승 기간은 내년 1월 31일까지다.",
+      "홈페이지 신규 회원에게는 총 10만원 상당의 쿠폰팩을 제공한다.",
+      "제주항공, 노브랜드 버거와 공동 프로모션",
+      "성수동 팝업스토어 11월 28일까지 운영",
+      "제주항공은 신세계푸드의 노브랜드 버거와 함께 내&middot;외국인 고객을 대상으로 온&middot;오프라인 프로모션을 진행한다고 30일 밝혔다.",
+      "이날부터 11월 28일까지 서울 성수동 노브랜드 버거 성수랩점에서 팝업스토어를 운영한다.",
+      "보딩패스 스탬프와 키캡 키링 만들기, 인증사진 행사, 제주항공 온라인 판매점(J Shop) 상품 전시 등 체험 프로그램을 마련했다.",
+      "제주항공 탑승권과 여권을 제시하고 해당 제품을 구매한 외국인 고객에게는 여행용품 묶음을 증정한다.",
+      "제주항공 상품과 이마트 할인 쿠폰 등을 담았으며 서울&middot;부산&middot;제주 일부 매장에서 선착순 1000명에게 제공한다."
+     ],
+     "notified": "2026-11-02",
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "국내선 제주 노선 할인, 국제선 아님",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "지금, 제주를 만나다",
+      "book": null,
+      "board": {
+       "from": null,
+       "to": "2027-01-31"
+      },
+      "price": null,
+      "trip": "왕복",
+      "pct": null,
+      "seoul": true,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "jQ2dkMmJVc1ZTVGp6SzJPVzlfbGQxYm44RjN5R1JFMC10cVktdmt3RWVxN0Uyd203MnljNXFPMC1pTnhGa0RLaWFUNXBGbG9EU0tsUmNkTV9UNXl2ZHBKako|트리니티항공, 제주도·관광공사와 손잡고 겨울 제주 여행 할인",
+     "kind": "airline",
+     "title": "트리니티항공, 제주도·관광공사와 손잡고 겨울 제주 여행 할인",
+     "desc": "트리니티항공, 제주도·관광공사와 손잡고 겨울 제주 여행 할인 서울경제TV",
+     "summary": [
+      "트리니티항공, 제주도·관광공사와 손잡고 겨울 제주 여행 할인 서울경제TV…"
+     ],
+     "link": "https://www.sentv.co.kr/article/view/sentv202610300117",
+     "source": "서울경제TV",
+     "date": "2026-10-30T05:02:39.000Z",
+     "found": "2026-11-03",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "트리니티항공 {특가말}",
+     "bodyAt": "2026-11-03",
+     "body": [
+      "트리니티항공, 제주도·관광공사와 손잡고 겨울 제주 여행 할인",
+      "제주행 왕복 항공권 최대 2만원 할인 쿠폰",
+      "[서울경제TV=김지송 인턴기자] 김포·대구·청주·광주에서 제주로 향하는 왕복 항공권을 구매하면 최대 2만원을 할인받을 수 있다.",
+      "할인 쿠폰은 30일 오전 10시부터 선착순으로 발급된다.",
+      "트리니티항공은 제주특별자치도·제주관광공사와 함께 ‘지금, 제주를 만나다’ 프로모션을 진행한다고 30일 밝혔다.",
+      "할인 대상 항공권의 탑승 기간은 2027년 1월 31일까지로, 가을과 겨울 제주 여행을 계획하는 고객이 이용할 수 있다.",
+      "트리니티항공은 앞서 지난 12일부터 23일까지 부산·대구·청주·제주·광주 등 지역 공항 출발 항공편을 대상으로 ‘우리 동네 할인’을 운영했다.",
+      "당시 국내선은 15만원 이상 결제 시 5000원, 국제선은 40만원 이상 결제 시 2만원을 할인했다.",
+      "이번 행사는 출발지를 4곳으로 정하고 제주행 왕복 항공권에 최대 2만원의 쿠폰을 제공하는 방식이다.",
+      "트리니티항공은 신규 회원에게 총 10만원 상당의 쿠폰팩을 제공하고 있다.",
+      "트리니티항공 관계자는 “항상 안전 운항을 최우선으로 하여 다채로운 혜택을 드리기 위해 최선을 다하겠다”고 말했다."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "국내선 제주행 쿠폰 할인 행사",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "지금, 제주를 만나다",
+      "book": null,
+      "board": {
+       "from": null,
+       "to": "2027-01-31"
+      },
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": true,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "iWEFVX3lxTE9ucU1iNllwbXZVU2xsVTdzaXBJRnBnbFhiZGwzQkRYQm0taTQzNjlKd3BFa19EaEtxV1dqelg1SkdEdUdiTmJZLTJiN3VhaEkyc18yOFJERWM|트리니티항공, 제주 여행 할인 프로모션 진행",
+     "kind": "airline",
+     "title": "트리니티항공, 제주 여행 할인 프로모션 진행",
+     "desc": "트리니티항공, 제주 여행 할인 프로모션 진행 경북신문",
+     "summary": [
+      "트리니티항공, 제주 여행 할인 프로모션 진행 경북신문…"
+     ],
+     "link": "https://www.kbsm.net/news/view.php?idx=539748",
+     "source": "경북신문",
+     "date": "2026-10-30T02:35:00.000Z",
+     "found": "2026-11-04",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "트리니티항공 {특가말}",
+     "bodyAt": "2026-11-04",
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "제주 여행 상품 중심 프로모션",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "제주 여행 할인 프로모션",
       "book": null,
       "board": null,
       "price": null,
@@ -26752,249 +27425,6 @@
    },
    "lastDate": "2026-11-02T01:02:00.000Z",
    "lastFound": "2026-11-03"
-  },
-  {
-   "id": "PUjNGQW5HNHRLd293OUV5a3VsZVAtVmFaWE9fVUk3R25IR1BDWGxsZTR3dWduVWhiOF9pNHBnYm53UTdMbTNpNExWcUwybGtvNEpQXzJhcTJhYl9LNDJudjQ|트리니티항공, 가을 맞이 '더블 혜택' 프로모션…”최대 25% 할인\"",
-   "kind": "airline",
-   "title": "트리니티항공, 가을 맞이 '더블 혜택' 프로모션…”최대 25% 할인\"",
-   "desc": "트리니티항공, 가을 맞이 '더블 혜택' 프로모션…”최대 25% 할인\" 팍스경제TV",
-   "summary": [
-    "트리니티항공, 가을 맞이 '더블 혜택' 프로모션…”최대 25% 할인\" 팍스경제TV…"
-   ],
-   "link": "http://www.paxetv.com/news/articleView.html?idxno=285801",
-   "source": "팍스경제TV",
-   "date": "2026-11-02T00:08:54.000Z",
-   "found": "2026-11-02",
-   "cards": [],
-   "airlines": [
-    "TW"
-   ],
-   "countries": [
-    "일본"
-   ],
-   "allRoutes": true,
-   "routes": [],
-   "price": null,
-   "query": "일본 항공 프로모션",
-   "bodyAt": "2026-11-02",
-   "body": [
-    "트리니티항공, 가을 맞이 '더블 혜택' 프로모션…”최대 25% 할인\"",
-    "승인 2026.11.02",
-    "트리니티항공이 가을을 맞아 더블 혜택 프로모션을 진행한다고 2일 밝혔습니다.",
-    "기간은 오는 13일부터 내년 1월 31일까지이며, 일본, 동남아, 동북아, 유럽, 호주, 캐나다 등 트리니티항공의 주요 국제선 노선이 대상입니다.",
-    "트리니티항공 홈페이지에서 할인 코드 ‘NOV26’을 입력하면 노선별로 최대 25% 즉시 할인된 가격에 항공권을 예매할 수 있습니다.",
-    "아울러 결제 금액별로 최대 3만원까지 추가 할인받을 수 있는 중복 할인 쿠폰도 지급합니다.",
-    "트리니티항공 관계자는 \"고객들의 여행 경비 부담을 덜고자 할인 코드와 중복 할인 쿠폰을 함께 제공하는 프로모션을 마련했다\"며 \"내년 1월까지 탑승할 수 있는 만큼 다양한 할인 혜택을 활용해 여행을 미리 준비하시길 바란다\"고 말했습니다."
-   ],
-   "notified": "2026-11-02",
-   "ai": {
-    "v": 2,
-    "promo": true,
-    "why": "항공사 할인코드 프로모션",
-    "airlines": [
-     "트리니티항공"
-    ],
-    "name": "더블 혜택 프로모션",
-    "book": {
-     "from": "2026-11-13",
-     "to": "2027-01-31"
-    },
-    "board": {
-     "from": null,
-     "to": "2027-01-31"
-    },
-    "price": null,
-    "trip": null,
-    "pct": 25,
-    "seoul": null,
-    "at": "2026-11-12",
-    "model": "deepseek-v4-flash"
-   },
-   "lastDate": "2026-11-02T00:10:00.000Z",
-   "lastFound": "2026-11-03",
-   "more": [
-    {
-     "id": "http://www.paxetv.com/news/articleView.html|트리니티항공 , 가을 맞이 '더블 혜택' 프로모션 …\"최대 25% 할인 ",
-     "kind": "airline",
-     "title": "트리니티항공 , 가을 맞이 '더블 혜택' 프로모션 …\"최대 25% 할인 \"",
-     "desc": "프로모션 을 진행한다고 2일 밝혔습니다. 기간은 오는 13일부터 내년 1월 31일까지이며, 일본 , 동남아, 동북아, 유럽, 호주, 캐나다 등 트리니티항공 의 주요 국제선 노선이 대상입니다. 트리니티항공 홈페이지에서 할인 ...",
-     "summary": [
-      "프로모션 을 진행한다고 2일 밝혔습니다.",
-      "기간은 오는 13일부터 내년 1월 31일까지이며, 일본 , 동남아, 동북아, 유럽, 호주, 캐나다 등 트리니티항공 의 주요 국제선 노선이 대상입니다.",
-      "트리니티항공 홈페이지에서 할인…"
-     ],
-     "link": "http://www.paxetv.com/news/articleView.html?idxno=285801",
-     "source": "네이버 뉴스",
-     "date": "2026-11-02T00:10:00.000Z",
-     "found": "2026-11-03",
-     "cards": [],
-     "airlines": [
-      "TW"
-     ],
-     "countries": [
-      "일본"
-     ],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "트리니티항공 일본 {특가말}",
-     "bodyAt": "2026-11-03",
-     "body": [
-      "트리니티항공이 가을을 맞아 더블 혜택 프로모션을 진행한다고 2일 밝혔습니다.",
-      "기간은 오는 13일부터 내년 1월 31일까지이며, 일본, 동남아, 동북아, 유럽, 호주, 캐나다 등 트리니티항공의 주요 국제선 노선이 대상입니다.",
-      "트리니티항공 홈페이지에서 할인 코드 ‘NOV26’을 입력하면 노선별로 최대 25% 즉시 할인된 가격에 항공권을 예매할 수 있습니다.",
-      "아울러 결제 금액별로 최대 3만원까지 추가 할인받을 수 있는 중복 할인 쿠폰도 지급합니다.",
-      "트리니티항공 관계자는 \"고객들의 여행 경비 부담을 덜고자 할인 코드와 중복 할인 쿠폰을 함께 제공하는 프로모션을 마련했다\"며 \"내년 1월까지 탑승할 수 있는 만큼 다양한 할인 혜택을 활용해 여행을 미리 준비하시길 바란다\"고 말했습니다."
-     ],
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "항공사 할인코드 프로모션",
-      "airlines": [
-       "트리니티항공"
-      ],
-      "name": "더블 혜택 프로모션",
-      "book": {
-       "from": "2026-11-13",
-       "to": "2027-01-31"
-      },
-      "board": {
-       "from": null,
-       "to": "2027-01-31"
-      },
-      "price": null,
-      "trip": null,
-      "pct": 25,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "vWlhYblh5Mnh3SC1pN29TMnhHLTZ4M25qZjlUYUlULTJ2bFdOT3dXdEFhSWNkMEdNd3M0M0FhSzRXRF9ZMDhaamgyX2FvR253QVdnamc2S2J1T1hIZU5OUVE|영풍 석포제련소 앞 낙동강서 수달 포착... 트리니티항공, 제주 노선 할",
-     "kind": "airline",
-     "title": "영풍 석포제련소 앞 낙동강서 수달 포착... 트리니티항공, 제주 노선 할인 외 [시경Today-소재·정유·항공]",
-     "desc": "영풍 석포제련소 앞 낙동강서 수달 포착... 트리니티항공, 제주 노선 할인 외 [시경Today-소재·정유·항공] 시장경제신문",
-     "summary": [
-      "영풍 석포제련소 앞 낙동강서 수달 포착...",
-      "트리니티항공, 제주 노선 할인 외 [시경Today-소재·정유·항공] 시장경제신문…"
-     ],
-     "link": "https://www.meconomynews.com/news/articleView.html?idxno=203101",
-     "source": "시장경제신문",
-     "date": "2026-10-30T04:27:47.000Z",
-     "found": "2026-11-01",
-     "cards": [],
-     "airlines": [
-      "TW"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "중국 항공 프로모션",
-     "bodyAt": "2026-11-01",
-     "body": [
-      "입력 2026.10.30 13:27",
-      "1월 먹이 활동부터 10월 한 쌍까지 관찰",
-      "2022년 첫 촬영 이후 해마다 모습 드러내",
-      "영풍은 석포제련소 앞 낙동강에서 수달이 올해 1월부터 10월까지 계절마다 모습을 드러냈다고 30일 밝혔다.",
-      "7월 말 낙동강과 석포리천 합류 지점에서는 한 마리가 얕은 물에 몸을 담근 채 더위를 식혔으며, 5월과 6월에도 제련소 1공장 정문 인근 다리 아래에서 수달이 강물을 오갔다.",
-      "계절을 거슬러 올라가면 한겨울인 1월에도 활동은 활발했다.",
-      "2022년 1월 첫 공식 촬영 이후 해마다 제련소 주변에서 수달이 목격되고 있다.",
-      "트리니티항공, 제주행 왕복 항공권 할인 프로모션",
-      "내년 1월 31일까지 탑승 항공권 적용",
-      "트리니티항공은 제주특별자치도, 제주관광공사와 함께 내륙발 제주 노선 이용객을 대상으로 '지금, 제주를 만나다' 프로모션을 진행한다고 30일 밝혔다.",
-      "김포&middot;대구&middot;청주&middot;광주에서 출발하는 제주행 국내선 왕복 항공권 구매 고객에게 최대 2만원 할인 쿠폰을 제공한다.",
-      "쿠폰은 이날 오전 10시부터 공식 홈페이지에서 선착순으로 발급하며 수량이 소진되면 조기 마감한다.",
-      "탑승 기간은 내년 1월 31일까지다.",
-      "홈페이지 신규 회원에게는 총 10만원 상당의 쿠폰팩을 제공한다.",
-      "제주항공, 노브랜드 버거와 공동 프로모션",
-      "성수동 팝업스토어 11월 28일까지 운영",
-      "제주항공은 신세계푸드의 노브랜드 버거와 함께 내&middot;외국인 고객을 대상으로 온&middot;오프라인 프로모션을 진행한다고 30일 밝혔다.",
-      "이날부터 11월 28일까지 서울 성수동 노브랜드 버거 성수랩점에서 팝업스토어를 운영한다.",
-      "보딩패스 스탬프와 키캡 키링 만들기, 인증사진 행사, 제주항공 온라인 판매점(J Shop) 상품 전시 등 체험 프로그램을 마련했다.",
-      "제주항공 탑승권과 여권을 제시하고 해당 제품을 구매한 외국인 고객에게는 여행용품 묶음을 증정한다.",
-      "제주항공 상품과 이마트 할인 쿠폰 등을 담았으며 서울&middot;부산&middot;제주 일부 매장에서 선착순 1000명에게 제공한다."
-     ],
-     "notified": "2026-11-02",
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "국내선 제주 노선 할인, 국제선 아님",
-      "airlines": [
-       "트리니티항공"
-      ],
-      "name": "지금, 제주를 만나다",
-      "book": null,
-      "board": {
-       "from": null,
-       "to": "2027-01-31"
-      },
-      "price": null,
-      "trip": "왕복",
-      "pct": null,
-      "seoul": true,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "jQ2dkMmJVc1ZTVGp6SzJPVzlfbGQxYm44RjN5R1JFMC10cVktdmt3RWVxN0Uyd203MnljNXFPMC1pTnhGa0RLaWFUNXBGbG9EU0tsUmNkTV9UNXl2ZHBKako|트리니티항공, 제주도·관광공사와 손잡고 겨울 제주 여행 할인",
-     "kind": "airline",
-     "title": "트리니티항공, 제주도·관광공사와 손잡고 겨울 제주 여행 할인",
-     "desc": "트리니티항공, 제주도·관광공사와 손잡고 겨울 제주 여행 할인 서울경제TV",
-     "summary": [
-      "트리니티항공, 제주도·관광공사와 손잡고 겨울 제주 여행 할인 서울경제TV…"
-     ],
-     "link": "https://www.sentv.co.kr/article/view/sentv202610300117",
-     "source": "서울경제TV",
-     "date": "2026-10-30T05:02:39.000Z",
-     "found": "2026-11-03",
-     "cards": [],
-     "airlines": [
-      "TW"
-     ],
-     "countries": [],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "트리니티항공 {특가말}",
-     "bodyAt": "2026-11-03",
-     "body": [
-      "트리니티항공, 제주도·관광공사와 손잡고 겨울 제주 여행 할인",
-      "제주행 왕복 항공권 최대 2만원 할인 쿠폰",
-      "[서울경제TV=김지송 인턴기자] 김포·대구·청주·광주에서 제주로 향하는 왕복 항공권을 구매하면 최대 2만원을 할인받을 수 있다.",
-      "할인 쿠폰은 30일 오전 10시부터 선착순으로 발급된다.",
-      "트리니티항공은 제주특별자치도·제주관광공사와 함께 ‘지금, 제주를 만나다’ 프로모션을 진행한다고 30일 밝혔다.",
-      "할인 대상 항공권의 탑승 기간은 2027년 1월 31일까지로, 가을과 겨울 제주 여행을 계획하는 고객이 이용할 수 있다.",
-      "트리니티항공은 앞서 지난 12일부터 23일까지 부산·대구·청주·제주·광주 등 지역 공항 출발 항공편을 대상으로 ‘우리 동네 할인’을 운영했다.",
-      "당시 국내선은 15만원 이상 결제 시 5000원, 국제선은 40만원 이상 결제 시 2만원을 할인했다.",
-      "이번 행사는 출발지를 4곳으로 정하고 제주행 왕복 항공권에 최대 2만원의 쿠폰을 제공하는 방식이다.",
-      "트리니티항공은 신규 회원에게 총 10만원 상당의 쿠폰팩을 제공하고 있다.",
-      "트리니티항공 관계자는 “항상 안전 운항을 최우선으로 하여 다채로운 혜택을 드리기 위해 최선을 다하겠다”고 말했다."
-     ],
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "국내선 제주행 쿠폰 할인 행사",
-      "airlines": [
-       "트리니티항공"
-      ],
-      "name": "지금, 제주를 만나다",
-      "book": null,
-      "board": {
-       "from": null,
-       "to": "2027-01-31"
-      },
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": true,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    }
-   ]
   },
   {
    "id": "95%AD-%ED%94%84%EB%A1%9C%EB%AA%A8%EC%85%98%ED%8E%B8%EB%8F%84-14%EB%A7%8C%EC%9B%90%EB%8C%80%EB%B6%80%ED%84%B0/ar-AA2gxYq2|에어부산, 부산~광저우 취항 프로모션...편도 14만원대부터",
@@ -28218,17 +28648,22 @@
    ],
    "ai": {
     "v": 2,
-    "promo": false,
-    "why": "해외 숙소 할인 이벤트",
-    "airlines": [],
-    "name": null,
-    "book": null,
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": null,
-    "seoul": null,
-    "at": "2026-11-12",
+    "cv": 1,
+    "card": {
+     "ok": true,
+     "why": "해외숙소 예약 할인 쿠폰",
+     "cards": [],
+     "use": "여행예약",
+     "airlines": [],
+     "amount": null,
+     "pct": 20,
+     "min": null,
+     "period": {
+      "from": "2026-10-26",
+      "to": "2026-11-15"
+     }
+    },
+    "at": "2026-11-13",
     "model": "deepseek-v4-flash"
    },
    "lastDate": "2026-10-29T23:18:00.000Z",
@@ -28269,17 +28704,19 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "카드사 관심도 기사, 항공권 특가 아님",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "카드사 소비자 관심도 순위 기사",
+       "cards": [],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -28312,17 +28749,19 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "통신사 앱 서비스 소개 기사",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "통신사 AI 서비스 소식",
+       "cards": [],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     },
@@ -28358,17 +28797,19 @@
      ],
      "ai": {
       "v": 2,
-      "promo": false,
-      "why": "통신사 AI 서비스 소개 기사",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
+      "cv": 1,
+      "card": {
+       "ok": false,
+       "why": "통신앱 AI 서비스 소식",
+       "cards": [],
+       "use": null,
+       "airlines": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     }
@@ -29590,17 +30031,19 @@
    ],
    "ai": {
     "v": 2,
-    "promo": false,
-    "why": "카드 상품·마일리지 소개 기사",
-    "airlines": [],
-    "name": null,
-    "book": null,
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": null,
-    "seoul": null,
-    "at": "2026-11-12",
+    "cv": 1,
+    "card": {
+     "ok": false,
+     "why": "카드 상품 소개·적립 위주",
+     "cards": [],
+     "use": null,
+     "airlines": [],
+     "amount": null,
+     "pct": null,
+     "min": null,
+     "period": null
+    },
+    "at": "2026-11-13",
     "model": "deepseek-v4-flash"
    },
    "lastDate": "2026-10-28T23:16:00.000Z",
@@ -29701,17 +30144,19 @@
    ],
    "ai": {
     "v": 2,
-    "promo": false,
-    "why": "카드 상품·서비스 비교 기사",
-    "airlines": [],
-    "name": null,
-    "book": null,
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": null,
-    "seoul": null,
-    "at": "2026-11-12",
+    "cv": 1,
+    "card": {
+     "ok": false,
+     "why": "카드 상품 소개·시장 분석",
+     "cards": [],
+     "use": null,
+     "airlines": [],
+     "amount": null,
+     "pct": null,
+     "min": null,
+     "period": null
+    },
+    "at": "2026-11-13",
     "model": "deepseek-v4-flash"
    },
    "lastDate": "2026-10-28T22:30:00.000Z",
@@ -30871,24 +31316,24 @@
    "lastFound": "2026-11-01"
   }
  ],
- "updated": "2026-11-12T21:00:46.134Z",
- "runs": 151,
+ "updated": "2026-11-12T21:38:29.640Z",
+ "runs": 152,
  "checked": {
-  "베트남": "2026-11-12T21:00:46.134Z",
-  "태국": "2026-11-12T21:00:46.134Z",
-  "필리핀": "2026-11-12T21:00:46.134Z",
-  "인도네시아": "2026-11-12T21:00:46.134Z",
-  "말레이시아": "2026-11-12T21:00:46.134Z",
-  "싱가포르": "2026-11-12T21:00:46.134Z",
-  "일본": "2026-11-12T21:00:46.134Z",
-  "대만": "2026-11-12T21:00:46.134Z",
-  "홍콩": "2026-11-12T21:00:46.134Z",
-  "마카오": "2026-11-12T21:00:46.134Z",
-  "중국": "2026-11-12T21:00:46.134Z",
-  "미국령": "2026-11-12T21:00:46.134Z",
-  "미국": "2026-11-12T21:00:46.134Z"
+  "베트남": "2026-11-12T21:38:29.640Z",
+  "태국": "2026-11-12T21:38:29.640Z",
+  "필리핀": "2026-11-12T21:38:29.640Z",
+  "인도네시아": "2026-11-12T21:38:29.640Z",
+  "말레이시아": "2026-11-12T21:38:29.640Z",
+  "싱가포르": "2026-11-12T21:38:29.640Z",
+  "일본": "2026-11-12T21:38:29.640Z",
+  "대만": "2026-11-12T21:38:29.640Z",
+  "홍콩": "2026-11-12T21:38:29.640Z",
+  "마카오": "2026-11-12T21:38:29.640Z",
+  "중국": "2026-11-12T21:38:29.640Z",
+  "미국령": "2026-11-12T21:38:29.640Z",
+  "미국": "2026-11-12T21:38:29.640Z"
  },
- "auto": "2026-11-12T21:00:46.134Z",
+ "auto": "2026-11-12T21:38:29.640Z",
  "sources": {
   "7C": "2026-11-01",
   "TW": "2026-11-01",
@@ -31101,15 +31546,6 @@
    "중국동방항공 얼리버드": "2026-11-04"
   },
   "seen": [
-   "nctownnet11/216239",
-   "vinpearl/565562",
-   "antilge1/73822",
-   "uouv96/112479",
-   "8282home/870351",
-   "hexenyang/75698",
-   "squaresever/37080",
-   "nyctourdesign/1205581",
-   "sajangnimnice/5221",
    "hexenyang/75695",
    "dgmom365/7435367",
    "browndlaj9/1273",
@@ -37100,7 +37536,16 @@
    "bodyupright/206",
    "gbcointrader/29544",
    "waateam/165656",
-   "dentalsolution2/32697"
+   "dentalsolution2/32697",
+   "warcraftgamemap/3534258",
+   "welfaredatacenter/4445",
+   "warcraftgamemap/3534246",
+   "warcraftgamemap/3534252",
+   "gbcointrader/29823",
+   "gbcointrader/29756",
+   "kenserver/192086",
+   "0404gas/61592",
+   "010freebaram/260376"
   ],
   "since": "2026-11-03",
   "imported": "2026-11-03"
