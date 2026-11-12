@@ -464,16 +464,29 @@
     const rec = (data.recent && data.recent.cities) || {};
     const serving = [...new Set(F.DESTS.filter(d => d.country === C).flatMap(d => (rec[d.code] || []).map(r => r.code)))];
     // 카드사 할인 + 항공사 공식 결제 혜택(간편결제 등)
-    const raw = (data.promos.items || []).filter(p => (p.kind === 'card' || F.isPayBenefit(p)) && isLive(p));
+    // AI 판독(카드 질문)에서 "항공권·여행 결제 혜택 아님"이면 뺌 (면세점·마트·카드 출시 소식 등). 판독 안 된 소식은 예전처럼
+    const aiCard = p => (p.ai && p.ai.cv && p.ai.card) || null;
+    const raw = (data.promos.items || []).filter(p => (p.kind === 'card' || F.isPayBenefit(p)) && isLive(p) && !(aiCard(p) && !aiCard(p).ok));
+    const won = n => n % 10000 === 0 ? `${n / 10000}만원` : `${n.toLocaleString('ko-KR')}원`;
     const facts = p => {
       // 본문 문장 중 다른 카드사 이야기는 빼고 씀
       const other = s => F.CARD_NAMES.some(c => s.includes(c) && !(p.cards || []).includes(c));
       const all = [p, ...(p.more || [])].map(m => F.cardFacts(`${m.title} ${m.desc || ''} ${(m.body || []).filter(s => !other(s)).join(' ')}`, kstDay(m.date) || (p.found || today).slice(0, 10)));
       const f = Object.assign({}, ...all.reverse());
       if (p.official && p.until) f.period = { from: p.from || null, to: p.until };
+      // AI가 읽은 금액·할인율·최소 결제·기간이 있으면 우선
+      const a = aiCard(p);
+      if (a && a.ok) {
+        if (a.amount) f.amount = `${won(a.amount)} 할인`;
+        if (a.pct) f.pct = a.pct;
+        if (a.min) f.min = `${won(a.min)} 이상 결제`;
+        if (a.period && a.period.to) f.period = a.period;
+      }
       return f;
     };
-    const items = raw.map(p => ({ p, f: facts(p), u: F.cardUse(p, C, serving) }))
+    // 사용처: 규칙으로 모르겠는데 AI가 '여행 예약·해외 결제'라고 하면 '해외 항공권 전체'로
+    const useOf = p => { const u = F.cardUse(p, C, serving), a = aiCard(p); return u.use === 'unknown' && a && (a.use === '여행예약' || a.use === '해외결제') ? { ...u, use: 'all' } : u; };
+    const items = raw.map(p => ({ p, f: facts(p), u: useOf(p) }))
       .filter(x => !(x.f.period && x.f.period.to < today)); // 결제 기간이 끝난 것
     const useful = items.filter(x => x.p.official || x.f.amount || x.f.pct || x.f.period);
     return { items, useful };

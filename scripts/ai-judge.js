@@ -67,6 +67,42 @@ false 로 보는 것
 - "11월 11일 세일 기간 동안 저렴한 항공권과 호텔을 찾아보세요" → 항공권 할인이 중심이면 true, seoul_departure null
 - "비엣젯 11월 11일 더블데이 특가, 11~13일 판매, 탑승 2027년 12월 31일까지" (글 날짜 2026-11-10) → book_from 2026-11-11, book_to 2026-11-13, board_to 2027-12-31`;
 
+// 카드 탭 소식(카드사·간편결제)용 질문: "이 여행에 쓸 수 있는 결제 할인인가?"
+const CARD_VERSION = 1; // 카드 질문을 크게 바꾸면 올림 → 카드 소식만 다시 판독
+const CARD_SYSTEM = `너는 해외여행을 준비하는 한국 사람에게 "항공권·여행 결제에 쓸 수 있는 카드 할인"만 골라 주는 도우미야.
+카드사·간편결제 관련 글 1건을 읽고 JSON 하나로만 답해. 설명이나 다른 글자는 쓰지 마.
+
+[1] travel_benefit — 항공권이나 해외여행 결제에서 돈을 아낄 수 있는 "기간 한정 혜택" 소식인가?
+true 로 보는 것
+- 항공사 항공권을 특정 카드·간편결제로 사면 즉시 할인·청구 할인·캐시백·무이자 할부
+- 여행 예약 사이트(트립닷컴·아고다·익스피디아·마이리얼트립·하나투어 등)나 호텔 예약에서 카드 결제 시 할인·쿠폰
+- 해외 가맹점·해외 결제 할인·캐시백, 환전·해외 결제 수수료 면제 이벤트
+false 로 보는 것
+- 면세점·백화점·마트·편의점·쇼핑몰·식품·구독 서비스 할인 (공항 면세점 포함)
+- 카드 신상품 출시·카드 상품 소개 (기간 한정 여행 결제 혜택이 따로 없으면)
+- 포인트·마일리지 적립률 소개, 경품 추첨만 있는 이벤트, 기부·스포츠·금융상품 소식
+- 여러 회사 소식을 모은 기사에서 카드 할인이 항공권·여행과 관계없는 경우
+애매하면: 항공권·여행 결제에 바로 쓸 수 있는 혜택이 글의 중심이면 true.
+
+[2] 숫자·날짜 (모르면 null — 지어내지 말 것)
+- cards: 혜택을 주는 카드사·간편결제 이름 (예: 우리카드, 현대카드, 신한카드, 카카오페이, 네이버페이)
+- use: 쓸 수 있는 곳 "항공권" | "여행예약" | "해외결제" | "기타"
+- airlines: 항공권 할인이면 대상 항공사 한글 이름, 아니면 []
+- amount_krw: 할인·캐시백 최대 금액(원, 숫자). 없으면 null
+- pct: 최대 할인율(숫자). 포인트 적립률은 넣지 마. 없으면 null
+- min_krw: 최소 결제 금액(원, 숫자). 없으면 null
+- from / to: 혜택 기간 (YYYY-MM-DD). 연·월이 빠지면 글 날짜 기준으로 채움
+- reason: 판단 이유 20자 이내
+
+형식: {"travel_benefit":bool,"reason":"","cards":[],"use":null,"airlines":[],"amount_krw":null,"pct":null,"min_krw":null,"from":null,"to":null}
+
+예시
+- "롯데免 '면세일' 최대 65% 할인…우리카드 결제 시 추가 할인" → false (면세점 쇼핑)
+- "[신상브리핑] 크라운해태·풀무원·롯데마트… CU 해외여행 eSIM" → false (유통 소식 모음)
+- "우리카드, 쇼핑 특화 '더 쇼퍼' 출시…최대 30% 적립" → false (카드 출시·적립)
+- "현대카드로 대한항공 항공권 결제 시 최대 7% 청구 할인 (11/16~12/30)" → true, use 항공권
+- "트립닷컴, 신한카드 결제 시 항공권 최대 10만원 할인" → true, use 여행예약`;
+
 const kst = d => new Date(new Date(d).getTime() + 9 * 3600e3).toISOString().slice(0, 10);
 const isDay = s => typeof s === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(s) ? s : null;
 const num = v => (typeof v === 'number' && isFinite(v) && v > 0) ? Math.round(v) : null;
@@ -88,7 +124,7 @@ class StopError extends Error {}
 async function ask(p, key) {
   const body = {
     model,
-    messages: [{ role: 'system', content: SYSTEM }, { role: 'user', content: userText(p) }],
+    messages: [{ role: 'system', content: p.kind === 'card' ? CARD_SYSTEM : SYSTEM }, { role: 'user', content: userText(p) }],
     response_format: { type: 'json_object' },
     temperature: 0,
     max_tokens: 400,
@@ -131,13 +167,31 @@ function clean(o) {
   };
 }
 
+function cleanCard(o) {
+  return {
+    v: AI_VERSION, cv: CARD_VERSION,
+    card: {
+      ok: !!o.travel_benefit,
+      why: String(o.reason || '').slice(0, 40),
+      cards: Array.isArray(o.cards) ? o.cards.map(String).slice(0, 5) : [],
+      use: ['항공권', '여행예약', '해외결제', '기타'].includes(o.use) ? o.use : null,
+      airlines: Array.isArray(o.airlines) ? o.airlines.map(String).slice(0, 8) : [],
+      amount: num(o.amount_krw),
+      pct: num(o.pct) && o.pct <= 99 ? Math.round(o.pct) : null,
+      min: num(o.min_krw),
+      period: (isDay(o.from) || isDay(o.to)) ? { from: isDay(o.from), to: isDay(o.to) || isDay(o.from) } : null,
+    },
+  };
+}
+const needsAi = p => p.kind === 'card' ? !(p.ai && p.ai.cv === CARD_VERSION) : !(p.ai && p.ai.v === AI_VERSION);
+
 // items: 저장된 모든 글, fresh: 이번에 새로 들어온 글 (먼저 판독), today: 'YYYY-MM-DD'
 async function judge(items, fresh, { env, today, log, rulesFacts }) {
   const key = env.DEEPSEEK_API_KEY;
   if (!key) return null;
   const since = F.addDays(today, -21);
   const freshSet = new Set(fresh);
-  const todo = items.filter(p => !p.official && p.title && (!p.ai || p.ai.v !== AI_VERSION) && (p.found || '') >= since)
+  const todo = items.filter(p => !p.official && p.title && needsAi(p) && (p.found || '') >= since)
     .sort((a, b) => (freshSet.has(b) ? 1 : 0) - (freshSet.has(a) ? 1 : 0) || String(b.date).localeCompare(String(a.date)))
     .slice(0, MAX_PER_RUN);
   if (!todo.length) { log('■ AI 판독: 새로 판독할 글 없음'); return { done: [] }; }
@@ -148,7 +202,7 @@ async function judge(items, fresh, { env, today, log, rulesFacts }) {
     for (let p; !stop && (p = queue.shift());) {
       try {
         const { o, usage } = await ask(p, key);
-        p.ai = { ...clean(o), at: today, model };
+        p.ai = { ...(p.kind === 'card' ? cleanCard(o) : clean(o)), at: today, model };
         done.push(p); fails = 0;
         inTok += usage.prompt_tokens || 0; outTok += usage.completion_tokens || 0; cacheTok += usage.prompt_cache_hit_tokens || 0;
       } catch (e) {
@@ -165,8 +219,9 @@ async function judge(items, fresh, { env, today, log, rulesFacts }) {
   queue.push(...rest); await Promise.all([1, 2, 3, 4].map(work));
   // 대략 요금 (V4 Flash 기준, 100만 토큰당 입력 0.14달러·캐시 0.0028달러·출력 0.28달러)
   const usd = ((inTok - cacheTok) * 0.14 + cacheTok * 0.0028 + outTok * 0.28) / 1e6;
-  log(`■ AI 판독(${model}): ${done.length}/${todo.length}건 · 특가 아님 ${done.filter(p => !p.ai.promo).length}건 · 토큰 입력 ${inTok}(캐시 ${cacheTok})/출력 ${outTok} · 약 $${usd.toFixed(4)}${stop ? ` · 멈춤: ${stop}` : lastErr ? ` · 일부 실패: ${lastErr}` : ''}`);
-  return { done, compare: compare(done, rulesFacts), usd };
+  const cardDone = done.filter(p => p.kind === 'card');
+  log(`■ AI 판독(${model}): ${done.length}/${todo.length}건 · 특가 아님 ${done.filter(p => p.kind !== 'card' && !p.ai.promo).length}건 · 카드 소식 ${cardDone.length}건 중 여행 결제 혜택 아님 ${cardDone.filter(p => !p.ai.card.ok).length}건 · 토큰 입력 ${inTok}(캐시 ${cacheTok})/출력 ${outTok} · 약 $${usd.toFixed(4)}${stop ? ` · 멈춤: ${stop}` : lastErr ? ` · 일부 실패: ${lastErr}` : ''}`);
+  return { done, compare: compare(done.filter(p => p.kind !== 'card'), rulesFacts), usd };
 }
 
 // 규칙 판단과 비교 (기록만 단계에서 확인용)
@@ -188,4 +243,4 @@ function compare(done, rulesFacts) {
   return rows;
 }
 
-module.exports = { judge, userText, clean, SYSTEM, MAX_PER_RUN };
+module.exports = { judge, userText, clean, cleanCard, SYSTEM, CARD_SYSTEM, MAX_PER_RUN };
