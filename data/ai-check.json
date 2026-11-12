@@ -1,5 +1,127 @@
 [
  {
+  "at": "2026-11-13",
+  "title": "[제주 항공 ] 이번 겨울 태국 항공권 , 오늘부터 특가 오픈",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "제주항공 태국 특가 오픈 소식",
+   "airlines": [
+    "제주항공"
+   ],
+   "name": "겨울 태국 항공권 특가",
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-13",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-13",
+  "title": "고스트100만회원 이벤트 다낭 여행의 준비는 항공 예매부터 ✔️대한 항공 ,에....",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "항공사 탑승 후기 공유",
+   "airlines": [],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-13",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님"
+  ]
+ },
+ {
+  "at": "2026-11-13",
+  "title": "[편의점 브리핑] CU, 영수증 eSIM 판매·세븐일레븐, 성시경 협업 라면·...",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "편의점 eSIM·라면 행사, 항공권 아님",
+   "airlines": [],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-13",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": 30,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님",
+   "할인율 규칙 30 / AI -"
+  ]
+ },
+ {
+  "at": "2026-11-13",
+  "title": "BC 카드 , 서울랜드·롯데월드 등 테마파크 할인 …최대 58%",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "카드사 테마파크 행사, 항공권은 곁가지",
+   "airlines": [],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-13",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": null,
+    "to": "2026-11-30"
+   },
+   "board": null,
+   "pct": 90,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님",
+   "예약 마감 규칙 2026-11-30 / AI -",
+   "할인율 규칙 90 / AI -"
+  ]
+ },
+ {
   "at": "2026-11-12",
   "title": "항공권 1월초 제주 항공 32만원~",
   "community": true,
@@ -10289,155 +10411,5 @@
    "예약 마감 규칙 2026-12-31 / AI -",
    "할인율 규칙 50 / AI -"
   ]
- },
- {
-  "at": "2026-11-12",
-  "title": "트리니티항공 , 2027학년도 수능 할인 프로모션 실시",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "수험생 항공권 운임 할인 프로모션",
-   "airlines": [
-    "트리니티항공"
-   ],
-   "name": "2027학년도 수능 할인 프로모션",
-   "book": {
-    "from": null,
-    "to": "2027-01-31"
-   },
-   "board": {
-    "from": "2026-11-20",
-    "to": "2027-02-21"
-   },
-   "price": null,
-   "trip": null,
-   "pct": 20,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2027-01-31"
-   },
-   "board": {
-    "from": "2026-11-20",
-    "to": "2027-02-21"
-   },
-   "pct": 20,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "NH농협 카드 는 대륙 할인 , 하나 카드 는 5배 적립, 현대카드 는 가을 미식 [...",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "카드사 프로모션, 항공권 무관",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2026-12-31"
-   },
-   "board": null,
-   "pct": 50,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님",
-   "예약 마감 규칙 2026-12-31 / AI -",
-   "할인율 규칙 50 / AI -"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "[신상브리핑] 크라운해태, 대상 미트프로젝트, 풀무원, 롯데마트, 애경...",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "eSIM·식품 등 항공권 무관 소식",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": {
-    "from": "2026-12-03",
-    "to": "2026-12-30"
-   },
-   "pct": 80,
-   "price": 48900
-  },
-  "diff": [
-   "AI: 특가 아님",
-   "할인율 규칙 80 / AI -",
-   "가격 규칙 48900 / AI -"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "트리니티항공 , 수험생 항공 권 할인 …국내선 25%·국제선 최대 20%",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "수험생 항공권 운임 할인 프로모션",
-   "airlines": [
-    "트리니티항공"
-   ],
-   "name": "2027학년도 수능 수험생 할인 프로모션",
-   "book": {
-    "from": "2026-11-12",
-    "to": "2027-01-31"
-   },
-   "board": {
-    "from": "2026-11-20",
-    "to": "2027-02-21"
-   },
-   "price": null,
-   "trip": null,
-   "pct": 20,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": "2026-11-12",
-    "to": "2027-01-31"
-   },
-   "board": {
-    "from": "2026-11-20",
-    "to": "2027-02-21"
-   },
-   "pct": 20,
-   "price": null
-  },
-  "diff": []
  }
 ]
