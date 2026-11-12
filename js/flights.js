@@ -21,6 +21,14 @@
     refresh: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7L21 8M21 3v5h-5"/></svg>',
     trash: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6"/></svg>',
     plus: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>',
+    news: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h13v14H6a2 2 0 0 1-2-2zM17 9h3v8a2 2 0 0 1-2 2M8 9h5M8 13h5M8 17h3"/></svg>',
+    chat: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>',
+    cal: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>',
+    ok: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>',
+    globe: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>',
+    help: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6V14M12 17.5v.01"/></svg>',
+    no: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15 9l-6 6M9 9l6 6"/></svg>',
+    clock: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>',
   };
 
   // ───── 저장된 설정 ─────
@@ -137,7 +145,7 @@
     const country = q.dest === '_custom' ? '_custom' : dest.country;
     const { dep, ret } = quickDates();
     app.innerHTML = `
-      <div class="wrap">
+      <div class="wrap tab-${ui.tab}">
         <header class="topbar">
           <div class="grow brand">최저가 항공권</div>
           <button class="btn icon sm" data-act="settings" aria-label="설정">${ICON.gear}</button>
@@ -197,10 +205,10 @@
     const T = F.ttang(dest, pax), city = dest.city.replace(/\(.*\)/, '');
     return `
       ${goGroup(1, '가격 비교', '고른 날짜·인원·직항 그대로', `<div class="go-grid">${goBtn(L.naver, '네이버', L.naverApp)}${goBtn(L.google, '구글')}${goBtn(L.sky, '스카이스캐너')}</div>
-        <a class="go-btn go-wide" href="${F.skyMonth('SEL', dest, dep.slice(0, 7), ret.slice(0, 7), pax, true)}" target="_blank" rel="noopener">📅 ${Number(dep.slice(5, 7))}월 날짜별 최저가 한눈에 보기 <small>스카이스캐너</small></a>`)}
+        <a class="go-btn go-wide" href="${F.skyMonth('SEL', dest, dep.slice(0, 7), ret.slice(0, 7), pax, true)}" target="_blank" rel="noopener">${ICON.cal}${Number(dep.slice(5, 7))}월 날짜별 최저가 한눈에 보기 <small>스카이스캐너</small></a>`)}
       ${goGroup(2, '땡처리', '땡처리닷컴 · 인천 출발 · 날짜와 상관없이 전체', `<div class="go-grid">${goBtn(T.city, `${city} 땡처리`)}${goBtn(T.today, '오늘 오픈 땡처리')}</div>`)}
       ${goGroup(3, '항공사', `서울 → ${esc(city)} 직항 · 홈페이지`, airlineBox(dest))}
-      <p class="hint">직항 조건은 네이버·스카이스캐너는 주소로, 구글은 검색어로 넣어요. 항공사 홈페이지는 날짜·인원을 다시 골라야 해요.${cfg.q.children ? ' 아이 나이는 스카이스캐너에만 넣어요(다른 사이트는 아이 수만 받아요).' : ''}</p>`;
+      <p class="hint">네이버·구글·스카이스캐너는 날짜·인원·직항 조건이 채워진 채로 열려요. 항공사 홈페이지는 날짜·인원을 다시 골라야 해요.${cfg.q.children ? ' 아이 나이는 스카이스캐너에만 넣어요(다른 사이트는 아이 수만 받아요).' : ''}</p>`;
   }
 
   // 항공사: 최근 가격 기록으로 확인된 '서울 출발 직항' 항공사 (data/airlines-by-city.json) + 그 외 국적 항공사(미확인, 접어 둠)
@@ -254,12 +262,12 @@
     box.innerHTML = cfg.gh.token
       ? `<button type="button" class="btn primary fl-refresh-btn" data-act="promo-refresh" ${ui.promoBusy ? 'disabled' : ''}>${ICON.refresh}${ui.promoBusy ? `${esc(C)} 확인 중… ${ui.promoBusy.sec}초 (보통 1~2분)` : `${esc(C)} 특가·카드 지금 확인`}</button>
         <p class="hint">${status} · 자동 확인 오전 6시~밤 10시 2시간마다</p>`
-      : `<p class="fl-auto">🔄 프로모션·카드는 오전 6시~밤 10시 2시간마다 자동으로 새로 확인돼요</p><p class="hint">${status}</p>`;
+      : `<p class="fl-auto">${ICON.clock}프로모션·카드는 오전 6시~밤 10시, 2시간마다 자동 확인</p><p class="hint">${status}</p>`;
   }
   // 다른 탭: 마지막 확인 시각 + 항공권 검색 탭으로
   function checkedLine(C) {
     const checked = data.promos.checked && data.promos.checked[C];
-    return `<p class="hint">${checked ? `${esc(C)} 마지막 확인 ${esc(fmtUpdated(checked))}` : `<b>${esc(C)}는 아직 확인 전이에요.</b>`} · 자동 확인 오전 6시~밤 10시 2시간마다${cfg.gh.token ? ` · 바로 확인은 <button type="button" class="link-btn" data-act="tab" data-v="price">항공권 검색 탭의 [지금 확인]</button>` : ''}${ui.promoBusy ? ` · 지금 확인 중… ${ui.promoBusy.sec}초` : ''}</p>`;
+    return `<p class="hint">${checked ? `${esc(fmtUpdated(checked))} 확인` : `<b>${esc(C)}는 아직 확인 전이에요.</b>`} · 2시간마다 자동${cfg.gh.token ? ` · 바로 확인은 <button type="button" class="link-btn" data-act="tab" data-v="price">항공권 검색 탭의 [지금 확인]</button>` : ''}${ui.promoBusy ? ` · 지금 확인 중… ${ui.promoBusy.sec}초` : ''}</p>`;
   }
 
   function readForm() {
@@ -352,6 +360,17 @@
     const t = F.stripTags(sum[0] || p.title);
     return esc(t.length > 70 ? `${t.slice(0, 68)}…` : t);
   }
+  // 예약 마감까지 남은 날 (오늘 마감 / D-1~D-3만 표시: 마감 임박 특가를 놓치지 않게)
+  function dday(to) {
+    if (!to) return '';
+    const n = Math.round((new Date(`${to}T00:00:00`) - new Date(`${today}T00:00:00`)) / 864e5);
+    return n === 0 ? ' <span class="dday">오늘 마감</span>' : n > 0 && n <= 3 ? ` <span class="dday">D-${n}</span>` : '';
+  }
+  // 기사 요약·출처: 기본은 접어 둠 (핵심 정보 상자에 이미 금액·기간이 있어서)
+  function moreBox(p, code, label) {
+    const sum = summaryList(p, code);
+    return `<details class="pr-more"><summary>${label}</summary>${sum}<div class="src">${srcBadge(p)} ${srcText(p)}${p.more && p.more.length ? ` · 같은 소식 ${p.more.length + 1}건 묶음` : ''}</div></details>`;
+  }
   function promoItem(p, trip, code) {
     const f = groupFacts(p, code);
     const fit = F.fitsTrip(f, trip.dep, trip.ret);
@@ -359,12 +378,11 @@
     return `<li class="pr-item">
       <dl class="pr-facts">
         <dt>주요내용</dt><dd>${mainLine(p, f, code)}</dd>
-        <dt>예약기간</dt><dd>${f.book ? `<b>${periodStr(f.book)}</b>` : none}</dd>
+        <dt>예약기간</dt><dd>${f.book ? `<b>${periodStr(f.book)}</b>${dday(f.book.to)}` : none}</dd>
         <dt>탑승기간</dt><dd>${f.board ? `<b>${periodStr(f.board)}</b>${f.boardFor ? ` <small class="muted">${esc(f.boardFor)} 노선</small>` : ''}` : f.boardMixed ? '<span class="muted">노선마다 다름 · 원문 확인</span>' : none}${fit === 'in' ? ' <span class="fit in">내 여행 날짜 탑승 가능</span>' : fit === 'out' ? ' <span class="fit out">내 여행 날짜는 기간 밖</span>' : ''}</dd>
       </dl>
       <a class="pr-title" href="${esc(p.link)}" target="_blank" rel="noopener">${esc(F.stripTags(p.title))}</a>
-      ${summaryList(p, code)}
-      <div class="src">${srcBadge(p)} ${srcText(p)}${p.more && p.more.length ? ` · 같은 소식 ${p.more.length + 1}건 묶음` : ''}</div>
+      ${moreBox(p, code, p.community ? '글 요약·출처 보기' : '기사 내용·출처 보기')}
     </li>`;
   }
   // 같은 칸 안에서 핵심 사실(금액·할인율·코드·예약기간·탑승기간)이 같은 소식은 한 줄로 합침 (모음 기사도 그 항공사 내용 기준)
@@ -429,17 +447,16 @@
     const checked = data.promos.checked && data.promos.checked[C];
     box.innerHTML = `
       <section class="pr-head">
-        <h2>${esc(C)} 항공권 프로모션 <small>${esc(C)} 운항 항공사 ${order.length}곳 기준 · 진행 중이거나 최근 3주</small></h2>
+        <h2>${esc(C)} 항공권 프로모션 <small>운항 항공사 ${order.length}곳 · 내 여행 ${mmdd(trip.dep)}~${mmdd(trip.ret)} (항공권 검색 탭 기준)</small></h2>
         ${checkedLine(C)}
-        <p class="hint">나라·날짜는 항공권 검색 탭에서 고른 것 · 내 여행 ${mmdd(trip.dep)}~${mmdd(trip.ret)}</p>
       </section>
       <div class="seg pr-src" role="tablist">
-        <button role="tab" aria-selected="${ui.promoSrc !== 'comm'}" data-act="psrc" data-v="news">📰 뉴스 ${useful.length}</button>
-        <button role="tab" aria-selected="${ui.promoSrc === 'comm'}" data-act="psrc" data-v="comm">💬 커뮤니티 ${comm.length}</button>
+        <button role="tab" aria-selected="${ui.promoSrc !== 'comm'}" data-act="psrc" data-v="news">${ICON.news}뉴스 <span class="cnt">${useful.length}</span></button>
+        <button role="tab" aria-selected="${ui.promoSrc === 'comm'}" data-act="psrc" data-v="comm">${ICON.chat}커뮤니티 <span class="cnt">${comm.length}</span></button>
       </div>
       ${ui.promoSrc === 'comm'
-        ? `<p class="hint pr-src-hint">네이버 카페·뽐뿌·루리웹 · 최신 순 · 누구나 쓰는 글이라 확인 안 된 내용이에요</p>${comm.length ? airCards(comm, true) : `<p class="muted pr-none">${esc(C)} 관련 새 커뮤니티 글이 없어요. 네이버 카페는 지난번 확인 뒤 새로 올라온 글만 받아요.</p>`}`
-        : `<p class="hint pr-src-hint">뉴스 기사 · 할인율 높은 순</p>${useful.length ? airCards(useful, false) : `<p class="muted pr-none">${esc(C)} 관련 특가 기사가 없어요.</p>`}`}`;
+        ? `<p class="hint pr-src-hint">네이버 카페·뽐뿌·루리웹 · 최신 순 · 누구나 쓰는 글이라 확인 안 된 내용이에요</p>${comm.length ? `<div class="pr-list">${airCards(comm, true)}</div>` : `<p class="muted pr-none">${esc(C)} 관련 새 커뮤니티 글이 없어요. 네이버 카페는 지난번 확인 뒤 새로 올라온 글만 받아요.</p>`}`
+        : `<p class="hint pr-src-hint">뉴스 기사 · 할인율 높은 순</p>${useful.length ? `<div class="pr-list">${airCards(useful, false)}</div>` : `<p class="muted pr-none">${esc(C)} 관련 특가 기사가 없어요.</p>`}`}`;
   }
 
   // ───── 카드 탭: 우리·현대·신한 할인 소식 + 항공사 공식 결제 혜택 ─────
@@ -476,9 +493,8 @@
       return `<li class="pr-item">
         <div class="src"><span class="badge-card">${esc(who(p))}</span> <span class="use use-${u.use}">${esc(why)}</span></div>
         ${line ? `<div class="pr-key">${line}</div>` : ''}
-        <a href="${esc(p.link)}" target="_blank" rel="noopener">${esc(F.stripTags(p.title))}</a>
-        ${summaryList(p)}
-        <div class="src">${srcBadge(p)} ${srcText(p)}${p.more && p.more.length ? ` · 같은 소식 ${p.more.length + 1}건 묶음` : ''}</div>
+        <a class="pr-title" href="${esc(p.link)}" target="_blank" rel="noopener">${esc(F.stripTags(p.title))}</a>
+        ${moreBox(p, null, '기사 내용·출처 보기')}
       </li>`;
     };
     const sec = (title, sub, list) => list.length ? `<section class="fl-cards"><h2>${title} <small>${sub}</small></h2><ul class="news">${list.map(row).join('')}</ul></section>` : '';
@@ -488,15 +504,14 @@
       <section class="pr-head">
         <h2>${esc(C)} 여행에 쓸 수 있는 카드 할인</h2>
         ${checkedLine(C)}
-        <p class="hint">판단 기준은 기사·공지에 적힌 사용처(항공사·나라·여행 플랫폼)</p>
       </section>
-      ${sec('✅ 이 여행에 사용 가능', `${esc(C)} 운항 항공사 결제 또는 ${esc(C)} 언급`, by('ok'))}
-      ${sec('🌏 해외 항공권 전체', '국제선·해외 결제·여행 플랫폼', by('all'))}
-      ${sec('❓ 확인 필요', '사용처가 안 나오거나, 그 항공사의 운항 여부를 모름', by('unknown'))}
-      ${no.length ? `<details class="fl-cards pr-no"><summary>❌ ${esc(C)}에는 해당 없음 ${no.length}건</summary><ul class="news">${no.map(row).join('')}</ul></details>` : ''}
+      ${sec(`<span class="h-ic ok">${ICON.ok}</span>이 여행에 사용 가능`, `${esc(C)} 운항 항공사 결제 또는 ${esc(C)} 언급`, by('ok'))}
+      ${sec(`<span class="h-ic">${ICON.globe}</span>해외 항공권 전체`, '국제선·해외 결제·여행 플랫폼', by('all'))}
+      ${sec(`<span class="h-ic">${ICON.help}</span>확인 필요`, '사용처가 안 나오거나, 그 항공사의 운항 여부를 모름', by('unknown'))}
+      ${no.length ? `<details class="fl-cards pr-no"><summary><span class="h-ic">${ICON.no}</span>${esc(C)}에는 해당 없음 ${no.length}건</summary><ul class="news">${no.map(row).join('')}</ul></details>` : ''}
       ${!useful.length ? `<p class="muted pr-none">지금 확인된 카드 할인이 없어요.</p>` : ''}
       <section class="fl-cards"><h2>카드사 이벤트 페이지</h2><div class="go-grid">${F.CARDS.map(c => goBtn(c.url, c.name)).join('')}</div></section>
-      <p class="fl-foot">굵은 글씨는 기사·공지에 적힌 금액·할인율·기간을 그대로 뽑은 거예요. 결제 기간이 끝난 것${hidden ? `과 금액·할인율·기간이 하나도 없는 기사 ${hidden}건` : ''}은 숨겼어요. 대상 카드 종류·최소 결제 금액 등 세부 조건은 카드사 이벤트 페이지에서 꼭 확인하세요.</p>`;
+      <p class="fl-foot">판단 기준은 기사·공지에 적힌 사용처(항공사·나라·여행 플랫폼)예요. 굵은 글씨는 기사·공지에 적힌 금액·할인율·기간을 그대로 뽑은 거예요. 결제 기간이 끝난 것${hidden ? `과 금액·할인율·기간이 하나도 없는 기사 ${hidden}건` : ''}은 숨겼어요. 대상 카드 종류·최소 결제 금액 등 세부 조건은 카드사 이벤트 페이지에서 꼭 확인하세요.</p>`;
   }
   // 기사 본문에서 뽑은 핵심 문장 (서버가 저장한 p.summary, 원문 문장 그대로). code가 있으면 다른 항공사가 주어인 문장은 뺌
   // 요약 문장: 저장된 요약이 있는 첫 기사(대표 → 같은 소식)의 문장. '다음 달·내달·오는 N일'은 그 기사 등록일 기준 날짜로 바꿔 적음
