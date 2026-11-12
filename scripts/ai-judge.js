@@ -68,7 +68,7 @@ false 로 보는 것
 - "비엣젯 11월 11일 더블데이 특가, 11~13일 판매, 탑승 2027년 12월 31일까지" (글 날짜 2026-11-10) → book_from 2026-11-11, book_to 2026-11-13, board_to 2027-12-31`;
 
 // 카드 탭 소식(카드사·간편결제)용 질문: "이 여행에 쓸 수 있는 결제 할인인가?"
-const CARD_VERSION = 2; // 카드 질문을 크게 바꾸면 올림 → 카드 소식만 다시 판독
+const CARD_VERSION = 3; // 카드 질문을 크게 바꾸면 올림 → 카드 소식만 다시 판독
 const CARD_SYSTEM = `너는 해외여행을 준비하는 한국 사람에게 "항공권·여행 결제에 쓸 수 있는 카드 할인"만 골라 주는 도우미야.
 카드사·간편결제 관련 글 1건을 읽고 JSON 하나로만 답해. 설명이나 다른 글자는 쓰지 마.
 
@@ -76,7 +76,7 @@ const CARD_SYSTEM = `너는 해외여행을 준비하는 한국 사람에게 "�
 true 로 보는 것
 - 항공사 항공권을 특정 카드·간편결제로 사면 즉시 할인·청구 할인·캐시백·무이자 할부
 - 여행 예약 사이트(트립닷컴·아고다·익스피디아·마이리얼트립·하나투어 등)나 호텔 예약에서 카드 결제 시 할인·쿠폰
-- 해외 가맹점·해외 결제 할인·캐시백, 환전·해외 결제 수수료 면제 이벤트
+- 해외 가맹점·해외 결제 할인·캐시백, 여행지 현지 교통·쇼핑·식당 결제 할인, 환전·해외 결제 수수료 면제 이벤트
 false 로 보는 것
 - 면세점·백화점·마트·편의점·쇼핑몰·식품·구독 서비스 할인 (공항 면세점 포함)
 - 카드 신상품 출시·카드 상품 소개 (기간 한정 여행 결제 혜택이 따로 없으면)
@@ -88,20 +88,25 @@ false 로 보는 것
 - cards: 혜택을 주는 카드사·간편결제 이름 (예: 우리카드, 현대카드, 신한카드, 카카오페이, 네이버페이)
 - use: 쓸 수 있는 곳 "항공권" | "여행예약" | "해외결제" | "기타"
 - airlines: 항공권 할인이면 대상 항공사 한글 이름, 아니면 []
+- countries: 혜택을 "특정 나라에서만" 쓸 수 있으면 그 나라 이름. 아래 이름 중에서만 골라 (괌·사이판은 "미국령"):
+  베트남, 태국, 필리핀, 인도네시아, 말레이시아, 싱가포르, 일본, 대만, 홍콩, 마카오, 중국, 미국령, 미국, 기타
+  해외 어디서나·여행 예약 사이트 전체·모든 국제선이면 [] (예: 후쿠오카 교통 할인 → ["일본"], 해외 결제 수수료 면제 → [])
 - amount_krw: 할인·캐시백 최대 금액(원, 숫자). 없으면 null
 - pct: 최대 할인율(숫자). 포인트 적립률은 넣지 마. 없으면 null
 - min_krw: 최소 결제 금액(원, 숫자). 없으면 null
 - from / to: 혜택 기간 (YYYY-MM-DD). 연·월이 빠지면 글 날짜 기준으로 채움
 - reason: 판단 이유 20자 이내
 
-형식: {"travel_benefit":bool,"reason":"","cards":[],"use":null,"airlines":[],"amount_krw":null,"pct":null,"min_krw":null,"from":null,"to":null}
+형식: {"travel_benefit":bool,"reason":"","cards":[],"use":null,"airlines":[],"countries":[],"amount_krw":null,"pct":null,"min_krw":null,"from":null,"to":null}
 
 예시
 - "롯데免 '면세일' 최대 65% 할인…우리카드 결제 시 추가 할인" → false (면세점 쇼핑)
 - "[신상브리핑] 크라운해태·풀무원·롯데마트… CU 해외여행 eSIM" → false (유통 소식 모음)
 - "우리카드, 쇼핑 특화 '더 쇼퍼' 출시…최대 30% 적립" → false (카드 출시·적립)
 - "현대카드로 대한항공 항공권 결제 시 최대 7% 청구 할인 (11/16~12/30)" → true, use 항공권
-- "트립닷컴, 신한카드 결제 시 항공권 최대 10만원 할인" → true, use 여행예약`;
+- "트립닷컴, 신한카드 결제 시 항공권 최대 10만원 할인" → true, use 여행예약, countries []
+- "하나카드, 베트남 현지 롯데마트·그랩 결제 할인" → true, use 해외결제, countries ["베트남"]
+- "신한카드 들고 후쿠오카 가면 혜택…11월부터 교통·쇼핑·맛집 할인" → true (여행 가서 현지에서 쓰는 결제 할인도 여행 혜택), use 해외결제, countries ["일본"], from 2026-11-01, to null`;
 
 const kst = d => new Date(new Date(d).getTime() + 9 * 3600e3).toISOString().slice(0, 10);
 const isDay = s => typeof s === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(s) ? s : null;
@@ -167,6 +172,7 @@ function clean(o) {
   };
 }
 
+const CARD_COUNTRIES = ['베트남', '태국', '필리핀', '인도네시아', '말레이시아', '싱가포르', '일본', '대만', '홍콩', '마카오', '중국', '미국령', '미국', '기타'];
 function cleanCard(o) {
   return {
     v: AI_VERSION, cv: CARD_VERSION,
@@ -176,6 +182,7 @@ function cleanCard(o) {
       cards: Array.isArray(o.cards) ? o.cards.map(String).slice(0, 5) : [],
       use: ['항공권', '여행예약', '해외결제', '기타'].includes(o.use) ? o.use : null,
       airlines: Array.isArray(o.airlines) ? o.airlines.map(String).slice(0, 8) : [],
+      countries: Array.isArray(o.countries) ? o.countries.map(String).filter(c => CARD_COUNTRIES.includes(c)).slice(0, 8) : [],
       amount: num(o.amount_krw),
       pct: num(o.pct) && o.pct <= 99 ? Math.round(o.pct) : null,
       min: num(o.min_krw),
