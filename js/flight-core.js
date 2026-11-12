@@ -213,6 +213,20 @@
   }
   // 스카이스캐너는 아이 나이를 받음 (고른 나이 그대로, 안 고르면 7세)
   const skyPax = x => `adultsv2=${x.adults}${x.children + x.infants ? `&childrenv2=${[...x.ages, ...Array(x.infants).fill(SKY_INFANT_AGE)].join('%7C')}` : ''}`;
+  // 구글 항공권 검색 조건 주소(tfs): 구글 항공권 '공유' 주소와 같은 형식 (출발·도착·날짜·인원·직항을 코드로 넣음)
+  //  예전 방식(q=문장)은 구글 계정·로그인 상태에 따라 문장을 무시하고 빈 화면이 뜨는 경우가 있었음 (2026-11 PC 크롬)
+  //  구조: 3=구간(2=날짜, 5=최대 경유 0이면 직항, 13·14=출발·도착 공항{2=코드}), 8=승객(1 성인·2 어린이·4 유아 무릎), 9=좌석(1 일반석), 19=여정(1 왕복·2 편도)
+  function googleTfs({ from, to, dep, ret, adults = 1, children = 0, infants = 0, direct = false }) {
+    const varint = n => { const b = []; while (n > 127) { b.push((n & 127) | 128); n >>>= 7; } b.push(n); return b; };
+    const vi = (f, n) => [...varint(f << 3), ...varint(n)];
+    const ld = (f, bytes) => [...varint((f << 3) | 2), ...varint(bytes.length), ...bytes];
+    const str = (f, t) => ld(f, [...new TextEncoder().encode(t)]);
+    const leg = (d, a, b) => ld(3, [...str(2, d), ...(direct ? vi(5, 0) : []), ...ld(13, str(2, a)), ...ld(14, str(2, b))]);
+    const pax = [...Array(adults).fill(1), ...Array(children).fill(2), ...Array(infants).fill(4)];
+    const bytes = [...leg(dep, from, to), ...(ret ? leg(ret, to, from) : []), ...pax.flatMap(x => vi(8, x)), ...vi(9, 1), ...vi(19, ret ? 1 : 2)];
+    const b64 = typeof btoa === 'function' ? btoa(String.fromCharCode(...bytes)) : Buffer.from(bytes).toString('base64');
+    return b64.replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+  }
   // 다른 사이트 검색 주소. 서울 출발은 도시 코드(서울 전체: 인천+김포)로 넣음
   function links(originCode, dest, dep, ret, adults, opt = {}) {
     const px = paxOf(adults);
@@ -229,7 +243,8 @@
     return {
       // 네이버 앱 안의 브라우저로 같은 주소 열기 (네이버 앱 주소 형식). 앱이 없으면 앱 화면에서 사이트(naver)로 넘어감
       naverApp: `naversearchapp://inappbrowser?url=${encodeURIComponent(naverWeb)}&target=new&version=6`,
-      google: `https://www.google.com/travel/flights?hl=ko&gl=KR&curr=KRW&q=${encodeURIComponent(q)}`,
+      google: `https://www.google.com/travel/flights/search?tfs=${googleTfs({ from: seoul ? 'SEL' : o, to: d, dep: dep.slice(0, 10), ret: ret.slice(0, 10), adults: n, children: px.children, infants: px.infants, direct: !!opt.direct })}&hl=ko&gl=KR&curr=KRW`,
+      googleText: q, // (예전 방식 문장, 참고용)
       naver: naverWeb,
       sky: `https://www.skyscanner.co.kr/transport/flights/${sk}/${d.toLowerCase()}/${yymmdd(dep)}/${yymmdd(ret)}/?${skyPax(px)}&cabinclass=economy&rtn=1${opt.direct ? '&preferdirects=true' : ''}`,
     };
