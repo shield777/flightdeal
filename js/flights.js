@@ -470,8 +470,9 @@
       const l = [p, ...(p.more || [])].map(m => (m.ai && m.ai.cv && m.ai.card) || null).filter(Boolean);
       return l.find(c => c.ok) || l[0] || null;
     };
-    // 서버 묶음 안에 서로 다른 카드 소식이 섞인 경우가 있어서, AI가 읽은 카드사·나라·쓰는 곳이 다르면 따로 나눔
-    const sig = m => { const c = m.ai && m.ai.cv && m.ai.card; return c ? `${c.ok ? 1 : 0}|${[...(c.cards || [])].sort().join('/')}|${[...(c.countries || [])].sort().join('/')}|${c.use || ''}` : ''; };
+    // 서버 묶음 안에 서로 다른 카드 소식이 섞인 경우가 있어서, AI가 읽은 카드사·나라가 다르면 따로 나눔
+    //  (쓰는 곳은 기사마다 '항공권'·'여행예약'으로 갈리기도 해서 나누는 기준에서 뺌: 같은 소식이 여러 줄로 쪼개지지 않게)
+    const sig = m => { const c = m.ai && m.ai.cv && m.ai.card; return c ? `${c.ok ? 1 : 0}|${[...(c.cards || [])].sort().join('/')}|${[...(c.countries || [])].sort().join('/')}` : ''; };
     const split = g => {
       const ms = [g, ...(g.more || [])].map(m => { const { more, ...one } = m; return one; });
       const parts = new Map();
@@ -479,7 +480,18 @@
       if (parts.size === 1) return [g];
       return [...parts.values()].map(l => ({ ...l[0], id: `${g.id}#${l[0].id}`, more: l.slice(1) }));
     };
-    const raw = (data.promos.items || []).filter(p => (p.kind === 'card' || F.isPayBenefit(p)) && isLive(p)).flatMap(split).filter(p => !(aiCard(p) && !aiCard(p).ok));
+    // 언론사만 다른 같은 혜택 기사: AI가 읽은 카드사·나라·마감일이 같으면 한 줄로 합침
+    const sameKey = p => { const c = aiCard(p); return c && c.ok && (c.cards || []).length ? `${sig(p)}|${(c.period && c.period.to) || ''}` : null; };
+    const mergeAi = l => {
+      const out = [], at = new Map();
+      for (const p of l) {
+        const k = sameKey(p);
+        if (k && at.has(k)) { const o = out[at.get(k)]; out[at.get(k)] = { ...o, more: [...(o.more || []), p, ...(p.more || [])] }; }
+        else { if (k) at.set(k, out.length); out.push(p); }
+      }
+      return out;
+    };
+    const raw = mergeAi((data.promos.items || []).filter(p => (p.kind === 'card' || F.isPayBenefit(p)) && isLive(p)).flatMap(split).filter(p => !(aiCard(p) && !aiCard(p).ok)));
     const won = n => n % 10000 === 0 ? `${n / 10000}만원` : `${n.toLocaleString('ko-KR')}원`;
     const facts = p => {
       // 본문 문장 중 다른 카드사 이야기는 빼고 씀
