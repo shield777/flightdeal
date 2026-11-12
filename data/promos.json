@@ -54,7 +54,27 @@
      "allRoutes": false,
      "routes": [],
      "price": null,
-     "query": "홍콩익스프레스 세일"
+     "query": "홍콩익스프레스 세일",
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "항공사 플래시 세일",
+      "airlines": [
+       "홍콩익스프레스"
+      ],
+      "name": "플래시 세일",
+      "book": {
+       "from": "2026-11-12",
+       "to": "2026-11-15"
+      },
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     }
    ]
   },
@@ -105,6 +125,29 @@
     "서류 사진이나 복사본은 인정되지 않으며 동반인 역시 수험생과 함께 탑승 수속을 진행해야 할인 혜택을 받을 수 있다.",
     "트리니티항공 관계자는 \"오랜 시간 노력해 온 수험생 여러분께 응원과 격려의 마음을 전하고자 이번 프로모션을 마련했다\"며 \"수험생 여러분이 그동안의 노력을 잠시 내려놓고 여행을 통해 새로운 추억과 즐거움을 만끽할 수 있도록 안전하고 편안한 여행 서비스를 제공하겠다\"고 말했다."
    ],
+   "ai": {
+    "v": 1,
+    "promo": true,
+    "why": "수험생 항공권 할인 특가",
+    "airlines": [
+     "트리니티항공"
+    ],
+    "name": "수능 수험생 항공권 할인",
+    "book": {
+     "from": null,
+     "to": "2027-01-31"
+    },
+    "board": {
+     "from": "2026-11-20",
+     "to": "2027-02-21"
+    },
+    "price": null,
+    "trip": null,
+    "pct": 25,
+    "seoul": null,
+    "at": "2026-11-12",
+    "model": "deepseek-v4-flash"
+   },
    "lastDate": "2026-11-12T08:28:32.000Z",
    "lastFound": "2026-11-12",
    "more": [
@@ -145,7 +188,30 @@
       "할인 혜택은 항공권 예약 시 홈페이지 또는 모바일 앱의 탑승자 정보 입력 단계에서 개인 신분 할인 항목 중 '수험생 본인 최대 25% 할인' 또는 '수험생 동반 1인 최대 25% 할인'을 선택하면 적용된다.",
       "출발 당일 공항 카운터에서 수험생임을 증명할 수 있는 △2027년 수능 수험표 △2027년 대입 원서 접수증 △2027년 대입 지원서(수시 포함) 중 한 가지 서류 원본을 반드시 제시해야 한다.",
       "트리니티항공 관계자는 \"오랜 시간 노력해 온 수험생 여러분께 응원과 격려의 마음을 전하고자 이번 프로모션을 마련했다\"며 \"수험생 여러분이 그동안의 노력을 잠시 내려놓고 여행을 통해 새로운 추억과 즐거움을 만끽할 수 있도록 안전하고 편안한 여행 서비스를 제공하겠다\"고 말했다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "수험생 항공권 할인 특가",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "2027학년도 수능 프로모션",
+      "book": {
+       "from": "2026-11-12",
+       "to": "2027-01-31"
+      },
+      "board": {
+       "from": "2026-11-20",
+       "to": "2027-02-21"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 25,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "https://www.lawissue.co.kr/view.php|트리니티항공, 수험생 ‘할인 프로모션’…국내선 25%·국제선 최대 20%",
@@ -183,7 +249,30 @@
       "할인은 예약 시 탑승자 정보 입력 단계에서 개인 신분 할인 항목 중 ‘수험생 본인 최대 25% 할인’ 또는 ‘수험생 동반 1인 최대 25% 할인’을 선택하면 적용된다.",
       "출발 당일 공항 카운터에서 2027년 수능 수험표, 2027년 대입 원서 접수증, 2027년 대입 지원서(수시 포함) 중 한 가지 서류 원본을 제시해야 한다.",
       "트리니티항공 관계자는 “오랜 시간 노력해 온 수험생에게 응원과 격려의 마음을 전하고자 이번 프로모션을 마련했다”며 “수험생이 그동안의 노력을 잠시 내려놓고 여행을 통해 새로운 추억과 즐거움을 만끽할 수 있도록 안전하고 편안한 여행 서비스를 제공하겠다”고 말했다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "수험생 항공권 할인 특가",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "수험생 할인 프로모션",
+      "book": {
+       "from": "2026-11-12",
+       "to": "2027-01-31"
+      },
+      "board": {
+       "from": "2026-11-20",
+       "to": "2027-02-21"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 25,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "https://www.inews24.com/view/2025560|트리니티항공, 수능 프로모션…국제선 최대 20% 할인",
@@ -217,7 +306,30 @@
       "노선별 할인율은 △국내선 25% △미주·동남아 20% △유럽 15% △대양주·동북아 7% △일본 5%다.",
       "탑승 가능 기간은 오는 20일부터 내년 2월 21일까지다.",
       "출발 당일 공항 카운터에서 수험생임을 증명할 수 있는 △2027년 수능 수험표 △2027년 대입 원서 접수증 △2027년 대입 지원서(수시 포함) 중 한 가지 서류 원본을 반드시 제시해야 한다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "수험생 항공권 할인 특가",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "수능 프로모션",
+      "book": {
+       "from": "2026-11-12",
+       "to": "2027-01-31"
+      },
+      "board": {
+       "from": "2026-11-20",
+       "to": "2027-02-21"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 20,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "https://www.kbmaeil.com/article/20261112500171|트리니티항공, 2027학년도 수험생 항공권 할인 프로모션 실시",
@@ -256,7 +368,30 @@
       "할인 혜택을 받으려면 항공권 예약 과정에서 홈페이지 또는 모바일 앱의 탑승자 정보 입력 단계에 있는 개인 신분 할인 항목에서 ‘수험생 본인 최대 25% 할인’ 또는 ‘수험생 동반 1인 최대 25% 할인’을 선택하면 된다.",
       "탑승 당일에는 공항 카운터에서 수험생임을 증명할 수 있는 서류 원본을 제시해야 한다.",
       "트리니티항공 관계자는 “오랜 시간 노력해 온 수험생들에게 응원과 격려의 마음을 전하고자 이번 프로모션을 마련했다”며 “수험생들이 그동안의 노력을 잠시 내려놓고 여행을 통해 새로운 추억과 즐거움을 만끽할 수 있도록 안전하고 편안한 여행 서비스를 제공하겠다”고 말했다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "수험생 항공권 할인",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "2027학년도 수험생 항공권 할인 프로모션",
+      "book": {
+       "from": "2026-11-12",
+       "to": "2027-01-31"
+      },
+      "board": {
+       "from": "2026-11-20",
+       "to": "2027-02-21"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 25,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "cERLQzQtc21wRFVHTjdQWjBvdXBYb29mdjlzS3hjbjJILVdUWUJUNUJFZG56bkF0aXBacS1EQTZhX0lZQUVHVC1WRHBUN2RlNnVsT3A0aHhnbDNmN2hvdGxB|트리니티항공, 수능 수험생 항공권 최대 25% 할인",
@@ -296,7 +431,30 @@
       "홈페이지나 모바일 앱에서 탑승자 정보를 입력할 때 개인 신분 할인 항목에 있는 '수험생 본인 최대 25% 할인' 또는 '수험생 동반 1인 최대 25% 할인'을 선택하면 된다.",
       "동반인도 수험생과 함께 탑승 수속을 밟아야 할인 혜택을 받을 수 있다.",
       "트리니티항공 관계자는 \"오랜 시간 노력해 온 수험생들에게 응원과 격려의 마음을 전하기 위해 이번 프로모션을 마련했다\"며 \"수험생들이 여행을 통해 새로운 추억과 즐거움을 누릴 수 있도록 안전하고 편안한 서비스를 제공하겠다\"고 말했다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "수험생 항공권 할인 특가",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "수험생 항공권 할인 프로모션",
+      "book": {
+       "from": "2026-11-12",
+       "to": "2027-01-31"
+      },
+      "board": {
+       "from": "2026-11-20",
+       "to": "2027-02-21"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 25,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "https://www.cstimes.com/news/articleView.html|트리니티항공 , 수험생 항공 권 할인 …국내선 25%·국제선 최대 20%",
@@ -334,7 +492,30 @@
       "할인을 적용받으려면 항공권 예약 시 탑승자 정보 입력 단계에서 개인 신분 할인 항목 중 '수험생 본인 최대 25% 할인' 또는 '수험생 동반 1인 최대 25% 할인'을 선택하면 된다.",
       "출발 당일 공항 카운터에서는 2027년 수능 수험표, 대입 원서 접수증, 대입 지원서(수시 포함) 중 한 가지 서류 원본을 반드시 지참해야 하며, 동반인 역시 수험생과 함께 수속을 밟아야 한다.",
       "트리니티항공 관계자는 \"오랜 시간 시험 준비에 매진해 온 수험생들에게 응원과 격려의 마음을 전하고자 이번 프로모션을 기획했다\"며 \"안전하고 편안한 여행 서비스를 통해 수험생들이 학업 부담을 잠시 내려놓고 새로운 추억을 쌓길 바란다\"고 말했다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "수험생 항공권 할인 특가",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "2027학년도 수능 수험생 할인 프로모션",
+      "book": {
+       "from": "2026-11-12",
+       "to": "2027-01-31"
+      },
+      "board": {
+       "from": "2026-11-20",
+       "to": "2027-02-21"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 25,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "http://www.newsdream.kr/news/articleView.html|트리니티항공 , 2027학년도 수능 할인 프로모션 실시",
@@ -370,7 +551,30 @@
       "자세한 할인 적용 운임 및 탑승 제외 기간은 트리니티항공 공식 홈페이지를 통해 확인할 수 있다.",
       "할인 혜택은 항공권 예약 시 홈페이지 또는 모바일 앱의 탑승자 정보 입력 단계에서 개인 신분 할인 항목 중 '수험생 본인 최대 25% 할인' 또는 '수험생 동반 1인 최대 25% 할인'을 선택하면 적용된다.",
       "트리니티항공 관계자는 “오랜 시간 노력해 온 수험생 여러분께 응원과 격려의 마음을 전하고자 이번 프로모션을 마련했다”며 “수험생 여러분이 그동안의 노력을 잠시 내려놓고 여행을 통해 새로운 추억과 즐거움을 만끽할 수 있도록 안전하고 편안한 여행 서비스를 제공하겠다”고 말했다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "수험생 항공권 할인 프로모션",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "2027학년도 수능 할인 프로모션",
+      "book": {
+       "from": null,
+       "to": "2027-01-31"
+      },
+      "board": {
+       "from": "2026-11-20",
+       "to": "2027-02-21"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 25,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "htalh5YXpuVUlOclB0dnBmZ1haZnNXNmFFanc1T0Z5SVpWVWdGcUQwaHVCYWpGZWx4SzlDZnI2aWl5RkppcEZLa3BZcW1PUmtNUlpQZ0p6U3lyNkZVcWhtQQ|트리니티항공, 수능 할인 프로모션..동반 1인까지 최대 25%",
@@ -405,7 +609,30 @@
       "단 노선별로 탑승 제외 기간이 다르게 적용되며 자세한 할인 적용 운임 및 탑승 제외 기간은 트리니티항공 공식 홈페이지에서 확인할 수 있다.",
       "할인 혜택은 항공권 예약 시 홈페이지 또는 모바일 앱의 탑승자 정보 입력 단계에서 개인 신분 할인 항목 중 ‘수험생 본인 최대 25% 할인’ 또는 ‘수험생 동반 1인 최대 25% 할인’을 선택하면 적용된다.",
       "출발 당일 공항 카운터에서 수험생임을 증명할 수 있는 △2027년 수능 수험표 △2027년 대입 원서 접수증 △2027년 대입 지원서(수시 포함) 중 한 가지 서류 원본을 반드시 제시해야 한다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "수험생 항공권 할인 특가",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "수능 할인 프로모션",
+      "book": {
+       "from": "2026-11-12",
+       "to": "2027-01-31"
+      },
+      "board": {
+       "from": "2026-11-20",
+       "to": "2027-02-21"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 25,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "M0R2QxbWRRNE9JU0YybmlKY0UwSWdKUkNfVVdNS21xaWxSUVBRVTFjR0o4NERDVjhHRDJaX1ozOFZ4dnJ6VDlRNmk3cVdMdkhDNEs5dGpfZkZndUdxaXVvMQ|\"수능 끝나고 어디 갈까?\" 트리니티항공, 수험생 항공권 할인",
@@ -446,7 +673,30 @@
       "해당 항목에서 ‘수험생 본인 최대 25% 할인’ 또는 ‘수험생 동반 1인 최대 25% 할인’을 선택하면 된다.",
       "인정되는 서류는 2027년 수능 수험표, 2027년 대입 원서 접수증, 2027년 대입 지원서(수시 포함) 가운데 한 가지다.",
       "트리니티항공 관계자는 “오랜 시간 노력해 온 수험생 여러분께 응원과 격려의 마음을 전하고자 이번 프로모션을 마련했다”며 “수험생 여러분이 그동안의 노력을 잠시 내려놓고 여행을 통해 새로운 추억과 즐거움을 만끽할 수 있도록 안전하고 편안한 여행 서비스를 제공하겠다”고 말했다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "수험생 항공권 할인 프로모션",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "수험생 항공권 할인",
+      "book": {
+       "from": "2026-11-12",
+       "to": "2027-01-31"
+      },
+      "board": {
+       "from": "2026-11-20",
+       "to": "2027-02-21"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 25,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "N0cDlIcHhHMVFHbnRhWkQxYnhmd0ltZktFOGs3LUpiWHpULXNyVXRNMVFvNV9LVUkydVkwX2d3ZlZyUnJqWWN4RTZFUzVabGdhM0U0Y3FtVEVhRFA3MTVGdw|트리니티항공, 2027학년도 수험생 대상 항공권 할인 프로모션 진행",
@@ -484,7 +734,30 @@
       "할인을 받으려면 예매 과정에서 탑승자 정보 입력 시 개인 신분 할인 항목에서 '수험생 본인 최대 25% 할인' 또는 '수험생 동반 1인 최대 25% 할인'을 선택하면 된다.",
       "탑승 당일 공항 수속 카운터에서는 증빙 서류 원본 확인 절차를 거쳐야 한다.",
       "트리니티항공 관계자는 \"수험생들이 시험 이후 안전하고 쾌적하게 여행을 즐길 수 있도록 이번 할인 프로그램을 기획했다\"고 말했다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "수험생 항공권 운임 할인",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "수험생 할인 프로모션",
+      "book": {
+       "from": "2026-11-12",
+       "to": "2027-01-31"
+      },
+      "board": {
+       "from": "2026-11-20",
+       "to": "2027-02-21"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 25,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "HRmdDcFFYN0xiNUJXaDBMUFhqcXRsQjJUeXBtYWZKLXBhVGVXNFFwMGNySHVHZFQtWnBxcG5DeUY2ZzdPYUJSVXpKSGdUUkptOG12OWNhX3pBLVNubjFEdDA|철강협회, '슬래그 가치·활용 확대 순회설명회' 개최... 트리니티항공,",
@@ -527,7 +800,30 @@
       "같은 기간 별도 매출은 1801억원으로 3.5% 늘었다.",
       "3분기 단일 별도 영업이익도 44억원으로 전년 동기보다 34.5% 증가했다.",
       "주요 계열사를 포함한 3분기 누적 연결 매출은 전년 동기 대비 9.3% 증가한 7조3929억원, 영업이익은 1605억원으로 집계됐다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "수험생 항공권 할인 프로모션",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "2027학년도 수험생 할인 프로모션",
+      "book": {
+       "from": "2026-11-12",
+       "to": "2027-01-31"
+      },
+      "board": {
+       "from": "2026-11-20",
+       "to": "2027-02-21"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 25,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "https://www.asiatime.co.kr/article/20261112500425|[ 항공 뉴스브리핑] 트리니티항공 , 수능 수험생 국내선 25% 할인",
@@ -586,7 +882,30 @@
       "이번 프로모션은 지난 11일부터 내년 3월 27일까지 진행된다.",
       "에어서울 탑승객은 제휴 리조트에서 2박 이상 투숙하면 객실 요금을 50% 할인받을 수 있다.",
       "지난 1일 새롭게 문을 연 리조트 내 비치클럽에서도 탑승객 혜택을 제공한다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "수험생 항공권 할인 프로모션",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "수능 수험생 할인",
+      "book": {
+       "from": null,
+       "to": "2027-01-31"
+      },
+      "board": {
+       "from": "2026-11-20",
+       "to": "2027-02-21"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 25,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "dsSjVob0FrVllXTEpKZ3B3WHd3WHVRX0cwelRTeWNJUGdxM2FnSVpfM2FpWG42c0EzQ1c5bVdqQl9qYmd0a1o3dlo5Y0VoRUhabHB5Rk95M0VkSzV5bkV6QQ|트리니티항공, 2027학년도 수능 수험생 할인 프로모션 진행",
@@ -621,7 +940,30 @@
       "예약 때 탑승자 정보 입력 단계의 개인 신분 할인 항목에서 '수험생 본인 최대 25% 할인' 또는 '수험생 동반 1인 최대 25% 할인'을 선택하면 된다.",
       "출발 당일 공항 카운터에서 2027년 수능 수험표, 2027년 대입 원서 접수증, 2027년 대입 지원서(수시 포함) 중 하나의 원본을 제시해야 하며, 사진이나 복사본은 인정되지 않는다.",
       "트리니티항공 관계자는 \"수험생 여러분께 응원과 격려의 마음을 전하고자 이번 프로모션을 마련했다\"고 말했다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "수험생 항공권 할인 프로모션",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "2027학년도 수능 수험생 할인 프로모션",
+      "book": {
+       "from": "2026-11-12",
+       "to": "2027-01-31"
+      },
+      "board": {
+       "from": "2026-11-20",
+       "to": "2027-02-21"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 25,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "J2Zng3Q3Y0ejlQX0hRSXRFZDA0UVhZXzdCUl9KYWZZdy0xTkVKYjU4bkppZWVtemgzVDJ0eF9oSW4wREdzNENMTGRveEZiV3M0M05pZ0ZZcDhfYXUwXzFmeA|수학능력 치른 '수험생' 할인 혜택···트리니티항공, 전 노선 대상 진행",
@@ -656,7 +998,30 @@
       "할인 혜택을 적용받으려면 예매 과정에서 탑승자 정보 입력 단계의 개인 신분 할인 항목 중 ‘수험생 본인 최대 25% 할인’ 또는 ‘수험생 동반 1인 최대 25% 할인’을 선택해야 한다.",
       "또 출발 당일 공항 카운터에서 2027년 수능 수험표, 2027년 대입 원서 접수증, 2027년 대입 지원서(수시 포함) 중 한 가지 서류의 원본을 반드시 제시해야 한다.",
       "트리니티항공 관계자는 “오랜 시간 노력해 온 수험생 여러분께 응원과 격려의 마음을 전하고자 이번 프로모션을 마련했다”며 “수험생 여러분이 그동안의 노력을 잠시 내려놓고 여행을 통해 새로운 추억과 즐거움을 만끽할 수 있도록 안전하고 편안한 여행 서비스를 제공하겠다”고 말했다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "수험생 항공권 할인 프로모션",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "수험생 할인 프로모션",
+      "book": {
+       "from": "2026-11-12",
+       "to": "2027-01-31"
+      },
+      "board": {
+       "from": "2026-11-20",
+       "to": "2027-02-21"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 25,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "https://www.megaeconomy.co.kr/news/newsview.php|트리니티항공 , 수능 수험생 대상 항공 권 프로모션 진행",
@@ -689,7 +1054,30 @@
       "인정 서류는 2027년 수능 수험표, 2027년 대입 원서 접수증, 2027년 대입 지원서(수시 포함) 중 하나다.",
       "트리니티항공 관계자는 \"오랜 시간 노력해 온 수험생 여러분께 응원과 격려의 마음을 전하고자 이번 프로모션을 마련했다\"며 \"수험생 여러분이 그동안의 노력을 잠시 내려놓고 여행을 통해 새로운 추억과 즐거움을 만끽할 수 있도록 안전하고 편안한 여행 서비스를 제공하겠다\"고 말했다.",
       "한편, 트리니티항공은 최근 글로벌 항공 서비스 평가기관 '스카이트랙스'가 발표한 '월드 에어라인 어워즈 2026(World Airline Awards 2026)'에서 '대한민국 최고 저비용항공사(Best Low-Cost Airline in South Korea 2026)'로 선정됐으며, '세계에서 가장 개선된 항공사(World’s Most Improved Airlines 2026)' 부문…"
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "수험생 항공권 할인 프로모션",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "수능 수험생 항공권 프로모션",
+      "book": {
+       "from": "2026-11-12",
+       "to": "2027-01-31"
+      },
+      "board": {
+       "from": "2026-11-20",
+       "to": "2027-02-21"
+      },
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "http://www.enewstoday.co.kr/news/articleView.html|'지역공항 탑승객 위한 할인 제공'··· 트리니티항공 '우리 동네 할인 ",
@@ -718,7 +1106,24 @@
       "이와 함께 트리니티항공은 11월 맞이 더블 혜택, 밀리의 서재·웨이브 이용권 이벤트, 국립항공박물관 우대 요금, 유럽 기차 즉시 할인 등 다채로운 프로모션을 함께 진행하고 있다.",
       "트리니티항공 관계자는 “지역 공항을 이용하시는 고객분들께서 한층 부담 없이 여행을 준비하실 수 있도록 전용 할인 프로모션을 마련했다”며 “앞으로도 철저한 안전 운항 체계를 바탕으로 차별화된 서비스와 혜택을 지속적으로 선보이겠다”고 밝혔다."
      ],
-     "notified": "2026-11-10"
+     "notified": "2026-11-10",
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "지역공항 항공권 할인 프로모션",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "우리 동네 할인",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": false,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     }
    ]
   },
@@ -768,6 +1173,29 @@
     "단 일부 기간은 할인 대상에서 제외된다.",
     "비엣젯항공은 최근 베트남과 필리핀을 잇는 호찌민-세부, 하노이-세부, 호찌민-클라크 등 3개 신규 노선에 취항했다."
    ],
+   "ai": {
+    "v": 1,
+    "promo": true,
+    "why": "항공권 특가판매",
+    "airlines": [
+     "비엣젯항공"
+    ],
+    "name": "11.11 더블데이 특가",
+    "book": {
+     "from": null,
+     "to": "2026-11-13"
+    },
+    "board": {
+     "from": "2026-12-01",
+     "to": "2027-05-31"
+    },
+    "price": 129000,
+    "trip": "편도",
+    "pct": 25,
+    "seoul": null,
+    "at": "2026-11-12",
+    "model": "deepseek-v4-flash"
+   },
    "lastDate": "2026-11-12T08:00:34.000Z",
    "lastFound": "2026-11-12",
    "more": [
@@ -825,7 +1253,30 @@
       "지난 10월 22일 6화를 끝으로 시리즈를 마무리했으며, 11월 11일 기준 채널 누적 조회수는 563만 회를 기록했다.",
       "aT, 김장철 맞아 우리 농산물 최대 20% 할인 기획전",
       "목장형 자연치즈 경연대회 출품작 모집… 19일부터 접수"
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "비엣젯 항공권 특가 판매",
+      "airlines": [
+       "비엣젯항공"
+      ],
+      "name": "11월 11일 더블데이 항공권 특가",
+      "book": {
+       "from": "2026-11-11",
+       "to": "2026-11-13"
+      },
+      "board": {
+       "from": "2026-12-01",
+       "to": "2027-05-31"
+      },
+      "price": 129000,
+      "trip": "편도",
+      "pct": 25,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "YWR5dDdfOS0zWGo5eXRfMkFOZGdwZ1hVNXpZTVJCQ1JySkMzUERiNWxtcVdZVWJIRjMtMnFwcjVUS0hTOXY2ZUNfaXk5anJCajEtX3k0a1B5akJvdmtWbjY1|비엣젯항공, 한-베트남 전 노선 12만 9천원부터 특가 판매",
@@ -867,7 +1318,30 @@
       "비엣젯항공은 할인 행사와 함께 베트남과 주변국을 연결하는 신규 노선 취항을 통해 아시아 지역 항공 네트워크를 강화하고 있다.",
       "노선 확대는 내년 초까지 지속될 예정이다.",
       "비엣젯항공은 하노이-콜롬보, 하노이·호찌민-몰디브, 다낭-오사카, 다낭-자카르타, 나트랑-싱가포르 노선과 호주 웨스턴시드니 국제공항(WSI)을 연결하는 두 번째 호찌민-시드니 노선의 운항을 준비하고 있다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "항공사 특가 판매",
+      "airlines": [
+       "비엣젯항공"
+      ],
+      "name": "더블데이 특가",
+      "book": {
+       "from": "2026-11-11",
+       "to": "2026-11-13"
+      },
+      "board": {
+       "from": "2026-12-01",
+       "to": "2027-05-31"
+      },
+      "price": 129000,
+      "trip": "편도",
+      "pct": 25,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "https://www.sisunnews.co.kr/news/articleView.html|비엣젯항공, 11월 11일 더블데이 특가 프로모션...한국-베트남 전 노",
@@ -906,7 +1380,30 @@
       "단, 일부 기간은 할인 대상에서 제외된다.",
       "또한 비엣젯항공의 글로벌 노선망을 활용하면 베트남 여행과 함께 아시아, 호주, 유럽 등 다른 지역을 연계한 여행도 가능하다.",
       "비엣젯항공의 이번 특가 프로모션은 베트남을 비롯한 다양한 해외 여행지를 합리적인 가격에 방문할 수 있는 기회가 될 전망이다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "항공사 운임 할인 특가",
+      "airlines": [
+       "비엣젯항공"
+      ],
+      "name": "더블데이 특가 프로모션",
+      "book": {
+       "from": "2026-11-11",
+       "to": "2026-11-13"
+      },
+      "board": {
+       "from": "2026-12-01",
+       "to": "2027-05-31"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 25,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "https://www.cbci.co.kr/news/articleView.html|비엣젯항공, 11월 11일 더블데이 맞이 항공권 특가 할인 제공",
@@ -949,7 +1446,30 @@
       "비엣젯항공은 최근 베트남과 필리핀을 잇는 호찌민-세부, 하노이-세부, 호찌민-클라크 등 3개 신규 노선에 취항했다.",
       "비엣젯항공은 올해 말부터 2027년 초까지 글로벌 노선망을 추가로 확대할 계획이다.",
       "또한 비엣젯항공의 글로벌 노선망을 활용하면 베트남 여행과 함께 아시아, 호주, 유럽 등 다른 지역을 연계한 여행도 가능하다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "항공사 항공권 특가 할인",
+      "airlines": [
+       "비엣젯항공"
+      ],
+      "name": "더블데이 항공권 특가",
+      "book": {
+       "from": "2026-11-11",
+       "to": "2026-11-13"
+      },
+      "board": {
+       "from": "2026-12-01",
+       "to": "2027-05-31"
+      },
+      "price": 129000,
+      "trip": "편도",
+      "pct": 25,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "https://www.ksilbo.co.kr/news/articleView.html|비엣젯항공, 11월 11일 더블데이 맞아 항공권 특가 판매",
@@ -991,7 +1511,30 @@
       "비엣젯항공은 올해 말부터 2027년 초까지 글로벌 노선망을 추가로 확대할 계획이다.",
       "또한 비엣젯항공의 글로벌 노선망을 활용하면 베트남 여행과 함께 아시아, 호주, 유럽 등 다른 지역을 연계한 여행도 가능하다.",
       "비엣젯항공의 이번 특가 프로모션은 베트남을 비롯한 다양한 해외 여행지를 합리적인 가격에 방문할 수 있는 기회가 될 전망이다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "비엣젯 항공권 특가 판매",
+      "airlines": [
+       "비엣젯항공"
+      ],
+      "name": "더블데이 특가",
+      "book": {
+       "from": null,
+       "to": "2026-11-13"
+      },
+      "board": {
+       "from": "2026-12-01",
+       "to": "2027-05-31"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 25,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "N3TWE4bllNSEQ4R19KOWlFcXdwNWdBVWxreWd1YzVPMEFBSGgxQWR2TUN5OUdqT25IcFVtWlJTVXJYcjZOdWk5UHdjY3k4UE5LVUFFTkJZMnd3SFlBUFZlQQ|홍콩익스프레스, 성수동 팝업 개최→비엣젯항공, '더블데이' 맞아 항공권 ",
@@ -1036,7 +1579,31 @@
       "국제선 예약 때 코드 ‘VJINT11’을 입력하면 2027년 4월 1일~12월 31일 탑승편에 적용한다.",
       "베트남 국내선은 ‘VJDOM11’을 입력해 2027년 3월 1일~12월 31일 탑승편을 할인받는다.",
       "두 혜택 모두 일부 기간을 제외하며 공식 홈페이지나 모바일 앱에서 예약할 수 있다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "항공권 특가 판매",
+      "airlines": [
+       "홍콩익스프레스",
+       "비엣젯항공"
+      ],
+      "name": "11.11 더블데이",
+      "book": {
+       "from": "2026-11-12",
+       "to": "2026-11-13"
+      },
+      "board": {
+       "from": "2026-12-01",
+       "to": "2027-05-31"
+      },
+      "price": null,
+      "trip": "왕복",
+      "pct": 25,
+      "seoul": true,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "https://www.vegannews.co.kr/news/article.html|비엣젯항공, 한국-베트남 전 노선 더블데이 특가 진행",
@@ -1079,7 +1646,30 @@
       "한편 비엣젯항공은 지난 10일 호찌민-세부, 하노이-세부, 호찌민-클라크 등 베트남과 필리핀을 잇는 3개 신규 노선에 취항했다.",
       "회사는 올해 말부터 2027년 초까지 국제선 노선망을 추가로 확대할 계획이다.",
       "호주 웨스턴시드니 국제공항(WSI)을 이용하는 호찌민-시드니 노선은 2027년 1월 9일 운항을 시작할 예정이다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "항공권 특가 프로모션",
+      "airlines": [
+       "비엣젯항공"
+      ],
+      "name": "11월 11일 더블데이",
+      "book": {
+       "from": null,
+       "to": "2026-11-13"
+      },
+      "board": {
+       "from": "2026-12-01",
+       "to": "2027-05-31"
+      },
+      "price": 129000,
+      "trip": "편도",
+      "pct": 25,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "LdkhrMHRscG9GLThhOGRFSVNUQkxuVVRLQ2F6MmE0cGN4UHBJcE9BT3dHdFU5SnhIUXlZRzBsYkpxSENoeEU2NGhWQVJHSHdCbmJXTFQ5X2NUTWw1TXJPa00|비엣젯항공, 더블데이 맞아 항공권 특가 프로모션 돌입",
@@ -1112,7 +1702,27 @@
       "이번 행사에서는 에코 클래스 항공권을 포함해 한국과 베트남을 잇는 전 노선 운임이 대상에 포함되며, 디럭스 운임은 최대 25% 할인된다.",
       "탑승 기간은 오는 12월 1일부터 2027년 5월 31일까지 적용된다.",
       "비엣젯항공은 최근 베트남과 필리핀을 연결하는 호찌민-세부, 하노이-세부, 호찌민-클라크 등 신규 직항 노선 3개에 취항했다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "항공권 특가 프로모션",
+      "airlines": [
+       "비엣젯항공"
+      ],
+      "name": "더블데이 항공권 특가",
+      "book": null,
+      "board": {
+       "from": "2026-12-01",
+       "to": "2027-05-31"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 25,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "B8%94%EB%8D%B0%EC%9D%B4-%EB%A7%9E%EC%95%84-%ED%95%AD%EA%B3%B5%EA%B6%8C-%ED%8A%B9%EA%B0%80-%ED%8C%90%EB%A7%A4/ar-AA2hg9Js|홍콩익스프레스, 성수동 팝업 개최→비엣젯항공, 더블데이 맞아 항공권 특가",
@@ -1140,7 +1750,24 @@
      "routes": [],
      "price": null,
      "query": "베트남 항공권 {특가말}",
-     "bodyAt": "2026-11-12"
+     "bodyAt": "2026-11-12",
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "비엣젯 항공권 특가 판매",
+      "airlines": [
+       "비엣젯항공"
+      ],
+      "name": "더블데이 항공권 특가",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     }
    ]
   },
@@ -1198,7 +1825,24 @@
       "amount": 1100000,
       "trip": "oneway?"
      },
-     "query": "항공권 할인코드"
+     "query": "항공권 할인코드",
+     "ai": {
+      "v": 1,
+      "promo": false,
+      "why": "개인 가격 공유글",
+      "airlines": [
+       "에어프레미아"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": 1100000,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "c:https://cafe.naver.com/gobaesong/30236|에어프레미아 블랙 프라이데이 세일 ✈️",
@@ -1296,6 +1940,23 @@
     "trip": "oneway?"
    },
    "query": "항공권 할인코드",
+   "ai": {
+    "v": 1,
+    "promo": false,
+    "why": "개인 발권 후기 공유",
+    "airlines": [
+     "중국동방항공"
+    ],
+    "name": null,
+    "book": null,
+    "board": null,
+    "price": null,
+    "trip": null,
+    "pct": null,
+    "seoul": null,
+    "at": "2026-11-12",
+    "model": "deepseek-v4-flash"
+   },
    "lastDate": "2026-11-12T07:00:43.078Z",
    "lastFound": "2026-11-12"
   },
@@ -1318,6 +1979,23 @@
    "routes": [],
    "price": null,
    "query": "트리니티항공 할인",
+   "ai": {
+    "v": 1,
+    "promo": true,
+    "why": "항공사 국제선 할인 프로모션",
+    "airlines": [
+     "트리니티항공"
+    ],
+    "name": "수능 프로모션",
+    "book": null,
+    "board": null,
+    "price": null,
+    "trip": null,
+    "pct": 20,
+    "seoul": null,
+    "at": "2026-11-12",
+    "model": "deepseek-v4-flash"
+   },
    "lastDate": "2026-11-12T07:00:43.078Z",
    "lastFound": "2026-11-12"
   },
@@ -1367,6 +2045,29 @@
     "프로모션 예약 기간은 12일부터 15일까지이며, 탑승 기간은 오는 23일부터 2027년 6월 30일까지다.",
     "예약은 홍콩익스프레스 한국어 홈페이지에서 할 수 있다."
    ],
+   "ai": {
+    "v": 1,
+    "promo": true,
+    "why": "항공사 기간한정 특가 판매",
+    "airlines": [
+     "홍콩익스프레스"
+    ],
+    "name": "홍콩 갈 땐? 홍콩익스프레스항공 특가",
+    "book": {
+     "from": "2026-11-12",
+     "to": "2026-11-15"
+    },
+    "board": {
+     "from": "2026-11-23",
+     "to": "2027-06-30"
+    },
+    "price": 89600,
+    "trip": "편도",
+    "pct": null,
+    "seoul": true,
+    "at": "2026-11-12",
+    "model": "deepseek-v4-flash"
+   },
    "lastDate": "2026-11-12T06:41:00.000Z",
    "lastFound": "2026-11-12"
   },
@@ -1428,6 +2129,21 @@
     "‘에어로스피어’에는 태양광을 흡수하는 700 필파워 유러피안 발열 구스다운 충전재(솜털 80%·깃털 20%)와 단열 에어로겔·복사열 반사 세라믹 소재를 결합한 특수 안감 기술인 ‘히트돔’이 적용됐다.",
     "또한 인덕션·가스레인지·오븐·전자레인지 등 모든 열원에서 사용할 수 있고, 별도의 실리콘 찜기를 함께 활용하면 다양한 찜 요리까지 간편하게 조리할 수 있다."
    ],
+   "ai": {
+    "v": 1,
+    "promo": false,
+    "why": "eSIM·식품 등 항공권 아님",
+    "airlines": [],
+    "name": null,
+    "book": null,
+    "board": null,
+    "price": null,
+    "trip": null,
+    "pct": null,
+    "seoul": null,
+    "at": "2026-11-12",
+    "model": "deepseek-v4-flash"
+   },
    "lastDate": "2026-11-12T06:00:00.000Z",
    "lastFound": "2026-11-12",
    "more": [
@@ -1488,7 +2204,22 @@
       "적용 상품 수도 385% 늘었다.",
       "최근 한 달간 도착보장 상품의 구매전환율은 일반배송 상품보다 72% 높았다.",
       "에이블리 관계자는 “오늘도착은 이용자의 구매 선택 폭을 넓히고 판매자의 판매 기회를 확대하는 계기가 될 것\"이라며 “차별화된 배송 경쟁력을 지속 강화하겠다\"고 말했다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": false,
+      "why": "eSIM·편의점 상품 소식",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     }
    ]
   },
@@ -1809,7 +2540,24 @@
      "allRoutes": false,
      "routes": [],
      "price": null,
-     "query": "제주항공 할인"
+     "query": "제주항공 할인",
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "진에어 제주 항공권 할인",
+      "airlines": [
+       "진에어"
+      ],
+      "name": "제주 여행의 제철! 제주도 항공권 할인",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "c:https://cafe.naver.com/airportshopping/1104|[ 진에어 ] 진에어 항공권 카카오페이 결제 시 즉시 할인 !",
@@ -1832,7 +2580,24 @@
      "allRoutes": false,
      "routes": [],
      "price": null,
-     "query": "진에어 할인"
+     "query": "진에어 할인",
+     "ai": {
+      "v": 1,
+      "promo": false,
+      "why": "결제수단 할인 안내",
+      "airlines": [
+       "진에어"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "c:https://cafe.naver.com/mindy7857/5526144|진에어 온라인 좌석 구매 할인 요금 공유해요",
@@ -1852,7 +2617,24 @@
      "allRoutes": false,
      "routes": [],
      "price": null,
-     "query": "베트남 항공권 특가"
+     "query": "베트남 항공권 특가",
+     "ai": {
+      "v": 1,
+      "promo": false,
+      "why": "좌석 구매 할인 공유",
+      "airlines": [
+       "진에어"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "c:https://cafe.naver.com/stereovinylcruiser/326350|호치민 노랑풍선 패키지 진에어 신규출항이라 특가 떠서..",
@@ -1874,7 +2656,24 @@
      "allRoutes": false,
      "routes": [],
      "price": null,
-     "query": "베트남 항공권 특가"
+     "query": "베트남 항공권 특가",
+     "ai": {
+      "v": 1,
+      "promo": false,
+      "why": "패키지 상품 홍보",
+      "airlines": [
+       "진에어"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     }
    ]
   },
@@ -2018,7 +2817,24 @@
      "allRoutes": false,
      "routes": [],
      "price": null,
-     "query": "아시아나항공 얼리버드"
+     "query": "아시아나항공 얼리버드",
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "아시아나 얼리버드 특가",
+      "airlines": [
+       "아시아나항공"
+      ],
+      "name": "트립닷컴 아시아나항공 얼리버드 특가",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "c:https://cafe.naver.com/airportshopping/1120|[ 아시아나항공 ] 마법같은 일본의 가을! 일본행 최저가 및 운항 스케줄",
@@ -2043,7 +2859,24 @@
      "allRoutes": false,
      "routes": [],
      "price": null,
-     "query": "아시아나항공 프로모션"
+     "query": "아시아나항공 프로모션",
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "아시아나 일본행 최저가 안내",
+      "airlines": [
+       "아시아나항공"
+      ],
+      "name": "마법같은 일본의 가을",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     }
    ]
   },
@@ -2089,6 +2922,21 @@
     "카드 이용 패턴과 혜택 모드 조합에 따라 월 최대 17만5000하나머니까지 적립 가능하다.",
     "연회비는 국내 전용과 해외겸용 모두 2만원이다."
    ],
+   "ai": {
+    "v": 1,
+    "promo": false,
+    "why": "카드사 해외결제 할인",
+    "airlines": [],
+    "name": null,
+    "book": null,
+    "board": null,
+    "price": null,
+    "trip": null,
+    "pct": null,
+    "seoul": null,
+    "at": "2026-11-12",
+    "model": "deepseek-v4-flash"
+   },
    "lastDate": "2026-11-12T04:52:00.000Z",
    "lastFound": "2026-11-12",
    "more": [
@@ -2126,7 +2974,22 @@
       "무빙카드를 3일 연속 이용하면 기본 2배 혜택이 제공되는데, 이벤트 응모 시 3배, 하나증권 계좌 보유 손님은 4배, 신규 개설 손님은 최대 5배까지 적립 리워드가 늘어난다.",
       "5배 적립을 적용받으면 ONLINE 모드에서만 월 최대 9만5000 하나머니가 더해져, 이용 패턴과 모드 조합에 따라 매월 최대 17만5000 하나머니까지 챙길 수 있다.",
       "쿠킹 라이브러리에서는 '아시안 플레이버'를 주제로 말레이시안 간장치킨 라이스, 타이완 참깨 누들 등 아시아 가정식을 재해석한 쿡북 메뉴를 2027년 2월까지 선보이고, 4층 원 테이블 다이닝 '그린하우스'에서는 제철 채소와 버섯, 오리 등을 담은 유러피안 코스 '포레스트&테루아'를 내놓는다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": false,
+      "why": "카드 혜택 프로모션",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     }
    ]
   },
@@ -2166,6 +3029,29 @@
     "탑승 기간은 오는 20일부터 내년 2월 21일까지로 한정되며, 성수기 등 노선별 제외 기간에는 혜택이 적용되지 않는다.",
     "트리니티항공 관계자는 “수험생은 수험표 및 대입 원서 접수증 등 증빙 서류 원본이 필요하고, 동반인도 수험생과 동시 수속을 밟아야 한다”고 말했다."
    ],
+   "ai": {
+    "v": 1,
+    "promo": true,
+    "why": "수험생 특별 운임 프로모션",
+    "airlines": [
+     "트리니티항공"
+    ],
+    "name": "수험생 특별 운임",
+    "book": {
+     "from": null,
+     "to": "2027-01-31"
+    },
+    "board": {
+     "from": "2026-11-20",
+     "to": "2027-02-21"
+    },
+    "price": null,
+    "trip": null,
+    "pct": null,
+    "seoul": null,
+    "at": "2026-11-12",
+    "model": "deepseek-v4-flash"
+   },
    "lastDate": "2026-11-12T03:33:04.000Z",
    "lastFound": "2026-11-12"
   },
@@ -2194,6 +3080,24 @@
    },
    "query": "에어부산 {특가말}",
    "bodyAt": "2026-11-12",
+   "ai": {
+    "v": 1,
+    "promo": true,
+    "why": "일본행 항공권 특가 판매",
+    "airlines": [],
+    "name": null,
+    "book": {
+     "from": null,
+     "to": "2026-11-16"
+    },
+    "board": null,
+    "price": 100000,
+    "trip": null,
+    "pct": null,
+    "seoul": null,
+    "at": "2026-11-12",
+    "model": "deepseek-v4-flash"
+   },
    "lastDate": "2026-11-12T03:30:00.000Z",
    "lastFound": "2026-11-12"
   },
@@ -2252,7 +3156,27 @@
      "routes": [],
      "price": null,
      "query": "제주항공 특가",
-     "notified": "2026-11-12"
+     "notified": "2026-11-12",
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "제주항공 운임 특가 판매",
+      "airlines": [
+       "제주항공"
+      ],
+      "name": "알짜노선 빅세일",
+      "book": null,
+      "board": {
+       "from": "2026-11-01",
+       "to": "2027-01-31"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 78,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "c:https://cafe.naver.com/airportshopping/1117|[ 제주항공 ] 동남아&사이판 윈터페스타! 최대 80% 할인 !!!",
@@ -2278,7 +3202,24 @@
      "routes": [],
      "price": null,
      "query": "제주항공 할인",
-     "notified": "2026-11-12"
+     "notified": "2026-11-12",
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "항공사 운임 특가 판매",
+      "airlines": [
+       "제주항공"
+      ],
+      "name": "윈터페스타",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": 80,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "c:https://cafe.naver.com/airportshopping/1115|[ 제주항공 ] 올겨울 코타키나발루 최대 50% 할인 !",
@@ -2304,7 +3245,24 @@
      "routes": [],
      "price": null,
      "query": "제주항공 할인",
-     "notified": "2026-11-12"
+     "notified": "2026-11-12",
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "제주항공 운임 할인 특가",
+      "airlines": [
+       "제주항공"
+      ],
+      "name": "올겨울 코타키나발루 최대 50% 할인",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": 50,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "c:https://cafe.naver.com/playtomato/1197102|[ 제주항공 ] 홍콩 특별 프로모션 소문내기 이벤트",
@@ -2460,7 +3418,24 @@
      "routes": [],
      "price": null,
      "query": "제주항공 특가",
-     "notified": "2026-11-12"
+     "notified": "2026-11-12",
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "제주항공 앵콜 특가 판매",
+      "airlines": [
+       "제주항공"
+      ],
+      "name": "제주항공 3일간 앵콜 특가",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "c:https://cafe.naver.com/checkincafe/148810|노브랜드버거 제주항공 쿠폰 구해용~~",
@@ -2481,7 +3456,24 @@
      "routes": [],
      "price": null,
      "query": "제주항공 이벤트",
-     "notified": "2026-11-12"
+     "notified": "2026-11-12",
+     "ai": {
+      "v": 1,
+      "promo": false,
+      "why": "쿠폰 교환 글",
+      "airlines": [
+       "제주항공"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     }
    ]
   },
@@ -2507,6 +3499,23 @@
     "trip": "oneway"
    },
    "query": "에어부산 특가",
+   "ai": {
+    "v": 1,
+    "promo": true,
+    "why": "에어부산 국내선 특가",
+    "airlines": [
+     "에어부산"
+    ],
+    "name": "에어부산 국내선 특가",
+    "book": null,
+    "board": null,
+    "price": null,
+    "trip": null,
+    "pct": null,
+    "seoul": null,
+    "at": "2026-11-12",
+    "model": "deepseek-v4-flash"
+   },
    "lastDate": "2026-11-12T03:00:45.593Z",
    "lastFound": "2026-11-12",
    "more": [
@@ -2534,7 +3543,24 @@
       "amount": 31900,
       "trip": "oneway"
      },
-     "query": "에어부산 프로모션"
+     "query": "에어부산 프로모션",
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "에어부산 국내선 특가",
+      "airlines": [
+       "에어부산"
+      ],
+      "name": "연말선물 국내선 특가",
+      "book": null,
+      "board": null,
+      "price": 31900,
+      "trip": "편도",
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     }
    ]
   },
@@ -2618,7 +3644,22 @@
       "우리카드, 이달 30일까지 프리미엄 카드 고객 대상 경품 행사",
       "우리금융, 3분기 누적 순익 2조7459억원…전년비 4.9%↓",
       "우리카드, 네이버페이 포인트 1.3% 적립 체크카드 출시"
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": false,
+      "why": "카드 출시 기사",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "https://www.cnbnews.com/news/articleView.html|우리카드, 우수 고객 혜택 강화로 프리미엄 전열 정비",
@@ -2672,7 +3713,22 @@
       "인천공항과 김포공항 주차장에서는 월 2회, 연간 최대 8회까지 1만원 할인 혜택을 제공한다.",
       "우리카드 관계자는 “쇼핑을 자주 이용하시는 고객이라면 다양한 업종 적립과 무이자할부 전환, 해외여행 혜택까지 담은 ‘THE SHOPPER’가 취향에 맞는 카드가 될 것”이라며 “다가오는 연말 쇼핑 시즌에도 많은 이용을 부탁드린다”고 말했다.",
       "연회비는 국내 전용과 해외 겸용 모두 20만원이다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": false,
+      "why": "카드 출시 기사",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "https://www.pointe.co.kr/news/articleView.html|우리카드 , 쇼핑부터 구독· 여행 혜택 집약한 'THE SHOPPER' ",
@@ -2701,7 +3757,22 @@
       "이 중 할인형 바우처는 보유 기간이 늘어날수록 혜택 규모가 커지는 구조로, 첫해·2년 차·3년 차 이후부터는 차등 상향되어 장기 이용 고객의 실질적 이익을 높였다.",
       "국내 가맹점에서 100만 원 이상 일시불 결제 시 3개월 또는 6개월 무이자 할부로 전환할 수 있다.",
       "우리카드 관계자는 “쇼핑을 자주 이용하시는 고객이라면 다양한 업종 적립과 무이자할부전환, 해외여행 혜택까지 담은 ‘THE SHOPPER’가 취향 저격 카드일 것”이라며, “다가오는 연말 쇼핑 시즌에도 많은 이용 부탁드린다”고 전했다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": false,
+      "why": "카드 상품 출시 기사",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "https://www.munhwa.com/article/11630818|우리카드 , 최대 5% 적립 ‘더 쇼퍼’ 출시",
@@ -2730,7 +3801,22 @@
       "국내 가맹점에서 100만 원 초과 금액을 일시불로 결제하면 3개월 또는 6개월 무이자할부로 바꿀 수 있다.",
       "인천·김포공항 주차장 1만 원 할인 혜택도 월 2회, 연 8회 이용할 수 있다.",
       "우리카드 관계자는 “쇼핑 업종별 적립과 무이자할부 전환, 해외여행 혜택까지 담았다”고 말했다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": false,
+      "why": "카드 상품 출시 기사",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     }
    ]
   },
@@ -2885,7 +3971,22 @@
      "body": [
       "프리미엄 바우처도 카드 이용 기간에 따라 확대된다.",
       "고객은 할인형 바우처와 신세계상품권 20만원권 중 선택할 수 있으며, 할인형 바우처는 발급 첫해 21만원에서 2년 차 23만원, 3년 차부터 25만원으로 늘어난다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": false,
+      "why": "카드 출시 기사",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "https://www.startuptoday.co.kr/news/articleView.html|[이슈] 우리카드 , 쇼핑 특화 '더 쇼퍼' 선봬…최대 30% 적립",
@@ -2918,7 +4019,22 @@
       "인천·김포공항 주차장에서는 월 2회, 연 8회까지 1만 원 할인 혜택을 받을 수 있다.",
       "연회비는 국내 전용과 해외 겸용 모두 20만 원이다.",
       "우리카드 관계자는 \"쇼핑을 자주 이용하시는 고객이라면 다양한 업종 적립과 무이자할부 전환, 해외여행 혜택까지 담은 '더 쇼퍼'가 취향 저격 카드일 것\"이라며 \"다가오는 연말 쇼핑 시즌에도 많은 이용 부탁드린다\"고 말했다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": false,
+      "why": "카드 상품 소개 기사",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "https://www.ftimes.kr/news/articleView.html|'전 관중에 응원 유니폼 쏜다' OK저축은행, 7일 부산서 우리카드와 홈",
@@ -3027,7 +4143,22 @@
       "마티나골드 포함 국내외 공항라운지를 이용할 수 있는 '더 라운지'(월 2회, 연 4회) 서비스와 인천, 김포공항 주차장 1만원 할인 혜택을 월 2회, 연 8회 제공한다.",
       "우리카드 관계자는 “쇼핑을 자주 이용하시는 고객이라면 다양한 업종 적립과 무이자할부전환, 해외여행 혜택까지 담은 더 쇼퍼가 취향 저격 카드가 될 것”이라며, “다가오는 연말 쇼핑 시즌에 많은 이용 부탁드린다”고 말했다.",
       "더 쇼퍼의 연회비는 국내 전용과 해외 겸용 모두 20만원이고, 카드 혜택에 대한 자세한 내용은 우리카드 홈페이지 또는 우리WON카드 앱에서 확인할 수 있다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": false,
+      "why": "카드 상품 출시 기사",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "https://news.tf.co.kr/read/economy/2386846.htm|우리카드 , 쇼핑 특화 'THE SHOPPER' 출시…실적·한도 제한 없",
@@ -3056,7 +4187,22 @@
       "또한, 마티나골드를 포함한 국내외 공항 라운지를 이용할 수 있는 더라운지(월 2회, 연 4회) 서비스와 인천, 김포공항 주차장 1만원 할인 혜택(월 2회, 연 8회)을 제공한다.",
       "우리카드 관계자는 \"쇼핑을 자주 이용하는 고객이라면 다양한 업종 적립과 무이자할부 전환, 해외여행 혜택까지 갖춘 더 쇼퍼를 유용하게 활용할 수 있을 것\"이라고 말했다.",
       "연회비는 국내 전용과 해외 겸용 모두 20만원이다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": false,
+      "why": "카드 출시 기사",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "https://www.starnewskorea.com/sports/2026/11/12/2026111211054860699|'부산 4005명→장충 3218명' 우리카드 경기마다 배구팬 몰린다! 구",
@@ -3090,7 +4236,22 @@
       "지난해 3510명 만원 관중을 세 차례 기록했던 우리카드로서는 다시 한 번 장충의 열기를 이어갈 출발점을 마련했다.",
       "프로배구 입장권 온라인 구매 시 신용카드는 50% 청구할인, 체크카드는 30% 캐시백 혜택을 제공한다.",
       "그러나 팬들과의 접점을 넓혀온 구단의 노력에 박철우 감독이 이끄는 선수단의 개막 3연승까지 더해지면서 긍정적인 분위기가 형성되고 있다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": false,
+      "why": "배구 경기 관중 기사",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     }
    ]
   },
@@ -3124,6 +4285,29 @@
     "할인을 받으려면 항공권 예약 과정에서 프로모션 코드 'SUMPURPLEDAY'를 입력하면 된다."
    ],
    "notified": "2026-11-12",
+   "ai": {
+    "v": 1,
+    "promo": true,
+    "why": "항공권 최대 70% 할인 특가",
+    "airlines": [
+     "섬에어"
+    ],
+    "name": "퍼플-프라이데이",
+    "book": {
+     "from": "2026-11-12",
+     "to": "2026-11-17"
+    },
+    "board": {
+     "from": "2026-11-17",
+     "to": "2027-03-27"
+    },
+    "price": null,
+    "trip": null,
+    "pct": 70,
+    "seoul": true,
+    "at": "2026-11-12",
+    "model": "deepseek-v4-flash"
+   },
    "lastDate": "2026-11-12T02:26:00.000Z",
    "lastFound": "2026-11-12",
    "more": [
@@ -3162,7 +4346,30 @@
       "1·2차 여행이 참가자들의 호응을 얻은 데 이어 오는 20일부터 21일까지는 하동과 남해를 중심으로 3차 여행을 진행할 예정이다.",
       "관련 예약과 세부 일정은 섬에어 공식 홈페이지에서 확인할 수 있다."
      ],
-     "notified": "2026-11-12"
+     "notified": "2026-11-12",
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "항공권 최대 70% 할인 특가",
+      "airlines": [
+       "섬에어"
+      ],
+      "name": "섬에어 퍼플-프라이데이",
+      "book": {
+       "from": "2026-11-12",
+       "to": "2026-11-17"
+      },
+      "board": {
+       "from": "2026-11-17",
+       "to": "2027-03-27"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 70,
+      "seoul": true,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "https://www.econovill.com/news/articleView.html|섬에어, 김포-사천 항공권 최대 70% 할인 …17일까지 6일간 특가",
@@ -3197,7 +4404,30 @@
       "특히 지난 10월에는 경남관광재단, 놀루와 협동조합과 협력해 지역 관광 프로그램인 ‘섬에어 타고 남해안 로컬여행’을 선보였다.",
       "해당 프로그램은 1차와 2차 여행에서 참가자들의 높은 호응을 얻었으며 오는 20일부터 21일까지 하동과 남해를 중심으로 3차 여행을 진행할 예정이다.",
       "지역 관광 프로그램의 예약 방법과 세부 일정 등은 섬에어 홈페이지에서 확인할 수 있다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "항공권 최대 70% 할인 특가",
+      "airlines": [
+       "섬에어"
+      ],
+      "name": "김포-사천 항공권 특가",
+      "book": {
+       "from": "2026-11-12",
+       "to": "2026-11-17"
+      },
+      "board": {
+       "from": "2026-11-17",
+       "to": "2027-03-27"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 70,
+      "seoul": true,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "6VFRCdFJtQnNNYTZfS292dFdPYXJ3SFA0ZE9Hd2xhMmN6VHppVnlMZTRVMmFUQ3lQUUFvRUYtVzdOcU1kM09icXI5aDlFQnZ5azlDMEZoVEZsTVdId0tCVmM|경남 사천·남해 항공권, 11월 12~17일 최대 70% 할인, 섬에어",
@@ -3229,7 +4459,30 @@
       "예약 및 자세한 내용은 섬에어 홈페이지를 통해 확인할 수 있다.",
       "· 배포 : 2026년 11월 12일 오전 8시 54분"
      ],
-     "notified": "2026-11-12"
+     "notified": "2026-11-12",
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "항공권 최대 70% 할인 특가",
+      "airlines": [
+       "섬에어"
+      ],
+      "name": "퍼플-프라이데이",
+      "book": {
+       "from": "2026-11-12",
+       "to": "2026-11-17"
+      },
+      "board": {
+       "from": "2026-11-17",
+       "to": "2027-03-27"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 70,
+      "seoul": true,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     }
    ]
   },
@@ -3270,6 +4523,23 @@
     "세부 할인율과 부가 혜택은 투숙 호텔과 예약 조건에 따라 달라진다.",
     "호텔신라는 이번 제휴를 통해 대한항공 국제선 예약 단계에서 호텔 이용 혜택을 함께 안내하고, 항공권 구매 고객을 국내외 호텔 예약으로 연결한다는 계획이다."
    ],
+   "ai": {
+    "v": 1,
+    "promo": false,
+    "why": "호텔 숙박 할인 프로모션",
+    "airlines": [
+     "대한항공"
+    ],
+    "name": null,
+    "book": null,
+    "board": null,
+    "price": null,
+    "trip": null,
+    "pct": null,
+    "seoul": null,
+    "at": "2026-11-12",
+    "model": "deepseek-v4-flash"
+   },
    "lastDate": "2026-11-12T02:10:00.000Z",
    "lastFound": "2026-11-12",
    "more": [
@@ -3308,7 +4578,24 @@
       "한편 한국문화관광연구원이 발표한 국제관광시장전망에 따르면 올해 연간 방한 외래 관광객은 전년 대비 20.9% 증가한 2290만 4000명에 달할 것으로 관측된다.",
       "지난 1~8월 방한 외국인은 전년 동기 대비 21.6% 증가한 1504만 8000명으로, 코로나19 팬데믹 이전 2019년 같은 기간과 비교하면 31.2% 증가한 수치다.",
       "7월(209만3000명)과 8월(224만5000명)엔 두 달 연속 월간 역대 최고 기록을 갈아치웠다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": false,
+      "why": "호텔 할인 프로모션",
+      "airlines": [
+       "대한항공"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     }
    ]
   },
@@ -3524,7 +4811,24 @@
       "amount": 129000,
       "trip": "oneway"
      },
-     "query": "베트남 항공권 특가"
+     "query": "베트남 항공권 특가",
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "비엣젯 특가 판매 소식",
+      "airlines": [
+       "비엣젯"
+      ],
+      "name": "더블데이 특가",
+      "book": null,
+      "board": null,
+      "price": 129000,
+      "trip": "편도",
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "c:https://cafe.naver.com/mindy7857/5525839|비엣젯 항공 11월 이벤트 합니다",
@@ -3547,7 +4851,27 @@
      "allRoutes": false,
      "routes": [],
      "price": null,
-     "query": "베트남 항공권 특가"
+     "query": "베트남 항공권 특가",
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "비엣젯 더블데이 특가",
+      "airlines": [
+       "비엣젯"
+      ],
+      "name": "더블데이 특가",
+      "book": null,
+      "board": {
+       "from": null,
+       "to": "2027-05-31"
+      },
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "c:https://cafe.naver.com/warcraftgamemap/3532552|비엣젯 다낭 여행 11.11 할인 더블 특가 .",
@@ -3575,7 +4899,24 @@
       "amount": 129000,
       "trip": "oneway"
      },
-     "query": "베트남 항공권 특가"
+     "query": "베트남 항공권 특가",
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "비엣젯 11.11 특가 판매",
+      "airlines": [
+       "비엣젯"
+      ],
+      "name": "11.11 더블데이 특가",
+      "book": null,
+      "board": null,
+      "price": 129000,
+      "trip": "편도",
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "c:https://cafe.naver.com/tybwondergirl5/116307|비엣젯 할인 하네요~^^",
@@ -3663,7 +5004,24 @@
      "allRoutes": false,
      "routes": [],
      "price": null,
-     "query": "베트남 항공권 특가"
+     "query": "베트남 항공권 특가",
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "비엣젯 항공권 특가 프로모션",
+      "airlines": [
+       "비엣젯 항공"
+      ],
+      "name": "더블데이 특가",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "c:https://cafe.naver.com/warcraftgamemap/3533146|다낭 비엣젯 항공 11월 11일 더블데이 할인 정보 ( 편도할인, 디럭스",
@@ -3688,7 +5046,24 @@
      "allRoutes": false,
      "routes": [],
      "price": null,
-     "query": "베트남 항공권 특가"
+     "query": "베트남 항공권 특가",
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "비엣젯 더블데이 항공권 할인",
+      "airlines": [
+       "비엣젯"
+      ],
+      "name": "더블데이 특가 슈퍼세일",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "c:https://cafe.naver.com/mindy7857/5528147|나트랑 비엣젯 11월 11일 더블데이 할인 정보 ( 편도 할인 , 디럭스",
@@ -3713,7 +5088,24 @@
      "allRoutes": false,
      "routes": [],
      "price": null,
-     "query": "항공권 할인코드"
+     "query": "항공권 할인코드",
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "비엣젯 더블데이 항공권 할인",
+      "airlines": [
+       "비엣젯"
+      ],
+      "name": "더블데이 특가 슈퍼세일",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "c:https://cafe.naver.com/zzop/4337925|12월 항공권 구매 ( 비엣젯 항공 11월11일 더블데이 이벤트 )",
@@ -3733,7 +5125,24 @@
      "allRoutes": false,
      "routes": [],
      "price": null,
-     "query": "비엣젯 이벤트"
+     "query": "비엣젯 이벤트",
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "비엣젯 더블데이 항공권 특가",
+      "airlines": [
+       "비엣젯항공"
+      ],
+      "name": "더블데이 이벤트",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     }
    ]
   },
@@ -3871,7 +5280,22 @@
       "수출 역대 최대라는데…상위 10대 기업 60% 싹쓸이",
       "“법만 만들면 뭐하나” … 민간이윤 10% 상한, 실제 검사는 ‘0건’",
       "10월 가계대출 다시 증가 전환…주택담보대출 증가 폭 확대"
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": false,
+      "why": "항공권 특가 아님",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "http://www.whitepaper.co.kr/news/articleView.html|현대카드, 4년 연속 이익 증가…PLCC 2.0·스테이블코인 송금 고도화",
@@ -4037,7 +5461,22 @@
      "bodyAt": "2026-11-10",
      "body": [
       "이와 함께 추첨을 통해 순금 5돈 골드바와 대한항공 300만원 기프트카드를 각각 1명에게 증정한다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": false,
+      "why": "구독 프로모션·경품 이벤트",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "https://www.slist.kr/news/articleView.html|G마켓, '꼭 멤버십 라이프+' 출시...월 4900원의 행복",
@@ -4066,7 +5505,22 @@
      "bodyAt": "2026-11-10",
      "body": [
       "추첨을 통해 순금 5돈 골드바(1명), 대한항공 300만원 기프트카드(1명) 등 경품도 증정한다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": false,
+      "why": "항공권 운임 특가 아님",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "https://biz.newdaily.co.kr/site/data/html/2026/11/10/2026111000146.html|디즈니+ 승부수 띄운 G마켓 멤버십 … 4900원에 쇼핑 혜택까지",
@@ -4098,7 +5552,22 @@
       "멤버십 가입 후 이벤트 페이지에서 '100원 쿠폰'을 내려받으면 자동 응모된다.",
       "오는 30일까지 '지마켓 꼭 현대카드'를 신규 발급하고 멤버십 이용료를 정기결제로 등록하면 6개월 동안 매월 이용료 4900원을 전액 돌려준다.",
       "추첨을 통해 순금 5돈 골드바와 대한항공 300만원 기프트카드도 각각 1명에게 증정한다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": false,
+      "why": "멤버십 이벤트·기프트카드 증정",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "http://www.biztribune.co.kr/news/articleView.html|G마켓, '꼭 멤버십 라이프+' 공식 출시..라떼 한잔 값으로 디즈니에 ",
@@ -4130,7 +5599,22 @@
       "추첨을 통해 순금 5돈 골드바(1명), 대한항공 300만원 기프트카드(1명) 등 경품도 증정한다.",
       "한편 디즈니플러스에서 공개한 ‘재혼황후’는 공개 첫주 드라마 화제성 1위에 오르고 프로그램 점유율 21.16%를 기록했다.",
       "디즈니플러스는 오는 12월 5일에서 6일 이틀동안 진행되는 AAA 2026도 단독 생중계한다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": false,
+      "why": "멤버십 프로모션·경품",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "http://www.finomy.com/news/articleView.html|G마켓, 디즈니+ 결합한 '꼭 멤버십 라이프+' 출시",
@@ -4163,7 +5647,22 @@
       "오는 30일까지 '지마켓 꼭 현대카드'를 신규 발급하고 꼭 멤버십 라이프+ 이용료를 정기결제로 등록하면 6개월간 매월 이용료 4900원을 전액 캐시백한다.",
       "한편, G마켓은 지난달 올해 3분기까지 거래액이 3개 분기 연속 증가했다고 발표했다.",
       "글로벌 수출과 배송 서비스 확대도 추진 중으로, 이르면 내년 상반기부터 알리바바 글로벌 플랫폼과 연계해 판매 채널을 전 세계 120여개국으로 넓힐 계획이다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": false,
+      "why": "멤버십·카드 이벤트",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "https://theviewers.co.kr/View.aspx|[유통갤러리] 현대 백화점그룹 11개 상장사, KCGS 평가서 ‘통합 A",
@@ -4187,7 +5686,22 @@
      "routes": [],
      "price": null,
      "query": "현대카드 해외여행 할인",
-     "bodyAt": "2026-11-12"
+     "bodyAt": "2026-11-12",
+     "ai": {
+      "v": 1,
+      "promo": false,
+      "why": "eSIM·유통 소식",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     }
    ]
   },
@@ -4252,6 +5766,21 @@
     "행사 기간 전원 당첨 이벤트로 최대 6000원 쿠폰이나 장보기 지원금을 준다.",
     "최근 3개월간 주간ㆍ새벽배송 구매 이력이 없는 고객에게는 4만원 이상 구매 시 쓸 수 있는 1만원 장바구니 쿠폰을 지급한다."
    ],
+   "ai": {
+    "v": 1,
+    "promo": false,
+    "why": "eSIM·유통 할인 소식",
+    "airlines": [],
+    "name": null,
+    "book": null,
+    "board": null,
+    "price": null,
+    "trip": null,
+    "pct": null,
+    "seoul": null,
+    "at": "2026-11-12",
+    "model": "deepseek-v4-flash"
+   },
    "lastDate": "2026-11-12T00:40:00.000Z",
    "lastFound": "2026-11-12"
   },
@@ -4295,6 +5824,29 @@
     "한편, 비엣젯항공은 최근 호찌민-세부, 하노이-세부, 호찌민-클라크 등 베트남과 필리핀을 잇는 3개 신규 노선에 취항했다.",
     "비엣젯항공은 올해 말부터 2027년 초까지 글로벌 노선망도 확대할 계획이다."
    ],
+   "ai": {
+    "v": 1,
+    "promo": true,
+    "why": "항공권 특가 프로모션",
+    "airlines": [
+     "비엣젯항공"
+    ],
+    "name": "더블데이 항공권 특가 프로모션",
+    "book": {
+     "from": "2026-11-11",
+     "to": "2026-11-13"
+    },
+    "board": {
+     "from": "2026-12-01",
+     "to": "2027-05-31"
+    },
+    "price": 129000,
+    "trip": "편도",
+    "pct": 25,
+    "seoul": null,
+    "at": "2026-11-12",
+    "model": "deepseek-v4-flash"
+   },
    "lastDate": "2026-11-11T23:56:00.000Z",
    "lastFound": "2026-11-12"
   },
@@ -4347,6 +5899,21 @@
     "겨울용 상품으로는 '더플레오 구스 거위털 차렵이불'(SS·2만 9900원), '듀라텍스 탄소 전기매트'(싱글·3만 8900원), '오조크 코듀로이 배색 경량 다운 점퍼'(4만 9800원) 등을 준비했다.",
     "제철 먹거리로는 '포항구룡포 완전 손질 햇과메기 10미 해초 세트'(2만원), '당일조업 통영 햇 생굴'(2kg·2만 1500원), '대천항 손질 물메기'(1마리·1만 2700원), '제주 햇 황금향'(2kg·1만 3830원) 등을 판매한다."
    ],
+   "ai": {
+    "v": 1,
+    "promo": false,
+    "why": "유통 행사 기사",
+    "airlines": [],
+    "name": null,
+    "book": null,
+    "board": null,
+    "price": null,
+    "trip": null,
+    "pct": null,
+    "seoul": null,
+    "at": "2026-11-12",
+    "model": "deepseek-v4-flash"
+   },
    "lastDate": "2026-11-11T21:02:00.000Z",
    "lastFound": "2026-11-12"
   },
@@ -4398,6 +5965,21 @@
     "1차 행사 할인율은 최대 65%다.",
     "행사 기간 롯데면세점에서 1달러 이상 결제하고 다음달 31일까지 대한항공으로 출국하는 고객 중 1명에게는 괌 노선 프레스티지 왕복 항공권 2매를 준다."
    ],
+   "ai": {
+    "v": 1,
+    "promo": false,
+    "why": "면세점 경품·백화점 할인 행사",
+    "airlines": [],
+    "name": null,
+    "book": null,
+    "board": null,
+    "price": null,
+    "trip": null,
+    "pct": null,
+    "seoul": null,
+    "at": "2026-11-12",
+    "model": "deepseek-v4-flash"
+   },
    "lastDate": "2026-11-11T21:00:00.000Z",
    "lastFound": "2026-11-12"
   },
@@ -4425,6 +6007,26 @@
    "price": null,
    "query": "트리니티항공 {특가말}",
    "bodyAt": "2026-11-12",
+   "ai": {
+    "v": 1,
+    "promo": true,
+    "why": "수험생 항공권 할인 프로모션",
+    "airlines": [
+     "트리니티항공"
+    ],
+    "name": "수능 수험생 이벤트",
+    "book": {
+     "from": null,
+     "to": "2027-01-31"
+    },
+    "board": null,
+    "price": null,
+    "trip": null,
+    "pct": 25,
+    "seoul": null,
+    "at": "2026-11-12",
+    "model": "deepseek-v4-flash"
+   },
    "lastDate": "2026-11-11T17:33:29.000Z",
    "lastFound": "2026-11-12"
   },
@@ -4481,6 +6083,29 @@
     "캐세이퍼시픽 공식 홈페이지에서 회원 로그인 후 출발지와 날짜, 좌석 등급을 선택해 코드를 입력하면 실제 적용 여부와 결제액을 확인할 수 있다.",
     "이번 블랙프라이데이 행사의 핵심은 7%라는 숫자 하나보다 일반석과 상위 좌석의 할인 상한, 아시아 특별 운임과의 중복 적용 가능성, 보너스 마일 제공 조건에 있다."
    ],
+   "ai": {
+    "v": 1,
+    "promo": true,
+    "why": "캐세이퍼시픽 항공권 할인",
+    "airlines": [
+     "캐세이퍼시픽"
+    ],
+    "name": "블랙프라이데이",
+    "book": {
+     "from": null,
+     "to": "2026-11-30"
+    },
+    "board": {
+     "from": "2026-12-01",
+     "to": "2027-07-15"
+    },
+    "price": null,
+    "trip": null,
+    "pct": 10,
+    "seoul": null,
+    "at": "2026-11-12",
+    "model": "deepseek-v4-flash"
+   },
    "lastDate": "2026-11-11T14:59:00.000Z",
    "lastFound": "2026-11-12",
    "more": [
@@ -4596,7 +6221,30 @@
       "해당 혜택은 11월 30일까지 예약을 완료하고, 2027년 1월 7일부터 7월 15일 사이에 출발하는 대상 항공편에 적용된다.",
       "다만 노선별로 할인 적용이 제외되는 기간이 있어 예약 전 확인이 필요하다.",
       "캐세이퍼시픽항공은 이번 블랙프라이데이 프로모션을 통해 연말 여행은 물론 내년 상반기 해외여행을 미리 준비하는 고객들에게 다양한 혜택을 제공할 계획이다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "전노선 항공권 7% 할인",
+      "airlines": [
+       "캐세이퍼시픽항공"
+      ],
+      "name": "플라이 라이크 잇츠 프라이데이",
+      "book": {
+       "from": "2026-11-10",
+       "to": "2026-11-30"
+      },
+      "board": {
+       "from": "2027-01-07",
+       "to": "2027-07-15"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 7,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "CWEVHZkRmRnBpRTVIX0lJUkFTal9kRHctRWYzbVYyU3dOdk80UU1Ndk5qREQ2cGtEbVU5Z0VUbmh5d3hjT1BCNk1OVGRGYjVUSURucVZHV2l0cHM1dVdnaV8|캐세이퍼시픽항공, 블랙 프라이데이 맞아 전 노선 항공권 할인",
@@ -4632,7 +6280,30 @@
       "다만 노선에 따라 일부 제외 기간이 있다.",
       "캐세이퍼시픽항공은 홍콩을 거점으로 전 세계 100개 이상의 도시를 연결하고 있다.",
       "이번 프로모션을 통해 홍콩과 동남아시아를 비롯해 유럽, 미주, 호주 등 주요 취항지의 항공권을 할인된 운임으로 예약할 수 있다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "항공권 운임 할인 프로모션",
+      "airlines": [
+       "캐세이퍼시픽항공"
+      ],
+      "name": "플라이 라이크 잇츠 프라이데이",
+      "book": {
+       "from": "2026-11-10",
+       "to": "2026-11-30"
+      },
+      "board": {
+       "from": "2027-01-07",
+       "to": "2027-07-15"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 7,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "5N01yM1U4OHFYbkNVQ1JGajE1OGJCRE5lYWwzY3ROSHlBMU1kOHBzdnMtRGNCWDBaZUhXdUtmdVJyVGNXd24xaVRtOWF4YlhidW5xUG5veW1XZHJnWlctYlc|캐세이퍼시픽항공, ‘Fly Like It’s Friday’ 프로모션",
@@ -4670,7 +6341,30 @@
       "해당 혜택은 11월 30일까지 예약하고 2027년 1월 7일부터 7월 15일까지 출발하는 대상 항공편에 적용되며 노선별 일부 제외 기간이 적용된다.",
       "캐세이퍼시픽항공은 홍콩을 기반으로 전 세계 100개 이상의 도시를 잇고 있다.",
       "이번 프로모션을 활용하면 짧은 일정으로 떠나기 좋은 홍콩은 물론, 홍콩을 거쳐 동남아시아의 휴양지와 유럽·미주·호주의 주요 도시까지 다양한 여행지를 더욱 합리적으로 계획할 수 있다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "항공권 할인 프로모션",
+      "airlines": [
+       "캐세이퍼시픽항공"
+      ],
+      "name": "Fly Like It’s Friday",
+      "book": {
+       "from": null,
+       "to": "2026-11-30"
+      },
+      "board": {
+       "from": "2027-01-07",
+       "to": "2027-07-15"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 7,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "https://www.gukjenews.com/news/articleView.html|캐세이퍼시픽항공, 전 노선 할인 +보너스 마일 블랙프라이데이 프로모션 .",
@@ -4705,7 +6399,30 @@
       "특히 홍콩 및 아시아 노선 일반석의 경우, 이미 10% 할인된 운임에 추가로 7% 할인이 적용되고 1,500 보너스 마일도 제공된다.",
       "이 프로모션은 11월 30일까지 예약한 항공편 중 2027년 1월 7일부터 7월 15일까지 출발하는 일정에 적용되며, 일부 노선은 제외 기간이 있다.",
       "캐세이퍼시픽항공은 홍콩을 거점으로 전 세계 100개 이상 도시를 운항하고 있다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "전노선 항공권 할인 프로모션",
+      "airlines": [
+       "캐세이퍼시픽항공"
+      ],
+      "name": "블랙프라이데이 프로모션",
+      "book": {
+       "from": null,
+       "to": "2026-11-30"
+      },
+      "board": {
+       "from": "2027-01-07",
+       "to": "2027-07-15"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 10,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "NJZ2NyTlowYXBabjdhekp5aDg5VWwydnhuckRhclo0X1FobFJlWnNQLU1sak1IYTI1bEc3aXlXUnFHWlllN3FZajZCY2lNM2JOZzF0WmpOXzc2dG94SVAybw|캐세이퍼시픽항공, 블랙 프라이데이 맞아 ‘Fly Like It’s Fri",
@@ -4750,7 +6467,30 @@
       "이유진♥차경은 결혼에 장동윤까지 한 가족…배우만 무려 6명",
       "‘1월 전역’ 차은우, 지하철 목격담…“진짜 잘생겼어”",
       "추락하는 한국 축구…TV조선, 수익성 악화에 11월 A매치 중계 ‘백기’"
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "항공권 할인 프로모션",
+      "airlines": [
+       "캐세이퍼시픽항공"
+      ],
+      "name": "Fly Like It's Friday",
+      "book": {
+       "from": "2026-11-11",
+       "to": "2026-11-30"
+      },
+      "board": {
+       "from": "2027-01-07",
+       "to": "2027-07-15"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 7,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "https://enter.etoday.co.kr/news/view/305025|캐세이퍼시픽항공, 블랙프라이데이 특가 프로모션 전개",
@@ -4921,7 +6661,24 @@
      "bodyAt": "2026-11-12",
      "body": [
       "에어서울 관계자는 “겨울 휴양 수요에 맞춰 국내외 탑승객의 항공비 할인과 현지 체류 편의와 여행 만족도를 높이는 데 집중했다”라며 “앞으로도 주요 노선별 맞춤형 제휴를 확대해 에어서울만의 차별화된 여행 경험을 제공하겠다”라고 했다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "에어서울 항공비 할인 프로모션",
+      "airlines": [
+       "에어서울"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     }
    ]
   },
@@ -4964,7 +6721,24 @@
      "allRoutes": true,
      "routes": [],
      "price": null,
-     "query": "항공권 할인코드"
+     "query": "항공권 할인코드",
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "항공권 할인 프로모션",
+      "airlines": [
+       "트리니티 항공"
+      ],
+      "name": "트리니티 항공 국제선 항공권 최대 할인 프로모션",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     }
    ]
   },
@@ -5162,7 +6936,24 @@
      "allRoutes": false,
      "routes": [],
      "price": null,
-     "query": "이스타항공 특가"
+     "query": "이스타항공 특가",
+     "ai": {
+      "v": 1,
+      "promo": false,
+      "why": "골프텔 패키지 상품",
+      "airlines": [
+       "이스타항공"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     }
    ]
   },
@@ -5297,7 +7088,33 @@
       "트립닷컴은 14일까지 오사카·후쿠오카·냐짱·홍콩 등의 편도 항공권과 국내외 주요 호텔 숙박 상품을 1만여원부터 판매하는 '11.11 메가 세일'을 연다.",
       "매일 오전 9시에는 최대 80% 할인 쿠폰을 제공하며, 유명 테마파크 입장권 1+1 행사도 진행한다.",
       "캐세이퍼시픽 양석호 대표는 \"연말을 앞두고 항공사와 여행 플랫폼들이 내년 여행 수요를 선점하기 위한 판촉 경쟁에 나서고 있다\"며 \"특가 상품은 판매 수량과 이용 기간, 취소·환불 조건 등을 확인할 필요가 있다\"고 말했다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "항공권 할인 특가 판매",
+      "airlines": [
+       "세부퍼시픽항공",
+       "캐세이퍼시픽항공",
+       "카타르항공",
+       "로열브루나이항공"
+      ],
+      "name": "11월11일 할인 전",
+      "book": {
+       "from": "2026-11-11",
+       "to": "2026-11-30"
+      },
+      "board": {
+       "from": "2027-02-01",
+       "to": "2027-07-31"
+      },
+      "price": 1100,
+      "trip": null,
+      "pct": 11,
+      "seoul": true,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "https://www.gukjenews.com/news/articleView.html|세부퍼시픽항공, 11.11 특가 항공권 프로모션 런칭",
@@ -5482,7 +7299,24 @@
      "allRoutes": false,
      "routes": [],
      "price": null,
-     "query": "대한항공 할인"
+     "query": "대한항공 할인",
+     "ai": {
+      "v": 1,
+      "promo": false,
+      "why": "여행사 긴급모객 땡처리",
+      "airlines": [
+       "대한항공"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "c:https://cafe.naver.com/imsanbu/80504651|휴대용 윰차 대한항공 콜라보 라방 ~체감 20만원대",
@@ -5508,7 +7342,22 @@
       "amount": 200000,
       "trip": "oneway?"
      },
-     "query": "대한항공 할인"
+     "query": "대한항공 할인",
+     "ai": {
+      "v": 1,
+      "promo": false,
+      "why": "유모차 판매 방송",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "c:https://cafe.naver.com/joonggonara/412793840|[10월신규,이벤트] 재천마켓,아시아나,대한항공,항공기,여객기,비행기,다",
@@ -5535,7 +7384,22 @@
       "amount": 100000,
       "trip": "oneway?"
      },
-     "query": "Ethiopian Airlines 할인"
+     "query": "Ethiopian Airlines 할인",
+     "ai": {
+      "v": 1,
+      "promo": false,
+      "why": "항공기 모형 판매 글",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "c:https://cafe.naver.com/flytogether/24341|[12월신규, 연말 세일 ]아시아나,대한항공,항공기,여객기,비행기,다이캐",
@@ -5684,7 +7548,24 @@
       "amount": 200000,
       "trip": "oneway?"
      },
-     "query": "대한항공 할인"
+     "query": "대한항공 할인",
+     "ai": {
+      "v": 1,
+      "promo": false,
+      "why": "유모차 콜라보 이벤트",
+      "airlines": [
+       "대한항공"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "c:https://cafe.naver.com/imsanbu/80504335|❣️ 대한항공 pick 휴대용 유모차 쇼라! 30만원대 핫딜",
@@ -5707,7 +7588,22 @@
       "amount": 300000,
       "trip": "oneway?"
      },
-     "query": "대한항공 할인"
+     "query": "대한항공 할인",
+     "ai": {
+      "v": 1,
+      "promo": false,
+      "why": "유모차 핫딜 글",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     }
    ]
   },
@@ -5734,6 +7630,26 @@
    "routes": [],
    "price": null,
    "query": "항공권 할인코드",
+   "ai": {
+    "v": 1,
+    "promo": true,
+    "why": "캐세이퍼시픽 항공권 할인 특가",
+    "airlines": [
+     "캐세이퍼시픽"
+    ],
+    "name": "캐세이퍼시픽 블랙프라이데이 2026",
+    "book": {
+     "from": null,
+     "to": "2026-11-30"
+    },
+    "board": null,
+    "price": null,
+    "trip": null,
+    "pct": null,
+    "seoul": null,
+    "at": "2026-11-12",
+    "model": "deepseek-v4-flash"
+   },
    "lastDate": "2026-11-11T03:00:47.805Z",
    "lastFound": "2026-11-11"
   },
@@ -5775,6 +7691,28 @@
     "트리니티항공은 내년 1월 말까지, 세부퍼시픽은 내년 2~7월, 캐세이퍼시픽의 홍콩·아시아 특별 할인은 내년 1월 7일~7월 15일 출발편을 대상으로 한다.",
     "할인 코드 적용 여부와 예약 변경·환불 조건까지 확인해야 실제 여행 경비를 보다 정확하게 계산할 수 있다."
    ],
+   "ai": {
+    "v": 1,
+    "promo": true,
+    "why": "항공사 운임 할인 특가",
+    "airlines": [
+     "세부퍼시픽항공",
+     "트리니티항공",
+     "캐세이퍼시픽항공"
+    ],
+    "name": "11.11 특가·블랙 프라이데이 프로모션",
+    "book": {
+     "from": null,
+     "to": "2026-11-30"
+    },
+    "board": null,
+    "price": 117000,
+    "trip": "편도",
+    "pct": null,
+    "seoul": null,
+    "at": "2026-11-12",
+    "model": "deepseek-v4-flash"
+   },
    "lastDate": "2026-11-11T02:08:00.000Z",
    "lastFound": "2026-11-11",
    "more": [
@@ -5804,7 +7742,22 @@
       "trip": "oneway"
      },
      "query": "트리니티항공 {특가말}",
-     "bodyAt": "2026-11-11"
+     "bodyAt": "2026-11-11",
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "항공권 블프 할인전",
+      "airlines": [],
+      "name": "블랙 프라이데이 항공권 할인전",
+      "book": null,
+      "board": null,
+      "price": 117000,
+      "trip": "편도",
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "Ym1rVkhZcGpQaTYyZ1A0N0RXanRyZEVndlRPajhiaWdZNzV6NXpTeXBGeGZXTUNWMmZDdTJwR0hEclpnSkFPWFV1cFExNVJlSHJBNm9lQmVPRFRtWnhNdnpB|항공권도 블프!…“필리핀 편도 11만7천원부터” 항공사 할인전 후끈",
@@ -5859,7 +7812,32 @@
       "세부퍼시픽항공의 11.11 특가는 12일, 트리니티항공의 지역 공항 할인은 23일, 캐세이퍼시픽항공의 블랙 프라이데이 프로모션은 30일 마감된다.",
       "트리니티항공은 내년 1월 말까지, 세부퍼시픽은 내년 2~7월, 캐세이퍼시픽의 홍콩·아시아 특별 할인은 내년 1월 7일~7월 15일 출발편을 대상으로 한다.",
       "할인 코드 적용 여부와 예약 변경·환불 조건까지 확인해야 실제 여행 경비를 보다 정확하게 계산할 수 있다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "항공사 항공권 할인 프로모션",
+      "airlines": [
+       "캐세이퍼시픽",
+       "세부퍼시픽",
+       "트리니티항공"
+      ],
+      "name": "블랙 프라이데이 특별 프로모션",
+      "book": {
+       "from": null,
+       "to": "2026-11-30"
+      },
+      "board": {
+       "from": "2027-01-07",
+       "to": "2027-07-31"
+      },
+      "price": 117000,
+      "trip": "편도",
+      "pct": 7,
+      "seoul": true,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     }
    ]
   },
@@ -5899,6 +7877,24 @@
     "한편 트립닷컴은 오는 14일까지 플라이트 데이, 호텔 데이, 앙코르 데이를 이어가며 매일 오전 9시 최대 80% 할인 쿠폰을 선착순 지급하고, 유니버설 스튜디오 및 디즈니랜드 1+1 상품, 데이터 유심 1000원 판매 등 다양한 이벤트를 지속할 예정이다."
    ],
    "notified": "2026-11-11",
+   "ai": {
+    "v": 1,
+    "promo": true,
+    "why": "항공권 특가 판매",
+    "airlines": [],
+    "name": "메가세일",
+    "book": {
+     "from": null,
+     "to": "2026-11-14"
+    },
+    "board": null,
+    "price": 1100,
+    "trip": null,
+    "pct": null,
+    "seoul": true,
+    "at": "2026-11-12",
+    "model": "deepseek-v4-flash"
+   },
    "lastDate": "2026-11-11T02:04:00.000Z",
    "lastFound": "2026-11-11"
   },
@@ -5935,6 +7931,29 @@
     "제주 등 주요 지역 공항에서 출발하는 국내선 및 국제선 전 노선이며, 탑승 기간은 이달 10일부터 내년 1월31일까지로 일부 기간은 제외된다.",
     "행사 기간 동안 지역 출발 항공권을 구매하는 고객은 프로모션 페이지에서 노선별 특별 할인 쿠폰을 다운로드해 적용할 수 있으며, 결제 금액에 따라 최대 2만원의 즉시 할인 혜택이 적용된다."
    ],
+   "ai": {
+    "v": 1,
+    "promo": true,
+    "why": "지역발 항공권 할인 프로모션",
+    "airlines": [
+     "트리니티항공"
+    ],
+    "name": "우리 동네 할인",
+    "book": {
+     "from": "2026-11-10",
+     "to": "2026-11-23"
+    },
+    "board": {
+     "from": "2026-11-10",
+     "to": "2027-01-31"
+    },
+    "price": null,
+    "trip": null,
+    "pct": null,
+    "seoul": false,
+    "at": "2026-11-12",
+    "model": "deepseek-v4-flash"
+   },
    "lastDate": "2026-11-11T01:58:00.000Z",
    "lastFound": "2026-11-11"
   },
@@ -5980,6 +7999,21 @@
     "스타터 플랜 정가는 4만4000원이며 상시 할인가를 적용하면 40% 할인된 2만6400원이다.",
     "지난 프로모션에서 진행한 판례 검색 스탬프 이벤트는 11월 29일까지, 구독 전환 이벤트는 이달 말일까지 계속된다."
    ],
+   "ai": {
+    "v": 1,
+    "promo": false,
+    "why": "항공권 운임 특가 아님",
+    "airlines": [],
+    "name": null,
+    "book": null,
+    "board": null,
+    "price": null,
+    "trip": null,
+    "pct": null,
+    "seoul": null,
+    "at": "2026-11-12",
+    "model": "deepseek-v4-flash"
+   },
    "lastDate": "2026-11-11T01:10:00.000Z",
    "lastFound": "2026-11-11",
    "more": [
@@ -6046,7 +8080,22 @@
       "가입 후 이벤트 페이지에서 ‘100원 쿠폰’을 내려받으면 경품 응모가 자동으로 이뤄진다.",
       "11월 30일까지 ‘지마켓 꼭 현대카드’를 새로 발급받은 뒤 ‘꼭 멤버십 라이프+’ 월 이용료를 정기결제로 등록하면, 6개월 동안 매달 이용료 4,900원을 전액 캐시백으로 돌려받는다.",
       "순금 5돈 골드바(1명)와 대한항공 300만 원 기프트카드(1명)도 추첨으로 준다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": false,
+      "why": "구독 이벤트·경품 추첨",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     }
    ]
   },
@@ -6386,7 +8435,22 @@
      "body": [
       "신한카드 고향사랑기부만의 혜택, 마이신한포인트에 여행상품권 100만원 추첨까지 _ 할인·이벤트 정보",
       "백화점 3사, 외국인 증가 호실적 연말까지 잇는다…겨울 정기세일 · 문화 콘텐츠 강화 _ 유통 게시판"
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": false,
+      "why": "카드 이벤트·여행상품권 추첨",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     }
    ]
   },
@@ -6870,7 +8934,22 @@
      "routes": [],
      "price": null,
      "query": "도쿄 항공권 {특가말}",
-     "bodyAt": "2026-11-11"
+     "bodyAt": "2026-11-11",
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "1100원 항공권 특가 판매",
+      "airlines": [],
+      "name": "트립닷컴 11.11 메가세일",
+      "book": null,
+      "board": null,
+      "price": 1100,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     }
    ]
   },
@@ -6952,7 +9031,22 @@
       "10만원 이상 기부한 고객은 행운룰렛에 참여할 수 있으며, 배달의민족 1만원권과 GS25 5000원권, 메가MGC커피 아메리카노 쿠폰, 마이신한포인트 500포인트 및 100포인트 중 하나를 받을 수 있다.",
       "매주 1명씩 총 10명에게 30만원 상당의 여기어때 여행상품권을 지급하며 전체 이벤트 기간 기부 고객을 대상으로 추가 추첨을 진행해 1명에게 100만원, 2명에게 50만원 상당의 여행상품권을 증정한다.",
       "이와 함께 오는 12월 27일까지 신한쏠페이 고향사랑기부제 이벤트를 블로그와 SNS, 온라인 카페 등에 공유하고 응모한 고객에게 매주 100명씩 총 900명에게 행운룰렛 참여권을 추가 지급한다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": false,
+      "why": "카드사 기부 이벤트",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "https://www.finomy.com/news/articleView.html|신한카드, 고향사랑기부 고객에 포인트·여행상품권 혜택",
@@ -6991,7 +9085,22 @@
       "매주 1명씩 총 10명에게 30만원 상당의 여기어때 여행상품권을 제공한다.",
       "이벤트 기간 전체 기부 고객을 대상으로 한 추가 추첨에서는 1명에게 100만원, 2명에게 50만원 상당의 여행상품권을 지급한다.",
       "오는 12월27일까지 신한쏠페이 고향사랑기부제 이벤트를 블로그와 SNS, 온라인 카페 등에 공유하고 응모하면 매주 100명씩 총 900명에게 행운룰렛 참여권을 제공한다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": false,
+      "why": "카드사 기부 이벤트",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     }
    ]
   },
@@ -7073,7 +9182,22 @@
       "국내 시내점에서는 구매 금액에 따라 최대 177만원 상당의 LDF PAY를 증정한다.",
       "겨울여행제 기간 시내점에서 300달러 이상 구매한 내국인 고객을 대상으로 항공권 추첨 행사도 진행한다.",
       "대한항공 멜버른 왕복 항공권 5매와 제주항공 베트남 왕복 항공권 10매 등 총 25매를 경품으로 제공한다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": false,
+      "why": "면세점 할인·항공권 경품",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "http://www.thefirstmedia.net/news/articleView.html|롯데면세점, 블랙프라이데이 맞아 온라인 최대 65% 할인 … 항공권 경품",
@@ -7109,7 +9233,22 @@
       "출국 전 국내 매장에 비치된 QR코드를 스캔해 ONE PASS 이미지를 저장한 뒤 호주와 베트남의 행사 참여 매장에서 결제 전에 제시하면 매장별 조건에 따라 추가 혜택을 받을 수 있다.",
       "명동본점과 제주점의 패션·시계·주얼리 카테고리, 월드타워점과 부산점의 전 카테고리에서 구매 금액에 따라 LDF PAY를 최대 177만원까지 증정한다.",
       "겨울여행제 기간 시내점에서 300달러 이상 구매하고 응모한 내국인 고객에게는 추첨을 통해 항공권을 제공한다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": false,
+      "why": "면세점 할인·경품 행사",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     }
    ]
   },
@@ -7130,6 +9269,23 @@
    "routes": [],
    "price": null,
    "query": "항공권 할인코드",
+   "ai": {
+    "v": 1,
+    "promo": true,
+    "why": "제주항공 전노선 겨울 특가",
+    "airlines": [
+     "제주항공"
+    ],
+    "name": "겨울 특가 타임세일",
+    "book": null,
+    "board": null,
+    "price": null,
+    "trip": null,
+    "pct": null,
+    "seoul": null,
+    "at": "2026-11-12",
+    "model": "deepseek-v4-flash"
+   },
    "lastDate": "2026-11-10T13:00:48.754Z",
    "lastFound": "2026-11-10"
   },
@@ -7153,6 +9309,23 @@
     "trip": "oneway"
    },
    "query": "항공권 프로모션 코드",
+   "ai": {
+    "v": 1,
+    "promo": true,
+    "why": "제주항공 동남아 특가 판매",
+    "airlines": [
+     "제주항공"
+    ],
+    "name": "겨울 전노선 타임세일",
+    "book": null,
+    "board": null,
+    "price": 140000,
+    "trip": "편도",
+    "pct": null,
+    "seoul": null,
+    "at": "2026-11-12",
+    "model": "deepseek-v4-flash"
+   },
    "lastDate": "2026-11-10T13:00:48.754Z",
    "lastFound": "2026-11-10"
   },
@@ -7234,7 +9407,22 @@
       "호주·베트남 현지 참여 매장에서 추가 혜택을 받을 수 있는 '롯데면세점 ONE PASS'가 운영되고, 명동본점·제주점, 월드타워점·부산점 등 각 지점별로 구매 금액에 따라 최대 177만 원의 LDF PAY가 적립된다.",
       "대한항공 멜버른 왕복 항공권 5매, 제주항공 베트남 왕복 항공권 10매, 제주항공 국제선 왕복 항공권 6매, 제주항공 싱가포르 왕복 항공권 2매, 제주항공 마카오 왕복 항공권 2매를 증정한다.",
       "샤넬과 협업해 인천국제공항 제2터미널에서 다음달 25일까지 운영하는 '샤넬 홀리데이 포디움'이 대표적이다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": false,
+      "why": "면세점 프로모션·경품",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     }
    ]
   },
@@ -7259,6 +9447,26 @@
    "routes": [],
    "price": null,
    "query": "에어부산 특가",
+   "ai": {
+    "v": 1,
+    "promo": true,
+    "why": "에어부산 나가사키 특가",
+    "airlines": [
+     "에어부산"
+    ],
+    "name": "나가사키 재운항 기념 특가",
+    "book": {
+     "from": null,
+     "to": "2026-11-16"
+    },
+    "board": null,
+    "price": null,
+    "trip": null,
+    "pct": null,
+    "seoul": null,
+    "at": "2026-11-12",
+    "model": "deepseek-v4-flash"
+   },
    "lastDate": "2026-11-10T09:00:46.516Z",
    "lastFound": "2026-11-10",
    "more": [
@@ -7285,7 +9493,24 @@
      "allRoutes": false,
      "routes": [],
      "price": null,
-     "query": "에어부산 특가"
+     "query": "에어부산 특가",
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "에어부산 일본 특가",
+      "airlines": [
+       "에어부산"
+      ],
+      "name": "나가사키 재운항 기념 일본 소도시 특가",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     }
    ]
   },
@@ -7346,6 +9571,30 @@
     "경품은 시그니엘 서울과 더그랜드롯데 서울 숙박권, 라세느 통합 뷔페 식사권 등이며 당첨자는 12월 11일 발표한다.",
     "제주신화월드는 예약 시점에 따라 두 주로 나눠 블랙프라이데이 프로모션을 운영한다."
    ],
+   "ai": {
+    "v": 1,
+    "promo": true,
+    "why": "항공권 특가 판매",
+    "airlines": [
+     "트립닷컴",
+     "세부퍼시픽항공"
+    ],
+    "name": "11.11 메가세일",
+    "book": {
+     "from": "2026-11-08",
+     "to": "2026-11-16"
+    },
+    "board": {
+     "from": "2027-02-01",
+     "to": "2027-07-31"
+    },
+    "price": 1100,
+    "trip": "편도",
+    "pct": null,
+    "seoul": true,
+    "at": "2026-11-12",
+    "model": "deepseek-v4-flash"
+   },
    "lastDate": "2026-11-10T08:58:00.000Z",
    "lastFound": "2026-11-10"
   },
@@ -7459,7 +9708,30 @@
       "한국공항공사에 따르면 올해 1~9월 지방공항 국제선 여객은 1503만 7505명으로 지난해 같은 기간보다 22.9% 증가했다.",
       "공사가 운영하는 14개 공항의 동계 국제선 정기편도 주 3206편으로 하계보다 11.6% 늘었으며, 김해·청주공항은 시간당 처리 가능한 항공편 수가 확대됐다."
      ],
-     "notified": "2026-11-10"
+     "notified": "2026-11-10",
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "지역발 항공권 할인 프로모션",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "우리 동네 할인",
+      "book": {
+       "from": "2026-11-10",
+       "to": "2026-11-23"
+      },
+      "board": {
+       "from": "2026-11-10",
+       "to": "2027-01-31"
+      },
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": false,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "https://www.businessplus.kr/news/articleView.html|트리니티항공 , 지방 공항 출발 노선 전용 '우리 동네 할인 ' 프로모션",
@@ -7492,7 +9764,30 @@
       "현재 트리니티항공은 11월 맞이 혜택 프로모션을 비롯해 밀리의서재·웨이브 제휴 이관 이벤트, 국립항공박물관 우대 요금 적용, 유럽 철도 할인 등 다양한 마케팅 행사를 병행하고 있다.",
       "트리니티항공은 지방 공항 노선망 확충을 통해 지역 이용객의 이동 편의를 높여왔으며, 향후에도 지역 출발 노선의 선택 폭을 넓히고 고객 혜택 중심의 프로모션을 이어간다는 계획이다.",
       "트리니티항공 관계자는 \"지방 공항 이용 고객의 여행 경비 부담을 완화하기 위해 전용 할인 프로모션을 기획했다\"며 \"안전 운항을 바탕으로 고객 맞춤형 서비스와 혜택을 확대해 나갈 것\"이라고 말했다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "지방공항 노선 할인 프로모션",
+      "airlines": [
+       "트리니니항공"
+      ],
+      "name": "우리 동네 할인",
+      "book": {
+       "from": "2026-11-10",
+       "to": "2026-11-23"
+      },
+      "board": {
+       "from": "2026-11-10",
+       "to": "2027-01-31"
+      },
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": false,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "ILXBzY3VUOHFFRXFTcGNUWmVzSnFBMEtnaDJTVzQxdDREVEhpcmY0U3Rqbk80MDlHaU84SDhVSjRmMmtlOTQzMk42R1pocDNXZXkwSWxTWEJfZC1fT3FIZFE|트리니티항공, 지역 공항 출발 노선 최대 2만원 혜택…우리 동네 할인 프",
@@ -7524,7 +9819,30 @@
       "현재 트리니티항공은 이번 프로모션 외에도 11월 맞이 더블 혜택, 밀리의서재·웨이브 이용권 이벤트, 국립항공박물관 우대 요금, 유럽 기차 할인 등 다채로운 고객 제휴 혜택을 운영 중이다.",
       "트리니티항공은 향후에도 지역 공항 기반의 하늘길 선택지를 다양화하는 동시에 실질적인 탑승 혜택을 담은 고객 친화적 마케팅을 계속 이어갈 방침이다.",
       "트리니티항공 관계자는 \"지역 공항을 이용하는 고객들이 더욱 부담 없이 여행을 준비할 수 있도록 전용 할인 혜택을 마련했다\"며 \"앞으로도 철저한 안전 운항을 바탕으로 차별화된 서비스와 혜택을 지속적으로 선보이겠다\"고 강조했다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "항공사 할인쿠폰 프로모션",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "우리 동네 할인",
+      "book": {
+       "from": null,
+       "to": "2026-11-23"
+      },
+      "board": {
+       "from": "2026-11-10",
+       "to": "2027-01-31"
+      },
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": false,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "https://www.cstimes.com/news/articleView.html|트리니티항공 , 지역 공항 출발 노선 최대 2만원 혜택…우리 동네 할인 ",
@@ -7556,7 +9874,30 @@
       "현재 트리니티항공은 이번 프로모션 외에도 11월 맞이 더블 혜택, 밀리의서재·웨이브 이용권 이벤트, 국립항공박물관 우대 요금, 유럽 기차 할인 등 다채로운 고객 제휴 혜택을 운영 중이다.",
       "트리니티항공은 향후에도 지역 공항 기반의 하늘길 선택지를 다양화하는 동시에 실질적인 탑승 혜택을 담은 고객 친화적 마케팅을 계속 이어갈 방침이다.",
       "트리니티항공 관계자는 \"지역 공항을 이용하는 고객들이 더욱 부담 없이 여행을 준비할 수 있도록 전용 할인 혜택을 마련했다\"며 \"앞으로도 철저한 안전 운항을 바탕으로 차별화된 서비스와 혜택을 지속적으로 선보이겠다\"고 강조했다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "지역공항 노선 할인쿠폰",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "우리 동네 할인",
+      "book": {
+       "from": "2026-11-10",
+       "to": "2026-11-23"
+      },
+      "board": {
+       "from": "2026-11-10",
+       "to": "2027-01-31"
+      },
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": false,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "https://www.enewstoday.co.kr/news/articleView.html|‘지역공항 탑승객 위한 할인 제공’···트리니티항공 ‘우리 동네 할인’ ",
@@ -7853,7 +10194,30 @@
       "탑승 가능 기간은 내년 1월 31일까지이며, 일부 기간은 제외한다.",
       "결제 금액에 따라 최대 2만원이 즉시 할인된다.",
       "트리니티항공 관계자는 “지역 공항 이용객들이 한층 부담 없이 여행을 준비할 수 있도록 전용 할인 프로모션을 마련했다”며 “안전 운항 체계를 바탕으로 차별화된 서비스와 혜택을 꾸준히 선보이겠다”고 말했다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "지역발 항공권 할인 프로모션",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "우리 동네 할인",
+      "book": {
+       "from": "2026-11-10",
+       "to": "2026-11-23"
+      },
+      "board": {
+       "from": null,
+       "to": "2027-01-31"
+      },
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": false,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "https://www.hidomin.com/news/articleView.html|트리니티항공 , 지역발 국내·국제선 최대 2만원 할인 …23일까지 '우리",
@@ -7883,7 +10247,30 @@
       "탑승 가능 기간은 내년 1월 31일까지이며, 일부 기간은 제외한다.",
       "결제 금액에 따라 최대 2만원이 즉시 할인된다.",
       "트리니티항공 관계자는 “지역 공항 이용객들이 한층 부담 없이 여행을 준비할 수 있도록 전용 할인 프로모션을 마련했다”며 “안전 운항 체계를 바탕으로 차별화된 서비스와 혜택을 꾸준히 선보이겠다”고 말했다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "지역발 항공권 할인 프로모션",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "우리 동네 할인",
+      "book": {
+       "from": "2026-11-10",
+       "to": "2026-11-23"
+      },
+      "board": {
+       "from": null,
+       "to": "2027-01-31"
+      },
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": false,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "XzA0VzJwbnRuNXo2Y0ZiZUZ3M2x4QjlmWERZRlRQS2F2ZmJta3N3ZzlQR2tiY29qTk5Wb0xwQjBMUG5CSTVrbC1XeXdid2U1S0dhWnZ6Mkx3OFhYdTROTDdR|트리니티항공, 지역 공항 이용객 대상 ‘우리 동네 할인’ 프로모션",
@@ -7914,7 +10301,30 @@
       "[로이슈 최영록 기자] 트리니티항공이 지역 공항을 이용하는 탑승객을 위해 ‘우리 동네 할인’ 프로모션을 진행한다.",
       "프로모션은 오는 23일까지 트리니티항공 공식 홈페이지와 모바일 앱(웹)에서 진행된다.",
       "대상은 부산·대구·청주·제주 등 주요 지역 공항에서 출발하는 국내선과 국제선 전 노선이며, 탑승 기간은 이달 10일부터 2027년 1월 31일까지로 일부 기간은 제외된다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "지역공항 항공권 할인 프로모션",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "우리 동네 할인",
+      "book": {
+       "from": null,
+       "to": "2026-11-23"
+      },
+      "board": {
+       "from": "2026-11-10",
+       "to": "2027-01-31"
+      },
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": false,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "https://www.catchnews.kr/news/articleView.html|\"부산·대구·청주·제주서 출발땐 2만원 할인 \" 트리니티항공 '우리동네.",
@@ -7946,7 +10356,30 @@
       "적용 대상은 부산, 대구, 청주, 제주 지역 공항에서 출발하는 국내선 및 국제선 전 노선이며 실제 탑승 기간은 이달 10일부터 2027년 1월 31일까지(일부 성수기 기간 제외) 넉넉하게 적용되어 연말연시 여행객들의 큰 호응이 예상된다.",
       "행사 기간 내 지역 공항 출발 항공권을 예매하는 고객은 프로모션 페이지에서 노선별 특별 할인 쿠폰을 다운로드해 결제 시 적용하면 된다.",
       "한편, 트리니티항공은 이번 ‘우리 동네 프로모션’ 외에도 고객 체감 혜택을 넓히기 위해 11월 맞이 더블 혜택 이벤트·밀리의서재 및 웨이브(Wavve) 제휴 이용권 증정·국립항공박물관 관람객 우대 요금 적용·유럽 철도(기차) 티켓 즉시 할인 등 다채로운 연계 프로모션을 동시에 전개하고 있다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "지방출발 항공권 할인 프로모션",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "우리 동네 할인",
+      "book": {
+       "from": "2026-11-10",
+       "to": "2026-11-23"
+      },
+      "board": {
+       "from": "2026-11-10",
+       "to": "2027-01-31"
+      },
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": false,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "yOV9scmlqa0stOU54RDROS0tRUDBMT2tRa25BMFlvSW1lNks5Z2NaZHdEMkduSEg4d0EyckNseVRKY3ZMb1Yxd1IzMnhtTHJQRzl0QlRfVjFiMDNDUWoyTzY|트리니티항공, 지역공항 이용 부담 낮춘다…항공 할인 혜택",
@@ -7979,7 +10412,30 @@
       "쿠폰을 결제 단계에서 사용하면 구매 금액에 따라 최대 2만원이 즉시 차감된다.",
       "이와 함께 트리니티항공은 11월 더블 혜택을 비롯해 밀리의서재·웨이브 이용권 제공, 국립항공박물관 요금 우대, 유럽 철도 할인 등 별도 행사도 운영하고 있다.",
       "트리니티항공 관계자는 “지역 공항을 이용하시는 고객분들께서 한층 부담 없이 여행을 준비하실 수 있도록 전용 할인 프로모션을 마련했다”며 “앞으로도 철저한 안전 운항 체계를 바탕으로 차별화된 서비스와 혜택을 지속적으로 선보이겠다”고 밝혔다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "지역공항 항공권 할인 프로모션",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "우리 동네 할인",
+      "book": {
+       "from": "2026-11-10",
+       "to": "2026-11-23"
+      },
+      "board": {
+       "from": "2026-11-10",
+       "to": "2027-01-31"
+      },
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": false,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     }
    ]
   },
@@ -8063,7 +10519,30 @@
       "탑승 기간은 국내선이 2027년 3월부터 12월까지, 국제선은 2027년 4월부터 12월까지다.",
       "비엣젯항공은 최근 △하노이-콜롬보(스리랑카) △하노이-타이난(대만) △호치민시-치앙마이(태국) △하노이·호치민시-세부·클라크(필리핀) △다낭-자카르타(인도네시아) △다낭-오사카(일본) 등 신규 국제선 취항에 나서고 있다.",
       "비엣젯항공은 “최근 신규 취항한 국제선 노선들은 연말연시 여행이나 내년 휴가를 계획 중인 승객들에게 더 많은 선택지를 제공할 것으로 기대된다”고 밝혔다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "비엣젯 항공권 특가 프로모션",
+      "airlines": [
+       "비엣젯항공"
+      ],
+      "name": "11월 11일 특가 항공권 프로모션",
+      "book": {
+       "from": "2026-11-10",
+       "to": "2026-11-12"
+      },
+      "board": {
+       "from": "2026-12-01",
+       "to": "2027-05-31"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 25,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     }
    ]
   },
@@ -8114,6 +10593,27 @@
     "베트남 여행 프로그램의 0% 할인 항공권 및 49% 할인 항공권은 세금, 수수료 및 추가 요금을 제외한 기본 운임을 기준으로 합니다.",
     "올해 11월 11일 쇼핑 축제 기간 동안 트래블로카, 클룩, 부킹닷컴 등의 온라인 여행 플랫폼들은 항공권, 호텔, 엔터테인먼트 서비스 예약 고객에게 최대 50% 할인, 1+1 행사, 캐시백 등의 프로모션 프로그램을 동시에 진행합니다."
    ],
+   "ai": {
+    "v": 1,
+    "promo": true,
+    "why": "항공권 특가 판매",
+    "airlines": [
+     "Vietnam Airlines",
+     "Vietravel"
+    ],
+    "name": "메가 세일 11-11",
+    "book": {
+     "from": "2026-11-11",
+     "to": "2026-11-14"
+    },
+    "board": null,
+    "price": null,
+    "trip": null,
+    "pct": 49,
+    "seoul": false,
+    "at": "2026-11-12",
+    "model": "deepseek-v4-flash"
+   },
    "lastDate": "2026-11-10T07:14:41.000Z",
    "lastFound": "2026-11-10"
   },
@@ -8263,7 +10763,22 @@
      "body": [
       "롯데잇츠, 교보문고, 제주항공, 네이버페이 쿠폰 등 4개 제휴사와 함께 최대 6% 제휴 할인쿠폰을 선보이고, 카카오페이, 네이버페이, 페이코, 롯데카드, 우리카드 등 결제수단에 따른 추가 혜택도 마련했다.",
       "행사 기간 롯데면세점에서 1달러 이상 결제하고 다음 달 31일까지 대한항공을 이용해 출국하는 고객을 대상으로, 추첨을 통해 1명에게 대한항공 괌 노선 프레스티지 왕복 항공권 2매를 증정한다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": false,
+      "why": "면세점 행사·경품 이벤트",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "https://www.cnbizm.com/news/articleView.html|롯데면세점, 블랙프라이데이 맞아 온라인 '면세일' 진행",
@@ -8301,7 +10816,22 @@
       "명동본점·제주점의 패션 및 시계·주얼리 카테고리와 월드타워점·부산점의 전 카테고리를 대상으로 구매 금액에 따라 LDF PAY를 최대 177만원 증정한다.",
       "겨울여행제 기간 시내점에서 300달러 이상 구매하고 응모한 내국인 고객을 대상으로 항공권 경품 이벤트도 진행한다.",
       "이 일환으로 샤넬과 협업해 인천국제공항 제2터미널에서 ‘샤넬 홀리데이 포디움’을 다음달 25일까지 운영한다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": false,
+      "why": "면세점 행사·항공권 경품",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "https://www.joongangenews.com/news/articleView.html|롯데免 '면세일' 블랙프라이데이…온라인 면세품 최대 65% 할인",
@@ -8339,7 +10869,22 @@
       "명동본점과 제주점은 패션·시계·주얼리 카테고리, 월드타워점과 부산점은 전 카테고리를 대상으로 구매 금액에 따라 LDF PAY를 최대 177만원 증정한다.",
       "겨울여행제 기간 시내점에서 300달러 이상 구매하고 응모한 고객 가운데 추첨을 통해 대한항공 멜버른 왕복 항공권 5매와 제주항공 베트남 왕복 항공권 10매 등을 증정한다.",
       "이 밖에 제주항공 국제선·싱가포르·마카오 노선 왕복 항공권도 경품으로 마련했다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": false,
+      "why": "면세점 할인 행사",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "https://www.wolyo.co.kr/news/articleView.html|롯데면세점, 블랙프라이데이 맞아 최대 65% 할인 행사",
@@ -8375,7 +10920,22 @@
       "오프라인 시내점에서는 다음 달 말까지 겨울여행제 ‘WISH DESTINATION’을 운영한다.",
       "행사 기간 국내 롯데면세점 매장에 비치된 QR코드를 통해 ‘ONE PASS’ 이미지를 저장한 고객은 호주와 베트남의 행사 참여 매장에서 결제 전 해당 이미지를 제시하면 추가 혜택을 받을 수 있다.",
       "명동본점과 제주점은 패션·시계·주얼리 카테고리, 월드타워점과 부산점은 전 카테고리를 대상으로 최대 177만원의 LDF PAY를 지급한다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": false,
+      "why": "면세점 할인 행사",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "https://www.news1.kr/industry/distribution/6348502|롯데免, 블랙프라이데이 맞아 온라인 '면세일'…최대 65% 할인",
@@ -8441,6 +11001,21 @@
     "배달의민족, 던킨과 손잡고 '두바이 도넛팩' 단독 판매",
     "한화 7개사, 장애 아동 치료 지원 확대···내년 2억5000만원 투입"
    ],
+   "ai": {
+    "v": 1,
+    "promo": false,
+    "why": "면세점 행사·항공권 경품",
+    "airlines": [],
+    "name": null,
+    "book": null,
+    "board": null,
+    "price": null,
+    "trip": null,
+    "pct": null,
+    "seoul": null,
+    "at": "2026-11-12",
+    "model": "deepseek-v4-flash"
+   },
    "lastDate": "2026-11-10T06:34:00.000Z",
    "lastFound": "2026-11-10"
   },
@@ -8522,7 +11097,22 @@
       "예약 고객을 대상으로 경품 행사도 진행합니다.",
       "추첨을 통해 1등 10명에게 롯데백화점 상품권 5만원권, 2등 20명에게 네이버페이 3만원권을 지급합니다.",
       "하나투어는 이번 경품 행사를 모든 예약자가 당첨되는 방식으로 운영한다고 설명했습니다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": false,
+      "why": "호텔·투어 할인 중심",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "https://www.slist.kr/news/articleView.html|하나투어, 겨울 여행객 위한 '자유여행 올인위크' 프로모션",
@@ -8636,7 +11226,22 @@
       "하나투어는 또 올인위크 기획전 상품에 즉시 적용 가능한 맞춤형 할인 쿠폰을 발급하고, 항공은 최대 4만원, 호텔은 최대 13%, 에어텔은 최대 5만원까지 혜택을 제공한다.",
       "현지투어는 선착순으로 최대 50%까지 할인된다.",
       "예약자를 대상으로 한 100% 당첨 경품 이벤트에서는 추첨으로 1등 10명에게 롯데백화점 상품권 5만원권, 2등 20명에게 네이버페이 3만원권을 각각 증정하고, 3등 당첨자 전원에게는 커피 기프티콘을 지급한다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "항공권 특가 포함 프로모션",
+      "airlines": [],
+      "name": "자유여행 올인위크",
+      "book": null,
+      "board": null,
+      "price": 200000,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     }
    ]
   },
@@ -8696,7 +11301,30 @@
       "에어서울은 프로모션 페이지를 통해 제주관광공사가 추진하는 전기차 렌터카 이용 캠페인 '전기차로 Green Drive'를 안내한다.",
       "에어서울 관계자는 \"앞으로도 고객들이 체감할 수 있는 여행 혜택을 확대해 지속 가능한 제주 여행 문화 확산에 동참하고, 지역 관광 활성화에도 기여할 수 있도록 노력하겠다\"고 말했다.",
       "한편, 에어서울은 올해 1월부터 7월까지 제주 노선 평균 탑승률 96.6%를 기록하며 전 국적사 가운데 가장 높은 수준을 나타냈다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "김포~제주 항공권 할인 프로모션",
+      "airlines": [
+       "에어서울"
+      ],
+      "name": "김포~제주 노선 할인 프로모션",
+      "book": {
+       "from": null,
+       "to": "2026-11-30"
+      },
+      "board": {
+       "from": "2026-11-05",
+       "to": "2027-01-31"
+      },
+      "price": null,
+      "trip": "왕복",
+      "pct": null,
+      "seoul": true,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "1%9C%EB%AA%A8%EC%85%98-%ED%95%AD%EA%B3%B5%EA%B6%8C-%EC%B5%9C%EB%8C%80-2%EB%A7%8C%EC%9B%90-%ED%95%A0%EC%9D%B8/ar-AA2h5FYa|에어서울, 제주관광공사와 겨울 여행 프로모션…항공권 최대 2만원 할인",
@@ -8759,6 +11387,21 @@
     "책등 이미지 만들기 이벤트는 11월 30일까지이고, 좋아하는 책 4권의 책등으로 숫자 ‘1111’ 모양 이미지를 만들어 SNS에 공유하면 참여할 수 있어요.",
     "월 4900원에 디즈니+ 광고형 스탠다드 멤버십 이용 혜택, G마켓 결제금액 최대 4% 적립, 스타배송 상품 무료반품 등을 제공해요."
    ],
+   "ai": {
+    "v": 1,
+    "promo": false,
+    "why": "항공권 특가 아님",
+    "airlines": [],
+    "name": null,
+    "book": null,
+    "board": null,
+    "price": null,
+    "trip": null,
+    "pct": null,
+    "seoul": null,
+    "at": "2026-11-12",
+    "model": "deepseek-v4-flash"
+   },
    "lastDate": "2026-11-10T05:36:00.000Z",
    "lastFound": "2026-11-10"
   },
@@ -10390,7 +13033,24 @@
      "body": [
       "트리니티항공은 앞으로도 지역 공항을 기반으로 노선 선택지를 확대하고 고객들이 실질적인 혜택을 누릴 수 있는 할인 프로모션을 지속적으로 선보일 계획이다.",
       "트리니티항공 관계자는 \"지역 공항을 이용하시는 고객분들께서 한층 부담 없이 여행을 준비하실 수 있도록 전용 할인 프로모션을 마련했다\"며 \"앞으로도 철저한 안전 운항 체계를 바탕으로 차별화된 서비스와 혜택을 지속적으로 선보이겠다\"고 말했다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "지역공항 항공권 할인 프로모션",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "우리 동네 할인",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": false,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     }
    ]
   },
@@ -10470,7 +13130,30 @@
       "해당 캠페인에 참여해 순수 전기차 렌터카를 2박 이상 대여하고 제주 디지털 관광증 '나우제주'를 인증하면 선착순 1700명에게 제주관광공사 면세점 2만원 상품권을 제공한다.",
       "에어서울은 이번 프로모션을 통해 겨울철 제주 관광 수요를 확대하는 동시에 친환경 여행 문화 확산에도 기여한다는 방침이다.",
       "에어서울 관계자는 \"앞으로도 고객들이 체감할 수 있는 여행 혜택을 확대해 지속 가능한 제주 여행 문화 확산에 동참하고, 지역 관광 활성화에도 기여할 수 있도록 노력하겠다\"고 말했다."
-     ]
+     ],
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "제주 왕복 항공권 할인 코드",
+      "airlines": [
+       "에어서울"
+      ],
+      "name": "겨울철 제주 왕복 항공권 할인",
+      "book": {
+       "from": null,
+       "to": "2026-11-30"
+      },
+      "board": {
+       "from": "2026-11-05",
+       "to": "2027-01-31"
+      },
+      "price": null,
+      "trip": "왕복",
+      "pct": null,
+      "seoul": true,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     }
    ]
   },
@@ -10710,7 +13393,24 @@
      "allRoutes": false,
      "routes": [],
      "price": null,
-     "query": "트리니티항공 할인"
+     "query": "트리니티항공 할인",
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "항공사 운임 할인 소식",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "우리 동네 할인",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": false,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     }
    ]
   },
@@ -10746,6 +13446,29 @@
     "트리니티항공의 한 관계자는 \"지역 공항을 이용하시는 고객분들께서 한층 부담 없이 여행을 준비하실 수 있도록 전용 할인 프로모션을 마련했다\"며 \"앞으로도 철저한 안전 운항 체계를 바탕으로 차별화된 서비스와 혜택을 지속적으로 선보이겠다\"고 말했다."
    ],
    "notified": "2026-11-10",
+   "ai": {
+    "v": 1,
+    "promo": true,
+    "why": "지역공항 항공권 할인 프로모션",
+    "airlines": [
+     "트리니니항공"
+    ],
+    "name": "우리 동네 할인",
+    "book": {
+     "from": "2026-11-10",
+     "to": "2026-11-23"
+    },
+    "board": {
+     "from": "2026-11-10",
+     "to": "2027-01-31"
+    },
+    "price": null,
+    "trip": null,
+    "pct": null,
+    "seoul": false,
+    "at": "2026-11-12",
+    "model": "deepseek-v4-flash"
+   },
    "lastDate": "2026-11-10T03:32:00.000Z",
    "lastFound": "2026-11-10"
   },
@@ -10848,7 +13571,30 @@
      "allRoutes": false,
      "routes": [],
      "price": null,
-     "query": "베트남항공 특가"
+     "query": "베트남항공 특가",
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "베트남항공 운임 할인 이벤트",
+      "airlines": [
+       "베트남항공"
+      ],
+      "name": null,
+      "book": {
+       "from": null,
+       "to": "2026-12-31"
+      },
+      "board": {
+       "from": null,
+       "to": "2027-06-30"
+      },
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "c:https://cafe.naver.com/minecraftpe/4012791|✈️ 푸꾸옥 특가 프로모션 : 제주 항공",
@@ -10937,7 +13683,24 @@
      "allRoutes": false,
      "routes": [],
      "price": null,
-     "query": "베트남 항공권 특가"
+     "query": "베트남 항공권 특가",
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "이스타항공 이벤트 소식",
+      "airlines": [
+       "이스타항공"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     },
     {
      "id": "c:https://cafe.naver.com/ysm5828/9647035|이스타 항공 이벤트 합니다~",
@@ -10960,7 +13723,24 @@
      "allRoutes": false,
      "routes": [],
      "price": null,
-     "query": "이스타항공 이벤트"
+     "query": "이스타항공 이벤트",
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "이스타항공 베트남 특가 이벤트",
+      "airlines": [
+       "이스타항공"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     }
    ]
   },
@@ -10984,6 +13764,29 @@
    "routes": [],
    "price": null,
    "query": "트리니티항공 할인",
+   "ai": {
+    "v": 1,
+    "promo": true,
+    "why": "항공사 할인 이벤트",
+    "airlines": [
+     "트리니티항공"
+    ],
+    "name": "우리동네 할인 이벤트",
+    "book": {
+     "from": "2026-11-10",
+     "to": "2026-11-23"
+    },
+    "board": {
+     "from": "2026-11-10",
+     "to": "2027-01-31"
+    },
+    "price": null,
+    "trip": null,
+    "pct": null,
+    "seoul": null,
+    "at": "2026-11-12",
+    "model": "deepseek-v4-flash"
+   },
    "lastDate": "2026-11-10T02:59:08.151Z",
    "lastFound": "2026-11-10",
    "more": [
@@ -11061,7 +13864,24 @@
       "amount": 130000,
       "trip": "oneway?"
      },
-     "query": "베트남 항공권 특가"
+     "query": "베트남 항공권 특가",
+     "ai": {
+      "v": 1,
+      "promo": true,
+      "why": "이스타항공 동남아 특가 판매",
+      "airlines": [
+       "이스타항공"
+      ],
+      "name": "이스타 항공 동남아 특가",
+      "book": null,
+      "board": null,
+      "price": 130000,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
     }
    ]
   },
@@ -11106,6 +13926,23 @@
     "10일 한국농수산식품유통공사(aT)에 따르면 겨울철 대표 간식인 붕어빵의 주요 속재료로 쓰이는 붉은 팥(국산·40kg)의 중도매인 판매가격은 9일 기준 63만4800원으로 전년 동기(77만467원)보다 낮지만, 평년 가격(47만164원)보다는 약 35% 높은 것으로 나타났다.",
     "의사 부부, 아파트 받으려 ‘위장퇴사’까지…부정청약 의심 354건 적발 [부동산360]"
    ],
+   "ai": {
+    "v": 1,
+    "promo": true,
+    "why": "항공권 특가 판매 포함",
+    "airlines": [
+     "하나투어"
+    ],
+    "name": "올인딜",
+    "book": null,
+    "board": null,
+    "price": 200000,
+    "trip": null,
+    "pct": null,
+    "seoul": null,
+    "at": "2026-11-12",
+    "model": "deepseek-v4-flash"
+   },
    "lastDate": "2026-11-10T02:48:00.000Z",
    "lastFound": "2026-11-10"
   },
@@ -19859,24 +22696,24 @@
    "lastFound": "2026-11-01"
   }
  ],
- "updated": "2026-11-12T10:22:50.408Z",
- "runs": 145,
+ "updated": "2026-11-12T10:58:36.304Z",
+ "runs": 146,
  "checked": {
-  "베트남": "2026-11-12T10:22:50.408Z",
-  "태국": "2026-11-12T10:22:50.408Z",
-  "필리핀": "2026-11-12T10:22:50.408Z",
-  "인도네시아": "2026-11-12T10:22:50.408Z",
-  "말레이시아": "2026-11-12T10:22:50.408Z",
-  "싱가포르": "2026-11-12T10:22:50.408Z",
-  "일본": "2026-11-12T10:22:50.408Z",
-  "대만": "2026-11-12T10:22:50.408Z",
-  "홍콩": "2026-11-12T10:22:50.408Z",
-  "마카오": "2026-11-12T10:22:50.408Z",
-  "중국": "2026-11-12T10:22:50.408Z",
-  "미국령": "2026-11-12T10:22:50.408Z",
-  "미국": "2026-11-12T10:22:50.408Z"
+  "베트남": "2026-11-12T10:58:36.304Z",
+  "태국": "2026-11-12T10:58:36.304Z",
+  "필리핀": "2026-11-12T10:58:36.304Z",
+  "인도네시아": "2026-11-12T10:58:36.304Z",
+  "말레이시아": "2026-11-12T10:58:36.304Z",
+  "싱가포르": "2026-11-12T10:58:36.304Z",
+  "일본": "2026-11-12T10:58:36.304Z",
+  "대만": "2026-11-12T10:58:36.304Z",
+  "홍콩": "2026-11-12T10:58:36.304Z",
+  "마카오": "2026-11-12T10:58:36.304Z",
+  "중국": "2026-11-12T10:58:36.304Z",
+  "미국령": "2026-11-12T10:58:36.304Z",
+  "미국": "2026-11-12T10:58:36.304Z"
  },
- "auto": "2026-11-12T10:22:50.408Z",
+ "auto": "2026-11-12T10:58:36.304Z",
  "sources": {
   "7C": "2026-11-01",
   "TW": "2026-11-01",
@@ -20089,29 +22926,6 @@
    "중국동방항공 얼리버드": "2026-11-04"
   },
   "seen": [
-   "vinpearl/565445",
-   "vinpearl/565438",
-   "zhcafe/851132",
-   "wooyeon1/33093",
-   "happyibook/6346481",
-   "vinpearl/565417",
-   "minecraftpe/4011257",
-   "mindy7857/5520437",
-   "warcraftgamemap/3529724",
-   "minecraftpe/4011284",
-   "vinpearl/565392",
-   "warcraftgamemap/3529640",
-   "vinpearl/565368",
-   "guitarnsong/296987",
-   "happyibook/6346352",
-   "airportshopping/1095",
-   "taesarang/895676",
-   "pachi7/5233",
-   "nyctourdesign/1205538",
-   "cafemakecafebest/101937",
-   "guamsaipanstory/75741",
-   "lutodot12/36299",
-   "runningmaniac/504571",
    "phoenixincairns/40706",
    "posudotcom/120325",
    "fcbora/5609",
@@ -26088,7 +28902,30 @@
    "momspanggju/4659388",
    "amateurmagician/117665",
    "chl06574/421",
-   "waateam/165870"
+   "waateam/165870",
+   "2266734/129985",
+   "loyaltylife/368997",
+   "travelchobo/3889",
+   "mindy7857/5529996",
+   "airportshopping/1088",
+   "nyctourdesign/1206309",
+   "ssamter/237068",
+   "010freebaram/260224",
+   "010freebaram/260215",
+   "ddubu0628/2865",
+   "applecart152/426751",
+   "jinhaemam/2420899",
+   "dynamicstock/198",
+   "vinpearl/568767",
+   "vinpearl/568766",
+   "ysm5828/9648295",
+   "loyaltylife/368925",
+   "uworldexam/583175",
+   "nyctourdesign/1206308",
+   "nyctourdesign/1206282",
+   "hangsanara/2973",
+   "musicstar2/37159208",
+   "jmsong0829/76100"
   ],
   "since": "2026-11-03",
   "imported": "2026-11-03"
