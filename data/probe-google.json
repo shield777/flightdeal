@@ -1,0 +1,104 @@
+[
+ {
+  "dev": "pc",
+  "url": "A_current",
+  "final": "https://www.google.com/travel/flights?hl=ko&gl=KR&curr=KRW&q=Flights%20from%20Seoul%20to%20KIX%20on%202026-12-10%20through%202026-12-14%20for%202%20adults",
+  "title": "서울특별시발 오사카시행 | Google 항공편 검색",
+  "inputs": [
+   "서울특별시",
+   "서울특별시",
+   "오사카시",
+   "오사카시",
+   "12월 10일 (목)",
+   "12월 14일 (월)",
+   "12월 10일 (목)",
+   "12월 14일 (월)"
+  ],
+  "text": "주요 콘텐츠로 이동 접근성 관련 의견 보내기 살펴보기 항공편 호텔 공유숙박 테마 변경 로그인 결과 로드 중 항공편 검색 왕복 2 이코노미 서울특별시 오사카시 KIX 필터 모든 필터 경유 항공사 수하물 가격 시간대 탄소 배출량 경유 공항 이동 시간 검색 결과 결과 45개가 반환되었습니다. 추천 최저가 ₩614,400부터 인기 출발 항공편 가격 및 편의성을 기준으로 한 순위가격에는 성인 2명의 필수 세금과 수수료가 포함됩니다. 선택적인 요금 및 수하물 요금이 부과될",
+  "hasResults": true,
+  "hasKIX": true
+ },
+ {
+  "dev": "pc",
+  "url": "B_search",
+  "final": "https://www.google.com/travel/flights/search?hl=ko&gl=KR&curr=KRW&q=Flights%20from%20Seoul%20to%20KIX%20on%202026-12-10%20through%202026-12-14%20for%202%20adult",
+  "title": "서울특별시발 오사카시행 | Google 항공편 검색",
+  "inputs": [
+   "서울특별시",
+   "오사카시",
+   "12월 10일 (목)",
+   "12월 14일 (월)",
+   "12월 10일 (목)",
+   "12월 14일 (월)"
+  ],
+  "text": "주요 콘텐츠로 이동 접근성 관련 의견 보내기 살펴보기 항공편 호텔 공유숙박 테마 변경 로그인 결과 로드 중 항공편 검색 왕복 2 이코노미 서울특별시 오사카시 KIX 필터 모든 필터 경유 항공사 수하물 가격 시간대 탄소 배출량 경유 공항 이동 시간 검색 결과 반환된 결과가 없습니다. 죄송합니다. 오류가 발생했습니다. 새로고침 언어​한국어 위치​대한민국 통화KRW 정보 개인정보처리방침 서비스 약관 의견 고객센터 표시된 통화가 항공편 구매 시 사용하는 통화와 다를 수",
+  "hasResults": false,
+  "hasKIX": true
+ },
+ {
+  "dev": "pc",
+  "url": "C_hash",
+  "final": "https://www.google.com/travel/flights?hl=ko&gl=KR&curr=KRW#flt=SEL.KIX.2026-12-10*KIX.SEL.2026-12-14;c:KRW;e:1;px:2;sd:1;t:f",
+  "title": "전 세계 저가 항공편 찾기 및 티켓 예약하기 - Google 항공편 검색",
+  "inputs": [],
+  "text": "주요 콘텐츠로 이동 접근성 관련 의견 보내기 살펴보기 항공편 호텔 공유숙박 테마 변경 로그인 항공편 왕복 1 이코노미 검색 여행 날짜가 유동적이라면 AI로 최적의 항공편 특가를 찾아보세요 원하는 여행을 설명해 주시면 Google 항공편 검색에서 최적의 특가를 찾아드립니다. AI로 특가 살펴보기 전 세계의 저렴한 항공편을 검색하고 예약하여 가격을 추적하세요. 전 세계로 향하는 저가 항공편 찾기 목적지 탐색 최적의 항공권을 찾는 데 도움이 되는 유용한 도구 항공편이",
+  "hasResults": true,
+  "hasKIX": false
+ },
+ {
+  "dev": "pc",
+  "url": "D_ko",
+  "final": "https://www.google.com/travel/flights?hl=ko&gl=KR&curr=KRW&q=%EC%84%9C%EC%9A%B8%EC%97%90%EC%84%9C%20%EC%98%A4%EC%82%AC%EC%B9%B4%202026-12-10%20%EC%B6%9C%EB%B0%9",
+  "title": "전 세계 저가 항공편 찾기 및 티켓 예약하기 - Google 항공편 검색",
+  "inputs": [],
+  "text": "주요 콘텐츠로 이동 접근성 관련 의견 보내기 살펴보기 항공편 호텔 공유숙박 테마 변경 로그인 항공편 왕복 1 이코노미 검색 여행 날짜가 유동적이라면 AI로 최적의 항공편 특가를 찾아보세요 원하는 여행을 설명해 주시면 Google 항공편 검색에서 최적의 특가를 찾아드립니다. AI로 특가 살펴보기 전 세계의 저렴한 항공편을 검색하고 예약하여 가격을 추적하세요. 전 세계로 향하는 저가 항공편 찾기 목적지 탐색 최적의 항공권을 찾는 데 도움이 되는 유용한 도구 항공편이",
+  "hasResults": true,
+  "hasKIX": false
+ },
+ {
+  "dev": "phone",
+  "url": "A_current",
+  "final": "https://www.google.com/travel/flights?hl=ko&gl=KR&curr=KRW&q=Flights%20from%20Seoul%20to%20KIX%20on%202026-12-10%20through%202026-12-14%20for%202%20adults",
+  "title": "서울특별시발 오사카시행 | Google 항공편 검색",
+  "inputs": [
+   "서울특별시",
+   "오사카시"
+  ],
+  "text": "주요 콘텐츠로 이동 접근성 관련 의견 보내기 테마 변경 로그인 살펴보기 항공편 호텔 공유숙박 항공편 검색 왕복 2 이코노미 서울특별시 오사카시 KIX 출발 12월 10일 (목) 도착 12월 14일 (월) 필터 모든 필터 경유 항공사 수하물 가격 시간대 탄소 배출량 경유 공항 이동 시간 검색 결과 반환된 결과가 없습니다. 죄송합니다. 오류가 발생했습니다. 새로고침 통화KRW 정보 개인정보처리방침 서비스 약관 의견 고객센터 표시된 통화가 항공편 구매 시 사용하는 통",
+  "hasResults": false,
+  "hasKIX": true
+ },
+ {
+  "dev": "phone",
+  "url": "B_search",
+  "final": "https://www.google.com/travel/flights/search?hl=ko&gl=KR&curr=KRW&q=Flights%20from%20Seoul%20to%20KIX%20on%202026-12-10%20through%202026-12-14%20for%202%20adult",
+  "title": "서울특별시발 오사카시행 | Google 항공편 검색",
+  "inputs": [
+   "서울특별시",
+   "오사카시"
+  ],
+  "text": "주요 콘텐츠로 이동 접근성 관련 의견 보내기 테마 변경 로그인 살펴보기 항공편 호텔 공유숙박 항공편 검색 왕복 2 이코노미 서울특별시 오사카시 KIX 출발 12월 10일 (목) 도착 12월 14일 (월) 필터 모든 필터 경유 항공사 수하물 가격 시간대 탄소 배출량 경유 공항 이동 시간 검색 결과 반환된 결과가 없습니다. 죄송합니다. 오류가 발생했습니다. 새로고침 통화KRW 정보 개인정보처리방침 서비스 약관 의견 고객센터 표시된 통화가 항공편 구매 시 사용하는 통",
+  "hasResults": false,
+  "hasKIX": true
+ },
+ {
+  "dev": "phone",
+  "url": "C_hash",
+  "final": "https://www.google.com/travel/flights?hl=ko&gl=KR&curr=KRW#flt=SEL.KIX.2026-12-10*KIX.SEL.2026-12-14;c:KRW;e:1;px:2;sd:1;t:f",
+  "title": "전 세계 저가 항공편 찾기 및 티켓 예약하기 - Google 항공편 검색",
+  "inputs": [],
+  "text": "주요 콘텐츠로 이동 접근성 관련 의견 보내기 테마 변경 로그인 살펴보기 항공편 호텔 공유숙박 항공편 왕복 1 이코노미 출발 도착 검색 여행 날짜가 유동적이라면 AI로 최적의 항공편 특가를 찾아보세요 원하는 여행을 설명해 주시면 Google 항공편 검색에서 최적의 특가를 찾아드립니다. AI로 특가 살펴보기 전 세계의 저렴한 항공편을 검색하고 예약하여 가격을 추적하세요. 전 세계로 향하는 저가 항공편 찾기 목적지 탐색 최적의 항공권을 찾는 데 도움이 되는 유용한 도",
+  "hasResults": true,
+  "hasKIX": false
+ },
+ {
+  "dev": "phone",
+  "url": "D_ko",
+  "final": "https://www.google.com/travel/flights?hl=ko&gl=KR&curr=KRW&q=%EC%84%9C%EC%9A%B8%EC%97%90%EC%84%9C%20%EC%98%A4%EC%82%AC%EC%B9%B4%202026-12-10%20%EC%B6%9C%EB%B0%9",
+  "title": "전 세계 저가 항공편 찾기 및 티켓 예약하기 - Google 항공편 검색",
+  "inputs": [],
+  "text": "주요 콘텐츠로 이동 접근성 관련 의견 보내기 테마 변경 로그인 살펴보기 항공편 호텔 공유숙박 항공편 왕복 1 이코노미 출발 도착 검색 여행 날짜가 유동적이라면 AI로 최적의 항공편 특가를 찾아보세요 원하는 여행을 설명해 주시면 Google 항공편 검색에서 최적의 특가를 찾아드립니다. AI로 특가 살펴보기 전 세계의 저렴한 항공편을 검색하고 예약하여 가격을 추적하세요. 전 세계로 향하는 저가 항공편 찾기 목적지 탐색 최적의 항공권을 찾는 데 도움이 되는 유용한 도",
+  "hasResults": true,
+  "hasKIX": false
+ }
+]
