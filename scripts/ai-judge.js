@@ -1,7 +1,8 @@
 /* AI 판독 (DeepSeek): 새로 들어온 뉴스·커뮤니티 글을 AI가 읽고 정리
    - 진짜 항공권 운임 특가인지, 항공사, 특가 이름, 예약기간·탑승기간, 최저가, 최대 할인율
    - 결과는 글마다 p.ai 에 저장 (한 번 판독한 글은 다시 보내지 않음)
-   - 지금은 '기록만' 단계: 화면·알림·거르기에는 아직 안 씀. 규칙 판단과 비교해서 data/ai-check.json 에 남김
+   - 앱 화면·같은 소식 묶기·알림에 AI 판단이 우선 (js/flight-core.js 의 isWantedPromo·withAi). 판독 안 된 글은 규칙대로
+   - 규칙 판단과 다른 점은 data/ai-check.json 에 남김 (확인용)
    - GitHub Secrets 의 DEEPSEEK_API_KEY 가 없으면 아무것도 안 하고 넘어감 (지금 방식 그대로)
    - 안전장치: 한 번 실행에 최대 MAX_PER_RUN 건, 키 오류·잔액 부족이면 바로 멈춤, 연속 실패 5번이면 멈춤 */
 'use strict';

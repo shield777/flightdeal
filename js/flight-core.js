@@ -402,12 +402,40 @@
     if (!TITLE_DEAL.test(t)) return { ok: false, why: 'deal' };
     return { ok: true };
   }
+  // ───── AI 판독(DeepSeek) 결과 쓰기 ─────
+  // p.ai = { promo, why, airlines, name, book, board, price, trip, pct, seoul } (서버 scripts/ai-judge.js 가 저장)
+  // 판독된 글은 AI 판단이 우선: 특가 아님 → 숨김, 기간·가격·할인율 → AI 값 먼저 (AI가 못 찾은 칸만 규칙 값)
+  const hasAi = p => !!(p && p.ai && p.ai.v);
+  function aiFacts(p) {
+    if (!hasAi(p) || !p.ai.promo) return null;
+    // 여러 항공사를 모은 기사는 AI 값이 다른 항공사 것일 수 있어서 안 씀 (규칙이 항공사별 문장만 골라 읽음)
+    if ((p.airlines || []).length > 1 || (p.ai.airlines || []).length > 1) return null;
+    const a = p.ai, f = {};
+    const per = x => x && (x.from || x.to) ? { from: x.from || null, to: x.to || x.from } : null;
+    if (per(a.book)) f.book = per(a.book);
+    if (per(a.board)) f.board = per(a.board);
+    if (a.pct) f.pct = a.pct;
+    if (a.price) f.price = { amount: a.price, trip: a.trip === '왕복' ? 'round' : a.trip === '편도' ? 'oneway' : null };
+    return f;
+  }
+  function withAi(rules, p) {
+    const a = aiFacts(p);
+    if (!a) return rules || {};
+    const o = { ...(rules || {}), ...a, ai: true };
+    if (a.price) { delete o.prices; delete o.priceMixed; delete o.priceFor; }
+    if (a.board) { delete o.boardMixed; delete o.boardMineMixed; }
+    return o;
+  }
   function isWantedPromo(p, settings) {
     if (p.kind === 'card') return true;
-    if (!p.official && !promoTitleCheck(p.title, { airlineOnly: !!p.community }).ok) return false; // 뉴스·커뮤니티: 제목 기준 (커뮤니티는 항공사 이름 필수)
+    // AI가 판독한 글: '항공권 운임 특가 아님'이면 빼기, 지방 출발만이면 빼기
+    const ai = !p.official && hasAi(p);
+    if (ai && !p.ai.promo) return false;
+    if (ai && p.ai.seoul === false) return false;
+    if (!ai && !p.official && !promoTitleCheck(p.title, { airlineOnly: !!p.community }).ok) return false; // 뉴스·커뮤니티: 제목 기준 (커뮤니티는 항공사 이름 필수)
     const text = `${p.title} ${p.desc || ''}`;
-    // 제목이 면세점·호텔·투어 같은 다른 상품 이야기이고 항공권·운임 말이 없으면 빼기
-    if (NONFARE_TITLE.test(p.title) && !/항공권|운임|특가\s*항공|항공\s*특가/.test(p.title)) return false;
+    // 제목이 면세점·호텔·투어 같은 다른 상품 이야기이고 항공권·운임 말이 없으면 빼기 (AI가 특가라고 판독한 글은 AI 판단을 따름)
+    if (!ai && NONFARE_TITLE.test(p.title) && !/항공권|운임|특가\s*항공|항공\s*특가/.test(p.title)) return false;
     if (p.official && !FARE_RE.test(text)) return false;
     if (isDomestic(p)) return false;
     const air = p.airlines || [];
@@ -855,7 +883,7 @@
   const api = {
     ORIGINS, DESTS, AIRLINES, CLIMATE, REGION_NAME, HOLIDAYS, PEAK, CARDS, AGENCIES, CARD_NAMES,
     monthsBetween, nightsBetween, addDays, addMonths, weekday, findDest, airline,
-    promoFacts, paxOf, KNOWN_DIRECT, nonSeoulOnly, dropHead, sameFacts, mergeFacts, absDates, isDomestic, parseDates, splitSentences, subjectAirline, airlineText, fitsTrip, cardFacts, cardUse, links, skyMonth, ttang, climateOf, holidaysIn, KOREAN_AIRLINES, airlinesFor, isPayBenefit,
+    promoFacts, aiFacts, withAi, paxOf, KNOWN_DIRECT, nonSeoulOnly, dropHead, sameFacts, mergeFacts, absDates, isDomestic, parseDates, splitSentences, subjectAirline, airlineText, fitsTrip, cardFacts, cardUse, links, skyMonth, ttang, climateOf, holidaysIn, KOREAN_AIRLINES, airlinesFor, isPayBenefit,
     stripTags, parseWon, promoPrice, classifyNews, won, routeKey,
     PROMO_DEFAULT, COUNTRIES, COUNTRY_PLACES, airlineInText, airlineCode, newsScope, promoSettings, isWantedPromo, promoTitleCheck, DEAL_SEARCH_WORDS,
   };
