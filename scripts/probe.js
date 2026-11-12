@@ -2,16 +2,19 @@
 'use strict';
 const fs = require('fs');
 const q = 'Flights from Seoul to KIX on 2026-12-10 through 2026-12-14 for 2 adults';
+const { tfs } = require('./tfs-probe.js');
+const G = t => `https://www.google.com/travel/flights/search?tfs=${t}&hl=ko&gl=KR&curr=KRW`;
 const URLS = {
-  A_current: `https://www.google.com/travel/flights?hl=ko&gl=KR&curr=KRW&q=${encodeURIComponent(q)}`,
-  B_search: `https://www.google.com/travel/flights/search?hl=ko&gl=KR&curr=KRW&q=${encodeURIComponent(q)}`,
-  C_hash: 'https://www.google.com/flights?hl=ko&gl=KR&curr=KRW#flt=SEL.KIX.2026-12-10*KIX.SEL.2026-12-14;c:KRW;e:1;px:2;sd:1;t:f',
-  D_ko: `https://www.google.com/travel/flights?hl=ko&gl=KR&curr=KRW&q=${encodeURIComponent('서울에서 오사카 2026-12-10 출발 2026-12-14 귀국 성인 2명 항공편')}`,
+  T1_SEL_KIX_2a: G(tfs({ from: 'SEL', to: 'KIX', dep: '2026-12-10', ret: '2026-12-14', adults: 2 })),
+  T2_ICN_KIX_2a1c: G(tfs({ from: 'ICN', to: 'KIX', dep: '2026-12-10', ret: '2026-12-14', adults: 2, children: 1 })),
+  T3_SEL_PQC_direct: G(tfs({ from: 'SEL', to: 'PQC', dep: '2027-01-20', ret: '2027-01-25', adults: 2, children: 1, direct: true })),
+  T4_SEL_OSA_city: G(tfs({ from: 'SEL', to: 'OSA', dep: '2026-12-10', ret: '2026-12-14', adults: 1 })),
 };
-const DEV = {
+const DEV0 = {
   pc: { viewport: { width: 1440, height: 900 }, userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36' },
   phone: { viewport: { width: 430, height: 932 }, isMobile: true, hasTouch: true, userAgent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Mobile/15E148 Safari/604.1' },
 };
+const DEV = { pc: DEV0.pc };
 (async () => {
   const { chromium } = require('playwright-core');
   const exe = ['/usr/bin/google-chrome', '/usr/bin/chromium'].find(p => fs.existsSync(p));
@@ -31,7 +34,7 @@ const DEV = {
       o.text = t.slice(0, 260);
       o.hasResults = /최저가|추천 항공편|가장 저렴|₩\s?\d|\d+원/.test(t);
       o.hasKIX = /오사카|KIX|간사이/.test(t);
-      if (dn === 'pc') await p.screenshot({ path: `data/probe-google-${dn}-${un}.png` });
+      if (dn === 'pc' && un.startsWith('T3')) await p.screenshot({ path: `data/probe-google-${dn}-${un}.png` });
     } catch (e) { o.err = e.message.slice(0, 100); }
     console.log(JSON.stringify(o)); out.push(o);
     await ctx.close();
