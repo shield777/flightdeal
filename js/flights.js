@@ -465,8 +465,21 @@
     const serving = [...new Set(F.DESTS.filter(d => d.country === C).flatMap(d => (rec[d.code] || []).map(r => r.code)))];
     // 카드사 할인 + 항공사 공식 결제 혜택(간편결제 등)
     // AI 판독(카드 질문)에서 "항공권·여행 결제 혜택 아님"이면 뺌 (면세점·마트·카드 출시 소식 등). 판독 안 된 소식은 예전처럼
-    const aiCard = p => (p.ai && p.ai.cv && p.ai.card) || null;
-    const raw = (data.promos.items || []).filter(p => (p.kind === 'card' || F.isPayBenefit(p)) && isLive(p) && !(aiCard(p) && !aiCard(p).ok));
+    //  같은 소식 묶음은 기사 하나라도 '혜택'이면 보여 줌 (대표 기사만 '아님'이어서 묶음째 숨겨지지 않게), 값은 '혜택'이라고 읽은 기사 것
+    const aiCard = p => {
+      const l = [p, ...(p.more || [])].map(m => (m.ai && m.ai.cv && m.ai.card) || null).filter(Boolean);
+      return l.find(c => c.ok) || l[0] || null;
+    };
+    // 서버 묶음 안에 서로 다른 카드 소식이 섞인 경우가 있어서, AI가 읽은 카드사·나라·쓰는 곳이 다르면 따로 나눔
+    const sig = m => { const c = m.ai && m.ai.cv && m.ai.card; return c ? `${c.ok ? 1 : 0}|${[...(c.cards || [])].sort().join('/')}|${[...(c.countries || [])].sort().join('/')}|${c.use || ''}` : ''; };
+    const split = g => {
+      const ms = [g, ...(g.more || [])].map(m => { const { more, ...one } = m; return one; });
+      const parts = new Map();
+      for (const m of ms) { const k = sig(m) || sig(g) || ''; if (!parts.has(k)) parts.set(k, []); parts.get(k).push(m); }
+      if (parts.size === 1) return [g];
+      return [...parts.values()].map(l => ({ ...l[0], id: `${g.id}#${l[0].id}`, more: l.slice(1) }));
+    };
+    const raw = (data.promos.items || []).filter(p => (p.kind === 'card' || F.isPayBenefit(p)) && isLive(p)).flatMap(split).filter(p => !(aiCard(p) && !aiCard(p).ok));
     const won = n => n % 10000 === 0 ? `${n / 10000}만원` : `${n.toLocaleString('ko-KR')}원`;
     const facts = p => {
       // 본문 문장 중 다른 카드사 이야기는 빼고 씀
@@ -480,15 +493,24 @@
         if (a.amount) f.amount = `${won(a.amount)} 할인`;
         if (a.pct) f.pct = a.pct;
         if (a.min) f.min = `${won(a.min)} 이상 결제`;
-        if (a.period && a.period.to) f.period = a.period;
+        // 기간: AI 값 우선 (규칙은 '11월부터'를 '11/1까지'로 잘못 읽는 경우가 있음). 묶인 기사 중 AI가 기간을 읽은 것, 없으면 규칙 값도 버림
+        const ap = [p, ...(p.more || [])].map(m => m.ai && m.ai.cv && m.ai.card && m.ai.card.ok && m.ai.card.period).find(Boolean);
+        if (ap) f.period = ap; else delete f.period;
       }
       return f;
     };
     // 사용처: 규칙으로 모르겠는데 AI가 '여행 예약·해외 결제'라고 하면 '해외 항공권 전체'로
-    const useOf = p => { const u = F.cardUse(p, C, serving), a = aiCard(p); return u.use === 'unknown' && a && (a.use === '여행예약' || a.use === '해외결제') ? { ...u, use: 'all' } : u; };
+    // 나라: AI가 특정 나라에서만 쓰는 혜택이라고 하면(예: 베트남 현지 결제) 다른 나라 화면에서는 '해당 없음'으로
+    const useOf = p => {
+      const u = F.cardUse(p, C, serving), a = aiCard(p);
+      if (a && (a.countries || []).length && !a.countries.includes(C)) return { ...u, use: 'no', only: a.countries };
+      if (a && (a.countries || []).includes(C) && u.use !== 'ok') return { ...u, use: 'ok', only: a.countries };
+      return u.use === 'unknown' && a && (a.use === '여행예약' || a.use === '해외결제') ? { ...u, use: 'all' } : u;
+    };
     const items = raw.map(p => ({ p, f: facts(p), u: useOf(p) }))
       .filter(x => !(x.f.period && x.f.period.to < today)); // 결제 기간이 끝난 것
-    const useful = items.filter(x => x.p.official || x.f.amount || x.f.pct || x.f.period);
+    // AI가 '여행 결제 혜택'이라고 판독한 소식은 금액·기간이 글에 없어도 보여 줌 (예: 후쿠오카 교통·쇼핑 할인)
+    const useful = items.filter(x => x.p.official || x.f.amount || x.f.pct || x.f.period || (aiCard(x.p) && aiCard(x.p).ok));
     return { items, useful };
   }
   function renderCards() {
@@ -502,7 +524,7 @@
     const row = ({ p, f, u }) => {
       const line = [f.amount ? `<b>${esc(f.amount)}</b>` : '', f.pct ? `<b>${f.pct}% 할인</b>` : '', f.min ? esc(f.min) : '', f.period ? `결제 ${per(f.period)}` : ''].filter(Boolean).join(' · ');
       const air = (u.why || []).map(c => F.AIRLINES[c] ? F.airline(c).name : c).join('·');
-      const why = u.use === 'ok' ? (air ? `${air} 결제 · ${C} 운항` : `${C} 언급`) : u.use === 'all' ? '해외 항공권·여행 플랫폼 결제' : u.use === 'no' ? `${air} 대상 · ${C} 해당 없음` : u.air ? `${air} 결제 · ${C} 운항 여부 미확인` : '사용처가 기사에 없음';
+      const why = u.only ? (u.use === 'ok' ? `${C}에서 쓰는 혜택` : `${u.only.join('·')}에서 쓰는 혜택 · ${C} 해당 없음`) : u.use === 'ok' ? (air ? `${air} 결제 · ${C} 운항` : `${C} 언급`) : u.use === 'all' ? '해외 항공권·여행 플랫폼 결제' : u.use === 'no' ? `${air} 대상 · ${C} 해당 없음` : u.air ? `${air} 결제 · ${C} 운항 여부 미확인` : '사용처가 기사에 없음';
       return `<li class="pr-item">
         <div class="src"><span class="badge-card">${esc(who(p))}</span> <span class="use use-${u.use}">${esc(why)}</span></div>
         ${line ? `<div class="pr-key">${line}</div>` : ''}
