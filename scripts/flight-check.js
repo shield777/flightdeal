@@ -17,6 +17,7 @@ const F = require('../js/flight-core.js');
 const ARTICLE = require('./article-text.js');
 const OFFICIAL = require('./airline-events.js'); // 카드 탭용 (항공사 홈페이지의 카드·결제 혜택)
 const COMMUNITY = require('./community.js'); // 커뮤니티 글 (네이버 카페·뽐뿌·루리웹)
+const AI = require('./ai-judge.js'); // DeepSeek AI 판독 (키 없으면 건너뜀, 지금은 기록만)
 
 const ROOT = path.join(__dirname, '..');
 const DATA = path.join(ROOT, 'data');
@@ -378,6 +379,13 @@ async function checkPromos(watch, promos, country) {
     const sc = F.newsScope(p.body.map(F.stripTags).join(' '));
     p.countries = [...new Set([...(p.countries || []), ...sc.countries])];
     if (sc.allRoutes) p.allRoutes = true;
+  }
+
+  // AI 판독 (DeepSeek, 기록만 단계): 새 글을 AI가 읽고 특가 여부·기간·가격을 p.ai 에 저장, 규칙 판단과 다른 점은 data/ai-check.json 에
+  const aiRes = await AI.judge([...known.values()], fresh, { env: ENV, today: TODAY, log, rulesFacts: p => p.community ? F.promoFacts(F.stripTags(p.title), kstDay(p.date)) : factsOf(p) });
+  if (aiRes && aiRes.compare && aiRes.compare.length) {
+    const f = path.join(DATA, 'ai-check.json');
+    writeJSON(f, [...aiRes.compare, ...readJSON(f, [])].slice(0, 300));
   }
 
   // 카드 탭용: 항공사 홈페이지의 카드 제휴 할인·결제 혜택만 (제주항공·트리니티항공·비엣젯). 운임 특가는 뉴스로만
