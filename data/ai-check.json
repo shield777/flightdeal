@@ -1,6 +1,78 @@
 [
  {
   "at": "2026-11-13",
+  "title": "대한 항공 호놀룰루, 일반석 마일 할인 하네요?!",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "마일리지 할인 공유",
+   "airlines": [
+    "대한항공"
+   ],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": true,
+   "at": "2026-11-13",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님"
+  ]
+ },
+ {
+  "at": "2026-11-13",
+  "title": "트리니티항공, 수능 수험생·동반 1인 항공권 최대 25% 할인",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "수험생 항공권 운임 할인 프로모션",
+   "airlines": [
+    "트리니티항공"
+   ],
+   "name": "수능 수험생 할인 프로모션",
+   "book": {
+    "from": null,
+    "to": "2027-01-31"
+   },
+   "board": {
+    "from": "2026-11-20",
+    "to": "2027-02-21"
+   },
+   "price": null,
+   "trip": null,
+   "pct": 25,
+   "seoul": null,
+   "at": "2026-11-13",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": null,
+    "to": "2027-01-31"
+   },
+   "board": {
+    "from": "2026-11-20",
+    "to": "2027-02-21"
+   },
+   "pct": 25,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-13",
   "title": "역 항공 대한항공 특가 , 마일런 달립시다",
   "community": true,
   "ai": {
@@ -10344,64 +10416,6 @@
     "to": "2027-02-21"
    },
    "pct": 25,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "호치민 노랑풍선 패키지 진에어 신규출항이라 특가 떠서..",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "진에어 신규취항 특가 소식",
-   "airlines": [
-    "진에어"
-   ],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "[ 아시아나항공 ] 마법같은 일본의 가을! 일본행 최저가 및 운항 스케줄",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "아시아나 일본행 최저가 프로모션",
-   "airlines": [
-    "아시아나항공"
-   ],
-   "name": "마법같은 일본의 가을",
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
    "price": null
   },
   "diff": []
