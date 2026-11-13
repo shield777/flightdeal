@@ -1,63 +1,6 @@
 {
  "items": [
   {
-   "id": "http://www.weeklytoday.com/news/articleView.html|[ 카드 업계 동향] KB국민 카드 ㆍ 현대카드 (11.13)",
-   "kind": "card",
-   "title": "[ 카드 업계 동향] KB국민 카드 ㆍ 현대카드 (11.13)",
-   "desc": "에어캐나다 항공권 을 KB국민 개인 신용·체크 카드 로 결제하면 항공권 할인 과 함께 캐나다달러... ■ 현대카드 , 도산 쿠킹 라이브러리·Red Bar서 가을 미식·음악 프로그램 선봬 - 쿠킹 라이브러리 '아시안 플레이버...",
-   "summary": [
-    "에어캐나다 항공권 을 KB국민 개인 신용·체크 카드 로 결제하면 항공권 할인 과 함께 캐나다달러...",
-    "■ 현대카드 , 도산 쿠킹 라이브러리·Red Bar서 가을 미식·음악 프로그램 선봬 - 쿠킹 라이브러리 '아시안 플레이버…"
-   ],
-   "link": "http://www.weeklytoday.com/news/articleView.html?idxno=802023",
-   "source": "네이버 뉴스",
-   "date": "2026-11-13T10:06:00.000Z",
-   "found": "2026-11-13",
-   "cards": [
-    "현대카드"
-   ],
-   "airlines": [],
-   "countries": [],
-   "allRoutes": false,
-   "routes": [],
-   "price": null,
-   "query": "현대카드 항공권 할인",
-   "bodyAt": "2026-11-13",
-   "body": [
-    "숙박은 아고다와 트립닷컴의 행사 전용 페이지에서 대상 카드로 해외 호텔을 예약하면 조건에 따라 최대 20% 할인된다.",
-    "항공·호텔 예약, AI 결제 등 해외 결제로 미화 환산 150달러 이상을 쓴 이력이 있으면 전 세계 공항 라운지를 100원에 이용할 수 있다.",
-    "글로벌 eSIM 서비스인 에어알로(Airalo)와 세일리(Saily)에서 KB국민카드 전용 프로모션 코드를 넣고 eSIM을 사면 20%를 즉시 할인받는다.",
-    "KB국민카드 관계자는 “연말연시 해외여행을 계획하는 고객들이 여행 준비 단계부터 해외 현지에서까지 알뜰하게 여행을 즐길 수 있도록 다양한 혜택을 마련했다”고 말했다.",
-    "쿠킹 라이브러리의 새 쿡북 메뉴 주제는 '아시안 플레이버(Asian Flavor)'로 내년 2월까지 판매한다.",
-    "Red Bar에서는 13일 오후 6시부터 11시까지 ‘Red Night with 우드포드 리저브'가 열린다.",
-    "2024년 8월 문을 연 Red Bar는 코냑, 아르마냑, 칼바도스 등 브랜디 100여종과 페어링 음식을 내는 브랜디 전문 공간이다."
-   ],
-   "ai": {
-    "v": 2,
-    "cv": 3,
-    "card": {
-     "ok": true,
-     "why": "항공권·호텔 할인 혜택",
-     "cards": [
-      "KB국민카드"
-     ],
-     "use": "여행예약",
-     "airlines": [
-      "에어캐나다"
-     ],
-     "countries": [],
-     "amount": null,
-     "pct": 20,
-     "min": null,
-     "period": null
-    },
-    "at": "2026-11-13",
-    "model": "deepseek-v4-flash"
-   },
-   "lastDate": "2026-11-13T10:06:00.000Z",
-   "lastFound": "2026-11-13"
-  },
-  {
    "id": "c:https://cafe.naver.com/grownman/1186741|(정보)진에어 블랙프라이데이! | JIN(진)짜 혜택이 이륙한다",
    "kind": "airline",
    "community": true,
@@ -109,7 +52,7 @@
     "at": "2026-11-13",
     "model": "deepseek-v4-flash"
    },
-   "lastDate": "2026-11-13T09:00:44.576Z",
+   "lastDate": "2026-11-13T13:00:43.217Z",
    "lastFound": "2026-11-13",
    "more": [
     {
@@ -391,6 +334,46 @@
      }
     },
     {
+     "id": "c:https://cafe.naver.com/grownman/1187016|진에어 세일",
+     "kind": "airline",
+     "community": true,
+     "title": "진에어 세일",
+     "desc": "https://www.jinair.com/promotion/eventView?evntSeq=15698&cid=SharedLink_copyurl_etc_15698_na_na_2026-11-13_na 기간 맞으신분보세요.",
+     "summary": [
+      "https://www.jinair.com/promotion/eventView?evntSeq=15698&cid=SharedLink_copyurl_etc_15698_na_na_2026-11-13_na 기간 맞으신분보세요."
+     ],
+     "link": "https://cafe.naver.com/grownman/1187016",
+     "source": "네이버 카페 · 다낭 보물창고 - 다낭자유여행 다낭여행 다낭맛집 다낭리조트",
+     "date": "2026-11-13T13:00:43.217Z",
+     "found": "2026-11-13",
+     "cards": [],
+     "airlines": [
+      "LJ"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "진에어 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "진에어 세일 프로모션 공유",
+      "airlines": [
+       "진에어"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-13",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
      "id": "c:https://cafe.naver.com/jpnstory/4432919|진에어 좌석팩 1만원 할인 쿠폰 이벤트해요",
      "kind": "airline",
      "community": true,
@@ -505,6 +488,192 @@
      }
     }
    ]
+  },
+  {
+   "id": "c:https://cafe.naver.com/20daelee/952962|에어로케이, 최대 98% 할인 블프 특가 (~11/22)",
+   "kind": "airline",
+   "community": true,
+   "title": "에어로케이, 최대 98% 할인 블프 특가 (~11/22)",
+   "desc": "",
+   "link": "https://cafe.naver.com/20daelee/952962",
+   "source": "네이버 카페 · 체크인데이#일본여행,도쿄여행,후쿠오카여행,오사카,교토,삿포로",
+   "date": "2026-11-13T03:00:40.547Z",
+   "found": "2026-11-13",
+   "cards": [],
+   "airlines": [
+    "RF"
+   ],
+   "countries": [
+    "베트남"
+   ],
+   "allRoutes": false,
+   "routes": [],
+   "price": null,
+   "query": "항공권 특가 오픈",
+   "ai": {
+    "v": 2,
+    "promo": true,
+    "why": "항공사 블프 특가 할인",
+    "airlines": [
+     "에어로케이"
+    ],
+    "name": "블프 특가",
+    "book": {
+     "from": null,
+     "to": "2026-11-22"
+    },
+    "board": null,
+    "price": null,
+    "trip": null,
+    "pct": 98,
+    "seoul": null,
+    "at": "2026-11-13",
+    "model": "deepseek-v4-flash"
+   },
+   "notified": "2026-11-13",
+   "lastDate": "2026-11-13T13:00:43.217Z",
+   "lastFound": "2026-11-13",
+   "more": [
+    {
+     "id": "c:https://cafe.naver.com/tybwondergirl5/117377|( 항공 정보) 에어로케이 블프 특~",
+     "kind": "airline",
+     "community": true,
+     "title": "( 항공 정보) 에어로케이 블프 특~",
+     "desc": "에어로케이 블프 특가 ~~ 최대 98% 한인 찬스~~ 노전별 특가 가 있으니~~ 오픈 일정에 잘~~ 맞추어~~ 좋은 가격에 항공권 구매 해보자구요~ ㅎㅎ 항공 노선 확인 필수입니다~~ 16일 부터~~ 좋은 가격 잡아 보세요~~.",
+     "summary": [
+      "에어로케이 블프 특가 ~~ 최대 98% 한인 찬스~~ 노전별 특가 가 있으니~~ 오픈 일정에 잘~~ 맞추어~~ 좋은 가격에 항공권 구매 해보자구요~ ㅎㅎ 항공 노선 확인 필수입니다~~ 16일 부터~~ 좋은 가격 잡아 보세요~~."
+     ],
+     "link": "https://cafe.naver.com/tybwondergirl5/117377",
+     "source": "네이버 카페 · 베트남 디고-다낭나트랑자유여행,맛집,호텔,리조트,마사지,골프",
+     "date": "2026-11-13T13:00:43.217Z",
+     "found": "2026-11-13",
+     "cards": [],
+     "airlines": [
+      "RF"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "항공권 특가 오픈",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "에어로케이 블프 항공권 특가",
+      "airlines": [
+       "에어로케이"
+      ],
+      "name": "블프 특가",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": 98,
+      "seoul": null,
+      "at": "2026-11-13",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/ysm5828/9648615|에어로케이 볼프 특가 ✈️",
+     "kind": "airline",
+     "community": true,
+     "title": "에어로케이 볼프 특가 ✈️",
+     "desc": "에어로케이 항공 ✈️ 프로모션 하네요~ 아마도 (청주/제주) 두지역 공항 출발인듯요 아쉽게도 푸꾸옥은 해당없네요 나트랑/다낭 두지역 해당이네요 위지역 공항으로 일정 있으신분들 스~윽 보셔두 될듯요~ 모두들 즐~여 ✈️.",
+     "summary": [
+      "에어로케이 항공 ✈️ 프로모션 하네요~ 아마도 (청주/제주) 두지역 공항 출발인듯요 아쉽게도 푸꾸옥은 해당없네요 나트랑/다낭 두지역 해당이네요 위지역 공항으로 일정 있으신분들 스~윽 보셔두 될듯요~ 모두들 즐~여 ✈️."
+     ],
+     "link": "https://cafe.naver.com/ysm5828/9648615",
+     "source": "네이버 카페 · 푸꾸옥 도깨비- 베트남 푸꾸옥 자유여행,호텔리조트,항공권,맛집",
+     "date": "2026-11-13T05:00:40.211Z",
+     "found": "2026-11-13",
+     "cards": [],
+     "airlines": [
+      "RF"
+     ],
+     "countries": [
+      "베트남"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "베트남 항공권 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "에어로케이 항공권 프로모션 소식",
+      "airlines": [
+       "에어로케이"
+      ],
+      "name": "볼프 특가",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": false,
+      "at": "2026-11-13",
+      "model": "deepseek-v4-flash"
+     }
+    }
+   ]
+  },
+  {
+   "id": "http://www.weeklytoday.com/news/articleView.html|[ 카드 업계 동향] KB국민 카드 ㆍ 현대카드 (11.13)",
+   "kind": "card",
+   "title": "[ 카드 업계 동향] KB국민 카드 ㆍ 현대카드 (11.13)",
+   "desc": "에어캐나다 항공권 을 KB국민 개인 신용·체크 카드 로 결제하면 항공권 할인 과 함께 캐나다달러... ■ 현대카드 , 도산 쿠킹 라이브러리·Red Bar서 가을 미식·음악 프로그램 선봬 - 쿠킹 라이브러리 '아시안 플레이버...",
+   "summary": [
+    "에어캐나다 항공권 을 KB국민 개인 신용·체크 카드 로 결제하면 항공권 할인 과 함께 캐나다달러...",
+    "■ 현대카드 , 도산 쿠킹 라이브러리·Red Bar서 가을 미식·음악 프로그램 선봬 - 쿠킹 라이브러리 '아시안 플레이버…"
+   ],
+   "link": "http://www.weeklytoday.com/news/articleView.html?idxno=802023",
+   "source": "네이버 뉴스",
+   "date": "2026-11-13T10:06:00.000Z",
+   "found": "2026-11-13",
+   "cards": [
+    "현대카드"
+   ],
+   "airlines": [],
+   "countries": [],
+   "allRoutes": false,
+   "routes": [],
+   "price": null,
+   "query": "현대카드 항공권 할인",
+   "bodyAt": "2026-11-13",
+   "body": [
+    "숙박은 아고다와 트립닷컴의 행사 전용 페이지에서 대상 카드로 해외 호텔을 예약하면 조건에 따라 최대 20% 할인된다.",
+    "항공·호텔 예약, AI 결제 등 해외 결제로 미화 환산 150달러 이상을 쓴 이력이 있으면 전 세계 공항 라운지를 100원에 이용할 수 있다.",
+    "글로벌 eSIM 서비스인 에어알로(Airalo)와 세일리(Saily)에서 KB국민카드 전용 프로모션 코드를 넣고 eSIM을 사면 20%를 즉시 할인받는다.",
+    "KB국민카드 관계자는 “연말연시 해외여행을 계획하는 고객들이 여행 준비 단계부터 해외 현지에서까지 알뜰하게 여행을 즐길 수 있도록 다양한 혜택을 마련했다”고 말했다.",
+    "쿠킹 라이브러리의 새 쿡북 메뉴 주제는 '아시안 플레이버(Asian Flavor)'로 내년 2월까지 판매한다.",
+    "Red Bar에서는 13일 오후 6시부터 11시까지 ‘Red Night with 우드포드 리저브'가 열린다.",
+    "2024년 8월 문을 연 Red Bar는 코냑, 아르마냑, 칼바도스 등 브랜디 100여종과 페어링 음식을 내는 브랜디 전문 공간이다."
+   ],
+   "ai": {
+    "v": 2,
+    "cv": 3,
+    "card": {
+     "ok": true,
+     "why": "항공권·호텔 할인 혜택",
+     "cards": [
+      "KB국민카드"
+     ],
+     "use": "여행예약",
+     "airlines": [
+      "에어캐나다"
+     ],
+     "countries": [],
+     "amount": null,
+     "pct": 20,
+     "min": null,
+     "period": null
+    },
+    "at": "2026-11-13",
+    "model": "deepseek-v4-flash"
+   },
+   "lastDate": "2026-11-13T10:06:00.000Z",
+   "lastFound": "2026-11-13"
   },
   {
    "id": "http://www.newsprime.co.kr/news/article.html|에어로케이, 일본 후지드림항공과 공동 SNS 이벤트 진행",
@@ -2023,6 +2192,55 @@
    ]
   },
   {
+   "id": "xT2J1NDZ2RnFhY0plQndxMUFvTHRfZExOUjVEa194SW5OVnlWLXpEbmM2bEZwY1NoSlZLSzNFWXR2dWV3VnBTVmNTT2xUZzBINExIeFRGOGxKZ3ZjVnpYcHM|KB국민카드, 연말 해외여행 수요 공략… 항공권부터 공항 라운지까지 할인",
+   "kind": "airline",
+   "title": "KB국민카드, 연말 해외여행 수요 공략… 항공권부터 공항 라운지까지 할인",
+   "desc": "KB국민카드, 연말 해외여행 수요 공략… 항공권부터 공항 라운지까지 할인 Korea IT Times",
+   "summary": [
+    "KB국민카드, 연말 해외여행 수요 공략… 항공권부터 공항 라운지까지 할인 Korea IT Times…"
+   ],
+   "link": "https://www.koreaittimes.com/news/articleView.html?idxno=159146",
+   "source": "Korea IT Times",
+   "date": "2026-11-13T05:12:44.000Z",
+   "found": "2026-11-13",
+   "cards": [],
+   "airlines": [],
+   "countries": [],
+   "allRoutes": false,
+   "routes": [],
+   "price": null,
+   "query": "항공권 카드 할인 트립닷컴",
+   "bodyAt": "2026-11-13",
+   "body": [
+    "KB국민카드, 연말 해외여행 수요 공략… 항공권부터 공항 라운지까지 할인",
+    "승인 2026.11.13 14:12",
+    "에어캐나다·아고다·트립닷컴 제휴 혜택… eSIM 20% 할인·공항 라운지 100원 이용",
+    "여행 준비 단계부터 출국과 현지 체류까지 카드 이용 혜택을 연계해 해외여행 고객 확보에 나선다는 전략이다.",
+    "해외 숙박 예약 비용을 낮출 수 있는 제휴 행사도 마련했다.",
+    "아고다와 트립닷컴의 행사 전용 페이지에서 대상 카드로 해외 호텔을 예약하면 행사 조건에 따라 최대 20% 할인 혜택을 받을 수 있다.",
+    "KB국민 트래블러스 체크카드 고객은 해외 결제 실적 요건을 충족하면 전 세계 공항 라운지를 100원에 이용할 수 있다.",
+    "항공권과 호텔 예약, 인공지능(AI) 결제 등 해외 결제 내역을 미화로 환산해 150달러 이상 보유한 고객이 대상이다.",
+    "글로벌 eSIM 업체 에어알로(Airalo)와 세일리(Saily)에서 KB국민카드 전용 프로모션 코드를 입력한 뒤 eSIM을 구매하면 20% 즉시 할인받을 수 있다."
+   ],
+   "ai": {
+    "v": 2,
+    "promo": false,
+    "why": "카드사 여행 혜택 행사, 항공권은 곁가지",
+    "airlines": [],
+    "name": null,
+    "book": null,
+    "board": null,
+    "price": null,
+    "trip": null,
+    "pct": null,
+    "seoul": null,
+    "at": "2026-11-13",
+    "model": "deepseek-v4-flash"
+   },
+   "lastDate": "2026-11-13T05:12:44.000Z",
+   "lastFound": "2026-11-13"
+  },
+  {
    "id": "c:https://cafe.naver.com/flytogether/24449|[2월신규,이벤트]아시아나,대한항공,항공기,여객기,비행기,다이캐스트,공항",
    "kind": "airline",
    "community": true,
@@ -2549,95 +2767,6 @@
       "trip": null,
       "pct": null,
       "seoul": null,
-      "at": "2026-11-13",
-      "model": "deepseek-v4-flash"
-     }
-    }
-   ]
-  },
-  {
-   "id": "c:https://cafe.naver.com/20daelee/952962|에어로케이, 최대 98% 할인 블프 특가 (~11/22)",
-   "kind": "airline",
-   "community": true,
-   "title": "에어로케이, 최대 98% 할인 블프 특가 (~11/22)",
-   "desc": "",
-   "link": "https://cafe.naver.com/20daelee/952962",
-   "source": "네이버 카페 · 체크인데이#일본여행,도쿄여행,후쿠오카여행,오사카,교토,삿포로",
-   "date": "2026-11-13T03:00:40.547Z",
-   "found": "2026-11-13",
-   "cards": [],
-   "airlines": [
-    "RF"
-   ],
-   "countries": [
-    "베트남"
-   ],
-   "allRoutes": false,
-   "routes": [],
-   "price": null,
-   "query": "항공권 특가 오픈",
-   "ai": {
-    "v": 2,
-    "promo": true,
-    "why": "항공사 블프 특가 할인",
-    "airlines": [
-     "에어로케이"
-    ],
-    "name": "블프 특가",
-    "book": {
-     "from": null,
-     "to": "2026-11-22"
-    },
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": 98,
-    "seoul": null,
-    "at": "2026-11-13",
-    "model": "deepseek-v4-flash"
-   },
-   "notified": "2026-11-13",
-   "lastDate": "2026-11-13T05:00:40.211Z",
-   "lastFound": "2026-11-13",
-   "more": [
-    {
-     "id": "c:https://cafe.naver.com/ysm5828/9648615|에어로케이 볼프 특가 ✈️",
-     "kind": "airline",
-     "community": true,
-     "title": "에어로케이 볼프 특가 ✈️",
-     "desc": "에어로케이 항공 ✈️ 프로모션 하네요~ 아마도 (청주/제주) 두지역 공항 출발인듯요 아쉽게도 푸꾸옥은 해당없네요 나트랑/다낭 두지역 해당이네요 위지역 공항으로 일정 있으신분들 스~윽 보셔두 될듯요~ 모두들 즐~여 ✈️.",
-     "summary": [
-      "에어로케이 항공 ✈️ 프로모션 하네요~ 아마도 (청주/제주) 두지역 공항 출발인듯요 아쉽게도 푸꾸옥은 해당없네요 나트랑/다낭 두지역 해당이네요 위지역 공항으로 일정 있으신분들 스~윽 보셔두 될듯요~ 모두들 즐~여 ✈️."
-     ],
-     "link": "https://cafe.naver.com/ysm5828/9648615",
-     "source": "네이버 카페 · 푸꾸옥 도깨비- 베트남 푸꾸옥 자유여행,호텔리조트,항공권,맛집",
-     "date": "2026-11-13T05:00:40.211Z",
-     "found": "2026-11-13",
-     "cards": [],
-     "airlines": [
-      "RF"
-     ],
-     "countries": [
-      "베트남"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "베트남 항공권 특가",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "에어로케이 항공권 프로모션 소식",
-      "airlines": [
-       "에어로케이"
-      ],
-      "name": "볼프 특가",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": false,
       "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
@@ -33294,24 +33423,24 @@
    "lastFound": "2026-11-01"
   }
  ],
- "updated": "2026-11-13T11:00:50.515Z",
- "runs": 163,
+ "updated": "2026-11-13T13:00:43.217Z",
+ "runs": 164,
  "checked": {
-  "베트남": "2026-11-13T11:00:50.515Z",
-  "태국": "2026-11-13T11:00:50.515Z",
-  "필리핀": "2026-11-13T11:00:50.515Z",
-  "인도네시아": "2026-11-13T11:00:50.515Z",
-  "말레이시아": "2026-11-13T11:00:50.515Z",
-  "싱가포르": "2026-11-13T11:00:50.515Z",
-  "일본": "2026-11-13T11:00:50.515Z",
-  "대만": "2026-11-13T11:00:50.515Z",
-  "홍콩": "2026-11-13T11:00:50.515Z",
-  "마카오": "2026-11-13T11:00:50.515Z",
-  "중국": "2026-11-13T11:00:50.515Z",
-  "미국령": "2026-11-13T11:00:50.515Z",
-  "미국": "2026-11-13T11:00:50.515Z"
+  "베트남": "2026-11-13T13:00:43.217Z",
+  "태국": "2026-11-13T13:00:43.217Z",
+  "필리핀": "2026-11-13T13:00:43.217Z",
+  "인도네시아": "2026-11-13T13:00:43.217Z",
+  "말레이시아": "2026-11-13T13:00:43.217Z",
+  "싱가포르": "2026-11-13T13:00:43.217Z",
+  "일본": "2026-11-13T13:00:43.217Z",
+  "대만": "2026-11-13T13:00:43.217Z",
+  "홍콩": "2026-11-13T13:00:43.217Z",
+  "마카오": "2026-11-13T13:00:43.217Z",
+  "중국": "2026-11-13T13:00:43.217Z",
+  "미국령": "2026-11-13T13:00:43.217Z",
+  "미국": "2026-11-13T13:00:43.217Z"
  },
- "auto": "2026-11-13T11:00:50.515Z",
+ "auto": "2026-11-13T13:00:43.217Z",
  "sources": {
   "7C": "2026-11-01",
   "TW": "2026-11-01",
@@ -33524,80 +33653,6 @@
    "중국동방항공 얼리버드": "2026-11-04"
   },
   "seen": [
-   "happyibook/6347620",
-   "taeyeon7989/499527",
-   "joonggonara/1137793965",
-   "nyctourdesign/1205692",
-   "amateurmagician/116982",
-   "worldtravelcafe/1164791",
-   "worldtravelcafe/1164790",
-   "worldtravelcafe/1164786",
-   "worldtravelcafe/1164782",
-   "worldtravelcafe/1164774",
-   "drawhangil/25817",
-   "warcraftgamemap/3530465",
-   "010freebaram/257596",
-   "joonggonara/1137801724",
-   "joonggonara/1137801631",
-   "joonggonara/1137800519",
-   "gongichanglab/646",
-   "gongichanglab/643",
-   "010freebaram/257602",
-   "joonggonara/1137795504",
-   "coed2/3501514",
-   "gongichanglab/647",
-   "mjactionbusan/141048",
-   "loyaltylife/367860",
-   "jpnstory/4435504",
-   "teeshot/11027",
-   "aitax/751",
-   "joonggonara/1137798325",
-   "allichicken/45754",
-   "khmusicacademy/867326",
-   "ungsangjang/885258",
-   "yamipapa/7989",
-   "happyibook/6347702",
-   "happyibook/6347675",
-   "warcraftgamemap/3530454",
-   "happyibook/6347663",
-   "happyibook/6347639",
-   "ysm5828/9645890",
-   "happyibook/6347656",
-   "vinpearl/565986",
-   "thaiinfo/680577",
-   "loyaltylife/367869",
-   "happyibook/6347630",
-   "drawhangil/25822",
-   "drawhangil/25820",
-   "bebettergirls/2103383",
-   "gongichanglab/642",
-   "8282home/870643",
-   "cheepboracay/863217",
-   "freetourincebu/1617",
-   "povo/52602",
-   "jpnstory/4436035",
-   "miznett/5151105",
-   "yglifesj/1016",
-   "bluelf9ox/7242",
-   "petitfood/6614",
-   "010freebaram/257544",
-   "semiconductorplatinu/3022",
-   "stylefem/53",
-   "gimhaezumma/2829837",
-   "makemywedding/680383",
-   "otoolifecamping/74639",
-   "costco12/796416",
-   "cafemakecafebest/102086",
-   "biscat/286",
-   "imsanbu/80476672",
-   "chakhanled/337",
-   "chakhanled/336",
-   "fuvic/19129",
-   "jimncarry/95199",
-   "b2k/11584",
-   "worldtravelcafe/1164819",
-   "worldtravelcafe/1164816",
-   "boholvip/19",
    "minecraftpe/4011949",
    "worldtravelcafe/1164795",
    "worldtravelcafe/1164792",
@@ -39523,7 +39578,81 @@
    "50world/506",
    "worldtravelcafe/1166667",
    "postmore/106312",
-   "jimncarry/95427"
+   "jimncarry/95427",
+   "worrytodream/993797",
+   "worldtravelcafe/1166703",
+   "worrytodream/993773",
+   "worldtravelcafe/1166698",
+   "worrytodream/993748",
+   "everydaywiki/172",
+   "worldtravelcafe/1166690",
+   "worrytodream/993688",
+   "worldtravelcafe/1166689",
+   "worldtravelcafe/1166687",
+   "tybwondergirl5/117377",
+   "mindy7857/5531713",
+   "mindy7857/5531678",
+   "mindy7857/5531676",
+   "mindy7857/5531660",
+   "zzop/4340681",
+   "zzop/4340679",
+   "sheiszzz/1235013",
+   "010freebaram/260784",
+   "dbskwkd/150498",
+   "dbskwkd/150495",
+   "010freebaram/260770",
+   "dbskwkd/150492",
+   "joonggonara/1138108948",
+   "pusanmommy/1578364",
+   "jpnstory/4443234",
+   "haskellgroup/1058",
+   "jejudoonemonth/18948",
+   "zzop/4340722",
+   "jpnstory/4443242",
+   "vnhcm10pro/5072",
+   "gocampsaha/28618",
+   "joonggonara/1138109403",
+   "skyblueph5nw/1186",
+   "grownman/1187016",
+   "vinpearl/569385",
+   "happyibook/6354603",
+   "blackdkdul/93",
+   "minecraftpe/4015921",
+   "warcraftgamemap/3534808",
+   "grayic2de/151",
+   "happyibook/6354560",
+   "happyibook/6354542",
+   "ysm5828/9648793",
+   "warcraftgamemap/3534720",
+   "warcraftgamemap/3534829",
+   "warcraftgamemap/3534775",
+   "minecraftpe/4015066",
+   "loyaltylife/369233",
+   "whiskycognac/964673",
+   "tripspoon/495",
+   "joonggonara/1138112824",
+   "firenze/8998541",
+   "tumfamtemporary/21919",
+   "tumfamtemporary/21902",
+   "redzn0aw/73",
+   "loveloveloveovelove/1041978",
+   "sparkle24on/59943",
+   "wtac/8505321",
+   "vainwithzeus/43475",
+   "colco101/33490",
+   "festivalsoo/840",
+   "noljatravel/1934003",
+   "chakhanled/345",
+   "festivalsoo/838",
+   "chakhanled/344",
+   "50world/507",
+   "tumfamtemporary/21983",
+   "taiwantour/1159915",
+   "worldsuccess777/984939",
+   "itemriew/977",
+   "wegovy1/40194",
+   "tumfamtemporary/21863",
+   "loyaltylife/369195"
   ],
   "since": "2026-11-03",
   "imported": "2026-11-03"

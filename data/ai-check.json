@@ -1,6 +1,96 @@
 [
  {
   "at": "2026-11-13",
+  "title": "( 항공 정보) 에어로케이 블프 특~",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "에어로케이 블프 항공권 특가",
+   "airlines": [
+    "에어로케이"
+   ],
+   "name": "블프 특가",
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": 98,
+   "seoul": null,
+   "at": "2026-11-13",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "할인율 규칙 - / AI 98"
+  ]
+ },
+ {
+  "at": "2026-11-13",
+  "title": "진에어 세일",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "진에어 세일 프로모션 공유",
+   "airlines": [
+    "진에어"
+   ],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-13",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-13",
+  "title": "KB국민카드, 연말 해외여행 수요 공략… 항공권부터 공항 라운지까지 할인",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "카드사 여행 혜택 행사, 항공권은 곁가지",
+   "airlines": [],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-13",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": 20,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님",
+   "할인율 규칙 20 / AI -"
+  ]
+ },
+ {
+  "at": "2026-11-13",
   "title": "진에어 블프 세일",
   "community": true,
   "ai": {
@@ -10158,111 +10248,6 @@
    },
    "pct": null,
    "price": 99000
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "\" 홍콩 항공권 11만3000원부터\"… 홍콩 익스프레스, 창립 13주년 초 특가 쏜...",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "창립기념 항공권 특가",
-   "airlines": [
-    "홍콩익스프레스"
-   ],
-   "name": "창립 13주년 초 특가",
-   "book": null,
-   "board": null,
-   "price": 113000,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": 113000
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "홍콩 항공권 11만3000원부터… 홍콩익스프레스, 창립 13주년 초특가 쏜다",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "항공사 창립기념 항공권 특가",
-   "airlines": [
-    "홍콩익스프레스"
-   ],
-   "name": "13주년 초특가 프로모션",
-   "book": {
-    "from": null,
-    "to": "2026-10-31"
-   },
-   "board": null,
-   "price": 113000,
-   "trip": "편도",
-   "pct": null,
-   "seoul": true,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2026-10-31"
-   },
-   "board": null,
-   "pct": null,
-   "price": 113000
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "홍콩익스프레스, 창립 13주년 맞이 ‘11만원대’ 홍콩행 특가 진행",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "창립기념 항공권 특가",
-   "airlines": [
-    "홍콩익스프레스"
-   ],
-   "name": "13주년 초특가 프로모션",
-   "book": {
-    "from": null,
-    "to": "2026-10-31"
-   },
-   "board": {
-    "from": "2027-01-03",
-    "to": "2028-03-27"
-   },
-   "price": 113000,
-   "trip": "편도",
-   "pct": null,
-   "seoul": true,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2026-10-31"
-   },
-   "board": {
-    "from": "2027-01-03",
-    "to": "2028-03-27"
-   },
-   "pct": null,
-   "price": 113000
   },
   "diff": []
  }
