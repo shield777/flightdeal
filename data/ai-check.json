@@ -1,6 +1,39 @@
 [
  {
   "at": "2026-11-13",
+  "title": "에어로케이, 일본 후지드림항공과 공동 SNS 이벤트 진행",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "항공권은 추첨 경품일 뿐",
+   "airlines": [],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": false,
+   "at": "2026-11-13",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2026-11-06",
+    "to": "2026-11-27"
+   },
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님",
+   "예약 마감 규칙 2026-11-27 / AI -"
+  ]
+ },
+ {
+  "at": "2026-11-13",
   "title": "대한 항공 호놀룰루, 일반석 마일 할인 하네요?!",
   "community": true,
   "ai": {
@@ -10375,47 +10408,6 @@
     "to": "2027-02-21"
    },
    "pct": 20,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "트리니티항공, 수능 할인 프로모션..동반 1인까지 최대 25%",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "수험생 항공권 운임 할인 프로모션",
-   "airlines": [
-    "트리니티항공"
-   ],
-   "name": "수능 할인 프로모션",
-   "book": {
-    "from": "2026-11-12",
-    "to": "2027-01-31"
-   },
-   "board": {
-    "from": "2026-11-20",
-    "to": "2027-02-21"
-   },
-   "price": null,
-   "trip": null,
-   "pct": 25,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": "2026-11-12",
-    "to": "2027-01-31"
-   },
-   "board": {
-    "from": "2026-11-20",
-    "to": "2027-02-21"
-   },
-   "pct": 25,
    "price": null
   },
   "diff": []
