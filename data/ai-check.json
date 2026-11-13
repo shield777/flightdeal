@@ -1,6 +1,235 @@
 [
  {
   "at": "2026-11-13",
+  "title": "(정보)진에어 블랙프라이데이! | JIN(진)짜 혜택이 이륙한다",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "진에어 블프 항공권 특가",
+   "airlines": [
+    "진에어"
+   ],
+   "name": "블랙프라이데이 특가",
+   "book": {
+    "from": "2026-11-13",
+    "to": "2026-11-27"
+   },
+   "board": {
+    "from": "2026-11-13",
+    "to": "2027-03-27"
+   },
+   "price": null,
+   "trip": null,
+   "pct": 15,
+   "seoul": null,
+   "at": "2026-11-13",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "예약 마감 규칙 - / AI 2026-11-27",
+   "할인율 규칙 - / AI 15"
+  ]
+ },
+ {
+  "at": "2026-11-13",
+  "title": "에어로케이 볼프 특가 ✈️",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "에어로케이 항공권 프로모션 소식",
+   "airlines": [
+    "에어로케이"
+   ],
+   "name": "볼프 특가",
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": false,
+   "at": "2026-11-13",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-13",
+  "title": "진에어, 일본 노선 최대 15% 할인! 블랙프라이데이 (~11/27)",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "진에어 일본 노선 할인 프로모션",
+   "airlines": [
+    "진에어"
+   ],
+   "name": "블랙프라이데이",
+   "book": {
+    "from": null,
+    "to": "2026-11-27"
+   },
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": 15,
+   "seoul": null,
+   "at": "2026-11-13",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": null,
+    "to": "2026-11-27"
+   },
+   "board": null,
+   "pct": 15,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-13",
+  "title": "✈️ 진에어 타임세일 ! 오늘 자정 마감",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "진에어 타임세일 항공권 특가",
+   "airlines": [
+    "진에어"
+   ],
+   "name": "진에어 타임세일",
+   "book": {
+    "from": null,
+    "to": "2026-11-13"
+   },
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": false,
+   "at": "2026-11-13",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "예약 마감 규칙 - / AI 2026-11-13"
+  ]
+ },
+ {
+  "at": "2026-11-13",
+  "title": "발리 편도 263,600원/싱가포르180,100원부터! 제주 항공 항공권 특가 페스타! (~11....",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "제주항공 동남아 특가 프로모션",
+   "airlines": [
+    "제주항공"
+   ],
+   "name": "동남아&사이판 윈터 페스타",
+   "book": {
+    "from": "2026-11-12",
+    "to": "2026-11-18"
+   },
+   "board": null,
+   "price": 180100,
+   "trip": "편도",
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-13",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "예약 마감 규칙 - / AI 2026-11-18",
+   "가격 규칙 - / AI 180100"
+  ]
+ },
+ {
+  "at": "2026-11-13",
+  "title": "[ 대한항공 스카이샵] 스카이샵 완전정복 (포인트/쿠폰 + 기타 팁)",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "스카이샵 이용 팁·쿠폰 안내",
+   "airlines": [],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-13",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님"
+  ]
+ },
+ {
+  "at": "2026-11-13",
+  "title": "❤️❤️진 에어 블프 데이 이벤트❤️❤️",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "진에어 블프 항공권 특가 이벤트",
+   "airlines": [
+    "진에어"
+   ],
+   "name": "블프 데이 이벤트",
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-13",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-13",
   "title": "에어로케이, 최대 98% 할인 블프 특가 (~11/22)",
   "community": true,
   "ai": {
@@ -10091,260 +10320,5 @@
    "AI: 특가 아님",
    "할인율 규칙 20 / AI -"
   ]
- },
- {
-  "at": "2026-11-12",
-  "title": "홍콩익스프레스, 창립 13주년 맞아 특별 프로모션",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "항공사 창립기념 특가 프로모션",
-   "airlines": [
-    "홍콩익스프레스"
-   ],
-   "name": "13주년 초특가 프로모션",
-   "book": {
-    "from": "2026-10-26",
-    "to": "2026-10-31"
-   },
-   "board": {
-    "from": "2027-01-03",
-    "to": "2028-03-27"
-   },
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": true,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": "2026-10-26",
-    "to": "2026-10-31"
-   },
-   "board": {
-    "from": "2027-01-03",
-    "to": "2028-03-27"
-   },
-   "pct": null,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "홍콩 익스프레스항공, 창립 13주년 특가 항공권 프로모션",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "항공사 창립기념 특가 운임",
-   "airlines": [
-    "홍콩익스프레스항공"
-   ],
-   "name": "13주년 초특가 프로모션",
-   "book": {
-    "from": "2026-10-26",
-    "to": "2026-10-31"
-   },
-   "board": {
-    "from": "2027-01-03",
-    "to": null
-   },
-   "price": 113000,
-   "trip": "편도",
-   "pct": null,
-   "seoul": true,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": "2026-10-26",
-    "to": "2026-10-31"
-   },
-   "board": {
-    "from": "2027-01-03",
-    "to": "2027-01-03"
-   },
-   "pct": null,
-   "price": 113000
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "홍콩익스프레스(HK), 창립 13주년 기념 항공 운임 프로모션 운용",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "창립기념 항공운임 프로모션",
-   "airlines": [
-    "홍콩익스프레스"
-   ],
-   "name": "창립 13주년 기념 프로모션",
-   "book": {
-    "from": "2026-10-26",
-    "to": "2026-10-30"
-   },
-   "board": {
-    "from": "2027-01-03",
-    "to": "2028-03-27"
-   },
-   "price": null,
-   "trip": "왕복",
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": "2026-10-26",
-    "to": "2026-10-30"
-   },
-   "board": {
-    "from": "2027-01-03",
-    "to": "2028-03-27"
-   },
-   "pct": null,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "[IT라운지] KT '보야지 페스티벌' 개최·뷰런 'ITS강릉총회 참가'·'페르...",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "해외 숙소 할인 이벤트",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": "2026-12-25",
-    "to": "2026-12-27"
-   },
-   "board": null,
-   "pct": 20,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님",
-   "예약 마감 규칙 2026-12-27 / AI -",
-   "할인율 규칙 20 / AI -"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "노랑풍선, 맞춤형 겨울 여행 기획전 선봬… 가족 체험부터 호주 힐링까...",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "여행사 겨울 여행 기획전, 항공권 중심 아님",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "“최대 77%↓”… 꺾인 동남아 여행 수요에 성수기 운임 할인 나서는 LC...",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "LCC 동남아 항공권 운임 할인",
-   "airlines": [
-    "제주항공",
-    "트리니티항공",
-    "진에어",
-    "이스타항공"
-   ],
-   "name": null,
-   "book": {
-    "from": null,
-    "to": "2026-10-27"
-   },
-   "board": null,
-   "price": 149000,
-   "trip": "편도",
-   "pct": 77,
-   "seoul": true,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": "2026-12-01",
-    "to": "2027-01-31"
-   },
-   "board": null,
-   "pct": 80,
-   "price": null
-  },
-  "diff": [
-   "예약 마감 규칙 2027-01-31 / AI 2026-10-27",
-   "할인율 규칙 80 / AI 77",
-   "가격 규칙 - / AI 149000"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "가을·겨울 해외여행, 더 알뜰하게! 항공권 최대 30% 할인에 마일리지 3배 적립까지",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "국제선 항공권 최대 30% 할인 특가",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": 30,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": 30,
-   "price": null
-  },
-  "diff": []
  }
 ]
