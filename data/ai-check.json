@@ -1,6 +1,165 @@
 [
  {
   "at": "2026-11-13",
+  "title": "진에어 블프 세일",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "진에어 블프 항공권 세일",
+   "airlines": [
+    "진에어"
+   ],
+   "name": "블프 세일",
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-13",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-13",
+  "title": "에어로케이, 후지드림항공과 항공권 증정 'SNS 이벤트 ' 진행",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "항공권 증정 이벤트, 운임 할인 아님",
+   "airlines": [],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": false,
+   "at": "2026-11-13",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님"
+  ]
+ },
+ {
+  "at": "2026-11-13",
+  "title": "KB국민카드·KB손해보험, 항공권-숙박 할인 제공·60번째 ‘KB 희망의 집’ 완공",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "호텔·eSIM 할인 중심, 항공권 운임 아님",
+   "airlines": [],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-13",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": 20,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님",
+   "할인율 규칙 20 / AI -"
+  ]
+ },
+ {
+  "at": "2026-11-13",
+  "title": "항공권 할인 에 라운지 100원까지…KB국민 카드 , 해외여행 혜택 확대",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "카드사 여행 혜택 확대 기사",
+   "airlines": [],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-13",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": 20,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님",
+   "할인율 규칙 20 / AI -"
+  ]
+ },
+ {
+  "at": "2026-11-13",
+  "title": "필리핀 항공, 연말 맞아 항공권 특가",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "필리핀항공 연말 항공권 특가",
+   "airlines": [
+    "필리핀항공"
+   ],
+   "name": "2026 Year End Seat Sale",
+   "book": {
+    "from": "2026-11-09",
+    "to": "2026-11-15"
+   },
+   "board": {
+    "from": "2026-12-01",
+    "to": null
+   },
+   "price": null,
+   "trip": null,
+   "pct": 40,
+   "seoul": true,
+   "at": "2026-11-13",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2026-11-09",
+    "to": "2026-11-15"
+   },
+   "board": {
+    "from": "2026-12-01",
+    "to": "2026-12-01"
+   },
+   "pct": 40,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-13",
   "title": "✈️진에어 항공 : 11월에도 함께하는 국제선 타임세일 정보",
   "community": true,
   "ai": {
@@ -10106,198 +10265,5 @@
    "price": 113000
   },
   "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "홍콩익스프레스, 초특가 프로모션 실시",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "항공사 창립기념 초특가 운임 프로모션",
-   "airlines": [
-    "홍콩익스프레스"
-   ],
-   "name": "13주년 초특가 프로모션",
-   "book": {
-    "from": "2026-10-26",
-    "to": "2026-10-31"
-   },
-   "board": {
-    "from": "2027-01-03",
-    "to": "2028-03-27"
-   },
-   "price": 113000,
-   "trip": "편도",
-   "pct": null,
-   "seoul": true,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": "2026-10-26",
-    "to": "2026-10-31"
-   },
-   "board": {
-    "from": "2027-01-03",
-    "to": "2028-03-27"
-   },
-   "pct": null,
-   "price": 113000
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "홍콩 익스프레스, 창립 13주년 맞이 '11만원대' 홍콩 행 특가 진행",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "항공사 창립기념 특가 운임",
-   "airlines": [
-    "홍콩익스프레스"
-   ],
-   "name": "창립 13주년 특가",
-   "book": {
-    "from": null,
-    "to": "2026-10-31"
-   },
-   "board": {
-    "from": "2027-01-03",
-    "to": "2028-03-27"
-   },
-   "price": 110000,
-   "trip": "왕복",
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2026-10-31"
-   },
-   "board": {
-    "from": "2027-01-03",
-    "to": "2028-03-27"
-   },
-   "pct": null,
-   "price": 110000
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "\" 할인 항공권 거절했을 뿐인데\"… 베트남 여성 유튜버 협박한 한국인",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "협박 사건 기사, 할인 소식 아님",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": 50,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님",
-   "할인율 규칙 50 / AI -"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "스카이스캐너, ‘11.11 쇼핑데이’ 항공권 할인 프로모션",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "항공권 할인 프로모션",
-   "airlines": [
-    "진에어",
-    "제주항공",
-    "트리니티항공",
-    "캐세이퍼시픽"
-   ],
-   "name": "11.11 쇼핑 데이",
-   "book": {
-    "from": "2026-11-01",
-    "to": "2026-11-11"
-   },
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": 15,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": "2026-11-01",
-    "to": "2026-11-11"
-   },
-   "board": null,
-   "pct": 15,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "선푸꾸옥항공은 창립 1주년을 기념하여 선월드 고객에게 항공권 할인 코드와 키스 브릿지 방문 티켓을 제공합니다.",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "항공권 할인 코드 증정 프로모션",
-   "airlines": [
-    "선푸꾸옥항공"
-   ],
-   "name": "창립 1주년 기념 할인 코드",
-   "book": {
-    "from": "2026-10-26",
-    "to": "2026-11-07"
-   },
-   "board": {
-    "from": "2026-10-26",
-    "to": "2026-12-31"
-   },
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": false,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": "2026-10-26",
-    "to": "2026-11-07"
-   },
-   "board": {
-    "from": "2026-10-26",
-    "to": "2026-12-31"
-   },
-   "pct": 8,
-   "price": null
-  },
-  "diff": [
-   "할인율 규칙 8 / AI -"
-  ]
  }
 ]
