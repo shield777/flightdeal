@@ -1,6 +1,40 @@
 [
  {
   "at": "2026-11-15",
+  "title": "[하늘길] 11월 3주, '수험생' 항공권 25% 할인 …트리니티 외 3가지 항공",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "항공사 항공권 할인 프로모션",
+   "airlines": [
+    "트리니티항공",
+    "에어서울",
+    "섬에어",
+    "캐세이퍼시픽항공"
+   ],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": 70,
+   "seoul": true,
+   "at": "2026-11-15",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": 20,
+   "price": null
+  },
+  "diff": [
+   "할인율 규칙 20 / AI 70"
+  ]
+ },
+ {
+  "at": "2026-11-15",
   "title": "비엣젯 항공은 11월 10일부터 12일까지 3일간 특별 프로모션을 진행하며, 디럭스석 티켓 25% 할인 및 기타 다양한 매력적인 혜택을 제공합니",
   "community": false,
   "ai": {
@@ -10107,47 +10141,6 @@
    },
    "board": null,
    "pct": 15,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "비엣젯항공, 노선망 확대 및 에코 특가 항공권 판매 돌입",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "비엣젯 에코 특가 항공권 판매",
-   "airlines": [
-    "비엣젯"
-   ],
-   "name": "에코 특가",
-   "book": {
-    "from": null,
-    "to": "2026-11-02"
-   },
-   "board": {
-    "from": "2026-11-01",
-    "to": "2027-10-31"
-   },
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2026-11-02"
-   },
-   "board": {
-    "from": "2026-11-01",
-    "to": "2027-10-31"
-   },
-   "pct": null,
    "price": null
   },
   "diff": []
