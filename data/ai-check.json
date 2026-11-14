@@ -1,6 +1,93 @@
 [
  {
   "at": "2026-11-14",
+  "title": "비엣젯 항공 한국 베트남 전 노선 특가 진행 수하물 규정 먼저 확인하세요",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "비엣젯 전 노선 항공권 특가",
+   "airlines": [
+    "비엣젯"
+   ],
+   "name": "더블데이 특가",
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-14",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-14",
+  "title": "KB국민카드 \"연말연시 항공권·숙박 할인 받아가세요\"",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "카드 결제 시 항공권 할인",
+   "airlines": [
+    "에어캐나다"
+   ],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-14",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-14",
+  "title": "제주항공 이벤트 중 노브랜드 버거로 체크인",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "항공사 이름만 빌린 버거 이벤트",
+   "airlines": [],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-14",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님"
+  ]
+ },
+ {
+  "at": "2026-11-14",
   "title": "✈️ 제주 항공 최대 80% 할인! 겨울엔 동남아로 도망가야쥬~",
   "community": true,
   "ai": {
@@ -10125,117 +10212,6 @@
    },
    "pct": null,
    "price": 99000
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "비엣젯항공, 에코 특가 항공권 한정 기간 판매",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "비엣젯 에코 특가 항공권 판매",
-   "airlines": [
-    "비엣젯"
-   ],
-   "name": "에코 특가",
-   "book": {
-    "from": null,
-    "to": "2026-11-02"
-   },
-   "board": {
-    "from": "2026-11-01",
-    "to": "2027-10-31"
-   },
-   "price": 99000,
-   "trip": "편도",
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2026-11-02"
-   },
-   "board": {
-    "from": "2026-11-01",
-    "to": "2027-10-31"
-   },
-   "pct": null,
-   "price": 99000
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "비엣젯항공, 항공권 특가 프로모션... 베트남 비롯 아시아 주요 여행지 ...",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "항공권 특가 프로모션 소식",
-   "airlines": [
-    "비엣젯항공"
-   ],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "비엣젯항공, 신규 노선 확대...한정 기간 특가 판매",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "비엣젯 항공권 특가 판매",
-   "airlines": [
-    "비엣젯항공"
-   ],
-   "name": "에코 특가 항공권",
-   "book": {
-    "from": null,
-    "to": "2026-11-02"
-   },
-   "board": {
-    "from": "2026-11-01",
-    "to": "2027-10-31"
-   },
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2026-11-02"
-   },
-   "board": {
-    "from": "2026-11-01",
-    "to": "2027-10-31"
-   },
-   "pct": null,
-   "price": null
   },
   "diff": []
  }
