@@ -1,6 +1,64 @@
 [
  {
   "at": "2026-11-14",
+  "title": "이스타항공 동남아 특가 홍콩 할인코드",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "이스타항공 동남아 특가 할인코드",
+   "airlines": [
+    "이스타항공"
+   ],
+   "name": "동남아 특가",
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-14",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-14",
+  "title": "제주항공 일본 노선 특가",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "제주항공 일본 노선 특가",
+   "airlines": [
+    "제주항공"
+   ],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-14",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-14",
   "title": "다낭 이스타항공 11월16일까지!! 땡처리!",
   "community": true,
   "ai": {
@@ -10093,89 +10151,5 @@
    "price": 88000
   },
   "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "비엣젯항공, 신규 노선 확대 및 항공권 특가 프로모션 전개",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "비엣젯 항공권 특가 프로모션",
-   "airlines": [
-    "비엣젯"
-   ],
-   "name": null,
-   "book": {
-    "from": null,
-    "to": "2026-11-02"
-   },
-   "board": {
-    "from": "2026-11-01",
-    "to": "2027-10-31"
-   },
-   "price": 99000,
-   "trip": "편도",
-   "pct": null,
-   "seoul": true,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2026-11-02"
-   },
-   "board": {
-    "from": "2026-11-01",
-    "to": "2027-10-31"
-   },
-   "pct": null,
-   "price": 99000
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "제주항공, 항공의 날 맞아 국내·국제선 48시간 특가",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "제주항공 48시간 항공권 특가",
-   "airlines": [
-    "제주항공"
-   ],
-   "name": "항공의 날 48시간 특가",
-   "book": {
-    "from": "2026-10-28",
-    "to": "2026-10-30"
-   },
-   "board": {
-    "from": null,
-    "to": "2026-11-30"
-   },
-   "price": 88000,
-   "trip": "편도",
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": "2026-10-28",
-    "to": "2026-10-30"
-   },
-   "board": {
-    "from": null,
-    "to": "2026-11-30"
-   },
-   "pct": null,
-   "price": null
-  },
-  "diff": [
-   "가격 규칙 - / AI 88000"
-  ]
  }
 ]
