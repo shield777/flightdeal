@@ -1,6 +1,41 @@
 [
  {
   "at": "2026-11-14",
+  "title": "에어로케이항공, 후지드림항공과 일본 항공권 '1+1' 이벤트",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "항공권 1+1은 SNS 경품 이벤트",
+   "airlines": [
+    "에어로케이"
+   ],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": false,
+   "at": "2026-11-14",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": null,
+    "to": "2026-11-27"
+   },
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님",
+   "예약 마감 규칙 2026-11-27 / AI -"
+  ]
+ },
+ {
+  "at": "2026-11-14",
   "title": "제주항공 ×노블버거 이벤트 공유해요 ^^",
   "community": true,
   "ai": {
@@ -10131,47 +10166,6 @@
    "why": "비엣젯 항공권 특가 프로모션",
    "airlines": [
     "비엣젯"
-   ],
-   "name": "에코 특가 항공권",
-   "book": {
-    "from": null,
-    "to": "2026-11-02"
-   },
-   "board": {
-    "from": "2026-11-01",
-    "to": "2027-10-31"
-   },
-   "price": 99000,
-   "trip": "편도",
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2026-11-02"
-   },
-   "board": {
-    "from": "2026-11-01",
-    "to": "2027-10-31"
-   },
-   "pct": null,
-   "price": 99000
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "비엣젯항공, 항공권 특가 판매 프로모션 진행",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "비엣젯 항공권 특가 판매",
-   "airlines": [
-    "비엣젯항공"
    ],
    "name": "에코 특가 항공권",
    "book": {
