@@ -1,6 +1,69 @@
 [
  {
   "at": "2026-11-14",
+  "title": "다낭 이스타항공 11월16일까지!! 땡처리!",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "이스타항공 땡처리 특가",
+   "airlines": [
+    "이스타항공"
+   ],
+   "name": "땡처리",
+   "book": {
+    "from": null,
+    "to": "2026-11-16"
+   },
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-14",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "예약 마감 규칙 - / AI 2026-11-16"
+  ]
+ },
+ {
+  "at": "2026-11-14",
+  "title": "제주항공 동남아 사이판 할인",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "제주항공 동남아 할인 특가",
+   "airlines": [
+    "제주항공"
+   ],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-14",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-14",
   "title": "에어로케이항공, 후지드림항공과 일본 항공권 ‘1+1’ 이벤트",
   "community": false,
   "ai": {
@@ -10114,81 +10177,5 @@
   "diff": [
    "가격 규칙 - / AI 88000"
   ]
- },
- {
-  "at": "2026-11-12",
-  "title": "“홍콩 항공권 11만3000원부터”…홍콩익스프레스, 창립 13주년 초특가 쏜다",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "항공사 창립기념 항공권 특가",
-   "airlines": [
-    "홍콩익스프레스"
-   ],
-   "name": "13주년 초특가 프로모션",
-   "book": {
-    "from": null,
-    "to": "2026-10-31"
-   },
-   "board": null,
-   "price": 113000,
-   "trip": "편도",
-   "pct": null,
-   "seoul": true,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2026-10-31"
-   },
-   "board": null,
-   "pct": null,
-   "price": 113000
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "비엣젯항공, 한정 기간 항공권 특가 판매…신규 노선 확대",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "비엣젯 항공권 특가 프로모션",
-   "airlines": [
-    "비엣젯"
-   ],
-   "name": null,
-   "book": {
-    "from": null,
-    "to": "2026-11-02"
-   },
-   "board": {
-    "from": "2026-11-01",
-    "to": "2027-10-31"
-   },
-   "price": 99000,
-   "trip": "편도",
-   "pct": null,
-   "seoul": true,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2026-11-02"
-   },
-   "board": {
-    "from": "2026-11-01",
-    "to": "2027-10-31"
-   },
-   "pct": null,
-   "price": 99000
-  },
-  "diff": []
  }
 ]

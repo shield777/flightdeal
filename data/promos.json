@@ -1,6 +1,741 @@
 {
  "items": [
   {
+   "id": "c:https://cafe.naver.com/thaiinfo/680670|제주항공 , 3일간의 특가",
+   "kind": "airline",
+   "community": true,
+   "title": "제주항공 , 3일간의 특가",
+   "desc": "❄️ 특가 항공 권 지금 Get 하세요❄️ 프로모션 기간 : 2026.11.09~11.11 │ 탑승기간 : 2026.12.01~2027.01.31 국내선 편도총액 3만원대, 국제선 9만원대부터.",
+   "summary": [
+    "❄️ 특가 항공 권 지금 Get 하세요❄️ 프로모션 기간 : 2026.11.09~11.11 │ 탑승기간 : 2026.12.01~2027.01.31 국내선 편도총액 3만원대, 국제선 9만원대부터."
+   ],
+   "link": "https://cafe.naver.com/thaiinfo/680670",
+   "source": "네이버 카페 · 태초의 태국정보(태국자유여행/방콕/푸켓/파타야/크라비/사무이)",
+   "date": "2026-11-09T03:00:46.835Z",
+   "found": "2026-11-09",
+   "cards": [],
+   "airlines": [
+    "7C"
+   ],
+   "countries": [
+    "홍콩",
+    "미국령",
+    "말레이시아"
+   ],
+   "allRoutes": true,
+   "routes": [],
+   "price": {
+    "amount": 30000,
+    "trip": "oneway"
+   },
+   "query": "제주항공 특가",
+   "notified": "2026-11-12",
+   "ai": {
+    "v": 2,
+    "promo": true,
+    "why": "제주항공 특가 프로모션 안내",
+    "airlines": [
+     "제주항공"
+    ],
+    "name": "3일간의 특가",
+    "book": {
+     "from": "2026-11-09",
+     "to": "2026-11-11"
+    },
+    "board": {
+     "from": "2026-12-01",
+     "to": "2027-01-31"
+    },
+    "price": 90000,
+    "trip": "편도",
+    "pct": null,
+    "seoul": null,
+    "at": "2026-11-12",
+    "model": "deepseek-v4-flash"
+   },
+   "lastDate": "2026-11-14T11:00:41.072Z",
+   "lastFound": "2026-11-14",
+   "more": [
+    {
+     "id": "c:https://cafe.naver.com/airportshopping/1117|[ 제주항공 ] 동남아&사이판 윈터페스타! 최대 80% 할인 !!!",
+     "kind": "airline",
+     "community": true,
+     "title": "[ 제주항공 ] 동남아&사이판 윈터페스타! 최대 80% 할인 !!!",
+     "desc": "▼ 자세한 내용은 공식 홈페이지에서 확인하세요 &.",
+     "summary": [
+      "▼ 자세한 내용은 공식 홈페이지에서 확인하세요 &."
+     ],
+     "link": "https://cafe.naver.com/airportshopping/1117",
+     "source": "네이버 카페 · 인천공항의 모든 것",
+     "date": "2026-11-12T03:00:45.593Z",
+     "found": "2026-11-12",
+     "cards": [],
+     "airlines": [
+      "7C"
+     ],
+     "countries": [
+      "미국령"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "제주항공 할인",
+     "notified": "2026-11-12",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "제주항공 동남아 특가 프로모션",
+      "airlines": [
+       "제주항공"
+      ],
+      "name": "윈터페스타",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": 80,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/airportshopping/1115|[ 제주항공 ] 올겨울 코타키나발루 최대 50% 할인 !",
+     "kind": "airline",
+     "community": true,
+     "title": "[ 제주항공 ] 올겨울 코타키나발루 최대 50% 할인 !",
+     "desc": "▼ 자세한 내용은 공식 홈페이지에서 확인하세요.",
+     "summary": [
+      "▼ 자세한 내용은 공식 홈페이지에서 확인하세요."
+     ],
+     "link": "https://cafe.naver.com/airportshopping/1115",
+     "source": "네이버 카페 · 인천공항의 모든 것",
+     "date": "2026-11-12T03:00:45.593Z",
+     "found": "2026-11-12",
+     "cards": [],
+     "airlines": [
+      "7C"
+     ],
+     "countries": [
+      "말레이시아"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "제주항공 할인",
+     "notified": "2026-11-12",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "제주항공 겨울 특가 할인",
+      "airlines": [
+       "제주항공"
+      ],
+      "name": "올겨울 코타키나발루 최대 50% 할인",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": 50,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/airportshopping/1116|[ 제주항공 ] 11월~1월 출발 특가 ! 알짜노선 빅세일 최대 78% ",
+     "kind": "airline",
+     "community": true,
+     "title": "[ 제주항공 ] 11월~1월 출발 특가 ! 알짜노선 빅세일 최대 78% 할인",
+     "desc": "▼ 자세한 내용은 공식 홈페이지에서 확인하세요.",
+     "summary": [
+      "▼ 자세한 내용은 공식 홈페이지에서 확인하세요."
+     ],
+     "link": "https://cafe.naver.com/airportshopping/1116",
+     "source": "네이버 카페 · 인천공항의 모든 것",
+     "date": "2026-11-12T03:00:45.593Z",
+     "found": "2026-11-12",
+     "cards": [],
+     "airlines": [
+      "7C"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "제주항공 특가",
+     "notified": "2026-11-12",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "제주항공 특가·할인 소식",
+      "airlines": [
+       "제주항공"
+      ],
+      "name": "알짜노선 빅세일",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": 78,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/playtomato/1197102|[ 제주항공 ] 홍콩 특별 프로모션 소문내기 이벤트",
+     "kind": "airline",
+     "community": true,
+     "title": "[ 제주항공 ] 홍콩 특별 프로모션 소문내기 이벤트",
+     "desc": "",
+     "link": "https://cafe.naver.com/playtomato/1197102",
+     "source": "네이버 카페 · ♥행복한여왕♥-인테리어/리폼/DIY/요리/결혼/웨딩/육아/살림",
+     "date": "2026-11-03T14:18:02.174Z",
+     "dateFound": true,
+     "found": "2026-11-03",
+     "cards": [],
+     "airlines": [
+      "7C"
+     ],
+     "countries": [
+      "홍콩"
+     ],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "Air Macau 특가",
+     "notified": "2026-11-12",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "제주항공 홍콩 특가 프로모션",
+      "airlines": [
+       "제주항공"
+      ],
+      "name": "홍콩 특별 프로모션",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/airplanetiket/1276|제주항공 제주 노선 프로모션",
+     "kind": "airline",
+     "community": true,
+     "title": "제주항공 제주 노선 프로모션",
+     "desc": "",
+     "link": "https://cafe.naver.com/airplanetiket/1276",
+     "source": "네이버 카페 · 항공특가정보",
+     "date": "2026-11-04T07:00:42.909Z",
+     "found": "2026-11-04",
+     "cards": [],
+     "airlines": [
+      "7C"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "제주항공 특가",
+     "notified": "2026-11-12",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "제주항공 제주 노선 프로모션 소식",
+      "airlines": [
+       "제주항공"
+      ],
+      "name": "제주 노선 프로모션",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/airplanetiket/1303|제주항공 앵콜 특가",
+     "kind": "airline",
+     "community": true,
+     "title": "제주항공 앵콜 특가",
+     "desc": "",
+     "link": "https://cafe.naver.com/airplanetiket/1303",
+     "source": "네이버 카페 · 항공특가정보",
+     "date": "2026-11-09T03:00:46.835Z",
+     "found": "2026-11-09",
+     "cards": [],
+     "airlines": [
+      "7C"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "제주항공 특가",
+     "notified": "2026-11-12",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "제주항공 앵콜 특가 소식",
+      "airlines": [
+       "제주항공"
+      ],
+      "name": "앵콜 특가",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/grownman/1184112|❤️❤️ 제주항공 3일간 앵콜 특가 ❤️❤️",
+     "kind": "airline",
+     "community": true,
+     "title": "❤️❤️ 제주항공 3일간 앵콜 특가 ❤️❤️",
+     "desc": "",
+     "link": "https://cafe.naver.com/grownman/1184112",
+     "source": "네이버 카페 · 다낭 보물창고 - 다낭자유여행 다낭여행 다낭맛집 다낭리조트",
+     "date": "2026-11-10T02:59:08.151Z",
+     "found": "2026-11-10",
+     "cards": [],
+     "airlines": [
+      "7C"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "제주항공 특가",
+     "notified": "2026-11-12",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "제주항공 앵콜 특가 소식",
+      "airlines": [
+       "제주항공"
+      ],
+      "name": "앵콜 특가",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/airplanetiket/1342|제주항공 동남아 사이판 할인",
+     "kind": "airline",
+     "community": true,
+     "title": "제주항공 동남아 사이판 할인",
+     "desc": "",
+     "link": "https://cafe.naver.com/airplanetiket/1342",
+     "source": "네이버 카페 · 항공특가정보",
+     "date": "2026-11-14T11:00:41.072Z",
+     "found": "2026-11-14",
+     "cards": [],
+     "airlines": [
+      "7C"
+     ],
+     "countries": [
+      "미국령"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "제주항공 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "제주항공 동남아 할인 특가",
+      "airlines": [
+       "제주항공"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-14",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/jpnstory/4432072|제주항공 -노브랜드 버거 이벤트 있습니다.",
+     "kind": "airline",
+     "community": true,
+     "title": "제주항공 -노브랜드 버거 이벤트 있습니다.",
+     "desc": "노브랜드 버거에서 진짜 비빔밥 버거가 나왔는데 이걸 사 먹으면 이런 제주항공 복권을 주고요 국제선 왕복 항공 권 or 3천~5만P 경품이라고 합니다.",
+     "summary": [
+      "노브랜드 버거에서 진짜 비빔밥 버거가 나왔는데 이걸 사 먹으면 이런 제주항공 복권을 주고요 국제선 왕복 항공 권 or 3천~5만P 경품이라고 합니다."
+     ],
+     "link": "https://cafe.naver.com/jpnstory/4432072",
+     "source": "네이버 카페 · 네일동 : 일본여행카페",
+     "date": "2026-11-04T03:00:45.320Z",
+     "found": "2026-11-04",
+     "cards": [],
+     "airlines": [
+      "7C"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "제주항공 할인",
+     "notified": "2026-11-12",
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "항공권은 경품일 뿐",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/loveloveloveovelove/1039611|제주항공 앱에서 할인 받으니까 제일 저렴하네여",
+     "kind": "airline",
+     "community": true,
+     "title": "제주항공 앱에서 할인 받으니까 제일 저렴하네여",
+     "desc": "",
+     "link": "https://cafe.naver.com/loveloveloveovelove/1039611",
+     "source": "네이버 카페 · 보홀트래블-필리핀 보홀 자유여행 보홀 투어 맛집 호텔 리조트",
+     "date": "2026-11-04T09:58:31.491Z",
+     "found": "2026-11-04",
+     "cards": [],
+     "airlines": [
+      "7C"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "제주항공 할인",
+     "notified": "2026-11-12",
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "개인 발권 후기·가격 공유",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/checkincafe/148810|노브랜드버거 제주항공 쿠폰 구해용~~",
+     "kind": "airline",
+     "community": true,
+     "title": "노브랜드버거 제주항공 쿠폰 구해용~~",
+     "desc": "",
+     "link": "https://cafe.naver.com/checkincafe/148810",
+     "source": "네이버 카페 · [어디든 체크인] 전 세계 호텔 정보 No.1",
+     "date": "2026-11-12T01:00:50.398Z",
+     "found": "2026-11-12",
+     "cards": [],
+     "airlines": [
+      "7C"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "제주항공 이벤트",
+     "notified": "2026-11-12",
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "쿠폰 교환·구함 글",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/jpnstory/4443546|제주항공 이벤트 중 노브랜드 버거로 체크인",
+     "kind": "airline",
+     "community": true,
+     "title": "제주항공 이벤트 중 노브랜드 버거로 체크인",
+     "desc": "제주항공 이벤트 중 괜찮은 이벤트 가 있어 공유합니다.",
+     "summary": [
+      "제주항공 이벤트 중 괜찮은 이벤트 가 있어 공유합니다."
+     ],
+     "link": "https://cafe.naver.com/jpnstory/4443546",
+     "source": "네이버 카페 · 네일동 : 일본여행카페",
+     "date": "2026-11-14T01:00:40.603Z",
+     "found": "2026-11-14",
+     "cards": [],
+     "airlines": [
+      "7C"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "제주항공 이벤트",
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "항공사 이름만 빌린 버거 이벤트",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-14",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/phmomstory/5208163|제주항공 ×노블버거 이벤트 공유해요 ^^",
+     "kind": "airline",
+     "community": true,
+     "title": "제주항공 ×노블버거 이벤트 공유해요 ^^",
+     "desc": "",
+     "link": "https://cafe.naver.com/phmomstory/5208163",
+     "source": "네이버 카페 · 포항맘 놀이터",
+     "date": "2026-11-14T03:00:43.360Z",
+     "found": "2026-11-14",
+     "cards": [],
+     "airlines": [
+      "7C"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "제주항공 이벤트",
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "항공사 이름만 빌린 버거 이벤트",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-14",
+      "model": "deepseek-v4-flash"
+     }
+    }
+   ]
+  },
+  {
+   "id": "c:https://cafe.naver.com/warcraftgamemap/3535351|다낭 이스타항공 11월16일까지!! 땡처리!",
+   "kind": "airline",
+   "community": true,
+   "title": "다낭 이스타항공 11월16일까지!! 땡처리!",
+   "desc": "",
+   "link": "https://cafe.naver.com/warcraftgamemap/3535351",
+   "source": "네이버 카페 · 다낭 고스트 - 베트남 다낭자유여행 ,다낭여행,맛집,호텔리조트",
+   "date": "2026-11-14T11:00:41.072Z",
+   "found": "2026-11-14",
+   "cards": [],
+   "airlines": [
+    "ZE"
+   ],
+   "countries": [
+    "베트남",
+    "태국",
+    "일본"
+   ],
+   "allRoutes": false,
+   "routes": [],
+   "price": null,
+   "query": "이스타항공 할인",
+   "ai": {
+    "v": 2,
+    "promo": true,
+    "why": "이스타항공 땡처리 특가",
+    "airlines": [
+     "이스타항공"
+    ],
+    "name": "땡처리",
+    "book": {
+     "from": null,
+     "to": "2026-11-16"
+    },
+    "board": null,
+    "price": null,
+    "trip": null,
+    "pct": null,
+    "seoul": null,
+    "at": "2026-11-14",
+    "model": "deepseek-v4-flash"
+   },
+   "lastDate": "2026-11-14T11:00:41.072Z",
+   "lastFound": "2026-11-14",
+   "more": [
+    {
+     "id": "c:https://cafe.naver.com/tybwondergirl5/111626|✈️ 이스타항공 12월~1월 얼리버드 특가 오픈!",
+     "kind": "airline",
+     "community": true,
+     "title": "✈️ 이스타항공 12월~1월 얼리버드 특가 오픈!",
+     "desc": "이스타항공 에서 겨울여행 얼리버드 특가를 진행하네요!",
+     "summary": [
+      "이스타항공 에서 겨울여행 얼리버드 특가를 진행하네요!…"
+     ],
+     "link": "https://cafe.naver.com/tybwondergirl5/111626",
+     "source": "네이버 카페 · 베트남 디고-다낭나트랑자유여행,맛집,호텔,리조트,마사지,골프",
+     "date": "2026-11-09T09:00:50.367Z",
+     "found": "2026-11-09",
+     "cards": [],
+     "airlines": [
+      "ZE"
+     ],
+     "countries": [
+      "베트남",
+      "태국",
+      "일본"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "이스타항공 얼리버드",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "이스타항공 얼리버드 특가 소식",
+      "airlines": [
+       "이스타항공"
+      ],
+      "name": "겨울여행 얼리버드 특가",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/jpnstory/4437988|특가 가 이스타항공 이던데",
+     "kind": "airline",
+     "community": true,
+     "title": "특가 가 이스타항공 이던데",
+     "desc": "혹시 이용해보신분들 비행기 출발 늦거나 그런 사건 많은 곳인가요? 특가 라서 저렴한맛에 가는 거지만 목숨값보다 중요하진 않아서 그냥 비싸더라도 국내 항공 사 홈페이지에서 구입할까.",
+     "summary": [
+      "혹시 이용해보신분들 비행기 출발 늦거나 그런 사건 많은 곳인가요? 특가 라서 저렴한맛에 가는 거지만 목숨값보다 중요하진 않아서 그냥 비싸더라도 국내 항공 사 홈페이지에서 구입할까."
+     ],
+     "link": "https://cafe.naver.com/jpnstory/4437988",
+     "source": "네이버 카페 · 네일동 : 일본여행카페",
+     "date": "2026-11-09T07:00:43.574Z",
+     "found": "2026-11-09",
+     "cards": [],
+     "airlines": [
+      "ZE"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "이스타항공 특가",
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "특가 항공권 문의·항공사 안전 질문",
+      "airlines": [
+       "이스타항공"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/golmarket/13187756|[ 이스타항공 ] 태국 로얄 치앙마이 골프텔 특가 !",
+     "kind": "airline",
+     "community": true,
+     "title": "[ 이스타항공 ] 태국 로얄 치앙마이 골프텔 특가 !",
+     "desc": "상이 ※ 이스타항공 선발권 특가 적용 기한 : 11월 20일 ※ 항공 권 개별 발권 고객은 골프텔 지상비 별도 견적 가능 ※ 총 라운딩 홀 수는 항공 일정과 현지 티타임에 따라 달라질 수 있습니다.",
+     "summary": [
+      "상이 ※ 이스타항공 선발권 특가 적용 기한 : 11월 20일 ※ 항공 권 개별 발권 고객은 골프텔 지상비 별도 견적 가능 ※ 총 라운딩 홀 수는 항공 일정과 현지 티타임에 따라 달라질 수 있습니다."
+     ],
+     "link": "https://cafe.naver.com/golmarket/13187756",
+     "source": "네이버 카페 · 골마켓 | 골프 대표 카페 |",
+     "date": "2026-11-11T07:00:46.194Z",
+     "found": "2026-11-11",
+     "cards": [],
+     "airlines": [
+      "ZE"
+     ],
+     "countries": [
+      "태국"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "이스타항공 특가",
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "골프텔 상품이 중심, 항공권은 곁가지",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    }
+   ]
+  },
+  {
    "id": "iZFdsVUZ0WjlnWHlyNFVTbUdQNUVJSXpNU29hTlJsTEx1YmhIQjBPWWh1eDktTlo5dE54a2s3WTRFRndSVVpPN3ZCYm93cmFpcXdYZVdlOEM5M1psTGo4THc|에어로케이항공, 후지드림항공과 일본 항공권 ‘1+1’ 이벤트",
    "kind": "airline",
    "title": "에어로케이항공, 후지드림항공과 일본 항공권 ‘1+1’ 이벤트",
@@ -287,530 +1022,6 @@
       "pct": null,
       "seoul": false,
       "at": "2026-11-13",
-      "model": "deepseek-v4-flash"
-     }
-    }
-   ]
-  },
-  {
-   "id": "c:https://cafe.naver.com/thaiinfo/680670|제주항공 , 3일간의 특가",
-   "kind": "airline",
-   "community": true,
-   "title": "제주항공 , 3일간의 특가",
-   "desc": "❄️ 특가 항공 권 지금 Get 하세요❄️ 프로모션 기간 : 2026.11.09~11.11 │ 탑승기간 : 2026.12.01~2027.01.31 국내선 편도총액 3만원대, 국제선 9만원대부터.",
-   "summary": [
-    "❄️ 특가 항공 권 지금 Get 하세요❄️ 프로모션 기간 : 2026.11.09~11.11 │ 탑승기간 : 2026.12.01~2027.01.31 국내선 편도총액 3만원대, 국제선 9만원대부터."
-   ],
-   "link": "https://cafe.naver.com/thaiinfo/680670",
-   "source": "네이버 카페 · 태초의 태국정보(태국자유여행/방콕/푸켓/파타야/크라비/사무이)",
-   "date": "2026-11-09T03:00:46.835Z",
-   "found": "2026-11-09",
-   "cards": [],
-   "airlines": [
-    "7C"
-   ],
-   "countries": [
-    "홍콩",
-    "미국령",
-    "말레이시아"
-   ],
-   "allRoutes": true,
-   "routes": [],
-   "price": {
-    "amount": 30000,
-    "trip": "oneway"
-   },
-   "query": "제주항공 특가",
-   "notified": "2026-11-12",
-   "ai": {
-    "v": 2,
-    "promo": true,
-    "why": "제주항공 특가 프로모션 안내",
-    "airlines": [
-     "제주항공"
-    ],
-    "name": "3일간의 특가",
-    "book": {
-     "from": "2026-11-09",
-     "to": "2026-11-11"
-    },
-    "board": {
-     "from": "2026-12-01",
-     "to": "2027-01-31"
-    },
-    "price": 90000,
-    "trip": "편도",
-    "pct": null,
-    "seoul": null,
-    "at": "2026-11-12",
-    "model": "deepseek-v4-flash"
-   },
-   "lastDate": "2026-11-14T03:00:43.360Z",
-   "lastFound": "2026-11-14",
-   "more": [
-    {
-     "id": "c:https://cafe.naver.com/airportshopping/1117|[ 제주항공 ] 동남아&사이판 윈터페스타! 최대 80% 할인 !!!",
-     "kind": "airline",
-     "community": true,
-     "title": "[ 제주항공 ] 동남아&사이판 윈터페스타! 최대 80% 할인 !!!",
-     "desc": "▼ 자세한 내용은 공식 홈페이지에서 확인하세요 &.",
-     "summary": [
-      "▼ 자세한 내용은 공식 홈페이지에서 확인하세요 &."
-     ],
-     "link": "https://cafe.naver.com/airportshopping/1117",
-     "source": "네이버 카페 · 인천공항의 모든 것",
-     "date": "2026-11-12T03:00:45.593Z",
-     "found": "2026-11-12",
-     "cards": [],
-     "airlines": [
-      "7C"
-     ],
-     "countries": [
-      "미국령"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "제주항공 할인",
-     "notified": "2026-11-12",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "제주항공 동남아 특가 프로모션",
-      "airlines": [
-       "제주항공"
-      ],
-      "name": "윈터페스타",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": 80,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/airportshopping/1115|[ 제주항공 ] 올겨울 코타키나발루 최대 50% 할인 !",
-     "kind": "airline",
-     "community": true,
-     "title": "[ 제주항공 ] 올겨울 코타키나발루 최대 50% 할인 !",
-     "desc": "▼ 자세한 내용은 공식 홈페이지에서 확인하세요.",
-     "summary": [
-      "▼ 자세한 내용은 공식 홈페이지에서 확인하세요."
-     ],
-     "link": "https://cafe.naver.com/airportshopping/1115",
-     "source": "네이버 카페 · 인천공항의 모든 것",
-     "date": "2026-11-12T03:00:45.593Z",
-     "found": "2026-11-12",
-     "cards": [],
-     "airlines": [
-      "7C"
-     ],
-     "countries": [
-      "말레이시아"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "제주항공 할인",
-     "notified": "2026-11-12",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "제주항공 겨울 특가 할인",
-      "airlines": [
-       "제주항공"
-      ],
-      "name": "올겨울 코타키나발루 최대 50% 할인",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": 50,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/airportshopping/1116|[ 제주항공 ] 11월~1월 출발 특가 ! 알짜노선 빅세일 최대 78% ",
-     "kind": "airline",
-     "community": true,
-     "title": "[ 제주항공 ] 11월~1월 출발 특가 ! 알짜노선 빅세일 최대 78% 할인",
-     "desc": "▼ 자세한 내용은 공식 홈페이지에서 확인하세요.",
-     "summary": [
-      "▼ 자세한 내용은 공식 홈페이지에서 확인하세요."
-     ],
-     "link": "https://cafe.naver.com/airportshopping/1116",
-     "source": "네이버 카페 · 인천공항의 모든 것",
-     "date": "2026-11-12T03:00:45.593Z",
-     "found": "2026-11-12",
-     "cards": [],
-     "airlines": [
-      "7C"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "제주항공 특가",
-     "notified": "2026-11-12",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "제주항공 특가·할인 소식",
-      "airlines": [
-       "제주항공"
-      ],
-      "name": "알짜노선 빅세일",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": 78,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/playtomato/1197102|[ 제주항공 ] 홍콩 특별 프로모션 소문내기 이벤트",
-     "kind": "airline",
-     "community": true,
-     "title": "[ 제주항공 ] 홍콩 특별 프로모션 소문내기 이벤트",
-     "desc": "",
-     "link": "https://cafe.naver.com/playtomato/1197102",
-     "source": "네이버 카페 · ♥행복한여왕♥-인테리어/리폼/DIY/요리/결혼/웨딩/육아/살림",
-     "date": "2026-11-03T14:18:02.174Z",
-     "dateFound": true,
-     "found": "2026-11-03",
-     "cards": [],
-     "airlines": [
-      "7C"
-     ],
-     "countries": [
-      "홍콩"
-     ],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "Air Macau 특가",
-     "notified": "2026-11-12",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "제주항공 홍콩 특가 프로모션",
-      "airlines": [
-       "제주항공"
-      ],
-      "name": "홍콩 특별 프로모션",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/airplanetiket/1276|제주항공 제주 노선 프로모션",
-     "kind": "airline",
-     "community": true,
-     "title": "제주항공 제주 노선 프로모션",
-     "desc": "",
-     "link": "https://cafe.naver.com/airplanetiket/1276",
-     "source": "네이버 카페 · 항공특가정보",
-     "date": "2026-11-04T07:00:42.909Z",
-     "found": "2026-11-04",
-     "cards": [],
-     "airlines": [
-      "7C"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "제주항공 특가",
-     "notified": "2026-11-12",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "제주항공 제주 노선 프로모션 소식",
-      "airlines": [
-       "제주항공"
-      ],
-      "name": "제주 노선 프로모션",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/airplanetiket/1303|제주항공 앵콜 특가",
-     "kind": "airline",
-     "community": true,
-     "title": "제주항공 앵콜 특가",
-     "desc": "",
-     "link": "https://cafe.naver.com/airplanetiket/1303",
-     "source": "네이버 카페 · 항공특가정보",
-     "date": "2026-11-09T03:00:46.835Z",
-     "found": "2026-11-09",
-     "cards": [],
-     "airlines": [
-      "7C"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "제주항공 특가",
-     "notified": "2026-11-12",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "제주항공 앵콜 특가 소식",
-      "airlines": [
-       "제주항공"
-      ],
-      "name": "앵콜 특가",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/grownman/1184112|❤️❤️ 제주항공 3일간 앵콜 특가 ❤️❤️",
-     "kind": "airline",
-     "community": true,
-     "title": "❤️❤️ 제주항공 3일간 앵콜 특가 ❤️❤️",
-     "desc": "",
-     "link": "https://cafe.naver.com/grownman/1184112",
-     "source": "네이버 카페 · 다낭 보물창고 - 다낭자유여행 다낭여행 다낭맛집 다낭리조트",
-     "date": "2026-11-10T02:59:08.151Z",
-     "found": "2026-11-10",
-     "cards": [],
-     "airlines": [
-      "7C"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "제주항공 특가",
-     "notified": "2026-11-12",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "제주항공 앵콜 특가 소식",
-      "airlines": [
-       "제주항공"
-      ],
-      "name": "앵콜 특가",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/jpnstory/4432072|제주항공 -노브랜드 버거 이벤트 있습니다.",
-     "kind": "airline",
-     "community": true,
-     "title": "제주항공 -노브랜드 버거 이벤트 있습니다.",
-     "desc": "노브랜드 버거에서 진짜 비빔밥 버거가 나왔는데 이걸 사 먹으면 이런 제주항공 복권을 주고요 국제선 왕복 항공 권 or 3천~5만P 경품이라고 합니다.",
-     "summary": [
-      "노브랜드 버거에서 진짜 비빔밥 버거가 나왔는데 이걸 사 먹으면 이런 제주항공 복권을 주고요 국제선 왕복 항공 권 or 3천~5만P 경품이라고 합니다."
-     ],
-     "link": "https://cafe.naver.com/jpnstory/4432072",
-     "source": "네이버 카페 · 네일동 : 일본여행카페",
-     "date": "2026-11-04T03:00:45.320Z",
-     "found": "2026-11-04",
-     "cards": [],
-     "airlines": [
-      "7C"
-     ],
-     "countries": [],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "제주항공 할인",
-     "notified": "2026-11-12",
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "항공권은 경품일 뿐",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/loveloveloveovelove/1039611|제주항공 앱에서 할인 받으니까 제일 저렴하네여",
-     "kind": "airline",
-     "community": true,
-     "title": "제주항공 앱에서 할인 받으니까 제일 저렴하네여",
-     "desc": "",
-     "link": "https://cafe.naver.com/loveloveloveovelove/1039611",
-     "source": "네이버 카페 · 보홀트래블-필리핀 보홀 자유여행 보홀 투어 맛집 호텔 리조트",
-     "date": "2026-11-04T09:58:31.491Z",
-     "found": "2026-11-04",
-     "cards": [],
-     "airlines": [
-      "7C"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "제주항공 할인",
-     "notified": "2026-11-12",
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "개인 발권 후기·가격 공유",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/checkincafe/148810|노브랜드버거 제주항공 쿠폰 구해용~~",
-     "kind": "airline",
-     "community": true,
-     "title": "노브랜드버거 제주항공 쿠폰 구해용~~",
-     "desc": "",
-     "link": "https://cafe.naver.com/checkincafe/148810",
-     "source": "네이버 카페 · [어디든 체크인] 전 세계 호텔 정보 No.1",
-     "date": "2026-11-12T01:00:50.398Z",
-     "found": "2026-11-12",
-     "cards": [],
-     "airlines": [
-      "7C"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "제주항공 이벤트",
-     "notified": "2026-11-12",
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "쿠폰 교환·구함 글",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/jpnstory/4443546|제주항공 이벤트 중 노브랜드 버거로 체크인",
-     "kind": "airline",
-     "community": true,
-     "title": "제주항공 이벤트 중 노브랜드 버거로 체크인",
-     "desc": "제주항공 이벤트 중 괜찮은 이벤트 가 있어 공유합니다.",
-     "summary": [
-      "제주항공 이벤트 중 괜찮은 이벤트 가 있어 공유합니다."
-     ],
-     "link": "https://cafe.naver.com/jpnstory/4443546",
-     "source": "네이버 카페 · 네일동 : 일본여행카페",
-     "date": "2026-11-14T01:00:40.603Z",
-     "found": "2026-11-14",
-     "cards": [],
-     "airlines": [
-      "7C"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "제주항공 이벤트",
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "항공사 이름만 빌린 버거 이벤트",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-14",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/phmomstory/5208163|제주항공 ×노블버거 이벤트 공유해요 ^^",
-     "kind": "airline",
-     "community": true,
-     "title": "제주항공 ×노블버거 이벤트 공유해요 ^^",
-     "desc": "",
-     "link": "https://cafe.naver.com/phmomstory/5208163",
-     "source": "네이버 카페 · 포항맘 놀이터",
-     "date": "2026-11-14T03:00:43.360Z",
-     "found": "2026-11-14",
-     "cards": [],
-     "airlines": [
-      "7C"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "제주항공 이벤트",
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "항공사 이름만 빌린 버거 이벤트",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-14",
       "model": "deepseek-v4-flash"
      }
     }
@@ -11161,342 +11372,6 @@
       "airlines": [
        "트리니티항공"
       ],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    }
-   ]
-  },
-  {
-   "id": "c:https://cafe.naver.com/mindy7857/5513384|✈️ 나트랑 특가 프로모션 : 이스타항공",
-   "kind": "airline",
-   "community": true,
-   "title": "✈️ 나트랑 특가 프로모션 : 이스타항공",
-   "desc": "인천 나트랑노선이 포함된 이스타항공 프로모션 입니다 방금전 오픈했으니 여행준비중이신 분들은 이스타항공 홈페이지나 어플에서 확인해보세요! *ㅁ*//.",
-   "summary": [
-    "인천 나트랑노선이 포함된 이스타항공 프로모션 입니다 방금전 오픈했으니 여행준비중이신 분들은 이스타항공 홈페이지나 어플에서 확인해보세요! *ㅁ*//."
-   ],
-   "link": "https://cafe.naver.com/mindy7857/5513384",
-   "source": "네이버 카페 · 베나자-베트남나트랑자유여행,달랏,무이네,호텔,투어,리조트맛집",
-   "date": "2026-11-03T14:18:02.174Z",
-   "dateFound": true,
-   "found": "2026-11-03",
-   "cards": [],
-   "airlines": [
-    "ZE"
-   ],
-   "countries": [
-    "베트남",
-    "태국",
-    "일본"
-   ],
-   "allRoutes": false,
-   "routes": [],
-   "price": null,
-   "query": "이스타항공 프로모션",
-   "ai": {
-    "v": 2,
-    "promo": true,
-    "why": "이스타항공 나트랑 노선 특가 프로모션",
-    "airlines": [
-     "이스타항공"
-    ],
-    "name": null,
-    "book": null,
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": null,
-    "seoul": true,
-    "at": "2026-11-12",
-    "model": "deepseek-v4-flash"
-   },
-   "lastDate": "2026-11-11T07:00:46.194Z",
-   "lastFound": "2026-11-11",
-   "more": [
-    {
-     "id": "c:https://cafe.naver.com/warcraftgamemap/3526497|✈️ 다낭 특가 프로모션 : 이스타항공",
-     "kind": "airline",
-     "community": true,
-     "title": "✈️ 다낭 특가 프로모션 : 이스타항공",
-     "desc": "인천 다낭노선이 포함된 이스타항공 프로모션 입니다 방금전 오픈했으니 여행준비중이신 분들은 이스타항공 홈페이지나 어플에서 확인해보세요! *ㅁ*//.",
-     "summary": [
-      "인천 다낭노선이 포함된 이스타항공 프로모션 입니다 방금전 오픈했으니 여행준비중이신 분들은 이스타항공 홈페이지나 어플에서 확인해보세요! *ㅁ*//."
-     ],
-     "link": "https://cafe.naver.com/warcraftgamemap/3526497",
-     "source": "네이버 카페 · 다낭 고스트 - 베트남 다낭자유여행 ,다낭여행,맛집,호텔리조트",
-     "date": "2026-11-03T14:18:02.174Z",
-     "dateFound": true,
-     "found": "2026-11-03",
-     "cards": [],
-     "airlines": [
-      "ZE"
-     ],
-     "countries": [
-      "베트남"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "이스타항공 프로모션",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "이스타항공 다낭 노선 특가 프로모션",
-      "airlines": [
-       "이스타항공"
-      ],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": true,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/rosesd1634/454042|126일차, 이스타항공 임박 특가",
-     "kind": "airline",
-     "community": true,
-     "title": "126일차, 이스타항공 임박 특가",
-     "desc": "이스타항공 임박 특가 이벤트 해요 항공 권 찾아봤더니 유류할증료때문인지 그리 싼지도 모르겠어요.",
-     "summary": [
-      "이스타항공 임박 특가 이벤트 해요 항공 권 찾아봤더니 유류할증료때문인지 그리 싼지도 모르겠어요."
-     ],
-     "link": "https://cafe.naver.com/rosesd1634/454042",
-     "source": "네이버 카페 · \"민씨 아저씨(투어민)\" 몰디브.발리.하와이.칸쿤.코사무이.푸켓.",
-     "date": "2026-11-03T14:18:02.174Z",
-     "dateFound": true,
-     "found": "2026-11-03",
-     "cards": [],
-     "airlines": [
-      "ZE"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "이스타항공 이벤트",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "이스타항공 임박 특가 이벤트 소식",
-      "airlines": [
-       "이스타항공"
-      ],
-      "name": "임박 특가",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/paydefense/781|이스타항공 도쿄·오사카·방콕·제주 국제&국내선 얼리버드 Nol 라이브 특",
-     "kind": "airline",
-     "community": true,
-     "title": "이스타항공 도쿄·오사카·방콕·제주 국제&국내선 얼리버드 Nol 라이브 특가....",
-     "desc": "",
-     "link": "https://cafe.naver.com/paydefense/781",
-     "source": "네이버 카페 · [육아메이트] - 엄빠지갑지킴이(임출육아용품 핫딜 아카이브)",
-     "date": "2026-11-04T10:41:50.033Z",
-     "dateFound": true,
-     "found": "2026-11-04",
-     "cards": [],
-     "airlines": [
-      "ZE"
-     ],
-     "countries": [
-      "태국",
-      "일본"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "이스타항공 얼리버드",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "이스타항공 얼리버드 특가",
-      "airlines": [
-       "이스타항공"
-      ],
-      "name": "Nol 라이브 특가",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/mindy7857/5486049|이스타항공 얼리버드 특가소식입니다",
-     "kind": "airline",
-     "community": true,
-     "title": "이스타항공 얼리버드 특가소식입니다",
-     "desc": "",
-     "link": "https://cafe.naver.com/mindy7857/5486049",
-     "source": "네이버 카페 · 베나자-베트남나트랑자유여행,달랏,무이네,호텔,투어,리조트맛집",
-     "date": "2026-11-04T10:41:50.033Z",
-     "dateFound": true,
-     "found": "2026-11-04",
-     "cards": [],
-     "airlines": [
-      "ZE"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "이스타항공 얼리버드",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "이스타항공 얼리버드 특가 소식",
-      "airlines": [
-       "이스타항공"
-      ],
-      "name": "얼리버드 특가",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/tybwondergirl5/111626|✈️ 이스타항공 12월~1월 얼리버드 특가 오픈!",
-     "kind": "airline",
-     "community": true,
-     "title": "✈️ 이스타항공 12월~1월 얼리버드 특가 오픈!",
-     "desc": "이스타항공 에서 겨울여행 얼리버드 특가를 진행하네요!",
-     "summary": [
-      "이스타항공 에서 겨울여행 얼리버드 특가를 진행하네요!…"
-     ],
-     "link": "https://cafe.naver.com/tybwondergirl5/111626",
-     "source": "네이버 카페 · 베트남 디고-다낭나트랑자유여행,맛집,호텔,리조트,마사지,골프",
-     "date": "2026-11-09T09:00:50.367Z",
-     "found": "2026-11-09",
-     "cards": [],
-     "airlines": [
-      "ZE"
-     ],
-     "countries": [
-      "베트남",
-      "태국",
-      "일본"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "이스타항공 얼리버드",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "이스타항공 얼리버드 특가 소식",
-      "airlines": [
-       "이스타항공"
-      ],
-      "name": "겨울여행 얼리버드 특가",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/jpnstory/4437988|특가 가 이스타항공 이던데",
-     "kind": "airline",
-     "community": true,
-     "title": "특가 가 이스타항공 이던데",
-     "desc": "혹시 이용해보신분들 비행기 출발 늦거나 그런 사건 많은 곳인가요? 특가 라서 저렴한맛에 가는 거지만 목숨값보다 중요하진 않아서 그냥 비싸더라도 국내 항공 사 홈페이지에서 구입할까.",
-     "summary": [
-      "혹시 이용해보신분들 비행기 출발 늦거나 그런 사건 많은 곳인가요? 특가 라서 저렴한맛에 가는 거지만 목숨값보다 중요하진 않아서 그냥 비싸더라도 국내 항공 사 홈페이지에서 구입할까."
-     ],
-     "link": "https://cafe.naver.com/jpnstory/4437988",
-     "source": "네이버 카페 · 네일동 : 일본여행카페",
-     "date": "2026-11-09T07:00:43.574Z",
-     "found": "2026-11-09",
-     "cards": [],
-     "airlines": [
-      "ZE"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "이스타항공 특가",
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "특가 항공권 문의·항공사 안전 질문",
-      "airlines": [
-       "이스타항공"
-      ],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/golmarket/13187756|[ 이스타항공 ] 태국 로얄 치앙마이 골프텔 특가 !",
-     "kind": "airline",
-     "community": true,
-     "title": "[ 이스타항공 ] 태국 로얄 치앙마이 골프텔 특가 !",
-     "desc": "상이 ※ 이스타항공 선발권 특가 적용 기한 : 11월 20일 ※ 항공 권 개별 발권 고객은 골프텔 지상비 별도 견적 가능 ※ 총 라운딩 홀 수는 항공 일정과 현지 티타임에 따라 달라질 수 있습니다.",
-     "summary": [
-      "상이 ※ 이스타항공 선발권 특가 적용 기한 : 11월 20일 ※ 항공 권 개별 발권 고객은 골프텔 지상비 별도 견적 가능 ※ 총 라운딩 홀 수는 항공 일정과 현지 티타임에 따라 달라질 수 있습니다."
-     ],
-     "link": "https://cafe.naver.com/golmarket/13187756",
-     "source": "네이버 카페 · 골마켓 | 골프 대표 카페 |",
-     "date": "2026-11-11T07:00:46.194Z",
-     "found": "2026-11-11",
-     "cards": [],
-     "airlines": [
-      "ZE"
-     ],
-     "countries": [
-      "태국"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "이스타항공 특가",
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "골프텔 상품이 중심, 항공권은 곁가지",
-      "airlines": [],
       "name": null,
       "book": null,
       "board": null,
@@ -24785,6 +24660,218 @@
    ]
   },
   {
+   "id": "c:https://cafe.naver.com/mindy7857/5513384|✈️ 나트랑 특가 프로모션 : 이스타항공",
+   "kind": "airline",
+   "community": true,
+   "title": "✈️ 나트랑 특가 프로모션 : 이스타항공",
+   "desc": "인천 나트랑노선이 포함된 이스타항공 프로모션 입니다 방금전 오픈했으니 여행준비중이신 분들은 이스타항공 홈페이지나 어플에서 확인해보세요! *ㅁ*//.",
+   "summary": [
+    "인천 나트랑노선이 포함된 이스타항공 프로모션 입니다 방금전 오픈했으니 여행준비중이신 분들은 이스타항공 홈페이지나 어플에서 확인해보세요! *ㅁ*//."
+   ],
+   "link": "https://cafe.naver.com/mindy7857/5513384",
+   "source": "네이버 카페 · 베나자-베트남나트랑자유여행,달랏,무이네,호텔,투어,리조트맛집",
+   "date": "2026-11-03T14:18:02.174Z",
+   "dateFound": true,
+   "found": "2026-11-03",
+   "cards": [],
+   "airlines": [
+    "ZE"
+   ],
+   "countries": [
+    "베트남",
+    "태국",
+    "일본"
+   ],
+   "allRoutes": false,
+   "routes": [],
+   "price": null,
+   "query": "이스타항공 프로모션",
+   "ai": {
+    "v": 2,
+    "promo": true,
+    "why": "이스타항공 나트랑 노선 특가 프로모션",
+    "airlines": [
+     "이스타항공"
+    ],
+    "name": null,
+    "book": null,
+    "board": null,
+    "price": null,
+    "trip": null,
+    "pct": null,
+    "seoul": true,
+    "at": "2026-11-12",
+    "model": "deepseek-v4-flash"
+   },
+   "lastDate": "2026-11-04T10:41:50.033Z",
+   "lastFound": "2026-11-04",
+   "more": [
+    {
+     "id": "c:https://cafe.naver.com/warcraftgamemap/3526497|✈️ 다낭 특가 프로모션 : 이스타항공",
+     "kind": "airline",
+     "community": true,
+     "title": "✈️ 다낭 특가 프로모션 : 이스타항공",
+     "desc": "인천 다낭노선이 포함된 이스타항공 프로모션 입니다 방금전 오픈했으니 여행준비중이신 분들은 이스타항공 홈페이지나 어플에서 확인해보세요! *ㅁ*//.",
+     "summary": [
+      "인천 다낭노선이 포함된 이스타항공 프로모션 입니다 방금전 오픈했으니 여행준비중이신 분들은 이스타항공 홈페이지나 어플에서 확인해보세요! *ㅁ*//."
+     ],
+     "link": "https://cafe.naver.com/warcraftgamemap/3526497",
+     "source": "네이버 카페 · 다낭 고스트 - 베트남 다낭자유여행 ,다낭여행,맛집,호텔리조트",
+     "date": "2026-11-03T14:18:02.174Z",
+     "dateFound": true,
+     "found": "2026-11-03",
+     "cards": [],
+     "airlines": [
+      "ZE"
+     ],
+     "countries": [
+      "베트남"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "이스타항공 프로모션",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "이스타항공 다낭 노선 특가 프로모션",
+      "airlines": [
+       "이스타항공"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": true,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/rosesd1634/454042|126일차, 이스타항공 임박 특가",
+     "kind": "airline",
+     "community": true,
+     "title": "126일차, 이스타항공 임박 특가",
+     "desc": "이스타항공 임박 특가 이벤트 해요 항공 권 찾아봤더니 유류할증료때문인지 그리 싼지도 모르겠어요.",
+     "summary": [
+      "이스타항공 임박 특가 이벤트 해요 항공 권 찾아봤더니 유류할증료때문인지 그리 싼지도 모르겠어요."
+     ],
+     "link": "https://cafe.naver.com/rosesd1634/454042",
+     "source": "네이버 카페 · \"민씨 아저씨(투어민)\" 몰디브.발리.하와이.칸쿤.코사무이.푸켓.",
+     "date": "2026-11-03T14:18:02.174Z",
+     "dateFound": true,
+     "found": "2026-11-03",
+     "cards": [],
+     "airlines": [
+      "ZE"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "이스타항공 이벤트",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "이스타항공 임박 특가 이벤트 소식",
+      "airlines": [
+       "이스타항공"
+      ],
+      "name": "임박 특가",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/paydefense/781|이스타항공 도쿄·오사카·방콕·제주 국제&국내선 얼리버드 Nol 라이브 특",
+     "kind": "airline",
+     "community": true,
+     "title": "이스타항공 도쿄·오사카·방콕·제주 국제&국내선 얼리버드 Nol 라이브 특가....",
+     "desc": "",
+     "link": "https://cafe.naver.com/paydefense/781",
+     "source": "네이버 카페 · [육아메이트] - 엄빠지갑지킴이(임출육아용품 핫딜 아카이브)",
+     "date": "2026-11-04T10:41:50.033Z",
+     "dateFound": true,
+     "found": "2026-11-04",
+     "cards": [],
+     "airlines": [
+      "ZE"
+     ],
+     "countries": [
+      "태국",
+      "일본"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "이스타항공 얼리버드",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "이스타항공 얼리버드 특가",
+      "airlines": [
+       "이스타항공"
+      ],
+      "name": "Nol 라이브 특가",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/mindy7857/5486049|이스타항공 얼리버드 특가소식입니다",
+     "kind": "airline",
+     "community": true,
+     "title": "이스타항공 얼리버드 특가소식입니다",
+     "desc": "",
+     "link": "https://cafe.naver.com/mindy7857/5486049",
+     "source": "네이버 카페 · 베나자-베트남나트랑자유여행,달랏,무이네,호텔,투어,리조트맛집",
+     "date": "2026-11-04T10:41:50.033Z",
+     "dateFound": true,
+     "found": "2026-11-04",
+     "cards": [],
+     "airlines": [
+      "ZE"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "이스타항공 얼리버드",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "이스타항공 얼리버드 특가 소식",
+      "airlines": [
+       "이스타항공"
+      ],
+      "name": "얼리버드 특가",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    }
+   ]
+  },
+  {
    "id": "c:https://cafe.naver.com/yamipapa/7653|대한 항공 중화권 각종 이벤트",
    "kind": "airline",
    "community": true,
@@ -33721,24 +33808,24 @@
    "lastFound": "2026-11-01"
   }
  ],
- "updated": "2026-11-14T09:31:47.779Z",
- "runs": 174,
+ "updated": "2026-11-14T11:00:41.072Z",
+ "runs": 175,
  "checked": {
-  "베트남": "2026-11-14T09:31:47.779Z",
-  "태국": "2026-11-14T09:31:47.779Z",
-  "필리핀": "2026-11-14T09:31:47.779Z",
-  "인도네시아": "2026-11-14T09:31:47.779Z",
-  "말레이시아": "2026-11-14T09:31:47.779Z",
-  "싱가포르": "2026-11-14T09:31:47.779Z",
-  "일본": "2026-11-14T09:31:47.779Z",
-  "대만": "2026-11-14T09:31:47.779Z",
-  "홍콩": "2026-11-14T09:31:47.779Z",
-  "마카오": "2026-11-14T09:31:47.779Z",
-  "중국": "2026-11-14T09:31:47.779Z",
-  "미국령": "2026-11-14T09:31:47.779Z",
-  "미국": "2026-11-14T09:31:47.779Z"
+  "베트남": "2026-11-14T11:00:41.072Z",
+  "태국": "2026-11-14T11:00:41.072Z",
+  "필리핀": "2026-11-14T11:00:41.072Z",
+  "인도네시아": "2026-11-14T11:00:41.072Z",
+  "말레이시아": "2026-11-14T11:00:41.072Z",
+  "싱가포르": "2026-11-14T11:00:41.072Z",
+  "일본": "2026-11-14T11:00:41.072Z",
+  "대만": "2026-11-14T11:00:41.072Z",
+  "홍콩": "2026-11-14T11:00:41.072Z",
+  "마카오": "2026-11-14T11:00:41.072Z",
+  "중국": "2026-11-14T11:00:41.072Z",
+  "미국령": "2026-11-14T11:00:41.072Z",
+  "미국": "2026-11-14T11:00:41.072Z"
  },
- "auto": "2026-11-14T09:31:47.779Z",
+ "auto": "2026-11-14T11:00:41.072Z",
  "sources": {
   "7C": "2026-11-01",
   "TW": "2026-11-01",
@@ -33951,61 +34038,6 @@
    "중국동방항공 얼리버드": "2026-11-04"
   },
   "seen": [
-   "worldtravelcafe/1165084",
-   "worldtravelcafe/1165082",
-   "vinpearl/566532",
-   "tybwondergirl5/116325",
-   "tybwondergirl5/116324",
-   "joonggonara/1137860467",
-   "costco12/796733",
-   "joonggonara/1137860230",
-   "joonggonara/1137859682",
-   "010freebaram/258223",
-   "joonggonara/1137856198",
-   "joonggonara/1137856006",
-   "koreagift/31328",
-   "koreagift/31327",
-   "bezzeraclub/512822",
-   "worldtravelcafe/1165100",
-   "blackoxxxq/147329",
-   "happyibook/6348677",
-   "daesgeoricom/257592",
-   "joonggonara/1137857780",
-   "happyibook/6348758",
-   "happyibook/6348751",
-   "ysm5828/9646340",
-   "warcraftgamemap/3531104",
-   "discoverireland/93863",
-   "happyibook/6348699",
-   "happyibook/6348680",
-   "minecraftpe/4012457",
-   "vinpearl/566498",
-   "minecraftpe/4012465",
-   "warcraftgamemap/3531114",
-   "happyibook/6348683",
-   "ysm5828/9646295",
-   "hawaiiphoto/1615686",
-   "greenxmmjl/22",
-   "realturkey/56540",
-   "yamipapa/8067",
-   "nyctourdesign/1205807",
-   "cheepboracay/863327",
-   "hangsanara/3002",
-   "jpnstory/4437247",
-   "010freebaram/258233",
-   "iloveaus/179",
-   "hfoodnetwork/251",
-   "bluegrayyv5vz/1338",
-   "strongmeron/134",
-   "uouv96/113232",
-   "sharefor/455",
-   "hankkeutlife/5",
-   "babyteam/627502",
-   "imsanbu/80482741",
-   "culturebloom/3427073",
-   "macaunoblesse/246125",
-   "loyaltylife/368082",
-   "worldtravelcafe/1165125",
    "worldtravelcafe/1165122",
    "worldtravelcafe/1165111",
    "zzop/4331872",
@@ -39950,7 +39982,62 @@
    "posudotcom/120525",
    "joonggonara/1138152855",
    "loyaltylife/368066",
-   "blss1022/400"
+   "blss1022/400",
+   "worldtravelcafe/1166923",
+   "discountspot/31",
+   "worldtravelcafe/1166903",
+   "worrytodream/996030",
+   "worrytodream/996025",
+   "worrytodream/996018",
+   "2266734/132711",
+   "gcvarchive/20151",
+   "loyaltylife/369431",
+   "zzop/4341730",
+   "warcraftgamemap/3535351",
+   "010freebaram/261247",
+   "dbskwkd/150608",
+   "joonggonara/1138156491",
+   "anyi/319135",
+   "anyi/319128",
+   "joonggonara/1138154696",
+   "010freebaram/261212",
+   "goodinfo53/1935",
+   "airplanetiket/1342",
+   "jejutip/2682469",
+   "busanjungonara/6158336",
+   "applecart152/427395",
+   "boutiqueinfo/2778",
+   "mindy7857/5532834",
+   "mindy7857/5532831",
+   "warcraftgamemap/3535350",
+   "warcraftgamemap/3535349",
+   "happyibook/6355316",
+   "guitarnsong/298152",
+   "vinpearl/569716",
+   "buncafea/51707",
+   "vinpearl/569711",
+   "golfkwang/1151304",
+   "warcraftgamemap/3535329",
+   "warcraftgamemap/3535323",
+   "mnmfreaks/162367",
+   "greenxmmjl/42",
+   "blss486/2280",
+   "airplanetiket/1340",
+   "worldtravelcafe/1166919",
+   "joonggonara/1138154545",
+   "pachi7/5317",
+   "lovelycafeluck/50087",
+   "wooyeon1/33117",
+   "miznett/5157925",
+   "mindy7857/5532849",
+   "010freebaram/261209",
+   "chakhanled/346",
+   "glmthd1997/30294",
+   "hhayangmother/16932",
+   "atozproduct/544",
+   "cjsam/5157665",
+   "skybluezw4rh/15011945",
+   "laosclub/24626"
   ],
   "since": "2026-11-03",
   "imported": "2026-11-03"
