@@ -1,6 +1,35 @@
 [
  {
   "at": "2026-11-14",
+  "title": "제주항공 ×노블버거 이벤트 공유해요 ^^",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "항공사 이름만 빌린 버거 이벤트",
+   "airlines": [],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-14",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님"
+  ]
+ },
+ {
+  "at": "2026-11-14",
   "title": "비엣젯 항공 한국 베트남 전 노선 특가 진행 수하물 규정 먼저 확인하세요",
   "community": true,
   "ai": {
@@ -10145,47 +10174,6 @@
     "비엣젯항공"
    ],
    "name": "에코 특가 항공권",
-   "book": {
-    "from": null,
-    "to": "2026-11-02"
-   },
-   "board": {
-    "from": "2026-11-01",
-    "to": "2027-10-31"
-   },
-   "price": 99000,
-   "trip": "편도",
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2026-11-02"
-   },
-   "board": {
-    "from": "2026-11-01",
-    "to": "2027-10-31"
-   },
-   "pct": null,
-   "price": 99000
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "비엣젯항공, 한국∼베트남 편도 9만9천 원 특가…내년 10월까지 탑승 가능",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "비엣젯 항공권 특가 프로모션",
-   "airlines": [
-    "비엣젯"
-   ],
-   "name": null,
    "book": {
     "from": null,
     "to": "2026-11-02"
