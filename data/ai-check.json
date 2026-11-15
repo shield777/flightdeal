@@ -1,6 +1,41 @@
 [
  {
   "at": "2026-11-16",
+  "title": "신세계여행사⚫⚫ 25%더 할인! 6/8까지 발권 ⚫⚫ 6/2-2027.2월 일정⚫⚫에어캐나다특가⚫⚫대한항공 유류할증 인하!!⚫⚫신세계여행사로 문",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "에어캐나다·대한항공 항공권 특가",
+   "airlines": [
+    "에어캐나다",
+    "대한항공"
+   ],
+   "name": "에어캐나다 전 노선 세일",
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": 25,
+   "seoul": null,
+   "at": "2026-11-16",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": null,
+    "to": "2027-06-08"
+   },
+   "board": null,
+   "pct": 25,
+   "price": null
+  },
+  "diff": [
+   "예약 마감 규칙 2027-06-08 / AI -"
+  ]
+ },
+ {
+  "at": "2026-11-16",
   "title": "✈️ 나트랑 특가 프로모션 : 에어로케이",
   "community": true,
   "ai": {
@@ -10071,38 +10106,5 @@
    "price": null
   },
   "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "캐세이, 창립 80주년 기념 모바일 게임 이벤트 'FLY HIGH with CATHAY' 진행",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "항공권은 게임 이벤트 경품",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": "2026-10-28",
-    "to": "2026-11-01"
-   },
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님",
-   "예약 마감 규칙 2026-11-01 / AI -"
-  ]
  }
 ]
