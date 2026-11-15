@@ -1,6 +1,221 @@
 {
  "items": [
   {
+   "id": "c:https://cafe.naver.com/aipromptlab26/221|[오늘 마감] 에어프레미아 블프 — 도쿄 왕복 27만7,500원·하와이 ",
+   "kind": "airline",
+   "community": true,
+   "title": "[오늘 마감] 에어프레미아 블프 — 도쿄 왕복 27만7,500원·하와이 95만2,000원, ....",
+   "desc": "",
+   "link": "https://cafe.naver.com/aipromptlab26/221",
+   "source": "네이버 카페 · 짠테크 연구소 - 앱테크·핫딜·절약 꿀정보",
+   "date": "2026-11-15T03:00:43.603Z",
+   "found": "2026-11-15",
+   "cards": [],
+   "airlines": [
+    "YP"
+   ],
+   "countries": [
+    "일본",
+    "미국"
+   ],
+   "allRoutes": true,
+   "routes": [],
+   "price": {
+    "amount": 1100000,
+    "trip": "oneway?"
+   },
+   "query": "에어프레미아 특가",
+   "ai": {
+    "v": 2,
+    "promo": true,
+    "why": "에어프레미아 블프 항공권 특가",
+    "airlines": [
+     "에어프레미아"
+    ],
+    "name": "블프",
+    "book": {
+     "from": null,
+     "to": "2026-11-15"
+    },
+    "board": null,
+    "price": 277500,
+    "trip": "왕복",
+    "pct": null,
+    "seoul": null,
+    "at": "2026-11-15",
+    "model": "deepseek-v4-flash"
+   },
+   "lastDate": "2026-11-15T03:00:43.603Z",
+   "lastFound": "2026-11-15",
+   "more": [
+    {
+     "id": "c:https://cafe.naver.com/fobn/129274|2026 하반기 에어프레미아 프로미스 (Promise) 특가 프로모션",
+     "kind": "airline",
+     "community": true,
+     "title": "2026 하반기 에어프레미아 프로미스 (Promise) 특가 프로모션",
+     "desc": "2026 하반기 에어프레미아 프로미스 (Promise) 특가 프로모션 이번 프로모션은 에어프레미아 가 연중 딱 2번만... 일반 얼리버드 세일과는 차원이 다른 최대 90% 할인된 운임으로 내놓는 것이 특징입니다.",
+     "summary": [
+      "2026 하반기 에어프레미아 프로미스 (Promise) 특가 프로모션 이번 프로모션은 에어프레미아 가 연중 딱 2번만...",
+      "일반 얼리버드 세일과는 차원이 다른 최대 90% 할인된 운임으로 내놓는 것이 특징입니다."
+     ],
+     "link": "https://cafe.naver.com/fobn/129274",
+     "source": "네이버 카페 · 다낭 아지트 루나 - 다낭맛집, 다낭마사지, 호이안, 다낭여행",
+     "date": "2026-11-09T11:00:48.524Z",
+     "found": "2026-11-09",
+     "cards": [],
+     "airlines": [
+      "YP"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": {
+      "amount": 1100000,
+      "trip": "oneway?"
+     },
+     "query": "에어프레미아 얼리버드",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "에어프레미아 특가 프로모션 소식",
+      "airlines": [
+       "에어프레미아"
+      ],
+      "name": "프로미스(Promise) 특가 프로모션",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": 90,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/gobaesong/30236|에어프레미아 블랙 프라이데이 세일 ✈️",
+     "kind": "airline",
+     "community": true,
+     "title": "에어프레미아 블랙 프라이데이 세일 ✈️",
+     "desc": "블랙 프라이데이 맞이 에어프레미아 항공사에서도 할인 중입니다 !",
+     "summary": [
+      "블랙 프라이데이 맞이 에어프레미아 항공사에서도 할인 중입니다 !…"
+     ],
+     "link": "https://cafe.naver.com/gobaesong/30236",
+     "source": "네이버 카페 · 고배송 카페 - 최저가 착한배송,착한의류배송,미국배대지",
+     "date": "2026-11-03T14:18:02.174Z",
+     "dateFound": true,
+     "found": "2026-11-03",
+     "cards": [],
+     "airlines": [
+      "YP"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "에어프레미아 할인",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "에어프레미아 블프 항공권 할인 소식",
+      "airlines": [
+       "에어프레미아"
+      ],
+      "name": "블랙 프라이데이 세일",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/newjerseymom/69525|에어프레미아 블랙프라이데이 할인",
+     "kind": "airline",
+     "community": true,
+     "title": "에어프레미아 블랙프라이데이 할인",
+     "desc": "에어프레미아 블프 할인 시작했어요.",
+     "link": "https://cafe.naver.com/newjerseymom/69525",
+     "source": "네이버 카페 · 뉴욕뉴저지맘 - 뉴저지뉴욕 한국 엄마들의 모임",
+     "date": "2026-11-09T09:00:50.367Z",
+     "found": "2026-11-09",
+     "cards": [],
+     "airlines": [
+      "YP"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "에어프레미아 세일",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "에어프레미아 블프 항공권 할인 소식",
+      "airlines": [
+       "에어프레미아"
+      ],
+      "name": "블랙프라이데이 할인",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/nyctourdesign/1206291|에어프레미아/ 27년 2월 1일 ~2월 14일/ 110만원대(인당)",
+     "kind": "airline",
+     "community": true,
+     "title": "에어프레미아/ 27년 2월 1일 ~2월 14일/ 110만원대(인당)",
+     "desc": "글제목 : 말머리 선택 후 '대한 항공 / 1.2~1.7 / 120만원... 카드 할인 ·캐시백(없으면 없음) → 없음 5) 유료수하물·좌석 등 추가비용... 이름·예약번호· 항공권 번호·연락처·바 코드 ·QR 코드 는 가려주세요.",
+     "summary": [
+      "글제목 : 말머리 선택 후 '대한 항공 / 1.2~1.7 / 120만원...",
+      "카드 할인 ·캐시백(없으면 없음) → 없음 5) 유료수하물·좌석 등 추가비용...",
+      "이름·예약번호· 항공권 번호·연락처·바 코드 ·QR 코드 는 가려주세요."
+     ],
+     "link": "https://cafe.naver.com/nyctourdesign/1206291",
+     "source": "네이버 카페 · [미여디]No.1 뉴욕,LA,하와이,라스베가스,샌프란시스코 미국여행",
+     "date": "2026-11-12T07:00:43.078Z",
+     "found": "2026-11-12",
+     "cards": [],
+     "airlines": [
+      "YP"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": {
+      "amount": 1100000,
+      "trip": "oneway?"
+     },
+     "query": "항공권 할인코드",
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "개인 가격 공유·발권 후기",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    }
+   ]
+  },
+  {
    "id": "http://www.srtimes.kr/news/articleView.html|하나 카드 , 베트남 현지 소비 공략…롯데마트·그랩 할인 혜택 확대",
    "kind": "card",
    "title": "하나 카드 , 베트남 현지 소비 공략…롯데마트·그랩 할인 혜택 확대",
@@ -9213,218 +9428,6 @@
        "비엣젯"
       ],
       "name": "더블데이 특가",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    }
-   ]
-  },
-  {
-   "id": "c:https://cafe.naver.com/airportshopping/1095|[ 에어프레미아 ] 블프 특가 전 노선 최대 72%할인",
-   "kind": "airline",
-   "community": true,
-   "title": "[ 에어프레미아 ] 블프 특가 전 노선 최대 72%할인",
-   "desc": "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
-   "summary": [
-    "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
-   ],
-   "link": "https://cafe.naver.com/airportshopping/1095",
-   "source": "네이버 카페 · 인천공항의 모든 것",
-   "date": "2026-11-06T05:00:45.112Z",
-   "found": "2026-11-06",
-   "cards": [],
-   "airlines": [
-    "YP"
-   ],
-   "countries": [],
-   "allRoutes": true,
-   "routes": [],
-   "price": {
-    "amount": 1100000,
-    "trip": "oneway?"
-   },
-   "query": "에어프레미아 특가",
-   "ai": {
-    "v": 2,
-    "promo": true,
-    "why": "에어프레미아 블프 항공권 특가",
-    "airlines": [
-     "에어프레미아"
-    ],
-    "name": "블프 특가",
-    "book": null,
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": 72,
-    "seoul": true,
-    "at": "2026-11-12",
-    "model": "deepseek-v4-flash"
-   },
-   "lastDate": "2026-11-12T07:00:43.078Z",
-   "lastFound": "2026-11-12",
-   "more": [
-    {
-     "id": "c:https://cafe.naver.com/fobn/129274|2026 하반기 에어프레미아 프로미스 (Promise) 특가 프로모션",
-     "kind": "airline",
-     "community": true,
-     "title": "2026 하반기 에어프레미아 프로미스 (Promise) 특가 프로모션",
-     "desc": "2026 하반기 에어프레미아 프로미스 (Promise) 특가 프로모션 이번 프로모션은 에어프레미아 가 연중 딱 2번만... 일반 얼리버드 세일과는 차원이 다른 최대 90% 할인된 운임으로 내놓는 것이 특징입니다.",
-     "summary": [
-      "2026 하반기 에어프레미아 프로미스 (Promise) 특가 프로모션 이번 프로모션은 에어프레미아 가 연중 딱 2번만...",
-      "일반 얼리버드 세일과는 차원이 다른 최대 90% 할인된 운임으로 내놓는 것이 특징입니다."
-     ],
-     "link": "https://cafe.naver.com/fobn/129274",
-     "source": "네이버 카페 · 다낭 아지트 루나 - 다낭맛집, 다낭마사지, 호이안, 다낭여행",
-     "date": "2026-11-09T11:00:48.524Z",
-     "found": "2026-11-09",
-     "cards": [],
-     "airlines": [
-      "YP"
-     ],
-     "countries": [],
-     "allRoutes": true,
-     "routes": [],
-     "price": {
-      "amount": 1100000,
-      "trip": "oneway?"
-     },
-     "query": "에어프레미아 얼리버드",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "에어프레미아 특가 프로모션 소식",
-      "airlines": [
-       "에어프레미아"
-      ],
-      "name": "프로미스(Promise) 특가 프로모션",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": 90,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/gobaesong/30236|에어프레미아 블랙 프라이데이 세일 ✈️",
-     "kind": "airline",
-     "community": true,
-     "title": "에어프레미아 블랙 프라이데이 세일 ✈️",
-     "desc": "블랙 프라이데이 맞이 에어프레미아 항공사에서도 할인 중입니다 !",
-     "summary": [
-      "블랙 프라이데이 맞이 에어프레미아 항공사에서도 할인 중입니다 !…"
-     ],
-     "link": "https://cafe.naver.com/gobaesong/30236",
-     "source": "네이버 카페 · 고배송 카페 - 최저가 착한배송,착한의류배송,미국배대지",
-     "date": "2026-11-03T14:18:02.174Z",
-     "dateFound": true,
-     "found": "2026-11-03",
-     "cards": [],
-     "airlines": [
-      "YP"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "에어프레미아 할인",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "에어프레미아 블프 항공권 할인 소식",
-      "airlines": [
-       "에어프레미아"
-      ],
-      "name": "블랙 프라이데이 세일",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/newjerseymom/69525|에어프레미아 블랙프라이데이 할인",
-     "kind": "airline",
-     "community": true,
-     "title": "에어프레미아 블랙프라이데이 할인",
-     "desc": "에어프레미아 블프 할인 시작했어요.",
-     "link": "https://cafe.naver.com/newjerseymom/69525",
-     "source": "네이버 카페 · 뉴욕뉴저지맘 - 뉴저지뉴욕 한국 엄마들의 모임",
-     "date": "2026-11-09T09:00:50.367Z",
-     "found": "2026-11-09",
-     "cards": [],
-     "airlines": [
-      "YP"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "에어프레미아 세일",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "에어프레미아 블프 항공권 할인 소식",
-      "airlines": [
-       "에어프레미아"
-      ],
-      "name": "블랙프라이데이 할인",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/nyctourdesign/1206291|에어프레미아/ 27년 2월 1일 ~2월 14일/ 110만원대(인당)",
-     "kind": "airline",
-     "community": true,
-     "title": "에어프레미아/ 27년 2월 1일 ~2월 14일/ 110만원대(인당)",
-     "desc": "글제목 : 말머리 선택 후 '대한 항공 / 1.2~1.7 / 120만원... 카드 할인 ·캐시백(없으면 없음) → 없음 5) 유료수하물·좌석 등 추가비용... 이름·예약번호· 항공권 번호·연락처·바 코드 ·QR 코드 는 가려주세요.",
-     "summary": [
-      "글제목 : 말머리 선택 후 '대한 항공 / 1.2~1.7 / 120만원...",
-      "카드 할인 ·캐시백(없으면 없음) → 없음 5) 유료수하물·좌석 등 추가비용...",
-      "이름·예약번호· 항공권 번호·연락처·바 코드 ·QR 코드 는 가려주세요."
-     ],
-     "link": "https://cafe.naver.com/nyctourdesign/1206291",
-     "source": "네이버 카페 · [미여디]No.1 뉴욕,LA,하와이,라스베가스,샌프란시스코 미국여행",
-     "date": "2026-11-12T07:00:43.078Z",
-     "found": "2026-11-12",
-     "cards": [],
-     "airlines": [
-      "YP"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": {
-      "amount": 1100000,
-      "trip": "oneway?"
-     },
-     "query": "항공권 할인코드",
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "개인 가격 공유·발권 후기",
-      "airlines": [],
-      "name": null,
       "book": null,
       "board": null,
       "price": null,
@@ -22779,6 +22782,51 @@
    ]
   },
   {
+   "id": "c:https://cafe.naver.com/airportshopping/1095|[ 에어프레미아 ] 블프 특가 전 노선 최대 72%할인",
+   "kind": "airline",
+   "community": true,
+   "title": "[ 에어프레미아 ] 블프 특가 전 노선 최대 72%할인",
+   "desc": "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
+   "summary": [
+    "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
+   ],
+   "link": "https://cafe.naver.com/airportshopping/1095",
+   "source": "네이버 카페 · 인천공항의 모든 것",
+   "date": "2026-11-06T05:00:45.112Z",
+   "found": "2026-11-06",
+   "cards": [],
+   "airlines": [
+    "YP"
+   ],
+   "countries": [],
+   "allRoutes": true,
+   "routes": [],
+   "price": {
+    "amount": 1100000,
+    "trip": "oneway?"
+   },
+   "query": "에어프레미아 특가",
+   "ai": {
+    "v": 2,
+    "promo": true,
+    "why": "에어프레미아 블프 항공권 특가",
+    "airlines": [
+     "에어프레미아"
+    ],
+    "name": "블프 특가",
+    "book": null,
+    "board": null,
+    "price": null,
+    "trip": null,
+    "pct": 72,
+    "seoul": true,
+    "at": "2026-11-12",
+    "model": "deepseek-v4-flash"
+   },
+   "lastDate": "2026-11-06T05:00:45.112Z",
+   "lastFound": "2026-11-06"
+  },
+  {
    "id": "https://www.businessplus.kr/news/articleView.html|[잘먹잘살+]쿠팡·라보에이치·뉴발란스·피지오겔·코오롱FnC·배민·바...",
    "kind": "card",
    "title": "[잘먹잘살+]쿠팡·라보에이치·뉴발란스·피지오겔·코오롱FnC·배민·바...",
@@ -34087,24 +34135,24 @@
    "lastFound": "2026-11-01"
   }
  ],
- "updated": "2026-11-15T01:00:39.267Z",
- "runs": 181,
+ "updated": "2026-11-15T03:00:43.603Z",
+ "runs": 182,
  "checked": {
-  "베트남": "2026-11-15T01:00:39.267Z",
-  "태국": "2026-11-15T01:00:39.267Z",
-  "필리핀": "2026-11-15T01:00:39.267Z",
-  "인도네시아": "2026-11-15T01:00:39.267Z",
-  "말레이시아": "2026-11-15T01:00:39.267Z",
-  "싱가포르": "2026-11-15T01:00:39.267Z",
-  "일본": "2026-11-15T01:00:39.267Z",
-  "대만": "2026-11-15T01:00:39.267Z",
-  "홍콩": "2026-11-15T01:00:39.267Z",
-  "마카오": "2026-11-15T01:00:39.267Z",
-  "중국": "2026-11-15T01:00:39.267Z",
-  "미국령": "2026-11-15T01:00:39.267Z",
-  "미국": "2026-11-15T01:00:39.267Z"
+  "베트남": "2026-11-15T03:00:43.603Z",
+  "태국": "2026-11-15T03:00:43.603Z",
+  "필리핀": "2026-11-15T03:00:43.603Z",
+  "인도네시아": "2026-11-15T03:00:43.603Z",
+  "말레이시아": "2026-11-15T03:00:43.603Z",
+  "싱가포르": "2026-11-15T03:00:43.603Z",
+  "일본": "2026-11-15T03:00:43.603Z",
+  "대만": "2026-11-15T03:00:43.603Z",
+  "홍콩": "2026-11-15T03:00:43.603Z",
+  "마카오": "2026-11-15T03:00:43.603Z",
+  "중국": "2026-11-15T03:00:43.603Z",
+  "미국령": "2026-11-15T03:00:43.603Z",
+  "미국": "2026-11-15T03:00:43.603Z"
  },
- "auto": "2026-11-15T01:00:39.267Z",
+ "auto": "2026-11-15T03:00:43.603Z",
  "sources": {
   "7C": "2026-11-01",
   "TW": "2026-11-01",
@@ -34317,78 +34365,6 @@
    "중국동방항공 얼리버드": "2026-11-04"
   },
   "seen": [
-   "whiskycognac/962583",
-   "fcbora/5635",
-   "shopjirmsin/11633531",
-   "reen8071/54219",
-   "pachi7/5261",
-   "rnd/33905",
-   "pachi7/5260",
-   "futures25/1533",
-   "loyaltylife/368174",
-   "aipromptlab26/72",
-   "loyaltylife/368189",
-   "palawan114/65272",
-   "stockfinders/412",
-   "loveloveloveovelove/1040716",
-   "yetangko/178854",
-   "caco99/574",
-   "manijuicy/57281",
-   "bebettergirls/2103443",
-   "jpnstory/4437772",
-   "jpnstory/4437747",
-   "jpnstory/4437741",
-   "miznett/5152481",
-   "imsanbu/80485848",
-   "overseer/1802619",
-   "uouv96/113426",
-   "carsguidexq/31083",
-   "star4sarang/1145821",
-   "culturebloom/3427806",
-   "gumi2sclass/79839",
-   "dhsmfdmlcjdrhk/3059",
-   "noljatravel/1927316",
-   "imsanbu/80486221",
-   "dnjscl/402609",
-   "bbbx/885618",
-   "15668981/4694843",
-   "doorkong/3607910",
-   "clickg/285841",
-   "gamesbs/657",
-   "start336655/600",
-   "momsolleh/930122",
-   "dieselmania/47623843",
-   "firenze/8996611",
-   "checkincafe/148738",
-   "squaresever/37330",
-   "qldirdltkfkd/4036",
-   "hexenyang/75811",
-   "hexenyang/75813",
-   "worldtravelcafe/1165282",
-   "worldtravelcafe/1165280",
-   "worldtravelcafe/1165271",
-   "worldtravelcafe/1165266",
-   "worldtravelcafe/1165265",
-   "worldtravelcafe/1165264",
-   "saint24/199431",
-   "worldtravelcafe/1165263",
-   "worldtravelcafe/1165262",
-   "saint24/199418",
-   "minecraftpe/4012813",
-   "jpnstory/4437819",
-   "sineraria/72372",
-   "vinpearl/566855",
-   "vinpearl/566838",
-   "japanpackagetour/13830",
-   "warcraftgamemap/3531415",
-   "minecraftpe/4012810",
-   "dgmom365/7437307",
-   "postmore/106609",
-   "joonggonara/1137888389",
-   "010freebaram/258503",
-   "waateam/165753",
-   "joonggonara/1137887295",
-   "anyi/318311",
    "joonggonara/1137886896",
    "010freebaram/258507",
    "anyi/318300",
@@ -40316,7 +40292,79 @@
    "jpnstory/4444372",
    "010freebaram/261453",
    "joonggonara/1138176895",
-   "loyaltylife/369509"
+   "loyaltylife/369509",
+   "1236777/2086",
+   "urisports/14308",
+   "2266734/133656",
+   "1236777/2085",
+   "worldtravelcafe/1167073",
+   "worrytodream/996574",
+   "2266734/133616",
+   "informlab/288",
+   "worldtravelcafe/1167064",
+   "zmzm6506/84994",
+   "warcraftgamemap/3535593",
+   "drawhangil/26109",
+   "mindy7857/5533416",
+   "cafemakecafebest/103159",
+   "blss486/2283",
+   "010freebaram/261491",
+   "010freebaram/261481",
+   "mania7777777/453027",
+   "010freebaram/261520",
+   "joonggonara/1138181489",
+   "010freebaram/261508",
+   "joonggonara/1138180882",
+   "joonggonara/1138179187",
+   "waateam/165972",
+   "jejutip/2682531",
+   "worldtravelcafe/1167059",
+   "firenze/8999059",
+   "loyaltylife/369527",
+   "drawhangil/26108",
+   "busanjungonara/6158998",
+   "dailytour1/4714",
+   "joonggonara/1138179839",
+   "blss486/2284",
+   "uouv96/115640",
+   "mindy7857/5533447",
+   "mindy7857/5533415",
+   "mindy7857/5533401",
+   "mindy7857/5533354",
+   "warcraftgamemap/3535623",
+   "minecraftpe/4016628",
+   "minecraftpe/4016626",
+   "happyibook/6355764",
+   "fobn/166294",
+   "happyibook/6355743",
+   "ysm5828/9649278",
+   "warcraftgamemap/3535636",
+   "happyibook/6355811",
+   "fobn/166292",
+   "aipromptlab26/221",
+   "cafemakecafebest/103150",
+   "bebettergirls/2103708",
+   "joonggonara/1138180756",
+   "pilote/53425",
+   "worrytodream/996539",
+   "anyousports/97323",
+   "lutodot12/36329",
+   "loveloveloveovelove/1042311",
+   "kukmuyu/583956",
+   "hikingf/46129",
+   "mindy7857/5533463",
+   "uouv96/115651",
+   "seocheonhansanfood/30361",
+   "newjerseymom/69896",
+   "tmdghks284/184",
+   "vwthebeetle/42015",
+   "goodlifetoc/4890",
+   "joonggonara/1138179572",
+   "joonggonara/1138179502",
+   "dnjscl/403062",
+   "perfumelove/1733032",
+   "vinpearl/566763",
+   "drwallstreet/43"
   ],
   "since": "2026-11-03",
   "imported": "2026-11-03"

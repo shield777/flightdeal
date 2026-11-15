@@ -1,6 +1,41 @@
 [
  {
   "at": "2026-11-15",
+  "title": "[오늘 마감] 에어프레미아 블프 — 도쿄 왕복 27만7,500원·하와이 95만2,000원, ....",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "에어프레미아 블프 항공권 특가",
+   "airlines": [
+    "에어프레미아"
+   ],
+   "name": "블프",
+   "book": {
+    "from": null,
+    "to": "2026-11-15"
+   },
+   "board": null,
+   "price": 277500,
+   "trip": "왕복",
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-15",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "예약 마감 규칙 - / AI 2026-11-15",
+   "가격 규칙 - / AI 277500"
+  ]
+ },
+ {
+  "at": "2026-11-15",
   "title": "[하늘길] 11월 3주, '수험생' 항공권 25% 할인 …트리니티 외 3가지 항공",
   "community": false,
   "ai": {
@@ -10104,43 +10139,6 @@
    },
    "board": null,
    "pct": null,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "일본·대만·베트남 항공권 할인 기회…11월 최대 15% 내려간다",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "항공권 할인 프로모션",
-   "airlines": [
-    "진에어",
-    "제주항공",
-    "캐세이퍼시픽"
-   ],
-   "name": "11.11 쇼핑 데이",
-   "book": {
-    "from": "2026-11-01",
-    "to": "2026-11-11"
-   },
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": 15,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": "2026-11-01",
-    "to": "2026-11-11"
-   },
-   "board": null,
-   "pct": 15,
    "price": null
   },
   "diff": []
