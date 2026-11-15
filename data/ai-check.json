@@ -1,6 +1,35 @@
 [
  {
   "at": "2026-11-16",
+  "title": "KB국민카드 연말연시 항공권·숙박 할인 받아가세요",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "카드사 호텔·여행 혜택 중심",
+   "airlines": [],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-16",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님"
+  ]
+ },
+ {
+  "at": "2026-11-16",
   "title": "신세계여행사⚫⚫ 25%더 할인! 6/8까지 발권 ⚫⚫ 6/2-2027.2월 일정⚫⚫에어캐나다특가⚫⚫대한항공 유류할증 인하!!⚫⚫신세계여행사로 문",
   "community": false,
   "ai": {
@@ -10077,34 +10106,5 @@
    "AI: 특가 아님",
    "예약 마감 규칙 2026-11-17 / AI -"
   ]
- },
- {
-  "at": "2026-11-12",
-  "title": "필리핀항공 , 동반 여행객 대상 항공 권 할인 프로모션 진행",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "동반 여행객 항공권 할인 프로모션",
-   "airlines": [
-    "필리핀항공"
-   ],
-   "name": "동반 여행객 항공권 할인 프로모션",
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": true,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": []
  }
 ]
