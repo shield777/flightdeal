@@ -1,6 +1,68 @@
 [
  {
   "at": "2026-11-15",
+  "title": "에어로케이항공, 후지드림항공과 '일본행 항공권 1+1' SNS 이벤트",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "SNS 이벤트 경품 성격",
+   "airlines": [],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": false,
+   "at": "2026-11-15",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님"
+  ]
+ },
+ {
+  "at": "2026-11-15",
+  "title": "중국 남방항공·TOPAS, 세일즈 콘테스트 시상…여행사 6곳 수상",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "여행사 시상식 기사, 운임할인 아님",
+   "airlines": [],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-15",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": null,
+    "to": "2027-08-01"
+   },
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님",
+   "예약 마감 규칙 2027-08-01 / AI -"
+  ]
+ },
+ {
+  "at": "2026-11-15",
   "title": "에어로케이 블프 특가 진행한데요.",
   "community": true,
   "ai": {
@@ -10053,74 +10115,5 @@
    "price": 99000
   },
   "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "싱가포르항공·스쿠트, 125개 목적지 특가…한국·제주 노선 포함",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "항공사 특가 프로모션",
-   "airlines": [
-    "싱가포르항공",
-    "스쿠트"
-   ],
-   "name": "타임 투 플라이",
-   "book": {
-    "from": "2026-10-23",
-    "to": "2026-10-30"
-   },
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": true,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": "2026-10-23",
-    "to": "2026-10-30"
-   },
-   "board": {
-    "from": "2026-11-09",
-    "to": "2027-10-15"
-   },
-   "pct": null,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "출금은 하나 카드 , 결제는 신한 카드 ?…'트래블 카드 쪼개기'에 속앓이",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "카드 상품·서비스 비교 기사",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": 69,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님",
-   "할인율 규칙 69 / AI -"
-  ]
  }
 ]

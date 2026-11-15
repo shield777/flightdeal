@@ -1,6 +1,396 @@
 {
  "items": [
   {
+   "id": "iZFdsVUZ0WjlnWHlyNFVTbUdQNUVJSXpNU29hTlJsTEx1YmhIQjBPWWh1eDktTlo5dE54a2s3WTRFRndSVVpPN3ZCYm93cmFpcXdYZVdlOEM5M1psTGo4THc|에어로케이항공, 후지드림항공과 일본 항공권 ‘1+1’ 이벤트",
+   "kind": "airline",
+   "title": "에어로케이항공, 후지드림항공과 일본 항공권 ‘1+1’ 이벤트",
+   "desc": "에어로케이항공, 후지드림항공과 일본 항공권 ‘1+1’ 이벤트 중부매일",
+   "summary": [
+    "에어로케이항공, 후지드림항공과 일본 항공권 ‘1+1’ 이벤트 중부매일…"
+   ],
+   "link": "https://www.jbnews.com/news/articleViewAmp.html?idxno=1515944",
+   "source": "중부매일",
+   "date": "2026-11-14T08:31:55.000Z",
+   "found": "2026-11-14",
+   "cards": [],
+   "airlines": [
+    "RF"
+   ],
+   "countries": [
+    "일본"
+   ],
+   "allRoutes": true,
+   "routes": [],
+   "price": null,
+   "query": "일본 항공권 {특가말}",
+   "bodyAt": "2026-11-14",
+   "body": [
+    "에어로케이항공은 일본 지역항공사 후지드림항공(Fuji Dream Airlines)과 공동으로 ‘더 자유롭고 넓어지는 일본 여행’ 이벤트를 오는 27일까지 진행한다.",
+    "이번 행사는 에어로케이의 청주발 일본 국제선과 후지드림항공의 일본 국내선을 연계해 주요 도시뿐 아니라 지방 소도시까지 여행할 수 있는 다양한 노선을 알리기 위해 마련됐다.",
+    "에어로케이항공 관계자는 “이번 협업은 양사의 노선망을 연계해 일본 여행의 선택지를 넓히고 상대적으로 접근성이 낮았던 일본 지방 도시의 매력을 알리기 위해 마련됐다”며 “앞으로도 다양한 항공사 및 지역 관광 파트너와 협력해 고객들에게 폭넓은 여행 경험을 제공하겠다”고 말했다."
+   ],
+   "ai": {
+    "v": 2,
+    "promo": true,
+    "why": "일본 항공권 1+1 이벤트",
+    "airlines": [
+     "에어로케이"
+    ],
+    "name": "더 자유롭고 넓어지는 일본 여행",
+    "book": {
+     "from": null,
+     "to": "2026-11-27"
+    },
+    "board": null,
+    "price": null,
+    "trip": null,
+    "pct": null,
+    "seoul": false,
+    "at": "2026-11-14",
+    "model": "deepseek-v4-flash"
+   },
+   "lastDate": "2026-11-15T05:46:14.000Z",
+   "lastFound": "2026-11-15",
+   "more": [
+    {
+     "id": "http://www.newsprime.co.kr/news/article.html|에어로케이, 일본 후지드림항공과 공동 SNS 이벤트 진행",
+     "kind": "airline",
+     "title": "에어로케이, 일본 후지드림항공과 공동 SNS 이벤트 진행",
+     "desc": "에어로케이항공(대표이사 강병호)은 후지드림항공(Fuji Dream Airlines)과 공동 SNS 이벤트 '더 자유롭고 넓어지는... 당첨자에게는 댓글로 선택한 여행 노선을 기준으로 에어로케이 일본 국제선 왕복 항공권 1매와 후지드림항공...",
+     "summary": [
+      "에어로케이항공(대표이사 강병호)은 후지드림항공(Fuji Dream Airlines)과 공동 SNS 이벤트 '더 자유롭고 넓어지는...",
+      "당첨자에게는 댓글로 선택한 여행 노선을 기준으로 에어로케이 일본 국제선 왕복 항공권 1매와 후지드림항공…"
+     ],
+     "link": "http://www.newsprime.co.kr/news/article.html?no=754848",
+     "source": "네이버 뉴스",
+     "date": "2026-11-13T01:08:00.000Z",
+     "found": "2026-11-13",
+     "cards": [],
+     "airlines": [
+      "RF"
+     ],
+     "countries": [
+      "일본"
+     ],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "일본 항공권 {특가말}",
+     "bodyAt": "2026-11-13",
+     "body": [
+      "에어로케이항공(대표이사 강병호)은 후지드림항공(Fuji Dream Airlines)과 공동 SNS 이벤트 '더 자유롭고 넓어지는 일본 여행'을 진행한다고 13일 밝혔다.",
+      "이번 이벤트는 에어로케이의 청주발 일본 국제선과 후지드림항공의 일본 국내선을 연계해 일본 주요 도시뿐 아니라 지방 소도시까지 여행할 수 있는 다양한 항공 노선을 소개하기 위해 마련됐다.",
+      "이벤트 참여 기간은 11월6일부터 27일까지다.",
+      "양사는 추첨을 통해 10명을 선정해 11월 30일 당첨자를 발표한다.",
+      "이용 조건과 유효기간은 당첨자에게 인스타그램 다이렉트 메시지(DM)로 별도 안내할 예정이다.",
+      "에어로케이항공 관계자는 \"이번 협업은 양사의 노선망을 연계해 일본 여행의 선택지를 넓히고, 상대적으로 접근성이 낮았던 일본 지방 도시의 매력을 알리기 위해 마련됐다\"며 \"앞으로도 다양한 항공사 및 지역 관광 파트너와 협력해 고객들에게 폭넓은 여행 경험을 제공하겠다\"고 말했다."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "항공권은 추첨 경품일 뿐",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": false,
+      "at": "2026-11-13",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "ZDAzeUNMakEwUHVLNDZiVWFYZmVzQmlodnR5aEFVRURFaWtmYUU4Z1J6RU9uMk9obW5DRlZJakt0TF83YlRPLXBaRkw3Z3JvUkhpV2YyZ1ZGLUdJa1VfNzRR|에어로케이항공, 후지드림항공과 일본 항공권 1+1 SNS 이벤트",
+     "kind": "airline",
+     "title": "에어로케이항공, 후지드림항공과 일본 항공권 1+1 SNS 이벤트",
+     "desc": "에어로케이항공, 후지드림항공과 일본 항공권 1+1 SNS 이벤트 뉴스홈(newshome)",
+     "summary": [
+      "에어로케이항공, 후지드림항공과 일본 항공권 1+1 SNS 이벤트 뉴스홈(newshome)…"
+     ],
+     "link": "https://www.news-home.co.kr/news/articleView.html?idxno=79356",
+     "source": "뉴스홈(newshome)",
+     "date": "2026-11-13T01:50:17.000Z",
+     "found": "2026-11-13",
+     "cards": [],
+     "airlines": [
+      "RF"
+     ],
+     "countries": [
+      "일본"
+     ],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "일본 항공권 {특가말}",
+     "bodyAt": "2026-11-13",
+     "body": [
+      "에어로케이항공, 후지드림항공과 일본 항공권 1+1 SNS 이벤트",
+      "에어로케이항공은 양사가 공동으로 기획한 ‘ 더 자유롭고 넓어지는 일본 여행 ’ 이벤트를 오는 27 일까지 진행한다 .",
+      "이번 이벤트는 에어로케이의 청주발 일본 국제선과 후지드림항공의 일본 국내선을 연계해 일본 주요 도시뿐 아니라 지방 소도시까지 여행할 수 있는 다양한 항공 노선을 소개하기 위해 마련됐다 .",
+      "당첨자는 추첨을 통해 10 명을 선정하며 , 발표일은 11 월 30 일이다 . 당첨자에게는 댓글로 선택한 여행 노선을 기준으로 에어로케이 일본 국제선 왕복항공권 1 매와 후지드림항공 일본 국내선 왕복항공권 1 매 등 총 2 매가 제공된다 .",
+      "경품 항공권은 좌석 상황에 따라 이용이 제한될 수 있으며 , 유류할증료와 공항세 등은 당첨자가 부담해야 한다 . 자세한 사용 조건과 유효기간은 당첨자에게 인스타그램 다이렉트 메시지 (DM) 로 별도 안내된다 .",
+      "에어로케이항공 관계자는 “ 이번 협업은 양사의 노선망을 연계해 일본 여행의 선택지를 넓히고 , 상대적으로 접근성이 낮았던 일본 지방 도시의 매력을 알리기 위해 마련됐다 ” 며 “ 앞으로도 다양한 항공사 및 지역 관광 파트너와 협력해 고객들에게 더욱 폭넓은 여행 경험을 제공할 수 있도록 노력하겠다 ” 고 말했다 ."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "항공권 1+1은 추첨 경품 이벤트",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": false,
+      "at": "2026-11-13",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "https://www.jbnews.com/news/articleView.html|에어로케이항공, 후지드림항공과 일본 항공권 '1+1' 이벤트",
+     "kind": "airline",
+     "title": "에어로케이항공, 후지드림항공과 일본 항공권 '1+1' 이벤트",
+     "desc": "［중부매일 박상철 기자］ 청주국제공항을 거점으로 하는 에어로케이항공이 일본 후지드림항공과 손잡고 일본 왕복 항공권 2매를 증정하는 SNS 이벤트 를 진행한다. 에어로케이항공은 일본 지역항공사 후지드림항공(Fuji...",
+     "summary": [
+      "［중부매일 박상철 기자］ 청주국제공항을 거점으로 하는 에어로케이항공이 일본 후지드림항공과 손잡고 일본 왕복 항공권 2매를 증정하는 SNS 이벤트 를 진행한다.",
+      "에어로케이항공은 일본 지역항공사 후지드림항공(Fuji…"
+     ],
+     "link": "https://www.jbnews.com/news/articleView.html?idxno=1515944",
+     "source": "네이버 뉴스",
+     "date": "2026-11-14T08:16:00.000Z",
+     "found": "2026-11-14",
+     "cards": [],
+     "airlines": [
+      "RF"
+     ],
+     "countries": [
+      "일본"
+     ],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "일본 항공권 {특가말}",
+     "bodyAt": "2026-11-14",
+     "body": [
+      "에어로케이항공은 일본 지역항공사 후지드림항공(Fuji Dream Airlines)과 공동으로 ‘더 자유롭고 넓어지는 일본 여행’ 이벤트를 오는 27일까지 진행한다.",
+      "이번 행사는 에어로케이의 청주발 일본 국제선과 후지드림항공의 일본 국내선을 연계해 주요 도시뿐 아니라 지방 소도시까지 여행할 수 있는 다양한 노선을 알리기 위해 마련됐다.",
+      "에어로케이항공 관계자는 “이번 협업은 양사의 노선망을 연계해 일본 여행의 선택지를 넓히고 상대적으로 접근성이 낮았던 일본 지방 도시의 매력을 알리기 위해 마련됐다”며 “앞으로도 다양한 항공사 및 지역 관광 파트너와 협력해 고객들에게 폭넓은 여행 경험을 제공하겠다”고 말했다."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "항공권 1+1은 SNS 경품 이벤트",
+      "airlines": [
+       "에어로케이"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": false,
+      "at": "2026-11-14",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "dsY192dlFNY3pJREJidTZ4TTZlckpIX2pPNUkzX1RfZERJdWc0ektuR29wQzZKbElreVRLaXBZbjhCTzVKd0VMWWh3eGxVQ2FEaG5MeWhnRU9WQ3BvTEtZSQ|에어로케이, 일본 왕복항공권 1+1 쏜다…후지드림항공과 공동 이벤트",
+     "kind": "airline",
+     "title": "에어로케이, 일본 왕복항공권 1+1 쏜다…후지드림항공과 공동 이벤트",
+     "desc": "에어로케이, 일본 왕복항공권 1+1 쏜다…후지드림항공과 공동 이벤트 ER 이코노믹리뷰",
+     "summary": [
+      "에어로케이, 일본 왕복항공권 1+1 쏜다…후지드림항공과 공동 이벤트 ER 이코노믹리뷰…"
+     ],
+     "link": "https://www.econovill.com/news/articleView.html?idxno=757170",
+     "source": "ER 이코노믹리뷰",
+     "date": "2026-11-13T02:49:26.000Z",
+     "found": "2026-11-13",
+     "cards": [],
+     "airlines": [
+      "RF"
+     ],
+     "countries": [
+      "일본"
+     ],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "일본 항공권 {특가말}",
+     "bodyAt": "2026-11-13",
+     "body": [
+      "에어로케이, 일본 왕복항공권 1+1 쏜다…후지드림항공과 공동 이벤트",
+      "에어로케이항공과 일본 후지드림항공이 국제선과 국내선을 연계한 여행 코스를 선보이고 추첨을 통해 두 항공사의 왕복항공권을 각각 한 장씩 제공하는 이벤트다.",
+      "오는 27일까지 SNS를 통해 참여할 수 있다.",
+      "에어로케이항공은 일본 지역항공사 후지드림항공(Fuji Dream Airlines)과 함께 ‘더 자유롭고 넓어지는 일본 여행’ 공동 SNS 이벤트를 진행한다고 13일 밝혔다.",
+      "에어로케이는 이번 협업을 통해 청주발 일본 국제선과 후지드림항공의 국내선 노선망을 결합한 여행 코스 3가지를 제안한다.",
+      "다만 나고야 중부국제공항에서 고마키공항까지는 여행객이 개별적으로 이동해야 한다.",
+      "오는 27일까지 에어로케이 공식 계정(@aerok.official)과 후지드림항공 한국어 공식 계정(@fujidream_kr)을 모두 팔로우하고 행사 게시물에 ‘좋아요’를 누르면 된다.",
+      "당첨자는 추첨으로 10명을 선정하며 결과는 11월 30일 발표된다.",
+      "유류할증료와 공항세 등은 당첨자가 별도로 부담해야 하며 구체적인 이용 조건과 항공권 유효기간은 인스타그램 다이렉트 메시지(DM)를 통해 개별 안내된다.",
+      "에어로케이는 이번 이벤트를 통해 일본 주요 관광지와 함께 지방 소도시의 여행 수요를 확대한다는 계획이다.",
+      "에어로케이항공 관계자는 “이번 협업은 양사의 노선망을 연계해 일본 여행의 선택지를 넓히고 상대적으로 접근성이 낮았던 일본 지방 도시의 매력을 알리기 위해 마련됐다”며 “앞으로도 다양한 항공사 및 지역 관광 파트너와의 협력을 통해 고객들에게 더욱 폭넓은 여행 경험을 제공할 수 있도록 노력하겠다”고 말했다."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "항공권은 추첨 경품일 뿐",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": false,
+      "at": "2026-11-13",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "https://www.nocutnews.co.kr/news/6606725|에어로케이, 후지드림항공과 항공권 증정 'SNS 이벤트 ' 진행",
+     "kind": "airline",
+     "title": "에어로케이, 후지드림항공과 항공권 증정 'SNS 이벤트 ' 진행",
+     "desc": "청주국제공항을 거점으로 하고 있는 에어로케이항공이 일본 지역항공사인 후지드림항공과 함께 일본 행 항공권 을 증정하는 공동 SNS 이벤트 '더 자유롭고 넓어지는 일본 여행'을 진행하고 있다고 13일 밝혔다. 이번...",
+     "summary": [
+      "청주국제공항을 거점으로 하고 있는 에어로케이항공이 일본 지역항공사인 후지드림항공과 함께 일본 행 항공권 을 증정하는 공동 SNS 이벤트 '더 자유롭고 넓어지는 일본 여행'을 진행하고 있다고 13일 밝혔다."
+     ],
+     "link": "https://www.nocutnews.co.kr/news/6606725?utm_source=naver&utm_medium=article&utm_campaign=20261113161222",
+     "source": "네이버 뉴스",
+     "date": "2026-11-13T07:13:00.000Z",
+     "found": "2026-11-13",
+     "cards": [],
+     "airlines": [
+      "RF"
+     ],
+     "countries": [
+      "일본"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "일본 항공권 {특가말}",
+     "bodyAt": "2026-11-13",
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "항공권 증정 이벤트, 운임 할인 아님",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": false,
+      "at": "2026-11-13",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "VEg0RnhIeUloYjNqa0hFZV9fMERwTHVOUHhhUkM4ajRGSy1kTFlZT053azJxWTczTHUxeGQ2X1VvQjdWNFpqWWY4WWNHVGJuUUwxUzZUWVJMV09YNTM0c1RB|에어로케이항공, 후지드림항공과 '일본행 항공권 1+1' SNS 이벤트",
+     "kind": "airline",
+     "title": "에어로케이항공, 후지드림항공과 '일본행 항공권 1+1' SNS 이벤트",
+     "desc": "에어로케이항공, 후지드림항공과 '일본행 항공권 1+1' SNS 이벤트 충북일보",
+     "summary": [
+      "에어로케이항공, 후지드림항공과 '일본행 항공권 1+1' SNS 이벤트 충북일보…"
+     ],
+     "link": "https://www.inews365.com/news/article.html?no=943656",
+     "source": "충북일보",
+     "date": "2026-11-15T05:46:14.000Z",
+     "found": "2026-11-15",
+     "cards": [],
+     "airlines": [
+      "RF"
+     ],
+     "countries": [
+      "일본"
+     ],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "일본 항공권 {특가말}",
+     "bodyAt": "2026-11-15",
+     "body": [
+      "에어로케이항공, 후지드림항공과 '일본행 항공권 1+1' SNS 이벤트",
+      "오는 27일까지 희망 여행 노선 댓글 참여",
+      "웹출고시간 2026.11.15 14:46:14",
+      "최종수정 2026.11.15 14:46:14",
+      "이번 이벤트는 에어로케이의 청주발 일본 국제선과 후지드림항공의 일본 국내선을 연계해 일본 주요 도시와 지방 소도시까지 이어지는 다양한 항공 여행 루트를 소개하기 위해 마련됐다.",
+      "참여 기간은 이달 6일부터 27일까지다.",
+      "사진제공=에어로케이항공",
+      "에어로케이 공식 인스타그램(@aerok.official)과 후지드림항공 한국어 공식 인스타그램(@fujidream_kr)을 팔로우한 뒤 이벤트 게시물에 '좋아요'를 누르면 된다.",
+      "상세 사용 조건과 유효기간은 당첨자에게 인스타그램 메시지(DM)로 별도 안내된다.",
+      "에어로케이항공 관계자는 \"이번 협업은 양사의 노선망을 연계해 일본 여행의 선택지를 넓히고, 상대적으로 접근성이 낮았던 일본 지방 도시의 매력을 알리기 위해 마련됐다\"며 \"앞으로도 다양한 항공사 및 지역 관광 파트너와의 협력을 통해 고객들에게 더욱 폭넓은 여행 경험을 제공할 수 있도록 노력하겠다\"고 말했다."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "SNS 이벤트 경품 성격",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": false,
+      "at": "2026-11-15",
+      "model": "deepseek-v4-flash"
+     }
+    }
+   ]
+  },
+  {
+   "id": "https://www.gukjenews.com/news/articleView.html|중국 남방항공·TOPAS, 세일즈 콘테스트 시상…여행사 6곳 수상",
+   "kind": "airline",
+   "title": "중국 남방항공·TOPAS, 세일즈 콘테스트 시상…여행사 6곳 수상",
+   "desc": "양사는 지난 8월부터 공동 프로모션 을 추진했으며, 판매왕·동북왕·환승왕·성장왕 등 다양한 부문에서... 그 결과 총 6개 여행사가 부문별로 선정돼 한중 왕복 항공권 과 상품권을 부상으로 받았다. 중국 남방항공...",
+   "summary": [
+    "양사는 지난 8월부터 공동 프로모션 을 추진했으며, 판매왕·동북왕·환승왕·성장왕 등 다양한 부문에서...",
+    "그 결과 총 6개 여행사가 부문별로 선정돼 한중 왕복 항공권 과 상품권을 부상으로 받았다."
+   ],
+   "link": "https://www.gukjenews.com/news/articleView.html?idxno=3752386",
+   "source": "네이버 뉴스",
+   "date": "2026-11-15T05:14:00.000Z",
+   "found": "2026-11-15",
+   "cards": [],
+   "airlines": [],
+   "countries": [
+    "중국"
+   ],
+   "allRoutes": false,
+   "routes": [],
+   "price": null,
+   "query": "중국 항공권 {특가말}",
+   "bodyAt": "2026-11-15",
+   "body": [
+    "양사는 지난 8월부터 공동 프로모션을 추진했으며, 판매왕·동북왕·환승왕·성장왕 등 다양한 부문에서 수상자를 선정했다.",
+    "평가 항목에는 전체 판매 실적, 동북지역 노선 판매, 주요 허브(광저우·베이징다싱·선전·우루무치) 환승 판매, 전년 대비 성장 실적 등이 포함됐다.",
+    "중국남방항공 한국지사는 앞으로도 TOPAS 및 국내 여행사와의 협력을 지속적으로 강화하고, 중국 노선과 주요 허브를 활용한 환승 네트워크 판매 확대를 위한 공동 판촉과 마케팅 활동을 이어가겠다고 밝혔다."
+   ],
+   "ai": {
+    "v": 2,
+    "promo": false,
+    "why": "여행사 시상식 기사, 운임할인 아님",
+    "airlines": [],
+    "name": null,
+    "book": null,
+    "board": null,
+    "price": null,
+    "trip": null,
+    "pct": null,
+    "seoul": null,
+    "at": "2026-11-15",
+    "model": "deepseek-v4-flash"
+   },
+   "lastDate": "2026-11-15T05:14:00.000Z",
+   "lastFound": "2026-11-15"
+  },
+  {
    "id": "c:https://cafe.naver.com/20daelee/952962|에어로케이, 최대 98% 할인 블프 특가 (~11/22)",
    "kind": "airline",
    "community": true,
@@ -1997,298 +2387,6 @@
       "pct": null,
       "seoul": null,
       "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    }
-   ]
-  },
-  {
-   "id": "iZFdsVUZ0WjlnWHlyNFVTbUdQNUVJSXpNU29hTlJsTEx1YmhIQjBPWWh1eDktTlo5dE54a2s3WTRFRndSVVpPN3ZCYm93cmFpcXdYZVdlOEM5M1psTGo4THc|에어로케이항공, 후지드림항공과 일본 항공권 ‘1+1’ 이벤트",
-   "kind": "airline",
-   "title": "에어로케이항공, 후지드림항공과 일본 항공권 ‘1+1’ 이벤트",
-   "desc": "에어로케이항공, 후지드림항공과 일본 항공권 ‘1+1’ 이벤트 중부매일",
-   "summary": [
-    "에어로케이항공, 후지드림항공과 일본 항공권 ‘1+1’ 이벤트 중부매일…"
-   ],
-   "link": "https://www.jbnews.com/news/articleViewAmp.html?idxno=1515944",
-   "source": "중부매일",
-   "date": "2026-11-14T08:31:55.000Z",
-   "found": "2026-11-14",
-   "cards": [],
-   "airlines": [
-    "RF"
-   ],
-   "countries": [
-    "일본"
-   ],
-   "allRoutes": true,
-   "routes": [],
-   "price": null,
-   "query": "일본 항공권 {특가말}",
-   "bodyAt": "2026-11-14",
-   "body": [
-    "에어로케이항공은 일본 지역항공사 후지드림항공(Fuji Dream Airlines)과 공동으로 ‘더 자유롭고 넓어지는 일본 여행’ 이벤트를 오는 27일까지 진행한다.",
-    "이번 행사는 에어로케이의 청주발 일본 국제선과 후지드림항공의 일본 국내선을 연계해 주요 도시뿐 아니라 지방 소도시까지 여행할 수 있는 다양한 노선을 알리기 위해 마련됐다.",
-    "에어로케이항공 관계자는 “이번 협업은 양사의 노선망을 연계해 일본 여행의 선택지를 넓히고 상대적으로 접근성이 낮았던 일본 지방 도시의 매력을 알리기 위해 마련됐다”며 “앞으로도 다양한 항공사 및 지역 관광 파트너와 협력해 고객들에게 폭넓은 여행 경험을 제공하겠다”고 말했다."
-   ],
-   "ai": {
-    "v": 2,
-    "promo": true,
-    "why": "일본 항공권 1+1 이벤트",
-    "airlines": [
-     "에어로케이"
-    ],
-    "name": "더 자유롭고 넓어지는 일본 여행",
-    "book": {
-     "from": null,
-     "to": "2026-11-27"
-    },
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": null,
-    "seoul": false,
-    "at": "2026-11-14",
-    "model": "deepseek-v4-flash"
-   },
-   "lastDate": "2026-11-14T08:31:55.000Z",
-   "lastFound": "2026-11-14",
-   "more": [
-    {
-     "id": "http://www.newsprime.co.kr/news/article.html|에어로케이, 일본 후지드림항공과 공동 SNS 이벤트 진행",
-     "kind": "airline",
-     "title": "에어로케이, 일본 후지드림항공과 공동 SNS 이벤트 진행",
-     "desc": "에어로케이항공(대표이사 강병호)은 후지드림항공(Fuji Dream Airlines)과 공동 SNS 이벤트 '더 자유롭고 넓어지는... 당첨자에게는 댓글로 선택한 여행 노선을 기준으로 에어로케이 일본 국제선 왕복 항공권 1매와 후지드림항공...",
-     "summary": [
-      "에어로케이항공(대표이사 강병호)은 후지드림항공(Fuji Dream Airlines)과 공동 SNS 이벤트 '더 자유롭고 넓어지는...",
-      "당첨자에게는 댓글로 선택한 여행 노선을 기준으로 에어로케이 일본 국제선 왕복 항공권 1매와 후지드림항공…"
-     ],
-     "link": "http://www.newsprime.co.kr/news/article.html?no=754848",
-     "source": "네이버 뉴스",
-     "date": "2026-11-13T01:08:00.000Z",
-     "found": "2026-11-13",
-     "cards": [],
-     "airlines": [
-      "RF"
-     ],
-     "countries": [
-      "일본"
-     ],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "일본 항공권 {특가말}",
-     "bodyAt": "2026-11-13",
-     "body": [
-      "에어로케이항공(대표이사 강병호)은 후지드림항공(Fuji Dream Airlines)과 공동 SNS 이벤트 '더 자유롭고 넓어지는 일본 여행'을 진행한다고 13일 밝혔다.",
-      "이번 이벤트는 에어로케이의 청주발 일본 국제선과 후지드림항공의 일본 국내선을 연계해 일본 주요 도시뿐 아니라 지방 소도시까지 여행할 수 있는 다양한 항공 노선을 소개하기 위해 마련됐다.",
-      "이벤트 참여 기간은 11월6일부터 27일까지다.",
-      "양사는 추첨을 통해 10명을 선정해 11월 30일 당첨자를 발표한다.",
-      "이용 조건과 유효기간은 당첨자에게 인스타그램 다이렉트 메시지(DM)로 별도 안내할 예정이다.",
-      "에어로케이항공 관계자는 \"이번 협업은 양사의 노선망을 연계해 일본 여행의 선택지를 넓히고, 상대적으로 접근성이 낮았던 일본 지방 도시의 매력을 알리기 위해 마련됐다\"며 \"앞으로도 다양한 항공사 및 지역 관광 파트너와 협력해 고객들에게 폭넓은 여행 경험을 제공하겠다\"고 말했다."
-     ],
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "항공권은 추첨 경품일 뿐",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": false,
-      "at": "2026-11-13",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "ZDAzeUNMakEwUHVLNDZiVWFYZmVzQmlodnR5aEFVRURFaWtmYUU4Z1J6RU9uMk9obW5DRlZJakt0TF83YlRPLXBaRkw3Z3JvUkhpV2YyZ1ZGLUdJa1VfNzRR|에어로케이항공, 후지드림항공과 일본 항공권 1+1 SNS 이벤트",
-     "kind": "airline",
-     "title": "에어로케이항공, 후지드림항공과 일본 항공권 1+1 SNS 이벤트",
-     "desc": "에어로케이항공, 후지드림항공과 일본 항공권 1+1 SNS 이벤트 뉴스홈(newshome)",
-     "summary": [
-      "에어로케이항공, 후지드림항공과 일본 항공권 1+1 SNS 이벤트 뉴스홈(newshome)…"
-     ],
-     "link": "https://www.news-home.co.kr/news/articleView.html?idxno=79356",
-     "source": "뉴스홈(newshome)",
-     "date": "2026-11-13T01:50:17.000Z",
-     "found": "2026-11-13",
-     "cards": [],
-     "airlines": [
-      "RF"
-     ],
-     "countries": [
-      "일본"
-     ],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "일본 항공권 {특가말}",
-     "bodyAt": "2026-11-13",
-     "body": [
-      "에어로케이항공, 후지드림항공과 일본 항공권 1+1 SNS 이벤트",
-      "에어로케이항공은 양사가 공동으로 기획한 ‘ 더 자유롭고 넓어지는 일본 여행 ’ 이벤트를 오는 27 일까지 진행한다 .",
-      "이번 이벤트는 에어로케이의 청주발 일본 국제선과 후지드림항공의 일본 국내선을 연계해 일본 주요 도시뿐 아니라 지방 소도시까지 여행할 수 있는 다양한 항공 노선을 소개하기 위해 마련됐다 .",
-      "당첨자는 추첨을 통해 10 명을 선정하며 , 발표일은 11 월 30 일이다 . 당첨자에게는 댓글로 선택한 여행 노선을 기준으로 에어로케이 일본 국제선 왕복항공권 1 매와 후지드림항공 일본 국내선 왕복항공권 1 매 등 총 2 매가 제공된다 .",
-      "경품 항공권은 좌석 상황에 따라 이용이 제한될 수 있으며 , 유류할증료와 공항세 등은 당첨자가 부담해야 한다 . 자세한 사용 조건과 유효기간은 당첨자에게 인스타그램 다이렉트 메시지 (DM) 로 별도 안내된다 .",
-      "에어로케이항공 관계자는 “ 이번 협업은 양사의 노선망을 연계해 일본 여행의 선택지를 넓히고 , 상대적으로 접근성이 낮았던 일본 지방 도시의 매력을 알리기 위해 마련됐다 ” 며 “ 앞으로도 다양한 항공사 및 지역 관광 파트너와 협력해 고객들에게 더욱 폭넓은 여행 경험을 제공할 수 있도록 노력하겠다 ” 고 말했다 ."
-     ],
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "항공권 1+1은 추첨 경품 이벤트",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": false,
-      "at": "2026-11-13",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "https://www.jbnews.com/news/articleView.html|에어로케이항공, 후지드림항공과 일본 항공권 '1+1' 이벤트",
-     "kind": "airline",
-     "title": "에어로케이항공, 후지드림항공과 일본 항공권 '1+1' 이벤트",
-     "desc": "［중부매일 박상철 기자］ 청주국제공항을 거점으로 하는 에어로케이항공이 일본 후지드림항공과 손잡고 일본 왕복 항공권 2매를 증정하는 SNS 이벤트 를 진행한다. 에어로케이항공은 일본 지역항공사 후지드림항공(Fuji...",
-     "summary": [
-      "［중부매일 박상철 기자］ 청주국제공항을 거점으로 하는 에어로케이항공이 일본 후지드림항공과 손잡고 일본 왕복 항공권 2매를 증정하는 SNS 이벤트 를 진행한다.",
-      "에어로케이항공은 일본 지역항공사 후지드림항공(Fuji…"
-     ],
-     "link": "https://www.jbnews.com/news/articleView.html?idxno=1515944",
-     "source": "네이버 뉴스",
-     "date": "2026-11-14T08:16:00.000Z",
-     "found": "2026-11-14",
-     "cards": [],
-     "airlines": [
-      "RF"
-     ],
-     "countries": [
-      "일본"
-     ],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "일본 항공권 {특가말}",
-     "bodyAt": "2026-11-14",
-     "body": [
-      "에어로케이항공은 일본 지역항공사 후지드림항공(Fuji Dream Airlines)과 공동으로 ‘더 자유롭고 넓어지는 일본 여행’ 이벤트를 오는 27일까지 진행한다.",
-      "이번 행사는 에어로케이의 청주발 일본 국제선과 후지드림항공의 일본 국내선을 연계해 주요 도시뿐 아니라 지방 소도시까지 여행할 수 있는 다양한 노선을 알리기 위해 마련됐다.",
-      "에어로케이항공 관계자는 “이번 협업은 양사의 노선망을 연계해 일본 여행의 선택지를 넓히고 상대적으로 접근성이 낮았던 일본 지방 도시의 매력을 알리기 위해 마련됐다”며 “앞으로도 다양한 항공사 및 지역 관광 파트너와 협력해 고객들에게 폭넓은 여행 경험을 제공하겠다”고 말했다."
-     ],
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "항공권 1+1은 SNS 경품 이벤트",
-      "airlines": [
-       "에어로케이"
-      ],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": false,
-      "at": "2026-11-14",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "dsY192dlFNY3pJREJidTZ4TTZlckpIX2pPNUkzX1RfZERJdWc0ektuR29wQzZKbElreVRLaXBZbjhCTzVKd0VMWWh3eGxVQ2FEaG5MeWhnRU9WQ3BvTEtZSQ|에어로케이, 일본 왕복항공권 1+1 쏜다…후지드림항공과 공동 이벤트",
-     "kind": "airline",
-     "title": "에어로케이, 일본 왕복항공권 1+1 쏜다…후지드림항공과 공동 이벤트",
-     "desc": "에어로케이, 일본 왕복항공권 1+1 쏜다…후지드림항공과 공동 이벤트 ER 이코노믹리뷰",
-     "summary": [
-      "에어로케이, 일본 왕복항공권 1+1 쏜다…후지드림항공과 공동 이벤트 ER 이코노믹리뷰…"
-     ],
-     "link": "https://www.econovill.com/news/articleView.html?idxno=757170",
-     "source": "ER 이코노믹리뷰",
-     "date": "2026-11-13T02:49:26.000Z",
-     "found": "2026-11-13",
-     "cards": [],
-     "airlines": [
-      "RF"
-     ],
-     "countries": [
-      "일본"
-     ],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "일본 항공권 {특가말}",
-     "bodyAt": "2026-11-13",
-     "body": [
-      "에어로케이, 일본 왕복항공권 1+1 쏜다…후지드림항공과 공동 이벤트",
-      "에어로케이항공과 일본 후지드림항공이 국제선과 국내선을 연계한 여행 코스를 선보이고 추첨을 통해 두 항공사의 왕복항공권을 각각 한 장씩 제공하는 이벤트다.",
-      "오는 27일까지 SNS를 통해 참여할 수 있다.",
-      "에어로케이항공은 일본 지역항공사 후지드림항공(Fuji Dream Airlines)과 함께 ‘더 자유롭고 넓어지는 일본 여행’ 공동 SNS 이벤트를 진행한다고 13일 밝혔다.",
-      "에어로케이는 이번 협업을 통해 청주발 일본 국제선과 후지드림항공의 국내선 노선망을 결합한 여행 코스 3가지를 제안한다.",
-      "다만 나고야 중부국제공항에서 고마키공항까지는 여행객이 개별적으로 이동해야 한다.",
-      "오는 27일까지 에어로케이 공식 계정(@aerok.official)과 후지드림항공 한국어 공식 계정(@fujidream_kr)을 모두 팔로우하고 행사 게시물에 ‘좋아요’를 누르면 된다.",
-      "당첨자는 추첨으로 10명을 선정하며 결과는 11월 30일 발표된다.",
-      "유류할증료와 공항세 등은 당첨자가 별도로 부담해야 하며 구체적인 이용 조건과 항공권 유효기간은 인스타그램 다이렉트 메시지(DM)를 통해 개별 안내된다.",
-      "에어로케이는 이번 이벤트를 통해 일본 주요 관광지와 함께 지방 소도시의 여행 수요를 확대한다는 계획이다.",
-      "에어로케이항공 관계자는 “이번 협업은 양사의 노선망을 연계해 일본 여행의 선택지를 넓히고 상대적으로 접근성이 낮았던 일본 지방 도시의 매력을 알리기 위해 마련됐다”며 “앞으로도 다양한 항공사 및 지역 관광 파트너와의 협력을 통해 고객들에게 더욱 폭넓은 여행 경험을 제공할 수 있도록 노력하겠다”고 말했다."
-     ],
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "항공권은 추첨 경품일 뿐",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": false,
-      "at": "2026-11-13",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "https://www.nocutnews.co.kr/news/6606725|에어로케이, 후지드림항공과 항공권 증정 'SNS 이벤트 ' 진행",
-     "kind": "airline",
-     "title": "에어로케이, 후지드림항공과 항공권 증정 'SNS 이벤트 ' 진행",
-     "desc": "청주국제공항을 거점으로 하고 있는 에어로케이항공이 일본 지역항공사인 후지드림항공과 함께 일본 행 항공권 을 증정하는 공동 SNS 이벤트 '더 자유롭고 넓어지는 일본 여행'을 진행하고 있다고 13일 밝혔다. 이번...",
-     "summary": [
-      "청주국제공항을 거점으로 하고 있는 에어로케이항공이 일본 지역항공사인 후지드림항공과 함께 일본 행 항공권 을 증정하는 공동 SNS 이벤트 '더 자유롭고 넓어지는 일본 여행'을 진행하고 있다고 13일 밝혔다."
-     ],
-     "link": "https://www.nocutnews.co.kr/news/6606725?utm_source=naver&utm_medium=article&utm_campaign=20261113161222",
-     "source": "네이버 뉴스",
-     "date": "2026-11-13T07:13:00.000Z",
-     "found": "2026-11-13",
-     "cards": [],
-     "airlines": [
-      "RF"
-     ],
-     "countries": [
-      "일본"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "일본 항공권 {특가말}",
-     "bodyAt": "2026-11-13",
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "항공권 증정 이벤트, 운임 할인 아님",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": false,
-      "at": "2026-11-13",
       "model": "deepseek-v4-flash"
      }
     }
@@ -34263,24 +34361,24 @@
    "lastFound": "2026-11-01"
   }
  ],
- "updated": "2026-11-15T05:00:41.399Z",
- "runs": 183,
+ "updated": "2026-11-15T07:00:41.037Z",
+ "runs": 184,
  "checked": {
-  "베트남": "2026-11-15T05:00:41.399Z",
-  "태국": "2026-11-15T05:00:41.399Z",
-  "필리핀": "2026-11-15T05:00:41.399Z",
-  "인도네시아": "2026-11-15T05:00:41.399Z",
-  "말레이시아": "2026-11-15T05:00:41.399Z",
-  "싱가포르": "2026-11-15T05:00:41.399Z",
-  "일본": "2026-11-15T05:00:41.399Z",
-  "대만": "2026-11-15T05:00:41.399Z",
-  "홍콩": "2026-11-15T05:00:41.399Z",
-  "마카오": "2026-11-15T05:00:41.399Z",
-  "중국": "2026-11-15T05:00:41.399Z",
-  "미국령": "2026-11-15T05:00:41.399Z",
-  "미국": "2026-11-15T05:00:41.399Z"
+  "베트남": "2026-11-15T07:00:41.037Z",
+  "태국": "2026-11-15T07:00:41.037Z",
+  "필리핀": "2026-11-15T07:00:41.037Z",
+  "인도네시아": "2026-11-15T07:00:41.037Z",
+  "말레이시아": "2026-11-15T07:00:41.037Z",
+  "싱가포르": "2026-11-15T07:00:41.037Z",
+  "일본": "2026-11-15T07:00:41.037Z",
+  "대만": "2026-11-15T07:00:41.037Z",
+  "홍콩": "2026-11-15T07:00:41.037Z",
+  "마카오": "2026-11-15T07:00:41.037Z",
+  "중국": "2026-11-15T07:00:41.037Z",
+  "미국령": "2026-11-15T07:00:41.037Z",
+  "미국": "2026-11-15T07:00:41.037Z"
  },
- "auto": "2026-11-15T05:00:41.399Z",
+ "auto": "2026-11-15T07:00:41.037Z",
  "sources": {
   "7C": "2026-11-01",
   "TW": "2026-11-01",
@@ -34493,103 +34591,6 @@
    "중국동방항공 얼리버드": "2026-11-04"
   },
   "seen": [
-   "dgmom365/7437341",
-   "dgmom365/7437322",
-   "okinawago/616561",
-   "hexenyang/75821",
-   "jpnstory/4437988",
-   "bbgolf/67124",
-   "dgmom365/7437429",
-   "010freebaram/258563",
-   "dgmom365/7437385",
-   "010freebaram/258559",
-   "cryingbebe/366626",
-   "joonggonara/1137892740",
-   "010freebaram/258564",
-   "bjphone/3915179",
-   "gamepole/88791",
-   "joonggonara/1137890945",
-   "010freebaram/258543",
-   "culturebloom/3428043",
-   "dgmom365/7437413",
-   "dkrnl2/2041",
-   "jejudoonemonth/18810",
-   "gorufu/27878",
-   "jpnstory/4438149",
-   "singaporelove/472860",
-   "dkrnl2/2045",
-   "dkrnl2/2044",
-   "dkrnl2/2040",
-   "dolphintour/9018",
-   "dolphintour/9017",
-   "dolphintour/9014",
-   "dsquared2love/1271784",
-   "pusanmom/4287348",
-   "dgmom365/7437448",
-   "dailytour1/4609",
-   "20guide/1338",
-   "dgmom365/7437459",
-   "dkrnl2/2047",
-   "dailytour1/4611",
-   "happyibook/6349536",
-   "warcraftgamemap/3531563",
-   "happyibook/6349521",
-   "happyibook/6349516",
-   "minecraftpe/4012931",
-   "happyibook/6349485",
-   "warcraftgamemap/3531543",
-   "zzop/4333084",
-   "happyibook/6349457",
-   "yamipapa/8169",
-   "warcraftgamemap/3531534",
-   "happyibook/6349449",
-   "withwar/50971",
-   "vinpearl/566935",
-   "zzop/4333012",
-   "vinpearl/566908",
-   "ysm5828/9646629",
-   "loyaltylife/368237",
-   "joonggonara/1137888186",
-   "worldtravelcafe/1165281",
-   "jpnstory/4438067",
-   "cafemakecafebest/102326",
-   "dondondondon/347818",
-   "imsanbu/80489235",
-   "cheepboracay/863404",
-   "mystudyabc/34279",
-   "joonggonara/1137889229",
-   "hawaiiphoto/1615876",
-   "pilote/53366",
-   "loyaltylife/368222",
-   "hotellife/1973724",
-   "jpnstory/4437948",
-   "loveloveloveovelove/1040792",
-   "youndaone/703",
-   "multizonevoto/11140",
-   "dkrnl2/2046",
-   "010freebaram/258584",
-   "15668981/4694970",
-   "miznett/5152785",
-   "hotdreview/630",
-   "idsocks/30212",
-   "joonggonara/1137894559",
-   "taeyeon7989/499854",
-   "joonggonara/1137894186",
-   "okinawago/616569",
-   "lifeinneed/18705",
-   "malltail/7555740",
-   "gangmok/2103411",
-   "khmusicacademy/867571",
-   "imsanbu/80488163",
-   "littlepiggystudio/793122",
-   "15668981/4694977",
-   "goseonglove/287587",
-   "culturebloom/3428061",
-   "imsanbu/80488917",
-   "worldtravelcafe/1165270",
-   "buncafea/40878",
-   "dolphintour/9013",
-   "pyeongsan2017/22423",
    "festivalsoo/379",
    "pilote/53368",
    "wecando7/11736811",
@@ -40492,7 +40493,104 @@
    "mindy7857/5131512",
    "firenze/8999099",
    "goodinfo53/1960",
-   "jimncarry/95452"
+   "jimncarry/95452",
+   "worldtravelcafe/1167129",
+   "worldtravelcafe/1167127",
+   "worldtravelcafe/1167123",
+   "minecraftpe/4016756",
+   "worldtravelcafe/1167117",
+   "worrytodream/996912",
+   "worldtravelcafe/1167115",
+   "worldtravelcafe/1167114",
+   "cantsb/3723085",
+   "green041222/37980",
+   "worrytodream/996793",
+   "worrytodream/996784",
+   "worrytodream/996777",
+   "tripspoon/509",
+   "tripspoon/508",
+   "mindy7857/5533757",
+   "zzop/4342736",
+   "mindy7857/5533711",
+   "mindy7857/5533706",
+   "mindy7857/5533671",
+   "smartravelapp/1280",
+   "happyibook/6355922",
+   "mindy7857/5533690",
+   "koreagift/31468",
+   "010freebaram/261619",
+   "busppomppu/703768",
+   "010freebaram/261614",
+   "joonggonara/1138193383",
+   "joonggonara/1138190792",
+   "joonggonara/1138189851",
+   "010freebaram/261607",
+   "010freebaram/261599",
+   "imsanbu/80534802",
+   "joonggonara/1138188297",
+   "koreagift/31469",
+   "youngtongremodelin/550857",
+   "sinjoung/1857",
+   "jmsong0829/76630",
+   "jejutip/2682556",
+   "joonggonara/1138191745",
+   "joonggonara/1138193531",
+   "joonggonara/1138193495",
+   "campinggoreasaha/8715",
+   "campinggoreasaha/8711",
+   "campinggoreasaha/8710",
+   "mindy7857/5533730",
+   "mindy7857/5533651",
+   "nctownnet11/217456",
+   "minecraftpe/4016758",
+   "guitarnsong/298240",
+   "vinpearl/570029",
+   "ysm5828/9649364",
+   "tybwondergirl5/117617",
+   "ysm5828/9649360",
+   "happyibook/6356015",
+   "happyibook/6356032",
+   "warcraftgamemap/3535767",
+   "caco99/602",
+   "happyibook/6355986",
+   "happyibook/6355955",
+   "worrytodream/996786",
+   "sjdia76/332852",
+   "buncafea/53262",
+   "nammisarang/292280",
+   "minecraftpe/4012892",
+   "hotdealcatch/1943",
+   "bluegrayrlp26/101",
+   "drawhangil/26117",
+   "worrytodream/996821",
+   "bebettergirls/2103711",
+   "jimncarry/95463",
+   "worrytodream/996788",
+   "handealer/2398",
+   "loyaltylife/369557",
+   "drzzanggu/21850",
+   "traveltime0106/23",
+   "miznett/5158538",
+   "miznett/5158523",
+   "ilovegm1/2655659",
+   "010freebaram/261610",
+   "kggsocks/334",
+   "ddchoi01/338",
+   "joonggonara/1138191167",
+   "grayic2de/172",
+   "minisound/12658",
+   "minisound/12657",
+   "campinganthell/96368",
+   "culturebloom/3435373",
+   "hpmommy/970854",
+   "joonggonara/1137866387",
+   "taiwantour/1160040",
+   "momsolleh/931436",
+   "green041222/37979",
+   "jimncarry/95462",
+   "jimncarry/95461",
+   "jimncarry/95458",
+   "zhcafe/851628"
   ],
   "since": "2026-11-03",
   "imported": "2026-11-03"
