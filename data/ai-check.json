@@ -1,6 +1,35 @@
 [
  {
   "at": "2026-11-15",
+  "title": "KB국민카드, 해외여행 비용 낮춘다…항공권부터 eSIM까지 할인 혜택",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "카드사 여행 혜택, 항공권 할인 아님",
+   "airlines": [],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-15",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님"
+  ]
+ },
+ {
+  "at": "2026-11-15",
   "title": "에어로케이항공, 후지드림항공과 '일본행 항공권 1+1' SNS 이벤트",
   "community": false,
   "ai": {
@@ -10088,32 +10117,5 @@
    "AI: 특가 아님",
    "할인율 규칙 10 / AI -"
   ]
- },
- {
-  "at": "2026-11-12",
-  "title": "연말 해외여행, 11월 특가 챙겨 떠나요! 항공권 9만9000원부터",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "항공권 특가·할인 프로모션 소식",
-   "airlines": [],
-   "name": "11월 특가",
-   "book": null,
-   "board": null,
-   "price": 99000,
-   "trip": "편도",
-   "pct": 15,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": 15,
-   "price": 99000
-  },
-  "diff": []
  }
 ]
