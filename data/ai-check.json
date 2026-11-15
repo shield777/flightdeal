@@ -1,6 +1,96 @@
 [
  {
   "at": "2026-11-15",
+  "title": "에어로케이 블프 특가 진행한데요.",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "에어로케이 블프 항공권 특가",
+   "airlines": [
+    "에어로케이"
+   ],
+   "name": "블프 특가",
+   "book": {
+    "from": "2026-11-16",
+    "to": null
+   },
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-15",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-15",
+  "title": "항공 라이브 이벤트 에서 받은 이스타 항공 레고",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "항공사 굿즈(레고) 증정 이벤트",
+   "airlines": [],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-15",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님"
+  ]
+ },
+ {
+  "at": "2026-11-15",
+  "title": "✈️에어로케이 블프 특가",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "에어로케이 블프 항공권 특가 소식",
+   "airlines": [
+    "에어로케이"
+   ],
+   "name": "블프 특가",
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": false,
+   "at": "2026-11-15",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-15",
   "title": "[오늘 마감] 에어프레미아 블프 — 도쿄 왕복 27만7,500원·하와이 95만2,000원, ....",
   "community": true,
   "ai": {
@@ -10032,115 +10122,5 @@
    "AI: 특가 아님",
    "할인율 규칙 69 / AI -"
   ]
- },
- {
-  "at": "2026-11-12",
-  "title": "썬 푸꾸옥 항공은 창립 1주년을 기념하여 1,000개의 프로모션 코드를 제공하고 썬 월드 고객에게 무료 청혼 항공권을 증정합니다.",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "항공권 할인 코드 증정 프로모션",
-   "airlines": [
-    "썬 푸꾸옥 항공"
-   ],
-   "name": "창립 1주년 프로모션",
-   "book": {
-    "from": "2026-10-26",
-    "to": "2026-11-07"
-   },
-   "board": {
-    "from": "2026-10-26",
-    "to": "2026-12-31"
-   },
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": false,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": "2026-10-26",
-    "to": "2026-11-07"
-   },
-   "board": {
-    "from": "2026-10-26",
-    "to": "2026-12-31"
-   },
-   "pct": 8,
-   "price": null
-  },
-  "diff": [
-   "할인율 규칙 8 / AI -"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "블랙프라이데이 여행 특가 2026: 유럽에서 2027년 항공권과 호텔 예약하기 - 뉴스 및 통계",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "가격 추이·분석 기사",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "스카이스캐너, 11.11 쇼핑데이 항공권 할인 프로모션",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "항공권 할인 프로모션",
-   "airlines": [
-    "진에어",
-    "제주항공",
-    "트리니티항공",
-    "캐세이퍼시픽"
-   ],
-   "name": "11.11 쇼핑 데이",
-   "book": {
-    "from": "2026-11-01",
-    "to": "2026-11-11"
-   },
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": "2026-11-01",
-    "to": "2026-11-11"
-   },
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": []
  }
 ]
