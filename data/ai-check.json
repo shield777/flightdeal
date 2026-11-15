@@ -1,5 +1,67 @@
 [
  {
+  "at": "2026-11-16",
+  "title": "✈️ 나트랑 특가 프로모션 : 에어로케이",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "에어로케이 항공권 특가 프로모션",
+   "airlines": [
+    "에어로케이"
+   ],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": false,
+   "at": "2026-11-16",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-16",
+  "title": "에어로케이항공, 일본 후지드림항공과 공동 SNS 이벤트 진행",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "SNS 이벤트, 운임 할인 아님",
+   "airlines": [],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": false,
+   "at": "2026-11-16",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2026-11-06",
+    "to": "2026-11-27"
+   },
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님",
+   "예약 마감 규칙 2026-11-27 / AI -"
+  ]
+ },
+ {
   "at": "2026-11-15",
   "title": "✈️ 다낭 특가 프로모션 : 에어로케이",
   "community": true,
@@ -10042,70 +10104,5 @@
    "AI: 특가 아님",
    "예약 마감 규칙 2026-11-01 / AI -"
   ]
- },
- {
-  "at": "2026-11-12",
-  "title": "스카이스캐너, 연말 맞이 '11.11 쇼핑 데이' 항공권 프로모션 실시",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "항공권 할인 프로모션",
-   "airlines": [
-    "진에어",
-    "제주항공",
-    "트리니티항공",
-    "캐세이퍼시픽"
-   ],
-   "name": "11.11 쇼핑 데이",
-   "book": {
-    "from": "2026-11-01",
-    "to": "2026-11-11"
-   },
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": 15,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": "2026-11-01",
-    "to": "2026-11-11"
-   },
-   "board": null,
-   "pct": 15,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "일본·대만·베트남 항공권 할인 기회…11월 최대 15% 내려간다",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "11월 항공권 할인 프로모션 소식",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": 15,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": 15,
-   "price": null
-  },
-  "diff": []
  }
 ]
