@@ -1,6 +1,351 @@
 [
  {
   "at": "2026-11-16",
+  "title": "수능 끝, 설렘 시작...이스타항공, 수험생에게 할인 쏜다",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "이스타항공 수험생 항공권 할인 프로모션",
+   "airlines": [
+    "이스타항공"
+   ],
+   "name": "수험생 항공권 할인 프로모션",
+   "book": {
+    "from": "2026-11-19",
+    "to": "2026-12-31"
+   },
+   "board": {
+    "from": "2026-11-19",
+    "to": "2027-03-27"
+   },
+   "price": null,
+   "trip": null,
+   "pct": 10,
+   "seoul": null,
+   "at": "2026-11-16",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2026-11-19",
+    "to": "2026-12-31"
+   },
+   "board": {
+    "from": "2026-11-19",
+    "to": "2027-03-27"
+   },
+   "pct": 10,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-16",
+  "title": "모두투어, 겨울 해외여행 수요 공략…상품 할인 ·혜택 강화",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "여행사 패키지·호텔 중심 상품 할인",
+   "airlines": [],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-16",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님"
+  ]
+ },
+ {
+  "at": "2026-11-16",
+  "title": "수능 마치고 여행도 싸게 가자…이스타항공, 수험생 할인 이벤트 - 머니투데이",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "이스타항공 수험생 항공권 할인 프로모션",
+   "airlines": [
+    "이스타항공"
+   ],
+   "name": "수험생 할인 이벤트",
+   "book": {
+    "from": "2026-11-19",
+    "to": "2026-12-31"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-03-27"
+   },
+   "price": null,
+   "trip": null,
+   "pct": 10,
+   "seoul": null,
+   "at": "2026-11-16",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2026-11-19",
+    "to": "2026-12-31"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-03-27"
+   },
+   "pct": 10,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-16",
+  "title": "이스타항공, 수능 수험생 항공권 최대 25% 할인…동반 1인도 혜택",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "이스타항공 수험생 항공권 할인 프로모션",
+   "airlines": [
+    "이스타항공"
+   ],
+   "name": "수능 수험생 항공권 할인",
+   "book": {
+    "from": "2026-11-19",
+    "to": "2026-12-31"
+   },
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": 25,
+   "seoul": null,
+   "at": "2026-11-16",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2026-11-19",
+    "to": "2026-12-31"
+   },
+   "board": null,
+   "pct": 25,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-16",
+  "title": "이스타항공, 수능 수험생 대상 항공권 최대 25% 할인",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "수험생 항공권 할인 프로모션",
+   "airlines": [
+    "이스타항공"
+   ],
+   "name": "수능 수험생 할인",
+   "book": {
+    "from": "2026-11-19",
+    "to": "2026-12-31"
+   },
+   "board": {
+    "from": "2026-11-19",
+    "to": "2027-03-27"
+   },
+   "price": null,
+   "trip": null,
+   "pct": 10,
+   "seoul": null,
+   "at": "2026-11-16",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2026-11-19",
+    "to": "2026-12-31"
+   },
+   "board": {
+    "from": "2026-11-19",
+    "to": "2027-03-27"
+   },
+   "pct": 10,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-16",
+  "title": "이스타항공, 수능 수험생 최대 25% 할인",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "수험생 항공권 할인 프로모션",
+   "airlines": [
+    "이스타항공"
+   ],
+   "name": "수능 수험생 할인",
+   "book": {
+    "from": "2026-11-19",
+    "to": "2026-12-31"
+   },
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": 10,
+   "seoul": null,
+   "at": "2026-11-16",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2026-11-19",
+    "to": "2026-12-31"
+   },
+   "board": null,
+   "pct": 10,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-16",
+  "title": "수능 마치고 여행도 싸게 가자… 이스타항공 , 수험생 할인 이벤트",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "수험생 항공권 운임 할인 프로모션",
+   "airlines": [
+    "이스타항공"
+   ],
+   "name": "수험생 할인 이벤트",
+   "book": {
+    "from": "2026-11-19",
+    "to": "2026-12-31"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-03-27"
+   },
+   "price": null,
+   "trip": null,
+   "pct": 10,
+   "seoul": null,
+   "at": "2026-11-16",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2026-11-19",
+    "to": "2026-12-31"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-03-27"
+   },
+   "pct": 10,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-16",
+  "title": "이스타항공, 수능 수험생 대상 항공권 할인…국내선 최대 25%",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "이스타항공 수험생 항공권 할인",
+   "airlines": [
+    "이스타항공"
+   ],
+   "name": "수험생 항공권 할인",
+   "book": {
+    "from": "2026-11-19",
+    "to": "2026-12-31"
+   },
+   "board": {
+    "from": "2026-11-19",
+    "to": "2027-03-27"
+   },
+   "price": null,
+   "trip": null,
+   "pct": 10,
+   "seoul": null,
+   "at": "2026-11-16",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2026-11-19",
+    "to": "2026-12-31"
+   },
+   "board": {
+    "from": "2026-11-19",
+    "to": "2027-03-27"
+   },
+   "pct": 10,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-16",
+  "title": "[게시판] 이스타항공, 수능 수험생 대상 항공권 최대 25% 할인",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "이스타항공 수험생 항공권 할인 프로모션",
+   "airlines": [
+    "이스타항공"
+   ],
+   "name": "수능 수험생 항공권 할인",
+   "book": {
+    "from": null,
+    "to": "2026-12-31"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-03-27"
+   },
+   "price": null,
+   "trip": null,
+   "pct": 25,
+   "seoul": null,
+   "at": "2026-11-16",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": null,
+    "to": "2026-12-31"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-03-27"
+   },
+   "pct": 25,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-16",
   "title": "\"오늘 바로 연차 쓰고 일본으로\"…클룩, 직장인 겨냥 이색 이벤트",
   "community": false,
   "ai": {
@@ -9821,297 +10166,5 @@
    "price": null
   },
   "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "에어프레미아, 최대 72% '블프 할인' 프로모션",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "항공사 블프 운임 할인 프로모션",
-   "airlines": [
-    "에어프레미아"
-   ],
-   "name": "블프 할인",
-   "book": null,
-   "board": {
-    "from": null,
-    "to": "2027-10-30"
-   },
-   "price": null,
-   "trip": null,
-   "pct": 72,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": {
-    "from": null,
-    "to": "2027-10-30"
-   },
-   "pct": 72,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "현대카드 , 9월 신용 카드 업계 소비자 관심도 1위 우뚝…신한·삼성 카드 ...",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "카드사 관심도 기사, 항공권 특가 아님",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": 10,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님",
-   "할인율 규칙 10 / AI -"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "캐세이, 창립 80주년 기념 게임 이벤트 ‘FLY HIGH with CATHAY’ 오픈",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "항공권은 게임 경품일 뿐",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "에어프레미아, 내달 2일부터 항공권 특가···미주·아시아 10개 노선",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "에어프레미아 항공권 특가 할인 행사",
-   "airlines": [
-    "에어프레미아"
-   ],
-   "name": null,
-   "book": {
-    "from": "2026-11-02",
-    "to": "2026-11-15"
-   },
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": 72,
-   "seoul": true,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": "2026-11-02",
-    "to": "2026-11-15"
-   },
-   "board": {
-    "from": null,
-    "to": "2027-08-31"
-   },
-   "pct": 72,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "에어프레미아, 블프데이 최대 72% 할인…미주·아시아 전 노선 특가",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "에어프레미아 블프 특가 운임 할인",
-   "airlines": [
-    "에어프레미아"
-   ],
-   "name": "블랙프라이데이 프로모션",
-   "book": {
-    "from": "2026-11-02",
-    "to": "2026-11-15"
-   },
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": 72,
-   "seoul": true,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": "2026-11-02",
-    "to": "2026-11-15"
-   },
-   "board": null,
-   "pct": 72,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "스카이스캐너 항공권 프로모션 진행",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "항공권 할인 프로모션",
-   "airlines": [
-    "진에어",
-    "제주항공",
-    "트리니티항공",
-    "캐세이퍼시픽"
-   ],
-   "name": "11.11 쇼핑 데이",
-   "book": {
-    "from": "2026-11-01",
-    "to": "2026-11-11"
-   },
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": 15,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": "2026-11-01",
-    "to": "2026-11-11"
-   },
-   "board": null,
-   "pct": 15,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "대구시, 상하이·칭다오·홍콩서 관광 세일즈…직항노선 활성화 총력",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "추진 예정 논의 기사, 확정 특가 아님",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": false,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "내 신용카드로 후쿠오카 버스 탄다…JCB·신한카드·니시테츠, 韓 관광객 대상 공동 프로모션",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "항공권 아닌 교통·쇼핑·호텔 혜택",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "내 신용카드로 후쿠오카 버스 탄다…JCB·신한카드·니시테츠, 韓 관광객 대상 공동 프로모션",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "버스·쇼핑·호텔 혜택 프로모션",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님"
-  ]
  }
 ]
