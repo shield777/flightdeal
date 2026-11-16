@@ -1,6 +1,65 @@
 [
  {
   "at": "2026-11-16",
+  "title": "에어로케이 프로모션 코드 11월 번호 확인 및 쓰는법",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "에어로케이 할인코드 프로모션 안내",
+   "airlines": [
+    "에어로케이"
+   ],
+   "name": "11월 프로모션 코드",
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-16",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-16",
+  "title": "버킷리스트 실현할 단 한 번의 기회…한진트래블, 대한항공 이집트 전세기 초특가 여행 출시",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "여행 패키지 상품, 항공권 단독 특가 아님",
+   "airlines": [],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-16",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": 3990000
+  },
+  "diff": [
+   "AI: 특가 아님",
+   "가격 규칙 3990000 / AI -"
+  ]
+ },
+ {
+  "at": "2026-11-16",
   "title": "✈️ 트리니티항공 , 2026 블랙 프라이데이 할인프로모션 (~11/30)",
   "community": true,
   "ai": {
@@ -10012,81 +10071,5 @@
   "diff": [
    "가격 규칙 30000 / AI -"
   ]
- },
- {
-  "at": "2026-11-12",
-  "title": "에어부산, 부산-광저우 신규 취항 특가… 편도 14만9900원부터",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "신규 취항 기념 항공권 특가",
-   "airlines": [
-    "에어부산"
-   ],
-   "name": "부산-광저우 신규 취항 기념 프로모션",
-   "book": {
-    "from": "2026-11-03",
-    "to": "2026-11-16"
-   },
-   "board": null,
-   "price": 149900,
-   "trip": "편도",
-   "pct": null,
-   "seoul": false,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": "2026-11-03",
-    "to": "2026-11-16"
-   },
-   "board": null,
-   "pct": null,
-   "price": 149900
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "에어부산 부산∼광저우 신규 취항 프로모션 진행",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "신규 취항 기념 항공권 특가",
-   "airlines": [
-    "에어부산"
-   ],
-   "name": "부산~광저우 신규 취항 프로모션",
-   "book": {
-    "from": "2026-11-03",
-    "to": "2026-11-16"
-   },
-   "board": {
-    "from": "2026-12-02",
-    "to": "2027-03-26"
-   },
-   "price": 149900,
-   "trip": "편도",
-   "pct": null,
-   "seoul": false,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": "2026-11-03",
-    "to": "2026-11-16"
-   },
-   "board": {
-    "from": "2026-12-02",
-    "to": "2027-03-26"
-   },
-   "pct": null,
-   "price": 149900
-  },
-  "diff": []
  }
 ]
