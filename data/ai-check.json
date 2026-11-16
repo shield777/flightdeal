@@ -1,6 +1,334 @@
 [
  {
   "at": "2026-11-16",
+  "title": "✈️ 트리니티항공 , 2026 블랙 프라이데이 할인프로모션 (~11/30)",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "항공사 블랙프라이데이 특가 프로모션",
+   "airlines": [
+    "트리니티항공"
+   ],
+   "name": "2026 블랙 프라이데이 할인프로모션",
+   "book": {
+    "from": null,
+    "to": "2026-11-30"
+   },
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-16",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": null,
+    "to": "2026-11-30"
+   },
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-16",
+  "title": "트리니티항공 , 국제선 블랙프라이데이 할인 행사",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "국제선 항공권 할인 프로모션",
+   "airlines": [
+    "트리니티항공"
+   ],
+   "name": "국제선 블랙프라이데이 프로모션",
+   "book": {
+    "from": "2026-11-16",
+    "to": "2026-11-30"
+   },
+   "board": {
+    "from": "2027-02-01",
+    "to": "2027-10-30"
+   },
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-16",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2026-11-16",
+    "to": "2026-11-30"
+   },
+   "board": {
+    "from": "2027-02-01",
+    "to": "2027-10-30"
+   },
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-16",
+  "title": "트리니티항공 블랙프라이데이 항공 권 할인 특가 (~11/30)",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "항공사 블랙프라이데이 항공권 할인 특가",
+   "airlines": [
+    "트리니티항공"
+   ],
+   "name": "블랙프라이데이 할인 특가",
+   "book": {
+    "from": "2026-11-16",
+    "to": "2026-11-30"
+   },
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-16",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": null,
+    "to": "2026-11-30"
+   },
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-16",
+  "title": "트리니티항공 , 16~30일 '국제선 블랙프라이데이 프로모션 '",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "국제선 항공권 할인 프로모션",
+   "airlines": [
+    "트리니티항공"
+   ],
+   "name": "국제선 블랙프라이데이 프로모션",
+   "book": {
+    "from": "2026-11-16",
+    "to": "2026-11-30"
+   },
+   "board": {
+    "from": "2027-02-01",
+    "to": "2027-10-30"
+   },
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-16",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2026-11-16",
+    "to": "2026-11-30"
+   },
+   "board": {
+    "from": "2027-02-01",
+    "to": "2027-10-30"
+   },
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-16",
+  "title": "트리니티항공, 16~30일 ‘국제선 블랙프라이데이 프로모션’",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "국제선 항공권 할인 프로모션",
+   "airlines": [
+    "트리니티항공"
+   ],
+   "name": "국제선 블랙프라이데이 프로모션",
+   "book": {
+    "from": "2026-11-16",
+    "to": "2026-11-30"
+   },
+   "board": {
+    "from": "2027-02-01",
+    "to": "2027-10-30"
+   },
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-16",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2026-11-16",
+    "to": "2026-11-30"
+   },
+   "board": {
+    "from": "2027-02-01",
+    "to": "2027-10-30"
+   },
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-16",
+  "title": "한진트래블, 대한항공 직항 전세기 이용한 이집트 9일 특가 여행 상품 ...",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "여행 패키지 상품 특가",
+   "airlines": [],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-16",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님"
+  ]
+ },
+ {
+  "at": "2026-11-16",
+  "title": "트리니티항공, 국제선 블랙프라이데이 할인…최대 4만원 쿠폰도 제공",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "항공사 블랙프라이데이 운임 할인",
+   "airlines": [
+    "트리니티항공"
+   ],
+   "name": "블랙프라이데이 할인",
+   "book": {
+    "from": "2026-11-16",
+    "to": "2026-11-30"
+   },
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-16",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2026-11-16",
+    "to": "2026-11-30"
+   },
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-16",
+  "title": "한진트래블, 대한항공 직항 전세기 이용한 이집트 9일 특가 여행 상품 출시",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "여행 패키지 상품, 항공권 할인 아님",
+   "airlines": [],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-16",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": 3990000
+  },
+  "diff": [
+   "AI: 특가 아님",
+   "가격 규칙 3990000 / AI -"
+  ]
+ },
+ {
+  "at": "2026-11-16",
+  "title": "캐세이퍼시픽항공, 블랙 프라이데이 맞아 전 노선·전 좌석 7% 할인에 최대 3,000마일 제공",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "전 노선 7% 항공권 할인 프로모션",
+   "airlines": [
+    "캐세이퍼시픽항공"
+   ],
+   "name": "Fly Like It's Friday",
+   "book": {
+    "from": null,
+    "to": "2026-11-30"
+   },
+   "board": {
+    "from": "2027-01-07",
+    "to": "2027-07-15"
+   },
+   "price": null,
+   "trip": null,
+   "pct": 7,
+   "seoul": null,
+   "at": "2026-11-16",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": null,
+    "to": "2026-11-30"
+   },
+   "board": {
+    "from": "2027-01-07",
+    "to": "2027-07-15"
+   },
+   "pct": 7,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-16",
   "title": "제주항공 코타키나발루 항공 편 올겨울 특가 ! 최대 50% 할인 11~1월 특가 .",
   "community": true,
   "ai": {
@@ -9758,364 +10086,6 @@
    },
    "pct": null,
    "price": 149900
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "트리니티항공 '11월 더블 혜택 프로모션'…최대 25%↓",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "항공사 운임 할인 프로모션",
-   "airlines": [
-    "트리니티항공"
-   ],
-   "name": "11월 더블 혜택 프로모션",
-   "book": {
-    "from": "2026-11-02",
-    "to": "2026-11-13"
-   },
-   "board": {
-    "from": null,
-    "to": "2027-01-31"
-   },
-   "price": null,
-   "trip": null,
-   "pct": 25,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": "2026-11-02",
-    "to": "2026-11-13"
-   },
-   "board": {
-    "from": null,
-    "to": "2027-01-31"
-   },
-   "pct": 25,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "연말 해외여행 준비한다면 주목… 스카이스캐너, 항공권 최대 15% 할인",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "항공권 최대 15% 할인 프로모션",
-   "airlines": [],
-   "name": "11.11 쇼핑 데이",
-   "book": {
-    "from": "2026-11-01",
-    "to": "2026-11-11"
-   },
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": 15,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": "2026-11-01",
-    "to": "2026-11-11"
-   },
-   "board": null,
-   "pct": 15,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "에어부산, 부산~광저우 신규 취항 기념 프로모션…최저 14만 9900원",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "신규 취항 기념 항공권 특가",
-   "airlines": [
-    "에어부산"
-   ],
-   "name": "부산~광저우 신규 취항 기념 프로모션",
-   "book": {
-    "from": "2026-11-03",
-    "to": "2026-11-16"
-   },
-   "board": {
-    "from": "2026-12-02",
-    "to": "2027-03-26"
-   },
-   "price": 149900,
-   "trip": "편도",
-   "pct": null,
-   "seoul": false,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": "2026-11-03",
-    "to": "2026-11-16"
-   },
-   "board": {
-    "from": "2026-12-02",
-    "to": "2027-03-26"
-   },
-   "pct": 8,
-   "price": 149900
-  },
-  "diff": [
-   "할인율 규칙 8 / AI -"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "에어부산, 부산~광저우 취항 프로모션...편도 14만원대부터",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "신규 취항 기념 항공권 특가",
-   "airlines": [
-    "에어부산"
-   ],
-   "name": "부산~광저우 취항 프로모션",
-   "book": {
-    "from": "2026-11-03",
-    "to": "2026-11-16"
-   },
-   "board": {
-    "from": "2026-12-02",
-    "to": null
-   },
-   "price": 149900,
-   "trip": "편도",
-   "pct": null,
-   "seoul": false,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": "2026-11-03",
-    "to": "2026-11-16"
-   },
-   "board": {
-    "from": "2026-12-02",
-    "to": "2026-12-02"
-   },
-   "pct": null,
-   "price": 149900
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "[하늘길] 11월 1주, 블랙프라이데이 항공권 특가…에어프레미아 외 2가지 항공",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "에어프레미아 블랙프라이데이 항공권 할인",
-   "airlines": [
-    "에어프레미아"
-   ],
-   "name": "블랙프라이데이 프로모션",
-   "book": {
-    "from": "2026-11-02",
-    "to": "2026-11-15"
-   },
-   "board": {
-    "from": "2026-11-02",
-    "to": null
-   },
-   "price": 277500,
-   "trip": "왕복",
-   "pct": 72,
-   "seoul": true,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": "2026-11-02",
-    "to": "2026-11-15"
-   },
-   "board": {
-    "from": "2026-11-02",
-    "to": "2026-11-02"
-   },
-   "pct": 72,
-   "price": 277500
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "에어프레미아, 블랙프라이데이 할인 프로모션",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "에어프레미아 블프 운임 할인 프로모션",
-   "airlines": [
-    "에어프레미아"
-   ],
-   "name": "블랙프라이데이 할인 프로모션",
-   "book": {
-    "from": "2026-11-02",
-    "to": "2026-11-15"
-   },
-   "board": {
-    "from": "2026-11-02",
-    "to": null
-   },
-   "price": 277500,
-   "trip": null,
-   "pct": 72,
-   "seoul": true,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": "2026-11-02",
-    "to": "2026-11-15"
-   },
-   "board": {
-    "from": "2026-11-02",
-    "to": "2026-11-02"
-   },
-   "pct": 72,
-   "price": 277500
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "[똑똑한여행] 모두투어 겨울 중국 도시 기획전·노랑풍선 씨엠립 직항 ...",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "여행 상품·업계 소식 모음",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": "2026-10-01",
-    "to": "2026-10-24"
-   },
-   "board": null,
-   "pct": 23,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님",
-   "예약 마감 규칙 2026-10-24 / AI -",
-   "할인율 규칙 23 / AI -"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "에어부산, 부산~광저우 신규 취항 특가… 편도 14만9900원부터",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "신규 취항 기념 항공권 특가",
-   "airlines": [
-    "에어부산"
-   ],
-   "name": "부산~광저우 신규 취항 특가",
-   "book": {
-    "from": "2026-11-03",
-    "to": "2026-11-16"
-   },
-   "board": {
-    "from": "2026-12-02",
-    "to": "2027-03-26"
-   },
-   "price": 149900,
-   "trip": "편도",
-   "pct": null,
-   "seoul": false,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": "2026-11-03",
-    "to": "2026-11-16"
-   },
-   "board": {
-    "from": "2026-12-02",
-    "to": "2027-03-26"
-   },
-   "pct": 8,
-   "price": 149900
-  },
-  "diff": [
-   "할인율 규칙 8 / AI -"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "에어프레미아, 전 노선 항공권 최대 72% 할인",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "에어프레미아 블랙프라이데이 항공권 할인",
-   "airlines": [
-    "에어프레미아"
-   ],
-   "name": "블랙프라이데이 프로모션",
-   "book": {
-    "from": "2026-11-02",
-    "to": "2026-11-15"
-   },
-   "board": {
-    "from": "2026-11-02",
-    "to": null
-   },
-   "price": 277500,
-   "trip": "왕복",
-   "pct": 72,
-   "seoul": true,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": "2026-11-02",
-    "to": "2026-11-15"
-   },
-   "board": {
-    "from": "2026-11-02",
-    "to": "2026-11-02"
-   },
-   "pct": 72,
-   "price": 277500
   },
   "diff": []
  }
