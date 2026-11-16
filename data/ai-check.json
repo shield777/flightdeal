@@ -1,6 +1,114 @@
 [
  {
   "at": "2026-11-16",
+  "title": "\"오늘 바로 연차 쓰고 일본으로\"…클룩, 직장인 겨냥 이색 이벤트",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "제주항공 일본노선 항공권 할인 판매",
+   "airlines": [
+    "제주항공"
+   ],
+   "name": "긴급연차여행",
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": 67,
+   "seoul": null,
+   "at": "2026-11-16",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": 67,
+   "price": 1000000
+  },
+  "diff": [
+   "가격 규칙 1000000 / AI -"
+  ]
+ },
+ {
+  "at": "2026-11-16",
+  "title": "이스타항공, 수능 수험생에 항공권 할인…국제선 최대 10%",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "이스타항공 수험생 항공권 할인 프로모션",
+   "airlines": [
+    "이스타항공"
+   ],
+   "name": "수험생 할인 프로모션",
+   "book": {
+    "from": "2026-11-19",
+    "to": "2026-12-31"
+   },
+   "board": {
+    "from": "2026-11-19",
+    "to": "2027-03-27"
+   },
+   "price": null,
+   "trip": null,
+   "pct": 10,
+   "seoul": null,
+   "at": "2026-11-16",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2026-11-19",
+    "to": "2026-12-31"
+   },
+   "board": {
+    "from": "2026-11-19",
+    "to": "2027-03-27"
+   },
+   "pct": 10,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-16",
+  "title": "모두투어, 동계 성수기 및 내년 연휴 겨냥 통합 여행 기획전 운영",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "여행사 패키지·자유여행 기획전",
+   "airlines": [],
+   "name": "2026 메가세일",
+   "book": {
+    "from": "2026-11-16",
+    "to": "2026-12-24"
+   },
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-16",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2026-11-16",
+    "to": "2026-11-24"
+   },
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님",
+   "예약 마감 규칙 2026-11-24 / AI 2026-12-24"
+  ]
+ },
+ {
+  "at": "2026-11-16",
   "title": "KB국민카드 연말연시 항공권·숙박 할인 받아가세요",
   "community": false,
   "ai": {
@@ -10004,107 +10112,6 @@
   },
   "diff": [
    "AI: 특가 아님"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "연말 해외여행 , 11월 특가 챙겨 떠나요!...\" 항공권 9만9000원부터\"",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "비엣젯 항공권 특가 판매",
-   "airlines": [
-    "비엣젯항공"
-   ],
-   "name": null,
-   "book": {
-    "from": null,
-    "to": "2026-11-02"
-   },
-   "board": {
-    "from": "2026-11-01",
-    "to": "2027-10-31"
-   },
-   "price": 99000,
-   "trip": "편도",
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2026-11-02"
-   },
-   "board": {
-    "from": "2026-11-01",
-    "to": "2027-10-31"
-   },
-   "pct": null,
-   "price": 99000
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "연말 해외여행 , 11월 특가 챙겨 떠나요!...“항공권 9만9000원부터\"",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "11월 항공권 특가 소식",
-   "airlines": [],
-   "name": "11월 특가",
-   "book": null,
-   "board": null,
-   "price": 99000,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": 99000
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "캐세이, 80주년 기념 게임 이벤트 '플라이 하이 위드 CATHAY'",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "항공권은 게임 경품일 뿐",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2026-11-17"
-   },
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님",
-   "예약 마감 규칙 2026-11-17 / AI -"
   ]
  }
 ]
