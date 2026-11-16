@@ -1,6 +1,35 @@
 [
  {
   "at": "2026-11-17",
+  "title": "[라이프 트렌드&] 할인 받고 항공권도 받자 … 연말 해외여행 혜택 풍성",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "항공권은 경품, 여행 혜택 중심",
+   "airlines": [],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-17",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님"
+  ]
+ },
+ {
+  "at": "2026-11-17",
   "title": "✈️수능 끝나면 여행 가야쥬! 이스타항공 최대 25% 할인",
   "community": true,
   "ai": {
@@ -9950,43 +9979,6 @@
   "diff": [
    "AI: 특가 아님",
    "예약 마감 규칙 2027-03-31 / AI -"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "에어부산, 부산~광저우 신규 취항 프로모션 진행",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "신규 취항 기념 항공권 특가",
-   "airlines": [
-    "에어부산"
-   ],
-   "name": "부산~광저우 신규 취항 프로모션",
-   "book": {
-    "from": "2026-11-03",
-    "to": "2026-11-16"
-   },
-   "board": null,
-   "price": 149900,
-   "trip": "편도",
-   "pct": null,
-   "seoul": false,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": "2026-11-03",
-    "to": "2026-11-16"
-   },
-   "board": null,
-   "pct": 8,
-   "price": 149900
-  },
-  "diff": [
-   "할인율 규칙 8 / AI -"
   ]
  }
 ]
