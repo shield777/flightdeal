@@ -1,6 +1,275 @@
 [
  {
   "at": "2026-11-17",
+  "title": "(정보)[파라타 항공 ] Fly New! 일본·동남아 노선 특가 ✈️",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "파라타항공 일본·동남아 특가",
+   "airlines": [
+    "파라타항공"
+   ],
+   "name": "Fly New! 특가",
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-17",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-17",
+  "title": "제주항공, 수험생·가족 국내선 항공권 20% 할인",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "국내선 항공권 할인이라 제외",
+   "airlines": [
+    "제주항공"
+   ],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-17",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님"
+  ]
+ },
+ {
+  "at": "2026-11-17",
+  "title": "파라타 항공 , 삿포로 161,400원부터! 블랙프라이데이 특가 (~11/23)",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "항공사 블랙프라이데이 특가",
+   "airlines": [
+    "파라타항공"
+   ],
+   "name": "블랙프라이데이 특가",
+   "book": {
+    "from": null,
+    "to": "2026-11-23"
+   },
+   "board": null,
+   "price": 161400,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-17",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": null,
+    "to": "2026-11-23"
+   },
+   "board": null,
+   "pct": null,
+   "price": 161400
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-17",
+  "title": "제주항공, 수능 수험생·동반자 국내선 항공권 20% 할인",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "국내선 항공권 운임 할인",
+   "airlines": [
+    "제주항공"
+   ],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": 20,
+   "seoul": null,
+   "at": "2026-11-17",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": 20,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-17",
+  "title": "제주항공, 수험생·동반자 국내선 항공권 20% 할인",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "국내선 할인, 국제선 아님",
+   "airlines": [
+    "제주항공"
+   ],
+   "name": "수험생·동반자 국내선 할인",
+   "book": {
+    "from": null,
+    "to": "2026-12-16"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-02-25"
+   },
+   "price": null,
+   "trip": null,
+   "pct": 20,
+   "seoul": true,
+   "at": "2026-11-17",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님",
+   "예약 마감 규칙 - / AI 2026-12-16",
+   "할인율 규칙 - / AI 20"
+  ]
+ },
+ {
+  "at": "2026-11-17",
+  "title": "제주항공, 수능 수험생 대상 국내선 항공권 20% 할인",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "국내선 할인, 국제선 운임 아님",
+   "airlines": [
+    "제주항공"
+   ],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-17",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님"
+  ]
+ },
+ {
+  "at": "2026-11-17",
+  "title": "트리니티항공, 국제선 특가 행사... 신규 회원 대상 혜택 선봬",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "국제선 블랙프라이데이 특가",
+   "airlines": [
+    "트리니티항공"
+   ],
+   "name": "블랙프라이데이 프로모션",
+   "book": {
+    "from": "2026-11-16",
+    "to": "2026-11-30"
+   },
+   "board": {
+    "from": "2027-02-01",
+    "to": "2027-10-31"
+   },
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-17",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2026-11-16",
+    "to": "2026-11-30"
+   },
+   "board": {
+    "from": "2027-02-01",
+    "to": "2027-10-31"
+   },
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-17",
+  "title": "제주항공, 2027학년도 수험생·동반자 국내선 20% 할인",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "국내선 할인이라 국제선 특가 아님",
+   "airlines": [
+    "제주항공"
+   ],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-17",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": {
+    "from": null,
+    "to": "2026-12-16"
+   },
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님"
+  ]
+ },
+ {
+  "at": "2026-11-17",
   "title": "[라이프 트렌드&] 할인 받고 항공권도 받자 … 연말 해외여행 혜택 풍성",
   "community": false,
   "ai": {
@@ -9696,289 +9965,5 @@
    "price": 149900
   },
   "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "트리니티항공, 11월 국제선 항공권 최대 25% 할인 프로모션",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "항공사 국제선 운임 할인 프로모션",
-   "airlines": [
-    "트리니티항공"
-   ],
-   "name": "11월 국제선 항공권 할인 프로모션",
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": 25,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": 25,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "“항공권 최대 25% 할인”…트리니티항공, 11월 여행 특가",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "항공사 할인코드 특가",
-   "airlines": [
-    "트리니티항공"
-   ],
-   "name": "11월 맞이 더블 혜택",
-   "book": {
-    "from": null,
-    "to": "2026-11-13"
-   },
-   "board": {
-    "from": null,
-    "to": "2027-01-31"
-   },
-   "price": null,
-   "trip": null,
-   "pct": 25,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2026-11-13"
-   },
-   "board": {
-    "from": null,
-    "to": "2027-01-31"
-   },
-   "pct": 25,
-   "price": 30000
-  },
-  "diff": [
-   "가격 규칙 30000 / AI -"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "트리니티항공, 11월 국제선 항공권 최대 25% 할인",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "국제선 항공권 할인 프로모션",
-   "airlines": [
-    "트리니티항공"
-   ],
-   "name": "11월 국제선 항공권 할인",
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": 25,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": 25,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "에어부산 , 부산 ∼광저우 신규 취항 기념 할인 행사",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "신규 취항 기념 항공권 특가",
-   "airlines": [
-    "에어부산"
-   ],
-   "name": "부산~광저우 신규 취항 기념 프로모션",
-   "book": {
-    "from": "2026-11-03",
-    "to": "2026-11-16"
-   },
-   "board": {
-    "from": "2026-12-02",
-    "to": "2027-03-26"
-   },
-   "price": 149900,
-   "trip": "편도",
-   "pct": null,
-   "seoul": false,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": "2026-11-03",
-    "to": "2026-11-16"
-   },
-   "board": {
-    "from": "2026-12-02",
-    "to": "2027-03-26"
-   },
-   "pct": 8,
-   "price": 149900
-  },
-  "diff": [
-   "할인율 규칙 8 / AI -"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "교원투어, 창립 41주년 맞아 여행 특가 강화… 항공권 ·숙박권까지 내걸...",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "여행상품 특가·경품 행사, 항공권은 경품",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2027-03-31"
-   },
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님",
-   "예약 마감 규칙 2027-03-31 / AI -"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "트리니티항공, 11월 '더블 혜택' 행사 '최대 25% 할인'",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "항공권 할인코드 프로모션",
-   "airlines": [
-    "트리니티항공"
-   ],
-   "name": "더블 혜택",
-   "book": {
-    "from": "2026-11-02",
-    "to": "2026-11-13"
-   },
-   "board": {
-    "from": null,
-    "to": "2027-01-31"
-   },
-   "price": null,
-   "trip": null,
-   "pct": 25,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": "2026-11-02",
-    "to": "2026-11-13"
-   },
-   "board": {
-    "from": null,
-    "to": "2027-01-31"
-   },
-   "pct": 25,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "\"겨울휴가 계획 세워볼까\"…교원투어 고객감사제",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "항공권은 추첨 경품, 여행상품 행사",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2027-03-31"
-   },
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님",
-   "예약 마감 규칙 2027-03-31 / AI -"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "교원투어 여행이지, 27일까지 '고객 감사제' 진행",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "여행사 이벤트, 항공권은 경품",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2027-03-31"
-   },
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님",
-   "예약 마감 규칙 2027-03-31 / AI -"
-  ]
  }
 ]
