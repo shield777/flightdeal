@@ -1,6 +1,199 @@
 [
  {
   "at": "2026-11-17",
+  "title": "제주항공, 대입 수험생 할인",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "국내선 항공권 운임 할인",
+   "airlines": [
+    "제주항공"
+   ],
+   "name": "대입 수험생 할인",
+   "book": {
+    "from": null,
+    "to": "2026-12-16"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-02-25"
+   },
+   "price": null,
+   "trip": null,
+   "pct": 20,
+   "seoul": true,
+   "at": "2026-11-17",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": null,
+    "to": "2026-12-16"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-02-25"
+   },
+   "pct": 20,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-17",
+  "title": "트리니티항공, 태국관광청과 손잡고 겨울 여행객 공략 항공권 할인 프로모션",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "항공권 할인 프로모션",
+   "airlines": [
+    "트리니티항공"
+   ],
+   "name": null,
+   "book": {
+    "from": null,
+    "to": "2026-12-13"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-03-27"
+   },
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": true,
+   "at": "2026-11-17",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": null,
+    "to": "2026-12-13"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-03-27"
+   },
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-17",
+  "title": "파라타항공 ‘인천~LA’ 첫 미주 노선 판매 개시···블랙프라이데이 특가 진행",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "신규 취항 기념 항공권 특가",
+   "airlines": [
+    "파라타항공"
+   ],
+   "name": "블랙프라이데이 특가",
+   "book": {
+    "from": "2026-11-17",
+    "to": "2026-11-23"
+   },
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": true,
+   "at": "2026-11-17",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2026-11-17",
+    "to": "2026-11-23"
+   },
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-17",
+  "title": "동계 건기 맞은 ‘태국’···트리니티항공, 방콕·치앙마이 특가 진행",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "항공사 태국 노선 특가 프로모션",
+   "airlines": [
+    "트리니티항공"
+   ],
+   "name": "태국정부관광청 공동 프로모션",
+   "book": {
+    "from": "2026-11-16",
+    "to": "2026-12-13"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-03-27"
+   },
+   "price": null,
+   "trip": null,
+   "pct": 20,
+   "seoul": true,
+   "at": "2026-11-17",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2026-11-16",
+    "to": "2026-12-13"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-03-27"
+   },
+   "pct": 20,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-17",
+  "title": "파라타항공 '인천~LA' 첫 미주 노선 판매 개시···블랙프라이데이 특가 ...",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "신규 취항 기념 특가 프로모션",
+   "airlines": [
+    "파라타항공"
+   ],
+   "name": "블랙프라이데이 특가",
+   "book": {
+    "from": "2026-11-17",
+    "to": "2026-11-23"
+   },
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": true,
+   "at": "2026-11-17",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2026-11-17",
+    "to": "2026-11-23"
+   },
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-17",
   "title": "✈️ 나트랑 항공권 보시는 분들‼️에어로케이 블프 18일 오전 10시에 열려....",
   "community": true,
   "ai": {
@@ -9819,155 +10012,5 @@
    "price": null
   },
   "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "✈️ 나트랑 특가 프로모션 : 이스타항공",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "이스타항공 나트랑 노선 특가 프로모션",
-   "airlines": [
-    "이스타항공"
-   ],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": true,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "126일차, 이스타항공 임박 특가",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "이스타항공 임박 특가 이벤트 소식",
-   "airlines": [
-    "이스타항공"
-   ],
-   "name": "임박 특가",
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "✈️ 다낭 특가 프로모션 : 이스타항공",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "이스타항공 다낭 노선 특가 프로모션",
-   "airlines": [
-    "이스타항공"
-   ],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": true,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "세부퍼시픽 프로모..",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "세부퍼시픽 프로모션 소식",
-   "airlines": [
-    "세부퍼시픽"
-   ],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "트리니티항공 ] ✈️11월 더블 혜택! 동남아 항공 권 최대 25% 할인",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "항공사 국제선 운임 할인 프로모션",
-   "airlines": [
-    "트리니티항공"
-   ],
-   "name": "11월 더블 혜택",
-   "book": {
-    "from": "2026-11-01",
-    "to": "2026-11-13"
-   },
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": 25,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": 25,
-   "price": null
-  },
-  "diff": [
-   "예약 마감 규칙 - / AI 2026-11-13"
-  ]
  }
 ]
