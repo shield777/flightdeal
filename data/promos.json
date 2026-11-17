@@ -1,6 +1,1139 @@
 {
  "items": [
   {
+   "id": "c:https://cafe.naver.com/grownman/1189508|✈️파라타 항공 : 블랙 프라이데이 일본ㆍ중국ㆍ 베트남 전노선 특가 ! ",
+   "kind": "airline",
+   "community": true,
+   "title": "✈️파라타 항공 : 블랙 프라이데이 일본ㆍ중국ㆍ 베트남 전노선 특가 ! 정보",
+   "desc": "✈️파라타 항공 : 블랙 프라이데이 일본ㆍ중국ㆍ 베트남 전노선 특가 !",
+   "summary": [
+    "✈️파라타 항공 : 블랙 프라이데이 일본ㆍ중국ㆍ 베트남 전노선 특가 !…"
+   ],
+   "link": "https://cafe.naver.com/grownman/1189508",
+   "source": "네이버 카페 · 다낭 보물창고 - 다낭자유여행 다낭여행 다낭맛집 다낭리조트",
+   "date": "2026-11-17T21:00:41.242Z",
+   "found": "2026-11-18",
+   "cards": [],
+   "airlines": [],
+   "countries": [
+    "베트남",
+    "일본",
+    "중국"
+   ],
+   "allRoutes": true,
+   "routes": [],
+   "price": null,
+   "query": "베트남 항공권 특가",
+   "ai": {
+    "v": 2,
+    "promo": true,
+    "why": "항공사 블프 전노선 특가",
+    "airlines": [
+     "파라타항공"
+    ],
+    "name": "블랙 프라이데이 특가",
+    "book": null,
+    "board": null,
+    "price": null,
+    "trip": null,
+    "pct": null,
+    "seoul": null,
+    "at": "2026-11-18",
+    "model": "deepseek-v4-flash"
+   },
+   "lastDate": "2026-11-17T21:00:41.242Z",
+   "lastFound": "2026-11-18"
+  },
+  {
+   "id": "a1RhZVV0OVhvbjNNVDIzazJiMUVwd1lSYUhTVlNRVWtFS0hjM1NSQjlVdmZXZFN3V3JWOTVGc3hJdEY2Skgxd0dKcmtBTzZOTjdwY3VXWFphazMxeG82Y2tn|최대 65% 할인, 괌 항공권… 롯데면세점에서 겨울을 즐겨보세요",
+   "kind": "airline",
+   "title": "최대 65% 할인, 괌 항공권… 롯데면세점에서 겨울을 즐겨보세요",
+   "desc": "최대 65% 할인, 괌 항공권… 롯데면세점에서 겨울을 즐겨보세요 조선일보",
+   "summary": [
+    "최대 65% 할인, 괌 항공권… 롯데면세점에서 겨울을 즐겨보세요 조선일보…"
+   ],
+   "link": "https://www.chosun.com/special/special_section/2026/11/18/DJU4ZJXWKZCQ3MWG5KYJBPOREM/",
+   "source": "조선일보",
+   "date": "2026-11-17T15:38:00.000Z",
+   "found": "2026-11-18",
+   "cards": [],
+   "airlines": [],
+   "countries": [],
+   "allRoutes": false,
+   "routes": [],
+   "price": null,
+   "query": "제주항공 싱가포르 {특가말}",
+   "bodyAt": "2026-11-18",
+   "ai": {
+    "v": 2,
+    "promo": false,
+    "why": "면세점 행사, 항공권은 경품",
+    "airlines": [],
+    "name": null,
+    "book": null,
+    "board": null,
+    "price": null,
+    "trip": null,
+    "pct": null,
+    "seoul": null,
+    "at": "2026-11-18",
+    "model": "deepseek-v4-flash"
+   },
+   "lastDate": "2026-11-17T15:38:00.000Z",
+   "lastFound": "2026-11-18"
+  },
+  {
+   "id": "https://www.headlinejeju.co.kr/news/articleView.html|제주항공, 대입 수험생·동반자 국내선 항공권 20% 할인",
+   "kind": "airline",
+   "title": "제주항공, 대입 수험생·동반자 국내선 항공권 20% 할인",
+   "desc": "제주항공은 2027학년도 대학수학능력시험 및 대학별 전형에 응시하는 수험생과 가족을 위해 국내선 항공권 할인 혜택을 제공한다고 17일 밝혔다.할인 혜택은 탑승일 기준으로 내년 2월 25일(성수기 제외)까지 제주~김포.인천.부산.청주.광주.대구, 김포~부산 등 국내선 모든 노선에 적용된다. 수험생 본인과 동반자 1인에 한해 정규운임(플렉스) 기준 20% 할인 ...",
+   "summary": [
+    "제주항공은 2027학년도 대학수학능력시험 및 대학별 전형에 응시하는 수험생과 가족을 위해 국내선 항공권 할인 혜택을 제공한다고 17일 밝혔다.",
+    "할인 혜택은 탑승일 기준으로 내년 2월 25일(성수기 제외)까지 제주~김포.인천.부산.청주.광주.대구, 김포~부산 등 국내선 모든 노선에 적용된다.",
+    "수험생 본인과 동반자 1인에 한해 정규운임(플렉스) 기준 20% 할인…"
+   ],
+   "link": "https://www.headlinejeju.co.kr/news/articleView.html?idxno=602270",
+   "source": "헤드라인제주",
+   "date": "2026-11-16T15:21:00.000Z",
+   "found": "2026-11-17",
+   "cards": [],
+   "airlines": [
+    "7C"
+   ],
+   "countries": [],
+   "allRoutes": true,
+   "routes": [],
+   "price": null,
+   "query": "제주항공 {특가말}",
+   "bodyAt": "2026-11-17",
+   "body": [
+    "제주항공은 2027학년도 대학수학능력시험 및 대학별 전형에 응시하는 수험생과 가족을 위해 국내선 항공권 할인 혜택을 제공한다고 17일 밝혔다.",
+    "할인 혜택은 탑승일 기준으로 내년 2월 25일(성수기 제외)까지 제주~김포.인천.부산.청주.광주.대구, 김포~부산 등 국내선 모든 노선에 적용된다.",
+    "수험생 본인과 동반자 1인에 한해 정규운임(플렉스) 기준 20% 할인을 받을 수 있다.",
+    "항공권 예매는 오는 12월 16일까지 제주항공 홈페이지, 모바일 앱과 웹에서만 가능하다.",
+    "회원 가입 및 로그인 후 예약 단계에서 ‘개인 신분 할인’을 선택하고, 탑승자 정보 입력 단계에서 ‘수험생 본인’과 ‘동반자 할인’ 옵션을 선택하면 된다.",
+    "탑승 당일 제주항공 카운터에서 2027학년도 대입 지원서(수시 포함), 원서 접수증, 수능 수험표 중 원본 1개를 제시해야 한다.",
+    "동반자 할인은 수험생 본인과 같은 예약번호(PNR)의 성인에 한해 적용된다.",
+    "제주항공은 숙박권 추첨 이벤트와 제휴 관광지 최대 25% 할인 등 다양한 혜택도 제공한다."
+   ],
+   "ai": {
+    "v": 2,
+    "promo": true,
+    "why": "국내선 항공권 20% 할인 프로모션",
+    "airlines": [
+     "제주항공"
+    ],
+    "name": "수험생·동반자 국내선 할인",
+    "book": {
+     "from": null,
+     "to": "2026-12-16"
+    },
+    "board": {
+     "from": null,
+     "to": "2027-02-25"
+    },
+    "price": null,
+    "trip": null,
+    "pct": 20,
+    "seoul": true,
+    "at": "2026-11-17",
+    "model": "deepseek-v4-flash"
+   },
+   "lastDate": "2026-11-17T14:30:31.000Z",
+   "lastFound": "2026-11-18",
+   "more": [
+    {
+     "id": "%EC%83%9D-%EB%8F%99%EB%B0%98-1%EC%9D%B8-%EA%B5%AD%EB%82%B4%EC%84%A0-%EC%9A%B4%EC%9E%84-20-%ED%95%A0%EC%9D%B8/ar-AA2hA2PR|제주항공, 대입 수험생·동반 1인 국내선 운임 20% 할인",
+     "kind": "airline",
+     "title": "제주항공, 대입 수험생·동반 1인 국내선 운임 20% 할인",
+     "desc": "국내선 'FLEX' 운임 한정…동반자는 같은 예약번호로 발권 12월 16일까지 발권…탑승은 내년 2월 25일까지, 성수기 제외 2008년부터 시작된 할인 혜택…노선부터 동반자까지 조건 다양 [아시아타임즈=옥한빈 기자] 제주항공이 2027학년도 대입 수험생과 동반자 1명에게 국내선 항공권을 20% 할인한다. 수능 이후 대학별 전형에 응시하는 수험생과 가족의 ...",
+     "summary": [
+      "국내선 'FLEX' 운임 한정…동반자는 같은 예약번호로 발권 12월 16일까지 발권…탑승은 내년 2월 25일까지, 성수기 제외 2008년부터 시작된 할인 혜택…노선부터 동반자까지 조건 다양 [아시아타임즈=옥한빈 기자] 제주항공이 …",
+      "수능 이후 대학별 전형에 응시하는 수험생과 가족의…"
+     ],
+     "link": "https://www.msn.com/ko-kr/news/other/%EC%A0%9C%EC%A3%BC%ED%95%AD%EA%B3%B5-%EB%8C%80%EC%9E%85-%EC%88%98%ED%97%98%EC%83%9D-%EB%8F%99%EB%B0%98-1%EC%9D%B8-%EA%B5%AD%EB%82%B4%EC%84%A0-%EC%9A%B4%EC%9E%84-20-%ED%95%A0%EC%9D%B8/ar-AA2hA2PR",
+     "source": "아시아타임즈 on MSN",
+     "date": "2026-11-16T17:22:14.000Z",
+     "found": "2026-11-17",
+     "cards": [],
+     "airlines": [
+      "7C"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "제주항공 인도네시아 {특가말}",
+     "bodyAt": "2026-11-17",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "국내선 운임 20% 할인 프로모션",
+      "airlines": [
+       "제주항공"
+      ],
+      "name": null,
+      "book": {
+       "from": null,
+       "to": "2026-12-16"
+      },
+      "board": {
+       "from": null,
+       "to": "2027-02-25"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 20,
+      "seoul": null,
+      "at": "2026-11-17",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "https://www.kbmaeil.com/article/20261117500113|제주항공, 2027학년도 대입 수험생 국내선 항공권 20% 할인",
+     "kind": "airline",
+     "title": "제주항공, 2027학년도 대입 수험생 국내선 항공권 20% 할인",
+     "desc": "제주항공이 2027학년도 대학수학능력시험에 응시한 수험생과 가족을 대상으로 국내선 항공권 할인 이벤트를 진행한다. 제주항공은 오는 19일 실시되는 대학수학능력시험과 대학별 전형에 응시하는 수험생을 응원하고, 수험생과 가족의 국내 이동 편의를 높이기 위해 이번 행사를 마 ...",
+     "summary": [
+      "제주항공이 2027학년도 대학수학능력시험에 응시한 수험생과 가족을 대상으로 국내선 항공권 할인 이벤트를 진행한다.",
+      "제주항공은 오는 19일 실시되는 대학수학능력시험과 대학별 전형에 응시하는 수험생을 응원하고, 수험생과 가족의 국내 이동 편의를 높이기 위해 이번 행사를 마…"
+     ],
+     "link": "https://www.kbmaeil.com/article/20261117500113",
+     "source": "경북매일",
+     "date": "2026-11-17T01:00:00.000Z",
+     "found": "2026-11-17",
+     "cards": [],
+     "airlines": [
+      "7C"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "제주항공 {특가말}",
+     "bodyAt": "2026-11-17",
+     "body": [
+      "제주항공이 2027학년도 대학수학능력시험에 응시한 수험생과 가족을 대상으로 국내선 항공권 할인 이벤트를 진행한다.",
+      "제주항공은 오는 19일 실시되는 대학수학능력시험과 대학별 전형에 응시하는 수험생을 응원하고, 수험생과 가족의 국내 이동 편의를 높이기 위해 이번 행사를 마련했다.",
+      "할인 혜택은 탑승일 기준 2027년 2월 25일까지 적용되며, 성수기는 제외된다.",
+      "할인율은 정규운임인 플렉스 운임 기준 20%로, 수험생 본인과 동반자 1명까지 혜택을 받을 수 있다.",
+      "항공권은 오는 12월 16일까지 제주항공 홈페이지와 모바일 앱·웹을 통해서만 예매할 수 있다.",
+      "회원 가입 및 로그인 후 예약 단계에서 ‘개인 신분 할인’을 선택하고, 탑승자 정보 입력 단계에서 ‘수험생 본인’과 ‘동반자 할인’ 항목을 지정하면 된다.",
+      "할인을 적용받으려면 탑승 당일 제주항공 카운터에서 2027학년도 대입 지원서(수시 포함), 원서 접수증, 수능 수험표 가운데 원본 1개를 제시해야 한다.",
+      "동반자 할인은 수험생 본인과 동일한 예약번호(PNR)로 예약한 성인 1명에게만 적용된다.",
+      "제주항공은 항공권 할인 외에도 숙박권 추첨 이벤트와 제휴 관광지 최대 25% 할인 등 추가 혜택을 제공한다.",
+      "한편 제주항공은 지난 9월 한국능률협회컨설팅이 주관한 ‘2026 한국산업의 고객만족도(KCSI)’ 조사에서 국내선 항공 부문 1위에 선정됐다."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "국내선 항공권 운임 20% 할인",
+      "airlines": [
+       "제주항공"
+      ],
+      "name": "수험생 국내선 할인",
+      "book": {
+       "from": null,
+       "to": "2026-12-16"
+      },
+      "board": {
+       "from": null,
+       "to": "2027-02-25"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 20,
+      "seoul": null,
+      "at": "2026-11-17",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "l1dXl5aXp5UTM5M1p5T0cwRmljRXpIdEhaa3JLYjZaTHg1UjVZYzlyZUEtWmtqd0FyclJiMkoySkV5Njl1UWhkNTNqREpSRF9YVmJlS01UN29FQlc5NjlMYw|제주항공, 수험생과 동반자 1인에 국내선 정규운임 20% 할인 제공",
+     "kind": "airline",
+     "title": "제주항공, 수험생과 동반자 1인에 국내선 정규운임 20% 할인 제공",
+     "desc": "제주항공, 수험생과 동반자 1인에 국내선 정규운임 20% 할인 제공 이코노미사이언스",
+     "summary": [
+      "제주항공, 수험생과 동반자 1인에 국내선 정규운임 20% 할인 제공 이코노미사이언스…"
+     ],
+     "link": "https://www.e-science.co.kr/news/articleView.html?idxno=139937",
+     "source": "이코노미사이언스",
+     "date": "2026-11-17T01:33:07.000Z",
+     "found": "2026-11-17",
+     "cards": [],
+     "airlines": [
+      "7C"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "제주항공 {특가말}",
+     "bodyAt": "2026-11-17",
+     "body": [
+      "수험생뿐 아니라 가족의 이동 비용까지 덜어주는 국내선 항공권 할인이 나왔다.",
+      "제주항공은 2027학년도 대학수학능력시험 응시자와 동반자 1인에게 국내선 정규운임(플렉스) 기준 20%를 깎아주는 이벤트를 시작했다고 밝혔다.",
+      "대상은 11월 19일 치러지는 수능과 대학별 전형에 응시하는 수험생이다.",
+      "탑승일 기준 2027년 2월 25일까지(성수기 제외) 제주~김포·인천·부산·청주·광주·대구, 김포~부산 등 국내선 모든 노선에서 쓸 수 있다.",
+      "예매는 12월 16일까지 자사 홈페이지와 모바일 앱, 웹에서만 가능하다.",
+      "회원 가입과 로그인을 마친 뒤 예약 단계에서 '개인 신분 할인'을 고르고, 탑승자 정보 입력 단계에서 '수험생 본인'과 '동반자 할인' 옵션을 선택하면 된다.",
+      "탑승 당일에는 제주항공 카운터에서 증빙을 내야 한다.",
+      "동반자 할인은 수험생 본인과 같은 예약번호(PNR)로 예약한 성인에게만 적용된다.",
+      "수시 지원서와 원서 접수증까지 증빙으로 인정해 수능 당일에 그치지 않고 대학별 전형 일정 전반의 이동 수요를 포괄하는 구조다.",
+      "숙박권 추첨 이벤트와 제휴 관광지 최대 25% 할인 등 부가 혜택도 마련했다.",
+      "제주항공은 지난 9월 한국능률협회컨설팅이 주관한 '2026 한국산업의 고객만족도(KCSI)' 조사에서 국내선항공 부문 1위에 선정됐다."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "국내선 항공권 운임 20% 할인",
+      "airlines": [
+       "제주항공"
+      ],
+      "name": "수험생 동반자 할인",
+      "book": {
+       "from": null,
+       "to": "2026-12-16"
+      },
+      "board": {
+       "from": null,
+       "to": "2027-02-25"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 20,
+      "seoul": true,
+      "at": "2026-11-17",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "CNkJndzFqdkpwY0hLNWJyZml1VnAzUkxURXR5THdMUlRFTjhWQ3R1bF8wQkJFbUdUY3o0Vkg3SzM0NWkxblhERTdGUmxQQ082S0lDS29XSVpSWms4cTNRTjk|제주항공, 수험생 국내선 항공권 20% 할인…동반 1인도 혜택",
+     "kind": "airline",
+     "title": "제주항공, 수험생 국내선 항공권 20% 할인…동반 1인도 혜택",
+     "desc": "제주항공, 수험생 국내선 항공권 20% 할인…동반 1인도 혜택 서울경제TV",
+     "summary": [
+      "제주항공, 수험생 국내선 항공권 20% 할인…동반 1인도 혜택 서울경제TV…"
+     ],
+     "link": "https://www.sentv.co.kr/article/view/sentv202611170089",
+     "source": "서울경제TV",
+     "date": "2026-11-17T01:37:33.000Z",
+     "found": "2026-11-17",
+     "cards": [],
+     "airlines": [
+      "7C"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "제주항공 {특가말}",
+     "bodyAt": "2026-11-17",
+     "body": [
+      "제주항공, 수험생 국내선 항공권 20% 할인…동반 1인도 혜택",
+      "국내선 전 노선 정규운임 기준 20% 할인",
+      "12월 16일까지 홈페이지·모바일서 예매",
+      "[서울경제TV=김지송 인턴기자] 제주항공이 2027학년도 대학수학능력시험 수험생과 동반자 1명에게 국내선 항공권을 20% 할인해 준다.",
+      "제주항공은 수험생의 국내 이동과 여행을 지원하기 위해 항공권 할인 이벤트를 진행한다고 17일 밝혔다.",
+      "할인은 성수기를 제외한 2027년 2월 25일까지 탑승하는 국내선 전 노선에 적용된다.",
+      "수험생 본인과 동반 성인 1명에게 정규운임인 플렉스(FLEX) 운임 기준 20% 할인을 제공한다.",
+      "항공권은 오는 12월 16일까지 제주항공 홈페이지와 모바일 앱, 웹에서 구매할 수 있다.",
+      "회원 가입 후 예약 과정에서 '개인 신분 할인'을 선택하고, 탑승자 정보에 수험생 본인 또는 동반자 할인을 적용하면 된다.",
+      "제주항공은 지난 2025년에도 수험생과 동반자에게 국내선 항공권 20% 할인 혜택을 제공했다.",
+      "당시에는 12월 17일까지 항공권을 판매하고 올해 2월 13일까지 탑승할 수 있도록 했다.",
+      "올해는 할인율을 유지하면서 탑승 가능 기간을 내년 2월 25일까지로 정했다.",
+      "탑승 당일에는 2027학년도 대입 지원서와 원서 접수증, 수능 수험표 가운데 원본 1개를 공항 카운터에 제시해야 한다.",
+      "동반자 할인은 수험생과 같은 예약번호로 발권한 성인에게만 적용된다.",
+      "제주항공은 숙박권 추첨과 제휴 관광지 최대 25% 할인 등 부가 혜택도 마련했다."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "국내선 항공권 20% 할인",
+      "airlines": [
+       "제주항공"
+      ],
+      "name": "수험생 국내선 항공권 할인",
+      "book": {
+       "from": null,
+       "to": "2026-12-16"
+      },
+      "board": {
+       "from": null,
+       "to": "2027-02-25"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 20,
+      "seoul": null,
+      "at": "2026-11-17",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "k0ZVQ2czRsRFlLLXhkcVh3V3pGaE0tOExSQzRlQU91VkJ2Tk5hTGppQjFncGtoMld1Z0tyWWM5ajJhR2I3U0dmR1pOTlBSaUdVM2g1Ukh1TzR2MTBqLVFzMA|제주항공, 2027 대입 수험생 대상 국내선 할인",
+     "kind": "airline",
+     "title": "제주항공, 2027 대입 수험생 대상 국내선 할인",
+     "desc": "제주항공, 2027 대입 수험생 대상 국내선 할인 인사이트코리아",
+     "summary": [
+      "제주항공, 2027 대입 수험생 대상 국내선 할인 인사이트코리아…"
+     ],
+     "link": "https://www.insightkorea.co.kr/news/articleView.html?idxno=259085",
+     "source": "인사이트코리아",
+     "date": "2026-11-17T01:45:33.000Z",
+     "found": "2026-11-17",
+     "cards": [],
+     "airlines": [
+      "7C"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "제주항공 {특가말}",
+     "bodyAt": "2026-11-17",
+     "body": [
+      "[인사이트코리아 = 김호진 기자] 제주항공이 2027학년도 대학 입시 수험생과 동반자를 대상으로 국내선 할인 혜택을 제공한다.",
+      "수험생 본인과 동반자 1인은 정규운임인 플렉스 운임에서 20% 할인받을 수 있다.",
+      "제주항공은 오는 19일 치러지는 대학수학능력시험과 대학별 전형에 응시한 수험생의 이동 편의를 지원하기 위해 할인 이벤트를 마련했다고 17일 밝혔다.",
+      "할인은 내년 2월 25일까지 탑승하는 국내선 항공권에 적용된다.",
+      "다만 성수기 기간은 제외된다.",
+      "항공권은 오는 12월 16일까지 제주항공 홈페이지와 모바일 앱·웹에서 예매할 수 있다.",
+      "회원 가입 후 로그인한 뒤 예약 과정에서 ‘개인 신분 할인’을 선택하면 된다.",
+      "탑승자 정보 입력 단계에서는 수험생 본인의 경우 ‘수험생 본인’을 선택해야 한다.",
+      "동반자 할인은 수험생과 같은 예약번호(PNR)로 발권한 성인 1명에게만 제공된다.",
+      "탑승 당일에는 수험생 자격을 확인할 수 있는 서류를 공항 카운터에 제출해야 한다.",
+      "제주항공은 항공권 할인 외에도 수험생 대상 추가 혜택을 준비했다.",
+      "숙박권 추첨 이벤트를 진행하고 제휴 관광지에서는 최대 25% 할인 혜택을 제공한다.",
+      "제주항공은 이번 행사를 통해 수능 이후 면접과 논술 등 대학별 전형을 준비하는 수험생의 이동 부담을 줄이고 가족 여행 수요에도 대응한다는 계획이다."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "국내선 항공권 운임 할인",
+      "airlines": [
+       "제주항공"
+      ],
+      "name": "2027 대입 수험생 대상 국내선 할인",
+      "book": {
+       "from": null,
+       "to": "2026-12-16"
+      },
+      "board": {
+       "from": null,
+       "to": "2027-02-25"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 20,
+      "seoul": null,
+      "at": "2026-11-17",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "https://www.joongangenews.com/news/articleView.html|제주항공 , 수능 수험생 응원 이벤트...국내선 항공 권 20% 할인",
+     "kind": "airline",
+     "title": "제주항공 , 수능 수험생 응원 이벤트...국내선 항공 권 20% 할인",
+     "desc": "|중앙이코노미뉴스 송태원 기자| 제주항공 , 수능 수험생 응원 이벤트...국내선 항공 권 20% 할인 .[사진= 제주항공 ] 제주항공 이 2027학년도 대학수학능력시험 수험생과 가족을 대상으로 국내선 항공 권 할인 혜택을 제공한다....",
+     "summary": [
+      "|중앙이코노미뉴스 송태원 기자| 제주항공 , 수능 수험생 응원 이벤트...국내선 항공 권 20% 할인 .[사진= 제주항공 ] 제주항공 이 2027학년도 대학수학능력시험 수험생과 가족을 대상으로 국내선 항공 권 할인 혜택을 제공한다."
+     ],
+     "link": "https://www.joongangenews.com/news/articleView.html?idxno=564366",
+     "source": "네이버 뉴스",
+     "date": "2026-11-17T02:36:00.000Z",
+     "found": "2026-11-17",
+     "cards": [],
+     "airlines": [
+      "7C"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "제주항공 {특가말}",
+     "bodyAt": "2026-11-17",
+     "body": [
+      "[중앙이코노미뉴스 송태원] 제주항공이 2027학년도 대학수학능력시험 수험생과 가족을 대상으로 국내선 항공권 할인 혜택을 제공한다.",
+      "수험생 본인과 동반자 1명까지 정규운임 기준 20% 할인을 받을 수 있다.",
+      "제주항공은 오는 19일 실시되는 대학수학능력시험과 대학별 전형에 응시하는 수험생을 위해 국내선 항공권 할인 이벤트를 진행한다고 17일 밝혔다.",
+      "이번 할인은 내년 2월 25일까지 탑승하는 항공편을 대상으로 하며 성수기는 제외된다.",
+      "할인 대상은 수험생 본인과 동반자 1명으로 정규운임(플렉스) 기준 20% 할인 혜택이 제공된다.",
+      "항공권 예매는 오는 12월 16일까지 제주항공 홈페이지와 모바일 앱·웹에서 가능하다.",
+      "제주항공 회원 가입과 로그인 후 예약 단계에서 '개인 신분 할인'을 선택하고 탑승자 정보 입력 시 '수험생 본인' 또는 '동반자 할인' 항목을 선택하면 된다.",
+      "탑승 당일에는 제주항공 카운터에서 2027학년도 대입 지원서(수시 포함), 원서 접수증, 수능 수험표 가운데 원본 1개를 제시해야 한다.",
+      "동반자 할인은 수험생과 동일한 예약번호(PNR)로 예약한 성인에 한해 적용된다.",
+      "제주항공은 항공권 할인 외에도 숙박권 추첨 이벤트와 제휴 관광지 최대 25% 할인 등 추가 혜택을 마련했다."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "국내선 항공권 20% 할인 이벤트",
+      "airlines": [
+       "제주항공"
+      ],
+      "name": "수능 수험생 응원 이벤트",
+      "book": {
+       "from": null,
+       "to": "2026-12-16"
+      },
+      "board": {
+       "from": null,
+       "to": "2027-02-25"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 20,
+      "seoul": null,
+      "at": "2026-11-17",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "ZUYXM0R2pkVVFvTVBVekNuLUZxM2pSVVpTUDNhWHFDRkkxdzFkWUVGUU9ydllETDE4VjNncW5ZOWZXWjJ6d3VRNGgwM0tGVERLeWQzUnhxOUp1VkVOeWdMUw|수능 끝, 하늘길 활짝…제주항공, 수험생 국내선 할인",
+     "kind": "airline",
+     "title": "수능 끝, 하늘길 활짝…제주항공, 수험생 국내선 할인",
+     "desc": "수능 끝, 하늘길 활짝…제주항공, 수험생 국내선 할인 ER 이코노믹리뷰",
+     "summary": [
+      "수능 끝, 하늘길 활짝…제주항공, 수험생 국내선 할인 ER 이코노믹리뷰…"
+     ],
+     "link": "https://www.econovill.com/news/articleView.html?idxno=757523",
+     "source": "ER 이코노믹리뷰",
+     "date": "2026-11-17T02:41:30.000Z",
+     "found": "2026-11-17",
+     "cards": [],
+     "airlines": [
+      "7C"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "제주항공 {특가말}",
+     "bodyAt": "2026-11-17",
+     "body": [
+      "제주항공이 2027학년도 대입 수험생과 동반자 1명을 대상으로 국내선 운임을 20% 낮춰주는 행사를 진행한다.",
+      "제주를 오가는 항공편은 물론 김포-부산 노선까지 국내선 전 노선에서 혜택을 받을 수 있다.",
+      "제주항공은 오는 19일 시행되는 2027학년도 대학수학능력시험과 대학별 전형에 응시하는 수험생을 대상으로 국내선 항공권 할인 이벤트를 진행한다고 17일 밝혔다.",
+      "제주항공 국내선 전 노선에서 정규운임인 플렉스(FLEX) 운임을 기준으로 20% 할인받을 수 있다.",
+      "할인 항공권의 탑승 가능 기간은 2027년 2월 25일까지이며 성수기에는 혜택이 적용되지 않는다.",
+      "항공권 예약은 오는 12월 16일까지 제주항공 공식 홈페이지와 모바일 앱(웹)에서 가능하다.",
+      "다른 판매 채널에서는 해당 할인을 이용할 수 없다.",
+      "예약을 위해서는 제주항공 회원 가입과 로그인이 필요하다.",
+      "항공권 예약 단계에서 ‘개인 신분 할인’을 선택한 뒤 탑승자 정보를 입력할 때 ‘수험생 본인’ 또는 ‘동반자 할인’을 지정하면 된다.",
+      "탑승 당일에는 수험생 자격을 확인할 수 있는 증빙서류를 준비해야 한다.",
+      "제주항공 공항 카운터에서 2027학년도 대입 지원서(수시 포함), 원서 접수증, 수능 수험표 가운데 원본 1개를 제시하면 된다.",
+      "동반자 할인은 수험생과 동일한 예약번호(PNR)로 항공권을 예약한 성인 1명에게만 적용된다.",
+      "제주항공은 항공권 할인 외 다양한 여행 혜택도 제공한다.",
+      "숙박권을 추첨으로 증정하는 이벤트와 제휴 관광지 이용료를 최대 25% 할인하는 행사 등을 마련했다."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "제주항공 국내선 운임 20% 할인",
+      "airlines": [
+       "제주항공"
+      ],
+      "name": "수험생 국내선 할인",
+      "book": {
+       "from": null,
+       "to": "2026-12-16"
+      },
+      "board": {
+       "from": null,
+       "to": "2027-02-25"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 20,
+      "seoul": true,
+      "at": "2026-11-17",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "92LTI5M0dXenRZbW5hbFNEOWJHX1paNG9DeVhJbFhjT3ZDalc3MHhVUVQ0U3M1dE1lTmpkZFFKeUNpNlhka21CYlozZjdHXy1xY0ZCWk12NXJ1a0I4YS14VA|제주항공, 수험생·동반 1인 국내선 항공권 20% 할인",
+     "kind": "airline",
+     "title": "제주항공, 수험생·동반 1인 국내선 항공권 20% 할인",
+     "desc": "제주항공, 수험생·동반 1인 국내선 항공권 20% 할인 메트로신문",
+     "summary": [
+      "제주항공, 수험생·동반 1인 국내선 항공권 20% 할인 메트로신문…"
+     ],
+     "link": "https://www.metroseoul.co.kr/article/20261117500286",
+     "source": "메트로신문",
+     "date": "2026-11-17T04:38:19.000Z",
+     "found": "2026-11-17",
+     "cards": [],
+     "airlines": [
+      "7C"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "제주항공 {특가말}",
+     "bodyAt": "2026-11-17",
+     "body": [
+      "제주항공, 수험생·동반 1인 국내선 항공권 20% 할인",
+      "<input class=\"siteViewTitlteaa\" style=\"display:none\" value=\"ArticleVO(id=20261117500286, title=제주항공, 수험생·동반 1인 국내선 항공권 20% 할인, subTitle=오는 12월 16일까지 예매…내년 2월 25일까지 탑승 가능<BR>수험표·대입 지원서 등 원본 제시…숙박·관광지 혜택도 제공, viewTitle=제…",
+      "<img alt=\"\" src=\"//cdn.emetro.co.kr/data2/content/image/2026/11/17/.cache/512/20261117500287.jpg\" storyid=\"eb0b7998-e243-11f1-9420-abbf1f18566f\">",
+      "제주항공 2027 대입 수험생 할인 이벤트 이미지./제주항공",
+      "<p>제주항공이 2027학년도 대학수학능력시험 수험생과 가족의 국내 이동을 지원하기 위해 항공권 할인 혜택을 제공한다.",
+      "<p>제주항공은 오는 19일 수능과 대학별 전형에 응시하는 수험생 본인과 동반자 1명에게 국내선 정규운임을 20% 할인한다고 17일 밝혔다.",
+      "<p>항공권은 오는 12월 16일까지 제주항공 홈페이지와 모바일 애플리케이션·웹에서 예매할 수 있다.",
+      "탑승 기간은 성수기를 제외한 내년 2월 25일까지다.",
+      "<p>홈페이지에서 예약할 때 '개인 신분 할인'을 선택하고 탑승자 정보 입력 단계에서 수험생 본인 또는 동반자 할인 항목을 지정하면 된다.",
+      "동반자 할인은 수험생과 같은 예약번호로 예매한 성인 1명에게만 적용된다.",
+      "<p>탑승 당일 공항 카운터에서 2027학년도 대입 지원서나 원서 접수증, 수능 수험표 가운데 원본 1개를 제시해야 한다.",
+      "<p>제주항공은 수험생을 대상으로 숙박권 추첨 행사와 제휴 관광지 최대 25% 할인도 진행한다.",
+      "</html>, status=4, newsImportant=2, link=/content/html/2026/11/17/20261117500286.html, summary=제주항공이 2027학년도 대학수학능력시험 수험생과 가족의 국내 이동을 지원하기 위해 항공권 할인 혜택을 제공한다.",
+      "제주항공은 오는 19일 수능과 대학별 전형에 응시하는 수험생 본인과 동반자 1명에게 국내선 정규운임을 20% 할인한다고 17일 밝혔다.",
+      "항공권은 오는 12월 16일까지 제주항공 홈페이지와 모바일 애플리케이션·웹에서 예매할 수 있다.",
+      "홈페이지에서 예약할 때 '개인 신분 할인'을 선택하고 탑승자 정보 입력 단계에서 수험생 본인 또는 동반자 할인 항목을 지정하면 된다.",
+      "탑승 당일 공항 카운터에서 2027학년도 대입 지원서나 원서 접수증, 수능 수험표 가운데 원본 1개를 제시해야 한다.",
+      "제주항공은 수험생을 대상으로 숙박권 추첨 행사와 제휴 관광지 최대 25% 할인도 진행한다.",
+      ", series=null, seriesTitle=null, category=[{sectionId=b7208253-4e1f-11ea-8db9-02d4480ea31a, sectionCode=160140, sectionName=물류/항공, sectionPath=산업>물류/항공, organizationalUnit=/00/01/CA/160140, sectionType=CA, sectionLevel…"
+     ],
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "국내선 항공권 20% 할인 프로모션",
+      "airlines": [
+       "제주항공"
+      ],
+      "name": "수험생·동반 1인 국내선 할인",
+      "book": {
+       "from": null,
+       "to": "2026-12-16"
+      },
+      "board": {
+       "from": null,
+       "to": "2027-02-25"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 20,
+      "seoul": null,
+      "at": "2026-11-17",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "xTE1NQjVFY2JBbG1XMlkyTXF0cmRVV0ZQWFkzWTlrallHdjFmNnAyVGFnYzFZR29jUE9fei1MZERONFlYY29aUXRWRUtBWFZNM3NDNzl5X0VnNW1PWHJ6ZUE|제주항공, 수험생·동반자 국내선 20% 할인…내년 2월까지",
+     "kind": "airline",
+     "title": "제주항공, 수험생·동반자 국내선 20% 할인…내년 2월까지",
+     "desc": "제주항공, 수험생·동반자 국내선 20% 할인…내년 2월까지 뉴스투데이",
+     "summary": [
+      "제주항공, 수험생·동반자 국내선 20% 할인…내년 2월까지 뉴스투데이…"
+     ],
+     "link": "https://www.news2day.co.kr/article/20261117500247",
+     "source": "뉴스투데이",
+     "date": "2026-11-17T07:17:00.000Z",
+     "found": "2026-11-17",
+     "cards": [],
+     "airlines": [
+      "7C"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "제주항공 {특가말}",
+     "bodyAt": "2026-11-17",
+     "body": [
+      "제주항공, 수험생·동반자 국내선 20% 할인…내년 2월까지",
+      "입력 : 2026.11.17 16:17",
+      "ㅣ 수정 : 2026.11.17 16:17",
+      "12월 16일까지 예약 가능",
+      "[뉴스투데이=박혜성 기자] 제주항공이 2027학년도 대학입시 수험생과 동반자 1명을 대상으로 국내선 항공권을 20% 할인한다.",
+      "제주항공은 17일 수험생과 동반자 1명에게 국내선 정규운임(플렉스) 기준 20% 할인 혜택을 제공한다고 밝혔다.",
+      "탑승 기간은 성수기를 제외하고 2027년 2월 25일까지다.",
+      "항공권 예약은 오는 12월 16일까지 제주항공 홈페이지와 모바일 앱·웹에서 가능하다.",
+      "할인을 받으려면 제주항공 회원 가입과 로그인 후 예약 단계에서 '개인 신분 할인'을 선택해야 한다.",
+      "이후 탑승자 정보 입력 단계에서 '수험생 본인' 또는 '동반자 할인' 옵션을 선택하면 된다.",
+      "탑승 당일에는 제주항공 카운터에서 2027학년도 대입 지원서(수시 포함), 원서 접수증, 수능 수험표 가운데 원본 1개를 제시해야 한다.",
+      "동반자 할인은 수험생과 동일한 예약번호(PNR)로 예약한 성인 1명에게만 적용된다.",
+      "제주항공은 이번 할인 외에도 숙박권 추첨 이벤트와 제휴 관광지 최대 25% 할인 혜택을 마련했다."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "국내선 항공권 20% 할인 프로모션",
+      "airlines": [
+       "제주항공"
+      ],
+      "name": "수험생·동반자 국내선 할인",
+      "book": {
+       "from": null,
+       "to": "2026-12-16"
+      },
+      "board": {
+       "from": null,
+       "to": "2027-02-25"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 20,
+      "seoul": null,
+      "at": "2026-11-17",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "Vb1g0bi1jdDFGTGxMN09TSWtBR3BfWUo1NjJjaVlKSlRkNDUzdklxLWZxOTg0NUZROFA1X183VnAzeGYyWi1Kb1E0eGZJa3hVQ3FTQUdCNk9ETkJhMXJ5ak4|제주항공, 대입 수험생 항공료 부담 낮춘다…국내선 20% 할인",
+     "kind": "airline",
+     "title": "제주항공, 대입 수험생 항공료 부담 낮춘다…국내선 20% 할인",
+     "desc": "제주항공, 대입 수험생 항공료 부담 낮춘다…국내선 20% 할인 매일일보",
+     "summary": [
+      "제주항공, 대입 수험생 항공료 부담 낮춘다…국내선 20% 할인 매일일보…"
+     ],
+     "link": "https://www.m-i.kr/news/articleView.html?idxno=2019851",
+     "source": "매일일보",
+     "date": "2026-11-17T14:30:31.000Z",
+     "found": "2026-11-18",
+     "cards": [],
+     "airlines": [
+      "7C"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "제주항공 {특가말}",
+     "bodyAt": "2026-11-18",
+     "body": [
+      "매일일보 = 허지선 기자 | 2027학년도 대학수학능력시험을 앞두고 수험생과 동반자 1명이 제주항공 국내선 항공권을 20% 할인받을 수 있게 됐다.",
+      "할인 대상은 수험생 본인과 동반자 1명으로, 정규운임인 플렉스(FLEX) 운임에서 20%가 적용된다.",
+      "항공권 이용 기간은 2027년 2월 25일까지이며 성수기에는 할인 혜택이 적용되지 않는다.",
+      "예매는 오는 12월 16일까지 제주항공 공식 홈페이지, 모바일 앱·웹에서 할 수 있다.",
+      "할인을 받으려면 제주항공 회원으로 로그인한 뒤 예약 과정에서 '개인 신분 할인'을 지정해야 한다.",
+      "이후 탑승객 정보를 입력할 때 수험생 본인 또는 동반자 할인 항목을 선택하면 된다.",
+      "공항에서 탑승 수속을 진행할 때는 2027학년도 대입 지원서(수시 포함), 원서 접수증, 수능 수험표 가운데 하나를 원본으로 제출해야 한다.",
+      "동반자는 수험생과 동일한 예약번호(PNR)로 항공권을 구매한 성인만 할인받을 수 있다.",
+      "이와 함께 제주항공은 숙박권을 경품으로 제공하는 추첨 행사, 제휴 관광시설 이용료 최대 25% 할인 등 부가 혜택도 운영한다.",
+      "한편 제주항공은 지난 9월 한국능률협회컨설팅이 실시한 '2026 한국산업의 고객만족도(KCSI)' 조사에서 국내선항공 부문 1위를 차지했다."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "국내선 항공권 20% 할인",
+      "airlines": [
+       "제주항공"
+      ],
+      "name": null,
+      "book": {
+       "from": null,
+       "to": "2026-12-16"
+      },
+      "board": {
+       "from": null,
+       "to": "2027-02-25"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 20,
+      "seoul": null,
+      "at": "2026-11-18",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "ic3NFSTFjMkgzYmtQa0pYLWRvZVhsQVJuVEZlRWh5d2I5dzZlN0h4MUFtZG16OWJQa28wYTYtTVB0c1V1YjlQV2dqODg2QWdhWDkxbC1kdlc1TXFYbmloaGs|제주항공, 수능 수험생·동반자 국내선 항공권 20% 할인",
+     "kind": "airline",
+     "title": "제주항공, 수능 수험생·동반자 국내선 항공권 20% 할인",
+     "desc": "제주항공, 수능 수험생·동반자 국내선 항공권 20% 할인 데일리안",
+     "summary": [
+      "제주항공, 수능 수험생·동반자 국내선 항공권 20% 할인 데일리안…"
+     ],
+     "link": "https://news.google.com/rss/articles/CBMiowJBVV95cUxOeS1jYXVMVG5hRkFGSEY3Nkk3alFJRms2U1RwUkoxVUJSUmJ3ZkN5NnJwVlRMNkZIQjhWOUtIVWQ2ZjlkcmI2dzQ2SkRia0RIUnhxRUxUTUxnd0IwZVd1TmtRZTM0RXFORXpTS0xwMzBEMzdjQzFuRi0taTNpZnJmZzBMbUY2b0hiTXJKZk0yazVOU2RoSU13bXg3RFZ6UWkyNnktNzV6ZjNweHJ6RmNLMV8tQzZsR1dVUXl5Njg0U3hvRWo4d1p1TGlic3NFSTFjMkgzYmtQa0pYLWRvZVhsQVJuVEZlRWh5d2I5dzZlN0h4MUFtZG16OWJQa28wYTYtTVB0c1V1YjlQV2dqODg2QWdhWDkxbC1kdlc1TXFYbmloaGs?oc=5",
+     "source": "데일리안",
+     "date": "2026-11-17T00:34:00.000Z",
+     "found": "2026-11-17",
+     "cards": [],
+     "airlines": [
+      "7C"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "제주항공 {특가말}",
+     "bodyAt": "2026-11-17",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "국내선 항공권 운임 할인",
+      "airlines": [
+       "제주항공"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": 20,
+      "seoul": null,
+      "at": "2026-11-17",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "https://www.asiatime.co.kr/article/20261117500111|제주항공 , 대입 수험생·동반 1인 국내선 운임 20% 할인 혜택",
+     "kind": "airline",
+     "title": "제주항공 , 대입 수험생·동반 1인 국내선 운임 20% 할인 혜택",
+     "desc": "(사진= 제주항공 ) 17일 항공 업계에 따르면 제주항공 의 수험생 할인 은 제주 에서 김포·인천·부산·청주·광주·대구를 오가는 노선과 김포~부산 등 국내선 전 노선에 적용된다. 수험생 본인과 동반자 1명은 정규운임인...",
+     "summary": [
+      "17일 항공 업계에 따르면 제주항공 의 수험생 할인 은 제주 에서 김포·인천·부산·청주·광주·대구를 오가는 노선과 김포~부산 등 국내선 전 노선에 적용된다.",
+      "수험생 본인과 동반자 1명은 정규운임인…"
+     ],
+     "link": "https://www.asiatime.co.kr/article/20261117500111",
+     "source": "네이버 뉴스",
+     "date": "2026-11-17T01:24:00.000Z",
+     "found": "2026-11-17",
+     "cards": [],
+     "airlines": [
+      "7C"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "제주항공 {특가말}",
+     "bodyAt": "2026-11-17",
+     "body": [
+      "수험생 본인과 동반자 1명은 정규운임인 '플렉스(FLEX)' 기준으로 각각 20%를 할인받을 수 있다.",
+      "할인 항공권은 다음 달 16일까지 예매할 수 있다.",
+      "탑승 기한은 내년 2월 25일까지이며 성수기 항공편은 할인 대상에서 제외된다.",
+      "예매할 때 플렉스 운임을 고른 뒤 탑승객 정보 입력 화면의 '개인 신분 할인' 항목에서 수험생 본인 또는 동반자 할인을 선택하면 된다.",
+      "동반자는 수험생과 같은 예약번호로 항공권을 구매해야 하며, 소아는 동반 할인 대상에서 제외된다.",
+      "탑승 당일에는 공항 수속 카운터에서 2027학년도 대입 지원서(수시 포함), 원서 접수증, 수능 수험표 가운데 하나를 원본으로 제시해야 한다.",
+      "제주항공은 2008년 대입 수험생을 대상으로 항공권 할인 행사를 처음 실시했다.",
+      "첫해에는 김포~제주, 청주~제주, 김해~제주 등 국내선 3개 노선에서 부모나 인솔교사와 함께 탑승한 수험생에게 운임의 50%를 할인했다.",
+      "2011년에는 수험생과 동반가족 1명에게 각각 30% 할인을 제공했다."
+     ]
+    },
+    {
+     "id": "amhKNXR4bnVZSTNQR2hvNjRieFZ0YjBCazNaOGktWWRwQmxYeFVsdmRTNTYzQUY0bF9YTTJNcnczclFaNGhYdHRLLU9ORk5xZ082U1ZkNW5UdUFVbGx1M3l3|제주항공, 수험생과 동반자 국내선 항공권 20% 할인",
+     "kind": "airline",
+     "title": "제주항공, 수험생과 동반자 국내선 항공권 20% 할인",
+     "desc": "제주항공, 수험생과 동반자 국내선 항공권 20% 할인 BBS불교방송",
+     "summary": [
+      "제주항공, 수험생과 동반자 국내선 항공권 20% 할인 BBS불교방송…"
+     ],
+     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5aUGhfQkhySnNBamhKNXR4bnVZSTNQR2hvNjRieFZ0YjBCazNaOGktWWRwQmxYeFVsdmRTNTYzQUY0bF9YTTJNcnczclFaNGhYdHRLLU9ORk5xZ082U1ZkNW5UdUFVbGx1M3l3?oc=5",
+     "source": "BBS불교방송",
+     "date": "2026-11-17T06:04:42.000Z",
+     "found": "2026-11-17",
+     "cards": [],
+     "airlines": [
+      "7C"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "제주항공 {특가말}",
+     "bodyAt": "2026-11-17",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "국내선 항공권 운임 할인",
+      "airlines": [
+       "제주항공"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": 20,
+      "seoul": null,
+      "at": "2026-11-17",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "s.google.com/rss/articles/CBMiQkFVX3lxTE1FQnNnRFJ2SUt2M1RESU80UmpPbmllOV9PR1RoNWZSYjJ0NDFLN1FmSTNia1pyU0RNU2NoeWNNajBuZw|제주항공, 수능 수험생·동반자 국내선 20% 할인",
+     "kind": "airline",
+     "title": "제주항공, 수능 수험생·동반자 국내선 20% 할인",
+     "desc": "제주항공, 수능 수험생·동반자 국내선 20% 할인 브레이크뉴스",
+     "summary": [
+      "제주항공, 수능 수험생·동반자 국내선 20% 할인 브레이크뉴스…"
+     ],
+     "link": "http://breaknews.com/1251594",
+     "source": "브레이크뉴스",
+     "date": "2026-11-17T04:35:00.000Z",
+     "found": "2026-11-17",
+     "cards": [],
+     "airlines": [
+      "7C"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "제주항공 {특가말}",
+     "bodyAt": "2026-11-17",
+     "body": [
+      "제주항공, 수능 수험생·동반자 국내선 20% 할인",
+      "제주항공은 2027학년도 대학수학능력시험 응시 수험생과 가족을 대상으로 국내선 항공권 할인 이벤트를 진행한다고 17일 밝혔다.",
+      "할인은 내년 2월 25일 탑승분까지 제주~김포·인천·부산·청주·광주·대구, 김포~부산 등 국내선 모든 노선에 적용된다.",
+      "수험생 본인과 동반자 1인은 정규운임(플렉스) 기준 20% 할인을 받을 수 있다.",
+      "항공권은 다음 달 16일까지 제주항공 홈페이지와 모바일 앱·웹에서만 예매할 수 있다.",
+      "예약 단계에서 '개인 신분 할인'을 선택한 뒤 '수험생 본인'과 '동반자 할인' 옵션을 고르면 된다.",
+      "탑승 당일에는 제주항공 카운터에서 2027학년도 대입 지원서(수시 포함), 원서 접수증, 수능 수험표 가운데 원본 1개를 제시해야 한다.",
+      "동반자 할인은 수험생과 같은 예약번호(PNR)의 성인에게만 적용된다.",
+      "The discount applies to flights through February 25 next year on all domestic routes, including Jeju to Gimpo, Incheon, Busan, Cheongju, Gwangju and Daegu, and Gimpo to Busan. Peak seasons are excluded. Test takers and…"
+     ],
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "국내선 할인, 국제선 운임 아님",
+      "airlines": [
+       "제주항공"
+      ],
+      "name": "수능 수험생·동반자 국내선 할인",
+      "book": {
+       "from": null,
+       "to": "2026-12-16"
+      },
+      "board": {
+       "from": null,
+       "to": "2027-02-25"
+      },
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-17",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "https://www.kmib.co.kr/article/20261117500759|제주항공 , 대입 수험생 국내선 할인",
+     "kind": "airline",
+     "title": "제주항공 , 대입 수험생 국내선 할인",
+     "desc": "할인 을 받기 위해서는 로그인 후 예약 단계에서 ‘개인 신분 할인 ’을 선택하고, 탑승자 정보 입력 단계에서 ‘수험생 본인’과 ‘동반자 할인 ’ 옵션을 선택하면 된다. 탑승 당일 제주항공 카운터에서 2027학년도...",
+     "summary": [
+      "할인 을 받기 위해서는 로그인 후 예약 단계에서 ‘개인 신분 할인 ’을 선택하고, 탑승자 정보 입력 단계에서 ‘수험생 본인’과 ‘동반자 할인 ’ 옵션을 선택하면 된다.",
+      "탑승 당일 제주항공 카운터에서 2027학년도…"
+     ],
+     "link": "https://www.kmib.co.kr/article/20261117500759",
+     "source": "네이버 뉴스",
+     "date": "2026-11-17T05:07:00.000Z",
+     "found": "2026-11-17",
+     "cards": [],
+     "airlines": [
+      "7C"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "제주항공 {특가말}",
+     "bodyAt": "2026-11-17",
+     "body": [
+      "할인을 받기 위해서는 로그인 후 예약 단계에서 ‘개인 신분 할인’을 선택하고, 탑승자 정보 입력 단계에서 ‘수험생 본인’과 ‘동반자 할인’ 옵션을 선택하면 된다.",
+      "탑승 당일 제주항공 카운터에서 2027학년도 대입 지원서(수시 포함), 원서 접수증, 수능 수험표 중 원본 1개를 제시해야 한다.",
+      "동반자 할인은 수험생 본인과 같은 예약번호(PNR)의 성인에 한해 적용된다."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "수험생 국내선 운임 할인",
+      "airlines": [
+       "제주항공"
+      ],
+      "name": "대입 수험생 국내선 할인",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-17",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "4WEwwNlphU2o1OWxoWTlxN0J0X2dvMTBPR0hCenVlWHRmNE05b3VXTC1QSWZiellsUFZLWFBNU1lWQ2IxWGpZb2VDTHJMUkxHUmV2RG9yb3YwUkRsbDlDNGo|제주항공, 수능 수험생 대상 국내선 항공권 20% 할인",
+     "kind": "airline",
+     "title": "제주항공, 수능 수험생 대상 국내선 항공권 20% 할인",
+     "desc": "제주항공, 수능 수험생 대상 국내선 항공권 20% 할인 뉴스1",
+     "summary": [
+      "제주항공, 수능 수험생 대상 국내선 항공권 20% 할인 뉴스1…"
+     ],
+     "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBqVm44WEwwNlphU2o1OWxoWTlxN0J0X2dvMTBPR0hCenVlWHRmNE05b3VXTC1QSWZiellsUFZLWFBNU1lWQ2IxWGpZb2VDTHJMUkxHUmV2RG9yb3YwUkRsbDlDNGo?oc=5",
+     "source": "뉴스1",
+     "date": "2026-11-17T00:19:32.000Z",
+     "found": "2026-11-17",
+     "cards": [],
+     "airlines": [
+      "7C"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "제주항공 {특가말}",
+     "bodyAt": "2026-11-17",
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "국내선 할인, 국제선 운임 아님",
+      "airlines": [
+       "제주항공"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-17",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "xQS1pU1E3YXF2RFJDY1FTVFpqUFNjSXZhcXhNV0xPY3BSQkhzY1ZmOG5qZDVfemhTQ3NJeUtGMnJBcktMWFRIODhLODcyNkNBaHdGN1FIVXlIUWNLQ09xWE0|제주항공, 수험생·동반자 국내선 항공권 20% 할인",
+     "kind": "airline",
+     "title": "제주항공, 수험생·동반자 국내선 항공권 20% 할인",
+     "desc": "제주항공, 수험생·동반자 국내선 항공권 20% 할인 Chosunbiz",
+     "summary": [
+      "제주항공, 수험생·동반자 국내선 항공권 20% 할인 Chosunbiz…"
+     ],
+     "link": "https://biz.chosun.com/industry/company/2026/11/17/PNU6HTWWZBF5LEX2MJNZH7CKQA/",
+     "source": "Chosunbiz",
+     "date": "2026-11-17T00:31:00.000Z",
+     "found": "2026-11-17",
+     "cards": [],
+     "airlines": [
+      "7C"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "제주항공 {특가말}",
+     "bodyAt": "2026-11-17",
+     "body": [
+      "제주항공, 수험생·동반자 국내선 항공권 20% 할인",
+      "입력 2026.11.17. 09:31",
+      "제주항공은 2027학년도 대학수학능력시험 수험생과 동반자 1명을 대상으로 국내선 항공권을 20% 할인한다고 17일 밝혔다.",
+      "내년 2월 25일까지 제주~김포·인천·부산·청주·광주·대구, 김포~부산 등 국내선 전 노선에서 정규운임(플렉스)의 20%를 할인받을 수 있다.",
+      "항공권은 12월 16일까지 제주항공 홈페이지나 모바일 앱·웹에서 예매해야 한다.",
+      "회원 가입 후 예약 과정에서 '개인 신분 할인'을 선택하고, 탑승자 정보 입력 단계에서 수험생 본인 또는 동반자 할인 항목을 선택하면 된다.",
+      "탑승 당일에는 공항 카운터에서 2027학년도 대입 지원서(수시 포함), 원서 접수증, 수능 수험표 중 하나를 원본으로 제시해야 한다.",
+      "동반자는 수험생과 같은 예약번호로 항공권을 예매한 성인에 한해 할인받을 수 있다."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "국내선 할인, 국제선 아님",
+      "airlines": [
+       "제주항공"
+      ],
+      "name": "수험생·동반자 국내선 할인",
+      "book": {
+       "from": null,
+       "to": "2026-12-16"
+      },
+      "board": {
+       "from": null,
+       "to": "2027-02-25"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 20,
+      "seoul": true,
+      "at": "2026-11-17",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "ZUdlBsc2g1dDY2Y1hkZGpKSjY4U1JRVkFwSk8zeS1xRnFtVjRMakJhWkl4ZklSaUFCbTJzY0JoQUJHNlFpMGJWbGlvYlp5dGdPN3l5WmVOeU5haVZ0QkZBQw|제주항공, 수험생·가족 국내선 항공권 20% 할인",
+     "kind": "airline",
+     "title": "제주항공, 수험생·가족 국내선 항공권 20% 할인",
+     "desc": "제주항공, 수험생·가족 국내선 항공권 20% 할인 스포츠한국",
+     "summary": [
+      "제주항공, 수험생·가족 국내선 항공권 20% 할인 스포츠한국…"
+     ],
+     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9jRkRPdlZHa0VuejN3cmZVd1VqMS0wZVVNTFJLeHlCZzUwQkNseTNWUGFnMklLRFpzQkR5MmtieWJEbkpBb0k1ekNYNG1Xd0haMWVQaWZXRFJTbDBvTkU5SU1jLWxRVlRMNVRoTUdxRDHSAXRBVV95cUxQTF9uQlItNTFkS2dMU0J2VG9vWDZUdlBsc2g1dDY2Y1hkZGpKSjY4U1JRVkFwSk8zeS1xRnFtVjRMakJhWkl4ZklSaUFCbTJzY0JoQUJHNlFpMGJWbGlvYlp5dGdPN3l5WmVOeU5haVZ0QkZBQw?oc=5",
+     "source": "스포츠한국",
+     "date": "2026-11-17T00:34:53.000Z",
+     "found": "2026-11-17",
+     "cards": [],
+     "airlines": [
+      "7C"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "제주항공 {특가말}",
+     "bodyAt": "2026-11-17",
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "국내선 항공권 할인이라 제외",
+      "airlines": [
+       "제주항공"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-17",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "Qxc2doeDF2M0taYUxKampFNDBieVg3ZWVwOU5UZXFCSEYxN1ZlX0JVWmNrNEMzT2NudWRnR0ZmMUtZZUtROG9RUTdCb1NrN3JKbmwyaWNTUXphUy0wVW16dg|제주항공, 수험생 대상 국내선 항공권 20% 할인",
+     "kind": "airline",
+     "title": "제주항공, 수험생 대상 국내선 항공권 20% 할인",
+     "desc": "제주항공, 수험생 대상 국내선 항공권 20% 할인 뉴스락",
+     "summary": [
+      "제주항공, 수험생 대상 국내선 항공권 20% 할인 뉴스락…"
+     ],
+     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBabUI0MHd1ZHJEZ3Qxc2doeDF2M0taYUxKampFNDBieVg3ZWVwOU5UZXFCSEYxN1ZlX0JVWmNrNEMzT2NudWRnR0ZmMUtZZUtROG9RUTdCb1NrN3JKbmwyaWNTUXphUy0wVW16dg?oc=5",
+     "source": "뉴스락",
+     "date": "2026-11-17T02:16:42.000Z",
+     "found": "2026-11-17",
+     "cards": [],
+     "airlines": [
+      "7C"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "제주항공 {특가말}",
+     "bodyAt": "2026-11-17",
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "국내선 할인, 국제선 운임 아님",
+      "airlines": [
+       "제주항공"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-17",
+      "model": "deepseek-v4-flash"
+     }
+    }
+   ]
+  },
+  {
    "id": "c:https://cafe.naver.com/fobn/164365|트리니티항공 ] ✈️11월 더블 혜택! 동남아 항공 권 최대 25% 할인",
    "kind": "airline",
    "community": true,
@@ -2301,16 +3434,16 @@
    "lastFound": "2026-11-17"
   },
   {
-   "id": "1WX2VQX2FZdkNjVGRrZk1jQV82YW5zeWFoTno4Q3c0TkFNY2RWbGFZS0dEWGgwSjBKMThyWVNjdmdwZW43ZXV0R1IxSkNGU3BMNFVQZjgzM1A0NFJaei1vUQ|트리니티항공, 태국정부관광청과 공동 프로모션...항공권 최대 20% 할인",
+   "id": "Vtb1JYX3gxSERtWnVKNHJtQlQ0V2lFMkRPTlpjS1lrc0NoQ0R0b0toOUdLWlpGUmZQbGQ1RkV0WU1FX1E3b1BXZmh6TWw2UC1iVkhzZG1lU0RKUlVNYXYwZw|트리니티항공, 태국관광청과 손잡고 겨울 여행객 공략…항공권 할인 프로모션",
    "kind": "airline",
-   "title": "트리니티항공, 태국정부관광청과 공동 프로모션...항공권 최대 20% 할인",
-   "desc": "트리니티항공, 태국정부관광청과 공동 프로모션...항공권 최대 20% 할인 중앙이코노미뉴스",
+   "title": "트리니티항공, 태국관광청과 손잡고 겨울 여행객 공략…항공권 할인 프로모션",
+   "desc": "트리니티항공, 태국관광청과 손잡고 겨울 여행객 공략…항공권 할인 프로모션 글로벌이코노믹",
    "summary": [
-    "트리니티항공, 태국정부관광청과 공동 프로모션...항공권 최대 20% 할인 중앙이코노미뉴스…"
+    "트리니티항공, 태국관광청과 손잡고 겨울 여행객 공략…항공권 할인 프로모션 글로벌이코노믹…"
    ],
-   "link": "https://www.joongangenews.com/news/articleView.html?idxno=564522",
-   "source": "중앙이코노미뉴스",
-   "date": "2026-11-17T07:05:00.000Z",
+   "link": "https://www.g-enews.com/article/Industry/2026/11/202611171622482710ea14faf6f5_1",
+   "source": "글로벌이코노믹",
+   "date": "2026-11-17T07:29:00.000Z",
    "found": "2026-11-17",
    "cards": [],
    "airlines": [
@@ -2330,26 +3463,24 @@
    "query": "트리니티항공 {특가말}",
    "bodyAt": "2026-11-17",
    "body": [
-    "트리니티항공, 태국정부관광청과 공동 프로모션...항공권 최대 20% 할인",
-    "인천·대구~방콕, 인천~치앙마이 노선 대상...12월 13일까지 진행",
-    "최대 3만원 추가 할인 쿠폰 제공...내년 3월 27일까지 탑승 가능",
-    "[중앙이코노미뉴스 송태원] 트리니티항공이 태국정부관광청과 손잡고 태국 주요 노선의 항공권 할인 프로모션을 진행한다.",
-    "겨울철 태국 여행 수요를 겨냥해 최대 20% 할인 혜택과 추가 쿠폰을 제공하며 고객 유치에 나선다는 계획이다.",
-    "트리니티항공은 태국정부관광청과 공동으로 방콕과 치앙마이 노선을 대상으로 한 항공권 할인 프로모션을 진행한다고 17일 밝혔다.",
-    "이번 프로모션은 오는 12월 13일까지 진행되며 대상 노선은 인천~방콕, 대구~방콕, 인천~치앙마이 등 3개 노선이다.",
-    "탑승 기간은 내년 3월 27일까지다.",
-    "프로모션 기간에는 선착순 특가 항공권과 함께 할인코드를 제공해 최대 20% 할인된 가격에 항공권을 구매할 수 있다.",
-    "결제금액에 따라 사용할 수 있는 최대 3만원의 추가 할인 쿠폰도 제공한다.",
-    "특히 11월부터 시작되는 건기에는 비교적 쾌적한 날씨가 이어져 겨울철 해외여행지로 인기가 높다.",
-    "겨울철은 국내 여행객들이 따뜻한 동남아 지역을 찾는 시기로 항공사들이 관련 노선의 수요 확보에 나서는 기간이기도 하다.",
-    "트리니티항공은 이번 행사 외에도 다양한 회원 혜택을 운영하고 있다.",
-    "신규 회원 가입 고객에게는 웰컴 쿠폰팩을 제공하며 발권 수수료 면제, 특가 소식 알림 서비스, 회원 전용 할인코드 등의 혜택도 마련했다.",
-    "트리니티항공 관계자는 \"트리니티항공을 이용하여 태국 여행을 준비하는 고객분들께 한층 풍성한 혜택을 제공하고자 태국정부관광청과 함께 이번 공동 프로모션을 마련했다\"며 \"앞으로도 안전운항을 최우선으로 하여 현지 관광청 및 유관 기관과의 협력을 지속 강화해 여행지 특색을 살린 차별화된 프로모션을 추진해 나가겠다\"고 말했다."
+    "트리니티항공, 태국관광청과 손잡고 겨울 여행객 공략…항공권 할인 프로모션",
+    "인천·대구 출발 방콕·치앙마이 3개 노선 대상…12월 13일까지 진행",
+    "내년 3월 27일까지 탑승 가능…최대 3만원 할인쿠폰도 제공",
+    "트리니티항공이 현지 관광기관과 공동 마케팅을 추진하며 겨울철 국제선 여객 수요 확보에 나섰다.",
+    "트리니티항공은 태국정부관광청과 함께 오는 12월 13일까지 태국 주요 노선을 대상으로 공동 프로모션을 진행한다고 17일 밝혔다.",
+    "대상 노선은 인천-방콕과 대구-방콕, 인천-치앙마이 등 3개 노선이며 탑승 기간은 내년 3월 27일 까지다.",
+    "트리니티항공은 행사 기간 선착순 특가 항공권을 판매하고 최대 20% 할인받을 수 있는 프로모션 코드를 제공한다.",
+    "결제금액에 따라 사용할 수 있는 최대 3만원 상당의 할인쿠폰도 마련했다.",
+    "11월부터 시작되는 태국의 건기는 쾌적한 날씨로 낮 시간대 도심 관광부터 야간 휴양까지 즐기기에 가장 좋은 시기로 꼽힌다.",
+    "트리니티항공 관계자는 “ 트리니티항공을 이용하여 태국 여행을 준비하는 고객분들께 한층 풍성한 혜택을 제공하고자 태국정부관광청과 함께 이번 공동 프로모션을 마련했다 ” 며 “ 앞으로도 안전운항을 최우선으로 하여 현지 관광청 · 유관 기관과의 협력을 지속 강화해 여행지 특색을 살린 차별화된 프로모션을 추진해 나가겠다 ” 고 말했다 .",
+    "IMF, 韓 성장률 전망치 3.9%로 상향… 반도체 호황으로 2년 연속 3%대 성장",
+    "코스피, 9개월 만에 5000선 붕괴… 외인 1.5조 매도세에 2.59% 하락",
+    "韓 OLED 출하량, 中 제치고 세계 1위… 금액 기준 점유율 68.3%"
    ],
    "ai": {
     "v": 2,
     "promo": true,
-    "why": "항공권 최대 20% 할인 프로모션",
+    "why": "항공사 항공권 할인 프로모션",
     "airlines": [
      "트리니티항공"
     ],
@@ -2372,69 +3503,6 @@
    "lastDate": "2026-11-17T08:59:01.000Z",
    "lastFound": "2026-11-17",
    "more": [
-    {
-     "id": "Vtb1JYX3gxSERtWnVKNHJtQlQ0V2lFMkRPTlpjS1lrc0NoQ0R0b0toOUdLWlpGUmZQbGQ1RkV0WU1FX1E3b1BXZmh6TWw2UC1iVkhzZG1lU0RKUlVNYXYwZw|트리니티항공, 태국관광청과 손잡고 겨울 여행객 공략…항공권 할인 프로모션",
-     "kind": "airline",
-     "title": "트리니티항공, 태국관광청과 손잡고 겨울 여행객 공략…항공권 할인 프로모션",
-     "desc": "트리니티항공, 태국관광청과 손잡고 겨울 여행객 공략…항공권 할인 프로모션 글로벌이코노믹",
-     "summary": [
-      "트리니티항공, 태국관광청과 손잡고 겨울 여행객 공략…항공권 할인 프로모션 글로벌이코노믹…"
-     ],
-     "link": "https://www.g-enews.com/article/Industry/2026/11/202611171622482710ea14faf6f5_1",
-     "source": "글로벌이코노믹",
-     "date": "2026-11-17T07:29:00.000Z",
-     "found": "2026-11-17",
-     "cards": [],
-     "airlines": [
-      "TW"
-     ],
-     "countries": [
-      "태국"
-     ],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "트리니티항공 {특가말}",
-     "bodyAt": "2026-11-17",
-     "body": [
-      "트리니티항공, 태국관광청과 손잡고 겨울 여행객 공략…항공권 할인 프로모션",
-      "인천·대구 출발 방콕·치앙마이 3개 노선 대상…12월 13일까지 진행",
-      "내년 3월 27일까지 탑승 가능…최대 3만원 할인쿠폰도 제공",
-      "트리니티항공이 현지 관광기관과 공동 마케팅을 추진하며 겨울철 국제선 여객 수요 확보에 나섰다.",
-      "트리니티항공은 태국정부관광청과 함께 오는 12월 13일까지 태국 주요 노선을 대상으로 공동 프로모션을 진행한다고 17일 밝혔다.",
-      "대상 노선은 인천-방콕과 대구-방콕, 인천-치앙마이 등 3개 노선이며 탑승 기간은 내년 3월 27일 까지다.",
-      "트리니티항공은 행사 기간 선착순 특가 항공권을 판매하고 최대 20% 할인받을 수 있는 프로모션 코드를 제공한다.",
-      "결제금액에 따라 사용할 수 있는 최대 3만원 상당의 할인쿠폰도 마련했다.",
-      "11월부터 시작되는 태국의 건기는 쾌적한 날씨로 낮 시간대 도심 관광부터 야간 휴양까지 즐기기에 가장 좋은 시기로 꼽힌다.",
-      "트리니티항공 관계자는 “ 트리니티항공을 이용하여 태국 여행을 준비하는 고객분들께 한층 풍성한 혜택을 제공하고자 태국정부관광청과 함께 이번 공동 프로모션을 마련했다 ” 며 “ 앞으로도 안전운항을 최우선으로 하여 현지 관광청 · 유관 기관과의 협력을 지속 강화해 여행지 특색을 살린 차별화된 프로모션을 추진해 나가겠다 ” 고 말했다 .",
-      "IMF, 韓 성장률 전망치 3.9%로 상향… 반도체 호황으로 2년 연속 3%대 성장",
-      "코스피, 9개월 만에 5000선 붕괴… 외인 1.5조 매도세에 2.59% 하락",
-      "韓 OLED 출하량, 中 제치고 세계 1위… 금액 기준 점유율 68.3%"
-     ],
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "항공사 항공권 할인 프로모션",
-      "airlines": [
-       "트리니티항공"
-      ],
-      "name": "태국정부관광청 공동 프로모션",
-      "book": {
-       "from": null,
-       "to": "2026-12-13"
-      },
-      "board": {
-       "from": null,
-       "to": "2027-03-27"
-      },
-      "price": null,
-      "trip": null,
-      "pct": 20,
-      "seoul": true,
-      "at": "2026-11-17",
-      "model": "deepseek-v4-flash"
-     }
-    },
     {
      "id": "xTE9kREt3R1RvWGkwWlRkUDhic0QtanQ4LWI1Y0wwUDJ3VWI3SmxIT2JPejh4Ykt2NXNrWXFSUnRhX0F5SzFYbjFucEVJQkhuRVRyQ3BvREZQeGhTU0dfWEE|트리니티항공, 태국 노선 최대 20% 할인…3만원 쿠폰도",
      "kind": "airline",
@@ -2908,6 +3976,76 @@
        "트리니티항공"
       ],
       "name": "태국관광청 공동 프로모션",
+      "book": {
+       "from": null,
+       "to": "2026-12-13"
+      },
+      "board": {
+       "from": null,
+       "to": "2027-03-27"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 20,
+      "seoul": true,
+      "at": "2026-11-17",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "1WX2VQX2FZdkNjVGRrZk1jQV82YW5zeWFoTno4Q3c0TkFNY2RWbGFZS0dEWGgwSjBKMThyWVNjdmdwZW43ZXV0R1IxSkNGU3BMNFVQZjgzM1A0NFJaei1vUQ|트리니티항공, 태국정부관광청과 공동 프로모션...항공권 최대 20% 할인",
+     "kind": "airline",
+     "title": "트리니티항공, 태국정부관광청과 공동 프로모션...항공권 최대 20% 할인",
+     "desc": "트리니티항공, 태국정부관광청과 공동 프로모션...항공권 최대 20% 할인 중앙이코노미뉴스",
+     "summary": [
+      "트리니티항공, 태국정부관광청과 공동 프로모션...항공권 최대 20% 할인 중앙이코노미뉴스…"
+     ],
+     "link": "https://www.joongangenews.com/news/articleView.html?idxno=564522",
+     "source": "중앙이코노미뉴스",
+     "date": "2026-11-17T07:05:00.000Z",
+     "found": "2026-11-17",
+     "cards": [],
+     "airlines": [
+      "TW",
+      "WE"
+     ],
+     "countries": [
+      "태국",
+      "베트남",
+      "일본",
+      "중국",
+      "미국"
+     ],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "트리니티항공 {특가말}",
+     "bodyAt": "2026-11-17",
+     "body": [
+      "트리니티항공, 태국정부관광청과 공동 프로모션...항공권 최대 20% 할인",
+      "인천·대구~방콕, 인천~치앙마이 노선 대상...12월 13일까지 진행",
+      "최대 3만원 추가 할인 쿠폰 제공...내년 3월 27일까지 탑승 가능",
+      "[중앙이코노미뉴스 송태원] 트리니티항공이 태국정부관광청과 손잡고 태국 주요 노선의 항공권 할인 프로모션을 진행한다.",
+      "겨울철 태국 여행 수요를 겨냥해 최대 20% 할인 혜택과 추가 쿠폰을 제공하며 고객 유치에 나선다는 계획이다.",
+      "트리니티항공은 태국정부관광청과 공동으로 방콕과 치앙마이 노선을 대상으로 한 항공권 할인 프로모션을 진행한다고 17일 밝혔다.",
+      "이번 프로모션은 오는 12월 13일까지 진행되며 대상 노선은 인천~방콕, 대구~방콕, 인천~치앙마이 등 3개 노선이다.",
+      "탑승 기간은 내년 3월 27일까지다.",
+      "프로모션 기간에는 선착순 특가 항공권과 함께 할인코드를 제공해 최대 20% 할인된 가격에 항공권을 구매할 수 있다.",
+      "결제금액에 따라 사용할 수 있는 최대 3만원의 추가 할인 쿠폰도 제공한다.",
+      "특히 11월부터 시작되는 건기에는 비교적 쾌적한 날씨가 이어져 겨울철 해외여행지로 인기가 높다.",
+      "겨울철은 국내 여행객들이 따뜻한 동남아 지역을 찾는 시기로 항공사들이 관련 노선의 수요 확보에 나서는 기간이기도 하다.",
+      "트리니티항공은 이번 행사 외에도 다양한 회원 혜택을 운영하고 있다.",
+      "신규 회원 가입 고객에게는 웰컴 쿠폰팩을 제공하며 발권 수수료 면제, 특가 소식 알림 서비스, 회원 전용 할인코드 등의 혜택도 마련했다.",
+      "트리니티항공 관계자는 \"트리니티항공을 이용하여 태국 여행을 준비하는 고객분들께 한층 풍성한 혜택을 제공하고자 태국정부관광청과 함께 이번 공동 프로모션을 마련했다\"며 \"앞으로도 안전운항을 최우선으로 하여 현지 관광청 및 유관 기관과의 협력을 지속 강화해 여행지 특색을 살린 차별화된 프로모션을 추진해 나가겠다\"고 말했다."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "항공권 최대 20% 할인 프로모션",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "태국정부관광청 공동 프로모션",
       "book": {
        "from": null,
        "to": "2026-12-13"
@@ -5035,999 +6173,6 @@
    },
    "lastDate": "2026-11-17T07:36:00.000Z",
    "lastFound": "2026-11-17"
-  },
-  {
-   "id": "https://www.headlinejeju.co.kr/news/articleView.html|제주항공, 대입 수험생·동반자 국내선 항공권 20% 할인",
-   "kind": "airline",
-   "title": "제주항공, 대입 수험생·동반자 국내선 항공권 20% 할인",
-   "desc": "제주항공은 2027학년도 대학수학능력시험 및 대학별 전형에 응시하는 수험생과 가족을 위해 국내선 항공권 할인 혜택을 제공한다고 17일 밝혔다.할인 혜택은 탑승일 기준으로 내년 2월 25일(성수기 제외)까지 제주~김포.인천.부산.청주.광주.대구, 김포~부산 등 국내선 모든 노선에 적용된다. 수험생 본인과 동반자 1인에 한해 정규운임(플렉스) 기준 20% 할인 ...",
-   "summary": [
-    "제주항공은 2027학년도 대학수학능력시험 및 대학별 전형에 응시하는 수험생과 가족을 위해 국내선 항공권 할인 혜택을 제공한다고 17일 밝혔다.",
-    "할인 혜택은 탑승일 기준으로 내년 2월 25일(성수기 제외)까지 제주~김포.인천.부산.청주.광주.대구, 김포~부산 등 국내선 모든 노선에 적용된다.",
-    "수험생 본인과 동반자 1인에 한해 정규운임(플렉스) 기준 20% 할인…"
-   ],
-   "link": "https://www.headlinejeju.co.kr/news/articleView.html?idxno=602270",
-   "source": "헤드라인제주",
-   "date": "2026-11-16T15:21:00.000Z",
-   "found": "2026-11-17",
-   "cards": [],
-   "airlines": [
-    "7C"
-   ],
-   "countries": [],
-   "allRoutes": true,
-   "routes": [],
-   "price": null,
-   "query": "제주항공 {특가말}",
-   "bodyAt": "2026-11-17",
-   "body": [
-    "제주항공은 2027학년도 대학수학능력시험 및 대학별 전형에 응시하는 수험생과 가족을 위해 국내선 항공권 할인 혜택을 제공한다고 17일 밝혔다.",
-    "할인 혜택은 탑승일 기준으로 내년 2월 25일(성수기 제외)까지 제주~김포.인천.부산.청주.광주.대구, 김포~부산 등 국내선 모든 노선에 적용된다.",
-    "수험생 본인과 동반자 1인에 한해 정규운임(플렉스) 기준 20% 할인을 받을 수 있다.",
-    "항공권 예매는 오는 12월 16일까지 제주항공 홈페이지, 모바일 앱과 웹에서만 가능하다.",
-    "회원 가입 및 로그인 후 예약 단계에서 ‘개인 신분 할인’을 선택하고, 탑승자 정보 입력 단계에서 ‘수험생 본인’과 ‘동반자 할인’ 옵션을 선택하면 된다.",
-    "탑승 당일 제주항공 카운터에서 2027학년도 대입 지원서(수시 포함), 원서 접수증, 수능 수험표 중 원본 1개를 제시해야 한다.",
-    "동반자 할인은 수험생 본인과 같은 예약번호(PNR)의 성인에 한해 적용된다.",
-    "제주항공은 숙박권 추첨 이벤트와 제휴 관광지 최대 25% 할인 등 다양한 혜택도 제공한다."
-   ],
-   "ai": {
-    "v": 2,
-    "promo": true,
-    "why": "국내선 항공권 20% 할인 프로모션",
-    "airlines": [
-     "제주항공"
-    ],
-    "name": "수험생·동반자 국내선 할인",
-    "book": {
-     "from": null,
-     "to": "2026-12-16"
-    },
-    "board": {
-     "from": null,
-     "to": "2027-02-25"
-    },
-    "price": null,
-    "trip": null,
-    "pct": 20,
-    "seoul": true,
-    "at": "2026-11-17",
-    "model": "deepseek-v4-flash"
-   },
-   "lastDate": "2026-11-17T07:17:00.000Z",
-   "lastFound": "2026-11-17",
-   "more": [
-    {
-     "id": "%EC%83%9D-%EB%8F%99%EB%B0%98-1%EC%9D%B8-%EA%B5%AD%EB%82%B4%EC%84%A0-%EC%9A%B4%EC%9E%84-20-%ED%95%A0%EC%9D%B8/ar-AA2hA2PR|제주항공, 대입 수험생·동반 1인 국내선 운임 20% 할인",
-     "kind": "airline",
-     "title": "제주항공, 대입 수험생·동반 1인 국내선 운임 20% 할인",
-     "desc": "국내선 'FLEX' 운임 한정…동반자는 같은 예약번호로 발권 12월 16일까지 발권…탑승은 내년 2월 25일까지, 성수기 제외 2008년부터 시작된 할인 혜택…노선부터 동반자까지 조건 다양 [아시아타임즈=옥한빈 기자] 제주항공이 2027학년도 대입 수험생과 동반자 1명에게 국내선 항공권을 20% 할인한다. 수능 이후 대학별 전형에 응시하는 수험생과 가족의 ...",
-     "summary": [
-      "국내선 'FLEX' 운임 한정…동반자는 같은 예약번호로 발권 12월 16일까지 발권…탑승은 내년 2월 25일까지, 성수기 제외 2008년부터 시작된 할인 혜택…노선부터 동반자까지 조건 다양 [아시아타임즈=옥한빈 기자] 제주항공이 …",
-      "수능 이후 대학별 전형에 응시하는 수험생과 가족의…"
-     ],
-     "link": "https://www.msn.com/ko-kr/news/other/%EC%A0%9C%EC%A3%BC%ED%95%AD%EA%B3%B5-%EB%8C%80%EC%9E%85-%EC%88%98%ED%97%98%EC%83%9D-%EB%8F%99%EB%B0%98-1%EC%9D%B8-%EA%B5%AD%EB%82%B4%EC%84%A0-%EC%9A%B4%EC%9E%84-20-%ED%95%A0%EC%9D%B8/ar-AA2hA2PR",
-     "source": "아시아타임즈 on MSN",
-     "date": "2026-11-16T17:22:14.000Z",
-     "found": "2026-11-17",
-     "cards": [],
-     "airlines": [
-      "7C"
-     ],
-     "countries": [],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "제주항공 인도네시아 {특가말}",
-     "bodyAt": "2026-11-17",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "국내선 운임 20% 할인 프로모션",
-      "airlines": [
-       "제주항공"
-      ],
-      "name": null,
-      "book": {
-       "from": null,
-       "to": "2026-12-16"
-      },
-      "board": {
-       "from": null,
-       "to": "2027-02-25"
-      },
-      "price": null,
-      "trip": null,
-      "pct": 20,
-      "seoul": null,
-      "at": "2026-11-17",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "https://www.kbmaeil.com/article/20261117500113|제주항공, 2027학년도 대입 수험생 국내선 항공권 20% 할인",
-     "kind": "airline",
-     "title": "제주항공, 2027학년도 대입 수험생 국내선 항공권 20% 할인",
-     "desc": "제주항공이 2027학년도 대학수학능력시험에 응시한 수험생과 가족을 대상으로 국내선 항공권 할인 이벤트를 진행한다. 제주항공은 오는 19일 실시되는 대학수학능력시험과 대학별 전형에 응시하는 수험생을 응원하고, 수험생과 가족의 국내 이동 편의를 높이기 위해 이번 행사를 마 ...",
-     "summary": [
-      "제주항공이 2027학년도 대학수학능력시험에 응시한 수험생과 가족을 대상으로 국내선 항공권 할인 이벤트를 진행한다.",
-      "제주항공은 오는 19일 실시되는 대학수학능력시험과 대학별 전형에 응시하는 수험생을 응원하고, 수험생과 가족의 국내 이동 편의를 높이기 위해 이번 행사를 마…"
-     ],
-     "link": "https://www.kbmaeil.com/article/20261117500113",
-     "source": "경북매일",
-     "date": "2026-11-17T01:00:00.000Z",
-     "found": "2026-11-17",
-     "cards": [],
-     "airlines": [
-      "7C"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "제주항공 {특가말}",
-     "bodyAt": "2026-11-17",
-     "body": [
-      "제주항공이 2027학년도 대학수학능력시험에 응시한 수험생과 가족을 대상으로 국내선 항공권 할인 이벤트를 진행한다.",
-      "제주항공은 오는 19일 실시되는 대학수학능력시험과 대학별 전형에 응시하는 수험생을 응원하고, 수험생과 가족의 국내 이동 편의를 높이기 위해 이번 행사를 마련했다.",
-      "할인 혜택은 탑승일 기준 2027년 2월 25일까지 적용되며, 성수기는 제외된다.",
-      "할인율은 정규운임인 플렉스 운임 기준 20%로, 수험생 본인과 동반자 1명까지 혜택을 받을 수 있다.",
-      "항공권은 오는 12월 16일까지 제주항공 홈페이지와 모바일 앱·웹을 통해서만 예매할 수 있다.",
-      "회원 가입 및 로그인 후 예약 단계에서 ‘개인 신분 할인’을 선택하고, 탑승자 정보 입력 단계에서 ‘수험생 본인’과 ‘동반자 할인’ 항목을 지정하면 된다.",
-      "할인을 적용받으려면 탑승 당일 제주항공 카운터에서 2027학년도 대입 지원서(수시 포함), 원서 접수증, 수능 수험표 가운데 원본 1개를 제시해야 한다.",
-      "동반자 할인은 수험생 본인과 동일한 예약번호(PNR)로 예약한 성인 1명에게만 적용된다.",
-      "제주항공은 항공권 할인 외에도 숙박권 추첨 이벤트와 제휴 관광지 최대 25% 할인 등 추가 혜택을 제공한다.",
-      "한편 제주항공은 지난 9월 한국능률협회컨설팅이 주관한 ‘2026 한국산업의 고객만족도(KCSI)’ 조사에서 국내선 항공 부문 1위에 선정됐다."
-     ],
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "국내선 항공권 운임 20% 할인",
-      "airlines": [
-       "제주항공"
-      ],
-      "name": "수험생 국내선 할인",
-      "book": {
-       "from": null,
-       "to": "2026-12-16"
-      },
-      "board": {
-       "from": null,
-       "to": "2027-02-25"
-      },
-      "price": null,
-      "trip": null,
-      "pct": 20,
-      "seoul": null,
-      "at": "2026-11-17",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "l1dXl5aXp5UTM5M1p5T0cwRmljRXpIdEhaa3JLYjZaTHg1UjVZYzlyZUEtWmtqd0FyclJiMkoySkV5Njl1UWhkNTNqREpSRF9YVmJlS01UN29FQlc5NjlMYw|제주항공, 수험생과 동반자 1인에 국내선 정규운임 20% 할인 제공",
-     "kind": "airline",
-     "title": "제주항공, 수험생과 동반자 1인에 국내선 정규운임 20% 할인 제공",
-     "desc": "제주항공, 수험생과 동반자 1인에 국내선 정규운임 20% 할인 제공 이코노미사이언스",
-     "summary": [
-      "제주항공, 수험생과 동반자 1인에 국내선 정규운임 20% 할인 제공 이코노미사이언스…"
-     ],
-     "link": "https://www.e-science.co.kr/news/articleView.html?idxno=139937",
-     "source": "이코노미사이언스",
-     "date": "2026-11-17T01:33:07.000Z",
-     "found": "2026-11-17",
-     "cards": [],
-     "airlines": [
-      "7C"
-     ],
-     "countries": [],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "제주항공 {특가말}",
-     "bodyAt": "2026-11-17",
-     "body": [
-      "수험생뿐 아니라 가족의 이동 비용까지 덜어주는 국내선 항공권 할인이 나왔다.",
-      "제주항공은 2027학년도 대학수학능력시험 응시자와 동반자 1인에게 국내선 정규운임(플렉스) 기준 20%를 깎아주는 이벤트를 시작했다고 밝혔다.",
-      "대상은 11월 19일 치러지는 수능과 대학별 전형에 응시하는 수험생이다.",
-      "탑승일 기준 2027년 2월 25일까지(성수기 제외) 제주~김포·인천·부산·청주·광주·대구, 김포~부산 등 국내선 모든 노선에서 쓸 수 있다.",
-      "예매는 12월 16일까지 자사 홈페이지와 모바일 앱, 웹에서만 가능하다.",
-      "회원 가입과 로그인을 마친 뒤 예약 단계에서 '개인 신분 할인'을 고르고, 탑승자 정보 입력 단계에서 '수험생 본인'과 '동반자 할인' 옵션을 선택하면 된다.",
-      "탑승 당일에는 제주항공 카운터에서 증빙을 내야 한다.",
-      "동반자 할인은 수험생 본인과 같은 예약번호(PNR)로 예약한 성인에게만 적용된다.",
-      "수시 지원서와 원서 접수증까지 증빙으로 인정해 수능 당일에 그치지 않고 대학별 전형 일정 전반의 이동 수요를 포괄하는 구조다.",
-      "숙박권 추첨 이벤트와 제휴 관광지 최대 25% 할인 등 부가 혜택도 마련했다.",
-      "제주항공은 지난 9월 한국능률협회컨설팅이 주관한 '2026 한국산업의 고객만족도(KCSI)' 조사에서 국내선항공 부문 1위에 선정됐다."
-     ],
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "국내선 항공권 운임 20% 할인",
-      "airlines": [
-       "제주항공"
-      ],
-      "name": "수험생 동반자 할인",
-      "book": {
-       "from": null,
-       "to": "2026-12-16"
-      },
-      "board": {
-       "from": null,
-       "to": "2027-02-25"
-      },
-      "price": null,
-      "trip": null,
-      "pct": 20,
-      "seoul": true,
-      "at": "2026-11-17",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "CNkJndzFqdkpwY0hLNWJyZml1VnAzUkxURXR5THdMUlRFTjhWQ3R1bF8wQkJFbUdUY3o0Vkg3SzM0NWkxblhERTdGUmxQQ082S0lDS29XSVpSWms4cTNRTjk|제주항공, 수험생 국내선 항공권 20% 할인…동반 1인도 혜택",
-     "kind": "airline",
-     "title": "제주항공, 수험생 국내선 항공권 20% 할인…동반 1인도 혜택",
-     "desc": "제주항공, 수험생 국내선 항공권 20% 할인…동반 1인도 혜택 서울경제TV",
-     "summary": [
-      "제주항공, 수험생 국내선 항공권 20% 할인…동반 1인도 혜택 서울경제TV…"
-     ],
-     "link": "https://www.sentv.co.kr/article/view/sentv202611170089",
-     "source": "서울경제TV",
-     "date": "2026-11-17T01:37:33.000Z",
-     "found": "2026-11-17",
-     "cards": [],
-     "airlines": [
-      "7C"
-     ],
-     "countries": [],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "제주항공 {특가말}",
-     "bodyAt": "2026-11-17",
-     "body": [
-      "제주항공, 수험생 국내선 항공권 20% 할인…동반 1인도 혜택",
-      "국내선 전 노선 정규운임 기준 20% 할인",
-      "12월 16일까지 홈페이지·모바일서 예매",
-      "[서울경제TV=김지송 인턴기자] 제주항공이 2027학년도 대학수학능력시험 수험생과 동반자 1명에게 국내선 항공권을 20% 할인해 준다.",
-      "제주항공은 수험생의 국내 이동과 여행을 지원하기 위해 항공권 할인 이벤트를 진행한다고 17일 밝혔다.",
-      "할인은 성수기를 제외한 2027년 2월 25일까지 탑승하는 국내선 전 노선에 적용된다.",
-      "수험생 본인과 동반 성인 1명에게 정규운임인 플렉스(FLEX) 운임 기준 20% 할인을 제공한다.",
-      "항공권은 오는 12월 16일까지 제주항공 홈페이지와 모바일 앱, 웹에서 구매할 수 있다.",
-      "회원 가입 후 예약 과정에서 '개인 신분 할인'을 선택하고, 탑승자 정보에 수험생 본인 또는 동반자 할인을 적용하면 된다.",
-      "제주항공은 지난 2025년에도 수험생과 동반자에게 국내선 항공권 20% 할인 혜택을 제공했다.",
-      "당시에는 12월 17일까지 항공권을 판매하고 올해 2월 13일까지 탑승할 수 있도록 했다.",
-      "올해는 할인율을 유지하면서 탑승 가능 기간을 내년 2월 25일까지로 정했다.",
-      "탑승 당일에는 2027학년도 대입 지원서와 원서 접수증, 수능 수험표 가운데 원본 1개를 공항 카운터에 제시해야 한다.",
-      "동반자 할인은 수험생과 같은 예약번호로 발권한 성인에게만 적용된다.",
-      "제주항공은 숙박권 추첨과 제휴 관광지 최대 25% 할인 등 부가 혜택도 마련했다."
-     ],
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "국내선 항공권 20% 할인",
-      "airlines": [
-       "제주항공"
-      ],
-      "name": "수험생 국내선 항공권 할인",
-      "book": {
-       "from": null,
-       "to": "2026-12-16"
-      },
-      "board": {
-       "from": null,
-       "to": "2027-02-25"
-      },
-      "price": null,
-      "trip": null,
-      "pct": 20,
-      "seoul": null,
-      "at": "2026-11-17",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "k0ZVQ2czRsRFlLLXhkcVh3V3pGaE0tOExSQzRlQU91VkJ2Tk5hTGppQjFncGtoMld1Z0tyWWM5ajJhR2I3U0dmR1pOTlBSaUdVM2g1Ukh1TzR2MTBqLVFzMA|제주항공, 2027 대입 수험생 대상 국내선 할인",
-     "kind": "airline",
-     "title": "제주항공, 2027 대입 수험생 대상 국내선 할인",
-     "desc": "제주항공, 2027 대입 수험생 대상 국내선 할인 인사이트코리아",
-     "summary": [
-      "제주항공, 2027 대입 수험생 대상 국내선 할인 인사이트코리아…"
-     ],
-     "link": "https://www.insightkorea.co.kr/news/articleView.html?idxno=259085",
-     "source": "인사이트코리아",
-     "date": "2026-11-17T01:45:33.000Z",
-     "found": "2026-11-17",
-     "cards": [],
-     "airlines": [
-      "7C"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "제주항공 {특가말}",
-     "bodyAt": "2026-11-17",
-     "body": [
-      "[인사이트코리아 = 김호진 기자] 제주항공이 2027학년도 대학 입시 수험생과 동반자를 대상으로 국내선 할인 혜택을 제공한다.",
-      "수험생 본인과 동반자 1인은 정규운임인 플렉스 운임에서 20% 할인받을 수 있다.",
-      "제주항공은 오는 19일 치러지는 대학수학능력시험과 대학별 전형에 응시한 수험생의 이동 편의를 지원하기 위해 할인 이벤트를 마련했다고 17일 밝혔다.",
-      "할인은 내년 2월 25일까지 탑승하는 국내선 항공권에 적용된다.",
-      "다만 성수기 기간은 제외된다.",
-      "항공권은 오는 12월 16일까지 제주항공 홈페이지와 모바일 앱·웹에서 예매할 수 있다.",
-      "회원 가입 후 로그인한 뒤 예약 과정에서 ‘개인 신분 할인’을 선택하면 된다.",
-      "탑승자 정보 입력 단계에서는 수험생 본인의 경우 ‘수험생 본인’을 선택해야 한다.",
-      "동반자 할인은 수험생과 같은 예약번호(PNR)로 발권한 성인 1명에게만 제공된다.",
-      "탑승 당일에는 수험생 자격을 확인할 수 있는 서류를 공항 카운터에 제출해야 한다.",
-      "제주항공은 항공권 할인 외에도 수험생 대상 추가 혜택을 준비했다.",
-      "숙박권 추첨 이벤트를 진행하고 제휴 관광지에서는 최대 25% 할인 혜택을 제공한다.",
-      "제주항공은 이번 행사를 통해 수능 이후 면접과 논술 등 대학별 전형을 준비하는 수험생의 이동 부담을 줄이고 가족 여행 수요에도 대응한다는 계획이다."
-     ],
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "국내선 항공권 운임 할인",
-      "airlines": [
-       "제주항공"
-      ],
-      "name": "2027 대입 수험생 대상 국내선 할인",
-      "book": {
-       "from": null,
-       "to": "2026-12-16"
-      },
-      "board": {
-       "from": null,
-       "to": "2027-02-25"
-      },
-      "price": null,
-      "trip": null,
-      "pct": 20,
-      "seoul": null,
-      "at": "2026-11-17",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "https://www.joongangenews.com/news/articleView.html|제주항공 , 수능 수험생 응원 이벤트...국내선 항공 권 20% 할인",
-     "kind": "airline",
-     "title": "제주항공 , 수능 수험생 응원 이벤트...국내선 항공 권 20% 할인",
-     "desc": "|중앙이코노미뉴스 송태원 기자| 제주항공 , 수능 수험생 응원 이벤트...국내선 항공 권 20% 할인 .[사진= 제주항공 ] 제주항공 이 2027학년도 대학수학능력시험 수험생과 가족을 대상으로 국내선 항공 권 할인 혜택을 제공한다....",
-     "summary": [
-      "|중앙이코노미뉴스 송태원 기자| 제주항공 , 수능 수험생 응원 이벤트...국내선 항공 권 20% 할인 .[사진= 제주항공 ] 제주항공 이 2027학년도 대학수학능력시험 수험생과 가족을 대상으로 국내선 항공 권 할인 혜택을 제공한다."
-     ],
-     "link": "https://www.joongangenews.com/news/articleView.html?idxno=564366",
-     "source": "네이버 뉴스",
-     "date": "2026-11-17T02:36:00.000Z",
-     "found": "2026-11-17",
-     "cards": [],
-     "airlines": [
-      "7C"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "제주항공 {특가말}",
-     "bodyAt": "2026-11-17",
-     "body": [
-      "[중앙이코노미뉴스 송태원] 제주항공이 2027학년도 대학수학능력시험 수험생과 가족을 대상으로 국내선 항공권 할인 혜택을 제공한다.",
-      "수험생 본인과 동반자 1명까지 정규운임 기준 20% 할인을 받을 수 있다.",
-      "제주항공은 오는 19일 실시되는 대학수학능력시험과 대학별 전형에 응시하는 수험생을 위해 국내선 항공권 할인 이벤트를 진행한다고 17일 밝혔다.",
-      "이번 할인은 내년 2월 25일까지 탑승하는 항공편을 대상으로 하며 성수기는 제외된다.",
-      "할인 대상은 수험생 본인과 동반자 1명으로 정규운임(플렉스) 기준 20% 할인 혜택이 제공된다.",
-      "항공권 예매는 오는 12월 16일까지 제주항공 홈페이지와 모바일 앱·웹에서 가능하다.",
-      "제주항공 회원 가입과 로그인 후 예약 단계에서 '개인 신분 할인'을 선택하고 탑승자 정보 입력 시 '수험생 본인' 또는 '동반자 할인' 항목을 선택하면 된다.",
-      "탑승 당일에는 제주항공 카운터에서 2027학년도 대입 지원서(수시 포함), 원서 접수증, 수능 수험표 가운데 원본 1개를 제시해야 한다.",
-      "동반자 할인은 수험생과 동일한 예약번호(PNR)로 예약한 성인에 한해 적용된다.",
-      "제주항공은 항공권 할인 외에도 숙박권 추첨 이벤트와 제휴 관광지 최대 25% 할인 등 추가 혜택을 마련했다."
-     ],
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "국내선 항공권 20% 할인 이벤트",
-      "airlines": [
-       "제주항공"
-      ],
-      "name": "수능 수험생 응원 이벤트",
-      "book": {
-       "from": null,
-       "to": "2026-12-16"
-      },
-      "board": {
-       "from": null,
-       "to": "2027-02-25"
-      },
-      "price": null,
-      "trip": null,
-      "pct": 20,
-      "seoul": null,
-      "at": "2026-11-17",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "ZUYXM0R2pkVVFvTVBVekNuLUZxM2pSVVpTUDNhWHFDRkkxdzFkWUVGUU9ydllETDE4VjNncW5ZOWZXWjJ6d3VRNGgwM0tGVERLeWQzUnhxOUp1VkVOeWdMUw|수능 끝, 하늘길 활짝…제주항공, 수험생 국내선 할인",
-     "kind": "airline",
-     "title": "수능 끝, 하늘길 활짝…제주항공, 수험생 국내선 할인",
-     "desc": "수능 끝, 하늘길 활짝…제주항공, 수험생 국내선 할인 ER 이코노믹리뷰",
-     "summary": [
-      "수능 끝, 하늘길 활짝…제주항공, 수험생 국내선 할인 ER 이코노믹리뷰…"
-     ],
-     "link": "https://www.econovill.com/news/articleView.html?idxno=757523",
-     "source": "ER 이코노믹리뷰",
-     "date": "2026-11-17T02:41:30.000Z",
-     "found": "2026-11-17",
-     "cards": [],
-     "airlines": [
-      "7C"
-     ],
-     "countries": [],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "제주항공 {특가말}",
-     "bodyAt": "2026-11-17",
-     "body": [
-      "제주항공이 2027학년도 대입 수험생과 동반자 1명을 대상으로 국내선 운임을 20% 낮춰주는 행사를 진행한다.",
-      "제주를 오가는 항공편은 물론 김포-부산 노선까지 국내선 전 노선에서 혜택을 받을 수 있다.",
-      "제주항공은 오는 19일 시행되는 2027학년도 대학수학능력시험과 대학별 전형에 응시하는 수험생을 대상으로 국내선 항공권 할인 이벤트를 진행한다고 17일 밝혔다.",
-      "제주항공 국내선 전 노선에서 정규운임인 플렉스(FLEX) 운임을 기준으로 20% 할인받을 수 있다.",
-      "할인 항공권의 탑승 가능 기간은 2027년 2월 25일까지이며 성수기에는 혜택이 적용되지 않는다.",
-      "항공권 예약은 오는 12월 16일까지 제주항공 공식 홈페이지와 모바일 앱(웹)에서 가능하다.",
-      "다른 판매 채널에서는 해당 할인을 이용할 수 없다.",
-      "예약을 위해서는 제주항공 회원 가입과 로그인이 필요하다.",
-      "항공권 예약 단계에서 ‘개인 신분 할인’을 선택한 뒤 탑승자 정보를 입력할 때 ‘수험생 본인’ 또는 ‘동반자 할인’을 지정하면 된다.",
-      "탑승 당일에는 수험생 자격을 확인할 수 있는 증빙서류를 준비해야 한다.",
-      "제주항공 공항 카운터에서 2027학년도 대입 지원서(수시 포함), 원서 접수증, 수능 수험표 가운데 원본 1개를 제시하면 된다.",
-      "동반자 할인은 수험생과 동일한 예약번호(PNR)로 항공권을 예약한 성인 1명에게만 적용된다.",
-      "제주항공은 항공권 할인 외 다양한 여행 혜택도 제공한다.",
-      "숙박권을 추첨으로 증정하는 이벤트와 제휴 관광지 이용료를 최대 25% 할인하는 행사 등을 마련했다."
-     ],
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "제주항공 국내선 운임 20% 할인",
-      "airlines": [
-       "제주항공"
-      ],
-      "name": "수험생 국내선 할인",
-      "book": {
-       "from": null,
-       "to": "2026-12-16"
-      },
-      "board": {
-       "from": null,
-       "to": "2027-02-25"
-      },
-      "price": null,
-      "trip": null,
-      "pct": 20,
-      "seoul": true,
-      "at": "2026-11-17",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "92LTI5M0dXenRZbW5hbFNEOWJHX1paNG9DeVhJbFhjT3ZDalc3MHhVUVQ0U3M1dE1lTmpkZFFKeUNpNlhka21CYlozZjdHXy1xY0ZCWk12NXJ1a0I4YS14VA|제주항공, 수험생·동반 1인 국내선 항공권 20% 할인",
-     "kind": "airline",
-     "title": "제주항공, 수험생·동반 1인 국내선 항공권 20% 할인",
-     "desc": "제주항공, 수험생·동반 1인 국내선 항공권 20% 할인 메트로신문",
-     "summary": [
-      "제주항공, 수험생·동반 1인 국내선 항공권 20% 할인 메트로신문…"
-     ],
-     "link": "https://www.metroseoul.co.kr/article/20261117500286",
-     "source": "메트로신문",
-     "date": "2026-11-17T04:38:19.000Z",
-     "found": "2026-11-17",
-     "cards": [],
-     "airlines": [
-      "7C"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "제주항공 {특가말}",
-     "bodyAt": "2026-11-17",
-     "body": [
-      "제주항공, 수험생·동반 1인 국내선 항공권 20% 할인",
-      "<input class=\"siteViewTitlteaa\" style=\"display:none\" value=\"ArticleVO(id=20261117500286, title=제주항공, 수험생·동반 1인 국내선 항공권 20% 할인, subTitle=오는 12월 16일까지 예매…내년 2월 25일까지 탑승 가능<BR>수험표·대입 지원서 등 원본 제시…숙박·관광지 혜택도 제공, viewTitle=제…",
-      "<img alt=\"\" src=\"//cdn.emetro.co.kr/data2/content/image/2026/11/17/.cache/512/20261117500287.jpg\" storyid=\"eb0b7998-e243-11f1-9420-abbf1f18566f\">",
-      "제주항공 2027 대입 수험생 할인 이벤트 이미지./제주항공",
-      "<p>제주항공이 2027학년도 대학수학능력시험 수험생과 가족의 국내 이동을 지원하기 위해 항공권 할인 혜택을 제공한다.",
-      "<p>제주항공은 오는 19일 수능과 대학별 전형에 응시하는 수험생 본인과 동반자 1명에게 국내선 정규운임을 20% 할인한다고 17일 밝혔다.",
-      "<p>항공권은 오는 12월 16일까지 제주항공 홈페이지와 모바일 애플리케이션·웹에서 예매할 수 있다.",
-      "탑승 기간은 성수기를 제외한 내년 2월 25일까지다.",
-      "<p>홈페이지에서 예약할 때 '개인 신분 할인'을 선택하고 탑승자 정보 입력 단계에서 수험생 본인 또는 동반자 할인 항목을 지정하면 된다.",
-      "동반자 할인은 수험생과 같은 예약번호로 예매한 성인 1명에게만 적용된다.",
-      "<p>탑승 당일 공항 카운터에서 2027학년도 대입 지원서나 원서 접수증, 수능 수험표 가운데 원본 1개를 제시해야 한다.",
-      "<p>제주항공은 수험생을 대상으로 숙박권 추첨 행사와 제휴 관광지 최대 25% 할인도 진행한다.",
-      "</html>, status=4, newsImportant=2, link=/content/html/2026/11/17/20261117500286.html, summary=제주항공이 2027학년도 대학수학능력시험 수험생과 가족의 국내 이동을 지원하기 위해 항공권 할인 혜택을 제공한다.",
-      "제주항공은 오는 19일 수능과 대학별 전형에 응시하는 수험생 본인과 동반자 1명에게 국내선 정규운임을 20% 할인한다고 17일 밝혔다.",
-      "항공권은 오는 12월 16일까지 제주항공 홈페이지와 모바일 애플리케이션·웹에서 예매할 수 있다.",
-      "홈페이지에서 예약할 때 '개인 신분 할인'을 선택하고 탑승자 정보 입력 단계에서 수험생 본인 또는 동반자 할인 항목을 지정하면 된다.",
-      "탑승 당일 공항 카운터에서 2027학년도 대입 지원서나 원서 접수증, 수능 수험표 가운데 원본 1개를 제시해야 한다.",
-      "제주항공은 수험생을 대상으로 숙박권 추첨 행사와 제휴 관광지 최대 25% 할인도 진행한다.",
-      ", series=null, seriesTitle=null, category=[{sectionId=b7208253-4e1f-11ea-8db9-02d4480ea31a, sectionCode=160140, sectionName=물류/항공, sectionPath=산업>물류/항공, organizationalUnit=/00/01/CA/160140, sectionType=CA, sectionLevel…"
-     ],
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "국내선 항공권 20% 할인 프로모션",
-      "airlines": [
-       "제주항공"
-      ],
-      "name": "수험생·동반 1인 국내선 할인",
-      "book": {
-       "from": null,
-       "to": "2026-12-16"
-      },
-      "board": {
-       "from": null,
-       "to": "2027-02-25"
-      },
-      "price": null,
-      "trip": null,
-      "pct": 20,
-      "seoul": null,
-      "at": "2026-11-17",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "xTE1NQjVFY2JBbG1XMlkyTXF0cmRVV0ZQWFkzWTlrallHdjFmNnAyVGFnYzFZR29jUE9fei1MZERONFlYY29aUXRWRUtBWFZNM3NDNzl5X0VnNW1PWHJ6ZUE|제주항공, 수험생·동반자 국내선 20% 할인…내년 2월까지",
-     "kind": "airline",
-     "title": "제주항공, 수험생·동반자 국내선 20% 할인…내년 2월까지",
-     "desc": "제주항공, 수험생·동반자 국내선 20% 할인…내년 2월까지 뉴스투데이",
-     "summary": [
-      "제주항공, 수험생·동반자 국내선 20% 할인…내년 2월까지 뉴스투데이…"
-     ],
-     "link": "https://www.news2day.co.kr/article/20261117500247",
-     "source": "뉴스투데이",
-     "date": "2026-11-17T07:17:00.000Z",
-     "found": "2026-11-17",
-     "cards": [],
-     "airlines": [
-      "7C"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "제주항공 {특가말}",
-     "bodyAt": "2026-11-17",
-     "body": [
-      "제주항공, 수험생·동반자 국내선 20% 할인…내년 2월까지",
-      "입력 : 2026.11.17 16:17",
-      "ㅣ 수정 : 2026.11.17 16:17",
-      "12월 16일까지 예약 가능",
-      "[뉴스투데이=박혜성 기자] 제주항공이 2027학년도 대학입시 수험생과 동반자 1명을 대상으로 국내선 항공권을 20% 할인한다.",
-      "제주항공은 17일 수험생과 동반자 1명에게 국내선 정규운임(플렉스) 기준 20% 할인 혜택을 제공한다고 밝혔다.",
-      "탑승 기간은 성수기를 제외하고 2027년 2월 25일까지다.",
-      "항공권 예약은 오는 12월 16일까지 제주항공 홈페이지와 모바일 앱·웹에서 가능하다.",
-      "할인을 받으려면 제주항공 회원 가입과 로그인 후 예약 단계에서 '개인 신분 할인'을 선택해야 한다.",
-      "이후 탑승자 정보 입력 단계에서 '수험생 본인' 또는 '동반자 할인' 옵션을 선택하면 된다.",
-      "탑승 당일에는 제주항공 카운터에서 2027학년도 대입 지원서(수시 포함), 원서 접수증, 수능 수험표 가운데 원본 1개를 제시해야 한다.",
-      "동반자 할인은 수험생과 동일한 예약번호(PNR)로 예약한 성인 1명에게만 적용된다.",
-      "제주항공은 이번 할인 외에도 숙박권 추첨 이벤트와 제휴 관광지 최대 25% 할인 혜택을 마련했다."
-     ],
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "국내선 항공권 20% 할인 프로모션",
-      "airlines": [
-       "제주항공"
-      ],
-      "name": "수험생·동반자 국내선 할인",
-      "book": {
-       "from": null,
-       "to": "2026-12-16"
-      },
-      "board": {
-       "from": null,
-       "to": "2027-02-25"
-      },
-      "price": null,
-      "trip": null,
-      "pct": 20,
-      "seoul": null,
-      "at": "2026-11-17",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "ic3NFSTFjMkgzYmtQa0pYLWRvZVhsQVJuVEZlRWh5d2I5dzZlN0h4MUFtZG16OWJQa28wYTYtTVB0c1V1YjlQV2dqODg2QWdhWDkxbC1kdlc1TXFYbmloaGs|제주항공, 수능 수험생·동반자 국내선 항공권 20% 할인",
-     "kind": "airline",
-     "title": "제주항공, 수능 수험생·동반자 국내선 항공권 20% 할인",
-     "desc": "제주항공, 수능 수험생·동반자 국내선 항공권 20% 할인 데일리안",
-     "summary": [
-      "제주항공, 수능 수험생·동반자 국내선 항공권 20% 할인 데일리안…"
-     ],
-     "link": "https://news.google.com/rss/articles/CBMiowJBVV95cUxOeS1jYXVMVG5hRkFGSEY3Nkk3alFJRms2U1RwUkoxVUJSUmJ3ZkN5NnJwVlRMNkZIQjhWOUtIVWQ2ZjlkcmI2dzQ2SkRia0RIUnhxRUxUTUxnd0IwZVd1TmtRZTM0RXFORXpTS0xwMzBEMzdjQzFuRi0taTNpZnJmZzBMbUY2b0hiTXJKZk0yazVOU2RoSU13bXg3RFZ6UWkyNnktNzV6ZjNweHJ6RmNLMV8tQzZsR1dVUXl5Njg0U3hvRWo4d1p1TGlic3NFSTFjMkgzYmtQa0pYLWRvZVhsQVJuVEZlRWh5d2I5dzZlN0h4MUFtZG16OWJQa28wYTYtTVB0c1V1YjlQV2dqODg2QWdhWDkxbC1kdlc1TXFYbmloaGs?oc=5",
-     "source": "데일리안",
-     "date": "2026-11-17T00:34:00.000Z",
-     "found": "2026-11-17",
-     "cards": [],
-     "airlines": [
-      "7C"
-     ],
-     "countries": [],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "제주항공 {특가말}",
-     "bodyAt": "2026-11-17",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "국내선 항공권 운임 할인",
-      "airlines": [
-       "제주항공"
-      ],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": 20,
-      "seoul": null,
-      "at": "2026-11-17",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "https://www.asiatime.co.kr/article/20261117500111|제주항공 , 대입 수험생·동반 1인 국내선 운임 20% 할인 혜택",
-     "kind": "airline",
-     "title": "제주항공 , 대입 수험생·동반 1인 국내선 운임 20% 할인 혜택",
-     "desc": "(사진= 제주항공 ) 17일 항공 업계에 따르면 제주항공 의 수험생 할인 은 제주 에서 김포·인천·부산·청주·광주·대구를 오가는 노선과 김포~부산 등 국내선 전 노선에 적용된다. 수험생 본인과 동반자 1명은 정규운임인...",
-     "summary": [
-      "17일 항공 업계에 따르면 제주항공 의 수험생 할인 은 제주 에서 김포·인천·부산·청주·광주·대구를 오가는 노선과 김포~부산 등 국내선 전 노선에 적용된다.",
-      "수험생 본인과 동반자 1명은 정규운임인…"
-     ],
-     "link": "https://www.asiatime.co.kr/article/20261117500111",
-     "source": "네이버 뉴스",
-     "date": "2026-11-17T01:24:00.000Z",
-     "found": "2026-11-17",
-     "cards": [],
-     "airlines": [
-      "7C"
-     ],
-     "countries": [],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "제주항공 {특가말}",
-     "bodyAt": "2026-11-17",
-     "body": [
-      "수험생 본인과 동반자 1명은 정규운임인 '플렉스(FLEX)' 기준으로 각각 20%를 할인받을 수 있다.",
-      "할인 항공권은 다음 달 16일까지 예매할 수 있다.",
-      "탑승 기한은 내년 2월 25일까지이며 성수기 항공편은 할인 대상에서 제외된다.",
-      "예매할 때 플렉스 운임을 고른 뒤 탑승객 정보 입력 화면의 '개인 신분 할인' 항목에서 수험생 본인 또는 동반자 할인을 선택하면 된다.",
-      "동반자는 수험생과 같은 예약번호로 항공권을 구매해야 하며, 소아는 동반 할인 대상에서 제외된다.",
-      "탑승 당일에는 공항 수속 카운터에서 2027학년도 대입 지원서(수시 포함), 원서 접수증, 수능 수험표 가운데 하나를 원본으로 제시해야 한다.",
-      "제주항공은 2008년 대입 수험생을 대상으로 항공권 할인 행사를 처음 실시했다.",
-      "첫해에는 김포~제주, 청주~제주, 김해~제주 등 국내선 3개 노선에서 부모나 인솔교사와 함께 탑승한 수험생에게 운임의 50%를 할인했다.",
-      "2011년에는 수험생과 동반가족 1명에게 각각 30% 할인을 제공했다."
-     ]
-    },
-    {
-     "id": "amhKNXR4bnVZSTNQR2hvNjRieFZ0YjBCazNaOGktWWRwQmxYeFVsdmRTNTYzQUY0bF9YTTJNcnczclFaNGhYdHRLLU9ORk5xZ082U1ZkNW5UdUFVbGx1M3l3|제주항공, 수험생과 동반자 국내선 항공권 20% 할인",
-     "kind": "airline",
-     "title": "제주항공, 수험생과 동반자 국내선 항공권 20% 할인",
-     "desc": "제주항공, 수험생과 동반자 국내선 항공권 20% 할인 BBS불교방송",
-     "summary": [
-      "제주항공, 수험생과 동반자 국내선 항공권 20% 할인 BBS불교방송…"
-     ],
-     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5aUGhfQkhySnNBamhKNXR4bnVZSTNQR2hvNjRieFZ0YjBCazNaOGktWWRwQmxYeFVsdmRTNTYzQUY0bF9YTTJNcnczclFaNGhYdHRLLU9ORk5xZ082U1ZkNW5UdUFVbGx1M3l3?oc=5",
-     "source": "BBS불교방송",
-     "date": "2026-11-17T06:04:42.000Z",
-     "found": "2026-11-17",
-     "cards": [],
-     "airlines": [
-      "7C"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "제주항공 {특가말}",
-     "bodyAt": "2026-11-17",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "국내선 항공권 운임 할인",
-      "airlines": [
-       "제주항공"
-      ],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": 20,
-      "seoul": null,
-      "at": "2026-11-17",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "s.google.com/rss/articles/CBMiQkFVX3lxTE1FQnNnRFJ2SUt2M1RESU80UmpPbmllOV9PR1RoNWZSYjJ0NDFLN1FmSTNia1pyU0RNU2NoeWNNajBuZw|제주항공, 수능 수험생·동반자 국내선 20% 할인",
-     "kind": "airline",
-     "title": "제주항공, 수능 수험생·동반자 국내선 20% 할인",
-     "desc": "제주항공, 수능 수험생·동반자 국내선 20% 할인 브레이크뉴스",
-     "summary": [
-      "제주항공, 수능 수험생·동반자 국내선 20% 할인 브레이크뉴스…"
-     ],
-     "link": "http://breaknews.com/1251594",
-     "source": "브레이크뉴스",
-     "date": "2026-11-17T04:35:00.000Z",
-     "found": "2026-11-17",
-     "cards": [],
-     "airlines": [
-      "7C"
-     ],
-     "countries": [],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "제주항공 {특가말}",
-     "bodyAt": "2026-11-17",
-     "body": [
-      "제주항공, 수능 수험생·동반자 국내선 20% 할인",
-      "제주항공은 2027학년도 대학수학능력시험 응시 수험생과 가족을 대상으로 국내선 항공권 할인 이벤트를 진행한다고 17일 밝혔다.",
-      "할인은 내년 2월 25일 탑승분까지 제주~김포·인천·부산·청주·광주·대구, 김포~부산 등 국내선 모든 노선에 적용된다.",
-      "수험생 본인과 동반자 1인은 정규운임(플렉스) 기준 20% 할인을 받을 수 있다.",
-      "항공권은 다음 달 16일까지 제주항공 홈페이지와 모바일 앱·웹에서만 예매할 수 있다.",
-      "예약 단계에서 '개인 신분 할인'을 선택한 뒤 '수험생 본인'과 '동반자 할인' 옵션을 고르면 된다.",
-      "탑승 당일에는 제주항공 카운터에서 2027학년도 대입 지원서(수시 포함), 원서 접수증, 수능 수험표 가운데 원본 1개를 제시해야 한다.",
-      "동반자 할인은 수험생과 같은 예약번호(PNR)의 성인에게만 적용된다.",
-      "The discount applies to flights through February 25 next year on all domestic routes, including Jeju to Gimpo, Incheon, Busan, Cheongju, Gwangju and Daegu, and Gimpo to Busan. Peak seasons are excluded. Test takers and…"
-     ],
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "국내선 할인, 국제선 운임 아님",
-      "airlines": [
-       "제주항공"
-      ],
-      "name": "수능 수험생·동반자 국내선 할인",
-      "book": {
-       "from": null,
-       "to": "2026-12-16"
-      },
-      "board": {
-       "from": null,
-       "to": "2027-02-25"
-      },
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-17",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "https://www.kmib.co.kr/article/20261117500759|제주항공 , 대입 수험생 국내선 할인",
-     "kind": "airline",
-     "title": "제주항공 , 대입 수험생 국내선 할인",
-     "desc": "할인 을 받기 위해서는 로그인 후 예약 단계에서 ‘개인 신분 할인 ’을 선택하고, 탑승자 정보 입력 단계에서 ‘수험생 본인’과 ‘동반자 할인 ’ 옵션을 선택하면 된다. 탑승 당일 제주항공 카운터에서 2027학년도...",
-     "summary": [
-      "할인 을 받기 위해서는 로그인 후 예약 단계에서 ‘개인 신분 할인 ’을 선택하고, 탑승자 정보 입력 단계에서 ‘수험생 본인’과 ‘동반자 할인 ’ 옵션을 선택하면 된다.",
-      "탑승 당일 제주항공 카운터에서 2027학년도…"
-     ],
-     "link": "https://www.kmib.co.kr/article/20261117500759",
-     "source": "네이버 뉴스",
-     "date": "2026-11-17T05:07:00.000Z",
-     "found": "2026-11-17",
-     "cards": [],
-     "airlines": [
-      "7C"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "제주항공 {특가말}",
-     "bodyAt": "2026-11-17",
-     "body": [
-      "할인을 받기 위해서는 로그인 후 예약 단계에서 ‘개인 신분 할인’을 선택하고, 탑승자 정보 입력 단계에서 ‘수험생 본인’과 ‘동반자 할인’ 옵션을 선택하면 된다.",
-      "탑승 당일 제주항공 카운터에서 2027학년도 대입 지원서(수시 포함), 원서 접수증, 수능 수험표 중 원본 1개를 제시해야 한다.",
-      "동반자 할인은 수험생 본인과 같은 예약번호(PNR)의 성인에 한해 적용된다."
-     ],
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "수험생 국내선 운임 할인",
-      "airlines": [
-       "제주항공"
-      ],
-      "name": "대입 수험생 국내선 할인",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-17",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "4WEwwNlphU2o1OWxoWTlxN0J0X2dvMTBPR0hCenVlWHRmNE05b3VXTC1QSWZiellsUFZLWFBNU1lWQ2IxWGpZb2VDTHJMUkxHUmV2RG9yb3YwUkRsbDlDNGo|제주항공, 수능 수험생 대상 국내선 항공권 20% 할인",
-     "kind": "airline",
-     "title": "제주항공, 수능 수험생 대상 국내선 항공권 20% 할인",
-     "desc": "제주항공, 수능 수험생 대상 국내선 항공권 20% 할인 뉴스1",
-     "summary": [
-      "제주항공, 수능 수험생 대상 국내선 항공권 20% 할인 뉴스1…"
-     ],
-     "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBqVm44WEwwNlphU2o1OWxoWTlxN0J0X2dvMTBPR0hCenVlWHRmNE05b3VXTC1QSWZiellsUFZLWFBNU1lWQ2IxWGpZb2VDTHJMUkxHUmV2RG9yb3YwUkRsbDlDNGo?oc=5",
-     "source": "뉴스1",
-     "date": "2026-11-17T00:19:32.000Z",
-     "found": "2026-11-17",
-     "cards": [],
-     "airlines": [
-      "7C"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "제주항공 {특가말}",
-     "bodyAt": "2026-11-17",
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "국내선 할인, 국제선 운임 아님",
-      "airlines": [
-       "제주항공"
-      ],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-17",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "xQS1pU1E3YXF2RFJDY1FTVFpqUFNjSXZhcXhNV0xPY3BSQkhzY1ZmOG5qZDVfemhTQ3NJeUtGMnJBcktMWFRIODhLODcyNkNBaHdGN1FIVXlIUWNLQ09xWE0|제주항공, 수험생·동반자 국내선 항공권 20% 할인",
-     "kind": "airline",
-     "title": "제주항공, 수험생·동반자 국내선 항공권 20% 할인",
-     "desc": "제주항공, 수험생·동반자 국내선 항공권 20% 할인 Chosunbiz",
-     "summary": [
-      "제주항공, 수험생·동반자 국내선 항공권 20% 할인 Chosunbiz…"
-     ],
-     "link": "https://biz.chosun.com/industry/company/2026/11/17/PNU6HTWWZBF5LEX2MJNZH7CKQA/",
-     "source": "Chosunbiz",
-     "date": "2026-11-17T00:31:00.000Z",
-     "found": "2026-11-17",
-     "cards": [],
-     "airlines": [
-      "7C"
-     ],
-     "countries": [],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "제주항공 {특가말}",
-     "bodyAt": "2026-11-17",
-     "body": [
-      "제주항공, 수험생·동반자 국내선 항공권 20% 할인",
-      "입력 2026.11.17. 09:31",
-      "제주항공은 2027학년도 대학수학능력시험 수험생과 동반자 1명을 대상으로 국내선 항공권을 20% 할인한다고 17일 밝혔다.",
-      "내년 2월 25일까지 제주~김포·인천·부산·청주·광주·대구, 김포~부산 등 국내선 전 노선에서 정규운임(플렉스)의 20%를 할인받을 수 있다.",
-      "항공권은 12월 16일까지 제주항공 홈페이지나 모바일 앱·웹에서 예매해야 한다.",
-      "회원 가입 후 예약 과정에서 '개인 신분 할인'을 선택하고, 탑승자 정보 입력 단계에서 수험생 본인 또는 동반자 할인 항목을 선택하면 된다.",
-      "탑승 당일에는 공항 카운터에서 2027학년도 대입 지원서(수시 포함), 원서 접수증, 수능 수험표 중 하나를 원본으로 제시해야 한다.",
-      "동반자는 수험생과 같은 예약번호로 항공권을 예매한 성인에 한해 할인받을 수 있다."
-     ],
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "국내선 할인, 국제선 아님",
-      "airlines": [
-       "제주항공"
-      ],
-      "name": "수험생·동반자 국내선 할인",
-      "book": {
-       "from": null,
-       "to": "2026-12-16"
-      },
-      "board": {
-       "from": null,
-       "to": "2027-02-25"
-      },
-      "price": null,
-      "trip": null,
-      "pct": 20,
-      "seoul": true,
-      "at": "2026-11-17",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "ZUdlBsc2g1dDY2Y1hkZGpKSjY4U1JRVkFwSk8zeS1xRnFtVjRMakJhWkl4ZklSaUFCbTJzY0JoQUJHNlFpMGJWbGlvYlp5dGdPN3l5WmVOeU5haVZ0QkZBQw|제주항공, 수험생·가족 국내선 항공권 20% 할인",
-     "kind": "airline",
-     "title": "제주항공, 수험생·가족 국내선 항공권 20% 할인",
-     "desc": "제주항공, 수험생·가족 국내선 항공권 20% 할인 스포츠한국",
-     "summary": [
-      "제주항공, 수험생·가족 국내선 항공권 20% 할인 스포츠한국…"
-     ],
-     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9jRkRPdlZHa0VuejN3cmZVd1VqMS0wZVVNTFJLeHlCZzUwQkNseTNWUGFnMklLRFpzQkR5MmtieWJEbkpBb0k1ekNYNG1Xd0haMWVQaWZXRFJTbDBvTkU5SU1jLWxRVlRMNVRoTUdxRDHSAXRBVV95cUxQTF9uQlItNTFkS2dMU0J2VG9vWDZUdlBsc2g1dDY2Y1hkZGpKSjY4U1JRVkFwSk8zeS1xRnFtVjRMakJhWkl4ZklSaUFCbTJzY0JoQUJHNlFpMGJWbGlvYlp5dGdPN3l5WmVOeU5haVZ0QkZBQw?oc=5",
-     "source": "스포츠한국",
-     "date": "2026-11-17T00:34:53.000Z",
-     "found": "2026-11-17",
-     "cards": [],
-     "airlines": [
-      "7C"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "제주항공 {특가말}",
-     "bodyAt": "2026-11-17",
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "국내선 항공권 할인이라 제외",
-      "airlines": [
-       "제주항공"
-      ],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-17",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "Qxc2doeDF2M0taYUxKampFNDBieVg3ZWVwOU5UZXFCSEYxN1ZlX0JVWmNrNEMzT2NudWRnR0ZmMUtZZUtROG9RUTdCb1NrN3JKbmwyaWNTUXphUy0wVW16dg|제주항공, 수험생 대상 국내선 항공권 20% 할인",
-     "kind": "airline",
-     "title": "제주항공, 수험생 대상 국내선 항공권 20% 할인",
-     "desc": "제주항공, 수험생 대상 국내선 항공권 20% 할인 뉴스락",
-     "summary": [
-      "제주항공, 수험생 대상 국내선 항공권 20% 할인 뉴스락…"
-     ],
-     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBabUI0MHd1ZHJEZ3Qxc2doeDF2M0taYUxKampFNDBieVg3ZWVwOU5UZXFCSEYxN1ZlX0JVWmNrNEMzT2NudWRnR0ZmMUtZZUtROG9RUTdCb1NrN3JKbmwyaWNTUXphUy0wVW16dg?oc=5",
-     "source": "뉴스락",
-     "date": "2026-11-17T02:16:42.000Z",
-     "found": "2026-11-17",
-     "cards": [],
-     "airlines": [
-      "7C"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "제주항공 {특가말}",
-     "bodyAt": "2026-11-17",
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "국내선 할인, 국제선 운임 아님",
-      "airlines": [
-       "제주항공"
-      ],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-17",
-      "model": "deepseek-v4-flash"
-     }
-    }
-   ]
   },
   {
    "id": "https://www.etoday.co.kr/news/view/2648468|이스타항공, 수능 수험생에 항공권 할인…국제선 최대 10%",
@@ -10397,6 +10542,299 @@
    "lastFound": "2026-11-17"
   },
   {
+   "id": "CBMiVkFVX3lxTFBqcnBSU01Fb043eUh1d2VSZENjbEltLWNWSkFNeDdQZzkzZ1p6Tk9TYUZWdmNwWFlpQU1LWUJURHhwRFBHb3NfUG1oZGFLcjY1WmlMZkJB|대한항공 100만 원 기프트 카드 받자… 차지 9주년 기념 역대급 프로모",
+   "kind": "airline",
+   "title": "대한항공 100만 원 기프트 카드 받자… 차지 9주년 기념 역대급 프로모션, 언제까지?",
+   "desc": "대한항공 100만 원 기프트 카드 받자… 차지 9주년 기념 역대급 프로모션, 언제까지? 위키트리",
+   "summary": [
+    "대한항공 100만 원 기프트 카드 받자… 차지 9주년 기념 역대급 프로모션, 언제까지? 위키트리…"
+   ],
+   "link": "https://www.wikitree.co.kr/articles/1172394",
+   "source": "위키트리",
+   "date": "2026-11-06T03:05:00.000Z",
+   "found": "2026-11-06",
+   "cards": [],
+   "airlines": [
+    "KE",
+    "7C"
+   ],
+   "countries": [
+    "베트남",
+    "싱가포르",
+    "마카오",
+    "필리핀"
+   ],
+   "allRoutes": true,
+   "routes": [],
+   "price": null,
+   "query": "대한항공 {특가말}",
+   "bodyAt": "2026-11-06",
+   "body": [
+    "‘OPEN YOUR GIFT’ 프로모션, 11월 6일부터 14일까지 운영",
+    "이로써 자스민 특유의 향이 찻잎 속까지 깊게 배면서도 홍차 본연의 깊은 맛이 유지돼 화사한 꽃내음과 그윽한 차향이 이상적인 조화를 이룬다.",
+    "이번 신제품은 기존 자스민 블랙 라인업을 밀크티로 확장한 메뉴로, 전국의 모든 CHAGEE(차지) 매장에서 판매된다.",
+    "11월 6일부터 12월 31일까지 음료 1잔과 디저트 1개를 세트로 구매할 경우 1,500원 할인 혜택을 제공한다.",
+    "11월 6일부터 12일까지 일주일간 자스민 블랙 음료(전 매장 판매 중인 자스민 블랙 밀크티 및 강남 플래그십 스토어 한정인 자스민 블랙 티-에스프레소 3종) 1잔을 구매하는 고객에게는 정가 26,000원의 캔들을 19,000원에 특가 판매한다.",
+    "모바일 앱 전용 프로모션인 ‘OPEN YOUR GIFT’도 11월 6일부터 14일까지 운영된다.",
+    "CHAGEE(차지) 앱을 통해 1,000원 이상 결제 시 선물 상자 4개가 지급되며, 1개는 본인이 직접 열고 나머지 3개는 앱에 가입된 다른 친구들에게 선물할 수 있다.",
+    "선물 상자에는 음료 할인 및 무료 쿠폰을 비롯해 9주년 기념 기프트 세트, 대한항공 100만 원 기프트 카드 등 풍성한 혜택이 담겼다.",
+    "선물 상자는 11월 14일까지 오픈할 수 있으며, 지급된 쿠폰의 유효기간은 발급일로부터 7일이다."
+   ],
+   "ai": {
+    "v": 2,
+    "promo": false,
+    "why": "차지 음료 프로모션, 항공권은 경품",
+    "airlines": [],
+    "name": null,
+    "book": null,
+    "board": null,
+    "price": null,
+    "trip": null,
+    "pct": null,
+    "seoul": null,
+    "at": "2026-11-12",
+    "model": "deepseek-v4-flash"
+   },
+   "lastDate": "2026-11-17T00:23:00.000Z",
+   "lastFound": "2026-11-18",
+   "more": [
+    {
+     "id": "https://www.insight.co.kr/news/581438|괌 비즈니스석 항공권 까지 쏜다...롯데면세점, 온라인 블프 최대 65%",
+     "kind": "airline",
+     "title": "괌 비즈니스석 항공권 까지 쏜다...롯데면세점, 온라인 블프 최대 65% 할...",
+     "desc": "프로모션 의 핵심은 주차별로 운영되는 '주간 세일 30'이다. 매주 30개 품목을 대폭 할인 하는 방식으로, 1차... 대한항공 멜버른 왕복 항공권 5매, 제주항공 베트남 왕복 항공권 10매, 제주항공 국제선 왕복 항공권 6매...",
+     "summary": [
+      "프로모션 의 핵심은 주차별로 운영되는 '주간 세일 30'이다.",
+      "매주 30개 품목을 대폭 할인 하는 방식으로, 1차...",
+      "대한항공 멜버른 왕복 항공권 5매, 제주항공 베트남 왕복 항공권 10매, 제주항공 국제선 왕복 항공권 6매…"
+     ],
+     "link": "https://www.insight.co.kr/news/581438",
+     "source": "네이버 뉴스",
+     "date": "2026-11-10T09:18:00.000Z",
+     "found": "2026-11-10",
+     "cards": [],
+     "airlines": [
+      "KE",
+      "7C"
+     ],
+     "countries": [
+      "베트남",
+      "싱가포르",
+      "마카오"
+     ],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "베트남 항공권 {특가말}",
+     "bodyAt": "2026-11-10",
+     "body": [
+      "매주 30개 품목을 대폭 할인하는 방식으로, 1차 행사에서는 최대 65% 할인율을 내건다.",
+      "매일 오전 11시와 오후 5시 선착순 3000명에게 당일 사용 가능한 스페셜 쿠폰이 지급되며, 롯데잇츠·교보문고·제주항공·네이버페이 등 4개 제휴사를 통한 최대 6% 할인쿠폰과 결제수단별 추가 혜택도 누릴 수 있다.",
+      "롯데면세점에서 1달러 이상 결제하고 다음 달 31일까지 대한항공 편으로 출국하는 고객 중 추첨을 통해 1명에게 대한항공 괌 노선 프레스티지 왕복 항공권 2매가 제공된다.",
+      "오프라인 시내점에서는 다음 달 말까지 겨울여행제 'WISH DESTINATION'이 펼쳐진다.",
+      "호주·베트남 현지 참여 매장에서 추가 혜택을 받을 수 있는 '롯데면세점 ONE PASS'가 운영되고, 명동본점·제주점, 월드타워점·부산점 등 각 지점별로 구매 금액에 따라 최대 177만 원의 LDF PAY가 적립된다.",
+      "대한항공 멜버른 왕복 항공권 5매, 제주항공 베트남 왕복 항공권 10매, 제주항공 국제선 왕복 항공권 6매, 제주항공 싱가포르 왕복 항공권 2매, 제주항공 마카오 왕복 항공권 2매를 증정한다.",
+      "샤넬과 협업해 인천국제공항 제2터미널에서 다음달 25일까지 운영하는 '샤넬 홀리데이 포디움'이 대표적이다."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "면세점 행사, 항공권은 경품",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "https://www.beyondpost.co.kr/view.php|한진트래블, 대한항공 직항 전세기 이용한 이집트 9일 특가 여행 상품 출",
+     "kind": "airline",
+     "title": "한진트래블, 대한항공 직항 전세기 이용한 이집트 9일 특가 여행 상품 출시",
+     "desc": "[비욘드포스트 김신 기자] 한진트래블이 합리적인 비용으로 고대 문명의 발상지 이집트를 9일간 여행할 수 있는 특가 상품을 출시했다고 밝혔다. 이번 상품은 1인당 최저 399만 원으로 구성됐으며, 한정 좌석으로 운영돼 조기 마감될 수 있다. 1월 1일부터 29일까지 매주 금요일 단 5회 출발이 확정됐고, 대한항공 직항 왕복 전세기를 이용해 장거리 비행의 피로 ...",
+     "summary": [
+      "한진트래블이 합리적인 비용으로 고대 문명의 발상지 이집트를 9일간 여행할 수 있는 특가 상품을 출시했다고 밝혔다.",
+      "이번 상품은 1인당 최저 399만 원으로 구성됐으며, 한정 좌석으로 운영돼 조기 마감될 수 있다.",
+      "1월 1일부터 29일까지 매주 금요일 단 5회 출발이 확정됐고, 대한항공 직항 왕복 전세기를 이용해 장거리 비행의 피로…"
+     ],
+     "link": "https://www.beyondpost.co.kr/view.php?ud=2026111614215047179aeda69934_30",
+     "source": "beyondpost",
+     "date": "2026-11-15T16:41:00.000Z",
+     "found": "2026-11-16",
+     "cards": [],
+     "airlines": [
+      "KE"
+     ],
+     "countries": [
+      "필리핀"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "대한항공 {특가말}",
+     "bodyAt": "2026-11-16",
+     "body": [
+      "이번 상품은 1인당 최저 399만 원으로 구성됐으며, 한정 좌석으로 운영돼 조기 마감될 수 있다.",
+      "1월 1일부터 29일까지 매주 금요일 단 5회 출발이 확정됐고, 대한항공 직항 왕복 전세기를 이용해 장거리 비행의 피로를 줄이고 이동 편의성을 높였다.",
+      "룩소르에서는 1979년 유네스코 세계문화유산으로 지정된 ‘왕가의 계곡’을 탐방한다.",
+      "‘THE 비즈팩’은 비즈니스석 탑승을 통해 장거리 이동의 쾌적함을 높이고 여행 전반의 편의를 강화한 한진트래블의 대표 상품 라인업으로, 대한항공 비즈니스석 왕복 탑승과 전 일정 5성급 호텔 숙박이 제공된다.",
+      "세부 일정과 예약 문의는 한진트래블 공식 홈페이지와 대표전화를 통해 확인할 수 있다."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "여행 패키지 상품, 항공권 할인 아님",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-16",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "https://www.geconomy.co.kr/news/article.html|버킷리스트 실현할 단 한 번의 기회…한진트래블, 대한항공 이집트 전세기 ",
+     "kind": "airline",
+     "title": "버킷리스트 실현할 단 한 번의 기회…한진트래블, 대한항공 이집트 전세기 초특가 여행 출시",
+     "desc": "지이코노미 양하영 기자 | 한진트래블이 합리적인 비용으로 고대 문명의 발상지 이집트를 9일간 여행할 수 있는 특가 상품을 출시했다. 이번 상품은 1인당 최저 399만 원으로 구성되었으며, 한정 좌석으로 운영돼 조기 마감될 수 있다. 1월 1일부터 29일까지 매주 금요일 단 5회 출발 확정으로, 대한항공 직항 왕복 전세기를 이용해 장거리 비행의 피로를 덜고 ...",
+     "summary": [
+      "지이코노미 양하영 기자 | 한진트래블이 합리적인 비용으로 고대 문명의 발상지 이집트를 9일간 여행할 수 있는 특가 상품을 출시했다.",
+      "이번 상품은 1인당 최저 399만 원으로 구성되었으며, 한정 좌석으로 운영돼 조기 마감될 수 있다.",
+      "1월 1일부터 29일까지 매주 금요일 단 5회 출발 확정으로, 대한항공 직항 왕복 전세기를 이용해 장거리 비행의 피로를 덜고…"
+     ],
+     "link": "https://www.geconomy.co.kr/news/article.html?no=325716",
+     "source": "지이코노미",
+     "date": "2026-11-15T18:05:00.000Z",
+     "found": "2026-11-16",
+     "cards": [],
+     "airlines": [
+      "KE"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "대한항공 {특가말}",
+     "bodyAt": "2026-11-16",
+     "body": [
+      "이번 상품은 1인당 최저 399만 원으로 구성되었으며, 한정 좌석으로 운영돼 조기 마감될 수 있다.",
+      "1월 1일부터 29일까지 매주 금요일 단 5회 출발 확정으로, 대한항공 직항 왕복 전세기를 이용해 장거리 비행의 피로를 덜고 쾌적하게 여행을 오갈 수 있다.",
+      "룩소르에서는 1979년 유네스코 세계문화유산으로 지정된 ‘왕가의 계곡’을 탐방한다.",
+      "‘THE 비즈팩’은 비즈니스석 탑승을 통해 장거리 이동의 쾌적함을 극대화하고, 여행의 시작부터 끝까지 한층 편안한 여정을 제공하는 한진트래블의대표적인 상품 타입으로, 해당 이집트 상품 여행객은 대한항공 비즈니스석 왕복 탑승은 물론 전 일정 5성급 호텔 숙박으로 여유로운 휴식을 즐길 수 있다.",
+      "상세 일정과 예약 문의는 한진트래블 공식 홈페이지 및 대표전화를 통해 확인 가능하다."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "여행 패키지 상품, 항공권 단독 특가 아님",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-16",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "http://www.beyondpost.co.kr/view.php|한진트래블, 대한항공 직항 전세기 이용한 이집트 9일 특가 여행 상품 .",
+     "kind": "airline",
+     "title": "한진트래블, 대한항공 직항 전세기 이용한 이집트 9일 특가 여행 상품 ...",
+     "desc": "한진트래블 관계자는 “이집트를 방문하고 싶었으나 높은 비용 부담으로 망설였던 고객들을 위해 특가 상품을 기획했다”라며 “평생 꿈꿔오셨던 버킷리스트 여행을 대한항공 직항편으로 편안하고 알차게 누려 보시길...",
+     "summary": [
+      "한진트래블 관계자는 “이집트를 방문하고 싶었으나 높은 비용 부담으로 망설였던 고객들을 위해 특가 상품을 기획했다”라며 “평생 꿈꿔오셨던 버킷리스트 여행을 대한항공 직항편으로 편안하고 알차게 누려 보시길…"
+     ],
+     "link": "http://www.beyondpost.co.kr/view.php?ud=2026111614215047179aeda69934_30",
+     "source": "네이버 뉴스",
+     "date": "2026-11-16T05:42:00.000Z",
+     "found": "2026-11-16",
+     "cards": [],
+     "airlines": [
+      "KE"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "대한항공 {특가말}",
+     "bodyAt": "2026-11-16",
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "여행 패키지 상품 특가",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-16",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "https://www.traveldaily.co.kr/news/articleView.html|한진트래블, 대한항공 전세기 초특가 여행 출시",
+     "kind": "airline",
+     "title": "한진트래블, 대한항공 전세기 초특가 여행 출시",
+     "desc": "한진트래블이 합리적인 비용으로 고대 문명의 발상지 이집트를 9일간 여행할 수 있는 특가 상품을 출시했다. 이번 상품은 1인당 최저 399만 원으로 구성며, 한정 좌석으로 운영돼 조기 마감될 수 있다. 1월 1일부터 29일까지 매주 금요일 단 5회 출발 확정으로 대한항공 직항 왕복 전세기를 이용해 장거리 비행의 피로를 덜고 쾌적하게 여행을 오갈 수 있다.",
+     "summary": [
+      "한진트래블이 합리적인 비용으로 고대 문명의 발상지 이집트를 9일간 여행할 수 있는 특가 상품을 출시했다.",
+      "이번 상품은 1인당 최저 399만 원으로 구성며, 한정 좌석으로 운영돼 조기 마감될 수 있다.",
+      "1월 1일부터 29일까지 매주 금요일 단 5회 출발 확정으로 대한항공 직항 왕복 전세기를 이용해 장거리 비행의 피로를 덜고 쾌적하게 여행을 오갈 수 있다."
+     ],
+     "link": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72710",
+     "source": "traveldaily",
+     "date": "2026-11-17T00:23:00.000Z",
+     "found": "2026-11-18",
+     "cards": [],
+     "airlines": [
+      "KE"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "대한항공 {특가말}",
+     "bodyAt": "2026-11-18",
+     "body": [
+      "이번 상품은 1인당 최저 399만 원으로 구성며, 한정 좌석으로 운영돼 조기 마감될 수 있다.",
+      "1월 1일부터 29일까지 매주 금요일 단 5회 출발 확정으로 대한항공 직항 왕복 전세기를 이용해 장거리 비행의 피로를 덜고 쾌적하게 여행을 오갈 수 있다.",
+      "룩소르에서는 1979년 유네스코 세계문화유산으로 지정된 ‘왕가의 계곡’을 탐방한다.",
+      "‘THE 비즈팩’은 비즈니스석 탑승을 통해 장거리 이동의 쾌적함을 극대화하고, 여행의 시작부터 끝까지 한층 편안한 여정을 제공하는 한진트래블의 대표적인 상품 타입으로 해당 이집트 상품 여행객은 대한항공 비즈니스석 왕복 탑승은 물론 전 일정 5성급 호텔 숙박으로 여유로운 휴식을 즐길 수 있다."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "여행사 패키지 상품, 항공권 단독 특가 아님",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-18",
+      "model": "deepseek-v4-flash"
+     }
+    }
+   ]
+  },
+  {
    "id": "1PNVZqS3VURlF2UTBFbWY5eGZfd2NpeVdVaGRJUFBINGF3cGJuaVFnY2NXRG42eXJRRzU1Q2E3cndCbUt3MlM3OEJubDRUT3Zzb0VjQkhPWnJTWlo2V2tBRw|제주항공, 2027학년도 수험생·동반자 국내선 20% 할인",
    "kind": "airline",
    "title": "제주항공, 2027학년도 수험생·동반자 국내선 20% 할인",
@@ -12582,253 +13020,6 @@
        "min": null,
        "period": null
       },
-      "at": "2026-11-16",
-      "model": "deepseek-v4-flash"
-     }
-    }
-   ]
-  },
-  {
-   "id": "CBMiVkFVX3lxTFBqcnBSU01Fb043eUh1d2VSZENjbEltLWNWSkFNeDdQZzkzZ1p6Tk9TYUZWdmNwWFlpQU1LWUJURHhwRFBHb3NfUG1oZGFLcjY1WmlMZkJB|대한항공 100만 원 기프트 카드 받자… 차지 9주년 기념 역대급 프로모",
-   "kind": "airline",
-   "title": "대한항공 100만 원 기프트 카드 받자… 차지 9주년 기념 역대급 프로모션, 언제까지?",
-   "desc": "대한항공 100만 원 기프트 카드 받자… 차지 9주년 기념 역대급 프로모션, 언제까지? 위키트리",
-   "summary": [
-    "대한항공 100만 원 기프트 카드 받자… 차지 9주년 기념 역대급 프로모션, 언제까지? 위키트리…"
-   ],
-   "link": "https://www.wikitree.co.kr/articles/1172394",
-   "source": "위키트리",
-   "date": "2026-11-06T03:05:00.000Z",
-   "found": "2026-11-06",
-   "cards": [],
-   "airlines": [
-    "KE",
-    "7C"
-   ],
-   "countries": [
-    "베트남",
-    "싱가포르",
-    "마카오",
-    "필리핀"
-   ],
-   "allRoutes": true,
-   "routes": [],
-   "price": null,
-   "query": "대한항공 {특가말}",
-   "bodyAt": "2026-11-06",
-   "body": [
-    "‘OPEN YOUR GIFT’ 프로모션, 11월 6일부터 14일까지 운영",
-    "이로써 자스민 특유의 향이 찻잎 속까지 깊게 배면서도 홍차 본연의 깊은 맛이 유지돼 화사한 꽃내음과 그윽한 차향이 이상적인 조화를 이룬다.",
-    "이번 신제품은 기존 자스민 블랙 라인업을 밀크티로 확장한 메뉴로, 전국의 모든 CHAGEE(차지) 매장에서 판매된다.",
-    "11월 6일부터 12월 31일까지 음료 1잔과 디저트 1개를 세트로 구매할 경우 1,500원 할인 혜택을 제공한다.",
-    "11월 6일부터 12일까지 일주일간 자스민 블랙 음료(전 매장 판매 중인 자스민 블랙 밀크티 및 강남 플래그십 스토어 한정인 자스민 블랙 티-에스프레소 3종) 1잔을 구매하는 고객에게는 정가 26,000원의 캔들을 19,000원에 특가 판매한다.",
-    "모바일 앱 전용 프로모션인 ‘OPEN YOUR GIFT’도 11월 6일부터 14일까지 운영된다.",
-    "CHAGEE(차지) 앱을 통해 1,000원 이상 결제 시 선물 상자 4개가 지급되며, 1개는 본인이 직접 열고 나머지 3개는 앱에 가입된 다른 친구들에게 선물할 수 있다.",
-    "선물 상자에는 음료 할인 및 무료 쿠폰을 비롯해 9주년 기념 기프트 세트, 대한항공 100만 원 기프트 카드 등 풍성한 혜택이 담겼다.",
-    "선물 상자는 11월 14일까지 오픈할 수 있으며, 지급된 쿠폰의 유효기간은 발급일로부터 7일이다."
-   ],
-   "ai": {
-    "v": 2,
-    "promo": false,
-    "why": "차지 음료 프로모션, 항공권은 경품",
-    "airlines": [],
-    "name": null,
-    "book": null,
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": null,
-    "seoul": null,
-    "at": "2026-11-12",
-    "model": "deepseek-v4-flash"
-   },
-   "lastDate": "2026-11-16T05:42:00.000Z",
-   "lastFound": "2026-11-16",
-   "more": [
-    {
-     "id": "https://www.insight.co.kr/news/581438|괌 비즈니스석 항공권 까지 쏜다...롯데면세점, 온라인 블프 최대 65%",
-     "kind": "airline",
-     "title": "괌 비즈니스석 항공권 까지 쏜다...롯데면세점, 온라인 블프 최대 65% 할...",
-     "desc": "프로모션 의 핵심은 주차별로 운영되는 '주간 세일 30'이다. 매주 30개 품목을 대폭 할인 하는 방식으로, 1차... 대한항공 멜버른 왕복 항공권 5매, 제주항공 베트남 왕복 항공권 10매, 제주항공 국제선 왕복 항공권 6매...",
-     "summary": [
-      "프로모션 의 핵심은 주차별로 운영되는 '주간 세일 30'이다.",
-      "매주 30개 품목을 대폭 할인 하는 방식으로, 1차...",
-      "대한항공 멜버른 왕복 항공권 5매, 제주항공 베트남 왕복 항공권 10매, 제주항공 국제선 왕복 항공권 6매…"
-     ],
-     "link": "https://www.insight.co.kr/news/581438",
-     "source": "네이버 뉴스",
-     "date": "2026-11-10T09:18:00.000Z",
-     "found": "2026-11-10",
-     "cards": [],
-     "airlines": [
-      "KE",
-      "7C"
-     ],
-     "countries": [
-      "베트남",
-      "싱가포르",
-      "마카오"
-     ],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "베트남 항공권 {특가말}",
-     "bodyAt": "2026-11-10",
-     "body": [
-      "매주 30개 품목을 대폭 할인하는 방식으로, 1차 행사에서는 최대 65% 할인율을 내건다.",
-      "매일 오전 11시와 오후 5시 선착순 3000명에게 당일 사용 가능한 스페셜 쿠폰이 지급되며, 롯데잇츠·교보문고·제주항공·네이버페이 등 4개 제휴사를 통한 최대 6% 할인쿠폰과 결제수단별 추가 혜택도 누릴 수 있다.",
-      "롯데면세점에서 1달러 이상 결제하고 다음 달 31일까지 대한항공 편으로 출국하는 고객 중 추첨을 통해 1명에게 대한항공 괌 노선 프레스티지 왕복 항공권 2매가 제공된다.",
-      "오프라인 시내점에서는 다음 달 말까지 겨울여행제 'WISH DESTINATION'이 펼쳐진다.",
-      "호주·베트남 현지 참여 매장에서 추가 혜택을 받을 수 있는 '롯데면세점 ONE PASS'가 운영되고, 명동본점·제주점, 월드타워점·부산점 등 각 지점별로 구매 금액에 따라 최대 177만 원의 LDF PAY가 적립된다.",
-      "대한항공 멜버른 왕복 항공권 5매, 제주항공 베트남 왕복 항공권 10매, 제주항공 국제선 왕복 항공권 6매, 제주항공 싱가포르 왕복 항공권 2매, 제주항공 마카오 왕복 항공권 2매를 증정한다.",
-      "샤넬과 협업해 인천국제공항 제2터미널에서 다음달 25일까지 운영하는 '샤넬 홀리데이 포디움'이 대표적이다."
-     ],
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "면세점 행사, 항공권은 경품",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "https://www.beyondpost.co.kr/view.php|한진트래블, 대한항공 직항 전세기 이용한 이집트 9일 특가 여행 상품 출",
-     "kind": "airline",
-     "title": "한진트래블, 대한항공 직항 전세기 이용한 이집트 9일 특가 여행 상품 출시",
-     "desc": "[비욘드포스트 김신 기자] 한진트래블이 합리적인 비용으로 고대 문명의 발상지 이집트를 9일간 여행할 수 있는 특가 상품을 출시했다고 밝혔다. 이번 상품은 1인당 최저 399만 원으로 구성됐으며, 한정 좌석으로 운영돼 조기 마감될 수 있다. 1월 1일부터 29일까지 매주 금요일 단 5회 출발이 확정됐고, 대한항공 직항 왕복 전세기를 이용해 장거리 비행의 피로 ...",
-     "summary": [
-      "한진트래블이 합리적인 비용으로 고대 문명의 발상지 이집트를 9일간 여행할 수 있는 특가 상품을 출시했다고 밝혔다.",
-      "이번 상품은 1인당 최저 399만 원으로 구성됐으며, 한정 좌석으로 운영돼 조기 마감될 수 있다.",
-      "1월 1일부터 29일까지 매주 금요일 단 5회 출발이 확정됐고, 대한항공 직항 왕복 전세기를 이용해 장거리 비행의 피로…"
-     ],
-     "link": "https://www.beyondpost.co.kr/view.php?ud=2026111614215047179aeda69934_30",
-     "source": "beyondpost",
-     "date": "2026-11-15T16:41:00.000Z",
-     "found": "2026-11-16",
-     "cards": [],
-     "airlines": [
-      "KE"
-     ],
-     "countries": [
-      "필리핀"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "대한항공 {특가말}",
-     "bodyAt": "2026-11-16",
-     "body": [
-      "이번 상품은 1인당 최저 399만 원으로 구성됐으며, 한정 좌석으로 운영돼 조기 마감될 수 있다.",
-      "1월 1일부터 29일까지 매주 금요일 단 5회 출발이 확정됐고, 대한항공 직항 왕복 전세기를 이용해 장거리 비행의 피로를 줄이고 이동 편의성을 높였다.",
-      "룩소르에서는 1979년 유네스코 세계문화유산으로 지정된 ‘왕가의 계곡’을 탐방한다.",
-      "‘THE 비즈팩’은 비즈니스석 탑승을 통해 장거리 이동의 쾌적함을 높이고 여행 전반의 편의를 강화한 한진트래블의 대표 상품 라인업으로, 대한항공 비즈니스석 왕복 탑승과 전 일정 5성급 호텔 숙박이 제공된다.",
-      "세부 일정과 예약 문의는 한진트래블 공식 홈페이지와 대표전화를 통해 확인할 수 있다."
-     ],
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "여행 패키지 상품, 항공권 할인 아님",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-16",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "https://www.geconomy.co.kr/news/article.html|버킷리스트 실현할 단 한 번의 기회…한진트래블, 대한항공 이집트 전세기 ",
-     "kind": "airline",
-     "title": "버킷리스트 실현할 단 한 번의 기회…한진트래블, 대한항공 이집트 전세기 초특가 여행 출시",
-     "desc": "지이코노미 양하영 기자 | 한진트래블이 합리적인 비용으로 고대 문명의 발상지 이집트를 9일간 여행할 수 있는 특가 상품을 출시했다. 이번 상품은 1인당 최저 399만 원으로 구성되었으며, 한정 좌석으로 운영돼 조기 마감될 수 있다. 1월 1일부터 29일까지 매주 금요일 단 5회 출발 확정으로, 대한항공 직항 왕복 전세기를 이용해 장거리 비행의 피로를 덜고 ...",
-     "summary": [
-      "지이코노미 양하영 기자 | 한진트래블이 합리적인 비용으로 고대 문명의 발상지 이집트를 9일간 여행할 수 있는 특가 상품을 출시했다.",
-      "이번 상품은 1인당 최저 399만 원으로 구성되었으며, 한정 좌석으로 운영돼 조기 마감될 수 있다.",
-      "1월 1일부터 29일까지 매주 금요일 단 5회 출발 확정으로, 대한항공 직항 왕복 전세기를 이용해 장거리 비행의 피로를 덜고…"
-     ],
-     "link": "https://www.geconomy.co.kr/news/article.html?no=325716",
-     "source": "지이코노미",
-     "date": "2026-11-15T18:05:00.000Z",
-     "found": "2026-11-16",
-     "cards": [],
-     "airlines": [
-      "KE"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "대한항공 {특가말}",
-     "bodyAt": "2026-11-16",
-     "body": [
-      "이번 상품은 1인당 최저 399만 원으로 구성되었으며, 한정 좌석으로 운영돼 조기 마감될 수 있다.",
-      "1월 1일부터 29일까지 매주 금요일 단 5회 출발 확정으로, 대한항공 직항 왕복 전세기를 이용해 장거리 비행의 피로를 덜고 쾌적하게 여행을 오갈 수 있다.",
-      "룩소르에서는 1979년 유네스코 세계문화유산으로 지정된 ‘왕가의 계곡’을 탐방한다.",
-      "‘THE 비즈팩’은 비즈니스석 탑승을 통해 장거리 이동의 쾌적함을 극대화하고, 여행의 시작부터 끝까지 한층 편안한 여정을 제공하는 한진트래블의대표적인 상품 타입으로, 해당 이집트 상품 여행객은 대한항공 비즈니스석 왕복 탑승은 물론 전 일정 5성급 호텔 숙박으로 여유로운 휴식을 즐길 수 있다.",
-      "상세 일정과 예약 문의는 한진트래블 공식 홈페이지 및 대표전화를 통해 확인 가능하다."
-     ],
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "여행 패키지 상품, 항공권 단독 특가 아님",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-16",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "http://www.beyondpost.co.kr/view.php|한진트래블, 대한항공 직항 전세기 이용한 이집트 9일 특가 여행 상품 .",
-     "kind": "airline",
-     "title": "한진트래블, 대한항공 직항 전세기 이용한 이집트 9일 특가 여행 상품 ...",
-     "desc": "한진트래블 관계자는 “이집트를 방문하고 싶었으나 높은 비용 부담으로 망설였던 고객들을 위해 특가 상품을 기획했다”라며 “평생 꿈꿔오셨던 버킷리스트 여행을 대한항공 직항편으로 편안하고 알차게 누려 보시길...",
-     "summary": [
-      "한진트래블 관계자는 “이집트를 방문하고 싶었으나 높은 비용 부담으로 망설였던 고객들을 위해 특가 상품을 기획했다”라며 “평생 꿈꿔오셨던 버킷리스트 여행을 대한항공 직항편으로 편안하고 알차게 누려 보시길…"
-     ],
-     "link": "http://www.beyondpost.co.kr/view.php?ud=2026111614215047179aeda69934_30",
-     "source": "네이버 뉴스",
-     "date": "2026-11-16T05:42:00.000Z",
-     "found": "2026-11-16",
-     "cards": [],
-     "airlines": [
-      "KE"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "대한항공 {특가말}",
-     "bodyAt": "2026-11-16",
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "여행 패키지 상품 특가",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
       "at": "2026-11-16",
       "model": "deepseek-v4-flash"
      }
@@ -43053,24 +43244,24 @@
    "lastFound": "2026-11-01"
   }
  ],
- "updated": "2026-11-17T13:54:39.701Z",
- "runs": 212,
+ "updated": "2026-11-17T21:00:41.242Z",
+ "runs": 213,
  "checked": {
-  "베트남": "2026-11-17T13:54:39.701Z",
-  "태국": "2026-11-17T13:54:39.701Z",
-  "필리핀": "2026-11-17T13:54:39.701Z",
-  "인도네시아": "2026-11-17T13:54:39.701Z",
-  "말레이시아": "2026-11-17T13:54:39.701Z",
-  "싱가포르": "2026-11-17T13:54:39.701Z",
-  "일본": "2026-11-17T13:54:39.701Z",
-  "대만": "2026-11-17T13:54:39.701Z",
-  "홍콩": "2026-11-17T13:54:39.701Z",
-  "마카오": "2026-11-17T13:54:39.701Z",
-  "중국": "2026-11-17T13:54:39.701Z",
-  "미국령": "2026-11-17T13:54:39.701Z",
-  "미국": "2026-11-17T13:54:39.701Z"
+  "베트남": "2026-11-17T21:00:41.242Z",
+  "태국": "2026-11-17T21:00:41.242Z",
+  "필리핀": "2026-11-17T21:00:41.242Z",
+  "인도네시아": "2026-11-17T21:00:41.242Z",
+  "말레이시아": "2026-11-17T21:00:41.242Z",
+  "싱가포르": "2026-11-17T21:00:41.242Z",
+  "일본": "2026-11-17T21:00:41.242Z",
+  "대만": "2026-11-17T21:00:41.242Z",
+  "홍콩": "2026-11-17T21:00:41.242Z",
+  "마카오": "2026-11-17T21:00:41.242Z",
+  "중국": "2026-11-17T21:00:41.242Z",
+  "미국령": "2026-11-17T21:00:41.242Z",
+  "미국": "2026-11-17T21:00:41.242Z"
  },
- "auto": "2026-11-17T13:54:39.701Z",
+ "auto": "2026-11-17T21:00:41.242Z",
  "sources": {
   "7C": "2026-11-01",
   "TW": "2026-11-01",
@@ -43283,115 +43474,6 @@
    "중국동방항공 얼리버드": "2026-11-04"
   },
   "seen": [
-   "minecraftpe/4014809",
-   "warcraftgamemap/3533492",
-   "buncafea/46977",
-   "waateam/165831",
-   "airplanetiket/1324",
-   "worrytodream/989028",
-   "pachi7/5294",
-   "whiskycognac/963969",
-   "moneyinsights/12280",
-   "whiskycognac/963962",
-   "vainwithzeus/43469",
-   "jmsong0829/76065",
-   "greens9ac3/13373",
-   "cjyeonsu/609448",
-   "cge80/1253379",
-   "festivalsoo/675",
-   "true8/4025956",
-   "true8/4025916",
-   "weeklydrawings/20333",
-   "buncafea/46967",
-   "dailytour1/4661",
-   "blss486/2260",
-   "8282home/871710",
-   "jimncarry/95384",
-   "macaunoblesse/246296",
-   "lovelovecm/243531",
-   "worldtravelcafe/1166215",
-   "worldtravelcafe/1166212",
-   "worldtravelcafe/1166211",
-   "squaresever/37676",
-   "worldtravelcafe/1166203",
-   "worldtravelcafe/1166202",
-   "worldtravelcafe/1166201",
-   "nyctourdesign/1206250",
-   "nyctourdesign/1206249",
-   "mindy7857/5529238",
-   "mindy7857/5529200",
-   "zzop/4337960",
-   "minecraftpe/4014814",
-   "mindy7857/5529168",
-   "mindy7857/5529225",
-   "mindy7857/5529220",
-   "mindy7857/5529190",
-   "injecter3/243794",
-   "dongjakmom1004/524",
-   "010freebaram/259977",
-   "gorillacampingja/21719",
-   "joonggonara/1138033364",
-   "dondondondon/347896",
-   "010freebaram/259973",
-   "tamis0302/75961",
-   "hisub2/30141",
-   "wowlze/144052",
-   "golmarket/13188681",
-   "airportshopping/1116",
-   "airportshopping/1117",
-   "airportshopping/1115",
-   "tjstldnjs/41468",
-   "airportshopping/1114",
-   "busanjungonara/6156949",
-   "busanjungonara/6156939",
-   "multizonevoto/11200",
-   "airportshopping/1113",
-   "airportshopping/1112",
-   "jpnstory/4434217",
-   "loveloveloveovelove/1041589",
-   "mindy7857/5529242",
-   "mindy7857/5529217",
-   "ysm5828/9648128",
-   "warcraftgamemap/3533592",
-   "vinpearl/568513",
-   "vinpearl/568506",
-   "vinpearl/568499",
-   "happyibook/6352697",
-   "vinpearl/568488",
-   "ysm5828/9648093",
-   "bnteam1/316379",
-   "fobn/165844",
-   "happyibook/6352716",
-   "ira111/931425",
-   "bluesail/19019",
-   "bebettergirls/2103576",
-   "hello6grade3class/40228",
-   "loyaltylife/368864",
-   "loyaltylife/368858",
-   "morningjjang/1982289",
-   "manijuicy/57317",
-   "freetourincebu/1654",
-   "lovelycafeluck/50078",
-   "jpnstory/4441528",
-   "wegovy1/39899",
-   "vmfltmxhs22/956",
-   "graycb6iv/38",
-   "laeasusan/10132",
-   "ghktnsaka/164782",
-   "goldenegg00/7108",
-   "joonggonara/1138033570",
-   "goldenegg00/7104",
-   "wmhouse/1154",
-   "111888666/13850",
-   "uouv96/114654",
-   "jpnstory/4441484",
-   "directwedding/9565921",
-   "directwedding/9565873",
-   "bookchildlove/2282904",
-   "culturebloom/3431680",
-   "15668981/4695948",
-   "noonebungee/136914",
-   "noonebungee/136913",
    "111888666/13858",
    "squaresever/37672",
    "chinatripatoz/32235",
@@ -49282,7 +49364,116 @@
    "bubi2/47981",
    "todaybigboss/6744",
    "start336655/609",
-   "dolphintour/9073"
+   "dolphintour/9073",
+   "lnf/419297",
+   "zmzm6506/86006",
+   "dngd/41260",
+   "worrytodream/1008642",
+   "dngd/41254",
+   "worrytodream/1008630",
+   "lnf/419290",
+   "worrytodream/1008624",
+   "dngd/41250",
+   "lnf/419288",
+   "worrytodream/1008611",
+   "dngd/41240",
+   "withdutyfree/3295",
+   "sumonnerdeokoo/121388",
+   "dngd/41214",
+   "hotdealdaejangtravel/15",
+   "hotdealdaejangtravel/14",
+   "airplanetiket/1379",
+   "mindy7857/5537908",
+   "mindy7857/5537896",
+   "mindy7857/5537849",
+   "grownman/1189508",
+   "zzop/4347000",
+   "mindy7857/5537904",
+   "mindy7857/5537801",
+   "nammisarang/292551",
+   "uouv96/116588",
+   "010freebaram/262914",
+   "010freebaram/262875",
+   "joonggonara/1138320250",
+   "joonggonara/1138318828",
+   "jungamironware/21547",
+   "dbskwkd/150981",
+   "010freebaram/262915",
+   "codud8134/726250",
+   "codud8134/726249",
+   "clubx100/613006",
+   "teenmind/7054",
+   "dfither/21827155",
+   "lifemarket000/588",
+   "welfaredatacenter/4686",
+   "rfskorea/33187",
+   "raonfreediving/22282",
+   "anyi/319565",
+   "codud8134/726247",
+   "worldtravelcafe/1167941",
+   "guitarnsong/298586",
+   "8282home/870227",
+   "mindy7857/5537974",
+   "minecraftpe/4018505",
+   "smnt0/5283",
+   "warcraftgamemap/3537762",
+   "ysm5828/9650593",
+   "minecraftpe/4018493",
+   "minecraftpe/4018536",
+   "minecraftpe/4018483",
+   "minecraftpe/4018452",
+   "happyibook/6358738",
+   "warcraftgamemap/3537761",
+   "warcraftgamemap/3537707",
+   "vinpearl/571300",
+   "buncafea/53199",
+   "workingmaker/186890",
+   "lifemarket001/412",
+   "staub/293715",
+   "skyblueobyay/69",
+   "zzop/4346802",
+   "nyctourdesign/1206924",
+   "goodinfo53/2072",
+   "greenb0k6k/201177",
+   "greenb0k6k/201175",
+   "serenstalk/56781",
+   "worrytodream/1007567",
+   "fcbora/5770",
+   "dazbee/14186",
+   "usacolleges/30845",
+   "rosesd1634/455343",
+   "hoteldiscounts/287879",
+   "jmsong0829/76781",
+   "insightjapan/254",
+   "insightjapan/251",
+   "loveloveloveovelove/1043021",
+   "lovelycafeluck/50094",
+   "vainwithzeus/43484",
+   "loveloveloveovelove/1043002",
+   "loveloveloveovelove/1042999",
+   "soho/4124089",
+   "010freebaram/262907",
+   "miznett/5161044",
+   "worrytodream/1008592",
+   "worrytodream/1008573",
+   "worrytodream/1008571",
+   "worrytodream/1008565",
+   "worrytodream/1008555",
+   "worrytodream/1008546",
+   "worrytodream/1008535",
+   "worrytodream/1008532",
+   "worrytodream/1008529",
+   "worrytodream/1008471",
+   "bmwdclub/2079533",
+   "greenyzytc/6047",
+   "worrytodream/1008601",
+   "worldtravelcafe/1167909",
+   "2266734/91913",
+   "greenur36q/8893",
+   "victorhack/61",
+   "taiwantour/1160306",
+   "loyaltylife/370168",
+   "firenze/9000184"
   ],
   "since": "2026-11-03",
   "imported": "2026-11-03"

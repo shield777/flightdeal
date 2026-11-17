@@ -1,5 +1,134 @@
 [
  {
+  "at": "2026-11-18",
+  "title": "✈️파라타 항공 : 블랙 프라이데이 일본ㆍ중국ㆍ 베트남 전노선 특가 ! 정보",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "항공사 블프 전노선 특가",
+   "airlines": [
+    "파라타항공"
+   ],
+   "name": "블랙 프라이데이 특가",
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-18",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-18",
+  "title": "제주항공, 대입 수험생 항공료 부담 낮춘다…국내선 20% 할인",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "국내선 항공권 20% 할인",
+   "airlines": [
+    "제주항공"
+   ],
+   "name": null,
+   "book": {
+    "from": null,
+    "to": "2026-12-16"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-02-25"
+   },
+   "price": null,
+   "trip": null,
+   "pct": 20,
+   "seoul": null,
+   "at": "2026-11-18",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": null,
+    "to": "2026-12-16"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-02-25"
+   },
+   "pct": 20,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-18",
+  "title": "한진트래블, 대한항공 전세기 초특가 여행 출시",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "여행사 패키지 상품, 항공권 단독 특가 아님",
+   "airlines": [],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-18",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님"
+  ]
+ },
+ {
+  "at": "2026-11-18",
+  "title": "최대 65% 할인, 괌 항공권… 롯데면세점에서 겨울을 즐겨보세요",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "면세점 행사, 항공권은 경품",
+   "airlines": [],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-18",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": 65,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님",
+   "할인율 규칙 65 / AI -"
+  ]
+ },
+ {
   "at": "2026-11-17",
   "title": "✈️ 에어로케이 블프 특가 다낭은 18일10시 오픈 !!",
   "community": true,
@@ -9895,131 +10024,6 @@
   },
   "diff": [
    "할인율 규칙 51 / AI 15"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "✈️ 진에어 11월 매진 특가 ! 최대 15% 할인",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "진에어 11월 특가 할인 소식",
-   "airlines": [
-    "진에어"
-   ],
-   "name": "11월 매진 특가",
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": 15,
-   "seoul": false,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": 15,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "✈️ 진에어 항공: 11월 매진 특가 ! 단 10일간 열리는 역대급 찬스 정보",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "진에어 11월 매진 특가 소식",
-   "airlines": [
-    "진에어"
-   ],
-   "name": "11월 매진 특가",
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "BC카드, 가을 나들이 할인 쏜다…테마파크 최대 58%",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "카드사 테마파크·여행상품 할인 행사",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": 58,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님",
-   "할인율 규칙 58 / AI -"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "✈️(정보) 진에어 11월 매진 특가 ✨",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "진에어 11월 매진 특가 안내",
-   "airlines": [
-    "진에어"
-   ],
-   "name": "11월 매진 특가",
-   "book": {
-    "from": "2026-11-03",
-    "to": "2026-11-12"
-   },
-   "board": {
-    "from": "2026-11-03",
-    "to": "2027-03-27"
-   },
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": [
-   "예약 마감 규칙 - / AI 2026-11-12"
   ]
  }
 ]
