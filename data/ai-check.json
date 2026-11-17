@@ -1,6 +1,604 @@
 [
  {
   "at": "2026-11-17",
+  "title": "[ 제주항공 ] 제주 도 항공 권 최대 2만원 할인 !",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "제주항공 항공권 할인 프로모션",
+   "airlines": [
+    "제주항공"
+   ],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-17",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-17",
+  "title": "[ 제주항공 ] 수험생도 동반자도 모두 20% 할인 !",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "제주항공 수험생·동반자 20% 할인 프로모션",
+   "airlines": [
+    "제주항공"
+   ],
+   "name": "수험생·동반자 20% 할인",
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": 20,
+   "seoul": null,
+   "at": "2026-11-17",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": 20,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-17",
+  "title": "[플라이H!] 블프 특가 로 내년 항공권 미리 끊는다..파라타항공·트리니...",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "블프 항공권 특가 판매",
+   "airlines": [
+    "파라타항공"
+   ],
+   "name": "블프 특가",
+   "book": {
+    "from": null,
+    "to": "2026-11-23"
+   },
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": true,
+   "at": "2026-11-17",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": null,
+    "to": "2026-11-23"
+   },
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-17",
+  "title": "트리니티항공 , 태국관광청 공동 프로모션 …인천·대구~방콕·인천~치앙...",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "항공사 특가·할인코드 프로모션",
+   "airlines": [
+    "트리니티항공"
+   ],
+   "name": "태국관광청 공동 프로모션",
+   "book": {
+    "from": null,
+    "to": "2026-12-13"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-03-27"
+   },
+   "price": null,
+   "trip": null,
+   "pct": 20,
+   "seoul": true,
+   "at": "2026-11-17",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": null,
+    "to": "2026-12-13"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-03-27"
+   },
+   "pct": 20,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-17",
+  "title": "파라타항공·트리니티항공, 일본·태국 노선 프로모션 및 LA노선 예매 돌...",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "항공사 노선 프로모션·특가 운임",
+   "airlines": [
+    "파라타항공",
+    "트리니티항공"
+   ],
+   "name": null,
+   "book": {
+    "from": null,
+    "to": "2026-12-13"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-03-27"
+   },
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": true,
+   "at": "2026-11-17",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": null,
+    "to": "2026-12-13"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-03-27"
+   },
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-17",
+  "title": "대구시, 중화권 관광객 유치 총력…씨트립과 항공권 할인 프로모션",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "중화권 출발 대구행 항공권 할인 프로모션",
+   "airlines": [],
+   "name": null,
+   "book": {
+    "from": "2026-11-17",
+    "to": "2026-12-16"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-02-28"
+   },
+   "price": null,
+   "trip": "편도",
+   "pct": null,
+   "seoul": false,
+   "at": "2026-11-17",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2026-11-17",
+    "to": "2026-12-16"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-02-28"
+   },
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-17",
+  "title": "트리니티항공 블랙프라이데이, 국제선 최대 4만원 쿠폰…11월 30일까지",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "트리니티항공 국제선 할인코드·쿠폰 행사",
+   "airlines": [
+    "트리니티항공"
+   ],
+   "name": "블랙프라이데이",
+   "book": {
+    "from": "2026-11-16",
+    "to": "2026-11-30"
+   },
+   "board": {
+    "from": "2027-02-01",
+    "to": "2027-10-30"
+   },
+   "price": null,
+   "trip": null,
+   "pct": 27,
+   "seoul": true,
+   "at": "2026-11-17",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2026-11-16",
+    "to": "2026-11-30"
+   },
+   "board": {
+    "from": "2027-02-01",
+    "to": "2027-10-30"
+   },
+   "pct": 27,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-17",
+  "title": "태국 여행 준비한다면 주목… 트리니티항공, 항공권·쿠폰 혜택 마련",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "항공사 항공권 특가·쿠폰 혜택",
+   "airlines": [
+    "트리니티항공"
+   ],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-17",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-17",
+  "title": "제주항공 , 수능 수험생 항공 권 20% 할인",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "수험생 항공권 20% 할인",
+   "airlines": [
+    "제주항공"
+   ],
+   "name": "수능 수험생 항공권 할인",
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": 20,
+   "seoul": null,
+   "at": "2026-11-17",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": 20,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-17",
+  "title": "제주항공 , 대입 수험생 국내선 할인",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "수험생 국내선 운임 할인",
+   "airlines": [
+    "제주항공"
+   ],
+   "name": "대입 수험생 국내선 할인",
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-17",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-17",
+  "title": "트리니티항공, 태국 노선 할인 프로모션…방콕·치앙마이 최대 20% 할인",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "항공사 태국 노선 운임 할인 프로모션",
+   "airlines": [
+    "트리니티항공"
+   ],
+   "name": "태국 노선 할인 프로모션",
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": 20,
+   "seoul": null,
+   "at": "2026-11-17",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": 20,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-17",
+  "title": "제주항공, 수험생과 동반자 국내선 항공권 20% 할인",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "국내선 항공권 운임 할인",
+   "airlines": [
+    "제주항공"
+   ],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": 20,
+   "seoul": null,
+   "at": "2026-11-17",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": 20,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-17",
+  "title": "파라타항공 미주 노선 LA 항공권 판매…블랙프라이데이 특가 프로모션",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "블랙프라이데이 항공권 특가 프로모션",
+   "airlines": [
+    "파라타항공"
+   ],
+   "name": "블랙프라이데이 특가 프로모션",
+   "book": {
+    "from": "2026-11-17",
+    "to": "2026-11-23"
+   },
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": true,
+   "at": "2026-11-17",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2026-11-17",
+    "to": "2026-11-23"
+   },
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-17",
+  "title": "제주항공, 수능 수험생·동반자 국내선 20% 할인",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "국내선 할인, 국제선 운임 아님",
+   "airlines": [
+    "제주항공"
+   ],
+   "name": "수능 수험생·동반자 국내선 할인",
+   "book": {
+    "from": null,
+    "to": "2026-12-16"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-02-25"
+   },
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-17",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": 20,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님",
+   "예약 마감 규칙 - / AI 2026-12-16",
+   "할인율 규칙 20 / AI -"
+  ]
+ },
+ {
+  "at": "2026-11-17",
+  "title": "제주항공, 수험생·동반 1인 국내선 항공권 20% 할인",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "국내선 항공권 20% 할인 프로모션",
+   "airlines": [
+    "제주항공"
+   ],
+   "name": "수험생·동반 1인 국내선 할인",
+   "book": {
+    "from": null,
+    "to": "2026-12-16"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-02-25"
+   },
+   "price": null,
+   "trip": null,
+   "pct": 20,
+   "seoul": null,
+   "at": "2026-11-17",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": null,
+    "to": "2026-12-16"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-02-25"
+   },
+   "pct": 20,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-17",
+  "title": "트리니티항공, 태국 방콕·치앙마이 특가 항공권 프로모션",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "항공사 특가·할인코드 프로모션",
+   "airlines": [
+    "트리니티항공"
+   ],
+   "name": "태국 방콕·치앙마이 특가 항공권 프로모션",
+   "book": {
+    "from": null,
+    "to": "2026-12-13"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-03-27"
+   },
+   "price": null,
+   "trip": null,
+   "pct": 20,
+   "seoul": true,
+   "at": "2026-11-17",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": null,
+    "to": "2026-12-13"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-03-27"
+   },
+   "pct": 20,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-17",
+  "title": "트리니티항공, 태국정부관광청과 공동 프로모션…겨울 관광 수요 공략",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "항공사 태국노선 할인 프로모션",
+   "airlines": [
+    "트리니티항공"
+   ],
+   "name": "타일랜드 윈터 플러스",
+   "book": {
+    "from": null,
+    "to": "2026-12-13"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-03-27"
+   },
+   "price": null,
+   "trip": null,
+   "pct": 20,
+   "seoul": true,
+   "at": "2026-11-17",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": null,
+    "to": "2026-12-13"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-03-27"
+   },
+   "pct": 20,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-17",
   "title": "✈️ [여행·핫딜] 트리니티 항공 (구 티웨이) 2026 블랙 프라이데이! 2027년 항....",
   "community": true,
   "ai": {
@@ -9287,564 +9885,5 @@
   "diff": [
    "AI: 특가 아님"
   ]
- },
- {
-  "at": "2026-11-12",
-  "title": "우리카드, 'the OPUS' 고객 대상 연말 이벤트…항공·호텔 바우처 증정",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "카드사 이벤트, 항공권은 경품",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": 3,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님",
-   "할인율 규칙 3 / AI -"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "동남아 항공권부터 특급호텔 숙박권까지…우리카드 'the OPUS' 연말 이벤트",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "카드사 이벤트, 항공권은 경품",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": 3,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님",
-   "할인율 규칙 3 / AI -"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "트리니티항공, 국제선 최대 25% 할인…최대 3만원 추가 혜택까지",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "국제선 항공권 할인 프로모션",
-   "airlines": [
-    "트리니티항공"
-   ],
-   "name": "11월 가을맞이 더블 혜택 프로모션",
-   "book": {
-    "from": "2026-11-03",
-    "to": "2026-11-13"
-   },
-   "board": {
-    "from": null,
-    "to": "2027-01-31"
-   },
-   "price": null,
-   "trip": null,
-   "pct": 25,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": "2026-11-03",
-    "to": "2026-11-13"
-   },
-   "board": {
-    "from": null,
-    "to": "2027-01-31"
-   },
-   "pct": 25,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "우리카드, 'the OPUS' 100만 원 이상 이용 고객에 경품 이벤트 선봬",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "카드사 경품 이벤트, 항공권은 추첨 경품",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "\"연말 특급호텔·항공권 혜택 쏜다\"…우리카드, 'the OPUS' 고객 이벤트 전개",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "카드사 이벤트, 항공권은 경품",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2026-11-30"
-   },
-   "board": null,
-   "pct": 4,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님",
-   "예약 마감 규칙 2026-11-30 / AI -",
-   "할인율 규칙 4 / AI -"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "[금융권 이모저모]한국투자신탁운용, 글로벌 메모리 3사·채권 투자 ETF ...",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "카드 이벤트, 항공권은 경품",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2026-11-30"
-   },
-   "board": null,
-   "pct": 50,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님",
-   "예약 마감 규칙 2026-11-30 / AI -",
-   "할인율 규칙 50 / AI -"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "에어부산, 부산~광저우 프로모션 실시",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "에어부산 광저우 노선 특가 프로모션",
-   "airlines": [
-    "에어부산"
-   ],
-   "name": "부산~광저우 프로모션",
-   "book": {
-    "from": null,
-    "to": "2026-11-16"
-   },
-   "board": {
-    "from": "2026-12-02",
-    "to": "2027-03-26"
-   },
-   "price": 149900,
-   "trip": "편도",
-   "pct": null,
-   "seoul": false,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2026-11-16"
-   },
-   "board": {
-    "from": "2026-12-02",
-    "to": "2027-03-26"
-   },
-   "pct": 8,
-   "price": 149900
-  },
-  "diff": [
-   "할인율 규칙 8 / AI -"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "우리카드, '디 오퍼스' 고객 대상 연말 이벤트",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "카드사 이벤트, 항공권은 곁가지",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "우리카드, 우수 고객 혜택 강화로 프리미엄 전열 정비",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "카드사 프리미엄 고객 혜택 기사",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "우리카드, 프리미엄 고객 연말 소비 겨냥…여행·호텔 경품 행사",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "카드사 호텔·경품 행사",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": 10,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님",
-   "할인율 규칙 10 / AI -"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "우리카드, 프리미엄 고객 연말 지갑 잡는다…항공권·특급호텔 경품 이벤트",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "카드사 경품 이벤트, 항공권은 경품",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": 3,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님",
-   "할인율 규칙 3 / AI -"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "하나카드, 베트남 결제 할인…우리카드, 연말 경품 이벤트",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "카드사 결제 할인·경품 이벤트",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "교원투어 여행이지, 창립 41주년 감사제…특가 큐레이션·항공권 경품 제공",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "여행사 감사제, 항공권은 경품",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2027-03-31"
-   },
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님",
-   "예약 마감 규칙 2027-03-31 / AI -"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "우리카드, 'the OPUS' 고객에 150만원 항공 바우처 추첨",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "카드사 이벤트, 항공권은 경품",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2026-11-30"
-   },
-   "board": null,
-   "pct": 3,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님",
-   "예약 마감 규칙 2026-11-30 / AI -",
-   "할인율 규칙 3 / AI -"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "우리카드, 'the OPUS' 고객 대상 연말 프리미엄 이벤트",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "카드사 이벤트, 항공권은 경품",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": 3,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님",
-   "할인율 규칙 3 / AI -"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "교원투어 여행이지, 창립 41주년 기념 고객 감사제",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "여행사 창립기념 이벤트, 항공권은 경품",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2027-03-31"
-   },
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님",
-   "예약 마감 규칙 2027-03-31 / AI -"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "트리니티항공, 11월 국제선 프로모션…최대 25% 할인",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "항공사 국제선 운임 할인 프로모션",
-   "airlines": [
-    "트리니티항공"
-   ],
-   "name": "11월 국제선 프로모션",
-   "book": {
-    "from": null,
-    "to": "2026-11-13"
-   },
-   "board": {
-    "from": null,
-    "to": "2027-01-31"
-   },
-   "price": null,
-   "trip": null,
-   "pct": 25,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2026-11-13"
-   },
-   "board": {
-    "from": null,
-    "to": "2027-01-31"
-   },
-   "pct": 25,
-   "price": null
-  },
-  "diff": []
  }
 ]
