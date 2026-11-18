@@ -1,6 +1,41 @@
 [
  {
   "at": "2026-11-19",
+  "title": "해외 인바운드 여객 결제 장벽 해소···트리니티항공 ‘페이팔’과 프로모션 진행",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "페이팔 결제 항공권 할인 프로모션",
+   "airlines": [
+    "트리니티항공"
+   ],
+   "name": "페이팔 제휴 프로모션",
+   "book": {
+    "from": null,
+    "to": "2026-12-31"
+   },
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": 9,
+   "seoul": null,
+   "at": "2026-11-19",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": null,
+    "to": "2026-12-31"
+   },
+   "board": null,
+   "pct": 9,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-19",
   "title": "트리니티항공, 페이팔 결제 시 항공권 최대 9% 할인…해외 고객 대상",
   "community": false,
   "ai": {
@@ -10079,35 +10114,6 @@
   "diff": [
    "할인율 규칙 10 / AI -",
    "가격 규칙 20000 / AI -"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "대한항공 마카오 경품 이벤트 (기프트카드 5만원권 50명)",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "항공권은 경품, 기프트카드 이벤트",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님"
   ]
  }
 ]
