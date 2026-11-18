@@ -1,6 +1,35 @@
 [
  {
   "at": "2026-11-18",
+  "title": "제주항공 3월출발 할인합니다~!",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "제주항공 3월 출발 할인 프로모션",
+   "airlines": [
+    "제주항공"
+   ],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-18",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-18",
   "title": "에어로케이 특가 열렸네용",
   "community": true,
   "ai": {
@@ -10013,35 +10042,6 @@
    "v": 2,
    "promo": false,
    "why": "항공기 모형 판매 글",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "[2월신규,이벤트]아시아나,대한항공,항공기,여객기,비행기,다이캐스트,공항....",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "항공기 다이캐스트 판매 행사",
    "airlines": [],
    "name": null,
    "book": null,
