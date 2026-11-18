@@ -1,6 +1,41 @@
 [
  {
   "at": "2026-11-18",
+  "title": "트리니티항공, 글로벌 간편결제 서비스 페이팔 제휴 프로모션",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "페이팔 결제 항공권 할인 프로모션",
+   "airlines": [
+    "트리니티항공"
+   ],
+   "name": "페이팔 제휴 프로모션",
+   "book": {
+    "from": null,
+    "to": "2026-12-31"
+   },
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": 9,
+   "seoul": null,
+   "at": "2026-11-18",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": null,
+    "to": "2026-12-31"
+   },
+   "board": null,
+   "pct": 9,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-18",
   "title": "\"수능 끝나고 제주 도 가자\"… 제주항공 , 수험생·동반자 항공 권 20% 할인",
   "community": false,
   "ai": {
@@ -10060,35 +10095,6 @@
    "book": null,
    "board": null,
    "pct": null,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "[11월 매진특가] 진에어 다낭·나트랑 최대 15%! 베트남 노선 특가 총출동",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "진에어 베트남 노선 특가",
-   "airlines": [
-    "진에어"
-   ],
-   "name": "11월 매진특가",
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": 15,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": 15,
    "price": null
   },
   "diff": []
