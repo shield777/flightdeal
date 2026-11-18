@@ -1,6 +1,76 @@
 [
  {
   "at": "2026-11-18",
+  "title": "제주 항공 J멤버스위크 특가 ✈️ 3월 봄여행 최대 79% 할인 (11/18~11/24)",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "제주항공 특가 프로모션 안내",
+   "airlines": [
+    "제주항공"
+   ],
+   "name": "J멤버스위크 특가",
+   "book": {
+    "from": "2026-11-18",
+    "to": "2026-11-24"
+   },
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": 79,
+   "seoul": null,
+   "at": "2026-11-18",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2026-11-18",
+    "to": "2026-11-24"
+   },
+   "board": null,
+   "pct": 79,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-18",
+  "title": "트리니티항공, 글로벌 간편결제 서비스 '페이팔 제휴 프로모션' 진행",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "페이팔 결제 항공권 할인 프로모션",
+   "airlines": [
+    "트리니티항공"
+   ],
+   "name": "페이팔 제휴 프로모션",
+   "book": {
+    "from": null,
+    "to": "2026-12-31"
+   },
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": 9,
+   "seoul": null,
+   "at": "2026-11-18",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": null,
+    "to": "2026-12-31"
+   },
+   "board": null,
+   "pct": 9,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-18",
   "title": "트리니티항공, 글로벌 간편결제 서비스 페이팔 제휴 프로모션",
   "community": false,
   "ai": {
@@ -10034,69 +10104,5 @@
   "diff": [
    "예약 마감 규칙 - / AI 2026-12-31"
   ]
- },
- {
-  "at": "2026-11-12",
-  "title": "여기어때, 대만 여행 숙소·항공·투어 할인⋯ 최대 10만원 쿠폰팩 제공",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "숙박·투어 중심, 항공권은 곁가지",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2026-12-06"
-   },
-   "board": null,
-   "pct": 10,
-   "price": 20000
-  },
-  "diff": [
-   "AI: 특가 아님",
-   "예약 마감 규칙 2026-12-06 / AI -",
-   "할인율 규칙 10 / AI -",
-   "가격 규칙 20000 / AI -"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "피치항공 세일",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "피치항공 세일 소식",
-   "airlines": [
-    "피치항공"
-   ],
-   "name": "피치 세일",
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": []
  }
 ]
