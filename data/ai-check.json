@@ -1,5 +1,173 @@
 [
  {
+  "at": "2026-11-19",
+  "title": "트리니티항공, 페이팔 결제 시 항공권 최대 9% 할인…해외 고객 대상",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "페이팔 결제 항공권 할인 프로모션",
+   "airlines": [
+    "트리니티항공"
+   ],
+   "name": "페이팔 제휴 프로모션",
+   "book": {
+    "from": null,
+    "to": "2026-12-31"
+   },
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": 9,
+   "seoul": null,
+   "at": "2026-11-19",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": null,
+    "to": "2026-12-31"
+   },
+   "board": null,
+   "pct": 9,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-19",
+  "title": "트리니티항공, PayPal 제휴 프로모션 진행",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "항공사 결제수단 제휴 할인 프로모션",
+   "airlines": [
+    "트리니티항공"
+   ],
+   "name": "PayPal 제휴 프로모션",
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-19",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-19",
+  "title": "한진트래블, 겨울 전세기 특가 운영…대한항공 직항으로 이집트 9일",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "여행 패키지 상품, 항공권 단독 특가 아님",
+   "airlines": [],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-19",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2027-01-01",
+    "to": "2027-01-29"
+   },
+   "board": null,
+   "pct": null,
+   "price": 3990000
+  },
+  "diff": [
+   "AI: 특가 아님",
+   "예약 마감 규칙 2027-01-29 / AI -",
+   "가격 규칙 3990000 / AI -"
+  ]
+ },
+ {
+  "at": "2026-11-19",
+  "title": "트리니티항공, 페이팔 손잡고 해외 고객 항공권 할인…“한국 여행 더 편리하게”",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "페이팔 결제 항공권 할인 프로모션",
+   "airlines": [
+    "트리니티항공"
+   ],
+   "name": "페이팔 제휴 프로모션",
+   "book": {
+    "from": null,
+    "to": "2026-12-31"
+   },
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": 9,
+   "seoul": null,
+   "at": "2026-11-19",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": null,
+    "to": "2026-12-31"
+   },
+   "board": null,
+   "pct": 9,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-19",
+  "title": "트리니티항공 , 페이팔 결제 시 항공 권 최대 9% 할인 ...해외 고객 공략",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "페이팔 결제 항공권 할인 프로모션",
+   "airlines": [
+    "트리니티항공"
+   ],
+   "name": "페이팔 결제 할인 프로모션",
+   "book": {
+    "from": null,
+    "to": "2026-12-31"
+   },
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": 9,
+   "seoul": null,
+   "at": "2026-11-19",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": null,
+    "to": "2026-12-31"
+   },
+   "board": null,
+   "pct": 9,
+   "price": null
+  },
+  "diff": []
+ },
+ {
   "at": "2026-11-18",
   "title": "제주 항공 J멤버스위크 특가 ✈️ 3월 봄여행 최대 79% 할인 (11/18~11/24)",
   "community": true,
@@ -9940,169 +10108,6 @@
   },
   "diff": [
    "AI: 특가 아님"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "대한 항공 타고 떠나자!⛳ 일본 나가사키 노모자키CC 특가 !",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "골프투어 상품 특가",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "대만 여행 지금이 찬스?…여기어때, 숙소 10만원 쿠폰·항공권 할인",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "항공권 2만원 즉시할인 포함",
-   "airlines": [],
-   "name": null,
-   "book": {
-    "from": null,
-    "to": "2026-12-06"
-   },
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2026-12-06"
-   },
-   "board": null,
-   "pct": 10,
-   "price": 20000
-  },
-  "diff": [
-   "할인율 규칙 10 / AI -",
-   "가격 규칙 20000 / AI -"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "\"여기어때 대만 여행 10만원 쿠폰팩 푼다\" 대만관광청과 숙소·항공·투...",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "숙소·투어 중심 프로모션, 항공권은 곁가지",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": 10,
-   "price": 20000
-  },
-  "diff": [
-   "AI: 특가 아님",
-   "할인율 규칙 10 / AI -",
-   "가격 규칙 20000 / AI -"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "[머니테크]달러로 결제할까, 원화로 결제할까… 해외 직구 카드 활용법",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "카드 해외결제 혜택 기사",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": 8,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님",
-   "할인율 규칙 8 / AI -"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "✈️ 베트남항공 스카이소파 30% 할인 ! 이코노미석 3자리를 넓게~",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "베트남항공 좌석 업그레이드 할인",
-   "airlines": [
-    "베트남항공"
-   ],
-   "name": "스카이소파 30% 할인",
-   "book": {
-    "from": null,
-    "to": "2026-12-31"
-   },
-   "board": {
-    "from": null,
-    "to": "2027-12-31"
-   },
-   "price": null,
-   "trip": null,
-   "pct": 30,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": 30,
-   "price": null
-  },
-  "diff": [
-   "예약 마감 규칙 - / AI 2026-12-31"
   ]
  }
 ]
