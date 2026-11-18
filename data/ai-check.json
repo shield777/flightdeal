@@ -1,6 +1,35 @@
 [
  {
   "at": "2026-11-18",
+  "title": "\"수능 끝나고 제주 도 가자\"… 제주항공 , 수험생·동반자 항공 권 20% 할인",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "제주항공 수험생·동반자 20% 할인",
+   "airlines": [
+    "제주항공"
+   ],
+   "name": "수험생·동반자 할인",
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": 20,
+   "seoul": null,
+   "at": "2026-11-18",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": 20,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-18",
   "title": "에어서울 특가 항공권 11월 프로모션(마이리얼트립)",
   "community": true,
   "ai": {
@@ -10063,38 +10092,5 @@
    "price": null
   },
   "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "[TOP's Pick] [유통] 신세계면세점 명동점 '웰니스존' 확대 개편 外",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "항공권 특가 아닌 유통·리조트 소식",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2026-12-01"
-   },
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님",
-   "예약 마감 규칙 2026-12-01 / AI -"
-  ]
  }
 ]
