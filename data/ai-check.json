@@ -1,6 +1,134 @@
 [
  {
   "at": "2026-11-18",
+  "title": "에어서울 특가 항공권 11월 프로모션(마이리얼트립)",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "에어서울 항공권 특가 프로모션",
+   "airlines": [
+    "에어서울"
+   ],
+   "name": "에어서울 11월 프로모션",
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": "왕복",
+   "pct": null,
+   "seoul": true,
+   "at": "2026-11-18",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-18",
+  "title": "✈️ [제주 항공 특가] 내년 3월 출발 항공권 할인 ! 다낭·나트랑 포함 최대 79....",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "제주항공 3월 출발 항공권 할인 특가",
+   "airlines": [
+    "제주항공"
+   ],
+   "name": null,
+   "book": null,
+   "board": {
+    "from": "2027-03-01",
+    "to": "2027-03-31"
+   },
+   "price": null,
+   "trip": null,
+   "pct": 79,
+   "seoul": null,
+   "at": "2026-11-18",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "할인율 규칙 - / AI 79"
+  ]
+ },
+ {
+  "at": "2026-11-18",
+  "title": "“군 복무 수고했어요”…車 7일 시승부터 항공권 할인·AI 교육까지",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "에어프레미아 군인 항공운임 할인",
+   "airlines": [
+    "에어프레미아"
+   ],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": 12,
+   "seoul": null,
+   "at": "2026-11-18",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": null,
+    "to": "2026-12-31"
+   },
+   "board": null,
+   "pct": 12,
+   "price": null
+  },
+  "diff": [
+   "예약 마감 규칙 2026-12-31 / AI -"
+  ]
+ },
+ {
+  "at": "2026-11-18",
+  "title": "수능 AI 부정에 지친 수험생들 떠나세요…LCC, 항공권 할인 경쟁",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "수험생 항공권 할인 프로모션",
+   "airlines": [
+    "제주항공",
+    "이스타항공",
+    "트리니티항공"
+   ],
+   "name": "수험생 항공권 할인 프로모션",
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": 25,
+   "seoul": null,
+   "at": "2026-11-18",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": 25,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-18",
   "title": "이스타항공 얼리버드 특가 내년 1-2월",
   "community": true,
   "ai": {
@@ -9968,135 +10096,5 @@
    "AI: 특가 아님",
    "예약 마감 규칙 2026-12-01 / AI -"
   ]
- },
- {
-  "at": "2026-11-12",
-  "title": "[11월 매진 특가 ] 진에어 인천-푸꾸옥 10% 할인! 내년 3월까지 따뜻한 섬으로 ....",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "진에어 항공권 10% 할인 특가",
-   "airlines": [
-    "진에어"
-   ],
-   "name": "11월 매진 특가",
-   "book": {
-    "from": "2026-11-03",
-    "to": "2026-11-12"
-   },
-   "board": {
-    "from": null,
-    "to": "2027-03-31"
-   },
-   "price": null,
-   "trip": null,
-   "pct": 10,
-   "seoul": true,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2027-03-31"
-   },
-   "board": null,
-   "pct": 10,
-   "price": null
-  },
-  "diff": [
-   "예약 마감 규칙 2027-03-31 / AI 2026-11-12"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "인천-호치민 진에어 신규취항 특가 1인당 왕복 40만원대~",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "신규취항 항공권 특가",
-   "airlines": [
-    "진에어"
-   ],
-   "name": "신규취항 특가",
-   "book": null,
-   "board": null,
-   "price": 469000,
-   "trip": "왕복",
-   "pct": null,
-   "seoul": true,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": 400000
-  },
-  "diff": [
-   "가격 규칙 400000 / AI 469000"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "[똑똑한여행] 웨스틴 서울 파르나스, 트립닷컴, 인스파이어, 부킹닷컴,...",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "호텔·여행상품 중심 소식",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": 41,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님",
-   "할인율 규칙 41 / AI -"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "✈️ [ 비엣젯 항공 특가 ] 부산·인천 출발 베트남 편도 99,000원부터!",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "비엣젯 항공 특가 운임 소식",
-   "airlines": [
-    "비엣젯"
-   ],
-   "name": "비엣젯 항공 특가",
-   "book": null,
-   "board": null,
-   "price": 99000,
-   "trip": "편도",
-   "pct": null,
-   "seoul": true,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": 99000
-  },
-  "diff": []
  }
 ]
