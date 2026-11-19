@@ -1,6 +1,193 @@
 [
  {
   "at": "2026-11-19",
+  "title": "[ 이스타항공 ] 12월 항공 권할인 / 대만&홍콩 항공 특가 !",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "이스타항공 대만·홍콩 특가",
+   "airlines": [
+    "이스타항공"
+   ],
+   "name": "12월 항공 권할인",
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-19",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-19",
+  "title": "[ 제주항공 ] 홍콩윈터페스트 최대 72% 할인 !",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "제주항공 홍콩 노선 할인 프로모션",
+   "airlines": [
+    "제주항공"
+   ],
+   "name": "홍콩윈터페스트",
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": 72,
+   "seoul": null,
+   "at": "2026-11-19",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": 72,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-19",
+  "title": "남반구 2개국 동시 투어 300만 원대 젯스타 직항 패키지 비용 혜택 분석",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "패키지 상품 분석 글",
+   "airlines": [],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-19",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님"
+  ]
+ },
+ {
+  "at": "2026-11-19",
+  "title": "‘수험생은 항공권 할인’…950년 전 문 연 ‘베트남 첫 대학’ 지친 자녀와 함께 [여행+]",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "트리니티항공 수험생 항공권 할인",
+   "airlines": [
+    "트리니티항공"
+   ],
+   "name": "수험생 항공권 할인",
+   "book": {
+    "from": null,
+    "to": "2027-01-31"
+   },
+   "board": {
+    "from": "2026-11-20",
+    "to": "2027-02-21"
+   },
+   "price": null,
+   "trip": null,
+   "pct": 25,
+   "seoul": null,
+   "at": "2026-11-19",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": null,
+    "to": "2027-01-31"
+   },
+   "board": {
+    "from": "2026-11-20",
+    "to": "2027-02-21"
+   },
+   "pct": 25,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-19",
+  "title": "[ 이스타항공 ] 국내/국제선 할인 항공 권 수험생 할인 이벤트! (최대25% 할인 )",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "이스타항공 수험생 할인 이벤트",
+   "airlines": [
+    "이스타항공"
+   ],
+   "name": "수험생 할인 이벤트",
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": 25,
+   "seoul": null,
+   "at": "2026-11-19",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": 25,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-19",
+  "title": "하나투어, 하나LIVE 론칭 5주년 ‘감사제’ 진행…대박경품· 할인 등 혜...",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "여행사 라이브 방송 이벤트, 항공권은 경품",
+   "airlines": [],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-19",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": 50000
+  },
+  "diff": [
+   "AI: 특가 아님",
+   "가격 규칙 50000 / AI -"
+  ]
+ },
+ {
+  "at": "2026-11-19",
   "title": "파라타항공, LA노선 예매 시작…24일부터 특가 프로모션",
   "community": false,
   "ai": {
@@ -9916,201 +10103,6 @@
    "board": null,
    "pct": null,
    "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "[ 제주항공 ] 칭다오 야간편 오픈 기념 / 11~2월 출발 칭다오 특가 !",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "제주항공 칭다오 신규 취항 특가",
-   "airlines": [
-    "제주항공"
-   ],
-   "name": "칭다오 야간편 오픈 기념 특가",
-   "book": null,
-   "board": {
-    "from": "2026-11-01",
-    "to": "2027-02-28"
-   },
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "[잘먹잘살+]쿠팡·라보에이치·뉴발란스·피지오겔·코오롱FnC·배민·바...",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "여행 플랫폼 숙소·투어 중심 행사",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": "2026-11-09",
-    "to": "2026-11-19"
-   },
-   "board": null,
-   "pct": 86,
-   "price": 20000
-  },
-  "diff": [
-   "AI: 특가 아님",
-   "예약 마감 규칙 2026-11-19 / AI -",
-   "할인율 규칙 86 / AI -",
-   "가격 규칙 20000 / AI -"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "대한항공 100만 원 기프트 카드 받자… 차지 9주년 기념 역대급 프로모션, 언제까지?",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "차지 음료 프로모션, 항공권은 경품",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": "2026-11-06",
-    "to": "2026-11-12"
-   },
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님",
-   "예약 마감 규칙 2026-11-12 / AI -"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "여기어때, 대만 숙소 10만원 쿠폰팩 푼다…항공권·투어도 할인",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "숙소 쿠폰팩 중심, 항공권은 곁가지",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2026-12-06"
-   },
-   "board": null,
-   "pct": null,
-   "price": 20000
-  },
-  "diff": [
-   "AI: 특가 아님",
-   "예약 마감 규칙 2026-12-06 / AI -",
-   "가격 규칙 20000 / AI -"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "[이벤트] 대한항공 마카오 여행 이벤트, 응모하면 기프트카드 5만원권 50명 ....",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "항공권은 경품, 이벤트 중심",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "피치항공 11.11 항공 권 세일, 일본 편도 72,000원부터",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "피치항공 11.11 항공권 세일",
-   "airlines": [
-    "피치항공"
-   ],
-   "name": "11.11 항공권 세일",
-   "book": {
-    "from": "2026-11-06",
-    "to": null
-   },
-   "board": null,
-   "price": 72000,
-   "trip": "편도",
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": 72000
   },
   "diff": []
  }
