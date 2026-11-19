@@ -1,6 +1,69 @@
 [
  {
   "at": "2026-11-19",
+  "title": "이스타항공 , 1월~2월 출발 얼리버드 특가",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "이스타항공 얼리버드 특가",
+   "airlines": [
+    "이스타항공"
+   ],
+   "name": "얼리버드 특가",
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-19",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-19",
+  "title": "수능 끝난 06~08년생 KT 고객, 아이폰18 프로 최대 20만원 추가 할인…대한항공 200만원 경품도",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "휴대폰 할인 행사, 항공권은 경품",
+   "airlines": [],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-19",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2026-11-19",
+    "to": "2026-12-31"
+   },
+   "board": null,
+   "pct": 30,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님",
+   "예약 마감 규칙 2026-12-31 / AI -",
+   "할인율 규칙 30 / AI -"
+  ]
+ },
+ {
+  "at": "2026-11-19",
   "title": "해외 인바운드 여객 결제 장벽 해소···트리니티항공 ‘페이팔’과 프로모션 진행",
   "community": false,
   "ai": {
@@ -10042,78 +10105,6 @@
   "diff": [
    "AI: 특가 아님",
    "할인율 규칙 3 / AI -"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "여기어때 대만 여행 할인, 숙소 10만원 쿠폰팩·항공권 2만원 혜택",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "대만 항공권 2만원 즉시할인 포함",
-   "airlines": [],
-   "name": "여기어때 대만 여행 할인",
-   "book": {
-    "from": null,
-    "to": "2026-12-06"
-   },
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2026-12-06"
-   },
-   "board": null,
-   "pct": 10,
-   "price": 20000
-  },
-  "diff": [
-   "할인율 규칙 10 / AI -",
-   "가격 규칙 20000 / AI -"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "여기어때- 대만 관광청 맞손.. 대만 숙소·항공·투어 할인",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "대만 항공권 2만원 즉시할인 포함",
-   "airlines": [],
-   "name": "대만 여행 할인 프로모션",
-   "book": {
-    "from": null,
-    "to": "2026-12-06"
-   },
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2026-12-06"
-   },
-   "board": null,
-   "pct": 10,
-   "price": 20000
-  },
-  "diff": [
-   "할인율 규칙 10 / AI -",
-   "가격 규칙 20000 / AI -"
   ]
  }
 ]
