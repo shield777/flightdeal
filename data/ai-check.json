@@ -1,6 +1,43 @@
 [
  {
   "at": "2026-11-19",
+  "title": "파라타항공, LA노선 예매 시작…24일부터 특가 프로모션",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "신규 취항 기념 특가 운임 예고",
+   "airlines": [
+    "파라타항공"
+   ],
+   "name": "신규 취항 기념 특별 할인 운임",
+   "book": {
+    "from": "2026-11-24",
+    "to": null
+   },
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": true,
+   "at": "2026-11-19",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   },
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "예약 마감 규칙 2026-11-24 / AI -"
+  ]
+ },
+ {
+  "at": "2026-11-19",
   "title": "이스타항공 , 1월~2월 출발 얼리버드 특가",
   "community": true,
   "ai": {
@@ -10076,35 +10113,5 @@
    "price": 72000
   },
   "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "우리카드, ‘the OPUS’ 고객 ‘연말 프리미엄 이벤트’ 실시",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "카드사 이벤트, 항공권은 경품",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": 3,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님",
-   "할인율 규칙 3 / AI -"
-  ]
  }
 ]
