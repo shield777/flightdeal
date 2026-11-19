@@ -1,6 +1,39 @@
 [
  {
   "at": "2026-11-19",
+  "title": "수험생 모시기 나선 LCC…항공권 할인으로 겨울철 여행 수요 공략",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "LCC 수험생 항공권 할인 프로모션",
+   "airlines": [
+    "제주항공",
+    "트리니티항공",
+    "이스타항공"
+   ],
+   "name": "수험생 프로모션",
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": 25,
+   "seoul": null,
+   "at": "2026-11-19",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "할인율 규칙 - / AI 25"
+  ]
+ },
+ {
+  "at": "2026-11-19",
   "title": "[ 이스타항공 ] 12월 항공 권할인 / 대만&홍콩 항공 특가 !",
   "community": true,
   "ai": {
@@ -10060,35 +10093,6 @@
     "에어서울"
    ],
    "name": "코리아그랜드 세일 프로모션",
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "[ 트리니티항공 ] 11월 정기 국제선 할인 프로모션!",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "항공사 국제선 할인 프로모션",
-   "airlines": [
-    "트리니티항공"
-   ],
-   "name": "11월 정기 국제선 할인 프로모션",
    "book": null,
    "board": null,
    "price": null,
