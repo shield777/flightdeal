@@ -1,6 +1,70 @@
 [
  {
   "at": "2026-11-20",
+  "title": "수험표 한 장으로 항공권 할인까지?…수험생 할인 혜택 총정리",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "수험생 항공권 할인 소식",
+   "airlines": [],
+   "name": "수험생 할인",
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-20",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-20",
+  "title": "[속보] \"최대 98% 항공권 할인\"...에어로케이 블프 특가로 홈페이지 접속 마비",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "에어로케이 블프 항공권 특가",
+   "airlines": [
+    "에어로케이"
+   ],
+   "name": "블랙프라이데이 특가",
+   "book": {
+    "from": "2026-11-16",
+    "to": null
+   },
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": 98,
+   "seoul": null,
+   "at": "2026-11-20",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2026-11-16",
+    "to": "2026-11-16"
+   },
+   "board": null,
+   "pct": 98,
+   "price": null
+  },
+  "diff": [
+   "예약 마감 규칙 2026-11-16 / AI -"
+  ]
+ },
+ {
+  "at": "2026-11-20",
   "title": "대한항공 뉴어크 취항기념 8% 할인",
   "community": true,
   "ai": {
@@ -10255,66 +10319,6 @@
   },
   "diff": [
    "AI: 특가 아님"
-  ]
- },
- {
-  "at": "2026-11-13",
-  "title": "KB국민카드·KB손해보험, 항공권-숙박 할인 제공·60번째 ‘KB 희망의 집’ 완공",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "호텔·eSIM 할인 중심, 항공권 운임 아님",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-13",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": 20,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님",
-   "할인율 규칙 20 / AI -"
-  ]
- },
- {
-  "at": "2026-11-13",
-  "title": "항공권 할인 에 라운지 100원까지…KB국민 카드 , 해외여행 혜택 확대",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "카드사 여행 혜택 확대 기사",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-13",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": 20,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님",
-   "할인율 규칙 20 / AI -"
   ]
  }
 ]
