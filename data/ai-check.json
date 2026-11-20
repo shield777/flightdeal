@@ -1,6 +1,36 @@
 [
  {
   "at": "2026-11-20",
+  "title": "트리니티 이스타 제주 항공 수험생 할인",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "수험생 항공권 할인 소식",
+   "airlines": [
+    "트리니티항공",
+    "이스타항공"
+   ],
+   "name": "수험생 할인",
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-20",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-20",
   "title": "NOL, 오카야마 여행 기획전…왕복 항공 권 최대 5만원 할인",
   "community": false,
   "ai": {
@@ -10116,35 +10146,6 @@
    "AI: 특가 아님",
    "예약 마감 규칙 2026-11-30 / AI -",
    "할인율 규칙 90 / AI -"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "항공권 1월초 제주 항공 32만원~",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "개인 검색 가격 공유",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님"
   ]
  }
 ]
