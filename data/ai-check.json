@@ -1,6 +1,35 @@
 [
  {
   "at": "2026-11-20",
+  "title": "대한항공 뉴어크 취항기념 8% 할인",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "대한항공 취항기념 운임 할인",
+   "airlines": [
+    "대한항공"
+   ],
+   "name": "뉴어크 취항기념 8% 할인",
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": 8,
+   "seoul": null,
+   "at": "2026-11-20",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": 8,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-20",
   "title": "제주항공 (감귤) LIVE 특가 ~!",
   "community": true,
   "ai": {
@@ -10287,46 +10316,5 @@
    "AI: 특가 아님",
    "할인율 규칙 20 / AI -"
   ]
- },
- {
-  "at": "2026-11-13",
-  "title": "필리핀 항공, 연말 맞아 항공권 특가",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "필리핀항공 연말 항공권 특가",
-   "airlines": [
-    "필리핀항공"
-   ],
-   "name": "2026 Year End Seat Sale",
-   "book": {
-    "from": "2026-11-09",
-    "to": "2026-11-15"
-   },
-   "board": {
-    "from": "2026-12-01",
-    "to": null
-   },
-   "price": null,
-   "trip": null,
-   "pct": 40,
-   "seoul": true,
-   "at": "2026-11-13",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": "2026-11-09",
-    "to": "2026-11-15"
-   },
-   "board": {
-    "from": "2026-12-01",
-    "to": "2026-12-01"
-   },
-   "pct": 40,
-   "price": null
-  },
-  "diff": []
  }
 ]
