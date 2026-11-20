@@ -1,6 +1,43 @@
 [
  {
   "at": "2026-11-20",
+  "title": "NOL, 오카야마 여행 기획전…왕복 항공 권 최대 5만원 할인",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "대한항공 오카야마 항공권 할인 기획전",
+   "airlines": [
+    "대한항공"
+   ],
+   "name": "오카야마 여행 기획전",
+   "book": null,
+   "board": {
+    "from": null,
+    "to": "2027-03-10"
+   },
+   "price": null,
+   "trip": "왕복",
+   "pct": null,
+   "seoul": true,
+   "at": "2026-11-20",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": {
+    "from": null,
+    "to": "2027-03-10"
+   },
+   "pct": 6,
+   "price": null
+  },
+  "diff": [
+   "할인율 규칙 6 / AI -"
+  ]
+ },
+ {
+  "at": "2026-11-20",
   "title": "NOL, 일본 오카야마 여행 기획전... 항공권 최대 5만 원 할인",
   "community": false,
   "ai": {
@@ -10089,35 +10126,6 @@
    "v": 2,
    "promo": false,
    "why": "개인 검색 가격 공유",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "[261106 긴급모객/땡처리 여행정보] 대한항공 직항으로 떠나는 튀르키예 일주....",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "패키지 여행 상품 홍보",
    "airlines": [],
    "name": null,
    "book": null,
