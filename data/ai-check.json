@@ -1,5 +1,46 @@
 [
  {
+  "at": "2026-11-21",
+  "title": "[여행 뉴스브리핑] 오카야마 직항 35주년…놀유니버스, 왕복 항공권 최대 5만원 할인",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "대한항공 오카야마 노선 항공권 할인",
+   "airlines": [
+    "대한항공"
+   ],
+   "name": "오카야마 직항 35주년 기획전",
+   "book": {
+    "from": null,
+    "to": "2026-12-09"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-03-10"
+   },
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": true,
+   "at": "2026-11-21",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": null,
+    "to": "2026-12-09"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-03-10"
+   },
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
   "at": "2026-11-20",
   "title": "수험표 한 장으로 항공권 할인까지?…수험생 할인 혜택 총정리",
   "community": false,
@@ -10291,34 +10332,5 @@
    "price": null
   },
   "diff": []
- },
- {
-  "at": "2026-11-13",
-  "title": "에어로케이, 후지드림항공과 항공권 증정 'SNS 이벤트 ' 진행",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "항공권 증정 이벤트, 운임 할인 아님",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": false,
-   "at": "2026-11-13",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님"
-  ]
  }
 ]
