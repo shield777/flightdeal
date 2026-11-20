@@ -1,391 +1,458 @@
 {
  "items": [
   {
-   "id": "c:https://cafe.naver.com/grownman/1183340|✈️제주 항공 : 단, 3일 간! 최대 79% 할인 앵콜 특가 정보",
+   "id": "c:https://cafe.naver.com/fobn/164365|트리니티항공 ] ✈️11월 더블 혜택! 동남아 항공 권 최대 25% 할인",
    "kind": "airline",
    "community": true,
-   "title": "✈️제주 항공 : 단, 3일 간! 최대 79% 할인 앵콜 특가 정보",
-   "desc": "31(일) 동남아(다낭, 나트랑, 푸꾸옥 등): 140000원~ 프로모션 코드 : 앵콜특가국제2611 카카오페이 최대... 65% 할인 ✈️제주 항공 : 단, 3일 간!",
+   "title": "트리니티항공 ] ✈️11월 더블 혜택! 동남아 항공 권 최대 25% 할인",
+   "desc": "트리니티항공 에서 11월 1일부터 13일까지 국제선 항공 권 할인 이벤트 를 진행하고 있어요.",
    "summary": [
-    "31(일) 동남아(다낭, 나트랑, 푸꾸옥 등): 140000원~ 프로모션 코드 : 앵콜특가국제2611 카카오페이 최대...",
-    "65% 할인 ✈️제주 항공 : 단, 3일 간!…"
+    "트리니티항공 에서 11월 1일부터 13일까지 국제선 항공 권 할인 이벤트 를 진행하고 있어요."
    ],
-   "link": "https://cafe.naver.com/grownman/1183340",
-   "source": "네이버 카페 · 다낭 보물창고 - 다낭자유여행 다낭여행 다낭맛집 다낭리조트",
-   "date": "2026-11-09T03:00:46.835Z",
-   "found": "2026-11-09",
+   "link": "https://cafe.naver.com/fobn/164365",
+   "source": "네이버 카페 · 다낭 아지트 루나 - 다낭맛집, 다낭마사지, 호이안, 다낭여행",
+   "date": "2026-11-03T14:18:02.174Z",
+   "dateFound": true,
+   "found": "2026-11-03",
    "cards": [],
-   "airlines": [],
+   "airlines": [
+    "TW"
+   ],
    "countries": [
-    "베트남",
+    "태국",
+    "일본",
     "필리핀"
    ],
    "allRoutes": true,
    "routes": [],
    "price": {
-    "amount": 140000,
+    "amount": 10000,
     "trip": "oneway?"
    },
-   "query": "항공권 할인코드",
-   "notified": "2026-11-09",
+   "query": "트리니티항공 이벤트",
+   "notified": "2026-11-06",
    "ai": {
     "v": 2,
     "promo": true,
-    "why": "제주항공 앵콜 특가 프로모션 안내",
+    "why": "항공사 국제선 운임 할인 프로모션",
     "airlines": [
-     "제주항공"
+     "트리니티항공"
     ],
-    "name": "앵콜특가",
-    "book": null,
+    "name": "11월 더블 혜택",
+    "book": {
+     "from": "2026-11-01",
+     "to": "2026-11-13"
+    },
     "board": null,
-    "price": 140000,
+    "price": null,
     "trip": null,
-    "pct": 79,
+    "pct": 25,
     "seoul": null,
     "at": "2026-11-12",
     "model": "deepseek-v4-flash"
    },
-   "lastDate": "2026-11-20T03:00:44.337Z",
+   "lastDate": "2026-11-20T05:00:43.396Z",
    "lastFound": "2026-11-20",
    "more": [
     {
-     "id": "c:https://cafe.naver.com/sonyngp1/36451|제주 항공 보홀 항공 편 앵콜 특가 ! 최대 79% 할인 12~1월 특가",
+     "id": "c:https://cafe.naver.com/paydefense/769|트리니티항공 후쿠오카·오사카·방콕 국제선 얼리버드 1만원대부터 라이브..",
      "kind": "airline",
      "community": true,
-     "title": "제주 항공 보홀 항공 편 앵콜 특가 ! 최대 79% 할인 12~1월 특가.",
-     "desc": "31일(일) 까지 ＊12월~01월 국제선 / 필리핀 보홀 특가 할인 적용 항공권 이벤트입니다. ＊( 할인 적용 제외시 일자는 별도 확인) 제주 항공 모든 회원 대상 추가 할인 까지!",
+     "title": "트리니티항공 후쿠오카·오사카·방콕 국제선 얼리버드 1만원대부터 라이브....",
+     "desc": "27(토) 티웨이 항공 의 새로운 이름, 트리니티항공 국제선 동계 얼리버드 라이브 특가 핫딜입니다.",
      "summary": [
-      "31일(일) 까지 ＊12월~01월 국제선 / 필리핀 보홀 특가 할인 적용 항공권 이벤트입니다.",
-      "＊( 할인 적용 제외시 일자는 별도 확인) 제주 항공 모든 회원 대상 추가 할인 까지!…"
+      "27(토) 티웨이 항공 의 새로운 이름, 트리니티항공 국제선 동계 얼리버드 라이브 특가 핫딜입니다."
      ],
-     "link": "https://cafe.naver.com/sonyngp1/36451",
-     "source": "네이버 카페 · 벨라보홀ㅣ필리핀 보홀 자유여행 투어 마사지 호핑 호텔 맛집",
-     "date": "2026-11-09T09:00:50.367Z",
-     "found": "2026-11-09",
+     "link": "https://cafe.naver.com/paydefense/769",
+     "source": "네이버 카페 · [육아메이트] - 엄빠지갑지킴이(임출육아용품 핫딜 아카이브)",
+     "date": "2026-11-04T10:41:50.033Z",
+     "dateFound": true,
+     "found": "2026-11-04",
      "cards": [],
-     "airlines": [],
+     "airlines": [
+      "TW"
+     ],
      "countries": [
-      "필리핀"
+      "태국",
+      "일본"
+     ],
+     "allRoutes": true,
+     "routes": [],
+     "price": {
+      "amount": 10000,
+      "trip": "oneway?"
+     },
+     "query": "트리니티항공 얼리버드",
+     "notified": "2026-11-06",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "항공사 얼리버드 특가 소식",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "국제선 동계 얼리버드 라이브 특가",
+      "book": null,
+      "board": null,
+      "price": 10000,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/japanpackagetour/13664|트리니티항공 가을 겨울 일본 항공 권 할인 프로모션",
+     "kind": "airline",
+     "community": true,
+     "title": "트리니티항공 가을 겨울 일본 항공 권 할인 프로모션",
+     "desc": "\" 트리니티항공 가을·겨울 국제선 할인\"… 항공 의 날 기념 프로모션 앞서 전해드린 얼리버드 프로모션(OCT26 코드)과 비슷한 코드로 새 행사가 나왔습니다. 헷갈리지 않게 차이점도 짚어드릴게요.",
+     "summary": [
+      "\" 트리니티항공 가을·겨울 국제선 할인\"… 항공 의 날 기념 프로모션 앞서 전해드린 얼리버드 프로모션(OCT26 코드)과 비슷한 코드로 새 행사가 나왔습니다.",
+      "헷갈리지 않게 차이점도 짚어드릴게요."
+     ],
+     "link": "https://cafe.naver.com/japanpackagetour/13664",
+     "source": "네이버 카페 · 일본 패키지여행 카페 (북해도,도쿄,오사카,후쿠오카,요나고)",
+     "date": "2026-11-04T10:41:50.033Z",
+     "dateFound": true,
+     "found": "2026-11-04",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [
+      "일본"
      ],
      "allRoutes": true,
      "routes": [],
      "price": null,
-     "query": "항공권 할인코드",
+     "query": "트리니티항공 얼리버드",
+     "notified": "2026-11-06",
      "ai": {
       "v": 2,
       "promo": true,
-      "why": "제주항공 보홀 특가 할인",
+      "why": "항공사 할인 프로모션 소식",
       "airlines": [
-       "제주항공"
+       "트리니티항공"
       ],
-      "name": "앵콜 특가",
+      "name": "가을·겨울 국제선 할인",
       "book": null,
-      "board": {
-       "from": "2026-12-01",
-       "to": "2027-01-31"
-      },
+      "board": null,
       "price": null,
       "trip": null,
-      "pct": 79,
+      "pct": null,
       "seoul": null,
       "at": "2026-11-12",
       "model": "deepseek-v4-flash"
      }
     },
     {
-     "id": "c:https://cafe.naver.com/tybwondergirl5/116570|✈️ 제주 항공 12~1월 앵콜 특가 ! 베트남 항공권 최대 79% 할인",
+     "id": "c:https://cafe.naver.com/vinpearl/552713|✈️ [특가 소식] 트리니티항공 2027년 초특가 얼리버드 오픈! (최대",
      "kind": "airline",
      "community": true,
-     "title": "✈️ 제주 항공 12~1월 앵콜 특가 ! 베트남 항공권 최대 79% 할인",
-     "desc": "디고님들~~ 제주 항공 에서 겨울 항공권 특가 가 또 떴어요! ✈️ 단 3일간! 최대 79% 할인이라니, 연말연시 여행 준비하시는 분들 눈여겨보셔요.",
+     "title": "✈️ [특가 소식] 트리니티항공 2027년 초특가 얼리버드 오픈! (최대 24% 할인....",
+     "desc": "현재 트리니티항공 (Trinity Airways)에서 진행 중인 '국제선 얼리버드 특가 프로모션' 내용 정리해 드립니다.",
      "summary": [
-      "디고님들~~ 제주 항공 에서 겨울 항공권 특가 가 또 떴어요! ✈️ 단 3일간! 최대 79% 할인이라니, 연말연시 여행 준비하시는 분들 눈여겨보셔요."
+      "현재 트리니티항공 (Trinity Airways)에서 진행 중인 '국제선 얼리버드 특가 프로모션' 내용 정리해 드립니다."
      ],
-     "link": "https://cafe.naver.com/tybwondergirl5/116570",
-     "source": "네이버 카페 · 베트남 디고-다낭나트랑자유여행,맛집,호텔,리조트,마사지,골프",
-     "date": "2026-11-09T19:14:18.306Z",
-     "found": "2026-11-10",
+     "link": "https://cafe.naver.com/vinpearl/552713",
+     "source": "네이버 카페 · 베트남 피크타임 푸꾸옥 나트랑 다낭 호치민 무이네 하노이 여행",
+     "date": "2026-11-04T10:41:50.033Z",
+     "dateFound": true,
+     "found": "2026-11-04",
      "cards": [],
-     "airlines": [],
-     "countries": [
-      "베트남"
+     "airlines": [
+      "TW"
      ],
-     "allRoutes": false,
+     "countries": [],
+     "allRoutes": true,
      "routes": [],
      "price": null,
-     "query": "베트남 항공권 특가",
+     "query": "트리니티항공 얼리버드",
+     "notified": "2026-11-06",
      "ai": {
       "v": 2,
       "promo": true,
-      "why": "제주항공 겨울 항공권 특가",
+      "why": "항공사 얼리버드 특가 프로모션",
       "airlines": [
-       "제주항공"
+       "트리니티항공"
       ],
-      "name": "12~1월 앵콜 특가",
+      "name": "국제선 얼리버드 특가 프로모션",
       "book": null,
       "board": null,
       "price": null,
       "trip": null,
-      "pct": 79,
+      "pct": 24,
       "seoul": null,
       "at": "2026-11-12",
       "model": "deepseek-v4-flash"
      }
     },
     {
-     "id": "c:https://cafe.naver.com/minecraftpe/4012791|✈️ 푸꾸옥 특가 프로모션 : 제주 항공",
+     "id": "c:https://cafe.naver.com/deboracay/255682|[보라카이 항공 ] 보라카이 직항 트리니티항공 ✈️ 얼리버드 이벤트",
      "kind": "airline",
      "community": true,
-     "title": "✈️ 푸꾸옥 특가 프로모션 : 제주 항공",
-     "desc": "제주 항공 https://www.jejuair.net/ko/event/eventDetail.do?eventNo=0000004446 인천 푸꾸옥 노선이 포함된 제주 항공 프로모션입니다!",
+     "title": "[보라카이 항공 ] 보라카이 직항 트리니티항공 ✈️ 얼리버드 이벤트",
+     "desc": "Since2006 보라카이자유여행 전문 보라카이드보라 현재 유일하게 보라카이 직항 운항중인 트리니티항공 (구) 티웨이 항공 얼리버드 이벤트 합니다!",
      "summary": [
-      "제주 항공 https://www.jejuair.net/ko/event/eventDetail.do?eventNo=0000004446 인천 푸꾸옥 노선이 포함된 제주 항공 프로모션입니다!…"
+      "Since2006 보라카이자유여행 전문 보라카이드보라 현재 유일하게 보라카이 직항 운항중인 트리니티항공 (구) 티웨이 항공 얼리버드 이벤트 합니다!…"
      ],
-     "link": "https://cafe.naver.com/minecraftpe/4012791",
-     "source": "네이버 카페 · 푸꾸옥 고스트 - 베트남푸꾸옥 자유여행,호텔리조트,항공권,맛집",
-     "date": "2026-11-09T03:00:46.835Z",
+     "link": "https://cafe.naver.com/deboracay/255682",
+     "source": "네이버 카페 · 보라카이 드보라 자유여행",
+     "date": "2026-11-04T10:41:50.033Z",
+     "dateFound": true,
+     "found": "2026-11-04",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [
+      "필리핀"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "트리니티항공 얼리버드",
+     "notified": "2026-11-06",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "트리니티항공 얼리버드 특가",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "얼리버드 이벤트",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/airportshopping/1088|[ 트리니티항공 ] 11월 정기 국제선 할인 프로모션!",
+     "kind": "airline",
+     "community": true,
+     "title": "[ 트리니티항공 ] 11월 정기 국제선 할인 프로모션!",
+     "desc": "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
+     "summary": [
+      "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
+     ],
+     "link": "https://cafe.naver.com/airportshopping/1088",
+     "source": "네이버 카페 · 인천공항의 모든 것",
+     "date": "2026-11-06T05:00:45.112Z",
+     "found": "2026-11-06",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "트리니티항공 할인",
+     "notified": "2026-11-06",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "항공사 국제선 할인 프로모션",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "11월 정기 국제선 할인 프로모션",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/livejob/1212376|트리니티항공 에서 국제선 얼리버드 항공 권 특가가 나와서 공유드립니다!",
+     "kind": "airline",
+     "community": true,
+     "title": "트리니티항공 에서 국제선 얼리버드 항공 권 특가가 나와서 공유드립니다!",
+     "desc": "트리니티항공 국제선 얼리버드 , 정확히 언제까지일까? 이번 프로모션의 가장 중요한 날짜부터 정리해볼게요.",
+     "summary": [
+      "트리니티항공 국제선 얼리버드 , 정확히 언제까지일까? 이번 프로모션의 가장 중요한 날짜부터 정리해볼게요."
+     ],
+     "link": "https://cafe.naver.com/livejob/1212376",
+     "source": "네이버 카페 · 여친사▶▶여행도하고 친구도사귀자◀◀ 국내여행,여행맛집",
+     "date": "2026-11-09T11:00:48.524Z",
      "found": "2026-11-09",
      "cards": [],
-     "airlines": [],
-     "countries": [
-      "베트남"
+     "airlines": [
+      "TW"
      ],
-     "allRoutes": false,
+     "countries": [],
+     "allRoutes": true,
      "routes": [],
      "price": null,
-     "query": "베트남 항공권 특가",
-     "notified": "2026-11-09",
+     "query": "트리니티항공 얼리버드",
      "ai": {
       "v": 2,
       "promo": true,
-      "why": "제주항공 푸꾸옥 노선 특가 프로모션",
+      "why": "항공사 얼리버드 특가 공유",
       "airlines": [
-       "제주항공"
+       "트리니티항공"
       ],
-      "name": "푸꾸옥 특가 프로모션",
+      "name": "국제선 얼리버드 특가",
       "book": null,
       "board": null,
       "price": null,
       "trip": null,
       "pct": null,
-      "seoul": true,
+      "seoul": null,
       "at": "2026-11-12",
       "model": "deepseek-v4-flash"
      }
     },
     {
-     "id": "c:https://cafe.naver.com/warcraftgamemap/3531385|✈️ 다낭 특가 프로모션 : 제주 항공",
+     "id": "c:https://cafe.naver.com/airportshopping/952|[ 트리니티항공 ] 국제선 얼리버드 특가!",
      "kind": "airline",
      "community": true,
-     "title": "✈️ 다낭 특가 프로모션 : 제주 항공",
-     "desc": "인천 다낭 노선이 포함된 제주 항공 프로모션입니다! 제주 항공 https://www.jejuair.net/ko/event/eventDetail.do?eventNo=0000004446.",
+     "title": "[ 트리니티항공 ] 국제선 얼리버드 특가!",
+     "desc": "자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
      "summary": [
-      "인천 다낭 노선이 포함된 제주 항공 프로모션입니다! 제주 항공 https://www.jejuair.net/ko/event/eventDetail.do?eventNo=0000004446."
+      "자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
      ],
-     "link": "https://cafe.naver.com/warcraftgamemap/3531385",
-     "source": "네이버 카페 · 다낭 고스트 - 베트남 다낭자유여행 ,다낭여행,맛집,호텔리조트",
-     "date": "2026-11-09T03:00:46.835Z",
+     "link": "https://cafe.naver.com/airportshopping/952",
+     "source": "네이버 카페 · 인천공항의 모든 것",
+     "date": "2026-11-09T11:00:48.524Z",
      "found": "2026-11-09",
      "cards": [],
-     "airlines": [],
-     "countries": [
-      "베트남"
+     "airlines": [
+      "TW"
      ],
-     "allRoutes": false,
+     "countries": [],
+     "allRoutes": true,
      "routes": [],
      "price": null,
-     "query": "베트남 항공권 특가",
-     "notified": "2026-11-09",
+     "query": "트리니티항공 얼리버드",
      "ai": {
       "v": 2,
       "promo": true,
-      "why": "제주항공 인천-다낭 특가 프로모션",
+      "why": "트리니티항공 국제선 얼리버드 특가",
       "airlines": [
-       "제주항공"
+       "트리니티항공"
       ],
-      "name": null,
+      "name": "국제선 얼리버드 특가",
       "book": null,
       "board": null,
       "price": null,
       "trip": null,
       "pct": null,
-      "seoul": true,
+      "seoul": null,
       "at": "2026-11-12",
       "model": "deepseek-v4-flash"
      }
     },
     {
-     "id": "c:https://cafe.naver.com/minecraftpe/4013285|✈️ 푸꾸옥 특가 프로모션 : 이스타 항공",
+     "id": "c:https://cafe.naver.com/airportshopping/1105|[ 트리니티항공 ] 부산, 대구, 청주, 제주에서 출발하는 우리 동네 할",
      "kind": "airline",
      "community": true,
-     "title": "✈️ 푸꾸옥 특가 프로모션 : 이스타 항공",
-     "desc": "오늘 오픈 하는 이스타 항공 프로모션 소식입니다! 인천 푸꾸옥 부산 푸꾸옥 노선이 포함되어 있습니다 자세한 내용은 이스타 항공 홈페이지나 어플에서 확인해보세요! 이상 특가 알리미 숙취중이였습니다! *ㅁ*//.",
+     "title": "[ 트리니티항공 ] 부산, 대구, 청주, 제주에서 출발하는 우리 동네 할인 !",
+     "desc": "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
      "summary": [
-      "오늘 오픈 하는 이스타 항공 프로모션 소식입니다! 인천 푸꾸옥 부산 푸꾸옥 노선이 포함되어 있습니다 자세한 내용은 이스타 항공 홈페이지나 어플에서 확인해보세요! 이상 특가 알리미 숙취중이였습니다! *ㅁ*//."
+      "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
      ],
-     "link": "https://cafe.naver.com/minecraftpe/4013285",
-     "source": "네이버 카페 · 푸꾸옥 고스트 - 베트남푸꾸옥 자유여행,호텔리조트,항공권,맛집",
-     "date": "2026-11-10T01:00:52.462Z",
+     "link": "https://cafe.naver.com/airportshopping/1105",
+     "source": "네이버 카페 · 인천공항의 모든 것",
+     "date": "2026-11-10T05:00:46.618Z",
      "found": "2026-11-10",
      "cards": [],
-     "airlines": [],
-     "countries": [
-      "베트남"
+     "airlines": [
+      "TW"
      ],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "항공권 특가 오픈",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "이스타항공 푸꾸옥 특가 프로모션 소식",
-      "airlines": [
-       "이스타항공"
-      ],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": true,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/zzop/4334387|꺅 ~ 이스타 항공 이벤트해요~",
-     "kind": "airline",
-     "community": true,
-     "title": "꺅 ~ 이스타 항공 이벤트해요~",
-     "desc": "",
-     "link": "https://cafe.naver.com/zzop/4334387",
-     "source": "네이버 카페 · 나트랑 도깨비 - 베트남 나트랑 자유여행,무이네,달랏,맛집,호텔",
-     "date": "2026-11-10T02:59:08.151Z",
-     "found": "2026-11-10",
-     "cards": [],
-     "airlines": [],
      "countries": [],
      "allRoutes": false,
      "routes": [],
      "price": null,
-     "query": "베트남 항공권 특가",
+     "query": "트리니티항공 할인",
      "ai": {
       "v": 2,
       "promo": true,
-      "why": "이스타항공 이벤트 소식",
-      "airlines": [
-       "이스타항공"
-      ],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/ysm5828/9647035|이스타 항공 이벤트 합니다~",
-     "kind": "airline",
-     "community": true,
-     "title": "이스타 항공 이벤트 합니다~",
-     "desc": "이스타항공 베트남 이벤트 떴어요 오늘 10시부터 진행중이니 빨리 선점하세요~ 겨울 방학 시기도 겹치는데 저렴하게 갈 수 있곘네요 다른 항공 사도 이벤트 많이 했으면 좋겠어요 ^^.",
-     "summary": [
-      "이스타항공 베트남 이벤트 떴어요 오늘 10시부터 진행중이니 빨리 선점하세요~ 겨울 방학 시기도 겹치는데 저렴하게 갈 수 있곘네요 다른 항공 사도 이벤트 많이 했으면 좋겠어요 ^^."
-     ],
-     "link": "https://cafe.naver.com/ysm5828/9647035",
-     "source": "네이버 카페 · 푸꾸옥 도깨비- 베트남 푸꾸옥 자유여행,호텔리조트,항공권,맛집",
-     "date": "2026-11-10T02:59:08.151Z",
-     "found": "2026-11-10",
-     "cards": [],
-     "airlines": [],
-     "countries": [
-      "베트남"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "이스타항공 이벤트",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "이스타항공 베트남 특가 이벤트 진행",
-      "airlines": [
-       "이스타항공"
-      ],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/warcraftgamemap/3536154|✈️ 다낭 특가 프로모션 : 트리니티 항공",
-     "kind": "airline",
-     "community": true,
-     "title": "✈️ 다낭 특가 프로모션 : 트리니티 항공",
-     "desc": "인천 다낭 대구 다낭 청주 다낭 노선이 포함된 트리니티 항공 프로모션입니다! https://m.trinityairways.com/app/promotion/event/retrieve/BVOxHUd1R21za2JsjOL2Ow==/being/n.",
-     "summary": [
-      "인천 다낭 대구 다낭 청주 다낭 노선이 포함된 트리니티 항공 프로모션입니다! https://m.trinityairways.com/app/promotion/event/retrieve/BVOxHUd1R21za2JsjOL2Ow==/be…"
-     ],
-     "link": "https://cafe.naver.com/warcraftgamemap/3536154",
-     "source": "네이버 카페 · 다낭 고스트 - 베트남 다낭자유여행 ,다낭여행,맛집,호텔리조트",
-     "date": "2026-11-16T03:00:48.126Z",
-     "found": "2026-11-16",
-     "cards": [],
-     "airlines": [],
-     "countries": [
-      "베트남"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "베트남 항공권 특가",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "트리니티항공 다낭 노선 특가 프로모션",
+      "why": "항공사 지방 출발 할인 프로모션",
       "airlines": [
        "트리니티항공"
       ],
-      "name": "다낭 특가 프로모션",
+      "name": "우리 동네 할인",
       "book": null,
       "board": null,
       "price": null,
       "trip": null,
       "pct": null,
-      "seoul": true,
-      "at": "2026-11-16",
+      "seoul": false,
+      "at": "2026-11-12",
       "model": "deepseek-v4-flash"
      }
     },
     {
-     "id": "c:https://cafe.naver.com/fobn/166446|[ 특가 정보] 트리니티 항공 블랙프라이데이 세일",
+     "id": "c:https://cafe.naver.com/airplanetiket/1359|트리니티항공 블프 세일",
      "kind": "airline",
      "community": true,
-     "title": "[ 특가 정보] 트리니티 항공 블랙프라이데이 세일",
-     "desc": "오늘부터 세일하네요 득템 하세요.",
-     "link": "https://cafe.naver.com/fobn/166446",
-     "source": "네이버 카페 · 다낭 아지트 루나 - 다낭맛집, 다낭마사지, 호이안, 다낭여행",
+     "title": "트리니티항공 블프 세일",
+     "desc": "",
+     "link": "https://cafe.naver.com/airplanetiket/1359",
+     "source": "네이버 카페 · 항공특가정보",
      "date": "2026-11-16T03:00:48.126Z",
      "found": "2026-11-16",
      "cards": [],
-     "airlines": [],
+     "airlines": [
+      "TW"
+     ],
      "countries": [],
      "allRoutes": false,
      "routes": [],
      "price": null,
      "query": "트리니티항공 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "항공사 블프 특가 소식",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "블프 세일",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-16",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/djmomschools/193|✈️ [여행·핫딜] 트리니티 항공 (구 티웨이) 2026 블랙 프라이데이",
+     "kind": "airline",
+     "community": true,
+     "title": "✈️ [여행·핫딜] 트리니티 항공 (구 티웨이) 2026 블랙 프라이데이! 2027년 항....",
+     "desc": "여행 항공권 을 미리 사두는 시즌이네요.",
+     "summary": [
+      "여행 항공권 을 미리 사두는 시즌이네요."
+     ],
+     "link": "https://cafe.naver.com/djmomschools/193",
+     "source": "네이버 카페 · 동작맘스쿨",
+     "date": "2026-11-17T05:00:43.473Z",
+     "found": "2026-11-17",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "항공권 프로모션 코드",
      "ai": {
       "v": 2,
       "promo": true,
@@ -393,123 +460,168 @@
       "airlines": [
        "트리니티항공"
       ],
-      "name": "블랙프라이데이 세일",
+      "name": "2026 블랙 프라이데이",
       "book": null,
       "board": null,
       "price": null,
       "trip": null,
       "pct": null,
       "seoul": null,
-      "at": "2026-11-16",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/warcraftgamemap/3537107|✈️ 다낭 특가 프로모션 : 파라타 항공",
-     "kind": "airline",
-     "community": true,
-     "title": "✈️ 다낭 특가 프로모션 : 파라타 항공",
-     "desc": "인천 다낭 노선이 포함된 파라타 항공 프로모션입니다! https://m.parataair.com/ko/contents/event/loadEventDetail.do?no=2199&status=on.",
-     "summary": [
-      "인천 다낭 노선이 포함된 파라타 항공 프로모션입니다! https://m.parataair.com/ko/contents/event/loadEventDetail.do?no=2199&status=on."
-     ],
-     "link": "https://cafe.naver.com/warcraftgamemap/3537107",
-     "source": "네이버 카페 · 다낭 고스트 - 베트남 다낭자유여행 ,다낭여행,맛집,호텔리조트",
-     "date": "2026-11-17T03:00:47.274Z",
-     "found": "2026-11-17",
-     "cards": [],
-     "airlines": [],
-     "countries": [
-      "베트남"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "베트남 항공권 특가",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "파라타 항공 프로모션 소식",
-      "airlines": [
-       "파라타항공"
-      ],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": true,
       "at": "2026-11-17",
       "model": "deepseek-v4-flash"
      }
     },
     {
-     "id": "c:https://cafe.naver.com/mindy7857/5536770|✈️ 나트랑 특가 프로모션 : 파라타 항공",
+     "id": "c:https://cafe.naver.com/airportshopping/1141|[ 트리니티항공 ] 올해 마지막 방콕, 치앙마이 최대 할인 !",
      "kind": "airline",
      "community": true,
-     "title": "✈️ 나트랑 특가 프로모션 : 파라타 항공",
-     "desc": "인천 나트랑 노선이 포함된 파라타 항공 프로모션입니다! https://m.parataair.com/ko/contents/event/loadEventDetail.do?no=2199&status=on.",
+     "title": "[ 트리니티항공 ] 올해 마지막 방콕, 치앙마이 최대 할인 !",
+     "desc": "▼자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
      "summary": [
-      "인천 나트랑 노선이 포함된 파라타 항공 프로모션입니다! https://m.parataair.com/ko/contents/event/loadEventDetail.do?no=2199&status=on."
+      "▼자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
      ],
-     "link": "https://cafe.naver.com/mindy7857/5536770",
-     "source": "네이버 카페 · 베나자-베트남나트랑자유여행,달랏,무이네,호텔,투어,리조트맛집",
-     "date": "2026-11-17T03:00:47.274Z",
+     "link": "https://cafe.naver.com/airportshopping/1141",
+     "source": "네이버 카페 · 인천공항의 모든 것",
+     "date": "2026-11-17T05:00:43.473Z",
      "found": "2026-11-17",
      "cards": [],
-     "airlines": [],
+     "airlines": [
+      "TW"
+     ],
      "countries": [
-      "베트남"
+      "태국"
      ],
      "allRoutes": false,
      "routes": [],
      "price": null,
-     "query": "베트남 항공권 특가",
+     "query": "트리니티항공 할인",
      "ai": {
       "v": 2,
       "promo": true,
-      "why": "항공사 특가 프로모션 소식",
+      "why": "트리니티항공 방콕·치앙마이 특가",
       "airlines": [
-       "파라타항공"
+       "트리니티항공"
       ],
-      "name": null,
+      "name": "올해 마지막 방콕, 치앙마이 최대 할인",
       "book": null,
       "board": null,
       "price": null,
       "trip": null,
       "pct": null,
-      "seoul": true,
+      "seoul": null,
       "at": "2026-11-17",
       "model": "deepseek-v4-flash"
      }
     },
     {
-     "id": "c:https://cafe.naver.com/airplanetiket/1414|트리니티 이스타 제주 항공 수험생 할인",
+     "id": "c:https://cafe.naver.com/airportshopping/1139|[ 트리니티항공 ] 지금, 제주를 만나다. ( 최대 2만원 할인 프로모션",
      "kind": "airline",
      "community": true,
-     "title": "트리니티 이스타 제주 항공 수험생 할인",
-     "desc": "출처:_lensmag IG.",
-     "link": "https://cafe.naver.com/airplanetiket/1414",
-     "source": "네이버 카페 · 항공특가정보",
-     "date": "2026-11-20T03:00:44.337Z",
-     "found": "2026-11-20",
+     "title": "[ 트리니티항공 ] 지금, 제주를 만나다. ( 최대 2만원 할인 프로모션 )",
+     "desc": "▼자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
+     "summary": [
+      "▼자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
+     ],
+     "link": "https://cafe.naver.com/airportshopping/1139",
+     "source": "네이버 카페 · 인천공항의 모든 것",
+     "date": "2026-11-17T05:00:43.473Z",
+     "found": "2026-11-17",
      "cards": [],
-     "airlines": [],
+     "airlines": [
+      "TW"
+     ],
      "countries": [],
      "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "트리니티항공 할인",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "항공사 할인 프로모션 소식",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "지금, 제주를 만나다",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-17",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/deboracay/255965|[보라카이 항공 권] 트리니티항공 '블랙프라이데이' 할인",
+     "kind": "airline",
+     "community": true,
+     "title": "[보라카이 항공 권] 트리니티항공 '블랙프라이데이' 할인",
+     "desc": "",
+     "link": "https://cafe.naver.com/deboracay/255965",
+     "source": "네이버 카페 · 보라카이 드보라 자유여행",
+     "date": "2026-11-17T13:00:46.212Z",
+     "found": "2026-11-17",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [
+      "필리핀"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "트리니티항공 할인",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "트리니티항공 블랙프라이데이 항공권 할인",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "블랙프라이데이",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-17",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/airportshopping/1162|[ 트리니티항공 ] 11월-1월 출발 한정! 국제선 특가 !",
+     "kind": "airline",
+     "community": true,
+     "title": "[ 트리니티항공 ] 11월-1월 출발 한정! 국제선 특가 !",
+     "desc": "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
+     "summary": [
+      "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
+     ],
+     "link": "https://cafe.naver.com/airportshopping/1162",
+     "source": "네이버 카페 · 인천공항의 모든 것",
+     "date": "2026-11-20T05:00:43.396Z",
+     "found": "2026-11-20",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [],
+     "allRoutes": true,
      "routes": [],
      "price": null,
      "query": "트리니티항공 특가",
      "ai": {
       "v": 2,
       "promo": true,
-      "why": "수험생 항공권 할인 소식",
+      "why": "항공사 국제선 특가 프로모션",
       "airlines": [
-       "트리니티항공",
-       "이스타항공"
+       "트리니티항공"
       ],
-      "name": "수험생 할인",
+      "name": "11월-1월 출발 한정 국제선 특가",
       "book": null,
       "board": null,
       "price": null,
@@ -521,6 +633,138 @@
      }
     }
    ]
+  },
+  {
+   "id": "c:https://cafe.naver.com/aipromptlab26/414|[ 항공권 D-7] 진에어 블랙프라이데이 — 코드 26BLACKLJ 최대",
+   "kind": "airline",
+   "community": true,
+   "title": "[ 항공권 D-7] 진에어 블랙프라이데이 — 코드 26BLACKLJ 최대 15%, 삼성카드 3%까....",
+   "desc": "로그인 → 항공권 검색 → 결제 단계의 프로모션 코드 칸에 26BLACKLJ 입력. 검색에 뜨는 최저가 운임 일부는 적용 대상에서 빠지고, 다른 쿠폰· 코드 와는 중복되지 않습니다.",
+   "summary": [
+    "로그인 → 항공권 검색 → 결제 단계의 프로모션 코드 칸에 26BLACKLJ 입력.",
+    "검색에 뜨는 최저가 운임 일부는 적용 대상에서 빠지고, 다른 쿠폰· 코드 와는 중복되지 않습니다."
+   ],
+   "link": "https://cafe.naver.com/aipromptlab26/414",
+   "source": "네이버 카페 · 짠테크 연구소 - 앱테크·핫딜·절약 꿀정보",
+   "date": "2026-11-20T05:00:43.396Z",
+   "found": "2026-11-20",
+   "cards": [],
+   "airlines": [
+    "LJ"
+   ],
+   "countries": [],
+   "allRoutes": true,
+   "routes": [],
+   "price": null,
+   "query": "항공권 프로모션 코드",
+   "ai": {
+    "v": 2,
+    "promo": true,
+    "why": "진에어 블프 할인코드 특가",
+    "airlines": [
+     "진에어"
+    ],
+    "name": "블랙프라이데이",
+    "book": null,
+    "board": null,
+    "price": null,
+    "trip": null,
+    "pct": 15,
+    "seoul": null,
+    "at": "2026-11-20",
+    "model": "deepseek-v4-flash"
+   },
+   "lastDate": "2026-11-20T05:00:43.396Z",
+   "lastFound": "2026-11-20",
+   "more": [
+    {
+     "id": "c:https://cafe.naver.com/airportshopping/1161|[진에어] 오늘 자정마감!! 11월 국제선 타임세일 ~",
+     "kind": "airline",
+     "community": true,
+     "title": "[진에어] 오늘 자정마감!! 11월 국제선 타임세일 ~",
+     "desc": "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
+     "summary": [
+      "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
+     ],
+     "link": "https://cafe.naver.com/airportshopping/1161",
+     "source": "네이버 카페 · 인천공항의 모든 것",
+     "date": "2026-11-20T05:00:43.396Z",
+     "found": "2026-11-20",
+     "cards": [],
+     "airlines": [
+      "LJ"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "항공 타임세일",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "진에어 국제선 타임세일 특가",
+      "airlines": [
+       "진에어"
+      ],
+      "name": "11월 국제선 타임세일",
+      "book": {
+       "from": null,
+       "to": "2026-11-20"
+      },
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-20",
+      "model": "deepseek-v4-flash"
+     }
+    }
+   ]
+  },
+  {
+   "id": "c:https://cafe.naver.com/airportshopping/1165|[ 대한항공 ] 고마쓰행 항공 권 10% 할인 쿠폰!",
+   "kind": "airline",
+   "community": true,
+   "title": "[ 대한항공 ] 고마쓰행 항공 권 10% 할인 쿠폰!",
+   "desc": "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
+   "summary": [
+    "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
+   ],
+   "link": "https://cafe.naver.com/airportshopping/1165",
+   "source": "네이버 카페 · 인천공항의 모든 것",
+   "date": "2026-11-20T05:00:43.396Z",
+   "found": "2026-11-20",
+   "cards": [],
+   "airlines": [
+    "KE"
+   ],
+   "countries": [
+    "일본"
+   ],
+   "allRoutes": false,
+   "routes": [],
+   "price": null,
+   "query": "대한항공 할인",
+   "ai": {
+    "v": 2,
+    "promo": true,
+    "why": "항공권 10% 할인 쿠폰",
+    "airlines": [
+     "대한항공"
+    ],
+    "name": null,
+    "book": null,
+    "board": null,
+    "price": null,
+    "trip": null,
+    "pct": 10,
+    "seoul": null,
+    "at": "2026-11-20",
+    "model": "deepseek-v4-flash"
+   },
+   "lastDate": "2026-11-20T05:00:43.396Z",
+   "lastFound": "2026-11-20"
   },
   {
    "id": "https://www.newspost.kr/news/articleView.html|우리카드, 이달 30일까지 프리미엄 카드 고객 대상 경품 행사",
@@ -587,7 +831,7 @@
     "at": "2026-11-13",
     "model": "deepseek-v4-flash"
    },
-   "lastDate": "2026-11-20T01:56:00.000Z",
+   "lastDate": "2026-11-20T04:59:00.000Z",
    "lastFound": "2026-11-20",
    "more": [
     {
@@ -1423,6 +1667,747 @@
        "period": null
       },
       "at": "2026-11-19",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "https://www.etnews.com/20261120000223|우리카드 , 쇼핑·구독· 해외여행 혜택 담은 '더 쇼퍼' 출시",
+     "kind": "card",
+     "title": "우리카드 , 쇼핑·구독· 해외여행 혜택 담은 '더 쇼퍼' 출시",
+     "desc": "1만원 할인 (월 2회, 연 8회)을 제공한다. 우리카드 관계자는 “쇼핑을 자주 이용하는 고객이라면 다양한 업종 적립과 무이자 할부전환, 해외여행 혜택까지 담은 '더 쇼퍼'가 적합할 것”이라고 말했다. 연회비는 국내...",
+     "summary": [
+      "1만원 할인 (월 2회, 연 8회)을 제공한다.",
+      "우리카드 관계자는 “쇼핑을 자주 이용하는 고객이라면 다양한 업종 적립과 무이자 할부전환, 해외여행 혜택까지 담은 '더 쇼퍼'가 적합할 것”이라고 말했다."
+     ],
+     "link": "https://www.etnews.com/20261120000223",
+     "source": "네이버 뉴스",
+     "date": "2026-11-20T04:59:00.000Z",
+     "found": "2026-11-20",
+     "cards": [
+      "우리카드"
+     ],
+     "airlines": [],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "우리카드 해외여행 할인",
+     "bodyAt": "2026-11-20",
+     "body": [
+      "마티나골드 포함 국내외 공항라운지를 이용할 수 있는 더라운지(월 2회, 연 4회) 서비스와 인천, 김포공항 주차장 1만원 할인(월 2회, 연 8회)을 제공한다.",
+      "우리카드 관계자는 “쇼핑을 자주 이용하는 고객이라면 다양한 업종 적립과 무이자 할부전환, 해외여행 혜택까지 담은 '더 쇼퍼'가 적합할 것”이라고 말했다.",
+      "연회비는 국내 전용과 해외 겸용 모두 20만원이다."
+     ],
+     "ai": {
+      "v": 2,
+      "cv": 3,
+      "card": {
+       "ok": false,
+       "why": "카드 신상품 출시 소개",
+       "cards": [
+        "우리카드"
+       ],
+       "use": null,
+       "airlines": [],
+       "countries": [],
+       "amount": null,
+       "pct": null,
+       "min": null,
+       "period": null
+      },
+      "at": "2026-11-20",
+      "model": "deepseek-v4-flash"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2Y3RKUHlTT1pDQUpGWHhBU2FOTTkzV3lHcE9kUE4wWGdRRlZCU2dpZVJWc3BxYllxdmxSMGY5R0VBYkxQdGpydHpXM1JvQ0N4UWd6VTVsQmExVzAxcW1mRjU|네이버, 여행 슈퍼위크 개최…국내선 항공권 최대 90% 할인",
+   "kind": "airline",
+   "title": "네이버, 여행 슈퍼위크 개최…국내선 항공권 최대 90% 할인",
+   "desc": "네이버, 여행 슈퍼위크 개최…국내선 항공권 최대 90% 할인 서울경제TV",
+   "summary": [
+    "네이버, 여행 슈퍼위크 개최…국내선 항공권 최대 90% 할인 서울경제TV…"
+   ],
+   "link": "https://www.sentv.co.kr/article/view/sentv202611200139",
+   "source": "서울경제TV",
+   "date": "2026-11-20T04:54:14.000Z",
+   "found": "2026-11-20",
+   "cards": [],
+   "airlines": [],
+   "countries": [
+    "일본",
+    "미국"
+   ],
+   "allRoutes": false,
+   "routes": [],
+   "price": null,
+   "query": "일본 항공권 {특가말}",
+   "bodyAt": "2026-11-20",
+   "body": [
+    "네이버, 여행 슈퍼위크 개최…국내선 항공권 최대 90% 할인",
+    "국내선 항공권 매일 오전 11시 특가 판매",
+    "일부 국내선 최대 90% 할인 특가 적용",
+    "[서울경제TV=김지송 인턴기자] 네이버가 국내선 항공권을 최대 90% 할인하고 일본 항공권과 국내 호텔 숙박권을 100원에 구매할 수 있는 추첨 행사를 진행한다.",
+    "해외 항공권 예약 고객에게는 최대 10만 원 상당의 할인·적립 혜택도 제공한다.",
+    "네이버는 오는 29일까지 항공권과 호텔, 패키지여행, 펜션 등을 할인 판매하는 ‘네이버여행 슈퍼위크’를 운영한다고 20일 밝혔다.",
+    "행사 기간 매일 호텔과 패키지여행, 항공권을 한정 수량으로 판매하는 타임딜이 열린다.",
+    "국내선 항공권 타임딜은 매일 오전 11시에 시작하며 일부 노선에 최대 90% 할인율이 적용된다.",
+    "해외 항공권은 △시드니 △호놀룰루 △뉴욕 △로스앤젤레스 △로마 △바르셀로나 △파리 △런던 △프라하 △리스본 등 10개 노선 예약 시 최대 10만 원 상당의 할인과 적립 혜택을 받을 수 있다.",
+    "당첨자에게는 청주공항 출발 일본 노선 항공권과 국내 호텔 숙박권을 각각 100원에 구매할 수 있는 기회가 주어진다.",
+    "네이버 여행 고객센터에 따르면 멤버십 회원은 항공권 구매 시 호텔 할인쿠폰을 받을 수 있으며, 일부 호텔 예약 상품에는 추가 적립 혜택이 적용된다.",
+    "슈퍼위크 기간 여행 상품을 예약한 네이버플러스 멤버십 회원 중 선착순 400명에게는 총 2000만 원 상당의 네이버페이 포인트를 지급한다.",
+    "국내 프리미엄 호텔과 해외 리조트, 패키지여행도 특가로 판매한다.",
+    "행사 기간 진행되는 ‘여행 라이브’ 방송에서는 방송 전용 할인 혜택도 제공한다."
+   ],
+   "ai": {
+    "v": 2,
+    "promo": true,
+    "why": "항공권 할인 중심 행사",
+    "airlines": [],
+    "name": "네이버여행 슈퍼위크",
+    "book": {
+     "from": null,
+     "to": "2026-11-29"
+    },
+    "board": null,
+    "price": null,
+    "trip": null,
+    "pct": 90,
+    "seoul": null,
+    "at": "2026-11-20",
+    "model": "deepseek-v4-flash"
+   },
+   "lastDate": "2026-11-20T04:54:14.000Z",
+   "lastFound": "2026-11-20"
+  },
+  {
+   "id": "https://www.discoverynews.kr/news/articleView.html|트리니티항공 , 2027년 1월 31일까지 탑승 대상 국제선 프로모션 운",
+   "kind": "airline",
+   "title": "트리니티항공 , 2027년 1월 31일까지 탑승 대상 국제선 프로모션 운영",
+   "desc": "이번 프로모션 은 오는 30일까지 트리니티항공 에서 진행되며, 탑승 대상 기간은 일부 제외 기간을 둔 2027년... 연계 항공 권 예매 시 지정된 프로모션 코드를 입력하면 노선별 할인 혜택이 적용되며, 결제 금액 기준에 따라...",
+   "summary": [
+    "이번 프로모션 은 오는 30일까지 트리니티항공 에서 진행되며, 탑승 대상 기간은 일부 제외 기간을 둔 2027년...",
+    "연계 항공 권 예매 시 지정된 프로모션 코드를 입력하면 노선별 할인 혜택이 적용되며, 결제 금액 기준에 따라…"
+   ],
+   "link": "https://www.discoverynews.kr/news/articleView.html?idxno=1107395",
+   "source": "네이버 뉴스",
+   "date": "2026-11-20T04:46:00.000Z",
+   "found": "2026-11-20",
+   "cards": [],
+   "airlines": [
+    "TW"
+   ],
+   "countries": [],
+   "allRoutes": true,
+   "routes": [],
+   "price": null,
+   "query": "트리니티항공 {특가말}",
+   "bodyAt": "2026-11-20",
+   "body": [
+    "이번 프로모션은 오는 30일까지 트리니티항공에서 진행되며, 탑승 대상 기간은 일부 제외 기간을 둔 2027년 1월 31일까지다.",
+    "해당 기간에는 동계 시즌 특성을 반영해 비교적 온화한 기후의 동남아 노선 등을 비롯해 중·장거리 노선에 대한 이용 수요가 나타날 것으로 전망된다.",
+    "항공권 예매 코드·중복 쿠폰 및 현지 교통·결제 제휴 연계",
+    "항공권 예매 시 지정된 프로모션 코드를 입력하면 노선별 할인 혜택이 적용되며, 결제 금액 기준에 따라 중복 적용이 가능한 쿠폰도 함께 제공된다.",
+    "이 밖에 프로모션 기간 중 현지 이동 및 결제 편의와 연계된 제휴 혜택도 병행 운영된다.",
+    "트리니티항공 관계자는 “동절기 기간 동안 주요 국제선 노선을 이용하려는 고객들을 위해 일정과 노선 범위를 넓혀 이번 프로모션을 마련했다”며 “동남아부터 유럽, 호주, 캐나다까지 각 노선별 조건과 일정을 확인해 활용할 수 있도록 구성했다”고 말했다."
+   ],
+   "ai": {
+    "v": 2,
+    "promo": true,
+    "why": "항공사 국제선 프로모션 코드 할인",
+    "airlines": [
+     "트리니티항공"
+    ],
+    "name": null,
+    "book": {
+     "from": null,
+     "to": "2026-11-30"
+    },
+    "board": {
+     "from": null,
+     "to": "2027-01-31"
+    },
+    "price": null,
+    "trip": null,
+    "pct": null,
+    "seoul": null,
+    "at": "2026-11-20",
+    "model": "deepseek-v4-flash"
+   },
+   "lastDate": "2026-11-20T04:46:00.000Z",
+   "lastFound": "2026-11-20",
+   "more": [
+    {
+     "id": "https://www.megaeconomy.co.kr/news/newsview.php|트리니티항공, 겨울 국제선 할인 프로모션…노선별 특가로 수요 공략",
+     "kind": "airline",
+     "title": "트리니티항공, 겨울 국제선 할인 프로모션…노선별 특가로 수요 공략",
+     "desc": "트리니티항공, 겨울 국제선 할인 프로모션…노선별 특가로 수요 공략 [메가경제=심영범 기자]소노트리니티그룹의 트리니티항공이 겨울철 국제선 할인 프로모션을 통해 해외여행 수요 확보에 나선다. 트리니티항공은 오는 삼십일까지 공식 홈페이지와 모바일 앱·웹에서 겨울철 출발 국제선 항공권 할인 프로모션을 진행한다. 탑승 기간은 일부 기간을 제외하고 내년 일월 말까지다 ...",
+     "summary": [
+      "트리니티항공, 겨울 국제선 할인 프로모션…노선별 특가로 수요 공략 [메가경제=심영범 기자]소노트리니티그룹의 트리니티항공이 겨울철 국제선 할인 프로모션을 통해 해외여행 수요 확보에 나선다.",
+      "트리니티항공은 오는 삼십일까지 공식 홈페이지와 모바일 앱·웹에서 겨울철 출발 국제선 항공권 할인 프로모션을 진행한다.",
+      "탑승 기간은 일부 기간을 제외하고 내년 일월 말까지다"
+     ],
+     "link": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065587242323375",
+     "source": "메가경제",
+     "date": "2026-11-19T15:27:00.000Z",
+     "found": "2026-11-20",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "트리니티항공 {특가말}",
+     "bodyAt": "2026-11-20",
+     "body": [
+      "2026.11.20 (금)"
+     ],
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "항공사 겨울 국제선 특가 프로모션",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "겨울 국제선 할인 프로모션",
+      "book": {
+       "from": null,
+       "to": "2026-11-30"
+      },
+      "board": {
+       "from": null,
+       "to": "2027-01-31"
+      },
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-20",
+      "model": "deepseek-v4-flash"
+     }
+    }
+   ]
+  },
+  {
+   "id": "c:https://cafe.naver.com/grownman/1183340|✈️제주 항공 : 단, 3일 간! 최대 79% 할인 앵콜 특가 정보",
+   "kind": "airline",
+   "community": true,
+   "title": "✈️제주 항공 : 단, 3일 간! 최대 79% 할인 앵콜 특가 정보",
+   "desc": "31(일) 동남아(다낭, 나트랑, 푸꾸옥 등): 140000원~ 프로모션 코드 : 앵콜특가국제2611 카카오페이 최대... 65% 할인 ✈️제주 항공 : 단, 3일 간!",
+   "summary": [
+    "31(일) 동남아(다낭, 나트랑, 푸꾸옥 등): 140000원~ 프로모션 코드 : 앵콜특가국제2611 카카오페이 최대...",
+    "65% 할인 ✈️제주 항공 : 단, 3일 간!…"
+   ],
+   "link": "https://cafe.naver.com/grownman/1183340",
+   "source": "네이버 카페 · 다낭 보물창고 - 다낭자유여행 다낭여행 다낭맛집 다낭리조트",
+   "date": "2026-11-09T03:00:46.835Z",
+   "found": "2026-11-09",
+   "cards": [],
+   "airlines": [],
+   "countries": [
+    "베트남",
+    "필리핀"
+   ],
+   "allRoutes": true,
+   "routes": [],
+   "price": {
+    "amount": 140000,
+    "trip": "oneway?"
+   },
+   "query": "항공권 할인코드",
+   "notified": "2026-11-09",
+   "ai": {
+    "v": 2,
+    "promo": true,
+    "why": "제주항공 앵콜 특가 프로모션 안내",
+    "airlines": [
+     "제주항공"
+    ],
+    "name": "앵콜특가",
+    "book": null,
+    "board": null,
+    "price": 140000,
+    "trip": null,
+    "pct": 79,
+    "seoul": null,
+    "at": "2026-11-12",
+    "model": "deepseek-v4-flash"
+   },
+   "lastDate": "2026-11-20T03:00:44.337Z",
+   "lastFound": "2026-11-20",
+   "more": [
+    {
+     "id": "c:https://cafe.naver.com/sonyngp1/36451|제주 항공 보홀 항공 편 앵콜 특가 ! 최대 79% 할인 12~1월 특가",
+     "kind": "airline",
+     "community": true,
+     "title": "제주 항공 보홀 항공 편 앵콜 특가 ! 최대 79% 할인 12~1월 특가.",
+     "desc": "31일(일) 까지 ＊12월~01월 국제선 / 필리핀 보홀 특가 할인 적용 항공권 이벤트입니다. ＊( 할인 적용 제외시 일자는 별도 확인) 제주 항공 모든 회원 대상 추가 할인 까지!",
+     "summary": [
+      "31일(일) 까지 ＊12월~01월 국제선 / 필리핀 보홀 특가 할인 적용 항공권 이벤트입니다.",
+      "＊( 할인 적용 제외시 일자는 별도 확인) 제주 항공 모든 회원 대상 추가 할인 까지!…"
+     ],
+     "link": "https://cafe.naver.com/sonyngp1/36451",
+     "source": "네이버 카페 · 벨라보홀ㅣ필리핀 보홀 자유여행 투어 마사지 호핑 호텔 맛집",
+     "date": "2026-11-09T09:00:50.367Z",
+     "found": "2026-11-09",
+     "cards": [],
+     "airlines": [],
+     "countries": [
+      "필리핀"
+     ],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "항공권 할인코드",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "제주항공 보홀 특가 할인",
+      "airlines": [
+       "제주항공"
+      ],
+      "name": "앵콜 특가",
+      "book": null,
+      "board": {
+       "from": "2026-12-01",
+       "to": "2027-01-31"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 79,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/tybwondergirl5/116570|✈️ 제주 항공 12~1월 앵콜 특가 ! 베트남 항공권 최대 79% 할인",
+     "kind": "airline",
+     "community": true,
+     "title": "✈️ 제주 항공 12~1월 앵콜 특가 ! 베트남 항공권 최대 79% 할인",
+     "desc": "디고님들~~ 제주 항공 에서 겨울 항공권 특가 가 또 떴어요! ✈️ 단 3일간! 최대 79% 할인이라니, 연말연시 여행 준비하시는 분들 눈여겨보셔요.",
+     "summary": [
+      "디고님들~~ 제주 항공 에서 겨울 항공권 특가 가 또 떴어요! ✈️ 단 3일간! 최대 79% 할인이라니, 연말연시 여행 준비하시는 분들 눈여겨보셔요."
+     ],
+     "link": "https://cafe.naver.com/tybwondergirl5/116570",
+     "source": "네이버 카페 · 베트남 디고-다낭나트랑자유여행,맛집,호텔,리조트,마사지,골프",
+     "date": "2026-11-09T19:14:18.306Z",
+     "found": "2026-11-10",
+     "cards": [],
+     "airlines": [],
+     "countries": [
+      "베트남"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "베트남 항공권 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "제주항공 겨울 항공권 특가",
+      "airlines": [
+       "제주항공"
+      ],
+      "name": "12~1월 앵콜 특가",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": 79,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/minecraftpe/4012791|✈️ 푸꾸옥 특가 프로모션 : 제주 항공",
+     "kind": "airline",
+     "community": true,
+     "title": "✈️ 푸꾸옥 특가 프로모션 : 제주 항공",
+     "desc": "제주 항공 https://www.jejuair.net/ko/event/eventDetail.do?eventNo=0000004446 인천 푸꾸옥 노선이 포함된 제주 항공 프로모션입니다!",
+     "summary": [
+      "제주 항공 https://www.jejuair.net/ko/event/eventDetail.do?eventNo=0000004446 인천 푸꾸옥 노선이 포함된 제주 항공 프로모션입니다!…"
+     ],
+     "link": "https://cafe.naver.com/minecraftpe/4012791",
+     "source": "네이버 카페 · 푸꾸옥 고스트 - 베트남푸꾸옥 자유여행,호텔리조트,항공권,맛집",
+     "date": "2026-11-09T03:00:46.835Z",
+     "found": "2026-11-09",
+     "cards": [],
+     "airlines": [],
+     "countries": [
+      "베트남"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "베트남 항공권 특가",
+     "notified": "2026-11-09",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "제주항공 푸꾸옥 노선 특가 프로모션",
+      "airlines": [
+       "제주항공"
+      ],
+      "name": "푸꾸옥 특가 프로모션",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": true,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/warcraftgamemap/3531385|✈️ 다낭 특가 프로모션 : 제주 항공",
+     "kind": "airline",
+     "community": true,
+     "title": "✈️ 다낭 특가 프로모션 : 제주 항공",
+     "desc": "인천 다낭 노선이 포함된 제주 항공 프로모션입니다! 제주 항공 https://www.jejuair.net/ko/event/eventDetail.do?eventNo=0000004446.",
+     "summary": [
+      "인천 다낭 노선이 포함된 제주 항공 프로모션입니다! 제주 항공 https://www.jejuair.net/ko/event/eventDetail.do?eventNo=0000004446."
+     ],
+     "link": "https://cafe.naver.com/warcraftgamemap/3531385",
+     "source": "네이버 카페 · 다낭 고스트 - 베트남 다낭자유여행 ,다낭여행,맛집,호텔리조트",
+     "date": "2026-11-09T03:00:46.835Z",
+     "found": "2026-11-09",
+     "cards": [],
+     "airlines": [],
+     "countries": [
+      "베트남"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "베트남 항공권 특가",
+     "notified": "2026-11-09",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "제주항공 인천-다낭 특가 프로모션",
+      "airlines": [
+       "제주항공"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": true,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/minecraftpe/4013285|✈️ 푸꾸옥 특가 프로모션 : 이스타 항공",
+     "kind": "airline",
+     "community": true,
+     "title": "✈️ 푸꾸옥 특가 프로모션 : 이스타 항공",
+     "desc": "오늘 오픈 하는 이스타 항공 프로모션 소식입니다! 인천 푸꾸옥 부산 푸꾸옥 노선이 포함되어 있습니다 자세한 내용은 이스타 항공 홈페이지나 어플에서 확인해보세요! 이상 특가 알리미 숙취중이였습니다! *ㅁ*//.",
+     "summary": [
+      "오늘 오픈 하는 이스타 항공 프로모션 소식입니다! 인천 푸꾸옥 부산 푸꾸옥 노선이 포함되어 있습니다 자세한 내용은 이스타 항공 홈페이지나 어플에서 확인해보세요! 이상 특가 알리미 숙취중이였습니다! *ㅁ*//."
+     ],
+     "link": "https://cafe.naver.com/minecraftpe/4013285",
+     "source": "네이버 카페 · 푸꾸옥 고스트 - 베트남푸꾸옥 자유여행,호텔리조트,항공권,맛집",
+     "date": "2026-11-10T01:00:52.462Z",
+     "found": "2026-11-10",
+     "cards": [],
+     "airlines": [],
+     "countries": [
+      "베트남"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "항공권 특가 오픈",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "이스타항공 푸꾸옥 특가 프로모션 소식",
+      "airlines": [
+       "이스타항공"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": true,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/zzop/4334387|꺅 ~ 이스타 항공 이벤트해요~",
+     "kind": "airline",
+     "community": true,
+     "title": "꺅 ~ 이스타 항공 이벤트해요~",
+     "desc": "",
+     "link": "https://cafe.naver.com/zzop/4334387",
+     "source": "네이버 카페 · 나트랑 도깨비 - 베트남 나트랑 자유여행,무이네,달랏,맛집,호텔",
+     "date": "2026-11-10T02:59:08.151Z",
+     "found": "2026-11-10",
+     "cards": [],
+     "airlines": [],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "베트남 항공권 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "이스타항공 이벤트 소식",
+      "airlines": [
+       "이스타항공"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/ysm5828/9647035|이스타 항공 이벤트 합니다~",
+     "kind": "airline",
+     "community": true,
+     "title": "이스타 항공 이벤트 합니다~",
+     "desc": "이스타항공 베트남 이벤트 떴어요 오늘 10시부터 진행중이니 빨리 선점하세요~ 겨울 방학 시기도 겹치는데 저렴하게 갈 수 있곘네요 다른 항공 사도 이벤트 많이 했으면 좋겠어요 ^^.",
+     "summary": [
+      "이스타항공 베트남 이벤트 떴어요 오늘 10시부터 진행중이니 빨리 선점하세요~ 겨울 방학 시기도 겹치는데 저렴하게 갈 수 있곘네요 다른 항공 사도 이벤트 많이 했으면 좋겠어요 ^^."
+     ],
+     "link": "https://cafe.naver.com/ysm5828/9647035",
+     "source": "네이버 카페 · 푸꾸옥 도깨비- 베트남 푸꾸옥 자유여행,호텔리조트,항공권,맛집",
+     "date": "2026-11-10T02:59:08.151Z",
+     "found": "2026-11-10",
+     "cards": [],
+     "airlines": [],
+     "countries": [
+      "베트남"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "이스타항공 이벤트",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "이스타항공 베트남 특가 이벤트 진행",
+      "airlines": [
+       "이스타항공"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/warcraftgamemap/3536154|✈️ 다낭 특가 프로모션 : 트리니티 항공",
+     "kind": "airline",
+     "community": true,
+     "title": "✈️ 다낭 특가 프로모션 : 트리니티 항공",
+     "desc": "인천 다낭 대구 다낭 청주 다낭 노선이 포함된 트리니티 항공 프로모션입니다! https://m.trinityairways.com/app/promotion/event/retrieve/BVOxHUd1R21za2JsjOL2Ow==/being/n.",
+     "summary": [
+      "인천 다낭 대구 다낭 청주 다낭 노선이 포함된 트리니티 항공 프로모션입니다! https://m.trinityairways.com/app/promotion/event/retrieve/BVOxHUd1R21za2JsjOL2Ow==/be…"
+     ],
+     "link": "https://cafe.naver.com/warcraftgamemap/3536154",
+     "source": "네이버 카페 · 다낭 고스트 - 베트남 다낭자유여행 ,다낭여행,맛집,호텔리조트",
+     "date": "2026-11-16T03:00:48.126Z",
+     "found": "2026-11-16",
+     "cards": [],
+     "airlines": [],
+     "countries": [
+      "베트남"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "베트남 항공권 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "트리니티항공 다낭 노선 특가 프로모션",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "다낭 특가 프로모션",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": true,
+      "at": "2026-11-16",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/fobn/166446|[ 특가 정보] 트리니티 항공 블랙프라이데이 세일",
+     "kind": "airline",
+     "community": true,
+     "title": "[ 특가 정보] 트리니티 항공 블랙프라이데이 세일",
+     "desc": "오늘부터 세일하네요 득템 하세요.",
+     "link": "https://cafe.naver.com/fobn/166446",
+     "source": "네이버 카페 · 다낭 아지트 루나 - 다낭맛집, 다낭마사지, 호이안, 다낭여행",
+     "date": "2026-11-16T03:00:48.126Z",
+     "found": "2026-11-16",
+     "cards": [],
+     "airlines": [],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "트리니티항공 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "항공사 블랙프라이데이 특가 소식",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "블랙프라이데이 세일",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-16",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/warcraftgamemap/3537107|✈️ 다낭 특가 프로모션 : 파라타 항공",
+     "kind": "airline",
+     "community": true,
+     "title": "✈️ 다낭 특가 프로모션 : 파라타 항공",
+     "desc": "인천 다낭 노선이 포함된 파라타 항공 프로모션입니다! https://m.parataair.com/ko/contents/event/loadEventDetail.do?no=2199&status=on.",
+     "summary": [
+      "인천 다낭 노선이 포함된 파라타 항공 프로모션입니다! https://m.parataair.com/ko/contents/event/loadEventDetail.do?no=2199&status=on."
+     ],
+     "link": "https://cafe.naver.com/warcraftgamemap/3537107",
+     "source": "네이버 카페 · 다낭 고스트 - 베트남 다낭자유여행 ,다낭여행,맛집,호텔리조트",
+     "date": "2026-11-17T03:00:47.274Z",
+     "found": "2026-11-17",
+     "cards": [],
+     "airlines": [],
+     "countries": [
+      "베트남"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "베트남 항공권 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "파라타 항공 프로모션 소식",
+      "airlines": [
+       "파라타항공"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": true,
+      "at": "2026-11-17",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/mindy7857/5536770|✈️ 나트랑 특가 프로모션 : 파라타 항공",
+     "kind": "airline",
+     "community": true,
+     "title": "✈️ 나트랑 특가 프로모션 : 파라타 항공",
+     "desc": "인천 나트랑 노선이 포함된 파라타 항공 프로모션입니다! https://m.parataair.com/ko/contents/event/loadEventDetail.do?no=2199&status=on.",
+     "summary": [
+      "인천 나트랑 노선이 포함된 파라타 항공 프로모션입니다! https://m.parataair.com/ko/contents/event/loadEventDetail.do?no=2199&status=on."
+     ],
+     "link": "https://cafe.naver.com/mindy7857/5536770",
+     "source": "네이버 카페 · 베나자-베트남나트랑자유여행,달랏,무이네,호텔,투어,리조트맛집",
+     "date": "2026-11-17T03:00:47.274Z",
+     "found": "2026-11-17",
+     "cards": [],
+     "airlines": [],
+     "countries": [
+      "베트남"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "베트남 항공권 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "항공사 특가 프로모션 소식",
+      "airlines": [
+       "파라타항공"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": true,
+      "at": "2026-11-17",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/airplanetiket/1414|트리니티 이스타 제주 항공 수험생 할인",
+     "kind": "airline",
+     "community": true,
+     "title": "트리니티 이스타 제주 항공 수험생 할인",
+     "desc": "출처:_lensmag IG.",
+     "link": "https://cafe.naver.com/airplanetiket/1414",
+     "source": "네이버 카페 · 항공특가정보",
+     "date": "2026-11-20T03:00:44.337Z",
+     "found": "2026-11-20",
+     "cards": [],
+     "airlines": [],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "트리니티항공 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "수험생 항공권 할인 소식",
+      "airlines": [
+       "트리니티항공",
+       "이스타항공"
+      ],
+      "name": "수험생 할인",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-20",
       "model": "deepseek-v4-flash"
      }
     }
@@ -15968,600 +16953,6 @@
    },
    "lastDate": "2026-11-17T15:38:00.000Z",
    "lastFound": "2026-11-18"
-  },
-  {
-   "id": "c:https://cafe.naver.com/fobn/164365|트리니티항공 ] ✈️11월 더블 혜택! 동남아 항공 권 최대 25% 할인",
-   "kind": "airline",
-   "community": true,
-   "title": "트리니티항공 ] ✈️11월 더블 혜택! 동남아 항공 권 최대 25% 할인",
-   "desc": "트리니티항공 에서 11월 1일부터 13일까지 국제선 항공 권 할인 이벤트 를 진행하고 있어요.",
-   "summary": [
-    "트리니티항공 에서 11월 1일부터 13일까지 국제선 항공 권 할인 이벤트 를 진행하고 있어요."
-   ],
-   "link": "https://cafe.naver.com/fobn/164365",
-   "source": "네이버 카페 · 다낭 아지트 루나 - 다낭맛집, 다낭마사지, 호이안, 다낭여행",
-   "date": "2026-11-03T14:18:02.174Z",
-   "dateFound": true,
-   "found": "2026-11-03",
-   "cards": [],
-   "airlines": [
-    "TW"
-   ],
-   "countries": [
-    "태국",
-    "일본",
-    "필리핀"
-   ],
-   "allRoutes": true,
-   "routes": [],
-   "price": {
-    "amount": 10000,
-    "trip": "oneway?"
-   },
-   "query": "트리니티항공 이벤트",
-   "notified": "2026-11-06",
-   "ai": {
-    "v": 2,
-    "promo": true,
-    "why": "항공사 국제선 운임 할인 프로모션",
-    "airlines": [
-     "트리니티항공"
-    ],
-    "name": "11월 더블 혜택",
-    "book": {
-     "from": "2026-11-01",
-     "to": "2026-11-13"
-    },
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": 25,
-    "seoul": null,
-    "at": "2026-11-12",
-    "model": "deepseek-v4-flash"
-   },
-   "lastDate": "2026-11-17T13:00:46.212Z",
-   "lastFound": "2026-11-17",
-   "more": [
-    {
-     "id": "c:https://cafe.naver.com/paydefense/769|트리니티항공 후쿠오카·오사카·방콕 국제선 얼리버드 1만원대부터 라이브..",
-     "kind": "airline",
-     "community": true,
-     "title": "트리니티항공 후쿠오카·오사카·방콕 국제선 얼리버드 1만원대부터 라이브....",
-     "desc": "27(토) 티웨이 항공 의 새로운 이름, 트리니티항공 국제선 동계 얼리버드 라이브 특가 핫딜입니다.",
-     "summary": [
-      "27(토) 티웨이 항공 의 새로운 이름, 트리니티항공 국제선 동계 얼리버드 라이브 특가 핫딜입니다."
-     ],
-     "link": "https://cafe.naver.com/paydefense/769",
-     "source": "네이버 카페 · [육아메이트] - 엄빠지갑지킴이(임출육아용품 핫딜 아카이브)",
-     "date": "2026-11-04T10:41:50.033Z",
-     "dateFound": true,
-     "found": "2026-11-04",
-     "cards": [],
-     "airlines": [
-      "TW"
-     ],
-     "countries": [
-      "태국",
-      "일본"
-     ],
-     "allRoutes": true,
-     "routes": [],
-     "price": {
-      "amount": 10000,
-      "trip": "oneway?"
-     },
-     "query": "트리니티항공 얼리버드",
-     "notified": "2026-11-06",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "항공사 얼리버드 특가 소식",
-      "airlines": [
-       "트리니티항공"
-      ],
-      "name": "국제선 동계 얼리버드 라이브 특가",
-      "book": null,
-      "board": null,
-      "price": 10000,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/japanpackagetour/13664|트리니티항공 가을 겨울 일본 항공 권 할인 프로모션",
-     "kind": "airline",
-     "community": true,
-     "title": "트리니티항공 가을 겨울 일본 항공 권 할인 프로모션",
-     "desc": "\" 트리니티항공 가을·겨울 국제선 할인\"… 항공 의 날 기념 프로모션 앞서 전해드린 얼리버드 프로모션(OCT26 코드)과 비슷한 코드로 새 행사가 나왔습니다. 헷갈리지 않게 차이점도 짚어드릴게요.",
-     "summary": [
-      "\" 트리니티항공 가을·겨울 국제선 할인\"… 항공 의 날 기념 프로모션 앞서 전해드린 얼리버드 프로모션(OCT26 코드)과 비슷한 코드로 새 행사가 나왔습니다.",
-      "헷갈리지 않게 차이점도 짚어드릴게요."
-     ],
-     "link": "https://cafe.naver.com/japanpackagetour/13664",
-     "source": "네이버 카페 · 일본 패키지여행 카페 (북해도,도쿄,오사카,후쿠오카,요나고)",
-     "date": "2026-11-04T10:41:50.033Z",
-     "dateFound": true,
-     "found": "2026-11-04",
-     "cards": [],
-     "airlines": [
-      "TW"
-     ],
-     "countries": [
-      "일본"
-     ],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "트리니티항공 얼리버드",
-     "notified": "2026-11-06",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "항공사 할인 프로모션 소식",
-      "airlines": [
-       "트리니티항공"
-      ],
-      "name": "가을·겨울 국제선 할인",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/vinpearl/552713|✈️ [특가 소식] 트리니티항공 2027년 초특가 얼리버드 오픈! (최대",
-     "kind": "airline",
-     "community": true,
-     "title": "✈️ [특가 소식] 트리니티항공 2027년 초특가 얼리버드 오픈! (최대 24% 할인....",
-     "desc": "현재 트리니티항공 (Trinity Airways)에서 진행 중인 '국제선 얼리버드 특가 프로모션' 내용 정리해 드립니다.",
-     "summary": [
-      "현재 트리니티항공 (Trinity Airways)에서 진행 중인 '국제선 얼리버드 특가 프로모션' 내용 정리해 드립니다."
-     ],
-     "link": "https://cafe.naver.com/vinpearl/552713",
-     "source": "네이버 카페 · 베트남 피크타임 푸꾸옥 나트랑 다낭 호치민 무이네 하노이 여행",
-     "date": "2026-11-04T10:41:50.033Z",
-     "dateFound": true,
-     "found": "2026-11-04",
-     "cards": [],
-     "airlines": [
-      "TW"
-     ],
-     "countries": [],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "트리니티항공 얼리버드",
-     "notified": "2026-11-06",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "항공사 얼리버드 특가 프로모션",
-      "airlines": [
-       "트리니티항공"
-      ],
-      "name": "국제선 얼리버드 특가 프로모션",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": 24,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/deboracay/255682|[보라카이 항공 ] 보라카이 직항 트리니티항공 ✈️ 얼리버드 이벤트",
-     "kind": "airline",
-     "community": true,
-     "title": "[보라카이 항공 ] 보라카이 직항 트리니티항공 ✈️ 얼리버드 이벤트",
-     "desc": "Since2006 보라카이자유여행 전문 보라카이드보라 현재 유일하게 보라카이 직항 운항중인 트리니티항공 (구) 티웨이 항공 얼리버드 이벤트 합니다!",
-     "summary": [
-      "Since2006 보라카이자유여행 전문 보라카이드보라 현재 유일하게 보라카이 직항 운항중인 트리니티항공 (구) 티웨이 항공 얼리버드 이벤트 합니다!…"
-     ],
-     "link": "https://cafe.naver.com/deboracay/255682",
-     "source": "네이버 카페 · 보라카이 드보라 자유여행",
-     "date": "2026-11-04T10:41:50.033Z",
-     "dateFound": true,
-     "found": "2026-11-04",
-     "cards": [],
-     "airlines": [
-      "TW"
-     ],
-     "countries": [
-      "필리핀"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "트리니티항공 얼리버드",
-     "notified": "2026-11-06",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "트리니티항공 얼리버드 특가",
-      "airlines": [
-       "트리니티항공"
-      ],
-      "name": "얼리버드 이벤트",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/airportshopping/1088|[ 트리니티항공 ] 11월 정기 국제선 할인 프로모션!",
-     "kind": "airline",
-     "community": true,
-     "title": "[ 트리니티항공 ] 11월 정기 국제선 할인 프로모션!",
-     "desc": "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
-     "summary": [
-      "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
-     ],
-     "link": "https://cafe.naver.com/airportshopping/1088",
-     "source": "네이버 카페 · 인천공항의 모든 것",
-     "date": "2026-11-06T05:00:45.112Z",
-     "found": "2026-11-06",
-     "cards": [],
-     "airlines": [
-      "TW"
-     ],
-     "countries": [],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "트리니티항공 할인",
-     "notified": "2026-11-06",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "항공사 국제선 할인 프로모션",
-      "airlines": [
-       "트리니티항공"
-      ],
-      "name": "11월 정기 국제선 할인 프로모션",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/livejob/1212376|트리니티항공 에서 국제선 얼리버드 항공 권 특가가 나와서 공유드립니다!",
-     "kind": "airline",
-     "community": true,
-     "title": "트리니티항공 에서 국제선 얼리버드 항공 권 특가가 나와서 공유드립니다!",
-     "desc": "트리니티항공 국제선 얼리버드 , 정확히 언제까지일까? 이번 프로모션의 가장 중요한 날짜부터 정리해볼게요.",
-     "summary": [
-      "트리니티항공 국제선 얼리버드 , 정확히 언제까지일까? 이번 프로모션의 가장 중요한 날짜부터 정리해볼게요."
-     ],
-     "link": "https://cafe.naver.com/livejob/1212376",
-     "source": "네이버 카페 · 여친사▶▶여행도하고 친구도사귀자◀◀ 국내여행,여행맛집",
-     "date": "2026-11-09T11:00:48.524Z",
-     "found": "2026-11-09",
-     "cards": [],
-     "airlines": [
-      "TW"
-     ],
-     "countries": [],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "트리니티항공 얼리버드",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "항공사 얼리버드 특가 공유",
-      "airlines": [
-       "트리니티항공"
-      ],
-      "name": "국제선 얼리버드 특가",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/airportshopping/952|[ 트리니티항공 ] 국제선 얼리버드 특가!",
-     "kind": "airline",
-     "community": true,
-     "title": "[ 트리니티항공 ] 국제선 얼리버드 특가!",
-     "desc": "자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
-     "summary": [
-      "자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
-     ],
-     "link": "https://cafe.naver.com/airportshopping/952",
-     "source": "네이버 카페 · 인천공항의 모든 것",
-     "date": "2026-11-09T11:00:48.524Z",
-     "found": "2026-11-09",
-     "cards": [],
-     "airlines": [
-      "TW"
-     ],
-     "countries": [],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "트리니티항공 얼리버드",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "트리니티항공 국제선 얼리버드 특가",
-      "airlines": [
-       "트리니티항공"
-      ],
-      "name": "국제선 얼리버드 특가",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/airportshopping/1105|[ 트리니티항공 ] 부산, 대구, 청주, 제주에서 출발하는 우리 동네 할",
-     "kind": "airline",
-     "community": true,
-     "title": "[ 트리니티항공 ] 부산, 대구, 청주, 제주에서 출발하는 우리 동네 할인 !",
-     "desc": "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
-     "summary": [
-      "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
-     ],
-     "link": "https://cafe.naver.com/airportshopping/1105",
-     "source": "네이버 카페 · 인천공항의 모든 것",
-     "date": "2026-11-10T05:00:46.618Z",
-     "found": "2026-11-10",
-     "cards": [],
-     "airlines": [
-      "TW"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "트리니티항공 할인",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "항공사 지방 출발 할인 프로모션",
-      "airlines": [
-       "트리니티항공"
-      ],
-      "name": "우리 동네 할인",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": false,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/airplanetiket/1359|트리니티항공 블프 세일",
-     "kind": "airline",
-     "community": true,
-     "title": "트리니티항공 블프 세일",
-     "desc": "",
-     "link": "https://cafe.naver.com/airplanetiket/1359",
-     "source": "네이버 카페 · 항공특가정보",
-     "date": "2026-11-16T03:00:48.126Z",
-     "found": "2026-11-16",
-     "cards": [],
-     "airlines": [
-      "TW"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "트리니티항공 특가",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "항공사 블프 특가 소식",
-      "airlines": [
-       "트리니티항공"
-      ],
-      "name": "블프 세일",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-16",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/djmomschools/193|✈️ [여행·핫딜] 트리니티 항공 (구 티웨이) 2026 블랙 프라이데이",
-     "kind": "airline",
-     "community": true,
-     "title": "✈️ [여행·핫딜] 트리니티 항공 (구 티웨이) 2026 블랙 프라이데이! 2027년 항....",
-     "desc": "여행 항공권 을 미리 사두는 시즌이네요.",
-     "summary": [
-      "여행 항공권 을 미리 사두는 시즌이네요."
-     ],
-     "link": "https://cafe.naver.com/djmomschools/193",
-     "source": "네이버 카페 · 동작맘스쿨",
-     "date": "2026-11-17T05:00:43.473Z",
-     "found": "2026-11-17",
-     "cards": [],
-     "airlines": [
-      "TW"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "항공권 프로모션 코드",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "항공사 블랙프라이데이 특가 소식",
-      "airlines": [
-       "트리니티항공"
-      ],
-      "name": "2026 블랙 프라이데이",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-17",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/airportshopping/1141|[ 트리니티항공 ] 올해 마지막 방콕, 치앙마이 최대 할인 !",
-     "kind": "airline",
-     "community": true,
-     "title": "[ 트리니티항공 ] 올해 마지막 방콕, 치앙마이 최대 할인 !",
-     "desc": "▼자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
-     "summary": [
-      "▼자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
-     ],
-     "link": "https://cafe.naver.com/airportshopping/1141",
-     "source": "네이버 카페 · 인천공항의 모든 것",
-     "date": "2026-11-17T05:00:43.473Z",
-     "found": "2026-11-17",
-     "cards": [],
-     "airlines": [
-      "TW"
-     ],
-     "countries": [
-      "태국"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "트리니티항공 할인",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "트리니티항공 방콕·치앙마이 특가",
-      "airlines": [
-       "트리니티항공"
-      ],
-      "name": "올해 마지막 방콕, 치앙마이 최대 할인",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-17",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/airportshopping/1139|[ 트리니티항공 ] 지금, 제주를 만나다. ( 최대 2만원 할인 프로모션",
-     "kind": "airline",
-     "community": true,
-     "title": "[ 트리니티항공 ] 지금, 제주를 만나다. ( 최대 2만원 할인 프로모션 )",
-     "desc": "▼자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
-     "summary": [
-      "▼자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
-     ],
-     "link": "https://cafe.naver.com/airportshopping/1139",
-     "source": "네이버 카페 · 인천공항의 모든 것",
-     "date": "2026-11-17T05:00:43.473Z",
-     "found": "2026-11-17",
-     "cards": [],
-     "airlines": [
-      "TW"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "트리니티항공 할인",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "항공사 할인 프로모션 소식",
-      "airlines": [
-       "트리니티항공"
-      ],
-      "name": "지금, 제주를 만나다",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-17",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/deboracay/255965|[보라카이 항공 권] 트리니티항공 '블랙프라이데이' 할인",
-     "kind": "airline",
-     "community": true,
-     "title": "[보라카이 항공 권] 트리니티항공 '블랙프라이데이' 할인",
-     "desc": "",
-     "link": "https://cafe.naver.com/deboracay/255965",
-     "source": "네이버 카페 · 보라카이 드보라 자유여행",
-     "date": "2026-11-17T13:00:46.212Z",
-     "found": "2026-11-17",
-     "cards": [],
-     "airlines": [
-      "TW"
-     ],
-     "countries": [
-      "필리핀"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "트리니티항공 할인",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "트리니티항공 블랙프라이데이 항공권 할인",
-      "airlines": [
-       "트리니티항공"
-      ],
-      "name": "블랙프라이데이",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-17",
-      "model": "deepseek-v4-flash"
-     }
-    }
-   ]
   },
   {
    "id": "c:https://cafe.naver.com/imcrew2/2106|[ 제주항공 뉴스] 제주항공 , 2027 대입 수험생 국내선 20% 할인",
@@ -47672,24 +48063,24 @@
    "lastFound": "2026-11-01"
   }
  ],
- "updated": "2026-11-20T03:00:44.337Z",
- "runs": 241,
+ "updated": "2026-11-20T05:00:43.396Z",
+ "runs": 242,
  "checked": {
-  "베트남": "2026-11-20T03:00:44.337Z",
-  "태국": "2026-11-20T03:00:44.337Z",
-  "필리핀": "2026-11-20T03:00:44.337Z",
-  "인도네시아": "2026-11-20T03:00:44.337Z",
-  "말레이시아": "2026-11-20T03:00:44.337Z",
-  "싱가포르": "2026-11-20T03:00:44.337Z",
-  "일본": "2026-11-20T03:00:44.337Z",
-  "대만": "2026-11-20T03:00:44.337Z",
-  "홍콩": "2026-11-20T03:00:44.337Z",
-  "마카오": "2026-11-20T03:00:44.337Z",
-  "중국": "2026-11-20T03:00:44.337Z",
-  "미국령": "2026-11-20T03:00:44.337Z",
-  "미국": "2026-11-20T03:00:44.337Z"
+  "베트남": "2026-11-20T05:00:43.396Z",
+  "태국": "2026-11-20T05:00:43.396Z",
+  "필리핀": "2026-11-20T05:00:43.396Z",
+  "인도네시아": "2026-11-20T05:00:43.396Z",
+  "말레이시아": "2026-11-20T05:00:43.396Z",
+  "싱가포르": "2026-11-20T05:00:43.396Z",
+  "일본": "2026-11-20T05:00:43.396Z",
+  "대만": "2026-11-20T05:00:43.396Z",
+  "홍콩": "2026-11-20T05:00:43.396Z",
+  "마카오": "2026-11-20T05:00:43.396Z",
+  "중국": "2026-11-20T05:00:43.396Z",
+  "미국령": "2026-11-20T05:00:43.396Z",
+  "미국": "2026-11-20T05:00:43.396Z"
  },
- "auto": "2026-11-20T03:00:44.337Z",
+ "auto": "2026-11-20T05:00:43.396Z",
  "sources": {
   "7C": "2026-11-01",
   "TW": "2026-11-01",
@@ -47902,123 +48293,6 @@
    "중국동방항공 얼리버드": "2026-11-04"
   },
   "seen": [
-   "2266734/133382",
-   "ysm5828/9649232",
-   "gbcointrader/30795",
-   "mindy7857/5533250",
-   "happyibook/6355676",
-   "loyaltylife/369492",
-   "worldtravelcafe/1166893",
-   "grownman/1183193",
-   "010freebaram/261410",
-   "010freebaram/261412",
-   "twinklemommy/6206",
-   "lifemarket002/569",
-   "lifemarket002/568",
-   "drawhangil/26096",
-   "drawhangil/26092",
-   "redekpvg/1121",
-   "grownman/1187912",
-   "happyibook/6355669",
-   "minecraftpe/4016538",
-   "happyibook/6355663",
-   "happyibook/6355662",
-   "minecraftpe/4012690",
-   "buncafea/52846",
-   "buncafea/52823",
-   "joonggonara/1138173839",
-   "waateam/165966",
-   "2266734/133286",
-   "gbcointrader/30693",
-   "lifemarket235/598",
-   "gbcointrader/30669",
-   "pcckor/18",
-   "whiskycognac/965241",
-   "kysstock/8140",
-   "flecture/1124101",
-   "010freebaram/261414",
-   "joonggonara/1138173319",
-   "culturebloom/3434991",
-   "loyaltylife/368167",
-   "laria/167",
-   "lamytravel/16944",
-   "worldtravelcafe/1167039",
-   "2266734/133443",
-   "dollfin/1497343",
-   "010freebaram/261425",
-   "010freebaram/261437",
-   "goodinfo53/1953",
-   "saventrip/236",
-   "warcraftgamemap/3535536",
-   "oatter/12414",
-   "nfsclub12/2466906",
-   "mindy7857/5533329",
-   "guitarnsong/298208",
-   "warcraftgamemap/3535554",
-   "vinpearl/569906",
-   "minecraftpe/4016570",
-   "warcraftgamemap/3535539",
-   "warcraftgamemap/3535535",
-   "ysm5828/9649243",
-   "warcraftgamemap/3535530",
-   "warcraftgamemap/3535516",
-   "ysm5828/9649245",
-   "haipong9/3911",
-   "f1kr/64425",
-   "naomi23/84085",
-   "nyctourdesign/1206581",
-   "whiteabc/1827",
-   "miznett/5158203",
-   "momsuda/1333380",
-   "joonggonara/1138174755",
-   "jmsong0829/76246",
-   "sassinail/2939743",
-   "sannoeul/45208",
-   "worrytodream/996524",
-   "worrytodream/996520",
-   "worrytodream/996519",
-   "zmzm6506/84980",
-   "zmzm6506/84979",
-   "sumonnerdeokoo/121349",
-   "mindy7857/5533376",
-   "applecart152/427527",
-   "allanswers/162",
-   "jejusch/159101",
-   "mindy7857/5533377",
-   "mindy7857/5533371",
-   "joonggonara/1138177155",
-   "warcraftgamemap/3535561",
-   "minecraftpe/4016588",
-   "smartravelapp/1277",
-   "singaporego/51113",
-   "jpnstory/4444372",
-   "010freebaram/261453",
-   "joonggonara/1138176895",
-   "loyaltylife/369509",
-   "1236777/2086",
-   "urisports/14308",
-   "2266734/133656",
-   "1236777/2085",
-   "worldtravelcafe/1167073",
-   "worrytodream/996574",
-   "2266734/133616",
-   "informlab/288",
-   "worldtravelcafe/1167064",
-   "zmzm6506/84994",
-   "warcraftgamemap/3535593",
-   "drawhangil/26109",
-   "mindy7857/5533416",
-   "cafemakecafebest/103159",
-   "blss486/2283",
-   "010freebaram/261491",
-   "010freebaram/261481",
-   "mania7777777/453027",
-   "010freebaram/261520",
-   "joonggonara/1138181489",
-   "010freebaram/261508",
-   "joonggonara/1138180882",
-   "joonggonara/1138179187",
-   "waateam/165972",
    "jejutip/2682531",
    "worldtravelcafe/1167059",
    "firenze/8999059",
@@ -53901,7 +54175,124 @@
    "noonebungee/137141",
    "browndlaj9/1361",
    "hotellife/1974298",
-   "possmartorder/94"
+   "possmartorder/94",
+   "cafebeautyup/171951",
+   "cafebeautyup/171949",
+   "worrytodream/1024419",
+   "lnf/426916",
+   "worldtravelcafe/1168645",
+   "teafungseol/53651",
+   "guitarnsong/299022",
+   "minecraftpe/4020151",
+   "warcraftgamemap/3539906",
+   "sumonnerdeokoo/121450",
+   "mindy7857/5542073",
+   "aipromptlab26/414",
+   "djmomschools/206",
+   "lnf/426736",
+   "worrytodream/1024123",
+   "lnf/426676",
+   "worrytodream/1024090",
+   "worrytodream/1024083",
+   "airportshopping/1161",
+   "hotdealcommunity/3966021",
+   "worrytodream/1023987",
+   "warcraftgamemap/3539914",
+   "zzop/4351186",
+   "worrytodream/1024009",
+   "airportshopping/1162",
+   "gwangjuzine/901",
+   "okinawago/617560",
+   "joonggonara/1138436850",
+   "joonggonara/1138436810",
+   "busppomppu/704349",
+   "mindy7857/5542046",
+   "dgmom365/7446685",
+   "dgmom365/7446681",
+   "dgmom365/7446678",
+   "010freebaram/264122",
+   "dgmom365/7446666",
+   "youthphone/57832",
+   "dbskwkd/151296",
+   "joonggonara/1138436283",
+   "joonggonara/1138436114",
+   "codud8134/726816",
+   "codud8134/726815",
+   "codud8134/726813",
+   "joonggonara/1138434823",
+   "drawhangil/26247",
+   "dgmom365/7446697",
+   "worldtravelcafe/1168627",
+   "drawhangil/26248",
+   "worrytodream/1024118",
+   "codud8134/726804",
+   "codud8134/726795",
+   "codud8134/726788",
+   "codud8134/726766",
+   "stocktraining/1226914",
+   "worldtravelcafe/1168640",
+   "mindy7857/5542043",
+   "mindy7857/5541985",
+   "vinpearl/572528",
+   "bbersa7759/1542",
+   "nctownnet11/217986",
+   "happyibook/6361360",
+   "happyibook/6361356",
+   "dkrnl2/2164",
+   "vinpearl/572496",
+   "wphonew/585429",
+   "warcraftgamemap/3539928",
+   "warcraftgamemap/3539879",
+   "warcraftgamemap/3539872",
+   "happyibook/6361326",
+   "grownman/1190932",
+   "checkincafe/148712",
+   "uouv96/117510",
+   "nyctourdesign/1207240",
+   "nbrestaurant/43262",
+   "halifaxlife/63813",
+   "aamontreal/39718",
+   "bebettergirls/2103990",
+   "elpistour/1400",
+   "airportshopping/1165",
+   "loyaltylife/370773",
+   "parkslope/2370",
+   "lionsball/6077461",
+   "worrytodream/1024147",
+   "sdadaae/74554",
+   "worrytodream/1024005",
+   "freetimetrip/584",
+   "cheepboracay/864598",
+   "antiphilippines/652628",
+   "r114dj/7589",
+   "momspanggju/4667072",
+   "dj114/917587",
+   "tossda/3056",
+   "tlsxh/4277747",
+   "010freebaram/264126",
+   "tossda/3045",
+   "joonggonara/1138437213",
+   "tooniverseloveyou/242294",
+   "mjann/3804141",
+   "culturebloom/3441466",
+   "misa4050/8851",
+   "joonggonara/1138434457",
+   "kyungmammo/6635716",
+   "crc61class/193807",
+   "masanmam/7569332",
+   "glove/8897382",
+   "imsanbu/80574702",
+   "worrytodream/1023973",
+   "joonggonara/1138434474",
+   "promocode/25",
+   "dailytour1/4593",
+   "vinpearl/572481",
+   "bikecity/3097992",
+   "eonjena1st/541",
+   "malltail/7561543",
+   "thaiinfo/681550",
+   "loyaltylife/370768",
+   "loyaltylife/370741"
   ],
   "since": "2026-11-03",
   "imported": "2026-11-03"
