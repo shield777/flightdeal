@@ -1,5 +1,158 @@
 [
  {
+  "at": "2026-11-20",
+  "title": "NOL, 일본 오카야마 여행 기획전... 항공권 최대 5만 원 할인",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "항공권 할인 포함 기획전",
+   "airlines": [],
+   "name": "일본 오카야마 여행 기획전",
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-20",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-20",
+  "title": "'일본 온천 여행 떠나볼까'…놀유니버스, 오카야마 항공권 최대 5만원 할인",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "대한항공 오카야마 항공권 할인 기획전",
+   "airlines": [
+    "대한항공"
+   ],
+   "name": "햇살 아래 레트로 산책: 오카야마",
+   "book": {
+    "from": null,
+    "to": "2026-12-09"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-03-10"
+   },
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": true,
+   "at": "2026-11-20",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": null,
+    "to": "2026-12-09"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-03-10"
+   },
+   "pct": 90,
+   "price": 25000
+  },
+  "diff": [
+   "할인율 규칙 90 / AI -",
+   "가격 규칙 25000 / AI -"
+  ]
+ },
+ {
+  "at": "2026-11-20",
+  "title": "일본 오카야마 여행 부담 낮춘다…NOL, 대한항공 직항 항공권 최대 5만원 할인",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "대한항공 항공권 할인 특가",
+   "airlines": [
+    "대한항공"
+   ],
+   "name": "햇살 아래 레트로 산책: 오카야마",
+   "book": {
+    "from": null,
+    "to": "2026-12-09"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-03-10"
+   },
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": true,
+   "at": "2026-11-20",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": null,
+    "to": "2026-12-09"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-03-10"
+   },
+   "pct": 6,
+   "price": 50000
+  },
+  "diff": [
+   "할인율 규칙 6 / AI -",
+   "가격 규칙 50000 / AI -"
+  ]
+ },
+ {
+  "at": "2026-11-20",
+  "title": "NOL, 日오카야마 여행 기획전...노랑풍선, '요나고·돗토리·마쓰에' 상...",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "대한항공 오카야마 노선 운임 할인",
+   "airlines": [
+    "대한항공"
+   ],
+   "name": "오카야마 여행 기획전",
+   "book": null,
+   "board": {
+    "from": null,
+    "to": "2027-03-10"
+   },
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": true,
+   "at": "2026-11-20",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": {
+    "from": null,
+    "to": "2027-03-10"
+   },
+   "pct": 6,
+   "price": 25000
+  },
+  "diff": [
+   "할인율 규칙 6 / AI -",
+   "가격 규칙 25000 / AI -"
+  ]
+ },
+ {
   "at": "2026-11-19",
   "title": "제주항공 홍콩 할인코드 1+1 행사",
   "community": true,
@@ -9984,130 +10137,6 @@
   },
   "diff": [
    "AI: 특가 아님"
-  ]
- },
- {
-  "at": "2026-11-12",
-  "title": "제주 항공 보홀 항공 편 앵콜 특가 ! 최대 79% 할인 12~1월 특가.",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "제주항공 보홀 특가 할인",
-   "airlines": [
-    "제주항공"
-   ],
-   "name": "앵콜 특가",
-   "book": null,
-   "board": {
-    "from": "2026-12-01",
-    "to": "2027-01-31"
-   },
-   "price": null,
-   "trip": null,
-   "pct": 79,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": 79,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "[ 에어프레미아 ] 블프 특가 전 노선 최대 72%할인",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "에어프레미아 블프 항공권 특가",
-   "airlines": [
-    "에어프레미아"
-   ],
-   "name": "블프 특가",
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": 72,
-   "seoul": true,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": 72,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "[ 에어서울 ] 제주여행은 에어서울 에서 할인받고 가자!!",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "에어서울 제주여행 항공권 할인 프로모션",
-   "airlines": [
-    "에어서울"
-   ],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-12",
-  "title": "여기어때, 대만 여행 기획전…10만원 규모 숙소 쿠폰 지급",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "숙소·투어 중심 기획전, 항공권은 곁가지",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-12",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2026-12-06"
-   },
-   "board": null,
-   "pct": 10,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님",
-   "예약 마감 규칙 2026-12-06 / AI -",
-   "할인율 규칙 10 / AI -"
   ]
  }
 ]
