@@ -1,6 +1,58 @@
 {
  "items": [
   {
+   "id": "c:https://cafe.naver.com/macaunoblesse/246657|제주항공 (감귤) LIVE 특가 ~!",
+   "kind": "airline",
+   "community": true,
+   "title": "제주항공 (감귤) LIVE 특가 ~!",
+   "desc": "23일 오후 두시 부터 한 시간동안만 합니다. 할인 쿠폰도 주고요 경쟁이 치열 할 듯 합니다. 내년 3월27일 이전 마카오 방문 계획 있으신분 좋은 기회 일듯 합니다. 저도 광클릭 도~전 합니다.",
+   "summary": [
+    "23일 오후 두시 부터 한 시간동안만 합니다.",
+    "할인 쿠폰도 주고요 경쟁이 치열 할 듯 합니다.",
+    "내년 3월27일 이전 마카오 방문 계획 있으신분 좋은 기회 일듯 합니다."
+   ],
+   "link": "https://cafe.naver.com/macaunoblesse/246657",
+   "source": "네이버 카페 · 마카오 노블레스",
+   "date": "2026-11-20T10:37:15.866Z",
+   "found": "2026-11-20",
+   "cards": [],
+   "airlines": [
+    "7C"
+   ],
+   "countries": [
+    "마카오"
+   ],
+   "allRoutes": false,
+   "routes": [],
+   "price": null,
+   "query": "제주항공 특가",
+   "ai": {
+    "v": 2,
+    "promo": true,
+    "why": "제주항공 LIVE 특가 진행 안내",
+    "airlines": [
+     "제주항공"
+    ],
+    "name": "감귤 LIVE 특가",
+    "book": {
+     "from": "2026-11-23",
+     "to": "2026-11-23"
+    },
+    "board": {
+     "from": null,
+     "to": "2027-03-27"
+    },
+    "price": null,
+    "trip": null,
+    "pct": null,
+    "seoul": null,
+    "at": "2026-11-20",
+    "model": "deepseek-v4-flash"
+   },
+   "lastDate": "2026-11-20T10:37:15.866Z",
+   "lastFound": "2026-11-20"
+  },
+  {
    "id": "RFltSGFXblA3NUQ1allsV01nbk04V3dibGo3YldkTVFyQXB4b1lDUW9UY1pWTTkwSmVza0dvWVRKWWppWmpfQzZGSUFaQi1hdTk5TjlxOXowMmFpblUxM3hv|트리니티항공 블랙프라이데이, 국제선 최대 4만원 쿠폰…11월 30일까지",
    "kind": "airline",
    "title": "트리니티항공 블랙프라이데이, 국제선 최대 4만원 쿠폰…11월 30일까지",
@@ -87,7 +139,7 @@
     "at": "2026-11-17",
     "model": "deepseek-v4-flash"
    },
-   "lastDate": "2026-11-20T08:27:00.000Z",
+   "lastDate": "2026-11-20T09:53:26.000Z",
    "lastFound": "2026-11-20",
    "more": [
     {
@@ -190,6 +242,72 @@
        "트리니티항공"
       ],
       "name": null,
+      "book": {
+       "from": null,
+       "to": "2026-11-30"
+      },
+      "board": {
+       "from": null,
+       "to": "2027-01-31"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 25,
+      "seoul": null,
+      "at": "2026-11-20",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "OHJCaTBOOWVfdGNENVZjXzZpdEh4UHg5bDdwa0ZWUkxYZG1kUXN5dFFPdGtWaEROWm5nWjh5X3hpSkxneVZIU0pNSExsQndyVThiMXJ3TTFHaEZXT2p2Y1lR|“국제선 최대25%할인, 겨울여행 신나게” 트리니티항공, 이달까지 프로모",
+     "kind": "airline",
+     "title": "“국제선 최대25%할인, 겨울여행 신나게” 트리니티항공, 이달까지 프로모션",
+     "desc": "“국제선 최대25%할인, 겨울여행 신나게” 트리니티항공, 이달까지 프로모션 CatchNews",
+     "summary": [
+      "“국제선 최대25%할인, 겨울여행 신나게” 트리니티항공, 이달까지 프로모션 CatchNews…"
+     ],
+     "link": "https://www.catchnews.kr/news/articleView.html?idxno=130824",
+     "source": "CatchNews",
+     "date": "2026-11-20T08:27:02.000Z",
+     "found": "2026-11-20",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "트리니티항공 {특가말}",
+     "bodyAt": "2026-11-20",
+     "body": [
+      "“국제선 최대25%할인, 겨울여행 신나게” 트리니티항공, 이달까지 프로모션",
+      "“AI맞춤학습으로 아이 ‘공부밀도’ 올리세요” 웅진스마트올, 연말까지 캠페인",
+      "“국내 승강기 유지관리 20만대 첫돌파” 현대엘베, 3분기 누적영업익 2.6%↑1589억",
+      "\"겨울철 차량안전 최우선\" 삼성화재, 11월부터 '동절기 비상대응 캠프' 가동",
+      "11월 16일 주식시장 주요공시",
+      "11월13일 주식시장 주요공시",
+      "11월 18일 주식시장 주요공시",
+      "11월 17일 주식시장 주요공시",
+      "11월 19일 주식시장 주요공시",
+      "내년1월까지 탑승자대상…3만원 중복할인쿠폰은 ‘덤’",
+      "유럽기차 8%·빅버스 20%할인 등 제휴혜택도",
+      "트리니티항공이 겨울철 해외여행객을 대상으로 국제선 항공권 할인 프로모션을 진행한다.",
+      "노선별 최대 25% 할인과 함께 결제금액에 따른 최대 3만원의 중복 할인 쿠폰을 제공하며 유럽 기차와 관광버스 등 여행 관련 제휴 혜택도 마련했다.",
+      "트리니티항공은 오는 30일까지 공식 홈페이지와 모바일 앱·웹을 통해 국제선 할인 프로모션을 진행한다고 20일 밝혔다.",
+      "할인 대상 항공편의 탑승 기간은 일부 기간을 제외한 내년 1월 31일까지다.",
+      "공식 홈페이지에서 항공권 예매 시 할인 코드 ‘NOV26’을 입력하면 노선별로 최대 25% 할인받을 수 있다.",
+      "여기에 결제금액에 따라 최대 3만원을 추가로 할인하는 쿠폰도 함께 사용할 수 있다.",
+      "유럽 기차 8% 할인과 관광버스 서비스 ‘빅버스’ 20% 할인, 결제 제휴 할인 등이 포함된다."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "국제선 항공권 최대 25% 할인 프로모션",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "겨울여행 국제선 할인 프로모션",
       "book": {
        "from": null,
        "to": "2026-11-30"
@@ -481,6 +599,66 @@
       },
       "board": {
        "from": null,
+       "to": "2027-01-31"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 25,
+      "seoul": null,
+      "at": "2026-11-20",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "QV8yRlpvTGozdHpKT3YyNTBCNE9FR0cwVDYxbWlnc3I3RlBFZF8tdWI4ejR2blpCS0lWMU1NdDhOWThRQWpja25ZV1R2T0FLb0VTSW0tVmw3NGt2eEdjMHNN|트리니티항공, 11~1월 출발 한정 '국제선 할인 프로모션' 진행",
+     "kind": "airline",
+     "title": "트리니티항공, 11~1월 출발 한정 '국제선 할인 프로모션' 진행",
+     "desc": "트리니티항공, 11~1월 출발 한정 '국제선 할인 프로모션' 진행 마일드경제",
+     "summary": [
+      "트리니티항공, 11~1월 출발 한정 '국제선 할인 프로모션' 진행 마일드경제…"
+     ],
+     "link": "https://www.todaymild.com/news/articleView.html?idxno=41375",
+     "source": "마일드경제",
+     "date": "2026-11-20T09:53:26.000Z",
+     "found": "2026-11-20",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "트리니티항공 {특가말}",
+     "bodyAt": "2026-11-20",
+     "body": [
+      "트리니티항공, 11~1월 출발 한정 '국제선 할인 프로모션' 진행",
+      "오는 30일까지 국제선 최대 \"25% 할인\"",
+      "최대 3만 원 중복 할인 쿠폰 및 제휴 혜택까지 풍성",
+      "[마일드경제 김가영 기자] 소노트리니티그룹 트리니티항공이 11월~1월 출발 한정 국제선 할인 프로모션을 진행한다고 20일 밝혔다.",
+      "이번 프로모션은 오는 30일까지 트리니티항공 공식 홈페이지와 모바일 앱(웹)을 통해 진행된다.",
+      "탑승 기간은 일부 기간을 제외한 2027년 1월 31일까지다.",
+      "먼저 트리니티항공 홈페이지에서 항공권 예매 시 할인 코드 'NOV26'을 입력하면 노선별로 최대 25% 할인된 가격에 항공권 예매가 가능하다.",
+      "이와 함께 결제 금액별로 최대 3만 원까지 추가 할인받을 수 있는 중복 할인 쿠폰도 지급한다.",
+      "해당 쿠폰은 할인 코드 혜택과 함께 사용할 수 있어 더욱 합리적으로 항공권을 구입할 수 있게 된다.",
+      "특히 1~11월까지는 따뜻한 동남아 지역으로의 여행 수요가 늘어날 것으로 예상되며, 이 시기에는 추위를 피해 여유로운 겨울 여행을 즐기기 좋다.",
+      "그 밖에도 트리니티항공은 △유럽 기차 8% 할인 △'빅버스' 20% 할인 △결제 제휴 할인 등의 혜택을 제공하고 있으며, 보다 자세한 내용은 공식 홈페이지에서 확인 가능하다.",
+      "트리니티항공 관계자는 “겨울철 해외여행을 계획하는 고객들이 보다 합리적인 가격으로 여행을 즐길 수 있도록 이번 프로모션을 마련했다”며 “항공권 할인과 다양한 제휴 혜택을 활용해 따뜻한 동남아부터 유럽·호주·캐나다까지 취향에 맞는 겨울 여행을 즐기시길 바란다”고 전했다."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "국제선 항공권 할인 프로모션",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "국제선 할인 프로모션",
+      "book": {
+       "from": null,
+       "to": "2026-11-30"
+      },
+      "board": {
+       "from": "2026-11-01",
        "to": "2027-01-31"
       },
       "price": null,
@@ -2559,7 +2737,7 @@
     "at": "2026-11-20",
     "model": "deepseek-v4-flash"
    },
-   "lastDate": "2026-11-20T08:22:00.000Z",
+   "lastDate": "2026-11-20T09:01:00.000Z",
    "lastFound": "2026-11-20",
    "more": [
     {
@@ -2664,6 +2842,67 @@
       "name": "겨울철 해외여행 프로모션",
       "book": {
        "from": null,
+       "to": "2026-11-30"
+      },
+      "board": {
+       "from": null,
+       "to": "2027-01-31"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 25,
+      "seoul": null,
+      "at": "2026-11-20",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "xTFBEZTg4ZzFaRTJYZUJaYUpGUGQwemtKYk9XX0JNYVdTMFJfdGc1QlFFN0NZQ2hQbVZ0MGhaY1NjM0NEV3BwNkZrWGNMc3lBZVFJV0VOTWxJM3AxNVhXUEE|트리니티항공, 국제선 최대 25% 할인…3만원 쿠폰 추가 제공",
+     "kind": "airline",
+     "title": "트리니티항공, 국제선 최대 25% 할인…3만원 쿠폰 추가 제공",
+     "desc": "트리니티항공, 국제선 최대 25% 할인…3만원 쿠폰 추가 제공 뉴스투데이",
+     "summary": [
+      "트리니티항공, 국제선 최대 25% 할인…3만원 쿠폰 추가 제공 뉴스투데이…"
+     ],
+     "link": "https://www.news2day.co.kr/article/20261120500324",
+     "source": "뉴스투데이",
+     "date": "2026-11-20T09:01:00.000Z",
+     "found": "2026-11-20",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "트리니티항공 {특가말}",
+     "bodyAt": "2026-11-20",
+     "body": [
+      "트리니티항공, 국제선 최대 25% 할인…3만원 쿠폰 추가 제공",
+      "입력 : 2026.11.20 18:01",
+      "ㅣ 수정 : 2026.11.20 18:01",
+      "30일까지 할인 프로모션",
+      "내년 1월 31일 출발까지",
+      "[뉴스투데이=박혜성 기자] 트리니티항공이 겨울철 해외여행 고객을 대상으로 국제선 항공권을 최대 25% 할인하고, 최대 3만원의 추가 할인 쿠폰을 제공한다.",
+      "트리니티항공은 오는 30일까지 공식 홈페이지와 모바일 앱에서 국제선 할인 프로모션을 진행한다고 20일 밝혔다.",
+      "탑승 기간은 일부 제외 기간을 빼고 2027년 1월 31일까지다.",
+      "행사 기간 트리니티항공 홈페이지에서 항공권을 예매할 때 할인 코드 'NOV26'을 입력하면 노선에 따라 최대 25% 할인을 받을 수 있다.",
+      "결제 금액에 따라 최대 3만원을 추가로 할인받을 수 있는 쿠폰도 제공한다.",
+      "해당 쿠폰은 할인 코드와 중복 적용할 수 있다.",
+      "항공권 할인 외에도 유럽 기차 8% 할인, 관광버스 서비스 '빅버스' 20% 할인, 제휴 결제 할인 등의 혜택을 제공한다.",
+      "트리니티항공 관계자는 \"겨울철 해외여행을 계획하는 고객들이 보다 합리적인 가격으로 여행을 즐길 수 있도록 이번 프로모션을 마련했다\"며 \"항공권 할인과 다양한 제휴 혜택을 활용해 동남아부터 유럽·호주·캐나다까지 취향에 맞는 겨울 여행을 즐기길 바란다\"고 말했다."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "국제선 항공권 할인 프로모션",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": null,
+      "book": {
+       "from": "2026-11-20",
        "to": "2026-11-30"
       },
       "board": {
@@ -49252,24 +49491,24 @@
    "lastFound": "2026-11-01"
   }
  ],
- "updated": "2026-11-20T09:00:42.844Z",
- "runs": 244,
+ "updated": "2026-11-20T10:37:15.866Z",
+ "runs": 245,
  "checked": {
-  "베트남": "2026-11-20T09:00:42.844Z",
-  "태국": "2026-11-20T09:00:42.844Z",
-  "필리핀": "2026-11-20T09:00:42.844Z",
-  "인도네시아": "2026-11-20T09:00:42.844Z",
-  "말레이시아": "2026-11-20T09:00:42.844Z",
-  "싱가포르": "2026-11-20T09:00:42.844Z",
-  "일본": "2026-11-20T09:00:42.844Z",
-  "대만": "2026-11-20T09:00:42.844Z",
-  "홍콩": "2026-11-20T09:00:42.844Z",
-  "마카오": "2026-11-20T09:00:42.844Z",
-  "중국": "2026-11-20T09:00:42.844Z",
-  "미국령": "2026-11-20T09:00:42.844Z",
-  "미국": "2026-11-20T09:00:42.844Z"
+  "베트남": "2026-11-20T10:37:15.866Z",
+  "태국": "2026-11-20T10:37:15.866Z",
+  "필리핀": "2026-11-20T10:37:15.866Z",
+  "인도네시아": "2026-11-20T10:37:15.866Z",
+  "말레이시아": "2026-11-20T10:37:15.866Z",
+  "싱가포르": "2026-11-20T10:37:15.866Z",
+  "일본": "2026-11-20T10:37:15.866Z",
+  "대만": "2026-11-20T10:37:15.866Z",
+  "홍콩": "2026-11-20T10:37:15.866Z",
+  "마카오": "2026-11-20T10:37:15.866Z",
+  "중국": "2026-11-20T10:37:15.866Z",
+  "미국령": "2026-11-20T10:37:15.866Z",
+  "미국": "2026-11-20T10:37:15.866Z"
  },
- "auto": "2026-11-20T09:00:42.844Z",
+ "auto": "2026-11-20T10:37:15.866Z",
  "sources": {
   "7C": "2026-11-01",
   "TW": "2026-11-01",
@@ -49482,87 +49721,6 @@
    "중국동방항공 얼리버드": "2026-11-04"
   },
   "seen": [
-   "worrytodream/997164",
-   "zmzm6506/85135",
-   "worldtravelcafe/1167156",
-   "worldtravelcafe/1167155",
-   "teafungseol/52596",
-   "worldtravelcafe/1167150",
-   "halimchicken/22240",
-   "worldtravelcafe/1167149",
-   "2266734/134053",
-   "worldtravelcafe/1167144",
-   "momsolleh/931460",
-   "worrytodream/997047",
-   "teafungseol/52590",
-   "zmzm6506/85122",
-   "promocode/26",
-   "zzop/4342883",
-   "mindy7857/5533882",
-   "grownman/1188262",
-   "cantsb/3723186",
-   "mindy7857/5533880",
-   "mindy7857/5533873",
-   "mindy7857/5533868",
-   "cantsb/3723173",
-   "zzop/4333173",
-   "worldtravelcafe/1167148",
-   "worldtravelcafe/1167147",
-   "010freebaram/261692",
-   "010freebaram/261689",
-   "joonggonara/1138199589",
-   "codud8134/725788",
-   "codud8134/725787",
-   "010freebaram/261702",
-   "codud8134/725783",
-   "joonggonara/1138196769",
-   "joonggonara/1138196300",
-   "010freebaram/261676",
-   "philsome365/431",
-   "worrytodream/997051",
-   "joonggonara/1138196233",
-   "joonggonara/1138195191",
-   "noljatravel/1934864",
-   "mindy7857/5533736",
-   "mindy7857/5533855",
-   "happyibook/6356138",
-   "happyibook/6356125",
-   "warcraftgamemap/3535805",
-   "ysm5828/9649432",
-   "happyibook/6356106",
-   "warcraftgamemap/3535799",
-   "happyibook/6356093",
-   "happyibook/6356072",
-   "happyibook/6355988",
-   "warcraftgamemap/3535804",
-   "vinpearl/570069",
-   "happyibook/6356055",
-   "minecraftpe/4016781",
-   "hotdealcatch/1954",
-   "bluesmwjy/51",
-   "moomge/193490",
-   "bebettergirls/2103714",
-   "redgx7zk/134",
-   "nyctourdesign/1206609",
-   "loyaltylife/369585",
-   "worrytodream/997028",
-   "loyaltylife/369569",
-   "detectivetoto/4052",
-   "whiskycognac/965388",
-   "drzzanggu/21851",
-   "festivalsoo/1075",
-   "kang2stock/79057",
-   "taesarang/896361",
-   "tlsxh/4270124",
-   "worrytodream/997007",
-   "hahahaup/14232",
-   "greenyzytc/5676",
-   "worrytodream/997066",
-   "miznett/5158569",
-   "imsanbu/80535823",
-   "loyaltylife/369590",
-   "2266734/134048",
-   "yamipapa/8816",
    "mumumhoju/400384",
    "jimncarry/95473",
    "checkincafe/148880",
@@ -55481,7 +55639,88 @@
    "hotdealdaejangtravel/5",
    "nowbook/2094565",
    "wondergolf/33",
-   "momsolleh/932490"
+   "momsolleh/932490",
+   "worldtravelcafe/1168725",
+   "gnalovestar/5905",
+   "dgmom365/7447068",
+   "dngd/47173",
+   "worrytodream/1027254",
+   "zmzm6506/87012",
+   "worldtravelcafe/1168723",
+   "sumonnerdeokoo/121479",
+   "dentalsolution2/36933",
+   "worldtravelcafe/1168719",
+   "vinpearl/572666",
+   "mindy7857/5542604",
+   "mindy7857/5542544",
+   "happyibook/6361642",
+   "guitarnsong/299041",
+   "loyaltylife/370829",
+   "msiu100/686023",
+   "busppomppu/704400",
+   "010freebaram/264327",
+   "guamsaipanstory/76631",
+   "joonggonara/1138453749",
+   "edupool/5602",
+   "010freebaram/264303",
+   "joonggonara/1138450766",
+   "plusgame/68300",
+   "macaunoblesse/246657",
+   "worldtravelcafe/1168710",
+   "kamilsfighting/215280",
+   "dailytour1/4809",
+   "busanjungonara/6162722",
+   "guamsaipanstory/76628",
+   "golfmaniaclub/592253",
+   "joonggonara/1138449970",
+   "joonggonara/1138449812",
+   "wholesaleandretail65/10",
+   "oatter/12455",
+   "worldtravelcafe/1168716",
+   "joonggonara/1138451403",
+   "mindy7857/5542573",
+   "mindy7857/5542516",
+   "thaiq/114413",
+   "vinpearl/572672",
+   "vinpearl/572668",
+   "minecraftpe/4020311",
+   "minecraftpe/4020305",
+   "ysm5828/9651793",
+   "ysm5828/9651803",
+   "ysm5828/9651800",
+   "happyibook/6361693",
+   "vinpearl/572682",
+   "vinpearl/572676",
+   "ysm5828/9651806",
+   "vinpearl/572669",
+   "ysm5828/9651792",
+   "sjdia76/332852",
+   "nammisarang/292280",
+   "minecraftpe/4012892",
+   "joonggonara/1138449610",
+   "zldnrloo/1643",
+   "specup/7974954",
+   "greenxmmjl/88",
+   "cafebeautyup/172026",
+   "macaunoblesse/246656",
+   "maplestorytbd/7453",
+   "brown9xhgb/180",
+   "canublingbling/993151",
+   "010freebaram/264300",
+   "ipadyumyum/355315",
+   "ssadassaa/1273",
+   "ssadassaa/1272",
+   "bestrentalhub/2",
+   "greenxmmjl/90",
+   "anyangtalk/877154",
+   "culturebloom/3441837",
+   "nfsclub12/2468579",
+   "worrytodream/1027110",
+   "joonggonara/1137866387",
+   "mindy7857/5131512",
+   "jmsong0829/76921",
+   "chinatripatoz/32723",
+   "1111apt/51063"
   ],
   "since": "2026-11-03",
   "imported": "2026-11-03"
