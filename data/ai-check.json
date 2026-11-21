@@ -1,6 +1,84 @@
 [
  {
   "at": "2026-11-21",
+  "title": "[이벤트] 제주항공 토요일 랜덤포인트, 최대 3천P (~11/27)",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "포인트 이벤트, 운임할인 아님",
+   "airlines": [
+    "제주항공"
+   ],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-21",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": null,
+    "to": "2026-11-27"
+   },
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님",
+   "예약 마감 규칙 2026-11-27 / AI -"
+  ]
+ },
+ {
+  "at": "2026-11-21",
+  "title": "트리니티항공 '이달의 결제 할인 혜택' 진행",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "네이버페이 결제 포인트 적립 항공권 혜택",
+   "airlines": [
+    "트리니티항공"
+   ],
+   "name": "이달의 결제 할인 혜택",
+   "book": {
+    "from": null,
+    "to": "2026-11-30"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-10-30"
+   },
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-21",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": null,
+    "to": "2026-11-30"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-10-30"
+   },
+   "pct": 20,
+   "price": null
+  },
+  "diff": [
+   "할인율 규칙 20 / AI -"
+  ]
+ },
+ {
+  "at": "2026-11-21",
   "title": "[이벤트] 노브랜드버거 제주항공 스크래치, 100% 당첨 (~11/30)",
   "community": true,
   "ai": {
@@ -10334,64 +10412,6 @@
     "to": "2027-05-31"
    },
    "pct": 25,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-14",
-  "title": "이스타항공 동남아 특가 홍콩 할인코드",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "이스타항공 동남아 특가 할인코드",
-   "airlines": [
-    "이스타항공"
-   ],
-   "name": "동남아 특가",
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-14",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-14",
-  "title": "제주항공 일본 노선 특가",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "제주항공 일본 노선 특가",
-   "airlines": [
-    "제주항공"
-   ],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-14",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
    "price": null
   },
   "diff": []
