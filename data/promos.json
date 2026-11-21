@@ -1,6 +1,937 @@
 {
  "items": [
   {
+   "id": "c:https://cafe.naver.com/grownman/1186741|(정보)진에어 블랙프라이데이! | JIN(진)짜 혜택이 이륙한다",
+   "kind": "airline",
+   "community": true,
+   "title": "(정보)진에어 블랙프라이데이! | JIN(진)짜 혜택이 이륙한다",
+   "desc": "블랙 항공권 초특가 할인 할인 혜택: 항공 운임 최대 15% 할인 대상 노선: 국제선 54개 노선 프로모션 코드 : 26BLACKLJ 구매 기간: 2026년 11월 13일 ~ 11월 27일 탑승 기간: 2026년 11월 13일 ~ 2027년 3월 27일 2.",
+   "summary": [
+    "블랙 항공권 초특가 할인 할인 혜택: 항공 운임 최대 15% 할인 대상 노선: 국제선 54개 노선 프로모션 코드 : 26BLACKLJ 구매 기간: 2026년 11월 13일 ~ 11월 27일 탑승 기간: 2026년 11월 13일 ~…"
+   ],
+   "link": "https://cafe.naver.com/grownman/1186741",
+   "source": "네이버 카페 · 다낭 보물창고 - 다낭자유여행 다낭여행 다낭맛집 다낭리조트",
+   "date": "2026-11-13T05:00:40.211Z",
+   "found": "2026-11-13",
+   "cards": [],
+   "airlines": [
+    "LJ"
+   ],
+   "countries": [
+    "일본",
+    "베트남",
+    "마카오"
+   ],
+   "allRoutes": true,
+   "routes": [],
+   "price": {
+    "amount": 30000,
+    "trip": "oneway?"
+   },
+   "query": "항공권 할인코드",
+   "ai": {
+    "v": 2,
+    "promo": true,
+    "why": "진에어 블프 항공권 특가",
+    "airlines": [
+     "진에어"
+    ],
+    "name": "블랙프라이데이 특가",
+    "book": {
+     "from": "2026-11-13",
+     "to": "2026-11-27"
+    },
+    "board": {
+     "from": "2026-11-13",
+     "to": "2027-03-27"
+    },
+    "price": null,
+    "trip": null,
+    "pct": 15,
+    "seoul": null,
+    "at": "2026-11-13",
+    "model": "deepseek-v4-flash"
+   },
+   "lastDate": "2026-11-21T09:00:40.165Z",
+   "lastFound": "2026-11-21",
+   "more": [
+    {
+     "id": "c:https://cafe.naver.com/20daelee/952968|진에어, 일본 노선 최대 15% 할인! 블랙프라이데이 (~11/27)",
+     "kind": "airline",
+     "community": true,
+     "title": "진에어, 일본 노선 최대 15% 할인! 블랙프라이데이 (~11/27)",
+     "desc": "",
+     "link": "https://cafe.naver.com/20daelee/952968",
+     "source": "네이버 카페 · 체크인데이#일본여행,도쿄여행,후쿠오카여행,오사카,교토,삿포로",
+     "date": "2026-11-13T05:00:40.211Z",
+     "found": "2026-11-13",
+     "cards": [],
+     "airlines": [
+      "LJ"
+     ],
+     "countries": [
+      "일본"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "항공권 프로모션 코드",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "진에어 일본 노선 할인 프로모션",
+      "airlines": [
+       "진에어"
+      ],
+      "name": "블랙프라이데이",
+      "book": {
+       "from": null,
+       "to": "2026-11-27"
+      },
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": 15,
+      "seoul": null,
+      "at": "2026-11-13",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/airportshopping/1087|[ 진에어 ] 단 10일간 열리는 역대급 찬스!! 11월 매진 특가 !",
+     "kind": "airline",
+     "community": true,
+     "title": "[ 진에어 ] 단 10일간 열리는 역대급 찬스!! 11월 매진 특가 !",
+     "desc": "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
+     "summary": [
+      "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
+     ],
+     "link": "https://cafe.naver.com/airportshopping/1087",
+     "source": "네이버 카페 · 인천공항의 모든 것",
+     "date": "2026-11-06T05:00:45.112Z",
+     "found": "2026-11-06",
+     "cards": [],
+     "airlines": [
+      "LJ"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "진에어 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "진에어 11월 매진 특가 프로모션",
+      "airlines": [
+       "진에어"
+      ],
+      "name": "11월 매진 특가",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/airportshopping/1103|[진에어] 지금이 바로, 제주 여행의 제철! 제주 도 항공 권 할인 !",
+     "kind": "airline",
+     "community": true,
+     "title": "[진에어] 지금이 바로, 제주 여행의 제철! 제주 도 항공 권 할인 !",
+     "desc": "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
+     "summary": [
+      "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
+     ],
+     "link": "https://cafe.naver.com/airportshopping/1103",
+     "source": "네이버 카페 · 인천공항의 모든 것",
+     "date": "2026-11-10T05:00:46.618Z",
+     "found": "2026-11-10",
+     "cards": [],
+     "airlines": [
+      "LJ"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "제주항공 할인",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "진에어 제주 항공권 할인 프로모션",
+      "airlines": [
+       "진에어"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/airportshopping/1104|[ 진에어 ] 진에어 항공권 카카오페이 결제 시 즉시 할인 !",
+     "kind": "airline",
+     "community": true,
+     "title": "[ 진에어 ] 진에어 항공권 카카오페이 결제 시 즉시 할인 !",
+     "desc": "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
+     "summary": [
+      "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
+     ],
+     "link": "https://cafe.naver.com/airportshopping/1104",
+     "source": "네이버 카페 · 인천공항의 모든 것",
+     "date": "2026-11-10T05:00:46.618Z",
+     "found": "2026-11-10",
+     "cards": [],
+     "airlines": [
+      "LJ"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "진에어 할인",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "진에어 카카오페이 결제 즉시 할인",
+      "airlines": [
+       "진에어"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/stereovinylcruiser/326350|호치민 노랑풍선 패키지 진에어 신규출항이라 특가 떠서..",
+     "kind": "airline",
+     "community": true,
+     "title": "호치민 노랑풍선 패키지 진에어 신규출항이라 특가 떠서..",
+     "desc": "",
+     "link": "https://cafe.naver.com/stereovinylcruiser/326350",
+     "source": "네이버 카페 · 호치민 도깨비 - 베트남 호치민 자유여행,호텔,맛집,항공권",
+     "date": "2026-11-12T05:00:45.234Z",
+     "found": "2026-11-12",
+     "cards": [],
+     "airlines": [
+      "LJ"
+     ],
+     "countries": [
+      "베트남"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "베트남 항공권 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "진에어 신규취항 특가 소식",
+      "airlines": [
+       "진에어"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/grownman/1186853|✈️진에어 항공 : 11월에도 함께하는 국제선 타임세일 정보",
+     "kind": "airline",
+     "community": true,
+     "title": "✈️진에어 항공 : 11월에도 함께하는 국제선 타임세일 정보",
+     "desc": "",
+     "link": "https://cafe.naver.com/grownman/1186853",
+     "source": "네이버 카페 · 다낭 보물창고 - 다낭자유여행 다낭여행 다낭맛집 다낭리조트",
+     "date": "2026-11-13T07:00:42.872Z",
+     "found": "2026-11-13",
+     "cards": [],
+     "airlines": [
+      "LJ"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "항공 타임세일",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "진에어 국제선 타임세일 특가",
+      "airlines": [
+       "진에어"
+      ],
+      "name": "국제선 타임세일",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-13",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/guamsaipanstory/76156|진에어 블프 세일",
+     "kind": "airline",
+     "community": true,
+     "title": "진에어 블프 세일",
+     "desc": "카카오페이 결재최대3만원까지.",
+     "link": "https://cafe.naver.com/guamsaipanstory/76156",
+     "source": "네이버 카페 · 괌사이판스토리",
+     "date": "2026-11-13T09:00:44.576Z",
+     "found": "2026-11-13",
+     "cards": [],
+     "airlines": [
+      "LJ"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": {
+      "amount": 30000,
+      "trip": "oneway?"
+     },
+     "query": "진에어 세일",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "진에어 블프 항공권 세일",
+      "airlines": [
+       "진에어"
+      ],
+      "name": "블프 세일",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-13",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/grownman/1187016|진에어 세일",
+     "kind": "airline",
+     "community": true,
+     "title": "진에어 세일",
+     "desc": "https://www.jinair.com/promotion/eventView?evntSeq=15698&cid=SharedLink_copyurl_etc_15698_na_na_2026-11-13_na 기간 맞으신분보세요.",
+     "summary": [
+      "https://www.jinair.com/promotion/eventView?evntSeq=15698&cid=SharedLink_copyurl_etc_15698_na_na_2026-11-13_na 기간 맞으신분보세요."
+     ],
+     "link": "https://cafe.naver.com/grownman/1187016",
+     "source": "네이버 카페 · 다낭 보물창고 - 다낭자유여행 다낭여행 다낭맛집 다낭리조트",
+     "date": "2026-11-13T13:00:43.217Z",
+     "found": "2026-11-13",
+     "cards": [],
+     "airlines": [
+      "LJ"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "진에어 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "진에어 세일 프로모션 공유",
+      "airlines": [
+       "진에어"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-13",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/promocode/26|진에어 특가 항공권 11월 연말 노선 마이리얼트립 프로모션",
+     "kind": "airline",
+     "community": true,
+     "title": "진에어 특가 항공권 11월 연말 노선 마이리얼트립 프로모션",
+     "desc": "진에어 항공권 특가 11월 연말 노선 프로모션 (마이리얼트립) (11/15... 공항까지의 이동 시간과 비용, 실제 항공 편 시간까지 함께... 코드 의날 카페가 신규로 개설되었습니다.",
+     "summary": [
+      "진에어 항공권 특가 11월 연말 노선 프로모션 (마이리얼트립) (11/15...",
+      "공항까지의 이동 시간과 비용, 실제 항공 편 시간까지 함께...",
+      "코드 의날 카페가 신규로 개설되었습니다."
+     ],
+     "link": "https://cafe.naver.com/promocode/26",
+     "source": "네이버 카페 · 코드의날",
+     "date": "2026-11-15T09:00:41.562Z",
+     "found": "2026-11-15",
+     "cards": [],
+     "airlines": [
+      "LJ"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "항공권 프로모션 코드",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "진에어 항공권 특가 프로모션 소식",
+      "airlines": [
+       "진에어"
+      ],
+      "name": "진에어 11월 연말 노선 프로모션",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-15",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/thaiinfo/681143|진에어 , 블프 특가",
+     "kind": "airline",
+     "community": true,
+     "title": "진에어 , 블프 특가",
+     "desc": "",
+     "link": "https://cafe.naver.com/thaiinfo/681143",
+     "source": "네이버 카페 · 태초의 태국정보(태국자유여행/방콕/푸켓/파타야/크라비/사무이)",
+     "date": "2026-11-16T05:00:45.646Z",
+     "found": "2026-11-16",
+     "cards": [],
+     "airlines": [
+      "LJ"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "진에어 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "진에어 블프 항공권 특가",
+      "airlines": [
+       "진에어"
+      ],
+      "name": "블프 특가",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-16",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/minecraftpe/4017568|[블프 특가 ] 진에어 BLACK FLY-DAY",
+     "kind": "airline",
+     "community": true,
+     "title": "[블프 특가 ] 진에어 BLACK FLY-DAY",
+     "desc": "진에어가 1년에 한 번 하는 블랙프라이데이 특가 를 진행중이네요.",
+     "summary": [
+      "진에어가 1년에 한 번 하는 블랙프라이데이 특가 를 진행중이네요."
+     ],
+     "link": "https://cafe.naver.com/minecraftpe/4017568",
+     "source": "네이버 카페 · 푸꾸옥 고스트 - 베트남푸꾸옥 자유여행,호텔리조트,항공권,맛집",
+     "date": "2026-11-16T13:00:56.201Z",
+     "found": "2026-11-16",
+     "cards": [],
+     "airlines": [
+      "LJ"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "베트남 항공권 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "진에어 블프 항공권 특가 진행",
+      "airlines": [
+       "진에어"
+      ],
+      "name": "BLACK FLY-DAY",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-16",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/jpnstory/4446068|진에어 블프",
+     "kind": "airline",
+     "community": true,
+     "title": "진에어 블프",
+     "desc": "진에어 블프 괜찮긴한데.. 3월운행까지라ㅠ 1월에 가다보니 거지인 저는 포기하구 맙니당..",
+     "summary": [
+      "진에어 블프 괜찮긴한데..",
+      "3월운행까지라ㅠ 1월에 가다보니 거지인 저는 포기하구 맙니당.."
+     ],
+     "link": "https://cafe.naver.com/jpnstory/4446068",
+     "source": "네이버 카페 · 네일동 : 일본여행카페",
+     "date": "2026-11-16T13:00:56.201Z",
+     "found": "2026-11-16",
+     "cards": [],
+     "airlines": [
+      "LJ"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "진에어 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "진에어 블프 특가 언급",
+      "airlines": [
+       "진에어"
+      ],
+      "name": "블프",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-16",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/minecraftpe/4017955|✈️ 푸꾸옥 특가 프로모션 : 진에어",
+     "kind": "airline",
+     "community": true,
+     "title": "✈️ 푸꾸옥 특가 프로모션 : 진에어",
+     "desc": "인천 푸꾸옥 노선이 포함된 진에어 프로모션입니다! https://www.jinair.com/promotion/eventView?evntSeq=15703&cid=SharedLink_copyurl_etc_15703_na_na_2026-11-13_na.",
+     "summary": [
+      "인천 푸꾸옥 노선이 포함된 진에어 프로모션입니다! https://www.jinair.com/promotion/eventView?evntSeq=15703&cid=SharedLink_copyurl_etc_15703_na_na_2026…"
+     ],
+     "link": "https://cafe.naver.com/minecraftpe/4017955",
+     "source": "네이버 카페 · 푸꾸옥 고스트 - 베트남푸꾸옥 자유여행,호텔리조트,항공권,맛집",
+     "date": "2026-11-17T03:00:47.274Z",
+     "found": "2026-11-17",
+     "cards": [],
+     "airlines": [
+      "LJ"
+     ],
+     "countries": [
+      "베트남"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "베트남 항공권 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "진에어 푸꾸옥 특가 프로모션",
+      "airlines": [
+       "진에어"
+      ],
+      "name": "푸꾸옥 특가 프로모션",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": true,
+      "at": "2026-11-17",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/warcraftgamemap/3537090|✈️ 다낭 특가 프로모션 : 진에어",
+     "kind": "airline",
+     "community": true,
+     "title": "✈️ 다낭 특가 프로모션 : 진에어",
+     "desc": "인천 다낭 부산 다낭 노선이 포함된 진에어 프로모션입니다! https://www.jinair.com/promotion/eventView?evntSeq=15703&cid=SharedLink_copyurl_etc_15703_na_na_2026-11-13_na.",
+     "summary": [
+      "인천 다낭 부산 다낭 노선이 포함된 진에어 프로모션입니다! https://www.jinair.com/promotion/eventView?evntSeq=15703&cid=SharedLink_copyurl_etc_15703_na_na…"
+     ],
+     "link": "https://cafe.naver.com/warcraftgamemap/3537090",
+     "source": "네이버 카페 · 다낭 고스트 - 베트남 다낭자유여행 ,다낭여행,맛집,호텔리조트",
+     "date": "2026-11-17T03:00:47.274Z",
+     "found": "2026-11-17",
+     "cards": [],
+     "airlines": [
+      "LJ"
+     ],
+     "countries": [
+      "베트남"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "베트남 항공권 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "진에어 다낭 노선 특가 프로모션",
+      "airlines": [
+       "진에어"
+      ],
+      "name": "다낭 특가 프로모션",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": true,
+      "at": "2026-11-17",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/tybwondergirl5/117954|✈️ 트립닷컴 × 진에어 국제선 빅세일! 베트남 호찌민도 포함됐어요",
+     "kind": "airline",
+     "community": true,
+     "title": "✈️ 트립닷컴 × 진에어 국제선 빅세일! 베트남 호찌민도 포함됐어요",
+     "desc": "전에는 출발 공항, 수하물 포함 여부, 취소·변경 조건까지 꼭 확인~~!!! 항공권은 타이밍이라는데… 우리에게도 착한 가격의 티켓이 찾아오길 바래봅니다. ✈️ # 진에어 # 진에어특가 #트립닷컴 #호찌민여행 #베트남항공권.",
+     "summary": [
+      "전에는 출발 공항, 수하물 포함 여부, 취소·변경 조건까지 꼭 확인~~!!! 항공권은 타이밍이라는데… 우리에게도 착한 가격의 티켓이 찾아오길 바래봅니다.",
+      "✈️ # 진에어 # 진에어특가 #트립닷컴 #호찌민여행 #베트남항공권."
+     ],
+     "link": "https://cafe.naver.com/tybwondergirl5/117954",
+     "source": "네이버 카페 · 베트남 디고-다낭나트랑자유여행,맛집,호텔,리조트,마사지,골프",
+     "date": "2026-11-17T03:00:47.274Z",
+     "found": "2026-11-17",
+     "cards": [],
+     "airlines": [
+      "LJ"
+     ],
+     "countries": [
+      "베트남"
+     ],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "진에어 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "진에어 국제선 항공권 세일 소식",
+      "airlines": [
+       "진에어"
+      ],
+      "name": "트립닷컴 × 진에어 국제선 빅세일",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-17",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/moneyinsights/12544|[삼성카드] 중복 할인 을 곁들인 진에어 최대 3만원 할인 외 2건",
+     "kind": "airline",
+     "community": true,
+     "title": "[삼성카드] 중복 할인 을 곁들인 진에어 최대 3만원 할인 외 2건",
+     "desc": "",
+     "link": "https://cafe.naver.com/moneyinsights/12544",
+     "source": "네이버 카페 · 돈이되는모든정보(주식,코인,이벤트)",
+     "date": "2026-11-18T01:00:43.319Z",
+     "found": "2026-11-18",
+     "cards": [],
+     "airlines": [
+      "LJ"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "진에어 할인",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "진에어 항공권 결제 할인 소식",
+      "airlines": [
+       "진에어"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-18",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/grownman/1191381|(정보)♥️♥️ 진에어 . 수험생들. 할인 이벤트♥️♥️",
+     "kind": "airline",
+     "community": true,
+     "title": "(정보)♥️♥️ 진에어 . 수험생들. 할인 이벤트♥️♥️",
+     "desc": "진에어 서 수험생들 할인 을 해주네용~~ 금액은 소소하지만 이런 혜택들도 수험표 받으러 수능보는 친구들 있잖아요~~ 여행가는 아이들 있을텐데 작지만.",
+     "summary": [
+      "진에어 서 수험생들 할인 을 해주네용~~ 금액은 소소하지만 이런 혜택들도 수험표 받으러 수능보는 친구들 있잖아요~~ 여행가는 아이들 있을텐데 작지만."
+     ],
+     "link": "https://cafe.naver.com/grownman/1191381",
+     "source": "네이버 카페 · 다낭 보물창고 - 다낭자유여행 다낭여행 다낭맛집 다낭리조트",
+     "date": "2026-11-21T03:00:43.776Z",
+     "found": "2026-11-21",
+     "cards": [],
+     "airlines": [
+      "LJ"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "진에어 할인",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "진에어 수험생 할인 이벤트",
+      "airlines": [
+       "진에어"
+      ],
+      "name": "수험생 할인 이벤트",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-21",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/grownman/1191523|✈️ 진에어 × 여기어때 LIVE 단독 특가 소식!",
+     "kind": "airline",
+     "community": true,
+     "title": "✈️ 진에어 × 여기어때 LIVE 단독 특가 소식!",
+     "desc": "✈️ 진에어 × 여기어때 LIVE 단독 특가 소식! 진에어 와 여기어때가 함께하는 국제선·국내선 라이브 특가 가 진행된다고 해요!",
+     "summary": [
+      "✈️ 진에어 × 여기어때 LIVE 단독 특가 소식! 진에어 와 여기어때가 함께하는 국제선·국내선 라이브 특가 가 진행된다고 해요!…"
+     ],
+     "link": "https://cafe.naver.com/grownman/1191523",
+     "source": "네이버 카페 · 다낭 보물창고 - 다낭자유여행 다낭여행 다낭맛집 다낭리조트",
+     "date": "2026-11-21T09:00:40.165Z",
+     "found": "2026-11-21",
+     "cards": [],
+     "airlines": [
+      "LJ"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "진에어 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "진에어·여기어때 항공권 특가",
+      "airlines": [
+       "진에어"
+      ],
+      "name": "여기어때 LIVE 단독 특가",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-21",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/jpnstory/4432919|진에어 좌석팩 1만원 할인 쿠폰 이벤트해요",
+     "kind": "airline",
+     "community": true,
+     "title": "진에어 좌석팩 1만원 할인 쿠폰 이벤트해요",
+     "desc": "모든좌석가능+빠른짐찾기해서 19000원인데 쿠폰하면 9000원이에요^^ 맨 앞자리도 추가금없이 가능해요.",
+     "summary": [
+      "모든좌석가능+빠른짐찾기해서 19000원인데 쿠폰하면 9000원이에요^^ 맨 앞자리도 추가금없이 가능해요."
+     ],
+     "link": "https://cafe.naver.com/jpnstory/4432919",
+     "source": "네이버 카페 · 네일동 : 일본여행카페",
+     "date": "2026-11-04T13:00:41.766Z",
+     "found": "2026-11-04",
+     "cards": [],
+     "airlines": [
+      "LJ"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "진에어 할인",
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "좌석팩 할인 쿠폰, 운임 아님",
+      "airlines": [
+       "진에어"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/macauhandal/2051|갤럭시 마카오 진에어 보딩패스 할인",
+     "kind": "airline",
+     "community": true,
+     "title": "갤럭시 마카오 진에어 보딩패스 할인",
+     "desc": "",
+     "link": "https://cafe.naver.com/macauhandal/2051",
+     "source": "네이버 카페 · 마카오&다낭 한달살기",
+     "date": "2026-11-09T11:00:48.524Z",
+     "found": "2026-11-09",
+     "cards": [],
+     "airlines": [
+      "LJ"
+     ],
+     "countries": [
+      "마카오"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "Air Macau 할인",
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "보딩패스 제시 할인, 운임 특가 아님",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/mindy7857/5526144|진에어 온라인 좌석 구매 할인 요금 공유해요",
+     "kind": "airline",
+     "community": true,
+     "title": "진에어 온라인 좌석 구매 할인 요금 공유해요",
+     "desc": "",
+     "link": "https://cafe.naver.com/mindy7857/5526144",
+     "source": "네이버 카페 · 베나자-베트남나트랑자유여행,달랏,무이네,호텔,투어,리조트맛집",
+     "date": "2026-11-10T07:00:45.317Z",
+     "found": "2026-11-10",
+     "cards": [],
+     "airlines": [
+      "LJ"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "베트남 항공권 특가",
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "좌석 구매 할인, 운임 특가 아님",
+      "airlines": [
+       "진에어"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/airportshopping/1137|[ 진에어 ] 사전주문 기내식 할인 혜택!",
+     "kind": "airline",
+     "community": true,
+     "title": "[ 진에어 ] 사전주문 기내식 할인 혜택!",
+     "desc": "▼자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
+     "summary": [
+      "▼자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
+     ],
+     "link": "https://cafe.naver.com/airportshopping/1137",
+     "source": "네이버 카페 · 인천공항의 모든 것",
+     "date": "2026-11-17T05:00:43.473Z",
+     "found": "2026-11-17",
+     "cards": [],
+     "airlines": [
+      "LJ"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "진에어 할인",
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "기내식 할인, 운임 아님",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-17",
+      "model": "deepseek-v4-flash"
+     }
+    }
+   ]
+  },
+  {
    "id": "c:https://cafe.naver.com/hotdealcatch/2505|[이벤트] 제주항공 토요일 랜덤포인트, 최대 3천P (~11/27)",
    "kind": "airline",
    "community": true,
@@ -2925,897 +3856,6 @@
    },
    "lastDate": "2026-11-21T05:00:43.396Z",
    "lastFound": "2026-11-21"
-  },
-  {
-   "id": "c:https://cafe.naver.com/grownman/1186741|(정보)진에어 블랙프라이데이! | JIN(진)짜 혜택이 이륙한다",
-   "kind": "airline",
-   "community": true,
-   "title": "(정보)진에어 블랙프라이데이! | JIN(진)짜 혜택이 이륙한다",
-   "desc": "블랙 항공권 초특가 할인 할인 혜택: 항공 운임 최대 15% 할인 대상 노선: 국제선 54개 노선 프로모션 코드 : 26BLACKLJ 구매 기간: 2026년 11월 13일 ~ 11월 27일 탑승 기간: 2026년 11월 13일 ~ 2027년 3월 27일 2.",
-   "summary": [
-    "블랙 항공권 초특가 할인 할인 혜택: 항공 운임 최대 15% 할인 대상 노선: 국제선 54개 노선 프로모션 코드 : 26BLACKLJ 구매 기간: 2026년 11월 13일 ~ 11월 27일 탑승 기간: 2026년 11월 13일 ~…"
-   ],
-   "link": "https://cafe.naver.com/grownman/1186741",
-   "source": "네이버 카페 · 다낭 보물창고 - 다낭자유여행 다낭여행 다낭맛집 다낭리조트",
-   "date": "2026-11-13T05:00:40.211Z",
-   "found": "2026-11-13",
-   "cards": [],
-   "airlines": [
-    "LJ"
-   ],
-   "countries": [
-    "일본",
-    "베트남",
-    "마카오"
-   ],
-   "allRoutes": true,
-   "routes": [],
-   "price": {
-    "amount": 30000,
-    "trip": "oneway?"
-   },
-   "query": "항공권 할인코드",
-   "ai": {
-    "v": 2,
-    "promo": true,
-    "why": "진에어 블프 항공권 특가",
-    "airlines": [
-     "진에어"
-    ],
-    "name": "블랙프라이데이 특가",
-    "book": {
-     "from": "2026-11-13",
-     "to": "2026-11-27"
-    },
-    "board": {
-     "from": "2026-11-13",
-     "to": "2027-03-27"
-    },
-    "price": null,
-    "trip": null,
-    "pct": 15,
-    "seoul": null,
-    "at": "2026-11-13",
-    "model": "deepseek-v4-flash"
-   },
-   "lastDate": "2026-11-21T03:00:43.776Z",
-   "lastFound": "2026-11-21",
-   "more": [
-    {
-     "id": "c:https://cafe.naver.com/20daelee/952968|진에어, 일본 노선 최대 15% 할인! 블랙프라이데이 (~11/27)",
-     "kind": "airline",
-     "community": true,
-     "title": "진에어, 일본 노선 최대 15% 할인! 블랙프라이데이 (~11/27)",
-     "desc": "",
-     "link": "https://cafe.naver.com/20daelee/952968",
-     "source": "네이버 카페 · 체크인데이#일본여행,도쿄여행,후쿠오카여행,오사카,교토,삿포로",
-     "date": "2026-11-13T05:00:40.211Z",
-     "found": "2026-11-13",
-     "cards": [],
-     "airlines": [
-      "LJ"
-     ],
-     "countries": [
-      "일본"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "항공권 프로모션 코드",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "진에어 일본 노선 할인 프로모션",
-      "airlines": [
-       "진에어"
-      ],
-      "name": "블랙프라이데이",
-      "book": {
-       "from": null,
-       "to": "2026-11-27"
-      },
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": 15,
-      "seoul": null,
-      "at": "2026-11-13",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/airportshopping/1087|[ 진에어 ] 단 10일간 열리는 역대급 찬스!! 11월 매진 특가 !",
-     "kind": "airline",
-     "community": true,
-     "title": "[ 진에어 ] 단 10일간 열리는 역대급 찬스!! 11월 매진 특가 !",
-     "desc": "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
-     "summary": [
-      "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
-     ],
-     "link": "https://cafe.naver.com/airportshopping/1087",
-     "source": "네이버 카페 · 인천공항의 모든 것",
-     "date": "2026-11-06T05:00:45.112Z",
-     "found": "2026-11-06",
-     "cards": [],
-     "airlines": [
-      "LJ"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "진에어 특가",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "진에어 11월 매진 특가 프로모션",
-      "airlines": [
-       "진에어"
-      ],
-      "name": "11월 매진 특가",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/airportshopping/1103|[진에어] 지금이 바로, 제주 여행의 제철! 제주 도 항공 권 할인 !",
-     "kind": "airline",
-     "community": true,
-     "title": "[진에어] 지금이 바로, 제주 여행의 제철! 제주 도 항공 권 할인 !",
-     "desc": "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
-     "summary": [
-      "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
-     ],
-     "link": "https://cafe.naver.com/airportshopping/1103",
-     "source": "네이버 카페 · 인천공항의 모든 것",
-     "date": "2026-11-10T05:00:46.618Z",
-     "found": "2026-11-10",
-     "cards": [],
-     "airlines": [
-      "LJ"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "제주항공 할인",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "진에어 제주 항공권 할인 프로모션",
-      "airlines": [
-       "진에어"
-      ],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/airportshopping/1104|[ 진에어 ] 진에어 항공권 카카오페이 결제 시 즉시 할인 !",
-     "kind": "airline",
-     "community": true,
-     "title": "[ 진에어 ] 진에어 항공권 카카오페이 결제 시 즉시 할인 !",
-     "desc": "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
-     "summary": [
-      "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
-     ],
-     "link": "https://cafe.naver.com/airportshopping/1104",
-     "source": "네이버 카페 · 인천공항의 모든 것",
-     "date": "2026-11-10T05:00:46.618Z",
-     "found": "2026-11-10",
-     "cards": [],
-     "airlines": [
-      "LJ"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "진에어 할인",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "진에어 카카오페이 결제 즉시 할인",
-      "airlines": [
-       "진에어"
-      ],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/stereovinylcruiser/326350|호치민 노랑풍선 패키지 진에어 신규출항이라 특가 떠서..",
-     "kind": "airline",
-     "community": true,
-     "title": "호치민 노랑풍선 패키지 진에어 신규출항이라 특가 떠서..",
-     "desc": "",
-     "link": "https://cafe.naver.com/stereovinylcruiser/326350",
-     "source": "네이버 카페 · 호치민 도깨비 - 베트남 호치민 자유여행,호텔,맛집,항공권",
-     "date": "2026-11-12T05:00:45.234Z",
-     "found": "2026-11-12",
-     "cards": [],
-     "airlines": [
-      "LJ"
-     ],
-     "countries": [
-      "베트남"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "베트남 항공권 특가",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "진에어 신규취항 특가 소식",
-      "airlines": [
-       "진에어"
-      ],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/grownman/1186853|✈️진에어 항공 : 11월에도 함께하는 국제선 타임세일 정보",
-     "kind": "airline",
-     "community": true,
-     "title": "✈️진에어 항공 : 11월에도 함께하는 국제선 타임세일 정보",
-     "desc": "",
-     "link": "https://cafe.naver.com/grownman/1186853",
-     "source": "네이버 카페 · 다낭 보물창고 - 다낭자유여행 다낭여행 다낭맛집 다낭리조트",
-     "date": "2026-11-13T07:00:42.872Z",
-     "found": "2026-11-13",
-     "cards": [],
-     "airlines": [
-      "LJ"
-     ],
-     "countries": [],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "항공 타임세일",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "진에어 국제선 타임세일 특가",
-      "airlines": [
-       "진에어"
-      ],
-      "name": "국제선 타임세일",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-13",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/guamsaipanstory/76156|진에어 블프 세일",
-     "kind": "airline",
-     "community": true,
-     "title": "진에어 블프 세일",
-     "desc": "카카오페이 결재최대3만원까지.",
-     "link": "https://cafe.naver.com/guamsaipanstory/76156",
-     "source": "네이버 카페 · 괌사이판스토리",
-     "date": "2026-11-13T09:00:44.576Z",
-     "found": "2026-11-13",
-     "cards": [],
-     "airlines": [
-      "LJ"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": {
-      "amount": 30000,
-      "trip": "oneway?"
-     },
-     "query": "진에어 세일",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "진에어 블프 항공권 세일",
-      "airlines": [
-       "진에어"
-      ],
-      "name": "블프 세일",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-13",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/grownman/1187016|진에어 세일",
-     "kind": "airline",
-     "community": true,
-     "title": "진에어 세일",
-     "desc": "https://www.jinair.com/promotion/eventView?evntSeq=15698&cid=SharedLink_copyurl_etc_15698_na_na_2026-11-13_na 기간 맞으신분보세요.",
-     "summary": [
-      "https://www.jinair.com/promotion/eventView?evntSeq=15698&cid=SharedLink_copyurl_etc_15698_na_na_2026-11-13_na 기간 맞으신분보세요."
-     ],
-     "link": "https://cafe.naver.com/grownman/1187016",
-     "source": "네이버 카페 · 다낭 보물창고 - 다낭자유여행 다낭여행 다낭맛집 다낭리조트",
-     "date": "2026-11-13T13:00:43.217Z",
-     "found": "2026-11-13",
-     "cards": [],
-     "airlines": [
-      "LJ"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "진에어 특가",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "진에어 세일 프로모션 공유",
-      "airlines": [
-       "진에어"
-      ],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-13",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/promocode/26|진에어 특가 항공권 11월 연말 노선 마이리얼트립 프로모션",
-     "kind": "airline",
-     "community": true,
-     "title": "진에어 특가 항공권 11월 연말 노선 마이리얼트립 프로모션",
-     "desc": "진에어 항공권 특가 11월 연말 노선 프로모션 (마이리얼트립) (11/15... 공항까지의 이동 시간과 비용, 실제 항공 편 시간까지 함께... 코드 의날 카페가 신규로 개설되었습니다.",
-     "summary": [
-      "진에어 항공권 특가 11월 연말 노선 프로모션 (마이리얼트립) (11/15...",
-      "공항까지의 이동 시간과 비용, 실제 항공 편 시간까지 함께...",
-      "코드 의날 카페가 신규로 개설되었습니다."
-     ],
-     "link": "https://cafe.naver.com/promocode/26",
-     "source": "네이버 카페 · 코드의날",
-     "date": "2026-11-15T09:00:41.562Z",
-     "found": "2026-11-15",
-     "cards": [],
-     "airlines": [
-      "LJ"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "항공권 프로모션 코드",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "진에어 항공권 특가 프로모션 소식",
-      "airlines": [
-       "진에어"
-      ],
-      "name": "진에어 11월 연말 노선 프로모션",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-15",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/thaiinfo/681143|진에어 , 블프 특가",
-     "kind": "airline",
-     "community": true,
-     "title": "진에어 , 블프 특가",
-     "desc": "",
-     "link": "https://cafe.naver.com/thaiinfo/681143",
-     "source": "네이버 카페 · 태초의 태국정보(태국자유여행/방콕/푸켓/파타야/크라비/사무이)",
-     "date": "2026-11-16T05:00:45.646Z",
-     "found": "2026-11-16",
-     "cards": [],
-     "airlines": [
-      "LJ"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "진에어 특가",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "진에어 블프 항공권 특가",
-      "airlines": [
-       "진에어"
-      ],
-      "name": "블프 특가",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-16",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/minecraftpe/4017568|[블프 특가 ] 진에어 BLACK FLY-DAY",
-     "kind": "airline",
-     "community": true,
-     "title": "[블프 특가 ] 진에어 BLACK FLY-DAY",
-     "desc": "진에어가 1년에 한 번 하는 블랙프라이데이 특가 를 진행중이네요.",
-     "summary": [
-      "진에어가 1년에 한 번 하는 블랙프라이데이 특가 를 진행중이네요."
-     ],
-     "link": "https://cafe.naver.com/minecraftpe/4017568",
-     "source": "네이버 카페 · 푸꾸옥 고스트 - 베트남푸꾸옥 자유여행,호텔리조트,항공권,맛집",
-     "date": "2026-11-16T13:00:56.201Z",
-     "found": "2026-11-16",
-     "cards": [],
-     "airlines": [
-      "LJ"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "베트남 항공권 특가",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "진에어 블프 항공권 특가 진행",
-      "airlines": [
-       "진에어"
-      ],
-      "name": "BLACK FLY-DAY",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-16",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/jpnstory/4446068|진에어 블프",
-     "kind": "airline",
-     "community": true,
-     "title": "진에어 블프",
-     "desc": "진에어 블프 괜찮긴한데.. 3월운행까지라ㅠ 1월에 가다보니 거지인 저는 포기하구 맙니당..",
-     "summary": [
-      "진에어 블프 괜찮긴한데..",
-      "3월운행까지라ㅠ 1월에 가다보니 거지인 저는 포기하구 맙니당.."
-     ],
-     "link": "https://cafe.naver.com/jpnstory/4446068",
-     "source": "네이버 카페 · 네일동 : 일본여행카페",
-     "date": "2026-11-16T13:00:56.201Z",
-     "found": "2026-11-16",
-     "cards": [],
-     "airlines": [
-      "LJ"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "진에어 특가",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "진에어 블프 특가 언급",
-      "airlines": [
-       "진에어"
-      ],
-      "name": "블프",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-16",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/minecraftpe/4017955|✈️ 푸꾸옥 특가 프로모션 : 진에어",
-     "kind": "airline",
-     "community": true,
-     "title": "✈️ 푸꾸옥 특가 프로모션 : 진에어",
-     "desc": "인천 푸꾸옥 노선이 포함된 진에어 프로모션입니다! https://www.jinair.com/promotion/eventView?evntSeq=15703&cid=SharedLink_copyurl_etc_15703_na_na_2026-11-13_na.",
-     "summary": [
-      "인천 푸꾸옥 노선이 포함된 진에어 프로모션입니다! https://www.jinair.com/promotion/eventView?evntSeq=15703&cid=SharedLink_copyurl_etc_15703_na_na_2026…"
-     ],
-     "link": "https://cafe.naver.com/minecraftpe/4017955",
-     "source": "네이버 카페 · 푸꾸옥 고스트 - 베트남푸꾸옥 자유여행,호텔리조트,항공권,맛집",
-     "date": "2026-11-17T03:00:47.274Z",
-     "found": "2026-11-17",
-     "cards": [],
-     "airlines": [
-      "LJ"
-     ],
-     "countries": [
-      "베트남"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "베트남 항공권 특가",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "진에어 푸꾸옥 특가 프로모션",
-      "airlines": [
-       "진에어"
-      ],
-      "name": "푸꾸옥 특가 프로모션",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": true,
-      "at": "2026-11-17",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/warcraftgamemap/3537090|✈️ 다낭 특가 프로모션 : 진에어",
-     "kind": "airline",
-     "community": true,
-     "title": "✈️ 다낭 특가 프로모션 : 진에어",
-     "desc": "인천 다낭 부산 다낭 노선이 포함된 진에어 프로모션입니다! https://www.jinair.com/promotion/eventView?evntSeq=15703&cid=SharedLink_copyurl_etc_15703_na_na_2026-11-13_na.",
-     "summary": [
-      "인천 다낭 부산 다낭 노선이 포함된 진에어 프로모션입니다! https://www.jinair.com/promotion/eventView?evntSeq=15703&cid=SharedLink_copyurl_etc_15703_na_na…"
-     ],
-     "link": "https://cafe.naver.com/warcraftgamemap/3537090",
-     "source": "네이버 카페 · 다낭 고스트 - 베트남 다낭자유여행 ,다낭여행,맛집,호텔리조트",
-     "date": "2026-11-17T03:00:47.274Z",
-     "found": "2026-11-17",
-     "cards": [],
-     "airlines": [
-      "LJ"
-     ],
-     "countries": [
-      "베트남"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "베트남 항공권 특가",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "진에어 다낭 노선 특가 프로모션",
-      "airlines": [
-       "진에어"
-      ],
-      "name": "다낭 특가 프로모션",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": true,
-      "at": "2026-11-17",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/tybwondergirl5/117954|✈️ 트립닷컴 × 진에어 국제선 빅세일! 베트남 호찌민도 포함됐어요",
-     "kind": "airline",
-     "community": true,
-     "title": "✈️ 트립닷컴 × 진에어 국제선 빅세일! 베트남 호찌민도 포함됐어요",
-     "desc": "전에는 출발 공항, 수하물 포함 여부, 취소·변경 조건까지 꼭 확인~~!!! 항공권은 타이밍이라는데… 우리에게도 착한 가격의 티켓이 찾아오길 바래봅니다. ✈️ # 진에어 # 진에어특가 #트립닷컴 #호찌민여행 #베트남항공권.",
-     "summary": [
-      "전에는 출발 공항, 수하물 포함 여부, 취소·변경 조건까지 꼭 확인~~!!! 항공권은 타이밍이라는데… 우리에게도 착한 가격의 티켓이 찾아오길 바래봅니다.",
-      "✈️ # 진에어 # 진에어특가 #트립닷컴 #호찌민여행 #베트남항공권."
-     ],
-     "link": "https://cafe.naver.com/tybwondergirl5/117954",
-     "source": "네이버 카페 · 베트남 디고-다낭나트랑자유여행,맛집,호텔,리조트,마사지,골프",
-     "date": "2026-11-17T03:00:47.274Z",
-     "found": "2026-11-17",
-     "cards": [],
-     "airlines": [
-      "LJ"
-     ],
-     "countries": [
-      "베트남"
-     ],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "진에어 특가",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "진에어 국제선 항공권 세일 소식",
-      "airlines": [
-       "진에어"
-      ],
-      "name": "트립닷컴 × 진에어 국제선 빅세일",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-17",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/moneyinsights/12544|[삼성카드] 중복 할인 을 곁들인 진에어 최대 3만원 할인 외 2건",
-     "kind": "airline",
-     "community": true,
-     "title": "[삼성카드] 중복 할인 을 곁들인 진에어 최대 3만원 할인 외 2건",
-     "desc": "",
-     "link": "https://cafe.naver.com/moneyinsights/12544",
-     "source": "네이버 카페 · 돈이되는모든정보(주식,코인,이벤트)",
-     "date": "2026-11-18T01:00:43.319Z",
-     "found": "2026-11-18",
-     "cards": [],
-     "airlines": [
-      "LJ"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "진에어 할인",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "진에어 항공권 결제 할인 소식",
-      "airlines": [
-       "진에어"
-      ],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-18",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/grownman/1191381|(정보)♥️♥️ 진에어 . 수험생들. 할인 이벤트♥️♥️",
-     "kind": "airline",
-     "community": true,
-     "title": "(정보)♥️♥️ 진에어 . 수험생들. 할인 이벤트♥️♥️",
-     "desc": "진에어 서 수험생들 할인 을 해주네용~~ 금액은 소소하지만 이런 혜택들도 수험표 받으러 수능보는 친구들 있잖아요~~ 여행가는 아이들 있을텐데 작지만.",
-     "summary": [
-      "진에어 서 수험생들 할인 을 해주네용~~ 금액은 소소하지만 이런 혜택들도 수험표 받으러 수능보는 친구들 있잖아요~~ 여행가는 아이들 있을텐데 작지만."
-     ],
-     "link": "https://cafe.naver.com/grownman/1191381",
-     "source": "네이버 카페 · 다낭 보물창고 - 다낭자유여행 다낭여행 다낭맛집 다낭리조트",
-     "date": "2026-11-21T03:00:43.776Z",
-     "found": "2026-11-21",
-     "cards": [],
-     "airlines": [
-      "LJ"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "진에어 할인",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "진에어 수험생 할인 이벤트",
-      "airlines": [
-       "진에어"
-      ],
-      "name": "수험생 할인 이벤트",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-21",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/jpnstory/4432919|진에어 좌석팩 1만원 할인 쿠폰 이벤트해요",
-     "kind": "airline",
-     "community": true,
-     "title": "진에어 좌석팩 1만원 할인 쿠폰 이벤트해요",
-     "desc": "모든좌석가능+빠른짐찾기해서 19000원인데 쿠폰하면 9000원이에요^^ 맨 앞자리도 추가금없이 가능해요.",
-     "summary": [
-      "모든좌석가능+빠른짐찾기해서 19000원인데 쿠폰하면 9000원이에요^^ 맨 앞자리도 추가금없이 가능해요."
-     ],
-     "link": "https://cafe.naver.com/jpnstory/4432919",
-     "source": "네이버 카페 · 네일동 : 일본여행카페",
-     "date": "2026-11-04T13:00:41.766Z",
-     "found": "2026-11-04",
-     "cards": [],
-     "airlines": [
-      "LJ"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "진에어 할인",
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "좌석팩 할인 쿠폰, 운임 아님",
-      "airlines": [
-       "진에어"
-      ],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/macauhandal/2051|갤럭시 마카오 진에어 보딩패스 할인",
-     "kind": "airline",
-     "community": true,
-     "title": "갤럭시 마카오 진에어 보딩패스 할인",
-     "desc": "",
-     "link": "https://cafe.naver.com/macauhandal/2051",
-     "source": "네이버 카페 · 마카오&다낭 한달살기",
-     "date": "2026-11-09T11:00:48.524Z",
-     "found": "2026-11-09",
-     "cards": [],
-     "airlines": [
-      "LJ"
-     ],
-     "countries": [
-      "마카오"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "Air Macau 할인",
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "보딩패스 제시 할인, 운임 특가 아님",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/mindy7857/5526144|진에어 온라인 좌석 구매 할인 요금 공유해요",
-     "kind": "airline",
-     "community": true,
-     "title": "진에어 온라인 좌석 구매 할인 요금 공유해요",
-     "desc": "",
-     "link": "https://cafe.naver.com/mindy7857/5526144",
-     "source": "네이버 카페 · 베나자-베트남나트랑자유여행,달랏,무이네,호텔,투어,리조트맛집",
-     "date": "2026-11-10T07:00:45.317Z",
-     "found": "2026-11-10",
-     "cards": [],
-     "airlines": [
-      "LJ"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "베트남 항공권 특가",
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "좌석 구매 할인, 운임 특가 아님",
-      "airlines": [
-       "진에어"
-      ],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/airportshopping/1137|[ 진에어 ] 사전주문 기내식 할인 혜택!",
-     "kind": "airline",
-     "community": true,
-     "title": "[ 진에어 ] 사전주문 기내식 할인 혜택!",
-     "desc": "▼자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
-     "summary": [
-      "▼자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
-     ],
-     "link": "https://cafe.naver.com/airportshopping/1137",
-     "source": "네이버 카페 · 인천공항의 모든 것",
-     "date": "2026-11-17T05:00:43.473Z",
-     "found": "2026-11-17",
-     "cards": [],
-     "airlines": [
-      "LJ"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "진에어 할인",
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "기내식 할인, 운임 아님",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-17",
-      "model": "deepseek-v4-flash"
-     }
-    }
-   ]
   },
   {
    "id": "c:https://cafe.naver.com/grownman/1183340|✈️제주 항공 : 단, 3일 간! 최대 79% 할인 앵콜 특가 정보",
@@ -50262,24 +50302,24 @@
    ]
   }
  ],
- "updated": "2026-11-21T07:00:39.429Z",
- "runs": 255,
+ "updated": "2026-11-21T09:00:40.165Z",
+ "runs": 256,
  "checked": {
-  "베트남": "2026-11-21T07:00:39.429Z",
-  "태국": "2026-11-21T07:00:39.429Z",
-  "필리핀": "2026-11-21T07:00:39.429Z",
-  "인도네시아": "2026-11-21T07:00:39.429Z",
-  "말레이시아": "2026-11-21T07:00:39.429Z",
-  "싱가포르": "2026-11-21T07:00:39.429Z",
-  "일본": "2026-11-21T07:00:39.429Z",
-  "대만": "2026-11-21T07:00:39.429Z",
-  "홍콩": "2026-11-21T07:00:39.429Z",
-  "마카오": "2026-11-21T07:00:39.429Z",
-  "중국": "2026-11-21T07:00:39.429Z",
-  "미국령": "2026-11-21T07:00:39.429Z",
-  "미국": "2026-11-21T07:00:39.429Z"
+  "베트남": "2026-11-21T09:00:40.165Z",
+  "태국": "2026-11-21T09:00:40.165Z",
+  "필리핀": "2026-11-21T09:00:40.165Z",
+  "인도네시아": "2026-11-21T09:00:40.165Z",
+  "말레이시아": "2026-11-21T09:00:40.165Z",
+  "싱가포르": "2026-11-21T09:00:40.165Z",
+  "일본": "2026-11-21T09:00:40.165Z",
+  "대만": "2026-11-21T09:00:40.165Z",
+  "홍콩": "2026-11-21T09:00:40.165Z",
+  "마카오": "2026-11-21T09:00:40.165Z",
+  "중국": "2026-11-21T09:00:40.165Z",
+  "미국령": "2026-11-21T09:00:40.165Z",
+  "미국": "2026-11-21T09:00:40.165Z"
  },
- "auto": "2026-11-21T07:00:39.429Z",
+ "auto": "2026-11-21T09:00:40.165Z",
  "sources": {
   "7C": "2026-11-01",
   "TW": "2026-11-01",
@@ -50492,126 +50532,6 @@
    "중국동방항공 얼리버드": "2026-11-04"
   },
   "seen": [
-   "tum02/41710",
-   "tum02/41709",
-   "dailytour1/4729",
-   "stockradarlab/237",
-   "loyaltylife/369719",
-   "worldtravelcafe/1167360",
-   "worldtravelcafe/1167356",
-   "worldtravelcafe/1167355",
-   "worldtravelcafe/1167354",
-   "lnf/416351",
-   "lnf/416348",
-   "lnf/416347",
-   "worldtravelcafe/1167353",
-   "dgmom365/7442995",
-   "worldtravelcafe/1167352",
-   "worrytodream/998473",
-   "worrytodream/998470",
-   "worrytodream/998456",
-   "lnf/416334",
-   "lnf/416328",
-   "lnf/416323",
-   "worrytodream/998425",
-   "lnf/416282",
-   "worrytodream/998377",
-   "lnf/416246",
-   "worrytodream/998322",
-   "lnf/416205",
-   "worrytodream/998267",
-   "rudrlghktjdaka/2856",
-   "mindy7857/5534920",
-   "vinpearl/570428",
-   "storyindanang/10825",
-   "mindy7857/5534905",
-   "warcraftgamemap/3536154",
-   "happyibook/6356711",
-   "japanpackagetour/13878",
-   "mindy7857/5534863",
-   "mindy7857/5534829",
-   "happyibook/6356662",
-   "mindy7857/5534881",
-   "mindy7857/5534878",
-   "vinpearl/570372",
-   "mindy7857/5534758",
-   "happyibook/6356433",
-   "airplanetiket/1359",
-   "fobn/166446",
-   "mindy7857/5534774",
-   "dasajadeal/235",
-   "grownman/1188662",
-   "squaresever/37993",
-   "happyibook/6356681",
-   "010freebaram/262011",
-   "010freebaram/262001",
-   "coudae/53170",
-   "applecart152/427887",
-   "joonggonara/1138231488",
-   "010freebaram/262036",
-   "culturebloom/3436197",
-   "010freebaram/262029",
-   "joonggonara/1138227274",
-   "msiu100/684860",
-   "airplanetiket/1360",
-   "jpnstory/4445439",
-   "jpnstory/4445408",
-   "loveloveloveovelove/1042571",
-   "jejudoonemonth/19028",
-   "tybwondergirl5/117758",
-   "jejutip/2682662",
-   "eom5816/83751",
-   "pusanmommy/1579839",
-   "busanjungonara/6159677",
-   "joonggonara/1138230199",
-   "subadd/763",
-   "ok4567890123/2864",
-   "ungsangjang/886866",
-   "ok4567890123/2859",
-   "mindy7857/5534760",
-   "loyaltylife/369724",
-   "jpnstory/4445433",
-   "mindy7857/5534880",
-   "mindy7857/5534870",
-   "happyibook/6356785",
-   "happyibook/6356775",
-   "happyibook/6356743",
-   "tybwondergirl5/117755",
-   "minecraftpe/4017232",
-   "happyibook/6356707",
-   "minecraftpe/4017225",
-   "minecraftpe/4017245",
-   "vinpearl/570424",
-   "vinpearl/570384",
-   "warcraftgamemap/3536135",
-   "warcraftgamemap/3536130",
-   "ungsangjang/886865",
-   "fobn/166442",
-   "nyctourdesign/1206707",
-   "minecraftpe/4011764",
-   "bbgolf/67168",
-   "sheiszzz/1235170",
-   "redzn0aw/99",
-   "hexenyang/76074",
-   "lnf/416289",
-   "lnf/416225",
-   "worrytodream/998449",
-   "squaresever/38006",
-   "lnf/416317",
-   "worrytodream/998423",
-   "runningmaniac/508920",
-   "lnf/416268",
-   "koreanairjumbos/3029",
-   "futures25/1538",
-   "worrytodream/998373",
-   "worrytodream/998364",
-   "wtac/8507742",
-   "worrytodream/998356",
-   "lnf/416233",
-   "lnf/416191",
-   "bebettergirls/2103742",
-   "bebettergirls/2103741",
-   "worrytodream/998263",
    "mindy7857/5534811",
    "pinkbrgd1/13329",
    "momory1942/380343",
@@ -56491,7 +56411,127 @@
    "holrotrip/1696",
    "waateam/166206",
    "krlaos/78832",
-   "slatepc/120490"
+   "slatepc/120490",
+   "worrytodream/1034567",
+   "worrytodream/1034547",
+   "teafungseol/53838",
+   "worldtravelcafe/1168932",
+   "worldtravelcafe/1168926",
+   "worldtravelcafe/1168924",
+   "cafebeautyup/172074",
+   "pilote/53507",
+   "dngd/49151",
+   "worrytodream/1033796",
+   "drawhangil/26332",
+   "minecraftpe/4020726",
+   "010freebaram/264780",
+   "010freebaram/264777",
+   "bbbx/888746",
+   "applecart152/429500",
+   "uouv96/117838",
+   "010freebaram/264791",
+   "lookatthecharts/2495",
+   "drawhangil/26334",
+   "joonggonara/1138496159",
+   "drawhangil/26336",
+   "grandmomentwedding/2216",
+   "costco12/801100",
+   "zzop/4352691",
+   "grownman/1191523",
+   "sheiszzz/1235482",
+   "mindy7857/5543801",
+   "happyibook/6362404",
+   "ysm5828/9652109",
+   "vinpearl/572981",
+   "vinpearl/572980",
+   "ysm5828/9652101",
+   "happyibook/6362367",
+   "happyibook/6362328",
+   "warcraftgamemap/3540802",
+   "nctownnet11/218131",
+   "vinpearl/572969",
+   "fobn/167311",
+   "drawhangil/26340",
+   "drawhangil/26337",
+   "mathall/3041690",
+   "111888666/15281",
+   "todaybigboss/6734",
+   "wldus7158/108786",
+   "happyibook/6356237",
+   "taesarang/895134",
+   "manadoplanner/108",
+   "promocode/3",
+   "disneyadventure/460",
+   "yamipapa/5132",
+   "loyaltylife/356910",
+   "checkincafe/146957",
+   "loyaltylife/338461",
+   "travelwithkids/287887",
+   "soimarket/11862917",
+   "ehdghks9174/559",
+   "bikecargogo/8954451",
+   "anyousports/95169",
+   "taiwantour/1156037",
+   "rosesd1634/450031",
+   "jpnstory/4384145",
+   "mindy7857/5543728",
+   "mindy7857/5543675",
+   "momsyt/84079",
+   "hahahaup/14979",
+   "joonggonara/1138494854",
+   "joonggonara/1138494356",
+   "overseer/1812577",
+   "joonggonara/1138492011",
+   "imsanbu/80582340",
+   "gimhaezumma/2833515",
+   "gimhaezumma/2833551",
+   "worrytodream/1033771",
+   "todaybigboss/6658",
+   "2266734/122250",
+   "williamzzang/85251",
+   "jmsong0829/75782",
+   "loyaltylife/362958",
+   "llllm/13709",
+   "blue3lk7g/10643",
+   "taiwantour/1158878",
+   "taiwantour/1158274",
+   "taiwantour/1157987",
+   "dealcode/453",
+   "2266734/113392",
+   "golmarket/12756814",
+   "hexenyang/32743",
+   "dlxogns01/151292",
+   "gigong9/133348",
+   "momsdabang/21031",
+   "masteroftravel/1961",
+   "chinagolfcafe/806",
+   "joonggonara/1130848038",
+   "chinagolfstory/34431",
+   "golmarket/12536512",
+   "foreverhk/1309835",
+   "foreverhk/1286493",
+   "dlxogns01/363119",
+   "sheiszzz/1017785",
+   "booheong/239081",
+   "todaygoldx/17745",
+   "hotellife/436142",
+   "foreverhk/270734",
+   "foreverhk/75796",
+   "rockyis/719",
+   "officialcloud/109808",
+   "macaunoblesse/221229",
+   "engmstudy/2839987",
+   "engmstudy/2823647",
+   "engmstudy/2805411",
+   "tcstourguide/1955",
+   "todaybigboss/4228",
+   "waateam/147095",
+   "fast02/17030",
+   "tum02/41713",
+   "tum02/41712",
+   "loyaltylife/370998",
+   "holicsonline/32648",
+   "chinatripatoz/32764"
   ],
   "since": "2026-11-03",
   "imported": "2026-11-03"
