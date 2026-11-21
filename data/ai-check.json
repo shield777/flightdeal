@@ -1,6 +1,80 @@
 [
  {
   "at": "2026-11-21",
+  "title": "[이벤트] 노브랜드버거 제주항공 스크래치, 100% 당첨 (~11/30)",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "항공권은 경품일 뿐인 이벤트",
+   "airlines": [],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-21",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": null,
+    "to": "2026-11-30"
+   },
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님",
+   "예약 마감 규칙 2026-11-30 / AI -"
+  ]
+ },
+ {
+  "at": "2026-11-21",
+  "title": "트리니티항공, 페이팔 결제 항공권 최대 9% 할인… 해외 7개 지역 대상",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "페이팔 결제 항공권 할인 프로모션",
+   "airlines": [
+    "트리니티항공"
+   ],
+   "name": "페이팔 제휴 항공권 할인",
+   "book": {
+    "from": null,
+    "to": "2026-12-31"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-03-27"
+   },
+   "price": null,
+   "trip": null,
+   "pct": 9,
+   "seoul": null,
+   "at": "2026-11-21",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": null,
+    "to": "2026-12-31"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-03-27"
+   },
+   "pct": 9,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-21",
   "title": "(정보)❤️❤️이스타 항공 수험생 할인 ❤️❤️",
   "community": true,
   "ai": {
@@ -10301,69 +10375,6 @@
    "v": 2,
    "promo": true,
    "why": "제주항공 일본 노선 특가",
-   "airlines": [
-    "제주항공"
-   ],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-14",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-14",
-  "title": "다낭 이스타항공 11월16일까지!! 땡처리!",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "이스타항공 땡처리 특가",
-   "airlines": [
-    "이스타항공"
-   ],
-   "name": "땡처리",
-   "book": {
-    "from": null,
-    "to": "2026-11-16"
-   },
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-14",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": [
-   "예약 마감 규칙 - / AI 2026-11-16"
-  ]
- },
- {
-  "at": "2026-11-14",
-  "title": "제주항공 동남아 사이판 할인",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "제주항공 동남아 할인 특가",
    "airlines": [
     "제주항공"
    ],
