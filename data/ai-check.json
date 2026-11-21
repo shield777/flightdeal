@@ -1,6 +1,35 @@
 [
  {
   "at": "2026-11-22",
+  "title": "트리니티 항공 11~1월 25% 할인 , 일본 겨울 프로모션",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "항공사 할인코드 프로모션",
+   "airlines": [
+    "트리니티항공"
+   ],
+   "name": "일본 겨울 프로모션",
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": 25,
+   "seoul": null,
+   "at": "2026-11-22",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": 25,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-22",
   "title": "트리니티항공 , 겨울 국제선 최대 25% 할인 에 결제 혜택까지",
   "community": false,
   "ai": {
@@ -10369,35 +10398,6 @@
    "trip": null,
    "pct": null,
    "seoul": null,
-   "at": "2026-11-15",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님"
-  ]
- },
- {
-  "at": "2026-11-15",
-  "title": "에어로케이항공, 후지드림항공과 '일본행 항공권 1+1' SNS 이벤트",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "SNS 이벤트 경품 성격",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": false,
    "at": "2026-11-15",
    "model": "deepseek-v4-flash"
   },

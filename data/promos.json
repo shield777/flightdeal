@@ -1,6 +1,48 @@
 {
  "items": [
   {
+   "id": "c:https://cafe.naver.com/japanpackagetour/13921|트리니티 항공 11~1월 25% 할인 , 일본 겨울 프로모션",
+   "kind": "airline",
+   "community": true,
+   "title": "트리니티 항공 11~1월 25% 할인 , 일본 겨울 프로모션",
+   "desc": "전용 할인코드 트리니티 항공 관계자는 항공권 할인 과 결제, 제휴 혜택을 함께 활용해 취향에 맞는 겨울 여행을 계획하길 바란다고 전했습니다.",
+   "summary": [
+    "전용 할인코드 트리니티 항공 관계자는 항공권 할인 과 결제, 제휴 혜택을 함께 활용해 취향에 맞는 겨울 여행을 계획하길 바란다고 전했습니다."
+   ],
+   "link": "https://cafe.naver.com/japanpackagetour/13921",
+   "source": "네이버 카페 · 일본 패키지여행 카페 (북해도,도쿄,오사카,후쿠오카,요나고)",
+   "date": "2026-11-21T23:00:42.191Z",
+   "found": "2026-11-22",
+   "cards": [],
+   "airlines": [],
+   "countries": [
+    "일본"
+   ],
+   "allRoutes": false,
+   "routes": [],
+   "price": null,
+   "query": "항공권 할인코드",
+   "ai": {
+    "v": 2,
+    "promo": true,
+    "why": "항공사 할인코드 프로모션",
+    "airlines": [
+     "트리니티항공"
+    ],
+    "name": "일본 겨울 프로모션",
+    "book": null,
+    "board": null,
+    "price": null,
+    "trip": null,
+    "pct": 25,
+    "seoul": null,
+    "at": "2026-11-22",
+    "model": "deepseek-v4-flash"
+   },
+   "lastDate": "2026-11-21T23:00:42.191Z",
+   "lastFound": "2026-11-22"
+  },
+  {
    "id": "RFltSGFXblA3NUQ1allsV01nbk04V3dibGo3YldkTVFyQXB4b1lDUW9UY1pWTTkwSmVza0dvWVRKWWppWmpfQzZGSUFaQi1hdTk5TjlxOXowMmFpblUxM3hv|트리니티항공 블랙프라이데이, 국제선 최대 4만원 쿠폰…11월 30일까지",
    "kind": "airline",
    "title": "트리니티항공 블랙프라이데이, 국제선 최대 4만원 쿠폰…11월 30일까지",
@@ -50396,137 +50438,26 @@
      }
     }
    ]
-  },
-  {
-   "id": "http://www.breaknews.com/1245729|홍콩 익스프레스항공, 창립 13주년 특가 항공권 프로모션",
-   "kind": "airline",
-   "title": "홍콩 익스프레스항공, 창립 13주년 특가 항공권 프로모션",
-   "desc": "홍콩 익스프레스항공이 창립 13주년을 맞아 '13주년 초 특가 프로모션'을 진행한다고... 단독 편도 항공권 에는 프로모션 운임이 적용되지 않는다. 자넷 마오(Jeanette Mao)...",
-   "summary": [
-    "홍콩 익스프레스항공이 창립 13주년을 맞아 '13주년 초 특가 프로모션'을 진행한다고...",
-    "단독 편도 항공권 에는 프로모션 운임이 적용되지 않는다.",
-    "자넷 마오(Jeanette Mao)…"
-   ],
-   "link": "http://www.breaknews.com/1245729",
-   "source": "네이버 뉴스",
-   "date": "2026-10-26T06:42:00.000Z",
-   "found": "2026-11-03",
-   "cards": [],
-   "airlines": [],
-   "countries": [
-    "홍콩"
-   ],
-   "allRoutes": false,
-   "routes": [],
-   "price": {
-    "amount": 110000,
-    "trip": "oneway?"
-   },
-   "query": "홍콩 항공권 특가",
-   "bodyAt": "2026-11-03",
-   "body": [
-    "홍콩익스프레스항공이 창립 13주년을 맞아 '13주년 초특가 프로모션'을 진행한다고 26일 밝혔다.",
-    "한국 노선은 서울(인천), 부산, 제주, 대구 노선 모두 편도 총액 기준 '라이트(Lite)' 운임이 11만3000원부터, 소형 개인 소지품 1개와 20kg 위탁수하물 1개가 포함된 '에센셜(Essential)' 운임이 13만500원부터다.",
-    "예약은 26일 오전 11시부터 31일 0시45분까지 홍콩익스프레스 공식 프로모션 웹페이지에서 할 수 있다.",
-    "탑승 기간은 2027년 1월 3일부터 2028년 3월 27일까지로 취항지에 따라 다르다.",
-    "좌석은 한정돼 있으며, 표기된 편도 운임은 한국 출발 왕복 또는 다구간 여정을 처음 예약하는 경우에 적용된다."
-   ],
-   "ai": {
-    "v": 2,
-    "promo": true,
-    "why": "항공사 창립기념 특가 운임",
-    "airlines": [
-     "홍콩익스프레스항공"
-    ],
-    "name": "13주년 초특가 프로모션",
-    "book": {
-     "from": "2026-10-26",
-     "to": "2026-10-31"
-    },
-    "board": {
-     "from": "2027-01-03",
-     "to": null
-    },
-    "price": 113000,
-    "trip": "편도",
-    "pct": null,
-    "seoul": true,
-    "at": "2026-11-12",
-    "model": "deepseek-v4-flash"
-   },
-   "lastDate": "2026-10-27T23:38:00.000Z",
-   "lastFound": "2026-11-03",
-   "more": [
-    {
-     "id": "https://www.tournews21.com/news/articleView.html|\" 홍콩 항공권 11만3000원부터\"… 홍콩 익스프레스, 창립 13주년 ",
-     "kind": "airline",
-     "title": "\" 홍콩 항공권 11만3000원부터\"… 홍콩 익스프레스, 창립 13주년 초 특가 쏜...",
-     "desc": "이번 창립 13주년 특가 항공권 은 홍콩 익스프레스 공식 예약 채널에서 구매할 수 있다. 자넷 마오(Jeanette Mao) 홍콩 익스프레스 최고경영자(CEO)는 \" 홍콩 익스프레스는 아시아 전역으로 네트워크를 넓히며 여행객들에게...",
-     "summary": [
-      "이번 창립 13주년 특가 항공권 은 홍콩 익스프레스 공식 예약 채널에서 구매할 수 있다.",
-      "자넷 마오(Jeanette Mao) 홍콩 익스프레스 최고경영자(CEO)는 \" 홍콩 익스프레스는 아시아 전역으로 네트워크를 넓히며 여행객들에게…"
-     ],
-     "link": "https://www.tournews21.com/news/articleView.html?idxno=146840",
-     "source": "네이버 뉴스",
-     "date": "2026-10-27T23:38:00.000Z",
-     "found": "2026-11-03",
-     "cards": [],
-     "airlines": [],
-     "countries": [
-      "홍콩"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": {
-      "amount": 113000,
-      "trip": "oneway?"
-     },
-     "query": "홍콩 항공권 특가",
-     "bodyAt": "2026-11-03",
-     "body": [
-      "이번 창립 13주년 특가 항공권은 홍콩익스프레스 공식 예약 채널에서 구매할 수 있다.",
-      "이어 “2026년 ‘세계 최고의 저비용항공사’와 ‘세계에서 가장 안전한 저비용항공사’로 선정된 것은 임직원의 노력과 고객의 신뢰가 있었기에 가능했다”며 “앞으로도 고객들이 브랜드 슬로건인 ‘Gotta Go Your Way’처럼 자신만의 방식으로 자유롭게 여행할 수 있도록 지원하겠다”고 덧붙였다.",
-      "한편, 홍콩익스프레스는 홍콩을 기반으로 운항하는 저비용항공사(LCC)로, 지난 13년간 아시아 주요 도시와 신흥 관광지로 노선망을 확대해 왔다."
-     ],
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "창립기념 항공권 특가",
-      "airlines": [
-       "홍콩익스프레스"
-      ],
-      "name": "창립 13주년 초 특가",
-      "book": null,
-      "board": null,
-      "price": 113000,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    }
-   ]
   }
  ],
- "updated": "2026-11-21T21:00:40.139Z",
- "runs": 261,
+ "updated": "2026-11-21T23:00:42.191Z",
+ "runs": 262,
  "checked": {
-  "베트남": "2026-11-21T21:00:40.139Z",
-  "태국": "2026-11-21T21:00:40.139Z",
-  "필리핀": "2026-11-21T21:00:40.139Z",
-  "인도네시아": "2026-11-21T21:00:40.139Z",
-  "말레이시아": "2026-11-21T21:00:40.139Z",
-  "싱가포르": "2026-11-21T21:00:40.139Z",
-  "일본": "2026-11-21T21:00:40.139Z",
-  "대만": "2026-11-21T21:00:40.139Z",
-  "홍콩": "2026-11-21T21:00:40.139Z",
-  "마카오": "2026-11-21T21:00:40.139Z",
-  "중국": "2026-11-21T21:00:40.139Z",
-  "미국령": "2026-11-21T21:00:40.139Z",
-  "미국": "2026-11-21T21:00:40.139Z"
+  "베트남": "2026-11-21T23:00:42.191Z",
+  "태국": "2026-11-21T23:00:42.191Z",
+  "필리핀": "2026-11-21T23:00:42.191Z",
+  "인도네시아": "2026-11-21T23:00:42.191Z",
+  "말레이시아": "2026-11-21T23:00:42.191Z",
+  "싱가포르": "2026-11-21T23:00:42.191Z",
+  "일본": "2026-11-21T23:00:42.191Z",
+  "대만": "2026-11-21T23:00:42.191Z",
+  "홍콩": "2026-11-21T23:00:42.191Z",
+  "마카오": "2026-11-21T23:00:42.191Z",
+  "중국": "2026-11-21T23:00:42.191Z",
+  "미국령": "2026-11-21T23:00:42.191Z",
+  "미국": "2026-11-21T23:00:42.191Z"
  },
- "auto": "2026-11-21T21:00:40.139Z",
+ "auto": "2026-11-21T23:00:42.191Z",
  "sources": {
   "7C": "2026-11-01",
   "TW": "2026-11-01",
@@ -50739,43 +50670,6 @@
    "중국동방항공 얼리버드": "2026-11-04"
   },
   "seen": [
-   "yurieserver/121390",
-   "gamesbs/665",
-   "start336655/608",
-   "noonebungee/136973",
-   "noonebungee/136972",
-   "noonebungee/136971",
-   "noonebungee/136970",
-   "noonebungee/136969",
-   "start336655/607",
-   "noonebungee/136968",
-   "noonebungee/136967",
-   "walkwalk/49140",
-   "smartravelapp/1289",
-   "xiaohongshulab/6141",
-   "loyaltylife/369703",
-   "activeseniornewlife/658",
-   "worrytodream/999517",
-   "lnf/416788",
-   "worrytodream/999514",
-   "worldtravelcafe/1167458",
-   "worrytodream/999506",
-   "worrytodream/999503",
-   "worrytodream/999489",
-   "soulnet77/146",
-   "worrytodream/999487",
-   "worrytodream/999486",
-   "worrytodream/999481",
-   "worrytodream/999468",
-   "worrytodream/999464",
-   "worrytodream/999432",
-   "mindy7857/5516808",
-   "dgmom365/7443296",
-   "costco12/799421",
-   "imsanbu/80543520",
-   "dondondondon/347970",
-   "feko/11322815",
-   "dngd/38967",
    "worrytodream/999420",
    "010freebaram/262178",
    "mindy7857/5535199",
@@ -56738,7 +56632,44 @@
    "posudotcom/119937",
    "travelwithkids/289315",
    "williamzzang/84335",
-   "smartravelapp/674"
+   "smartravelapp/674",
+   "youfactory12/4676",
+   "stickcommuity/3673",
+   "youfactory12/4673",
+   "japanpackagetour/13921",
+   "beautycool/459008",
+   "youfactory12/4664",
+   "dentalsolution2/37471",
+   "dentalsolution2/37468",
+   "mindy7857/5544367",
+   "happyibook/6362756",
+   "loyaltylife/371078",
+   "mindy7857/5544356",
+   "mindy7857/5544358",
+   "010freebaram/265018",
+   "010freebaram/265016",
+   "lifemarket002/637",
+   "jejutip/2683725",
+   "maplestorytbd/8672",
+   "drawhangil/26367",
+   "tlsxh/4279308",
+   "joonggonara/1138518557",
+   "joonggonara/1138518539",
+   "mindy7857/5544389",
+   "minecraftpe/4020905",
+   "worrytodream/1038820",
+   "minecraftpe/4017413",
+   "hawaiiphoto/1617625",
+   "dfan/31141",
+   "uworldexam/586563",
+   "sheiszzz/1235501",
+   "cafemakecafebest/104042",
+   "mindy7857/5544357",
+   "manijuicy/57292",
+   "yamipapa/8888",
+   "010freebaram/265020",
+   "gocan/1005670",
+   "cafemakecafebest/104040"
   ],
   "since": "2026-11-03",
   "imported": "2026-11-03"
