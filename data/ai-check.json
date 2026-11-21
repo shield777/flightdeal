@@ -1,6 +1,84 @@
 [
  {
   "at": "2026-11-21",
+  "title": "놀유니버스 NOL, 일본 오카야마 여행 기획전… 항공권 최대 5만원 할인",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "대한항공 오카야마 항공권 할인 기획전",
+   "airlines": [
+    "대한항공"
+   ],
+   "name": "오카야마 여행 기획전",
+   "book": {
+    "from": null,
+    "to": "2026-12-09"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-03-10"
+   },
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": true,
+   "at": "2026-11-21",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": null,
+    "to": "2026-12-09"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-03-10"
+   },
+   "pct": 6,
+   "price": null
+  },
+  "diff": [
+   "할인율 규칙 6 / AI -"
+  ]
+ },
+ {
+  "at": "2026-11-21",
+  "title": "'파란여행'■ [특가항공권] ■ 최저가 보장 ■ 토론토-인천 왕복/편도 항공권 ■ 에어캐나다 세일 오늘까지! ■ 실시간 세일소식 ▶카카오톡: 파",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "에어캐나다 한국행 특가 세일",
+   "airlines": [
+    "에어캐나다"
+   ],
+   "name": "에어캐나다 깜짝세일",
+   "book": {
+    "from": null,
+    "to": "2026-11-15"
+   },
+   "board": null,
+   "price": null,
+   "trip": "왕복",
+   "pct": null,
+   "seoul": true,
+   "at": "2026-11-21",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": null,
+    "to": "2026-11-15"
+   },
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-21",
   "title": "트리니티항공 , 11월 말까지 간편결제 제휴 프로모션 운영… 탑승 기간 ...",
   "community": false,
   "ai": {
@@ -10306,63 +10384,5 @@
    "price": null
   },
   "diff": []
- },
- {
-  "at": "2026-11-14",
-  "title": "KB국민카드 \"연말연시 항공권·숙박 할인 받아가세요\"",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "카드 결제 시 항공권 할인",
-   "airlines": [
-    "에어캐나다"
-   ],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-14",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-14",
-  "title": "제주항공 이벤트 중 노브랜드 버거로 체크인",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "항공사 이름만 빌린 버거 이벤트",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-14",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님"
-  ]
  }
 ]
