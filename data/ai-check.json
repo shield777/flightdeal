@@ -1,6 +1,35 @@
 [
  {
   "at": "2026-11-21",
+  "title": "트리니티항공 11월~1월 출발 한정 국제선 25% 할인 프로모션",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "항공사 국제선 운임 할인 프로모션",
+   "airlines": [
+    "트리니티항공"
+   ],
+   "name": "11월~1월 출발 한정 국제선 25% 할인 프로모션",
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": 25,
+   "seoul": null,
+   "at": "2026-11-21",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": 25,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-21",
   "title": "2027 수능 끝났다면 수험표 버리지 마세요｜영화관 7천원·항공권 최대 25%·외식 1만3900원·미용실 50% 할인 총정리",
   "community": false,
   "ai": {
@@ -10385,37 +10414,5 @@
    "AI: 특가 아님",
    "예약 마감 규칙 2027-08-01 / AI -"
   ]
- },
- {
-  "at": "2026-11-15",
-  "title": "에어로케이 블프 특가 진행한데요.",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "에어로케이 블프 항공권 특가",
-   "airlines": [
-    "에어로케이"
-   ],
-   "name": "블프 특가",
-   "book": {
-    "from": "2026-11-16",
-    "to": null
-   },
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-15",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": []
  }
 ]

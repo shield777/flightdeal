@@ -1,6 +1,214 @@
 {
  "items": [
   {
+   "id": "c:https://cafe.naver.com/romul/328344|[공유] 트리니티항공 , 수능 프로모션…국제선 최대 20% 할인",
+   "kind": "airline",
+   "community": true,
+   "title": "[공유] 트리니티항공 , 수능 프로모션…국제선 최대 20% 할인",
+   "desc": "",
+   "link": "https://cafe.naver.com/romul/328344",
+   "source": "네이버 카페 · 로물콘 -로미오&물량공급 입시콘서트",
+   "date": "2026-11-12T07:00:43.078Z",
+   "found": "2026-11-12",
+   "cards": [],
+   "airlines": [
+    "TW"
+   ],
+   "countries": [
+    "인도네시아",
+    "싱가포르"
+   ],
+   "allRoutes": true,
+   "routes": [],
+   "price": null,
+   "query": "트리니티항공 할인",
+   "ai": {
+    "v": 2,
+    "promo": true,
+    "why": "항공사 국제선 할인 프로모션",
+    "airlines": [
+     "트리니티항공"
+    ],
+    "name": "수능 프로모션",
+    "book": null,
+    "board": null,
+    "price": null,
+    "trip": null,
+    "pct": 20,
+    "seoul": null,
+    "at": "2026-11-12",
+    "model": "deepseek-v4-flash"
+   },
+   "lastDate": "2026-11-21T13:00:45.687Z",
+   "lastFound": "2026-11-21",
+   "more": [
+    {
+     "id": "c:https://cafe.naver.com/20daelee/953279|✈️ 트리니티항공 , 2026 블랙 프라이데이 할인프로모션 (~11/30",
+     "kind": "airline",
+     "community": true,
+     "title": "✈️ 트리니티항공 , 2026 블랙 프라이데이 할인프로모션 (~11/30)",
+     "desc": "",
+     "link": "https://cafe.naver.com/20daelee/953279",
+     "source": "네이버 카페 · 체크인데이#일본여행,도쿄여행,후쿠오카여행,오사카,교토,삿포로",
+     "date": "2026-11-16T07:00:47.444Z",
+     "found": "2026-11-16",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "트리니티항공 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "항공사 블랙프라이데이 특가 프로모션",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "2026 블랙 프라이데이 할인프로모션",
+      "book": {
+       "from": null,
+       "to": "2026-11-30"
+      },
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-16",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/bebettergirls/2103758|트리니티항공 블랙프라이데이 항공 권 할인 특가 (~11/30)",
+     "kind": "airline",
+     "community": true,
+     "title": "트리니티항공 블랙프라이데이 항공 권 할인 특가 (~11/30)",
+     "desc": "[ 항공 권프로모션] 트리니티항공 블랙프라이데이 할인 특가 (~11/30) 트리니티항공 프로모션에 발리는 없지만, 싱가포르 노선은 할인에 포함되어 있습니다. ➡프로모션기간 : 26.11.16 - 26.",
+     "summary": [
+      "[ 항공 권프로모션] 트리니티항공 블랙프라이데이 할인 특가 (~11/30) 트리니티항공 프로모션에 발리는 없지만, 싱가포르 노선은 할인에 포함되어 있습니다.",
+      "➡프로모션기간 : 26.11.16 - 26."
+     ],
+     "link": "https://cafe.naver.com/bebettergirls/2103758",
+     "source": "네이버 카페 · 체크인발리&싱가포르#발리여행,싱가폴여행,인도네시아여행 카페",
+     "date": "2026-11-16T07:00:47.444Z",
+     "found": "2026-11-16",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [
+      "인도네시아",
+      "싱가포르"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "트리니티항공 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "항공사 블랙프라이데이 항공권 할인 특가",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "블랙프라이데이 할인 특가",
+      "book": {
+       "from": "2026-11-16",
+       "to": "2026-11-30"
+      },
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-16",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/airportshopping/1138|[ 트리니티항공 ] 2027년 수능 수험생 최대 25% 할인",
+     "kind": "airline",
+     "community": true,
+     "title": "[ 트리니티항공 ] 2027년 수능 수험생 최대 25% 할인",
+     "desc": "▼자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
+     "summary": [
+      "▼자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
+     ],
+     "link": "https://cafe.naver.com/airportshopping/1138",
+     "source": "네이버 카페 · 인천공항의 모든 것",
+     "date": "2026-11-17T05:00:43.473Z",
+     "found": "2026-11-17",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "트리니티항공 할인",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "수험생 항공권 운임 할인",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "2027년 수능 수험생 할인",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": 25,
+      "seoul": null,
+      "at": "2026-11-17",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/travelacademy/1487|트리니티항공 11월~1월 출발 한정 국제선 25% 할인 프로모션",
+     "kind": "airline",
+     "community": true,
+     "title": "트리니티항공 11월~1월 출발 한정 국제선 25% 할인 프로모션",
+     "desc": "",
+     "link": "https://cafe.naver.com/travelacademy/1487",
+     "source": "네이버 카페 · 캐나다 여행",
+     "date": "2026-11-21T13:00:45.687Z",
+     "found": "2026-11-21",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "트리니티항공 할인",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "항공사 국제선 운임 할인 프로모션",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "11월~1월 출발 한정 국제선 25% 할인 프로모션",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": 25,
+      "seoul": null,
+      "at": "2026-11-21",
+      "model": "deepseek-v4-flash"
+     }
+    }
+   ]
+  },
+  {
    "id": "c:https://cafe.naver.com/grownman/1186741|(정보)진에어 블랙프라이데이! | JIN(진)짜 혜택이 이륙한다",
    "kind": "airline",
    "community": true,
@@ -22010,177 +22218,6 @@
    },
    "lastDate": "2026-11-17T06:46:00.000Z",
    "lastFound": "2026-11-17"
-  },
-  {
-   "id": "c:https://cafe.naver.com/romul/328344|[공유] 트리니티항공 , 수능 프로모션…국제선 최대 20% 할인",
-   "kind": "airline",
-   "community": true,
-   "title": "[공유] 트리니티항공 , 수능 프로모션…국제선 최대 20% 할인",
-   "desc": "",
-   "link": "https://cafe.naver.com/romul/328344",
-   "source": "네이버 카페 · 로물콘 -로미오&물량공급 입시콘서트",
-   "date": "2026-11-12T07:00:43.078Z",
-   "found": "2026-11-12",
-   "cards": [],
-   "airlines": [
-    "TW"
-   ],
-   "countries": [
-    "인도네시아",
-    "싱가포르"
-   ],
-   "allRoutes": true,
-   "routes": [],
-   "price": null,
-   "query": "트리니티항공 할인",
-   "ai": {
-    "v": 2,
-    "promo": true,
-    "why": "항공사 국제선 할인 프로모션",
-    "airlines": [
-     "트리니티항공"
-    ],
-    "name": "수능 프로모션",
-    "book": null,
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": 20,
-    "seoul": null,
-    "at": "2026-11-12",
-    "model": "deepseek-v4-flash"
-   },
-   "lastDate": "2026-11-17T05:00:43.473Z",
-   "lastFound": "2026-11-17",
-   "more": [
-    {
-     "id": "c:https://cafe.naver.com/20daelee/953279|✈️ 트리니티항공 , 2026 블랙 프라이데이 할인프로모션 (~11/30",
-     "kind": "airline",
-     "community": true,
-     "title": "✈️ 트리니티항공 , 2026 블랙 프라이데이 할인프로모션 (~11/30)",
-     "desc": "",
-     "link": "https://cafe.naver.com/20daelee/953279",
-     "source": "네이버 카페 · 체크인데이#일본여행,도쿄여행,후쿠오카여행,오사카,교토,삿포로",
-     "date": "2026-11-16T07:00:47.444Z",
-     "found": "2026-11-16",
-     "cards": [],
-     "airlines": [
-      "TW"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "트리니티항공 특가",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "항공사 블랙프라이데이 특가 프로모션",
-      "airlines": [
-       "트리니티항공"
-      ],
-      "name": "2026 블랙 프라이데이 할인프로모션",
-      "book": {
-       "from": null,
-       "to": "2026-11-30"
-      },
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-16",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/bebettergirls/2103758|트리니티항공 블랙프라이데이 항공 권 할인 특가 (~11/30)",
-     "kind": "airline",
-     "community": true,
-     "title": "트리니티항공 블랙프라이데이 항공 권 할인 특가 (~11/30)",
-     "desc": "[ 항공 권프로모션] 트리니티항공 블랙프라이데이 할인 특가 (~11/30) 트리니티항공 프로모션에 발리는 없지만, 싱가포르 노선은 할인에 포함되어 있습니다. ➡프로모션기간 : 26.11.16 - 26.",
-     "summary": [
-      "[ 항공 권프로모션] 트리니티항공 블랙프라이데이 할인 특가 (~11/30) 트리니티항공 프로모션에 발리는 없지만, 싱가포르 노선은 할인에 포함되어 있습니다.",
-      "➡프로모션기간 : 26.11.16 - 26."
-     ],
-     "link": "https://cafe.naver.com/bebettergirls/2103758",
-     "source": "네이버 카페 · 체크인발리&싱가포르#발리여행,싱가폴여행,인도네시아여행 카페",
-     "date": "2026-11-16T07:00:47.444Z",
-     "found": "2026-11-16",
-     "cards": [],
-     "airlines": [
-      "TW"
-     ],
-     "countries": [
-      "인도네시아",
-      "싱가포르"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "트리니티항공 특가",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "항공사 블랙프라이데이 항공권 할인 특가",
-      "airlines": [
-       "트리니티항공"
-      ],
-      "name": "블랙프라이데이 할인 특가",
-      "book": {
-       "from": "2026-11-16",
-       "to": "2026-11-30"
-      },
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-16",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/airportshopping/1138|[ 트리니티항공 ] 2027년 수능 수험생 최대 25% 할인",
-     "kind": "airline",
-     "community": true,
-     "title": "[ 트리니티항공 ] 2027년 수능 수험생 최대 25% 할인",
-     "desc": "▼자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
-     "summary": [
-      "▼자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
-     ],
-     "link": "https://cafe.naver.com/airportshopping/1138",
-     "source": "네이버 카페 · 인천공항의 모든 것",
-     "date": "2026-11-17T05:00:43.473Z",
-     "found": "2026-11-17",
-     "cards": [],
-     "airlines": [
-      "TW"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "트리니티항공 할인",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "수험생 항공권 운임 할인",
-      "airlines": [
-       "트리니티항공"
-      ],
-      "name": "2027년 수능 수험생 할인",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": 25,
-      "seoul": null,
-      "at": "2026-11-17",
-      "model": "deepseek-v4-flash"
-     }
-    }
-   ]
   },
   {
    "id": "c:https://cafe.naver.com/pawpals/534|파라타 항공 LA 항공권 2027년 5월 취항 일정과 특가 예매",
@@ -50430,24 +50467,24 @@
    ]
   }
  ],
- "updated": "2026-11-21T11:00:40.885Z",
- "runs": 258,
+ "updated": "2026-11-21T13:00:45.687Z",
+ "runs": 259,
  "checked": {
-  "베트남": "2026-11-21T11:00:40.885Z",
-  "태국": "2026-11-21T11:00:40.885Z",
-  "필리핀": "2026-11-21T11:00:40.885Z",
-  "인도네시아": "2026-11-21T11:00:40.885Z",
-  "말레이시아": "2026-11-21T11:00:40.885Z",
-  "싱가포르": "2026-11-21T11:00:40.885Z",
-  "일본": "2026-11-21T11:00:40.885Z",
-  "대만": "2026-11-21T11:00:40.885Z",
-  "홍콩": "2026-11-21T11:00:40.885Z",
-  "마카오": "2026-11-21T11:00:40.885Z",
-  "중국": "2026-11-21T11:00:40.885Z",
-  "미국령": "2026-11-21T11:00:40.885Z",
-  "미국": "2026-11-21T11:00:40.885Z"
+  "베트남": "2026-11-21T13:00:45.687Z",
+  "태국": "2026-11-21T13:00:45.687Z",
+  "필리핀": "2026-11-21T13:00:45.687Z",
+  "인도네시아": "2026-11-21T13:00:45.687Z",
+  "말레이시아": "2026-11-21T13:00:45.687Z",
+  "싱가포르": "2026-11-21T13:00:45.687Z",
+  "일본": "2026-11-21T13:00:45.687Z",
+  "대만": "2026-11-21T13:00:45.687Z",
+  "홍콩": "2026-11-21T13:00:45.687Z",
+  "마카오": "2026-11-21T13:00:45.687Z",
+  "중국": "2026-11-21T13:00:45.687Z",
+  "미국령": "2026-11-21T13:00:45.687Z",
+  "미국": "2026-11-21T13:00:45.687Z"
  },
- "auto": "2026-11-21T11:00:40.885Z",
+ "auto": "2026-11-21T13:00:45.687Z",
  "sources": {
   "7C": "2026-11-01",
   "TW": "2026-11-01",
@@ -50660,74 +50697,6 @@
    "중국동방항공 얼리버드": "2026-11-04"
   },
   "seen": [
-   "thaiinfo/681143",
-   "worldtravelcafe/1167374",
-   "mindy7857/5535136",
-   "mindy7857/5535135",
-   "happyibook/6356951",
-   "happyibook/6356945",
-   "warcraftgamemap/3536252",
-   "ysm5828/9649856",
-   "vinpearl/570504",
-   "happyibook/6356910",
-   "happyibook/6356908",
-   "happyibook/6356902",
-   "happyibook/6356898",
-   "cebu100x/1781792",
-   "vinpearl/570475",
-   "warcraftgamemap/3536204",
-   "happyibook/6356836",
-   "guitarnsong/298359",
-   "happyibook/6356888",
-   "happyibook/6356818",
-   "minecraftpe/4017281",
-   "vinpearl/570461",
-   "happyibook/6356796",
-   "vinpearl/570456",
-   "warcraftgamemap/3536237",
-   "taesarang/895299",
-   "goodinfo53/1447",
-   "vamoms/174186",
-   "hawaiiphoto/1609848",
-   "pachi7/5336",
-   "jpnstory/4445506",
-   "thaohong/148623",
-   "thaiinfo/681123",
-   "sheiszzz/1235130",
-   "sheiszzz/1235100",
-   "ledflashlights/496220",
-   "lnf/416423",
-   "worrytodream/998590",
-   "trrader/119865",
-   "lotocha/292",
-   "worrytodream/998793",
-   "worrytodream/998766",
-   "lnf/416467",
-   "2266734/135207",
-   "worrytodream/998696",
-   "worrytodream/998559",
-   "worrytodream/998726",
-   "worrytodream/998706",
-   "worrytodream/998565",
-   "forcebu/123120",
-   "modeljoonss/5343",
-   "skyblueywr0q/3692",
-   "cebuboracay/313206",
-   "jpnstory/4445565",
-   "airplanetiket/1361",
-   "010freebaram/262077",
-   "ilovegm1/2655764",
-   "ghktnsaka/164817",
-   "cge80/1253644",
-   "kig/19695465",
-   "makemywedding/681637",
-   "true8/4027243",
-   "ilovephuquoc/111080",
-   "blackdkdul/122",
-   "glove/8895305",
-   "noonebungee/136966",
-   "noonebungee/136965",
-   "noonebungee/136964",
    "start336655/606",
    "hifikorea/184065",
    "ssrenglish/485",
@@ -56659,7 +56628,75 @@
    "engvirus/157945",
    "01071599343/60721",
    "socalclub/2848",
-   "tnsuhak/102536"
+   "tnsuhak/102536",
+   "worldtravelcafe/1168970",
+   "sumonnerdeokoo/121812",
+   "worldtravelcafe/1168965",
+   "worrytodream/1035585",
+   "worrytodream/1035574",
+   "happyibook/6362552",
+   "leander/3725",
+   "worldtravelcafe/1168960",
+   "worrytodream/1035470",
+   "worrytodream/1035458",
+   "dngd/49434",
+   "mindy7857/5543986",
+   "mindy7857/5543953",
+   "jejutip/2683688",
+   "travelacademy/1487",
+   "holicsonline/32667",
+   "iwibronetbook/213928",
+   "010freebaram/264895",
+   "joonggonara/1138507792",
+   "010freebaram/264885",
+   "joonggonara/1138506243",
+   "coed2/3510751",
+   "loyaltylife/371044",
+   "jpnstory/4450946",
+   "uouv96/117874",
+   "loyaltylife/371037",
+   "posudotcom/120692",
+   "golfpgr/665",
+   "worldtravelcafe/1168958",
+   "jejutip/2683686",
+   "jpnstory/4450985",
+   "mindy7857/5543969",
+   "mindy7857/5543943",
+   "mindy7857/5543938",
+   "warcraftgamemap/3540956",
+   "vinpearl/573063",
+   "zzop/4352978",
+   "happyibook/6362565",
+   "warcraftgamemap/3540940",
+   "warcraftgamemap/3540919",
+   "minecraftpe/4020779",
+   "vinpearl/573039",
+   "happyibook/6362585",
+   "warcraftgamemap/3540963",
+   "yesboracay/73546",
+   "taiwantour/1160748",
+   "realturkey/56593",
+   "loyaltylife/370930",
+   "eom5816/83940",
+   "yamipapa/9426",
+   "funnyfunnyjapan/13969",
+   "postmore/109508",
+   "cebu100x/1782754",
+   "loveloveloveovelove/1043936",
+   "macaunoblesse/246684",
+   "taesarang/896827",
+   "miznett/5165003",
+   "costco12/801176",
+   "joonggonara/1138507801",
+   "joonggonara/1138506594",
+   "loveloveloveovelove/1043937",
+   "b00k2012/1716936",
+   "bubi2/48624",
+   "loyaltylife/371038",
+   "worrytodream/1035302",
+   "worrytodream/1035293",
+   "20250413/413",
+   "feelchina/10682"
   ],
   "since": "2026-11-03",
   "imported": "2026-11-03"
