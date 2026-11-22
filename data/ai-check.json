@@ -1,6 +1,117 @@
 [
  {
   "at": "2026-11-22",
+  "title": "✈️ 제주 항공 3월탑승 특가",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "제주항공 3월 탑승 특가 공유",
+   "airlines": [
+    "제주항공"
+   ],
+   "name": "3월탑승 특가",
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-22",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-22",
+  "title": "트리니티항공 , '11월~1월 출발 한정 국제선 할인 프로모션 '…30일까지 국...",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "항공사 국제선 할인 코드 프로모션",
+   "airlines": [
+    "트리니티항공"
+   ],
+   "name": "11월~1월 출발 한정 국제선 할인 프로모션",
+   "book": {
+    "from": null,
+    "to": "2026-11-30"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-01-31"
+   },
+   "price": null,
+   "trip": null,
+   "pct": 25,
+   "seoul": null,
+   "at": "2026-11-22",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": null,
+    "to": "2026-11-30"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-01-31"
+   },
+   "pct": 25,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-22",
+  "title": "트리니티항공, ‘11월~1월 출발 한정 국제선 할인 프로모션’…30일까지 국제선 최대 25% 할인 등",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "항공사 국제선 할인 코드 프로모션",
+   "airlines": [
+    "트리니티항공"
+   ],
+   "name": "11월~1월 출발 한정 국제선 할인 프로모션",
+   "book": {
+    "from": null,
+    "to": "2026-11-30"
+   },
+   "board": {
+    "from": "2026-11-01",
+    "to": "2027-01-31"
+   },
+   "price": null,
+   "trip": null,
+   "pct": 25,
+   "seoul": null,
+   "at": "2026-11-22",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": null,
+    "to": "2026-11-30"
+   },
+   "board": {
+    "from": "2026-11-01",
+    "to": "2027-01-31"
+   },
+   "pct": 25,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-22",
   "title": "중국남방항공 팔로우 이벤트",
   "community": true,
   "ai": {
@@ -10332,112 +10443,6 @@
   },
   "diff": [
    "가격 규칙 1000000 / AI -"
-  ]
- },
- {
-  "at": "2026-11-16",
-  "title": "이스타항공, 수능 수험생에 항공권 할인…국제선 최대 10%",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "이스타항공 수험생 항공권 할인 프로모션",
-   "airlines": [
-    "이스타항공"
-   ],
-   "name": "수험생 할인 프로모션",
-   "book": {
-    "from": "2026-11-19",
-    "to": "2026-12-31"
-   },
-   "board": {
-    "from": "2026-11-19",
-    "to": "2027-03-27"
-   },
-   "price": null,
-   "trip": null,
-   "pct": 10,
-   "seoul": null,
-   "at": "2026-11-16",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": "2026-11-19",
-    "to": "2026-12-31"
-   },
-   "board": {
-    "from": "2026-11-19",
-    "to": "2027-03-27"
-   },
-   "pct": 10,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-16",
-  "title": "모두투어, 동계 성수기 및 내년 연휴 겨냥 통합 여행 기획전 운영",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "여행사 패키지·자유여행 기획전",
-   "airlines": [],
-   "name": "2026 메가세일",
-   "book": {
-    "from": "2026-11-16",
-    "to": "2026-12-24"
-   },
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-16",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": "2026-11-16",
-    "to": "2026-11-24"
-   },
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님",
-   "예약 마감 규칙 2026-11-24 / AI 2026-12-24"
-  ]
- },
- {
-  "at": "2026-11-16",
-  "title": "KB국민카드 연말연시 항공권·숙박 할인 받아가세요",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "카드사 호텔·여행 혜택 중심",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-16",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님"
   ]
  }
 ]
