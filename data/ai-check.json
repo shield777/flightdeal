@@ -1,6 +1,64 @@
 [
  {
   "at": "2026-11-22",
+  "title": "✈️ 대한 항공 전 세계 여행 특가 라이브!",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "대한항공 전 세계 특가 프로모션",
+   "airlines": [
+    "대한항공"
+   ],
+   "name": "전 세계 여행 특가 라이브",
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-22",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-22",
+  "title": "트리니티항공 , 네이버페이 결제 보너스 프로모션 진행",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "네이버페이 결제 할인 프로모션",
+   "airlines": [
+    "트리니티항공"
+   ],
+   "name": "네이버페이 결제 보너스 프로모션",
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": 20,
+   "seoul": null,
+   "at": "2026-11-22",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": 20,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-22",
   "title": "✈️ 제주 항공 3월탑승 특가",
   "community": true,
   "ai": {
@@ -10372,77 +10430,5 @@
    "price": null
   },
   "diff": []
- },
- {
-  "at": "2026-11-16",
-  "title": "[게시판] 이스타항공, 수능 수험생 대상 항공권 최대 25% 할인",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "이스타항공 수험생 항공권 할인 프로모션",
-   "airlines": [
-    "이스타항공"
-   ],
-   "name": "수능 수험생 항공권 할인",
-   "book": {
-    "from": null,
-    "to": "2026-12-31"
-   },
-   "board": {
-    "from": null,
-    "to": "2027-03-27"
-   },
-   "price": null,
-   "trip": null,
-   "pct": 25,
-   "seoul": null,
-   "at": "2026-11-16",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2026-12-31"
-   },
-   "board": {
-    "from": null,
-    "to": "2027-03-27"
-   },
-   "pct": 25,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-16",
-  "title": "\"오늘 바로 연차 쓰고 일본으로\"…클룩, 직장인 겨냥 이색 이벤트",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "제주항공 일본노선 항공권 할인 판매",
-   "airlines": [
-    "제주항공"
-   ],
-   "name": "긴급연차여행",
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": 67,
-   "seoul": null,
-   "at": "2026-11-16",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": 67,
-   "price": 1000000
-  },
-  "diff": [
-   "가격 규칙 1000000 / AI -"
-  ]
  }
 ]
