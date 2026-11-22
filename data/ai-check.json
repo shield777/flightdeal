@@ -1,6 +1,137 @@
 [
  {
   "at": "2026-11-22",
+  "title": "트립닷컴 대한항공 특가 라이브",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "트립닷컴 대한항공 특가 라이브",
+   "airlines": [
+    "대한항공"
+   ],
+   "name": "트립닷컴 대한항공 특가 라이브",
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-22",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-22",
+  "title": "[항공사 복지 탐방] ㊦ 할인 항공권, 가족만 쓰나요?…LCC들의 차별화된...",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "항공사 임직원 복지 제도 소개 기사",
+   "airlines": [],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-22",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님"
+  ]
+ },
+ {
+  "at": "2026-11-22",
+  "title": "에어아시아 15kg수화물 프로모션 적용",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "수하물 프로모션 적용 문의",
+   "airlines": [
+    "에어아시아"
+   ],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-22",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님"
+  ]
+ },
+ {
+  "at": "2026-11-22",
+  "title": "네이버페이로 항공권 결제하면 포인트 적립…트리니티항공 할인 행사",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "포인트 적립 프로모션, 운임 할인 아님",
+   "airlines": [
+    "트리니티항공"
+   ],
+   "name": "이달의 결제 할인 혜택",
+   "book": {
+    "from": null,
+    "to": "2026-11-30"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-10-30"
+   },
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-22",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": {
+    "from": null,
+    "to": "2027-10-30"
+   },
+   "pct": 20,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님",
+   "예약 마감 규칙 - / AI 2026-11-30",
+   "할인율 규칙 20 / AI -"
+  ]
+ },
+ {
+  "at": "2026-11-22",
   "title": "제주항공 , 대입 수험생·동반 1인 국내선 운임 20% 할인 혜택",
   "community": false,
   "ai": {
@@ -10314,125 +10445,5 @@
   "diff": [
    "예약 마감 규칙 2027-06-08 / AI -"
   ]
- },
- {
-  "at": "2026-11-16",
-  "title": "✈️ 나트랑 특가 프로모션 : 에어로케이",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "에어로케이 항공권 특가 프로모션",
-   "airlines": [
-    "에어로케이"
-   ],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": false,
-   "at": "2026-11-16",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-16",
-  "title": "에어로케이항공, 일본 후지드림항공과 공동 SNS 이벤트 진행",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "SNS 이벤트, 운임 할인 아님",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": false,
-   "at": "2026-11-16",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": "2026-11-06",
-    "to": "2026-11-27"
-   },
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님",
-   "예약 마감 규칙 2026-11-27 / AI -"
-  ]
- },
- {
-  "at": "2026-11-15",
-  "title": "✈️ 다낭 특가 프로모션 : 에어로케이",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "에어로케이 다낭 특가 프로모션",
-   "airlines": [
-    "에어로케이"
-   ],
-   "name": "다낭 특가 프로모션",
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-15",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-15",
-  "title": "홍콩 익스프레스 한국 이용객 백만 돌파, 프로모션 항공권 조건부터 확인할 ....",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "항공사 프로모션 항공권 소식",
-   "airlines": [
-    "홍콩 익스프레스"
-   ],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-15",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": []
  }
 ]

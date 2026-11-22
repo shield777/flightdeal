@@ -1,759 +1,86 @@
 {
  "items": [
   {
-   "id": "c:https://cafe.naver.com/haipong9/3911|비엣젯 항공 11.11 더블데이 0동 특가 ! 하이퐁-인천 직항 포함, ",
+   "id": "c:https://cafe.naver.com/airportshopping/1165|[ 대한항공 ] 고마쓰행 항공 권 10% 할인 쿠폰!",
    "kind": "airline",
    "community": true,
-   "title": "비엣젯 항공 11.11 더블데이 0동 특가 ! 하이퐁-인천 직항 포함, 2027년 5월까지",
-   "desc": "00시) 오픈 되는 특가 좌석을 미리 확인해 보시기 바랍니다. 비엣젯 항공 11월 프로모션 ✈️ 비엣젯 항공 11.11 더블데이 특가 안내 1.",
+   "title": "[ 대한항공 ] 고마쓰행 항공 권 10% 할인 쿠폰!",
+   "desc": "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
    "summary": [
-    "00시) 오픈 되는 특가 좌석을 미리 확인해 보시기 바랍니다.",
-    "비엣젯 항공 11월 프로모션 ✈️ 비엣젯 항공 11.11 더블데이 특가 안내 1."
+    "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
    ],
-   "link": "https://cafe.naver.com/haipong9/3911",
-   "source": "네이버 카페 · 하이퐁 리얼정보",
-   "date": "2026-11-09T03:00:46.835Z",
-   "found": "2026-11-09",
+   "link": "https://cafe.naver.com/airportshopping/1165",
+   "source": "네이버 카페 · 인천공항의 모든 것",
+   "date": "2026-11-20T05:00:43.396Z",
+   "found": "2026-11-20",
    "cards": [],
    "airlines": [
-    "VJ"
+    "KE"
    ],
    "countries": [
-    "베트남"
+    "일본"
    ],
-   "allRoutes": true,
+   "allRoutes": false,
    "routes": [],
    "price": {
-    "amount": 129000,
+    "amount": 50000,
     "trip": "oneway?"
    },
-   "query": "항공권 특가 오픈",
+   "query": "대한항공 할인",
    "ai": {
     "v": 2,
     "promo": true,
-    "why": "비엣젯 11.11 특가 항공권 소식",
+    "why": "항공권 10% 할인 쿠폰",
     "airlines": [
-     "비엣젯"
+     "대한항공"
     ],
-    "name": "11.11 더블데이 특가",
+    "name": null,
     "book": null,
-    "board": {
-     "from": null,
-     "to": "2027-05-31"
-    },
+    "board": null,
     "price": null,
     "trip": null,
-    "pct": null,
-    "seoul": true,
-    "at": "2026-11-12",
+    "pct": 10,
+    "seoul": null,
+    "at": "2026-11-20",
     "model": "deepseek-v4-flash"
    },
-   "lastDate": "2026-11-22T00:43:11.427Z",
+   "notified": "2026-11-20",
+   "lastDate": "2026-11-22T03:00:42.044Z",
    "lastFound": "2026-11-22",
    "more": [
     {
-     "id": "c:https://cafe.naver.com/vinpearl/561674|[선착순] 비엣젯 동계 항공권 34만원 최저가 특가 + 패스트트랙 무료!",
+     "id": "c:https://cafe.naver.com/hotdealcatch/2410|[이벤트] 대한항공 고마쓰 응모, 기프트카드 5만원 (~12/20)",
      "kind": "airline",
      "community": true,
-     "title": "[선착순] 비엣젯 동계 항공권 34만원 최저가 특가 + 패스트트랙 무료!",
-     "desc": "비엣젯 항공 동계 시즌 오픈을 기념해 놓치면 아쉬운 최저가 특가 프로모션 을 준비했습니다!",
+     "title": "[이벤트] 대한항공 고마쓰 응모, 기프트카드 5만원 (~12/20)",
+     "desc": "대한항공 이시카와현 고마쓰 프로모션인데, 비행기 표 안 사도... 건데, 대한항공 기프트카드 5만원권 20명 추첨이에요.",
      "summary": [
-      "비엣젯 항공 동계 시즌 오픈을 기념해 놓치면 아쉬운 최저가 특가 프로모션 을 준비했습니다!…"
+      "대한항공 이시카와현 고마쓰 프로모션인데, 비행기 표 안 사도...",
+      "건데, 대한항공 기프트카드 5만원권 20명 추첨이에요."
      ],
-     "link": "https://cafe.naver.com/vinpearl/561674",
-     "source": "네이버 카페 · 베트남 피크타임 푸꾸옥 나트랑 다낭 호치민 무이네 하노이 여행",
-     "date": "2026-11-04T03:00:45.320Z",
-     "found": "2026-11-04",
+     "link": "https://cafe.naver.com/hotdealcatch/2410",
+     "source": "네이버 카페 · 핫딜캐치 · 매일 특가와 짠테크",
+     "date": "2026-11-20T07:00:41.100Z",
+     "found": "2026-11-20",
      "cards": [],
      "airlines": [
-      "VJ"
+      "KE"
      ],
      "countries": [
-      "베트남"
+      "일본"
      ],
-     "allRoutes": true,
+     "allRoutes": false,
      "routes": [],
      "price": {
-      "amount": 340000,
+      "amount": 50000,
       "trip": "oneway?"
      },
-     "query": "비엣젯 프로모션",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "비엣젯 동계 특가 프로모션",
-      "airlines": [
-       "비엣젯"
-      ],
-      "name": "동계 시즌 오픈 특가",
-      "book": null,
-      "board": null,
-      "price": 340000,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/vinpearl/556473|[항공권] 비엣젯 항공권 특가, 유류할증료 인상 전 예약 찬스! | 32",
-     "kind": "airline",
-     "community": true,
-     "title": "[항공권] 비엣젯 항공권 특가, 유류할증료 인상 전 예약 찬스! | 32만원~",
-     "desc": "",
-     "link": "https://cafe.naver.com/vinpearl/556473",
-     "source": "네이버 카페 · 베트남 피크타임 푸꾸옥 나트랑 다낭 호치민 무이네 하노이 여행",
-     "date": "2026-11-04T10:41:50.033Z",
-     "dateFound": true,
-     "found": "2026-11-04",
-     "cards": [],
-     "airlines": [
-      "VJ"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": {
-      "amount": 320000,
-      "trip": "oneway?"
-     },
-     "query": "비엣젯 얼리버드",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "비엣젯 항공권 특가 소식",
-      "airlines": [
-       "비엣젯"
-      ],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": 320000,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/tybwondergirl5/115773|✈️ [ 비엣젯 항공 특가 ] 부산·인천 출발 베트남 편도 99,000원",
-     "kind": "airline",
-     "community": true,
-     "title": "✈️ [ 비엣젯 항공 특가 ] 부산·인천 출발 베트남 편도 99,000원부터!",
-     "desc": "디고님들~~ 비엣젯 항공에서 반가운 특가 소식이 있네요! ✈️ 이번에는 수하물 등이 포함된 Deluxe 운임 특가 예요. 부산 출발 다낭·나트랑도 대상 노선에 들어 있답니다!",
-     "summary": [
-      "디고님들~~ 비엣젯 항공에서 반가운 특가 소식이 있네요! ✈️ 이번에는 수하물 등이 포함된 Deluxe 운임 특가 예요.",
-      "부산 출발 다낭·나트랑도 대상 노선에 들어 있답니다!…"
-     ],
-     "link": "https://cafe.naver.com/tybwondergirl5/115773",
-     "source": "네이버 카페 · 베트남 디고-다낭나트랑자유여행,맛집,호텔,리조트,마사지,골프",
-     "date": "2026-11-05T03:00:44.836Z",
-     "found": "2026-11-05",
-     "cards": [],
-     "airlines": [
-      "VJ"
-     ],
-     "countries": [
-      "베트남"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": {
-      "amount": 99000,
-      "trip": "oneway"
-     },
-     "query": "비엣젯 특가",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "비엣젯 항공 특가 운임 소식",
-      "airlines": [
-       "비엣젯"
-      ],
-      "name": "비엣젯 항공 특가",
-      "book": null,
-      "board": null,
-      "price": 99000,
-      "trip": "편도",
-      "pct": null,
-      "seoul": true,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/tybwondergirl5/116269|✈️ 비엣젯 항공 11월 더블데이 특가 ! 부산·인천 출발 129,000",
-     "kind": "airline",
-     "community": true,
-     "title": "✈️ 비엣젯 항공 11월 더블데이 특가 ! 부산·인천 출발 129,000원부터",
-     "desc": "출처 비엣젯 홈페이지 디고님들~~ 반가운 비엣젯 항공 특가 소식이에요! 이번엔 부산 출발 다낭·나트랑도 포함됐답니다.",
-     "summary": [
-      "출처 비엣젯 홈페이지 디고님들~~ 반가운 비엣젯 항공 특가 소식이에요! 이번엔 부산 출발 다낭·나트랑도 포함됐답니다."
-     ],
-     "link": "https://cafe.naver.com/tybwondergirl5/116269",
-     "source": "네이버 카페 · 베트남 디고-다낭나트랑자유여행,맛집,호텔,리조트,마사지,골프",
-     "date": "2026-11-08T05:00:41.347Z",
-     "found": "2026-11-08",
-     "cards": [],
-     "airlines": [
-      "VJ"
-     ],
-     "countries": [
-      "베트남"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": {
-      "amount": 129000,
-      "trip": "oneway?"
-     },
-     "query": "비엣젯 특가",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "비엣젯 더블데이 특가 운임 소식",
-      "airlines": [
-       "비엣젯"
-      ],
-      "name": "11월 더블데이 특가",
-      "book": null,
-      "board": null,
-      "price": 129000,
-      "trip": null,
-      "pct": null,
-      "seoul": true,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/rankingking/15626|비엣젯 항공, 한국~베트남 항공권 9만9000원부터",
-     "kind": "airline",
-     "community": true,
-     "title": "비엣젯 항공, 한국~베트남 항공권 9만9000원부터",
-     "desc": "",
-     "link": "https://cafe.naver.com/rankingking/15626",
-     "source": "네이버 카페 · 캠핑.여행.트레킹 정보 - 랭킹킹",
-     "date": "2026-11-09T11:00:48.524Z",
-     "found": "2026-11-09",
-     "cards": [],
-     "airlines": [
-      "VJ"
-     ],
-     "countries": [
-      "베트남"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": {
-      "amount": 99000,
-      "trip": "oneway?"
-     },
-     "query": "비엣젯 이벤트",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "비엣젯 항공권 특가 소식",
-      "airlines": [
-       "비엣젯"
-      ],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": 99000,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/fobn/157652|✈️ 10월 10일 더블데이! 비엣젯 한국–베트남 전 노선 최대 20% ",
-     "kind": "airline",
-     "community": true,
-     "title": "✈️ 10월 10일 더블데이! 비엣젯 한국–베트남 전 노선 최대 20% 할인",
-     "desc": "가을 여행부터 내년 여행까지 베트남 항공권을 싸게 살 수 있는 기회예요 딱 3일만 하니까 일정 있으신 분들은 서둘러 확인하세요!",
-     "summary": [
-      "가을 여행부터 내년 여행까지 베트남 항공권을 싸게 살 수 있는 기회예요 딱 3일만 하니까 일정 있으신 분들은 서둘러 확인하세요!…"
-     ],
-     "link": "https://cafe.naver.com/fobn/157652",
-     "source": "네이버 카페 · 다낭 아지트 루나 - 다낭맛집, 다낭마사지, 호이안, 다낭여행",
-     "date": "2026-11-09T11:00:48.524Z",
-     "found": "2026-11-09",
-     "cards": [],
-     "airlines": [
-      "VJ"
-     ],
-     "countries": [
-      "베트남"
-     ],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "Thai Vietjet Air 이벤트",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "비엣젯 항공권 할인 프로모션",
-      "airlines": [
-       "비엣젯"
-      ],
-      "name": "더블데이",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": 20,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/minecraftpe/4013453|비엣젯 더블데이 특가 슈퍼세일하네요~ 편도 129,000원~",
-     "kind": "airline",
-     "community": true,
-     "title": "비엣젯 더블데이 특가 슈퍼세일하네요~ 편도 129,000원~",
-     "desc": "비엣젯에서 디럭스 클래스 올인원 패키지, 더블데이 특가 세일 합니다 편도 최저 129,000원 부터라고 해요... 분들은 한번 확인해보세요 제가 가는 날짜에는 해당이 되지 않네요 ㅜㅜ 다시 특가 찾아 삼만리해야겠어요~.",
-     "summary": [
-      "비엣젯에서 디럭스 클래스 올인원 패키지, 더블데이 특가 세일 합니다 편도 최저 129,000원 부터라고 해요...",
-      "분들은 한번 확인해보세요 제가 가는 날짜에는 해당이 되지 않네요 ㅜㅜ 다시 특가 찾아 삼만리해야겠어요~."
-     ],
-     "link": "https://cafe.naver.com/minecraftpe/4013453",
-     "source": "네이버 카페 · 푸꾸옥 고스트 - 베트남푸꾸옥 자유여행,호텔리조트,항공권,맛집",
-     "date": "2026-11-10T05:00:46.618Z",
-     "found": "2026-11-10",
-     "cards": [],
-     "airlines": [
-      "VJ"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": {
-      "amount": 129000,
-      "trip": "oneway"
-     },
-     "query": "베트남 항공권 특가",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "비엣젯 더블데이 특가 항공권",
-      "airlines": [
-       "비엣젯"
-      ],
-      "name": "더블데이 특가",
-      "book": null,
-      "board": null,
-      "price": 129000,
-      "trip": "편도",
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/warcraftgamemap/3532552|비엣젯 다낭 여행 11.11 할인 더블 특가 .",
-     "kind": "airline",
-     "community": true,
-     "title": "비엣젯 다낭 여행 11.11 할인 더블 특가 .",
-     "desc": "✈️ 11.11 더블데이 특가 로 한국– 베트남 전 노선 편도 총액 129,000원부터!",
-     "summary": [
-      "✈️ 11.11 더블데이 특가 로 한국– 베트남 전 노선 편도 총액 129,000원부터!…"
-     ],
-     "link": "https://cafe.naver.com/warcraftgamemap/3532552",
-     "source": "네이버 카페 · 다낭 고스트 - 베트남 다낭자유여행 ,다낭여행,맛집,호텔리조트",
-     "date": "2026-11-10T21:00:47.543Z",
-     "found": "2026-11-11",
-     "cards": [],
-     "airlines": [
-      "VJ"
-     ],
-     "countries": [
-      "베트남"
-     ],
-     "allRoutes": true,
-     "routes": [],
-     "price": {
-      "amount": 129000,
-      "trip": "oneway"
-     },
-     "query": "베트남 항공권 특가",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "비엣젯 11.11 항공권 특가",
-      "airlines": [
-       "비엣젯"
-      ],
-      "name": "11.11 더블데이 특가",
-      "book": null,
-      "board": null,
-      "price": 129000,
-      "trip": "편도",
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/tybwondergirl5/116307|비엣젯 할인 하네요~^^",
-     "kind": "airline",
-     "community": true,
-     "title": "비엣젯 할인 하네요~^^",
-     "desc": "",
-     "link": "https://cafe.naver.com/tybwondergirl5/116307",
-     "source": "네이버 카페 · 베트남 디고-다낭나트랑자유여행,맛집,호텔,리조트,마사지,골프",
-     "date": "2026-11-08T11:00:46.243Z",
-     "found": "2026-11-08",
-     "cards": [],
-     "airlines": [
-      "VJ"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "비엣젯 할인",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "비엣젯 항공권 할인 소식",
-      "airlines": [
-       "비엣젯"
-      ],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/warcraftgamemap/3531303|비엣젯✈️더블데이 특가 행사하네요^^",
-     "kind": "airline",
-     "community": true,
-     "title": "비엣젯✈️더블데이 특가 행사하네요^^",
-     "desc": "",
-     "link": "https://cafe.naver.com/warcraftgamemap/3531303",
-     "source": "네이버 카페 · 다낭 고스트 - 베트남 다낭자유여행 ,다낭여행,맛집,호텔리조트",
-     "date": "2026-11-09T01:00:42.273Z",
-     "found": "2026-11-09",
-     "cards": [],
-     "airlines": [
-      "VJ"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "베트남 항공권 특가",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "비엣젯 더블데이 특가 행사",
-      "airlines": [
-       "비엣젯"
-      ],
-      "name": "더블데이 특가",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/guitarnsong/297457|✈️(정보) 비엣젯 항공 - 11월 11일 더블데이 특가",
-     "kind": "airline",
-     "community": true,
-     "title": "✈️(정보) 비엣젯 항공 - 11월 11일 더블데이 특가",
-     "desc": "11월 11일 더블데이 특가 비엣젯과 함께 슈퍼 세일!",
-     "summary": [
-      "11월 11일 더블데이 특가 비엣젯과 함께 슈퍼 세일!…"
-     ],
-     "link": "https://cafe.naver.com/guitarnsong/297457",
-     "source": "네이버 카페 · 하노이 고스트-베트남하노이자유여행,하롱베이,호텔,마사지,맛집",
-     "date": "2026-11-09T19:14:18.306Z",
-     "found": "2026-11-10",
-     "cards": [],
-     "airlines": [
-      "VJ"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "베트남 항공권 특가",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "비엣젯 더블데이 항공권 특가",
-      "airlines": [
-       "비엣젯"
-      ],
-      "name": "11월 11일 더블데이 특가",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/warcraftgamemap/3532622|✈️ 다낭 특가 프로모션 : 비엣젯 항공",
-     "kind": "airline",
-     "community": true,
-     "title": "✈️ 다낭 특가 프로모션 : 비엣젯 항공",
-     "desc": "비엣젯 항공 은 구입전 충분한 고민이 필요합니다 11월 11일 더블데이 특가 비엣젯과 함께 슈퍼 세일!",
-     "summary": [
-      "비엣젯 항공 은 구입전 충분한 고민이 필요합니다 11월 11일 더블데이 특가 비엣젯과 함께 슈퍼 세일!…"
-     ],
-     "link": "https://cafe.naver.com/warcraftgamemap/3532622",
-     "source": "네이버 카페 · 다낭 고스트 - 베트남 다낭자유여행 ,다낭여행,맛집,호텔리조트",
-     "date": "2026-11-10T21:00:47.543Z",
-     "found": "2026-11-11",
-     "cards": [],
-     "airlines": [
-      "VJ"
-     ],
-     "countries": [
-      "베트남"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "베트남 항공권 특가",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "비엣젯 더블데이 항공권 특가",
-      "airlines": [
-       "비엣젯"
-      ],
-      "name": "11월 11일 더블데이 특가",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/warcraftgamemap/3533146|다낭 비엣젯 항공 11월 11일 더블데이 할인 정보 ( 편도할인, 디럭스",
-     "kind": "airline",
-     "community": true,
-     "title": "다낭 비엣젯 항공 11월 11일 더블데이 할인 정보 ( 편도할인, 디럭스 할인)",
-     "desc": "애증의 항공 사 비엣젯에서 더블데이 특가 슈퍼세일 (= 쓰고 쪼금 할인)을 시작 했습니다.",
-     "summary": [
-      "애증의 항공 사 비엣젯에서 더블데이 특가 슈퍼세일 (= 쓰고 쪼금 할인)을 시작 했습니다."
-     ],
-     "link": "https://cafe.naver.com/warcraftgamemap/3533146",
-     "source": "네이버 카페 · 다낭 고스트 - 베트남 다낭자유여행 ,다낭여행,맛집,호텔리조트",
-     "date": "2026-11-11T09:54:34.408Z",
-     "found": "2026-11-11",
-     "cards": [],
-     "airlines": [
-      "VJ"
-     ],
-     "countries": [
-      "베트남"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "베트남 항공권 특가",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "비엣젯 더블데이 항공권 특가",
-      "airlines": [
-       "비엣젯"
-      ],
-      "name": "더블데이 특가",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/mindy7857/5528147|나트랑 비엣젯 11월 11일 더블데이 할인 정보 ( 편도 할인 , 디럭스",
-     "kind": "airline",
-     "community": true,
-     "title": "나트랑 비엣젯 11월 11일 더블데이 할인 정보 ( 편도 할인 , 디럭스 할인 )",
-     "desc": "애증의 항공 사 비엣젯에서 더블데이 특가 슈퍼세일 (= 쓰고 쪼금 할인 )을 시작 했습니다.",
-     "summary": [
-      "애증의 항공 사 비엣젯에서 더블데이 특가 슈퍼세일 (= 쓰고 쪼금 할인 )을 시작 했습니다."
-     ],
-     "link": "https://cafe.naver.com/mindy7857/5528147",
-     "source": "네이버 카페 · 베나자-베트남나트랑자유여행,달랏,무이네,호텔,투어,리조트맛집",
-     "date": "2026-11-11T11:00:46.372Z",
-     "found": "2026-11-11",
-     "cards": [],
-     "airlines": [
-      "VJ"
-     ],
-     "countries": [
-      "베트남"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "항공권 할인코드",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "비엣젯 더블데이 항공권 특가",
-      "airlines": [
-       "비엣젯"
-      ],
-      "name": "더블데이 특가",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/zzop/4337925|12월 항공권 구매 ( 비엣젯 항공 11월11일 더블데이 이벤트 )",
-     "kind": "airline",
-     "community": true,
-     "title": "12월 항공권 구매 ( 비엣젯 항공 11월11일 더블데이 이벤트 )",
-     "desc": "",
-     "link": "https://cafe.naver.com/zzop/4337925",
-     "source": "네이버 카페 · 나트랑 도깨비 - 베트남 나트랑 자유여행,무이네,달랏,맛집,호텔",
-     "date": "2026-11-12T02:02:04.261Z",
-     "found": "2026-11-12",
-     "cards": [],
-     "airlines": [
-      "VJ"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "비엣젯 이벤트",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "비엣젯 더블데이 특가 안내",
-      "airlines": [
-       "비엣젯"
-      ],
-      "name": "11월 11일 더블데이 이벤트",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/bluefild/36541|비엣젯 항공 한국 베트남 전 노선 특가 진행 수하물 규정 먼저 확인하세요",
-     "kind": "airline",
-     "community": true,
-     "title": "비엣젯 항공 한국 베트남 전 노선 특가 진행 수하물 규정 먼저 확인하세요",
-     "desc": "■ 무슨 일인가 비엣젯 항공 이 11월 11일 더블데이를 맞아 한국과 베트남 을 잇는 전 노선을 대상으로 항공권 특가 이벤트를 진행합니다.",
-     "summary": [
-      "■ 무슨 일인가 비엣젯 항공 이 11월 11일 더블데이를 맞아 한국과 베트남 을 잇는 전 노선을 대상으로 항공권 특가 이벤트를 진행합니다."
-     ],
-     "link": "https://cafe.naver.com/bluefild/36541",
-     "source": "네이버 카페 · 괌플레이(Guamplay) - 괌 자유여행의 모든 것",
-     "date": "2026-11-14T01:00:40.603Z",
-     "found": "2026-11-14",
-     "cards": [],
-     "airlines": [
-      "VJ"
-     ],
-     "countries": [
-      "베트남"
-     ],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "베트남 항공권 특가",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "비엣젯 전 노선 항공권 특가",
-      "airlines": [
-       "비엣젯"
-      ],
-      "name": "더블데이 특가",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-14",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/ungsangstory/1412854|푸꾸옥으로! 노옵션❤️ 특가 899,000원! ✈️ 비엣젯 항공 × 빈홀",
-     "kind": "airline",
-     "community": true,
-     "title": "푸꾸옥으로! 노옵션❤️ 특가 899,000원! ✈️ 비엣젯 항공 × 빈홀리데이 피에....",
-     "desc": "✈️ 비엣젯 항공 × 빈홀리데이 피에스타 겨울방학 한정 특가 ! 10만원 할인! 추운 겨울, 따뜻한 베트남 푸꾸옥에서 여유로운 휴가 어떠세요? ☀️ 이번에 준비한 상품은 노옵션 패키지!",
-     "summary": [
-      "✈️ 비엣젯 항공 × 빈홀리데이 피에스타 겨울방학 한정 특가 ! 10만원 할인! 추운 겨울, 따뜻한 베트남 푸꾸옥에서 여유로운 휴가 어떠세요? ☀️ 이번에 준비한 상품은 노옵션 패키지!…"
-     ],
-     "link": "https://cafe.naver.com/ungsangstory/1412854",
-     "source": "네이버 카페 · 웅상이야기",
-     "date": "2026-11-16T09:00:47.660Z",
-     "found": "2026-11-16",
-     "cards": [],
-     "airlines": [
-      "VJ"
-     ],
-     "countries": [
-      "베트남"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": {
-      "amount": 899000,
-      "trip": "oneway?"
-     },
-     "query": "비엣젯 특가",
+     "query": "대한항공 특가",
      "ai": {
       "v": 2,
       "promo": false,
-      "why": "패키지 상품 특가, 항공권 중심 아님",
-      "airlines": [
-       "비엣젯"
-      ],
+      "why": "항공권 경품 이벤트",
+      "airlines": [],
       "name": null,
       "book": null,
       "board": null,
@@ -761,42 +88,119 @@
       "trip": null,
       "pct": null,
       "seoul": null,
-      "at": "2026-11-16",
+      "at": "2026-11-20",
+      "model": "deepseek-v4-flash"
+     },
+     "notified": "2026-11-20"
+    },
+    {
+     "id": "c:https://cafe.naver.com/nyctourdesign/1207292|대한항공 뉴어크 취항기념 8% 할인",
+     "kind": "airline",
+     "community": true,
+     "title": "대한항공 뉴어크 취항기념 8% 할인",
+     "desc": "네.",
+     "link": "https://cafe.naver.com/nyctourdesign/1207292",
+     "source": "네이버 카페 · [미여디]No.1 뉴욕,LA,하와이,라스베가스,샌프란시스코 미국여행",
+     "date": "2026-11-20T11:00:49.931Z",
+     "found": "2026-11-20",
+     "cards": [],
+     "airlines": [
+      "KE"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "대한항공 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "대한항공 취항기념 운임 할인",
+      "airlines": [
+       "대한항공"
+      ],
+      "name": "뉴어크 취항기념 8% 할인",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": 8,
+      "seoul": null,
+      "at": "2026-11-20",
       "model": "deepseek-v4-flash"
      }
     },
     {
-     "id": "c:https://cafe.naver.com/minecraftpe/4020911|정보)비엣젯 항공 블랙 프라이데이 슈퍼 딜",
+     "id": "c:https://cafe.naver.com/airportshopping/1167|[ 대한항공 ] 뉴욕 신규 취항 기념 항공 권 할인 이벤트!",
      "kind": "airline",
      "community": true,
-     "title": "정보)비엣젯 항공 블랙 프라이데이 슈퍼 딜",
-     "desc": "아니라, 베트남 항공 사 Vietjet와 함께 0 비행권을 사냥하는 대단한 파티도 있어요!!! 모든 비행권의 가격은 OD (세금 및 수수료를 제외한)로 시작됩니다.",
+     "title": "[ 대한항공 ] 뉴욕 신규 취항 기념 항공 권 할인 이벤트!",
+     "desc": "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
      "summary": [
-      "아니라, 베트남 항공 사 Vietjet와 함께 0 비행권을 사냥하는 대단한 파티도 있어요!!! 모든 비행권의 가격은 OD (세금 및 수수료를 제외한)로 시작됩니다."
+      "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
      ],
-     "link": "https://cafe.naver.com/minecraftpe/4020911",
-     "source": "네이버 카페 · 푸꾸옥 고스트 - 베트남푸꾸옥 자유여행,호텔리조트,항공권,맛집",
-     "date": "2026-11-22T00:43:11.427Z",
-     "found": "2026-11-22",
+     "link": "https://cafe.naver.com/airportshopping/1167",
+     "source": "네이버 카페 · 인천공항의 모든 것",
+     "date": "2026-11-20T07:00:41.100Z",
+     "found": "2026-11-20",
      "cards": [],
      "airlines": [
-      "VJ"
+      "KE"
      ],
-     "countries": [
-      "베트남"
-     ],
+     "countries": [],
      "allRoutes": false,
      "routes": [],
      "price": null,
-     "query": "베트남 항공권 특가",
+     "query": "대한항공 프로모션",
      "ai": {
       "v": 2,
       "promo": true,
-      "why": "비엣젯 블랙프라이데이 항공권 특가",
+      "why": "신규 취항 기념 항공권 할인",
       "airlines": [
-       "비엣젯"
+       "대한항공"
       ],
-      "name": "블랙 프라이데이 슈퍼 딜",
+      "name": "뉴욕 신규 취항 기념 항공권 할인 이벤트",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-20",
+      "model": "deepseek-v4-flash"
+     },
+     "notified": "2026-11-20"
+    },
+    {
+     "id": "c:https://cafe.naver.com/yamipapa/9460|트립닷컴 대한항공 특가 라이브",
+     "kind": "airline",
+     "community": true,
+     "title": "트립닷컴 대한항공 특가 라이브",
+     "desc": "월요일 오전에 다들 한번 도전해보시죠 다들 싸게싸게 여행 다니시자구요 ㅎ https://kr.trip.com/sale/w/mj1iqfayjdyq81fk/26winterbrandingke.html?locale=ko-KR&transparentBar=1&wkp=1&curr=KRW.",
+     "summary": [
+      "월요일 오전에 다들 한번 도전해보시죠 다들 싸게싸게 여행 다니시자구요 ㅎ https://kr.trip.com/sale/w/mj1iqfayjdyq81fk/26winterbrandingke.html?locale=ko-KR&transp…"
+     ],
+     "link": "https://cafe.naver.com/yamipapa/9460",
+     "source": "네이버 카페 · 야미파파놀이터",
+     "date": "2026-11-22T03:00:42.044Z",
+     "found": "2026-11-22",
+     "cards": [],
+     "airlines": [
+      "KE"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "대한항공 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "트립닷컴 대한항공 특가 라이브",
+      "airlines": [
+       "대한항공"
+      ],
+      "name": "트립닷컴 대한항공 특가 라이브",
       "book": null,
       "board": null,
       "price": null,
@@ -810,111 +214,48 @@
    ]
   },
   {
-   "id": "iWDV5UEtzdEtWT2k4cGhNVC02cGk2TVQxakFrYzcxN0tVWUxNS0dNNTd3Y3lwMl9vX1FsbzFNVnJqU1YxcEpLTjRhV1kzbFpoS2tNTUk4bVJHZEdKV0s4cU8|필리핀항공, 필리핀관광진흥청과 항공권 프로모션 진행",
+   "id": "c:https://cafe.naver.com/multiroader/837818|에어아시아 15kg수화물 프로모션 적용",
    "kind": "airline",
-   "title": "필리핀항공, 필리핀관광진흥청과 항공권 프로모션 진행",
-   "desc": "필리핀항공, 필리핀관광진흥청과 항공권 프로모션 진행 Chosunbiz",
+   "community": true,
+   "title": "에어아시아 15kg수화물 프로모션 적용",
+   "desc": "항공권은 15키로 위탁수화물 무료로 준다는 배너가 있어도 누르고 항공권 예매진행래도 수화물선택시 15키로는 6만원 / 20키로는 8만원대 결제던데 에어아시아 에서 수화물 프로모션 적용 어찌하나요 ㅠㅠㅠㅠㅠ.",
    "summary": [
-    "필리핀항공, 필리핀관광진흥청과 항공권 프로모션 진행 Chosunbiz…"
+    "항공권은 15키로 위탁수화물 무료로 준다는 배너가 있어도 누르고 항공권 예매진행래도 수화물선택시 15키로는 6만원 / 20키로는 8만원대 결제던데 에어아시아 에서 수화물 프로모션 적용 어찌하나요 ㅠㅠㅠㅠㅠ."
    ],
-   "link": "https://biz.chosun.com/industry/business_info/2026/11/22/PNP77J6ORFAGXHWMKBKD273IIQ/?outputType=amp",
-   "source": "Chosunbiz",
-   "date": "2026-11-21T23:03:26.000Z",
+   "link": "https://cafe.naver.com/multiroader/837818",
+   "source": "네이버 카페 · 하이말레이시아 l 코타키나발루 자유여행 대표카페",
+   "date": "2026-11-22T03:00:42.044Z",
    "found": "2026-11-22",
    "cards": [],
    "airlines": [
-    "PR"
+    "AK"
    ],
-   "countries": [
-    "필리핀"
-   ],
+   "countries": [],
    "allRoutes": false,
    "routes": [],
-   "price": null,
-   "query": "필리핀 항공권 {특가말}",
-   "bodyAt": "2026-11-22",
-   "body": [
-    "필리핀항공, 필리핀관광진흥청과 항공권 프로모션 진행",
-    "입력 2026.11.22. 08:00",
-    "필리핀항공이 필리핀관광진흥청과 협력해 한국 출발 여행객을 대상으로 항공권 공동 할인 프로모션을 진행한다.",
-    "필리핀항공과 필리핀관광진흥청은 여러 명이 함께 여행하는 고객을 대상으로 '그룹 밸류 프로모션'을 선보인다.",
-    "함께 예약하는 인원에 따라 할인율이 달라지는 방식이다.",
-    "프로모션은 2인 예약 시 항공권 운임의 30%, 3인 예약 시 50%를 할인한다.",
-    "동반 예약 인원에 따라 항공권 구매 비용을 줄일 수 있도록 구성됐다.",
-    "예약 기간은 2026년 10월 15일부터 11월 30일까지이며, 여행은 11월 1일부터 가능하다.",
-    "프로모션을 이용하려면 동일한 예약에 포함된 승객이 함께 여행해야 한다.",
-    "항공편과 예약 운임에 따라 적용 여부가 달라질 수 있다.",
-    "필리핀항공, 그룹 밸류 프로모션 혜택에 국내선 네트워크 강점 더해",
-    "필리핀항공은 이번 그룹 밸류 프로모션과 함께 필리핀 주요 관광지를 잇는 국내선 항공편을 운영하고 있다.",
-    "필리핀항공 이지현 한국지사장은 \"이번 그룹 밸류 프로모션이 가족, 친구들과 함께 필리핀의 다양한 매력을 보다 합리적인 가격으로 경험할 수 있는 기회가 되기를 바란다\"며 \"앞으로도 폭넓은 국내선 네트워크와 다양한 항공 서비스를 바탕으로 여행객들에게 더욱 편리하고 만족스러운 여행 경험을 제공할 계획\"이라고 말했다.",
-    "200억 들여 사들였지만… '5000원 순댓국' 가게의 추락"
-   ],
-   "ai": {
-    "v": 2,
-    "promo": true,
-    "why": "항공권 운임 할인 프로모션",
-    "airlines": [
-     "필리핀항공"
-    ],
-    "name": "그룹 밸류 프로모션",
-    "book": {
-     "from": "2026-10-15",
-     "to": "2026-11-30"
-    },
-    "board": {
-     "from": "2026-11-01",
-     "to": null
-    },
-    "price": null,
-    "trip": null,
-    "pct": 50,
-    "seoul": true,
-    "at": "2026-11-22",
-    "model": "deepseek-v4-flash"
+   "price": {
+    "amount": 60000,
+    "trip": "oneway?"
    },
-   "lastDate": "2026-11-21T23:03:26.000Z",
-   "lastFound": "2026-11-22"
-  },
-  {
-   "id": "c:https://cafe.naver.com/japanpackagetour/13921|트리니티 항공 11~1월 25% 할인 , 일본 겨울 프로모션",
-   "kind": "airline",
-   "community": true,
-   "title": "트리니티 항공 11~1월 25% 할인 , 일본 겨울 프로모션",
-   "desc": "전용 할인코드 트리니티 항공 관계자는 항공권 할인 과 결제, 제휴 혜택을 함께 활용해 취향에 맞는 겨울 여행을 계획하길 바란다고 전했습니다.",
-   "summary": [
-    "전용 할인코드 트리니티 항공 관계자는 항공권 할인 과 결제, 제휴 혜택을 함께 활용해 취향에 맞는 겨울 여행을 계획하길 바란다고 전했습니다."
-   ],
-   "link": "https://cafe.naver.com/japanpackagetour/13921",
-   "source": "네이버 카페 · 일본 패키지여행 카페 (북해도,도쿄,오사카,후쿠오카,요나고)",
-   "date": "2026-11-21T23:00:42.191Z",
-   "found": "2026-11-22",
-   "cards": [],
-   "airlines": [],
-   "countries": [
-    "일본"
-   ],
-   "allRoutes": false,
-   "routes": [],
-   "price": null,
-   "query": "항공권 할인코드",
+   "query": "에어아시아 프로모션",
    "ai": {
     "v": 2,
-    "promo": true,
-    "why": "항공사 할인코드 프로모션",
+    "promo": false,
+    "why": "수하물 프로모션 적용 문의",
     "airlines": [
-     "트리니티항공"
+     "에어아시아"
     ],
-    "name": "일본 겨울 프로모션",
+    "name": null,
     "book": null,
     "board": null,
     "price": null,
     "trip": null,
-    "pct": 25,
+    "pct": null,
     "seoul": null,
     "at": "2026-11-22",
     "model": "deepseek-v4-flash"
    },
-   "lastDate": "2026-11-21T23:00:42.191Z",
+   "lastDate": "2026-11-22T03:00:42.044Z",
    "lastFound": "2026-11-22"
   },
   {
@@ -1004,7 +345,7 @@
     "at": "2026-11-17",
     "model": "deepseek-v4-flash"
    },
-   "lastDate": "2026-11-21T14:44:00.000Z",
+   "lastDate": "2026-11-22T02:32:58.000Z",
    "lastFound": "2026-11-22",
    "more": [
     {
@@ -2734,6 +2075,72 @@
      }
     },
     {
+     "id": "iWEFVX3lxTE4tSFVWVmljeFdXc1dINjlzVDdBSjlzXzlEOUxCcHJXNldycXJMZC0tdWtnU1pwT0s5UzZMSmNHMk15TWpKQ1doeEQyUE5RTGM4ekp5OHFkRGs|네이버페이로 항공권 결제하면 포인트 적립…트리니티항공 할인 행사",
+     "kind": "airline",
+     "title": "네이버페이로 항공권 결제하면 포인트 적립…트리니티항공 할인 행사",
+     "desc": "네이버페이로 항공권 결제하면 포인트 적립…트리니티항공 할인 행사 스포츠서울",
+     "summary": [
+      "네이버페이로 항공권 결제하면 포인트 적립…트리니티항공 할인 행사 스포츠서울…"
+     ],
+     "link": "https://www.sportsseoul.com/news/read/1651404",
+     "source": "스포츠서울",
+     "date": "2026-11-22T02:32:58.000Z",
+     "found": "2026-11-22",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [
+      "태국"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "트리니티항공 {특가말}",
+     "bodyAt": "2026-11-22",
+     "body": [
+      "[스포츠서울 | 조선우 기자] 트리니티항공이 네이버페이 결제 고객을 대상으로 포인트 적립 프로모션을 진행한다.",
+      "트리니티항공은 이달 30일까지 공식 홈페이지와 모바일 앱·웹에서 ‘이달의 결제 할인 혜택’을 운영한다고. 네이버페이로 항공권을 40만 원 이상 결제하면 1만 원, 80만 원 이상 결제하면 2만 원의 포인트를 적립받을 수 있다.",
+      "포인트 적립이 적용되는 항공권 탑승 기간은 내년 10월 30일까지다.",
+      "트리니티항공은 태국 특별 할인과 블랙 프라이데이, 수험생 할인 등 다양한 프로모션도 진행하고 있다.",
+      "유럽 기차 8% 할인과 빅버스 20% 할인 등 여행 관련 제휴 혜택도 제공한다.",
+      "신규 회원에게는 웰컴 쿠폰팩을 비롯해 발권 수수료 면제와 특가 소식 알림 서비스, 회원 전용 할인 코드 등을 제공한다.",
+      "트리니티항공 관계자는 “고객분들이 실질적인 혜택을 누릴 수 있도록 이번 결제 제휴 프로모션을 마련했다”며 “앞으로도 다양한 결제 수단과 제휴 서비스를 통해 고객들의 보다 합리적으로 여행을 계획할 수 있도록 혜택을 확대해 나가겠다”고 말했다.",
+      "4 “포르노보다 걸린 박지윤” 악플러 최동석, ‘몰카’ 폭로전까지…자녀들만 상처",
+      "6 ‘서울대 출신·1000억 건물주 딸’ 신슬기, 군살 제로 몸매까지 ‘다 가졌네’",
+      "7 장윤정, 숟가락으로 맞기까지…‘모친 절연’이어 뼈아픈 후회 고백",
+      "3 ‘이틀 만에 3건’ FA 초반 러시, 슬슬 마무리 단계→시장은 이제부터 ‘진짜’다 [SS포커스]",
+      "9 아버지 영정 들고 입장, 딸 사랑이는 울었다…추성훈, 마지막 돈까지 후배들에 남겼다",
+      "10 ‘페이커’부터 차세대 스타까지…하이원 e스포츠 대상, 23일 본선 경쟁 막 오른다",
+      "5 ‘서울대 출신·1000억 건물주 딸’ 신슬기, 군살 제로 몸매까지 ‘다 가졌네’",
+      "6 장윤정, 숟가락으로 맞기까지…‘모친 절연’이어 뼈아픈 후회 고백",
+      "10 1000만원 팔찌가 커 보일 정도…고현정, 갈비뼈 이어 이번엔 손목 ‘뼈말라’"
+     ],
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "포인트 적립 프로모션, 운임 할인 아님",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "이달의 결제 할인 혜택",
+      "book": {
+       "from": null,
+       "to": "2026-11-30"
+      },
+      "board": {
+       "from": null,
+       "to": "2027-10-30"
+      },
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-22",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
      "id": "https://news.tf.co.kr/read/economy/2389514.htm|트리니티항공, '국제선 블랙프라이데이' 프로모션 실시",
      "kind": "airline",
      "title": "트리니티항공, '국제선 블랙프라이데이' 프로모션 실시",
@@ -3800,6 +3207,974 @@
      }
     }
    ]
+  },
+  {
+   "id": "https://www.asiatime.co.kr/article/20261120500208|[항공사 복지 탐방] ㊦ 할인 항공권, 가족만 쓰나요?…LCC들의 차별화",
+   "kind": "airline",
+   "title": "[항공사 복지 탐방] ㊦ 할인 항공권, 가족만 쓰나요?…LCC들의 차별화된...",
+   "desc": "지인에게도 특가 항공권을 제공하는 프로모션 을 수시로 운영 중이다. 버디티켓 매수는 연간 국내선과 국제선 각각 편도 30매까지다. 진 에어 는 근속연수에 따라 국내·국제선 우대항공권을 통상 연 25매 지급하고 항공권...",
+   "summary": [
+    "지인에게도 특가 항공권을 제공하는 프로모션 을 수시로 운영 중이다.",
+    "버디티켓 매수는 연간 국내선과 국제선 각각 편도 30매까지다.",
+    "진 에어 는 근속연수에 따라 국내·국제선 우대항공권을 통상 연 25매 지급하고 항공권…"
+   ],
+   "link": "https://www.asiatime.co.kr/article/20261120500208",
+   "source": "네이버 뉴스",
+   "date": "2026-11-22T01:02:00.000Z",
+   "found": "2026-11-22",
+   "cards": [],
+   "airlines": [],
+   "countries": [],
+   "allRoutes": true,
+   "routes": [],
+   "price": null,
+   "query": "에어서울 {특가말}",
+   "bodyAt": "2026-11-22",
+   "body": [
+    "에어로케이는 사용 대상에서 차이가 뚜렷하다.",
+    "지인만 등록할 경우 최대 5명까지 지정할 수 있으며 기간에 따라 등록되지 않은 지인에게도 특가 항공권을 제공하는 프로모션을 수시로 운영 중이다.",
+    "버디티켓 매수는 연간 국내선과 국제선 각각 편도 30매까지다.",
+    "진에어는 근속연수에 따라 국내·국제선 우대항공권을 통상 연 25매 지급하고 항공권 종류에 따라 50% 또는 90%을 할인한다.",
+    "트리니티항공은 임직원과 배우자·자녀·양가 부모 등을 대상으로 좌석 확정형과 대기형을 모두 운영한다.",
+    "트리니티항공 직원은 그룹 제휴를 통해 소노호텔앤리조트의 숙박시설과 부대시설을 할인된 가격에 이용할 수 있다.",
+    "제주항공은 원격지 근무자에게 주거비를 지원하며 이사하는 직원에게 휴가를 준다.",
+    "진에어는 위탁보육과 자녀 학자금·심리상담을 지원하고 에어로케이는 지역 의료·숙박업체 등과 제휴해 임직원 할인을 제공하는 등 육아 관련 혜택도 풍부하다.",
+    "제주항공을 제외한 두 항공사는 2024년 이후 2년 연속 복리후생비가 증가한 추세였다."
+   ],
+   "ai": {
+    "v": 2,
+    "promo": false,
+    "why": "항공사 임직원 복지 제도 소개 기사",
+    "airlines": [],
+    "name": null,
+    "book": null,
+    "board": null,
+    "price": null,
+    "trip": null,
+    "pct": null,
+    "seoul": null,
+    "at": "2026-11-22",
+    "model": "deepseek-v4-flash"
+   },
+   "lastDate": "2026-11-22T01:02:00.000Z",
+   "lastFound": "2026-11-22"
+  },
+  {
+   "id": "c:https://cafe.naver.com/haipong9/3911|비엣젯 항공 11.11 더블데이 0동 특가 ! 하이퐁-인천 직항 포함, ",
+   "kind": "airline",
+   "community": true,
+   "title": "비엣젯 항공 11.11 더블데이 0동 특가 ! 하이퐁-인천 직항 포함, 2027년 5월까지",
+   "desc": "00시) 오픈 되는 특가 좌석을 미리 확인해 보시기 바랍니다. 비엣젯 항공 11월 프로모션 ✈️ 비엣젯 항공 11.11 더블데이 특가 안내 1.",
+   "summary": [
+    "00시) 오픈 되는 특가 좌석을 미리 확인해 보시기 바랍니다.",
+    "비엣젯 항공 11월 프로모션 ✈️ 비엣젯 항공 11.11 더블데이 특가 안내 1."
+   ],
+   "link": "https://cafe.naver.com/haipong9/3911",
+   "source": "네이버 카페 · 하이퐁 리얼정보",
+   "date": "2026-11-09T03:00:46.835Z",
+   "found": "2026-11-09",
+   "cards": [],
+   "airlines": [
+    "VJ"
+   ],
+   "countries": [
+    "베트남"
+   ],
+   "allRoutes": true,
+   "routes": [],
+   "price": {
+    "amount": 129000,
+    "trip": "oneway?"
+   },
+   "query": "항공권 특가 오픈",
+   "ai": {
+    "v": 2,
+    "promo": true,
+    "why": "비엣젯 11.11 특가 항공권 소식",
+    "airlines": [
+     "비엣젯"
+    ],
+    "name": "11.11 더블데이 특가",
+    "book": null,
+    "board": {
+     "from": null,
+     "to": "2027-05-31"
+    },
+    "price": null,
+    "trip": null,
+    "pct": null,
+    "seoul": true,
+    "at": "2026-11-12",
+    "model": "deepseek-v4-flash"
+   },
+   "lastDate": "2026-11-22T00:43:11.427Z",
+   "lastFound": "2026-11-22",
+   "more": [
+    {
+     "id": "c:https://cafe.naver.com/vinpearl/561674|[선착순] 비엣젯 동계 항공권 34만원 최저가 특가 + 패스트트랙 무료!",
+     "kind": "airline",
+     "community": true,
+     "title": "[선착순] 비엣젯 동계 항공권 34만원 최저가 특가 + 패스트트랙 무료!",
+     "desc": "비엣젯 항공 동계 시즌 오픈을 기념해 놓치면 아쉬운 최저가 특가 프로모션 을 준비했습니다!",
+     "summary": [
+      "비엣젯 항공 동계 시즌 오픈을 기념해 놓치면 아쉬운 최저가 특가 프로모션 을 준비했습니다!…"
+     ],
+     "link": "https://cafe.naver.com/vinpearl/561674",
+     "source": "네이버 카페 · 베트남 피크타임 푸꾸옥 나트랑 다낭 호치민 무이네 하노이 여행",
+     "date": "2026-11-04T03:00:45.320Z",
+     "found": "2026-11-04",
+     "cards": [],
+     "airlines": [
+      "VJ"
+     ],
+     "countries": [
+      "베트남"
+     ],
+     "allRoutes": true,
+     "routes": [],
+     "price": {
+      "amount": 340000,
+      "trip": "oneway?"
+     },
+     "query": "비엣젯 프로모션",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "비엣젯 동계 특가 프로모션",
+      "airlines": [
+       "비엣젯"
+      ],
+      "name": "동계 시즌 오픈 특가",
+      "book": null,
+      "board": null,
+      "price": 340000,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/vinpearl/556473|[항공권] 비엣젯 항공권 특가, 유류할증료 인상 전 예약 찬스! | 32",
+     "kind": "airline",
+     "community": true,
+     "title": "[항공권] 비엣젯 항공권 특가, 유류할증료 인상 전 예약 찬스! | 32만원~",
+     "desc": "",
+     "link": "https://cafe.naver.com/vinpearl/556473",
+     "source": "네이버 카페 · 베트남 피크타임 푸꾸옥 나트랑 다낭 호치민 무이네 하노이 여행",
+     "date": "2026-11-04T10:41:50.033Z",
+     "dateFound": true,
+     "found": "2026-11-04",
+     "cards": [],
+     "airlines": [
+      "VJ"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": {
+      "amount": 320000,
+      "trip": "oneway?"
+     },
+     "query": "비엣젯 얼리버드",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "비엣젯 항공권 특가 소식",
+      "airlines": [
+       "비엣젯"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": 320000,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/tybwondergirl5/115773|✈️ [ 비엣젯 항공 특가 ] 부산·인천 출발 베트남 편도 99,000원",
+     "kind": "airline",
+     "community": true,
+     "title": "✈️ [ 비엣젯 항공 특가 ] 부산·인천 출발 베트남 편도 99,000원부터!",
+     "desc": "디고님들~~ 비엣젯 항공에서 반가운 특가 소식이 있네요! ✈️ 이번에는 수하물 등이 포함된 Deluxe 운임 특가 예요. 부산 출발 다낭·나트랑도 대상 노선에 들어 있답니다!",
+     "summary": [
+      "디고님들~~ 비엣젯 항공에서 반가운 특가 소식이 있네요! ✈️ 이번에는 수하물 등이 포함된 Deluxe 운임 특가 예요.",
+      "부산 출발 다낭·나트랑도 대상 노선에 들어 있답니다!…"
+     ],
+     "link": "https://cafe.naver.com/tybwondergirl5/115773",
+     "source": "네이버 카페 · 베트남 디고-다낭나트랑자유여행,맛집,호텔,리조트,마사지,골프",
+     "date": "2026-11-05T03:00:44.836Z",
+     "found": "2026-11-05",
+     "cards": [],
+     "airlines": [
+      "VJ"
+     ],
+     "countries": [
+      "베트남"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": {
+      "amount": 99000,
+      "trip": "oneway"
+     },
+     "query": "비엣젯 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "비엣젯 항공 특가 운임 소식",
+      "airlines": [
+       "비엣젯"
+      ],
+      "name": "비엣젯 항공 특가",
+      "book": null,
+      "board": null,
+      "price": 99000,
+      "trip": "편도",
+      "pct": null,
+      "seoul": true,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/tybwondergirl5/116269|✈️ 비엣젯 항공 11월 더블데이 특가 ! 부산·인천 출발 129,000",
+     "kind": "airline",
+     "community": true,
+     "title": "✈️ 비엣젯 항공 11월 더블데이 특가 ! 부산·인천 출발 129,000원부터",
+     "desc": "출처 비엣젯 홈페이지 디고님들~~ 반가운 비엣젯 항공 특가 소식이에요! 이번엔 부산 출발 다낭·나트랑도 포함됐답니다.",
+     "summary": [
+      "출처 비엣젯 홈페이지 디고님들~~ 반가운 비엣젯 항공 특가 소식이에요! 이번엔 부산 출발 다낭·나트랑도 포함됐답니다."
+     ],
+     "link": "https://cafe.naver.com/tybwondergirl5/116269",
+     "source": "네이버 카페 · 베트남 디고-다낭나트랑자유여행,맛집,호텔,리조트,마사지,골프",
+     "date": "2026-11-08T05:00:41.347Z",
+     "found": "2026-11-08",
+     "cards": [],
+     "airlines": [
+      "VJ"
+     ],
+     "countries": [
+      "베트남"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": {
+      "amount": 129000,
+      "trip": "oneway?"
+     },
+     "query": "비엣젯 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "비엣젯 더블데이 특가 운임 소식",
+      "airlines": [
+       "비엣젯"
+      ],
+      "name": "11월 더블데이 특가",
+      "book": null,
+      "board": null,
+      "price": 129000,
+      "trip": null,
+      "pct": null,
+      "seoul": true,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/rankingking/15626|비엣젯 항공, 한국~베트남 항공권 9만9000원부터",
+     "kind": "airline",
+     "community": true,
+     "title": "비엣젯 항공, 한국~베트남 항공권 9만9000원부터",
+     "desc": "",
+     "link": "https://cafe.naver.com/rankingking/15626",
+     "source": "네이버 카페 · 캠핑.여행.트레킹 정보 - 랭킹킹",
+     "date": "2026-11-09T11:00:48.524Z",
+     "found": "2026-11-09",
+     "cards": [],
+     "airlines": [
+      "VJ"
+     ],
+     "countries": [
+      "베트남"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": {
+      "amount": 99000,
+      "trip": "oneway?"
+     },
+     "query": "비엣젯 이벤트",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "비엣젯 항공권 특가 소식",
+      "airlines": [
+       "비엣젯"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": 99000,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/fobn/157652|✈️ 10월 10일 더블데이! 비엣젯 한국–베트남 전 노선 최대 20% ",
+     "kind": "airline",
+     "community": true,
+     "title": "✈️ 10월 10일 더블데이! 비엣젯 한국–베트남 전 노선 최대 20% 할인",
+     "desc": "가을 여행부터 내년 여행까지 베트남 항공권을 싸게 살 수 있는 기회예요 딱 3일만 하니까 일정 있으신 분들은 서둘러 확인하세요!",
+     "summary": [
+      "가을 여행부터 내년 여행까지 베트남 항공권을 싸게 살 수 있는 기회예요 딱 3일만 하니까 일정 있으신 분들은 서둘러 확인하세요!…"
+     ],
+     "link": "https://cafe.naver.com/fobn/157652",
+     "source": "네이버 카페 · 다낭 아지트 루나 - 다낭맛집, 다낭마사지, 호이안, 다낭여행",
+     "date": "2026-11-09T11:00:48.524Z",
+     "found": "2026-11-09",
+     "cards": [],
+     "airlines": [
+      "VJ"
+     ],
+     "countries": [
+      "베트남"
+     ],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "Thai Vietjet Air 이벤트",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "비엣젯 항공권 할인 프로모션",
+      "airlines": [
+       "비엣젯"
+      ],
+      "name": "더블데이",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": 20,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/minecraftpe/4013453|비엣젯 더블데이 특가 슈퍼세일하네요~ 편도 129,000원~",
+     "kind": "airline",
+     "community": true,
+     "title": "비엣젯 더블데이 특가 슈퍼세일하네요~ 편도 129,000원~",
+     "desc": "비엣젯에서 디럭스 클래스 올인원 패키지, 더블데이 특가 세일 합니다 편도 최저 129,000원 부터라고 해요... 분들은 한번 확인해보세요 제가 가는 날짜에는 해당이 되지 않네요 ㅜㅜ 다시 특가 찾아 삼만리해야겠어요~.",
+     "summary": [
+      "비엣젯에서 디럭스 클래스 올인원 패키지, 더블데이 특가 세일 합니다 편도 최저 129,000원 부터라고 해요...",
+      "분들은 한번 확인해보세요 제가 가는 날짜에는 해당이 되지 않네요 ㅜㅜ 다시 특가 찾아 삼만리해야겠어요~."
+     ],
+     "link": "https://cafe.naver.com/minecraftpe/4013453",
+     "source": "네이버 카페 · 푸꾸옥 고스트 - 베트남푸꾸옥 자유여행,호텔리조트,항공권,맛집",
+     "date": "2026-11-10T05:00:46.618Z",
+     "found": "2026-11-10",
+     "cards": [],
+     "airlines": [
+      "VJ"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": {
+      "amount": 129000,
+      "trip": "oneway"
+     },
+     "query": "베트남 항공권 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "비엣젯 더블데이 특가 항공권",
+      "airlines": [
+       "비엣젯"
+      ],
+      "name": "더블데이 특가",
+      "book": null,
+      "board": null,
+      "price": 129000,
+      "trip": "편도",
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/warcraftgamemap/3532552|비엣젯 다낭 여행 11.11 할인 더블 특가 .",
+     "kind": "airline",
+     "community": true,
+     "title": "비엣젯 다낭 여행 11.11 할인 더블 특가 .",
+     "desc": "✈️ 11.11 더블데이 특가 로 한국– 베트남 전 노선 편도 총액 129,000원부터!",
+     "summary": [
+      "✈️ 11.11 더블데이 특가 로 한국– 베트남 전 노선 편도 총액 129,000원부터!…"
+     ],
+     "link": "https://cafe.naver.com/warcraftgamemap/3532552",
+     "source": "네이버 카페 · 다낭 고스트 - 베트남 다낭자유여행 ,다낭여행,맛집,호텔리조트",
+     "date": "2026-11-10T21:00:47.543Z",
+     "found": "2026-11-11",
+     "cards": [],
+     "airlines": [
+      "VJ"
+     ],
+     "countries": [
+      "베트남"
+     ],
+     "allRoutes": true,
+     "routes": [],
+     "price": {
+      "amount": 129000,
+      "trip": "oneway"
+     },
+     "query": "베트남 항공권 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "비엣젯 11.11 항공권 특가",
+      "airlines": [
+       "비엣젯"
+      ],
+      "name": "11.11 더블데이 특가",
+      "book": null,
+      "board": null,
+      "price": 129000,
+      "trip": "편도",
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/tybwondergirl5/116307|비엣젯 할인 하네요~^^",
+     "kind": "airline",
+     "community": true,
+     "title": "비엣젯 할인 하네요~^^",
+     "desc": "",
+     "link": "https://cafe.naver.com/tybwondergirl5/116307",
+     "source": "네이버 카페 · 베트남 디고-다낭나트랑자유여행,맛집,호텔,리조트,마사지,골프",
+     "date": "2026-11-08T11:00:46.243Z",
+     "found": "2026-11-08",
+     "cards": [],
+     "airlines": [
+      "VJ"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "비엣젯 할인",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "비엣젯 항공권 할인 소식",
+      "airlines": [
+       "비엣젯"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/warcraftgamemap/3531303|비엣젯✈️더블데이 특가 행사하네요^^",
+     "kind": "airline",
+     "community": true,
+     "title": "비엣젯✈️더블데이 특가 행사하네요^^",
+     "desc": "",
+     "link": "https://cafe.naver.com/warcraftgamemap/3531303",
+     "source": "네이버 카페 · 다낭 고스트 - 베트남 다낭자유여행 ,다낭여행,맛집,호텔리조트",
+     "date": "2026-11-09T01:00:42.273Z",
+     "found": "2026-11-09",
+     "cards": [],
+     "airlines": [
+      "VJ"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "베트남 항공권 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "비엣젯 더블데이 특가 행사",
+      "airlines": [
+       "비엣젯"
+      ],
+      "name": "더블데이 특가",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/guitarnsong/297457|✈️(정보) 비엣젯 항공 - 11월 11일 더블데이 특가",
+     "kind": "airline",
+     "community": true,
+     "title": "✈️(정보) 비엣젯 항공 - 11월 11일 더블데이 특가",
+     "desc": "11월 11일 더블데이 특가 비엣젯과 함께 슈퍼 세일!",
+     "summary": [
+      "11월 11일 더블데이 특가 비엣젯과 함께 슈퍼 세일!…"
+     ],
+     "link": "https://cafe.naver.com/guitarnsong/297457",
+     "source": "네이버 카페 · 하노이 고스트-베트남하노이자유여행,하롱베이,호텔,마사지,맛집",
+     "date": "2026-11-09T19:14:18.306Z",
+     "found": "2026-11-10",
+     "cards": [],
+     "airlines": [
+      "VJ"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "베트남 항공권 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "비엣젯 더블데이 항공권 특가",
+      "airlines": [
+       "비엣젯"
+      ],
+      "name": "11월 11일 더블데이 특가",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/warcraftgamemap/3532622|✈️ 다낭 특가 프로모션 : 비엣젯 항공",
+     "kind": "airline",
+     "community": true,
+     "title": "✈️ 다낭 특가 프로모션 : 비엣젯 항공",
+     "desc": "비엣젯 항공 은 구입전 충분한 고민이 필요합니다 11월 11일 더블데이 특가 비엣젯과 함께 슈퍼 세일!",
+     "summary": [
+      "비엣젯 항공 은 구입전 충분한 고민이 필요합니다 11월 11일 더블데이 특가 비엣젯과 함께 슈퍼 세일!…"
+     ],
+     "link": "https://cafe.naver.com/warcraftgamemap/3532622",
+     "source": "네이버 카페 · 다낭 고스트 - 베트남 다낭자유여행 ,다낭여행,맛집,호텔리조트",
+     "date": "2026-11-10T21:00:47.543Z",
+     "found": "2026-11-11",
+     "cards": [],
+     "airlines": [
+      "VJ"
+     ],
+     "countries": [
+      "베트남"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "베트남 항공권 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "비엣젯 더블데이 항공권 특가",
+      "airlines": [
+       "비엣젯"
+      ],
+      "name": "11월 11일 더블데이 특가",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/warcraftgamemap/3533146|다낭 비엣젯 항공 11월 11일 더블데이 할인 정보 ( 편도할인, 디럭스",
+     "kind": "airline",
+     "community": true,
+     "title": "다낭 비엣젯 항공 11월 11일 더블데이 할인 정보 ( 편도할인, 디럭스 할인)",
+     "desc": "애증의 항공 사 비엣젯에서 더블데이 특가 슈퍼세일 (= 쓰고 쪼금 할인)을 시작 했습니다.",
+     "summary": [
+      "애증의 항공 사 비엣젯에서 더블데이 특가 슈퍼세일 (= 쓰고 쪼금 할인)을 시작 했습니다."
+     ],
+     "link": "https://cafe.naver.com/warcraftgamemap/3533146",
+     "source": "네이버 카페 · 다낭 고스트 - 베트남 다낭자유여행 ,다낭여행,맛집,호텔리조트",
+     "date": "2026-11-11T09:54:34.408Z",
+     "found": "2026-11-11",
+     "cards": [],
+     "airlines": [
+      "VJ"
+     ],
+     "countries": [
+      "베트남"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "베트남 항공권 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "비엣젯 더블데이 항공권 특가",
+      "airlines": [
+       "비엣젯"
+      ],
+      "name": "더블데이 특가",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/mindy7857/5528147|나트랑 비엣젯 11월 11일 더블데이 할인 정보 ( 편도 할인 , 디럭스",
+     "kind": "airline",
+     "community": true,
+     "title": "나트랑 비엣젯 11월 11일 더블데이 할인 정보 ( 편도 할인 , 디럭스 할인 )",
+     "desc": "애증의 항공 사 비엣젯에서 더블데이 특가 슈퍼세일 (= 쓰고 쪼금 할인 )을 시작 했습니다.",
+     "summary": [
+      "애증의 항공 사 비엣젯에서 더블데이 특가 슈퍼세일 (= 쓰고 쪼금 할인 )을 시작 했습니다."
+     ],
+     "link": "https://cafe.naver.com/mindy7857/5528147",
+     "source": "네이버 카페 · 베나자-베트남나트랑자유여행,달랏,무이네,호텔,투어,리조트맛집",
+     "date": "2026-11-11T11:00:46.372Z",
+     "found": "2026-11-11",
+     "cards": [],
+     "airlines": [
+      "VJ"
+     ],
+     "countries": [
+      "베트남"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "항공권 할인코드",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "비엣젯 더블데이 항공권 특가",
+      "airlines": [
+       "비엣젯"
+      ],
+      "name": "더블데이 특가",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/zzop/4337925|12월 항공권 구매 ( 비엣젯 항공 11월11일 더블데이 이벤트 )",
+     "kind": "airline",
+     "community": true,
+     "title": "12월 항공권 구매 ( 비엣젯 항공 11월11일 더블데이 이벤트 )",
+     "desc": "",
+     "link": "https://cafe.naver.com/zzop/4337925",
+     "source": "네이버 카페 · 나트랑 도깨비 - 베트남 나트랑 자유여행,무이네,달랏,맛집,호텔",
+     "date": "2026-11-12T02:02:04.261Z",
+     "found": "2026-11-12",
+     "cards": [],
+     "airlines": [
+      "VJ"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "비엣젯 이벤트",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "비엣젯 더블데이 특가 안내",
+      "airlines": [
+       "비엣젯"
+      ],
+      "name": "11월 11일 더블데이 이벤트",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/bluefild/36541|비엣젯 항공 한국 베트남 전 노선 특가 진행 수하물 규정 먼저 확인하세요",
+     "kind": "airline",
+     "community": true,
+     "title": "비엣젯 항공 한국 베트남 전 노선 특가 진행 수하물 규정 먼저 확인하세요",
+     "desc": "■ 무슨 일인가 비엣젯 항공 이 11월 11일 더블데이를 맞아 한국과 베트남 을 잇는 전 노선을 대상으로 항공권 특가 이벤트를 진행합니다.",
+     "summary": [
+      "■ 무슨 일인가 비엣젯 항공 이 11월 11일 더블데이를 맞아 한국과 베트남 을 잇는 전 노선을 대상으로 항공권 특가 이벤트를 진행합니다."
+     ],
+     "link": "https://cafe.naver.com/bluefild/36541",
+     "source": "네이버 카페 · 괌플레이(Guamplay) - 괌 자유여행의 모든 것",
+     "date": "2026-11-14T01:00:40.603Z",
+     "found": "2026-11-14",
+     "cards": [],
+     "airlines": [
+      "VJ"
+     ],
+     "countries": [
+      "베트남"
+     ],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "베트남 항공권 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "비엣젯 전 노선 항공권 특가",
+      "airlines": [
+       "비엣젯"
+      ],
+      "name": "더블데이 특가",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-14",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/ungsangstory/1412854|푸꾸옥으로! 노옵션❤️ 특가 899,000원! ✈️ 비엣젯 항공 × 빈홀",
+     "kind": "airline",
+     "community": true,
+     "title": "푸꾸옥으로! 노옵션❤️ 특가 899,000원! ✈️ 비엣젯 항공 × 빈홀리데이 피에....",
+     "desc": "✈️ 비엣젯 항공 × 빈홀리데이 피에스타 겨울방학 한정 특가 ! 10만원 할인! 추운 겨울, 따뜻한 베트남 푸꾸옥에서 여유로운 휴가 어떠세요? ☀️ 이번에 준비한 상품은 노옵션 패키지!",
+     "summary": [
+      "✈️ 비엣젯 항공 × 빈홀리데이 피에스타 겨울방학 한정 특가 ! 10만원 할인! 추운 겨울, 따뜻한 베트남 푸꾸옥에서 여유로운 휴가 어떠세요? ☀️ 이번에 준비한 상품은 노옵션 패키지!…"
+     ],
+     "link": "https://cafe.naver.com/ungsangstory/1412854",
+     "source": "네이버 카페 · 웅상이야기",
+     "date": "2026-11-16T09:00:47.660Z",
+     "found": "2026-11-16",
+     "cards": [],
+     "airlines": [
+      "VJ"
+     ],
+     "countries": [
+      "베트남"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": {
+      "amount": 899000,
+      "trip": "oneway?"
+     },
+     "query": "비엣젯 특가",
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "패키지 상품 특가, 항공권 중심 아님",
+      "airlines": [
+       "비엣젯"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-16",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/minecraftpe/4020911|정보)비엣젯 항공 블랙 프라이데이 슈퍼 딜",
+     "kind": "airline",
+     "community": true,
+     "title": "정보)비엣젯 항공 블랙 프라이데이 슈퍼 딜",
+     "desc": "아니라, 베트남 항공 사 Vietjet와 함께 0 비행권을 사냥하는 대단한 파티도 있어요!!! 모든 비행권의 가격은 OD (세금 및 수수료를 제외한)로 시작됩니다.",
+     "summary": [
+      "아니라, 베트남 항공 사 Vietjet와 함께 0 비행권을 사냥하는 대단한 파티도 있어요!!! 모든 비행권의 가격은 OD (세금 및 수수료를 제외한)로 시작됩니다."
+     ],
+     "link": "https://cafe.naver.com/minecraftpe/4020911",
+     "source": "네이버 카페 · 푸꾸옥 고스트 - 베트남푸꾸옥 자유여행,호텔리조트,항공권,맛집",
+     "date": "2026-11-22T00:43:11.427Z",
+     "found": "2026-11-22",
+     "cards": [],
+     "airlines": [
+      "VJ"
+     ],
+     "countries": [
+      "베트남"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "베트남 항공권 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "비엣젯 블랙프라이데이 항공권 특가",
+      "airlines": [
+       "비엣젯"
+      ],
+      "name": "블랙 프라이데이 슈퍼 딜",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-22",
+      "model": "deepseek-v4-flash"
+     }
+    }
+   ]
+  },
+  {
+   "id": "iWDV5UEtzdEtWT2k4cGhNVC02cGk2TVQxakFrYzcxN0tVWUxNS0dNNTd3Y3lwMl9vX1FsbzFNVnJqU1YxcEpLTjRhV1kzbFpoS2tNTUk4bVJHZEdKV0s4cU8|필리핀항공, 필리핀관광진흥청과 항공권 프로모션 진행",
+   "kind": "airline",
+   "title": "필리핀항공, 필리핀관광진흥청과 항공권 프로모션 진행",
+   "desc": "필리핀항공, 필리핀관광진흥청과 항공권 프로모션 진행 Chosunbiz",
+   "summary": [
+    "필리핀항공, 필리핀관광진흥청과 항공권 프로모션 진행 Chosunbiz…"
+   ],
+   "link": "https://biz.chosun.com/industry/business_info/2026/11/22/PNP77J6ORFAGXHWMKBKD273IIQ/?outputType=amp",
+   "source": "Chosunbiz",
+   "date": "2026-11-21T23:03:26.000Z",
+   "found": "2026-11-22",
+   "cards": [],
+   "airlines": [
+    "PR"
+   ],
+   "countries": [
+    "필리핀"
+   ],
+   "allRoutes": false,
+   "routes": [],
+   "price": null,
+   "query": "필리핀 항공권 {특가말}",
+   "bodyAt": "2026-11-22",
+   "body": [
+    "필리핀항공, 필리핀관광진흥청과 항공권 프로모션 진행",
+    "입력 2026.11.22. 08:00",
+    "필리핀항공이 필리핀관광진흥청과 협력해 한국 출발 여행객을 대상으로 항공권 공동 할인 프로모션을 진행한다.",
+    "필리핀항공과 필리핀관광진흥청은 여러 명이 함께 여행하는 고객을 대상으로 '그룹 밸류 프로모션'을 선보인다.",
+    "함께 예약하는 인원에 따라 할인율이 달라지는 방식이다.",
+    "프로모션은 2인 예약 시 항공권 운임의 30%, 3인 예약 시 50%를 할인한다.",
+    "동반 예약 인원에 따라 항공권 구매 비용을 줄일 수 있도록 구성됐다.",
+    "예약 기간은 2026년 10월 15일부터 11월 30일까지이며, 여행은 11월 1일부터 가능하다.",
+    "프로모션을 이용하려면 동일한 예약에 포함된 승객이 함께 여행해야 한다.",
+    "항공편과 예약 운임에 따라 적용 여부가 달라질 수 있다.",
+    "필리핀항공, 그룹 밸류 프로모션 혜택에 국내선 네트워크 강점 더해",
+    "필리핀항공은 이번 그룹 밸류 프로모션과 함께 필리핀 주요 관광지를 잇는 국내선 항공편을 운영하고 있다.",
+    "필리핀항공 이지현 한국지사장은 \"이번 그룹 밸류 프로모션이 가족, 친구들과 함께 필리핀의 다양한 매력을 보다 합리적인 가격으로 경험할 수 있는 기회가 되기를 바란다\"며 \"앞으로도 폭넓은 국내선 네트워크와 다양한 항공 서비스를 바탕으로 여행객들에게 더욱 편리하고 만족스러운 여행 경험을 제공할 계획\"이라고 말했다.",
+    "200억 들여 사들였지만… '5000원 순댓국' 가게의 추락"
+   ],
+   "ai": {
+    "v": 2,
+    "promo": true,
+    "why": "항공권 운임 할인 프로모션",
+    "airlines": [
+     "필리핀항공"
+    ],
+    "name": "그룹 밸류 프로모션",
+    "book": {
+     "from": "2026-10-15",
+     "to": "2026-11-30"
+    },
+    "board": {
+     "from": "2026-11-01",
+     "to": null
+    },
+    "price": null,
+    "trip": null,
+    "pct": 50,
+    "seoul": true,
+    "at": "2026-11-22",
+    "model": "deepseek-v4-flash"
+   },
+   "lastDate": "2026-11-21T23:03:26.000Z",
+   "lastFound": "2026-11-22"
+  },
+  {
+   "id": "c:https://cafe.naver.com/japanpackagetour/13921|트리니티 항공 11~1월 25% 할인 , 일본 겨울 프로모션",
+   "kind": "airline",
+   "community": true,
+   "title": "트리니티 항공 11~1월 25% 할인 , 일본 겨울 프로모션",
+   "desc": "전용 할인코드 트리니티 항공 관계자는 항공권 할인 과 결제, 제휴 혜택을 함께 활용해 취향에 맞는 겨울 여행을 계획하길 바란다고 전했습니다.",
+   "summary": [
+    "전용 할인코드 트리니티 항공 관계자는 항공권 할인 과 결제, 제휴 혜택을 함께 활용해 취향에 맞는 겨울 여행을 계획하길 바란다고 전했습니다."
+   ],
+   "link": "https://cafe.naver.com/japanpackagetour/13921",
+   "source": "네이버 카페 · 일본 패키지여행 카페 (북해도,도쿄,오사카,후쿠오카,요나고)",
+   "date": "2026-11-21T23:00:42.191Z",
+   "found": "2026-11-22",
+   "cards": [],
+   "airlines": [],
+   "countries": [
+    "일본"
+   ],
+   "allRoutes": false,
+   "routes": [],
+   "price": null,
+   "query": "항공권 할인코드",
+   "ai": {
+    "v": 2,
+    "promo": true,
+    "why": "항공사 할인코드 프로모션",
+    "airlines": [
+     "트리니티항공"
+    ],
+    "name": "일본 겨울 프로모션",
+    "book": null,
+    "board": null,
+    "price": null,
+    "trip": null,
+    "pct": 25,
+    "seoul": null,
+    "at": "2026-11-22",
+    "model": "deepseek-v4-flash"
+   },
+   "lastDate": "2026-11-21T23:00:42.191Z",
+   "lastFound": "2026-11-22"
   },
   {
    "id": "c:https://cafe.naver.com/romul/328344|[공유] 트리니티항공 , 수능 프로모션…국제선 최대 20% 할인",
@@ -8455,179 +8830,6 @@
       "at": "2026-11-18",
       "model": "deepseek-v4-flash"
      }
-    }
-   ]
-  },
-  {
-   "id": "c:https://cafe.naver.com/airportshopping/1165|[ 대한항공 ] 고마쓰행 항공 권 10% 할인 쿠폰!",
-   "kind": "airline",
-   "community": true,
-   "title": "[ 대한항공 ] 고마쓰행 항공 권 10% 할인 쿠폰!",
-   "desc": "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
-   "summary": [
-    "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
-   ],
-   "link": "https://cafe.naver.com/airportshopping/1165",
-   "source": "네이버 카페 · 인천공항의 모든 것",
-   "date": "2026-11-20T05:00:43.396Z",
-   "found": "2026-11-20",
-   "cards": [],
-   "airlines": [
-    "KE"
-   ],
-   "countries": [
-    "일본"
-   ],
-   "allRoutes": false,
-   "routes": [],
-   "price": {
-    "amount": 50000,
-    "trip": "oneway?"
-   },
-   "query": "대한항공 할인",
-   "ai": {
-    "v": 2,
-    "promo": true,
-    "why": "항공권 10% 할인 쿠폰",
-    "airlines": [
-     "대한항공"
-    ],
-    "name": null,
-    "book": null,
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": 10,
-    "seoul": null,
-    "at": "2026-11-20",
-    "model": "deepseek-v4-flash"
-   },
-   "notified": "2026-11-20",
-   "lastDate": "2026-11-20T11:00:49.931Z",
-   "lastFound": "2026-11-20",
-   "more": [
-    {
-     "id": "c:https://cafe.naver.com/hotdealcatch/2410|[이벤트] 대한항공 고마쓰 응모, 기프트카드 5만원 (~12/20)",
-     "kind": "airline",
-     "community": true,
-     "title": "[이벤트] 대한항공 고마쓰 응모, 기프트카드 5만원 (~12/20)",
-     "desc": "대한항공 이시카와현 고마쓰 프로모션인데, 비행기 표 안 사도... 건데, 대한항공 기프트카드 5만원권 20명 추첨이에요.",
-     "summary": [
-      "대한항공 이시카와현 고마쓰 프로모션인데, 비행기 표 안 사도...",
-      "건데, 대한항공 기프트카드 5만원권 20명 추첨이에요."
-     ],
-     "link": "https://cafe.naver.com/hotdealcatch/2410",
-     "source": "네이버 카페 · 핫딜캐치 · 매일 특가와 짠테크",
-     "date": "2026-11-20T07:00:41.100Z",
-     "found": "2026-11-20",
-     "cards": [],
-     "airlines": [
-      "KE"
-     ],
-     "countries": [
-      "일본"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": {
-      "amount": 50000,
-      "trip": "oneway?"
-     },
-     "query": "대한항공 특가",
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "항공권 경품 이벤트",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-20",
-      "model": "deepseek-v4-flash"
-     },
-     "notified": "2026-11-20"
-    },
-    {
-     "id": "c:https://cafe.naver.com/nyctourdesign/1207292|대한항공 뉴어크 취항기념 8% 할인",
-     "kind": "airline",
-     "community": true,
-     "title": "대한항공 뉴어크 취항기념 8% 할인",
-     "desc": "네.",
-     "link": "https://cafe.naver.com/nyctourdesign/1207292",
-     "source": "네이버 카페 · [미여디]No.1 뉴욕,LA,하와이,라스베가스,샌프란시스코 미국여행",
-     "date": "2026-11-20T11:00:49.931Z",
-     "found": "2026-11-20",
-     "cards": [],
-     "airlines": [
-      "KE"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "대한항공 특가",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "대한항공 취항기념 운임 할인",
-      "airlines": [
-       "대한항공"
-      ],
-      "name": "뉴어크 취항기념 8% 할인",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": 8,
-      "seoul": null,
-      "at": "2026-11-20",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/airportshopping/1167|[ 대한항공 ] 뉴욕 신규 취항 기념 항공 권 할인 이벤트!",
-     "kind": "airline",
-     "community": true,
-     "title": "[ 대한항공 ] 뉴욕 신규 취항 기념 항공 권 할인 이벤트!",
-     "desc": "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
-     "summary": [
-      "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
-     ],
-     "link": "https://cafe.naver.com/airportshopping/1167",
-     "source": "네이버 카페 · 인천공항의 모든 것",
-     "date": "2026-11-20T07:00:41.100Z",
-     "found": "2026-11-20",
-     "cards": [],
-     "airlines": [
-      "KE"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "대한항공 프로모션",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "신규 취항 기념 항공권 할인",
-      "airlines": [
-       "대한항공"
-      ],
-      "name": "뉴욕 신규 취항 기념 항공권 할인 이벤트",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-20",
-      "model": "deepseek-v4-flash"
-     },
-     "notified": "2026-11-20"
     }
    ]
   },
@@ -50024,226 +50226,26 @@
      }
     }
    ]
-  },
-  {
-   "id": "1GYjJnaldPZzFCMEhMMzFvSGMzcTcxOHItbzY0SjNMYU8yeGd4b0lLNHhyRlJhX3ZuWUdtRlk2aElXMDdEeEl4MkJPdnFPeWx6SWQxZFhJU1h2dVJfeHBrUQ|블랙프라이데이 여행 특가 2026: 유럽에서 2027년 항공권과 호텔 예",
-   "kind": "airline",
-   "title": "블랙프라이데이 여행 특가 2026: 유럽에서 2027년 항공권과 호텔 예약하기 - 뉴스 및 통계",
-   "desc": "블랙프라이데이 여행 특가 2026: 유럽에서 2027년 항공권과 호텔 예약하기 - 뉴스 및 통계 IndexBox",
-   "summary": [
-    "블랙프라이데이 여행 특가 2026: 유럽에서 2027년 항공권과 호텔 예약하기 - 뉴스 및 통계 IndexBox…"
-   ],
-   "link": "https://www.indexbox.io/ko/blog/black-friday-and-travel-tuesday-2026-european-travel-deals-for-2027-trips/",
-   "source": "IndexBox",
-   "date": "2026-10-28T12:30:34.000Z",
-   "found": "2026-11-01",
-   "cards": [],
-   "airlines": [],
-   "countries": [
-    "미국"
-   ],
-   "allRoutes": false,
-   "routes": [],
-   "price": null,
-   "query": "미국 항공권 특가",
-   "bodyAt": "2026-11-01",
-   "body": [
-    "스카이스캐너 조사에서 사이버먼데이가 항공권 예약에 가장 좋은 날로 나타났다.",
-    "2026. 10. 28.",
-    "블랙프라이데이와 트래블튜즈데이 2026: 2027년 여행을 위한 유럽 여행 특가",
-    "이 매체는 이러한 미국식 소매 판촉이 연료비와 생활비 부담이 계속되는 가운데 2027년 휴가를 더 낮은 가격에 확정하려는 여행객에게 도움이 될 수 있다고 전했다.",
-    "브랜드들이 소비 지출을 잡기 위해 나서면서 특가는 블랙프라이데이 사전 예고부터 트래블튜즈데이까지 서로 다른 날짜에 등장할 수 있다.",
-    "스카이스캐너는 2025년 블랙프라이데이부터 트래블튜즈데이까지 5일간 좌석당 최저 평균 가격을 조사한 결과 사이버먼데이가 항공권 예약에 가장 좋은 날이었다고 밝혔으며, 다음 날에도 여전히 특가를 찾을 수 있었다.",
-    "스카이스캐너의 여행 트렌드 및 목적지 전문가 로라 린지는 트래블튜즈데이 무렵이면 대부분 사람이 이미 여행 계획을 정해 둔 상태이며 긴 쇼핑 기간을 보낸 뒤에는 다음 해 여행을 생각하지 않을 수 있다고 설명했다.",
-    "유럽 최대 항공사 가운데 easyJet , 영국항공, 이베리아, SAS, Jet2, 핀에어, 에어 유로파, LOT 폴란드 항공은 자사 웹사이트에 2026년 블랙프라이데이 세일용 랜딩 페이지를 운영하고 있다.",
-    "클로트리마졸 크림 시장 2035년 전망: 셀프케어와 고령화로 수요 가속",
-    "2026. 11. 1.",
-    "아연도금 강판 지붕재 시장 2035년 전망: 리모델링·인프라 지출이 성장 견인",
-    "석유·가스 시추와 식품 안정제 수요가 이끄는 카르복시메틸 셀룰로오스(CMC) 시장 2035년 전망",
-    "\",\"subtitle\":\"첫날부터 실제 작업으로 플랫폼을 테스트하세요.",
-    "\",\"price\":\"첫 주 $125 • 이후 월 $500\",\"cta_default\":\"스마트 플랜 체험\",\"footnote\":\"전체 플랫폼 도구로 첫날부터 실제 작업을 실행하세요."
-   ],
-   "ai": {
-    "v": 2,
-    "promo": false,
-    "why": "가격 추이·분석 기사",
-    "airlines": [],
-    "name": null,
-    "book": null,
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": null,
-    "seoul": null,
-    "at": "2026-11-12",
-    "model": "deepseek-v4-flash"
-   },
-   "lastDate": "2026-10-28T12:30:34.000Z",
-   "lastFound": "2026-11-01"
-  },
-  {
-   "id": "55NFVvcTBhYjVwcVZ1eHZLTEIyZzA2ZWdWQlBUemdORUFUSHlXRGFVRWdyNTlDd3hKUnFXc2k2VExSRllqVE1qSWFCZGpPU3JIVGE0bnhHQTNnVjZDeFF3QQ|제주항공, 항공의 날 맞아 국내·국제선 48시간 특가",
-   "kind": "airline",
-   "title": "제주항공, 항공의 날 맞아 국내·국제선 48시간 특가",
-   "link": "https://www.vegannews.co.kr/news/article.html?no=397823",
-   "source": "비건뉴스",
-   "date": "2026-10-28T07:00:01.000Z",
-   "found": "2026-10-31",
-   "cards": [],
-   "airlines": [
-    "7C",
-    "LJ",
-    "CX"
-   ],
-   "routes": [
-    {
-     "key": "SEL-CXR-3-5-D",
-     "level": "weak"
-    }
-   ],
-   "price": null,
-   "vs": null,
-   "query": "제주항공 특가",
-   "countries": [
-    "일본",
-    "홍콩",
-    "중국",
-    "미국령",
-    "베트남",
-    "대만"
-   ],
-   "allRoutes": true,
-   "bodyAt": "2026-11-01",
-   "body": [
-    "제주항공, 항공의 날 맞아 국내·국제선 48시간 특가",
-    "등록 2026.10.28 16:00:01",
-    "제주항공이 항공의 날을 기념해 국내선과 국제선 항공권을 대상으로 48시간 할인 행사를 진행한다.",
-    "예약은 28일 오전 10시부터 30일 오전 10시까지 가능하며, 탑승 기간은 11월 30일까지다.",
-    "제주항공 프로모션 정보를 게시한 고고씽에 따르면 할인 대상은 국내선 6개와 일본·중국·동남아시아·홍콩·사이판 국제선 31개 노선이다.",
-    "편도 총액 기준 최저 운임은 국내선 2만6500원, 일본·중국 8만8000원, 동남아시아 11만5100원, 홍콩 11만9500원, 사이판 14만2700원부터다.",
-    "항공의 날은 대한국민항공사 소속 항공기가 서울~부산 노선에 처음 취항한 1948년 10월 30일을 기념해 열린다."
-   ],
-   "summary": [
-    "제주항공, 항공의 날 맞아 국내·국제선 48시간 특가 등록 2026.10.28 16:00:01 제주항공이 항공의 날을 기념해 국내선과 국제선 항공권을 대상으로 48시간 할인 행사를 진행한다.",
-    "예약은 28일 오전 10시부터 30일 오전 10시까지 가능하며, 탑승 기간은 11월 30일까지다.",
-    "제주항공 프로모션 정보를 게시한 고고씽에 따르면 할인 대상은 국내선 6개와 일본·중국·동남아시아·홍콩·사이판 국제선 31개 노선이다."
-   ],
-   "ai": {
-    "v": 2,
-    "promo": true,
-    "why": "제주항공 48시간 항공권 특가",
-    "airlines": [
-     "제주항공"
-    ],
-    "name": "항공의 날 48시간 특가",
-    "book": {
-     "from": "2026-10-28",
-     "to": "2026-10-30"
-    },
-    "board": {
-     "from": null,
-     "to": "2026-11-30"
-    },
-    "price": 88000,
-    "trip": "편도",
-    "pct": null,
-    "seoul": null,
-    "at": "2026-11-12",
-    "model": "deepseek-v4-flash"
-   },
-   "lastDate": "2026-10-28T09:00:00.000Z",
-   "lastFound": "2026-10-31",
-   "more": [
-    {
-     "id": "https://www.vegannews.co.kr/news/article.html|제주항공, 항공의 날 맞아 국내&#183;국제선 48시간 특가",
-     "kind": "airline",
-     "title": "제주항공, 항공의 날 맞아 국내&#183;국제선 48시간 특가",
-     "desc": "제주항공이 항공의 날을 기념해 국내선과 국제선 항공권을 대상으로 48시간 할인 행사를 진행한다. 예약은 28일 오전 10시부터 30일 오전 10시까지 가능하며, 탑승 기간은 11월 30일까지다. 제주항공 프로모션 정보를 게시한 고고씽에 따르면 할인 대상은 국내선 6개와 일본&#183;중국&#183;동남아시아&#183;홍콩&#183;사이판 국제선 31개 노선이다. 편도 총액 기준 최저 운임은 ...",
-     "summary": [
-      "제주항공이 항공의 날을 기념해 국내선과 국제선 항공권을 대상으로 48시간 할인 행사를 진행한다.",
-      "예약은 28일 오전 10시부터 30일 오전 10시까지 가능하며, 탑승 기간은 11월 30일까지다.",
-      "제주항공 프로모션 정보를 게시한 고고씽에 따르면 할인 대상은 국내선 6개와 일본&#183;중국&#183;동남아시아&#183;홍콩&#183;사이판 국제선 31개 노선이다."
-     ],
-     "link": "https://www.vegannews.co.kr/news/article.html?no=397823",
-     "source": "vegannews",
-     "date": "2026-10-28T09:00:00.000Z",
-     "found": "2026-10-31",
-     "cards": [],
-     "airlines": [
-      "7C",
-      "LJ",
-      "CX"
-     ],
-     "countries": [
-      "일본",
-      "홍콩",
-      "중국",
-      "미국령",
-      "베트남",
-      "대만"
-     ],
-     "allRoutes": true,
-     "routes": [
-      {
-       "key": "SEL-CXR-3-5-D",
-       "level": "weak"
-      }
-     ],
-     "price": null,
-     "query": "제주항공 특가",
-     "bodyAt": "2026-11-01",
-     "body": [
-      "제주항공이 항공의 날을 기념해 국내선과 국제선 항공권을 대상으로 48시간 할인 행사를 진행한다.",
-      "예약은 28일 오전 10시부터 30일 오전 10시까지 가능하며, 탑승 기간은 11월 30일까지다.",
-      "제주항공 프로모션 정보를 게시한 고고씽에 따르면 할인 대상은 국내선 6개와 일본·중국·동남아시아·홍콩·사이판 국제선 31개 노선이다.",
-      "편도 총액 기준 최저 운임은 국내선 2만6500원, 일본·중국 8만8000원, 동남아시아 11만5100원, 홍콩 11만9500원, 사이판 14만2700원부터다.",
-      "항공의 날은 대한국민항공사 소속 항공기가 서울~부산 노선에 처음 취항한 1948년 10월 30일을 기념해 열린다."
-     ],
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "제주항공 48시간 항공권 특가",
-      "airlines": [
-       "제주항공"
-      ],
-      "name": "항공의 날 48시간 특가",
-      "book": {
-       "from": "2026-10-28",
-       "to": "2026-10-30"
-      },
-      "board": {
-       "from": null,
-       "to": "2026-11-30"
-      },
-      "price": 88000,
-      "trip": "편도",
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    }
-   ]
   }
  ],
- "updated": "2026-11-22T01:00:39.615Z",
- "runs": 264,
+ "updated": "2026-11-22T03:00:42.044Z",
+ "runs": 265,
  "checked": {
-  "베트남": "2026-11-22T01:00:39.615Z",
-  "태국": "2026-11-22T01:00:39.615Z",
-  "필리핀": "2026-11-22T01:00:39.615Z",
-  "인도네시아": "2026-11-22T01:00:39.615Z",
-  "말레이시아": "2026-11-22T01:00:39.615Z",
-  "싱가포르": "2026-11-22T01:00:39.615Z",
-  "일본": "2026-11-22T01:00:39.615Z",
-  "대만": "2026-11-22T01:00:39.615Z",
-  "홍콩": "2026-11-22T01:00:39.615Z",
-  "마카오": "2026-11-22T01:00:39.615Z",
-  "중국": "2026-11-22T01:00:39.615Z",
-  "미국령": "2026-11-22T01:00:39.615Z",
-  "미국": "2026-11-22T01:00:39.615Z"
+  "베트남": "2026-11-22T03:00:42.044Z",
+  "태국": "2026-11-22T03:00:42.044Z",
+  "필리핀": "2026-11-22T03:00:42.044Z",
+  "인도네시아": "2026-11-22T03:00:42.044Z",
+  "말레이시아": "2026-11-22T03:00:42.044Z",
+  "싱가포르": "2026-11-22T03:00:42.044Z",
+  "일본": "2026-11-22T03:00:42.044Z",
+  "대만": "2026-11-22T03:00:42.044Z",
+  "홍콩": "2026-11-22T03:00:42.044Z",
+  "마카오": "2026-11-22T03:00:42.044Z",
+  "중국": "2026-11-22T03:00:42.044Z",
+  "미국령": "2026-11-22T03:00:42.044Z",
+  "미국": "2026-11-22T03:00:42.044Z"
  },
- "auto": "2026-11-22T01:00:39.615Z",
+ "auto": "2026-11-22T03:00:42.044Z",
  "sources": {
   "7C": "2026-11-01",
   "TW": "2026-11-01",
@@ -50456,106 +50458,6 @@
    "중국동방항공 얼리버드": "2026-11-04"
   },
   "seen": [
-   "pusanmommy/1580022",
-   "010freebaram/262193",
-   "koreagift/31478",
-   "imsanbu/80544408",
-   "promocode/30",
-   "bebettergirls/2103773",
-   "dkrnl2/2099",
-   "worrytodream/999687",
-   "drawhangil/26148",
-   "wldus7158/108894",
-   "worrytodream/999623",
-   "worrytodream/999609",
-   "dolphintour/9053",
-   "campinggoreasaha/8718",
-   "20daelee/953310",
-   "dolphintour/9052",
-   "airplanetiket/1363",
-   "mindy7857/5535486",
-   "mindy7857/5535464",
-   "vinpearl/570618",
-   "ems8282/2632",
-   "ems8282/2631",
-   "ems8282/2630",
-   "ems8282/2629",
-   "vinpearl/570615",
-   "ems8282/2628",
-   "ems8282/2627",
-   "happyibook/6357271",
-   "minecraftpe/4017487",
-   "minecraftpe/4017485",
-   "warcraftgamemap/3536404",
-   "nctownnet11/217556",
-   "warcraftgamemap/3536387",
-   "vinpearl/570598",
-   "loyaltylife/369824",
-   "vinpearl/570594",
-   "worrytodream/999562",
-   "bluesmwjy/61",
-   "worldtravelcafe/1167487",
-   "worldtravelcafe/1167468",
-   "moomge/193505",
-   "momsolleh/931664",
-   "sheiszzz/1235199",
-   "antilge1/73912",
-   "lnf/416940",
-   "lnf/416928",
-   "lnf/416923",
-   "worrytodream/999774",
-   "lnf/416883",
-   "lnf/416955",
-   "worrytodream/999906",
-   "worrytodream/999872",
-   "saipanmall/9118",
-   "worrytodream/999826",
-   "leedalhae/5510",
-   "worrytodream/999807",
-   "worrytodream/999650",
-   "bebettergirls/2103768",
-   "worrytodream/999537",
-   "ems8282/2626",
-   "loveloveloveovelove/1042680",
-   "loveloveloveovelove/1042676",
-   "loveloveloveovelove/1042674",
-   "divemonster/7196",
-   "modeljoonss/5669",
-   "worrytodream/999864",
-   "dkrnl2/2100",
-   "blackdkdul/127",
-   "joonggonara/1138246288",
-   "joonggonara/1138246040",
-   "flytrimmer/447766",
-   "machupicchu/12129",
-   "noonebungee/136979",
-   "noonebungee/136978",
-   "noonebungee/136977",
-   "noonebungee/136976",
-   "noonebungee/136975",
-   "noonebungee/136974",
-   "whiskycognac/963260",
-   "dgmom365/7443335",
-   "firenze/8999608",
-   "golmarket/13193258",
-   "worrytodream/1000448",
-   "lnf/417111",
-   "worrytodream/1000447",
-   "worrytodream/1000445",
-   "worrytodream/1000443",
-   "worrytodream/1000442",
-   "worrytodream/1000440",
-   "worrytodream/1000438",
-   "worrytodream/1000432",
-   "worrytodream/1000428",
-   "worrytodream/1000423",
-   "lnf/417083",
-   "worrytodream/1000333",
-   "lnf/417056",
-   "worrytodream/1000203",
-   "lnf/417028",
-   "worrytodream/1000109",
-   "lnf/416997",
    "worrytodream/1000013",
    "mindy7857/5535653",
    "mindy7857/5535633",
@@ -56455,7 +56357,107 @@
    "noonebungee/137175",
    "noonebungee/137174",
    "noonebungee/137173",
-   "8282home/873886"
+   "8282home/873886",
+   "youfactory12/4715",
+   "worldtravelcafe/1169073",
+   "worldtravelcafe/1169071",
+   "worldtravelcafe/1169069",
+   "yongchondown/185226",
+   "yongchondown/185225",
+   "zmzm6506/87440",
+   "zmzm6506/87439",
+   "dngd/51256",
+   "dgmom365/7447924",
+   "minecraftpe/4021002",
+   "jejusch/159355",
+   "cafebeautyup/172135",
+   "zzop/4353472",
+   "mindy7857/5544586",
+   "mindy7857/5544511",
+   "worrytodream/999767",
+   "culturebloom/3443448",
+   "mindy7857/5544637",
+   "sm2022sf/1332920",
+   "mania7777777/454495",
+   "kamilsfighting/215645",
+   "iwibronetbook/214007",
+   "misseses/184634",
+   "msiu100/686428",
+   "tobaab/641581",
+   "hiric/367186",
+   "mania7777777/454488",
+   "010freebaram/265125",
+   "010freebaram/265120",
+   "kamilsfighting/215642",
+   "cheap0909/514589",
+   "specup/7976064",
+   "jungamironware/21663",
+   "iwibronetbook/214005",
+   "maplestorytbd/8822",
+   "sannoeul/45214",
+   "loyaltylife/371112",
+   "busanjungonara/6163719",
+   "ssamter/245411",
+   "uouv96/117957",
+   "busanmam/775967",
+   "mindy7857/5544595",
+   "redekpvg/1159",
+   "mindy7857/5544588",
+   "mindy7857/5544534",
+   "vinpearl/573203",
+   "vinpearl/573201",
+   "happyibook/6362914",
+   "minecraftpe/4020984",
+   "vinpearl/573186",
+   "happyibook/6362854",
+   "happyibook/6362852",
+   "warcraftgamemap/3541158",
+   "nctownnet11/218196",
+   "nctownnet11/218195",
+   "nctownnet11/218194",
+   "nctownnet11/218193",
+   "sjdia76/333153",
+   "warcraftgamemap/3541196",
+   "warcraftgamemap/3541191",
+   "minecraftpe/4020983",
+   "loyaltylife/371103",
+   "drawhangil/26376",
+   "bluegrayrlp26/212",
+   "yamipapa/9460",
+   "dngd/51211",
+   "sumonnerdeokoo/122106",
+   "dngd/51218",
+   "worrytodream/1039450",
+   "fcbora/5847",
+   "gototheusa/1506476",
+   "20daelee/953931",
+   "checkincafe/149081",
+   "loveloveloveovelove/1044027",
+   "loveloveloveovelove/1044021",
+   "greenmhdxx/136042",
+   "multiroader/837818",
+   "redekpvg/1166",
+   "airplanetiket/1445",
+   "redekpvg/1161",
+   "sibjl/111923",
+   "010freebaram/265085",
+   "worrytodream/1040494",
+   "fashionsensation/35917",
+   "fashionsensation/35788",
+   "hwarangsangdan/145988",
+   "dgmom365/7447937",
+   "apple11st/3831",
+   "hahahaup/15104",
+   "stockverse/1550",
+   "bubi2/48662",
+   "2008bunsamo/2637294",
+   "imsanbu/80586178",
+   "worrytodream/1039850",
+   "imsanbu/80585999",
+   "worrytodream/1039618",
+   "worrytodream/1039531",
+   "airplanetiket/1444",
+   "leander/3845"
   ],
   "since": "2026-11-03",
   "imported": "2026-11-03"
