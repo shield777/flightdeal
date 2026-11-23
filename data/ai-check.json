@@ -1,6 +1,78 @@
 [
  {
   "at": "2026-11-23",
+  "title": "대한항공 이벤트 당첨자 발표!!",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "이벤트 당첨자 발표 글",
+   "airlines": [],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-23",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님"
+  ]
+ },
+ {
+  "at": "2026-11-23",
+  "title": "트리니티항공, ‘이달의 결제 할인 혜택’ 진행",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "네이버페이 결제 포인트 적립 항공권 혜택",
+   "airlines": [
+    "트리니티항공"
+   ],
+   "name": "이달의 결제 할인 혜택",
+   "book": {
+    "from": null,
+    "to": "2026-11-30"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-10-30"
+   },
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-23",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": null,
+    "to": "2026-11-30"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-10-30"
+   },
+   "pct": 20,
+   "price": null
+  },
+  "diff": [
+   "할인율 규칙 20 / AI -"
+  ]
+ },
+ {
+  "at": "2026-11-23",
   "title": "에어부산 방콕 최대 20만원 할인",
   "community": true,
   "ai": {
@@ -10252,88 +10324,6 @@
     "to": "2027-10-30"
    },
    "pct": null,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-16",
-  "title": "트리니티항공, 30일까지 국제선 특가 항공권 판매",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "국제선 특가·할인코드 프로모션",
-   "airlines": [
-    "트리니티항공"
-   ],
-   "name": "국제선 블랙프라이데이 프로모션",
-   "book": {
-    "from": "2026-11-16",
-    "to": "2026-11-30"
-   },
-   "board": {
-    "from": "2027-02-01",
-    "to": "2027-10-30"
-   },
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-16",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": "2026-11-16",
-    "to": "2026-11-30"
-   },
-   "board": {
-    "from": "2027-02-01",
-    "to": "2027-10-30"
-   },
-   "pct": null,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-16",
-  "title": "수능 끝, 설렘 시작... 이스타항공 , 수험생 할인 쏜다",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "이스타항공 수험생 항공권 할인 프로모션",
-   "airlines": [
-    "이스타항공"
-   ],
-   "name": "수험생 할인 프로모션",
-   "book": {
-    "from": "2026-11-19",
-    "to": "2026-12-31"
-   },
-   "board": {
-    "from": "2026-11-19",
-    "to": "2027-03-27"
-   },
-   "price": null,
-   "trip": null,
-   "pct": 10,
-   "seoul": null,
-   "at": "2026-11-16",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": "2026-11-19",
-    "to": "2026-12-31"
-   },
-   "board": {
-    "from": "2026-11-19",
-    "to": "2027-03-27"
-   },
-   "pct": 10,
    "price": null
   },
   "diff": []
