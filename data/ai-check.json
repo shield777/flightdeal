@@ -1,6 +1,47 @@
 [
  {
   "at": "2026-11-24",
+  "title": "핀에어, 블랙프라이데이 맞아 유럽 16개 노선 항공권 최대 25% 할인",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "핀에어 유럽노선 항공권 할인 프로모션",
+   "airlines": [
+    "핀에어"
+   ],
+   "name": "블랙프라이데이 특별 프로모션",
+   "book": {
+    "from": null,
+    "to": "2026-11-30"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-03-31"
+   },
+   "price": null,
+   "trip": null,
+   "pct": 25,
+   "seoul": null,
+   "at": "2026-11-24",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": null,
+    "to": "2026-11-30"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-03-31"
+   },
+   "pct": 25,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-24",
   "title": "[이벤트] 제주항공 앱 알림 동의, 매일 500P (~12/06)",
   "community": true,
   "ai": {
@@ -10238,47 +10279,6 @@
     "이스타항공"
    ],
    "name": "수험생 항공권 할인 프로모션",
-   "book": {
-    "from": "2026-11-19",
-    "to": "2026-12-31"
-   },
-   "board": {
-    "from": "2026-11-19",
-    "to": "2027-03-27"
-   },
-   "price": null,
-   "trip": null,
-   "pct": 25,
-   "seoul": null,
-   "at": "2026-11-16",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": "2026-11-19",
-    "to": "2026-12-31"
-   },
-   "board": {
-    "from": "2026-11-19",
-    "to": "2027-03-27"
-   },
-   "pct": 25,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-16",
-  "title": "이스타항공, 수능 수험생·동반 1인 항공권 최대 25% 할인",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "이스타항공 수험생 항공권 할인 프로모션",
-   "airlines": [
-    "이스타항공"
-   ],
-   "name": "수험생 항공권 할인",
    "book": {
     "from": "2026-11-19",
     "to": "2026-12-31"
