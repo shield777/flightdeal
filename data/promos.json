@@ -1,6 +1,735 @@
 {
  "items": [
   {
+   "id": "c:https://cafe.naver.com/aipromptlab26/414|[ 항공권 D-7] 진에어 블랙프라이데이 — 코드 26BLACKLJ 최대",
+   "kind": "airline",
+   "community": true,
+   "title": "[ 항공권 D-7] 진에어 블랙프라이데이 — 코드 26BLACKLJ 최대 15%, 삼성카드 3%까....",
+   "desc": "로그인 → 항공권 검색 → 결제 단계의 프로모션 코드 칸에 26BLACKLJ 입력. 검색에 뜨는 최저가 운임 일부는 적용 대상에서 빠지고, 다른 쿠폰· 코드 와는 중복되지 않습니다.",
+   "summary": [
+    "로그인 → 항공권 검색 → 결제 단계의 프로모션 코드 칸에 26BLACKLJ 입력.",
+    "검색에 뜨는 최저가 운임 일부는 적용 대상에서 빠지고, 다른 쿠폰· 코드 와는 중복되지 않습니다."
+   ],
+   "link": "https://cafe.naver.com/aipromptlab26/414",
+   "source": "네이버 카페 · 짠테크 연구소 - 앱테크·핫딜·절약 꿀정보",
+   "date": "2026-11-20T05:00:43.396Z",
+   "found": "2026-11-20",
+   "cards": [],
+   "airlines": [
+    "LJ"
+   ],
+   "countries": [
+    "베트남"
+   ],
+   "allRoutes": true,
+   "routes": [],
+   "price": {
+    "amount": 499900,
+    "trip": "oneway?"
+   },
+   "query": "항공권 프로모션 코드",
+   "ai": {
+    "v": 2,
+    "promo": true,
+    "why": "진에어 블프 할인코드 특가",
+    "airlines": [
+     "진에어"
+    ],
+    "name": "블랙프라이데이",
+    "book": null,
+    "board": null,
+    "price": null,
+    "trip": null,
+    "pct": 15,
+    "seoul": null,
+    "at": "2026-11-20",
+    "model": "deepseek-v4-flash"
+   },
+   "lastDate": "2026-11-23T01:00:40.717Z",
+   "lastFound": "2026-11-23",
+   "more": [
+    {
+     "id": "c:https://cafe.naver.com/airportshopping/1161|[진에어] 오늘 자정마감!! 11월 국제선 타임세일 ~",
+     "kind": "airline",
+     "community": true,
+     "title": "[진에어] 오늘 자정마감!! 11월 국제선 타임세일 ~",
+     "desc": "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
+     "summary": [
+      "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
+     ],
+     "link": "https://cafe.naver.com/airportshopping/1161",
+     "source": "네이버 카페 · 인천공항의 모든 것",
+     "date": "2026-11-20T05:00:43.396Z",
+     "found": "2026-11-20",
+     "cards": [],
+     "airlines": [
+      "LJ"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "항공 타임세일",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "진에어 국제선 타임세일 특가",
+      "airlines": [
+       "진에어"
+      ],
+      "name": "11월 국제선 타임세일",
+      "book": {
+       "from": null,
+       "to": "2026-11-20"
+      },
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-20",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/yulhahanrim/51670|[노팁/노옵션] 진에어 다낭 5일 마지막 초 특가 499,900원",
+     "kind": "airline",
+     "community": true,
+     "title": "[노팁/노옵션] 진에어 다낭 5일 마지막 초 특가 499,900원",
+     "desc": "",
+     "link": "https://cafe.naver.com/yulhahanrim/51670",
+     "source": "네이버 카페 · 율하한림풀에버 입주자 모임",
+     "date": "2026-11-23T01:00:40.717Z",
+     "found": "2026-11-23",
+     "cards": [],
+     "airlines": [
+      "LJ"
+     ],
+     "countries": [
+      "베트남"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": {
+      "amount": 499900,
+      "trip": "oneway?"
+     },
+     "query": "진에어 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "진에어 다낭 항공권 특가",
+      "airlines": [
+       "진에어"
+      ],
+      "name": "마지막 초 특가",
+      "book": null,
+      "board": null,
+      "price": 499900,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-23",
+      "model": "deepseek-v4-flash"
+     }
+    }
+   ]
+  },
+  {
+   "id": "c:https://cafe.naver.com/airportshopping/1165|[ 대한항공 ] 고마쓰행 항공 권 10% 할인 쿠폰!",
+   "kind": "airline",
+   "community": true,
+   "title": "[ 대한항공 ] 고마쓰행 항공 권 10% 할인 쿠폰!",
+   "desc": "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
+   "summary": [
+    "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
+   ],
+   "link": "https://cafe.naver.com/airportshopping/1165",
+   "source": "네이버 카페 · 인천공항의 모든 것",
+   "date": "2026-11-20T05:00:43.396Z",
+   "found": "2026-11-20",
+   "cards": [],
+   "airlines": [
+    "KE"
+   ],
+   "countries": [
+    "일본"
+   ],
+   "allRoutes": true,
+   "routes": [],
+   "price": {
+    "amount": 50000,
+    "trip": "oneway?"
+   },
+   "query": "대한항공 할인",
+   "ai": {
+    "v": 2,
+    "promo": true,
+    "why": "항공권 10% 할인 쿠폰",
+    "airlines": [
+     "대한항공"
+    ],
+    "name": null,
+    "book": null,
+    "board": null,
+    "price": null,
+    "trip": null,
+    "pct": 10,
+    "seoul": null,
+    "at": "2026-11-20",
+    "model": "deepseek-v4-flash"
+   },
+   "notified": "2026-11-20",
+   "lastDate": "2026-11-23T01:00:40.717Z",
+   "lastFound": "2026-11-23",
+   "more": [
+    {
+     "id": "c:https://cafe.naver.com/hotdealcatch/2410|[이벤트] 대한항공 고마쓰 응모, 기프트카드 5만원 (~12/20)",
+     "kind": "airline",
+     "community": true,
+     "title": "[이벤트] 대한항공 고마쓰 응모, 기프트카드 5만원 (~12/20)",
+     "desc": "대한항공 이시카와현 고마쓰 프로모션인데, 비행기 표 안 사도... 건데, 대한항공 기프트카드 5만원권 20명 추첨이에요.",
+     "summary": [
+      "대한항공 이시카와현 고마쓰 프로모션인데, 비행기 표 안 사도...",
+      "건데, 대한항공 기프트카드 5만원권 20명 추첨이에요."
+     ],
+     "link": "https://cafe.naver.com/hotdealcatch/2410",
+     "source": "네이버 카페 · 핫딜캐치 · 매일 특가와 짠테크",
+     "date": "2026-11-20T07:00:41.100Z",
+     "found": "2026-11-20",
+     "cards": [],
+     "airlines": [
+      "KE"
+     ],
+     "countries": [
+      "일본"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": {
+      "amount": 50000,
+      "trip": "oneway?"
+     },
+     "query": "대한항공 특가",
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "항공권 경품 이벤트",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-20",
+      "model": "deepseek-v4-flash"
+     },
+     "notified": "2026-11-20"
+    },
+    {
+     "id": "c:https://cafe.naver.com/nyctourdesign/1207292|대한항공 뉴어크 취항기념 8% 할인",
+     "kind": "airline",
+     "community": true,
+     "title": "대한항공 뉴어크 취항기념 8% 할인",
+     "desc": "네.",
+     "link": "https://cafe.naver.com/nyctourdesign/1207292",
+     "source": "네이버 카페 · [미여디]No.1 뉴욕,LA,하와이,라스베가스,샌프란시스코 미국여행",
+     "date": "2026-11-20T11:00:49.931Z",
+     "found": "2026-11-20",
+     "cards": [],
+     "airlines": [
+      "KE"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "대한항공 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "대한항공 취항기념 운임 할인",
+      "airlines": [
+       "대한항공"
+      ],
+      "name": "뉴어크 취항기념 8% 할인",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": 8,
+      "seoul": null,
+      "at": "2026-11-20",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/airportshopping/1167|[ 대한항공 ] 뉴욕 신규 취항 기념 항공 권 할인 이벤트!",
+     "kind": "airline",
+     "community": true,
+     "title": "[ 대한항공 ] 뉴욕 신규 취항 기념 항공 권 할인 이벤트!",
+     "desc": "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
+     "summary": [
+      "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
+     ],
+     "link": "https://cafe.naver.com/airportshopping/1167",
+     "source": "네이버 카페 · 인천공항의 모든 것",
+     "date": "2026-11-20T07:00:41.100Z",
+     "found": "2026-11-20",
+     "cards": [],
+     "airlines": [
+      "KE"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "대한항공 프로모션",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "신규 취항 기념 항공권 할인",
+      "airlines": [
+       "대한항공"
+      ],
+      "name": "뉴욕 신규 취항 기념 항공권 할인 이벤트",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-20",
+      "model": "deepseek-v4-flash"
+     },
+     "notified": "2026-11-20"
+    },
+    {
+     "id": "c:https://cafe.naver.com/yamipapa/9460|트립닷컴 대한항공 특가 라이브",
+     "kind": "airline",
+     "community": true,
+     "title": "트립닷컴 대한항공 특가 라이브",
+     "desc": "월요일 오전에 다들 한번 도전해보시죠 다들 싸게싸게 여행 다니시자구요 ㅎ https://kr.trip.com/sale/w/mj1iqfayjdyq81fk/26winterbrandingke.html?locale=ko-KR&transparentBar=1&wkp=1&curr=KRW.",
+     "summary": [
+      "월요일 오전에 다들 한번 도전해보시죠 다들 싸게싸게 여행 다니시자구요 ㅎ https://kr.trip.com/sale/w/mj1iqfayjdyq81fk/26winterbrandingke.html?locale=ko-KR&transp…"
+     ],
+     "link": "https://cafe.naver.com/yamipapa/9460",
+     "source": "네이버 카페 · 야미파파놀이터",
+     "date": "2026-11-22T03:00:42.044Z",
+     "found": "2026-11-22",
+     "cards": [],
+     "airlines": [
+      "KE"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "대한항공 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "트립닷컴 대한항공 특가 라이브",
+      "airlines": [
+       "대한항공"
+      ],
+      "name": "트립닷컴 대한항공 특가 라이브",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-22",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/aosk1020/673|[ 대한항공 ] 트립닷컴 라이브 특가 (11/23)",
+     "kind": "airline",
+     "community": true,
+     "title": "[ 대한항공 ] 트립닷컴 라이브 특가 (11/23)",
+     "desc": "2026.11.23 09:00 대한항공 전세계 여행 특가 라이브 국제선 항공 특가 및 쿠폰 확인해보세요~.",
+     "summary": [
+      "2026.11.23 09:00 대한항공 전세계 여행 특가 라이브 국제선 항공 특가 및 쿠폰 확인해보세요~."
+     ],
+     "link": "https://cafe.naver.com/aosk1020/673",
+     "source": "네이버 카페 · 푸카크 PUKAK - 푸켓, 카오락, 크라비 전문 현지 여행사",
+     "date": "2026-11-23T01:00:40.717Z",
+     "found": "2026-11-23",
+     "cards": [],
+     "airlines": [
+      "KE"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "대한항공 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "항공사 국제선 특가 라이브",
+      "airlines": [
+       "대한항공"
+      ],
+      "name": "트립닷컴 라이브 특가",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-23",
+      "model": "deepseek-v4-flash"
+     }
+    }
+   ]
+  },
+  {
+   "id": "c:https://cafe.naver.com/mindy7857/5545758|오늘 대한 항공 반값 이벤트있어요",
+   "kind": "airline",
+   "community": true,
+   "title": "오늘 대한 항공 반값 이벤트있어요",
+   "desc": "",
+   "link": "https://cafe.naver.com/mindy7857/5545758",
+   "source": "네이버 카페 · 베나자-베트남나트랑자유여행,달랏,무이네,호텔,투어,리조트맛집",
+   "date": "2026-11-23T01:00:40.717Z",
+   "found": "2026-11-23",
+   "cards": [],
+   "airlines": [],
+   "countries": [],
+   "allRoutes": false,
+   "routes": [],
+   "price": null,
+   "query": "베트남 항공권 특가",
+   "ai": {
+    "v": 2,
+    "promo": true,
+    "why": "대한항공 반값 이벤트 소식",
+    "airlines": [
+     "대한항공"
+    ],
+    "name": "반값 이벤트",
+    "book": null,
+    "board": null,
+    "price": null,
+    "trip": null,
+    "pct": 50,
+    "seoul": null,
+    "at": "2026-11-23",
+    "model": "deepseek-v4-flash"
+   },
+   "lastDate": "2026-11-23T01:00:40.717Z",
+   "lastFound": "2026-11-23"
+  },
+  {
+   "id": "https://www.viva100.com/article/20261123500248|파라타항공, 인천-LA 신규 취항 기념 특가 … 왕복 99만원대부터",
+   "kind": "airline",
+   "title": "파라타항공, 인천-LA 신규 취항 기념 특가 … 왕복 99만원대부터",
+   "desc": "앞두고 항공권 할인 에 나선다. 첫 장거리 노선 개설을 계기로 미주 시장 진출을 본격화한다는 계획이다. 파라타항공은 24일 오전 10시부터 30일까지 공식 홈페이지에서 인천-LA 노선 특가 프로모션 을 진행한다고...",
+   "summary": [
+    "앞두고 항공권 할인 에 나선다.",
+    "첫 장거리 노선 개설을 계기로 미주 시장 진출을 본격화한다는 계획이다.",
+    "파라타항공은 24일 오전 10시부터 30일까지 공식 홈페이지에서 인천-LA 노선 특가 프로모션 을 진행한다고…"
+   ],
+   "link": "https://www.viva100.com/article/20261123500248",
+   "source": "네이버 뉴스",
+   "date": "2026-11-23T00:48:00.000Z",
+   "found": "2026-11-23",
+   "cards": [],
+   "airlines": [
+    "WE"
+   ],
+   "countries": [
+    "미국",
+    "베트남",
+    "일본"
+   ],
+   "allRoutes": true,
+   "routes": [],
+   "price": {
+    "amount": 990000,
+    "trip": "round"
+   },
+   "query": "베트남 항공권 {특가말}",
+   "bodyAt": "2026-11-23",
+   "body": [
+    "파라타항공이 내년 5월 미국 로스앤젤레스(LA) 노선 취항을 앞두고 항공권 할인에 나선다.",
+    "파라타항공은 24일 오전 10시부터 30일까지 공식 홈페이지에서 인천-LA 노선 특가 프로모션을 진행한다고 밝혔다.",
+    "왕복 총액 기준 이코노미석은 99만6800원부터, 비즈니스석은 509만6800원부터 판매한다.",
+    "탑승 가능 기간은 내년 5월 1일부터 10월 30일까지다.",
+    "파라타항공은 내년 5월 1일부터 260석 규모의 A330-200 항공기를 투입해 인천-LA 노선을 매일 운항할 예정이다.",
+    "항공권 예약 고객에게는 여행 플랫폼 마이리얼트립과 연계한 할인 혜택도 제공한다.",
+    "LA 현지 투어·액티비티 상품은 최대 12% 할인받을 수 있다.",
+    "국토교통부 항공통계에 따르면 지난해 인천-LA 노선 이용객은 약 123만4000명으로, 이 가운데 환승객은 약 44만2000명(35.8%)을 차지했다.",
+    "파라타항공의 신규 취항으로 이 노선의 항공편 공급도 확대될 전망이다.",
+    "파라타항공은 이를 시작으로 향후 미주 시장 경쟁력을 강화하고 장거리 환승 네트워크를 구축해 나갈 방침이다."
+   ],
+   "ai": {
+    "v": 2,
+    "promo": true,
+    "why": "신규 취항 기념 항공권 특가",
+    "airlines": [
+     "파라타항공"
+    ],
+    "name": "인천-LA 신규 취항 기념 특가",
+    "book": {
+     "from": "2026-11-24",
+     "to": "2026-11-30"
+    },
+    "board": {
+     "from": "2027-05-01",
+     "to": "2027-10-30"
+    },
+    "price": 996800,
+    "trip": "왕복",
+    "pct": null,
+    "seoul": true,
+    "at": "2026-11-23",
+    "model": "deepseek-v4-flash"
+   },
+   "lastDate": "2026-11-23T00:56:00.000Z",
+   "lastFound": "2026-11-23",
+   "more": [
+    {
+     "id": "http://www.enewstoday.co.kr/news/articleView.html|첫 미주 노선 시동 걸었다···파라타항공 '인천~LA' 취항 기념 특가",
+     "kind": "airline",
+     "title": "첫 미주 노선 시동 걸었다···파라타항공 '인천~LA' 취항 기념 특가",
+     "desc": "파라타항공이 이달 24일 오전 10시부터 30일까지 7일간 미주 신규 취항 기념 특가 프로모션 을 진행한다고... 12% 할인 혜택이 제공된다. 아울러 미주와 일본, 베트남 노선 이용객에게는 현지에서 쓸 수 있는 이심(eSIM)...",
+     "summary": [
+      "파라타항공이 이달 24일 오전 10시부터 30일까지 7일간 미주 신규 취항 기념 특가 프로모션 을 진행한다고...",
+      "12% 할인 혜택이 제공된다.",
+      "아울러 미주와 일본, 베트남 노선 이용객에게는 현지에서 쓸 수 있는 이심(eSIM)…"
+     ],
+     "link": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2495552",
+     "source": "네이버 뉴스",
+     "date": "2026-11-23T00:09:00.000Z",
+     "found": "2026-11-23",
+     "cards": [],
+     "airlines": [
+      "WE"
+     ],
+     "countries": [
+      "베트남",
+      "일본",
+      "미국"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "베트남 항공권 {특가말}",
+     "bodyAt": "2026-11-23",
+     "body": [
+      "[이뉴스투데이 김재한 기자] 파라타항공이 이달 24일 오전 10시부터 30일까지 7일간 미주 신규 취항 기념 특가 프로모션을 진행한다고 23일 밝혔다.",
+      "이번 행사는 내년 5월 1일 신규 취항하는 미국 로스앤젤레스(LA) 노선 개설과 미주 시장 진출을 기념해 마련됐으며, 탑승 대상 기간은 취항 첫날인 내년 5월 1일부터 10월 30일까지다.",
+      "신규 LA 노선은 5월 1일부터 매일 오후 12시에 인천을 출발하며 귀국편은 LA 현지 시각 오전 9시 50분에 인천으로 향한다.",
+      "파라타항공 이용 승객이 마이리얼트립을 통해 LA 투어 및 액티비티 상품을 예약하면 최대 12% 할인 혜택이 제공된다.",
+      "파라타항공은 이번 취항을 계기로 미주 노선 경쟁력을 높이고 향후 장거리 환승 네트워크를 체계적으로 구축할 방침이다.",
+      "앞서 지난 12일부터 13일까지 열린 ‘캘리포니아 관광청 트레이드 & 미디어 미션 2026’에 후원사로 참여하는 등 신규 노선 수요 확보에도 주력하고 있다.",
+      "파라타항공 관계자는 “LA 신규 취항을 기념해 항공권뿐 아니라 현지 여행에 필요한 다양한 혜택을 함께 제공하고자 이번 프로모션을 준비했다”며 “앞으로도 고객들이 파라타항공을 통한 여정을 보다 편리하고 합리적으로 즐길 수 있도록 차별화된 서비스를 선보이겠다”고 말했다."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "신규 취항 기념 항공권 특가",
+      "airlines": [
+       "파라타항공"
+      ],
+      "name": "미주 신규 취항 기념 특가",
+      "book": {
+       "from": "2026-11-24",
+       "to": "2026-11-30"
+      },
+      "board": {
+       "from": "2027-05-01",
+       "to": "2027-10-30"
+      },
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": true,
+      "at": "2026-11-23",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "https://www.econovill.com/news/articleView.html|파라타항공, 첫 미주 노선 취항 앞두고 특가 프로모션",
+     "kind": "airline",
+     "title": "파라타항공, 첫 미주 노선 취항 앞두고 특가 프로모션",
+     "desc": "파라타항공이 첫 미주 노선인 인천-로스앤젤레스(LA) 노선 신규 취항을 앞두고 특가 프로모션 을 진행하며... 항공권 특가 와 현지 여행 상품 할인 등 고객의 여행 부담을 낮추기 위한 제휴 혜택도 마련했다. 항공권 ...",
+     "summary": [
+      "파라타항공이 첫 미주 노선인 인천-로스앤젤레스(LA) 노선 신규 취항을 앞두고 특가 프로모션 을 진행하며...",
+      "항공권 특가 와 현지 여행 상품 할인 등 고객의 여행 부담을 낮추기 위한 제휴 혜택도 마련했다."
+     ],
+     "link": "https://www.econovill.com/news/articleView.html?idxno=758123",
+     "source": "네이버 뉴스",
+     "date": "2026-11-23T00:14:00.000Z",
+     "found": "2026-11-23",
+     "cards": [],
+     "airlines": [
+      "WE"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "베트남 항공권 {특가말}",
+     "bodyAt": "2026-11-23",
+     "body": [
+      "파라타항공이 첫 미주 노선인 인천-로스앤젤레스(LA) 노선 신규 취항을 앞두고 특가 프로모션을 진행하며 미주 시장 진출에 속도를 낸다.",
+      "항공권 예매부터 현지 투어와 통신 서비스까지 여행 전반에 걸친 혜택을 제공해 신규 노선에 대한 관심과 초기 수요를 끌어올린다는 계획이다.",
+      "파라타항공은 24일 오전 10시부터 30일까지 7일간 미주 신규 취항 기념 특가 프로모션을 진행한다고 23일 밝혔다.",
+      "특가 운임은 왕복 총액 기준 이코노미 클래스 99만6800원부터, 비즈니스 클래스 509만6800원부터다.",
+      "탑승 기간은 LA 노선 취항일인 2027년 5월 1일부터 10월 30일까지다.",
+      "파라타항공 이용 고객이 마이리얼트립에서 LA 투어 및 액티비티 상품을 예약하면 최대 12% 할인받을 수 있다.",
+      "파라타항공 관계자는 “LA 신규 취항을 기념해 항공권뿐 아니라 현지 여행에 필요한 다양한 혜택을 함께 제공하고자 이번 프로모션을 준비했다”며 “앞으로도 고객들이 파라타항공을 통한 여정을 보다 편리하고 합리적으로 즐길 수 있도록 차별화된 서비스를 선보이겠다”고 말했다.",
+      "파라타항공의 인천-LA 노선은 2027년 5월 1일부터 매일 운항한다.",
+      "파라타항공은 LA 취항을 계기로 미주 노선 경쟁력을 강화하고 향후 장거리 환승 네트워크도 체계적으로 구축해 나갈 방침이다.",
+      "한편 파라타항공은 신규 LA 노선의 성공적인 안착과 여객 수요 확보를 위한 현지 마케팅에도 힘을 쏟고 있다."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "신규 취항 기념 항공권 특가",
+      "airlines": [
+       "파라타항공"
+      ],
+      "name": "미주 신규 취항 기념 특가 프로모션",
+      "book": {
+       "from": "2026-11-24",
+       "to": "2026-11-30"
+      },
+      "board": {
+       "from": "2027-05-01",
+       "to": "2027-10-30"
+      },
+      "price": 996800,
+      "trip": "왕복",
+      "pct": null,
+      "seoul": true,
+      "at": "2026-11-23",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "https://www.pinpointnews.co.kr/news/articleView.html|파라타항공 , LA 노선 취항 기념 특가 프로모션 실시",
+     "kind": "airline",
+     "title": "파라타항공 , LA 노선 취항 기념 특가 프로모션 실시",
+     "desc": "파라타항공 이 내년 5월 신규 취항하는 로스앤젤레스(LA) 노선을 대상으로 오는 24일 오전 10시부터 30일까지 7일간 특가 프로모션 을 진행한다고 23일 밝혔다. 이번 프로모션 의 왕복 총액 운임은 이코노미 클래스가...",
+     "summary": [
+      "파라타항공 이 내년 5월 신규 취항하는 로스앤젤레스(LA) 노선을 대상으로 오는 24일 오전 10시부터 30일까지 7일간 특가 프로모션 을 진행한다고 23일 밝혔다.",
+      "이번 프로모션 의 왕복 총액 운임은 이코노미 클래스가…"
+     ],
+     "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=506902",
+     "source": "네이버 뉴스",
+     "date": "2026-11-23T00:56:00.000Z",
+     "found": "2026-11-23",
+     "cards": [],
+     "airlines": [
+      "WE"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "파라타항공 {특가말}",
+     "bodyAt": "2026-11-23",
+     "body": [
+      "파라타항공이 내년 5월 신규 취항하는 로스앤젤레스(LA) 노선을 대상으로 오는 24일 오전 10시부터 30일까지 7일간 특가 프로모션을 진행한다고 23일 밝혔다.",
+      "이번 프로모션의 왕복 총액 운임은 이코노미 클래스가 99만6800원부터, 비즈니스 클래스가 509만6800원부터다.",
+      "탑승 기간은 2027년 5월 1일부터 10월 30일까지이며, LA 노선은 2027년 5월 1일 첫 운항을 시작한다.",
+      "파라타항공 관계자는 “LA 취항을 기념해 항공권뿐 아니라 현지 여행에 필요한 다양한 혜택을 함께 제공하고자 프로모션을 마련했다”며 “앞으로도 장거리 네트워크를 체계적으로 구축해 고객에게 차별화된 서비스를 제공하겠다”고 말했다.",
+      "한편 파라타항공은 지난 17일부터 국내선과 국제선 항공편 이용 고객을 대상으로 마일리지 적립 제도를 시행했다.",
+      "이번 제도는 탑승 실적에 따른 혜택을 강화하고 장기 고객 관계를 확대하기 위한 첫 단계로, 향후 고객 등급제와 무료 기내 와이파이 등 추가 서비스도 순차 도입할 계획이다."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "신규 취항 기념 항공권 특가",
+      "airlines": [
+       "파라타항공"
+      ],
+      "name": "LA 노선 취항 기념 특가 프로모션",
+      "book": {
+       "from": "2026-11-24",
+       "to": "2026-11-30"
+      },
+      "board": {
+       "from": "2027-05-01",
+       "to": "2027-10-30"
+      },
+      "price": 996800,
+      "trip": "왕복",
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-23",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "g3bnBWV09XRWJRM09yb0tOcjFaR2pXTEdGMlQxT182aURIekx2ek9rcWhkXzdhT2s5YTdMODdhOHVJR2FXZktBc1l3YW9VOTBMZ1A1dWNwanhLR0hxUXZXaw|첫 미주 노선 시동 걸었다···파라타항공 ‘인천~LA’ 취항 기념 특가",
+     "kind": "airline",
+     "title": "첫 미주 노선 시동 걸었다···파라타항공 ‘인천~LA’ 취항 기념 특가",
+     "desc": "첫 미주 노선 시동 걸었다···파라타항공 ‘인천~LA’ 취항 기념 특가 이뉴스투데이",
+     "summary": [
+      "첫 미주 노선 시동 걸었다···파라타항공 ‘인천~LA’ 취항 기념 특가 이뉴스투데이…"
+     ],
+     "link": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2495552",
+     "source": "이뉴스투데이",
+     "date": "2026-11-23T00:09:40.000Z",
+     "found": "2026-11-23",
+     "cards": [],
+     "airlines": [
+      "WE"
+     ],
+     "countries": [
+      "미국"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "파라타항공 {특가말}",
+     "bodyAt": "2026-11-23",
+     "body": [
+      "24일부터 7일간 내년 5~10월 탑승 항공권 판매",
+      "[이뉴스투데이 김재한 기자] 파라타항공이 이달 24일 오전 10시부터 30일까지 7일간 미주 신규 취항 기념 특가 프로모션을 진행한다고 23일 밝혔다.",
+      "이번 행사는 내년 5월 1일 신규 취항하는 미국 로스앤젤레스(LA) 노선 개설과 미주 시장 진출을 기념해 마련됐으며, 탑승 대상 기간은 취항 첫날인 내년 5월 1일부터 10월 30일까지다.",
+      "신규 LA 노선은 5월 1일부터 매일 오후 12시에 인천을 출발하며 귀국편은 LA 현지 시각 오전 9시 50분에 인천으로 향한다.",
+      "파라타항공 이용 승객이 마이리얼트립을 통해 LA 투어 및 액티비티 상품을 예약하면 최대 12% 할인 혜택이 제공된다.",
+      "파라타항공은 이번 취항을 계기로 미주 노선 경쟁력을 높이고 향후 장거리 환승 네트워크를 체계적으로 구축할 방침이다.",
+      "앞서 지난 12일부터 13일까지 열린 ‘캘리포니아 관광청 트레이드 & 미디어 미션 2026’에 후원사로 참여하는 등 신규 노선 수요 확보에도 주력하고 있다.",
+      "파라타항공 관계자는 “LA 신규 취항을 기념해 항공권뿐 아니라 현지 여행에 필요한 다양한 혜택을 함께 제공하고자 이번 프로모션을 준비했다”며 “앞으로도 고객들이 파라타항공을 통한 여정을 보다 편리하고 합리적으로 즐길 수 있도록 차별화된 서비스를 선보이겠다”고 말했다."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "신규 취항 기념 항공권 특가",
+      "airlines": [
+       "파라타항공"
+      ],
+      "name": "인천~LA 취항 기념 특가",
+      "book": {
+       "from": "2026-11-24",
+       "to": "2026-11-30"
+      },
+      "board": {
+       "from": "2027-05-01",
+       "to": "2027-10-30"
+      },
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": true,
+      "at": "2026-11-23",
+      "model": "deepseek-v4-flash"
+     }
+    }
+   ]
+  },
+  {
    "id": "c:https://cafe.naver.com/vinpearl/573459|연말 베트남 항공 권 할인 소식! 목·금요일을 노려보셔요✈️",
    "kind": "airline",
    "community": true,
@@ -3861,219 +4590,6 @@
    },
    "lastDate": "2026-11-22T05:00:40.444Z",
    "lastFound": "2026-11-22"
-  },
-  {
-   "id": "c:https://cafe.naver.com/airportshopping/1165|[ 대한항공 ] 고마쓰행 항공 권 10% 할인 쿠폰!",
-   "kind": "airline",
-   "community": true,
-   "title": "[ 대한항공 ] 고마쓰행 항공 권 10% 할인 쿠폰!",
-   "desc": "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
-   "summary": [
-    "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
-   ],
-   "link": "https://cafe.naver.com/airportshopping/1165",
-   "source": "네이버 카페 · 인천공항의 모든 것",
-   "date": "2026-11-20T05:00:43.396Z",
-   "found": "2026-11-20",
-   "cards": [],
-   "airlines": [
-    "KE"
-   ],
-   "countries": [
-    "일본"
-   ],
-   "allRoutes": false,
-   "routes": [],
-   "price": {
-    "amount": 50000,
-    "trip": "oneway?"
-   },
-   "query": "대한항공 할인",
-   "ai": {
-    "v": 2,
-    "promo": true,
-    "why": "항공권 10% 할인 쿠폰",
-    "airlines": [
-     "대한항공"
-    ],
-    "name": null,
-    "book": null,
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": 10,
-    "seoul": null,
-    "at": "2026-11-20",
-    "model": "deepseek-v4-flash"
-   },
-   "notified": "2026-11-20",
-   "lastDate": "2026-11-22T03:00:42.044Z",
-   "lastFound": "2026-11-22",
-   "more": [
-    {
-     "id": "c:https://cafe.naver.com/hotdealcatch/2410|[이벤트] 대한항공 고마쓰 응모, 기프트카드 5만원 (~12/20)",
-     "kind": "airline",
-     "community": true,
-     "title": "[이벤트] 대한항공 고마쓰 응모, 기프트카드 5만원 (~12/20)",
-     "desc": "대한항공 이시카와현 고마쓰 프로모션인데, 비행기 표 안 사도... 건데, 대한항공 기프트카드 5만원권 20명 추첨이에요.",
-     "summary": [
-      "대한항공 이시카와현 고마쓰 프로모션인데, 비행기 표 안 사도...",
-      "건데, 대한항공 기프트카드 5만원권 20명 추첨이에요."
-     ],
-     "link": "https://cafe.naver.com/hotdealcatch/2410",
-     "source": "네이버 카페 · 핫딜캐치 · 매일 특가와 짠테크",
-     "date": "2026-11-20T07:00:41.100Z",
-     "found": "2026-11-20",
-     "cards": [],
-     "airlines": [
-      "KE"
-     ],
-     "countries": [
-      "일본"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": {
-      "amount": 50000,
-      "trip": "oneway?"
-     },
-     "query": "대한항공 특가",
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "항공권 경품 이벤트",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-20",
-      "model": "deepseek-v4-flash"
-     },
-     "notified": "2026-11-20"
-    },
-    {
-     "id": "c:https://cafe.naver.com/nyctourdesign/1207292|대한항공 뉴어크 취항기념 8% 할인",
-     "kind": "airline",
-     "community": true,
-     "title": "대한항공 뉴어크 취항기념 8% 할인",
-     "desc": "네.",
-     "link": "https://cafe.naver.com/nyctourdesign/1207292",
-     "source": "네이버 카페 · [미여디]No.1 뉴욕,LA,하와이,라스베가스,샌프란시스코 미국여행",
-     "date": "2026-11-20T11:00:49.931Z",
-     "found": "2026-11-20",
-     "cards": [],
-     "airlines": [
-      "KE"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "대한항공 특가",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "대한항공 취항기념 운임 할인",
-      "airlines": [
-       "대한항공"
-      ],
-      "name": "뉴어크 취항기념 8% 할인",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": 8,
-      "seoul": null,
-      "at": "2026-11-20",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/airportshopping/1167|[ 대한항공 ] 뉴욕 신규 취항 기념 항공 권 할인 이벤트!",
-     "kind": "airline",
-     "community": true,
-     "title": "[ 대한항공 ] 뉴욕 신규 취항 기념 항공 권 할인 이벤트!",
-     "desc": "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
-     "summary": [
-      "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
-     ],
-     "link": "https://cafe.naver.com/airportshopping/1167",
-     "source": "네이버 카페 · 인천공항의 모든 것",
-     "date": "2026-11-20T07:00:41.100Z",
-     "found": "2026-11-20",
-     "cards": [],
-     "airlines": [
-      "KE"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "대한항공 프로모션",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "신규 취항 기념 항공권 할인",
-      "airlines": [
-       "대한항공"
-      ],
-      "name": "뉴욕 신규 취항 기념 항공권 할인 이벤트",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-20",
-      "model": "deepseek-v4-flash"
-     },
-     "notified": "2026-11-20"
-    },
-    {
-     "id": "c:https://cafe.naver.com/yamipapa/9460|트립닷컴 대한항공 특가 라이브",
-     "kind": "airline",
-     "community": true,
-     "title": "트립닷컴 대한항공 특가 라이브",
-     "desc": "월요일 오전에 다들 한번 도전해보시죠 다들 싸게싸게 여행 다니시자구요 ㅎ https://kr.trip.com/sale/w/mj1iqfayjdyq81fk/26winterbrandingke.html?locale=ko-KR&transparentBar=1&wkp=1&curr=KRW.",
-     "summary": [
-      "월요일 오전에 다들 한번 도전해보시죠 다들 싸게싸게 여행 다니시자구요 ㅎ https://kr.trip.com/sale/w/mj1iqfayjdyq81fk/26winterbrandingke.html?locale=ko-KR&transp…"
-     ],
-     "link": "https://cafe.naver.com/yamipapa/9460",
-     "source": "네이버 카페 · 야미파파놀이터",
-     "date": "2026-11-22T03:00:42.044Z",
-     "found": "2026-11-22",
-     "cards": [],
-     "airlines": [
-      "KE"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "대한항공 특가",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "트립닷컴 대한항공 특가 라이브",
-      "airlines": [
-       "대한항공"
-      ],
-      "name": "트립닷컴 대한항공 특가 라이브",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-22",
-      "model": "deepseek-v4-flash"
-     }
-    }
-   ]
   },
   {
    "id": "c:https://cafe.naver.com/multiroader/837818|에어아시아 15kg수화물 프로모션 적용",
@@ -11430,94 +11946,6 @@
       ],
       "name": "11월-1월 출발 한정 국제선 특가",
       "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-20",
-      "model": "deepseek-v4-flash"
-     }
-    }
-   ]
-  },
-  {
-   "id": "c:https://cafe.naver.com/aipromptlab26/414|[ 항공권 D-7] 진에어 블랙프라이데이 — 코드 26BLACKLJ 최대",
-   "kind": "airline",
-   "community": true,
-   "title": "[ 항공권 D-7] 진에어 블랙프라이데이 — 코드 26BLACKLJ 최대 15%, 삼성카드 3%까....",
-   "desc": "로그인 → 항공권 검색 → 결제 단계의 프로모션 코드 칸에 26BLACKLJ 입력. 검색에 뜨는 최저가 운임 일부는 적용 대상에서 빠지고, 다른 쿠폰· 코드 와는 중복되지 않습니다.",
-   "summary": [
-    "로그인 → 항공권 검색 → 결제 단계의 프로모션 코드 칸에 26BLACKLJ 입력.",
-    "검색에 뜨는 최저가 운임 일부는 적용 대상에서 빠지고, 다른 쿠폰· 코드 와는 중복되지 않습니다."
-   ],
-   "link": "https://cafe.naver.com/aipromptlab26/414",
-   "source": "네이버 카페 · 짠테크 연구소 - 앱테크·핫딜·절약 꿀정보",
-   "date": "2026-11-20T05:00:43.396Z",
-   "found": "2026-11-20",
-   "cards": [],
-   "airlines": [
-    "LJ"
-   ],
-   "countries": [],
-   "allRoutes": true,
-   "routes": [],
-   "price": null,
-   "query": "항공권 프로모션 코드",
-   "ai": {
-    "v": 2,
-    "promo": true,
-    "why": "진에어 블프 할인코드 특가",
-    "airlines": [
-     "진에어"
-    ],
-    "name": "블랙프라이데이",
-    "book": null,
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": 15,
-    "seoul": null,
-    "at": "2026-11-20",
-    "model": "deepseek-v4-flash"
-   },
-   "lastDate": "2026-11-20T05:00:43.396Z",
-   "lastFound": "2026-11-20",
-   "more": [
-    {
-     "id": "c:https://cafe.naver.com/airportshopping/1161|[진에어] 오늘 자정마감!! 11월 국제선 타임세일 ~",
-     "kind": "airline",
-     "community": true,
-     "title": "[진에어] 오늘 자정마감!! 11월 국제선 타임세일 ~",
-     "desc": "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
-     "summary": [
-      "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
-     ],
-     "link": "https://cafe.naver.com/airportshopping/1161",
-     "source": "네이버 카페 · 인천공항의 모든 것",
-     "date": "2026-11-20T05:00:43.396Z",
-     "found": "2026-11-20",
-     "cards": [],
-     "airlines": [
-      "LJ"
-     ],
-     "countries": [],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "항공 타임세일",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "진에어 국제선 타임세일 특가",
-      "airlines": [
-       "진에어"
-      ],
-      "name": "11월 국제선 타임세일",
-      "book": {
-       "from": null,
-       "to": "2026-11-20"
-      },
       "board": null,
       "price": null,
       "trip": null,
@@ -50158,139 +50586,26 @@
      }
     }
    ]
-  },
-  {
-   "id": "https://www.slist.kr/news/articleView.html|캐세이, 80주년 기념 게임 이벤트 '플라이 하이 위드 CATHAY'",
-   "kind": "airline",
-   "title": "캐세이, 80주년 기념 게임 이벤트 '플라이 하이 위드 CATHAY'",
-   "desc": "일본, 대만 에서 동시에 진행한다. 사진=캐세이 이벤트 는 젊은 세대가 캐세이 브랜드를 보다 친근하고... 최종 순위에 따라 1등 인천–홍콩 2인 왕복 비즈니스석 항공권 을 비롯해 80등까지 경품을 증정한다. 순위와...",
-   "summary": [
-    "일본, 대만 에서 동시에 진행한다.",
-    "사진=캐세이 이벤트 는 젊은 세대가 캐세이 브랜드를 보다 친근하고...",
-    "최종 순위에 따라 1등 인천–홍콩 2인 왕복 비즈니스석 항공권 을 비롯해 80등까지 경품을 증정한다."
-   ],
-   "link": "https://www.slist.kr/news/articleView.html?idxno=777409",
-   "source": "네이버 뉴스",
-   "date": "2026-10-29T02:34:00.000Z",
-   "found": "2026-11-04",
-   "cards": [],
-   "airlines": [
-    "CX"
-   ],
-   "countries": [
-    "일본",
-    "대만",
-    "홍콩"
-   ],
-   "allRoutes": false,
-   "routes": [],
-   "price": null,
-   "query": "대만 항공권 {특가말}",
-   "bodyAt": "2026-11-04",
-   "body": [
-    "캐세이퍼시픽항공을 운항하는 캐세이가 창립 80주년을 맞아 게임 이벤트 'FLY HIGH with CATHAY'를 11월 17일까지 한국, 일본, 대만에서 동시에 진행한다.",
-    "1946년 단 한 대의 항공기로 시작해 전 세계 100개 이상의 목적지를 잇는 프리미엄 트래블 라이프스타일 브랜드로 성장해 온 캐세이의 80년 여정을 누구나 스마트폰으로 가볍게 즐길 수 있는 게임으로 풀어냈다.",
-    "캐세이퍼시픽 항공기부터 아시아 마일즈, 캐세이 샵의 인기 상품, 기내 시그니처 음료와 아이스크림까지 캐세이만의 특별한 여행 경험을 게임 곳곳에서 만나볼 수 있다.",
-    "제한 시간 80초, 실시간 랭킹 80등까지 게임 곳곳에 숫자 ‘80’을 담아, 즐기는 동안 자연스럽게 80주년을 함께 느낄 수 있도록 했다.",
-    "랭킹은 국가별 실시간으로 운영되며 참여자는 이벤트 기간 내내 자신의 순위를 실시간으로 확인하며 몇 번이고 재도전할 수 있다.",
-    "최종 순위에 따라 1등 인천–홍콩 2인 왕복 비즈니스석 항공권을 비롯해 80등까지 경품을 증정한다."
-   ],
-   "ai": {
-    "v": 2,
-    "promo": false,
-    "why": "항공권은 게임 경품일 뿐",
-    "airlines": [],
-    "name": null,
-    "book": null,
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": null,
-    "seoul": null,
-    "at": "2026-11-12",
-    "model": "deepseek-v4-flash"
-   },
-   "lastDate": "2026-10-29T02:34:00.000Z",
-   "lastFound": "2026-11-04"
-  },
-  {
-   "id": "https://www.discoverynews.kr/news/articleView.html|스카이스캐너, 연말 맞이 '11.11 쇼핑 데이' 항공권 프로모션 실시",
-   "kind": "airline",
-   "title": "스카이스캐너, 연말 맞이 '11.11 쇼핑 데이' 항공권 프로모션 실시",
-   "desc": "11 쇼핑 데이' 항공권 할인 프로모션 을 진행한다. 이번 프로모션 은 연말 시즌 여행을 계획하는 국내외... 적용 노선 및 검색 시스템: 대상 노선은 국내선을 비롯해 일본, 대만, 중국, 태국, 베트남 등 주요 선호 노선으로...",
-   "summary": [
-    "11 쇼핑 데이' 항공권 할인 프로모션 을 진행한다.",
-    "이번 프로모션 은 연말 시즌 여행을 계획하는 국내외...",
-    "적용 노선 및 검색 시스템: 대상 노선은 국내선을 비롯해 일본, 대만, 중국, 태국, 베트남 등 주요 선호 노선으로…"
-   ],
-   "link": "https://www.discoverynews.kr/news/articleView.html?idxno=1105228",
-   "source": "네이버 뉴스",
-   "date": "2026-10-29T01:24:00.000Z",
-   "found": "2026-11-03",
-   "cards": [],
-   "airlines": [],
-   "countries": [
-    "베트남",
-    "태국",
-    "일본",
-    "대만",
-    "중국"
-   ],
-   "allRoutes": false,
-   "routes": [],
-   "price": null,
-   "query": "베트남 항공권 {특가말}",
-   "bodyAt": "2026-11-03",
-   "body": [
-    "[디스커버리뉴스=정기환 기자] 글로벌 여행 플랫폼 스카이스캐너가 연말 여행 수요에 대응해 오는 11월 1일부터 11일까지 11일간 ‘11.11 쇼핑 데이’ 항공권 할인 프로모션을 진행한다.",
-    "이번 프로모션은 연말 시즌 여행을 계획하는 국내외 탑승객을 대상으로 합리적인 항공권 선택권을 제공하기 위해 기획됐다.",
-    "단독 혜택 항공사: 진에어, 제주항공, 트리니티항공, 캐세이퍼시픽 등 4개 항공사는 스카이스캐너 전용 프로모션을 제공하며, 해당 항공편 이용 시 최대 15% 범위 내에서 가격 인하 혜택이 적용된다."
-   ],
-   "ai": {
-    "v": 2,
-    "promo": true,
-    "why": "항공권 할인 프로모션",
-    "airlines": [
-     "진에어",
-     "제주항공",
-     "트리니티항공",
-     "캐세이퍼시픽"
-    ],
-    "name": "11.11 쇼핑 데이",
-    "book": {
-     "from": "2026-11-01",
-     "to": "2026-11-11"
-    },
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": 15,
-    "seoul": null,
-    "at": "2026-11-12",
-    "model": "deepseek-v4-flash"
-   },
-   "lastDate": "2026-10-29T01:24:00.000Z",
-   "lastFound": "2026-11-03"
   }
  ],
- "updated": "2026-11-22T23:00:41.693Z",
- "runs": 274,
+ "updated": "2026-11-23T01:00:40.717Z",
+ "runs": 275,
  "checked": {
-  "베트남": "2026-11-22T23:00:41.693Z",
-  "태국": "2026-11-22T23:00:41.693Z",
-  "필리핀": "2026-11-22T23:00:41.693Z",
-  "인도네시아": "2026-11-22T23:00:41.693Z",
-  "말레이시아": "2026-11-22T23:00:41.693Z",
-  "싱가포르": "2026-11-22T23:00:41.693Z",
-  "일본": "2026-11-22T23:00:41.693Z",
-  "대만": "2026-11-22T23:00:41.693Z",
-  "홍콩": "2026-11-22T23:00:41.693Z",
-  "마카오": "2026-11-22T23:00:41.693Z",
-  "중국": "2026-11-22T23:00:41.693Z",
-  "미국령": "2026-11-22T23:00:41.693Z",
-  "미국": "2026-11-22T23:00:41.693Z"
+  "베트남": "2026-11-23T01:00:40.717Z",
+  "태국": "2026-11-23T01:00:40.717Z",
+  "필리핀": "2026-11-23T01:00:40.717Z",
+  "인도네시아": "2026-11-23T01:00:40.717Z",
+  "말레이시아": "2026-11-23T01:00:40.717Z",
+  "싱가포르": "2026-11-23T01:00:40.717Z",
+  "일본": "2026-11-23T01:00:40.717Z",
+  "대만": "2026-11-23T01:00:40.717Z",
+  "홍콩": "2026-11-23T01:00:40.717Z",
+  "마카오": "2026-11-23T01:00:40.717Z",
+  "중국": "2026-11-23T01:00:40.717Z",
+  "미국령": "2026-11-23T01:00:40.717Z",
+  "미국": "2026-11-23T01:00:40.717Z"
  },
- "auto": "2026-11-22T23:00:41.693Z",
+ "auto": "2026-11-23T01:00:40.717Z",
  "sources": {
   "7C": "2026-11-01",
   "TW": "2026-11-01",
@@ -50503,100 +50818,6 @@
    "중국동방항공 얼리버드": "2026-11-04"
   },
   "seen": [
-   "happyibook/6357925",
-   "mindy7857/5536787",
-   "mindy7857/5536788",
-   "mindy7857/5536770",
-   "warcraftgamemap/3537107",
-   "loveloveloveovelove/1042843",
-   "minecraftpe/4017955",
-   "warcraftgamemap/3537090",
-   "zzop/4345746",
-   "mindy7857/5536710",
-   "zzop/4345751",
-   "dkrnl2/2120",
-   "nyctourdesign/1206821",
-   "msiu100/685114",
-   "freecanon00/90530",
-   "010freebaram/262519",
-   "010freebaram/262509",
-   "airplanetiket/1369",
-   "smnt0/5237",
-   "010freebaram/262544",
-   "010freebaram/262537",
-   "joonggonara/1138279066",
-   "maplepath/117491",
-   "sheiszzz/1235234",
-   "sassinail/2940901",
-   "dkrnl2/2117",
-   "busannewcity/1289529",
-   "zzop/4345817",
-   "worrytodream/1005008",
-   "zzop/4345757",
-   "jejudoonemonth/19055",
-   "worrytodream/1004485",
-   "antiphilippines/652568",
-   "dkrnl2/2119",
-   "joonggonara/1138281968",
-   "joonggonara/1138281061",
-   "joonggonara/1138281048",
-   "worrytodream/1004605",
-   "tripspoon/429",
-   "grownman/1189150",
-   "waateam/166053",
-   "tybwondergirl5/117954",
-   "itguro/14348",
-   "mindy7857/5536786",
-   "vinpearl/570949",
-   "happyibook/6357927",
-   "vinpearl/570945",
-   "happyibook/6357915",
-   "warcraftgamemap/3537102",
-   "ysm5828/9650249",
-   "minecraftpe/4017910",
-   "warcraftgamemap/3537120",
-   "fobn/166630",
-   "warcraftgamemap/3537110",
-   "worrytodream/1005023",
-   "worrytodream/1004966",
-   "worrytodream/1004901",
-   "holicsonline/32398",
-   "loyaltylife/370004",
-   "jpnstory/4446481",
-   "loyaltylife/369974",
-   "lnf/418126",
-   "bebettergirls/2103814",
-   "okinawago/617227",
-   "nyctourdesign/1206824",
-   "worrytodream/1004967",
-   "bosiking/1178",
-   "worrytodream/1004755",
-   "worrytodream/1004664",
-   "worrytodream/1004554",
-   "worrytodream/1005064",
-   "mhdn/204360",
-   "loveloveloveovelove/1042846",
-   "jackpotss/34453",
-   "antiphilippines/652565",
-   "bebettergirls/2086883",
-   "taesarang/862729",
-   "d2d2d2/2216865",
-   "clubng/459294",
-   "jpnstory/4446575",
-   "postmore/108512",
-   "jpnstory/4446539",
-   "bataseversizin1/31309",
-   "dfither/21827031",
-   "jpnstory/4446409",
-   "momspanggju/4663734",
-   "roberteng/24088",
-   "mindy7857/5536747",
-   "cjyeonsu/610440",
-   "miznett/5160329",
-   "skyblue9012/2643",
-   "true8/4027587",
-   "joonggonara/1138282027",
-   "joonggonara/1138281113",
    "joonggonara/1138279808",
    "joonggonara/1138279556",
    "bluetoothkorea/150113",
@@ -56502,7 +56723,101 @@
    "worrytodream/1046170",
    "worrytodream/1046009",
    "fobn/167491",
-   "pbpartners/2375"
+   "pbpartners/2375",
+   "sumonnerdeokoo/122255",
+   "sumonnerdeokoo/122254",
+   "sumonnerdeokoo/122252",
+   "dngd/54004",
+   "worldtravelcafe/1169302",
+   "wjanggi/119",
+   "dngd/53971",
+   "dngd/53969",
+   "dngd/53958",
+   "worldtravelcafe/1169301",
+   "worrytodream/1046442",
+   "2266734/136016",
+   "worrytodream/1046375",
+   "2266734/135995",
+   "dngd/53891",
+   "yongchondown/185363",
+   "dfither/21827988",
+   "mindy7857/5545910",
+   "mindy7857/5545867",
+   "mindy7857/5545784",
+   "mindy7857/5545772",
+   "mindy7857/5545758",
+   "savehotdeal/95",
+   "saventrip/252",
+   "healingecohome/913",
+   "bbgolf/67215",
+   "010freebaram/265532",
+   "anyi/320265",
+   "dbskwkd/151582",
+   "codud8134/727314",
+   "todaybigboss/6816",
+   "010freebaram/265543",
+   "malltail/7562302",
+   "zmzm6506/87686",
+   "dailytour1/4843",
+   "joonggonara/1138567007",
+   "joonggonara/1138566994",
+   "joonggonara/1138566957",
+   "joonggonara/1138566939",
+   "eleccigar/1185594",
+   "20daelee/953363",
+   "yulhahanrim/51670",
+   "dailytour1/4841",
+   "mindy7857/5545875",
+   "mindy7857/5545782",
+   "vinpearl/573606",
+   "minecraftpe/4021462",
+   "vinpearl/573595",
+   "warcraftgamemap/3541874",
+   "minecraftpe/4021401",
+   "happyibook/6363589",
+   "tybwondergirl5/118977",
+   "sreports/31127",
+   "vinpearl/573588",
+   "minecraftpe/4021432",
+   "minecraftpe/4021415",
+   "aosk1020/673",
+   "worrytodream/1046368",
+   "worrytodream/1046279",
+   "worrytodream/1046562",
+   "firenze/9002157",
+   "dngd/53946",
+   "tmxktjqjdla/2938",
+   "worldtravelcafe/1169297",
+   "loyaltylife/371284",
+   "lifemarket000/641",
+   "worrytodream/1046347",
+   "worrytodream/1046325",
+   "tyranno10/31233",
+   "loveloveloveovelove/1044240",
+   "loveloveloveovelove/1044224",
+   "manadoplanner/255",
+   "dentalsolution2/8108",
+   "malaysiaschools/63165",
+   "malaysiaschools/63283",
+   "mymalaysia/494107",
+   "xhakxh37/27428",
+   "hotissuenews/1377",
+   "mindy7857/5545906",
+   "010freebaram/265557",
+   "miznett/5166043",
+   "allkindfruit/55582",
+   "mindy7857/5545820",
+   "costco12/801430",
+   "tjwns7157/9567",
+   "skybluesi0bv/31277",
+   "joonggonara/1138567148",
+   "piggun1004/472148",
+   "miznett/5165982",
+   "cantsb/3743962",
+   "dondondondon/347867",
+   "skyfall1/63939",
+   "loyaltylife/371268",
+   "laosclub/24711"
   ],
   "since": "2026-11-03",
   "imported": "2026-11-03"
