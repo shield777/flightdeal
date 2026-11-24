@@ -1,6 +1,47 @@
 [
  {
   "at": "2026-11-25",
+  "title": "에어부산, 겨울맞이 국제선 특가 프로모션",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "에어부산 국제선 특가 프로모션",
+   "airlines": [
+    "에어부산"
+   ],
+   "name": "동계시즌 국제선 특가",
+   "book": {
+    "from": "2026-11-26",
+    "to": "2026-11-30"
+   },
+   "board": {
+    "from": "2026-11-26",
+    "to": "2027-03-27"
+   },
+   "price": 86900,
+   "trip": "편도",
+   "pct": null,
+   "seoul": true,
+   "at": "2026-11-25",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2026-11-26",
+    "to": "2026-11-30"
+   },
+   "board": {
+    "from": "2026-11-26",
+    "to": "2027-03-27"
+   },
+   "pct": null,
+   "price": 86900
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-25",
   "title": "트리니티항공 , 인천~나고야 신규 취항 기념 항공 권 할인 해요",
   "community": true,
   "ai": {
@@ -10444,35 +10485,6 @@
     "to": "2027-02-25"
    },
    "pct": 20,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-17",
-  "title": "✈️ 트립닷컴 × 진에어 국제선 빅세일! 베트남 호찌민도 포함됐어요",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "진에어 국제선 항공권 세일 소식",
-   "airlines": [
-    "진에어"
-   ],
-   "name": "트립닷컴 × 진에어 국제선 빅세일",
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-17",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
    "price": null
   },
   "diff": []
