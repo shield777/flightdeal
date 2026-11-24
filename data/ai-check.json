@@ -1,5 +1,159 @@
 [
  {
+  "at": "2026-11-25",
+  "title": "트리니티항공 , 인천~나고야 신규 취항 기념 항공 권 할인 해요",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "신규 취항 기념 항공권 할인",
+   "airlines": [
+    "트리니티항공"
+   ],
+   "name": "인천~나고야 신규 취항 기념 프로모션",
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": true,
+   "at": "2026-11-25",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-25",
+  "title": "트리니티항공, 인천~나고야 취항 앞두고 할인",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "취항 앞두고 운임 할인코드 프로모션",
+   "airlines": [
+    "트리니티항공"
+   ],
+   "name": null,
+   "book": {
+    "from": "2026-11-23",
+    "to": "2026-12-06"
+   },
+   "board": {
+    "from": "2026-12-18",
+    "to": "2027-03-27"
+   },
+   "price": null,
+   "trip": null,
+   "pct": 8,
+   "seoul": true,
+   "at": "2026-11-25",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2026-11-23",
+    "to": "2026-12-06"
+   },
+   "board": {
+    "from": "2026-12-18",
+    "to": "2027-03-27"
+   },
+   "pct": 8,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-25",
+  "title": "진에어, 2006~2008년생 신규 회원에 항공권 최대 3만원 할인…수능 응시 무관",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "신규회원 항공권 할인 쿠폰",
+   "airlines": [
+    "진에어"
+   ],
+   "name": "스페셜 쿠폰팩",
+   "book": {
+    "from": null,
+    "to": "2026-12-31"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-02-28"
+   },
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-25",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": null,
+    "to": "2026-12-31"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-02-28"
+   },
+   "pct": 15,
+   "price": null
+  },
+  "diff": [
+   "할인율 규칙 15 / AI -"
+  ]
+ },
+ {
+  "at": "2026-11-25",
+  "title": "올겨울 ‘인천-나고야’ 노선 운임 부담 낮춘다···트리니티, 공동 프로모션 진행",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "신규 취항 항공권 운임 할인 프로모션",
+   "airlines": [
+    "트리니티항공"
+   ],
+   "name": "인천-나고야 공동 프로모션",
+   "book": {
+    "from": "2026-11-23",
+    "to": "2026-12-06"
+   },
+   "board": {
+    "from": "2026-12-18",
+    "to": "2027-03-27"
+   },
+   "price": null,
+   "trip": null,
+   "pct": 8,
+   "seoul": true,
+   "at": "2026-11-25",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2026-11-23",
+    "to": "2026-12-06"
+   },
+   "board": {
+    "from": "2026-12-18",
+    "to": "2027-03-27"
+   },
+   "pct": 8,
+   "price": null
+  },
+  "diff": []
+ },
+ {
   "at": "2026-11-24",
   "title": "항공권 25% 할인·해외여행 100만원 뚝! 블랙프라이데이 여행 특가 풍성",
   "community": false,
@@ -10319,160 +10473,6 @@
    "book": null,
    "board": null,
    "pct": null,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-17",
-  "title": "수험생·동반 1명 항공권 20% 할인…제주항공, 내년 2월까지 혜택",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "제주항공 국내선 항공권 20% 할인",
-   "airlines": [
-    "제주항공"
-   ],
-   "name": "수험생·동반자 할인",
-   "book": {
-    "from": null,
-    "to": "2026-12-16"
-   },
-   "board": {
-    "from": null,
-    "to": "2027-02-25"
-   },
-   "price": null,
-   "trip": null,
-   "pct": 20,
-   "seoul": null,
-   "at": "2026-11-17",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2026-12-16"
-   },
-   "board": {
-    "from": null,
-    "to": "2027-02-25"
-   },
-   "pct": 20,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-17",
-  "title": "제주항공 , 수능 수험생 응원 이벤트...국내선 항공 권 20% 할인",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "국내선 항공권 20% 할인 이벤트",
-   "airlines": [
-    "제주항공"
-   ],
-   "name": "수능 수험생 응원 이벤트",
-   "book": {
-    "from": null,
-    "to": "2026-12-16"
-   },
-   "board": {
-    "from": null,
-    "to": "2027-02-25"
-   },
-   "price": null,
-   "trip": null,
-   "pct": 20,
-   "seoul": null,
-   "at": "2026-11-17",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2026-12-16"
-   },
-   "board": {
-    "from": null,
-    "to": "2027-02-25"
-   },
-   "pct": 20,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-17",
-  "title": "제주항공, 수험생 대상 국내선 항공권 20% 할인",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "국내선 할인, 국제선 운임 아님",
-   "airlines": [
-    "제주항공"
-   ],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-17",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님"
-  ]
- },
- {
-  "at": "2026-11-17",
-  "title": "제주항공, 수험생 국내선 항공권 20% 할인…동반 1인도 혜택",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "국내선 항공권 20% 할인",
-   "airlines": [
-    "제주항공"
-   ],
-   "name": "수험생 국내선 항공권 할인",
-   "book": {
-    "from": null,
-    "to": "2026-12-16"
-   },
-   "board": {
-    "from": null,
-    "to": "2027-02-25"
-   },
-   "price": null,
-   "trip": null,
-   "pct": 20,
-   "seoul": null,
-   "at": "2026-11-17",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2026-12-16"
-   },
-   "board": {
-    "from": null,
-    "to": "2027-02-25"
-   },
-   "pct": 20,
    "price": null
   },
   "diff": []

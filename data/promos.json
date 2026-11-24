@@ -1,164 +1,1598 @@
 {
  "items": [
   {
-   "id": "https://www.tournews21.com/news/articleView.html|\" 항공권 25% 할인 ·해외여행 100만원 뚝!\"… 블랙프라이데이 여행",
+   "id": "c:https://cafe.naver.com/fobn/164365|트리니티항공 ] ✈️11월 더블 혜택! 동남아 항공 권 최대 25% 할인",
    "kind": "airline",
-   "title": "\" 항공권 25% 할인 ·해외여행 100만원 뚝!\"… 블랙프라이데이 여행 특가 ...",
-   "desc": "동남아와 호주, 미주, 유럽 등 주요 국제선 노선의 선착순 할인 항공권 을 판매하며, 결제 금액별로 최대 4만원 할인 쿠폰을 지급한다. 태국 정부관광청과 함께하는 공동 프로모션 도 있다. 12월 13일까지 인천~방콕, 대구...",
+   "community": true,
+   "title": "트리니티항공 ] ✈️11월 더블 혜택! 동남아 항공 권 최대 25% 할인",
+   "desc": "트리니티항공 에서 11월 1일부터 13일까지 국제선 항공 권 할인 이벤트 를 진행하고 있어요.",
    "summary": [
-    "동남아와 호주, 미주, 유럽 등 주요 국제선 노선의 선착순 할인 항공권 을 판매하며, 결제 금액별로 최대 4만원 할인 쿠폰을 지급한다.",
-    "태국 정부관광청과 함께하는 공동 프로모션 도 있다.",
-    "12월 13일까지 인천~방콕, 대구…"
+    "트리니티항공 에서 11월 1일부터 13일까지 국제선 항공 권 할인 이벤트 를 진행하고 있어요."
    ],
-   "link": "https://www.tournews21.com/news/articleView.html?idxno=149219",
-   "source": "네이버 뉴스",
-   "date": "2026-11-24T09:38:00.000Z",
-   "found": "2026-11-24",
+   "link": "https://cafe.naver.com/fobn/164365",
+   "source": "네이버 카페 · 다낭 아지트 루나 - 다낭맛집, 다낭마사지, 호이안, 다낭여행",
+   "date": "2026-11-03T14:18:02.174Z",
+   "dateFound": true,
+   "found": "2026-11-03",
    "cards": [],
-   "airlines": [],
+   "airlines": [
+    "TW"
+   ],
    "countries": [
     "태국",
     "일본",
-    "중국"
+    "필리핀"
    ],
    "allRoutes": true,
    "routes": [],
    "price": {
-    "amount": 1000000,
+    "amount": 10000,
     "trip": "oneway?"
    },
-   "query": "태국 항공권 {특가말}",
-   "bodyAt": "2026-11-24",
-   "body": [
-    "내년 봄부터 가을까지 여행을 계획하는 고객에게는 별도 블랙프라이데이 특가가 제공된다.",
-    "오는 30일까지 진행되는 이 행사의 탑승 기간은 2027년 2월 1일부터 10월 30일까지다.",
-    "동남아와 호주, 미주, 유럽 등 주요 국제선 노선의 선착순 할인 항공권을 판매하며, 결제 금액별로 최대 4만원 할인 쿠폰을 지급한다.",
-    "12월 13일까지 인천~방콕, 대구~방콕, 인천~치앙마이 등 3개 노선을 대상으로 최대 20% 할인 혜택을 제공한다.",
-    "최대 3만원의 추가 쿠폰도 마련했으며, 탑승 가능 기간은 2027년 3월 27일까지다.",
-    "트리니티항공 관계자는 \"겨울철 해외여행객들이 항공권 할인과 제휴 혜택을 활용해 동남아부터 유럽, 호주, 캐나다까지 취향에 맞는 여행을 즐길 수 있도록 행사를 준비했다\"고 설명했다.",
-    "“해외 렌터카도 7만원 할인”…에이비스·카카오 T, 겨울여행 비용 낮춘다",
-    "항공권을 예약했다면 여행지에서의 교통비도 절약할 기회가 있다.",
-    "글로벌 렌터카 브랜드 에이비스는 카카오모빌리티와 손잡고 해외 렌터카를 최대 7만원 할인하는 특별 프로모션을 진행한다.",
-    "이벤트 기간은 내년 1월 31일까지다.",
-    "카카오 T 앱의 ‘해외 렌터카’ 메뉴에서 에이비스 차량을 선택해 예약하고 결제하면 할인 혜택이 적용된다.",
-    "10만원 이상 결제할 경우 30% 할인 쿠폰을 사용할 수 있으며, 할인 한도는 최대 7만원이다.",
-    "예약 기간 중 미리 결제하면 내년 봄 이후 여행을 위한 렌터카 예약에도 활용할 수 있다.",
-    "다만 2026년 12월 23일부터 2027년 1월 5일까지는 차량 픽업 대상 기간에서 제외된다.",
-    "에이비스 한국 관계자는 \"카카오 T와의 협업을 통해 국내 여행객들이 익숙한 앱에서 해외 렌터카를 간편하게 예약하고 할인 혜택까지 이용할 수 있도록 했다\"고 설명했다.",
-    "“이집트 여행 100만원 할인!",
-    "한진트래블은 11월 23일부터 30일까지 ‘BLACK FLYDAY!",
-    "’ 행사를 열고 해외 패키지와 항공권, 호텔 상품 등을 특가로 판매한다.",
-    "가장 눈에 띄는 상품은 최대 100만원을 할인하는 타임어택 선착순 특가다.",
-    "이집트 9일 전세기 여행상품은 100만원 할인한 399만원에 판매한다.",
-    "일본 홋카이도 4일 여행상품은 30만원 낮춘 99만9000원, 중국 장가계 왕복 항공권은 15만원 할인한 39만9000원에 선보인다.",
-    "특가 물량은 한정돼 있어 예약 시점에 따라 조기 마감될 수 있다.",
-    "최대 70만원을 할인하는 클리어런스 세일도 함께 운영한다.",
-    "추첨을 통해 행사 상품에 적용되는 50% 또는 10% 할인 쿠폰과 100·500·1000 멤버십 포인트를 지급한다.",
-    "국내 숙박도 최대 2만원 할인…광양·곡성·구례·하동으로 떠나볼까",
-    "해당 지역 숙박시설을 7만원 이상 결제하면 최대 2만원 할인 혜택을 받을 수 있다.",
-    "쿠폰은 12월 2일까지 선착순 2850명에게 제공되며, 12월 31일까지 체크인하는 숙박 예약에 적용된다."
-   ],
+   "query": "트리니티항공 이벤트",
+   "notified": "2026-11-06",
    "ai": {
     "v": 2,
     "promo": true,
-    "why": "트리니티항공 블프 항공권 할인",
+    "why": "항공사 국제선 운임 할인 프로모션",
     "airlines": [
      "트리니티항공"
     ],
-    "name": "블랙프라이데이 특가",
+    "name": "11월 더블 혜택",
     "book": {
-     "from": null,
-     "to": "2026-11-30"
+     "from": "2026-11-01",
+     "to": "2026-11-13"
     },
-    "board": {
-     "from": "2027-02-01",
-     "to": "2027-10-30"
-    },
+    "board": null,
     "price": null,
     "trip": null,
     "pct": 25,
-    "seoul": true,
-    "at": "2026-11-24",
+    "seoul": null,
+    "at": "2026-11-12",
     "model": "deepseek-v4-flash"
    },
-   "lastDate": "2026-11-24T09:38:00.000Z",
-   "lastFound": "2026-11-24",
+   "lastDate": "2026-11-24T20:54:32.112Z",
+   "lastFound": "2026-11-25",
    "more": [
     {
-     "id": "%9E%99%ED%94%84%EB%9D%BC%EC%9D%B4%EB%8D%B0%EC%9D%B4-%EC%97%AC%ED%96%89-%ED%8A%B9%EA%B0%80-%ED%92%8D%EC%84%B1/ar-AA2i6MD0|항공권 25% 할인·해외여행 100만원 뚝! 블랙프라이데이 여행 특가 풍",
+     "id": "c:https://cafe.naver.com/paydefense/769|트리니티항공 후쿠오카·오사카·방콕 국제선 얼리버드 1만원대부터 라이브..",
      "kind": "airline",
-     "title": "항공권 25% 할인·해외여행 100만원 뚝! 블랙프라이데이 여행 특가 풍성",
-     "desc": "[투어코리아=조성란 기자] 항공, 여행업계가 블랙프라이데이 맞아 할인행사가 잇따르고 있다. 국제선 항공권을 최대 25% 저렴하게 구매할 수 있는 특가부터 100만원 할인되는 해외 패키지여행, 1만 마일 보너스 적립, 해외 렌터카와 국내 숙박비 할인까지 혜택도 다양하다. 연말연시와 겨울방학은 물론 내년 여름휴가를 미리 준비하려는 여행객들에게 관심을 끌고 있다 ...",
+     "community": true,
+     "title": "트리니티항공 후쿠오카·오사카·방콕 국제선 얼리버드 1만원대부터 라이브....",
+     "desc": "27(토) 티웨이 항공 의 새로운 이름, 트리니티항공 국제선 동계 얼리버드 라이브 특가 핫딜입니다.",
      "summary": [
-      "항공, 여행업계가 블랙프라이데이 맞아 할인행사가 잇따르고 있다.",
-      "국제선 항공권을 최대 25% 저렴하게 구매할 수 있는 특가부터 100만원 할인되는 해외 패키지여행, 1만 마일 보너스 적립, 해외 렌터카와 국내 숙박비 할인까지 혜택도 다양하다.",
-      "연말연시와 겨울방학은 물론 내년 여름휴가를 미리 준비하려는 여행객들에게 관심을 끌고 있다"
+      "27(토) 티웨이 항공 의 새로운 이름, 트리니티항공 국제선 동계 얼리버드 라이브 특가 핫딜입니다."
      ],
-     "link": "https://www.msn.com/ko-kr/news/other/%ED%95%AD%EA%B3%B5%EA%B6%8C-25-%ED%95%A0%EC%9D%B8-%ED%95%B4%EC%99%B8%EC%97%AC%ED%96%89-100%EB%A7%8C%EC%9B%90-%EB%9A%9D-%EB%B8%94%EB%9E%99%ED%94%84%EB%9D%BC%EC%9D%B4%EB%8D%B0%EC%9D%B4-%EC%97%AC%ED%96%89-%ED%8A%B9%EA%B0%80-%ED%92%8D%EC%84%B1/ar-AA2i6MD0",
-     "source": "투어코리아 on MSN",
-     "date": "2026-11-24T01:37:24.000Z",
-     "found": "2026-11-24",
+     "link": "https://cafe.naver.com/paydefense/769",
+     "source": "네이버 카페 · [육아메이트] - 엄빠지갑지킴이(임출육아용품 핫딜 아카이브)",
+     "date": "2026-11-04T10:41:50.033Z",
+     "dateFound": true,
+     "found": "2026-11-04",
      "cards": [],
-     "airlines": [],
-     "countries": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [
+      "태국",
+      "일본"
+     ],
      "allRoutes": true,
      "routes": [],
      "price": {
-      "amount": 1000000,
+      "amount": 10000,
       "trip": "oneway?"
      },
-     "query": "트리니티항공 {특가말}",
-     "bodyAt": "2026-11-24",
+     "query": "트리니티항공 얼리버드",
+     "notified": "2026-11-06",
      "ai": {
       "v": 2,
       "promo": true,
-      "why": "국제선 항공권 25% 할인 특가",
-      "airlines": [],
-      "name": "블랙프라이데이 특가",
+      "why": "항공사 얼리버드 특가 소식",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "국제선 동계 얼리버드 라이브 특가",
+      "book": null,
+      "board": null,
+      "price": 10000,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/japanpackagetour/13664|트리니티항공 가을 겨울 일본 항공 권 할인 프로모션",
+     "kind": "airline",
+     "community": true,
+     "title": "트리니티항공 가을 겨울 일본 항공 권 할인 프로모션",
+     "desc": "\" 트리니티항공 가을·겨울 국제선 할인\"… 항공 의 날 기념 프로모션 앞서 전해드린 얼리버드 프로모션(OCT26 코드)과 비슷한 코드로 새 행사가 나왔습니다. 헷갈리지 않게 차이점도 짚어드릴게요.",
+     "summary": [
+      "\" 트리니티항공 가을·겨울 국제선 할인\"… 항공 의 날 기념 프로모션 앞서 전해드린 얼리버드 프로모션(OCT26 코드)과 비슷한 코드로 새 행사가 나왔습니다.",
+      "헷갈리지 않게 차이점도 짚어드릴게요."
+     ],
+     "link": "https://cafe.naver.com/japanpackagetour/13664",
+     "source": "네이버 카페 · 일본 패키지여행 카페 (북해도,도쿄,오사카,후쿠오카,요나고)",
+     "date": "2026-11-04T10:41:50.033Z",
+     "dateFound": true,
+     "found": "2026-11-04",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [
+      "일본"
+     ],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "트리니티항공 얼리버드",
+     "notified": "2026-11-06",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "항공사 할인 프로모션 소식",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "가을·겨울 국제선 할인",
       "book": null,
       "board": null,
       "price": null,
       "trip": null,
-      "pct": 25,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/vinpearl/552713|✈️ [특가 소식] 트리니티항공 2027년 초특가 얼리버드 오픈! (최대",
+     "kind": "airline",
+     "community": true,
+     "title": "✈️ [특가 소식] 트리니티항공 2027년 초특가 얼리버드 오픈! (최대 24% 할인....",
+     "desc": "현재 트리니티항공 (Trinity Airways)에서 진행 중인 '국제선 얼리버드 특가 프로모션' 내용 정리해 드립니다.",
+     "summary": [
+      "현재 트리니티항공 (Trinity Airways)에서 진행 중인 '국제선 얼리버드 특가 프로모션' 내용 정리해 드립니다."
+     ],
+     "link": "https://cafe.naver.com/vinpearl/552713",
+     "source": "네이버 카페 · 베트남 피크타임 푸꾸옥 나트랑 다낭 호치민 무이네 하노이 여행",
+     "date": "2026-11-04T10:41:50.033Z",
+     "dateFound": true,
+     "found": "2026-11-04",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "트리니티항공 얼리버드",
+     "notified": "2026-11-06",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "항공사 얼리버드 특가 프로모션",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "국제선 얼리버드 특가 프로모션",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": 24,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/deboracay/255682|[보라카이 항공 ] 보라카이 직항 트리니티항공 ✈️ 얼리버드 이벤트",
+     "kind": "airline",
+     "community": true,
+     "title": "[보라카이 항공 ] 보라카이 직항 트리니티항공 ✈️ 얼리버드 이벤트",
+     "desc": "Since2006 보라카이자유여행 전문 보라카이드보라 현재 유일하게 보라카이 직항 운항중인 트리니티항공 (구) 티웨이 항공 얼리버드 이벤트 합니다!",
+     "summary": [
+      "Since2006 보라카이자유여행 전문 보라카이드보라 현재 유일하게 보라카이 직항 운항중인 트리니티항공 (구) 티웨이 항공 얼리버드 이벤트 합니다!…"
+     ],
+     "link": "https://cafe.naver.com/deboracay/255682",
+     "source": "네이버 카페 · 보라카이 드보라 자유여행",
+     "date": "2026-11-04T10:41:50.033Z",
+     "dateFound": true,
+     "found": "2026-11-04",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [
+      "필리핀"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "트리니티항공 얼리버드",
+     "notified": "2026-11-06",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "트리니티항공 얼리버드 특가",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "얼리버드 이벤트",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/airportshopping/1088|[ 트리니티항공 ] 11월 정기 국제선 할인 프로모션!",
+     "kind": "airline",
+     "community": true,
+     "title": "[ 트리니티항공 ] 11월 정기 국제선 할인 프로모션!",
+     "desc": "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
+     "summary": [
+      "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
+     ],
+     "link": "https://cafe.naver.com/airportshopping/1088",
+     "source": "네이버 카페 · 인천공항의 모든 것",
+     "date": "2026-11-06T05:00:45.112Z",
+     "found": "2026-11-06",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "트리니티항공 할인",
+     "notified": "2026-11-06",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "항공사 국제선 할인 프로모션",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "11월 정기 국제선 할인 프로모션",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/livejob/1212376|트리니티항공 에서 국제선 얼리버드 항공 권 특가가 나와서 공유드립니다!",
+     "kind": "airline",
+     "community": true,
+     "title": "트리니티항공 에서 국제선 얼리버드 항공 권 특가가 나와서 공유드립니다!",
+     "desc": "트리니티항공 국제선 얼리버드 , 정확히 언제까지일까? 이번 프로모션의 가장 중요한 날짜부터 정리해볼게요.",
+     "summary": [
+      "트리니티항공 국제선 얼리버드 , 정확히 언제까지일까? 이번 프로모션의 가장 중요한 날짜부터 정리해볼게요."
+     ],
+     "link": "https://cafe.naver.com/livejob/1212376",
+     "source": "네이버 카페 · 여친사▶▶여행도하고 친구도사귀자◀◀ 국내여행,여행맛집",
+     "date": "2026-11-09T11:00:48.524Z",
+     "found": "2026-11-09",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "트리니티항공 얼리버드",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "항공사 얼리버드 특가 공유",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "국제선 얼리버드 특가",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/airportshopping/952|[ 트리니티항공 ] 국제선 얼리버드 특가!",
+     "kind": "airline",
+     "community": true,
+     "title": "[ 트리니티항공 ] 국제선 얼리버드 특가!",
+     "desc": "자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
+     "summary": [
+      "자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
+     ],
+     "link": "https://cafe.naver.com/airportshopping/952",
+     "source": "네이버 카페 · 인천공항의 모든 것",
+     "date": "2026-11-09T11:00:48.524Z",
+     "found": "2026-11-09",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "트리니티항공 얼리버드",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "트리니티항공 국제선 얼리버드 특가",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "국제선 얼리버드 특가",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/airportshopping/1105|[ 트리니티항공 ] 부산, 대구, 청주, 제주에서 출발하는 우리 동네 할",
+     "kind": "airline",
+     "community": true,
+     "title": "[ 트리니티항공 ] 부산, 대구, 청주, 제주에서 출발하는 우리 동네 할인 !",
+     "desc": "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
+     "summary": [
+      "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
+     ],
+     "link": "https://cafe.naver.com/airportshopping/1105",
+     "source": "네이버 카페 · 인천공항의 모든 것",
+     "date": "2026-11-10T05:00:46.618Z",
+     "found": "2026-11-10",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "트리니티항공 할인",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "항공사 지방 출발 할인 프로모션",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "우리 동네 할인",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": false,
+      "at": "2026-11-12",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/airplanetiket/1359|트리니티항공 블프 세일",
+     "kind": "airline",
+     "community": true,
+     "title": "트리니티항공 블프 세일",
+     "desc": "",
+     "link": "https://cafe.naver.com/airplanetiket/1359",
+     "source": "네이버 카페 · 항공특가정보",
+     "date": "2026-11-16T03:00:48.126Z",
+     "found": "2026-11-16",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "트리니티항공 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "항공사 블프 특가 소식",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "블프 세일",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-16",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/djmomschools/193|✈️ [여행·핫딜] 트리니티 항공 (구 티웨이) 2026 블랙 프라이데이",
+     "kind": "airline",
+     "community": true,
+     "title": "✈️ [여행·핫딜] 트리니티 항공 (구 티웨이) 2026 블랙 프라이데이! 2027년 항....",
+     "desc": "여행 항공권 을 미리 사두는 시즌이네요.",
+     "summary": [
+      "여행 항공권 을 미리 사두는 시즌이네요."
+     ],
+     "link": "https://cafe.naver.com/djmomschools/193",
+     "source": "네이버 카페 · 동작맘스쿨",
+     "date": "2026-11-17T05:00:43.473Z",
+     "found": "2026-11-17",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "항공권 프로모션 코드",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "항공사 블랙프라이데이 특가 소식",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "2026 블랙 프라이데이",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-17",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/airportshopping/1141|[ 트리니티항공 ] 올해 마지막 방콕, 치앙마이 최대 할인 !",
+     "kind": "airline",
+     "community": true,
+     "title": "[ 트리니티항공 ] 올해 마지막 방콕, 치앙마이 최대 할인 !",
+     "desc": "▼자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
+     "summary": [
+      "▼자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
+     ],
+     "link": "https://cafe.naver.com/airportshopping/1141",
+     "source": "네이버 카페 · 인천공항의 모든 것",
+     "date": "2026-11-17T05:00:43.473Z",
+     "found": "2026-11-17",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [
+      "태국"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "트리니티항공 할인",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "트리니티항공 방콕·치앙마이 특가",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "올해 마지막 방콕, 치앙마이 최대 할인",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-17",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/airportshopping/1139|[ 트리니티항공 ] 지금, 제주를 만나다. ( 최대 2만원 할인 프로모션",
+     "kind": "airline",
+     "community": true,
+     "title": "[ 트리니티항공 ] 지금, 제주를 만나다. ( 최대 2만원 할인 프로모션 )",
+     "desc": "▼자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
+     "summary": [
+      "▼자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
+     ],
+     "link": "https://cafe.naver.com/airportshopping/1139",
+     "source": "네이버 카페 · 인천공항의 모든 것",
+     "date": "2026-11-17T05:00:43.473Z",
+     "found": "2026-11-17",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "트리니티항공 할인",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "항공사 할인 프로모션 소식",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "지금, 제주를 만나다",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-17",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/deboracay/255965|[보라카이 항공 권] 트리니티항공 '블랙프라이데이' 할인",
+     "kind": "airline",
+     "community": true,
+     "title": "[보라카이 항공 권] 트리니티항공 '블랙프라이데이' 할인",
+     "desc": "",
+     "link": "https://cafe.naver.com/deboracay/255965",
+     "source": "네이버 카페 · 보라카이 드보라 자유여행",
+     "date": "2026-11-17T13:00:46.212Z",
+     "found": "2026-11-17",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [
+      "필리핀"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "트리니티항공 할인",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "트리니티항공 블랙프라이데이 항공권 할인",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "블랙프라이데이",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-17",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/airportshopping/1162|[ 트리니티항공 ] 11월-1월 출발 한정! 국제선 특가 !",
+     "kind": "airline",
+     "community": true,
+     "title": "[ 트리니티항공 ] 11월-1월 출발 한정! 국제선 특가 !",
+     "desc": "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
+     "summary": [
+      "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
+     ],
+     "link": "https://cafe.naver.com/airportshopping/1162",
+     "source": "네이버 카페 · 인천공항의 모든 것",
+     "date": "2026-11-20T05:00:43.396Z",
+     "found": "2026-11-20",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "트리니티항공 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "항공사 국제선 특가 프로모션",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "11월-1월 출발 한정 국제선 특가",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-20",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/thaiinfo/681762|트리니티항공 , 국제선 겨울 시즌 특가",
+     "kind": "airline",
+     "community": true,
+     "title": "트리니티항공 , 국제선 겨울 시즌 특가",
+     "desc": "",
+     "link": "https://cafe.naver.com/thaiinfo/681762",
+     "source": "네이버 카페 · 태초의 태국정보(태국자유여행/방콕/푸켓/파타야/크라비/사무이)",
+     "date": "2026-11-23T05:00:42.080Z",
+     "found": "2026-11-23",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "트리니티항공 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "항공사 겨울 시즌 특가 소식",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "국제선 겨울 시즌 특가",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-23",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/joonggonara/1138627217|트리니티항공 1만원 할인 쿠폰 (15만원 이상 결제 시)",
+     "kind": "airline",
+     "community": true,
+     "title": "트리니티항공 1만원 할인 쿠폰 (15만원 이상 결제 시)",
+     "desc": "",
+     "link": "https://cafe.naver.com/joonggonara/1138627217",
+     "source": "네이버 카페 · 중고나라",
+     "date": "2026-11-24T05:00:40.349Z",
+     "found": "2026-11-24",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": {
+      "amount": 150000,
+      "trip": "oneway?"
+     },
+     "query": "트리니티항공 할인",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "항공권 결제 할인 쿠폰",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
       "seoul": null,
       "at": "2026-11-24",
       "model": "deepseek-v4-flash"
      }
     },
     {
-     "id": "Yk5QcXI0c0tjM1oxMnZNYldOMmZsTjBZQzMySnFyODc5cF8tSktoUy1Ea2R6U1gxNGtWc3oteGRueWlUT2NNaHNhd3BZRFcwNkVsZ2k5c3NncFhlQUJSSU1n|“항공권 25% 할인·해외여행 100만원 뚝!”… 블랙프라이데이 여행 특",
+     "id": "c:https://cafe.naver.com/marverlove/377843|트리니티항공 , 인천~나고야 신규 취항 기념 항공 권 할인 해요",
      "kind": "airline",
-     "title": "“항공권 25% 할인·해외여행 100만원 뚝!”… 블랙프라이데이 여행 특가 풍성",
-     "desc": "“항공권 25% 할인·해외여행 100만원 뚝!”… 블랙프라이데이 여행 특가 풍성 투어코리아",
+     "community": true,
+     "title": "트리니티항공 , 인천~나고야 신규 취항 기념 항공 권 할인 해요",
+     "desc": "트리니티항공 이 오는 12월 인천~나고야 노선 취항을 앞두고 항공 권 할인 에 나서요 일본 나고야 주부국제공항과 공동으로 진행하는 프로모션으로, 항공 권 할인 과 추가 쿠폰 혜택을 제공해요.",
      "summary": [
-      "“항공권 25% 할인·해외여행 100만원 뚝!”… 블랙프라이데이 여행 특가 풍성 투어코리아…"
+      "트리니티항공 이 오는 12월 인천~나고야 노선 취항을 앞두고 항공 권 할인 에 나서요 일본 나고야 주부국제공항과 공동으로 진행하는 프로모션으로, 항공 권 할인 과 추가 쿠폰 혜택을 제공해요."
      ],
-     "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE8xalJ2Qy1jVDhNZmZUYk5QcXI0c0tjM1oxMnZNYldOMmZsTjBZQzMySnFyODc5cF8tSktoUy1Ea2R6U1gxNGtWc3oteGRueWlUT2NNaHNhd3BZRFcwNkVsZ2k5c3NncFhlQUJSSU1n?oc=5",
-     "source": "투어코리아",
-     "date": "2026-11-24T09:37:24.000Z",
-     "found": "2026-11-24",
+     "link": "https://cafe.naver.com/marverlove/377843",
+     "source": "네이버 카페 · 마마웨딩♡달콤한결혼(일상.결혼준비.부부살림.여행.뷰티)",
+     "date": "2026-11-24T20:54:32.112Z",
+     "found": "2026-11-25",
      "cards": [],
-     "airlines": [],
-     "countries": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [
+      "일본"
+     ],
      "allRoutes": false,
      "routes": [],
-     "price": {
-      "amount": 1000000,
-      "trip": "oneway?"
-     },
-     "query": "태국 항공권 {특가말}",
-     "bodyAt": "2026-11-24",
+     "price": null,
+     "query": "트리니티항공 할인",
      "ai": {
       "v": 2,
       "promo": true,
-      "why": "항공권 25% 할인 블프 특가",
-      "airlines": [],
-      "name": "블랙프라이데이 여행 특가",
+      "why": "신규 취항 기념 항공권 할인",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "인천~나고야 신규 취항 기념 프로모션",
       "book": null,
       "board": null,
       "price": null,
       "trip": null,
-      "pct": 25,
+      "pct": null,
+      "seoul": true,
+      "at": "2026-11-25",
+      "model": "deepseek-v4-flash"
+     }
+    }
+   ]
+  },
+  {
+   "id": "FWXBHQ0hsQWhhQUF0ekpCOXBTeHFqVzVSeHY3a0ZJT2V6QlJURkh0MjhzSHBIdFpaNERibmxlczc3RFh3bmJuQUwtbW16ZDBPeDlSNE1QOERYZmg0emZyMWM|진에어, 2006~2008년생 신규 회원에 항공권 할인 쿠폰 제공",
+   "kind": "airline",
+   "title": "진에어, 2006~2008년생 신규 회원에 항공권 할인 쿠폰 제공",
+   "desc": "진에어, 2006~2008년생 신규 회원에 항공권 할인 쿠폰 제공 인더뉴스",
+   "summary": [
+    "진에어, 2006~2008년생 신규 회원에 항공권 할인 쿠폰 제공 인더뉴스…"
+   ],
+   "link": "https://www.inthenews.co.kr/news/article.html?no=94915",
+   "source": "인더뉴스",
+   "date": "2026-11-24T01:34:27.000Z",
+   "found": "2026-11-24",
+   "cards": [],
+   "airlines": [
+    "LJ"
+   ],
+   "countries": [
+    "필리핀"
+   ],
+   "allRoutes": true,
+   "routes": [],
+   "price": {
+    "amount": 10000,
+    "trip": "oneway?"
+   },
+   "query": "진에어 {특가말}",
+   "bodyAt": "2026-11-24",
+   "body": [
+    "진에어, 2006~2008년생 신규 회원에 항공권 할인 쿠폰 제공",
+    "인더뉴스 김용운 기자ㅣ진에어는 오는 12월 31일까지 홈페이지에 새로 가입하는 2006~2008년생 신규 회원에게 쿠폰팩을 발급한다고 24일 밝혔습니다.",
+    "항공 운임 할인은 국내선 2만원 이상 결제 시 1만원, 국제선 30만원 이상 결제 시 3만원이 적용됩니다.",
+    "사전 좌석 지정과 위탁 수하물 5㎏ 추가 혜택을 묶은 '수하물팩'을 전 노선에서 1000원에 이용할 수 있는 쿠폰도 제공합니다.",
+    "발급된 쿠폰은 내년 2월 28일까지 운항하는 항공편을 예매할 때 사용할 수 있습니다.",
+    "진에어는 오는 11월 26일부터 12월 2일까지 부산발 국제선 항공편을 대상으로 최대 15% 운임 할인 행사도 진행할 예정입니다.",
+    "탑승 기간은 내년 3월 27일까지입니다.",
+    "진에어 온라인 채널에서 프로모션 코드를 입력하면 할인받을 수 있습니다.",
+    "진에어 관계자는 \"수학능력시험 준비로 고생한 수험생들은 물론, 각자의 자리에서 노력해 온 청춘들을 응원한다\"며 \"홀가분한 마음으로 여행의 설렘을 만끽하시길 바란다\"고 말했습니다."
+   ],
+   "ai": {
+    "v": 2,
+    "promo": true,
+    "why": "진에어 항공권 운임 할인 쿠폰·프로모션",
+    "airlines": [
+     "진에어"
+    ],
+    "name": null,
+    "book": {
+     "from": null,
+     "to": "2026-12-31"
+    },
+    "board": {
+     "from": null,
+     "to": "2027-02-28"
+    },
+    "price": null,
+    "trip": null,
+    "pct": 15,
+    "seoul": null,
+    "at": "2026-11-24",
+    "model": "deepseek-v4-flash"
+   },
+   "lastDate": "2026-11-24T15:02:15.000Z",
+   "lastFound": "2026-11-25",
+   "more": [
+    {
+     "id": "PSWZhZzBlQmd4SDdZRHRYdmNPdEdMQ0xyOFd2dW5sdlVrNXc2YjBma0V0SUV2cnFacEFyanQyNndWOFhVU1pOaHBXYmQ5OXVzb0Z5c0RYQVpBTmhkNFZlbGg|진에어, 2006~2008년생 대상 항공권 할인 ‘스페셜 쿠폰팩’ 제공",
+     "kind": "airline",
+     "title": "진에어, 2006~2008년생 대상 항공권 할인 ‘스페셜 쿠폰팩’ 제공",
+     "desc": "진에어, 2006~2008년생 대상 항공권 할인 ‘스페셜 쿠폰팩’ 제공 https://www.ppss.kr/",
+     "summary": [
+      "진에어, 2006~2008년생 대상 항공권 할인 ‘스페셜 쿠폰팩’ 제공 https://www.ppss.kr/…"
+     ],
+     "link": "https://www.ppss.kr/news/articleView.html?idxno=322630",
+     "source": "https://www.ppss.kr/",
+     "date": "2026-11-24T02:36:53.000Z",
+     "found": "2026-11-24",
+     "cards": [],
+     "airlines": [
+      "LJ"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "에어부산 {특가말}",
+     "bodyAt": "2026-11-24",
+     "body": [
+      "진에어, 2006~2008년생 대상 항공권 할인 ‘스페셜 쿠폰팩’ 제공",
+      "12월 31일까지 신규 가입 회원 대상…수능 응시 여부 관계없이 제공",
+      "국내선 1만원·국제선 3만원 할인…수하물팩 1000원 이용",
+      "(PPSS 진유미 기자)진에어가 2027학년도 대학수학능력시험을 마친 수험생을 비롯해 겨울방학과 새로운 출발을 앞둔 청년층의 여행 경비 부담을 덜어주기 위한 특별 할인 행사를 마련했다.",
+      "진에어는 오는 12월 31일까지 2006~2008년생 신규 가입 회원을 대상으로 항공권 운임과 부가서비스 할인 혜택을 담은 ‘스페셜 쿠폰팩’을 제공한다고 밝혔다.",
+      "항공권 할인 혜택은 국내선의 경우 2만원 이상 결제 시 1만원, 국제선은 30만원 이상 결제 시 3만원이 적용된다.",
+      "사전 좌석 지정과 위탁 수하물 5kg 추가 혜택을 결합한 ‘수하물팩’을 전 노선에서 1000원에 이용할 수 있는 쿠폰을 제공한다.",
+      "발급된 쿠폰은 내년 2월 28일까지 운항하는 항공편 예매 시 사용할 수 있다.",
+      "진에어 관계자는 “수학능력시험 준비로 고생한 수험생들은 물론, 각자의 자리에서 노력해 온 청춘들을 응원한다”며 “홀가분한 마음으로 여행의 설렘을 만끽하시길 바란다”고 말했다.",
+      "한편 진에어는 부산 출발 여행객을 대상으로 국제선 항공권 할인 행사도 진행한다.",
+      "오는 26일부터 12월 2일까지 부산발 국제선 항공편을 대상으로 최대 15%의 운임 할인 혜택을 제공하며 탑승 기간은 내년 3월 27일까지다.",
+      "이용객은 프로모션 코드를 활용해 진에어 온라인 채널에서 할인된 항공권을 구매할 수 있다.",
+      "이래서 골프는 몰라도 '유현주는 안다'고 하는구나...볼륨감까지 급이 다른 몸매"
+     ],
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "진에어 항공권 할인 쿠폰팩",
+      "airlines": [
+       "진에어"
+      ],
+      "name": "스페셜 쿠폰팩",
+      "book": {
+       "from": null,
+       "to": "2026-12-31"
+      },
+      "board": {
+       "from": null,
+       "to": "2027-02-28"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 15,
+      "seoul": null,
+      "at": "2026-11-24",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "lWFBXZkt6WU1NRmhMclNYcFg4bklUeUlRTmc5UUtsY00wd2VHc0htQ2pjV21JNktNNlpqdWVPTkg1dTIxejhNSzhCdlo4X1d1Um1fMmtHRUFBWUI5MkFpQ2E|“수능 안 봐도 할인”…진에어, 2006~2008년생 여행 혜택",
+     "kind": "airline",
+     "title": "“수능 안 봐도 할인”…진에어, 2006~2008년생 여행 혜택",
+     "desc": "“수능 안 봐도 할인”…진에어, 2006~2008년생 여행 혜택 서울경제TV",
+     "summary": [
+      "“수능 안 봐도 할인”…진에어, 2006~2008년생 여행 혜택 서울경제TV…"
+     ],
+     "link": "https://www.sentv.co.kr/article/view/sentv202611240128",
+     "source": "서울경제TV",
+     "date": "2026-11-24T04:32:03.000Z",
+     "found": "2026-11-24",
+     "cards": [],
+     "airlines": [
+      "LJ"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "진에어 {특가말}",
+     "bodyAt": "2026-11-24",
+     "body": [
+      "“수능 안 봐도 할인”…진에어, 2006~2008년생 여행 혜택",
+      "12월 31일까지 신규 가입 회원 대상 할인",
+      "[서울경제TV=김지송 인턴기자] 진에어가 2006~2008년생 신규 회원을 대상으로 국내선 최대 1만 원, 국제선 최대 3만 원의 항공권 할인 혜택을 제공한다.",
+      "진에어는 오는 12월 31일까지 항공 운임과 부가서비스 할인 혜택을 담은 '스페셜 쿠폰팩'을 증정한다고 24일 밝혔다.",
+      "항공권 할인은 국내선 2만 원 이상 결제 시 1만 원, 국제선 30만 원 이상 결제 시 3만 원이 적용된다.",
+      "사전 좌석 지정과 위탁 수하물 5kg 추가 서비스를 묶은 '수하물팩'을 1000원에 구매할 수 있는 쿠폰도 제공된다.",
+      "발급된 쿠폰은 내년 2월 28일까지 운항하는 항공편 예매에 사용할 수 있다.",
+      "진에어는 청년 대상 행사 외에도 신규 회원과 여행객을 위한 항공권 할인 행사를 운영해 왔다.",
+      "지난 7월 진행한 연중 특가 행사 '진마켓'에서는 신규 가입 회원에게 국제선 5000원 할인 쿠폰을 제공했다.",
+      "한편 진에어는 오는 26일부터 12월 2일까지 부산 출발 국제선 항공편을 대상으로 최대 15% 운임 할인 행사도 진행한다.",
+      "할인 항공권의 탑승 기간은 내년 3월 27일까지다.",
+      "진에어 관계자는 “수학능력시험 준비로 고생한 수험생들은 물론, 각자의 자리에서 노력해 온 청춘들을 응원한다”며 “홀가분한 마음으로 여행의 설렘을 만끽하시길 바란다”고 말했다."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "진에어 항공권 할인 쿠폰 제공",
+      "airlines": [
+       "진에어"
+      ],
+      "name": "스페셜 쿠폰팩",
+      "book": {
+       "from": null,
+       "to": "2026-12-31"
+      },
+      "board": {
+       "from": null,
+       "to": "2027-02-28"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 15,
+      "seoul": null,
+      "at": "2026-11-24",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "MjF5QW9ocDhHb0djem9SR3QxNDdKXzVKVzZGa2hSRzlqNEh6dC03XzUzaUVKSVBWdkFma21yOFY2SlQ5ZFM1NGdyR0p3amVKZVpxZUpvQklfZ0ZSdTZWbXdX|“국제선 3만원 할인·수하물팩 1천원”…진에어, 2006~2008년생 여",
+     "kind": "airline",
+     "title": "“국제선 3만원 할인·수하물팩 1천원”…진에어, 2006~2008년생 여행 혜택",
+     "desc": "“국제선 3만원 할인·수하물팩 1천원”…진에어, 2006~2008년생 여행 혜택 더게이트",
+     "summary": [
+      "“국제선 3만원 할인·수하물팩 1천원”…진에어, 2006~2008년생 여행 혜택 더게이트…"
+     ],
+     "link": "http://www.spochoo.com/news/articleView.html?idxno=132354",
+     "source": "더게이트",
+     "date": "2026-11-24T07:30:00.000Z",
+     "found": "2026-11-24",
+     "cards": [],
+     "airlines": [
+      "LJ"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "에어부산 {특가말}",
+     "bodyAt": "2026-11-24",
+     "body": [
+      "“국제선 3만원 할인·수하물팩 1천원”…진에어, 2006~2008년생 여행 혜택",
+      "진에어가 대학수학능력시험을 마친 수험생을 비롯해 새로운 출발을 앞둔 청춘들을 위해 항공권과 부가서비스 할인 혜택을 묶은 쿠폰팩을 선보인다.",
+      "진에어는 다음달 31일까지 2006~2008년생 신규 가입 회원을 대상으로 ‘스페셜 쿠폰팩’을 제공한다고 24일 밝혔다.",
+      "국내선은 2만원 이상 결제 시 1만원, 국제선은 30만원 이상 결제 시 3만원을 할인받을 수 있다.",
+      "사전 좌석 지정과 위탁 수하물 5kg 추가 혜택을 묶은 ‘수하물팩’도 전 노선에서 1000원에 이용할 수 있는 쿠폰을 제공한다.",
+      "발급된 쿠폰은 내년 2월 28일까지 운항하는 항공편 예약에 사용할 수 있다.",
+      "진에어는 네이버페이와 카카오페이 등 월별 제휴 결제사 할인 혜택도 별도 이벤트 페이지를 통해 제공해 겨울방학과 봄 여행을 준비하는 고객의 비용 부담을 낮춘다는 계획이다.",
+      "진에어는 오는 26일부터 내달 2일까지 부산발 국제선 항공편을 대상으로 최대 15% 운임 할인 행사를 실시할 예정이다.",
+      "탑승 기간은 내년 3월 27일까지이며, 이용객은 프로모션 코드를 적용해 진에어 온라인 채널에서 할인된 운임으로 항공권을 구매할 수 있다.",
+      "진에어 관계자는 “수학능력시험 준비로 고생한 수험생들은 물론, 각자의 자리에서 노력해 온 청춘들을 응원한다”며 “홀가분한 마음으로 여행의 설렘을 만끽하시길 바란다”고 말했다."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "진에어 항공권 할인 쿠폰·운임 할인",
+      "airlines": [
+       "진에어"
+      ],
+      "name": "스페셜 쿠폰팩",
+      "book": {
+       "from": null,
+       "to": "2026-12-31"
+      },
+      "board": {
+       "from": null,
+       "to": "2027-02-28"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 15,
+      "seoul": null,
+      "at": "2026-11-24",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "BCLXdiY25ySXgwaFBKdlNIRkp5MXVZdmQ3dmtNck9PZFJyNVJzbC14ZWloNkdNc0JvYW02RDl4YlpoSjc3UjBIX2NlclhfNkVZOGIyQWNGOHdVcHZqUEh4bg|진에어, 2006~2008년생 대상 항공권 할인…수하물팩 1000원 혜택",
+     "kind": "airline",
+     "title": "진에어, 2006~2008년생 대상 항공권 할인…수하물팩 1000원 혜택",
+     "desc": "진에어, 2006~2008년생 대상 항공권 할인…수하물팩 1000원 혜택 스포츠한국",
+     "summary": [
+      "진에어, 2006~2008년생 대상 항공권 할인…수하물팩 1000원 혜택 스포츠한국…"
+     ],
+     "link": "https://sports.hankooki.com/news/articleView.html?idxno=6944103",
+     "source": "스포츠한국",
+     "date": "2026-11-24T08:34:45.000Z",
+     "found": "2026-11-24",
+     "cards": [],
+     "airlines": [
+      "LJ"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "진에어 {특가말}",
+     "bodyAt": "2026-11-24",
+     "body": [
+      "진에어, 2006~2008년생 대상 항공권 할인…수하물팩 1000원 혜택",
+      "[스포츠한국 홍성완 기자] 진에어가 2027학년도 대학수학능력시험을 마친 수험생과 청년층을 대상으로 항공권 및 부가서비스 할인 혜택을 제공한다.",
+      "진에어는 오는 12월31일까지 2006~2008년생 신규 가입 회원에게 항공 운임과 부가서비스 할인 혜택을 담은 ‘스페셜 쿠폰팩’을 제공한다고 24일 밝혔다.",
+      "국내선은 2만원 이상 결제 시 1만원, 국제선은 30만원 이상 결제 시 3만원을 할인받을 수 있다.",
+      "사전 좌석 지정과 위탁 수하물 5㎏ 추가 혜택을 묶은 ‘수하물팩’을 1000원에 이용할 수 있는 쿠폰도 제공한다.",
+      "쿠폰은 2027년 2월28일까지 운항하는 항공편을 예매할 때 사용할 수 있다.",
+      "진에어는 네이버페이와 카카오페이 등 제휴 결제사를 통한 월별 할인 행사도 별도 이벤트 페이지에서 안내하고 있다.",
+      "이번 쿠폰 혜택과 별개로 탑승객에게 기본 제공되는 위탁 수하물 15㎏도 유지된다.",
+      "진에어 관계자는 “수학능력시험 준비로 고생한 수험생들은 물론, 각자의 자리에서 노력해 온 청춘들을 응원한다”며 “홀가분한 마음으로 여행의 설렘을 만끽하시길 바란다”고 말했다.",
+      "한편 진에어는 부산 출발 국제선 이용객을 대상으로 한 운임 할인 행사도 진행할 예정이다.",
+      "11월26일부터 12월2일까지 부산발 국제선 항공편을 대상으로 최대 15% 할인을 제공한다.",
+      "탑승 기간은 2027년 3월27일까지이며, 프로모션 코드를 입력해 진에어 온라인 채널에서 항공권을 구매하면 된다."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "진에어 항공권 할인 쿠폰 제공",
+      "airlines": [
+       "진에어"
+      ],
+      "name": "스페셜 쿠폰팩",
+      "book": {
+       "from": null,
+       "to": "2026-12-31"
+      },
+      "board": {
+       "from": null,
+       "to": "2027-02-28"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 15,
+      "seoul": null,
+      "at": "2026-11-24",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "k1N05aQ2VGdFlQMTQtaGlscWZPc0pyRnVlRnJpOFBwX0x3TU9ud0M5clRzckRKT0haR0hQQlVNTVFxM2ZxVlVmRTZLM0hlWVhfVXRJdUVpbGl5eEs4bkpTNA|진에어, 2006~2008년생 신규 회원에 항공권 최대 3만원 할인…수능",
+     "kind": "airline",
+     "title": "진에어, 2006~2008년생 신규 회원에 항공권 최대 3만원 할인…수능 응시 무관",
+     "desc": "진에어, 2006~2008년생 신규 회원에 항공권 최대 3만원 할인…수능 응시 무관 엠투데이",
+     "summary": [
+      "진에어, 2006~2008년생 신규 회원에 항공권 최대 3만원 할인…수능 응시 무관 엠투데이…"
+     ],
+     "link": "https://www.autodaily.co.kr/news/articleView.html?idxno=602392",
+     "source": "엠투데이",
+     "date": "2026-11-24T15:02:15.000Z",
+     "found": "2026-11-25",
+     "cards": [],
+     "airlines": [
+      "LJ"
+     ],
+     "countries": [
+      "필리핀"
+     ],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "진에어 {특가말}",
+     "bodyAt": "2026-11-25",
+     "body": [
+      "진에어, 2006~2008년생 신규 회원에 항공권 최대 3만원 할인…수능 응시 무관",
+      "진에어가 2006~2008년생 신규 회원에게 국내선 1만원, 국제선 3만원 할인 쿠폰을 지급한다.",
+      "진에어는 오는 12월 31일까지 해당 연도 출생자를 대상으로 항공 운임과 부가서비스 할인 혜택을 담은 '스페셜 쿠폰팩'을 제공한다고 24일 밝혔다.",
+      "수능을 치르지 않았더라도 2006년부터 2008년 사이에 태어난 신규 가입자라면 이용할 수 있다.",
+      "국내선은 2만원 이상 예매할 때 1만원을 할인받을 수 있으며, 국제선은 30만원 이상 예매 시 3만원 할인 혜택이 적용된다.",
+      "사전 좌석 지정과 위탁 수하물 5kg 추가 서비스를 묶은 '수하물팩'을 노선에 관계없이 1000원에 이용할 수 있는 쿠폰이다.",
+      "이번 쿠폰팩은 2027년 2월 28일까지 운항하는 항공편을 예약할 때 사용할 수 있다.",
+      "쿠폰 발급 행사 종료일은 올해 12월 31일로, 탑승 가능 기간과 구분해야 한다.",
+      "진에어는 일반 노선에 15kg, 괌 노선에 가방 2개·각 23kg의 무료 위탁 수하물을 제공한다고 안내했다.",
+      "수하물팩 이용 시 적용되는 세부 조건은 예약 과정에서 확인해야 한다.",
+      "진에어는 네이버페이와 카카오페이 등 제휴 결제수단을 활용한 월별 할인 행사도 별도로 안내하고 있다.",
+      "진에어 관계자는 수험생뿐 아니라 새로운 출발을 준비하는 청년들이 여행을 계획할 때 비용 부담을 덜 수 있도록 이번 혜택을 마련했다고 설명했다.",
+      "이와 별도로 진에어는 오는 26일부터 12월 2일까지 부산 출발 국제선을 대상으로 최대 15% 운임 할인 행사도 진행할 예정이다.",
+      "부산발 국제선 할인은 프로모션 코드를 이용해 진에어 온라인 채널에서 예약하는 방식이다.",
+      "할인 대상 항공편의 운항 기간은 2027년 3월 27일까지다.",
+      "두 행사는 대상과 적용 조건이 서로 다른 만큼 실제 예약 과정에서 할인 가능 여부와 중복 적용 조건을 확인할 필요가 있다."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "신규회원 항공권 할인 쿠폰",
+      "airlines": [
+       "진에어"
+      ],
+      "name": "스페셜 쿠폰팩",
+      "book": {
+       "from": null,
+       "to": "2026-12-31"
+      },
+      "board": {
+       "from": null,
+       "to": "2027-02-28"
+      },
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-25",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "lR0EtM25yWm53azZvMGN4RGdMOHJyUmpieFZ4andqdnVMZFBTUWxEQXhJNElDdGRBcEtZeWI3eFhvS25WcHFoZzNhYjVxWURsWXFCaHlJRFNUajVWUnlWVHc|진에어, 국내선 1만원·국제선 3만원 운임 할인…2006~2008년생 대",
+     "kind": "airline",
+     "title": "진에어, 국내선 1만원·국제선 3만원 운임 할인…2006~2008년생 대상 프로모션",
+     "desc": "진에어, 국내선 1만원·국제선 3만원 운임 할인…2006~2008년생 대상 프로모션 컨슈머타임스",
+     "summary": [
+      "진에어, 국내선 1만원·국제선 3만원 운임 할인…2006~2008년생 대상 프로모션 컨슈머타임스…"
+     ],
+     "link": "https://www.cstimes.com/news/articleView.html?idxno=729099",
+     "source": "컨슈머타임스",
+     "date": "2026-11-23T23:43:31.000Z",
+     "found": "2026-11-24",
+     "cards": [],
+     "airlines": [
+      "LJ"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": {
+      "amount": 10000,
+      "trip": "oneway?"
+     },
+     "query": "진에어 {특가말}",
+     "bodyAt": "2026-11-24",
+     "body": [
+      "진에어, 국내선 1만원·국제선 3만원 운임 할인…2006~2008년생 대상 프로모션",
+      "컨슈머타임스=이정화 기자 | 진에어가 2027학년도 대학수학능력시험을 마친 수험생 등 2006~2008년생 신규 회원을 대상으로 항공 운임과 부가서비스 할인 혜택을 담은 '스페셜 쿠폰팩'을 증정한다.",
+      "진에어는 이번 프로모션이 다음 달 말까지 진행된다고 24일 밝혔다.",
+      "2006~2008년생이라면 수능 응시 여부와 관계없이 홈페이지 회원가입만으로 쿠폰팩을 받을 수 있다.",
+      "항공권 예매 시 국내선 2만원 이상 결제하면 1만원, 국제선 30만원 이상 결제하면 3만원이 즉시 할인된다.",
+      "사전 좌석 지정과 위탁 수하물 5kg 추가 혜택이 묶인 '수하물팩'을 전 노선 균일가 1000원에 이용할 수 있는 쿠폰도 함께 지급한다.",
+      "발급받은 쿠폰은 내년 2월 28일까지 운항하는 항공편 예매 시 사용할 수 있다.",
+      "진에어 관계자는 \"수학능력시험 준비로 고생한 수험생들은 물론 각자의 자리에서 노력해 온 청춘들을 응원한다\"며 \"홀가분한 마음으로 여행의 설렘을 만끽하시길 바란다\"고 말했다."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "진에어 운임 할인 쿠폰 프로모션",
+      "airlines": [
+       "진에어"
+      ],
+      "name": "스페셜 쿠폰팩",
+      "book": {
+       "from": null,
+       "to": "2026-12-31"
+      },
+      "board": {
+       "from": null,
+       "to": "2027-02-28"
+      },
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-24",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "http://news.lghellovision.net/news/articleView.html|진에어 , 2006~2008년생 신규 회원에 할인 쿠폰 제공",
+     "kind": "airline",
+     "title": "진에어 , 2006~2008년생 신규 회원에 할인 쿠폰 제공",
+     "desc": "진에어 가 12월 31일까지 수능 응시 여부와 관계없이 2006년부터 2008년생 홈페이지 신규 가입 회원에게 할인 쿠폰을 제공합니다. 항공 운임은 국내선 2만 원 이상 결제 시 1만 원, 국제선 30만 원 이상 결제 시 3만 원을...",
+     "summary": [
+      "진에어 가 12월 31일까지 수능 응시 여부와 관계없이 2006년부터 2008년생 홈페이지 신규 가입 회원에게 할인 쿠폰을 제공합니다.",
+      "항공 운임은 국내선 2만 원 이상 결제 시 1만 원, 국제선 30만 원 이상 결제 시 3만 원을…"
+     ],
+     "link": "http://news.lghellovision.net/news/articleView.html?idxno=563463",
+     "source": "네이버 뉴스",
+     "date": "2026-11-24T00:36:00.000Z",
+     "found": "2026-11-24",
+     "cards": [],
+     "airlines": [
+      "LJ"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": {
+      "amount": 10000,
+      "trip": "oneway?"
+     },
+     "query": "진에어 {특가말}",
+     "bodyAt": "2026-11-24",
+     "body": [
+      "진에어가 12월 31일까지 수능 응시 여부와 관계없이 2006년부터 2008년생 홈페이지 신규 가입 회원에게 할인 쿠폰을 제공합니다.",
+      "항공 운임은 국내선 2만 원 이상 결제 시 1만 원, 국제선 30만 원 이상 결제 시 3만 원을 할인합니다.",
+      "쿠폰은 내년 2월 28일까지 운항하는 항공편 예매에 사용할 수 있으며, 사전 좌석 지정과 위탁 수하물 5킬로그램 추가를 묶은 ‘수하물팩’을 전 노선에서 천 원에 이용하는 쿠폰도 제공됩니다."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "신규회원 항공권 할인쿠폰",
+      "airlines": [
+       "진에어"
+      ],
+      "name": null,
+      "book": {
+       "from": null,
+       "to": "2026-12-31"
+      },
+      "board": {
+       "from": null,
+       "to": "2027-02-28"
+      },
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-24",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "https://www.pinpointnews.co.kr/news/articleView.html|진에어 , 수능생·청년 대상 '스페셜 쿠폰팩' 제공",
+     "kind": "airline",
+     "title": "진에어 , 수능생·청년 대상 '스페셜 쿠폰팩' 제공",
+     "desc": "진에어 가 2027학년도 대학수학능력시험을 마친 수험생과 새 출발을 앞둔 2006~2008년생을 대상으로 항공 운임·부가서비스 할인 으로 구성된 '스페셜 쿠폰팩'을 제공한다. 사진= 진에어 제공. 진에어 가 2027학년도...",
+     "summary": [
+      "진에어 가 2027학년도 대학수학능력시험을 마친 수험생과 새 출발을 앞둔 2006~2008년생을 대상으로 항공 운임·부가서비스 할인 으로 구성된 '스페셜 쿠폰팩'을 제공한다.",
+      "진에어 가 2027학년도…"
+     ],
+     "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=507409",
+     "source": "네이버 뉴스",
+     "date": "2026-11-24T01:36:00.000Z",
+     "found": "2026-11-24",
+     "cards": [],
+     "airlines": [
+      "LJ"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "진에어 {특가말}",
+     "bodyAt": "2026-11-24",
+     "body": [
+      "진에어가 2027학년도 대학수학능력시험을 마친 수험생과 새 출발을 앞둔 2006~2008년생을 대상으로 항공 운임·부가서비스 할인으로 구성된 ‘스페셜 쿠폰팩’을 제공한다고 24일 밝혔다.",
+      "이번 쿠폰팩은 12월 31일까지 신규 회원가입자에게 자동 발급되며, 수능 응시 여부와 관계없이 홈페이지 회원가입만으로 받을 수 있다.",
+      "국내선은 2만원 이상 결제 시 1만원 즉시 할인, 국제선은 30만원 이상 결제 시 3만원 즉시 할인되는 운임 할인 쿠폰이 제공된다.",
+      "진에어 관계자는 “수능 준비로 고생한 수험생과 새로운 시작을 앞둔 청춘들을 응원한다”며 “홀가분한 마음으로 여행의 설렘을 누리길 바란다”고 말했다.",
+      "한편 진에어는 올해 3분기 영업이익이 78억원으로 전년 동기(-225억원) 대비 흑자 전환했다.",
+      "매출은 4131억원으로 전년 동기 대비 35.7% 늘어 분기 기준 역대 최대치를 기록했고, 당기순이익도 312억원으로 흑자로 돌아섰다."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "진에어 운임 할인 쿠폰팩 제공",
+      "airlines": [
+       "진에어"
+      ],
+      "name": "스페셜 쿠폰팩",
+      "book": {
+       "from": null,
+       "to": "2026-12-31"
+      },
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-24",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "https://www.viva100.com/article/20261124501128|진에어 , 2006~2008년생 대상 항공권 할인 … 스페셜 쿠폰팩 제공",
+     "kind": "airline",
+     "title": "진에어 , 2006~2008년생 대상 항공권 할인 … 스페셜 쿠폰팩 제공",
+     "desc": "진에어 가 대학수학능력시험을 마친 수험생을 비롯한 2006~2008년생을 대상으로 항공권과 부가서비스 할인 혜택을 제공한다. 수능 응시 여부와 관계없이 해당 연령대의 신규 회원이라면 누구나 이용할 수 있다....",
+     "summary": [
+      "진에어 가 대학수학능력시험을 마친 수험생을 비롯한 2006~2008년생을 대상으로 항공권과 부가서비스 할인 혜택을 제공한다.",
+      "수능 응시 여부와 관계없이 해당 연령대의 신규 회원이라면 누구나 이용할 수 있다."
+     ],
+     "link": "https://www.viva100.com/article/20261124501128",
+     "source": "네이버 뉴스",
+     "date": "2026-11-24T07:06:00.000Z",
+     "found": "2026-11-24",
+     "cards": [],
+     "airlines": [
+      "LJ"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "진에어 {특가말}",
+     "bodyAt": "2026-11-24",
+     "body": [
+      "진에어가 대학수학능력시험을 마친 수험생을 비롯한 2006~2008년생을 대상으로 항공권과 부가서비스 할인 혜택을 제공한다.",
+      "진에어는 다음 달 31일까지 2006~2008년생 신규 가입 회원에게 ‘스페셜 쿠폰팩’을 지급한다고 24일 밝혔다.",
+      "쿠폰팩에는 국내선 항공권 2만원 이상 결제 시 1만원, 국제선 30만원 이상 결제 시 3만원을 할인받을 수 있는 쿠폰이 포함됐다.",
+      "사전 좌석 지정과 위탁 수하물 5kg 추가 서비스를 묶은 ‘수하물팩’도 1000원에 이용할 수 있다.",
+      "발급된 쿠폰은 내년 2월 28일까지 운항하는 항공편 예약에 사용할 수 있다.",
+      "기존 무료 위탁 수하물 허용량인 15kg도 그대로 제공되며, 괌 노선은 23kg 수하물 2개까지 무료로 맡길 수 있다."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "진에어 항공권 할인 쿠폰 제공",
+      "airlines": [
+       "진에어"
+      ],
+      "name": "스페셜 쿠폰팩",
+      "book": {
+       "from": null,
+       "to": "2026-12-31"
+      },
+      "board": {
+       "from": null,
+       "to": "2027-02-28"
+      },
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-24",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "95%A0%EC%9D%B8-%EC%A7%84%EC%97%90%EC%96%B4-2006-2008%EB%85%84%EC%83%9D-%EC%97%AC%ED%96%89-%ED%98%9C%ED%83%9D/ar-AA2i6ddX|수능 안 봐도 할인… 진에어, 2006~2008년생 여행 혜택",
+     "kind": "airline",
+     "title": "수능 안 봐도 할인… 진에어, 2006~2008년생 여행 혜택",
+     "desc": "[서울경제TV=김지송 인턴기자] 진에어가 2006~2008년생 신규 회원을 대상으로 국내선 최대 1만 원, 국제선 최대 3만 원의 항공권 할인 혜택을 제공한다. 대학수학능력시험 응시 여부와 관계없이 해당 연령대라면 누구나 참여할 수 있다.진에어는 오는 12월 31일까지 항공 운임과 부가서비스 할인 혜택을 담은 '스페셜 쿠폰팩'을 증정한다고 24일 밝혔다.쿠 ...",
+     "summary": [
+      "진에어가 2006~2008년생 신규 회원을 대상으로 국내선 최대 1만 원, 국제선 최대 3만 원의 항공권 할인 혜택을 제공한다.",
+      "대학수학능력시험 응시 여부와 관계없이 해당 연령대라면 누구나 참여할 수 있다.",
+      "진에어는 오는 12월 31일까지 항공 운임과 부가서비스 할인 혜택을 담은 '스페셜 쿠폰팩'을 증정한다고 24일 밝혔다."
+     ],
+     "link": "https://www.msn.com/ko-kr/travel/%ED%95%AD%EA%B3%B5-%EC%97%AC%ED%96%89/%EC%88%98%EB%8A%A5-%EC%95%88-%EB%B4%90%EB%8F%84-%ED%95%A0%EC%9D%B8-%EC%A7%84%EC%97%90%EC%96%B4-2006-2008%EB%85%84%EC%83%9D-%EC%97%AC%ED%96%89-%ED%98%9C%ED%83%9D/ar-AA2i6ddX",
+     "source": "서울경제TV SEN on MSN",
+     "date": "2026-11-23T20:32:03.000Z",
+     "found": "2026-11-24",
+     "cards": [],
+     "airlines": [
+      "LJ"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": {
+      "amount": 10000,
+      "trip": "oneway?"
+     },
+     "query": "진에어 {특가말}",
+     "bodyAt": "2026-11-24",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "진에어 항공권 할인 쿠폰",
+      "airlines": [
+       "진에어"
+      ],
+      "name": "스페셜 쿠폰팩",
+      "book": {
+       "from": null,
+       "to": "2026-12-31"
+      },
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-24",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "SNUdJTVphSVpYNVVHSU5XN0lKc1YwQ19oWWJqdHEtUjlYODhaOXBINGpDTm9uT19fOHVJdGliZk4xcXJhNFczNUNSWXU1LXdqejV5X2VzQTl6Z2FMX2ZfRm8|진에어, 2006~2008년생 신규 회원에 항공권 할인",
+     "kind": "airline",
+     "title": "진에어, 2006~2008년생 신규 회원에 항공권 할인",
+     "desc": "진에어, 2006~2008년생 신규 회원에 항공권 할인 인사이트코리아",
+     "summary": [
+      "진에어, 2006~2008년생 신규 회원에 항공권 할인 인사이트코리아…"
+     ],
+     "link": "https://www.insightkorea.co.kr/news/articleViewAmp.html?idxno=259593",
+     "source": "인사이트코리아",
+     "date": "2026-11-24T01:10:53.000Z",
+     "found": "2026-11-24",
+     "cards": [],
+     "airlines": [
+      "LJ"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "진에어 {특가말}",
+     "bodyAt": "2026-11-24",
+     "body": [
+      "[인사이트코리아 = 김호진 기자] 진에어가 2006년부터 2008년 사이 출생한 신규 회원을 대상으로 항공권과 부가서비스 할인 혜택을 제공한다.",
+      "진에어는 오는 12월 31일까지 2006~2008년생 신규 가입 회원에게 ‘스페셜 쿠폰팩’을 제공한다고 24일 밝혔다.",
+      "국내선은 2만원 이상 결제하면 1만원을 할인한다.",
+      "국제선은 30만원 이상 구매할 경우 3만원을 낮춰준다.",
+      "사전 좌석 지정과 위탁수하물 5kg 추가 혜택을 묶은 ‘수하물팩’을 전 노선에서 1000원에 이용할 수 있는 쿠폰이 지급된다.",
+      "발급받은 쿠폰은 2027년 2월 28일까지 운항하는 항공편을 예약할 때 사용할 수 있다.",
+      "겨울방학과 봄철 여행을 준비하는 고객까지 이용할 수 있도록 사용 기간을 설정했다.",
+      "일반 노선은 위탁수하물 15kg을 무료로 제공하며 괌 노선은 23kg 수하물 2개까지 이용할 수 있다.",
+      "진에어 관계자는 “수능을 마친 수험생뿐 아니라 새로운 시작을 준비하는 청년층을 응원하기 위해 행사를 마련했다”며 “여행 비용 부담을 줄이고 편하게 여행을 준비할 수 있도록 혜택을 구성했다”고 말했다."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "신규 회원 항공권 할인 쿠폰",
+      "airlines": [
+       "진에어"
+      ],
+      "name": "스페셜 쿠폰팩",
+      "book": {
+       "from": null,
+       "to": "2026-12-31"
+      },
+      "board": {
+       "from": null,
+       "to": "2027-02-28"
+      },
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-24",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "https://www.jnilbo.com/news/articleView.html|진에어 \"수험표 없이 간편하게 하늘길 할인 받으세요\"",
+     "kind": "airline",
+     "title": "진에어 \"수험표 없이 간편하게 하늘길 할인 받으세요\"",
+     "desc": "월간 할인 혜택은 별도 이벤트 페이지를 통해 안내한다. 프로모션 혜택과 별개로 탑승객에게 기본 제공되는 무료 위탁 수하물 15㎏(괌 노선 2개·각 23㎏) 기준은 그대로 유지된다. 자세한 사항은 진에어 홈페이지에서...",
+     "summary": [
+      "월간 할인 혜택은 별도 이벤트 페이지를 통해 안내한다.",
+      "프로모션 혜택과 별개로 탑승객에게 기본 제공되는 무료 위탁 수하물 15㎏(괌 노선 2개·각 23㎏) 기준은 그대로 유지된다.",
+      "자세한 사항은 진에어 홈페이지에서…"
+     ],
+     "link": "https://www.jnilbo.com/news/articleView.html?idxno=90000085911",
+     "source": "네이버 뉴스",
+     "date": "2026-11-24T00:20:00.000Z",
+     "found": "2026-11-24",
+     "cards": [],
+     "airlines": [
+      "LJ"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "진에어 {특가말}",
+     "bodyAt": "2026-11-24",
+     "body": [
+      "발급된 쿠폰은 내년 2월28일까지 운항하는 항공편 예매 시 사용할 수 있다.",
+      "프로모션 혜택과 별개로 탑승객에게 기본 제공되는 무료 위탁 수하물 15㎏(괌 노선 2개·각 23㎏) 기준은 그대로 유지된다.",
+      "진에어 관계자는 “수학능력시험 준비로 고생한 수험생들은 물론 각자의 자리에서 노력해 온 청춘들을 응원한다”며 “홀가분한 마음으로 여행을 즐기시길 바란다”고 말했다.",
+      "진에어 \"수험표 없이 간편하게 하늘길 할인 받으세요\"",
+      "젠슨 황 돌아오자 나스닥 6.5% 급등…코스피 하락 막고 K반도체에 훈풍 불까",
+      "'자금난' 홈플러스, 26일부터 온라인 배송 중단…재개 시점 '미정'",
+      "가짜 AI 사이트서 신종 악성코드 유포…보안 프로그램 무력화",
+      "엔비디아 하루 만에 31.5% 급등…美증시 AI 투자 열기 부활"
+     ],
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "진에어 항공권 할인 프로모션",
+      "airlines": [
+       "진에어"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-24",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "https://www.ppss.kr/news/articleView.html|진에어 , 2006~2008년생 대상 항공권 할인 '스페셜 쿠폰팩' 제공",
+     "kind": "airline",
+     "title": "진에어 , 2006~2008년생 대상 항공권 할인 '스페셜 쿠폰팩' 제공",
+     "desc": "이용객은 프로모션 코드를 활용해 진에어 온라인 채널에서 할인 된 항공권을 구매할 수 있다. 자세한 행사 내용과 이용 조건은 진에어 공식 홈페이지에서 확인할 수 있다.",
+     "summary": [
+      "이용객은 프로모션 코드를 활용해 진에어 온라인 채널에서 할인 된 항공권을 구매할 수 있다.",
+      "자세한 행사 내용과 이용 조건은 진에어 공식 홈페이지에서 확인할 수 있다."
+     ],
+     "link": "https://www.ppss.kr/news/articleView.html?idxno=322630",
+     "source": "네이버 뉴스",
+     "date": "2026-11-24T02:36:00.000Z",
+     "found": "2026-11-24",
+     "cards": [],
+     "airlines": [
+      "LJ"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "진에어 {특가말}",
+     "bodyAt": "2026-11-24",
+     "body": [
+      "이용객은 프로모션 코드를 활용해 진에어 온라인 채널에서 할인된 항공권을 구매할 수 있다.",
+      "이래서 골프는 몰라도 '유현주는 안다'고 하는구나...볼륨감까지 급이 다른 몸매",
+      "미래에셋증권, '군 장병 금융사기 예방'에 앞장…2018년부터 교류 확대"
+     ],
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "진에어 항공권 할인 쿠폰팩 프로모션",
+      "airlines": [
+       "진에어"
+      ],
+      "name": "스페셜 쿠폰팩",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-24",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "rticles/CBMiUEFVX3lxTFAzWG1TaXZya2NHZ0ZydWgxeWM4c01rcHRTLUd5V2drOHFXVnZpV3N3aXpLa05PS1d5OWpMMW9sWTAzMXBZTjdQd1FIRWNjc0oz|진에어, 06~08년생에 ‘스페셜 쿠폰팩’…“수능 끝, 여행가자”",
+     "kind": "airline",
+     "title": "진에어, 06~08년생에 ‘스페셜 쿠폰팩’…“수능 끝, 여행가자”",
+     "desc": "진에어, 06~08년생에 ‘스페셜 쿠폰팩’…“수능 끝, 여행가자” 문화일보",
+     "summary": [
+      "진에어, 06~08년생에 ‘스페셜 쿠폰팩’…“수능 끝, 여행가자” 문화일보…"
+     ],
+     "link": "https://www.munhwa.com/article/11633764",
+     "source": "문화일보",
+     "date": "2026-11-24T08:25:39.000Z",
+     "found": "2026-11-24",
+     "cards": [],
+     "airlines": [
+      "LJ"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "진에어 {특가말}",
+     "bodyAt": "2026-11-24",
+     "body": [
+      "진에어는 2027학년도 대학수학능력 시험을 마친 수험생을 포함해 만 18~20세(2006년~2008년생) 청년들을 위해 항공 운임과 부가서비스 할인 등의 혜택을 담은 ‘스페셜 쿠폰팩’을 제공한다고 24일 밝혔다.",
+      "진에어는 수험표나 원서 접수증 등의 확인 절차를 생략해 편의성을 높였다고 설명했다.",
+      "쿠폰은 국내선 2만 원 이상 결제 시 1만 원, 국제선 30만 원 이상 결제 시 3만 원의 할인이 적용된다.",
+      "부가서비스를 1000원에 누릴 수 있는 혜택도 포함된다.",
+      "진에어는 사전 좌석 지정과 위탁 수하물 5㎏ 추가 혜택을 묶은 ‘수하물팩’을 전 노선 균일가 1000원에 이용할 수 있는 쿠폰도 증정한다.",
+      "발급 쿠폰은 내년 2월 28일까지 운항하는 항공편 예매 시 자유롭게 사용할 수 있다.",
+      "진에어 관계자는 “수학능력시험 준비로 고생한 수험생들은 물론, 각자의 자리에서 노력해 온 청춘들을 응원한다”며 “홀가분한 마음으로 여행의 설렘을 만끽하시길 바란다”고 전했다."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "항공운임 할인 쿠폰팩 제공",
+      "airlines": [
+       "진에어"
+      ],
+      "name": "스페셜 쿠폰팩",
+      "book": null,
+      "board": {
+       "from": null,
+       "to": "2027-02-28"
+      },
+      "price": null,
+      "trip": null,
+      "pct": null,
       "seoul": null,
       "at": "2026-11-24",
       "model": "deepseek-v4-flash"
@@ -225,8 +1659,8 @@
     "at": "2026-11-24",
     "model": "deepseek-v4-flash"
    },
-   "lastDate": "2026-11-24T09:27:38.000Z",
-   "lastFound": "2026-11-24",
+   "lastDate": "2026-11-24T13:30:02.000Z",
+   "lastFound": "2026-11-25",
    "more": [
     {
      "id": "%B6%80-%EA%B5%AD%EC%A0%9C%EA%B3%B5%ED%95%AD%EA%B3%BC-%EA%B3%B5%EB%8F%99-%ED%94%84%EB%A1%9C%EB%AA%A8%EC%85%98/ar-AA2i4m1x|트리니티항공, 나고야 주부 국제공항과 공동 프로모션",
@@ -890,6 +2324,122 @@
      }
     },
     {
+     "id": "https://www.enewstoday.co.kr/news/articleView.html|올겨울 ‘인천-나고야’ 노선 운임 부담 낮춘다···트리니티, 공동 프로모",
+     "kind": "airline",
+     "title": "올겨울 ‘인천-나고야’ 노선 운임 부담 낮춘다···트리니티, 공동 프로모션 진행",
+     "desc": "[이뉴스투데이 김재한 기자] 트리니티항공이 내달 신규 취항하는 인천-나고야 노선의 여객 수요를 확보하고 운임 혜택을 제공하기 위한 항공사·현지 공항 간 공동 판촉 행사를 진행한다. 트리니티항공은 나고야 주부 국제공항과 함께 23일부터 내달 6일까지 인천-나고야 노선 공동 프로모션을 실 ...",
+     "summary": [
+      "트리니티항공이 내달 신규 취항하는 인천-나고야 노선의 여객 수요를 확보하고 운임 혜택을 제공하기 위한 항공사·현지 공항 간 공동 판촉 행사를 진행한다.",
+      "트리니티항공은 나고야 주부 국제공항과 함께 23일부터 내달 6일까지 인천-나고야 노선 공동 프로모션을 실…"
+     ],
+     "link": "https://www.enewstoday.co.kr/news/articleView.html?idxno=2496586",
+     "source": "이뉴스투데이",
+     "date": "2026-11-24T09:57:00.000Z",
+     "found": "2026-11-25",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [
+      "일본"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "트리니티항공 {특가말}",
+     "bodyAt": "2026-11-25",
+     "body": [
+      "[이뉴스투데이 김재한 기자] 트리니티항공이 내달 신규 취항하는 인천-나고야 노선의 여객 수요를 확보하고 운임 혜택을 제공하기 위한 항공사·현지 공항 간 공동 판촉 행사를 진행한다.",
+      "트리니티항공은 나고야 주부 국제공항과 함께 23일부터 내달 6일까지 인천-나고야 노선 공동 프로모션을 실시한다고 24일 밝혔다.",
+      "이번 프로모션은 내달 18일부터 내년 3월 27일까지 탑승하는 항공편을 대상으로 운영된다.",
+      "행사 기간 지정된 할인코드를 입력하면 항공권 운임 8% 할인 혜택이 적용되며, 결제 금액에 따라 사용할 수 있는 2만원 할인 쿠폰도 추가로 지급된다.",
+      "아울러 트리니티항공은 신규 회원 가입 시 지급하는 웰컴 쿠폰팩, 발권 수수료 면제, 특가 소식 알림 서비스, 회원 전용 할인 코드 등 상시 회원 제도를 운영하고 있다.",
+      "트리니티항공 관계자는 “올해 12월 인천-나고야 노선의 신규 취항을 기념하여 고객분들께 더욱 풍성한 혜택을 드리고자 이번 공동 프로모션을 마련했다”며 “앞으로도 안전운항을 최우선으로 현지 관광청 및 공항 유관 기관과의 협력을 강화해 차별화된 프로모션을 지속 추진해 나가겠다”고 말했다."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "신규 취항 항공권 운임 할인 프로모션",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": "인천-나고야 공동 프로모션",
+      "book": {
+       "from": "2026-11-23",
+       "to": "2026-12-06"
+      },
+      "board": {
+       "from": "2026-12-18",
+       "to": "2027-03-27"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 8,
+      "seoul": true,
+      "at": "2026-11-25",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "dHMjVGTS1nam9DaWh0UVY3MnlpWHVSYzN0d21KbTZaLVNpMTFCMUEwRS1Xd0dxNnUtelZVdEVJcUM4YXNPQXVobHZlREdXZVZ4YmxseFR5VHZ4eVk0eGJUQQ|트리니티항공, 인천~나고야 취항 앞두고 할인",
+     "kind": "airline",
+     "title": "트리니티항공, 인천~나고야 취항 앞두고 할인",
+     "desc": "트리니티항공, 인천~나고야 취항 앞두고 할인 비건뉴스",
+     "summary": [
+      "트리니티항공, 인천~나고야 취항 앞두고 할인 비건뉴스…"
+     ],
+     "link": "https://www.vegannews.co.kr/news/article.html?no=410632",
+     "source": "비건뉴스",
+     "date": "2026-11-24T13:30:02.000Z",
+     "found": "2026-11-25",
+     "cards": [],
+     "airlines": [
+      "TW"
+     ],
+     "countries": [
+      "일본"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "트리니티항공 {특가말}",
+     "bodyAt": "2026-11-25",
+     "body": [
+      "트리니티항공, 인천~나고야 취항 앞두고 할인",
+      "등록 2026.11.24 22:30:02",
+      "트리니티항공(091810)이 인천~나고야 노선 취항을 앞두고 항공권 할인 행사를 진행한다.",
+      "회사 홈페이지에 게시된 프로모션은 지난 23일부터 12월 6일까지 운영된다.",
+      "행사 기간 지정 할인코드를 입력하면 항공권 운임을 8% 할인받을 수 있으며, 2만원 쿠폰도 제공된다.",
+      "탑승 기간은 12월 18일부터 2027년 3월 27일까지다.",
+      "인천~나고야 노선은 12월 18일부터 매일 운항한다.",
+      "트리니티항공이 공개한 일정에 따르면 인천 출발편은 오전 8시 출발해 주부국제공항에 오전 9시 55분 도착하고, 귀국편은 현지 공항에서 오전 10시 55분 출발해 인천에 오후 1시 5분 도착한다.",
+      "일본 중부국제공항의 2026년 11월 발표 자료에도 트리니티항공의 인천 노선 신규 취항일이 12월 18일로 기재됐다."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "취항 앞두고 운임 할인코드 프로모션",
+      "airlines": [
+       "트리니티항공"
+      ],
+      "name": null,
+      "book": {
+       "from": "2026-11-23",
+       "to": "2026-12-06"
+      },
+      "board": {
+       "from": "2026-12-18",
+       "to": "2027-03-27"
+      },
+      "price": null,
+      "trip": null,
+      "pct": 8,
+      "seoul": true,
+      "at": "2026-11-25",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
      "id": "AySGZsY1JrVHZld0dHN2c5NkRJS1ZLaGFjbGxPSzBPS1VxSWJGY1hsZTRETWU4SXBPMEw3SHZoTEQzNDZ3anlpT2RES1U1dGRkelFHZ1UzUkVvdl95Xzg4UQ|트리니티항공-나고야 주부 국제공항, 인천-나고야 신규 취항 기념 공동 프",
      "kind": "airline",
      "title": "트리니티항공-나고야 주부 국제공항, 인천-나고야 신규 취항 기념 공동 프로모션 운영",
@@ -1061,6 +2611,172 @@
    ]
   },
   {
+   "id": "https://www.tournews21.com/news/articleView.html|\" 항공권 25% 할인 ·해외여행 100만원 뚝!\"… 블랙프라이데이 여행",
+   "kind": "airline",
+   "title": "\" 항공권 25% 할인 ·해외여행 100만원 뚝!\"… 블랙프라이데이 여행 특가 ...",
+   "desc": "동남아와 호주, 미주, 유럽 등 주요 국제선 노선의 선착순 할인 항공권 을 판매하며, 결제 금액별로 최대 4만원 할인 쿠폰을 지급한다. 태국 정부관광청과 함께하는 공동 프로모션 도 있다. 12월 13일까지 인천~방콕, 대구...",
+   "summary": [
+    "동남아와 호주, 미주, 유럽 등 주요 국제선 노선의 선착순 할인 항공권 을 판매하며, 결제 금액별로 최대 4만원 할인 쿠폰을 지급한다.",
+    "태국 정부관광청과 함께하는 공동 프로모션 도 있다.",
+    "12월 13일까지 인천~방콕, 대구…"
+   ],
+   "link": "https://www.tournews21.com/news/articleView.html?idxno=149219",
+   "source": "네이버 뉴스",
+   "date": "2026-11-24T09:38:00.000Z",
+   "found": "2026-11-24",
+   "cards": [],
+   "airlines": [],
+   "countries": [
+    "태국",
+    "일본",
+    "중국"
+   ],
+   "allRoutes": true,
+   "routes": [],
+   "price": {
+    "amount": 1000000,
+    "trip": "oneway?"
+   },
+   "query": "태국 항공권 {특가말}",
+   "bodyAt": "2026-11-24",
+   "body": [
+    "내년 봄부터 가을까지 여행을 계획하는 고객에게는 별도 블랙프라이데이 특가가 제공된다.",
+    "오는 30일까지 진행되는 이 행사의 탑승 기간은 2027년 2월 1일부터 10월 30일까지다.",
+    "동남아와 호주, 미주, 유럽 등 주요 국제선 노선의 선착순 할인 항공권을 판매하며, 결제 금액별로 최대 4만원 할인 쿠폰을 지급한다.",
+    "12월 13일까지 인천~방콕, 대구~방콕, 인천~치앙마이 등 3개 노선을 대상으로 최대 20% 할인 혜택을 제공한다.",
+    "최대 3만원의 추가 쿠폰도 마련했으며, 탑승 가능 기간은 2027년 3월 27일까지다.",
+    "트리니티항공 관계자는 \"겨울철 해외여행객들이 항공권 할인과 제휴 혜택을 활용해 동남아부터 유럽, 호주, 캐나다까지 취향에 맞는 여행을 즐길 수 있도록 행사를 준비했다\"고 설명했다.",
+    "“해외 렌터카도 7만원 할인”…에이비스·카카오 T, 겨울여행 비용 낮춘다",
+    "항공권을 예약했다면 여행지에서의 교통비도 절약할 기회가 있다.",
+    "글로벌 렌터카 브랜드 에이비스는 카카오모빌리티와 손잡고 해외 렌터카를 최대 7만원 할인하는 특별 프로모션을 진행한다.",
+    "이벤트 기간은 내년 1월 31일까지다.",
+    "카카오 T 앱의 ‘해외 렌터카’ 메뉴에서 에이비스 차량을 선택해 예약하고 결제하면 할인 혜택이 적용된다.",
+    "10만원 이상 결제할 경우 30% 할인 쿠폰을 사용할 수 있으며, 할인 한도는 최대 7만원이다.",
+    "예약 기간 중 미리 결제하면 내년 봄 이후 여행을 위한 렌터카 예약에도 활용할 수 있다.",
+    "다만 2026년 12월 23일부터 2027년 1월 5일까지는 차량 픽업 대상 기간에서 제외된다.",
+    "에이비스 한국 관계자는 \"카카오 T와의 협업을 통해 국내 여행객들이 익숙한 앱에서 해외 렌터카를 간편하게 예약하고 할인 혜택까지 이용할 수 있도록 했다\"고 설명했다.",
+    "“이집트 여행 100만원 할인!",
+    "한진트래블은 11월 23일부터 30일까지 ‘BLACK FLYDAY!",
+    "’ 행사를 열고 해외 패키지와 항공권, 호텔 상품 등을 특가로 판매한다.",
+    "가장 눈에 띄는 상품은 최대 100만원을 할인하는 타임어택 선착순 특가다.",
+    "이집트 9일 전세기 여행상품은 100만원 할인한 399만원에 판매한다.",
+    "일본 홋카이도 4일 여행상품은 30만원 낮춘 99만9000원, 중국 장가계 왕복 항공권은 15만원 할인한 39만9000원에 선보인다.",
+    "특가 물량은 한정돼 있어 예약 시점에 따라 조기 마감될 수 있다.",
+    "최대 70만원을 할인하는 클리어런스 세일도 함께 운영한다.",
+    "추첨을 통해 행사 상품에 적용되는 50% 또는 10% 할인 쿠폰과 100·500·1000 멤버십 포인트를 지급한다.",
+    "국내 숙박도 최대 2만원 할인…광양·곡성·구례·하동으로 떠나볼까",
+    "해당 지역 숙박시설을 7만원 이상 결제하면 최대 2만원 할인 혜택을 받을 수 있다.",
+    "쿠폰은 12월 2일까지 선착순 2850명에게 제공되며, 12월 31일까지 체크인하는 숙박 예약에 적용된다."
+   ],
+   "ai": {
+    "v": 2,
+    "promo": true,
+    "why": "트리니티항공 블프 항공권 할인",
+    "airlines": [
+     "트리니티항공"
+    ],
+    "name": "블랙프라이데이 특가",
+    "book": {
+     "from": null,
+     "to": "2026-11-30"
+    },
+    "board": {
+     "from": "2027-02-01",
+     "to": "2027-10-30"
+    },
+    "price": null,
+    "trip": null,
+    "pct": 25,
+    "seoul": true,
+    "at": "2026-11-24",
+    "model": "deepseek-v4-flash"
+   },
+   "lastDate": "2026-11-24T09:38:00.000Z",
+   "lastFound": "2026-11-24",
+   "more": [
+    {
+     "id": "%9E%99%ED%94%84%EB%9D%BC%EC%9D%B4%EB%8D%B0%EC%9D%B4-%EC%97%AC%ED%96%89-%ED%8A%B9%EA%B0%80-%ED%92%8D%EC%84%B1/ar-AA2i6MD0|항공권 25% 할인·해외여행 100만원 뚝! 블랙프라이데이 여행 특가 풍",
+     "kind": "airline",
+     "title": "항공권 25% 할인·해외여행 100만원 뚝! 블랙프라이데이 여행 특가 풍성",
+     "desc": "[투어코리아=조성란 기자] 항공, 여행업계가 블랙프라이데이 맞아 할인행사가 잇따르고 있다. 국제선 항공권을 최대 25% 저렴하게 구매할 수 있는 특가부터 100만원 할인되는 해외 패키지여행, 1만 마일 보너스 적립, 해외 렌터카와 국내 숙박비 할인까지 혜택도 다양하다. 연말연시와 겨울방학은 물론 내년 여름휴가를 미리 준비하려는 여행객들에게 관심을 끌고 있다 ...",
+     "summary": [
+      "항공, 여행업계가 블랙프라이데이 맞아 할인행사가 잇따르고 있다.",
+      "국제선 항공권을 최대 25% 저렴하게 구매할 수 있는 특가부터 100만원 할인되는 해외 패키지여행, 1만 마일 보너스 적립, 해외 렌터카와 국내 숙박비 할인까지 혜택도 다양하다.",
+      "연말연시와 겨울방학은 물론 내년 여름휴가를 미리 준비하려는 여행객들에게 관심을 끌고 있다"
+     ],
+     "link": "https://www.msn.com/ko-kr/news/other/%ED%95%AD%EA%B3%B5%EA%B6%8C-25-%ED%95%A0%EC%9D%B8-%ED%95%B4%EC%99%B8%EC%97%AC%ED%96%89-100%EB%A7%8C%EC%9B%90-%EB%9A%9D-%EB%B8%94%EB%9E%99%ED%94%84%EB%9D%BC%EC%9D%B4%EB%8D%B0%EC%9D%B4-%EC%97%AC%ED%96%89-%ED%8A%B9%EA%B0%80-%ED%92%8D%EC%84%B1/ar-AA2i6MD0",
+     "source": "투어코리아 on MSN",
+     "date": "2026-11-24T01:37:24.000Z",
+     "found": "2026-11-24",
+     "cards": [],
+     "airlines": [],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": {
+      "amount": 1000000,
+      "trip": "oneway?"
+     },
+     "query": "트리니티항공 {특가말}",
+     "bodyAt": "2026-11-24",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "국제선 항공권 25% 할인 특가",
+      "airlines": [],
+      "name": "블랙프라이데이 특가",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": 25,
+      "seoul": null,
+      "at": "2026-11-24",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "Yk5QcXI0c0tjM1oxMnZNYldOMmZsTjBZQzMySnFyODc5cF8tSktoUy1Ea2R6U1gxNGtWc3oteGRueWlUT2NNaHNhd3BZRFcwNkVsZ2k5c3NncFhlQUJSSU1n|“항공권 25% 할인·해외여행 100만원 뚝!”… 블랙프라이데이 여행 특",
+     "kind": "airline",
+     "title": "“항공권 25% 할인·해외여행 100만원 뚝!”… 블랙프라이데이 여행 특가 풍성",
+     "desc": "“항공권 25% 할인·해외여행 100만원 뚝!”… 블랙프라이데이 여행 특가 풍성 투어코리아",
+     "summary": [
+      "“항공권 25% 할인·해외여행 100만원 뚝!”… 블랙프라이데이 여행 특가 풍성 투어코리아…"
+     ],
+     "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE8xalJ2Qy1jVDhNZmZUYk5QcXI0c0tjM1oxMnZNYldOMmZsTjBZQzMySnFyODc5cF8tSktoUy1Ea2R6U1gxNGtWc3oteGRueWlUT2NNaHNhd3BZRFcwNkVsZ2k5c3NncFhlQUJSSU1n?oc=5",
+     "source": "투어코리아",
+     "date": "2026-11-24T09:37:24.000Z",
+     "found": "2026-11-24",
+     "cards": [],
+     "airlines": [],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": {
+      "amount": 1000000,
+      "trip": "oneway?"
+     },
+     "query": "태국 항공권 {특가말}",
+     "bodyAt": "2026-11-24",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "항공권 25% 할인 블프 특가",
+      "airlines": [],
+      "name": "블랙프라이데이 여행 특가",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": 25,
+      "seoul": null,
+      "at": "2026-11-24",
+      "model": "deepseek-v4-flash"
+     }
+    }
+   ]
+  },
+  {
    "id": "https://www.bloter.net/news/articleView.html|쇼핑·구독· 여행 한 장에… 우리카드 '더 쇼퍼'에 실은 접점 전략",
    "kind": "card",
    "title": "쇼핑·구독· 여행 한 장에… 우리카드 '더 쇼퍼'에 실은 접점 전략",
@@ -1183,785 +2899,6 @@
        "min": null,
        "period": null
       },
-      "at": "2026-11-24",
-      "model": "deepseek-v4-flash"
-     }
-    }
-   ]
-  },
-  {
-   "id": "FWXBHQ0hsQWhhQUF0ekpCOXBTeHFqVzVSeHY3a0ZJT2V6QlJURkh0MjhzSHBIdFpaNERibmxlczc3RFh3bmJuQUwtbW16ZDBPeDlSNE1QOERYZmg0emZyMWM|진에어, 2006~2008년생 신규 회원에 항공권 할인 쿠폰 제공",
-   "kind": "airline",
-   "title": "진에어, 2006~2008년생 신규 회원에 항공권 할인 쿠폰 제공",
-   "desc": "진에어, 2006~2008년생 신규 회원에 항공권 할인 쿠폰 제공 인더뉴스",
-   "summary": [
-    "진에어, 2006~2008년생 신규 회원에 항공권 할인 쿠폰 제공 인더뉴스…"
-   ],
-   "link": "https://www.inthenews.co.kr/news/article.html?no=94915",
-   "source": "인더뉴스",
-   "date": "2026-11-24T01:34:27.000Z",
-   "found": "2026-11-24",
-   "cards": [],
-   "airlines": [
-    "LJ"
-   ],
-   "countries": [],
-   "allRoutes": true,
-   "routes": [],
-   "price": {
-    "amount": 10000,
-    "trip": "oneway?"
-   },
-   "query": "진에어 {특가말}",
-   "bodyAt": "2026-11-24",
-   "body": [
-    "진에어, 2006~2008년생 신규 회원에 항공권 할인 쿠폰 제공",
-    "인더뉴스 김용운 기자ㅣ진에어는 오는 12월 31일까지 홈페이지에 새로 가입하는 2006~2008년생 신규 회원에게 쿠폰팩을 발급한다고 24일 밝혔습니다.",
-    "항공 운임 할인은 국내선 2만원 이상 결제 시 1만원, 국제선 30만원 이상 결제 시 3만원이 적용됩니다.",
-    "사전 좌석 지정과 위탁 수하물 5㎏ 추가 혜택을 묶은 '수하물팩'을 전 노선에서 1000원에 이용할 수 있는 쿠폰도 제공합니다.",
-    "발급된 쿠폰은 내년 2월 28일까지 운항하는 항공편을 예매할 때 사용할 수 있습니다.",
-    "진에어는 오는 11월 26일부터 12월 2일까지 부산발 국제선 항공편을 대상으로 최대 15% 운임 할인 행사도 진행할 예정입니다.",
-    "탑승 기간은 내년 3월 27일까지입니다.",
-    "진에어 온라인 채널에서 프로모션 코드를 입력하면 할인받을 수 있습니다.",
-    "진에어 관계자는 \"수학능력시험 준비로 고생한 수험생들은 물론, 각자의 자리에서 노력해 온 청춘들을 응원한다\"며 \"홀가분한 마음으로 여행의 설렘을 만끽하시길 바란다\"고 말했습니다."
-   ],
-   "ai": {
-    "v": 2,
-    "promo": true,
-    "why": "진에어 항공권 운임 할인 쿠폰·프로모션",
-    "airlines": [
-     "진에어"
-    ],
-    "name": null,
-    "book": {
-     "from": null,
-     "to": "2026-12-31"
-    },
-    "board": {
-     "from": null,
-     "to": "2027-02-28"
-    },
-    "price": null,
-    "trip": null,
-    "pct": 15,
-    "seoul": null,
-    "at": "2026-11-24",
-    "model": "deepseek-v4-flash"
-   },
-   "lastDate": "2026-11-24T08:34:45.000Z",
-   "lastFound": "2026-11-24",
-   "more": [
-    {
-     "id": "PSWZhZzBlQmd4SDdZRHRYdmNPdEdMQ0xyOFd2dW5sdlVrNXc2YjBma0V0SUV2cnFacEFyanQyNndWOFhVU1pOaHBXYmQ5OXVzb0Z5c0RYQVpBTmhkNFZlbGg|진에어, 2006~2008년생 대상 항공권 할인 ‘스페셜 쿠폰팩’ 제공",
-     "kind": "airline",
-     "title": "진에어, 2006~2008년생 대상 항공권 할인 ‘스페셜 쿠폰팩’ 제공",
-     "desc": "진에어, 2006~2008년생 대상 항공권 할인 ‘스페셜 쿠폰팩’ 제공 https://www.ppss.kr/",
-     "summary": [
-      "진에어, 2006~2008년생 대상 항공권 할인 ‘스페셜 쿠폰팩’ 제공 https://www.ppss.kr/…"
-     ],
-     "link": "https://www.ppss.kr/news/articleView.html?idxno=322630",
-     "source": "https://www.ppss.kr/",
-     "date": "2026-11-24T02:36:53.000Z",
-     "found": "2026-11-24",
-     "cards": [],
-     "airlines": [
-      "LJ"
-     ],
-     "countries": [],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "에어부산 {특가말}",
-     "bodyAt": "2026-11-24",
-     "body": [
-      "진에어, 2006~2008년생 대상 항공권 할인 ‘스페셜 쿠폰팩’ 제공",
-      "12월 31일까지 신규 가입 회원 대상…수능 응시 여부 관계없이 제공",
-      "국내선 1만원·국제선 3만원 할인…수하물팩 1000원 이용",
-      "(PPSS 진유미 기자)진에어가 2027학년도 대학수학능력시험을 마친 수험생을 비롯해 겨울방학과 새로운 출발을 앞둔 청년층의 여행 경비 부담을 덜어주기 위한 특별 할인 행사를 마련했다.",
-      "진에어는 오는 12월 31일까지 2006~2008년생 신규 가입 회원을 대상으로 항공권 운임과 부가서비스 할인 혜택을 담은 ‘스페셜 쿠폰팩’을 제공한다고 밝혔다.",
-      "항공권 할인 혜택은 국내선의 경우 2만원 이상 결제 시 1만원, 국제선은 30만원 이상 결제 시 3만원이 적용된다.",
-      "사전 좌석 지정과 위탁 수하물 5kg 추가 혜택을 결합한 ‘수하물팩’을 전 노선에서 1000원에 이용할 수 있는 쿠폰을 제공한다.",
-      "발급된 쿠폰은 내년 2월 28일까지 운항하는 항공편 예매 시 사용할 수 있다.",
-      "진에어 관계자는 “수학능력시험 준비로 고생한 수험생들은 물론, 각자의 자리에서 노력해 온 청춘들을 응원한다”며 “홀가분한 마음으로 여행의 설렘을 만끽하시길 바란다”고 말했다.",
-      "한편 진에어는 부산 출발 여행객을 대상으로 국제선 항공권 할인 행사도 진행한다.",
-      "오는 26일부터 12월 2일까지 부산발 국제선 항공편을 대상으로 최대 15%의 운임 할인 혜택을 제공하며 탑승 기간은 내년 3월 27일까지다.",
-      "이용객은 프로모션 코드를 활용해 진에어 온라인 채널에서 할인된 항공권을 구매할 수 있다.",
-      "이래서 골프는 몰라도 '유현주는 안다'고 하는구나...볼륨감까지 급이 다른 몸매"
-     ],
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "진에어 항공권 할인 쿠폰팩",
-      "airlines": [
-       "진에어"
-      ],
-      "name": "스페셜 쿠폰팩",
-      "book": {
-       "from": null,
-       "to": "2026-12-31"
-      },
-      "board": {
-       "from": null,
-       "to": "2027-02-28"
-      },
-      "price": null,
-      "trip": null,
-      "pct": 15,
-      "seoul": null,
-      "at": "2026-11-24",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "lWFBXZkt6WU1NRmhMclNYcFg4bklUeUlRTmc5UUtsY00wd2VHc0htQ2pjV21JNktNNlpqdWVPTkg1dTIxejhNSzhCdlo4X1d1Um1fMmtHRUFBWUI5MkFpQ2E|“수능 안 봐도 할인”…진에어, 2006~2008년생 여행 혜택",
-     "kind": "airline",
-     "title": "“수능 안 봐도 할인”…진에어, 2006~2008년생 여행 혜택",
-     "desc": "“수능 안 봐도 할인”…진에어, 2006~2008년생 여행 혜택 서울경제TV",
-     "summary": [
-      "“수능 안 봐도 할인”…진에어, 2006~2008년생 여행 혜택 서울경제TV…"
-     ],
-     "link": "https://www.sentv.co.kr/article/view/sentv202611240128",
-     "source": "서울경제TV",
-     "date": "2026-11-24T04:32:03.000Z",
-     "found": "2026-11-24",
-     "cards": [],
-     "airlines": [
-      "LJ"
-     ],
-     "countries": [],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "진에어 {특가말}",
-     "bodyAt": "2026-11-24",
-     "body": [
-      "“수능 안 봐도 할인”…진에어, 2006~2008년생 여행 혜택",
-      "12월 31일까지 신규 가입 회원 대상 할인",
-      "[서울경제TV=김지송 인턴기자] 진에어가 2006~2008년생 신규 회원을 대상으로 국내선 최대 1만 원, 국제선 최대 3만 원의 항공권 할인 혜택을 제공한다.",
-      "진에어는 오는 12월 31일까지 항공 운임과 부가서비스 할인 혜택을 담은 '스페셜 쿠폰팩'을 증정한다고 24일 밝혔다.",
-      "항공권 할인은 국내선 2만 원 이상 결제 시 1만 원, 국제선 30만 원 이상 결제 시 3만 원이 적용된다.",
-      "사전 좌석 지정과 위탁 수하물 5kg 추가 서비스를 묶은 '수하물팩'을 1000원에 구매할 수 있는 쿠폰도 제공된다.",
-      "발급된 쿠폰은 내년 2월 28일까지 운항하는 항공편 예매에 사용할 수 있다.",
-      "진에어는 청년 대상 행사 외에도 신규 회원과 여행객을 위한 항공권 할인 행사를 운영해 왔다.",
-      "지난 7월 진행한 연중 특가 행사 '진마켓'에서는 신규 가입 회원에게 국제선 5000원 할인 쿠폰을 제공했다.",
-      "한편 진에어는 오는 26일부터 12월 2일까지 부산 출발 국제선 항공편을 대상으로 최대 15% 운임 할인 행사도 진행한다.",
-      "할인 항공권의 탑승 기간은 내년 3월 27일까지다.",
-      "진에어 관계자는 “수학능력시험 준비로 고생한 수험생들은 물론, 각자의 자리에서 노력해 온 청춘들을 응원한다”며 “홀가분한 마음으로 여행의 설렘을 만끽하시길 바란다”고 말했다."
-     ],
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "진에어 항공권 할인 쿠폰 제공",
-      "airlines": [
-       "진에어"
-      ],
-      "name": "스페셜 쿠폰팩",
-      "book": {
-       "from": null,
-       "to": "2026-12-31"
-      },
-      "board": {
-       "from": null,
-       "to": "2027-02-28"
-      },
-      "price": null,
-      "trip": null,
-      "pct": 15,
-      "seoul": null,
-      "at": "2026-11-24",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "MjF5QW9ocDhHb0djem9SR3QxNDdKXzVKVzZGa2hSRzlqNEh6dC03XzUzaUVKSVBWdkFma21yOFY2SlQ5ZFM1NGdyR0p3amVKZVpxZUpvQklfZ0ZSdTZWbXdX|“국제선 3만원 할인·수하물팩 1천원”…진에어, 2006~2008년생 여",
-     "kind": "airline",
-     "title": "“국제선 3만원 할인·수하물팩 1천원”…진에어, 2006~2008년생 여행 혜택",
-     "desc": "“국제선 3만원 할인·수하물팩 1천원”…진에어, 2006~2008년생 여행 혜택 더게이트",
-     "summary": [
-      "“국제선 3만원 할인·수하물팩 1천원”…진에어, 2006~2008년생 여행 혜택 더게이트…"
-     ],
-     "link": "http://www.spochoo.com/news/articleView.html?idxno=132354",
-     "source": "더게이트",
-     "date": "2026-11-24T07:30:00.000Z",
-     "found": "2026-11-24",
-     "cards": [],
-     "airlines": [
-      "LJ"
-     ],
-     "countries": [],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "에어부산 {특가말}",
-     "bodyAt": "2026-11-24",
-     "body": [
-      "“국제선 3만원 할인·수하물팩 1천원”…진에어, 2006~2008년생 여행 혜택",
-      "진에어가 대학수학능력시험을 마친 수험생을 비롯해 새로운 출발을 앞둔 청춘들을 위해 항공권과 부가서비스 할인 혜택을 묶은 쿠폰팩을 선보인다.",
-      "진에어는 다음달 31일까지 2006~2008년생 신규 가입 회원을 대상으로 ‘스페셜 쿠폰팩’을 제공한다고 24일 밝혔다.",
-      "국내선은 2만원 이상 결제 시 1만원, 국제선은 30만원 이상 결제 시 3만원을 할인받을 수 있다.",
-      "사전 좌석 지정과 위탁 수하물 5kg 추가 혜택을 묶은 ‘수하물팩’도 전 노선에서 1000원에 이용할 수 있는 쿠폰을 제공한다.",
-      "발급된 쿠폰은 내년 2월 28일까지 운항하는 항공편 예약에 사용할 수 있다.",
-      "진에어는 네이버페이와 카카오페이 등 월별 제휴 결제사 할인 혜택도 별도 이벤트 페이지를 통해 제공해 겨울방학과 봄 여행을 준비하는 고객의 비용 부담을 낮춘다는 계획이다.",
-      "진에어는 오는 26일부터 내달 2일까지 부산발 국제선 항공편을 대상으로 최대 15% 운임 할인 행사를 실시할 예정이다.",
-      "탑승 기간은 내년 3월 27일까지이며, 이용객은 프로모션 코드를 적용해 진에어 온라인 채널에서 할인된 운임으로 항공권을 구매할 수 있다.",
-      "진에어 관계자는 “수학능력시험 준비로 고생한 수험생들은 물론, 각자의 자리에서 노력해 온 청춘들을 응원한다”며 “홀가분한 마음으로 여행의 설렘을 만끽하시길 바란다”고 말했다."
-     ],
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "진에어 항공권 할인 쿠폰·운임 할인",
-      "airlines": [
-       "진에어"
-      ],
-      "name": "스페셜 쿠폰팩",
-      "book": {
-       "from": null,
-       "to": "2026-12-31"
-      },
-      "board": {
-       "from": null,
-       "to": "2027-02-28"
-      },
-      "price": null,
-      "trip": null,
-      "pct": 15,
-      "seoul": null,
-      "at": "2026-11-24",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "BCLXdiY25ySXgwaFBKdlNIRkp5MXVZdmQ3dmtNck9PZFJyNVJzbC14ZWloNkdNc0JvYW02RDl4YlpoSjc3UjBIX2NlclhfNkVZOGIyQWNGOHdVcHZqUEh4bg|진에어, 2006~2008년생 대상 항공권 할인…수하물팩 1000원 혜택",
-     "kind": "airline",
-     "title": "진에어, 2006~2008년생 대상 항공권 할인…수하물팩 1000원 혜택",
-     "desc": "진에어, 2006~2008년생 대상 항공권 할인…수하물팩 1000원 혜택 스포츠한국",
-     "summary": [
-      "진에어, 2006~2008년생 대상 항공권 할인…수하물팩 1000원 혜택 스포츠한국…"
-     ],
-     "link": "https://sports.hankooki.com/news/articleView.html?idxno=6944103",
-     "source": "스포츠한국",
-     "date": "2026-11-24T08:34:45.000Z",
-     "found": "2026-11-24",
-     "cards": [],
-     "airlines": [
-      "LJ"
-     ],
-     "countries": [],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "진에어 {특가말}",
-     "bodyAt": "2026-11-24",
-     "body": [
-      "진에어, 2006~2008년생 대상 항공권 할인…수하물팩 1000원 혜택",
-      "[스포츠한국 홍성완 기자] 진에어가 2027학년도 대학수학능력시험을 마친 수험생과 청년층을 대상으로 항공권 및 부가서비스 할인 혜택을 제공한다.",
-      "진에어는 오는 12월31일까지 2006~2008년생 신규 가입 회원에게 항공 운임과 부가서비스 할인 혜택을 담은 ‘스페셜 쿠폰팩’을 제공한다고 24일 밝혔다.",
-      "국내선은 2만원 이상 결제 시 1만원, 국제선은 30만원 이상 결제 시 3만원을 할인받을 수 있다.",
-      "사전 좌석 지정과 위탁 수하물 5㎏ 추가 혜택을 묶은 ‘수하물팩’을 1000원에 이용할 수 있는 쿠폰도 제공한다.",
-      "쿠폰은 2027년 2월28일까지 운항하는 항공편을 예매할 때 사용할 수 있다.",
-      "진에어는 네이버페이와 카카오페이 등 제휴 결제사를 통한 월별 할인 행사도 별도 이벤트 페이지에서 안내하고 있다.",
-      "이번 쿠폰 혜택과 별개로 탑승객에게 기본 제공되는 위탁 수하물 15㎏도 유지된다.",
-      "진에어 관계자는 “수학능력시험 준비로 고생한 수험생들은 물론, 각자의 자리에서 노력해 온 청춘들을 응원한다”며 “홀가분한 마음으로 여행의 설렘을 만끽하시길 바란다”고 말했다.",
-      "한편 진에어는 부산 출발 국제선 이용객을 대상으로 한 운임 할인 행사도 진행할 예정이다.",
-      "11월26일부터 12월2일까지 부산발 국제선 항공편을 대상으로 최대 15% 할인을 제공한다.",
-      "탑승 기간은 2027년 3월27일까지이며, 프로모션 코드를 입력해 진에어 온라인 채널에서 항공권을 구매하면 된다."
-     ],
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "진에어 항공권 할인 쿠폰 제공",
-      "airlines": [
-       "진에어"
-      ],
-      "name": "스페셜 쿠폰팩",
-      "book": {
-       "from": null,
-       "to": "2026-12-31"
-      },
-      "board": {
-       "from": null,
-       "to": "2027-02-28"
-      },
-      "price": null,
-      "trip": null,
-      "pct": 15,
-      "seoul": null,
-      "at": "2026-11-24",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "lR0EtM25yWm53azZvMGN4RGdMOHJyUmpieFZ4andqdnVMZFBTUWxEQXhJNElDdGRBcEtZeWI3eFhvS25WcHFoZzNhYjVxWURsWXFCaHlJRFNUajVWUnlWVHc|진에어, 국내선 1만원·국제선 3만원 운임 할인…2006~2008년생 대",
-     "kind": "airline",
-     "title": "진에어, 국내선 1만원·국제선 3만원 운임 할인…2006~2008년생 대상 프로모션",
-     "desc": "진에어, 국내선 1만원·국제선 3만원 운임 할인…2006~2008년생 대상 프로모션 컨슈머타임스",
-     "summary": [
-      "진에어, 국내선 1만원·국제선 3만원 운임 할인…2006~2008년생 대상 프로모션 컨슈머타임스…"
-     ],
-     "link": "https://www.cstimes.com/news/articleView.html?idxno=729099",
-     "source": "컨슈머타임스",
-     "date": "2026-11-23T23:43:31.000Z",
-     "found": "2026-11-24",
-     "cards": [],
-     "airlines": [
-      "LJ"
-     ],
-     "countries": [],
-     "allRoutes": true,
-     "routes": [],
-     "price": {
-      "amount": 10000,
-      "trip": "oneway?"
-     },
-     "query": "진에어 {특가말}",
-     "bodyAt": "2026-11-24",
-     "body": [
-      "진에어, 국내선 1만원·국제선 3만원 운임 할인…2006~2008년생 대상 프로모션",
-      "컨슈머타임스=이정화 기자 | 진에어가 2027학년도 대학수학능력시험을 마친 수험생 등 2006~2008년생 신규 회원을 대상으로 항공 운임과 부가서비스 할인 혜택을 담은 '스페셜 쿠폰팩'을 증정한다.",
-      "진에어는 이번 프로모션이 다음 달 말까지 진행된다고 24일 밝혔다.",
-      "2006~2008년생이라면 수능 응시 여부와 관계없이 홈페이지 회원가입만으로 쿠폰팩을 받을 수 있다.",
-      "항공권 예매 시 국내선 2만원 이상 결제하면 1만원, 국제선 30만원 이상 결제하면 3만원이 즉시 할인된다.",
-      "사전 좌석 지정과 위탁 수하물 5kg 추가 혜택이 묶인 '수하물팩'을 전 노선 균일가 1000원에 이용할 수 있는 쿠폰도 함께 지급한다.",
-      "발급받은 쿠폰은 내년 2월 28일까지 운항하는 항공편 예매 시 사용할 수 있다.",
-      "진에어 관계자는 \"수학능력시험 준비로 고생한 수험생들은 물론 각자의 자리에서 노력해 온 청춘들을 응원한다\"며 \"홀가분한 마음으로 여행의 설렘을 만끽하시길 바란다\"고 말했다."
-     ],
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "진에어 운임 할인 쿠폰 프로모션",
-      "airlines": [
-       "진에어"
-      ],
-      "name": "스페셜 쿠폰팩",
-      "book": {
-       "from": null,
-       "to": "2026-12-31"
-      },
-      "board": {
-       "from": null,
-       "to": "2027-02-28"
-      },
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-24",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "http://news.lghellovision.net/news/articleView.html|진에어 , 2006~2008년생 신규 회원에 할인 쿠폰 제공",
-     "kind": "airline",
-     "title": "진에어 , 2006~2008년생 신규 회원에 할인 쿠폰 제공",
-     "desc": "진에어 가 12월 31일까지 수능 응시 여부와 관계없이 2006년부터 2008년생 홈페이지 신규 가입 회원에게 할인 쿠폰을 제공합니다. 항공 운임은 국내선 2만 원 이상 결제 시 1만 원, 국제선 30만 원 이상 결제 시 3만 원을...",
-     "summary": [
-      "진에어 가 12월 31일까지 수능 응시 여부와 관계없이 2006년부터 2008년생 홈페이지 신규 가입 회원에게 할인 쿠폰을 제공합니다.",
-      "항공 운임은 국내선 2만 원 이상 결제 시 1만 원, 국제선 30만 원 이상 결제 시 3만 원을…"
-     ],
-     "link": "http://news.lghellovision.net/news/articleView.html?idxno=563463",
-     "source": "네이버 뉴스",
-     "date": "2026-11-24T00:36:00.000Z",
-     "found": "2026-11-24",
-     "cards": [],
-     "airlines": [
-      "LJ"
-     ],
-     "countries": [],
-     "allRoutes": true,
-     "routes": [],
-     "price": {
-      "amount": 10000,
-      "trip": "oneway?"
-     },
-     "query": "진에어 {특가말}",
-     "bodyAt": "2026-11-24",
-     "body": [
-      "진에어가 12월 31일까지 수능 응시 여부와 관계없이 2006년부터 2008년생 홈페이지 신규 가입 회원에게 할인 쿠폰을 제공합니다.",
-      "항공 운임은 국내선 2만 원 이상 결제 시 1만 원, 국제선 30만 원 이상 결제 시 3만 원을 할인합니다.",
-      "쿠폰은 내년 2월 28일까지 운항하는 항공편 예매에 사용할 수 있으며, 사전 좌석 지정과 위탁 수하물 5킬로그램 추가를 묶은 ‘수하물팩’을 전 노선에서 천 원에 이용하는 쿠폰도 제공됩니다."
-     ],
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "신규회원 항공권 할인쿠폰",
-      "airlines": [
-       "진에어"
-      ],
-      "name": null,
-      "book": {
-       "from": null,
-       "to": "2026-12-31"
-      },
-      "board": {
-       "from": null,
-       "to": "2027-02-28"
-      },
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-24",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "https://www.pinpointnews.co.kr/news/articleView.html|진에어 , 수능생·청년 대상 '스페셜 쿠폰팩' 제공",
-     "kind": "airline",
-     "title": "진에어 , 수능생·청년 대상 '스페셜 쿠폰팩' 제공",
-     "desc": "진에어 가 2027학년도 대학수학능력시험을 마친 수험생과 새 출발을 앞둔 2006~2008년생을 대상으로 항공 운임·부가서비스 할인 으로 구성된 '스페셜 쿠폰팩'을 제공한다. 사진= 진에어 제공. 진에어 가 2027학년도...",
-     "summary": [
-      "진에어 가 2027학년도 대학수학능력시험을 마친 수험생과 새 출발을 앞둔 2006~2008년생을 대상으로 항공 운임·부가서비스 할인 으로 구성된 '스페셜 쿠폰팩'을 제공한다.",
-      "진에어 가 2027학년도…"
-     ],
-     "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=507409",
-     "source": "네이버 뉴스",
-     "date": "2026-11-24T01:36:00.000Z",
-     "found": "2026-11-24",
-     "cards": [],
-     "airlines": [
-      "LJ"
-     ],
-     "countries": [],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "진에어 {특가말}",
-     "bodyAt": "2026-11-24",
-     "body": [
-      "진에어가 2027학년도 대학수학능력시험을 마친 수험생과 새 출발을 앞둔 2006~2008년생을 대상으로 항공 운임·부가서비스 할인으로 구성된 ‘스페셜 쿠폰팩’을 제공한다고 24일 밝혔다.",
-      "이번 쿠폰팩은 12월 31일까지 신규 회원가입자에게 자동 발급되며, 수능 응시 여부와 관계없이 홈페이지 회원가입만으로 받을 수 있다.",
-      "국내선은 2만원 이상 결제 시 1만원 즉시 할인, 국제선은 30만원 이상 결제 시 3만원 즉시 할인되는 운임 할인 쿠폰이 제공된다.",
-      "진에어 관계자는 “수능 준비로 고생한 수험생과 새로운 시작을 앞둔 청춘들을 응원한다”며 “홀가분한 마음으로 여행의 설렘을 누리길 바란다”고 말했다.",
-      "한편 진에어는 올해 3분기 영업이익이 78억원으로 전년 동기(-225억원) 대비 흑자 전환했다.",
-      "매출은 4131억원으로 전년 동기 대비 35.7% 늘어 분기 기준 역대 최대치를 기록했고, 당기순이익도 312억원으로 흑자로 돌아섰다."
-     ],
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "진에어 운임 할인 쿠폰팩 제공",
-      "airlines": [
-       "진에어"
-      ],
-      "name": "스페셜 쿠폰팩",
-      "book": {
-       "from": null,
-       "to": "2026-12-31"
-      },
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-24",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "https://www.viva100.com/article/20261124501128|진에어 , 2006~2008년생 대상 항공권 할인 … 스페셜 쿠폰팩 제공",
-     "kind": "airline",
-     "title": "진에어 , 2006~2008년생 대상 항공권 할인 … 스페셜 쿠폰팩 제공",
-     "desc": "진에어 가 대학수학능력시험을 마친 수험생을 비롯한 2006~2008년생을 대상으로 항공권과 부가서비스 할인 혜택을 제공한다. 수능 응시 여부와 관계없이 해당 연령대의 신규 회원이라면 누구나 이용할 수 있다....",
-     "summary": [
-      "진에어 가 대학수학능력시험을 마친 수험생을 비롯한 2006~2008년생을 대상으로 항공권과 부가서비스 할인 혜택을 제공한다.",
-      "수능 응시 여부와 관계없이 해당 연령대의 신규 회원이라면 누구나 이용할 수 있다."
-     ],
-     "link": "https://www.viva100.com/article/20261124501128",
-     "source": "네이버 뉴스",
-     "date": "2026-11-24T07:06:00.000Z",
-     "found": "2026-11-24",
-     "cards": [],
-     "airlines": [
-      "LJ"
-     ],
-     "countries": [],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "진에어 {특가말}",
-     "bodyAt": "2026-11-24",
-     "body": [
-      "진에어가 대학수학능력시험을 마친 수험생을 비롯한 2006~2008년생을 대상으로 항공권과 부가서비스 할인 혜택을 제공한다.",
-      "진에어는 다음 달 31일까지 2006~2008년생 신규 가입 회원에게 ‘스페셜 쿠폰팩’을 지급한다고 24일 밝혔다.",
-      "쿠폰팩에는 국내선 항공권 2만원 이상 결제 시 1만원, 국제선 30만원 이상 결제 시 3만원을 할인받을 수 있는 쿠폰이 포함됐다.",
-      "사전 좌석 지정과 위탁 수하물 5kg 추가 서비스를 묶은 ‘수하물팩’도 1000원에 이용할 수 있다.",
-      "발급된 쿠폰은 내년 2월 28일까지 운항하는 항공편 예약에 사용할 수 있다.",
-      "기존 무료 위탁 수하물 허용량인 15kg도 그대로 제공되며, 괌 노선은 23kg 수하물 2개까지 무료로 맡길 수 있다."
-     ],
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "진에어 항공권 할인 쿠폰 제공",
-      "airlines": [
-       "진에어"
-      ],
-      "name": "스페셜 쿠폰팩",
-      "book": {
-       "from": null,
-       "to": "2026-12-31"
-      },
-      "board": {
-       "from": null,
-       "to": "2027-02-28"
-      },
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-24",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "95%A0%EC%9D%B8-%EC%A7%84%EC%97%90%EC%96%B4-2006-2008%EB%85%84%EC%83%9D-%EC%97%AC%ED%96%89-%ED%98%9C%ED%83%9D/ar-AA2i6ddX|수능 안 봐도 할인… 진에어, 2006~2008년생 여행 혜택",
-     "kind": "airline",
-     "title": "수능 안 봐도 할인… 진에어, 2006~2008년생 여행 혜택",
-     "desc": "[서울경제TV=김지송 인턴기자] 진에어가 2006~2008년생 신규 회원을 대상으로 국내선 최대 1만 원, 국제선 최대 3만 원의 항공권 할인 혜택을 제공한다. 대학수학능력시험 응시 여부와 관계없이 해당 연령대라면 누구나 참여할 수 있다.진에어는 오는 12월 31일까지 항공 운임과 부가서비스 할인 혜택을 담은 '스페셜 쿠폰팩'을 증정한다고 24일 밝혔다.쿠 ...",
-     "summary": [
-      "진에어가 2006~2008년생 신규 회원을 대상으로 국내선 최대 1만 원, 국제선 최대 3만 원의 항공권 할인 혜택을 제공한다.",
-      "대학수학능력시험 응시 여부와 관계없이 해당 연령대라면 누구나 참여할 수 있다.",
-      "진에어는 오는 12월 31일까지 항공 운임과 부가서비스 할인 혜택을 담은 '스페셜 쿠폰팩'을 증정한다고 24일 밝혔다."
-     ],
-     "link": "https://www.msn.com/ko-kr/travel/%ED%95%AD%EA%B3%B5-%EC%97%AC%ED%96%89/%EC%88%98%EB%8A%A5-%EC%95%88-%EB%B4%90%EB%8F%84-%ED%95%A0%EC%9D%B8-%EC%A7%84%EC%97%90%EC%96%B4-2006-2008%EB%85%84%EC%83%9D-%EC%97%AC%ED%96%89-%ED%98%9C%ED%83%9D/ar-AA2i6ddX",
-     "source": "서울경제TV SEN on MSN",
-     "date": "2026-11-23T20:32:03.000Z",
-     "found": "2026-11-24",
-     "cards": [],
-     "airlines": [
-      "LJ"
-     ],
-     "countries": [],
-     "allRoutes": true,
-     "routes": [],
-     "price": {
-      "amount": 10000,
-      "trip": "oneway?"
-     },
-     "query": "진에어 {특가말}",
-     "bodyAt": "2026-11-24",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "진에어 항공권 할인 쿠폰",
-      "airlines": [
-       "진에어"
-      ],
-      "name": "스페셜 쿠폰팩",
-      "book": {
-       "from": null,
-       "to": "2026-12-31"
-      },
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-24",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "SNUdJTVphSVpYNVVHSU5XN0lKc1YwQ19oWWJqdHEtUjlYODhaOXBINGpDTm9uT19fOHVJdGliZk4xcXJhNFczNUNSWXU1LXdqejV5X2VzQTl6Z2FMX2ZfRm8|진에어, 2006~2008년생 신규 회원에 항공권 할인",
-     "kind": "airline",
-     "title": "진에어, 2006~2008년생 신규 회원에 항공권 할인",
-     "desc": "진에어, 2006~2008년생 신규 회원에 항공권 할인 인사이트코리아",
-     "summary": [
-      "진에어, 2006~2008년생 신규 회원에 항공권 할인 인사이트코리아…"
-     ],
-     "link": "https://www.insightkorea.co.kr/news/articleViewAmp.html?idxno=259593",
-     "source": "인사이트코리아",
-     "date": "2026-11-24T01:10:53.000Z",
-     "found": "2026-11-24",
-     "cards": [],
-     "airlines": [
-      "LJ"
-     ],
-     "countries": [],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "진에어 {특가말}",
-     "bodyAt": "2026-11-24",
-     "body": [
-      "[인사이트코리아 = 김호진 기자] 진에어가 2006년부터 2008년 사이 출생한 신규 회원을 대상으로 항공권과 부가서비스 할인 혜택을 제공한다.",
-      "진에어는 오는 12월 31일까지 2006~2008년생 신규 가입 회원에게 ‘스페셜 쿠폰팩’을 제공한다고 24일 밝혔다.",
-      "국내선은 2만원 이상 결제하면 1만원을 할인한다.",
-      "국제선은 30만원 이상 구매할 경우 3만원을 낮춰준다.",
-      "사전 좌석 지정과 위탁수하물 5kg 추가 혜택을 묶은 ‘수하물팩’을 전 노선에서 1000원에 이용할 수 있는 쿠폰이 지급된다.",
-      "발급받은 쿠폰은 2027년 2월 28일까지 운항하는 항공편을 예약할 때 사용할 수 있다.",
-      "겨울방학과 봄철 여행을 준비하는 고객까지 이용할 수 있도록 사용 기간을 설정했다.",
-      "일반 노선은 위탁수하물 15kg을 무료로 제공하며 괌 노선은 23kg 수하물 2개까지 이용할 수 있다.",
-      "진에어 관계자는 “수능을 마친 수험생뿐 아니라 새로운 시작을 준비하는 청년층을 응원하기 위해 행사를 마련했다”며 “여행 비용 부담을 줄이고 편하게 여행을 준비할 수 있도록 혜택을 구성했다”고 말했다."
-     ],
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "신규 회원 항공권 할인 쿠폰",
-      "airlines": [
-       "진에어"
-      ],
-      "name": "스페셜 쿠폰팩",
-      "book": {
-       "from": null,
-       "to": "2026-12-31"
-      },
-      "board": {
-       "from": null,
-       "to": "2027-02-28"
-      },
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-24",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "https://www.jnilbo.com/news/articleView.html|진에어 \"수험표 없이 간편하게 하늘길 할인 받으세요\"",
-     "kind": "airline",
-     "title": "진에어 \"수험표 없이 간편하게 하늘길 할인 받으세요\"",
-     "desc": "월간 할인 혜택은 별도 이벤트 페이지를 통해 안내한다. 프로모션 혜택과 별개로 탑승객에게 기본 제공되는 무료 위탁 수하물 15㎏(괌 노선 2개·각 23㎏) 기준은 그대로 유지된다. 자세한 사항은 진에어 홈페이지에서...",
-     "summary": [
-      "월간 할인 혜택은 별도 이벤트 페이지를 통해 안내한다.",
-      "프로모션 혜택과 별개로 탑승객에게 기본 제공되는 무료 위탁 수하물 15㎏(괌 노선 2개·각 23㎏) 기준은 그대로 유지된다.",
-      "자세한 사항은 진에어 홈페이지에서…"
-     ],
-     "link": "https://www.jnilbo.com/news/articleView.html?idxno=90000085911",
-     "source": "네이버 뉴스",
-     "date": "2026-11-24T00:20:00.000Z",
-     "found": "2026-11-24",
-     "cards": [],
-     "airlines": [
-      "LJ"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "진에어 {특가말}",
-     "bodyAt": "2026-11-24",
-     "body": [
-      "발급된 쿠폰은 내년 2월28일까지 운항하는 항공편 예매 시 사용할 수 있다.",
-      "프로모션 혜택과 별개로 탑승객에게 기본 제공되는 무료 위탁 수하물 15㎏(괌 노선 2개·각 23㎏) 기준은 그대로 유지된다.",
-      "진에어 관계자는 “수학능력시험 준비로 고생한 수험생들은 물론 각자의 자리에서 노력해 온 청춘들을 응원한다”며 “홀가분한 마음으로 여행을 즐기시길 바란다”고 말했다.",
-      "진에어 \"수험표 없이 간편하게 하늘길 할인 받으세요\"",
-      "젠슨 황 돌아오자 나스닥 6.5% 급등…코스피 하락 막고 K반도체에 훈풍 불까",
-      "'자금난' 홈플러스, 26일부터 온라인 배송 중단…재개 시점 '미정'",
-      "가짜 AI 사이트서 신종 악성코드 유포…보안 프로그램 무력화",
-      "엔비디아 하루 만에 31.5% 급등…美증시 AI 투자 열기 부활"
-     ],
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "진에어 항공권 할인 프로모션",
-      "airlines": [
-       "진에어"
-      ],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-24",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "https://www.ppss.kr/news/articleView.html|진에어 , 2006~2008년생 대상 항공권 할인 '스페셜 쿠폰팩' 제공",
-     "kind": "airline",
-     "title": "진에어 , 2006~2008년생 대상 항공권 할인 '스페셜 쿠폰팩' 제공",
-     "desc": "이용객은 프로모션 코드를 활용해 진에어 온라인 채널에서 할인 된 항공권을 구매할 수 있다. 자세한 행사 내용과 이용 조건은 진에어 공식 홈페이지에서 확인할 수 있다.",
-     "summary": [
-      "이용객은 프로모션 코드를 활용해 진에어 온라인 채널에서 할인 된 항공권을 구매할 수 있다.",
-      "자세한 행사 내용과 이용 조건은 진에어 공식 홈페이지에서 확인할 수 있다."
-     ],
-     "link": "https://www.ppss.kr/news/articleView.html?idxno=322630",
-     "source": "네이버 뉴스",
-     "date": "2026-11-24T02:36:00.000Z",
-     "found": "2026-11-24",
-     "cards": [],
-     "airlines": [
-      "LJ"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "진에어 {특가말}",
-     "bodyAt": "2026-11-24",
-     "body": [
-      "이용객은 프로모션 코드를 활용해 진에어 온라인 채널에서 할인된 항공권을 구매할 수 있다.",
-      "이래서 골프는 몰라도 '유현주는 안다'고 하는구나...볼륨감까지 급이 다른 몸매",
-      "미래에셋증권, '군 장병 금융사기 예방'에 앞장…2018년부터 교류 확대"
-     ],
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "진에어 항공권 할인 쿠폰팩 프로모션",
-      "airlines": [
-       "진에어"
-      ],
-      "name": "스페셜 쿠폰팩",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-24",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "rticles/CBMiUEFVX3lxTFAzWG1TaXZya2NHZ0ZydWgxeWM4c01rcHRTLUd5V2drOHFXVnZpV3N3aXpLa05PS1d5OWpMMW9sWTAzMXBZTjdQd1FIRWNjc0oz|진에어, 06~08년생에 ‘스페셜 쿠폰팩’…“수능 끝, 여행가자”",
-     "kind": "airline",
-     "title": "진에어, 06~08년생에 ‘스페셜 쿠폰팩’…“수능 끝, 여행가자”",
-     "desc": "진에어, 06~08년생에 ‘스페셜 쿠폰팩’…“수능 끝, 여행가자” 문화일보",
-     "summary": [
-      "진에어, 06~08년생에 ‘스페셜 쿠폰팩’…“수능 끝, 여행가자” 문화일보…"
-     ],
-     "link": "https://www.munhwa.com/article/11633764",
-     "source": "문화일보",
-     "date": "2026-11-24T08:25:39.000Z",
-     "found": "2026-11-24",
-     "cards": [],
-     "airlines": [
-      "LJ"
-     ],
-     "countries": [],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "진에어 {특가말}",
-     "bodyAt": "2026-11-24",
-     "body": [
-      "진에어는 2027학년도 대학수학능력 시험을 마친 수험생을 포함해 만 18~20세(2006년~2008년생) 청년들을 위해 항공 운임과 부가서비스 할인 등의 혜택을 담은 ‘스페셜 쿠폰팩’을 제공한다고 24일 밝혔다.",
-      "진에어는 수험표나 원서 접수증 등의 확인 절차를 생략해 편의성을 높였다고 설명했다.",
-      "쿠폰은 국내선 2만 원 이상 결제 시 1만 원, 국제선 30만 원 이상 결제 시 3만 원의 할인이 적용된다.",
-      "부가서비스를 1000원에 누릴 수 있는 혜택도 포함된다.",
-      "진에어는 사전 좌석 지정과 위탁 수하물 5㎏ 추가 혜택을 묶은 ‘수하물팩’을 전 노선 균일가 1000원에 이용할 수 있는 쿠폰도 증정한다.",
-      "발급 쿠폰은 내년 2월 28일까지 운항하는 항공편 예매 시 자유롭게 사용할 수 있다.",
-      "진에어 관계자는 “수학능력시험 준비로 고생한 수험생들은 물론, 각자의 자리에서 노력해 온 청춘들을 응원한다”며 “홀가분한 마음으로 여행의 설렘을 만끽하시길 바란다”고 전했다."
-     ],
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "항공운임 할인 쿠폰팩 제공",
-      "airlines": [
-       "진에어"
-      ],
-      "name": "스페셜 쿠폰팩",
-      "book": null,
-      "board": {
-       "from": null,
-       "to": "2027-02-28"
-      },
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
       "at": "2026-11-24",
       "model": "deepseek-v4-flash"
      }
@@ -2375,717 +3312,6 @@
    },
    "lastDate": "2026-11-24T06:02:20.000Z",
    "lastFound": "2026-11-24"
-  },
-  {
-   "id": "c:https://cafe.naver.com/fobn/164365|트리니티항공 ] ✈️11월 더블 혜택! 동남아 항공 권 최대 25% 할인",
-   "kind": "airline",
-   "community": true,
-   "title": "트리니티항공 ] ✈️11월 더블 혜택! 동남아 항공 권 최대 25% 할인",
-   "desc": "트리니티항공 에서 11월 1일부터 13일까지 국제선 항공 권 할인 이벤트 를 진행하고 있어요.",
-   "summary": [
-    "트리니티항공 에서 11월 1일부터 13일까지 국제선 항공 권 할인 이벤트 를 진행하고 있어요."
-   ],
-   "link": "https://cafe.naver.com/fobn/164365",
-   "source": "네이버 카페 · 다낭 아지트 루나 - 다낭맛집, 다낭마사지, 호이안, 다낭여행",
-   "date": "2026-11-03T14:18:02.174Z",
-   "dateFound": true,
-   "found": "2026-11-03",
-   "cards": [],
-   "airlines": [
-    "TW"
-   ],
-   "countries": [
-    "태국",
-    "일본",
-    "필리핀"
-   ],
-   "allRoutes": true,
-   "routes": [],
-   "price": {
-    "amount": 10000,
-    "trip": "oneway?"
-   },
-   "query": "트리니티항공 이벤트",
-   "notified": "2026-11-06",
-   "ai": {
-    "v": 2,
-    "promo": true,
-    "why": "항공사 국제선 운임 할인 프로모션",
-    "airlines": [
-     "트리니티항공"
-    ],
-    "name": "11월 더블 혜택",
-    "book": {
-     "from": "2026-11-01",
-     "to": "2026-11-13"
-    },
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": 25,
-    "seoul": null,
-    "at": "2026-11-12",
-    "model": "deepseek-v4-flash"
-   },
-   "lastDate": "2026-11-24T05:00:40.349Z",
-   "lastFound": "2026-11-24",
-   "more": [
-    {
-     "id": "c:https://cafe.naver.com/paydefense/769|트리니티항공 후쿠오카·오사카·방콕 국제선 얼리버드 1만원대부터 라이브..",
-     "kind": "airline",
-     "community": true,
-     "title": "트리니티항공 후쿠오카·오사카·방콕 국제선 얼리버드 1만원대부터 라이브....",
-     "desc": "27(토) 티웨이 항공 의 새로운 이름, 트리니티항공 국제선 동계 얼리버드 라이브 특가 핫딜입니다.",
-     "summary": [
-      "27(토) 티웨이 항공 의 새로운 이름, 트리니티항공 국제선 동계 얼리버드 라이브 특가 핫딜입니다."
-     ],
-     "link": "https://cafe.naver.com/paydefense/769",
-     "source": "네이버 카페 · [육아메이트] - 엄빠지갑지킴이(임출육아용품 핫딜 아카이브)",
-     "date": "2026-11-04T10:41:50.033Z",
-     "dateFound": true,
-     "found": "2026-11-04",
-     "cards": [],
-     "airlines": [
-      "TW"
-     ],
-     "countries": [
-      "태국",
-      "일본"
-     ],
-     "allRoutes": true,
-     "routes": [],
-     "price": {
-      "amount": 10000,
-      "trip": "oneway?"
-     },
-     "query": "트리니티항공 얼리버드",
-     "notified": "2026-11-06",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "항공사 얼리버드 특가 소식",
-      "airlines": [
-       "트리니티항공"
-      ],
-      "name": "국제선 동계 얼리버드 라이브 특가",
-      "book": null,
-      "board": null,
-      "price": 10000,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/japanpackagetour/13664|트리니티항공 가을 겨울 일본 항공 권 할인 프로모션",
-     "kind": "airline",
-     "community": true,
-     "title": "트리니티항공 가을 겨울 일본 항공 권 할인 프로모션",
-     "desc": "\" 트리니티항공 가을·겨울 국제선 할인\"… 항공 의 날 기념 프로모션 앞서 전해드린 얼리버드 프로모션(OCT26 코드)과 비슷한 코드로 새 행사가 나왔습니다. 헷갈리지 않게 차이점도 짚어드릴게요.",
-     "summary": [
-      "\" 트리니티항공 가을·겨울 국제선 할인\"… 항공 의 날 기념 프로모션 앞서 전해드린 얼리버드 프로모션(OCT26 코드)과 비슷한 코드로 새 행사가 나왔습니다.",
-      "헷갈리지 않게 차이점도 짚어드릴게요."
-     ],
-     "link": "https://cafe.naver.com/japanpackagetour/13664",
-     "source": "네이버 카페 · 일본 패키지여행 카페 (북해도,도쿄,오사카,후쿠오카,요나고)",
-     "date": "2026-11-04T10:41:50.033Z",
-     "dateFound": true,
-     "found": "2026-11-04",
-     "cards": [],
-     "airlines": [
-      "TW"
-     ],
-     "countries": [
-      "일본"
-     ],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "트리니티항공 얼리버드",
-     "notified": "2026-11-06",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "항공사 할인 프로모션 소식",
-      "airlines": [
-       "트리니티항공"
-      ],
-      "name": "가을·겨울 국제선 할인",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/vinpearl/552713|✈️ [특가 소식] 트리니티항공 2027년 초특가 얼리버드 오픈! (최대",
-     "kind": "airline",
-     "community": true,
-     "title": "✈️ [특가 소식] 트리니티항공 2027년 초특가 얼리버드 오픈! (최대 24% 할인....",
-     "desc": "현재 트리니티항공 (Trinity Airways)에서 진행 중인 '국제선 얼리버드 특가 프로모션' 내용 정리해 드립니다.",
-     "summary": [
-      "현재 트리니티항공 (Trinity Airways)에서 진행 중인 '국제선 얼리버드 특가 프로모션' 내용 정리해 드립니다."
-     ],
-     "link": "https://cafe.naver.com/vinpearl/552713",
-     "source": "네이버 카페 · 베트남 피크타임 푸꾸옥 나트랑 다낭 호치민 무이네 하노이 여행",
-     "date": "2026-11-04T10:41:50.033Z",
-     "dateFound": true,
-     "found": "2026-11-04",
-     "cards": [],
-     "airlines": [
-      "TW"
-     ],
-     "countries": [],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "트리니티항공 얼리버드",
-     "notified": "2026-11-06",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "항공사 얼리버드 특가 프로모션",
-      "airlines": [
-       "트리니티항공"
-      ],
-      "name": "국제선 얼리버드 특가 프로모션",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": 24,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/deboracay/255682|[보라카이 항공 ] 보라카이 직항 트리니티항공 ✈️ 얼리버드 이벤트",
-     "kind": "airline",
-     "community": true,
-     "title": "[보라카이 항공 ] 보라카이 직항 트리니티항공 ✈️ 얼리버드 이벤트",
-     "desc": "Since2006 보라카이자유여행 전문 보라카이드보라 현재 유일하게 보라카이 직항 운항중인 트리니티항공 (구) 티웨이 항공 얼리버드 이벤트 합니다!",
-     "summary": [
-      "Since2006 보라카이자유여행 전문 보라카이드보라 현재 유일하게 보라카이 직항 운항중인 트리니티항공 (구) 티웨이 항공 얼리버드 이벤트 합니다!…"
-     ],
-     "link": "https://cafe.naver.com/deboracay/255682",
-     "source": "네이버 카페 · 보라카이 드보라 자유여행",
-     "date": "2026-11-04T10:41:50.033Z",
-     "dateFound": true,
-     "found": "2026-11-04",
-     "cards": [],
-     "airlines": [
-      "TW"
-     ],
-     "countries": [
-      "필리핀"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "트리니티항공 얼리버드",
-     "notified": "2026-11-06",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "트리니티항공 얼리버드 특가",
-      "airlines": [
-       "트리니티항공"
-      ],
-      "name": "얼리버드 이벤트",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/airportshopping/1088|[ 트리니티항공 ] 11월 정기 국제선 할인 프로모션!",
-     "kind": "airline",
-     "community": true,
-     "title": "[ 트리니티항공 ] 11월 정기 국제선 할인 프로모션!",
-     "desc": "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
-     "summary": [
-      "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
-     ],
-     "link": "https://cafe.naver.com/airportshopping/1088",
-     "source": "네이버 카페 · 인천공항의 모든 것",
-     "date": "2026-11-06T05:00:45.112Z",
-     "found": "2026-11-06",
-     "cards": [],
-     "airlines": [
-      "TW"
-     ],
-     "countries": [],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "트리니티항공 할인",
-     "notified": "2026-11-06",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "항공사 국제선 할인 프로모션",
-      "airlines": [
-       "트리니티항공"
-      ],
-      "name": "11월 정기 국제선 할인 프로모션",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/livejob/1212376|트리니티항공 에서 국제선 얼리버드 항공 권 특가가 나와서 공유드립니다!",
-     "kind": "airline",
-     "community": true,
-     "title": "트리니티항공 에서 국제선 얼리버드 항공 권 특가가 나와서 공유드립니다!",
-     "desc": "트리니티항공 국제선 얼리버드 , 정확히 언제까지일까? 이번 프로모션의 가장 중요한 날짜부터 정리해볼게요.",
-     "summary": [
-      "트리니티항공 국제선 얼리버드 , 정확히 언제까지일까? 이번 프로모션의 가장 중요한 날짜부터 정리해볼게요."
-     ],
-     "link": "https://cafe.naver.com/livejob/1212376",
-     "source": "네이버 카페 · 여친사▶▶여행도하고 친구도사귀자◀◀ 국내여행,여행맛집",
-     "date": "2026-11-09T11:00:48.524Z",
-     "found": "2026-11-09",
-     "cards": [],
-     "airlines": [
-      "TW"
-     ],
-     "countries": [],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "트리니티항공 얼리버드",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "항공사 얼리버드 특가 공유",
-      "airlines": [
-       "트리니티항공"
-      ],
-      "name": "국제선 얼리버드 특가",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/airportshopping/952|[ 트리니티항공 ] 국제선 얼리버드 특가!",
-     "kind": "airline",
-     "community": true,
-     "title": "[ 트리니티항공 ] 국제선 얼리버드 특가!",
-     "desc": "자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
-     "summary": [
-      "자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
-     ],
-     "link": "https://cafe.naver.com/airportshopping/952",
-     "source": "네이버 카페 · 인천공항의 모든 것",
-     "date": "2026-11-09T11:00:48.524Z",
-     "found": "2026-11-09",
-     "cards": [],
-     "airlines": [
-      "TW"
-     ],
-     "countries": [],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "트리니티항공 얼리버드",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "트리니티항공 국제선 얼리버드 특가",
-      "airlines": [
-       "트리니티항공"
-      ],
-      "name": "국제선 얼리버드 특가",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/airportshopping/1105|[ 트리니티항공 ] 부산, 대구, 청주, 제주에서 출발하는 우리 동네 할",
-     "kind": "airline",
-     "community": true,
-     "title": "[ 트리니티항공 ] 부산, 대구, 청주, 제주에서 출발하는 우리 동네 할인 !",
-     "desc": "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
-     "summary": [
-      "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
-     ],
-     "link": "https://cafe.naver.com/airportshopping/1105",
-     "source": "네이버 카페 · 인천공항의 모든 것",
-     "date": "2026-11-10T05:00:46.618Z",
-     "found": "2026-11-10",
-     "cards": [],
-     "airlines": [
-      "TW"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "트리니티항공 할인",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "항공사 지방 출발 할인 프로모션",
-      "airlines": [
-       "트리니티항공"
-      ],
-      "name": "우리 동네 할인",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": false,
-      "at": "2026-11-12",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/airplanetiket/1359|트리니티항공 블프 세일",
-     "kind": "airline",
-     "community": true,
-     "title": "트리니티항공 블프 세일",
-     "desc": "",
-     "link": "https://cafe.naver.com/airplanetiket/1359",
-     "source": "네이버 카페 · 항공특가정보",
-     "date": "2026-11-16T03:00:48.126Z",
-     "found": "2026-11-16",
-     "cards": [],
-     "airlines": [
-      "TW"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "트리니티항공 특가",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "항공사 블프 특가 소식",
-      "airlines": [
-       "트리니티항공"
-      ],
-      "name": "블프 세일",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-16",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/djmomschools/193|✈️ [여행·핫딜] 트리니티 항공 (구 티웨이) 2026 블랙 프라이데이",
-     "kind": "airline",
-     "community": true,
-     "title": "✈️ [여행·핫딜] 트리니티 항공 (구 티웨이) 2026 블랙 프라이데이! 2027년 항....",
-     "desc": "여행 항공권 을 미리 사두는 시즌이네요.",
-     "summary": [
-      "여행 항공권 을 미리 사두는 시즌이네요."
-     ],
-     "link": "https://cafe.naver.com/djmomschools/193",
-     "source": "네이버 카페 · 동작맘스쿨",
-     "date": "2026-11-17T05:00:43.473Z",
-     "found": "2026-11-17",
-     "cards": [],
-     "airlines": [
-      "TW"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "항공권 프로모션 코드",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "항공사 블랙프라이데이 특가 소식",
-      "airlines": [
-       "트리니티항공"
-      ],
-      "name": "2026 블랙 프라이데이",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-17",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/airportshopping/1141|[ 트리니티항공 ] 올해 마지막 방콕, 치앙마이 최대 할인 !",
-     "kind": "airline",
-     "community": true,
-     "title": "[ 트리니티항공 ] 올해 마지막 방콕, 치앙마이 최대 할인 !",
-     "desc": "▼자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
-     "summary": [
-      "▼자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
-     ],
-     "link": "https://cafe.naver.com/airportshopping/1141",
-     "source": "네이버 카페 · 인천공항의 모든 것",
-     "date": "2026-11-17T05:00:43.473Z",
-     "found": "2026-11-17",
-     "cards": [],
-     "airlines": [
-      "TW"
-     ],
-     "countries": [
-      "태국"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "트리니티항공 할인",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "트리니티항공 방콕·치앙마이 특가",
-      "airlines": [
-       "트리니티항공"
-      ],
-      "name": "올해 마지막 방콕, 치앙마이 최대 할인",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-17",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/airportshopping/1139|[ 트리니티항공 ] 지금, 제주를 만나다. ( 최대 2만원 할인 프로모션",
-     "kind": "airline",
-     "community": true,
-     "title": "[ 트리니티항공 ] 지금, 제주를 만나다. ( 최대 2만원 할인 프로모션 )",
-     "desc": "▼자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
-     "summary": [
-      "▼자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
-     ],
-     "link": "https://cafe.naver.com/airportshopping/1139",
-     "source": "네이버 카페 · 인천공항의 모든 것",
-     "date": "2026-11-17T05:00:43.473Z",
-     "found": "2026-11-17",
-     "cards": [],
-     "airlines": [
-      "TW"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "트리니티항공 할인",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "항공사 할인 프로모션 소식",
-      "airlines": [
-       "트리니티항공"
-      ],
-      "name": "지금, 제주를 만나다",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-17",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/deboracay/255965|[보라카이 항공 권] 트리니티항공 '블랙프라이데이' 할인",
-     "kind": "airline",
-     "community": true,
-     "title": "[보라카이 항공 권] 트리니티항공 '블랙프라이데이' 할인",
-     "desc": "",
-     "link": "https://cafe.naver.com/deboracay/255965",
-     "source": "네이버 카페 · 보라카이 드보라 자유여행",
-     "date": "2026-11-17T13:00:46.212Z",
-     "found": "2026-11-17",
-     "cards": [],
-     "airlines": [
-      "TW"
-     ],
-     "countries": [
-      "필리핀"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "트리니티항공 할인",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "트리니티항공 블랙프라이데이 항공권 할인",
-      "airlines": [
-       "트리니티항공"
-      ],
-      "name": "블랙프라이데이",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-17",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/airportshopping/1162|[ 트리니티항공 ] 11월-1월 출발 한정! 국제선 특가 !",
-     "kind": "airline",
-     "community": true,
-     "title": "[ 트리니티항공 ] 11월-1월 출발 한정! 국제선 특가 !",
-     "desc": "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
-     "summary": [
-      "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
-     ],
-     "link": "https://cafe.naver.com/airportshopping/1162",
-     "source": "네이버 카페 · 인천공항의 모든 것",
-     "date": "2026-11-20T05:00:43.396Z",
-     "found": "2026-11-20",
-     "cards": [],
-     "airlines": [
-      "TW"
-     ],
-     "countries": [],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "트리니티항공 특가",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "항공사 국제선 특가 프로모션",
-      "airlines": [
-       "트리니티항공"
-      ],
-      "name": "11월-1월 출발 한정 국제선 특가",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-20",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/thaiinfo/681762|트리니티항공 , 국제선 겨울 시즌 특가",
-     "kind": "airline",
-     "community": true,
-     "title": "트리니티항공 , 국제선 겨울 시즌 특가",
-     "desc": "",
-     "link": "https://cafe.naver.com/thaiinfo/681762",
-     "source": "네이버 카페 · 태초의 태국정보(태국자유여행/방콕/푸켓/파타야/크라비/사무이)",
-     "date": "2026-11-23T05:00:42.080Z",
-     "found": "2026-11-23",
-     "cards": [],
-     "airlines": [
-      "TW"
-     ],
-     "countries": [],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "트리니티항공 특가",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "항공사 겨울 시즌 특가 소식",
-      "airlines": [
-       "트리니티항공"
-      ],
-      "name": "국제선 겨울 시즌 특가",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-23",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/joonggonara/1138627217|트리니티항공 1만원 할인 쿠폰 (15만원 이상 결제 시)",
-     "kind": "airline",
-     "community": true,
-     "title": "트리니티항공 1만원 할인 쿠폰 (15만원 이상 결제 시)",
-     "desc": "",
-     "link": "https://cafe.naver.com/joonggonara/1138627217",
-     "source": "네이버 카페 · 중고나라",
-     "date": "2026-11-24T05:00:40.349Z",
-     "found": "2026-11-24",
-     "cards": [],
-     "airlines": [
-      "TW"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": {
-      "amount": 150000,
-      "trip": "oneway?"
-     },
-     "query": "트리니티항공 할인",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "항공권 결제 할인 쿠폰",
-      "airlines": [
-       "트리니티항공"
-      ],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-24",
-      "model": "deepseek-v4-flash"
-     }
-    }
-   ]
   },
   {
    "id": "c:https://cafe.naver.com/happyibook/6364954|비엣젯 블랙프라이데이! 편도 총액 129,000원~ (11/25~27)",
@@ -50601,24 +50827,24 @@
    "lastFound": "2026-11-04"
   }
  ],
- "updated": "2026-11-24T13:00:44.983Z",
- "runs": 294,
+ "updated": "2026-11-24T20:54:32.112Z",
+ "runs": 295,
  "checked": {
-  "베트남": "2026-11-24T13:00:44.983Z",
-  "태국": "2026-11-24T13:00:44.983Z",
-  "필리핀": "2026-11-24T13:00:44.983Z",
-  "인도네시아": "2026-11-24T13:00:44.983Z",
-  "말레이시아": "2026-11-24T13:00:44.983Z",
-  "싱가포르": "2026-11-24T13:00:44.983Z",
-  "일본": "2026-11-24T13:00:44.983Z",
-  "대만": "2026-11-24T13:00:44.983Z",
-  "홍콩": "2026-11-24T13:00:44.983Z",
-  "마카오": "2026-11-24T13:00:44.983Z",
-  "중국": "2026-11-24T13:00:44.983Z",
-  "미국령": "2026-11-24T13:00:44.983Z",
-  "미국": "2026-11-24T13:00:44.983Z"
+  "베트남": "2026-11-24T20:54:32.112Z",
+  "태국": "2026-11-24T20:54:32.112Z",
+  "필리핀": "2026-11-24T20:54:32.112Z",
+  "인도네시아": "2026-11-24T20:54:32.112Z",
+  "말레이시아": "2026-11-24T20:54:32.112Z",
+  "싱가포르": "2026-11-24T20:54:32.112Z",
+  "일본": "2026-11-24T20:54:32.112Z",
+  "대만": "2026-11-24T20:54:32.112Z",
+  "홍콩": "2026-11-24T20:54:32.112Z",
+  "마카오": "2026-11-24T20:54:32.112Z",
+  "중국": "2026-11-24T20:54:32.112Z",
+  "미국령": "2026-11-24T20:54:32.112Z",
+  "미국": "2026-11-24T20:54:32.112Z"
  },
- "auto": "2026-11-24T13:00:44.983Z",
+ "auto": "2026-11-24T20:54:32.112Z",
  "sources": {
   "7C": "2026-11-01",
   "TW": "2026-11-01",
@@ -50831,124 +51057,6 @@
    "중국동방항공 얼리버드": "2026-11-04"
   },
   "seen": [
-   "joonggonara/1138367945",
-   "pickleballmart/200",
-   "chinatripatoz/32628",
-   "jpnstory/4448284",
-   "momsolleh/932161",
-   "lnf/421213",
-   "worrytodream/1016781",
-   "worldtravelcafe/1168251",
-   "worldtravelcafe/1168249",
-   "mindy7857/5539698",
-   "cafemakecafebest/102009",
-   "gjts/683",
-   "grownman/1186853",
-   "tybwondergirl5/117323",
-   "mindy7857/5539689",
-   "warcraftgamemap/3538688",
-   "hawaiiphoto/1616951",
-   "lifemarket000/598",
-   "uouv96/116956",
-   "withwar/50983",
-   "worrytodream/1016874",
-   "worrytodream/1016864",
-   "worrytodream/1016856",
-   "worrytodream/1016705",
-   "worrytodream/1016455",
-   "redniy3y/13263",
-   "stockschart/2664027",
-   "urisports/14786",
-   "mindy7857/5539734",
-   "mindy7857/5539801",
-   "loyaltylife/370427",
-   "010freebaram/263477",
-   "joonggonara/1138372110",
-   "010freebaram/263478",
-   "smtelecom2018/4368",
-   "danjeonglee/3885",
-   "gorillaresearch/39635",
-   "joonggonara/1138372043",
-   "joonggonara/1138372035",
-   "joonggonara/1138372017",
-   "joonggonara/1138371980",
-   "danjeonglee/3883",
-   "happyibook/6359953",
-   "vinpearl/571867",
-   "minecraftpe/4019263",
-   "dh2424/412",
-   "worrytodream/1017523",
-   "lifemarket002/607",
-   "dgmom365/7441163",
-   "zeradev/16377",
-   "010freebaram/263483",
-   "lifemarket001/424",
-   "tlsxh/4275449",
-   "worldtravelcafe/1168285",
-   "todaybigboss/6801",
-   "worldtravelcafe/1168283",
-   "lnf/421481",
-   "worldtravelcafe/1168278",
-   "joonggonara/1138375685",
-   "worldtravelcafe/1168277",
-   "20daelee/953639",
-   "worldtravelcafe/1168273",
-   "dngd/42247",
-   "vinpearl/571904",
-   "mindy7857/5539924",
-   "mindy7857/5539812",
-   "worrytodream/1017649",
-   "uouv96/117005",
-   "taiwantour/1159852",
-   "dailytour1/4781",
-   "postmore/108957",
-   "010freebaram/263494",
-   "anyi/319712",
-   "tlsxh/4275739",
-   "codud8134/726488",
-   "pusanmommy/1581863",
-   "codud8134/726487",
-   "codud8134/726486",
-   "codud8134/726485",
-   "mkas1/2044781",
-   "010freebaram/263503",
-   "dlxogns01/450988",
-   "ranceali/112937",
-   "loveinangeles/12625",
-   "loyaltylife/370415",
-   "orbisasset/10307",
-   "fintechwarehouse/163662",
-   "gocampsaha/28681",
-   "joshuasky/55986",
-   "joonggonara/1138372886",
-   "ungsangjang/887509",
-   "hexenyang/76186",
-   "postmore/108958",
-   "loveloveloveovelove/1043321",
-   "army58cafe/1470259",
-   "mindy7857/5539943",
-   "mindy7857/5539896",
-   "vinpearl/571919",
-   "vinpearl/571906",
-   "vinpearl/571902",
-   "lnf/421359",
-   "warcraftgamemap/3538788",
-   "ysm5828/9651127",
-   "happyibook/6359987",
-   "lnf/421282",
-   "warcraftgamemap/3538816",
-   "ysm5828/9651154",
-   "warcraftgamemap/3538792",
-   "worrytodream/1017682",
-   "blss486/2312",
-   "uouv96/117003",
-   "hotengnet/986859",
-   "amateurmagician/118614",
-   "dailymoneymagazine/224",
-   "huntingsniper/8558",
-   "worrytodream/1017763",
-   "lifemarket000/602",
-   "yoehang/732640",
    "postmore/108975",
    "hayate1/1658733",
    "aiastock/98",
@@ -56830,7 +56938,125 @@
    "squaresever/38701",
    "loyaltylife/371727",
    "worrytodream/1058914",
-   "bebettergirls/2104184"
+   "bebettergirls/2104184",
+   "worrytodream/1062435",
+   "stickcommuity/3888",
+   "cafebeautyup/172822",
+   "zldnrloo/2380",
+   "zldnrloo/2373",
+   "skybluelnccx/2382",
+   "gotovn/8394",
+   "stickcommuity/3886",
+   "leander/4575",
+   "20stars/32132",
+   "dngd/63338",
+   "zldnrloo/2340",
+   "cafebeautyup/172809",
+   "dngd/62234",
+   "stickcommuity/3818",
+   "cafebeautyup/172810",
+   "mindy7857/5548924",
+   "mindy7857/5549048",
+   "marverlove/377843",
+   "worldtravelcafe/1169846",
+   "worldtravelcafe/1169826",
+   "loyaltylife/370348",
+   "greenb0k6k/201792",
+   "010freebaram/266434",
+   "teammsf/4397",
+   "joonggonara/1138660974",
+   "010freebaram/266475",
+   "010freebaram/266474",
+   "joonggonara/1138659875",
+   "010freebaram/266438",
+   "joonggonara/1138659177",
+   "joonggonara/1138658980",
+   "joonggonara/1138658144",
+   "nwsznike/183",
+   "pusanmommy/1585533",
+   "nwsznike/182",
+   "maplestorytbd/11410",
+   "joonggonara/1138662306",
+   "skybluelnccx/2357",
+   "worldtravelcafe/1169845",
+   "zmzm6506/88349",
+   "joonggonara/1138655557",
+   "jejutip/2684159",
+   "medigood1/3855",
+   "gnalovestar/5978",
+   "kudonet/260608",
+   "academia8851/425",
+   "masanmam/7571221",
+   "newsbrief/6814",
+   "mindy7857/5548978",
+   "mindy7857/5548960",
+   "mindy7857/5548833",
+   "bawool/32194",
+   "leander/4548",
+   "saint24/200199",
+   "jmsong0829/77135",
+   "gotovn/8372",
+   "leander/4531",
+   "gotovn/8366",
+   "minecraftpe/4022563",
+   "happyibook/6365685",
+   "warcraftgamemap/3543310",
+   "warcraftgamemap/3543309",
+   "minecraftpe/4022566",
+   "ysm5828/9653613",
+   "warcraftgamemap/3543296",
+   "nctownnet11/218549",
+   "warcraftgamemap/3543283",
+   "vinpearl/574511",
+   "maplestorytbd/11401",
+   "hawaiiphoto/1618328",
+   "thaiinfo/681915",
+   "yudetrip0/787",
+   "leander/4565",
+   "cafebeautyup/172817",
+   "skybluelnccx/2361",
+   "homemadedrink/3345",
+   "tomaline/768",
+   "jjambae/20993",
+   "greenb0k6k/201791",
+   "skybluelnccx/2324",
+   "20stars/32101",
+   "cheepboracay/865027",
+   "grownman/1192946",
+   "shimmergames/6267",
+   "jmsong0829/77140",
+   "worrytodream/1060635",
+   "jpnstory/4453716",
+   "jpnstory/4453709",
+   "bluelf9ox/9855",
+   "010freebaram/266465",
+   "andersonkr/143155",
+   "springflowersister/4784",
+   "joonggonara/1138663267",
+   "bluelf9ox/9867",
+   "grayifxei/1251",
+   "joonggonara/1138661657",
+   "andersonkr/143316",
+   "dentalsolution2/38721",
+   "shimmergames/6250",
+   "bluesmwjy/132",
+   "greenxmmjl/129",
+   "brisbanefleamarket/377901",
+   "worrytodream/1062285",
+   "worrytodream/1061775",
+   "worrytodream/1061643",
+   "worrytodream/1061547",
+   "imsanbu/80607497",
+   "worrytodream/1060721",
+   "worrytodream/1060573",
+   "b00k2012/1719067",
+   "bluelf9ox/9876",
+   "sannoeul/45218",
+   "hassrd/30858",
+   "kitchenerwaterloo/56477",
+   "warcraftgamemap/3543219",
+   "leander/4451",
+   "basketstock/15"
   ],
   "since": "2026-11-03",
   "imported": "2026-11-03"
