@@ -1,6 +1,35 @@
 [
  {
   "at": "2026-11-24",
+  "title": "항공권 25% 할인·해외여행 100만원 뚝! 블랙프라이데이 여행 특가 풍성",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "국제선 항공권 25% 할인 특가",
+   "airlines": [],
+   "name": "블랙프라이데이 특가",
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": 25,
+   "seoul": null,
+   "at": "2026-11-24",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": 25,
+   "price": 1000000
+  },
+  "diff": [
+   "가격 규칙 1000000 / AI -"
+  ]
+ },
+ {
+  "at": "2026-11-24",
   "title": "\" 항공권 25% 할인 ·해외여행 100만원 뚝!\"… 블랙프라이데이 여행 특가 ...",
   "community": false,
   "ai": {
@@ -10447,46 +10476,5 @@
    "price": null
   },
   "diff": []
- },
- {
-  "at": "2026-11-17",
-  "title": "제주항공, 2027 대입 수험생 할인 이벤트",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "국내선 수험생 할인, 국제선 아님",
-   "airlines": [
-    "제주항공"
-   ],
-   "name": "2027 대입 수험생 할인 이벤트",
-   "book": {
-    "from": null,
-    "to": "2026-12-16"
-   },
-   "board": {
-    "from": null,
-    "to": "2027-02-25"
-   },
-   "price": null,
-   "trip": null,
-   "pct": 20,
-   "seoul": null,
-   "at": "2026-11-17",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": {
-    "from": null,
-    "to": "2027-02-25"
-   },
-   "pct": 20,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님",
-   "예약 마감 규칙 - / AI 2026-12-16"
-  ]
  }
 ]
