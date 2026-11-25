@@ -1,6 +1,76 @@
 [
  {
   "at": "2026-11-25",
+  "title": "인스타그램 팔로워 늘수록 할인 폭 커진다···트리니티항공, SNS 이벤트",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "국제선 운임 할인 쿠폰 이벤트",
+   "airlines": [
+    "트리니티항공"
+   ],
+   "name": "팔로워 할인 쿠폰 오픈 이벤트",
+   "book": {
+    "from": null,
+    "to": "2026-11-29"
+   },
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-25",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": null,
+    "to": "2026-11-29"
+   },
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-25",
+  "title": "트리니티항공, 인스타그램 팔로우 '할인 쿠폰 오픈 이벤트' 진행",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "국제선 할인 쿠폰 이벤트",
+   "airlines": [
+    "트리니티항공"
+   ],
+   "name": "인스타그램 팔로우 할인 쿠폰 오픈 이벤트",
+   "book": {
+    "from": null,
+    "to": "2026-11-29"
+   },
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-25",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": null,
+    "to": "2026-11-29"
+   },
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-25",
   "title": "비엣젯 항공 특가",
   "community": true,
   "ai": {
@@ -10579,76 +10649,6 @@
     "from": null,
     "to": "2026-12-31"
    },
-   "board": null,
-   "pct": 9,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-18",
-  "title": "제주항공, 수험생 할인...최대 ‘20%’ 할인",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "수험생 국내선 운임 20% 할인",
-   "airlines": [
-    "제주항공"
-   ],
-   "name": "수험생 할인",
-   "book": {
-    "from": null,
-    "to": "2026-12-16"
-   },
-   "board": {
-    "from": null,
-    "to": "2027-02-25"
-   },
-   "price": null,
-   "trip": null,
-   "pct": 20,
-   "seoul": true,
-   "at": "2026-11-18",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2026-12-16"
-   },
-   "board": {
-    "from": null,
-    "to": "2027-02-25"
-   },
-   "pct": 20,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-18",
-  "title": "트리니티항공 , 페이팔 결제 시 항공 권 최대 9% 할인",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "페이팔 결제 항공권 할인 프로모션",
-   "airlines": [
-    "트리니티항공"
-   ],
-   "name": "페이팔 결제 프로모션",
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": 9,
-   "seoul": null,
-   "at": "2026-11-18",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
    "board": null,
    "pct": 9,
    "price": null
