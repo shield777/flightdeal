@@ -1,6 +1,35 @@
 [
  {
   "at": "2026-11-26",
+  "title": "보홀 특가 항공 권, 지금 제주항공 에 떴네요! (12월달 항공 권)",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "제주항공 보홀 특가 항공권 소식",
+   "airlines": [
+    "제주항공"
+   ],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-26",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-26",
   "title": "[ 트리니티항공 ] 일본·아시아·유럽 등 국제선 동계 항공 권 핫딜 특가 (선착....",
   "community": true,
   "ai": {
@@ -10607,34 +10636,5 @@
    "예약 마감 규칙 - / AI 2026-12-16",
    "할인율 규칙 9 / AI -"
   ]
- },
- {
-  "at": "2026-11-18",
-  "title": "트리니티항공 , 해외 인바운드 고객 항공 권 할인 혜택…페이팔과 맞손",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "해외 고객 항공권 결제 할인 프로모션",
-   "airlines": [
-    "트리니티항공"
-   ],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-18",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": []
  }
 ]
