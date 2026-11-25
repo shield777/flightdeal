@@ -1,5 +1,46 @@
 [
  {
+  "at": "2026-11-26",
+  "title": "항공사들이 블랙프라이데이 특가 행사를 시작합니다: 항공권 0 VND부터, 최대 20% 할인.",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "블랙프라이데이 항공권 특가·할인",
+   "airlines": [
+    "비엣젯항공",
+    "베트남항공"
+   ],
+   "name": "블랙프라이데이 특가",
+   "book": {
+    "from": "2026-11-25",
+    "to": "2026-11-27"
+   },
+   "board": {
+    "from": "2027-01-04",
+    "to": "2027-05-31"
+   },
+   "price": null,
+   "trip": null,
+   "pct": 20,
+   "seoul": null,
+   "at": "2026-11-26",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2026-11-25",
+    "to": "2026-11-28"
+   },
+   "board": null,
+   "pct": 20,
+   "price": null
+  },
+  "diff": [
+   "예약 마감 규칙 2026-11-28 / AI 2026-11-27"
+  ]
+ },
+ {
   "at": "2026-11-25",
   "title": "에어부산 국제선 특가",
   "community": true,
@@ -10604,47 +10645,6 @@
    },
    "board": null,
    "pct": 9,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-18",
-  "title": "트리니티항공 , 태국 공동 프로모션 ...신규 회원 대상 혜택 마련",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "항공사 특가·할인코드 프로모션",
-   "airlines": [
-    "트리니티항공"
-   ],
-   "name": "태국 공동 프로모션",
-   "book": {
-    "from": null,
-    "to": "2026-12-13"
-   },
-   "board": {
-    "from": null,
-    "to": "2027-03-27"
-   },
-   "price": null,
-   "trip": null,
-   "pct": 20,
-   "seoul": true,
-   "at": "2026-11-18",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2026-12-13"
-   },
-   "board": {
-    "from": null,
-    "to": "2027-03-27"
-   },
-   "pct": 20,
    "price": null
   },
   "diff": []
