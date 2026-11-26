@@ -1,6 +1,41 @@
 [
  {
   "at": "2026-11-26",
+  "title": "카타르항공, 블랙프라이데이 항공권 최대 20% 할인…29일까지",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "항공권 운임 할인 프로모션",
+   "airlines": [
+    "카타르항공"
+   ],
+   "name": "블랙프라이데이",
+   "book": {
+    "from": null,
+    "to": "2026-11-29"
+   },
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": 20,
+   "seoul": null,
+   "at": "2026-11-26",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": null,
+    "to": "2026-11-29"
+   },
+   "board": null,
+   "pct": 20,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-26",
   "title": "타이 비엣젯 특가",
   "community": true,
   "ai": {
@@ -10696,35 +10731,6 @@
    "book": null,
    "board": null,
    "pct": 20,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-18",
-  "title": "에어서울 특가 항공권 11월 프로모션(마이리얼트립)",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "에어서울 항공권 특가 프로모션",
-   "airlines": [
-    "에어서울"
-   ],
-   "name": "에어서울 11월 프로모션",
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": "왕복",
-   "pct": null,
-   "seoul": true,
-   "at": "2026-11-18",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
    "price": null
   },
   "diff": []
