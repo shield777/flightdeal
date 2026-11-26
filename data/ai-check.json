@@ -1,6 +1,216 @@
 [
  {
   "at": "2026-11-26",
+  "title": "타이 비엣젯 특가",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "비엣젯 블프 특가 소식",
+   "airlines": [
+    "비엣젯"
+   ],
+   "name": "Black Friday Mega Deals",
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-26",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-26",
+  "title": "괌 관광청, 대한항공과 겨울시즌 공동 프로모션 진행",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "여행사 특가 항공권 프로모션",
+   "airlines": [
+    "대한항공"
+   ],
+   "name": "겨울시즌 공동 프로모션",
+   "book": {
+    "from": "2026-11-10",
+    "to": "2027-01-10"
+   },
+   "board": {
+    "from": "2026-11-10",
+    "to": "2027-03-31"
+   },
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": true,
+   "at": "2026-11-26",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2026-11-10",
+    "to": "2027-01-10"
+   },
+   "board": {
+    "from": "2026-11-10",
+    "to": "2027-03-31"
+   },
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-26",
+  "title": "에어부산 과연 대 특가 일까..",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "에어부산 특가 소식",
+   "airlines": [
+    "에어부산"
+   ],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-26",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-26",
+  "title": "제주항공 보홀 5일 더스토리 슬림 반자유 36만 원대 시내관광 불쇼 일정 분....",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "패키지 여행 상품 글",
+   "airlines": [],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-26",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님"
+  ]
+ },
+ {
+  "at": "2026-11-26",
+  "title": "괌정부관광청, 대한항공과 겨울 시즌 특가 항공권 프로모션",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "대한항공 겨울 특가 항공권 프로모션",
+   "airlines": [
+    "대한항공"
+   ],
+   "name": "겨울 시즌 특가 항공권 프로모션",
+   "book": {
+    "from": "2026-11-10",
+    "to": "2027-01-10"
+   },
+   "board": {
+    "from": "2026-11-10",
+    "to": "2027-03-31"
+   },
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": true,
+   "at": "2026-11-26",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2026-11-10",
+    "to": "2027-01-10"
+   },
+   "board": {
+    "from": "2026-11-10",
+    "to": "2027-03-31"
+   },
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-26",
+  "title": "괌정부관광청, 대한항공·여행사 10곳과 겨울 공동 프로모션",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "괌 노선 항공권 특가 프로모션",
+   "airlines": [
+    "대한항공"
+   ],
+   "name": "겨울 공동 프로모션",
+   "book": {
+    "from": null,
+    "to": "2027-01-10"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-03-31"
+   },
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": true,
+   "at": "2026-11-26",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": null,
+    "to": "2027-01-10"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-03-31"
+   },
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-26",
   "title": "괌정부관광청·대한항공, 겨울철 괌 여행 공동 프로모션",
   "community": false,
   "ai": {
@@ -10518,207 +10728,5 @@
    "price": null
   },
   "diff": []
- },
- {
-  "at": "2026-11-18",
-  "title": "✈️ [제주 항공 특가] 내년 3월 출발 항공권 할인 ! 다낭·나트랑 포함 최대 79....",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "제주항공 3월 출발 항공권 할인 특가",
-   "airlines": [
-    "제주항공"
-   ],
-   "name": null,
-   "book": null,
-   "board": {
-    "from": "2027-03-01",
-    "to": "2027-03-31"
-   },
-   "price": null,
-   "trip": null,
-   "pct": 79,
-   "seoul": null,
-   "at": "2026-11-18",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": [
-   "할인율 규칙 - / AI 79"
-  ]
- },
- {
-  "at": "2026-11-18",
-  "title": "“군 복무 수고했어요”…車 7일 시승부터 항공권 할인·AI 교육까지",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "에어프레미아 군인 항공운임 할인",
-   "airlines": [
-    "에어프레미아"
-   ],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": 12,
-   "seoul": null,
-   "at": "2026-11-18",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2026-12-31"
-   },
-   "board": null,
-   "pct": 12,
-   "price": null
-  },
-  "diff": [
-   "예약 마감 규칙 2026-12-31 / AI -"
-  ]
- },
- {
-  "at": "2026-11-18",
-  "title": "수능 AI 부정에 지친 수험생들 떠나세요…LCC, 항공권 할인 경쟁",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "수험생 항공권 할인 프로모션",
-   "airlines": [
-    "제주항공",
-    "이스타항공",
-    "트리니티항공"
-   ],
-   "name": "수험생 항공권 할인 프로모션",
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": 25,
-   "seoul": null,
-   "at": "2026-11-18",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": 25,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-18",
-  "title": "이스타항공 얼리버드 특가 내년 1-2월",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "이스타항공 얼리버드 특가",
-   "airlines": [
-    "이스타항공"
-   ],
-   "name": "얼리버드 특가",
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-18",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-18",
-  "title": "❤️❤️ 제주항공 멤버스 위크 특가 ❤️❤️",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "제주항공 특가 프로모션 안내",
-   "airlines": [
-    "제주항공"
-   ],
-   "name": "멤버스 위크 특가",
-   "book": {
-    "from": "2026-11-18",
-    "to": "2026-11-24"
-   },
-   "board": {
-    "from": "2027-03-01",
-    "to": "2027-03-27"
-   },
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-18",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": [
-   "예약 마감 규칙 - / AI 2026-11-24"
-  ]
- },
- {
-  "at": "2026-11-18",
-  "title": "제주항공 , 3월 출발 특가",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "제주항공 3월 출발 특가 예약 안내",
-   "airlines": [
-    "제주항공"
-   ],
-   "name": "3월 출발 특가",
-   "book": {
-    "from": "2026-11-18",
-    "to": "2026-11-24"
-   },
-   "board": {
-    "from": "2027-03-01",
-    "to": "2027-03-27"
-   },
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-18",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": [
-   "예약 마감 규칙 - / AI 2026-11-24"
-  ]
  }
 ]
