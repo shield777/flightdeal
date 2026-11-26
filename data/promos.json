@@ -1,6 +1,138 @@
 {
  "items": [
   {
+   "id": "c:https://cafe.naver.com/airplanetiket/294|스쿠트 항공 세일",
+   "kind": "airline",
+   "community": true,
+   "title": "스쿠트 항공 세일",
+   "desc": "",
+   "link": "https://cafe.naver.com/airplanetiket/294",
+   "source": "네이버 카페 · 항공특가정보",
+   "date": "2026-11-26T14:32:18.334Z",
+   "found": "2026-11-26",
+   "cards": [],
+   "airlines": [
+    "TR",
+    "7C",
+    "SQ"
+   ],
+   "countries": [
+    "싱가포르"
+   ],
+   "allRoutes": false,
+   "routes": [],
+   "price": null,
+   "query": "스쿠트 세일",
+   "ai": {
+    "v": 2,
+    "promo": true,
+    "why": "스쿠트 항공 세일 소식",
+    "airlines": [
+     "스쿠트항공"
+    ],
+    "name": null,
+    "book": null,
+    "board": null,
+    "price": null,
+    "trip": null,
+    "pct": null,
+    "seoul": null,
+    "at": "2026-11-26",
+    "model": "deepseek-v4-flash"
+   },
+   "lastDate": "2026-11-26T14:32:18.334Z",
+   "lastFound": "2026-11-26",
+   "more": [
+    {
+     "id": "c:https://cafe.naver.com/disneyadventure/1056|싱가포르항공, 스쿠트 항공, 제주항공 할인!",
+     "kind": "airline",
+     "community": true,
+     "title": "싱가포르항공, 스쿠트 항공, 제주항공 할인!",
+     "desc": "스쿠트 항공 할인 행사기간 : 2026.10.23.~30 할인대상 : 아래 캡처 참조 원문 : 인스타 @gyominnews 제주항공 2월 출발 특가 ❄️ 특가 항공권 ✔ 프로모션 기간 : 2026.",
+     "summary": [
+      "스쿠트 항공 할인 행사기간 : 2026.10.23.~30 할인대상 : 아래 캡처 참조 원문 : 인스타 @gyominnews 제주항공 2월 출발 특가 ❄️ 특가 항공권 ✔ 프로모션 기간 : 2026."
+     ],
+     "link": "https://cafe.naver.com/disneyadventure/1056",
+     "source": "네이버 카페 · [디즈니 어드벤처] 디즈니 크루즈, 디즈니랜드",
+     "date": "2026-11-26T14:32:18.334Z",
+     "found": "2026-11-26",
+     "cards": [],
+     "airlines": [
+      "7C",
+      "TR",
+      "SQ"
+     ],
+     "countries": [
+      "싱가포르"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "스쿠트 프로모션",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "항공사 할인 특가 소식",
+      "airlines": [
+       "싱가포르항공",
+       "스쿠트항공",
+       "제주항공"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-26",
+      "model": "deepseek-v4-flash"
+     }
+    }
+   ]
+  },
+  {
+   "id": "c:https://cafe.naver.com/goodinfo53/2428|김포제주 항공권 가격 비교, 특가 예매 전 꼭 확인할 것들",
+   "kind": "airline",
+   "community": true,
+   "title": "김포제주 항공권 가격 비교, 특가 예매 전 꼭 확인할 것들",
+   "desc": "이스타 항공 쪽에서는 김포-제주 구간 27,000원대 할인 운임이 소개된 적이 있고, 제주 항공권 을 다룬 비교 글들에서는 2만원대 예약 사례도 함께 언급됐습니다.",
+   "summary": [
+    "이스타 항공 쪽에서는 김포-제주 구간 27,000원대 할인 운임이 소개된 적이 있고, 제주 항공권 을 다룬 비교 글들에서는 2만원대 예약 사례도 함께 언급됐습니다."
+   ],
+   "link": "https://cafe.naver.com/goodinfo53/2428",
+   "source": "네이버 카페 · 믿고보는 정보공간",
+   "date": "2026-11-26T14:32:18.334Z",
+   "found": "2026-11-26",
+   "cards": [],
+   "airlines": [],
+   "countries": [],
+   "allRoutes": false,
+   "routes": [],
+   "price": {
+    "amount": 20000,
+    "trip": "oneway?"
+   },
+   "query": "항공권 할인코드",
+   "ai": {
+    "v": 2,
+    "promo": false,
+    "why": "국내선 가격 비교·정보 글",
+    "airlines": [],
+    "name": null,
+    "book": null,
+    "board": null,
+    "price": null,
+    "trip": null,
+    "pct": null,
+    "seoul": true,
+    "at": "2026-11-26",
+    "model": "deepseek-v4-flash"
+   },
+   "lastDate": "2026-11-26T14:32:18.334Z",
+   "lastFound": "2026-11-26"
+  },
+  {
    "id": "https://www.geconomy.co.kr/news/article.html|“올해 마지막 여행, 혜택은 두 배로”… 노랑풍선, 연말·내년 초 특가 ",
    "kind": "airline",
    "title": "“올해 마지막 여행, 혜택은 두 배로”… 노랑풍선, 연말·내년 초 특가 ...",
@@ -51936,764 +52068,26 @@
      }
     }
    ]
-  },
-  {
-   "id": "https://www.press9.kr/news/articleView.html|우리카드, 'the OPUS' 고객에 150만원 항공 바우처 추첨",
-   "kind": "card",
-   "title": "우리카드, 'the OPUS' 고객에 150만원 항공 바우처 추첨",
-   "desc": "[프레스나인] 우리카드가 프리미엄 카드 'the OPUS' 고객을 대상으로 최대 150만원 상당의 항공 바우처와 호텔 숙박권 등을 증정하는 연말 이벤트를 진행한다. 3일 우리카드에 따르면 이번 행사는 ...",
-   "summary": [
-    "[프레스나인] 우리카드가 프리미엄 카드 'the OPUS' 고객을 대상으로 최대 150만원 상당의 항공 바우처와 호텔 숙박권 등을 증정하는 연말 이벤트를 진행한다.",
-    "3일 우리카드에 따르면 이번 행사는…"
-   ],
-   "link": "https://www.press9.kr/news/articleView.html?idxno=85479",
-   "source": "press9",
-   "date": "2026-11-02T12:57:00.000Z",
-   "found": "2026-11-03",
-   "cards": [
-    "우리카드"
-   ],
-   "airlines": [
-    "WE",
-    "7C",
-    "KE"
-   ],
-   "countries": [
-    "일본",
-    "베트남",
-    "필리핀",
-    "중국"
-   ],
-   "allRoutes": true,
-   "routes": [],
-   "price": {
-    "amount": 1000000,
-    "trip": "round"
-   },
-   "query": "우리카드 항공권 할인",
-   "bodyAt": "2026-11-03",
-   "body": [
-    "[프레스나인] 우리카드가 프리미엄 카드 'the OPUS' 고객을 대상으로 최대 150만원 상당의 항공 바우처와 호텔 숙박권 등을 증정하는 연말 이벤트를 진행한다.",
-    "3일 우리카드에 따르면 이번 행사는 오는 30일까지 'the OPUS silver', 'the OPUS blue', 'the OPUS silver biz' 이용 고객을 대상으로 진행된다.",
-    "행사 기간 100만원 이상 이용한 고객 가운데 추첨을 통해 총 24명에게 경품을 제공한다.",
-    "1명에게는 150만원 상당의 동남아 2인 왕복 항공 바우처를, 3명에게는 각각 50만원 상당의 국내 프리미엄 호텔 숙박 바우처를 증정한다.",
-    "나머지 20명에게는 10만원 상당의 호텔 외식 이용권을 지급한다.",
-    "상품별로 'the OPUS silver'는 특급호텔과 면세점, 골프장, 항공 등 주요 영역에서 최대 3%, 국내 전 가맹점에서 1%를 적립해 준다.",
-    "'the OPUS blue'는 항공·호텔·해외 이용 등에서 3%, 국내 전 가맹점에서 1%의 적립 혜택을 제공한다."
-   ],
-   "ai": {
-    "v": 2,
-    "cv": 3,
-    "card": {
-     "ok": false,
-     "why": "경품 추첨 이벤트, 결제 할인 아님",
-     "cards": [
-      "우리카드"
-     ],
-     "use": null,
-     "airlines": [],
-     "countries": [],
-     "amount": null,
-     "pct": null,
-     "min": null,
-     "period": null
-    },
-    "at": "2026-11-13",
-    "model": "deepseek-v4-flash"
-   },
-   "lastDate": "2026-11-06T02:27:00.000Z",
-   "lastFound": "2026-11-07",
-   "more": [
-    {
-     "id": "https://www.todaymild.com/news/articleView.html|우리카드 'the OPUS' 고객 대상 연말 프리미엄 이벤트 실시",
-     "kind": "card",
-     "title": "우리카드 'the OPUS' 고객 대상 연말 프리미엄 이벤트 실시",
-     "desc": "[마일드경제 이수경 기자] 우리금융그룹 계열사인 우리카드(사장 진성원)는 프리미엄 카드 'the OPUS' 시리즈 고객을 대상으로 항공·호텔 숙박 바우처와 외식 이용권 등을 제공하는 연말 이벤트를 실시한다고 3일 밝혔다.이번 이벤트는 오는 30일까지 'the OPUS silver', ...",
-     "summary": [
-      "우리금융그룹 계열사인 우리카드(사장 진성원)는 프리미엄 카드 'the OPUS' 시리즈 고객을 대상으로 항공·호텔 숙박 바우처와 외식 이용권 등을 제공하는 연말 이벤트를 실시한다고 3일 밝혔다.",
-      "이번 이벤트는 오는 30일까지 'the OPUS silver',…"
-     ],
-     "link": "https://www.todaymild.com/news/articleView.html?idxno=40629",
-     "source": "마일드경제",
-     "date": "2026-11-03T15:31:00.000Z",
-     "found": "2026-11-04",
-     "cards": [
-      "우리카드"
-     ],
-     "airlines": [],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "우리카드 해외여행 할인",
-     "bodyAt": "2026-11-04",
-     "body": [
-      "이번 이벤트는 오는 30일까지 'the OPUS silver', 'the OPUS blue', 'the OPUS silver biz' 이용 고객을 대상으로 진행된다.",
-      "행사 기간 중 100만 원 이상 이용한 고객 가운데 추첨을 통해",
-      "동남아 2인 왕복 항공 바우처(1명, 150만 원 상당)",
-      "국내 프리미엄 호텔 숙박 바우처(3명, 50만 원 상당)",
-      "국내 프리미엄 호텔 외식 이용권(20명, 10만 원 상당)을 증정한다.",
-      "상품별로 'the OPUS silver'는 특급호텔·면세점·골프장·항공 등 주요 프리미엄 영역에서 최대 3%, 국내 전 가맹점에서 1%를 적립한다.",
-      "'the OPUS blue'는 항공·호텔·면세점·골프·해외 이용 등 다양한 영역에서 3%, 국내 전 가맹점에서 1%를 적립한다."
-     ],
-     "ai": {
-      "v": 2,
-      "cv": 3,
-      "card": {
-       "ok": false,
-       "why": "경품 추첨 이벤트·적립 소개",
-       "cards": [
-        "우리카드"
-       ],
-       "use": null,
-       "airlines": [],
-       "countries": [],
-       "amount": null,
-       "pct": null,
-       "min": null,
-       "period": null
-      },
-      "at": "2026-11-13",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "https://www.meconomynews.com/news/articleView.html|우리카드, 'the OPUS' 고객 대상 연말 프리미엄 이벤트",
-     "kind": "card",
-     "title": "우리카드, 'the OPUS' 고객 대상 연말 프리미엄 이벤트",
-     "desc": "기사의 본문 내용은 이 글자크기로 변경됩니다. [시장경제신문 = 유경표 기자] 우리카드가 프리미엄 카드 'the OPUS' 시리즈 고객을 대상으로 항공·호텔 숙박 바우처와 외식 이용권 등을 제공하는 ...",
-     "summary": [
-      "기사의 본문 내용은 이 글자크기로 변경됩니다.",
-      "[시장경제신문 = 유경표 기자] 우리카드가 프리미엄 카드 'the OPUS' 시리즈 고객을 대상으로 항공·호텔 숙박 바우처와 외식 이용권 등을 제공하는…"
-     ],
-     "link": "https://www.meconomynews.com/news/articleView.html?idxno=203217",
-     "source": "meconomynews",
-     "date": "2026-11-02T12:33:00.000Z",
-     "found": "2026-11-03",
-     "cards": [
-      "우리카드"
-     ],
-     "airlines": [],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "우리카드 항공권 할인",
-     "bodyAt": "2026-11-03",
-     "body": [
-      "입력 2026.11.03 10:34",
-      "이번 이벤트는 이달 말까지 the OPUS 실버(silver), the OPUS 블루(blue), the OPUS 실버 비즈(silver biz) 이용 고객을 대상으로 진행된다.",
-      "행사 기간 중 100만원 이상 이용한 고객 가운데 추첨을 통해",
-      "동남아 2인 왕복 항공 바우처(1명, 150만원 상당)",
-      "국내 프리미엄 호텔 숙박 바우처(3명, 50만원 상당)",
-      "국내 프리미엄 호텔 외식 이용권(20명, 10만원 상당)을 증정한다.",
-      "각 상품별로 실버는 특급호텔·면세점·골프장·항공 등 주요 프리미엄 영역에서 최대 3%, 국내 전 가맹점에서 1%를 적립한다.",
-      "블루는 항공·호텔·면세점·골프·해외 이용 등 다양한 영역에서 3%, 국내 전 가맹점에서 1%를 적립해준다."
-     ],
-     "ai": {
-      "v": 2,
-      "cv": 3,
-      "card": {
-       "ok": false,
-       "why": "경품 추첨 이벤트·적립 소개",
-       "cards": [
-        "우리카드"
-       ],
-       "use": null,
-       "airlines": [],
-       "countries": [],
-       "amount": null,
-       "pct": null,
-       "min": null,
-       "period": null
-      },
-      "at": "2026-11-13",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "https://www.mirae-biz.com/news/articleView.html|우리카드, 프리미엄 고객 연말 지갑 잡는다…항공권·특급호텔 경품 이벤트",
-     "kind": "card",
-     "title": "우리카드, 프리미엄 고객 연말 지갑 잡는다…항공권·특급호텔 경품 이벤트",
-     "desc": "[미래경제 김대희 기자] 우리카드가 프리미엄 카드 고객을 대상으로 항공권과 특급호텔 숙박권 등을 내건 연말 마케팅에 나선다. 여행과 외식 등 프리미엄 소비 수요를 겨냥해 기존 고객의 카드 ...",
-     "summary": [
-      "우리카드가 프리미엄 카드 고객을 대상으로 항공권과 특급호텔 숙박권 등을 내건 연말 마케팅에 나선다.",
-      "여행과 외식 등 프리미엄 소비 수요를 겨냥해 기존 고객의 카드…"
-     ],
-     "link": "https://www.mirae-biz.com/news/articleView.html?idxno=113156",
-     "source": "mirae-biz",
-     "date": "2026-11-02T18:10:00.000Z",
-     "found": "2026-11-03",
-     "cards": [
-      "우리카드"
-     ],
-     "airlines": [],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "우리카드 항공권 할인",
-     "bodyAt": "2026-11-03",
-     "body": [
-      "이달 말까지 행사 기간 중 누적 100만원 이상 카드를 이용한 고객 가운데 추첨을 통해 경품을 제공한다.",
-      "당첨자에게는 150만원 상당의 동남아 2인 왕복 항공 바우처(1명), 50만원 상당의 국내 프리미엄 호텔 숙박 바우처(3명), 10만원 상당의 국내 프리미엄 호텔 외식 이용권(20명)이 제공된다.",
-      "'the OPUS silver'는 특급호텔과 면세점, 골프장, 항공 등 주요 프리미엄 영역에서 최대 3%를 적립하고 국내 전 가맹점에서는 1%를 적립한다.",
-      "'the OPUS blue'는 항공과 호텔, 면세점, 골프, 해외 이용 등에서 3%, 국내 전 가맹점에서 1%를 적립한다.",
-      "개인 고객뿐 아니라 사업자 고객까지 프리미엄 카드 고객층으로 확보하려는 상품 구성이다."
-     ],
-     "ai": {
-      "v": 2,
-      "cv": 3,
-      "card": {
-       "ok": false,
-       "why": "경품 추첨·적립 소개, 결제 할인 아님",
-       "cards": [
-        "우리카드"
-       ],
-       "use": null,
-       "airlines": [],
-       "countries": [],
-       "amount": null,
-       "pct": null,
-       "min": null,
-       "period": null
-      },
-      "at": "2026-11-13",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "https://www.beyondpost.co.kr/view.php|우리카드, 'the OPUS' 고객 대상 연말 이벤트…항공·호텔 바우처 ",
-     "kind": "card",
-     "title": "우리카드, 'the OPUS' 고객 대상 연말 이벤트…항공·호텔 바우처 증정",
-     "desc": "[비욘드포스트 신용승 기자] 우리카드가 프리미엄 카드 'the OPUS' 고객을 대상으로 항공·호텔 숙박 바우처와 외식 이용권을 제공하는 연말 이벤트를 진행한다. 행사 기간 100만원 이상 이용 고객에게는 추첨을 통해 최대 150만원 상당의 동남아 왕복 항공 바우처 등을 증정한다. 3일 우리카드는 프리미엄 카드 'the OPUS' 시리즈 고객을 대상으로 항 ...",
-     "summary": [
-      "우리카드가 프리미엄 카드 'the OPUS' 고객을 대상으로 항공·호텔 숙박 바우처와 외식 이용권을 제공하는 연말 이벤트를 진행한다.",
-      "행사 기간 100만원 이상 이용 고객에게는 추첨을 통해 최대 150만원 상당의 동남아 왕복 항공 바우처 등을 증정한다.",
-      "3일 우리카드는 프리미엄 카드 'the OPUS' 시리즈 고객을 대상으로 항…"
-     ],
-     "link": "https://www.beyondpost.co.kr/view.php?ud=202611031355399446be44c0aacd_30",
-     "source": "beyondpost",
-     "date": "2026-11-03T05:58:00.000Z",
-     "found": "2026-11-04",
-     "cards": [
-      "우리카드"
-     ],
-     "airlines": [],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": {
-      "amount": 1000000,
-      "trip": "round"
-     },
-     "query": "우리카드 항공권 할인",
-     "bodyAt": "2026-11-04",
-     "body": [
-      "행사 기간 100만원 이상 이용 고객에게는 추첨을 통해 최대 150만원 상당의 동남아 왕복 항공 바우처 등을 증정한다.",
-      "이번 이벤트는 이달 말까지 'the OPUS silver', 'the OPUS blue', 'the OPUS silver biz' 이용 고객을 대상으로 진행된다.",
-      "행사 기간 100만원 이상 이용한 고객 가운데 추첨을 통해 동남아 2인 왕복 항공 바우처 1명, 국내 프리미엄 호텔 숙박 바우처 3명, 국내 프리미엄 호텔 외식 이용권 20명에게 경품을 제공한다.",
-      "항공 바우처는 150만원, 호텔 숙박 바우처는 50만원, 외식 이용권은 10만원 상당이다.",
-      "the OPUS silver는 특급호텔·면세점·골프장·항공 등 주요 프리미엄 영역에서 최대 3%, 국내 전 가맹점에서 1%를 적립한다.",
-      "the OPUS blue는 항공·호텔·면세점·골프·해외 이용 등에서 3%, 국내 전 가맹점에서 1%를 적립한다."
-     ],
-     "ai": {
-      "v": 2,
-      "cv": 3,
-      "card": {
-       "ok": false,
-       "why": "경품 추첨 이벤트·적립 소개",
-       "cards": [
-        "우리카드"
-       ],
-       "use": null,
-       "airlines": [],
-       "countries": [],
-       "amount": null,
-       "pct": null,
-       "min": null,
-       "period": null
-      },
-      "at": "2026-11-13",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "va0lwV3NGXzgwcWgzdUs4REZiMV9QbWg0TWJBaEtBaVdzYU5WbmdqaEFPOFJUTy1QMm1RTkJIS0tGUnB4d3V0TDNLT3NGdmctcTNUSlVxQ1NMbXlUWXZGMlk|동남아 항공권부터 특급호텔 숙박권까지…우리카드 'the OPUS' 연말 ",
-     "kind": "card",
-     "title": "동남아 항공권부터 특급호텔 숙박권까지…우리카드 'the OPUS' 연말 이벤트",
-     "desc": "동남아 항공권부터 특급호텔 숙박권까지…우리카드 'the OPUS' 연말 이벤트 매일일보",
-     "summary": [
-      "동남아 항공권부터 특급호텔 숙박권까지…우리카드 'the OPUS' 연말 이벤트 매일일보…"
-     ],
-     "link": "https://www.m-i.kr/news/articleView.html?idxno=2013646",
-     "source": "매일일보",
-     "date": "2026-11-03T05:58:13.000Z",
-     "found": "2026-11-03",
-     "cards": [
-      "우리카드"
-     ],
-     "airlines": [],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "중국 항공권 {특가말}",
-     "bodyAt": "2026-11-03",
-     "body": [
-      "이번 이벤트는 이달 말까지 'the OPUS silver'와 'the OPUS blue', 'the OPUS silver biz' 이용 고객을 대상으로 진행된다.",
-      "행사 기간 중 100만원 이상 이용한 고객 가운데 추첨을 통해 동남아 2인 왕복 항공 바우처(1명, 150만원 상당)와 국내 프리미엄 호텔 숙박 바우처(3명, 50만원 상당), 국내 프리미엄 호텔 외식 이용권(20명, 10만원 상당)을 증정한다.",
-      "상품별로 'the OPUS silver'는 특급호텔·면세점·골프장·항공 등 주요 프리미엄 영역에서 최대 3%, 국내 전 가맹점에서 1%를 적립한다.",
-      "'the OPUS blue'는 항공·호텔·면세점·골프·해외 이용 등 다양한 영역에서 3%, 국내 전 가맹점에서 1%를 적립한다."
-     ],
-     "ai": {
-      "v": 2,
-      "cv": 3,
-      "card": {
-       "ok": false,
-       "why": "경품 추첨·적립률 소개",
-       "cards": [
-        "우리카드"
-       ],
-       "use": null,
-       "airlines": [],
-       "countries": [],
-       "amount": null,
-       "pct": null,
-       "min": null,
-       "period": null
-      },
-      "at": "2026-11-13",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "https://www.kgnews.co.kr/news/article.html|우리카드 ‘디 오퍼스’ 100만 원 쓰면 추첨…항공·호텔 바우처 제공",
-     "kind": "card",
-     "title": "우리카드 ‘디 오퍼스’ 100만 원 쓰면 추첨…항공·호텔 바우처 제공",
-     "desc": "우리카드가 이달 말까지 프리미엄 카드 ‘디 오퍼스(the OPUS)’로 100만 원 이상 이용한 고객 중 24명을 추첨해 항공·호텔 바우처와 외식 이용권을 제공한다. 우리카드는 ‘디 오퍼스 실버’, ‘디 오퍼스 블루’, ‘디 오퍼스 실버 비즈’ 고객을 대상으로 연말 이벤트를 진행한다고 3일 밝혔다. 경품은 동남아 2인 왕복 항공 바우처 150만 원 상당(1 ...",
-     "summary": [
-      "우리카드가 이달 말까지 프리미엄 카드 ‘디 오퍼스(the OPUS)’로 100만 원 이상 이용한 고객 중 24명을 추첨해 항공·호텔 바우처와 외식 이용권을 제공한다.",
-      "우리카드는 ‘디 오퍼스 실버’, ‘디 오퍼스 블루’, ‘디 오퍼스 실버 비즈’ 고객을 대상으로 연말 이벤트를 진행한다고 3일 밝혔다.",
-      "경품은 동남아 2인 왕복 항공 바우처 150만 원 상당(1…"
-     ],
-     "link": "https://www.kgnews.co.kr/news/article.html?no=917921",
-     "source": "경기신문",
-     "date": "2026-11-03T08:13:00.000Z",
-     "found": "2026-11-04",
-     "cards": [
-      "우리카드"
-     ],
-     "airlines": [],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": {
-      "amount": 1500000,
-      "trip": "round"
-     },
-     "query": "우리카드 해외여행 할인",
-     "bodyAt": "2026-11-04",
-     "body": [
-      "우리카드가 이달 말까지 프리미엄 카드 ‘디 오퍼스(the OPUS)’로 100만 원 이상 이용한 고객 중 24명을 추첨해 항공·호텔 바우처와 외식 이용권을 제공한다.",
-      "경품은 동남아 2인 왕복 항공 바우처 150만 원 상당(1명), 국내 프리미엄 호텔 숙박 바우처 50만 원 상당(3명), 국내 프리미엄 호텔 외식 이용권 10만 원 상당(20명)이다.",
-      "실버는 특급호텔·면세점·골프장·항공 등에서 최대 3%, 국내 전 가맹점에서 1%를 적립한다.",
-      "블루의 적립률은 항공·호텔·면세점·골프·해외 이용 등에서 3%, 국내 전 가맹점에서 1%다."
-     ],
-     "ai": {
-      "v": 2,
-      "cv": 3,
-      "card": {
-       "ok": false,
-       "why": "경품 추첨 이벤트, 결제 할인 아님",
-       "cards": [
-        "우리카드"
-       ],
-       "use": null,
-       "airlines": [],
-       "countries": [],
-       "amount": null,
-       "pct": null,
-       "min": null,
-       "period": null
-      },
-      "at": "2026-11-13",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "https://www.bizwnews.com/news/articleView.html|우리카드, ‘the OPUS’ 고객 ‘연말 프리미엄 이벤트’ 실시",
-     "kind": "card",
-     "title": "우리카드, ‘the OPUS’ 고객 ‘연말 프리미엄 이벤트’ 실시",
-     "desc": "[비즈월드] 우리카드(사장 진성원)는 프리미엄 카드 ‘the OPUS’ 시리즈 고객을 대상으로 항공·호텔 숙박 바우처와 외식 이용권 등을 제공하는 연말 이벤트를 한다고 밝혔다.7일 우리카드에 따르면 이번 이벤트는 이달 말까지 ‘the OPUS silver’ ‘the OPUS blue’ ‘the OPUS silver biz’ 이용 고객을 대상으로 진행된다.행 ...",
-     "summary": [
-      "[비즈월드] 우리카드(사장 진성원)는 프리미엄 카드 ‘the OPUS’ 시리즈 고객을 대상으로 항공·호텔 숙박 바우처와 외식 이용권 등을 제공하는 연말 이벤트를 한다고 밝혔다.",
-      "7일 우리카드에 따르면 이번 이벤트는 이달 말까지 ‘the OPUS silver’ ‘the OPUS blue’ ‘the OPUS silver biz’ 이용 고객을 대상으로 진행된다."
-     ],
-     "link": "https://www.bizwnews.com/news/articleView.html?idxno=150928",
-     "source": "비즈월드",
-     "date": "2026-11-06T02:27:00.000Z",
-     "found": "2026-11-07",
-     "cards": [
-      "우리카드"
-     ],
-     "airlines": [],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "우리카드 항공권 할인",
-     "bodyAt": "2026-11-07",
-     "body": [
-      "7일 우리카드에 따르면 이번 이벤트는 이달 말까지 ‘the OPUS silver’ ‘the OPUS blue’ ‘the OPUS silver biz’ 이용 고객을 대상으로 진행된다.",
-      "행사 기간 중 100만원 이상 이용한 고객 가운데 추첨해",
-      "동남아 2인 왕복 항공 바우처(1명, 150만원 상당)",
-      "국내 프리미엄 호텔 숙박 바우처(3명, 50만원 상당)",
-      "국내 프리미엄 호텔 외식 이용권(20명, 10만원 상당)을 증정한다.",
-      "상품별로 the OPUS silver는 특급호텔·면세점·골프장·항공 등 주요 프리미엄 영역에서 최대 3%, 국내 전 가맹점에서 1%를 적립한다.",
-      "the OPUS blue는 항공·호텔·면세점·골프·해외 이용 등 다양한 영역에서 3%, 국내 전 가맹점에서 1%를 적립한다."
-     ],
-     "ai": {
-      "v": 2,
-      "cv": 3,
-      "card": {
-       "ok": false,
-       "why": "경품 추첨 이벤트·적립 소개",
-       "cards": [
-        "우리카드"
-       ],
-       "use": null,
-       "airlines": [],
-       "countries": [],
-       "amount": null,
-       "pct": null,
-       "min": null,
-       "period": null
-      },
-      "at": "2026-11-13",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "https://sateconomy.co.kr/news/view/1065600732042776|하나카드, 베트남 결제 할인…우리카드, 연말 경품 이벤트",
-     "kind": "card",
-     "title": "하나카드, 베트남 결제 할인…우리카드, 연말 경품 이벤트",
-     "desc": "하나카드와 우리카드가 해외 결제 할인과 프리미엄 카드 고객 대상 경품 이벤트를 진행한다. 3일 카드업계에 따르면 하나카드는 비자(Visa), 롯데마트 베트남과 함께 현지 결제 할인 행사를 시작했으며 우리카드는 프리미엄 카드 'the OPUS' 시리즈 이용 고객을 대상으로 항공·호텔 바우처 등을 제공하는 이벤트를 실시한다. 하나카드는 이날부터 내년 1월 31 ...",
-     "summary": [
-      "하나카드와 우리카드가 해외 결제 할인과 프리미엄 카드 고객 대상 경품 이벤트를 진행한다.",
-      "3일 카드업계에 따르면 하나카드는 비자(Visa), 롯데마트 베트남과 함께 현지 결제 할인 행사를 시작했으며 우리카드는 프리미엄 카드 'the OPUS' 시리즈 이용 고객을 대상으로 항공·호텔 바우처 등을 제공하는 이벤트를 실시한다.",
-      "하나카드는 이날부터 내년 1월 31…"
-     ],
-     "link": "https://sateconomy.co.kr/news/view/1065600732042776",
-     "source": "토요경제",
-     "date": "2026-11-02T19:16:00.000Z",
-     "found": "2026-11-03",
-     "cards": [
-      "우리카드"
-     ],
-     "airlines": [],
-     "countries": [
-      "베트남"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "우리카드 항공권 할인",
-     "bodyAt": "2026-11-03",
-     "body": [
-      "하나카드는 이날부터 내년 1월 31일까지 베트남 롯데마트 전 매장에서 일정 금액 이상 결제한 고객에게 즉시할인 혜택을 제공한다.",
-      "행사에 응모한 고객이 대상 카드로 그린SM(Green SM)과 콩카페(Cộng Cà Phê)에서 각각 행사 기간 중 원화 기준 합산 1만원 이상 결제하면 가맹점별로 5000 하나머니를 지급한다.",
-      "이와 별도로 하나카드는 비자 브랜드 고객을 대상으로 오는 12월 31일까지 그랩(Grab) 트래블패스를 무료로 제공한다.",
-      "트래블GO 체크카드 고객에게는 오는 30일까지 베트남 그랩에서 사용할 수 있는 4만동 즉시할인 쿠폰을 최대 5장 제공한다.",
-      "우리카드는 이달 말까지 프리미엄 카드 'the OPUS silver', 'the OPUS blue', 'the OPUS silver biz' 이용 고객을 대상으로 연말 경품 이벤트를 진행한다.",
-      "행사 기간 해당 카드로 100만원 이상 이용한 고객 가운데 추첨을 통해 동남아 2인 왕복 항공 바우처(1명·150만원 상당), 국내 프리미엄 호텔 숙박 바우처(3명·50만원 상당), 국내 프리미엄 호텔 외식 이용권(20명·10만원 상당)을 제공한다."
-     ],
-     "ai": {
-      "v": 2,
-      "cv": 3,
-      "card": {
-       "ok": true,
-       "why": "베트남 현지 결제 할인 혜택",
-       "cards": [
-        "하나카드"
-       ],
-       "use": "해외결제",
-       "airlines": [],
-       "countries": [
-        "베트남"
-       ],
-       "amount": 5000,
-       "pct": null,
-       "min": 10000,
-       "period": {
-        "from": "2026-11-03",
-        "to": "2027-01-31"
-       }
-      },
-      "at": "2026-11-13",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "https://www.srtimes.kr/news/articleView.html|우리카드, 프리미엄 고객 연말 소비 겨냥…여행·호텔 경품 행사",
-     "kind": "card",
-     "title": "우리카드, 프리미엄 고객 연말 소비 겨냥…여행·호텔 경품 행사",
-     "desc": "[SRT(에스알 타임스) 유수환 기자] 연말 소비 시즌을 앞두고 카드사들이 프리미엄 고객의 이용액을 끌어올리기 위한 마케팅을 강화하고 있다. 단순 할인이나 적립보다 여행·호텔·외식 등 경험형 ...",
-     "summary": [
-      "[SRT(에스알 타임스) 유수환 기자] 연말 소비 시즌을 앞두고 카드사들이 프리미엄 고객의 이용액을 끌어올리기 위한 마케팅을 강화하고 있다.",
-      "단순 할인이나 적립보다 여행·호텔·외식 등 경험형…"
-     ],
-     "link": "https://www.srtimes.kr/news/articleView.html?idxno=216617",
-     "source": "srtimes",
-     "date": "2026-11-02T19:29:00.000Z",
-     "found": "2026-11-03",
-     "cards": [
-      "우리카드"
-     ],
-     "airlines": [],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "우리카드 항공권 할인",
-     "bodyAt": "2026-11-03",
-     "body": [
-      "행사 기간 해당 카드로 100만원 이상 결제한 고객 가운데 추첨을 통해 당첨자를 선정한다.",
-      "현대카드는 11월 한 달간 프리미엄 카드 회원을 대상으로 주요 특급호텔 패키지를 40% 이상 할인하는 ‘호텔위크 10’을 진행하고 있다.",
-      "우리·KB국민카드 인니 보증료 0.10%인데…신한카드 왜 0.05%"
-     ],
-     "ai": {
-      "v": 2,
-      "cv": 3,
-      "card": {
-       "ok": false,
-       "why": "경품 추첨·호텔 패키지 행사 중심",
-       "cards": [],
-       "use": null,
-       "airlines": [],
-       "countries": [],
-       "amount": null,
-       "pct": null,
-       "min": null,
-       "period": null
-      },
-      "at": "2026-11-13",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "http://www.popcornnews.net/news/articleView.html|우리카드, 'the OPUS' 100만 원 이상 이용 고객에 경품 이벤트",
-     "kind": "card",
-     "title": "우리카드, 'the OPUS' 100만 원 이상 이용 고객에 경품 이벤트 선봬",
-     "desc": "경품 이벤트 를 마련했다. 일정 금액 이상 카드를 이용한 고객에게 추첨을 통해 항공권 과 호텔 숙박 등에... 이벤트 와 상품별 세부 혜택은 우리카드 홈페이지와 우리WON카드 앱에서 확인할 수 있다. 우리카드...",
-     "summary": [
-      "경품 이벤트 를 마련했다.",
-      "일정 금액 이상 카드를 이용한 고객에게 추첨을 통해 항공권 과 호텔 숙박 등에...",
-      "이벤트 와 상품별 세부 혜택은 우리카드 홈페이지와 우리WON카드 앱에서 확인할 수 있다."
-     ],
-     "link": "http://www.popcornnews.net/news/articleView.html?idxno=138506",
-     "source": "네이버 뉴스",
-     "date": "2026-11-03T04:16:00.000Z",
-     "found": "2026-11-04",
-     "cards": [
-      "우리카드"
-     ],
-     "airlines": [],
-     "countries": [
-      "필리핀"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "세부 항공권 {특가말}",
-     "bodyAt": "2026-11-04",
-     "body": [
-      "우리카드는 이달 말까지 ‘the OPUS silver’, ‘the OPUS blue’, ‘the OPUS silver biz’ 고객을 대상으로 이벤트를 진행한다고 3일 밝혔다.",
-      "행사 기간 중 100만 원 이상 이용한 고객 가운데 총 24명을 추첨한다.",
-      "동남아 2인 왕복 항공 바우처 150만 원 상당을 1명에게, 국내 프리미엄 호텔 숙박 바우처 50만 원 상당을 3명에게 제공한다.",
-      "국내 프리미엄 호텔 외식 이용권 10만 원 상당은 20명에게 지급한다."
-     ],
-     "ai": {
-      "v": 2,
-      "cv": 3,
-      "card": {
-       "ok": false,
-       "why": "경품 추첨 이벤트, 결제 할인 아님",
-       "cards": [
-        "우리카드"
-       ],
-       "use": null,
-       "airlines": [],
-       "countries": [],
-       "amount": null,
-       "pct": null,
-       "min": null,
-       "period": null
-      },
-      "at": "2026-11-13",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "https://www.pointdaily.co.kr/news/articleView.html|우리카드, 프리미엄 고객에 항공·호텔 경품 쏜다",
-     "kind": "card",
-     "title": "우리카드, 프리미엄 고객에 항공·호텔 경품 쏜다",
-     "desc": "사진=우리카드 우리카드가 프리미엄 카드 고객을 대상으로 항공권 과 호텔 숙박권 등을 제공하는 연말... 한편 이벤트 와 상품별 세부 혜택은 우리카드 홈페이지와 우리WON카드 앱에서 확인할 수 있다.",
-     "summary": [
-      "사진=우리카드 우리카드가 프리미엄 카드 고객을 대상으로 항공권 과 호텔 숙박권 등을 제공하는 연말...",
-      "한편 이벤트 와 상품별 세부 혜택은 우리카드 홈페이지와 우리WON카드 앱에서 확인할 수 있다."
-     ],
-     "link": "https://www.pointdaily.co.kr/news/articleView.html?idxno=324671",
-     "source": "네이버 뉴스",
-     "date": "2026-11-03T08:12:00.000Z",
-     "found": "2026-11-04",
-     "cards": [
-      "우리카드"
-     ],
-     "airlines": [],
-     "countries": [
-      "필리핀"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "세부 항공권 {특가말}",
-     "bodyAt": "2026-11-04",
-     "body": [
-      "우리금융그룹 계열사인 우리카드는 프리미엄 카드 브랜드 'the OPUS' 시리즈 이용 고객을 대상으로 항공·호텔 숙박 바우처와 외식 이용권 등을 증정하는 이벤트를 이달 말까지 실시한다고 3일 밝혔다.",
-      "행사 기간 100만원 이상 이용한 고객 가운데 추첨을 통해 경품을 제공한다.",
-      "경품은 동남아 2인 왕복 항공 바우처(1명·150만원 상당)와 국내 프리미엄 호텔 숙박 바우처(3명·50만원 상당) 그리고 국내 프리미엄 호텔 외식 이용권(20명·10만원 상당) 등이다.",
-      "상품별로 silver는 특급호텔과 면세점·골프장·항공 등 주요 영역에서 최대 3%를 적립해 주며 국내 전 가맹점에서는 1%를 적립한다.",
-      "blue는 항공·호텔·면세점·골프·해외 이용 등에서 3%를 적립하고 국내 전 가맹점에서 1%를 제공한다."
-     ],
-     "ai": {
-      "v": 2,
-      "cv": 3,
-      "card": {
-       "ok": false,
-       "why": "경품 추첨·적립 소개",
-       "cards": [
-        "우리카드"
-       ],
-       "use": null,
-       "airlines": [],
-       "countries": [],
-       "amount": null,
-       "pct": null,
-       "min": null,
-       "period": null
-      },
-      "at": "2026-11-13",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "https://www.metroseoul.co.kr/article/20261103500240|우리카드, '디 오퍼스' 고객 대상 연말 이벤트",
-     "kind": "card",
-     "title": "우리카드, '디 오퍼스' 고객 대상 연말 이벤트",
-     "desc": "우리카드는 이달 말까지 프리미엄 카드 '디 오퍼스(the OPUS)' 시리즈 고객을 대상으로 항공·호텔 숙박 바우처와 외식 이용권 등을 제공하는 연말 이벤트를 실시한다고 3일 밝혔다. 이벤트는 '디 ...",
-     "summary": [
-      "우리카드는 이달 말까지 프리미엄 카드 '디 오퍼스(the OPUS)' 시리즈 고객을 대상으로 항공·호텔 숙박 바우처와 외식 이용권 등을 제공하는 연말 이벤트를 실시한다고 3일 밝혔다."
-     ],
-     "link": "https://www.metroseoul.co.kr/article/20261103500240",
-     "source": "metroseoul",
-     "date": "2026-11-02T23:16:00.000Z",
-     "found": "2026-11-03",
-     "cards": [
-      "우리카드"
-     ],
-     "airlines": [],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "우리카드 항공권 할인",
-     "bodyAt": "2026-11-03",
-     "ai": {
-      "v": 2,
-      "cv": 3,
-      "card": {
-       "ok": true,
-       "why": "항공·호텔 바우처 제공 이벤트",
-       "cards": [
-        "우리카드"
-       ],
-       "use": "여행예약",
-       "airlines": [],
-       "countries": [],
-       "amount": null,
-       "pct": null,
-       "min": null,
-       "period": {
-        "from": null,
-        "to": "2026-11-30"
-       }
-      },
-      "at": "2026-11-13",
-      "model": "deepseek-v4-flash"
-     }
-    }
-   ]
-  },
-  {
-   "id": "c:https://cafe.naver.com/golftour111/30987|대한 항공 타고 떠나자!⛳ 일본 나가사키 노모자키CC 특가 !",
-   "kind": "airline",
-   "community": true,
-   "title": "대한 항공 타고 떠나자!⛳ 일본 나가사키 노모자키CC 특가 !",
-   "desc": "대한 항공 타고 떠나자! ⛳ 일본 나가사키 노모자키CC 특가 ! 단 1회 진행! 선착순 단 8명!",
-   "summary": [
-    "대한 항공 타고 떠나자! ⛳ 일본 나가사키 노모자키CC 특가 ! 단 1회 진행! 선착순 단 8명!…"
-   ],
-   "link": "https://cafe.naver.com/golftour111/30987",
-   "source": "네이버 카페 · 곰투어(골프)골프조인,국내1박2일골프,해외골프투어",
-   "date": "2026-11-06T01:00:46.339Z",
-   "found": "2026-11-06",
-   "cards": [],
-   "airlines": [],
-   "countries": [
-    "일본"
-   ],
-   "allRoutes": false,
-   "routes": [],
-   "price": null,
-   "query": "제주항공 특가",
-   "ai": {
-    "v": 2,
-    "promo": false,
-    "why": "골프투어 상품 특가",
-    "airlines": [],
-    "name": null,
-    "book": null,
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": null,
-    "seoul": null,
-    "at": "2026-11-12",
-    "model": "deepseek-v4-flash"
-   },
-   "lastDate": "2026-11-06T01:00:46.339Z",
-   "lastFound": "2026-11-06"
   }
  ],
- "updated": "2026-11-26T13:00:43.445Z",
- "runs": 315,
+ "updated": "2026-11-26T14:32:18.334Z",
+ "runs": 316,
  "checked": {
-  "베트남": "2026-11-26T13:00:43.445Z",
-  "태국": "2026-11-26T13:00:43.445Z",
-  "필리핀": "2026-11-26T13:00:43.445Z",
-  "인도네시아": "2026-11-26T13:00:43.445Z",
-  "말레이시아": "2026-11-26T13:00:43.445Z",
-  "싱가포르": "2026-11-26T13:00:43.445Z",
-  "일본": "2026-11-26T13:00:43.445Z",
-  "대만": "2026-11-26T13:00:43.445Z",
-  "홍콩": "2026-11-26T13:00:43.445Z",
-  "마카오": "2026-11-26T13:00:43.445Z",
-  "중국": "2026-11-26T13:00:43.445Z",
-  "미국령": "2026-11-26T13:00:43.445Z",
-  "미국": "2026-11-26T13:00:43.445Z"
+  "베트남": "2026-11-26T14:32:18.334Z",
+  "태국": "2026-11-26T14:32:18.334Z",
+  "필리핀": "2026-11-26T14:32:18.334Z",
+  "인도네시아": "2026-11-26T14:32:18.334Z",
+  "말레이시아": "2026-11-26T14:32:18.334Z",
+  "싱가포르": "2026-11-26T14:32:18.334Z",
+  "일본": "2026-11-26T14:32:18.334Z",
+  "대만": "2026-11-26T14:32:18.334Z",
+  "홍콩": "2026-11-26T14:32:18.334Z",
+  "마카오": "2026-11-26T14:32:18.334Z",
+  "중국": "2026-11-26T14:32:18.334Z",
+  "미국령": "2026-11-26T14:32:18.334Z",
+  "미국": "2026-11-26T14:32:18.334Z"
  },
- "auto": "2026-11-26T13:00:43.445Z",
+ "auto": "2026-11-26T14:32:18.334Z",
  "sources": {
   "7C": "2026-11-01",
   "TW": "2026-11-01",
@@ -52906,111 +52300,6 @@
    "중국동방항공 얼리버드": "2026-11-04"
   },
   "seen": [
-   "remonterrace/35177037",
-   "nyctourdesign/1207325",
-   "loveloveloveovelove/1043791",
-   "ssadassaa/1278",
-   "tossda/3068",
-   "bluefild/35857",
-   "nextravel/278",
-   "skybluenufk8/10676",
-   "uouv96/117681",
-   "bundangsuji22/2899",
-   "engmstudy/3172498",
-   "mnmfreaks/41078",
-   "adelaider/1931",
-   "worldtravelcafe/1168804",
-   "dongkwanggaori/3192",
-   "warcraftgamemap/3540420",
-   "aooniworldse/9266",
-   "dngd/48346",
-   "minecraftpe/4020467",
-   "dentalsolution2/37274",
-   "worrytodream/1030356",
-   "worldtravelcafe/1168826",
-   "dentalsolution2/37253",
-   "mindy7857/5543033",
-   "loyaltylife/370893",
-   "minecraftpe/4020466",
-   "worrytodream/997631",
-   "mindy7857/5507686",
-   "dealcode/451",
-   "dealcode/450",
-   "010freebaram/264505",
-   "welfaredatacenter/4829",
-   "pusanmom/4290744",
-   "cebu100x/1782583",
-   "mindy7857/5543034",
-   "ysm5828/9651945",
-   "happyibook/6361998",
-   "warcraftgamemap/3540401",
-   "warcraftgamemap/3540424",
-   "maplestorytbd/8007",
-   "lifemarket235/660",
-   "lifemarket235/658",
-   "joonggonara/1138469591",
-   "lifemarket002/627",
-   "smartbargain/1891203",
-   "insostorydown/1052",
-   "macaunoblesse/246667",
-   "010freebaram/264506",
-   "lifemarket000/620",
-   "15447184/72",
-   "lifemarket000/619",
-   "daddyvideo/105691",
-   "worrytodream/1030994",
-   "aooniworldse/9280",
-   "worldtravelcafe/1168844",
-   "worldtravelcafe/1168835",
-   "loyaltylife/370906",
-   "worldtravelcafe/1168831",
-   "worldtravelcafe/1168830",
-   "dentalsolution2/37305",
-   "skybluelnccx/1590",
-   "aooniworldse/9270",
-   "dailytour1/4815",
-   "mindy7857/5543168",
-   "mindy7857/5543082",
-   "worrytodream/1030762",
-   "010freebaram/264515",
-   "joonggonara/1138474030",
-   "allichicken/45984",
-   "ofad/3576118",
-   "wegovy1/41733",
-   "yamipapa/9369",
-   "jejudoonemonth/19183",
-   "likebrompton/90156",
-   "busanjungonara/6162925",
-   "joonggonara/1138472390",
-   "joonggonara/1138472376",
-   "joonggonara/1138472349",
-   "joonggonara/1138472308",
-   "joonggonara/1138472302",
-   "joonggonara/1138472285",
-   "joonggonara/1138472260",
-   "joonggonara/1138472241",
-   "joonggonara/1138471582",
-   "tybwondergirl5/113614",
-   "mindy7857/5543124",
-   "warcraftgamemap/3540484",
-   "happyibook/6362058",
-   "happyibook/6362046",
-   "zzop/4352147",
-   "ysm5828/9651947",
-   "happyibook/6362052",
-   "nctownnet11/218075",
-   "minecraftpe/4020502",
-   "worrytodream/1030755",
-   "worrytodream/1030745",
-   "vinpearl/572809",
-   "maplestorytbd/8052",
-   "squaresever/38465",
-   "uouv96/117713",
-   "uouv96/117708",
-   "joonggonara/1138472294",
-   "aiastock/102",
-   "loyaltylife/370896",
-   "guamfree/3015561",
    "loyaltylife/370904",
    "uouv96/117657",
    "squaresever/38463",
@@ -58905,7 +58194,112 @@
    "bawool/32478",
    "leander/5026",
    "bawool/32474",
-   "skybluelnccx/2717"
+   "skybluelnccx/2717",
+   "aooniworldse/11205",
+   "skybluelnccx/2753",
+   "sumonnerdeokoo/122662",
+   "skybluelnccx/2751",
+   "leander/5065",
+   "goodinfo53/2428",
+   "gotovn/8754",
+   "wolhyangfarm/1176",
+   "dealcode/462",
+   "gotovn/8749",
+   "beautycool/471868",
+   "worrytodream/1080315",
+   "mindy7857/5552129",
+   "mindy7857/5552127",
+   "mindy7857/5552121",
+   "mindy7857/5552111",
+   "mindy7857/5552107",
+   "grownman/1193967",
+   "vinpearl/556473",
+   "worldtravelcafe/1170348",
+   "paydefense/769",
+   "grownman/1191273",
+   "canublingbling/995229",
+   "serenstalk/56794",
+   "lovemjkiss/552",
+   "joonggonara/1138754381",
+   "joonggonara/1138753607",
+   "yesboracay/73627",
+   "accdang/95",
+   "flytrimmer/450080",
+   "mindy7857/5552138",
+   "jalanjalanindonesia/291998",
+   "mindy7857/5552122",
+   "worldtravelcafe/1170336",
+   "irisflag/1929720",
+   "mindy7857/5552139",
+   "mindy7857/5552137",
+   "mindy7857/5552136",
+   "mindy7857/5552135",
+   "mindy7857/5552134",
+   "mindy7857/5552132",
+   "mindy7857/5552131",
+   "mindy7857/5552130",
+   "nctownnet11/218784",
+   "warcraftgamemap/3544593",
+   "happyibook/6367695",
+   "mindy7857/5552115",
+   "ysm5828/9654450",
+   "jmsong0829/77257",
+   "mindy7857/5552102",
+   "mindy7857/5552097",
+   "warcraftgamemap/3544564",
+   "happyibook/6367667",
+   "warcraftgamemap/3544577",
+   "warcraftgamemap/3544560",
+   "mindy7857/5552076",
+   "maplestorytbd/7944",
+   "maplestorytbd/7906",
+   "nyctourdesign/1207997",
+   "newjerseymom/69525",
+   "20daelee/948756",
+   "maplestorytbd/7749",
+   "ilovedalat/31682",
+   "sineraria/72222",
+   "airplanetiket/1249",
+   "locofreediving/7281",
+   "loyaltylife/372079",
+   "mindy7857/5552109",
+   "mindy7857/5552101",
+   "freetourincebu/1777",
+   "diyq777/13085",
+   "joonggonara/1138754038",
+   "xiamen/8085",
+   "happyibook/6367643",
+   "kajas/228297",
+   "cantsb/3755064",
+   "freetourincebu/1778",
+   "loveloveloveovelove/1045267",
+   "loveloveloveovelove/1045258",
+   "loveloveloveovelove/1045257",
+   "loveloveloveovelove/1045253",
+   "joonggonara/1138753422",
+   "disneyadventure/1056",
+   "airplanetiket/294",
+   "cafebeautyup/173543",
+   "hobanin11/5463",
+   "joonggonara/1138754365",
+   "minisound/14176",
+   "imsanbu/80622493",
+   "ntredh/934",
+   "andersonkr/144110",
+   "grandmomentwedding/2244",
+   "imsanbu/80622670",
+   "culturebloom/3448561",
+   "bluefild/36594",
+   "worldsuccess777/985459",
+   "zxcv1234/2097",
+   "playtomato/1197102",
+   "hotellife/1366156",
+   "slotmania/3649",
+   "foreverhk/1274722",
+   "foreverhk/1208109",
+   "philhelp/2507",
+   "waateam/166441",
+   "skybluelnccx/2745"
   ],
   "since": "2026-11-03",
   "imported": "2026-11-03"

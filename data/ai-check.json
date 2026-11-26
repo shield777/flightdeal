@@ -1,6 +1,95 @@
 [
  {
   "at": "2026-11-26",
+  "title": "김포제주 항공권 가격 비교, 특가 예매 전 꼭 확인할 것들",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "국내선 가격 비교·정보 글",
+   "airlines": [],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": true,
+   "at": "2026-11-26",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님"
+  ]
+ },
+ {
+  "at": "2026-11-26",
+  "title": "스쿠트 항공 세일",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "스쿠트 항공 세일 소식",
+   "airlines": [
+    "스쿠트항공"
+   ],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-26",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-26",
+  "title": "싱가포르항공, 스쿠트 항공, 제주항공 할인!",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "항공사 할인 특가 소식",
+   "airlines": [
+    "싱가포르항공",
+    "스쿠트항공",
+    "제주항공"
+   ],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-26",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-26",
   "title": "“올해 마지막 여행, 혜택은 두 배로”… 노랑풍선, 연말·내년 초 특가 ...",
   "community": false,
   "ai": {
@@ -10625,111 +10714,6 @@
    "pct": 9,
    "seoul": null,
    "at": "2026-11-19",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2026-12-31"
-   },
-   "board": null,
-   "pct": 9,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-19",
-  "title": "트리니티항공 , 페이팔 결제 시 항공 권 최대 9% 할인 ...해외 고객 공략",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "페이팔 결제 항공권 할인 프로모션",
-   "airlines": [
-    "트리니티항공"
-   ],
-   "name": "페이팔 결제 할인 프로모션",
-   "book": {
-    "from": null,
-    "to": "2026-12-31"
-   },
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": 9,
-   "seoul": null,
-   "at": "2026-11-19",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2026-12-31"
-   },
-   "board": null,
-   "pct": 9,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-18",
-  "title": "제주 항공 J멤버스위크 특가 ✈️ 3월 봄여행 최대 79% 할인 (11/18~11/24)",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "제주항공 특가 프로모션 안내",
-   "airlines": [
-    "제주항공"
-   ],
-   "name": "J멤버스위크 특가",
-   "book": {
-    "from": "2026-11-18",
-    "to": "2026-11-24"
-   },
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": 79,
-   "seoul": null,
-   "at": "2026-11-18",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": "2026-11-18",
-    "to": "2026-11-24"
-   },
-   "board": null,
-   "pct": 79,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-18",
-  "title": "트리니티항공, 글로벌 간편결제 서비스 '페이팔 제휴 프로모션' 진행",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "페이팔 결제 항공권 할인 프로모션",
-   "airlines": [
-    "트리니티항공"
-   ],
-   "name": "페이팔 제휴 프로모션",
-   "book": {
-    "from": null,
-    "to": "2026-12-31"
-   },
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": 9,
-   "seoul": null,
-   "at": "2026-11-18",
    "model": "deepseek-v4-flash"
   },
   "rules": {
