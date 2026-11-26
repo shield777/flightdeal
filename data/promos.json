@@ -1,6 +1,427 @@
 {
  "items": [
   {
+   "id": "c:https://cafe.naver.com/20daelee/954012|대한항공 , 고마쓰 항공 권 10% 할인 프로모션 (~12/20)",
+   "kind": "airline",
+   "community": true,
+   "title": "대한항공 , 고마쓰 항공 권 10% 할인 프로모션 (~12/20)",
+   "desc": "",
+   "link": "https://cafe.naver.com/20daelee/954012",
+   "source": "네이버 카페 · 체크인데이#일본여행,도쿄여행,후쿠오카여행,오사카,교토,삿포로",
+   "date": "2026-11-23T03:00:44.401Z",
+   "found": "2026-11-23",
+   "cards": [],
+   "airlines": [
+    "KE"
+   ],
+   "countries": [
+    "일본"
+   ],
+   "allRoutes": true,
+   "routes": [],
+   "price": {
+    "amount": 50000,
+    "trip": "oneway?"
+   },
+   "query": "대한항공 특가",
+   "ai": {
+    "v": 2,
+    "promo": true,
+    "why": "대한항공 고마쓰 노선 10% 할인 프로모션",
+    "airlines": [
+     "대한항공"
+    ],
+    "name": "고마쓰 항공권 10% 할인 프로모션",
+    "book": {
+     "from": null,
+     "to": "2026-12-20"
+    },
+    "board": null,
+    "price": null,
+    "trip": null,
+    "pct": 10,
+    "seoul": null,
+    "at": "2026-11-23",
+    "model": "deepseek-v4-flash"
+   },
+   "lastDate": "2026-11-26T05:00:54.391Z",
+   "lastFound": "2026-11-26",
+   "more": [
+    {
+     "id": "c:https://cafe.naver.com/airportshopping/1165|[ 대한항공 ] 고마쓰행 항공 권 10% 할인 쿠폰!",
+     "kind": "airline",
+     "community": true,
+     "title": "[ 대한항공 ] 고마쓰행 항공 권 10% 할인 쿠폰!",
+     "desc": "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
+     "summary": [
+      "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
+     ],
+     "link": "https://cafe.naver.com/airportshopping/1165",
+     "source": "네이버 카페 · 인천공항의 모든 것",
+     "date": "2026-11-20T05:00:43.396Z",
+     "found": "2026-11-20",
+     "cards": [],
+     "airlines": [
+      "KE"
+     ],
+     "countries": [
+      "일본"
+     ],
+     "allRoutes": true,
+     "routes": [],
+     "price": {
+      "amount": 50000,
+      "trip": "oneway?"
+     },
+     "query": "대한항공 할인",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "항공권 10% 할인 쿠폰",
+      "airlines": [
+       "대한항공"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": 10,
+      "seoul": null,
+      "at": "2026-11-20",
+      "model": "deepseek-v4-flash"
+     },
+     "notified": "2026-11-20"
+    },
+    {
+     "id": "c:https://cafe.naver.com/hotdealcatch/2410|[이벤트] 대한항공 고마쓰 응모, 기프트카드 5만원 (~12/20)",
+     "kind": "airline",
+     "community": true,
+     "title": "[이벤트] 대한항공 고마쓰 응모, 기프트카드 5만원 (~12/20)",
+     "desc": "대한항공 이시카와현 고마쓰 프로모션인데, 비행기 표 안 사도... 건데, 대한항공 기프트카드 5만원권 20명 추첨이에요.",
+     "summary": [
+      "대한항공 이시카와현 고마쓰 프로모션인데, 비행기 표 안 사도...",
+      "건데, 대한항공 기프트카드 5만원권 20명 추첨이에요."
+     ],
+     "link": "https://cafe.naver.com/hotdealcatch/2410",
+     "source": "네이버 카페 · 핫딜캐치 · 매일 특가와 짠테크",
+     "date": "2026-11-20T07:00:41.100Z",
+     "found": "2026-11-20",
+     "cards": [],
+     "airlines": [
+      "KE"
+     ],
+     "countries": [
+      "일본"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": {
+      "amount": 50000,
+      "trip": "oneway?"
+     },
+     "query": "대한항공 특가",
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "항공권 경품 이벤트",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-20",
+      "model": "deepseek-v4-flash"
+     },
+     "notified": "2026-11-20"
+    },
+    {
+     "id": "c:https://cafe.naver.com/nyctourdesign/1207292|대한항공 뉴어크 취항기념 8% 할인",
+     "kind": "airline",
+     "community": true,
+     "title": "대한항공 뉴어크 취항기념 8% 할인",
+     "desc": "네.",
+     "link": "https://cafe.naver.com/nyctourdesign/1207292",
+     "source": "네이버 카페 · [미여디]No.1 뉴욕,LA,하와이,라스베가스,샌프란시스코 미국여행",
+     "date": "2026-11-20T11:00:49.931Z",
+     "found": "2026-11-20",
+     "cards": [],
+     "airlines": [
+      "KE"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "대한항공 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "대한항공 취항기념 운임 할인",
+      "airlines": [
+       "대한항공"
+      ],
+      "name": "뉴어크 취항기념 8% 할인",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": 8,
+      "seoul": null,
+      "at": "2026-11-20",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/airportshopping/1167|[ 대한항공 ] 뉴욕 신규 취항 기념 항공 권 할인 이벤트!",
+     "kind": "airline",
+     "community": true,
+     "title": "[ 대한항공 ] 뉴욕 신규 취항 기념 항공 권 할인 이벤트!",
+     "desc": "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
+     "summary": [
+      "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
+     ],
+     "link": "https://cafe.naver.com/airportshopping/1167",
+     "source": "네이버 카페 · 인천공항의 모든 것",
+     "date": "2026-11-20T07:00:41.100Z",
+     "found": "2026-11-20",
+     "cards": [],
+     "airlines": [
+      "KE"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "대한항공 프로모션",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "신규 취항 기념 항공권 할인",
+      "airlines": [
+       "대한항공"
+      ],
+      "name": "뉴욕 신규 취항 기념 항공권 할인 이벤트",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-20",
+      "model": "deepseek-v4-flash"
+     },
+     "notified": "2026-11-20"
+    },
+    {
+     "id": "c:https://cafe.naver.com/yamipapa/9460|트립닷컴 대한항공 특가 라이브",
+     "kind": "airline",
+     "community": true,
+     "title": "트립닷컴 대한항공 특가 라이브",
+     "desc": "월요일 오전에 다들 한번 도전해보시죠 다들 싸게싸게 여행 다니시자구요 ㅎ https://kr.trip.com/sale/w/mj1iqfayjdyq81fk/26winterbrandingke.html?locale=ko-KR&transparentBar=1&wkp=1&curr=KRW.",
+     "summary": [
+      "월요일 오전에 다들 한번 도전해보시죠 다들 싸게싸게 여행 다니시자구요 ㅎ https://kr.trip.com/sale/w/mj1iqfayjdyq81fk/26winterbrandingke.html?locale=ko-KR&transp…"
+     ],
+     "link": "https://cafe.naver.com/yamipapa/9460",
+     "source": "네이버 카페 · 야미파파놀이터",
+     "date": "2026-11-22T03:00:42.044Z",
+     "found": "2026-11-22",
+     "cards": [],
+     "airlines": [
+      "KE"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "대한항공 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "트립닷컴 대한항공 특가 라이브",
+      "airlines": [
+       "대한항공"
+      ],
+      "name": "트립닷컴 대한항공 특가 라이브",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-22",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/aosk1020/673|[ 대한항공 ] 트립닷컴 라이브 특가 (11/23)",
+     "kind": "airline",
+     "community": true,
+     "title": "[ 대한항공 ] 트립닷컴 라이브 특가 (11/23)",
+     "desc": "2026.11.23 09:00 대한항공 전세계 여행 특가 라이브 국제선 항공 특가 및 쿠폰 확인해보세요~.",
+     "summary": [
+      "2026.11.23 09:00 대한항공 전세계 여행 특가 라이브 국제선 항공 특가 및 쿠폰 확인해보세요~."
+     ],
+     "link": "https://cafe.naver.com/aosk1020/673",
+     "source": "네이버 카페 · 푸카크 PUKAK - 푸켓, 카오락, 크라비 전문 현지 여행사",
+     "date": "2026-11-23T01:00:40.717Z",
+     "found": "2026-11-23",
+     "cards": [],
+     "airlines": [
+      "KE"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "대한항공 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "항공사 국제선 특가 라이브",
+      "airlines": [
+       "대한항공"
+      ],
+      "name": "트립닷컴 라이브 특가",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-23",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/20daelee/954039|대한항공 기프트카드 5만원 이벤트 참여하세요",
+     "kind": "airline",
+     "community": true,
+     "title": "대한항공 기프트카드 5만원 이벤트 참여하세요",
+     "desc": "대한항공 이벤트 홈페이지 가면 고마쓰 10% 할인 및 경품 이벤트가 있어요 이거 이벤트3에 대한항공 기프트카드 5만원 선물로 주는 이벤트 있습니다 20명 추첨인데 우리가 당첨됩시다!",
+     "summary": [
+      "대한항공 이벤트 홈페이지 가면 고마쓰 10% 할인 및 경품 이벤트가 있어요 이거 이벤트3에 대한항공 기프트카드 5만원 선물로 주는 이벤트 있습니다 20명 추첨인데 우리가 당첨됩시다!…"
+     ],
+     "link": "https://cafe.naver.com/20daelee/954039",
+     "source": "네이버 카페 · 체크인데이#일본여행,도쿄여행,후쿠오카여행,오사카,교토,삿포로",
+     "date": "2026-11-23T05:00:42.080Z",
+     "found": "2026-11-23",
+     "cards": [],
+     "airlines": [
+      "KE"
+     ],
+     "countries": [
+      "일본"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": {
+      "amount": 50000,
+      "trip": "oneway?"
+     },
+     "query": "대한항공 할인",
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "기프트카드 경품 이벤트",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-23",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/guamfree/3016561|어제자로 끝난 노랑풍선 타임 특가 대한항공 슈페리어워터파크뷰 499만원 ",
+     "kind": "airline",
+     "community": true,
+     "title": "어제자로 끝난 노랑풍선 타임 특가 대한항공 슈페리어워터파크뷰 499만원 가....",
+     "desc": "",
+     "link": "https://cafe.naver.com/guamfree/3016561",
+     "source": "네이버 카페 · 괌 자유여행 길잡이",
+     "date": "2026-11-26T05:00:54.391Z",
+     "found": "2026-11-26",
+     "cards": [],
+     "airlines": [
+      "KE"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": {
+      "amount": 4990000,
+      "trip": "oneway?"
+     },
+     "query": "대한항공 특가",
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "이미 끝난 여행사 패키지 특가",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-26",
+      "model": "deepseek-v4-flash"
+     }
+    }
+   ]
+  },
+  {
+   "id": "c:https://cafe.naver.com/djmomschools/234|✈️ [여행·핫딜] ~11/30 겨울·봄방학 특가 ! 여기어때 × 이스타",
+   "kind": "airline",
+   "community": true,
+   "title": "✈️ [여행·핫딜] ~11/30 겨울·봄방학 특가 ! 여기어때 × 이스타항공 해외 전 ....",
+   "desc": "",
+   "link": "https://cafe.naver.com/djmomschools/234",
+   "source": "네이버 카페 · 동작맘스쿨",
+   "date": "2026-11-26T05:00:54.391Z",
+   "found": "2026-11-26",
+   "cards": [],
+   "airlines": [
+    "ZE"
+   ],
+   "countries": [],
+   "allRoutes": false,
+   "routes": [],
+   "price": null,
+   "query": "이스타항공 특가",
+   "ai": {
+    "v": 2,
+    "promo": true,
+    "why": "이스타항공 겨울·봄방학 특가",
+    "airlines": [
+     "이스타항공"
+    ],
+    "name": "겨울·봄방학 특가",
+    "book": {
+     "from": null,
+     "to": "2026-11-30"
+    },
+    "board": null,
+    "price": null,
+    "trip": null,
+    "pct": null,
+    "seoul": null,
+    "at": "2026-11-26",
+    "model": "deepseek-v4-flash"
+   },
+   "lastDate": "2026-11-26T05:00:54.391Z",
+   "lastFound": "2026-11-26"
+  },
+  {
    "id": "c:https://cafe.naver.com/grownman/1183340|✈️제주 항공 : 단, 3일 간! 최대 79% 할인 앵콜 특가 정보",
    "kind": "airline",
    "community": true,
@@ -25355,347 +25776,6 @@
       "pct": null,
       "seoul": null,
       "at": "2026-11-18",
-      "model": "deepseek-v4-flash"
-     }
-    }
-   ]
-  },
-  {
-   "id": "c:https://cafe.naver.com/20daelee/954012|대한항공 , 고마쓰 항공 권 10% 할인 프로모션 (~12/20)",
-   "kind": "airline",
-   "community": true,
-   "title": "대한항공 , 고마쓰 항공 권 10% 할인 프로모션 (~12/20)",
-   "desc": "",
-   "link": "https://cafe.naver.com/20daelee/954012",
-   "source": "네이버 카페 · 체크인데이#일본여행,도쿄여행,후쿠오카여행,오사카,교토,삿포로",
-   "date": "2026-11-23T03:00:44.401Z",
-   "found": "2026-11-23",
-   "cards": [],
-   "airlines": [
-    "KE"
-   ],
-   "countries": [
-    "일본"
-   ],
-   "allRoutes": true,
-   "routes": [],
-   "price": {
-    "amount": 50000,
-    "trip": "oneway?"
-   },
-   "query": "대한항공 특가",
-   "ai": {
-    "v": 2,
-    "promo": true,
-    "why": "대한항공 고마쓰 노선 10% 할인 프로모션",
-    "airlines": [
-     "대한항공"
-    ],
-    "name": "고마쓰 항공권 10% 할인 프로모션",
-    "book": {
-     "from": null,
-     "to": "2026-12-20"
-    },
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": 10,
-    "seoul": null,
-    "at": "2026-11-23",
-    "model": "deepseek-v4-flash"
-   },
-   "lastDate": "2026-11-23T05:00:42.080Z",
-   "lastFound": "2026-11-23",
-   "more": [
-    {
-     "id": "c:https://cafe.naver.com/airportshopping/1165|[ 대한항공 ] 고마쓰행 항공 권 10% 할인 쿠폰!",
-     "kind": "airline",
-     "community": true,
-     "title": "[ 대한항공 ] 고마쓰행 항공 권 10% 할인 쿠폰!",
-     "desc": "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
-     "summary": [
-      "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
-     ],
-     "link": "https://cafe.naver.com/airportshopping/1165",
-     "source": "네이버 카페 · 인천공항의 모든 것",
-     "date": "2026-11-20T05:00:43.396Z",
-     "found": "2026-11-20",
-     "cards": [],
-     "airlines": [
-      "KE"
-     ],
-     "countries": [
-      "일본"
-     ],
-     "allRoutes": true,
-     "routes": [],
-     "price": {
-      "amount": 50000,
-      "trip": "oneway?"
-     },
-     "query": "대한항공 할인",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "항공권 10% 할인 쿠폰",
-      "airlines": [
-       "대한항공"
-      ],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": 10,
-      "seoul": null,
-      "at": "2026-11-20",
-      "model": "deepseek-v4-flash"
-     },
-     "notified": "2026-11-20"
-    },
-    {
-     "id": "c:https://cafe.naver.com/hotdealcatch/2410|[이벤트] 대한항공 고마쓰 응모, 기프트카드 5만원 (~12/20)",
-     "kind": "airline",
-     "community": true,
-     "title": "[이벤트] 대한항공 고마쓰 응모, 기프트카드 5만원 (~12/20)",
-     "desc": "대한항공 이시카와현 고마쓰 프로모션인데, 비행기 표 안 사도... 건데, 대한항공 기프트카드 5만원권 20명 추첨이에요.",
-     "summary": [
-      "대한항공 이시카와현 고마쓰 프로모션인데, 비행기 표 안 사도...",
-      "건데, 대한항공 기프트카드 5만원권 20명 추첨이에요."
-     ],
-     "link": "https://cafe.naver.com/hotdealcatch/2410",
-     "source": "네이버 카페 · 핫딜캐치 · 매일 특가와 짠테크",
-     "date": "2026-11-20T07:00:41.100Z",
-     "found": "2026-11-20",
-     "cards": [],
-     "airlines": [
-      "KE"
-     ],
-     "countries": [
-      "일본"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": {
-      "amount": 50000,
-      "trip": "oneway?"
-     },
-     "query": "대한항공 특가",
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "항공권 경품 이벤트",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-20",
-      "model": "deepseek-v4-flash"
-     },
-     "notified": "2026-11-20"
-    },
-    {
-     "id": "c:https://cafe.naver.com/nyctourdesign/1207292|대한항공 뉴어크 취항기념 8% 할인",
-     "kind": "airline",
-     "community": true,
-     "title": "대한항공 뉴어크 취항기념 8% 할인",
-     "desc": "네.",
-     "link": "https://cafe.naver.com/nyctourdesign/1207292",
-     "source": "네이버 카페 · [미여디]No.1 뉴욕,LA,하와이,라스베가스,샌프란시스코 미국여행",
-     "date": "2026-11-20T11:00:49.931Z",
-     "found": "2026-11-20",
-     "cards": [],
-     "airlines": [
-      "KE"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "대한항공 특가",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "대한항공 취항기념 운임 할인",
-      "airlines": [
-       "대한항공"
-      ],
-      "name": "뉴어크 취항기념 8% 할인",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": 8,
-      "seoul": null,
-      "at": "2026-11-20",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/airportshopping/1167|[ 대한항공 ] 뉴욕 신규 취항 기념 항공 권 할인 이벤트!",
-     "kind": "airline",
-     "community": true,
-     "title": "[ 대한항공 ] 뉴욕 신규 취항 기념 항공 권 할인 이벤트!",
-     "desc": "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
-     "summary": [
-      "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
-     ],
-     "link": "https://cafe.naver.com/airportshopping/1167",
-     "source": "네이버 카페 · 인천공항의 모든 것",
-     "date": "2026-11-20T07:00:41.100Z",
-     "found": "2026-11-20",
-     "cards": [],
-     "airlines": [
-      "KE"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "대한항공 프로모션",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "신규 취항 기념 항공권 할인",
-      "airlines": [
-       "대한항공"
-      ],
-      "name": "뉴욕 신규 취항 기념 항공권 할인 이벤트",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-20",
-      "model": "deepseek-v4-flash"
-     },
-     "notified": "2026-11-20"
-    },
-    {
-     "id": "c:https://cafe.naver.com/yamipapa/9460|트립닷컴 대한항공 특가 라이브",
-     "kind": "airline",
-     "community": true,
-     "title": "트립닷컴 대한항공 특가 라이브",
-     "desc": "월요일 오전에 다들 한번 도전해보시죠 다들 싸게싸게 여행 다니시자구요 ㅎ https://kr.trip.com/sale/w/mj1iqfayjdyq81fk/26winterbrandingke.html?locale=ko-KR&transparentBar=1&wkp=1&curr=KRW.",
-     "summary": [
-      "월요일 오전에 다들 한번 도전해보시죠 다들 싸게싸게 여행 다니시자구요 ㅎ https://kr.trip.com/sale/w/mj1iqfayjdyq81fk/26winterbrandingke.html?locale=ko-KR&transp…"
-     ],
-     "link": "https://cafe.naver.com/yamipapa/9460",
-     "source": "네이버 카페 · 야미파파놀이터",
-     "date": "2026-11-22T03:00:42.044Z",
-     "found": "2026-11-22",
-     "cards": [],
-     "airlines": [
-      "KE"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "대한항공 특가",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "트립닷컴 대한항공 특가 라이브",
-      "airlines": [
-       "대한항공"
-      ],
-      "name": "트립닷컴 대한항공 특가 라이브",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-22",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/aosk1020/673|[ 대한항공 ] 트립닷컴 라이브 특가 (11/23)",
-     "kind": "airline",
-     "community": true,
-     "title": "[ 대한항공 ] 트립닷컴 라이브 특가 (11/23)",
-     "desc": "2026.11.23 09:00 대한항공 전세계 여행 특가 라이브 국제선 항공 특가 및 쿠폰 확인해보세요~.",
-     "summary": [
-      "2026.11.23 09:00 대한항공 전세계 여행 특가 라이브 국제선 항공 특가 및 쿠폰 확인해보세요~."
-     ],
-     "link": "https://cafe.naver.com/aosk1020/673",
-     "source": "네이버 카페 · 푸카크 PUKAK - 푸켓, 카오락, 크라비 전문 현지 여행사",
-     "date": "2026-11-23T01:00:40.717Z",
-     "found": "2026-11-23",
-     "cards": [],
-     "airlines": [
-      "KE"
-     ],
-     "countries": [],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "대한항공 특가",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "항공사 국제선 특가 라이브",
-      "airlines": [
-       "대한항공"
-      ],
-      "name": "트립닷컴 라이브 특가",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-23",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/20daelee/954039|대한항공 기프트카드 5만원 이벤트 참여하세요",
-     "kind": "airline",
-     "community": true,
-     "title": "대한항공 기프트카드 5만원 이벤트 참여하세요",
-     "desc": "대한항공 이벤트 홈페이지 가면 고마쓰 10% 할인 및 경품 이벤트가 있어요 이거 이벤트3에 대한항공 기프트카드 5만원 선물로 주는 이벤트 있습니다 20명 추첨인데 우리가 당첨됩시다!",
-     "summary": [
-      "대한항공 이벤트 홈페이지 가면 고마쓰 10% 할인 및 경품 이벤트가 있어요 이거 이벤트3에 대한항공 기프트카드 5만원 선물로 주는 이벤트 있습니다 20명 추첨인데 우리가 당첨됩시다!…"
-     ],
-     "link": "https://cafe.naver.com/20daelee/954039",
-     "source": "네이버 카페 · 체크인데이#일본여행,도쿄여행,후쿠오카여행,오사카,교토,삿포로",
-     "date": "2026-11-23T05:00:42.080Z",
-     "found": "2026-11-23",
-     "cards": [],
-     "airlines": [
-      "KE"
-     ],
-     "countries": [
-      "일본"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": {
-      "amount": 50000,
-      "trip": "oneway?"
-     },
-     "query": "대한항공 할인",
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "기프트카드 경품 이벤트",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-23",
       "model": "deepseek-v4-flash"
      }
     }
@@ -52131,81 +52211,26 @@
      }
     }
    ]
-  },
-  {
-   "id": "https://www.topdaily.kr/articles/112721|[TOP's Pick] [유통] 신세계면세점 명동점 '웰니스존' 확대 개",
-   "kind": "card",
-   "title": "[TOP's Pick] [유통] 신세계면세점 명동점 '웰니스존' 확대 개편 外",
-   "desc": "호텔과 실내 워터파크 스플래시베이를 비롯한 주요 리조트 시설에서는 신한카드 고객을 위한 제휴 할인 ... 항공사별 항공권 취소 수수료를 자동 안내하는 ‘AI 환불금 캘린더’는 도입 이후 관련 문의가 52% 감소하는...",
-   "summary": [
-    "호텔과 실내 워터파크 스플래시베이를 비롯한 주요 리조트 시설에서는 신한카드 고객을 위한 제휴 할인 ...",
-    "항공사별 항공권 취소 수수료를 자동 안내하는 ‘AI 환불금 캘린더’는 도입 이후 관련 문의가 52% 감소하는…"
-   ],
-   "link": "https://www.topdaily.kr/articles/112721",
-   "source": "네이버 뉴스",
-   "date": "2026-11-05T06:52:00.000Z",
-   "found": "2026-11-05",
-   "cards": [
-    "신한카드"
-   ],
-   "airlines": [],
-   "countries": [],
-   "allRoutes": false,
-   "routes": [],
-   "price": null,
-   "query": "신한카드 항공권 할인",
-   "bodyAt": "2026-11-05",
-   "body": [
-    "인스파이어 엔터테인먼트 리조트(이하 ‘인스파이어’)가 신한카드와 전략적 업무협약(MOU)을 체결. 이번 협약은 양사가 보유한 인프라와 마케팅 역량 등 강점을 결합해 고객 접점을 확대하는 한편, 인스파이어의 다양한 시설과 콘텐츠를 기반으로 새로운 회원 혜택과 브랜드 경험을 제공하기 위해 마련. 오는 12월부터 1년간 광고 및 공동 마케팅, 리조트 상품 판매 활성화, 멤버십 혜택 강화 등 다…",
-    "롯데칠성음료, '새로' 누적 판매 13억병 넘어서",
-    "롯데칠성음료의 제로 슈거 소주 ‘새로’가 지난 2022년 출시 후 4년여 만에 누적 판매량 13억병을 넘어서. 출시 4개월여 만에 누적 판매량 5000만병을 넘어섰으며 7개월 만에 1억병을 기록. 이는 2022년 9월 출시 후 지난 달까지 50개월 동안 하루 평균 약 84만 병이 팔린 셈. 또한, ‘새로’는 출시 초기부터 기존 소주 업계의 연예인 모델 공식에서 벗어나 새로만의 브랜드 앰베…",
-    "제25회 서울카페쇼(The 25th Seoul Int’l Cafe Show, 이하 서울카페쇼)가 오는 11월 11일 서울 삼성동 코엑스 전관 개최를 앞두고 2027년 커피 및 식음료산업을 이끌 핵심 트렌드 키워드로 ‘리프레임(R.E.F.R.A.M.E)’을 공식 발표. 올해 서울카페쇼가 선정한 2027년 커피 및 식음료(F&B) 산업을 이끌 핵심 트렌드 키워드 ‘리프레임(R.E.F.R.A.…",
-    "M(Meaningful Value, 가격을 넘어, 시간값까지)",
-    "하나투어가 한국표준협회(KSA) 주관 '2026 한국서비스품질지수(KS-SQI)' 여행사 부문에서 5년 연속 1위에 올라. KS-SQI는 2000년 한국표준협회와 서울대학교 경영연구소가 공동 개발한 서비스 품질 평가 모델. 하나투어에 따르면 정확성, 전문성, 친절성, 적극성, 이용 편리성, 외형성 등 주요 평가 항목에서 조사 대상 여행사 중 최고점을 받아. 특히 전문성과 이용 편리성은 각…",
-    "해태제과 빨라쪼가 얼그레이와 마로네(Marrone, 이탈리아어 '밤')로 겨울 감성을 입힌 젤라또 2종과 ‘젤라또 핫 라떼’ 2종을 출시. 이번 신메뉴는 전국 빨라쪼와 지파시 매장에서 만날 수 있으며, 젤라또 핫 라떼는 내년 2월까지 겨울 한정으로 판매. 빨라쪼가 겨울에 어울리는 얼그레이와 마로네 두 가지 맛을 차가운 젤라또와 따뜻한 음료로 출시해 디저트의 온도까지 취향대로 고를 수 있는…",
-    "맘스터치, ‘주술회전: 시부야 사변’ 협업 세트 3종 한정 판매",
-    "맘스터치는 인기 애니메이션 지식재산권(IP)인 ‘주술회전: 시부야 사변’과 협업해 작품 속 인기 캐릭터를 담은 한정판 굿즈를 포함한 컬래버레이션 세트 3종을 오는 29일까지 한정 판매. 애니메이션 속 캐릭터의 매력을 생생하게 담아낸 최대 약 25cm 크기의 ‘메가 아크릴스탠드’를 비롯해, 캐릭터들의 색다른 일상을 표현한 ‘캐주얼 아크릴스탠드’, 좋아하는 캐릭터의 얼굴로 나만의 공간을 꾸밀…"
-   ],
-   "ai": {
-    "v": 2,
-    "cv": 3,
-    "card": {
-     "ok": false,
-     "why": "유통 소식 모음, 여행 결제 혜택 아님",
-     "cards": [],
-     "use": null,
-     "airlines": [],
-     "countries": [],
-     "amount": null,
-     "pct": null,
-     "min": null,
-     "period": null
-    },
-    "at": "2026-11-13",
-    "model": "deepseek-v4-flash"
-   },
-   "lastDate": "2026-11-05T06:52:00.000Z",
-   "lastFound": "2026-11-05"
   }
  ],
- "updated": "2026-11-26T03:31:02.497Z",
- "runs": 310,
+ "updated": "2026-11-26T05:00:54.391Z",
+ "runs": 311,
  "checked": {
-  "베트남": "2026-11-26T03:31:02.497Z",
-  "태국": "2026-11-26T03:31:02.497Z",
-  "필리핀": "2026-11-26T03:31:02.497Z",
-  "인도네시아": "2026-11-26T03:31:02.497Z",
-  "말레이시아": "2026-11-26T03:31:02.497Z",
-  "싱가포르": "2026-11-26T03:31:02.497Z",
-  "일본": "2026-11-26T03:31:02.497Z",
-  "대만": "2026-11-26T03:31:02.497Z",
-  "홍콩": "2026-11-26T03:31:02.497Z",
-  "마카오": "2026-11-26T03:31:02.497Z",
-  "중국": "2026-11-26T03:31:02.497Z",
-  "미국령": "2026-11-26T03:31:02.497Z",
-  "미국": "2026-11-26T03:31:02.497Z"
+  "베트남": "2026-11-26T05:00:54.391Z",
+  "태국": "2026-11-26T05:00:54.391Z",
+  "필리핀": "2026-11-26T05:00:54.391Z",
+  "인도네시아": "2026-11-26T05:00:54.391Z",
+  "말레이시아": "2026-11-26T05:00:54.391Z",
+  "싱가포르": "2026-11-26T05:00:54.391Z",
+  "일본": "2026-11-26T05:00:54.391Z",
+  "대만": "2026-11-26T05:00:54.391Z",
+  "홍콩": "2026-11-26T05:00:54.391Z",
+  "마카오": "2026-11-26T05:00:54.391Z",
+  "중국": "2026-11-26T05:00:54.391Z",
+  "미국령": "2026-11-26T05:00:54.391Z",
+  "미국": "2026-11-26T05:00:54.391Z"
  },
- "auto": "2026-11-26T03:31:02.497Z",
+ "auto": "2026-11-26T05:00:54.391Z",
  "sources": {
   "7C": "2026-11-01",
   "TW": "2026-11-01",
@@ -52418,115 +52443,6 @@
    "중국동방항공 얼리버드": "2026-11-04"
   },
   "seen": [
-   "worrytodream/1024147",
-   "sdadaae/74554",
-   "worrytodream/1024005",
-   "freetimetrip/584",
-   "cheepboracay/864598",
-   "antiphilippines/652628",
-   "r114dj/7589",
-   "momspanggju/4667072",
-   "dj114/917587",
-   "tossda/3056",
-   "tlsxh/4277747",
-   "010freebaram/264126",
-   "tossda/3045",
-   "joonggonara/1138437213",
-   "tooniverseloveyou/242294",
-   "mjann/3804141",
-   "culturebloom/3441466",
-   "misa4050/8851",
-   "joonggonara/1138434457",
-   "kyungmammo/6635716",
-   "crc61class/193807",
-   "masanmam/7569332",
-   "glove/8897382",
-   "imsanbu/80574702",
-   "worrytodream/1023973",
-   "joonggonara/1138434474",
-   "promocode/25",
-   "dailytour1/4593",
-   "vinpearl/572481",
-   "bikecity/3097992",
-   "eonjena1st/541",
-   "malltail/7561543",
-   "thaiinfo/681550",
-   "loyaltylife/370768",
-   "loyaltylife/370741",
-   "worrytodream/1025479",
-   "worrytodream/1025304",
-   "worrytodream/1025296",
-   "worldtravelcafe/1168670",
-   "worrytodream/1025242",
-   "worldtravelcafe/1168669",
-   "worldtravelcafe/1168667",
-   "worldtravelcafe/1168666",
-   "worrytodream/1025030",
-   "aooniworldse/9190",
-   "worrytodream/1025000",
-   "lnf/427016",
-   "vinpearl/572479",
-   "mindy7857/5542276",
-   "golmarket/13197405",
-   "mindy7857/5542356",
-   "mindy7857/5542328",
-   "mindy7857/5542313",
-   "zzop/4351375",
-   "mindy7857/5542282",
-   "mindy7857/5542262",
-   "mindy7857/5542226",
-   "mindy7857/5542197",
-   "mindy7857/5542195",
-   "dgmom365/7446860",
-   "dgmom365/7446827",
-   "gmfriends/5495",
-   "dgmom365/7446786",
-   "grownman/1183193",
-   "idiolle/1892918",
-   "dgmom365/7446870",
-   "dgmom365/7446868",
-   "010freebaram/264190",
-   "dgmom365/7446829",
-   "canublingbling/993079",
-   "dgmom365/7446824",
-   "hiric/366207",
-   "dgmom365/7446822",
-   "anyi/319928",
-   "ceiks/367976",
-   "010freebaram/264185",
-   "joonggonara/1138438918",
-   "solocristmas/343761",
-   "rassetyj2012/841265",
-   "kig/19700418",
-   "clubx100/613022",
-   "ungsangjang/887758",
-   "pinksrwk8/970",
-   "dgmom365/7446783",
-   "kig028/108359",
-   "jejutip/2683473",
-   "dgmom365/7446818",
-   "dkrnl2/2176",
-   "dgmom365/7446772",
-   "joonggonara/1138438920",
-   "codud8134/726833",
-   "chocammall/12752182",
-   "dgmom365/7446865",
-   "dgmom365/7446834",
-   "dgmom365/7446777",
-   "loveloveloveovelove/1043680",
-   "mindy7857/5542332",
-   "browndlaj9/1369",
-   "zzop/4351454",
-   "minecraftpe/4020223",
-   "vinpearl/572595",
-   "vinpearl/572591",
-   "wphonew/585500",
-   "dngd/46823",
-   "minecraftpe/4020218",
-   "warcraftgamemap/3540021",
-   "vinpearl/572581",
-   "warcraftgamemap/3540011",
-   "vinpearl/572551",
    "warcraftgamemap/3540038",
    "happyibook/6361483",
    "warcraftgamemap/3539995",
@@ -58417,7 +58333,116 @@
    "yegsgolf/70",
    "8282home/874967",
    "mumumhoju/401434",
-   "babyscoming/608397"
+   "babyscoming/608397",
+   "worldtravelcafe/1170224",
+   "worldtravelcafe/1170221",
+   "worrytodream/1075057",
+   "sumonnerdeokoo/122570",
+   "guitarnsong/299886",
+   "worldtravelcafe/1170217",
+   "worldtravelcafe/1170213",
+   "sumonnerdeokoo/122566",
+   "skybluelnccx/2628",
+   "dtcityhospital/4658",
+   "dtcityhospital/4655",
+   "dtcityhospital/4649",
+   "sumonnerdeokoo/122562",
+   "foodballmanager/1807453",
+   "dngd/74937",
+   "zzop/4359723",
+   "warcraftgamemap/3544212",
+   "zzop/4359703",
+   "mindy7857/5551348",
+   "warcraftgamemap/3544190",
+   "tybwondergirl5/119668",
+   "guitarnsong/299882",
+   "mindy7857/5551307",
+   "golfkwang/1155869",
+   "ysm5828/9654258",
+   "golmarket/13203262",
+   "worldtravelcafe/1170202",
+   "djmomschools/234",
+   "smnt0/5785",
+   "busppomppu/705060",
+   "mindy7857/5551262",
+   "msiu100/687497",
+   "codud8134/728096",
+   "joonggonara/1138726085",
+   "codud8134/728078",
+   "codud8134/728076",
+   "codud8134/728075",
+   "imsanbu/80617834",
+   "jejutip/2684420",
+   "goodinfo53/2418",
+   "happyibook/6367102",
+   "skybluelnccx/2613",
+   "worrytodream/1075000",
+   "mindy7857/5551399",
+   "saju1002/1255",
+   "joonggonara/1138726318",
+   "joonggonara/1138726288",
+   "joonggonara/1138726154",
+   "joonggonara/1138726136",
+   "01064818727/30744",
+   "01064818727/30743",
+   "guitarnsong/299872",
+   "loyaltylife/370730",
+   "guitarnsong/299879",
+   "airportshopping/1161",
+   "mindy7857/5551403",
+   "mindy7857/5551382",
+   "mindy7857/5551380",
+   "mindy7857/5551376",
+   "saint24/200299",
+   "mindy7857/5551357",
+   "warcraftgamemap/3544222",
+   "ysm5828/9654247",
+   "minecraftpe/4023421",
+   "happyibook/6367129",
+   "wooyeon1/33137",
+   "gotovn/8582",
+   "warcraftgamemap/3544187",
+   "fobn/168000",
+   "grownman/1190932",
+   "checkincafe/148712",
+   "pachi7/5439",
+   "loyaltylife/372108",
+   "warcraftgamemap/3544180",
+   "travelconnector/1915",
+   "guamfree/3016561",
+   "dtcityhospital/4651",
+   "realturkey/56607",
+   "lutodot12/36350",
+   "itguro/14734",
+   "nyctourdesign/1207943",
+   "whiskycognac/970257",
+   "worrytodream/1074888",
+   "worrytodream/1074847",
+   "loyaltylife/372086",
+   "nyctourdesign/1207914",
+   "freetourincebu/1773",
+   "antiphilippines/652720",
+   "lovelycafeluck/50108",
+   "colco101/33515",
+   "vainwithzeus/43499",
+   "aljjatravel/592",
+   "parkslope/2370",
+   "jpnstory/4454959",
+   "kyungmammo/6637418",
+   "miznett/5169325",
+   "010freebaram/267165",
+   "yeringainu/74821",
+   "rollingonline/112493",
+   "joonggonara/1138727369",
+   "abcdf857711/38",
+   "onepieceholicplus/6244157",
+   "imsanbu/80617801",
+   "airplanetiket/1496",
+   "fobn/168003",
+   "bawool/32410",
+   "wolhyangfarm/1087",
+   "bawool/32406",
+   "20stars/32355"
   ],
   "since": "2026-11-03",
   "imported": "2026-11-03"

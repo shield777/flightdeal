@@ -1,6 +1,70 @@
 [
  {
   "at": "2026-11-26",
+  "title": "✈️ [여행·핫딜] ~11/30 겨울·봄방학 특가 ! 여기어때 × 이스타항공 해외 전 ....",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "이스타항공 겨울·봄방학 특가",
+   "airlines": [
+    "이스타항공"
+   ],
+   "name": "겨울·봄방학 특가",
+   "book": {
+    "from": null,
+    "to": "2026-11-30"
+   },
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-26",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "예약 마감 규칙 - / AI 2026-11-30"
+  ]
+ },
+ {
+  "at": "2026-11-26",
+  "title": "어제자로 끝난 노랑풍선 타임 특가 대한항공 슈페리어워터파크뷰 499만원 가....",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "이미 끝난 여행사 패키지 특가",
+   "airlines": [],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-26",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": 4990000
+  },
+  "diff": [
+   "AI: 특가 아님",
+   "가격 규칙 4990000 / AI -"
+  ]
+ },
+ {
+  "at": "2026-11-26",
   "title": "진에어 부산(김해) 출발 특가 프로모션 소식 공유해요! (~12/2까지)",
   "community": true,
   "ai": {
@@ -10623,74 +10687,5 @@
   "diff": [
    "AI: 특가 아님"
   ]
- },
- {
-  "at": "2026-11-18",
-  "title": "제주항공 온니 3월특가",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "제주항공 3월 특가 프로모션 소식",
-   "airlines": [
-    "제주항공"
-   ],
-   "name": "3월특가",
-   "book": null,
-   "board": {
-    "from": "2027-03-01",
-    "to": "2027-03-31"
-   },
-   "price": null,
-   "trip": null,
-   "pct": 39,
-   "seoul": null,
-   "at": "2026-11-18",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": [
-   "할인율 규칙 - / AI 39"
-  ]
- },
- {
-  "at": "2026-11-18",
-  "title": "제주항공 , 3월 출발 대상, J 멤버스 위크 특가 (~11/24)",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "제주항공 특가 프로모션 안내",
-   "airlines": [
-    "제주항공"
-   ],
-   "name": "J 멤버스 위크 특가",
-   "book": {
-    "from": null,
-    "to": "2026-11-24"
-   },
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-18",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2026-11-24"
-   },
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": []
  }
 ]
