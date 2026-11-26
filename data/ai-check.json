@@ -1,6 +1,273 @@
 [
  {
   "at": "2026-11-26",
+  "title": "괌정부관광청·대한항공, 겨울철 괌 여행 공동 프로모션",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "대한항공 괌 노선 항공권 할인 프로모션",
+   "airlines": [
+    "대한항공"
+   ],
+   "name": "겨울철 괌 여행 공동 프로모션",
+   "book": {
+    "from": "2026-11-10",
+    "to": "2027-01-10"
+   },
+   "board": {
+    "from": "2026-11-10",
+    "to": "2027-03-31"
+   },
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": true,
+   "at": "2026-11-26",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2026-11-10",
+    "to": "2027-01-10"
+   },
+   "board": {
+    "from": "2026-11-10",
+    "to": "2027-03-31"
+   },
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-26",
+  "title": "에어부산 일본 8만6900원, 26일 11시 닷새 특가",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "에어부산 국제선 특가 판매",
+   "airlines": [
+    "에어부산"
+   ],
+   "name": "겨울맞이 국제선 특가",
+   "book": {
+    "from": "2026-11-26",
+    "to": "2026-11-30"
+   },
+   "board": {
+    "from": "2026-11-26",
+    "to": "2027-03-27"
+   },
+   "price": 86900,
+   "trip": "편도",
+   "pct": null,
+   "seoul": true,
+   "at": "2026-11-26",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2026-11-26",
+    "to": "2026-11-30"
+   },
+   "board": {
+    "from": "2026-11-26",
+    "to": "2027-03-27"
+   },
+   "pct": null,
+   "price": 86900
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-26",
+  "title": "괌정부관광청, 대한항공과 겨울 여행 수요 공동 프로모션",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "여행사 인센티브 중심 프로모션",
+   "airlines": [
+    "대한항공"
+   ],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": true,
+   "at": "2026-11-26",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2026-11-10",
+    "to": "2027-01-10"
+   },
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님",
+   "예약 마감 규칙 2027-01-10 / AI -"
+  ]
+ },
+ {
+  "at": "2026-11-26",
+  "title": "부산~일본 8만6900원부터…에어부산, 겨울 국제선 28개 노선 특가",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "에어부산 겨울 국제선 특가 프로모션",
+   "airlines": [
+    "에어부산"
+   ],
+   "name": "겨울맞이 국제선 특가",
+   "book": {
+    "from": "2026-11-26",
+    "to": "2026-11-30"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-03-27"
+   },
+   "price": 86900,
+   "trip": "편도",
+   "pct": null,
+   "seoul": true,
+   "at": "2026-11-26",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2026-11-26",
+    "to": "2026-11-30"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-03-27"
+   },
+   "pct": null,
+   "price": 86900
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-26",
+  "title": "[항공 소식] \"중국·일본 소도시부터 미국 LA까지\"…하늘길 넓어지고 항공권 할인 쏟아진다",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "신규 취항과 항공권 할인 프로모션 소식",
+   "airlines": [],
+   "name": "블랙프라이데이 특가",
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-26",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-26",
+  "title": "괌정부관광청·대한항공, 겨울 성수기 맞아 국내 주요 여행사 10곳과 공동 프로모션 전개",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "여행사 특가 항공권 공급 프로모션",
+   "airlines": [
+    "대한항공"
+   ],
+   "name": "괌 겨울 공동 프로모션",
+   "book": {
+    "from": "2026-11-10",
+    "to": "2027-01-10"
+   },
+   "board": {
+    "from": "2026-11-10",
+    "to": "2027-03-31"
+   },
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": true,
+   "at": "2026-11-26",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2026-11-10",
+    "to": "2027-01-10"
+   },
+   "board": {
+    "from": "2026-11-10",
+    "to": "2027-03-31"
+   },
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-26",
+  "title": "연말·겨울방학 휴양객 잡는다…괌정부관광청, 대한항공·여행사 10곳과 공동 프로모션",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "대한항공 괌 노선 특가 항공권 프로모션",
+   "airlines": [
+    "대한항공"
+   ],
+   "name": "괌 겨울 공동 프로모션",
+   "book": {
+    "from": "2026-11-10",
+    "to": "2027-01-10"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-03-31"
+   },
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": true,
+   "at": "2026-11-26",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2026-11-10",
+    "to": "2027-01-10"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-03-31"
+   },
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-26",
   "title": "✈️ [여행·핫딜] ~11/30 겨울·봄방학 특가 ! 여기어때 × 이스타항공 해외 전 ....",
   "community": true,
   "ai": {
@@ -10452,240 +10719,6 @@
   },
   "diff": [
    "예약 마감 규칙 - / AI 2026-11-24"
-  ]
- },
- {
-  "at": "2026-11-18",
-  "title": "일본 ANA 항공 도 블프하네요 20일부터",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "ANA 블프 항공권 특가 소식",
-   "airlines": [
-    "ANA"
-   ],
-   "name": "블프 특가",
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-18",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-18",
-  "title": "[ 제주항공 ] 3월 출발 대상 / 최대 79% 할인 ! ONLY 회원에게",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "제주항공 회원 대상 항공권 할인",
-   "airlines": [
-    "제주항공"
-   ],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": 79,
-   "seoul": null,
-   "at": "2026-11-18",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": 79,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-18",
-  "title": "트리니티항공, 글로벌 간편결제 서비스 페이팔(PayPal) 제휴 프로모션 진행",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "페이팔 결제 항공권 할인 프로모션",
-   "airlines": [
-    "트리니티항공"
-   ],
-   "name": "페이팔 제휴 프로모션",
-   "book": {
-    "from": null,
-    "to": "2026-12-31"
-   },
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": 9,
-   "seoul": null,
-   "at": "2026-11-18",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2026-12-31"
-   },
-   "board": null,
-   "pct": 9,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-18",
-  "title": "트리니티항공 , 태국 노선 최대 20% 할인 …방콕·치앙마이 특가 공략",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "항공사 태국노선 특가·할인코드",
-   "airlines": [
-    "트리니티항공"
-   ],
-   "name": null,
-   "book": {
-    "from": null,
-    "to": "2026-12-13"
-   },
-   "board": {
-    "from": null,
-    "to": "2027-03-27"
-   },
-   "price": null,
-   "trip": null,
-   "pct": 20,
-   "seoul": true,
-   "at": "2026-11-18",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2026-12-13"
-   },
-   "board": {
-    "from": null,
-    "to": "2027-03-27"
-   },
-   "pct": 20,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-18",
-  "title": "삼성SDI, AI 데이터센터용 배터리 공개... 트리니티항공, 페이팔 결제 할인 외 [시경Today-배터리·항공·소재]",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "페이팔 결제 항공권 할인 프로모션",
-   "airlines": [
-    "트리니티항공"
-   ],
-   "name": "페이팔 결제 항공권 할인",
-   "book": {
-    "from": null,
-    "to": "2026-12-31"
-   },
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": 9,
-   "seoul": null,
-   "at": "2026-11-18",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2026-12-31"
-   },
-   "board": null,
-   "pct": 9,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-18",
-  "title": "이스타항공 , 1월~2월 출발 얼리버드 특가 (~11/24)",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "이스타항공 얼리버드 특가",
-   "airlines": [
-    "이스타항공"
-   ],
-   "name": "얼리버드 특가",
-   "book": {
-    "from": null,
-    "to": "2026-11-24"
-   },
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-18",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": [
-   "예약 마감 규칙 - / AI 2026-11-24"
-  ]
- },
- {
-  "at": "2026-11-18",
-  "title": "에어부산 )코타키나발루 특가",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "개인 검색 가격 공유",
-   "airlines": [
-    "에어부산"
-   ],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-18",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님"
   ]
  }
 ]
