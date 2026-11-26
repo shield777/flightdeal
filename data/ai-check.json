@@ -1,6 +1,78 @@
 [
  {
   "at": "2026-11-26",
+  "title": "“올해 마지막 여행, 혜택은 두 배로”… 노랑풍선, 연말·내년 초 특가 ...",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "패키지·자유여행 중심 통합 할인 행사",
+   "airlines": [],
+   "name": "2026 굿BUY 혜택 페스타",
+   "book": {
+    "from": null,
+    "to": "2026-12-13"
+   },
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-26",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2026-12-15",
+    "to": "2027-05-31"
+   },
+   "board": {
+    "from": null,
+    "to": "2026-12-31"
+   },
+   "pct": 10,
+   "price": 100000
+  },
+  "diff": [
+   "AI: 특가 아님",
+   "예약 마감 규칙 2027-05-31 / AI 2026-12-13",
+   "할인율 규칙 10 / AI -",
+   "가격 규칙 100000 / AI -"
+  ]
+ },
+ {
+  "at": "2026-11-26",
+  "title": "괌정부관광청, 대한항공과 겨울 시즌 공동 프로모션 진행",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "관광청-항공사 공동 관광 프로모션",
+   "airlines": [
+    "대한항공"
+   ],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-26",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님"
+  ]
+ },
+ {
+  "at": "2026-11-26",
   "title": "카타르항공, 블랙프라이데이 항공권 최대 20% 할인…29일까지",
   "community": false,
   "ai": {
@@ -10667,70 +10739,6 @@
    },
    "board": null,
    "pct": 9,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-18",
-  "title": "트리니티항공, 글로벌 간편결제 서비스 페이팔 제휴 프로모션",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "페이팔 결제 항공권 할인 프로모션",
-   "airlines": [
-    "트리니티항공"
-   ],
-   "name": "페이팔 제휴 프로모션",
-   "book": {
-    "from": null,
-    "to": "2026-12-31"
-   },
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": 9,
-   "seoul": null,
-   "at": "2026-11-18",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2026-12-31"
-   },
-   "board": null,
-   "pct": 9,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-18",
-  "title": "\"수능 끝나고 제주 도 가자\"… 제주항공 , 수험생·동반자 항공 권 20% 할인",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "제주항공 수험생·동반자 20% 할인",
-   "airlines": [
-    "제주항공"
-   ],
-   "name": "수험생·동반자 할인",
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": 20,
-   "seoul": null,
-   "at": "2026-11-18",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": 20,
    "price": null
   },
   "diff": []
