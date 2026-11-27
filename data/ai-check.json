@@ -1,6 +1,230 @@
 [
  {
   "at": "2026-11-27",
+  "title": "아시아나 항공 이벤트 추억",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "과거 이벤트 당첨 추억글",
+   "airlines": [],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-27",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님"
+  ]
+ },
+ {
+  "at": "2026-11-27",
+  "title": "세부 퍼시픽 항공 프로모션",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "포인트 적립 프로모션",
+   "airlines": [],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-27",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님"
+  ]
+ },
+ {
+  "at": "2026-11-27",
+  "title": "제주항공우주박물관, 12월 별(☆)의 별(☆) 특별 이벤트",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "박물관 관람료 이벤트",
+   "airlines": [],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-27",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2026-12-24",
+    "to": "2026-12-25"
+   },
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님",
+   "예약 마감 규칙 2026-12-25 / AI -"
+  ]
+ },
+ {
+  "at": "2026-11-27",
+  "title": "제주항공 우주박물관 크리스마스 이벤트 열려",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "박물관 관람료 할인 행사",
+   "airlines": [],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-27",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2026-12-24",
+    "to": "2026-12-25"
+   },
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님",
+   "예약 마감 규칙 2026-12-25 / AI -"
+  ]
+ },
+ {
+  "at": "2026-11-27",
+  "title": "트리니티항공, 일본·대만·싱가포르 등 주요 국가 현지서 할인 쿠폰·결제 프로모션 진행",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "외국인 대상 현지 프로모션, 서울출발 특가 아님",
+   "airlines": [
+    "트리니티항공"
+   ],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-27",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님"
+  ]
+ },
+ {
+  "at": "2026-11-27",
+  "title": "제주항공우주박물관, 연말 특별 프로모션 실시",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "박물관 관람료 프로모션",
+   "airlines": [],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-27",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2026-12-24",
+    "to": "2026-12-25"
+   },
+   "board": {
+    "from": "2026-12-12",
+    "to": "2026-12-26"
+   },
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님",
+   "예약 마감 규칙 2026-12-25 / AI -"
+  ]
+ },
+ {
+  "at": "2026-11-27",
+  "title": "제주항공 우주박물관, '12월 별의 별' 특별 이벤트 진행",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "박물관 관람료 이벤트",
+   "airlines": [],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-27",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2026-12-24",
+    "to": "2026-12-25"
+   },
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님",
+   "예약 마감 규칙 2026-12-25 / AI -"
+  ]
+ },
+ {
+  "at": "2026-11-27",
   "title": "제주항공 싱가폴 할인코드",
   "community": true,
   "ai": {
@@ -10460,261 +10684,5 @@
    "price": null
   },
   "diff": []
- },
- {
-  "at": "2026-11-20",
-  "title": "트리니티항공, 겨울 국제선 할인 프로모션…노선별 특가로 수요 공략",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "항공사 겨울 국제선 특가 프로모션",
-   "airlines": [
-    "트리니티항공"
-   ],
-   "name": "겨울 국제선 할인 프로모션",
-   "book": {
-    "from": null,
-    "to": "2026-11-30"
-   },
-   "board": {
-    "from": null,
-    "to": "2027-01-31"
-   },
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-20",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2026-11-30"
-   },
-   "board": {
-    "from": null,
-    "to": "2027-01-31"
-   },
-   "pct": null,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-20",
-  "title": "네이버, 여행 슈퍼위크 개최…국내선 항공권 최대 90% 할인",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "항공권 할인 중심 행사",
-   "airlines": [],
-   "name": "네이버여행 슈퍼위크",
-   "book": {
-    "from": null,
-    "to": "2026-11-29"
-   },
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": 90,
-   "seoul": null,
-   "at": "2026-11-20",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2026-11-29"
-   },
-   "board": null,
-   "pct": 90,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-20",
-  "title": "트리니티 이스타 제주 항공 수험생 할인",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "수험생 항공권 할인 소식",
-   "airlines": [
-    "트리니티항공",
-    "이스타항공"
-   ],
-   "name": "수험생 할인",
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-20",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-20",
-  "title": "NOL, 오카야마 여행 기획전…왕복 항공 권 최대 5만원 할인",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "대한항공 오카야마 항공권 할인 기획전",
-   "airlines": [
-    "대한항공"
-   ],
-   "name": "오카야마 여행 기획전",
-   "book": null,
-   "board": {
-    "from": null,
-    "to": "2027-03-10"
-   },
-   "price": null,
-   "trip": "왕복",
-   "pct": null,
-   "seoul": true,
-   "at": "2026-11-20",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": {
-    "from": null,
-    "to": "2027-03-10"
-   },
-   "pct": 6,
-   "price": null
-  },
-  "diff": [
-   "할인율 규칙 6 / AI -"
-  ]
- },
- {
-  "at": "2026-11-20",
-  "title": "NOL, 일본 오카야마 여행 기획전... 항공권 최대 5만 원 할인",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "항공권 할인 포함 기획전",
-   "airlines": [],
-   "name": "일본 오카야마 여행 기획전",
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-20",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-20",
-  "title": "'일본 온천 여행 떠나볼까'…놀유니버스, 오카야마 항공권 최대 5만원 할인",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "대한항공 오카야마 항공권 할인 기획전",
-   "airlines": [
-    "대한항공"
-   ],
-   "name": "햇살 아래 레트로 산책: 오카야마",
-   "book": {
-    "from": null,
-    "to": "2026-12-09"
-   },
-   "board": {
-    "from": null,
-    "to": "2027-03-10"
-   },
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": true,
-   "at": "2026-11-20",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2026-12-09"
-   },
-   "board": {
-    "from": null,
-    "to": "2027-03-10"
-   },
-   "pct": 90,
-   "price": 25000
-  },
-  "diff": [
-   "할인율 규칙 90 / AI -",
-   "가격 규칙 25000 / AI -"
-  ]
- },
- {
-  "at": "2026-11-20",
-  "title": "일본 오카야마 여행 부담 낮춘다…NOL, 대한항공 직항 항공권 최대 5만원 할인",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "대한항공 항공권 할인 특가",
-   "airlines": [
-    "대한항공"
-   ],
-   "name": "햇살 아래 레트로 산책: 오카야마",
-   "book": {
-    "from": null,
-    "to": "2026-12-09"
-   },
-   "board": {
-    "from": null,
-    "to": "2027-03-10"
-   },
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": true,
-   "at": "2026-11-20",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2026-12-09"
-   },
-   "board": {
-    "from": null,
-    "to": "2027-03-10"
-   },
-   "pct": 6,
-   "price": 50000
-  },
-  "diff": [
-   "할인율 규칙 6 / AI -",
-   "가격 규칙 50000 / AI -"
-  ]
  }
 ]
