@@ -1,6 +1,1114 @@
 {
  "items": [
   {
+   "id": "c:https://cafe.naver.com/20daelee/954012|대한항공 , 고마쓰 항공 권 10% 할인 프로모션 (~12/20)",
+   "kind": "airline",
+   "community": true,
+   "title": "대한항공 , 고마쓰 항공 권 10% 할인 프로모션 (~12/20)",
+   "desc": "",
+   "link": "https://cafe.naver.com/20daelee/954012",
+   "source": "네이버 카페 · 체크인데이#일본여행,도쿄여행,후쿠오카여행,오사카,교토,삿포로",
+   "date": "2026-11-23T03:00:44.401Z",
+   "found": "2026-11-23",
+   "cards": [],
+   "airlines": [
+    "KE"
+   ],
+   "countries": [
+    "일본"
+   ],
+   "allRoutes": true,
+   "routes": [],
+   "price": {
+    "amount": 50000,
+    "trip": "oneway?"
+   },
+   "query": "대한항공 특가",
+   "ai": {
+    "v": 2,
+    "promo": true,
+    "why": "대한항공 고마쓰 노선 10% 할인 프로모션",
+    "airlines": [
+     "대한항공"
+    ],
+    "name": "고마쓰 항공권 10% 할인 프로모션",
+    "book": {
+     "from": null,
+     "to": "2026-12-20"
+    },
+    "board": null,
+    "price": null,
+    "trip": null,
+    "pct": 10,
+    "seoul": null,
+    "at": "2026-11-23",
+    "model": "deepseek-v4-flash"
+   },
+   "lastDate": "2026-11-27T05:00:45.265Z",
+   "lastFound": "2026-11-27",
+   "more": [
+    {
+     "id": "c:https://cafe.naver.com/airportshopping/1165|[ 대한항공 ] 고마쓰행 항공 권 10% 할인 쿠폰!",
+     "kind": "airline",
+     "community": true,
+     "title": "[ 대한항공 ] 고마쓰행 항공 권 10% 할인 쿠폰!",
+     "desc": "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
+     "summary": [
+      "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
+     ],
+     "link": "https://cafe.naver.com/airportshopping/1165",
+     "source": "네이버 카페 · 인천공항의 모든 것",
+     "date": "2026-11-20T05:00:43.396Z",
+     "found": "2026-11-20",
+     "cards": [],
+     "airlines": [
+      "KE"
+     ],
+     "countries": [
+      "일본"
+     ],
+     "allRoutes": true,
+     "routes": [],
+     "price": {
+      "amount": 50000,
+      "trip": "oneway?"
+     },
+     "query": "대한항공 할인",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "항공권 10% 할인 쿠폰",
+      "airlines": [
+       "대한항공"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": 10,
+      "seoul": null,
+      "at": "2026-11-20",
+      "model": "deepseek-v4-flash"
+     },
+     "notified": "2026-11-20"
+    },
+    {
+     "id": "c:https://cafe.naver.com/hotdealcatch/2410|[이벤트] 대한항공 고마쓰 응모, 기프트카드 5만원 (~12/20)",
+     "kind": "airline",
+     "community": true,
+     "title": "[이벤트] 대한항공 고마쓰 응모, 기프트카드 5만원 (~12/20)",
+     "desc": "대한항공 이시카와현 고마쓰 프로모션인데, 비행기 표 안 사도... 건데, 대한항공 기프트카드 5만원권 20명 추첨이에요.",
+     "summary": [
+      "대한항공 이시카와현 고마쓰 프로모션인데, 비행기 표 안 사도...",
+      "건데, 대한항공 기프트카드 5만원권 20명 추첨이에요."
+     ],
+     "link": "https://cafe.naver.com/hotdealcatch/2410",
+     "source": "네이버 카페 · 핫딜캐치 · 매일 특가와 짠테크",
+     "date": "2026-11-20T07:00:41.100Z",
+     "found": "2026-11-20",
+     "cards": [],
+     "airlines": [
+      "KE"
+     ],
+     "countries": [
+      "일본"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": {
+      "amount": 50000,
+      "trip": "oneway?"
+     },
+     "query": "대한항공 특가",
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "항공권 경품 이벤트",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-20",
+      "model": "deepseek-v4-flash"
+     },
+     "notified": "2026-11-20"
+    },
+    {
+     "id": "c:https://cafe.naver.com/nyctourdesign/1207292|대한항공 뉴어크 취항기념 8% 할인",
+     "kind": "airline",
+     "community": true,
+     "title": "대한항공 뉴어크 취항기념 8% 할인",
+     "desc": "네.",
+     "link": "https://cafe.naver.com/nyctourdesign/1207292",
+     "source": "네이버 카페 · [미여디]No.1 뉴욕,LA,하와이,라스베가스,샌프란시스코 미국여행",
+     "date": "2026-11-20T11:00:49.931Z",
+     "found": "2026-11-20",
+     "cards": [],
+     "airlines": [
+      "KE"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "대한항공 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "대한항공 취항기념 운임 할인",
+      "airlines": [
+       "대한항공"
+      ],
+      "name": "뉴어크 취항기념 8% 할인",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": 8,
+      "seoul": null,
+      "at": "2026-11-20",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/airportshopping/1167|[ 대한항공 ] 뉴욕 신규 취항 기념 항공 권 할인 이벤트!",
+     "kind": "airline",
+     "community": true,
+     "title": "[ 대한항공 ] 뉴욕 신규 취항 기념 항공 권 할인 이벤트!",
+     "desc": "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
+     "summary": [
+      "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
+     ],
+     "link": "https://cafe.naver.com/airportshopping/1167",
+     "source": "네이버 카페 · 인천공항의 모든 것",
+     "date": "2026-11-20T07:00:41.100Z",
+     "found": "2026-11-20",
+     "cards": [],
+     "airlines": [
+      "KE"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "대한항공 프로모션",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "신규 취항 기념 항공권 할인",
+      "airlines": [
+       "대한항공"
+      ],
+      "name": "뉴욕 신규 취항 기념 항공권 할인 이벤트",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-20",
+      "model": "deepseek-v4-flash"
+     },
+     "notified": "2026-11-20"
+    },
+    {
+     "id": "c:https://cafe.naver.com/yamipapa/9460|트립닷컴 대한항공 특가 라이브",
+     "kind": "airline",
+     "community": true,
+     "title": "트립닷컴 대한항공 특가 라이브",
+     "desc": "월요일 오전에 다들 한번 도전해보시죠 다들 싸게싸게 여행 다니시자구요 ㅎ https://kr.trip.com/sale/w/mj1iqfayjdyq81fk/26winterbrandingke.html?locale=ko-KR&transparentBar=1&wkp=1&curr=KRW.",
+     "summary": [
+      "월요일 오전에 다들 한번 도전해보시죠 다들 싸게싸게 여행 다니시자구요 ㅎ https://kr.trip.com/sale/w/mj1iqfayjdyq81fk/26winterbrandingke.html?locale=ko-KR&transp…"
+     ],
+     "link": "https://cafe.naver.com/yamipapa/9460",
+     "source": "네이버 카페 · 야미파파놀이터",
+     "date": "2026-11-22T03:00:42.044Z",
+     "found": "2026-11-22",
+     "cards": [],
+     "airlines": [
+      "KE"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "대한항공 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "트립닷컴 대한항공 특가 라이브",
+      "airlines": [
+       "대한항공"
+      ],
+      "name": "트립닷컴 대한항공 특가 라이브",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-22",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/aosk1020/673|[ 대한항공 ] 트립닷컴 라이브 특가 (11/23)",
+     "kind": "airline",
+     "community": true,
+     "title": "[ 대한항공 ] 트립닷컴 라이브 특가 (11/23)",
+     "desc": "2026.11.23 09:00 대한항공 전세계 여행 특가 라이브 국제선 항공 특가 및 쿠폰 확인해보세요~.",
+     "summary": [
+      "2026.11.23 09:00 대한항공 전세계 여행 특가 라이브 국제선 항공 특가 및 쿠폰 확인해보세요~."
+     ],
+     "link": "https://cafe.naver.com/aosk1020/673",
+     "source": "네이버 카페 · 푸카크 PUKAK - 푸켓, 카오락, 크라비 전문 현지 여행사",
+     "date": "2026-11-23T01:00:40.717Z",
+     "found": "2026-11-23",
+     "cards": [],
+     "airlines": [
+      "KE"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "대한항공 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "항공사 국제선 특가 라이브",
+      "airlines": [
+       "대한항공"
+      ],
+      "name": "트립닷컴 라이브 특가",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-23",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/20daelee/954039|대한항공 기프트카드 5만원 이벤트 참여하세요",
+     "kind": "airline",
+     "community": true,
+     "title": "대한항공 기프트카드 5만원 이벤트 참여하세요",
+     "desc": "대한항공 이벤트 홈페이지 가면 고마쓰 10% 할인 및 경품 이벤트가 있어요 이거 이벤트3에 대한항공 기프트카드 5만원 선물로 주는 이벤트 있습니다 20명 추첨인데 우리가 당첨됩시다!",
+     "summary": [
+      "대한항공 이벤트 홈페이지 가면 고마쓰 10% 할인 및 경품 이벤트가 있어요 이거 이벤트3에 대한항공 기프트카드 5만원 선물로 주는 이벤트 있습니다 20명 추첨인데 우리가 당첨됩시다!…"
+     ],
+     "link": "https://cafe.naver.com/20daelee/954039",
+     "source": "네이버 카페 · 체크인데이#일본여행,도쿄여행,후쿠오카여행,오사카,교토,삿포로",
+     "date": "2026-11-23T05:00:42.080Z",
+     "found": "2026-11-23",
+     "cards": [],
+     "airlines": [
+      "KE"
+     ],
+     "countries": [
+      "일본"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": {
+      "amount": 50000,
+      "trip": "oneway?"
+     },
+     "query": "대한항공 할인",
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "기프트카드 경품 이벤트",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-23",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/guamfree/3016561|어제자로 끝난 노랑풍선 타임 특가 대한항공 슈페리어워터파크뷰 499만원 ",
+     "kind": "airline",
+     "community": true,
+     "title": "어제자로 끝난 노랑풍선 타임 특가 대한항공 슈페리어워터파크뷰 499만원 가....",
+     "desc": "",
+     "link": "https://cafe.naver.com/guamfree/3016561",
+     "source": "네이버 카페 · 괌 자유여행 길잡이",
+     "date": "2026-11-26T05:00:54.391Z",
+     "found": "2026-11-26",
+     "cards": [],
+     "airlines": [
+      "KE"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": {
+      "amount": 4990000,
+      "trip": "oneway?"
+     },
+     "query": "대한항공 특가",
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "이미 끝난 여행사 패키지 특가",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-26",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/aipromptlab26/669|[게임형 경품] 타자 치면 응모권 5장 — 대한항공 100만원부터 커피 ",
+     "kind": "airline",
+     "community": true,
+     "title": "[게임형 경품] 타자 치면 응모권 5장 — 대한항공 100만원부터 커피 1만원권....",
+     "desc": "",
+     "link": "https://cafe.naver.com/aipromptlab26/669",
+     "source": "네이버 카페 · 짠테크 연구소 - 앱테크·핫딜·절약 꿀정보",
+     "date": "2026-11-27T05:00:45.265Z",
+     "found": "2026-11-27",
+     "cards": [],
+     "airlines": [
+      "KE"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": {
+      "amount": 10000,
+      "trip": "oneway?"
+     },
+     "query": "대한항공 할인",
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "게임형 경품 이벤트, 항공권은 경품",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-27",
+      "model": "deepseek-v4-flash"
+     }
+    }
+   ]
+  },
+  {
+   "id": "c:https://cafe.naver.com/mindy7857/5551059|✈️ 나트랑 특가 프로모션 : 에어부산",
+   "kind": "airline",
+   "community": true,
+   "title": "✈️ 나트랑 특가 프로모션 : 에어부산",
+   "desc": "겨울맞이 국제선 대특가 이벤트 기간: 11/26(목) 11:00 -11/30(월 ) 탑승 기간: 11/26(목) - '27/3/27(토) 잠시후 11시 에어부산 국제선 프로모션 있습니다.",
+   "summary": [
+    "겨울맞이 국제선 대특가 이벤트 기간: 11/26(목) 11:00 -11/30(월 ) 탑승 기간: 11/26(목) - '27/3/27(토) 잠시후 11시 에어부산 국제선 프로모션 있습니다."
+   ],
+   "link": "https://cafe.naver.com/mindy7857/5551059",
+   "source": "네이버 카페 · 베나자-베트남나트랑자유여행,달랏,무이네,호텔,투어,리조트맛집",
+   "date": "2026-11-26T03:31:02.497Z",
+   "found": "2026-11-26",
+   "cards": [],
+   "airlines": [
+    "BX"
+   ],
+   "countries": [
+    "베트남",
+    "태국",
+    "말레이시아",
+    "일본",
+    "인도네시아",
+    "대만"
+   ],
+   "allRoutes": true,
+   "routes": [],
+   "price": {
+    "amount": 360000,
+    "trip": "oneway?"
+   },
+   "query": "에어부산 프로모션",
+   "ai": {
+    "v": 2,
+    "promo": true,
+    "why": "에어부산 국제선 특가 프로모션",
+    "airlines": [
+     "에어부산"
+    ],
+    "name": "겨울맞이 국제선 대특가",
+    "book": {
+     "from": "2026-11-26",
+     "to": "2026-11-30"
+    },
+    "board": {
+     "from": "2026-11-26",
+     "to": "2027-03-27"
+    },
+    "price": null,
+    "trip": null,
+    "pct": null,
+    "seoul": null,
+    "at": "2026-11-26",
+    "model": "deepseek-v4-flash"
+   },
+   "lastDate": "2026-11-27T05:00:45.265Z",
+   "lastFound": "2026-11-27",
+   "more": [
+    {
+     "id": "c:https://cafe.naver.com/airplanetiket/1472|에어부산 방콕 최대 20만원 할인",
+     "kind": "airline",
+     "community": true,
+     "title": "에어부산 방콕 최대 20만원 할인",
+     "desc": "",
+     "link": "https://cafe.naver.com/airplanetiket/1472",
+     "source": "네이버 카페 · 항공특가정보",
+     "date": "2026-11-23T11:00:43.806Z",
+     "found": "2026-11-23",
+     "cards": [],
+     "airlines": [
+      "BX"
+     ],
+     "countries": [
+      "태국",
+      "말레이시아",
+      "베트남"
+     ],
+     "allRoutes": true,
+     "routes": [],
+     "price": {
+      "amount": 360000,
+      "trip": "oneway?"
+     },
+     "query": "에어부산 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "에어부산 방콕 노선 할인 소식",
+      "airlines": [
+       "에어부산"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": 20,
+      "seoul": null,
+      "at": "2026-11-23",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/bebettergirls/2104211|에어부산 겨울맞이 국제선 특가 할인 프로모션 (~11/30)",
+     "kind": "airline",
+     "community": true,
+     "title": "에어부산 겨울맞이 국제선 특가 할인 프로모션 (~11/30)",
+     "desc": "",
+     "link": "https://cafe.naver.com/bebettergirls/2104211",
+     "source": "네이버 카페 · 체크인발리&싱가포르#발리여행,싱가폴여행,인도네시아여행 카페",
+     "date": "2026-11-25T03:52:50.193Z",
+     "found": "2026-11-25",
+     "cards": [],
+     "airlines": [
+      "BX"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "항공권 특가 오픈",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "에어부산 국제선 특가 프로모션",
+      "airlines": [
+       "에어부산"
+      ],
+      "name": "겨울맞이 국제선 특가 할인 프로모션",
+      "book": {
+       "from": null,
+       "to": "2026-11-30"
+      },
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-25",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/warcraftgamemap/3544020|✈️ 다낭 특가 프로모션 : 에어부산",
+     "kind": "airline",
+     "community": true,
+     "title": "✈️ 다낭 특가 프로모션 : 에어부산",
+     "desc": "겨울맞이 국제선 대 특가 국제선 편도총액 86,900원부터 한 해 동안 수고한 나를 위한 연말 선물 에어부산과 함께 특별한 겨울 여행을 떠나보세요!",
+     "summary": [
+      "겨울맞이 국제선 대 특가 국제선 편도총액 86,900원부터 한 해 동안 수고한 나를 위한 연말 선물 에어부산과 함께 특별한 겨울 여행을 떠나보세요!…"
+     ],
+     "link": "https://cafe.naver.com/warcraftgamemap/3544020",
+     "source": "네이버 카페 · 다낭 고스트 - 베트남 다낭자유여행 ,다낭여행,맛집,호텔리조트",
+     "date": "2026-11-26T01:00:44.053Z",
+     "found": "2026-11-26",
+     "cards": [],
+     "airlines": [
+      "BX"
+     ],
+     "countries": [
+      "베트남"
+     ],
+     "allRoutes": true,
+     "routes": [],
+     "price": {
+      "amount": 86900,
+      "trip": "oneway"
+     },
+     "query": "베트남 항공권 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "에어부산 국제선 특가 프로모션",
+      "airlines": [
+       "에어부산"
+      ],
+      "name": "겨울맞이 국제선 대특가",
+      "book": null,
+      "board": null,
+      "price": 86900,
+      "trip": "편도",
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-26",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/mindy7857/5551134|정보)❤️에어부산 국제선 대 특가 ‼️",
+     "kind": "airline",
+     "community": true,
+     "title": "정보)❤️에어부산 국제선 대 특가 ‼️",
+     "desc": "겨울맞이 국제선 항공권 특가 행사를 발표했답니다. 이번 행사에는 부산과 인천에서 출발하는 국제선 28개 노선이 포함됐어요 부산 출발 일본 항공권 은 편도 8만 6,900원부터 시작한다고 해요.",
+     "summary": [
+      "겨울맞이 국제선 항공권 특가 행사를 발표했답니다.",
+      "이번 행사에는 부산과 인천에서 출발하는 국제선 28개 노선이 포함됐어요 부산 출발 일본 항공권 은 편도 8만 6,900원부터 시작한다고 해요."
+     ],
+     "link": "https://cafe.naver.com/mindy7857/5551134",
+     "source": "네이버 카페 · 베나자-베트남나트랑자유여행,달랏,무이네,호텔,투어,리조트맛집",
+     "date": "2026-11-26T03:31:02.497Z",
+     "found": "2026-11-26",
+     "cards": [],
+     "airlines": [
+      "BX"
+     ],
+     "countries": [
+      "일본"
+     ],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "베트남 항공권 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "에어부산 국제선 특가 행사",
+      "airlines": [
+       "에어부산"
+      ],
+      "name": "겨울맞이 국제선 특가",
+      "book": null,
+      "board": null,
+      "price": 86900,
+      "trip": "편도",
+      "pct": null,
+      "seoul": true,
+      "at": "2026-11-26",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/rankingking/15864|에어부산 , 국제선 28개 노선 특가 프로모션…일본 편도 8만6900원부",
+     "kind": "airline",
+     "community": true,
+     "title": "에어부산 , 국제선 28개 노선 특가 프로모션…일본 편도 8만6900원부터",
+     "desc": "에어부산 이 겨울철과 내년 봄 해외여행을 준비하는 고객들을 대상으로 국제선 특가 항공권 판매와 다양한 여행 혜택을 제공하는 프로모션을 진행한다.",
+     "summary": [
+      "에어부산 이 겨울철과 내년 봄 해외여행을 준비하는 고객들을 대상으로 국제선 특가 항공권 판매와 다양한 여행 혜택을 제공하는 프로모션을 진행한다."
+     ],
+     "link": "https://cafe.naver.com/rankingking/15864",
+     "source": "네이버 카페 · 캠핑.여행.트레킹 정보 - 랭킹킹",
+     "date": "2026-11-26T03:31:02.497Z",
+     "found": "2026-11-26",
+     "cards": [],
+     "airlines": [
+      "BX"
+     ],
+     "countries": [
+      "일본"
+     ],
+     "allRoutes": true,
+     "routes": [],
+     "price": {
+      "amount": 86900,
+      "trip": "oneway"
+     },
+     "query": "에어부산 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "에어부산 국제선 특가 프로모션",
+      "airlines": [
+       "에어부산"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": 86900,
+      "trip": "편도",
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-26",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/djmomschools/250|✈️ [여행·핫딜] ~11/30 겨울·봄방학 특가! 에어부산 국제선 28",
+     "kind": "airline",
+     "community": true,
+     "title": "✈️ [여행·핫딜] ~11/30 겨울·봄방학 특가! 에어부산 국제선 28개 노선(인천....",
+     "desc": "특가 프로모션 꼭 확인해 보세요!",
+     "link": "https://cafe.naver.com/djmomschools/250",
+     "source": "네이버 카페 · 동작맘스쿨",
+     "date": "2026-11-27T05:00:45.265Z",
+     "found": "2026-11-27",
+     "cards": [],
+     "airlines": [
+      "BX"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "항공권 프로모션 코드",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "에어부산 국제선 특가 프로모션",
+      "airlines": [
+       "에어부산"
+      ],
+      "name": "겨울·봄방학 특가",
+      "book": {
+       "from": null,
+       "to": "2026-11-30"
+      },
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": true,
+      "at": "2026-11-27",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/pusanmom/4289868|에어부산 특가 오픈!!!!!!!!!!!!!!",
+     "kind": "airline",
+     "community": true,
+     "title": "에어부산 특가 오픈!!!!!!!!!!!!!!",
+     "desc": "",
+     "link": "https://cafe.naver.com/pusanmom/4289868",
+     "source": "네이버 카페 · ★☆부경맘(부산맘/경남맘)☆★",
+     "date": "2026-11-18T02:37:52.693Z",
+     "found": "2026-11-18",
+     "cards": [],
+     "airlines": [
+      "BX"
+     ],
+     "countries": [
+      "말레이시아"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": {
+      "amount": 360000,
+      "trip": "oneway?"
+     },
+     "query": "에어부산 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "에어부산 특가 오픈 소식",
+      "airlines": [
+       "에어부산"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-18",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/airplanetiket/1384|에어부산 )코타키나발루 특가",
+     "kind": "airline",
+     "community": true,
+     "title": "에어부산 )코타키나발루 특가",
+     "desc": "에어부산 도 특가 잘 잡으면 저렴한것 같아요 ㅎㅎ 크리스마스 주에 36만원 나오네용ㅎㅎ.",
+     "summary": [
+      "에어부산 도 특가 잘 잡으면 저렴한것 같아요 ㅎㅎ 크리스마스 주에 36만원 나오네용ㅎㅎ."
+     ],
+     "link": "https://cafe.naver.com/airplanetiket/1384",
+     "source": "네이버 카페 · 항공특가정보",
+     "date": "2026-11-18T05:00:41.713Z",
+     "found": "2026-11-18",
+     "cards": [],
+     "airlines": [
+      "BX"
+     ],
+     "countries": [
+      "말레이시아"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": {
+      "amount": 360000,
+      "trip": "oneway?"
+     },
+     "query": "에어부산 특가",
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "개인 검색 가격 공유",
+      "airlines": [
+       "에어부산"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-18",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/grownman/1193277|✈️(정보)에어부산 겨울 국제선 특가 ! 내일 오전 11시 오픈 !",
+     "kind": "airline",
+     "community": true,
+     "title": "✈️(정보)에어부산 겨울 국제선 특가 ! 내일 오전 11시 오픈 !",
+     "desc": "에어부산에서 겨울 국제선 특가 항공권 을 판매한다고 합니다!",
+     "summary": [
+      "에어부산에서 겨울 국제선 특가 항공권 을 판매한다고 합니다!…"
+     ],
+     "link": "https://cafe.naver.com/grownman/1193277",
+     "source": "네이버 카페 · 다낭 보물창고 - 다낭자유여행 다낭여행 다낭맛집 다낭리조트",
+     "date": "2026-11-25T05:00:49.160Z",
+     "found": "2026-11-25",
+     "cards": [],
+     "airlines": [
+      "BX"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "항공권 특가 오픈",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "에어부산 겨울 국제선 특가 판매",
+      "airlines": [
+       "에어부산"
+      ],
+      "name": "겨울 국제선 특가",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-25",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/airplanetiket/1492|에어부산 국제선 특가",
+     "kind": "airline",
+     "community": true,
+     "title": "에어부산 국제선 특가",
+     "desc": "",
+     "link": "https://cafe.naver.com/airplanetiket/1492",
+     "source": "네이버 카페 · 항공특가정보",
+     "date": "2026-11-25T13:00:43.387Z",
+     "found": "2026-11-25",
+     "cards": [],
+     "airlines": [
+      "BX"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "에어부산 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "에어부산 국제선 특가 소식",
+      "airlines": [
+       "에어부산"
+      ],
+      "name": "국제선 특가",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-25",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/bukdc/94427|에어부산 라스트런일자(3/16) 특가 떴는데! 정보공유해봅니다! 라스트런",
+     "kind": "airline",
+     "community": true,
+     "title": "에어부산 라스트런일자(3/16) 특가 떴는데! 정보공유해봅니다! 라스트런 갈....",
+     "desc": "그나마 싼 애들로 데리고 왔습니다! 1.오사카 2.타이베이(말항 330-900 연계와 좋은스케줄입니다) https://naver.me/GQGVMwnr 3.다낭 4.발리 5.마쓰야마 6.칭다오 7.삿포로.",
+     "summary": [
+      "그나마 싼 애들로 데리고 왔습니다! 1.오사카 2.타이베이(말항 330-900 연계와 좋은스케줄입니다) https://naver.me/GQGVMwnr 3.다낭 4.발리 5.마쓰야마 6.칭다오 7.삿포로."
+     ],
+     "link": "https://cafe.naver.com/bukdc/94427",
+     "source": "네이버 카페 · 부울경 발전카페",
+     "date": "2026-11-26T03:31:02.497Z",
+     "found": "2026-11-26",
+     "cards": [],
+     "airlines": [
+      "BX"
+     ],
+     "countries": [
+      "베트남",
+      "인도네시아",
+      "일본",
+      "대만"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "에어부산 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "에어부산 특가 정보 공유",
+      "airlines": [
+       "에어부산"
+      ],
+      "name": "라스트런 특가",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-26",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/d2d2d2/2289256|에어부산 특가 합니다",
+     "kind": "airline",
+     "community": true,
+     "title": "에어부산 특가 합니다",
+     "desc": "이맘때 하는데 왜 안하나 했더니 하네요 소도시 보면 평일꺼는 특가 있어요 대도시도 있긴 있습니다. 이 정도 나오네요 평일꺼 잘 찾아보세요 와 주말도 있습니다. 삿포로는 3월꺼 다 싸요.",
+     "summary": [
+      "이맘때 하는데 왜 안하나 했더니 하네요 소도시 보면 평일꺼는 특가 있어요 대도시도 있긴 있습니다.",
+      "이 정도 나오네요 평일꺼 잘 찾아보세요 와 주말도 있습니다.",
+      "삿포로는 3월꺼 다 싸요."
+     ],
+     "link": "https://cafe.naver.com/d2d2d2/2289256",
+     "source": "네이버 카페 · 플라잉재팬 - 일본여행 후쿠오카 오사카 도쿄 홋카이도 자유여행",
+     "date": "2026-11-26T03:31:02.497Z",
+     "found": "2026-11-26",
+     "cards": [],
+     "airlines": [
+      "BX"
+     ],
+     "countries": [
+      "일본"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "에어부산 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "에어부산 특가 진행 소식",
+      "airlines": [
+       "에어부산"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-26",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/grownman/1193653|에어부산 국제선특가 오늘11시",
+     "kind": "airline",
+     "community": true,
+     "title": "에어부산 국제선특가 오늘11시",
+     "desc": "에어부산 이 겨울방학 및 봄방학 기간을 포함한 국제선 28개 노선을 대상으로 겨울맞이 특가 프로모션 을 진행하고 있습니다.",
+     "summary": [
+      "에어부산 이 겨울방학 및 봄방학 기간을 포함한 국제선 28개 노선을 대상으로 겨울맞이 특가 프로모션 을 진행하고 있습니다."
+     ],
+     "link": "https://cafe.naver.com/grownman/1193653",
+     "source": "네이버 카페 · 다낭 보물창고 - 다낭자유여행 다낭여행 다낭맛집 다낭리조트",
+     "date": "2026-11-26T03:31:02.497Z",
+     "found": "2026-11-26",
+     "cards": [],
+     "airlines": [
+      "BX"
+     ],
+     "countries": [],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "에어부산 프로모션",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "에어부산 국제선 특가 프로모션",
+      "airlines": [
+       "에어부산"
+      ],
+      "name": "겨울맞이 특가",
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-26",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/loyaltylife/372168|에어부산 과연 대 특가 일까..",
+     "kind": "airline",
+     "community": true,
+     "title": "에어부산 과연 대 특가 일까..",
+     "desc": "",
+     "link": "https://cafe.naver.com/loyaltylife/372168",
+     "source": "네이버 카페 · [뉴스사사] 뉴스사사 스마트 컨슈머들의 호텔/항공 여행이야기",
+     "date": "2026-11-26T09:00:56.903Z",
+     "found": "2026-11-26",
+     "cards": [],
+     "airlines": [
+      "BX"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "제주항공 특가",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "에어부산 특가 소식",
+      "airlines": [
+       "에어부산"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-26",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "c:https://cafe.naver.com/zzop/4360892|에어부산 겨울 대 특가 구매완료",
+     "kind": "airline",
+     "community": true,
+     "title": "에어부산 겨울 대 특가 구매완료",
+     "desc": "부산 나트랑 3월 20일 출발로 부모님모시고 6인 200만원에 결제했네요 티켓값은 3만원인데 ㅋㅋ유류할증료 가 어마무시하네요.. 숙소잡아야하는데 6인 숙소가 고르기 어렵네요 ㅎㅎ.",
+     "summary": [
+      "부산 나트랑 3월 20일 출발로 부모님모시고 6인 200만원에 결제했네요 티켓값은 3만원인데 ㅋㅋ유류할증료 가 어마무시하네요..",
+      "숙소잡아야하는데 6인 숙소가 고르기 어렵네요 ㅎㅎ."
+     ],
+     "link": "https://cafe.naver.com/zzop/4360892",
+     "source": "네이버 카페 · 나트랑 도깨비 - 베트남 나트랑 자유여행,무이네,달랏,맛집,호텔",
+     "date": "2026-11-27T01:00:42.991Z",
+     "found": "2026-11-27",
+     "cards": [],
+     "airlines": [
+      "BX"
+     ],
+     "countries": [
+      "베트남"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": {
+      "amount": 30000,
+      "trip": "oneway?"
+     },
+     "query": "베트남 항공권 특가",
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "개인 발권 후기·가격 공유",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": false,
+      "at": "2026-11-27",
+      "model": "deepseek-v4-flash"
+     }
+    }
+   ]
+  },
+  {
    "id": "c:https://cafe.naver.com/loyaltylife/372303|필리핀 항공 필리핀 행 블랙프라이데이 특가 (11월 27일-12월 2일 ",
    "kind": "airline",
    "community": true,
@@ -1327,657 +2435,6 @@
       "pct": null,
       "seoul": null,
       "at": "2026-11-26",
-      "model": "deepseek-v4-flash"
-     }
-    }
-   ]
-  },
-  {
-   "id": "c:https://cafe.naver.com/mindy7857/5551059|✈️ 나트랑 특가 프로모션 : 에어부산",
-   "kind": "airline",
-   "community": true,
-   "title": "✈️ 나트랑 특가 프로모션 : 에어부산",
-   "desc": "겨울맞이 국제선 대특가 이벤트 기간: 11/26(목) 11:00 -11/30(월 ) 탑승 기간: 11/26(목) - '27/3/27(토) 잠시후 11시 에어부산 국제선 프로모션 있습니다.",
-   "summary": [
-    "겨울맞이 국제선 대특가 이벤트 기간: 11/26(목) 11:00 -11/30(월 ) 탑승 기간: 11/26(목) - '27/3/27(토) 잠시후 11시 에어부산 국제선 프로모션 있습니다."
-   ],
-   "link": "https://cafe.naver.com/mindy7857/5551059",
-   "source": "네이버 카페 · 베나자-베트남나트랑자유여행,달랏,무이네,호텔,투어,리조트맛집",
-   "date": "2026-11-26T03:31:02.497Z",
-   "found": "2026-11-26",
-   "cards": [],
-   "airlines": [
-    "BX"
-   ],
-   "countries": [
-    "베트남",
-    "태국",
-    "말레이시아",
-    "일본",
-    "인도네시아",
-    "대만"
-   ],
-   "allRoutes": true,
-   "routes": [],
-   "price": {
-    "amount": 360000,
-    "trip": "oneway?"
-   },
-   "query": "에어부산 프로모션",
-   "ai": {
-    "v": 2,
-    "promo": true,
-    "why": "에어부산 국제선 특가 프로모션",
-    "airlines": [
-     "에어부산"
-    ],
-    "name": "겨울맞이 국제선 대특가",
-    "book": {
-     "from": "2026-11-26",
-     "to": "2026-11-30"
-    },
-    "board": {
-     "from": "2026-11-26",
-     "to": "2027-03-27"
-    },
-    "price": null,
-    "trip": null,
-    "pct": null,
-    "seoul": null,
-    "at": "2026-11-26",
-    "model": "deepseek-v4-flash"
-   },
-   "lastDate": "2026-11-27T01:00:42.991Z",
-   "lastFound": "2026-11-27",
-   "more": [
-    {
-     "id": "c:https://cafe.naver.com/airplanetiket/1472|에어부산 방콕 최대 20만원 할인",
-     "kind": "airline",
-     "community": true,
-     "title": "에어부산 방콕 최대 20만원 할인",
-     "desc": "",
-     "link": "https://cafe.naver.com/airplanetiket/1472",
-     "source": "네이버 카페 · 항공특가정보",
-     "date": "2026-11-23T11:00:43.806Z",
-     "found": "2026-11-23",
-     "cards": [],
-     "airlines": [
-      "BX"
-     ],
-     "countries": [
-      "태국",
-      "말레이시아",
-      "베트남"
-     ],
-     "allRoutes": true,
-     "routes": [],
-     "price": {
-      "amount": 360000,
-      "trip": "oneway?"
-     },
-     "query": "에어부산 특가",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "에어부산 방콕 노선 할인 소식",
-      "airlines": [
-       "에어부산"
-      ],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": 20,
-      "seoul": null,
-      "at": "2026-11-23",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/bebettergirls/2104211|에어부산 겨울맞이 국제선 특가 할인 프로모션 (~11/30)",
-     "kind": "airline",
-     "community": true,
-     "title": "에어부산 겨울맞이 국제선 특가 할인 프로모션 (~11/30)",
-     "desc": "",
-     "link": "https://cafe.naver.com/bebettergirls/2104211",
-     "source": "네이버 카페 · 체크인발리&싱가포르#발리여행,싱가폴여행,인도네시아여행 카페",
-     "date": "2026-11-25T03:52:50.193Z",
-     "found": "2026-11-25",
-     "cards": [],
-     "airlines": [
-      "BX"
-     ],
-     "countries": [],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "항공권 특가 오픈",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "에어부산 국제선 특가 프로모션",
-      "airlines": [
-       "에어부산"
-      ],
-      "name": "겨울맞이 국제선 특가 할인 프로모션",
-      "book": {
-       "from": null,
-       "to": "2026-11-30"
-      },
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-25",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/warcraftgamemap/3544020|✈️ 다낭 특가 프로모션 : 에어부산",
-     "kind": "airline",
-     "community": true,
-     "title": "✈️ 다낭 특가 프로모션 : 에어부산",
-     "desc": "겨울맞이 국제선 대 특가 국제선 편도총액 86,900원부터 한 해 동안 수고한 나를 위한 연말 선물 에어부산과 함께 특별한 겨울 여행을 떠나보세요!",
-     "summary": [
-      "겨울맞이 국제선 대 특가 국제선 편도총액 86,900원부터 한 해 동안 수고한 나를 위한 연말 선물 에어부산과 함께 특별한 겨울 여행을 떠나보세요!…"
-     ],
-     "link": "https://cafe.naver.com/warcraftgamemap/3544020",
-     "source": "네이버 카페 · 다낭 고스트 - 베트남 다낭자유여행 ,다낭여행,맛집,호텔리조트",
-     "date": "2026-11-26T01:00:44.053Z",
-     "found": "2026-11-26",
-     "cards": [],
-     "airlines": [
-      "BX"
-     ],
-     "countries": [
-      "베트남"
-     ],
-     "allRoutes": true,
-     "routes": [],
-     "price": {
-      "amount": 86900,
-      "trip": "oneway"
-     },
-     "query": "베트남 항공권 특가",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "에어부산 국제선 특가 프로모션",
-      "airlines": [
-       "에어부산"
-      ],
-      "name": "겨울맞이 국제선 대특가",
-      "book": null,
-      "board": null,
-      "price": 86900,
-      "trip": "편도",
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-26",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/mindy7857/5551134|정보)❤️에어부산 국제선 대 특가 ‼️",
-     "kind": "airline",
-     "community": true,
-     "title": "정보)❤️에어부산 국제선 대 특가 ‼️",
-     "desc": "겨울맞이 국제선 항공권 특가 행사를 발표했답니다. 이번 행사에는 부산과 인천에서 출발하는 국제선 28개 노선이 포함됐어요 부산 출발 일본 항공권 은 편도 8만 6,900원부터 시작한다고 해요.",
-     "summary": [
-      "겨울맞이 국제선 항공권 특가 행사를 발표했답니다.",
-      "이번 행사에는 부산과 인천에서 출발하는 국제선 28개 노선이 포함됐어요 부산 출발 일본 항공권 은 편도 8만 6,900원부터 시작한다고 해요."
-     ],
-     "link": "https://cafe.naver.com/mindy7857/5551134",
-     "source": "네이버 카페 · 베나자-베트남나트랑자유여행,달랏,무이네,호텔,투어,리조트맛집",
-     "date": "2026-11-26T03:31:02.497Z",
-     "found": "2026-11-26",
-     "cards": [],
-     "airlines": [
-      "BX"
-     ],
-     "countries": [
-      "일본"
-     ],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "베트남 항공권 특가",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "에어부산 국제선 특가 행사",
-      "airlines": [
-       "에어부산"
-      ],
-      "name": "겨울맞이 국제선 특가",
-      "book": null,
-      "board": null,
-      "price": 86900,
-      "trip": "편도",
-      "pct": null,
-      "seoul": true,
-      "at": "2026-11-26",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/rankingking/15864|에어부산 , 국제선 28개 노선 특가 프로모션…일본 편도 8만6900원부",
-     "kind": "airline",
-     "community": true,
-     "title": "에어부산 , 국제선 28개 노선 특가 프로모션…일본 편도 8만6900원부터",
-     "desc": "에어부산 이 겨울철과 내년 봄 해외여행을 준비하는 고객들을 대상으로 국제선 특가 항공권 판매와 다양한 여행 혜택을 제공하는 프로모션을 진행한다.",
-     "summary": [
-      "에어부산 이 겨울철과 내년 봄 해외여행을 준비하는 고객들을 대상으로 국제선 특가 항공권 판매와 다양한 여행 혜택을 제공하는 프로모션을 진행한다."
-     ],
-     "link": "https://cafe.naver.com/rankingking/15864",
-     "source": "네이버 카페 · 캠핑.여행.트레킹 정보 - 랭킹킹",
-     "date": "2026-11-26T03:31:02.497Z",
-     "found": "2026-11-26",
-     "cards": [],
-     "airlines": [
-      "BX"
-     ],
-     "countries": [
-      "일본"
-     ],
-     "allRoutes": true,
-     "routes": [],
-     "price": {
-      "amount": 86900,
-      "trip": "oneway"
-     },
-     "query": "에어부산 특가",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "에어부산 국제선 특가 프로모션",
-      "airlines": [
-       "에어부산"
-      ],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": 86900,
-      "trip": "편도",
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-26",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/pusanmom/4289868|에어부산 특가 오픈!!!!!!!!!!!!!!",
-     "kind": "airline",
-     "community": true,
-     "title": "에어부산 특가 오픈!!!!!!!!!!!!!!",
-     "desc": "",
-     "link": "https://cafe.naver.com/pusanmom/4289868",
-     "source": "네이버 카페 · ★☆부경맘(부산맘/경남맘)☆★",
-     "date": "2026-11-18T02:37:52.693Z",
-     "found": "2026-11-18",
-     "cards": [],
-     "airlines": [
-      "BX"
-     ],
-     "countries": [
-      "말레이시아"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": {
-      "amount": 360000,
-      "trip": "oneway?"
-     },
-     "query": "에어부산 특가",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "에어부산 특가 오픈 소식",
-      "airlines": [
-       "에어부산"
-      ],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-18",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/airplanetiket/1384|에어부산 )코타키나발루 특가",
-     "kind": "airline",
-     "community": true,
-     "title": "에어부산 )코타키나발루 특가",
-     "desc": "에어부산 도 특가 잘 잡으면 저렴한것 같아요 ㅎㅎ 크리스마스 주에 36만원 나오네용ㅎㅎ.",
-     "summary": [
-      "에어부산 도 특가 잘 잡으면 저렴한것 같아요 ㅎㅎ 크리스마스 주에 36만원 나오네용ㅎㅎ."
-     ],
-     "link": "https://cafe.naver.com/airplanetiket/1384",
-     "source": "네이버 카페 · 항공특가정보",
-     "date": "2026-11-18T05:00:41.713Z",
-     "found": "2026-11-18",
-     "cards": [],
-     "airlines": [
-      "BX"
-     ],
-     "countries": [
-      "말레이시아"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": {
-      "amount": 360000,
-      "trip": "oneway?"
-     },
-     "query": "에어부산 특가",
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "개인 검색 가격 공유",
-      "airlines": [
-       "에어부산"
-      ],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-18",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/grownman/1193277|✈️(정보)에어부산 겨울 국제선 특가 ! 내일 오전 11시 오픈 !",
-     "kind": "airline",
-     "community": true,
-     "title": "✈️(정보)에어부산 겨울 국제선 특가 ! 내일 오전 11시 오픈 !",
-     "desc": "에어부산에서 겨울 국제선 특가 항공권 을 판매한다고 합니다!",
-     "summary": [
-      "에어부산에서 겨울 국제선 특가 항공권 을 판매한다고 합니다!…"
-     ],
-     "link": "https://cafe.naver.com/grownman/1193277",
-     "source": "네이버 카페 · 다낭 보물창고 - 다낭자유여행 다낭여행 다낭맛집 다낭리조트",
-     "date": "2026-11-25T05:00:49.160Z",
-     "found": "2026-11-25",
-     "cards": [],
-     "airlines": [
-      "BX"
-     ],
-     "countries": [],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "항공권 특가 오픈",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "에어부산 겨울 국제선 특가 판매",
-      "airlines": [
-       "에어부산"
-      ],
-      "name": "겨울 국제선 특가",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-25",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/airplanetiket/1492|에어부산 국제선 특가",
-     "kind": "airline",
-     "community": true,
-     "title": "에어부산 국제선 특가",
-     "desc": "",
-     "link": "https://cafe.naver.com/airplanetiket/1492",
-     "source": "네이버 카페 · 항공특가정보",
-     "date": "2026-11-25T13:00:43.387Z",
-     "found": "2026-11-25",
-     "cards": [],
-     "airlines": [
-      "BX"
-     ],
-     "countries": [],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "에어부산 특가",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "에어부산 국제선 특가 소식",
-      "airlines": [
-       "에어부산"
-      ],
-      "name": "국제선 특가",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-25",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/bukdc/94427|에어부산 라스트런일자(3/16) 특가 떴는데! 정보공유해봅니다! 라스트런",
-     "kind": "airline",
-     "community": true,
-     "title": "에어부산 라스트런일자(3/16) 특가 떴는데! 정보공유해봅니다! 라스트런 갈....",
-     "desc": "그나마 싼 애들로 데리고 왔습니다! 1.오사카 2.타이베이(말항 330-900 연계와 좋은스케줄입니다) https://naver.me/GQGVMwnr 3.다낭 4.발리 5.마쓰야마 6.칭다오 7.삿포로.",
-     "summary": [
-      "그나마 싼 애들로 데리고 왔습니다! 1.오사카 2.타이베이(말항 330-900 연계와 좋은스케줄입니다) https://naver.me/GQGVMwnr 3.다낭 4.발리 5.마쓰야마 6.칭다오 7.삿포로."
-     ],
-     "link": "https://cafe.naver.com/bukdc/94427",
-     "source": "네이버 카페 · 부울경 발전카페",
-     "date": "2026-11-26T03:31:02.497Z",
-     "found": "2026-11-26",
-     "cards": [],
-     "airlines": [
-      "BX"
-     ],
-     "countries": [
-      "베트남",
-      "인도네시아",
-      "일본",
-      "대만"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "에어부산 특가",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "에어부산 특가 정보 공유",
-      "airlines": [
-       "에어부산"
-      ],
-      "name": "라스트런 특가",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-26",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/d2d2d2/2289256|에어부산 특가 합니다",
-     "kind": "airline",
-     "community": true,
-     "title": "에어부산 특가 합니다",
-     "desc": "이맘때 하는데 왜 안하나 했더니 하네요 소도시 보면 평일꺼는 특가 있어요 대도시도 있긴 있습니다. 이 정도 나오네요 평일꺼 잘 찾아보세요 와 주말도 있습니다. 삿포로는 3월꺼 다 싸요.",
-     "summary": [
-      "이맘때 하는데 왜 안하나 했더니 하네요 소도시 보면 평일꺼는 특가 있어요 대도시도 있긴 있습니다.",
-      "이 정도 나오네요 평일꺼 잘 찾아보세요 와 주말도 있습니다.",
-      "삿포로는 3월꺼 다 싸요."
-     ],
-     "link": "https://cafe.naver.com/d2d2d2/2289256",
-     "source": "네이버 카페 · 플라잉재팬 - 일본여행 후쿠오카 오사카 도쿄 홋카이도 자유여행",
-     "date": "2026-11-26T03:31:02.497Z",
-     "found": "2026-11-26",
-     "cards": [],
-     "airlines": [
-      "BX"
-     ],
-     "countries": [
-      "일본"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "에어부산 특가",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "에어부산 특가 진행 소식",
-      "airlines": [
-       "에어부산"
-      ],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-26",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/grownman/1193653|에어부산 국제선특가 오늘11시",
-     "kind": "airline",
-     "community": true,
-     "title": "에어부산 국제선특가 오늘11시",
-     "desc": "에어부산 이 겨울방학 및 봄방학 기간을 포함한 국제선 28개 노선을 대상으로 겨울맞이 특가 프로모션 을 진행하고 있습니다.",
-     "summary": [
-      "에어부산 이 겨울방학 및 봄방학 기간을 포함한 국제선 28개 노선을 대상으로 겨울맞이 특가 프로모션 을 진행하고 있습니다."
-     ],
-     "link": "https://cafe.naver.com/grownman/1193653",
-     "source": "네이버 카페 · 다낭 보물창고 - 다낭자유여행 다낭여행 다낭맛집 다낭리조트",
-     "date": "2026-11-26T03:31:02.497Z",
-     "found": "2026-11-26",
-     "cards": [],
-     "airlines": [
-      "BX"
-     ],
-     "countries": [],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "에어부산 프로모션",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "에어부산 국제선 특가 프로모션",
-      "airlines": [
-       "에어부산"
-      ],
-      "name": "겨울맞이 특가",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-26",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/loyaltylife/372168|에어부산 과연 대 특가 일까..",
-     "kind": "airline",
-     "community": true,
-     "title": "에어부산 과연 대 특가 일까..",
-     "desc": "",
-     "link": "https://cafe.naver.com/loyaltylife/372168",
-     "source": "네이버 카페 · [뉴스사사] 뉴스사사 스마트 컨슈머들의 호텔/항공 여행이야기",
-     "date": "2026-11-26T09:00:56.903Z",
-     "found": "2026-11-26",
-     "cards": [],
-     "airlines": [
-      "BX"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "제주항공 특가",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "에어부산 특가 소식",
-      "airlines": [
-       "에어부산"
-      ],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-26",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/zzop/4360892|에어부산 겨울 대 특가 구매완료",
-     "kind": "airline",
-     "community": true,
-     "title": "에어부산 겨울 대 특가 구매완료",
-     "desc": "부산 나트랑 3월 20일 출발로 부모님모시고 6인 200만원에 결제했네요 티켓값은 3만원인데 ㅋㅋ유류할증료 가 어마무시하네요.. 숙소잡아야하는데 6인 숙소가 고르기 어렵네요 ㅎㅎ.",
-     "summary": [
-      "부산 나트랑 3월 20일 출발로 부모님모시고 6인 200만원에 결제했네요 티켓값은 3만원인데 ㅋㅋ유류할증료 가 어마무시하네요..",
-      "숙소잡아야하는데 6인 숙소가 고르기 어렵네요 ㅎㅎ."
-     ],
-     "link": "https://cafe.naver.com/zzop/4360892",
-     "source": "네이버 카페 · 나트랑 도깨비 - 베트남 나트랑 자유여행,무이네,달랏,맛집,호텔",
-     "date": "2026-11-27T01:00:42.991Z",
-     "found": "2026-11-27",
-     "cards": [],
-     "airlines": [
-      "BX"
-     ],
-     "countries": [
-      "베트남"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": {
-      "amount": 30000,
-      "trip": "oneway?"
-     },
-     "query": "베트남 항공권 특가",
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "개인 발권 후기·가격 공유",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": false,
-      "at": "2026-11-27",
       "model": "deepseek-v4-flash"
      }
     }
@@ -12995,385 +13452,6 @@
        "min": null,
        "period": null
       },
-      "at": "2026-11-26",
-      "model": "deepseek-v4-flash"
-     }
-    }
-   ]
-  },
-  {
-   "id": "c:https://cafe.naver.com/20daelee/954012|대한항공 , 고마쓰 항공 권 10% 할인 프로모션 (~12/20)",
-   "kind": "airline",
-   "community": true,
-   "title": "대한항공 , 고마쓰 항공 권 10% 할인 프로모션 (~12/20)",
-   "desc": "",
-   "link": "https://cafe.naver.com/20daelee/954012",
-   "source": "네이버 카페 · 체크인데이#일본여행,도쿄여행,후쿠오카여행,오사카,교토,삿포로",
-   "date": "2026-11-23T03:00:44.401Z",
-   "found": "2026-11-23",
-   "cards": [],
-   "airlines": [
-    "KE"
-   ],
-   "countries": [
-    "일본"
-   ],
-   "allRoutes": true,
-   "routes": [],
-   "price": {
-    "amount": 50000,
-    "trip": "oneway?"
-   },
-   "query": "대한항공 특가",
-   "ai": {
-    "v": 2,
-    "promo": true,
-    "why": "대한항공 고마쓰 노선 10% 할인 프로모션",
-    "airlines": [
-     "대한항공"
-    ],
-    "name": "고마쓰 항공권 10% 할인 프로모션",
-    "book": {
-     "from": null,
-     "to": "2026-12-20"
-    },
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": 10,
-    "seoul": null,
-    "at": "2026-11-23",
-    "model": "deepseek-v4-flash"
-   },
-   "lastDate": "2026-11-26T05:00:54.391Z",
-   "lastFound": "2026-11-26",
-   "more": [
-    {
-     "id": "c:https://cafe.naver.com/airportshopping/1165|[ 대한항공 ] 고마쓰행 항공 권 10% 할인 쿠폰!",
-     "kind": "airline",
-     "community": true,
-     "title": "[ 대한항공 ] 고마쓰행 항공 권 10% 할인 쿠폰!",
-     "desc": "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
-     "summary": [
-      "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
-     ],
-     "link": "https://cafe.naver.com/airportshopping/1165",
-     "source": "네이버 카페 · 인천공항의 모든 것",
-     "date": "2026-11-20T05:00:43.396Z",
-     "found": "2026-11-20",
-     "cards": [],
-     "airlines": [
-      "KE"
-     ],
-     "countries": [
-      "일본"
-     ],
-     "allRoutes": true,
-     "routes": [],
-     "price": {
-      "amount": 50000,
-      "trip": "oneway?"
-     },
-     "query": "대한항공 할인",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "항공권 10% 할인 쿠폰",
-      "airlines": [
-       "대한항공"
-      ],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": 10,
-      "seoul": null,
-      "at": "2026-11-20",
-      "model": "deepseek-v4-flash"
-     },
-     "notified": "2026-11-20"
-    },
-    {
-     "id": "c:https://cafe.naver.com/hotdealcatch/2410|[이벤트] 대한항공 고마쓰 응모, 기프트카드 5만원 (~12/20)",
-     "kind": "airline",
-     "community": true,
-     "title": "[이벤트] 대한항공 고마쓰 응모, 기프트카드 5만원 (~12/20)",
-     "desc": "대한항공 이시카와현 고마쓰 프로모션인데, 비행기 표 안 사도... 건데, 대한항공 기프트카드 5만원권 20명 추첨이에요.",
-     "summary": [
-      "대한항공 이시카와현 고마쓰 프로모션인데, 비행기 표 안 사도...",
-      "건데, 대한항공 기프트카드 5만원권 20명 추첨이에요."
-     ],
-     "link": "https://cafe.naver.com/hotdealcatch/2410",
-     "source": "네이버 카페 · 핫딜캐치 · 매일 특가와 짠테크",
-     "date": "2026-11-20T07:00:41.100Z",
-     "found": "2026-11-20",
-     "cards": [],
-     "airlines": [
-      "KE"
-     ],
-     "countries": [
-      "일본"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": {
-      "amount": 50000,
-      "trip": "oneway?"
-     },
-     "query": "대한항공 특가",
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "항공권 경품 이벤트",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-20",
-      "model": "deepseek-v4-flash"
-     },
-     "notified": "2026-11-20"
-    },
-    {
-     "id": "c:https://cafe.naver.com/nyctourdesign/1207292|대한항공 뉴어크 취항기념 8% 할인",
-     "kind": "airline",
-     "community": true,
-     "title": "대한항공 뉴어크 취항기념 8% 할인",
-     "desc": "네.",
-     "link": "https://cafe.naver.com/nyctourdesign/1207292",
-     "source": "네이버 카페 · [미여디]No.1 뉴욕,LA,하와이,라스베가스,샌프란시스코 미국여행",
-     "date": "2026-11-20T11:00:49.931Z",
-     "found": "2026-11-20",
-     "cards": [],
-     "airlines": [
-      "KE"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "대한항공 특가",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "대한항공 취항기념 운임 할인",
-      "airlines": [
-       "대한항공"
-      ],
-      "name": "뉴어크 취항기념 8% 할인",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": 8,
-      "seoul": null,
-      "at": "2026-11-20",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/airportshopping/1167|[ 대한항공 ] 뉴욕 신규 취항 기념 항공 권 할인 이벤트!",
-     "kind": "airline",
-     "community": true,
-     "title": "[ 대한항공 ] 뉴욕 신규 취항 기념 항공 권 할인 이벤트!",
-     "desc": "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요.",
-     "summary": [
-      "▼ 자세한 내용은 아래의 공식 홈페이지에서 확인하세요."
-     ],
-     "link": "https://cafe.naver.com/airportshopping/1167",
-     "source": "네이버 카페 · 인천공항의 모든 것",
-     "date": "2026-11-20T07:00:41.100Z",
-     "found": "2026-11-20",
-     "cards": [],
-     "airlines": [
-      "KE"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "대한항공 프로모션",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "신규 취항 기념 항공권 할인",
-      "airlines": [
-       "대한항공"
-      ],
-      "name": "뉴욕 신규 취항 기념 항공권 할인 이벤트",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-20",
-      "model": "deepseek-v4-flash"
-     },
-     "notified": "2026-11-20"
-    },
-    {
-     "id": "c:https://cafe.naver.com/yamipapa/9460|트립닷컴 대한항공 특가 라이브",
-     "kind": "airline",
-     "community": true,
-     "title": "트립닷컴 대한항공 특가 라이브",
-     "desc": "월요일 오전에 다들 한번 도전해보시죠 다들 싸게싸게 여행 다니시자구요 ㅎ https://kr.trip.com/sale/w/mj1iqfayjdyq81fk/26winterbrandingke.html?locale=ko-KR&transparentBar=1&wkp=1&curr=KRW.",
-     "summary": [
-      "월요일 오전에 다들 한번 도전해보시죠 다들 싸게싸게 여행 다니시자구요 ㅎ https://kr.trip.com/sale/w/mj1iqfayjdyq81fk/26winterbrandingke.html?locale=ko-KR&transp…"
-     ],
-     "link": "https://cafe.naver.com/yamipapa/9460",
-     "source": "네이버 카페 · 야미파파놀이터",
-     "date": "2026-11-22T03:00:42.044Z",
-     "found": "2026-11-22",
-     "cards": [],
-     "airlines": [
-      "KE"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "대한항공 특가",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "트립닷컴 대한항공 특가 라이브",
-      "airlines": [
-       "대한항공"
-      ],
-      "name": "트립닷컴 대한항공 특가 라이브",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-22",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/aosk1020/673|[ 대한항공 ] 트립닷컴 라이브 특가 (11/23)",
-     "kind": "airline",
-     "community": true,
-     "title": "[ 대한항공 ] 트립닷컴 라이브 특가 (11/23)",
-     "desc": "2026.11.23 09:00 대한항공 전세계 여행 특가 라이브 국제선 항공 특가 및 쿠폰 확인해보세요~.",
-     "summary": [
-      "2026.11.23 09:00 대한항공 전세계 여행 특가 라이브 국제선 항공 특가 및 쿠폰 확인해보세요~."
-     ],
-     "link": "https://cafe.naver.com/aosk1020/673",
-     "source": "네이버 카페 · 푸카크 PUKAK - 푸켓, 카오락, 크라비 전문 현지 여행사",
-     "date": "2026-11-23T01:00:40.717Z",
-     "found": "2026-11-23",
-     "cards": [],
-     "airlines": [
-      "KE"
-     ],
-     "countries": [],
-     "allRoutes": true,
-     "routes": [],
-     "price": null,
-     "query": "대한항공 특가",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "항공사 국제선 특가 라이브",
-      "airlines": [
-       "대한항공"
-      ],
-      "name": "트립닷컴 라이브 특가",
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-23",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/20daelee/954039|대한항공 기프트카드 5만원 이벤트 참여하세요",
-     "kind": "airline",
-     "community": true,
-     "title": "대한항공 기프트카드 5만원 이벤트 참여하세요",
-     "desc": "대한항공 이벤트 홈페이지 가면 고마쓰 10% 할인 및 경품 이벤트가 있어요 이거 이벤트3에 대한항공 기프트카드 5만원 선물로 주는 이벤트 있습니다 20명 추첨인데 우리가 당첨됩시다!",
-     "summary": [
-      "대한항공 이벤트 홈페이지 가면 고마쓰 10% 할인 및 경품 이벤트가 있어요 이거 이벤트3에 대한항공 기프트카드 5만원 선물로 주는 이벤트 있습니다 20명 추첨인데 우리가 당첨됩시다!…"
-     ],
-     "link": "https://cafe.naver.com/20daelee/954039",
-     "source": "네이버 카페 · 체크인데이#일본여행,도쿄여행,후쿠오카여행,오사카,교토,삿포로",
-     "date": "2026-11-23T05:00:42.080Z",
-     "found": "2026-11-23",
-     "cards": [],
-     "airlines": [
-      "KE"
-     ],
-     "countries": [
-      "일본"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": {
-      "amount": 50000,
-      "trip": "oneway?"
-     },
-     "query": "대한항공 할인",
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "기프트카드 경품 이벤트",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-23",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "c:https://cafe.naver.com/guamfree/3016561|어제자로 끝난 노랑풍선 타임 특가 대한항공 슈페리어워터파크뷰 499만원 ",
-     "kind": "airline",
-     "community": true,
-     "title": "어제자로 끝난 노랑풍선 타임 특가 대한항공 슈페리어워터파크뷰 499만원 가....",
-     "desc": "",
-     "link": "https://cafe.naver.com/guamfree/3016561",
-     "source": "네이버 카페 · 괌 자유여행 길잡이",
-     "date": "2026-11-26T05:00:54.391Z",
-     "found": "2026-11-26",
-     "cards": [],
-     "airlines": [
-      "KE"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": {
-      "amount": 4990000,
-      "trip": "oneway?"
-     },
-     "query": "대한항공 특가",
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "이미 끝난 여행사 패키지 특가",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
       "at": "2026-11-26",
       "model": "deepseek-v4-flash"
      }
@@ -52490,24 +52568,24 @@
    "lastFound": "2026-11-06"
   }
  ],
- "updated": "2026-11-27T03:19:06.756Z",
- "runs": 321,
+ "updated": "2026-11-27T05:00:45.265Z",
+ "runs": 322,
  "checked": {
-  "베트남": "2026-11-27T03:19:06.756Z",
-  "태국": "2026-11-27T03:19:06.756Z",
-  "필리핀": "2026-11-27T03:19:06.756Z",
-  "인도네시아": "2026-11-27T03:19:06.756Z",
-  "말레이시아": "2026-11-27T03:19:06.756Z",
-  "싱가포르": "2026-11-27T03:19:06.756Z",
-  "일본": "2026-11-27T03:19:06.756Z",
-  "대만": "2026-11-27T03:19:06.756Z",
-  "홍콩": "2026-11-27T03:19:06.756Z",
-  "마카오": "2026-11-27T03:19:06.756Z",
-  "중국": "2026-11-27T03:19:06.756Z",
-  "미국령": "2026-11-27T03:19:06.756Z",
-  "미국": "2026-11-27T03:19:06.756Z"
+  "베트남": "2026-11-27T05:00:45.265Z",
+  "태국": "2026-11-27T05:00:45.265Z",
+  "필리핀": "2026-11-27T05:00:45.265Z",
+  "인도네시아": "2026-11-27T05:00:45.265Z",
+  "말레이시아": "2026-11-27T05:00:45.265Z",
+  "싱가포르": "2026-11-27T05:00:45.265Z",
+  "일본": "2026-11-27T05:00:45.265Z",
+  "대만": "2026-11-27T05:00:45.265Z",
+  "홍콩": "2026-11-27T05:00:45.265Z",
+  "마카오": "2026-11-27T05:00:45.265Z",
+  "중국": "2026-11-27T05:00:45.265Z",
+  "미국령": "2026-11-27T05:00:45.265Z",
+  "미국": "2026-11-27T05:00:45.265Z"
  },
- "auto": "2026-11-27T03:19:06.756Z",
+ "auto": "2026-11-27T05:00:45.265Z",
  "sources": {
   "7C": "2026-11-01",
   "TW": "2026-11-01",
@@ -52720,131 +52798,6 @@
    "중국동방항공 얼리버드": "2026-11-04"
   },
   "seen": [
-   "codud8134/727108",
-   "anyi/320118",
-   "2dayskr/38283",
-   "jejutip/2683671",
-   "busanjungonara/6163499",
-   "igmom/233132",
-   "vinpearl/573016",
-   "happyibook/6362442",
-   "minecraftpe/4020762",
-   "vinpearl/573015",
-   "leander/3716",
-   "nyctourdesign/1207378",
-   "pinkbrgd1/13329",
-   "joonggonara/1138503023",
-   "uouv96/117869",
-   "hhayangmother/16995",
-   "silver0989/18180",
-   "masanmam/7569873",
-   "worrytodream/1035098",
-   "worrytodream/1035086",
-   "aipromptlab26/261",
-   "tum02/41707",
-   "blue9dirr/536",
-   "dankookexchange/3277",
-   "summittoeicedu/2169",
-   "01071599343/61681",
-   "hotdeal24/365",
-   "hotdeal24/334",
-   "todaybigboss/4269",
-   "01071599343/61037",
-   "kupibabo/39523",
-   "tgm72/26694",
-   "yamipapa/1647",
-   "daasori/3683",
-   "skybluejjmjr/234",
-   "engvirus/157945",
-   "01071599343/60721",
-   "socalclub/2848",
-   "tnsuhak/102536",
-   "worldtravelcafe/1168970",
-   "sumonnerdeokoo/121812",
-   "worldtravelcafe/1168965",
-   "worrytodream/1035585",
-   "worrytodream/1035574",
-   "happyibook/6362552",
-   "leander/3725",
-   "worldtravelcafe/1168960",
-   "worrytodream/1035470",
-   "worrytodream/1035458",
-   "dngd/49434",
-   "mindy7857/5543986",
-   "mindy7857/5543953",
-   "jejutip/2683688",
-   "travelacademy/1487",
-   "holicsonline/32667",
-   "iwibronetbook/213928",
-   "010freebaram/264895",
-   "joonggonara/1138507792",
-   "010freebaram/264885",
-   "joonggonara/1138506243",
-   "coed2/3510751",
-   "loyaltylife/371044",
-   "jpnstory/4450946",
-   "uouv96/117874",
-   "loyaltylife/371037",
-   "posudotcom/120692",
-   "golfpgr/665",
-   "worldtravelcafe/1168958",
-   "jejutip/2683686",
-   "jpnstory/4450985",
-   "mindy7857/5543969",
-   "mindy7857/5543943",
-   "mindy7857/5543938",
-   "warcraftgamemap/3540956",
-   "vinpearl/573063",
-   "zzop/4352978",
-   "happyibook/6362565",
-   "warcraftgamemap/3540940",
-   "warcraftgamemap/3540919",
-   "minecraftpe/4020779",
-   "vinpearl/573039",
-   "happyibook/6362585",
-   "warcraftgamemap/3540963",
-   "yesboracay/73546",
-   "taiwantour/1160748",
-   "realturkey/56593",
-   "loyaltylife/370930",
-   "eom5816/83940",
-   "yamipapa/9426",
-   "funnyfunnyjapan/13969",
-   "postmore/109508",
-   "cebu100x/1782754",
-   "loveloveloveovelove/1043936",
-   "macaunoblesse/246684",
-   "taesarang/896827",
-   "miznett/5165003",
-   "costco12/801176",
-   "joonggonara/1138507801",
-   "joonggonara/1138506594",
-   "loveloveloveovelove/1043937",
-   "b00k2012/1716936",
-   "bubi2/48624",
-   "loyaltylife/371038",
-   "worrytodream/1035302",
-   "worrytodream/1035293",
-   "20250413/413",
-   "feelchina/10682",
-   "worrytodream/1037621",
-   "cafebeautyup/172120",
-   "cafebeautyup/172119",
-   "worrytodream/1037551",
-   "worldtravelcafe/1169025",
-   "dngd/50239",
-   "dngd/50230",
-   "worldtravelcafe/1169023",
-   "leander/3756",
-   "greenb0k6k/201561",
-   "worrytodream/1037414",
-   "worrytodream/1037396",
-   "dngd/49836",
-   "dngd/49783",
-   "dngd/49756",
-   "jpnstory/4451012",
-   "mindy7857/5544259",
-   "happyibook/6362646",
    "mindy7857/5544082",
    "mindy7857/5544242",
    "mindy7857/5544121",
@@ -58719,7 +58672,132 @@
    "dlxogns01/363119",
    "sheiszzz/1017785",
    "booheong/239081",
-   "todaygoldx/17745"
+   "todaygoldx/17745",
+   "zzop/4361464",
+   "worldtravelcafe/1170481",
+   "dealcode/463",
+   "20daelee/954582",
+   "cafebeautyup/173887",
+   "worldtravelcafe/1170480",
+   "cafebeautyup/173884",
+   "itguro/14835",
+   "worrytodream/1087184",
+   "leander/5303",
+   "djmomschools/250",
+   "gotovn/8990",
+   "worrytodream/1086693",
+   "cafebeautyup/173839",
+   "mindy7857/5552881",
+   "mindy7857/5552965",
+   "warcraftgamemap/3544935",
+   "happyibook/6368291",
+   "mindy7857/5552942",
+   "mindy7857/5552876",
+   "cafemakecafebest/104622",
+   "joonggonara/1138777948",
+   "msiu100/687752",
+   "moneyx2000/7423",
+   "taeyeon7989/503977",
+   "pusanmommy/1587083",
+   "piphone/1198347",
+   "mindy7857/5552899",
+   "dgmom365/7452156",
+   "joonggonara/1138776258",
+   "worldtravelcafe/1170466",
+   "gctripholic/26224",
+   "loyaltylife/372364",
+   "jinjululu/2755466",
+   "mindy7857/5552972",
+   "mindy7857/5552971",
+   "mindy7857/5552970",
+   "mindy7857/5552968",
+   "mindy7857/5552964",
+   "mindy7857/5552962",
+   "mindy7857/5552961",
+   "mindy7857/5552960",
+   "happyibook/6368282",
+   "mindy7857/5552920",
+   "withwriter/7012",
+   "vinpearl/575859",
+   "minecraftpe/4024016",
+   "minecraftpe/4024015",
+   "vinpearl/575854",
+   "mindy7857/5552900",
+   "happyibook/6368245",
+   "happyibook/6368229",
+   "mindy7857/5552840",
+   "mindy7857/5552836",
+   "minecraftpe/4024034",
+   "warcraftgamemap/3544932",
+   "hassrd/31053",
+   "happyibook/6368262",
+   "warcraftgamemap/3544913",
+   "vinpearl/575837",
+   "nyctourdesign/1206707",
+   "worrytodream/1086699",
+   "browndlaj9/1479",
+   "mnmfreaks/162380",
+   "minecraftpe/4011764",
+   "pachi7/5453",
+   "hassrd/31051",
+   "uouv96/119536",
+   "waateam/166399",
+   "mindy7857/5552833",
+   "mindy7857/5552829",
+   "squaresever/38903",
+   "aipromptlab26/669",
+   "nyctourdesign/1208059",
+   "loyaltylife/372361",
+   "shimmergames/6410",
+   "sparkle24on/60546",
+   "sparkle24on/60544",
+   "ungsangjang/888969",
+   "worrytodream/1086612",
+   "freetourincebu/1790",
+   "loveloveloveovelove/1045408",
+   "cheepboracay/865305",
+   "macaunoblesse/246919",
+   "stockoftree/30142",
+   "accdang/208",
+   "uouv96/119523",
+   "010freebaram/267683",
+   "miznett/5170354",
+   "heonreview/411",
+   "joonggonara/1138777937",
+   "joonggonara/1138776798",
+   "ssbekfxuwe/929",
+   "minisound/14272",
+   "joonggonara/1138773679",
+   "worrytodream/1087122",
+   "culturebloom/3449192",
+   "bubi2/49581",
+   "jbyunion/5049",
+   "noonebungee/137360",
+   "noonebungee/137359",
+   "838483/35123",
+   "838483/35120",
+   "hotellife/436142",
+   "foreverhk/270734",
+   "foreverhk/75796",
+   "rockyis/719",
+   "officialcloud/109808",
+   "macaunoblesse/221229",
+   "engmstudy/2839987",
+   "engmstudy/2823647",
+   "engmstudy/2805411",
+   "tcstourguide/1955",
+   "todaybigboss/4228",
+   "waateam/147095",
+   "fast02/17030",
+   "tum02/41713",
+   "tum02/41712",
+   "tum02/41710",
+   "tum02/41709",
+   "mindy7857/5552807",
+   "wolhyangfarm/1295",
+   "leander/5294",
+   "hassrd/31041",
+   "chinatripatoz/33063"
   ],
   "since": "2026-11-03",
   "imported": "2026-11-03"
