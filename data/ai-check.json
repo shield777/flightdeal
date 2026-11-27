@@ -1,6 +1,115 @@
 [
  {
   "at": "2026-11-27",
+  "title": "필리핀 항공 필리핀 행 블랙프라이데이 특가 (11월 27일-12월 2일 까지)",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "필리핀항공 블랙프라이데이 특가",
+   "airlines": [
+    "필리핀항공"
+   ],
+   "name": "블랙프라이데이 특가",
+   "book": {
+    "from": "2026-11-27",
+    "to": "2026-12-02"
+   },
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-27",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2026-11-27",
+    "to": "2026-12-02"
+   },
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-27",
+  "title": "트리니티항공, 방한 외국인 대상 프로모션…쿠폰 제공까지",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "방한 외국인 대상 쿠폰·결제 제휴 프로모션",
+   "airlines": [
+    "트리니티항공"
+   ],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-27",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님"
+  ]
+ },
+ {
+  "at": "2026-11-27",
+  "title": "괌정부관광청·대한항공, 겨울 괌 프로모션…항공권 혜택 펑펑",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "여행사 대상 인센티브 프로모션",
+   "airlines": [
+    "대한항공"
+   ],
+   "name": "겨울 괌 프로모션",
+   "book": {
+    "from": "2026-11-10",
+    "to": "2027-01-10"
+   },
+   "board": {
+    "from": "2026-11-10",
+    "to": "2027-03-31"
+   },
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-27",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2026-11-10",
+    "to": "2027-01-10"
+   },
+   "board": {
+    "from": "2026-11-10",
+    "to": "2027-03-31"
+   },
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님"
+  ]
+ },
+ {
+  "at": "2026-11-27",
   "title": "에어부산 겨울 대 특가 구매완료",
   "community": true,
   "ai": {
@@ -10596,105 +10705,6 @@
    "book": null,
    "board": null,
    "pct": null,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-19",
-  "title": "[ 제주항공 ] 홍콩윈터페스트 최대 72% 할인 !",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "제주항공 홍콩 노선 할인 프로모션",
-   "airlines": [
-    "제주항공"
-   ],
-   "name": "홍콩윈터페스트",
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": 72,
-   "seoul": null,
-   "at": "2026-11-19",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": 72,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-19",
-  "title": "남반구 2개국 동시 투어 300만 원대 젯스타 직항 패키지 비용 혜택 분석",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "패키지 상품 분석 글",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-19",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님"
-  ]
- },
- {
-  "at": "2026-11-19",
-  "title": "‘수험생은 항공권 할인’…950년 전 문 연 ‘베트남 첫 대학’ 지친 자녀와 함께 [여행+]",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "트리니티항공 수험생 항공권 할인",
-   "airlines": [
-    "트리니티항공"
-   ],
-   "name": "수험생 항공권 할인",
-   "book": {
-    "from": null,
-    "to": "2027-01-31"
-   },
-   "board": {
-    "from": "2026-11-20",
-    "to": "2027-02-21"
-   },
-   "price": null,
-   "trip": null,
-   "pct": 25,
-   "seoul": null,
-   "at": "2026-11-19",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2027-01-31"
-   },
-   "board": {
-    "from": "2026-11-20",
-    "to": "2027-02-21"
-   },
-   "pct": 25,
    "price": null
   },
   "diff": []
