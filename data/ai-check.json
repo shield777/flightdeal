@@ -1,6 +1,124 @@
 [
  {
   "at": "2026-11-27",
+  "title": "에어부산 겨울 대 특가 구매완료",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "개인 발권 후기·가격 공유",
+   "airlines": [],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": false,
+   "at": "2026-11-27",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님"
+  ]
+ },
+ {
+  "at": "2026-11-27",
+  "title": "[261126 긴급모객/땡처리 여행정보] 인천-센다이 제주항공 신규취항",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "제주항공 신규취항 특가",
+   "airlines": [
+    "제주항공"
+   ],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": true,
+   "at": "2026-11-27",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-27",
+  "title": "트리니티항공, 방한 외국인 대상 현지통화 결제→제휴할인",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "항공권 결제 제휴 할인 프로모션",
+   "airlines": [
+    "트리니티항공"
+   ],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-27",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": []
+ },
+ {
+  "at": "2026-11-27",
+  "title": "“항공권 결제부터 쇼핑 할인까지”…트리니티항공, 외국인 혜택 확대",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "외국인 대상 혜택 확대 소식",
+   "airlines": [
+    "트리니티항공"
+   ],
+   "name": null,
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-27",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님"
+  ]
+ },
+ {
+  "at": "2026-11-27",
   "title": "✈️진에어 항공 : 부산에서 출발하는 15가지 겨울 설렘 여행지 할인 정보",
   "community": true,
   "ai": {
@@ -10577,131 +10695,6 @@
     "to": "2027-02-21"
    },
    "pct": 25,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-19",
-  "title": "[ 이스타항공 ] 국내/국제선 할인 항공 권 수험생 할인 이벤트! (최대25% 할인 )",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "이스타항공 수험생 할인 이벤트",
-   "airlines": [
-    "이스타항공"
-   ],
-   "name": "수험생 할인 이벤트",
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": 25,
-   "seoul": null,
-   "at": "2026-11-19",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": 25,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-19",
-  "title": "하나투어, 하나LIVE 론칭 5주년 ‘감사제’ 진행…대박경품· 할인 등 혜...",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "여행사 라이브 방송 이벤트, 항공권은 경품",
-   "airlines": [],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-19",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
-   "price": 50000
-  },
-  "diff": [
-   "AI: 특가 아님",
-   "가격 규칙 50000 / AI -"
-  ]
- },
- {
-  "at": "2026-11-19",
-  "title": "파라타항공, LA노선 예매 시작…24일부터 특가 프로모션",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "신규 취항 기념 특가 운임 예고",
-   "airlines": [
-    "파라타항공"
-   ],
-   "name": "신규 취항 기념 특별 할인 운임",
-   "book": {
-    "from": "2026-11-24",
-    "to": null
-   },
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": true,
-   "at": "2026-11-19",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": "2026-11-24",
-    "to": "2026-11-24"
-   },
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": [
-   "예약 마감 규칙 2026-11-24 / AI -"
-  ]
- },
- {
-  "at": "2026-11-19",
-  "title": "이스타항공 , 1월~2월 출발 얼리버드 특가",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "이스타항공 얼리버드 특가",
-   "airlines": [
-    "이스타항공"
-   ],
-   "name": "얼리버드 특가",
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-19",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": null,
    "price": null
   },
   "diff": []
