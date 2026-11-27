@@ -1,6 +1,347 @@
 {
  "items": [
   {
+   "id": "wcy1lNEVRVFQyWXVEdkxFbFlqSW8xcEN1WVZtcXNQc0NYaUhhVUtFaEE5bG9FRFlpcDNMeUJVVGhkMnk0ZUh6ZnZNbGV2SEZUSjM2aVoyTVA5bWVzMHF6QVE|제주항공우주박물관, 연말 특별 프로모션 실시",
+   "kind": "airline",
+   "title": "제주항공우주박물관, 연말 특별 프로모션 실시",
+   "desc": "제주항공우주박물관, 연말 특별 프로모션 실시 헤드라인제주",
+   "summary": [
+    "제주항공우주박물관, 연말 특별 프로모션 실시 헤드라인제주…"
+   ],
+   "link": "https://www.headlinejeju.co.kr/news/articleView.html?idxno=602897",
+   "source": "헤드라인제주",
+   "date": "2026-11-27T07:00:33.000Z",
+   "found": "2026-11-27",
+   "cards": [],
+   "airlines": [
+    "7C",
+    "WE",
+    "BX"
+   ],
+   "countries": [
+    "일본",
+    "중국"
+   ],
+   "allRoutes": true,
+   "routes": [],
+   "price": null,
+   "query": "제주항공 {특가말}",
+   "bodyAt": "2026-11-27",
+   "body": [
+    "제주항공우주박물관, 연말 특별 프로모션 실시",
+    "제주국제자유도시개발센터(이사장 송석언, JDC)에서 운영하는 제주항공우주박물관은 오는 12월 도민과 관광객을 위한 연말 특별 프로모션을 실시한다.",
+    "이번 이벤트는 12월 ‘W-day : Wonder Winter Day’를 운영해 12월 6일, 9일, 12일부터 13일, 19일부터 22일, 24일부터 26일까지는 누구나 관람료 3천원에 박물관을 이용할 수 있다.",
+    "특히 12월 24일부터 25일까지 이틀간은 ‘별(☆)의 별(☆) 크리스마스’이벤트가 진행되며 △어린이 관람객 JAM 별빛 봉 증정(일 300명) △커피박 크리스마스 키링 만들기(일 100명) △AI 신년 운세 키오스크 운영 등 관람객이 직접 참여하고 경험할 수 있다.",
+    "또한, 제주항공우주박물관 영문 약칭인 'JAM'과 발음이 동일한 ‘잼(jam)’을 결합한 ‘JAM in Bread’ 마켓을 운영한다."
+   ],
+   "ai": {
+    "v": 2,
+    "promo": false,
+    "why": "박물관 관람료 프로모션",
+    "airlines": [],
+    "name": null,
+    "book": null,
+    "board": null,
+    "price": null,
+    "trip": null,
+    "pct": null,
+    "seoul": null,
+    "at": "2026-11-27",
+    "model": "deepseek-v4-flash"
+   },
+   "lastDate": "2026-11-27T23:00:00.000Z",
+   "lastFound": "2026-11-28",
+   "more": [
+    {
+     "id": "https://www.shinailbo.co.kr/news/articleView.html|[하늘길] 12월 1주, 겨울맞이 국제선 특가 …에어부산 외 3가지 항공",
+     "kind": "airline",
+     "title": "[하늘길] 12월 1주, 겨울맞이 국제선 특가 …에어부산 외 3가지 항공",
+     "desc": "12월1주 하늘길에서는 겨울철 해외여행을 위한 항공 권 할인 과 신규 노선 소식을 담는다. 에어부산은 겨울철 여행객을 대상으로 국제선 28개 노선 특가 프로모션 을 진행한다. 제주항공 은 일본 센다이 신규 취항을...",
+     "summary": [
+      "12월1주 하늘길에서는 겨울철 해외여행을 위한 항공 권 할인 과 신규 노선 소식을 담는다.",
+      "에어부산은 겨울철 여행객을 대상으로 국제선 28개 노선 특가 프로모션 을 진행한다.",
+      "제주항공 은 일본 센다이 신규 취항을…"
+     ],
+     "link": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5088772",
+     "source": "네이버 뉴스",
+     "date": "2026-11-27T23:00:00.000Z",
+     "found": "2026-11-28",
+     "cards": [],
+     "airlines": [
+      "7C",
+      "BX"
+     ],
+     "countries": [
+      "일본",
+      "중국"
+     ],
+     "allRoutes": true,
+     "routes": [],
+     "price": null,
+     "query": "제주항공 {특가말}",
+     "bodyAt": "2026-11-28",
+     "body": [
+      "12월1주 하늘길에서는 겨울철 해외여행을 위한 항공권 할인과 신규 노선 소식을 담는다.",
+      "에어부산은 겨울철 여행객을 대상으로 국제선 28개 노선 특가 프로모션을 진행한다.",
+      "제주항공은 일본 센다이 신규 취항을 통해 일본 8개 지방을 모두 연결한다.",
+      "에어프레미아는 첫 중국 정기노선인 닝보 취항을 기념해 최대 20% 할인 혜택을 제공한다.",
+      "진에어는 2006~2008년생을 대상으로 항공권과 부가서비스 할인 쿠폰을 증정한다.",
+      "에어부산- 겨울맞이 국제선 28개 노선 특가",
+      "에어부산은 겨울철 해외여행객을 대상으로 국제선 28개 노선 특가 프로모션을 진행한다.",
+      "프로모션 기간은 11월30일까지다.",
+      "유류할증료와 공항시설 이용료를 포함한 편도 총액 기준 부산 출발 노선은 일본 8만6900원, 중국 11만1900원, 동남아 15만7900원부터다.",
+      "인천 출발 노선은 일본 10만9900원, 동남아 17만9900원부터 판매된다.",
+      "탑승 기간은 내년 3월27일까지다.",
+      "사전 좌석 지정과 위탁수하물이 포함된 부가서비스 번들 할인과 트립닷컴 호텔 예약 8% 추가 할인 혜택도 제공한다.",
+      "제주항공- 센다이 신규 취항…일본 8개 지방 연결",
+      "제주항공은 내년 1월8일부터 인천-센다이 노선에 주 3회(수·금·일요일) 신규 취항한다.",
+      "이번 취항으로 그동안 운항하지 않았던 도호쿠 지방까지 연결해 홋카이도부터 오키나와까지 일본 8개 지방을 아우르는 노선망을 구축한다.",
+      "올해 1~10월 제주항공의 일본 중소도시 7개 노선 탑승객은 79만6000여명으로 전년 동기 대비 33.7% 증가했다.",
+      "신규 취항을 기념해 12월6일까지 최대 20% 항공권 할인 코드와 카카오페이 머니 결제 시 최대 3만원 할인, 현지 쇼핑·관광 할인 혜택 등을 제공한다.",
+      "에어프레미아- 첫 중국 정기노선 닝보 취항 기념 최대 20% 할인",
+      "에어프레미아는 첫 중국 정기노선인 인천-닝보 신규 취항을 기념해 항공권 할인 프로모션을 진행한다.",
+      "12월1일까지 홈페이지와 모바일 앱에서 할인 코드 ‘NGBNEW20’을 입력하면 이코노미와 와이드 프리미엄 전 좌석에 최대 20%의 항공운임 할인이 적용된다.",
+      "왕복 총액 기준 최저 운임은 이코노미 35만8760원, 와이드 프리미엄 44만8200원이다.",
+      "탑승 기간은 12월6일부터 내년 3월28일까지로 별도의 제외 기간은 없다.",
+      "인천-닝보 노선은 12월6일부터 주 3회(수·금·일요일) 운항한다.",
+      "진에어- 수능 끝, 여행 시작!",
+      "…2006~2008년생 항공권·부가서비스 할인 쿠폰",
+      "진에어는 수능을 마친 수험생을 비롯한 2006~2008년생을 대상으로 ‘스페셜 쿠폰팩’을 제공한다.",
+      "12월31일까지 홈페이지에 신규 가입한 회원이 대상으로 수능 응시 여부와 관계없이 별도의 증빙 서류 없이 혜택을 받을 수 있다.",
+      "국내선 항공권 2만원 이상 결제 시 1만원, 국제선 30만원 이상 결제 시 3만원 할인 쿠폰을 제공한다.",
+      "사전 좌석 지정과 위탁수하물 5㎏(킬로그램) 추가 혜택이 포함된 ‘수하물팩’을 1000원에 이용할 수 있는 쿠폰도 증정한다.",
+      "쿠폰은 내년 2월28일까지 운항하는 항공편 예매 시 사용할 수 있다.",
+      "진에어는 이와 별도로 12월2일까지 부산발 국제선 항공권 최대 15% 할인 프로모션도 진행한다."
+     ]
+    },
+    {
+     "id": "https://www.newsjeju.net/news/articleView.html|제주항공 우주박물관, '12월 별의 별' 특별 이벤트 진행",
+     "kind": "airline",
+     "title": "제주항공 우주박물관, '12월 별의 별' 특별 이벤트 진행",
+     "desc": "제주 국제자유도시개발센터(이사장 송석언, JDC)에서 운영하는 제주항공 우주박물관은 오는 12월 도민과 관광객을 위한 연말 특별 프로모션 을 실시한다고 밝혔다. 이번 이벤트는 소중한 사람들과 뜻깊은 시간을...",
+     "summary": [
+      "제주 국제자유도시개발센터(이사장 송석언, JDC)에서 운영하는 제주항공 우주박물관은 오는 12월 도민과 관광객을 위한 연말 특별 프로모션 을 실시한다고 밝혔다.",
+      "이번 이벤트는 소중한 사람들과 뜻깊은 시간을…"
+     ],
+     "link": "https://www.newsjeju.net/news/articleView.html?idxno=429056",
+     "source": "네이버 뉴스",
+     "date": "2026-11-27T07:12:00.000Z",
+     "found": "2026-11-27",
+     "cards": [],
+     "airlines": [
+      "7C"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "제주항공 {특가말}",
+     "bodyAt": "2026-11-27",
+     "body": [
+      "[뉴스제주 조혜영 기자] 제주국제자유도시개발센터(이사장 송석언, JDC)에서 운영하는 제주항공우주박물관은 오는 12월 도민과 관광객을 위한 연말 특별 프로모션을 실시한다고 밝혔다.",
+      "이번 이벤트는 소중한 사람들과 뜻깊은 시간을 보낼 수 있도록 마련됐으며 12월 ‘W-day : Wonder Winter Day’(12.6, 9, 12~13, 19~22, 24~26)를 운영하여 해당 일에는 누구나 관람료 3천원에 박물관을 이용할 수 있다.",
+      "오는 12월 24일부터 25일까지 이틀간은 ‘별(☆)의 별(☆) 크리스마스’이벤트가 진행되며",
+      "또한, 제주항공우주박물관 영문 약칭인 “JAM”과 발음이 동일한 ‘잼(jam)’을 결합한 ‘JAM in Bread’ 마켓을 운영한다."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "박물관 관람료 이벤트",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-27",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "https://www.mediajeju.com/news/articleView.html|제주항공 우주박물관 크리스마스 이벤트 열려",
+     "kind": "airline",
+     "title": "제주항공 우주박물관 크리스마스 이벤트 열려",
+     "desc": "제주 국제자유도시개발센터(이하 JDC)에서 운영하는 제주항공 우주박물관이 오는 12월 도민과 관광객을 위한 연말 특별 프로모션 을 실시한다. 12월 'W-day : Wonder Winter Day'(12.6, 9, 12~13, 19~22, 24~26)를 운영하여 해당...",
+     "summary": [
+      "제주 국제자유도시개발센터(이하 JDC)에서 운영하는 제주항공 우주박물관이 오는 12월 도민과 관광객을 위한 연말 특별 프로모션 을 실시한다.",
+      "12월 'W-day : Wonder Winter Day'(12.6, 9, 12~13, 19~22, 24~26)를 운영하여 해당…"
+     ],
+     "link": "https://www.mediajeju.com/news/articleView.html?idxno=367579",
+     "source": "네이버 뉴스",
+     "date": "2026-11-27T07:26:00.000Z",
+     "found": "2026-11-27",
+     "cards": [],
+     "airlines": [
+      "7C"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "제주항공 {특가말}",
+     "bodyAt": "2026-11-27",
+     "body": [
+      "[미디어제주 = 고유빈 기자] 제주국제자유도시개발센터(이하 JDC)에서 운영하는 제주항공우주박물관이 오는 12월 도민과 관광객을 위한 연말 특별 프로모션을 실시한다.",
+      "12월 ‘W-day : Wonder Winter Day’(12.6, 9, 12~13, 19~22, 24~26)를 운영하여 해당 일에는 누구나 관람료 3천원에 박물관을 이용할 수 있다.",
+      "12월 24일부터 25일까지 이틀간은 ‘별(☆)의 별(☆) 크리스마스’이벤트가 진행되며 어린이 관람객 JAM 별빛 봉 증정(일 300명), 커피박 크리스마스 키링 만들기(일 100명), AI 신년 운세 키오스크 운영 등 관람객이 직접 참여하고 경험할 수 있다.",
+      "또한, 제주항공우주박물관 영문 약칭인 “JAM”과 발음이 동일한‘잼(jam)’을 결합한 ‘JAM in Bread’ 마켓을 운영한다."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "박물관 관람료 할인 행사",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-27",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "VDVQOG5Kd0xJRDBIcnR4amU3NVNGZnJmYW95cmh6UTVjRGtrSDh0dzJDVUpNZmpGbUVBNG1qVkM4QTNzSXpVaXhpU05WQ0RaQWE4ODcwWXJodTd5dm1Wanhp|제주항공우주박물관, 12월 별(☆)의 별(☆) 특별 이벤트",
+     "kind": "airline",
+     "title": "제주항공우주박물관, 12월 별(☆)의 별(☆) 특별 이벤트",
+     "desc": "제주항공우주박물관, 12월 별(☆)의 별(☆) 특별 이벤트 제주환경일보",
+     "summary": [
+      "제주항공우주박물관, 12월 별(☆)의 별(☆) 특별 이벤트 제주환경일보…"
+     ],
+     "link": "https://www.newsje.com/news/articleView.html?idxno=410706",
+     "source": "제주환경일보",
+     "date": "2026-11-27T07:54:32.000Z",
+     "found": "2026-11-27",
+     "cards": [],
+     "airlines": [
+      "7C"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "제주항공 {특가말}",
+     "bodyAt": "2026-11-27",
+     "body": [
+      "제주항공우주박물관, 12월 별(☆)의 별(☆) 특별 이벤트",
+      "제주국제자유도시개발센터(이사장 송석언, 이하 JDC)에서 운영하는 제주항공우주박물관은 오는 12월 도민과 관광객을 위한 연말 특별 프로모션을 실시한다고 27일 밝혔다.",
+      "이번 이벤트는 소중한 사람들과 뜻깊은 시간을 보낼 수 있도록 마련되었으며 12월‘W-day : Wonder Winter Day’(12.6, 9, 12~13, 19~22, 24~26)를 운영하여 해당 일에는 누구나 관람료 3천원에 박물관을 이용할 수 있다.",
+      "12월 24일부터 25일까지 이틀간은 ‘별(☆)의 별(☆) 크리스마스’이벤트가 진행되며",
+      "또한, 제주항공우주박물관 영문 약칭인 “JAM”과 발음이 동일한‘잼(jam)’을 결합한 ‘JAM in Bread’ 마켓을 운영한다."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "박물관 관람료 이벤트",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-27",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "TE9QeVpmMy1nVDl4aGI4OXRDQTFqSlc5Q3J5c1haQnhjLWtUS1hUazlrQ3ppU3Zjc3JPcjlEMmUxWkkxNWlRVFdxZVVTMGFQQkIyRmtmMFdkOUQzaXZTVWhJ|제주항공우주박물관, 12월 별(☆)의 별(☆) 특별 이벤트 진행",
+     "kind": "airline",
+     "title": "제주항공우주박물관, 12월 별(☆)의 별(☆) 특별 이벤트 진행",
+     "desc": "제주항공우주박물관, 12월 별(☆)의 별(☆) 특별 이벤트 진행 누리일보",
+     "summary": [
+      "제주항공우주박물관, 12월 별(☆)의 별(☆) 특별 이벤트 진행 누리일보…"
+     ],
+     "link": "https://nuriilbo.com/mobile/article.html?no=951744",
+     "source": "누리일보",
+     "date": "2026-11-27T11:30:18.000Z",
+     "found": "2026-11-27",
+     "cards": [],
+     "airlines": [
+      "7C"
+     ],
+     "countries": [],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "제주항공 {특가말}",
+     "bodyAt": "2026-11-27",
+     "body": [
+      "제주항공우주박물관, 12월 별(☆)의 별(☆) 특별 이벤트 진행",
+      "등록 2026.11.27 20:30:18",
+      "(누리일보) 제주국제자유도시개발센터(이사장 송석언, JDC)에서 운영하는 제주항공우주박물관은 오는 12월 도민과 관광객을 위한 연말 특별 프로모션을 실시한다고 밝혔다.",
+      "이번 이벤트는 소중한 사람들과 뜻깊은 시간을 보낼 수 있도록 마련됐으며 12월‘W-day : Wonder Winter Day’(12.6, 9, 12~13, 19~22, 24~26)를 운영하여 해당 일에는 누구나 관람료 3천원에 박물관을 이용할 수 있다.",
+      "12월 24일부터 25일까지 이틀간은 ‘별(☆)의 별(☆) 크리스마스’이벤트가 진행되며",
+      "또한, 제주항공우주박물관 영문 약칭인 “JAM”과 발음이 동일한‘잼(jam)’을 결합한 ‘JAM in Bread’ 마켓을 운영한다."
+     ],
+     "ai": {
+      "v": 2,
+      "promo": false,
+      "why": "박물관 관람료 이벤트",
+      "airlines": [],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-27",
+      "model": "deepseek-v4-flash"
+     }
+    },
+    {
+     "id": "cles/CBMiUkFVX3lxTE5XY3Y4RXd5b3oxMTl1bW8wNGVmQklXeElnemd3ZnJjUVNhR3h3b2Q3UFZUMWdfVlVZTTFESlczaHAyU2wzakNKdnpMVlY1QmhfZnc|[플라이 H!] 노선 다변화에 특가까지..제주항공 '센다이'·파라타항공 ",
+     "kind": "airline",
+     "title": "[플라이 H!] 노선 다변화에 특가까지..제주항공 '센다이'·파라타항공 'LA' 뜬다",
+     "desc": "[플라이 H!] 노선 다변화에 특가까지..제주항공 '센다이'·파라타항공 'LA' 뜬다 한국정경신문",
+     "summary": [
+      "[플라이 H!] 노선 다변화에 특가까지..제주항공 '센다이'·파라타항공 'LA' 뜬다 한국정경신문…"
+     ],
+     "link": "https://kpenews.com/View.aspx?No=4325006",
+     "source": "한국정경신문",
+     "date": "2026-11-23T04:53:27.000Z",
+     "found": "2026-11-23",
+     "cards": [],
+     "airlines": [
+      "7C",
+      "WE"
+     ],
+     "countries": [
+      "일본"
+     ],
+     "allRoutes": false,
+     "routes": [],
+     "price": null,
+     "query": "제주항공 {특가말}",
+     "bodyAt": "2026-11-23",
+     "ai": {
+      "v": 2,
+      "promo": true,
+      "why": "신규 노선 취항 특가 소식",
+      "airlines": [
+       "제주항공",
+       "파라타항공"
+      ],
+      "name": null,
+      "book": null,
+      "board": null,
+      "price": null,
+      "trip": null,
+      "pct": null,
+      "seoul": null,
+      "at": "2026-11-23",
+      "model": "deepseek-v4-flash"
+     }
+    }
+   ]
+  },
+  {
    "id": "https://www.bloter.net/news/articleView.html|쇼핑·구독· 여행 한 장에… 우리카드 '더 쇼퍼'에 실은 접점 전략",
    "kind": "card",
    "title": "쇼핑·구독· 여행 한 장에… 우리카드 '더 쇼퍼'에 실은 접점 전략",
@@ -1198,283 +1539,6 @@
       "pct": null,
       "seoul": null,
       "at": "2026-11-25",
-      "model": "deepseek-v4-flash"
-     }
-    }
-   ]
-  },
-  {
-   "id": "wcy1lNEVRVFQyWXVEdkxFbFlqSW8xcEN1WVZtcXNQc0NYaUhhVUtFaEE5bG9FRFlpcDNMeUJVVGhkMnk0ZUh6ZnZNbGV2SEZUSjM2aVoyTVA5bWVzMHF6QVE|제주항공우주박물관, 연말 특별 프로모션 실시",
-   "kind": "airline",
-   "title": "제주항공우주박물관, 연말 특별 프로모션 실시",
-   "desc": "제주항공우주박물관, 연말 특별 프로모션 실시 헤드라인제주",
-   "summary": [
-    "제주항공우주박물관, 연말 특별 프로모션 실시 헤드라인제주…"
-   ],
-   "link": "https://www.headlinejeju.co.kr/news/articleView.html?idxno=602897",
-   "source": "헤드라인제주",
-   "date": "2026-11-27T07:00:33.000Z",
-   "found": "2026-11-27",
-   "cards": [],
-   "airlines": [
-    "7C",
-    "WE"
-   ],
-   "countries": [
-    "일본"
-   ],
-   "allRoutes": false,
-   "routes": [],
-   "price": null,
-   "query": "제주항공 {특가말}",
-   "bodyAt": "2026-11-27",
-   "body": [
-    "제주항공우주박물관, 연말 특별 프로모션 실시",
-    "제주국제자유도시개발센터(이사장 송석언, JDC)에서 운영하는 제주항공우주박물관은 오는 12월 도민과 관광객을 위한 연말 특별 프로모션을 실시한다.",
-    "이번 이벤트는 12월 ‘W-day : Wonder Winter Day’를 운영해 12월 6일, 9일, 12일부터 13일, 19일부터 22일, 24일부터 26일까지는 누구나 관람료 3천원에 박물관을 이용할 수 있다.",
-    "특히 12월 24일부터 25일까지 이틀간은 ‘별(☆)의 별(☆) 크리스마스’이벤트가 진행되며 △어린이 관람객 JAM 별빛 봉 증정(일 300명) △커피박 크리스마스 키링 만들기(일 100명) △AI 신년 운세 키오스크 운영 등 관람객이 직접 참여하고 경험할 수 있다.",
-    "또한, 제주항공우주박물관 영문 약칭인 'JAM'과 발음이 동일한 ‘잼(jam)’을 결합한 ‘JAM in Bread’ 마켓을 운영한다."
-   ],
-   "ai": {
-    "v": 2,
-    "promo": false,
-    "why": "박물관 관람료 프로모션",
-    "airlines": [],
-    "name": null,
-    "book": null,
-    "board": null,
-    "price": null,
-    "trip": null,
-    "pct": null,
-    "seoul": null,
-    "at": "2026-11-27",
-    "model": "deepseek-v4-flash"
-   },
-   "lastDate": "2026-11-27T11:30:18.000Z",
-   "lastFound": "2026-11-27",
-   "more": [
-    {
-     "id": "https://www.newsjeju.net/news/articleView.html|제주항공 우주박물관, '12월 별의 별' 특별 이벤트 진행",
-     "kind": "airline",
-     "title": "제주항공 우주박물관, '12월 별의 별' 특별 이벤트 진행",
-     "desc": "제주 국제자유도시개발센터(이사장 송석언, JDC)에서 운영하는 제주항공 우주박물관은 오는 12월 도민과 관광객을 위한 연말 특별 프로모션 을 실시한다고 밝혔다. 이번 이벤트는 소중한 사람들과 뜻깊은 시간을...",
-     "summary": [
-      "제주 국제자유도시개발센터(이사장 송석언, JDC)에서 운영하는 제주항공 우주박물관은 오는 12월 도민과 관광객을 위한 연말 특별 프로모션 을 실시한다고 밝혔다.",
-      "이번 이벤트는 소중한 사람들과 뜻깊은 시간을…"
-     ],
-     "link": "https://www.newsjeju.net/news/articleView.html?idxno=429056",
-     "source": "네이버 뉴스",
-     "date": "2026-11-27T07:12:00.000Z",
-     "found": "2026-11-27",
-     "cards": [],
-     "airlines": [
-      "7C"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "제주항공 {특가말}",
-     "bodyAt": "2026-11-27",
-     "body": [
-      "[뉴스제주 조혜영 기자] 제주국제자유도시개발센터(이사장 송석언, JDC)에서 운영하는 제주항공우주박물관은 오는 12월 도민과 관광객을 위한 연말 특별 프로모션을 실시한다고 밝혔다.",
-      "이번 이벤트는 소중한 사람들과 뜻깊은 시간을 보낼 수 있도록 마련됐으며 12월 ‘W-day : Wonder Winter Day’(12.6, 9, 12~13, 19~22, 24~26)를 운영하여 해당 일에는 누구나 관람료 3천원에 박물관을 이용할 수 있다.",
-      "오는 12월 24일부터 25일까지 이틀간은 ‘별(☆)의 별(☆) 크리스마스’이벤트가 진행되며",
-      "또한, 제주항공우주박물관 영문 약칭인 “JAM”과 발음이 동일한 ‘잼(jam)’을 결합한 ‘JAM in Bread’ 마켓을 운영한다."
-     ],
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "박물관 관람료 이벤트",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-27",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "https://www.mediajeju.com/news/articleView.html|제주항공 우주박물관 크리스마스 이벤트 열려",
-     "kind": "airline",
-     "title": "제주항공 우주박물관 크리스마스 이벤트 열려",
-     "desc": "제주 국제자유도시개발센터(이하 JDC)에서 운영하는 제주항공 우주박물관이 오는 12월 도민과 관광객을 위한 연말 특별 프로모션 을 실시한다. 12월 'W-day : Wonder Winter Day'(12.6, 9, 12~13, 19~22, 24~26)를 운영하여 해당...",
-     "summary": [
-      "제주 국제자유도시개발센터(이하 JDC)에서 운영하는 제주항공 우주박물관이 오는 12월 도민과 관광객을 위한 연말 특별 프로모션 을 실시한다.",
-      "12월 'W-day : Wonder Winter Day'(12.6, 9, 12~13, 19~22, 24~26)를 운영하여 해당…"
-     ],
-     "link": "https://www.mediajeju.com/news/articleView.html?idxno=367579",
-     "source": "네이버 뉴스",
-     "date": "2026-11-27T07:26:00.000Z",
-     "found": "2026-11-27",
-     "cards": [],
-     "airlines": [
-      "7C"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "제주항공 {특가말}",
-     "bodyAt": "2026-11-27",
-     "body": [
-      "[미디어제주 = 고유빈 기자] 제주국제자유도시개발센터(이하 JDC)에서 운영하는 제주항공우주박물관이 오는 12월 도민과 관광객을 위한 연말 특별 프로모션을 실시한다.",
-      "12월 ‘W-day : Wonder Winter Day’(12.6, 9, 12~13, 19~22, 24~26)를 운영하여 해당 일에는 누구나 관람료 3천원에 박물관을 이용할 수 있다.",
-      "12월 24일부터 25일까지 이틀간은 ‘별(☆)의 별(☆) 크리스마스’이벤트가 진행되며 어린이 관람객 JAM 별빛 봉 증정(일 300명), 커피박 크리스마스 키링 만들기(일 100명), AI 신년 운세 키오스크 운영 등 관람객이 직접 참여하고 경험할 수 있다.",
-      "또한, 제주항공우주박물관 영문 약칭인 “JAM”과 발음이 동일한‘잼(jam)’을 결합한 ‘JAM in Bread’ 마켓을 운영한다."
-     ],
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "박물관 관람료 할인 행사",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-27",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "VDVQOG5Kd0xJRDBIcnR4amU3NVNGZnJmYW95cmh6UTVjRGtrSDh0dzJDVUpNZmpGbUVBNG1qVkM4QTNzSXpVaXhpU05WQ0RaQWE4ODcwWXJodTd5dm1Wanhp|제주항공우주박물관, 12월 별(☆)의 별(☆) 특별 이벤트",
-     "kind": "airline",
-     "title": "제주항공우주박물관, 12월 별(☆)의 별(☆) 특별 이벤트",
-     "desc": "제주항공우주박물관, 12월 별(☆)의 별(☆) 특별 이벤트 제주환경일보",
-     "summary": [
-      "제주항공우주박물관, 12월 별(☆)의 별(☆) 특별 이벤트 제주환경일보…"
-     ],
-     "link": "https://www.newsje.com/news/articleView.html?idxno=410706",
-     "source": "제주환경일보",
-     "date": "2026-11-27T07:54:32.000Z",
-     "found": "2026-11-27",
-     "cards": [],
-     "airlines": [
-      "7C"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "제주항공 {특가말}",
-     "bodyAt": "2026-11-27",
-     "body": [
-      "제주항공우주박물관, 12월 별(☆)의 별(☆) 특별 이벤트",
-      "제주국제자유도시개발센터(이사장 송석언, 이하 JDC)에서 운영하는 제주항공우주박물관은 오는 12월 도민과 관광객을 위한 연말 특별 프로모션을 실시한다고 27일 밝혔다.",
-      "이번 이벤트는 소중한 사람들과 뜻깊은 시간을 보낼 수 있도록 마련되었으며 12월‘W-day : Wonder Winter Day’(12.6, 9, 12~13, 19~22, 24~26)를 운영하여 해당 일에는 누구나 관람료 3천원에 박물관을 이용할 수 있다.",
-      "12월 24일부터 25일까지 이틀간은 ‘별(☆)의 별(☆) 크리스마스’이벤트가 진행되며",
-      "또한, 제주항공우주박물관 영문 약칭인 “JAM”과 발음이 동일한‘잼(jam)’을 결합한 ‘JAM in Bread’ 마켓을 운영한다."
-     ],
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "박물관 관람료 이벤트",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-27",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "TE9QeVpmMy1nVDl4aGI4OXRDQTFqSlc5Q3J5c1haQnhjLWtUS1hUazlrQ3ppU3Zjc3JPcjlEMmUxWkkxNWlRVFdxZVVTMGFQQkIyRmtmMFdkOUQzaXZTVWhJ|제주항공우주박물관, 12월 별(☆)의 별(☆) 특별 이벤트 진행",
-     "kind": "airline",
-     "title": "제주항공우주박물관, 12월 별(☆)의 별(☆) 특별 이벤트 진행",
-     "desc": "제주항공우주박물관, 12월 별(☆)의 별(☆) 특별 이벤트 진행 누리일보",
-     "summary": [
-      "제주항공우주박물관, 12월 별(☆)의 별(☆) 특별 이벤트 진행 누리일보…"
-     ],
-     "link": "https://nuriilbo.com/mobile/article.html?no=951744",
-     "source": "누리일보",
-     "date": "2026-11-27T11:30:18.000Z",
-     "found": "2026-11-27",
-     "cards": [],
-     "airlines": [
-      "7C"
-     ],
-     "countries": [],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "제주항공 {특가말}",
-     "bodyAt": "2026-11-27",
-     "body": [
-      "제주항공우주박물관, 12월 별(☆)의 별(☆) 특별 이벤트 진행",
-      "등록 2026.11.27 20:30:18",
-      "(누리일보) 제주국제자유도시개발센터(이사장 송석언, JDC)에서 운영하는 제주항공우주박물관은 오는 12월 도민과 관광객을 위한 연말 특별 프로모션을 실시한다고 밝혔다.",
-      "이번 이벤트는 소중한 사람들과 뜻깊은 시간을 보낼 수 있도록 마련됐으며 12월‘W-day : Wonder Winter Day’(12.6, 9, 12~13, 19~22, 24~26)를 운영하여 해당 일에는 누구나 관람료 3천원에 박물관을 이용할 수 있다.",
-      "12월 24일부터 25일까지 이틀간은 ‘별(☆)의 별(☆) 크리스마스’이벤트가 진행되며",
-      "또한, 제주항공우주박물관 영문 약칭인 “JAM”과 발음이 동일한‘잼(jam)’을 결합한 ‘JAM in Bread’ 마켓을 운영한다."
-     ],
-     "ai": {
-      "v": 2,
-      "promo": false,
-      "why": "박물관 관람료 이벤트",
-      "airlines": [],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-27",
-      "model": "deepseek-v4-flash"
-     }
-    },
-    {
-     "id": "cles/CBMiUkFVX3lxTE5XY3Y4RXd5b3oxMTl1bW8wNGVmQklXeElnemd3ZnJjUVNhR3h3b2Q3UFZUMWdfVlVZTTFESlczaHAyU2wzakNKdnpMVlY1QmhfZnc|[플라이 H!] 노선 다변화에 특가까지..제주항공 '센다이'·파라타항공 ",
-     "kind": "airline",
-     "title": "[플라이 H!] 노선 다변화에 특가까지..제주항공 '센다이'·파라타항공 'LA' 뜬다",
-     "desc": "[플라이 H!] 노선 다변화에 특가까지..제주항공 '센다이'·파라타항공 'LA' 뜬다 한국정경신문",
-     "summary": [
-      "[플라이 H!] 노선 다변화에 특가까지..제주항공 '센다이'·파라타항공 'LA' 뜬다 한국정경신문…"
-     ],
-     "link": "https://kpenews.com/View.aspx?No=4325006",
-     "source": "한국정경신문",
-     "date": "2026-11-23T04:53:27.000Z",
-     "found": "2026-11-23",
-     "cards": [],
-     "airlines": [
-      "7C",
-      "WE"
-     ],
-     "countries": [
-      "일본"
-     ],
-     "allRoutes": false,
-     "routes": [],
-     "price": null,
-     "query": "제주항공 {특가말}",
-     "bodyAt": "2026-11-23",
-     "ai": {
-      "v": 2,
-      "promo": true,
-      "why": "신규 노선 취항 특가 소식",
-      "airlines": [
-       "제주항공",
-       "파라타항공"
-      ],
-      "name": null,
-      "book": null,
-      "board": null,
-      "price": null,
-      "trip": null,
-      "pct": null,
-      "seoul": null,
-      "at": "2026-11-23",
       "model": "deepseek-v4-flash"
      }
     }
@@ -53278,24 +53342,24 @@
    ]
   }
  ],
- "updated": "2026-11-27T21:00:47.701Z",
- "runs": 328,
+ "updated": "2026-11-27T23:00:40.485Z",
+ "runs": 329,
  "checked": {
-  "베트남": "2026-11-27T21:00:47.701Z",
-  "태국": "2026-11-27T21:00:47.701Z",
-  "필리핀": "2026-11-27T21:00:47.701Z",
-  "인도네시아": "2026-11-27T21:00:47.701Z",
-  "말레이시아": "2026-11-27T21:00:47.701Z",
-  "싱가포르": "2026-11-27T21:00:47.701Z",
-  "일본": "2026-11-27T21:00:47.701Z",
-  "대만": "2026-11-27T21:00:47.701Z",
-  "홍콩": "2026-11-27T21:00:47.701Z",
-  "마카오": "2026-11-27T21:00:47.701Z",
-  "중국": "2026-11-27T21:00:47.701Z",
-  "미국령": "2026-11-27T21:00:47.701Z",
-  "미국": "2026-11-27T21:00:47.701Z"
+  "베트남": "2026-11-27T23:00:40.485Z",
+  "태국": "2026-11-27T23:00:40.485Z",
+  "필리핀": "2026-11-27T23:00:40.485Z",
+  "인도네시아": "2026-11-27T23:00:40.485Z",
+  "말레이시아": "2026-11-27T23:00:40.485Z",
+  "싱가포르": "2026-11-27T23:00:40.485Z",
+  "일본": "2026-11-27T23:00:40.485Z",
+  "대만": "2026-11-27T23:00:40.485Z",
+  "홍콩": "2026-11-27T23:00:40.485Z",
+  "마카오": "2026-11-27T23:00:40.485Z",
+  "중국": "2026-11-27T23:00:40.485Z",
+  "미국령": "2026-11-27T23:00:40.485Z",
+  "미국": "2026-11-27T23:00:40.485Z"
  },
- "auto": "2026-11-27T21:00:47.701Z",
+ "auto": "2026-11-27T23:00:40.485Z",
  "sources": {
   "7C": "2026-11-01",
   "TW": "2026-11-01",
@@ -53508,70 +53572,6 @@
    "중국동방항공 얼리버드": "2026-11-04"
   },
   "seen": [
-   "okinawago/617716",
-   "worldtravelcafe/1169185",
-   "tobaab/641828",
-   "mania7777777/454609",
-   "iwibronetbook/214133",
-   "010freebaram/265401",
-   "everytravel/415",
-   "joonggonara/1138555132",
-   "010freebaram/265390",
-   "joonggonara/1138552505",
-   "joonggonara/1138551343",
-   "911club/63832",
-   "barman/1308046",
-   "urbanswing/15227",
-   "jpnstory/4402978",
-   "loveloveloveovelove/1044146",
-   "loveloveloveovelove/1044125",
-   "ssfo/152",
-   "dailytour1/4834",
-   "mindy7857/5496013",
-   "mindy7857/5545382",
-   "mindy7857/5545377",
-   "mindy7857/5545374",
-   "mindy7857/5545362",
-   "mindy7857/5545295",
-   "vinpearl/573434",
-   "ysm5828/9652576",
-   "vinpearl/573428",
-   "nctownnet11/218261",
-   "smartravelapp/1355",
-   "happyibook/6363322",
-   "aooniworldse/9560",
-   "happyibook/6363332",
-   "minecraftpe/4021264",
-   "warcraftgamemap/3541610",
-   "warcraftgamemap/3541598",
-   "ysm5828/9652536",
-   "warcraftgamemap/3536630",
-   "hawaiiphoto/1619206",
-   "worrytodream/1038713",
-   "thaiinfo/681733",
-   "serenstalk/56786",
-   "nyctourdesign/1207498",
-   "firenze/9001986",
-   "nyctourdesign/1207492",
-   "bluem7msd/4971",
-   "bebettergirls/2104090",
-   "bebettergirls/2104088",
-   "sssasfsdf1111111111/23787",
-   "skybluelnccx/1884",
-   "realturkey/56596",
-   "nyctourdesign/1207494",
-   "skybluen0v9c/271",
-   "fcbora/5855",
-   "likeusstock/1547763",
-   "dngd/51258",
-   "nyctourdesign/1207501",
-   "loyaltylife/371206",
-   "whiskycognac/968324",
-   "stickcommuity/3671",
-   "freetourincebu/1739",
-   "freetourincebu/1738",
-   "loveloveloveovelove/1044127",
-   "danangplays/250",
    "sknservice/547",
    "andersonkr/141894",
    "miznett/5165766",
@@ -59507,7 +59507,71 @@
    "skybluelnccx/3008",
    "leander/5444",
    "leander/5435",
-   "greens9ac3/13536"
+   "greens9ac3/13536",
+   "worldtravelcafe/1170654",
+   "spicateam/33067",
+   "gotovn/9178",
+   "homemadedrink/3896",
+   "dentalsolution2/40297",
+   "spicateam/33059",
+   "zmzm6506/89121",
+   "spicateam/33054",
+   "worldtravelcafe/1170648",
+   "leander/5514",
+   "hotdealcatch/3281",
+   "zzop/4362395",
+   "mindy7857/5553922",
+   "warcraftgamemap/3545364",
+   "happyibook/6368901",
+   "zzop/4362355",
+   "zzop/4272920",
+   "happyibook/6304992",
+   "icv14/271539",
+   "zzop/4257594",
+   "loyaltylife/372542",
+   "cafemakecafebest/104694",
+   "cafemakecafebest/104688",
+   "bluem7msd/4967",
+   "mindy7857/5553909",
+   "010freebaram/268055",
+   "loyaltylife/372540",
+   "skybluelnccx/3043",
+   "anyousports/97968",
+   "mindy7857/5553943",
+   "mindy7857/5553942",
+   "mindy7857/5553940",
+   "mindy7857/5553939",
+   "mindy7857/5553937",
+   "mindy7857/5553936",
+   "mindy7857/5553935",
+   "mindy7857/5553934",
+   "mindy7857/5553932",
+   "minecraftpe/4024384",
+   "ysm5828/9654901",
+   "tybwondergirl5/119999",
+   "gotovn/9165",
+   "minecraftpe/4024383",
+   "minecraftpe/4024382",
+   "guitarnsong/300172",
+   "soscanada/34399",
+   "drawhangil/26631",
+   "goodinfo53/2500",
+   "bullnbearfx/130891",
+   "whiskycognac/971139",
+   "dtcityhospital/5267",
+   "leander/5523",
+   "gbcointrader/32966",
+   "whiskycognac/960405",
+   "010freebaram/268056",
+   "uouv96/119725",
+   "blackctri4/1482",
+   "cafebeautyup/174267",
+   "imsanbu/80631645",
+   "taiwantour/1160825",
+   "chinatripatoz/31792",
+   "skybluelnccx/3037",
+   "leander/5502",
+   "trrader/119717"
   ],
   "since": "2026-11-03",
   "imported": "2026-11-03"
