@@ -1,6 +1,49 @@
 [
  {
   "at": "2026-11-27",
+  "title": "[이로운 뉴스의 행사 맛보기]“올겨울 따뜻한 괌으로 떠나볼까”…괌정부관광청, 대한항공·10대 여행사와 파격 프로모션",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": false,
+   "why": "여행사 인센티브 중심 프로모션",
+   "airlines": [
+    "대한항공"
+   ],
+   "name": null,
+   "book": {
+    "from": "2026-11-10",
+    "to": "2027-01-10"
+   },
+   "board": {
+    "from": "2026-11-10",
+    "to": "2027-03-31"
+   },
+   "price": null,
+   "trip": null,
+   "pct": null,
+   "seoul": null,
+   "at": "2026-11-27",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": {
+    "from": "2026-11-10",
+    "to": "2027-01-10"
+   },
+   "board": {
+    "from": "2026-11-10",
+    "to": "2027-03-31"
+   },
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "AI: 특가 아님"
+  ]
+ },
+ {
+  "at": "2026-11-27",
   "title": "아시아나 항공 이벤트 추억",
   "community": true,
   "ai": {
@@ -10640,47 +10683,6 @@
    "book": null,
    "board": null,
    "pct": 10,
-   "price": null
-  },
-  "diff": []
- },
- {
-  "at": "2026-11-20",
-  "title": "트리니티항공 , 2027년 1월 31일까지 탑승 대상 국제선 프로모션 운영",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "항공사 국제선 프로모션 코드 할인",
-   "airlines": [
-    "트리니티항공"
-   ],
-   "name": null,
-   "book": {
-    "from": null,
-    "to": "2026-11-30"
-   },
-   "board": {
-    "from": null,
-    "to": "2027-01-31"
-   },
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-20",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2026-11-30"
-   },
-   "board": {
-    "from": null,
-    "to": "2027-01-31"
-   },
-   "pct": null,
    "price": null
   },
   "diff": []
