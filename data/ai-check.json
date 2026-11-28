@@ -1,6 +1,37 @@
 [
  {
   "at": "2026-11-28",
+  "title": "파라타항공 반값 세일 비빔밥 기내식 맛있어요!",
+  "community": true,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "파라타항공 반값 세일 소식",
+   "airlines": [
+    "파라타항공"
+   ],
+   "name": "반값 세일",
+   "book": null,
+   "board": null,
+   "price": null,
+   "trip": null,
+   "pct": 50,
+   "seoul": null,
+   "at": "2026-11-28",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": null,
+   "price": null
+  },
+  "diff": [
+   "할인율 규칙 - / AI 50"
+  ]
+ },
+ {
+  "at": "2026-11-28",
   "title": "[하늘길] 12월 1주, 겨울맞이 국제선 특가 …에어부산 외 3가지 항공",
   "community": false,
   "ai": {
@@ -10664,40 +10695,5 @@
    "price": null
   },
   "diff": []
- },
- {
-  "at": "2026-11-20",
-  "title": "에어로케이 항공권 1+1 이벤트, 일본 왕복항공권 무료 응모 방법·11월 27일 마감 확인하세요 > 뉴스",
-  "community": false,
-  "ai": {
-   "v": 2,
-   "promo": false,
-   "why": "항공권 1+1은 무료 응모 이벤트",
-   "airlines": [
-    "에어로케이"
-   ],
-   "name": null,
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": null,
-   "seoul": null,
-   "at": "2026-11-20",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": {
-    "from": null,
-    "to": "2026-11-27"
-   },
-   "board": null,
-   "pct": null,
-   "price": null
-  },
-  "diff": [
-   "AI: 특가 아님",
-   "예약 마감 규칙 2026-11-27 / AI -"
-  ]
  }
 ]
