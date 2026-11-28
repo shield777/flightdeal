@@ -1,5 +1,46 @@
 [
  {
+  "at": "2026-11-28",
+  "title": "[하늘길] 12월 1주, 겨울맞이 국제선 특가 …에어부산 외 3가지 항공",
+  "community": false,
+  "ai": {
+   "v": 2,
+   "promo": true,
+   "why": "항공사 국제선 특가·할인코드 소식",
+   "airlines": [
+    "에어부산",
+    "제주항공",
+    "에어프레미아",
+    "진에어"
+   ],
+   "name": "겨울맞이 국제선 특가",
+   "book": {
+    "from": null,
+    "to": "2026-12-06"
+   },
+   "board": {
+    "from": null,
+    "to": "2027-03-28"
+   },
+   "price": 109900,
+   "trip": "편도",
+   "pct": 20,
+   "seoul": true,
+   "at": "2026-11-28",
+   "model": "deepseek-v4-flash"
+  },
+  "rules": {
+   "book": null,
+   "board": null,
+   "pct": 20,
+   "price": null
+  },
+  "diff": [
+   "예약 마감 규칙 - / AI 2026-12-06",
+   "가격 규칙 - / AI 109900"
+  ]
+ },
+ {
   "at": "2026-11-27",
   "title": "비엣젯 블랙프라이데이 특가",
   "community": true,
@@ -10658,34 +10699,5 @@
    "AI: 특가 아님",
    "예약 마감 규칙 2026-11-27 / AI -"
   ]
- },
- {
-  "at": "2026-11-20",
-  "title": "[ 항공권 D-7] 진에어 블랙프라이데이 — 코드 26BLACKLJ 최대 15%, 삼성카드 3%까....",
-  "community": true,
-  "ai": {
-   "v": 2,
-   "promo": true,
-   "why": "진에어 블프 할인코드 특가",
-   "airlines": [
-    "진에어"
-   ],
-   "name": "블랙프라이데이",
-   "book": null,
-   "board": null,
-   "price": null,
-   "trip": null,
-   "pct": 15,
-   "seoul": null,
-   "at": "2026-11-20",
-   "model": "deepseek-v4-flash"
-  },
-  "rules": {
-   "book": null,
-   "board": null,
-   "pct": 15,
-   "price": null
-  },
-  "diff": []
  }
 ]
